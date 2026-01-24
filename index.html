@@ -1135,6 +1135,7 @@
                 <option value="Bronze">Bronze</option>
                 <option value="Silver">Silver</option>
                 <option value="Gold">Gold</option>
+                <option value="Eiken6">Eiken 6</option>
                 <option value="Eiken5">Eiken 5</option>
                 <option value="Eiken4">Eiken 4</option>
                 <option value="Eiken3">Eiken 3</option>
@@ -1230,6 +1231,7 @@
 <script src="bronze.js"></script>
 <script src="silver.js"></script>
 <script src="gold.js"></script>
+        <script src="eiken6story.js"></script>
 <script src="eiken5story.js"></script>
 <script src="eiken3.js"></script>
 <script src="eiken3questions.js"></script>
@@ -2752,6 +2754,12 @@ function loadLessonsData() {
             content: story.content
         }))
 },
+                'Eiken6': {
+    stories: window.eiken6story ? window.eiken6story.map(story => ({
+        title: story.title,
+        content: story.content
+    })) : []
+},
 // In loadLessonsData function
 'Eiken5': {
     stories: window.eiken5story ? window.eiken5story.map(story => ({
@@ -2909,6 +2917,7 @@ function loadLessonsData() {
 </script>   
 </body>
 </html>
+
 
 
 
