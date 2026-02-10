@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEWS to ME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* Newspaper-inspired base styles */
+  :root {
+    --headline-font: 'Playfair Display', serif;
+    --body-font: 'Roboto Condensed', sans-serif;
+    --dark-bg: #1a1a1a;
+    --dark-text: #f0f0f0;
+    --light-bg: #f5f5f5;
+    --light-text: #222;
+    --accent-red: #c00;
+    --accent-blue: #0066cc;
+    --paper-texture: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="1" stitchTiles="stitch"/><feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.05 0"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.3"/></svg>');
+    
+    /* Font size variables */
+    --base-font-size: 2.5rem;
+    --headline-font-size: 2.75rem;
+    --article-font-size: 2.5rem;
+    --min-font-size: 1.5rem;
+    --max-font-size: 5rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--paper-texture);
+    transition: all 0.3s ease;
+  }
+  
+  body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+  }
+
+  /* Header styling */
+  header {
+    height: 6vh;
+    background: linear-gradient(to right, #222, #444);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 4px double #666;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+  }
+  
+  body.light-mode header {
+    background: linear-gradient(to right, #ddd, #f0f0f0);
+    border-bottom: 4px double #aaa;
+  }
+  
+  .masthead {
+    font-family: var(--headline-font);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  }
+  
+  body.light-mode .masthead {
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  .header-info {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .header-controls {
+    display: flex;
+    gap: 1rem;
+  }
+
+  /* News Ticker styling */
+.news-ticker {
+  height: 5vh; /* Increased from 3vh */
+  min-height: 30px; /* Increased from 20px */
+  background: #222;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+body.light-mode .news-ticker {
+  background: #f0f0f0;
+  color: #222;
+  border-bottom: 1px solid #aaa;
+}
+  
+.ticker-content {
+  position: absolute;
+  white-space: nowrap;
+  line-height: 5vh; /* Increased from 3vh */
+  font-family: var(--body-font);
+  font-weight: bold;
+  font-size: 2rem; /* Increased from 1.2rem */
+  will-change: transform;
+  left: 100%;
+  top: 0;
+  transform: translateX(0);
+}
+  
+  .ticker-item {
+    display: inline-block;
+    margin-right: 3rem;
+  }
+  
+  .ticker-source {
+    color: var(--accent-red);
+    margin-right: 0.5rem;
+    font-weight: bold;
+  }
+
+  /* Main content container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 15vh); /* header + ticker + footer */
+  padding: 1rem;
+  gap: 1rem;
+}
+  
+  .news-container {
+    flex: 1;
+    border: 1px solid #444;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    background: rgba(30, 30, 30, 0.8);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    border-radius: 0;
+  }
+  .container-controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+  body.light-mode .news-container {
+    background: rgba(250, 250, 250, 0.9);
+    border: 1px solid #aaa;
+  }
+  
+  .news-content {
+    width: 90%;
+    max-height: 100%;
+    overflow: hidden;
+    text-align: center;
+    transition: font-size 0.3s ease;
+    position: relative;
+    font-size: var(--base-font-size);
+  }
+  
+  .headline {
+    font-family: var(--headline-font);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-size: var(--headline-font-size);
+  }
+  
+  body.light-mode .headline {
+    text-shadow: none;
+  }
+  
+  .pub-date {
+    font-size: 0.7em;
+    opacity: 0.8;
+    font-style: italic;
+    margin-top: 0.3rem;
+  }
+  
+  .breaking-badge {
+    display: inline-block;
+    background: var(--accent-red);
+    color: white;
+    font-size: 0.6em;
+    padding: 0.2em 0.5em;
+    border-radius: 3px;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+.news-ticker .breaking-badge {
+  display: inline-block;
+  background: var(--accent-red);
+  color: white;
+  font-size: 0.6em;
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+  /* Footer styling */
+  footer {
+    height: 6vh;
+    background: linear-gradient(to right, #222, #444);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-top: 4px double #666;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+  }
+  
+  body.light-mode footer {
+    background: linear-gradient(to right, #ddd, #f0f0f0);
+    border-top: 4px double #aaa;
+  }
+  
+  .footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .classroom-link {
+    display: inline-block;
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    margin: 0 1rem;
+  }
+  
+  .classroom-link:hover {
+    background-color: #ff7043;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  }
+  
+  .classroom-link:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  body.light-mode .classroom-link {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .footer-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  /* Button styles */
+  button {
+  min-width: 80px; /* Larger for easier remote selection */
+  min-height: 50px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  font-size: 1.2rem; /* Larger text */
+    font-family: var(--body-font);
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  body.light-mode button {
+    background: #555;
+  }
+  
+  button:focus-visible {
+    outline: 3px solid var(--accent-blue);
+    background: #555;
+  }
+  
+  button:hover {
+    background: #444;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+  }
+  
+  body.light-mode button:hover {
+    background: #666;
+  }
+  
+  button.active {
+    background: var(--accent-blue);
+  }
+  
+  .nav-btn {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body.light-mode .modal {
+    background: rgba(0, 0, 0, 0.85);
+  }
+  
+  .modal.active {
+    display: flex;
+  }
+  
+.modal-container {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-bg);
+  background-image: var(--paper-texture);
+  overflow: auto;
+}
+  
+  body.light-mode .modal-container {
+    background: var(--light-bg);
+    color: var(--light-text);
+  }
+  
+  /* Article view */
+  .article-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .article-sentence-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .article-sentence {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    line-height: 1.5;
+    overflow: auto;
+    max-height: 40vh;
+    font-size: var(--article-font-size);
+  }
+  
+.article-translation {
+    width: 90%;
+    text-align: center;
+    color: #aaa;
+    font-style: italic;
+    padding: 1rem;
+    border-top: 1px solid #444;
+    line-height: 1.5;
+    overflow: auto;
+    max-height: 40vh;
+    font-size: var(--article-font-size);
+}
+
+.article-read-more {
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: var(--article-font-size);
+}
+
+.article-read-more a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--accent-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.article-read-more a:hover {
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+body.light-mode .article-read-more a {
+    color: var(--accent-blue);
+}
+
+body.light-mode .article-read-more a:hover {
+    background-color: var(--accent-blue);
+    color: white;
+}
+  
+  body.light-mode .article-translation {
+    color: #666;
+    border-top: 1px solid #aaa;
+  }
+  
+  .article-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .article-progress {
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin: 0.5rem 0;
+  }
+  
+  /* Close button styling */
+  .close-modal-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 101;
+    background: var(--accent-red);
+  }
+  
+  /* Font size controls */
+  .font-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .font-size-display {
+    min-width: 60px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Modal font controls */
+  .modal-font-controls {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    z-index: 101;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  /* Focus styles for remote navigation */
+  [tabindex]:focus-visible {
+    outline: 3px solid var(--accent-blue);
+    background: #555;
+  }
+  
+  /* Utility classes */
+  .hidden {
+    display: none !important;
+  }
+  
+  .dimmed {
+    opacity: 0.6;
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* TV remote friendly elements */
+  button, [tabindex] {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  button:focus {
+    transform: scale(1.05);
+  }
+
+  /* Headline counter */
+  .headline-counter {
+    margin-left: 1rem;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    color: white;
+    min-width: 60px;
+    text-align: center;
+  }
+  
+  body.light-mode .headline-counter {
+    color: var(--light-text);
+  }
+/* Weather Ticker Styles - now matches news ticker */
+.temp-ticker {
+  height: 5vh;
+  background: #222;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+
+body.light-mode .temp-ticker {
+  background: #f0f0f0;
+  color: #222;
+  border-bottom: 1px solid #aaa;
+}
+
+.temp-ticker-content {
+  position: absolute;
+  white-space: nowrap;
+  line-height: 5vh;
+  font-family: var(--body-font);
+  font-weight: bold;
+  font-size: 2rem;
+  will-change: transform;
+  left: 100%;
+  top: 0;
+  transform: translateX(0);
+}
+
+.temp-item {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.temp-city {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.temp-weather {
+  margin-left: 0.3rem;
+  font-size: 1.8rem; /* Slightly larger emoji */
+}
+</style>
+</head>
+<body>
+  <!-- Newspaper Masthead -->
+  <header>
+    <div class="masthead">NEWS to ME</div>
+    <div class="header-info">
+      <div id="clock">00:00:00</div>
+      <div id="date">2023-01-01</div>
+    </div>
+<div class="header-controls">
+  <button id="pause-btn" class="nav-btn" tabindex="1">⏸ Pause</button>
+  <button id="prev-btn" class="nav-btn" tabindex="2">⏮ Previous</button>
+  <button id="next-btn" class="nav-btn" tabindex="3">⏭ Next</button>
+  <button id="source-btn" tabindex="4">BBC</button>
+  <div id="headline-counter" class="headline-counter">0/0</div>
+</div>
+  </header>
+
+<!-- Weather Ticker -->
+<div class="temp-ticker">
+  <div class="temp-ticker-content"></div>
+</div>
+
+  <!-- Main Newspaper Content -->
+  <div class="content-container">
+    <!-- Top container (English headlines) -->
+    <div class="news-container" id="english-container">
+      <div class="news-content" id="english-content">
+        <div class="headline">Loading headlines...</div>
+      </div>
+      <div class="container-controls">
+  <!-- Empty div - buttons removed -->
+</div>
+    </div>
+    
+    <!-- Bottom container (Japanese translation) -->
+    <div class="news-container" id="japanese-container">
+      <div class="news-content" id="japanese-content">
+        <div class="headline">翻訳を読み込み中...</div>
+      </div>
+      <div class="container-controls">
+  <!-- Empty div - buttons removed -->
+</div>
+    </div>
+  </div>
+<!-- News Ticker -->
+<div class="news-ticker">
+  <div class="ticker-content"></div>
+</div>
+
+  <!-- Newspaper Footer with Controls -->
+  <footer>
+    <div class="footer-info">
+      <button class="mode-toggle" id="mode-toggle" tabindex="6">🌙 Night Mode</button>
+    </div>
+    <div class="footer-center">
+      <a href="classroom.html" class="classroom-link" tabindex="10">Classroom Mode</a>
+    </div>
+    <div class="footer-controls">
+      <div class="font-controls">
+        <button id="font-decrease" tabindex="7">A-</button>
+        <span class="font-size-display" id="font-size-display">100%</span>
+        <button id="font-increase" tabindex="8">A+</button>
+      </div>
+      <button id="font-reset" tabindex="9">Reset Size</button>
+    </div>
+  </footer>
+
+  <!-- Article modal (hidden initially) - Updated structure -->
+  <div class="modal" id="article-modal" tabindex="10">
+    <div class="modal-font-controls">
+      <button id="modal-font-decrease" tabindex="14">A-</button>
+      <span class="font-size-display" id="modal-font-size-display">100%</span>
+      <button id="modal-font-increase" tabindex="15">A+</button>
+      <button id="modal-font-reset" tabindex="16">Reset</button>
+    </div>
+    <button id="close-modal-btn" class="close-modal-btn" tabindex="12">✕ Close</button>
+    <div class="modal-container">
+      <div class="article-view" id="article-display">
+        <div class="article-sentence-container">
+    <div class="article-sentence" id="article-sentence"></div>
+    <div class="article-translation" id="article-translation"></div>
+    <div class="article-read-more" id="article-read-more"></div>
+    <div class="article-progress" id="article-progress"></div>
+</div>
+        <div class="article-nav">
+          <button id="prev-sentence-btn" tabindex="11">← Previous</button>
+          <button id="next-sentence-btn" tabindex="13">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // App Configuration
+const config = {
+  // Basic app settings
+  tickerSpeed: 50, // pixels per second
+  tickerUpdateInterval: 30000, // 30 seconds
+  rotationInterval: 15000, // 15 seconds instead of 10 for better reading
+  maxHeadlines: 100, // Increased from 50 to 100
+  weatherUpdateInterval: 900000, // 15 minutes
+  translationCacheTTL: 86400000, // 24 hours
+// In the config object:
+baseFontSize: 3.0, // rem - larger default for TV viewing
+minFontSize: 2.0, // rem - minimum readable size
+maxFontSize: 6.0, // rem - maximum for large classrooms
+fontSizeStep: 0.5, // rem
+  tempUpdateInterval: 1200000, // 20 minutes
+  weatherAPIKey: "49f52765e29d4623952221618252507",
+  rssParserAPI: 'https://api.rss2json.com/v1/api.json?rss_url=',
+
+  // RSS Feeds configuration
+  rssCacheTTL: 3600000, // 1 hour cache for RSS feeds
+  rssFeeds: {
+    'On This Day': {
+      type: 'onThisDay',
+      // We'll handle this specially in the code
+    },
+'Japan Today': {
+  url: 'https://japantoday.com/feed',
+  type: 'multiProxy',
+proxies: [
+  'https://api.codetabs.com/v1/proxy/?quest=',
+  'https://corsproxy.io/?',
+  'https://proxy.cors.sh/',
+  'https://api.allorigins.win/get?url=',
+  'https://cors-anywhere.herokuapp.com/'
+],
+  directUrl: 'https://japantoday.com/feed/atom' // Try Atom feed instead
+},
+'Google News Japan': {
+  url: 'https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US:en',
+  type: 'api'
+},
+'BBC TOP': {
+      url: 'http://feeds.bbci.co.uk/news/rss.xml?limit=100',
+      type: 'api'
+    },
+    'BBC WORLD': {
+      url: 'http://feeds.bbci.co.uk/news/world/rss.xml?limit=100',
+      type: 'api'
+    },
+    'BBC SPORTS': {
+      url: 'http://feeds.bbci.co.uk/sport/rss.xml?limit=100',
+      type: 'api'
+    },
+    'NPR World': {
+      url: 'https://feeds.npr.org/1004/rss.xml?limit=100',
+      type: 'api'
+    },
+    'NPR Top': {
+      url: 'https://feeds.npr.org/1001/rss.xml?limit=100',
+      type: 'api'
+    },
+    'NYT World': {
+      url: 'https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/section/world/rss.xml?limit=100',
+      type: 'api'
+    },
+    'Guardian': {
+      url: 'https://www.theguardian.com/world/rss?limit=100',
+      type: 'api'
+    },
+    'NBC': {
+      url: 'https://feeds.nbcnews.com/nbcnews/public/news?limit=100',
+      type: 'api'
+    }
+},
+
+  // City lists for weather
+  japanCities: [
+    {id: 130010, name: "Tokyo"},
+    {id: 270000, name: "Osaka"},
+    {id: 140010, name: "Yokohama"},
+    {id: 110010, name: "Sapporo"},
+    {id: 230010, name: "Nagoya"},
+    {id: 280010, name: "Kobe"},
+    {id: 400010, name: "Fukuoka"},
+    {id: 340010, name: "Hiroshima"},
+    {id: 260010, name: "Kyoto"},
+    {id: 410010, name: "Nagasaki"},
+    {id: 220010, name: "Shizuoka"},
+    {id: 120010, name: "Sendai"},
+    {id: 160010, name: "Kanazawa"},
+    {id: 470010, name: "Naha"},
+    {id: 200010, name: "Nagano"}
+  ],
+  worldCities: [
+    {id: "New York", name: "New York"},
+    {id: "London", name: "London"},
+    {id: "Paris", name: "Paris"},
+    {id: "Beijing", name: "Beijing"},
+    {id: "Shanghai", name: "Shanghai"},
+    {id: "Hong Kong", name: "Hong Kong"},
+    {id: "Singapore", name: "Singapore"},
+    {id: "Seoul", name: "Seoul"},
+    {id: "Sydney", name: "Sydney"},
+    {id: "Los Angeles", name: "Los Angeles"},
+    {id: "Chicago", name: "Chicago"},
+    {id: "Toronto", name: "Toronto"},
+    {id: "Vancouver", name: "Vancouver"},
+    {id: "Berlin", name: "Berlin"},
+    {id: "Rome", name: "Rome"}
+  ],
+  // MyMemory Translation API
+  translationAPI: 'https://api.mymemory.translated.net/get'
+};
+
+// App State
+let state = {
+  currentSource: 'BBC',
+  headlines: [],
+  allHeadlines: [], // Add this line
+  currentIndex: 0,
+  isPaused: false,
+  rotationTimer: null,
+  weatherTimer: null,
+  clockTimer: null,
+  translationCache: {},
+  modalState: {
+    isOpen: false,
+    currentArticle: null,
+    currentSentenceIndex: 0,
+    sentences: [],
+    translations: []
+  },
+  rssCache: {},
+  darkMode: true,
+  currentFontSize: config.baseFontSize,
+  currentFontPercentage: 100,
+  tempTickerData: [],
+  tempTickerTimer: null
+};
+
+    // DOM Elements
+const elements = {
+  clock: document.getElementById('clock'),
+  date: document.getElementById('date'),
+  englishContent: document.getElementById('english-content'),
+  japaneseContent: document.getElementById('japanese-content'),
+  pauseBtn: document.getElementById('pause-btn'),
+  nextBtn: document.getElementById('next-btn'),
+  sourceBtn: document.getElementById('source-btn'),
+  articleModal: document.getElementById('article-modal'),
+  articleDisplay: document.getElementById('article-display'),
+  articleSentence: document.getElementById('article-sentence'),
+  articleTranslation: document.getElementById('article-translation'),
+  articleReadMore: document.getElementById('article-read-more'),
+  articleProgress: document.getElementById('article-progress'),
+  prevSentenceBtn: document.getElementById('prev-sentence-btn'),
+  nextSentenceBtn: document.getElementById('next-sentence-btn'),
+  closeModalBtn: document.getElementById('close-modal-btn'),
+  toggleButtons: document.querySelectorAll('.toggle-btn'),
+  modeToggle: document.getElementById('mode-toggle'),
+  fontDecrease: document.getElementById('font-decrease'),
+  fontReset: document.getElementById('font-reset'),
+  fontIncrease: document.getElementById('font-increase'),
+  fontSizeDisplay: document.getElementById('font-size-display'),
+  modalFontDecrease: document.getElementById('modal-font-decrease'),
+  modalFontReset: document.getElementById('modal-font-reset'),
+  modalFontIncrease: document.getElementById('modal-font-increase'),
+  modalFontSizeDisplay: document.getElementById('modal-font-size-display'),
+  headlineCounter: document.getElementById('headline-counter')
+};
+
+// Add this weather condition to emoji mapping at the top of your script
+const weatherEmojiMap = {
+  'sunny': '☀️',
+  'clear': '☀️',
+  'cloudy': '☁️',
+  'partly cloudy': '⛅',
+  'rain': '🌧️',
+  'light rain': '🌧️',
+  'heavy rain': '🌧️',
+  'thunder': '⛈️',
+  'snow': '❄️',
+  'light snow': '❄️',
+  'heavy snow': '❄️',
+  'fog': '🌫️',
+  'mist': '🌫️',
+  'windy': '🌬️'
+};
+
+async function fetchTemperatures() {
+  try {
+    const now = Date.now();
+    const cacheKey = 'weather_data';
+    const cachedData = state.rssCache[cacheKey];
+    
+    // Use cached data if less than 15 minutes old
+    if (cachedData && (now - cachedData.timestamp) < config.weatherUpdateInterval) {
+      state.tempTickerData = cachedData.data;
+      updateTempTicker();
+      return;
+    }
+
+    // 1. Japan cities
+    const japanTemps = await Promise.all(config.japanCities.map(async city => {
+      const cityCacheKey = `city_${city.id}`;
+      const cityCached = state.rssCache[cityCacheKey];
+      
+      if (cityCached && (now - cityCached.timestamp) < config.weatherUpdateInterval) {
+        return cityCached.data;
+      }
+
+      try {
+        const response = await fetch(`https://weather.tsukumijima.net/api/forecast/city/${city.id}`);
+        if (!response.ok) throw new Error('API error');
+        const data = await response.json();
+        const temp = data.forecasts[0].temperature.min?.celsius || 
+                     data.forecasts[0].temperature.max?.celsius || '--';
+        const condition = data.forecasts[0].telop.toLowerCase() || 'unknown';
+        
+        const result = {
+          city: city.name, 
+          temp: temp, 
+          condition: condition,
+          region: 'Japan'
+        };
+        state.rssCache[cityCacheKey] = {
+          data: result,
+          timestamp: now
+        };
+        return result;
+      } catch (e) {
+        return {
+          city: city.name, 
+          temp: '--', 
+          condition: 'unknown',
+          region: 'Japan'
+        };
+      }
+    }));
+    
+    // 2. WeatherAPI implementation
+    const worldTemps = await Promise.all(config.worldCities.map(async city => {
+      try {
+        const response = await fetch(
+          `https://api.weatherapi.com/v1/current.json?key=${config.weatherAPIKey}&q=${city.id}`
+        );
+        const data = await response.json();
+        const condition = data.current.condition.text.toLowerCase() || 'unknown';
+        return {
+          city: city.name,
+          temp: data.current.temp_c,
+          condition: condition,
+          region: 'World'
+        };
+      } catch (e) {
+        return {
+          city: city.name, 
+          temp: '--', 
+          condition: 'unknown',
+          region: 'World'
+        };
+      }
+    }));
+    
+    state.tempTickerData = [...japanTemps, ...worldTemps];
+    updateTempTicker();
+  } catch (error) {
+    console.error('Failed to fetch temperatures:', error);
+  } finally {
+    state.tempTickerTimer = setTimeout(fetchTemperatures, config.tempUpdateInterval);
+  }
+}
+
+function updateTempTicker() {
+  const tickerContent = document.querySelector('.temp-ticker-content');
+  if (!tickerContent) return;
+  
+  tickerContent.innerHTML = '';
+  
+  state.tempTickerData.forEach(item => {
+    const tempItem = document.createElement('div');
+    tempItem.className = 'temp-item';
+    
+    const citySpan = document.createElement('span');
+    citySpan.className = 'temp-city';
+    citySpan.textContent = `${item.city}:`;
+    
+    // Get appropriate emoji for weather condition
+    let emoji = '🌤️'; // default emoji
+    for (const [key, value] of Object.entries(weatherEmojiMap)) {
+      if (item.condition.includes(key)) {
+        emoji = value;
+        break;
+      }
+    }
+    
+    const weatherSpan = document.createElement('span');
+    weatherSpan.className = 'temp-weather';
+    weatherSpan.textContent = `${emoji} ${item.temp}°C`;
+    
+    tempItem.appendChild(citySpan);
+    tempItem.appendChild(weatherSpan);
+    tickerContent.appendChild(tempItem);
+  });
+  
+  animateTempTicker();
+}
+
+function animateTempTicker() {
+  const tickerContent = document.querySelector('.temp-ticker-content');
+  if (!tickerContent) return;
+  
+  const tickerWidth = tickerContent.scrollWidth;
+  const containerWidth = document.querySelector('.temp-ticker').offsetWidth;
+  const duration = (tickerWidth + containerWidth) / config.tickerSpeed * 1000;
+  
+  tickerContent.style.transition = 'none';
+  tickerContent.style.transform = `translateX(${containerWidth}px)`;
+  tickerContent.offsetHeight;
+  tickerContent.style.transition = `transform ${duration}ms linear`;
+  tickerContent.style.transform = `translateX(-${tickerWidth}px)`;
+  
+  const restartAnimation = () => {
+    tickerContent.removeEventListener('transitionend', restartAnimation);
+    requestAnimationFrame(() => {
+      animateTempTicker();
+    });
+  };
+  
+  tickerContent.addEventListener('transitionend', restartAnimation);
+}
+    // Initialize the app
+function init() {
+  loadSettings();
+  initEventListeners();
+  startClock();
+  initTicker();
+  
+  // Check if we should prioritize Japan Today (9am-8pm Japan time)
+  const now = new Date();
+  const japanTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+  const hours = japanTime.getHours();
+  
+  if (hours >= 9 && hours < 20 && state.currentSource !== 'Japan Today') {
+    state.currentSource = 'Japan Today';
+    updateSourceButton();
+  }
+  
+  loadAllFeeds();
+  updateModeToggle();
+  updateSourceButton();
+  updateFontSize();
+  fetchTemperatures();
+}    // Load settings from localStorage
+function loadSettings() {
+  const savedMode = localStorage.getItem('darkMode');
+  if (savedMode !== null) {
+    state.darkMode = savedMode === 'true';
+    document.body.classList.toggle('light-mode', !state.darkMode);
+  }
+
+  const savedRssCache = localStorage.getItem('rssCache');
+  if (savedRssCache) {
+    try {
+      state.rssCache = JSON.parse(savedRssCache);
+      // Clean expired cache entries
+      const now = Date.now();
+      Object.keys(state.rssCache).forEach(key => {
+        if (state.rssCache[key].expiry && state.rssCache[key].expiry < now) {
+          delete state.rssCache[key];
+        }
+      });
+    } catch (e) {
+      console.error('Failed to parse RSS cache', e);
+    }
+  }
+  
+  const savedCache = localStorage.getItem('translationCache');
+  if (savedCache) {
+    try {
+      state.translationCache = JSON.parse(savedCache);
+      // Clean up expired cache entries
+      const now = Date.now();
+      Object.keys(state.translationCache).forEach(key => {
+        if (state.translationCache[key].expiry < now) {
+          delete state.translationCache[key];
+        }
+      });
+    } catch (e) {
+      console.error('Failed to parse translation cache', e);
+    }
+  }
+  
+  const savedSource = localStorage.getItem('currentSource');
+  if (savedSource && config.rssFeeds[savedSource]) {
+    state.currentSource = savedSource;
+  } else {
+    // Set Japan Today as default between 9am-8pm Japan time
+    const now = new Date();
+    const japanTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+    const hours = japanTime.getHours();
+    
+    if (hours >= 9 && hours < 20) { // 9am-8pm JST
+      state.currentSource = 'Japan Today';
+    } else {
+      state.currentSource = 'BBC TOP';
+    }
+  }
+      
+      const savedFontSize = localStorage.getItem('fontSize');
+      if (savedFontSize) {
+        state.currentFontSize = parseFloat(savedFontSize);
+        state.currentFontPercentage = Math.round((state.currentFontSize / config.baseFontSize) * 100);
+      }
+    }
+
+    // Initialize event listeners
+    function initEventListeners() {
+      elements.pauseBtn.addEventListener('click', togglePause);
+      elements.prevBtn = document.getElementById('prev-btn'); // Add this line to elements object
+elements.nextBtn.addEventListener('click', showNextHeadline);
+elements.prevBtn.addEventListener('click', showPrevHeadline); // Add this line
+      elements.sourceBtn.addEventListener('click', cycleNewsSource);
+      elements.closeModalBtn.addEventListener('click', closeModal);
+      elements.prevSentenceBtn.addEventListener('click', showPrevSentence);
+      elements.nextSentenceBtn.addEventListener('click', showNextSentence);
+      elements.modeToggle.addEventListener('click', toggleDarkMode);
+      elements.fontDecrease.addEventListener('click', () => adjustFontSize(-config.fontSizeStep));
+      elements.fontReset.addEventListener('click', resetFontSize);
+      elements.fontIncrease.addEventListener('click', () => adjustFontSize(config.fontSizeStep));
+      elements.modalFontDecrease.addEventListener('click', () => adjustFontSize(-config.fontSizeStep));
+      elements.modalFontReset.addEventListener('click', resetFontSize);
+      elements.modalFontIncrease.addEventListener('click', () => adjustFontSize(config.fontSizeStep));
+      
+      elements.toggleButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const target = document.getElementById(this.dataset.target);
+          target.classList.toggle('hidden');
+          this.textContent = target.classList.contains('hidden') ? 'Show' : 'Hide';
+        });
+      });
+      
+      // Make headlines clickable
+      elements.englishContent.addEventListener('click', openCurrentArticle);
+      elements.japaneseContent.addEventListener('click', openCurrentArticle);
+      
+      // Keyboard navigation for TV remote
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+          if (state.modalState.isOpen) {
+            showNextSentence();
+          } else {
+            showNextHeadline();
+          }
+        } else if (e.key === 'ArrowLeft') {
+          if (state.modalState.isOpen) {
+            showPrevSentence();
+          } else {
+            showPrevHeadline();
+          }
+        } else if (e.key === 'Enter') {
+          if (!state.modalState.isOpen) {
+            openCurrentArticle();
+          }
+        } else if (e.key === 'Escape' && state.modalState.isOpen) {
+          closeModal();
+        } else if (e.key === '+' || e.key === '=') {
+          adjustFontSize(config.fontSizeStep);
+        } else if (e.key === '-') {
+          adjustFontSize(-config.fontSizeStep);
+        } else if (e.key === '0') {
+          resetFontSize();
+        }
+      });
+    }
+function loadAllFeeds() {
+  // First load the current source for main display
+  loadHeadlines();
+  
+  // Then load all other feeds in background for ticker
+  Object.keys(config.rssFeeds).forEach(source => {
+    if (source !== state.currentSource) {
+      loadFeedForTicker(source);
+    }
+  });
+
+  // Initialize the ticker with an empty array
+  state.allHeadlines = [];
+  initTicker();
+}
+function loadFeedForTicker(source) {
+  const feedConfig = config.rssFeeds[source];
+  if (!feedConfig) return;
+
+  if (feedConfig.type === 'multiProxy') {
+    fetchWithMultiProxy(feedConfig.url, source, feedConfig.proxies)
+      .then(data => processFeedData(data, source))
+      .catch(error => {
+        console.error(`All proxies failed for ${source}, trying direct:`, error);
+        fetchDirectFeedForTicker(feedConfig.directUrl, source);
+      });
+  } else if (feedConfig.type === 'direct') {
+    fetchDirectFeedForTicker(feedConfig.directUrl || feedConfig.url, source);
+  } else if (feedConfig.type === 'corsProxy') {
+    fetchWithCorsProxy(feedConfig.url, source, feedConfig.proxyUrl);
+  } else {
+    fetchApiFeedForTicker(feedConfig.url, source);
+  }
+}
+function fetchApiFeedForTicker(url, source) {
+  if (!url) {
+    console.error('URL is undefined for source:', source);
+    return;
+  }
+  const proxyUrl = config.rssParserAPI + encodeURIComponent(url);
+  
+  fetch(proxyUrl)    .then(response => {
+      if (!response.ok) throw new Error('RSS fetch failed');
+      return response.json();
+    })
+    .then(data => {
+      if (data.items && data.items.length) {
+        processTickerHeadlines(data.items, source);
+      }
+    })
+    .catch(error => {
+      console.error(`Failed to load ${source} headlines:`, error);
+      // Add fallback headlines
+      const fallbackHeadlines = [{
+        title: `Latest news from ${source}`,
+        link: '#',
+        pubDate: new Date(),
+        source: source
+      }];
+      processTickerHeadlines(fallbackHeadlines, source);
+    });
+}
+function fetchDirectFeedForTicker(url, source) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) throw new Error('Direct RSS fetch failed');
+      return response.text();
+    })
+    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then(data => {
+      const items = data.querySelectorAll("item");
+      const headlines = Array.from(items).map(item => ({
+        title: item.querySelector("title")?.textContent || "No title",
+        link: item.querySelector("link")?.textContent || "#",
+        pubDate: parsePubDate(item.querySelector("pubDate")?.textContent || ""),
+        source: source
+      }));
+      
+      if (headlines.length) {
+        processTickerHeadlines(headlines, source);
+      }
+    })
+    .catch(error => {
+      console.error(`Failed to load ${source} headlines directly, trying API:`, error);
+      // Fall back to API method
+      fetchApiFeedForTicker(url, source);
+    });
+}
+function fetchWithCorsProxy(url, source, proxyUrl) {
+  const proxyFullUrl = proxyUrl + url;
+  
+  fetch(proxyFullUrl)
+    .then(response => {
+      if (!response.ok) throw new Error('CORS proxy fetch failed');
+      return response.text();
+    })
+    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then(data => {
+      const items = data.querySelectorAll("item");
+      const headlines = Array.from(items).map(item => ({
+        title: item.querySelector("title")?.textContent || "No title",
+        link: item.querySelector("link")?.textContent || "#",
+        pubDate: parsePubDate(item.querySelector("pubDate")?.textContent || ""),
+        source: source
+      }));
+      
+      if (headlines.length) {
+        processTickerHeadlines(headlines, source);
+      }
+    })
+    .catch(error => {
+      console.error(`Failed to load ${source} headlines via CORS proxy:`, error);
+      // Fall back to direct fetch (might still fail due to CORS)
+      fetchDirectFeedForTicker(url, source);
+    });
+}
+async function fetchWithMultiProxy(url, source, proxies) {
+  // Try direct fetch first if it's likely to work
+  try {
+    const directResponse = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`);
+    if (directResponse.ok) {
+      const data = await directResponse.json();
+      if (data.contents) {
+        return new DOMParser().parseFromString(data.contents, "text/xml");
+      }
+    }
+  } catch (directError) {
+    console.log('Direct proxy failed, trying others...');
+  }
+
+  // Try other proxies
+  for (const proxy of proxies) {
+    try {
+      let proxyUrl;
+      if (proxy.includes('?')) {
+        proxyUrl = `${proxy}${encodeURIComponent(url)}`;
+      } else {
+        proxyUrl = `${proxy}${url}`;
+      }
+      
+      const response = await fetch(proxyUrl);
+      
+      if (!response.ok) throw new Error(`Proxy failed with status ${response.status}`);
+      
+      let data;
+      if (proxy.includes('allorigins.win')) {
+        data = await response.json();
+        if (data.contents) {
+          return new DOMParser().parseFromString(data.contents, "text/xml");
+        }
+      } else {
+        const text = await response.text();
+        return new DOMParser().parseFromString(text, "text/xml");
+      }
+    } catch (error) {
+      console.log(`Proxy ${proxy} failed:`, error.message);
+      continue;
+    }
+  }
+  
+  // Final fallback - try to parse as JSON if possible
+  try {
+    const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(url)}`);
+    const jsonData = await response.json();
+    if (jsonData.items) {
+      // Create a mock XML document
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString('<rss><channel></channel></rss>', 'text/xml');
+      const channel = xmlDoc.querySelector('channel');
+      
+      jsonData.items.forEach(item => {
+        const itemElement = xmlDoc.createElement('item');
+        itemElement.innerHTML = `
+          <title>${item.title || ''}</title>
+          <link>${item.link || ''}</link>
+          <pubDate>${item.pubDate || new Date().toUTCString()}</pubDate>
+        `;
+        channel.appendChild(itemElement);
+      });
+      
+      return xmlDoc;
+    }
+  } catch (finalError) {
+    console.error('All methods failed:', finalError);
+    throw new Error('All proxies and fallbacks failed for ' + url);
+  }
+}
+function processFeedData(data, source) {
+  try {
+    const items = data.querySelectorAll("item");
+    const headlines = Array.from(items).map(item => ({
+      title: item.querySelector("title")?.textContent || "No title",
+      link: item.querySelector("link")?.textContent || "#",
+      pubDate: parsePubDate(item.querySelector("pubDate")?.textContent || ""),
+      source: source
+    }));
+    
+    if (headlines.length) {
+      processTickerHeadlines(headlines, source);
+    } else {
+      console.warn('No headlines found in feed, using fallback');
+      useFallbackHeadlines(source);
+    }
+  } catch (error) {
+    console.error('Error processing feed:', error);
+    useFallbackHeadlines(source);
+  }
+}
+
+function useFallbackHeadlines(source) {
+  const fallbackHeadlines = [
+    {
+      title: `Latest news from ${source}`,
+      link: '#',
+      pubDate: new Date(),
+      source: source
+    },
+    {
+      title: `Check back soon for updates from ${source}`,
+      link: '#',
+      pubDate: new Date(),
+      source: source
+    }
+  ];
+  processTickerHeadlines(fallbackHeadlines, source);
+}
+function processTickerHeadlines(items, source) {
+  // Add these headlines to our global collection
+  const newHeadlines = items.slice(0, 10).reverse().map(item => ({
+    ...item,
+    source: source
+  }));
+  
+  state.allHeadlines = [...state.allHeadlines, ...newHeadlines];
+  
+  // Update ticker with all available headlines
+  updateTickerWithAllHeadlines();
+}
+    // Font size controls
+    function adjustFontSize(change) {
+      const newSize = state.currentFontSize + change;
+      
+      state.currentFontSize = Math.max(
+        config.minFontSize,
+        Math.min(config.maxFontSize, newSize)
+      );
+      
+      state.currentFontPercentage = Math.round((state.currentFontSize / config.baseFontSize) * 100);
+      updateFontSize();
+      localStorage.setItem('fontSize', state.currentFontSize.toString());
+    }
+
+    function resetFontSize() {
+      state.currentFontSize = config.baseFontSize;
+      state.currentFontPercentage = 100;
+      updateFontSize();
+      localStorage.setItem('fontSize', state.currentFontSize.toString());
+    }
+
+    function updateFontSize() {
+      // Update CSS variables
+      document.documentElement.style.setProperty('--base-font-size', `${state.currentFontSize}rem`);
+      document.documentElement.style.setProperty('--headline-font-size', `${state.currentFontSize * 1.1}rem`);
+      document.documentElement.style.setProperty('--article-font-size', `${state.currentFontSize}rem`);
+      
+      // Update the font size displays
+      elements.fontSizeDisplay.textContent = `${state.currentFontPercentage}%`;
+      elements.modalFontSizeDisplay.textContent = `${state.currentFontPercentage}%`;
+      
+      // Force redraw for Android TV browsers
+      document.body.style.zoom = '1';
+      setTimeout(() => {
+        document.body.style.zoom = '';
+      }, 10);
+    }
+    // Ticker functionality
+function initTicker() {
+  updateTickerWithAllHeadlines();
+  setInterval(updateTickerWithAllHeadlines, config.tickerUpdateInterval);
+  animateTicker();
+}
+
+function updateTickerWithAllHeadlines() {
+  if (state.allHeadlines.length === 0) return;
+  
+  const tickerContent = document.querySelector('.ticker-content');
+  if (!tickerContent) return;
+  
+  // Sort headlines by publication date (newest first)
+  const sortedHeadlines = [...state.allHeadlines].sort((a, b) => {
+    const dateA = a.pubDate ? new Date(a.pubDate).getTime() : 0;
+    const dateB = b.pubDate ? new Date(b.pubDate).getTime() : 0;
+    return dateB - dateA;
+  });
+  
+  // Take the latest 5 headlines
+  const latestHeadlines = sortedHeadlines.slice(0, 5);
+  
+  tickerContent.innerHTML = '';
+  
+  latestHeadlines.forEach(headline => {
+    const tickerItem = document.createElement('div');
+    tickerItem.className = 'ticker-item';
+    
+    const sourceSpan = document.createElement('span');
+    sourceSpan.className = 'ticker-source';
+    sourceSpan.textContent = `[${headline.source}]`;
+    
+    const textSpan = document.createElement('span');
+    
+    // Check if the news is breaking (published in last hour)
+    const isBreaking = headline.pubDate && 
+      (Date.now() - new Date(headline.pubDate).getTime()) < 3600000; // 1 hour in ms
+    
+    if (isBreaking) {
+      const breakingSpan = document.createElement('span');
+      breakingSpan.className = 'breaking-badge';
+      breakingSpan.textContent = 'Breaking';
+      breakingSpan.style.marginRight = '0.5rem';
+      textSpan.appendChild(breakingSpan);
+    }
+    
+    textSpan.appendChild(document.createTextNode(headline.title));
+    tickerItem.appendChild(sourceSpan);
+    tickerItem.appendChild(textSpan);
+    tickerContent.appendChild(tickerItem);
+  });
+  
+  // Reset animation
+  tickerContent.style.left = '100%';
+  animateTicker();
+}
+function animateTicker() {
+  const tickerContent = document.querySelector('.ticker-content');
+  if (!tickerContent) return;
+  
+  const tickerWidth = tickerContent.scrollWidth;
+  const containerWidth = document.querySelector('.news-ticker').offsetWidth;
+  const duration = (tickerWidth + containerWidth) / config.tickerSpeed * 1000;
+  
+  // Reset position to right side
+  tickerContent.style.transition = 'none';
+  tickerContent.style.transform = `translateX(${containerWidth}px)`;
+  
+  // Force reflow to ensure reset is applied
+  tickerContent.offsetHeight;
+  
+  // Apply animation
+  tickerContent.style.transition = `transform ${duration}ms linear`;
+  tickerContent.style.transform = `translateX(-${tickerWidth}px)`;
+  
+  // Restart animation when it completes
+  const restartAnimation = () => {
+    tickerContent.removeEventListener('transitionend', restartAnimation);
+    requestAnimationFrame(() => {
+      animateTicker();
+    });
+  };
+  
+  tickerContent.addEventListener('transitionend', restartAnimation);
+}
+    // Cycle through news sources
+function cycleNewsSource() {
+  const sources = Object.keys(config.rssFeeds);
+  const currentIndex = sources.indexOf(state.currentSource);
+  const nextIndex = (currentIndex + 1) % sources.length;
+  state.currentSource = sources[nextIndex];
+  
+  updateSourceButton();
+  localStorage.setItem('currentSource', state.currentSource);
+  loadHeadlines();
+}
+
+    function updateSourceButton() {
+      elements.sourceBtn.textContent = state.currentSource;
+    }
+
+    // Dark mode toggle
+    function toggleDarkMode() {
+      state.darkMode = !state.darkMode;
+      document.body.classList.toggle('light-mode', !state.darkMode);
+      localStorage.setItem('darkMode', state.darkMode);
+      updateModeToggle();
+    }
+
+    function updateModeToggle() {
+      elements.modeToggle.textContent = state.darkMode ? '☀️ Day Mode' : '🌙 Night Mode';
+    }
+
+    // Clock functionality
+    function startClock() {
+      updateClock();
+      state.clockTimer = setInterval(updateClock, 1000);
+    }
+
+function updateClock() {
+  const now = new Date();
+  
+  // Format time in British style (3pm instead of 15:00)
+  let hours = now.getHours();
+  const ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // Convert 0 to 12
+  let minutes = now.getMinutes();
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  
+  elements.clock.textContent = `${hours}:${minutes}${ampm}`;
+  
+  // Format date in British style (day/month/year)
+  const day = now.getDate();
+  const month = now.getMonth() + 1;
+  const year = now.getFullYear();
+  
+  elements.date.textContent = `${day < 10 ? '0' + day : day}/${month < 10 ? '0' + month : month}/${year}`;
+}
+
+async function loadHeadlines() {
+  // Default to BBC TOP if current source is invalid
+  if (!config.rssFeeds[state.currentSource]) {
+    state.currentSource = 'BBC TOP';
+  }
+  
+  const feedConfig = config.rssFeeds[state.currentSource];
+  
+  // Handle our special "On This Day" source
+  if (feedConfig.type === 'onThisDay') {
+    const events = await fetchOnThisDayEvents();
+    processHeadlines(events);
+    return;
+  }
+  if (!feedConfig) {
+    console.error('No RSS feed config found for source:', state.currentSource);
+    return;
+  }
+  
+  // Clear existing headlines and show loading message
+  state.headlines = [];
+  elements.englishContent.innerHTML = '<div class="headline">Loading headlines...</div>';
+  elements.japaneseContent.innerHTML = '<div class="headline">ヘッドラインを読み込み中...</div>';
+  
+  // Set timeout for feed loading
+  const loadTimeout = setTimeout(() => {
+    if (state.headlines.length === 0) {
+      elements.englishContent.innerHTML = '<div class="headline">News feed loading slowly...</div>';
+      elements.japaneseContent.innerHTML = '<div class="headline">ニュースフィードの読み込みに時間がかかっています</div>';
+    }
+  }, 5000);
+  
+  // Clear timeout when headlines load
+  if (feedConfig.type === 'onThisDay') {
+    const events = await fetchOnThisDayEvents();
+    clearTimeout(loadTimeout);
+    processHeadlines(events);
+    return;
+  }
+  
+  if (feedConfig.type === 'direct') {
+    // Use direct parsing for problematic feeds
+    fetchDirectFeed(feedConfig.directUrl || feedConfig.url);
+  } else {
+    // Use API for other feeds
+    fetchApiFeed(feedConfig.url);
+  }
+  
+  // Don't update ticker here - it will be updated independently
+}
+
+    function fetchApiFeed(url) {
+      const cacheKey = `rss_${url}`;
+      const cachedData = state.rssCache[cacheKey];
+      
+      // Return cached data if it exists and isn't expired
+      if (cachedData && cachedData.expiry > Date.now()) {
+        processHeadlines(cachedData.items);
+        return;
+      }
+
+      const proxyUrl = config.rssParserAPI + encodeURIComponent(url);
+      
+      fetch(proxyUrl)
+        .then(response => {
+          if (!response.ok) throw new Error('RSS fetch failed');
+          return response.json();
+        })
+        .then(data => {
+          if (data.items && data.items.length) {
+            // Cache the response
+            state.rssCache[cacheKey] = {
+              items: data.items,
+              expiry: Date.now() + config.rssCacheTTL
+            };
+            processHeadlines(data.items);
+          } else {
+            throw new Error('No headlines found');
+          }
+        })
+        .catch(error => {
+          console.error('Failed to load headlines via API:', error);
+          // Try direct parsing as fallback
+          fetchDirectFeed(url);
+        });
+    }
+async function fetchOnThisDayEvents() {
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const day = today.getDate();
+  
+  try {
+    const response = await fetch(`https://byabbe.se/on-this-day/${month}/${day}/events.json`);
+    if (!response.ok) throw new Error('Failed to fetch historical events');
+    const data = await response.json();
+    
+    // Sort events by year (oldest first) and then reverse to get newest first
+    const sortedEvents = data.events.sort((a, b) => a.year - b.year).reverse();
+    
+    // Format the events to match our headline structure
+    return sortedEvents.map(event => ({
+      title: `${event.year}: ${event.description}`,
+      description: event.description,
+      content: `In ${event.year}, ${event.description}. ${event.wikipedia?.length ? 'Read more on Wikipedia.' : ''}`,
+      link: event.wikipedia?.[0]?.wikipedia || '#',
+      pubDate: new Date(`${event.year}-${month}-${day}`)
+    }));
+  } catch (error) {
+    console.error('Error fetching historical events:', error);
+    return [{
+      title: "Failed to load historical events",
+      description: "Check your connection and try again",
+      content: "We couldn't load today's historical events. Please try again later.",
+      link: '#',
+      pubDate: new Date()
+    }];
+  }
+}
+async function fetchWikipediaArticle(title) {
+  try {
+    // First try to get the mobile version with CORS proxy
+    const mobileUrl = `https://en.wikipedia.org/api/rest_v1/page/mobile-sections/${encodeURIComponent(title)}`;
+    const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(mobileUrl)}`;
+    const response = await fetch(proxyUrl);
+    
+    if (!response.ok) throw new Error('Wikipedia API failed');
+    
+    const data = await response.json();
+    if (!data.contents) throw new Error('No contents in response');
+    
+    // Parse the JSON contents
+    const mobileData = JSON.parse(data.contents);
+    
+    // Extract the lead section and remaining sections
+    let articleText = '';
+    if (data.lead && data.lead.sections && data.lead.sections.length > 0) {
+      articleText = data.lead.sections[0].text;
+    }
+    
+    // Add remaining sections
+    if (data.remaining && data.remaining.sections && data.remaining.sections.length > 0) {
+      data.remaining.sections.forEach(section => {
+        articleText += '\n\n' + section.text;
+      });
+    }
+    
+    // Clean up the HTML tags
+    articleText = articleText.replace(/<[^>]*>/g, '');
+    
+    return {
+      title: title,
+      content: articleText,
+      link: `https://en.wikipedia.org/wiki/${encodeURIComponent(title)}`
+    };
+  } catch (error) {
+    console.error('Failed to fetch Wikipedia article:', error);
+    // Fallback to simpler API
+    try {
+      const simpleUrl = `https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=true&explaintext=true&format=json&titles=${encodeURIComponent(title)}&origin=*`;
+      const response = await fetch(simpleUrl);
+      const data = await response.json();
+      
+      const pages = data.query.pages;
+      const pageId = Object.keys(pages)[0];
+      const page = pages[pageId];
+      
+      return {
+        title: page.title,
+        content: page.extract || 'No content available',
+        link: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.title)}`
+      };
+    } catch (fallbackError) {
+      console.error('Fallback Wikipedia API failed:', fallbackError);
+      return {
+        title: title,
+        content: 'Failed to load Wikipedia article',
+        link: `https://en.wikipedia.org/wiki/${encodeURIComponent(title)}`
+      };
+    }
+  }
+}
+function fetchDirectFeed(url) {
+  const feedConfig = config.rssFeeds[state.currentSource];
+  
+  if (feedConfig?.type === 'multiProxy') {
+    fetchWithMultiProxy(url, state.currentSource, feedConfig.proxies)
+      .then(data => {
+        const items = data.querySelectorAll("item");
+        const headlines = Array.from(items).map(item => ({
+          title: item.querySelector("title")?.textContent || "No title",
+          description: item.querySelector("description")?.textContent || "",
+          content: item.querySelector("content\\:encoded")?.textContent || 
+                   item.querySelector("description")?.textContent || "",
+          link: item.querySelector("link")?.textContent || "#",
+          pubDate: parsePubDate(item.querySelector("pubDate")?.textContent || "")
+        }));
+        
+        if (headlines.length) {
+          processHeadlines(headlines);
+        } else {
+          throw new Error('No headlines found in feed');
+        }
+      })
+      .catch(error => {
+        console.error('All proxies failed, trying direct:', error);
+        fetchDirectFeedFallback(url);
+      });
+  } else {
+    fetchDirectFeedFallback(url);
+  }
+}
+
+function fetchDirectFeedFallback(url) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) throw new Error('Direct RSS fetch failed');
+      return response.text();
+    })
+    .then(str => new DOMParser().parseFromString(str, "text/xml"))
+    .then(data => {
+      const items = data.querySelectorAll("item");
+      const headlines = Array.from(items).map(item => ({
+        title: item.querySelector("title")?.textContent || "No title",
+        description: item.querySelector("description")?.textContent || "",
+        content: item.querySelector("content\\:encoded")?.textContent || 
+                 item.querySelector("description")?.textContent || "",
+        link: item.querySelector("link")?.textContent || "#",
+        pubDate: parsePubDate(item.querySelector("pubDate")?.textContent || "")
+      }));
+      
+      if (headlines.length) {
+        processHeadlines(headlines);
+      } else {
+        throw new Error('No headlines found in direct feed');
+      }
+    })
+    .catch(error => {
+      console.error('Failed to load headlines directly:', error);
+      elements.englishContent.innerHTML = '<div class="headline">Failed to load headlines. Trying again...</div>';
+      elements.japaneseContent.innerHTML = '<div class="headline">ヘッドラインの読み込みに失敗しました。再試行中...</div>';
+      setTimeout(loadHeadlines, 5000);
+    });
+}
+    
+    function parsePubDate(dateStr) {
+      if (!dateStr) return null;
+      try {
+        const date = new Date(dateStr);
+        return isNaN(date.getTime()) ? null : date;
+      } catch (e) {
+        return null;
+      }
+    }
+
+// Global variable to store all headlines from all sources
+let allHeadlines = [];
+
+function processHeadlines(items) {
+  // Sort items by date (newest first) if they have pubDate
+  const sortedItems = items.slice(0, config.maxHeadlines).sort((a, b) => {
+    const dateA = a.pubDate ? new Date(a.pubDate).getTime() : 0;
+    const dateB = b.pubDate ? new Date(b.pubDate).getTime() : 0;
+    return dateB - dateA; // Sort newest first
+  });
+  
+  state.headlines = sortedItems;
+  state.currentIndex = 0;
+  updateHeadlineCounter();
+  displayCurrentHeadline();
+  startRotation();
+
+  // Add these headlines to our global collection
+  state.allHeadlines = state.allHeadlines.concat(sortedItems.map(h => ({
+    ...h,
+    source: state.currentSource
+  })));
+
+  // REMOVED the ticker update from here - it will be handled by the independent ticker interval
+}
+
+function updateTickerWithAllHeadlines() {
+  if (state.allHeadlines.length === 0) return;
+  
+  const tickerContent = document.querySelector('.ticker-content');
+  if (!tickerContent) return;
+  
+  // Sort all headlines by date (newest first)
+  const sortedHeadlines = [...state.allHeadlines].sort((a, b) => {
+    const dateA = a.pubDate ? new Date(a.pubDate).getTime() : 0;
+    const dateB = b.pubDate ? new Date(b.pubDate).getTime() : 0;
+    return dateB - dateA; // Sort newest first
+  });
+  
+  // Take the most recent 100 headlines
+  const recentHeadlines = sortedHeadlines.slice(0, 100);
+  
+  recentHeadlines.forEach(headline => {
+    const tickerItem = document.createElement('div');
+    tickerItem.className = 'ticker-item';
+    
+    const sourceSpan = document.createElement('span');
+    sourceSpan.className = 'ticker-source';
+    sourceSpan.textContent = `[${headline.source}]`;
+    
+    const textSpan = document.createElement('span');
+    textSpan.textContent = headline.title;
+    
+    tickerItem.appendChild(sourceSpan);
+    tickerItem.appendChild(textSpan);
+    tickerContent.appendChild(tickerItem);
+  });
+  
+  // Reset animation
+  tickerContent.style.left = '100%';
+  animateTicker();
+}
+
+// Replace the existing displayCurrentHeadline function with this improved version
+function displayCurrentHeadline() {
+  if (state.headlines.length === 0) return;
+  
+  updateHeadlineCounter();
+  
+  const headline = state.headlines[state.currentIndex];
+  const displayText = headline.title || "No title available";
+  
+  // Create HTML for the headline with publication date
+  let englishHTML = `<div class="headline">${displayText}`;
+  
+  if (headline.pubDate) {
+    const threeYearsAgo = new Date();
+    threeYearsAgo.setFullYear(threeYearsAgo.getFullYear() - 3);
+    
+    if (headline.pubDate > threeYearsAgo) {
+      englishHTML += `<span class="breaking-badge">Breaking</span>`;
+    }
+    
+    const formattedDate = formatDate(headline.pubDate);
+    englishHTML += `<div class="pub-date">${formattedDate}</div>`;
+  }
+  
+  englishHTML += `</div>`;
+  
+  elements.englishContent.innerHTML = englishHTML;
+  elements.englishContent.classList.add('fade-in');
+  
+  // Always show simple translation immediately
+  const simpleTrans = simpleTranslate(displayText);
+  elements.japaneseContent.innerHTML = `<div class="headline">${simpleTrans}</div>`;
+  if (headline.pubDate) {
+    elements.japaneseContent.innerHTML += `<div class="pub-date">${formatDate(headline.pubDate, true)}</div>`;
+  }
+  
+  // Only attempt full translation if the simple one isn't good enough
+  if (simpleTrans.includes('簡易翻訳') || simpleTrans.includes('翻訳不可')) {
+    elements.japaneseContent.classList.add('dimmed');
+    
+    // Start lazy loading the full translation
+    lazyLoadTranslation(displayText, headline);
+  } else {
+    // If simple translation was good, use that
+    cacheTranslation(displayText, simpleTrans);
+  }
+  
+  setTimeout(() => {
+    elements.englishContent.classList.remove('fade-in');
+    elements.japaneseContent.classList.remove('fade-in');
+    elements.japaneseContent.classList.remove('dimmed');
+  }, 500);
+}
+
+// New function for lazy loading translations
+// Replace the existing lazyLoadTranslation function with this improved version
+function lazyLoadTranslation(text, headline) {
+  // Only translate if the headline is still visible after a delay
+  setTimeout(() => {
+    // Check if we're still showing the same headline
+    const currentHeadline = state.headlines[state.currentIndex];
+    if (!currentHeadline || currentHeadline.title !== text) return;
+    
+    // Check if we've hit API limits recently
+    const lastFailTime = localStorage.getItem('lastTranslationFail');
+    if (lastFailTime && Date.now() - parseInt(lastFailTime) < 3600000) { // 1 hour
+      console.log('Skipping translation due to recent API limits');
+      return;
+    }
+    
+    translateText(text)
+      .then(translation => {
+        // Double-check we're still on the same headline
+        const checkHeadline = state.headlines[state.currentIndex];
+        if (!checkHeadline || checkHeadline.title !== text) return;
+        
+        // Only update if the translation is better than what we have
+        const currentTrans = elements.japaneseContent.querySelector('.headline').textContent;
+        if (translation && !translation.includes('翻訳不可') && 
+            (currentTrans.includes('簡易翻訳') || currentTrans.includes('翻訳不可'))) {
+          elements.japaneseContent.innerHTML = `<div class="headline">${translation}</div>`;
+          if (headline.pubDate) {
+            elements.japaneseContent.innerHTML += `<div class="pub-date">${formatDate(headline.pubDate, true)}</div>`;
+          }
+          elements.japaneseContent.classList.add('fade-in');
+          cacheTranslation(text, translation);
+          
+          // Remove fade-in after animation completes
+          setTimeout(() => {
+            elements.japaneseContent.classList.remove('fade-in');
+          }, 500);
+        }
+      })
+      .catch(error => {
+        console.error('Translation failed:', error);
+        // If it's an API limit error, remember this
+        if (error.message.includes('API limit') || error.message.includes('429')) {
+          localStorage.setItem('lastTranslationFail', Date.now().toString());
+        }
+        // Keep the simple translation we already showed
+      });
+  }, 2000); // 2 second delay before attempting translation
+}
+    
+function formatDate(date, inJapanese = false) {
+  if (!date) return '';
+  
+  // Special formatting for historical events (shows year and era)
+  if (state.currentSource === 'On This Day') {
+    const year = date.getFullYear();
+    // Add era information for Japanese display
+    if (inJapanese) {
+      if (year >= 2019) return `${year}年 (令和${year >= 2019 ? year - 2018 : ''}年)`;
+      if (year >= 1989) return `${year}年 (平成${year - 1988}年)`;
+      if (year >= 1926) return `${year}年 (昭和${year - 1925}年)`;
+    }
+    return year.toString();
+  }
+      
+      const options = {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      };
+      
+      if (inJapanese) {
+        options.locale = 'ja-JP';
+        options.timeZone = 'Asia/Tokyo';
+        return date.toLocaleString('ja-JP', options);
+      } else {
+        return date.toLocaleString('en-US', options);
+      }
+    }
+
+    // Simple fallback translation for demo purposes
+// Replace the existing simpleTranslate function with this improved version
+function simpleTranslate(text) {
+  const mockTranslations = {
+    // Common news terms
+    "COVID": "コロナウイルス",
+    "election": "選挙",
+    "news": "ニュース",
+    "update": "更新",
+    "breaking": "速報",
+    "war": "戦争",
+    "peace": "平和",
+    "economy": "経済",
+    "market": "市場",
+    "report": "報告",
+    "government": "政府",
+    "president": "大統領",
+    "prime minister": "首相",
+    
+    // Countries
+    "Japan": "日本",
+    "China": "中国",
+    "U.S.": "アメリカ",
+    "United States": "アメリカ合衆国",
+    "UK": "イギリス",
+    "Russia": "ロシア",
+    "South Korea": "韓国",
+    
+    // News sources
+    "Guardian": "ガーディアン",
+    "BBC": "英国放送協会",
+    "Reuters": "ロイター通信",
+    "Associated Press": "AP通信",
+    
+    // Common verbs
+    "says": "述べています",
+    "announces": "発表しました",
+    "reports": "報道しています",
+    "confirms": "確認しました",
+    "denies": "否定しました",
+    "warns": "警告しました",
+    
+    // Time references
+    "today": "本日",
+    "yesterday": "昨日",
+    "tomorrow": "明日",
+    "this week": "今週",
+    "last week": "先週",
+    "next week": "来週",
+    
+    // Common phrases
+    "according to": "によると",
+    "in response to": "への対応として",
+    "due to": "のため",
+    "as a result": "結果として"
+  };
+  
+  // Replace known phrases first (longer matches take priority)
+  let result = text;
+  const sortedKeys = Object.keys(mockTranslations)
+    .sort((a, b) => b.length - a.length);
+    
+  sortedKeys.forEach(phrase => {
+    const regex = new RegExp(phrase, 'gi');
+    result = result.replace(regex, mockTranslations[phrase]);
+  });
+  
+  // If we made any translations, mark it as simple
+  if (result !== text) {
+    return result + " (簡易翻訳)";
+  }
+  
+  // If no translations, return a generic message
+  return "翻訳不可 - 完全な翻訳は記事内で利用可能";
+}
+
+    function startRotation() {
+      if (state.rotationTimer) clearInterval(state.rotationTimer);
+      if (!state.isPaused) {
+        state.rotationTimer = setInterval(showNextHeadline, config.rotationInterval);
+      }
+    }
+
+function showNextHeadline() {
+  if (state.headlines.length === 0) return;
+  
+  // Check if we've reached the end of current headlines
+  if (state.currentIndex >= state.headlines.length - 1) {
+    // Switch to next source
+    cycleNewsSource();
+    return;
+  }
+  
+  state.currentIndex = state.currentIndex + 1;
+  updateHeadlineCounter();
+  displayCurrentHeadline();
+}
+
+function updateHeadlineCounter() {
+  elements.headlineCounter.textContent = `${state.currentIndex + 1}/${state.headlines.length} (${state.currentSource})`;
+}
+    
+function showPrevHeadline() {
+  if (state.headlines.length === 0) return;
+  
+  state.currentIndex = (state.currentIndex - 1 + state.headlines.length) % state.headlines.length;
+  elements.headlineCounter.textContent = `${state.currentIndex + 1}/${state.headlines.length}`;
+  displayCurrentHeadline();
+}
+
+    function togglePause() {
+      state.isPaused = !state.isPaused;
+      elements.pauseBtn.textContent = state.isPaused ? '▶ Play' : '⏸ Pause';
+      
+      if (state.isPaused) {
+        clearInterval(state.rotationTimer);
+      } else {
+        startRotation();
+      }
+    }
+
+    // Translation functionality using MyMemory API
+// Replace the existing translateText function with this new version
+async function translateText(text) {
+  // Skip empty or very short text
+  if (!text || text.length < 3) return '翻訳不可';
+  
+  // First check cache
+  const cached = getCachedTranslation(text);
+  if (cached) return cached;
+  
+  try {
+    // Limit text length to avoid API errors
+    const textToTranslate = text.length > 500 ? text.substring(0, 500) : text;
+    
+    const response = await fetch(`${config.translationAPI}?q=${encodeURIComponent(textToTranslate)}&langpair=en|ja`);
+    
+    if (!response.ok) {
+      throw new Error(`API responded with ${response.status}`);
+    }
+    
+    const data = await response.json();
+    
+    if (data.responseStatus !== 200 || !data.responseData) {
+      throw new Error('Translation API error: ' + (data.responseDetails || 'Unknown error'));
+    }
+    
+    let translation = data.responseData.translatedText;
+    
+    // Clean up the translation if it contains mixed languages
+    if (translation) {
+      // Remove any remaining English text in brackets
+      translation = translation.replace(/\([^)]*\)/g, '');
+      // Remove any remaining English words (3+ letters)
+      translation = translation.replace(/\b[a-zA-Z]{3,}\b/g, '');
+      // Trim whitespace
+      translation = translation.trim();
+    }
+    
+    return translation || fallbackTranslate(text);
+  } catch (error) {
+    console.error('Translation API error:', error);
+    // Fall back to our improved simple translation
+    return fallbackTranslate(text);
+  }
+}
+
+// Add this new fallbackTranslate function after the translateText function
+function fallbackTranslate(text) {
+  // First try to clean up the text for better results
+  const cleanText = text
+    .replace(/['"`]/g, '') // Remove quotes
+    .replace(/\(.*?\)/g, '') // Remove parentheses content
+    .replace(/\[.*?\]/g, '') // Remove bracket content
+    .replace(/\bhttps?:\/\/\S+/gi, '') // Remove URLs
+    .replace(/\b\d+\b/g, '') // Remove standalone numbers
+    .replace(/\s+/g, ' ') // Collapse whitespace
+    .trim();
+    
+  // If the cleaned text is very different, use that instead
+  if (cleanText.length > 5 && cleanText.length < text.length * 0.8) {
+    return simpleTranslate(cleanText);
+  }
+  
+  return simpleTranslate(text);
+}
+
+    function cacheTranslation(original, translation) {
+      if (!original || !translation) return;
+      
+      state.translationCache[original] = {
+        translation: translation,
+        expiry: Date.now() + config.translationCacheTTL
+      };
+      
+      // Save to localStorage
+      try {
+        localStorage.setItem('translationCache', JSON.stringify(state.translationCache));
+      } catch (e) {
+        console.error('Failed to save translation cache', e);
+      }
+    }
+
+    function getCachedTranslation(original) {
+      if (!original) return null;
+      
+      const entry = state.translationCache[original];
+      if (entry && entry.expiry > Date.now()) {
+        return entry.translation;
+      }
+      return null;
+    }
+
+    // Article Modal functionality
+function openCurrentArticle() {
+  if (state.headlines.length === 0) return;
+  
+  const headline = state.headlines[state.currentIndex];
+  
+  // Check if this is a Wikipedia link
+  const isWikipediaLink = headline.link && headline.link.includes('wikipedia.org/wiki/');
+  
+  if (isWikipediaLink) {
+    // Extract the article title from the URL
+    const title = decodeURIComponent(headline.link.split('/wiki/')[1].split('#')[0].replace(/_/g, ' '));
+    
+    // Show loading message
+    state.modalState.isOpen = true;
+    state.modalState.currentArticle = headline;
+    state.modalState.currentSentenceIndex = 0;
+    elements.articleModal.classList.add('active');
+    elements.articleSentence.textContent = `Loading Wikipedia: ${title}...`;
+    elements.articleTranslation.textContent = '記事を読み込み中...';
+    elements.articleReadMore.innerHTML = '';
+    elements.closeModalBtn.focus();
+    
+    // Fetch the Wikipedia article
+    fetchWikipediaArticle(title)
+      .then(article => {
+        state.modalState.currentArticle = {
+          ...headline,
+          title: article.title,
+          content: article.content,
+          link: article.link
+        };
+        
+        // Extract sentences from the content
+        state.modalState.sentences = extractSentences(article.content);
+        state.modalState.translations = Array(state.modalState.sentences.length).fill(null);
+        
+        // Display the first sentence
+        displayCurrentSentence();
+      })
+      .catch(error => {
+        console.error('Failed to load Wikipedia article:', error);
+        elements.articleSentence.textContent = `Failed to load Wikipedia article: ${title}`;
+        elements.articleTranslation.textContent = 'Wikipedia記事の読み込みに失敗しました';
+      });
+  } else {
+    // Regular article processing
+    state.modalState.currentArticle = headline;
+    state.modalState.currentSentenceIndex = 0;
+    state.modalState.isOpen = true;
+    
+    // Extract sentences from content or description
+    const content = headline.content || headline.description || headline.title;
+    state.modalState.sentences = extractSentences(content);
+    state.modalState.translations = Array(state.modalState.sentences.length).fill(null);
+    
+    elements.articleModal.classList.add('active');
+    elements.closeModalBtn.focus();
+    
+    // Display the first sentence
+    displayCurrentSentence();
+  }
+}
+function extractSentences(text) {
+  // Simple sentence splitting that handles common cases
+  if (!text) return [];
+  
+  // First clean any HTML tags and special characters
+  const cleanText = text.replace(/<[^>]*>/g, ' ')
+                        .replace(/\[\d+\]/g, '') // Remove Wikipedia citations [1]
+                        .replace(/\s+/g, ' ')
+                        .trim();
+  
+  // Split on sentence boundaries but keep common abbreviations intact
+  const sentences = cleanText.split(/(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=[.!?])\s+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 0);
+  
+  // If we didn't get good splits, try splitting on newlines
+  if (sentences.length <= 1) {
+    return cleanText.split('\n')
+      .map(s => s.trim())
+      .filter(s => s.length > 0);
+  }
+  
+  return sentences.length > 0 ? sentences : [cleanText];
+}
+
+function displayCurrentSentence() {
+  if (!state.modalState.isOpen || !state.modalState.sentences) return;
+  
+  const currentIndex = state.modalState.currentSentenceIndex;
+  const currentSentence = state.modalState.sentences[currentIndex];
+  const article = state.modalState.currentArticle;
+  
+  // Display the current sentence (limit length for very long sentences)
+  const displaySentence = currentSentence.length > 500 
+    ? currentSentence.substring(0, 500) + '...' 
+    : currentSentence;
+  elements.articleSentence.textContent = displaySentence;
+  
+  // Update progress indicator
+  const sourceName = article.link && article.link.includes('wikipedia.org') 
+    ? 'Wikipedia' 
+    : state.currentSource;
+  elements.articleProgress.textContent = `${sourceName} • Sentence ${currentIndex + 1}/${state.modalState.sentences.length}`;
+  
+  // Show "Read more" link only on last sentence
+  if (currentIndex === state.modalState.sentences.length - 1 && article.link) {
+    const linkText = article.link.includes('wikipedia.org') 
+      ? 'Read full Wikipedia article →' 
+      : 'Read full article →';
+    elements.articleReadMore.innerHTML = `<a href="${article.link}" target="_blank">${linkText}</a>`;
+  } else {
+    elements.articleReadMore.innerHTML = '';
+  }
+  
+  // Check if we have a cached translation
+  const cachedTranslation = getCachedTranslation(currentSentence);
+  if (cachedTranslation) {
+    elements.articleTranslation.textContent = cachedTranslation;
+    state.modalState.translations[currentIndex] = cachedTranslation;
+  } else {
+    elements.articleTranslation.textContent = '翻訳中...';
+    // Fetch translation if we don't have it
+    translateText(currentSentence)
+      .then(translation => {
+        state.modalState.translations[currentIndex] = translation;
+        // Only update if we're still on the same sentence
+        if (state.modalState.currentSentenceIndex === currentIndex) {
+          elements.articleTranslation.textContent = translation;
+        }
+        cacheTranslation(currentSentence, translation);
+      })
+      .catch(error => {
+        console.error('Sentence translation failed:', error);
+        state.modalState.translations[currentIndex] = simpleTranslate(currentSentence);
+        if (state.modalState.currentSentenceIndex === currentIndex) {
+          elements.articleTranslation.textContent = state.modalState.translations[currentIndex];
+        }
+      });
+  }
+  
+  updateSentenceNavigation();
+}
+
+    function showNextSentence() {
+      if (!state.modalState.sentences) return;
+      
+      const nextIndex = state.modalState.currentSentenceIndex + 1;
+      if (nextIndex < state.modalState.sentences.length) {
+        state.modalState.currentSentenceIndex = nextIndex;
+        displayCurrentSentence();
+      }
+    }
+
+    function showPrevSentence() {
+      if (!state.modalState.sentences) return;
+      
+      const prevIndex = state.modalState.currentSentenceIndex - 1;
+      if (prevIndex >= 0) {
+        state.modalState.currentSentenceIndex = prevIndex;
+        displayCurrentSentence();
+      }
+    }
+
+    function updateSentenceNavigation() {
+      if (!state.modalState.sentences) return;
+      
+      elements.prevSentenceBtn.disabled = state.modalState.currentSentenceIndex === 0;
+      elements.nextSentenceBtn.disabled = state.modalState.currentSentenceIndex >= state.modalState.sentences.length - 1;
+    }
+
+    function closeModal() {
+      state.modalState.isOpen = false;
+      elements.articleModal.classList.remove('active');
+    }
+
+    // Clean up on page unload
+    window.addEventListener('beforeunload', () => {
+      clearInterval(state.clockTimer);
+      clearInterval(state.rotationTimer);
+      clearTimeout(state.weatherTimer);
+    });
+
+    // Initialize the app when DOM is loaded
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
