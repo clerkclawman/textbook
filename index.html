@@ -1492,12 +1492,14 @@ const maxFontSize = 8; // vw/rem units
         qa: {
             'Calendar': 'Calendar Questions',
             'ConversationQA': 'Conversation Practice',
+            'Eiken7Questions': 'Eiken 7 Questions *',
+            'Eiken6Questions': 'Eiken 6 Questions *',
             'Eiken5Questions': 'Eiken 5 Questions',
             'Eiken3Questions': 'Eiken 3 Questions',
-            'Eiken2Questions': 'Eiken 2 Questions',
-            'Eiken1Questions': 'Eiken 1 Questions',
-            'EikenPre2Questions': 'Eiken Pre-2 Questions',
-            'EikenPre1Questions': 'Eiken Pre-1 Questions'
+            'Eiken2Questions': 'Eiken 2 Questions *',
+            'Eiken1Questions': 'Eiken 1 Questions *',
+            'EikenPre2Questions': 'Eiken Pre-2 Questions *',
+            'EikenPre1Questions': 'Eiken Pre-1 Questions *'
         }
     };
 
@@ -3036,17 +3038,23 @@ function loadLessonsData() {
                 };
             }
             // Add placeholders for other Eiken Q&A sections (coming soon)
+            lessonsData['Eiken7Questions'] = {
+                stories: [{ title: 'Eiken 7 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['Eiken6Questions'] = {
+                stories: [{ title: 'Eiken 6 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
             lessonsData['Eiken2Questions'] = {
-                stories: [{ title: 'Eiken 2 Questions', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+                stories: [{ title: 'Eiken 2 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
             };
             lessonsData['Eiken1Questions'] = {
-                stories: [{ title: 'Eiken 1 Questions', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+                stories: [{ title: 'Eiken 1 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
             };
             lessonsData['EikenPre2Questions'] = {
-                stories: [{ title: 'Eiken Pre-2 Questions', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+                stories: [{ title: 'Eiken Pre-2 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
             };
             lessonsData['EikenPre1Questions'] = {
-                stories: [{ title: 'Eiken Pre-1 Questions', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+                stories: [{ title: 'Eiken Pre-1 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
             };
 
             if (Object.keys(lessonsData).length > 0) {
