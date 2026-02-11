@@ -3,37 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatterbox House - Minimal</title>
+    <title>Chatterbox House - Bronze Phonics</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background: white;
             color: black;
             margin: 20px;
+            line-height: 1.6;
         }
         h1 {
             color: #4361ee;
         }
-        select {
+        .story {
+            background: #f0f0f0;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .english {
+            font-size: 24px;
+            color: #2b2d42;
+            margin-bottom: 10px;
+        }
+        .japanese {
             font-size: 18px;
-            padding: 10px;
-            margin: 10px 0;
+            color: #666;
+        }
+        button {
+            background: #4361ee;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>CHATTERBOX HOUSE (MINIMAL VERSION)</h1>
-    <p>Content Type:</p>
-    <select>
-        <option>📚 Vocabulary</option>
-        <option>📖 Stories</option>
-        <option>❓ Q & A</option>
-    </select>
-    <p>Class:</p>
-    <select>
-        <option>Stories - Bronze (Phonics)</option>
-        <option>Stories - Silver (Patterns)</option>
-        <option>Stories - Gold (Intro)</option>
-    </select>
+    <h1>🅱️ Bronze Phonics - Letter A</h1>
+    <div class="story">
+        <p class="english">🍎 Apple.</p>
+        <p class="japanese">リンゴ。</p>
+    </div>
+    <div class="story">
+        <p class="english">🐜 Ant.</p>
+        <p class="japanese">アリ。</p>
+    </div>
+    <div class="story">
+        <p class="english">🐊 Alligator.</p>
+        <p class="japanese">ワニ。</p>
+    </div>
+    <div class="story">
+        <p class="english">🍎 A red apple.</p>
+        <p class="japanese">赤いリンゴ。</p>
+    </div>
+    <div class="story">
+        <p class="english">🐜 A small ant.</p>
+        <p class="japanese">小さなアリ。</p>
+    </div>
+    <p><i>More Bronze content coming soon...</i></p>
+    <button onclick="alert('Full version with all stories will be available after fixing script loading issues.')">Load More Stories</button>
 </body>
 </html>
