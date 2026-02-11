@@ -31,6 +31,23 @@
         --border-radius: 12px;
         --box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         --transition: all 0.3s ease;
+
+        /* Layout */
+        --container-padding: 60px 40px;
+        --container-padding-mobile: 30px 20px;
+
+        /* Typography */
+        --header-size: 2.2rem;
+        --header-size-large: 5rem;
+        --font-size-small: 0.9rem;
+
+        /* Buttons */
+        --btn-padding: 15px 20px;
+        --btn-font-size: 1rem;
+
+        /* Forms */
+        --select-padding: 25px 30px;
+        --select-font-size: 2rem;
     }
 
     * {
@@ -87,7 +104,7 @@
     #mainContainer.container {
         width: 95%;
         max-width: 1200px;
-        padding: 60px 40px;
+        padding: var(--container-padding);
         font-size: 1.2rem;
     }
 
@@ -101,7 +118,7 @@
     /* TYPOGRAPHY */
     /* ============ */
     .header {
-        font-size: 2.2rem;
+        font-size: var(--header-size);
         font-weight: 700;
         color: var(--primary);
         margin-bottom: 30px;
