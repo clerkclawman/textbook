@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatterbox House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
     /* ==================== */
@@ -53,17 +54,22 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
 
     body {
-        background-color: #f8f9fa;
-        color: #2b2d42;
-        margin: 0;
+        background-color: var(--bg);
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100vw;
         padding: 20px;
         font-size: 16px;
+        transition: var(--transition);
         line-height: 1.6;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
 
     body.dark-mode {
@@ -95,22 +101,16 @@
     }
 
     /* Main container specific styles */
-    #mainContainer {
+    #mainContainer.container {
         width: 95%;
         max-width: 1200px;
-        margin: 20px auto;
-        padding: 60px 40px;
-        background-color: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        text-align: center;
+        padding: var(--container-padding);
+        font-size: 1.2rem;
     }
 
-    .header {
+    #mainContainer .header {
         font-size: 4rem;
         margin-bottom: 50px;
-        color: #4361ee;
-        font-weight: 700;
     }
 
 
@@ -1306,61 +1306,37 @@
         </button>
     </div>
 </div>
-    </article>
 
     <!-- Load external scripts -->
-    <!-- DISABLED: <script src="content/adult/adult.js"></script>
- -->
-    <!-- DISABLED: <script src="content/extras/vocabulary.js"></script>
- -->
-    <!-- DISABLED: <script src="content/extras/vocab.js"></script>
- -->
-    <!-- DISABLED: <script src="content/beginners/x.js"></script>
- -->
-    <!-- DISABLED: <script src="content/beginners/c.js"></script>
- -->
-    <!-- DISABLED: <script src="QA5.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken-junior/bronze.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken-junior/silver.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken-junior/gold.js"></script>
- -->
-    <!-- DISABLED:         <script src="content/eiken/eiken7.js"></script>
- -->
-    <!-- DISABLED:         <script src="content/eiken/eiken6.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken/eiken5.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken/eiken3.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken/eiken3-questions.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken/eiken4.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken/eiken1.js"></script>
- -->
-    <!-- DISABLED: <script src="content/conversation/easyquestions.js"></script>
- -->
-    <!-- DISABLED: <script src="content/conversation/gettingtoknow.js"></script>
- -->
-    <!-- DISABLED: <script src="content/conversation/wouldyourather.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken-pre/eiken-pre2.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken-pre/eiken-pre2plus.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken/eiken2.js"></script>
- -->
-    <!-- DISABLED: <script src="content/eiken-pre/eiken-pre1.js"></script>
- -->
+<script src="content/adult/adult.js"></script>
+<script src="content/extras/vocabulary.js"></script>
+<script src="content/extras/vocab.js"></script>
+<script src="content/beginners/x.js"></script>
+<script src="content/beginners/c.js"></script>
+<script src="QA5.js"></script>
+<script src="content/eiken-junior/bronze.js"></script>
+<script src="content/eiken-junior/silver.js"></script>
+<script src="content/eiken-junior/gold.js"></script>
+        <script src="content/eiken/eiken7.js"></script>
+        <script src="content/eiken/eiken6.js"></script>
+<script src="content/eiken/eiken5.js"></script>
+<script src="content/eiken/eiken3.js"></script>
+<script src="content/eiken/eiken3-questions.js"></script>
+<script src="content/eiken/eiken4.js"></script>
+<script src="content/eiken/eiken1.js"></script>
+<script src="content/conversation/easyquestions.js"></script>
+<script src="content/conversation/gettingtoknow.js"></script>
+<script src="content/conversation/wouldyourather.js"></script>
+<script src="content/eiken-pre/eiken-pre2.js"></script>
+<script src="content/eiken-pre/eiken-pre2plus.js"></script>
+<script src="content/eiken/eiken2.js"></script>
+<script src="content/eiken-pre/eiken-pre1.js"></script>
 
 <script>
     // ====================
     // DEBUG & LOGGER SETUP
     // ====================
-    const DEBUG = true; // Temporarily enabled for debugging visibility issues
+    const DEBUG = false; // Set to true for development, false for production
 
     // Conditional logger - only logs when DEBUG is true
     const logger = {
