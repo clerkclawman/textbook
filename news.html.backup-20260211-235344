@@ -730,6 +730,23 @@ fontSizeStep: 0.5, // rem
       type: 'onThisDay',
       // We'll handle this specially in the code
     },
+'Japan Today': {
+  url: 'https://japantoday.com/feed',
+  type: 'multiProxy',
+proxies: [
+  'https://api.codetabs.com/v1/proxy/?quest=',
+  'https://corsproxy.io/?',
+  'https://proxy.cors.sh/',
+  'https://api.allorigins.win/get?url=',
+  'https://cors-anywhere.herokuapp.com/'
+],
+  directUrl: 'https://japantoday.com/feed/atom' // Try Atom feed instead
+},
+'Google News Japan': {
+  url: 'https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US:en',
+  type: 'api'
+},
+'BBC TOP': {
       url: 'http://feeds.bbci.co.uk/news/rss.xml?limit=100',
       type: 'api'
     },
@@ -1027,14 +1044,14 @@ function init() {
   initTicker();
   
   // Check if we should prioritize Japan Today (9am-8pm Japan time)
-  // const now = new Date();
-//   const japanTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
-//   const hours = japanTime.getHours();
-//   
-//   if (hours >= 9 && hours < 20 && state.currentSource !== 'Japan Today') {
-//     state.currentSource = 'Japan Today';
-//     updateSourceButton();
-//   }
+  const now = new Date();
+  const japanTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+  const hours = japanTime.getHours();
+  
+  if (hours >= 9 && hours < 20 && state.currentSource !== 'Japan Today') {
+    state.currentSource = 'Japan Today';
+    updateSourceButton();
+  }
   
   loadAllFeeds();
   updateModeToggle();
@@ -1085,9 +1102,16 @@ function loadSettings() {
   if (savedSource && config.rssFeeds[savedSource]) {
     state.currentSource = savedSource;
   } else {
-    // Removed Japan Today - always use BBC TOP as default
-    state.currentSource = 'BBC TOP';
-}
+    // Set Japan Today as default between 9am-8pm Japan time
+    const now = new Date();
+    const japanTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+    const hours = japanTime.getHours();
+    
+    if (hours >= 9 && hours < 20) { // 9am-8pm JST
+      state.currentSource = 'Japan Today';
+    } else {
+      state.currentSource = 'BBC TOP';
+    }
   }
       
       const savedFontSize = localStorage.getItem('fontSize');
