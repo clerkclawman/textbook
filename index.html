@@ -31,23 +31,6 @@
         --border-radius: 12px;
         --box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         --transition: all 0.3s ease;
-
-        /* Layout */
-        --container-padding: 60px 40px;
-        --container-padding-mobile: 30px 20px;
-
-        /* Typography */
-        --header-size: 2.2rem;
-        --header-size-large: 5rem;
-        --font-size-small: 0.9rem;
-
-        /* Buttons */
-        --btn-padding: 15px 20px;
-        --btn-font-size: 1rem;
-
-        /* Forms */
-        --select-padding: 25px 30px;
-        --select-font-size: 2rem;
     }
 
     * {
@@ -104,7 +87,7 @@
     #mainContainer.container {
         width: 95%;
         max-width: 1200px;
-        padding: var(--container-padding);
+        padding: 60px 40px;
         font-size: 1.2rem;
     }
 
@@ -118,7 +101,7 @@
     /* TYPOGRAPHY */
     /* ============ */
     .header {
-        font-size: var(--header-size);
+        font-size: 2.2rem;
         font-weight: 700;
         color: var(--primary);
         margin-bottom: 30px;
@@ -966,7 +949,6 @@
         flex-direction: row;
         align-items: center;
         padding: 5px;
-        min-height: 80px;
     }
 
     .play-btn {
@@ -976,19 +958,24 @@
         margin-right: 8px;
     }
 
+@media (max-width: 768px) {
     .sentence-display {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Removed !important */
         padding: 5px;
         line-height: 1.4;
         min-height: 60px;
     }
 }
+
+    .sentence-row {
+        min-height: 80px;
+    }
     .font-btn {
         min-width: 40px;
         height: 40px;
         font-size: 1rem;
     }
-
+    
     .reading-footer {
         padding: 10px 5px;
         gap: 5px;
@@ -1139,180 +1126,148 @@
         box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
     }
 }
-
-/* News button - moved from inline styles */
-.news-button {
-    display: inline-block;
-    background-color: #f72585;
-    color: white;
-    padding: 15px 30px;
-    margin: 20px 0;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    animation: pulse 2s infinite;
-}
-
-/* Fruit game result container */
-#fruitResult {
-    font-size: 2rem;
-    min-height: 60px;
-    margin: 20px 0;
-}
-
-/* Exit game button */
-#exitFruitGame {
-    margin-top: 20px;
-    background-color: var(--warning);
-}
-
 </style>
+
 </head>
 <body>
-    <button class="night-mode-toggle" id="nightModeToggle" aria-label="Toggle dark mode" role="switch" aria-checked="false">🌙</button>
+    <button class="night-mode-toggle" id="nightModeToggle">🌙</button>
 
-<main class="container" id="mainContainer">
-    <h1 class="header">CHATTERBOX HOUSE</h1>
+<div class="container" id="mainContainer">
+    <div class="header">CHATTERBOX HOUSE</div>
 
-    <nav aria-label="Main navigation">
-        <a href="news.html" class="news-button">News</a>
-    </nav>
+    <a href="news.html" class="news-button" style="
+        display: inline-block;
+        background-color: #f72585;
+        color: white;
+        padding: 15px 30px;
+        margin: 20px 0;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        animation: pulse 2s infinite;
+    ">News</a>
 
-    <form class="controls-row" role="form" aria-label="Content selection">
+    <div class="controls-row">
         <div class="dropdown">
-            <select id="contentTypeSelector" aria-label="Select content type" required>
-                <option value="">Content Type</option>
-                <option value="vocab">📚 Vocabulary</option>
-                <option value="story">📖 Stories</option>
-                <option value="qa">❓ Q & A</option>
-            </select>
-        </div>
-
-        <div class="dropdown">
-            <select id="classSelector" aria-label="Select class" disabled required>
+            <select id="classSelector">
                 <option value="">Select Class</option>
-
-                <optgroup label="Featured">
-                    <option value="Adult">Adult</option>
+                
+                <optgroup label="Beginner">
+                    <option value="C">C Class (Very Basic)</option>
+                    <option value="X">X Class (Beginner)</option>
                 </optgroup>
-
+                
                 <optgroup label="EIKEN Junior">
                     <option value="Bronze">Bronze (Phonics)</option>
                     <option value="Silver">Silver (Patterns)</option>
                     <option value="Gold">Gold (Intro)</option>
                 </optgroup>
-
-                <optgroup label="EIKEN Foundation">
+                
+                <optgroup label="EIKEN Main">
                     <option value="Eiken7">Eiken 7</option>
                     <option value="Eiken6">Eiken 6</option>
                     <option value="Eiken5">Eiken 5</option>
                     <option value="Eiken4">Eiken 4</option>
                     <option value="Eiken3">Eiken 3</option>
                 </optgroup>
-
-                <optgroup label="EIKEN Advanced">
+                
+                <optgroup label="EIKEN Pre">
                     <option value="EikenPre2">Eiken Pre-2</option>
                     <option value="EikenPre2Plus">Eiken Pre-2 Plus</option>
                     <option value="Eiken2">Eiken 2</option>
                     <option value="EikenPre1">Eiken Pre-1</option>
                     <option value="Eiken1">Eiken 1</option>
                 </optgroup>
-
-                <optgroup label="Vocabulary">
-                    <option value="VocabEiken5">Eiken 5 Vocabulary</option>
-                </optgroup>
-
+                
                 <optgroup label="Other">
                     <option value="Conversation">Conversation Practice</option>
-                    <option value="HighSchool">High School (Legacy)</option>
-                    <option value="C">C Class (Legacy)</option>
-                    <option value="X">X Class (Legacy)</option>
+                    <option value="Adult">Adult</option>
+                    <option value="HighSchool">Vocabulary</option>
                 </optgroup>
             </select>
         </div>
-
+        
         <div class="dropdown">
-            <select id="storySelector" aria-label="Select story" disabled required>
+            <select id="storySelector" disabled>
                 <option value="">Select Story</option>
             </select>
         </div>
-    </form>
-</main>
+    </div>
+</div>
 
     <!-- READING MODE CONTAINER -->
-    <article class="reading-container" id="readingModeContainer" style="display: none;" aria-live="polite">
-<header class="reading-header">
-    <div class="page-counter" aria-live="polite">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></div>
-    <button id="exitReading" class="exit-reading" aria-label="Exit reading mode">✕</button>
-</header>
-
-        <section class="reading-content" aria-label="Content display">
+    <div class="reading-container" id="readingModeContainer" style="display: none;">
+<div class="reading-header">
+    <div class="page-counter">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></div>
+    <button id="exitReading" class="exit-reading">X</button>
+</div>
+        
+        <div class="reading-content">
 <div class="sentence-row">
     <div class="sentence-controls">
-        <button id="playEnglish" class="play-btn" aria-label="Play English audio">▶</button>
-        <div id="englishSentence" class="sentence-display" lang="en" role="status"></div>
+        <button id="playEnglish" class="play-btn">▶</button>
+        <div id="englishSentence" class="sentence-display"></div>
     </div>
 </div>
 
 <div class="sentence-row">
     <div class="sentence-controls">
-        <button id="playJapanese" class="play-btn" aria-label="Play Japanese audio">▶</button>
-        <div id="japaneseSentence" class="sentence-display" lang="ja" role="status"></div>
+        <button id="playJapanese" class="play-btn">▶</button>
+        <div id="japaneseSentence" class="sentence-display"></div>
     </div>
 </div>
-
-<nav class="reading-footer" aria-label="Reading controls">
+        
+<div class="reading-footer">
     <div class="font-controls">
-        <button id="decreaseFont" class="font-btn" aria-label="Decrease font size">A-</button>
-        <button id="increaseFont" class="font-btn" aria-label="Increase font size">A+</button>
+        <button id="decreaseFont" class="font-btn">A-</button>
+        <button id="increaseFont" class="font-btn">A+</button>
     </div>
 
     <div class="nav-group">
-        <button id="prevSentence" class="nav-btn" aria-label="Previous sentence">←</button>
-        <button id="nextSentence" class="nav-btn" aria-label="Next sentence">→</button>
+        <button id="prevSentence" class="nav-btn">←</button>
+        <button id="nextSentence" class="nav-btn">→</button>
     </div>
 
-    <div class="display-toggle" role="group" aria-label="Display mode">
-        <button id="displayEnglish" class="display-btn active" aria-pressed="true" aria-label="Display English only">EN</button>
-        <button id="displayJapanese" class="display-btn" aria-pressed="false" aria-label="Display Japanese only">JP</button>
-        <button id="displayBoth" class="display-btn" aria-pressed="false" aria-label="Display both English and Japanese">BOTH</button>
+    <div class="display-toggle">
+        <button id="displayEnglish" class="display-btn active">EN</button>
+        <button id="displayJapanese" class="display-btn">JP</button>
+        <button id="displayBoth" class="display-btn">BOTH</button>
     </div>
 
-    <button id="fruitToggle" class="fruit-toggle" aria-label="Toggle fruit game" aria-pressed="false">🎰 Fruit Game OFF</button>
-</nav>
-    </section>
+    <button id="fruitToggle" class="fruit-toggle">🎰 Fruit Game OFF</button>
+</div>
+    </div>
 
     <!-- Translation Popup -->
-    <div class="translation-overlay" id="translationOverlay" role="dialog" aria-modal="true" aria-labelledby="translationTitle" hidden>
+    <div class="translation-overlay" id="translationOverlay"></div>
 <div class="translation-popup" id="translationPopup">
-    <header class="translation-popup-header">
-        <h3 id="translationTitle">TRANSLATION</h3>
-        <button class="translation-popup-close" id="closeTranslationPopup" aria-label="Close translation">✕</button>
-    </header>
+    <div class="translation-popup-header">
+        <h3>TRANSLATION</h3>
+        <button class="translation-popup-close" id="closeTranslationPopup">×</button>
+    </div>
     <div class="translation-content">
         <div class="language-label" id="sourceLanguageLabel">English:</div>
-        <div class="translation-original" id="translationOriginal" lang="en" role="presentation"></div>
-
+        <div class="translation-original" id="translationOriginal"></div>
+        
         <div class="language-label" id="targetLanguageLabel">Japanese:</div>
-        <div class="translation-result" id="translationResult" lang="ja" role="presentation"></div>
-
-        <button class="translation-tts" id="translationTts" aria-label="Play translation audio">
+        <div class="translation-result" id="translationResult"></div>
+        
+        <button class="translation-tts" id="translationTts">
             <span>🔊 PLAY SOUND</span>
         </button>
     </div>
 </div>
-
+    
     <!-- Load external scripts -->
 <script src="content/adult/adult.js"></script>
-<script src="content/extras/vocabulary.js"></script>
 <script src="content/extras/vocab.js"></script>
-<script src="content/beginners/x.js"></script>
-<script src="content/beginners/c.js"></script>
+<script src="content/beginners/level-x.js"></script>
+<script src="content/beginners/level-c.js"></script>
 <script src="QA5.js"></script>
 <script src="content/eiken-junior/bronze.js"></script>
 <script src="content/eiken-junior/silver.js"></script>
@@ -1333,19 +1288,6 @@
 <script src="content/eiken-pre/eiken-pre1.js"></script>
 
 <script>
-    // ====================
-    // DEBUG & LOGGER SETUP
-    // ====================
-    const DEBUG = false; // Set to true for development, false for production
-
-    // Conditional logger - only logs when DEBUG is true
-    const logger = {
-        log: (...args) => { if (DEBUG) console.log(...args); },
-        warn: (...args) => { if (DEBUG) console.warn(...args); },
-        error: (...args) => { if (DEBUG) console.error(...args); },
-        debug: (...args) => { if (DEBUG) console.debug(...args); }
-    };
-
     // ====================
     // GLOBAL VARIABLES
     // ====================
@@ -1392,7 +1334,7 @@ const maxFontSize = 8; // vw/rem units
         const nightModeToggle = document.getElementById('nightModeToggle');
 
         if (!englishSentence || !japaneseSentence) {
-            logger.error('Critical elements not found');
+            console.error('Critical elements not found');
             return false;
         }
         return true;
@@ -1407,18 +1349,16 @@ const maxFontSize = 8; // vw/rem units
         setupEventListeners();
         loadSavedPreferences();
         loadExternalData().then(() => {
-            logger.log('All external data loaded');
+            console.log('All external data loaded');
             classSelector.focus();
         }).catch(error => {
-            logger.error('Error loading external data:', error);
+            console.error('Error loading external data:', error);
             alert('Error loading required data files. Please check the console for details.');
         });
     }
 
     function setupEventListeners() {
-        // Content type, class and story selection
-        const contentTypeSelector = document.getElementById('contentTypeSelector');
-        if (contentTypeSelector) contentTypeSelector.addEventListener('change', handleContentTypeChange);
+        // Class and story selection
         if (classSelector) classSelector.addEventListener('change', handleClassSelect);
         storySelector.addEventListener('change', handleStorySelect);
 
@@ -1448,9 +1388,9 @@ const maxFontSize = 8; // vw/rem units
         // Initialize speech synthesis
         if ('speechSynthesis' in window) {
             window.speechSynthesis.onvoiceschanged = function() {
-                logger.log('Voices loaded');
+                console.log('Voices loaded');
             };
-
+            
             if (window.speechSynthesis.getVoices().length === 0) {
                 window.speechSynthesis.getVoices();
             }
@@ -1495,7 +1435,7 @@ const maxFontSize = 8; // vw/rem units
     function handleClassSelect() {
         currentClass = this.value;
         storySelector.disabled = !currentClass;
-
+        
         if (currentClass) {
             populateStorySelector(currentClass);
         } else {
@@ -1511,81 +1451,30 @@ const maxFontSize = 8; // vw/rem units
         }
     }
 
-    // Content Type mappings: type → { classKey: displayName }
-    const contentByType = {
-        vocab: {
-            'VocabEiken5': 'Eiken 5 Vocabulary'
-        },
-        story: {
-            'Bronze': 'Bronze (Phonics)',
-            'Silver': 'Silver (Patterns)',
-            'Gold': 'Gold (Intro)',
-            'X': 'X Class Stories',
-            'C': 'C Class Stories',
-            'Eiken7': 'Eiken 7',
-            'Eiken6': 'Eiken 6',
-            'Eiken5': 'Eiken 5',
-            'Eiken4': 'Eiken 4',
-            'Eiken3': 'Eiken 3',
-            'EikenPre2': 'Eiken Pre-2',
-            'EikenPre2Plus': 'Eiken Pre-2 Plus',
-            'Eiken2': 'Eiken 2',
-            'EikenPre1': 'Eiken Pre-1',
-            'Eiken1': 'Eiken 1'
-        },
-        qa: {
-            'Calendar': 'Calendar Questions',
-            'ConversationQA': 'Conversation Practice',
-            'Eiken7Questions': 'Eiken 7 Questions *',
-            'Eiken6Questions': 'Eiken 6 Questions *',
-            'Eiken5Questions': 'Eiken 5 Questions',
-            'Eiken3Questions': 'Eiken 3 Questions',
-            'Eiken2Questions': 'Eiken 2 Questions *',
-            'Eiken1Questions': 'Eiken 1 Questions *',
-            'EikenPre2Questions': 'Eiken Pre-2 Questions *',
-            'EikenPre1Questions': 'Eiken Pre-1 Questions *'
-        }
-    };
-
-    function handleContentTypeChange() {
-        const contentType = this.value;
-        classSelector.innerHTML = '<option value="">Select Class</option>';
-        storySelector.innerHTML = '<option value="">Select</option>';
-        storySelector.disabled = true;
-
-        if (contentType && contentByType[contentType]) {
-            Object.entries(contentByType[contentType]).forEach(([cls, label]) => {
-                const option = document.createElement('option');
-                option.value = cls;
-                option.textContent = label;
-                classSelector.appendChild(option);
-            });
-            classSelector.disabled = false;
-            classSelector.focus();
-        }
-    }
-
 function populateStorySelector(cls) {
     storySelector.innerHTML = '<option value="">Select Story</option>';
+
     if (!lessonsData[cls]) return;
 
-    // Add questions first if they exist (without numbering)
+    let optionIndex = 0;
+    
+    // Add questions first if they exist
     if (lessonsData[cls].questions) {
         const option = document.createElement('option');
         option.value = 'questions';
-        option.textContent = 'QA Questions';
+        option.textContent = `${optionIndex + 1}. QA Questions`;
         storySelector.appendChild(option);
+        optionIndex++;
     }
 
-    // Add stories with clean numbering starting at 1
+    // Add stories
     if (lessonsData[cls].stories) {
-        lessonsData[cls].stories.forEach((story, idx) => {
+        lessonsData[cls].stories.forEach((story, index) => {
             const option = document.createElement('option');
-            option.value = idx; // direct index into stories array
-            // Strip any leading numbers/dots from title for clean display
-            let cleanTitle = story.title.replace(/^\d+\.\s*/, '');
-            option.textContent = `${idx + 1}. ${cleanTitle}`;
+            option.value = optionIndex;
+            option.textContent = `${optionIndex + 1}. ${story.title}`;
             storySelector.appendChild(option);
+            optionIndex++;
         });
     }
 
@@ -1598,7 +1487,7 @@ function populateStorySelector(cls) {
     function enterReadingMode(cls) {
         if (mainContainer) mainContainer.style.display = 'none';
         if (readingModeContainer) readingModeContainer.style.display = 'flex';
-
+        
         initTranslationEvents();
         loadTextContent(cls);
     }
@@ -1607,17 +1496,17 @@ function populateStorySelector(cls) {
         mainContainer.style.display = 'block';
         readingModeContainer.style.display = 'none';
         stopSpeech();
-
+        
         setTimeout(() => {
             classSelector.focus();
         }, 100);
     }
 
 function loadTextContent(cls) {
-    logger.log('Loading content for:', cls, 'Story:', currentStory);
+    console.log('Loading content for:', cls, 'Story:', currentStory);
 
     if (!lessonsData[cls]) {
-        logger.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
+        console.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
         alert(`Data not found for class ${cls}`);
         exitReadingMode();
         return;
@@ -1626,25 +1515,39 @@ function loadTextContent(cls) {
     let content;
     if (currentStory === 'questions') {
         content = lessonsData[cls].questions;
-    } else {
-        const storyIndex = parseInt(currentStory);
-        if (isNaN(storyIndex)) {
-            logger.error('Invalid story index:', currentStory);
-            alert('Invalid story selection');
-            exitReadingMode();
-            return;
-        }
-        if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
-            logger.error('Invalid story index:', storyIndex, 'for class:', cls);
-            alert('Invalid story selection');
-            exitReadingMode();
-            return;
-        }
-        content = lessonsData[cls].stories[storyIndex].content;
+} else {
+    const selectorIndex = parseInt(currentStory);
+    if (isNaN(selectorIndex)) {
+        console.error('Invalid story index:', currentStory);
+        alert('Invalid story selection');
+        exitReadingMode();
+        return;
+    }
+
+    // Adjust index based on questions presence
+    let storyIndex = selectorIndex;
+    if (lessonsData[cls].questions) {
+        storyIndex = selectorIndex - 1;
+    }
+
+    if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
+        console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
+        alert('Invalid story selection');
+        exitReadingMode();
+        return;
+    }
+    content = lessonsData[cls].stories[storyIndex].content;
+}
+
+    if (!content) {
+        console.error('Content not found for story:', currentStory, 'in class:', cls);
+        alert(`Content not found for selected story`);
+        exitReadingMode();
+        return;
     }
 
     if (!content) {
-        logger.error('Content not found for story:', currentStory, 'in class:', cls);
+        console.error('Content not found for story:', currentStory, 'in class:', cls);
         alert(`Content not found for selected story`);
         exitReadingMode();
         return;
@@ -1669,10 +1572,10 @@ function parseStoryFile(text) {
     const lines = content.split('\n')
         .map(line => line.trim())
         .filter(line => line.length > 0 && !line.startsWith('#'));
-
+    
     const result = [];
     let currentEnglish = null;
-
+    
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
         // More accurate language detection:
@@ -1681,7 +1584,7 @@ function parseStoryFile(text) {
         // 3. Otherwise treat as English
         const isEnglish = /^[→🕰️📉📊🛑🗣️🌊🗳️🆕🤝📉📛🔍💡⚖️🤷🏛️🔄💼💰⏳👵👴🚫🗺️🚫😔📉✌️🌟📈💵🇯🇵🌏🧑🤝🧑🌎🇺🇸🏭🇪🇺🛂✋📱⚠️🛒💊📉👷❤️🧠✊🧩🌪️🌍🤲🚦🌟]/.test(line) ||
                          (countJapaneseChars(line) < countEnglishChars(line));
-
+        
         if (isEnglish) {
             if (currentEnglish) {
                 result.push({
@@ -1708,7 +1611,7 @@ function parseStoryFile(text) {
             }
         }
     }
-
+    
     if (currentEnglish) {
         result.push({
             english: currentEnglish,
@@ -1716,7 +1619,7 @@ function parseStoryFile(text) {
             number: result.length + 1
         });
     }
-
+    
     return result;
 }
 
@@ -1743,7 +1646,7 @@ function countEnglishChars(str) {
         englishSentence = document.getElementById('englishSentence');
         japaneseSentence = document.getElementById('japaneseSentence');
         if (!englishSentence || !japaneseSentence) {
-            logger.error('Sentence display elements not found');
+            console.error('Sentence display elements not found');
             return;
         }
 
@@ -1754,16 +1657,16 @@ function countEnglishChars(str) {
         }
 
         const sentence = sentences[currentSentenceIndex];
-
+        
         if (sentence.english) englishSentence.textContent = sentence.english;
         if (sentence.japanese) japaneseSentence.textContent = sentence.japanese;
-
+        
         englishSentence.style.fontSize = '';
         japaneseSentence.style.fontSize = '';
-
+        
         prevSentenceBtn.disabled = false;
         nextSentenceBtn.disabled = false;
-
+        
         ensureTextVisibility();
         applyFontSize();
         applyDisplayMode();
@@ -1772,10 +1675,10 @@ function countEnglishChars(str) {
 
     function updatePageCounter() {
         if (!sentences || sentences.length === 0) return;
-
+        
         const currentPageEl = document.getElementById('currentPage');
         const totalPagesEl = document.getElementById('totalPages');
-
+        
         if (currentPageEl) currentPageEl.textContent = currentSentenceIndex + 1;
         if (totalPagesEl) totalPagesEl.textContent = sentences.length;
     }
@@ -1786,20 +1689,13 @@ function countEnglishChars(str) {
     function setDisplayMode(mode) {
         displayMode = mode;
         localStorage.setItem('displayMode', mode);
-
-        const displayEnglish = document.getElementById('displayEnglish');
-        const displayJapanese = document.getElementById('displayJapanese');
-        const displayBoth = document.getElementById('displayBoth');
-
-        displayEnglish.classList.toggle('active', mode === 'english');
-        displayEnglish.setAttribute('aria-pressed', mode === 'english');
-        displayJapanese.classList.toggle('active', mode === 'japanese');
-        displayJapanese.setAttribute('aria-pressed', mode === 'japanese');
-        displayBoth.classList.toggle('active', mode === 'both');
-        displayBoth.setAttribute('aria-pressed', mode === 'both');
-
+        
+        document.getElementById('displayEnglish').classList.toggle('active', mode === 'english');
+        document.getElementById('displayJapanese').classList.toggle('active', mode === 'japanese');
+        document.getElementById('displayBoth').classList.toggle('active', mode === 'both');
+        
         applyDisplayMode();
-
+        
         setTimeout(() => {
             applyFontSize();
             ensureTextVisibility();
@@ -1813,16 +1709,16 @@ function countEnglishChars(str) {
 
         const sentenceRows = document.querySelectorAll('.sentence-row');
         if (!sentenceRows || sentenceRows.length === 0) {
-            logger.error('No sentence rows found');
+            console.error('No sentence rows found');
             return;
         }
-
+        
         if (sentenceRows.length === 0) {
             if (!sentences || sentences.length === 0) {
-                logger.warn('No sentences loaded - cannot apply display mode');
+                console.warn('No sentences loaded - cannot apply display mode');
                 return;
             }
-
+            
             if (typeof applyDisplayMode.waiting === 'undefined') {
                 applyDisplayMode.waiting = true;
                 setTimeout(() => {
@@ -1831,8 +1727,8 @@ function countEnglishChars(str) {
                 }, 300);
                 return;
             }
-
-            logger.error('Failed to find sentence rows after waiting');
+            
+            console.error('Failed to find sentence rows after waiting');
             return;
         }
 
@@ -1842,34 +1738,34 @@ function countEnglishChars(str) {
         const japaneseRow = sentenceRows[1] || sentenceRows[0];
         const englishDisplay = englishRow.querySelector('.sentence-display');
         const japaneseDisplay = japaneseRow.querySelector('.sentence-display');
-
+        
         englishRow.classList.remove('full-height');
         japaneseRow.classList.remove('full-height');
         if (englishDisplay) englishDisplay.classList.remove('full-height');
         if (japaneseDisplay) japaneseDisplay.classList.remove('full-height');
-
+        
         englishRow.style.display = 'flex';
         japaneseRow.style.display = 'flex';
         englishRow.style.flex = '1';
         japaneseRow.style.flex = '1';
-
+        
         switch(displayMode) {
             case 'english':
                 japaneseRow.style.display = 'none';
                 englishRow.classList.add('full-height');
                 if (englishDisplay) englishDisplay.classList.add('full-height');
                 break;
-
+                
             case 'japanese':
                 englishRow.style.display = 'none';
                 japaneseRow.classList.add('full-height');
                 if (japaneseDisplay) japaneseDisplay.classList.add('full-height');
                 break;
-
+                
             case 'both':
                 break;
         }
-
+        
         ensureTextVisibility();
     }
 
@@ -1890,7 +1786,7 @@ function decreaseFontSize() {
 function applyFontSize() {
     const englishDisplay = document.getElementById('englishSentence');
     const japaneseDisplay = document.getElementById('japaneseSentence');
-
+    
     // First completely reset any font size styles
     if (englishDisplay) {
         englishDisplay.style.fontSize = '';
@@ -1900,11 +1796,11 @@ function applyFontSize() {
         japaneseDisplay.style.fontSize = '';
         japaneseDisplay.style.removeProperty('font-size');
     }
-
+    
     // Force reflow
     void englishDisplay?.offsetHeight;
     void japaneseDisplay?.offsetHeight;
-
+    
     // Calculate size based on device
     let size;
     if (window.innerWidth <= 768) {
@@ -1916,11 +1812,11 @@ function applyFontSize() {
         // For desktop, use vw units
         size = `${currentFontSize}vw`;
     }
-
+    
     // Apply the new size
     if (displayMode === 'english' && englishDisplay) {
         englishDisplay.style.fontSize = size;
-    }
+    } 
     else if (displayMode === 'japanese' && japaneseDisplay) {
         japaneseDisplay.style.fontSize = size;
     }
@@ -1928,31 +1824,31 @@ function applyFontSize() {
         if (englishDisplay) englishDisplay.style.fontSize = size;
         if (japaneseDisplay) japaneseDisplay.style.fontSize = size;
     }
-
+    
     localStorage.setItem('fontSize', currentFontSize);
     ensureTextVisibility();
 }
 
     function ensureTextVisibility() {
         const activeDisplays = [];
-
+        
         if (displayMode === 'english' || displayMode === 'both') {
             const englishDisplay = document.getElementById('englishSentence');
             if (englishDisplay) activeDisplays.push(englishDisplay);
         }
-
+        
         if (displayMode === 'japanese' || displayMode === 'both') {
             const japaneseDisplay = document.getElementById('japaneseSentence');
             if (japaneseDisplay) activeDisplays.push(japaneseDisplay);
         }
-
+        
         activeDisplays.forEach(display => {
             display.style.fontSize = `${currentFontSize}vw`;
-
+            
             if (display.scrollHeight > display.clientHeight || display.scrollWidth > display.clientWidth) {
                 let fontSize = currentFontSize;
-                while ((display.scrollHeight > display.clientHeight ||
-                       display.scrollWidth > display.clientWidth) &&
+                while ((display.scrollHeight > display.clientHeight || 
+                       display.scrollWidth > display.clientWidth) && 
                        fontSize > 2) {
                     fontSize -= 0.5;
                     display.style.fontSize = `${fontSize}vw`;
@@ -1968,23 +1864,23 @@ function applyFontSize() {
     function showNextSentence() {
         stopSpeech();
         closeTranslationPopupHandler();
-
+        
         if (sentences.length === 0 || fruitGameActive) return;
-
+        
         const isLastPage = currentSentenceIndex >= sentences.length - 1;
-
+        
         if (fruitGameEnabled) {
             shouldAdvanceAfterGame = true;
             showFruitGame();
             return;
         }
-
+        
         if (isLastPage) {
             currentSentenceIndex = 0;
             displayCurrentSentence();
             return;
         }
-
+        
         advanceToNextSentence();
     }
 
@@ -1994,7 +1890,7 @@ function applyFontSize() {
         } else {
             currentSentenceIndex = 0;
         }
-
+        
         displayCurrentSentence();
         updatePageCounter();
     }
@@ -2002,15 +1898,15 @@ function applyFontSize() {
     function showPreviousSentence() {
         stopSpeech();
         closeTranslationPopupHandler();
-
+        
         if (sentences.length === 0) return;
-
+        
         if (currentSentenceIndex > 0) {
             currentSentenceIndex--;
         } else {
             currentSentenceIndex = sentences.length - 1;
         }
-
+        
         displayCurrentSentence();
         updatePageCounter();
     }
@@ -2028,14 +1924,14 @@ function applyFontSize() {
     // ====================
     function playSentence(type) {
         if (sentences.length === 0 || fruitGameActive) return;
-
+        
         const sentence = sentences[currentSentenceIndex];
         let text = type === 'english' ? sentence.english : sentence.japanese;
         const lang = type === 'english' ? 'en-US' : 'ja-JP';
-
+        
         const emojiRegex = /(\p{Emoji_Presentation}|\p{Extended_Pictographic})/gu;
         text = text.replace(emojiRegex, '').trim();
-
+        
         stopSpeech();
         speakSentence(text, lang);
     }
@@ -2048,7 +1944,7 @@ function applyFontSize() {
 
     function speakSentence(text, lang) {
         if (!('speechSynthesis' in window)) {
-            logger.warn('Speech synthesis not supported');
+            console.warn('Speech synthesis not supported');
             return;
         }
 
@@ -2063,34 +1959,34 @@ function applyFontSize() {
         const speakWithVoice = () => {
             const voices = window.speechSynthesis.getVoices();
             let voice;
-
+            
             if (lang === 'en-US') {
-                voice = voices.find(v =>
-                    v.lang === 'en-US' &&
+                voice = voices.find(v => 
+                    v.lang === 'en-US' && 
                     v.name.includes('English')
                 );
 
                 if (!voice) {
-                    voice = voices.find(v =>
+                    voice = voices.find(v => 
                         v.lang.startsWith('en-')
                     );
                 }
             } else if (lang === 'ja-JP') {
-                voice = voices.find(v =>
-                    v.lang === 'ja-JP' ||
+                voice = voices.find(v => 
+                    v.lang === 'ja-JP' || 
                     v.lang.startsWith('ja')
                 );
             }
 
             if (voice) {
                 utterance.voice = voice;
-                logger.log('Using voice:', voice.name, 'for language:', lang);
+                console.log('Using voice:', voice.name, 'for language:', lang);
             } else {
-                logger.warn('No specific voice found for', lang, 'using default');
+                console.warn('No specific voice found for', lang, 'using default');
             }
 
             utterance.onerror = function(event) {
-                logger.error('SpeechSynthesis error:', event);
+                console.error('SpeechSynthesis error:', event);
             };
 
             window.speechSynthesis.speak(utterance);
@@ -2098,7 +1994,7 @@ function applyFontSize() {
 
         const voices = window.speechSynthesis.getVoices();
         if (voices.length === 0) {
-            logger.log('Waiting for voices to load...');
+            console.log('Waiting for voices to load...');
             window.speechSynthesis.onvoiceschanged = speakWithVoice;
         } else {
             speakWithVoice();
@@ -2107,9 +2003,9 @@ function applyFontSize() {
 
     function listVoices() {
         const voices = window.speechSynthesis.getVoices();
-        logger.log("Available voices:");
+        console.log("Available voices:");
         voices.forEach(voice => {
-            logger.log(`- ${voice.name} (${voice.lang}) ${voice.default ? '[DEFAULT]' : ''}`);
+            console.log(`- ${voice.name} (${voice.lang}) ${voice.default ? '[DEFAULT]' : ''}`);
         });
     }
 
@@ -2123,13 +2019,13 @@ function applyFontSize() {
         translationOriginal = document.getElementById('translationOriginal');
         translationResult = document.getElementById('translationResult');
         translationTts = document.getElementById('translationTts');
-
-        if (!translationPopup || !translationOverlay || !closeTranslationPopup ||
+        
+        if (!translationPopup || !translationOverlay || !closeTranslationPopup || 
             !translationOriginal || !translationResult || !translationTts) {
-            logger.error('One or more translation elements not found');
+            console.error('One or more translation elements not found');
             return false;
         }
-
+        
         selectedText = '';
         translationLang = '';
         return true;
@@ -2155,14 +2051,14 @@ function applyFontSize() {
         if (!trimmedText || trimmedText.length < 1 || trimmedText.toLowerCase() === 'translate') {
             return;
         }
-
+        
         closeTranslationPopupHandler();
         selectedText = trimmedText;
         translationLang = lang;
-
+        
         const sourceLabel = document.getElementById('sourceLanguageLabel');
         const targetLabel = document.getElementById('targetLanguageLabel');
-
+        
         if (lang === 'en') {
             sourceLabel.textContent = 'English:';
             targetLabel.textContent = 'Japanese:';
@@ -2170,7 +2066,7 @@ function applyFontSize() {
             sourceLabel.textContent = 'Japanese:';
             targetLabel.textContent = 'English:';
         }
-
+        
         try {
             const selection = window.getSelection();
             if (selection.rangeCount > 0) {
@@ -2181,42 +2077,42 @@ function applyFontSize() {
                 range.surroundContents(span);
             }
         } catch (e) {
-            logger.error('Error highlighting text:', e);
+            console.error('Error highlighting text:', e);
         }
-
+        
         translationOriginal.textContent = selectedText;
-        translationResult.textContent = "Loading translation...";
+        translationResult.textContent = "Loading translation...";    
         translationPopup.classList.add('active');
         translationOverlay.classList.add('active');
-
+        
         fetchTranslation(selectedText, lang);
-
+        
         const nextBtn = document.getElementById('nextSentence');
         const prevBtn = document.getElementById('prevSentence');
-
+        
         const closeOnNav = () => {
             closeTranslationPopupHandler();
             nextBtn.removeEventListener('click', closeOnNav);
             prevBtn.removeEventListener('click', closeOnNav);
         };
-
+        
         nextBtn.addEventListener('click', closeOnNav);
         prevBtn.addEventListener('click', closeOnNav);
     }
 
     function closeTranslationPopupHandler() {
         if (!translationPopup || !translationOverlay) return;
-
+        
         translationPopup.classList.remove('active');
         translationOverlay.classList.remove('active');
         stopSpeech();
         translationOriginal.textContent = '';
         translationResult.textContent = '';
-
+        
         if (window.getSelection) {
             window.getSelection().removeAllRanges();
         }
-
+        
         document.querySelectorAll('.highlighted-text').forEach(el => {
             const parent = el.parentNode;
             while (el.firstChild) {
@@ -2225,119 +2121,53 @@ function applyFontSize() {
             parent.removeChild(el);
             parent.normalize();
         });
-
+        
         selectedText = '';
         translationLang = '';
     }
 
-    // Translation API Endpoints (FREE)
-    const translationApis = [
-        {
-            name: 'MyMemory (direct)',
-            fetch: async (text, langPair) => {
-                const encodedText = encodeURIComponent(text);
-                const encodedLangPair = encodeURIComponent(langPair);
-                const apiUrl = `https://api.mymemory.translated.net/get?q=${encodedText}&langpair=${encodedLangPair}`;
-                const response = await fetch(apiUrl);
-                if (!response.ok) throw new Error('MyMemory: Network error');
-                const data = await response.json();
-                if (!data.responseData || !data.responseData.translatedText) {
-                    throw new Error('MyMemory: No translation data');
-                }
-                logger.log('Translation successful with MyMemory');
-                return data.responseData.translatedText;
-            }
-        },
-        {
-            name: 'LibreTranslate (argos)',
-            fetch: async (text, langPair) => {
-                const [sourceLang, targetLang] = langPair.split('|');
-                const apiUrl = 'https://translate.argosopentech.com/translate';
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        q: text,
-                        source: sourceLang,
-                        target: targetLang,
-                        format: 'text'
-                    })
-                });
-                if (!response.ok) throw new Error('LibreTranslate argos: Network error');
-                const data = await response.json();
-                if (!data.translatedText) throw new Error('LibreTranslate argos: No translation');
-                logger.log('Translation successful with LibreTranslate (argos)');
-                return data.translatedText;
-            }
-        },
-        {
-            name: 'LibreTranslate (de)',
-            fetch: async (text, langPair) => {
-                const [sourceLang, targetLang] = langPair.split('|');
-                const apiUrl = 'https://libretranslate.de/translate';
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        q: text,
-                        source: sourceLang,
-                        target: targetLang,
-                        format: 'text'
-                    })
-                });
-                if (!response.ok) throw new Error('LibreTranslate de: Network error');
-                const data = await response.json();
-                if (!data.translatedText) throw new Error('LibreTranslate de: No translation');
-                logger.log('Translation successful with LibreTranslate (de)');
-                return data.translatedText;
-            }
-        }
-    ];
-
-    async function fetchTranslation(text, lang) {
+    function fetchTranslation(text, lang) {
         const langPair = lang === 'en' ? 'en|ja' : 'ja|en';
-
-        // Update status
-        translationResult.textContent = "Loading translation...";
-
-        // Try each API in order, with fallback
-        for (const api of translationApis) {
-            try {
-                logger.log(`Trying ${api.name}...`);
-
-                let translatedText = await api.fetch(text, langPair);
-
-                // Clean the translation
-                translatedText = translatedText
-                    .replace(/[#*_~`^]/g, '')
-                    .replace(/\{.*?\}/g, '')
-                    .replace(/\[.*?\]/g, '')
-                    .replace(/\(.*?\)/g, '')
-                    .replace(/\d+/g, '')
-                    .trim();
-
-                if (!translatedText) {
-                    throw new Error('Translation returned empty after cleaning');
+        const encodedText = encodeURIComponent(text);
+        const encodedLangPair = encodeURIComponent(langPair);
+        const apiUrl = `https://api.mymemory.translated.net/get?q=${encodedText}&langpair=${encodedLangPair}`;
+        const proxyUrl = 'https://corsproxy.io/?';
+        
+        fetch(proxyUrl + apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
                 }
-
-                logger.log(`Translation successful with ${api.name}`);
-                translationResult.textContent = translatedText;
-                return;
-
-            } catch (error) {
-                logger.error(`${api.name} failed:`, error.message);
-                // Continue to next API
-            }
-        }
-
-        // All APIs failed
-        logger.error('All translation APIs failed');
-        translationResult.textContent = "Unable to get translation";
-
-        // Try local dictionary as last resort for short text
-        if (text.length < 20) {
-            trySimpleDictionaryLookup(text, lang);
-        }
+                return response.json();
+            })
+            .then(data => {
+                if (data.responseData && data.responseData.translatedText) {
+                    let translatedText = data.responseData.translatedText;
+                    translatedText = translatedText
+                        .replace(/[#*_~`^]/g, '')
+                        .replace(/\{.*?\}/g, '')
+                        .replace(/\[.*?\]/g, '')
+                        .replace(/\(.*?\)/g, '')
+                        .replace(/\d+/g, '')
+                        .trim();
+                    
+                    if (!translatedText) {
+                        throw new Error('Translation returned empty after cleaning');
+                    }
+                    
+                    translationResult.textContent = translatedText;
+                } else {
+                    throw new Error('No translation data received');
+                }
+            })
+            .catch(error => {
+                console.error('Translation error:', error);
+                translationResult.textContent = "Unable to get translation";
+                
+                if (text.length < 20) {
+                    trySimpleDictionaryLookup(text, lang);
+                }
+            });
     }
 
     function trySimpleDictionaryLookup(text, lang) {
@@ -2350,7 +2180,7 @@ function applyFontSize() {
             'thank you': 'ありがとう',
             'please': 'お願いします'
         };
-
+        
         const jaToEnDict = {
             'こんにちは': 'hello',
             'ありがとう': 'thank you',
@@ -2358,7 +2188,7 @@ function applyFontSize() {
             '番組': 'show',
             '見せる': 'show'
         };
-
+        
         const dict = lang === 'en' ? enToJaDict : jaToEnDict;
         if (dict[word]) {
             translationResult.textContent = dict[word];
@@ -2401,7 +2231,7 @@ function applyFontSize() {
 
             showTranslationPopup(selectedText, isEnglish ? 'en' : 'ja');
         } catch (error) {
-            logger.error('Error in text selection handling:', error);
+            console.error('Error in text selection handling:', error);
         }
     }
 
@@ -2426,7 +2256,7 @@ function applyFontSize() {
     function getWordAtPoint(element, x, y) {
         const range = document.caretRangeFromPoint(x, y);
         if (!range) return null;
-
+        
         range.expand('word');
         const word = range.toString().trim();
         return word || null;
@@ -2436,10 +2266,10 @@ function applyFontSize() {
     // FRUIT GAME
     // ====================
 const categories = [
-        {
-            name: 'Animals (Singular)',
+        { 
+            name: 'Animals (Singular)', 
             items: [
-                {emoji: '🐶', name: 'a dog'},
+                {emoji: '🐶', name: 'a dog'}, 
                 {emoji: '🐱', name: 'a cat'},
                 {emoji: '🐭', name: 'a mouse'},
                 {emoji: '🐰', name: 'a rabbit'},
@@ -2451,10 +2281,10 @@ const categories = [
                 {emoji: '🐦', name: 'a bird'}
             ]
         },
-        {
-            name: 'Fruit & Food',
+        { 
+            name: 'Fruit & Food', 
             items: [
-                {emoji: '🍎', name: 'an apple'},
+                {emoji: '🍎', name: 'an apple'}, 
                 {emoji: '🍊', name: 'an orange'},
                 {emoji: '🍌', name: 'a banana'},
                 {emoji: '🥚', name: 'an egg'},
@@ -2466,10 +2296,10 @@ const categories = [
                 {emoji: '🍩', name: 'a donut'}
             ]
         },
-        {
-            name: 'Action Verbs 1',
+        { 
+            name: 'Action Verbs 1', 
             items: [
-                {emoji: '🏃', name: 'run'},
+                {emoji: '🏃', name: 'run'}, 
                 {emoji: '🚶', name: 'walk'},
                 {emoji: '🏊', name: 'swim'},
                 {emoji: '✈️', name: 'fly'},
@@ -2481,10 +2311,10 @@ const categories = [
                 {emoji: '🎣', name: 'fish'}
             ]
         },
-        {
-            name: 'Action Verbs 2',
+        { 
+            name: 'Action Verbs 2', 
             items: [
-                {emoji: '🥣', name: 'eat'},
+                {emoji: '🥣', name: 'eat'}, 
                 {emoji: '🥛', name: 'drink'},
                 {emoji: '😴', name: 'sleep'},
                 {emoji: '📖', name: 'read'},
@@ -2496,10 +2326,10 @@ const categories = [
                 {emoji: '🎮', name: 'play'}
             ]
         },
-        {
-            name: 'Adjectives (Feeling)',
+        { 
+            name: 'Adjectives (Feeling)', 
             items: [
-                {emoji: '😊', name: 'happy'},
+                {emoji: '😊', name: 'happy'}, 
                 {emoji: '😢', name: 'sad'},
                 {emoji: '😠', name: 'angry'},
                 {emoji: '😴', name: 'sleepy'},
@@ -2511,10 +2341,10 @@ const categories = [
                 {emoji: '🤩', name: 'excited'}
             ]
         },
-        {
-            name: 'Adjectives (Describing)',
+        { 
+            name: 'Adjectives (Describing)', 
             items: [
-                {emoji: '🐘', name: 'big'},
+                {emoji: '🐘', name: 'big'}, 
                 {emoji: '🐜', name: 'small'},
                 {emoji: '🐇', name: 'fast'},
                 {emoji: '🐢', name: 'slow'},
@@ -2526,10 +2356,10 @@ const categories = [
                 {emoji: '🌶️', name: 'spicy'}
             ]
         },
-        {
-            name: 'School Objects',
+        { 
+            name: 'School Objects', 
             items: [
-                {emoji: '✏️', name: 'a pencil'},
+                {emoji: '✏️', name: 'a pencil'}, 
                 {emoji: '🖊️', name: 'a pen'},
                 {emoji: '📕', name: 'a book'},
                 {emoji: '📓', name: 'a notebook'},
@@ -2541,8 +2371,8 @@ const categories = [
                 {emoji: '👨‍🏫', name: 'a teacher'}
             ]
         },
-        {
-            name: 'Prepositions & Logic',
+        { 
+            name: 'Prepositions & Logic', 
             items: [
                 {emoji: '⬆️', name: 'up'},
                 {emoji: '⬇️', name: 'down'},
@@ -2556,10 +2386,10 @@ const categories = [
                 {emoji: '🤝', name: 'with'}
             ]
         },
-        {
-            name: 'Town & Vehicles',
+        { 
+            name: 'Town & Vehicles', 
             items: [
-                {emoji: '🚗', name: 'a car'},
+                {emoji: '🚗', name: 'a car'}, 
                 {emoji: '🚌', name: 'a bus'},
                 {emoji: '🚲', name: 'a bike'},
                 {emoji: '🚕', name: 'a taxi'},
@@ -2571,10 +2401,10 @@ const categories = [
                 {emoji: '✈️', name: 'a plane'}
             ]
         },
-        {
-            name: 'Clothes',
+        { 
+            name: 'Clothes', 
             items: [
-                {emoji: '👕', name: 'a t-shirt'},
+                {emoji: '👕', name: 'a t-shirt'}, 
                 {emoji: '🧢', name: 'a cap'},
                 {emoji: '🧥', name: 'a coat'},
                 {emoji: '👗', name: 'a dress'},
@@ -2592,16 +2422,14 @@ const categories = [
         if (fruitGameEnabled) {
             fruitToggleBtn.innerHTML = '🍏';
             fruitToggleBtn.style.color = 'var(--success)';
-            fruitToggleBtn.setAttribute('aria-pressed', 'true');
         } else {
             fruitToggleBtn.innerHTML = '🍎';
             fruitToggleBtn.style.color = 'var(--warning)';
-            fruitToggleBtn.setAttribute('aria-pressed', 'false');
         }
-
+        
         fruitToggleBtn.classList.toggle('on', fruitGameEnabled);
         fruitToggleBtn.title = fruitGameEnabled ? 'Fruit Game is ON' : 'Fruit Game is OFF';
-
+        
         if (fruitGameEnabled) {
             fruitToggleBtn.style.boxShadow = '0 0 10px var(--success)';
             fruitToggleBtn.style.border = '2px solid var(--success)';
@@ -2610,7 +2438,7 @@ const categories = [
             fruitToggleBtn.style.border = '2px solid var(--warning)';
         }
     }
-
+    
     function toggleFruitGame() {
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
@@ -2618,7 +2446,7 @@ const categories = [
 
         fruitGameEnabled = !fruitGameEnabled;
         updateFruitButtonState();
-
+        
         if (fruitGameEnabled) {
             playSound('activate');
             if (navigator.vibrate) navigator.vibrate(50);
@@ -2627,20 +2455,20 @@ const categories = [
                 hideFruitGame();
             }
         }
-
+        
         localStorage.setItem('fruitGameEnabled', fruitGameEnabled);
-        logger.log('Fruit game is now', fruitGameEnabled ? 'ON' : 'OFF');
+        console.log('Fruit game is now', fruitGameEnabled ? 'ON' : 'OFF');
     }
-
+    
     function showFruitGame() {
         if (!fruitGameEnabled || fruitGameActive) {
-            logger.log('Fruit game not shown - enabled:', fruitGameEnabled, 'active:', fruitGameActive);
+            console.log('Fruit game not shown - enabled:', fruitGameEnabled, 'active:', fruitGameActive);
             return;
         }
-
+        
         stopSpeech();
         fruitGameActive = true;
-
+        
         const gameContainer = document.createElement('div');
         gameContainer.className = 'fruit-game-container';
         gameContainer.innerHTML = `
@@ -2660,11 +2488,11 @@ const categories = [
                         <div class="fruit-name" id="name3"></div>
                     </div>
                 </div>
-                <div id="fruitResult"></div>
-                <button id="exitFruitGame" class="btn">Exit Game</button>
+                <div id="fruitResult" style="font-size: 2rem; min-height: 60px; margin: 20px 0;"></div>
+                <button id="exitFruitGame" class="btn" style="margin-top: 20px; background-color: var(--warning);">Exit Game</button>
             </div>
         `;
-
+        
         document.body.appendChild(gameContainer);
         spinReels();
         document.getElementById('exitFruitGame').addEventListener('click', hideFruitGame);
@@ -2675,20 +2503,20 @@ const categories = [
         if (game && game.parentNode) {
             game.parentNode.removeChild(game);
         }
-
+        
         fruitGameActive = false;
-
+        
         if (window.AudioContext) {
             const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
             audioCtx.close();
         }
-
+        
         closeTranslationPopupHandler();
-
+        
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
         }
-
+        
         setTimeout(() => {
             if (shouldAdvanceAfterGame) {
                 const isLastPage = currentSentenceIndex >= sentences.length - 1;
@@ -2698,7 +2526,7 @@ const categories = [
             displayCurrentSentence();
         }, 500);
     }
-
+    
     function spinReels() {
         const currentCategory = categories[Math.floor(Math.random() * categories.length)];
         const items = currentCategory.items;
@@ -2708,55 +2536,55 @@ const categories = [
             document.getElementById('reel3')
         ];
         const resultDisplay = document.getElementById('fruitResult');
-
+        
         resultDisplay.textContent = '';
         resultDisplay.style.color = '';
         playSound('spin');
-
+        
         const shouldMatch = Math.random() < 0.33;
         let matchingItem = '';
-
+        
         if (shouldMatch) {
             matchingItem = items[Math.floor(Math.random() * items.length)];
             matchingItem = items.find(item => item.emoji === matchingItem.emoji) || matchingItem;
         }
-
+        
         spinReel(reels[0], 0, items, matchingItem, shouldMatch, () => {
             playSound('reelStop');
             spinReel(reels[1], 300, items, matchingItem, shouldMatch, () => {
                 playSound('reelStop');
                 spinReel(reels[2], 300, items, matchingItem, shouldMatch, () => {
                     playSound('reelStop');
-
+                    
                     setTimeout(() => {
-                        if (shouldMatch && reels[0].textContent === reels[1].textContent &&
+                        if (shouldMatch && reels[0].textContent === reels[1].textContent && 
                             reels[1].textContent === reels[2].textContent) {
                             playSound('win');
                             playSound('coin');
                             resultDisplay.textContent = '🎉 WINNER! 🎉';
                             resultDisplay.style.color = 'var(--success)';
                             resultDisplay.style.fontWeight = 'bold';
-
+                            
                             reels.forEach(reel => {
                                 reel.style.transform = 'scale(1.2)';
                                 reel.style.transition = 'all 0.3s';
                                 reel.style.boxShadow = '0 0 20px gold';
                             });
-
+                            
                             setTimeout(() => {
                                 createConfetti();
                             }, 500);
-
+                            
                             setTimeout(hideFruitGame, 3000);
                         } else {
                             playSound('lose');
                             resultDisplay.textContent = 'Try again!';
                             resultDisplay.style.color = 'var(--warning)';
-
+                            
                             reels.forEach(reel => {
                                 reel.style.animation = 'shake 0.5s';
                             });
-
+                            
                             setTimeout(hideFruitGame, 2000);
                         }
                     }, 300);
@@ -2768,7 +2596,7 @@ const categories = [
     function spinReel(reel, delay, items, matchingItem, shouldMatch, callback) {
         const reelNumber = reel.id.replace('reel', '');
         const nameElement = document.getElementById(`name${reelNumber}`);
-
+        
         setTimeout(() => {
             let spins = 0;
             const spinInterval = setInterval(() => {
@@ -2776,14 +2604,14 @@ const categories = [
                     const randomItem = items[Math.floor(Math.random() * items.length)];
                     reel.textContent = randomItem.emoji;
                     nameElement.textContent = '';
-                }
+                } 
                 else if (spins < 15) {
                     if (spins % 2 === 0) {
                         const randomItem = items[Math.floor(Math.random() * items.length)];
                         reel.textContent = randomItem.emoji;
                         nameElement.textContent = '';
                     }
-                }
+                } 
                 else {
                     clearInterval(spinInterval);
                     let finalItem;
@@ -2794,13 +2622,13 @@ const categories = [
                     }
                     reel.textContent = finalItem.emoji;
                     nameElement.textContent = finalItem.name;
-
+                    
                     if (window.speechSynthesis) {
                         const utterance = new SpeechSynthesisUtterance(finalItem.name);
                         utterance.rate = 0.9;
                         window.speechSynthesis.speak(utterance);
                     }
-
+                    
                     if (callback) callback();
                 }
                 spins++;
@@ -2811,7 +2639,7 @@ const categories = [
     function createConfetti() {
         const container = document.querySelector('.fruit-game-container');
         if (!container) return;
-
+        
         for (let i = 0; i < 100; i++) {
             const confetti = document.createElement('div');
             confetti.style.position = 'absolute';
@@ -2824,9 +2652,9 @@ const categories = [
             confetti.style.opacity = '0.8';
             confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
             confetti.style.animation = `confetti-fall ${2 + Math.random() * 3}s linear forwards`;
-
+            
             container.appendChild(confetti);
-
+            
             setTimeout(() => {
                 confetti.remove();
             }, 5000);
@@ -2835,14 +2663,14 @@ const categories = [
 
     function playSound(type) {
         if (!window.AudioContext) return;
-
+        
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         let oscillator = audioCtx.createOscillator();
         let gainNode = audioCtx.createGain();
-
+        
         oscillator.connect(gainNode);
         gainNode.connect(audioCtx.destination);
-
+        
         switch(type) {
             case 'spin':
                 oscillator.type = 'sawtooth';
@@ -2853,7 +2681,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.8);
                 break;
-
+                
             case 'reelStop':
                 oscillator.type = 'square';
                 oscillator.frequency.setValueAtTime(1000, audioCtx.currentTime);
@@ -2862,7 +2690,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.1);
                 break;
-
+                
             case 'win':
                 oscillator.type = 'sine';
                 oscillator.frequency.setValueAtTime(523.25, audioCtx.currentTime);
@@ -2874,7 +2702,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.5);
                 break;
-
+                
             case 'lose':
                 oscillator.type = 'square';
                 oscillator.frequency.setValueAtTime(349.23, audioCtx.currentTime);
@@ -2884,7 +2712,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.6);
                 break;
-
+                
             case 'activate':
                 oscillator.type = 'sine';
                 oscillator.frequency.setValueAtTime(784, audioCtx.currentTime);
@@ -2893,7 +2721,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.3);
                 break;
-
+                
             case 'coin':
                 oscillator.type = 'triangle';
                 oscillator.frequency.setValueAtTime(988, audioCtx.currentTime);
@@ -2919,11 +2747,11 @@ const categories = [
     function loadVocabData() {
         return new Promise((resolve, reject) => {
             if (typeof vocab !== 'undefined') {
-                logger.log('Vocabulary data loaded');
+                console.log('Vocabulary data loaded');
                 resolve();
             } else {
                 const error = 'Vocabulary data not found. Please ensure vocab.js is loaded.';
-                logger.error(error);
+                console.error(error);
                 reject(error);
             }
         });
@@ -2958,11 +2786,11 @@ function loadLessonsData() {
                     questions: window.eiken3questions ? window.eiken3questions.questions : []
                 },
             'Eiken4': {
-    stories: Array.isArray(eiken4) ?
+    stories: Array.isArray(eiken4) ? 
         eiken4.map(story => ({
             title: story.title,
             content: story.content
-        })) :
+        })) : 
         Object.values(eiken4).map(story => ({
             title: story.title,
             content: story.content
@@ -3018,21 +2846,13 @@ function loadLessonsData() {
                             content: typeof wouldyourather !== 'undefined' ? wouldyourather.questions : []
                         }
                     ]
-                },
-                'VocabEiken5': {
-                    stories: typeof vocabularyCategories !== 'undefined' ? Object.entries(vocabularyCategories).map(([category, words]) => ({
-                        title: category,
-                        content: words.map((word, i) =>
-                            `${i+1}. ${word.emoji || ''} ${word.english} - ${word.japanese}`
-                        ).join('\n')
-                    })) : []
                 }
             };
 
 // Process each class to ensure consistent structure
             Object.entries(classData).forEach(([className, data]) => {
                 if (!data) return; // Skip if data not loaded
-
+                
                 if (Array.isArray(data)) {
                     // UPDATED LOGIC HERE:
                     // Check if the items inside the array are Objects with a 'title' property
@@ -3056,59 +2876,11 @@ function loadLessonsData() {
                         }))
                     };
                 }
-
-                logger.log(`${className} loaded with`,
+                
+                console.log(`${className} loaded with`, 
                     lessonsData[className].stories?.length || 0, 'stories and',
                     lessonsData[className].questions ? 'questions' : 'no questions');
             });
-            
-            // Create additional organized classes for Q&A
-            if (lessonsData['Adult']?.questions) {
-                lessonsData['Calendar'] = { questions: lessonsData['Adult'].questions };
-            }
-            if (typeof gettingtoknow !== 'undefined') {
-                lessonsData['ConversationQA'] = {
-                    stories: [{
-                        title: 'Getting to Know You',
-                        content: gettingtoknow.questions
-                    }, {
-                        title: 'Easy Questions',
-                        content: easyquestions?.questions || ''
-                    }, {
-                        title: 'Would You Rather',
-                        content: wouldyourather?.questions || ''
-                    }]
-                };
-            }
-            if (window.eiken3questions) {
-                lessonsData['Eiken3Questions'] = {
-                    stories: [{ title: 'Eiken 3 Questions', content: eiken3questions.questions }]
-                };
-            }
-            if (typeof qa5 !== 'undefined') {
-                lessonsData['Eiken5Questions'] = {
-                    stories: [{ title: 'Eiken 5 Questions', content: qa5.questions }]
-                };
-            }
-            // Add placeholders for other Eiken Q&A sections (coming soon)
-            lessonsData['Eiken7Questions'] = {
-                stories: [{ title: 'Eiken 7 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
-            };
-            lessonsData['Eiken6Questions'] = {
-                stories: [{ title: 'Eiken 6 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
-            };
-            lessonsData['Eiken2Questions'] = {
-                stories: [{ title: 'Eiken 2 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
-            };
-            lessonsData['Eiken1Questions'] = {
-                stories: [{ title: 'Eiken 1 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
-            };
-            lessonsData['EikenPre2Questions'] = {
-                stories: [{ title: 'Eiken Pre-2 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
-            };
-            lessonsData['EikenPre1Questions'] = {
-                stories: [{ title: 'Eiken Pre-1 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
-            };
 
             if (Object.keys(lessonsData).length > 0) {
                 resolve();
@@ -3116,7 +2888,7 @@ function loadLessonsData() {
                 reject('No lesson data found');
             }
         } catch (e) {
-            logger.error('Error loading lesson data:', e);
+            console.error('Error loading lesson data:', e);
             reject(e);
         }
     });
@@ -3128,15 +2900,13 @@ function loadLessonsData() {
     function toggleNightMode() {
         isNightMode = !isNightMode;
         document.body.classList.toggle('dark-mode', isNightMode);
-        const toggle = document.getElementById('nightModeToggle');
-        toggle.textContent = isNightMode ? '☀️' : '🌙';
-        toggle.setAttribute('aria-checked', isNightMode);
+        document.getElementById('nightModeToggle').textContent = isNightMode ? '☀️' : '🌙';
         localStorage.setItem('nightMode', isNightMode);
     }
 
     function handleRemoteInput(e) {
         const activeElement = document.activeElement;
-
+        
         switch(e.key) {
             case 'ArrowUp':
                 navigateFocus('up');
@@ -3176,20 +2946,20 @@ function loadLessonsData() {
     function navigateFocus(direction) {
         const focusable = Array.from(document.querySelectorAll('button, select, [tabindex="0"]'));
         const currentIndex = focusable.indexOf(document.activeElement);
-
+        
         if (currentIndex === -1) {
             if (focusable.length > 0) focusable[0].focus();
             return;
         }
-
+        
         let nextIndex = currentIndex;
-
+        
         if (direction === 'up' || direction === 'left') {
             nextIndex = Math.max(0, currentIndex - 1);
         } else {
             nextIndex = Math.min(focusable.length - 1, currentIndex + 1);
         }
-
+        
         focusable[nextIndex].focus();
     }
 
@@ -3203,11 +2973,11 @@ function loadLessonsData() {
             document.body.classList.add('dark-mode');
             document.getElementById('nightModeToggle').textContent = '☀️';
         }
-
+        
         init();
         setTimeout(listVoices, 1000);
     });
-</script>
+</script>   
 </body>
 </html>
 
