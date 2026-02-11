@@ -975,7 +975,7 @@
         height: 40px;
         font-size: 1rem;
     }
-    
+
     .reading-footer {
         padding: 10px 5px;
         gap: 5px;
@@ -1154,19 +1154,28 @@
 
     <div class="controls-row">
         <div class="dropdown">
-            <select id="classSelector">
+            <select id="contentTypeSelector">
+                <option value="">Content Type</option>
+                <option value="vocab">📚 Vocabulary</option>
+                <option value="story">📖 Stories</option>
+                <option value="qa">❓ Q & A</option>
+            </select>
+        </div>
+
+        <div class="dropdown">
+            <select id="classSelector" disabled>
                 <option value="">Select Class</option>
-                
+
                 <optgroup label="Featured">
                     <option value="Adult">Adult</option>
                 </optgroup>
-                
+
                 <optgroup label="EIKEN Junior">
                     <option value="Bronze">Bronze (Phonics)</option>
                     <option value="Silver">Silver (Patterns)</option>
                     <option value="Gold">Gold (Intro)</option>
                 </optgroup>
-                
+
                 <optgroup label="EIKEN Foundation">
                     <option value="Eiken7">Eiken 7</option>
                     <option value="Eiken6">Eiken 6</option>
@@ -1174,7 +1183,7 @@
                     <option value="Eiken4">Eiken 4</option>
                     <option value="Eiken3">Eiken 3</option>
                 </optgroup>
-                
+
                 <optgroup label="EIKEN Advanced">
                     <option value="EikenPre2">Eiken Pre-2</option>
                     <option value="EikenPre2Plus">Eiken Pre-2 Plus</option>
@@ -1182,11 +1191,11 @@
                     <option value="EikenPre1">Eiken Pre-1</option>
                     <option value="Eiken1">Eiken 1</option>
                 </optgroup>
-                
+
                 <optgroup label="Vocabulary">
                     <option value="VocabEiken5">Eiken 5 Vocabulary</option>
                 </optgroup>
-                
+
                 <optgroup label="Other">
                     <option value="Conversation">Conversation Practice</option>
                     <option value="HighSchool">High School (Legacy)</option>
@@ -1195,7 +1204,7 @@
                 </optgroup>
             </select>
         </div>
-        
+
         <div class="dropdown">
             <select id="storySelector" disabled>
                 <option value="">Select Story</option>
@@ -1210,7 +1219,7 @@
     <div class="page-counter">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></div>
     <button id="exitReading" class="exit-reading">X</button>
 </div>
-        
+
         <div class="reading-content">
 <div class="sentence-row">
     <div class="sentence-controls">
@@ -1225,7 +1234,7 @@
         <div id="japaneseSentence" class="sentence-display"></div>
     </div>
 </div>
-        
+
 <div class="reading-footer">
     <div class="font-controls">
         <button id="decreaseFont" class="font-btn">A-</button>
@@ -1257,16 +1266,16 @@
     <div class="translation-content">
         <div class="language-label" id="sourceLanguageLabel">English:</div>
         <div class="translation-original" id="translationOriginal"></div>
-        
+
         <div class="language-label" id="targetLanguageLabel">Japanese:</div>
         <div class="translation-result" id="translationResult"></div>
-        
+
         <button class="translation-tts" id="translationTts">
             <span>🔊 PLAY SOUND</span>
         </button>
     </div>
 </div>
-    
+
     <!-- Load external scripts -->
 <script src="content/adult/adult.js"></script>
 <script src="content/extras/vocabulary.js"></script>
@@ -1363,7 +1372,9 @@ const maxFontSize = 8; // vw/rem units
     }
 
     function setupEventListeners() {
-        // Class and story selection
+        // Content type, class and story selection
+        const contentTypeSelector = document.getElementById('contentTypeSelector');
+        if (contentTypeSelector) contentTypeSelector.addEventListener('change', handleContentTypeChange);
         if (classSelector) classSelector.addEventListener('change', handleClassSelect);
         storySelector.addEventListener('change', handleStorySelect);
 
@@ -1395,7 +1406,7 @@ const maxFontSize = 8; // vw/rem units
             window.speechSynthesis.onvoiceschanged = function() {
                 console.log('Voices loaded');
             };
-            
+
             if (window.speechSynthesis.getVoices().length === 0) {
                 window.speechSynthesis.getVoices();
             }
@@ -1440,7 +1451,7 @@ const maxFontSize = 8; // vw/rem units
     function handleClassSelect() {
         currentClass = this.value;
         storySelector.disabled = !currentClass;
-        
+
         if (currentClass) {
             populateStorySelector(currentClass);
         } else {
@@ -1453,6 +1464,60 @@ const maxFontSize = 8; // vw/rem units
         currentStory = this.value;
         if (currentStory) {
             enterReadingMode(currentClass);
+        }
+    }
+
+    // Content Type mappings: type → { classKey: displayName }
+    const contentByType = {
+        vocab: {
+            'VocabEiken5': 'Eiken 5 Vocabulary'
+        },
+        story: {
+            'Bronze': 'Bronze (Phonics)',
+            'Silver': 'Silver (Patterns)',
+            'Gold': 'Gold (Intro)',
+            'X': 'X Class Stories',
+            'C': 'C Class Stories',
+            'Eiken7': 'Eiken 7',
+            'Eiken6': 'Eiken 6',
+            'Eiken5': 'Eiken 5',
+            'Eiken4': 'Eiken 4',
+            'Eiken3': 'Eiken 3',
+            'EikenPre2': 'Eiken Pre-2',
+            'EikenPre2Plus': 'Eiken Pre-2 Plus',
+            'Eiken2': 'Eiken 2',
+            'EikenPre1': 'Eiken Pre-1',
+            'Eiken1': 'Eiken 1'
+        },
+        qa: {
+            'Calendar': 'Calendar Questions',
+            'ConversationQA': 'Conversation Practice',
+            'Eiken7Questions': 'Eiken 7 Questions *',
+            'Eiken6Questions': 'Eiken 6 Questions *',
+            'Eiken5Questions': 'Eiken 5 Questions',
+            'Eiken3Questions': 'Eiken 3 Questions',
+            'Eiken2Questions': 'Eiken 2 Questions *',
+            'Eiken1Questions': 'Eiken 1 Questions *',
+            'EikenPre2Questions': 'Eiken Pre-2 Questions *',
+            'EikenPre1Questions': 'Eiken Pre-1 Questions *'
+        }
+    };
+
+    function handleContentTypeChange() {
+        const contentType = this.value;
+        classSelector.innerHTML = '<option value="">Select Class</option>';
+        storySelector.innerHTML = '<option value="">Select</option>';
+        storySelector.disabled = true;
+
+        if (contentType && contentByType[contentType]) {
+            Object.entries(contentByType[contentType]).forEach(([cls, label]) => {
+                const option = document.createElement('option');
+                option.value = cls;
+                option.textContent = label;
+                classSelector.appendChild(option);
+            });
+            classSelector.disabled = false;
+            classSelector.focus();
         }
     }
 
@@ -1489,7 +1554,7 @@ function populateStorySelector(cls) {
     function enterReadingMode(cls) {
         if (mainContainer) mainContainer.style.display = 'none';
         if (readingModeContainer) readingModeContainer.style.display = 'flex';
-        
+
         initTranslationEvents();
         loadTextContent(cls);
     }
@@ -1498,7 +1563,7 @@ function populateStorySelector(cls) {
         mainContainer.style.display = 'block';
         readingModeContainer.style.display = 'none';
         stopSpeech();
-        
+
         setTimeout(() => {
             classSelector.focus();
         }, 100);
@@ -1560,10 +1625,10 @@ function parseStoryFile(text) {
     const lines = content.split('\n')
         .map(line => line.trim())
         .filter(line => line.length > 0 && !line.startsWith('#'));
-    
+
     const result = [];
     let currentEnglish = null;
-    
+
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
         // More accurate language detection:
@@ -1572,7 +1637,7 @@ function parseStoryFile(text) {
         // 3. Otherwise treat as English
         const isEnglish = /^[→🕰️📉📊🛑🗣️🌊🗳️🆕🤝📉📛🔍💡⚖️🤷🏛️🔄💼💰⏳👵👴🚫🗺️🚫😔📉✌️🌟📈💵🇯🇵🌏🧑🤝🧑🌎🇺🇸🏭🇪🇺🛂✋📱⚠️🛒💊📉👷❤️🧠✊🧩🌪️🌍🤲🚦🌟]/.test(line) ||
                          (countJapaneseChars(line) < countEnglishChars(line));
-        
+
         if (isEnglish) {
             if (currentEnglish) {
                 result.push({
@@ -1599,7 +1664,7 @@ function parseStoryFile(text) {
             }
         }
     }
-    
+
     if (currentEnglish) {
         result.push({
             english: currentEnglish,
@@ -1607,7 +1672,7 @@ function parseStoryFile(text) {
             number: result.length + 1
         });
     }
-    
+
     return result;
 }
 
@@ -1645,16 +1710,16 @@ function countEnglishChars(str) {
         }
 
         const sentence = sentences[currentSentenceIndex];
-        
+
         if (sentence.english) englishSentence.textContent = sentence.english;
         if (sentence.japanese) japaneseSentence.textContent = sentence.japanese;
-        
+
         englishSentence.style.fontSize = '';
         japaneseSentence.style.fontSize = '';
-        
+
         prevSentenceBtn.disabled = false;
         nextSentenceBtn.disabled = false;
-        
+
         ensureTextVisibility();
         applyFontSize();
         applyDisplayMode();
@@ -1663,10 +1728,10 @@ function countEnglishChars(str) {
 
     function updatePageCounter() {
         if (!sentences || sentences.length === 0) return;
-        
+
         const currentPageEl = document.getElementById('currentPage');
         const totalPagesEl = document.getElementById('totalPages');
-        
+
         if (currentPageEl) currentPageEl.textContent = currentSentenceIndex + 1;
         if (totalPagesEl) totalPagesEl.textContent = sentences.length;
     }
@@ -1677,13 +1742,13 @@ function countEnglishChars(str) {
     function setDisplayMode(mode) {
         displayMode = mode;
         localStorage.setItem('displayMode', mode);
-        
+
         document.getElementById('displayEnglish').classList.toggle('active', mode === 'english');
         document.getElementById('displayJapanese').classList.toggle('active', mode === 'japanese');
         document.getElementById('displayBoth').classList.toggle('active', mode === 'both');
-        
+
         applyDisplayMode();
-        
+
         setTimeout(() => {
             applyFontSize();
             ensureTextVisibility();
@@ -1700,13 +1765,13 @@ function countEnglishChars(str) {
             console.error('No sentence rows found');
             return;
         }
-        
+
         if (sentenceRows.length === 0) {
             if (!sentences || sentences.length === 0) {
                 console.warn('No sentences loaded - cannot apply display mode');
                 return;
             }
-            
+
             if (typeof applyDisplayMode.waiting === 'undefined') {
                 applyDisplayMode.waiting = true;
                 setTimeout(() => {
@@ -1715,7 +1780,7 @@ function countEnglishChars(str) {
                 }, 300);
                 return;
             }
-            
+
             console.error('Failed to find sentence rows after waiting');
             return;
         }
@@ -1726,34 +1791,34 @@ function countEnglishChars(str) {
         const japaneseRow = sentenceRows[1] || sentenceRows[0];
         const englishDisplay = englishRow.querySelector('.sentence-display');
         const japaneseDisplay = japaneseRow.querySelector('.sentence-display');
-        
+
         englishRow.classList.remove('full-height');
         japaneseRow.classList.remove('full-height');
         if (englishDisplay) englishDisplay.classList.remove('full-height');
         if (japaneseDisplay) japaneseDisplay.classList.remove('full-height');
-        
+
         englishRow.style.display = 'flex';
         japaneseRow.style.display = 'flex';
         englishRow.style.flex = '1';
         japaneseRow.style.flex = '1';
-        
+
         switch(displayMode) {
             case 'english':
                 japaneseRow.style.display = 'none';
                 englishRow.classList.add('full-height');
                 if (englishDisplay) englishDisplay.classList.add('full-height');
                 break;
-                
+
             case 'japanese':
                 englishRow.style.display = 'none';
                 japaneseRow.classList.add('full-height');
                 if (japaneseDisplay) japaneseDisplay.classList.add('full-height');
                 break;
-                
+
             case 'both':
                 break;
         }
-        
+
         ensureTextVisibility();
     }
 
@@ -1774,7 +1839,7 @@ function decreaseFontSize() {
 function applyFontSize() {
     const englishDisplay = document.getElementById('englishSentence');
     const japaneseDisplay = document.getElementById('japaneseSentence');
-    
+
     // First completely reset any font size styles
     if (englishDisplay) {
         englishDisplay.style.fontSize = '';
@@ -1784,11 +1849,11 @@ function applyFontSize() {
         japaneseDisplay.style.fontSize = '';
         japaneseDisplay.style.removeProperty('font-size');
     }
-    
+
     // Force reflow
     void englishDisplay?.offsetHeight;
     void japaneseDisplay?.offsetHeight;
-    
+
     // Calculate size based on device
     let size;
     if (window.innerWidth <= 768) {
@@ -1800,11 +1865,11 @@ function applyFontSize() {
         // For desktop, use vw units
         size = `${currentFontSize}vw`;
     }
-    
+
     // Apply the new size
     if (displayMode === 'english' && englishDisplay) {
         englishDisplay.style.fontSize = size;
-    } 
+    }
     else if (displayMode === 'japanese' && japaneseDisplay) {
         japaneseDisplay.style.fontSize = size;
     }
@@ -1812,31 +1877,31 @@ function applyFontSize() {
         if (englishDisplay) englishDisplay.style.fontSize = size;
         if (japaneseDisplay) japaneseDisplay.style.fontSize = size;
     }
-    
+
     localStorage.setItem('fontSize', currentFontSize);
     ensureTextVisibility();
 }
 
     function ensureTextVisibility() {
         const activeDisplays = [];
-        
+
         if (displayMode === 'english' || displayMode === 'both') {
             const englishDisplay = document.getElementById('englishSentence');
             if (englishDisplay) activeDisplays.push(englishDisplay);
         }
-        
+
         if (displayMode === 'japanese' || displayMode === 'both') {
             const japaneseDisplay = document.getElementById('japaneseSentence');
             if (japaneseDisplay) activeDisplays.push(japaneseDisplay);
         }
-        
+
         activeDisplays.forEach(display => {
             display.style.fontSize = `${currentFontSize}vw`;
-            
+
             if (display.scrollHeight > display.clientHeight || display.scrollWidth > display.clientWidth) {
                 let fontSize = currentFontSize;
-                while ((display.scrollHeight > display.clientHeight || 
-                       display.scrollWidth > display.clientWidth) && 
+                while ((display.scrollHeight > display.clientHeight ||
+                       display.scrollWidth > display.clientWidth) &&
                        fontSize > 2) {
                     fontSize -= 0.5;
                     display.style.fontSize = `${fontSize}vw`;
@@ -1852,23 +1917,23 @@ function applyFontSize() {
     function showNextSentence() {
         stopSpeech();
         closeTranslationPopupHandler();
-        
+
         if (sentences.length === 0 || fruitGameActive) return;
-        
+
         const isLastPage = currentSentenceIndex >= sentences.length - 1;
-        
+
         if (fruitGameEnabled) {
             shouldAdvanceAfterGame = true;
             showFruitGame();
             return;
         }
-        
+
         if (isLastPage) {
             currentSentenceIndex = 0;
             displayCurrentSentence();
             return;
         }
-        
+
         advanceToNextSentence();
     }
 
@@ -1878,7 +1943,7 @@ function applyFontSize() {
         } else {
             currentSentenceIndex = 0;
         }
-        
+
         displayCurrentSentence();
         updatePageCounter();
     }
@@ -1886,15 +1951,15 @@ function applyFontSize() {
     function showPreviousSentence() {
         stopSpeech();
         closeTranslationPopupHandler();
-        
+
         if (sentences.length === 0) return;
-        
+
         if (currentSentenceIndex > 0) {
             currentSentenceIndex--;
         } else {
             currentSentenceIndex = sentences.length - 1;
         }
-        
+
         displayCurrentSentence();
         updatePageCounter();
     }
@@ -1912,14 +1977,14 @@ function applyFontSize() {
     // ====================
     function playSentence(type) {
         if (sentences.length === 0 || fruitGameActive) return;
-        
+
         const sentence = sentences[currentSentenceIndex];
         let text = type === 'english' ? sentence.english : sentence.japanese;
         const lang = type === 'english' ? 'en-US' : 'ja-JP';
-        
+
         const emojiRegex = /(\p{Emoji_Presentation}|\p{Extended_Pictographic})/gu;
         text = text.replace(emojiRegex, '').trim();
-        
+
         stopSpeech();
         speakSentence(text, lang);
     }
@@ -1947,21 +2012,21 @@ function applyFontSize() {
         const speakWithVoice = () => {
             const voices = window.speechSynthesis.getVoices();
             let voice;
-            
+
             if (lang === 'en-US') {
-                voice = voices.find(v => 
-                    v.lang === 'en-US' && 
+                voice = voices.find(v =>
+                    v.lang === 'en-US' &&
                     v.name.includes('English')
                 );
 
                 if (!voice) {
-                    voice = voices.find(v => 
+                    voice = voices.find(v =>
                         v.lang.startsWith('en-')
                     );
                 }
             } else if (lang === 'ja-JP') {
-                voice = voices.find(v => 
-                    v.lang === 'ja-JP' || 
+                voice = voices.find(v =>
+                    v.lang === 'ja-JP' ||
                     v.lang.startsWith('ja')
                 );
             }
@@ -2007,13 +2072,13 @@ function applyFontSize() {
         translationOriginal = document.getElementById('translationOriginal');
         translationResult = document.getElementById('translationResult');
         translationTts = document.getElementById('translationTts');
-        
-        if (!translationPopup || !translationOverlay || !closeTranslationPopup || 
+
+        if (!translationPopup || !translationOverlay || !closeTranslationPopup ||
             !translationOriginal || !translationResult || !translationTts) {
             console.error('One or more translation elements not found');
             return false;
         }
-        
+
         selectedText = '';
         translationLang = '';
         return true;
@@ -2039,14 +2104,14 @@ function applyFontSize() {
         if (!trimmedText || trimmedText.length < 1 || trimmedText.toLowerCase() === 'translate') {
             return;
         }
-        
+
         closeTranslationPopupHandler();
         selectedText = trimmedText;
         translationLang = lang;
-        
+
         const sourceLabel = document.getElementById('sourceLanguageLabel');
         const targetLabel = document.getElementById('targetLanguageLabel');
-        
+
         if (lang === 'en') {
             sourceLabel.textContent = 'English:';
             targetLabel.textContent = 'Japanese:';
@@ -2054,7 +2119,7 @@ function applyFontSize() {
             sourceLabel.textContent = 'Japanese:';
             targetLabel.textContent = 'English:';
         }
-        
+
         try {
             const selection = window.getSelection();
             if (selection.rangeCount > 0) {
@@ -2067,40 +2132,40 @@ function applyFontSize() {
         } catch (e) {
             console.error('Error highlighting text:', e);
         }
-        
+
         translationOriginal.textContent = selectedText;
-        translationResult.textContent = "Loading translation...";    
+        translationResult.textContent = "Loading translation...";
         translationPopup.classList.add('active');
         translationOverlay.classList.add('active');
-        
+
         fetchTranslation(selectedText, lang);
-        
+
         const nextBtn = document.getElementById('nextSentence');
         const prevBtn = document.getElementById('prevSentence');
-        
+
         const closeOnNav = () => {
             closeTranslationPopupHandler();
             nextBtn.removeEventListener('click', closeOnNav);
             prevBtn.removeEventListener('click', closeOnNav);
         };
-        
+
         nextBtn.addEventListener('click', closeOnNav);
         prevBtn.addEventListener('click', closeOnNav);
     }
 
     function closeTranslationPopupHandler() {
         if (!translationPopup || !translationOverlay) return;
-        
+
         translationPopup.classList.remove('active');
         translationOverlay.classList.remove('active');
         stopSpeech();
         translationOriginal.textContent = '';
         translationResult.textContent = '';
-        
+
         if (window.getSelection) {
             window.getSelection().removeAllRanges();
         }
-        
+
         document.querySelectorAll('.highlighted-text').forEach(el => {
             const parent = el.parentNode;
             while (el.firstChild) {
@@ -2109,7 +2174,7 @@ function applyFontSize() {
             parent.removeChild(el);
             parent.normalize();
         });
-        
+
         selectedText = '';
         translationLang = '';
     }
@@ -2180,17 +2245,17 @@ function applyFontSize() {
 
     async function fetchTranslation(text, lang) {
         const langPair = lang === 'en' ? 'en|ja' : 'ja|en';
-        
+
         // Update status
         translationResult.textContent = "Loading translation...";
-        
+
         // Try each API in order, with fallback
         for (const api of translationApis) {
             try {
                 console.log(`Trying ${api.name}...`);
-                
+
                 let translatedText = await api.fetch(text, langPair);
-                
+
                 // Clean the translation
                 translatedText = translatedText
                     .replace(/[#*_~`^]/g, '')
@@ -2199,25 +2264,25 @@ function applyFontSize() {
                     .replace(/\(.*?\)/g, '')
                     .replace(/\d+/g, '')
                     .trim();
-                
+
                 if (!translatedText) {
                     throw new Error('Translation returned empty after cleaning');
                 }
-                
+
                 console.log(`Translation successful with ${api.name}`);
                 translationResult.textContent = translatedText;
                 return;
-                
+
             } catch (error) {
                 console.error(`${api.name} failed:`, error.message);
                 // Continue to next API
             }
         }
-        
+
         // All APIs failed
         console.error('All translation APIs failed');
         translationResult.textContent = "Unable to get translation";
-        
+
         // Try local dictionary as last resort for short text
         if (text.length < 20) {
             trySimpleDictionaryLookup(text, lang);
@@ -2234,7 +2299,7 @@ function applyFontSize() {
             'thank you': 'ありがとう',
             'please': 'お願いします'
         };
-        
+
         const jaToEnDict = {
             'こんにちは': 'hello',
             'ありがとう': 'thank you',
@@ -2242,7 +2307,7 @@ function applyFontSize() {
             '番組': 'show',
             '見せる': 'show'
         };
-        
+
         const dict = lang === 'en' ? enToJaDict : jaToEnDict;
         if (dict[word]) {
             translationResult.textContent = dict[word];
@@ -2310,7 +2375,7 @@ function applyFontSize() {
     function getWordAtPoint(element, x, y) {
         const range = document.caretRangeFromPoint(x, y);
         if (!range) return null;
-        
+
         range.expand('word');
         const word = range.toString().trim();
         return word || null;
@@ -2320,10 +2385,10 @@ function applyFontSize() {
     // FRUIT GAME
     // ====================
 const categories = [
-        { 
-            name: 'Animals (Singular)', 
+        {
+            name: 'Animals (Singular)',
             items: [
-                {emoji: '🐶', name: 'a dog'}, 
+                {emoji: '🐶', name: 'a dog'},
                 {emoji: '🐱', name: 'a cat'},
                 {emoji: '🐭', name: 'a mouse'},
                 {emoji: '🐰', name: 'a rabbit'},
@@ -2335,10 +2400,10 @@ const categories = [
                 {emoji: '🐦', name: 'a bird'}
             ]
         },
-        { 
-            name: 'Fruit & Food', 
+        {
+            name: 'Fruit & Food',
             items: [
-                {emoji: '🍎', name: 'an apple'}, 
+                {emoji: '🍎', name: 'an apple'},
                 {emoji: '🍊', name: 'an orange'},
                 {emoji: '🍌', name: 'a banana'},
                 {emoji: '🥚', name: 'an egg'},
@@ -2350,10 +2415,10 @@ const categories = [
                 {emoji: '🍩', name: 'a donut'}
             ]
         },
-        { 
-            name: 'Action Verbs 1', 
+        {
+            name: 'Action Verbs 1',
             items: [
-                {emoji: '🏃', name: 'run'}, 
+                {emoji: '🏃', name: 'run'},
                 {emoji: '🚶', name: 'walk'},
                 {emoji: '🏊', name: 'swim'},
                 {emoji: '✈️', name: 'fly'},
@@ -2365,10 +2430,10 @@ const categories = [
                 {emoji: '🎣', name: 'fish'}
             ]
         },
-        { 
-            name: 'Action Verbs 2', 
+        {
+            name: 'Action Verbs 2',
             items: [
-                {emoji: '🥣', name: 'eat'}, 
+                {emoji: '🥣', name: 'eat'},
                 {emoji: '🥛', name: 'drink'},
                 {emoji: '😴', name: 'sleep'},
                 {emoji: '📖', name: 'read'},
@@ -2380,10 +2445,10 @@ const categories = [
                 {emoji: '🎮', name: 'play'}
             ]
         },
-        { 
-            name: 'Adjectives (Feeling)', 
+        {
+            name: 'Adjectives (Feeling)',
             items: [
-                {emoji: '😊', name: 'happy'}, 
+                {emoji: '😊', name: 'happy'},
                 {emoji: '😢', name: 'sad'},
                 {emoji: '😠', name: 'angry'},
                 {emoji: '😴', name: 'sleepy'},
@@ -2395,10 +2460,10 @@ const categories = [
                 {emoji: '🤩', name: 'excited'}
             ]
         },
-        { 
-            name: 'Adjectives (Describing)', 
+        {
+            name: 'Adjectives (Describing)',
             items: [
-                {emoji: '🐘', name: 'big'}, 
+                {emoji: '🐘', name: 'big'},
                 {emoji: '🐜', name: 'small'},
                 {emoji: '🐇', name: 'fast'},
                 {emoji: '🐢', name: 'slow'},
@@ -2410,10 +2475,10 @@ const categories = [
                 {emoji: '🌶️', name: 'spicy'}
             ]
         },
-        { 
-            name: 'School Objects', 
+        {
+            name: 'School Objects',
             items: [
-                {emoji: '✏️', name: 'a pencil'}, 
+                {emoji: '✏️', name: 'a pencil'},
                 {emoji: '🖊️', name: 'a pen'},
                 {emoji: '📕', name: 'a book'},
                 {emoji: '📓', name: 'a notebook'},
@@ -2425,8 +2490,8 @@ const categories = [
                 {emoji: '👨‍🏫', name: 'a teacher'}
             ]
         },
-        { 
-            name: 'Prepositions & Logic', 
+        {
+            name: 'Prepositions & Logic',
             items: [
                 {emoji: '⬆️', name: 'up'},
                 {emoji: '⬇️', name: 'down'},
@@ -2440,10 +2505,10 @@ const categories = [
                 {emoji: '🤝', name: 'with'}
             ]
         },
-        { 
-            name: 'Town & Vehicles', 
+        {
+            name: 'Town & Vehicles',
             items: [
-                {emoji: '🚗', name: 'a car'}, 
+                {emoji: '🚗', name: 'a car'},
                 {emoji: '🚌', name: 'a bus'},
                 {emoji: '🚲', name: 'a bike'},
                 {emoji: '🚕', name: 'a taxi'},
@@ -2455,10 +2520,10 @@ const categories = [
                 {emoji: '✈️', name: 'a plane'}
             ]
         },
-        { 
-            name: 'Clothes', 
+        {
+            name: 'Clothes',
             items: [
-                {emoji: '👕', name: 'a t-shirt'}, 
+                {emoji: '👕', name: 'a t-shirt'},
                 {emoji: '🧢', name: 'a cap'},
                 {emoji: '🧥', name: 'a coat'},
                 {emoji: '👗', name: 'a dress'},
@@ -2480,10 +2545,10 @@ const categories = [
             fruitToggleBtn.innerHTML = '🍎';
             fruitToggleBtn.style.color = 'var(--warning)';
         }
-        
+
         fruitToggleBtn.classList.toggle('on', fruitGameEnabled);
         fruitToggleBtn.title = fruitGameEnabled ? 'Fruit Game is ON' : 'Fruit Game is OFF';
-        
+
         if (fruitGameEnabled) {
             fruitToggleBtn.style.boxShadow = '0 0 10px var(--success)';
             fruitToggleBtn.style.border = '2px solid var(--success)';
@@ -2492,7 +2557,7 @@ const categories = [
             fruitToggleBtn.style.border = '2px solid var(--warning)';
         }
     }
-    
+
     function toggleFruitGame() {
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
@@ -2500,7 +2565,7 @@ const categories = [
 
         fruitGameEnabled = !fruitGameEnabled;
         updateFruitButtonState();
-        
+
         if (fruitGameEnabled) {
             playSound('activate');
             if (navigator.vibrate) navigator.vibrate(50);
@@ -2509,20 +2574,20 @@ const categories = [
                 hideFruitGame();
             }
         }
-        
+
         localStorage.setItem('fruitGameEnabled', fruitGameEnabled);
         console.log('Fruit game is now', fruitGameEnabled ? 'ON' : 'OFF');
     }
-    
+
     function showFruitGame() {
         if (!fruitGameEnabled || fruitGameActive) {
             console.log('Fruit game not shown - enabled:', fruitGameEnabled, 'active:', fruitGameActive);
             return;
         }
-        
+
         stopSpeech();
         fruitGameActive = true;
-        
+
         const gameContainer = document.createElement('div');
         gameContainer.className = 'fruit-game-container';
         gameContainer.innerHTML = `
@@ -2546,7 +2611,7 @@ const categories = [
                 <button id="exitFruitGame" class="btn" style="margin-top: 20px; background-color: var(--warning);">Exit Game</button>
             </div>
         `;
-        
+
         document.body.appendChild(gameContainer);
         spinReels();
         document.getElementById('exitFruitGame').addEventListener('click', hideFruitGame);
@@ -2557,20 +2622,20 @@ const categories = [
         if (game && game.parentNode) {
             game.parentNode.removeChild(game);
         }
-        
+
         fruitGameActive = false;
-        
+
         if (window.AudioContext) {
             const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
             audioCtx.close();
         }
-        
+
         closeTranslationPopupHandler();
-        
+
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
         }
-        
+
         setTimeout(() => {
             if (shouldAdvanceAfterGame) {
                 const isLastPage = currentSentenceIndex >= sentences.length - 1;
@@ -2580,7 +2645,7 @@ const categories = [
             displayCurrentSentence();
         }, 500);
     }
-    
+
     function spinReels() {
         const currentCategory = categories[Math.floor(Math.random() * categories.length)];
         const items = currentCategory.items;
@@ -2590,55 +2655,55 @@ const categories = [
             document.getElementById('reel3')
         ];
         const resultDisplay = document.getElementById('fruitResult');
-        
+
         resultDisplay.textContent = '';
         resultDisplay.style.color = '';
         playSound('spin');
-        
+
         const shouldMatch = Math.random() < 0.33;
         let matchingItem = '';
-        
+
         if (shouldMatch) {
             matchingItem = items[Math.floor(Math.random() * items.length)];
             matchingItem = items.find(item => item.emoji === matchingItem.emoji) || matchingItem;
         }
-        
+
         spinReel(reels[0], 0, items, matchingItem, shouldMatch, () => {
             playSound('reelStop');
             spinReel(reels[1], 300, items, matchingItem, shouldMatch, () => {
                 playSound('reelStop');
                 spinReel(reels[2], 300, items, matchingItem, shouldMatch, () => {
                     playSound('reelStop');
-                    
+
                     setTimeout(() => {
-                        if (shouldMatch && reels[0].textContent === reels[1].textContent && 
+                        if (shouldMatch && reels[0].textContent === reels[1].textContent &&
                             reels[1].textContent === reels[2].textContent) {
                             playSound('win');
                             playSound('coin');
                             resultDisplay.textContent = '🎉 WINNER! 🎉';
                             resultDisplay.style.color = 'var(--success)';
                             resultDisplay.style.fontWeight = 'bold';
-                            
+
                             reels.forEach(reel => {
                                 reel.style.transform = 'scale(1.2)';
                                 reel.style.transition = 'all 0.3s';
                                 reel.style.boxShadow = '0 0 20px gold';
                             });
-                            
+
                             setTimeout(() => {
                                 createConfetti();
                             }, 500);
-                            
+
                             setTimeout(hideFruitGame, 3000);
                         } else {
                             playSound('lose');
                             resultDisplay.textContent = 'Try again!';
                             resultDisplay.style.color = 'var(--warning)';
-                            
+
                             reels.forEach(reel => {
                                 reel.style.animation = 'shake 0.5s';
                             });
-                            
+
                             setTimeout(hideFruitGame, 2000);
                         }
                     }, 300);
@@ -2650,7 +2715,7 @@ const categories = [
     function spinReel(reel, delay, items, matchingItem, shouldMatch, callback) {
         const reelNumber = reel.id.replace('reel', '');
         const nameElement = document.getElementById(`name${reelNumber}`);
-        
+
         setTimeout(() => {
             let spins = 0;
             const spinInterval = setInterval(() => {
@@ -2658,14 +2723,14 @@ const categories = [
                     const randomItem = items[Math.floor(Math.random() * items.length)];
                     reel.textContent = randomItem.emoji;
                     nameElement.textContent = '';
-                } 
+                }
                 else if (spins < 15) {
                     if (spins % 2 === 0) {
                         const randomItem = items[Math.floor(Math.random() * items.length)];
                         reel.textContent = randomItem.emoji;
                         nameElement.textContent = '';
                     }
-                } 
+                }
                 else {
                     clearInterval(spinInterval);
                     let finalItem;
@@ -2676,13 +2741,13 @@ const categories = [
                     }
                     reel.textContent = finalItem.emoji;
                     nameElement.textContent = finalItem.name;
-                    
+
                     if (window.speechSynthesis) {
                         const utterance = new SpeechSynthesisUtterance(finalItem.name);
                         utterance.rate = 0.9;
                         window.speechSynthesis.speak(utterance);
                     }
-                    
+
                     if (callback) callback();
                 }
                 spins++;
@@ -2693,7 +2758,7 @@ const categories = [
     function createConfetti() {
         const container = document.querySelector('.fruit-game-container');
         if (!container) return;
-        
+
         for (let i = 0; i < 100; i++) {
             const confetti = document.createElement('div');
             confetti.style.position = 'absolute';
@@ -2706,9 +2771,9 @@ const categories = [
             confetti.style.opacity = '0.8';
             confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
             confetti.style.animation = `confetti-fall ${2 + Math.random() * 3}s linear forwards`;
-            
+
             container.appendChild(confetti);
-            
+
             setTimeout(() => {
                 confetti.remove();
             }, 5000);
@@ -2717,14 +2782,14 @@ const categories = [
 
     function playSound(type) {
         if (!window.AudioContext) return;
-        
+
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         let oscillator = audioCtx.createOscillator();
         let gainNode = audioCtx.createGain();
-        
+
         oscillator.connect(gainNode);
         gainNode.connect(audioCtx.destination);
-        
+
         switch(type) {
             case 'spin':
                 oscillator.type = 'sawtooth';
@@ -2735,7 +2800,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.8);
                 break;
-                
+
             case 'reelStop':
                 oscillator.type = 'square';
                 oscillator.frequency.setValueAtTime(1000, audioCtx.currentTime);
@@ -2744,7 +2809,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.1);
                 break;
-                
+
             case 'win':
                 oscillator.type = 'sine';
                 oscillator.frequency.setValueAtTime(523.25, audioCtx.currentTime);
@@ -2756,7 +2821,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.5);
                 break;
-                
+
             case 'lose':
                 oscillator.type = 'square';
                 oscillator.frequency.setValueAtTime(349.23, audioCtx.currentTime);
@@ -2766,7 +2831,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.6);
                 break;
-                
+
             case 'activate':
                 oscillator.type = 'sine';
                 oscillator.frequency.setValueAtTime(784, audioCtx.currentTime);
@@ -2775,7 +2840,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.3);
                 break;
-                
+
             case 'coin':
                 oscillator.type = 'triangle';
                 oscillator.frequency.setValueAtTime(988, audioCtx.currentTime);
@@ -2840,11 +2905,11 @@ function loadLessonsData() {
                     questions: window.eiken3questions ? window.eiken3questions.questions : []
                 },
             'Eiken4': {
-    stories: Array.isArray(eiken4) ? 
+    stories: Array.isArray(eiken4) ?
         eiken4.map(story => ({
             title: story.title,
             content: story.content
-        })) : 
+        })) :
         Object.values(eiken4).map(story => ({
             title: story.title,
             content: story.content
@@ -2904,7 +2969,7 @@ function loadLessonsData() {
                 'VocabEiken5': {
                     stories: typeof vocabularyCategories !== 'undefined' ? Object.entries(vocabularyCategories).map(([category, words]) => ({
                         title: category,
-                        content: words.map((word, i) => 
+                        content: words.map((word, i) =>
                             `${i+1}. ${word.emoji || ''} ${word.english} - ${word.japanese}`
                         ).join('\n')
                     })) : []
@@ -2914,7 +2979,7 @@ function loadLessonsData() {
 // Process each class to ensure consistent structure
             Object.entries(classData).forEach(([className, data]) => {
                 if (!data) return; // Skip if data not loaded
-                
+
                 if (Array.isArray(data)) {
                     // UPDATED LOGIC HERE:
                     // Check if the items inside the array are Objects with a 'title' property
@@ -2938,11 +3003,59 @@ function loadLessonsData() {
                         }))
                     };
                 }
-                
-                console.log(`${className} loaded with`, 
+
+                console.log(`${className} loaded with`,
                     lessonsData[className].stories?.length || 0, 'stories and',
                     lessonsData[className].questions ? 'questions' : 'no questions');
             });
+            
+            // Create additional organized classes for Q&A
+            if (lessonsData['Adult']?.questions) {
+                lessonsData['Calendar'] = { questions: lessonsData['Adult'].questions };
+            }
+            if (typeof gettingtoknow !== 'undefined') {
+                lessonsData['ConversationQA'] = {
+                    stories: [{
+                        title: 'Getting to Know You',
+                        content: gettingtoknow.questions
+                    }, {
+                        title: 'Easy Questions',
+                        content: easyquestions?.questions || ''
+                    }, {
+                        title: 'Would You Rather',
+                        content: wouldyourather?.questions || ''
+                    }]
+                };
+            }
+            if (window.eiken3questions) {
+                lessonsData['Eiken3Questions'] = {
+                    stories: [{ title: 'Eiken 3 Questions', content: eiken3questions.questions }]
+                };
+            }
+            if (typeof qa5 !== 'undefined') {
+                lessonsData['Eiken5Questions'] = {
+                    stories: [{ title: 'Eiken 5 Questions', content: qa5.questions }]
+                };
+            }
+            // Add placeholders for other Eiken Q&A sections (coming soon)
+            lessonsData['Eiken7Questions'] = {
+                stories: [{ title: 'Eiken 7 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['Eiken6Questions'] = {
+                stories: [{ title: 'Eiken 6 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['Eiken2Questions'] = {
+                stories: [{ title: 'Eiken 2 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['Eiken1Questions'] = {
+                stories: [{ title: 'Eiken 1 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['EikenPre2Questions'] = {
+                stories: [{ title: 'Eiken Pre-2 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['EikenPre1Questions'] = {
+                stories: [{ title: 'Eiken Pre-1 Questions *', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
 
             if (Object.keys(lessonsData).length > 0) {
                 resolve();
@@ -2968,7 +3081,7 @@ function loadLessonsData() {
 
     function handleRemoteInput(e) {
         const activeElement = document.activeElement;
-        
+
         switch(e.key) {
             case 'ArrowUp':
                 navigateFocus('up');
@@ -3008,20 +3121,20 @@ function loadLessonsData() {
     function navigateFocus(direction) {
         const focusable = Array.from(document.querySelectorAll('button, select, [tabindex="0"]'));
         const currentIndex = focusable.indexOf(document.activeElement);
-        
+
         if (currentIndex === -1) {
             if (focusable.length > 0) focusable[0].focus();
             return;
         }
-        
+
         let nextIndex = currentIndex;
-        
+
         if (direction === 'up' || direction === 'left') {
             nextIndex = Math.max(0, currentIndex - 1);
         } else {
             nextIndex = Math.min(focusable.length - 1, currentIndex + 1);
         }
-        
+
         focusable[nextIndex].focus();
     }
 
@@ -3035,11 +3148,11 @@ function loadLessonsData() {
             document.body.classList.add('dark-mode');
             document.getElementById('nightModeToggle').textContent = '☀️';
         }
-        
+
         init();
         setTimeout(listVoices, 1000);
     });
-</script>   
+</script>
 </body>
 </html>
 
