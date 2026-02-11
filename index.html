@@ -1186,8 +1186,8 @@
                 
                 <optgroup label="Other">
                     <option value="Conversation">Conversation Practice</option>
+                    <option value="Vocabulary">Vocabulary</option>
                     <option value="Adult">Adult</option>
-                    <option value="HighSchool">Vocabulary</option>
                 </optgroup>
             </select>
         </div>
@@ -2907,6 +2907,14 @@ function loadLessonsData() {
                             content: typeof wouldyourather !== 'undefined' ? wouldyourather.questions : []
                         }
                     ]
+                },
+                'Vocabulary': {
+                    stories: typeof vocabularyCategories !== 'undefined' ? Object.entries(vocabularyCategories).map(([category, words]) => ({
+                        title: category,
+                        content: words.map((word, i) => 
+                            `${i+1}. ${word.emoji || ''} ${word.english} - ${word.japanese}`
+                        ).join('\n')
+                    })) : []
                 }
             };
 
