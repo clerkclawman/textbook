@@ -1305,6 +1305,19 @@
 
 <script>
     // ====================
+    // DEBUG & LOGGER SETUP
+    // ====================
+    const DEBUG = false; // Set to true for development, false for production
+
+    // Conditional logger - only logs when DEBUG is true
+    const logger = {
+        log: (...args) => { if (DEBUG) logger.log(...args); },
+        warn: (...args) => { if (DEBUG) logger.warn(...args); },
+        error: (...args) => { if (DEBUG) logger.error(...args); },
+        debug: (...args) => { if (DEBUG) console.debug(...args); }
+    };
+
+    // ====================
     // GLOBAL VARIABLES
     // ====================
     let currentClass = null;
@@ -1350,7 +1363,7 @@ const maxFontSize = 8; // vw/rem units
         const nightModeToggle = document.getElementById('nightModeToggle');
 
         if (!englishSentence || !japaneseSentence) {
-            console.error('Critical elements not found');
+            logger.error('Critical elements not found');
             return false;
         }
         return true;
@@ -1365,10 +1378,10 @@ const maxFontSize = 8; // vw/rem units
         setupEventListeners();
         loadSavedPreferences();
         loadExternalData().then(() => {
-            console.log('All external data loaded');
+            logger.log('All external data loaded');
             classSelector.focus();
         }).catch(error => {
-            console.error('Error loading external data:', error);
+            logger.error('Error loading external data:', error);
             alert('Error loading required data files. Please check the console for details.');
         });
     }
@@ -1406,7 +1419,7 @@ const maxFontSize = 8; // vw/rem units
         // Initialize speech synthesis
         if ('speechSynthesis' in window) {
             window.speechSynthesis.onvoiceschanged = function() {
-                console.log('Voices loaded');
+                logger.log('Voices loaded');
             };
 
             if (window.speechSynthesis.getVoices().length === 0) {
@@ -1572,10 +1585,10 @@ function populateStorySelector(cls) {
     }
 
 function loadTextContent(cls) {
-    console.log('Loading content for:', cls, 'Story:', currentStory);
+    logger.log('Loading content for:', cls, 'Story:', currentStory);
 
     if (!lessonsData[cls]) {
-        console.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
+        logger.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
         alert(`Data not found for class ${cls}`);
         exitReadingMode();
         return;
@@ -1587,13 +1600,13 @@ function loadTextContent(cls) {
     } else {
         const storyIndex = parseInt(currentStory);
         if (isNaN(storyIndex)) {
-            console.error('Invalid story index:', currentStory);
+            logger.error('Invalid story index:', currentStory);
             alert('Invalid story selection');
             exitReadingMode();
             return;
         }
         if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
-            console.error('Invalid story index:', storyIndex, 'for class:', cls);
+            logger.error('Invalid story index:', storyIndex, 'for class:', cls);
             alert('Invalid story selection');
             exitReadingMode();
             return;
@@ -1602,7 +1615,7 @@ function loadTextContent(cls) {
     }
 
     if (!content) {
-        console.error('Content not found for story:', currentStory, 'in class:', cls);
+        logger.error('Content not found for story:', currentStory, 'in class:', cls);
         alert(`Content not found for selected story`);
         exitReadingMode();
         return;
@@ -1701,7 +1714,7 @@ function countEnglishChars(str) {
         englishSentence = document.getElementById('englishSentence');
         japaneseSentence = document.getElementById('japaneseSentence');
         if (!englishSentence || !japaneseSentence) {
-            console.error('Sentence display elements not found');
+            logger.error('Sentence display elements not found');
             return;
         }
 
@@ -1771,13 +1784,13 @@ function countEnglishChars(str) {
 
         const sentenceRows = document.querySelectorAll('.sentence-row');
         if (!sentenceRows || sentenceRows.length === 0) {
-            console.error('No sentence rows found');
+            logger.error('No sentence rows found');
             return;
         }
 
         if (sentenceRows.length === 0) {
             if (!sentences || sentences.length === 0) {
-                console.warn('No sentences loaded - cannot apply display mode');
+                logger.warn('No sentences loaded - cannot apply display mode');
                 return;
             }
 
@@ -1790,7 +1803,7 @@ function countEnglishChars(str) {
                 return;
             }
 
-            console.error('Failed to find sentence rows after waiting');
+            logger.error('Failed to find sentence rows after waiting');
             return;
         }
 
@@ -2006,7 +2019,7 @@ function applyFontSize() {
 
     function speakSentence(text, lang) {
         if (!('speechSynthesis' in window)) {
-            console.warn('Speech synthesis not supported');
+            logger.warn('Speech synthesis not supported');
             return;
         }
 
@@ -2042,13 +2055,13 @@ function applyFontSize() {
 
             if (voice) {
                 utterance.voice = voice;
-                console.log('Using voice:', voice.name, 'for language:', lang);
+                logger.log('Using voice:', voice.name, 'for language:', lang);
             } else {
-                console.warn('No specific voice found for', lang, 'using default');
+                logger.warn('No specific voice found for', lang, 'using default');
             }
 
             utterance.onerror = function(event) {
-                console.error('SpeechSynthesis error:', event);
+                logger.error('SpeechSynthesis error:', event);
             };
 
             window.speechSynthesis.speak(utterance);
@@ -2056,7 +2069,7 @@ function applyFontSize() {
 
         const voices = window.speechSynthesis.getVoices();
         if (voices.length === 0) {
-            console.log('Waiting for voices to load...');
+            logger.log('Waiting for voices to load...');
             window.speechSynthesis.onvoiceschanged = speakWithVoice;
         } else {
             speakWithVoice();
@@ -2065,9 +2078,9 @@ function applyFontSize() {
 
     function listVoices() {
         const voices = window.speechSynthesis.getVoices();
-        console.log("Available voices:");
+        logger.log("Available voices:");
         voices.forEach(voice => {
-            console.log(`- ${voice.name} (${voice.lang}) ${voice.default ? '[DEFAULT]' : ''}`);
+            logger.log(`- ${voice.name} (${voice.lang}) ${voice.default ? '[DEFAULT]' : ''}`);
         });
     }
 
@@ -2084,7 +2097,7 @@ function applyFontSize() {
 
         if (!translationPopup || !translationOverlay || !closeTranslationPopup ||
             !translationOriginal || !translationResult || !translationTts) {
-            console.error('One or more translation elements not found');
+            logger.error('One or more translation elements not found');
             return false;
         }
 
@@ -2139,7 +2152,7 @@ function applyFontSize() {
                 range.surroundContents(span);
             }
         } catch (e) {
-            console.error('Error highlighting text:', e);
+            logger.error('Error highlighting text:', e);
         }
 
         translationOriginal.textContent = selectedText;
@@ -2202,7 +2215,7 @@ function applyFontSize() {
                 if (!data.responseData || !data.responseData.translatedText) {
                     throw new Error('MyMemory: No translation data');
                 }
-                console.log('Translation successful with MyMemory');
+                logger.log('Translation successful with MyMemory');
                 return data.responseData.translatedText;
             }
         },
@@ -2224,7 +2237,7 @@ function applyFontSize() {
                 if (!response.ok) throw new Error('LibreTranslate argos: Network error');
                 const data = await response.json();
                 if (!data.translatedText) throw new Error('LibreTranslate argos: No translation');
-                console.log('Translation successful with LibreTranslate (argos)');
+                logger.log('Translation successful with LibreTranslate (argos)');
                 return data.translatedText;
             }
         },
@@ -2246,7 +2259,7 @@ function applyFontSize() {
                 if (!response.ok) throw new Error('LibreTranslate de: Network error');
                 const data = await response.json();
                 if (!data.translatedText) throw new Error('LibreTranslate de: No translation');
-                console.log('Translation successful with LibreTranslate (de)');
+                logger.log('Translation successful with LibreTranslate (de)');
                 return data.translatedText;
             }
         }
@@ -2261,7 +2274,7 @@ function applyFontSize() {
         // Try each API in order, with fallback
         for (const api of translationApis) {
             try {
-                console.log(`Trying ${api.name}...`);
+                logger.log(`Trying ${api.name}...`);
 
                 let translatedText = await api.fetch(text, langPair);
 
@@ -2278,18 +2291,18 @@ function applyFontSize() {
                     throw new Error('Translation returned empty after cleaning');
                 }
 
-                console.log(`Translation successful with ${api.name}`);
+                logger.log(`Translation successful with ${api.name}`);
                 translationResult.textContent = translatedText;
                 return;
 
             } catch (error) {
-                console.error(`${api.name} failed:`, error.message);
+                logger.error(`${api.name} failed:`, error.message);
                 // Continue to next API
             }
         }
 
         // All APIs failed
-        console.error('All translation APIs failed');
+        logger.error('All translation APIs failed');
         translationResult.textContent = "Unable to get translation";
 
         // Try local dictionary as last resort for short text
@@ -2359,7 +2372,7 @@ function applyFontSize() {
 
             showTranslationPopup(selectedText, isEnglish ? 'en' : 'ja');
         } catch (error) {
-            console.error('Error in text selection handling:', error);
+            logger.error('Error in text selection handling:', error);
         }
     }
 
@@ -2587,12 +2600,12 @@ const categories = [
         }
 
         localStorage.setItem('fruitGameEnabled', fruitGameEnabled);
-        console.log('Fruit game is now', fruitGameEnabled ? 'ON' : 'OFF');
+        logger.log('Fruit game is now', fruitGameEnabled ? 'ON' : 'OFF');
     }
 
     function showFruitGame() {
         if (!fruitGameEnabled || fruitGameActive) {
-            console.log('Fruit game not shown - enabled:', fruitGameEnabled, 'active:', fruitGameActive);
+            logger.log('Fruit game not shown - enabled:', fruitGameEnabled, 'active:', fruitGameActive);
             return;
         }
 
@@ -2877,11 +2890,11 @@ const categories = [
     function loadVocabData() {
         return new Promise((resolve, reject) => {
             if (typeof vocab !== 'undefined') {
-                console.log('Vocabulary data loaded');
+                logger.log('Vocabulary data loaded');
                 resolve();
             } else {
                 const error = 'Vocabulary data not found. Please ensure vocab.js is loaded.';
-                console.error(error);
+                logger.error(error);
                 reject(error);
             }
         });
@@ -3015,7 +3028,7 @@ function loadLessonsData() {
                     };
                 }
 
-                console.log(`${className} loaded with`,
+                logger.log(`${className} loaded with`,
                     lessonsData[className].stories?.length || 0, 'stories and',
                     lessonsData[className].questions ? 'questions' : 'no questions');
             });
@@ -3074,7 +3087,7 @@ function loadLessonsData() {
                 reject('No lesson data found');
             }
         } catch (e) {
-            console.error('Error loading lesson data:', e);
+            logger.error('Error loading lesson data:', e);
             reject(e);
         }
     });
