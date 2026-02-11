@@ -2828,9 +2828,15 @@ function loadLessonsData() {
         try {
             // Standard format for all classes
             const classData = {
-                'Bronze': bronze,
-                'Silver': silver,
-                'Gold': gold,
+                'Bronze': {
+                    stories: typeof bronzeStories !== 'undefined' ? bronzeStories : []
+                },
+                'Silver': {
+                    stories: typeof silverStories !== 'undefined' ? silverStories : []
+                },
+                'Gold': {
+                    stories: typeof goldStories !== 'undefined' ? goldStories : []
+                },
                 'Adult': adult,
                 'X': x,
                 'C': c,
