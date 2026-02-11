@@ -1161,15 +1161,18 @@
                     <option value="Adult">Adult</option>
                 </optgroup>
                 
-                <optgroup label="EIKEN Foundation">
+                <optgroup label="EIKEN Junior">
                     <option value="Bronze">Bronze (Phonics)</option>
                     <option value="Silver">Silver (Patterns)</option>
                     <option value="Gold">Gold (Intro)</option>
-                    <option value="Eiken3">Eiken 3</option>
-                    <option value="Eiken4">Eiken 4</option>
-                    <option value="Eiken5">Eiken 5</option>
-                    <option value="Eiken6">Eiken 6</option>
+                </optgroup>
+                
+                <optgroup label="EIKEN Foundation">
                     <option value="Eiken7">Eiken 7</option>
+                    <option value="Eiken6">Eiken 6</option>
+                    <option value="Eiken5">Eiken 5</option>
+                    <option value="Eiken4">Eiken 4</option>
+                    <option value="Eiken3">Eiken 3</option>
                 </optgroup>
                 
                 <optgroup label="EIKEN Advanced">
@@ -1452,28 +1455,25 @@ const maxFontSize = 8; // vw/rem units
 
 function populateStorySelector(cls) {
     storySelector.innerHTML = '<option value="">Select Story</option>';
-
     if (!lessonsData[cls]) return;
 
-    let optionIndex = 0;
-    
-    // Add questions first if they exist
+    // Add questions first if they exist (without numbering)
     if (lessonsData[cls].questions) {
         const option = document.createElement('option');
         option.value = 'questions';
-        option.textContent = `${optionIndex + 1}. QA Questions`;
+        option.textContent = 'QA Questions';
         storySelector.appendChild(option);
-        optionIndex++;
     }
 
-    // Add stories
+    // Add stories with clean numbering starting at 1
     if (lessonsData[cls].stories) {
-        lessonsData[cls].stories.forEach((story, index) => {
+        lessonsData[cls].stories.forEach((story, idx) => {
             const option = document.createElement('option');
-            option.value = optionIndex;
-            option.textContent = `${optionIndex + 1}. ${story.title}`;
+            option.value = idx; // direct index into stories array
+            // Strip any leading numbers/dots from title for clean display
+            let cleanTitle = story.title.replace(/^\d+\.\s*/, '');
+            option.textContent = `${idx + 1}. ${cleanTitle}`;
             storySelector.appendChild(option);
-            optionIndex++;
         });
     }
 
@@ -1514,35 +1514,21 @@ function loadTextContent(cls) {
     let content;
     if (currentStory === 'questions') {
         content = lessonsData[cls].questions;
-} else {
-    const selectorIndex = parseInt(currentStory);
-    if (isNaN(selectorIndex)) {
-        console.error('Invalid story index:', currentStory);
-        alert('Invalid story selection');
-        exitReadingMode();
-        return;
-    }
-
-    // Adjust index based on questions presence
-    let storyIndex = selectorIndex;
-    if (lessonsData[cls].questions) {
-        storyIndex = selectorIndex - 1;
-    }
-
-    if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
-        console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
-        alert('Invalid story selection');
-        exitReadingMode();
-        return;
-    }
-    content = lessonsData[cls].stories[storyIndex].content;
-}
-
-    if (!content) {
-        console.error('Content not found for story:', currentStory, 'in class:', cls);
-        alert(`Content not found for selected story`);
-        exitReadingMode();
-        return;
+    } else {
+        const storyIndex = parseInt(currentStory);
+        if (isNaN(storyIndex)) {
+            console.error('Invalid story index:', currentStory);
+            alert('Invalid story selection');
+            exitReadingMode();
+            return;
+        }
+        if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
+            console.error('Invalid story index:', storyIndex, 'for class:', cls);
+            alert('Invalid story selection');
+            exitReadingMode();
+            return;
+        }
+        content = lessonsData[cls].stories[storyIndex].content;
     }
 
     if (!content) {
