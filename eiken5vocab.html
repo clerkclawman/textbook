@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vocab TV — Flash & Match</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --panel:#0b1220;
+      --muted:#9aa6b8;
+      --accent:#60a5fa; /* blue */
+      --accent-2:#34d399; /* green */
+      --gold:#fbbf24;
+      --danger:#fb7185;
+      --text:#e6eef8;
+      --card-radius:1.6vh;
+      --pad:2vh;
+    }
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+    html,body{height:100%;width:100%;margin:0;padding:0;overflow:hidden;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Apple Color Emoji"}
+    .no-scroll{position:fixed;inset:0;overflow:hidden}
+
+    /* App shell */
+    .screen{position:fixed;inset:0;display:none;padding:var(--pad);align-items:center;justify-content:center}
+    .screen.active{display:flex}
+    .card{width:100%;max-width:180vh;aspect-ratio:16/9;border-radius:calc(var(--card-radius));background:linear-gradient(180deg,var(--panel),#071027);padding:var(--pad);display:flex;flex-direction:column;gap:1.4vh;box-shadow:0 1.6vh 3vh rgba(0,0,0,0.6)}
+
+    /* Menu layout */
+    .menu-grid{display:flex;flex-direction:column;gap:1.2vh;height:100%}
+    .panel{background:rgba(255,255,255,0.03);border-radius:1.2vh;padding:1.2vh;display:flex;align-items:center;gap:1.0vh;flex-wrap:wrap}
+    .panel.title{align-items:center;justify-content:space-between;padding:0.8vh 1.2vh}
+    .brand{font-weight:900;font-size:4.8vh;letter-spacing:0.02em}
+    .subtitle{font-size:2.6vh;color:var(--muted)}
+
+    select,input[type="checkbox"],input[type="radio"],.control{font-size:3.0vh;padding:0.8vh 1.2vh;border-radius:1.0vh;border:0;background:rgba(255,255,255,0.03);color:var(--text)}
+    .controls{display:flex;gap:0.8vh;align-items:center;flex-wrap:wrap}
+
+    button.big{font-size:3.4vh;padding:1.0vh 1.6vh;border-radius:1.2vh;border:0;font-weight:800;cursor:pointer;box-shadow:0 0.6vh 1.0vh rgba(0,0,0,0.6);min-height:8vh;min-width:20vh;}
+    button.primary{background:var(--accent);color:#042033}
+    button.green{background:var(--accent-2);color:#022d20}
+    button.gold{background:var(--gold);color:#10201a}
+    button.danger{background:var(--danger);color:#2b0216}
+
+    /* TV-specific focus styles */
+    button:focus, select:focus, input:focus {
+      outline: 0.4vh solid var(--gold);
+      outline-offset: 0.2vh;
+    }
+
+    .hint{font-size:2.4vh;color:var(--muted)}
+
+    /* Flash screen */
+    .flash-wrap{display:flex;flex-direction:column;align-items:center;justify-content:space-between;height:100%}
+    .emoji-wrap{display:flex;align-items:center;justify-content:center;flex:1;width:100%}
+.emoji {
+  font-size: min(50vh, 480px);
+  line-height: 1;
+  text-align: center;
+  user-select: none;
+  /* Moved the main styling to the fix above */
+}
+@media screen and (min-width: 1280px) and (min-height: 720px) {
+  .emoji {
+    font-size: min(50vh, 460px);
+    text-shadow: 0 0 1.2vh rgba(0,0,0,0.4);
+  }
+}
+
+
+    .labels{display:flex;gap:2vh;align-items:center;justify-content:center;width:100%}
+    .word{min-width:28vh;padding:1.0vh 1.2vh;border-radius:1.0vh;background:rgba(255,255,255,0.03);text-align:center;font-weight:900;font-size:6.4vh}
+    .word.hidden{filter:blur(1.2vh);opacity:0.45}
+
+    .flash-bottom{display:flex;gap:1.0vh;align-items:center;justify-content:center;flex-direction:column}
+    .toolbar{display:flex;gap:0.8vh;align-items:center;justify-content:center;flex-wrap:wrap}
+    .badge{font-size:2.4vh;padding:0.6vh 1.0vh;border-radius:1.0vh;background:rgba(255,255,255,0.03)}
+
+    /* Nav arrows (big & clear) */
+    .nav-btn{min-width:8vh;height:8vh;border-radius:1.0vh;font-size:3.6vh;padding:0;display:flex;align-items:center;justify-content:center}
+    .nav-btn.prev{background:var(--accent-2);color:#042c22}
+    .nav-btn.next{background:var(--accent);color:#022b3a}
+
+    /* Game */
+    .game-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1.2vh;height:100%;align-items:stretch}
+    .game-col{display:flex;flex-direction:column;gap:1.0vh;align-items:stretch;justify-content:center;padding:0}
+    .game-btn{display:flex;align-items:center;justify-content:flex-start;gap:1.0vh;padding:0.8vh 1.0vh;border-radius:0.8vh;border:0;font-weight:900;font-size:4.0vh;background:rgba(255,255,255,0.02);color:var(--text);cursor:pointer;min-height:12vh;}
+.game-btn .emoji-small{
+  font-size: 5.6vh;
+  margin-right: 1.0vh;
+  /* All other styles moved to the main fix above */
+}
+  /* Add the same improvements for small emoji */
+  text-shadow: 0 0 0.4vh rgba(0,0,0,0.2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+    .game-btn.selected{outline:0.6vh solid var(--gold)}
+    .game-btn.matched{background:linear-gradient(90deg,rgba(80,200,120,0.14),rgba(60,160,240,0.08));color:#001a0d}
+    .game-col > .game-btn{min-height:calc((100% - (4 * 1vh)) / 5)}
+
+@media (max-height:620px){ 
+  .emoji{font-size:44vh} 
+  .word{font-size:5.6vh} 
+}
+
+/* Additional Android TV optimization */
+@media (max-width: 1920px) and (min-height: 1080px) {
+  .emoji {
+    font-size: 46vh;
+    text-shadow: 0 0 1.5vh rgba(0,0,0,0.4);
+  }
+}
+    
+/* Android TV Dropdown Fix - COMPLETE REPLACEMENT */
+.tv-dropdown {
+  background: #ffffff !important;
+  color: #000000 !important;
+  font-weight: 700;
+  border: 0.3vh solid #60a5fa !important;
+  -webkit-appearance: menulist;
+  appearance: menulist;
+  padding: 1.2vh 3vh 1.2vh 1.2vh !important;
+  font-size: 3.2vh;
+  width: 100%;
+  min-height: 6vh;
+  border-radius: 0.8vh;
+  position: relative;
+  z-index: 10;
+}
+
+/* Ensure dropdown options are properly styled */
+.tv-dropdown option {
+  background: #ffffff;
+  color: #000000;
+  font-size: 3.2vh;
+  padding: 1.2vh;
+  display: block;
+  font-weight: normal;
+}
+
+/* Focus styles for TV remote navigation */
+.tv-dropdown:focus {
+  outline: 0.4vh solid var(--gold) !important;
+  background: #e0e0e0 !important;
+  box-shadow: 0 0 1vh rgba(255, 215, 0, 0.5);
+  border-color: var(--gold) !important;
+}
+
+/* Custom dropdown arrow that doesn't interfere with functionality */
+.dropdown-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-wrapper::after {
+  content: "▼";
+  font-size: 2.4vh;
+  color: #000000;
+  position: absolute;
+  right: 1.5vh;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Ensure dropdowns are above other elements when open */
+.tv-dropdown:active,
+.tv-dropdown:focus {
+  z-index: 100;
+}
+
+    /* TV remote navigation helper */
+    .nav-hint {
+      position: fixed;
+      bottom: 2vh;
+      right: 2vh;
+      background: rgba(0,0,0,0.7);
+      padding: 1vh 2vh;
+      border-radius: 1vh;
+      font-size: 2.2vh;
+      color: var(--muted);
+      z-index: 100;
+    }
+/* ANDROID TV CRISP EMOJI FIX - Force image-based rendering */
+.emoji {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Force high-quality rendering */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  /* Prevent blurry transforms */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-font-smooth: always;
+  /* Specific Android TV fixes */
+  text-shadow: 0 0 1.5vh rgba(0,0,0,0.5);
+  filter: drop-shadow(0 0 0.3vh #000);
+}
+
+.emoji-small {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-weight: normal;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  transform: translateZ(0);
+  text-shadow: 0 0 0.8vh rgba(0,0,0,0.4);
+}
+
+/* Android TV specific optimizations */
+@media (pointer: coarse) and (hover: none) {
+  .emoji {
+    font-size: min(46vh, 440px) !important;
+    text-shadow: 0 0 2vh rgba(0,0,0,0.6);
+    /* Force GPU rendering */
+    will-change: transform;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  .emoji-small {
+    font-size: 5.4vh !important;
+    text-shadow: 0 0 1vh rgba(0,0,0,0.5);
+  }
+}
+
+/* Additional TV browser detection */
+@supports (-webkit-tv-select: none) or (tv-select: none) or (pointer: coarse) and (hover: none) {
+  .emoji {
+    font-size: min(45vh, 430px) !important;
+    /* More aggressive sharpening for TV browsers */
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    filter: none;
+    text-shadow: 0 0 1.8vh rgba(0,0,0,0.7);
+  }
+}
+
+/* Prevent any scaling that might cause blurriness */
+.emoji-wrap {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+  </style>
+</head>
+<body class="no-scroll">
+  <!-- Navigation hint for TV users -->
+  <div class="nav-hint" id="navHint">Use arrow keys and Enter</div>
+
+  <!-- MENU -->
+  <section id="menu" class="screen active" aria-label="Menu">
+    <div class="card" role="group" aria-label="Main menu">
+      <div class="menu-grid">
+        <div class="panel title">
+          <div>
+            <div class="brand">Vocab TV</div>
+            <div class="subtitle">Flash • Hear • Match — simple classroom drills</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.6vh;align-items:flex-end;">
+            <div style="display:flex;gap:0.6vh;">
+              <button id="startFlash" class="big primary" tabindex="0">Start Flash</button>
+              <button id="startGame" class="big green" tabindex="0">Start Game</button>
+            </div>
+            <div class="hint" style="text-align:right">Remote arrows + Enter</div>
+          </div>
+        </div>
+
+        <div class="panel">
+<div style="min-width:38%;">
+  <div class="hint" style="margin-bottom:0.6vh">Category</div>
+  <div class="dropdown-wrapper">
+<select id="categorySelect" class="control tv-dropdown" aria-label="Category select" style="width:100%" tabindex="0">
+  <option value="">Select a category</option>
+</select>
+  </div>
+</div>
+
+          <div style="min-width:30%;">
+            <div class="hint" style="margin-bottom:0.6vh">Order</div>
+            <div class="controls">
+              <label style="display:flex;gap:0.6vh;align-items:center"><input type="radio" name="order" value="ordered" checked tabindex="0" /> Ordered</label>
+              <label style="display:flex;gap:0.6vh;align-items:center"><input type="radio" name="order" value="random" tabindex="0" /> Random</label>
+            </div>
+          </div>
+
+          <div style="min-width:28%;">
+            <div class="hint" style="margin-bottom:0.6vh">Auto-game</div>
+            <div class="controls">
+              <label style="display:flex;gap:0.6vh;align-items:center"><input id="autoGame" type="checkbox" checked tabindex="0" /> Start game after 5 cards</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div style="min-width:34%;">
+            <div class="hint" style="margin-bottom:0.6vh">Auto Play</div>
+            <div class="controls">
+              <label><input id="autoEN" type="checkbox" checked tabindex="0" /> Auto EN</label>
+              <label><input id="autoJA" type="checkbox" tabindex="0" /> Auto JA</label>
+              <label><input id="enableAudio" type="checkbox" checked tabindex="0" /> Enable TTS</label>
+            </div>
+          </div>
+
+          <div style="min-width:34%;">
+            <div class="hint" style="margin-bottom:0.6vh">Show Labels</div>
+            <div class="controls">
+              <label><input id="showEN" type="checkbox" checked tabindex="0" /> Show English</label>
+              <label><input id="showJA" type="checkbox" checked tabindex="0" /> Show Japanese</label>
+            </div>
+          </div>
+
+<div style="min-width:28%;">
+  <div class="hint" style="margin-bottom:0.6vh">Voices</div>
+  <div class="controls">
+    <div class="dropdown-wrapper">
+<select id="enVoice" class="control tv-dropdown" tabindex="0">
+  <option value="">English voice</option>
+</select>
+
+<select id="jaVoice" class="control tv-dropdown" tabindex="0">
+  <option value="">Japanese voice</option>
+</select>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="panel" style="justify-content:space-between;align-items:center;">
+          <div style="display:flex;flex-direction:column;gap:0.6vh;">
+            <div class="hint">Study List</div>
+            <div style="display:flex;gap:1.0vh;align-items:center;">
+              <button id="wipeDifficult" class="big danger" tabindex="0">Wipe Difficult</button>
+              <div class="badge" id="diffCount">0 words</div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div class="hint">Quick</div>
+            <div style="display:flex;gap:0.8vh;justify-content:flex-end;">
+              <button id="openFlash" class="big primary" tabindex="0">Flash</button>
+              <button id="openGame" class="big green" tabindex="0">Game</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FLASH -->
+  <section id="flash" class="screen" aria-label="Flash cards">
+    <div class="card flash-wrap" role="group" aria-label="Flash card">
+      <div class="emoji-wrap">
+        <div id="emoji" class="emoji" aria-hidden="true">🙂</div>
+      </div>
+
+      <div class="labels" aria-live="polite">
+        <div id="enWord" class="word">English</div>
+        <div id="jaWord" class="word">日本語</div>
+      </div>
+
+      <div class="flash-bottom">
+        <div class="toolbar">
+          <button id="prevBtn" class="big nav-btn prev" title="Previous" tabindex="0">◀</button>
+          <button id="toggleEN" class="big" title="Toggle English" tabindex="0">EN</button>
+          <button id="toggleJA" class="big" title="Toggle Japanese" tabindex="0">JA</button>
+          <button id="saveBtn" class="big green" title="Save difficult" tabindex="0">★</button>
+          <button id="playEN" class="big" title="Play English" tabindex="0">🔊</button>
+          <button id="playJA" class="big" title="Play Japanese" tabindex="0">🔊</button>
+          <button id="nextBtn" class="big nav-btn next" title="Next" tabindex="0">▶</button>
+        </div>
+        <div style="display:flex;gap:1.0vh;align-items:center;justify-content:center;">
+          <div class="badge" id="posBadge">0/0</div>
+          <div class="badge" id="catBadge">Category</div>
+          <button id="backToMenu" class="big" tabindex="0">Menu</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAME -->
+  <section id="game" class="screen" aria-label="Game">
+    <div class="card" role="group" aria-label="Matching game">
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <div style="font-weight:900;font-size:3.6vh">Match the pairs</div>
+        <div style="display:flex;gap:1.0vh;align-items:center;">
+          <div class="hint">Matches: <span id="matchedCount">0</span>/5</div>
+          <button id="gameBack" class="big" tabindex="0">Menu</button>
+          <button id="regenGame" class="big primary" tabindex="0">New Round</button>
+        </div>
+      </div>
+
+      <div class="game-wrap" style="margin-top:1.2vh;">
+        <div id="colEN" class="game-col" aria-label="English words column"></div>
+        <div id="colJA" class="game-col" aria-label="Japanese words column"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vocabulary file -->
+  <script src="vocabulary.js"></script>
+
+  <script>
+    // Utilities and state
+    const $ = s => document.querySelector(s);
+    const screens = { menu: $('#menu'), flash: $('#flash'), game: $('#game') };
+    const state = {
+      category: null, words: [], idx: 0, order: 'ordered', shuffled: [],
+      autoEN: true, autoJA: false, showEN: true, showJA: true, enableAudio: true,
+      lastFive: [], gamePairs: [], autoGame: true, enVoice: null, jaVoice: null,
+      currentFocus: null, focusableElements: [], flashPosition: 0
+    };
+    const DIFF_KEY = 'vocab_difficult_v2';
+    const LAST5_KEY = 'vocab_last5_v2';
+    const GAME_KEY = 'vocab_game_v2';
+
+    function getVocabularyRoot(){
+      if(typeof window !== 'undefined' && window.vocabularyCategories) return window.vocabularyCategories;
+      if(typeof vocabularyCategories !== 'undefined') return vocabularyCategories;
+      return null;
+    }
+
+    // Difficult list persisted in session
+    function saveDifficult(word){
+      if(!word) return;
+      let list = JSON.parse(sessionStorage.getItem(DIFF_KEY) || '[]');
+      if(!list.find(w => w.english===word.english && w.japanese===word.japanese)){
+        list.push(word);
+        sessionStorage.setItem(DIFF_KEY, JSON.stringify(list));
+      }
+      updateDiffBadge();
+    }
+    function getDifficult(){ return JSON.parse(sessionStorage.getItem(DIFF_KEY) || '[]'); }
+    function wipeDifficult(){ sessionStorage.removeItem(DIFF_KEY); updateDiffBadge(); buildCategorySelect(); }
+    function updateDiffBadge(){ $('#diffCount').textContent = `${getDifficult().length} words`; }
+
+function buildCategorySelect(){
+  const sel = $('#categorySelect'); 
+  sel.innerHTML = '<option value="">Loading categories...</option>';
+  
+  // Load immediately without timeout
+  const root = getVocabularyRoot() || {};
+  const cats = Object.keys(root || {});
+
+  // Build ALL WORDS category
+  let allWords = [];
+  cats.forEach(c => { allWords = allWords.concat(root[c]); });
+  root['_ALL_'] = allWords;
+
+  // Clear and rebuild options
+  sel.innerHTML = '';
+
+  // First option: All Words
+  const allOpt = document.createElement('option');
+  allOpt.value = '_ALL_';
+  allOpt.textContent = `All Words (${allWords.length})`;
+  sel.appendChild(allOpt);
+
+  // Other categories
+  for (const c of cats) {
+    const opt = document.createElement('option');
+    opt.value = c;
+    opt.textContent = c;
+    sel.appendChild(opt);
+  }
+
+  // Difficult list if exists
+  const difficultCount = getDifficult().length;
+  if(difficultCount > 0){ 
+    const opt = document.createElement('option'); 
+    opt.value='_DIFFICULT_'; 
+    opt.textContent=`Difficult (${difficultCount})`; 
+    sel.appendChild(opt); 
+  }
+  
+  if(!state.category && cats.length) state.category = cats[0];
+  sel.value = state.category || '';
+}
+
+    function getWordsForCategory(cat){
+      if(cat === '_DIFFICULT_') return getDifficult();
+      const root = getVocabularyRoot(); if(!root) return [];
+      return root[cat] ? root[cat].slice() : [];
+    }
+
+    function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+    function showScreen(name){ 
+      Object.values(screens).forEach(s=>s.classList.remove('active')); 
+      screens[name].classList.add('active'); 
+      updateFocusableElements();
+      if (state.focusableElements.length > 0) {
+        state.focusableElements[0].focus();
+      }
+    }
+
+    // TV Navigation
+    function updateFocusableElements() {
+      const activeScreen = document.querySelector('.screen.active');
+      if (activeScreen) {
+        state.focusableElements = Array.from(activeScreen.querySelectorAll('button, select, input, [tabindex="0"]'));
+      }
+    }
+
+    function handleTVNavigation(e) {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        moveFocus(1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        moveFocus(-1);
+      }
+    }
+
+    function moveFocus(direction) {
+      if (state.focusableElements.length === 0) return;
+      
+      const currentIndex = state.focusableElements.indexOf(document.activeElement);
+      let nextIndex = currentIndex + direction;
+      
+      if (nextIndex < 0) nextIndex = state.focusableElements.length - 1;
+      if (nextIndex >= state.focusableElements.length) nextIndex = 0;
+      
+      state.focusableElements[nextIndex].focus();
+    }
+
+    // TTS helpers
+    function speak(text, lang='en-US', which='en'){
+      if(!state.enableAudio || !text) return;
+      try{
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = lang;
+        if(which==='en' && state.enVoice) u.voice = state.enVoice;
+        if(which==='ja' && state.jaVoice) u.voice = state.jaVoice;
+        u.rate = which==='ja'?0.92:1.0;
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(u);
+      }catch(e){ console.warn('TTS error', e); }
+    }
+
+function pickVoices(){
+  const all = window.speechSynthesis.getVoices() || [];
+  const enSel = $('#enVoice'); 
+  const jaSel = $('#jaVoice'); 
+  
+  // Clear existing options
+  enSel.innerHTML = '<option value="">English voice</option>';
+  jaSel.innerHTML = '<option value="">Japanese voice</option>';
+  
+  // Filter for US English and British English voices
+  const enList = all.filter(v => /en/i.test(v.lang) && /English/i.test(v.name));
+  const usVoices = enList.filter(v => /US|United States/i.test(v.name) || /en-US/i.test(v.lang));
+  const ukVoices = enList.filter(v => /UK|GB|British/i.test(v.name) || /en-GB/i.test(v.lang));
+  const otherEnVoices = enList.filter(v => !usVoices.includes(v) && !ukVoices.includes(v));
+  
+  // Add US voices first, then UK voices, then others
+  usVoices.forEach(v => {
+    const o = document.createElement('option');
+    o.value = v.name;
+    o.textContent = `${v.name} (US English)`;
+    enSel.appendChild(o);
+  });
+  
+  ukVoices.forEach(v => {
+    const o = document.createElement('option');
+    o.value = v.name;
+    o.textContent = `${v.name} (British English)`;
+    enSel.appendChild(o);
+  });
+  
+  otherEnVoices.forEach(v => {
+    const o = document.createElement('option');
+    o.value = v.name;
+    o.textContent = `${v.name} (${v.lang})`;
+    enSel.appendChild(o);
+  });
+  
+  // Japanese voices
+  const jaList = all.filter(v=>/ja/i.test(v.lang) || /Japanese/i.test(v.name));
+  jaList.forEach(v=>{ 
+    const o=document.createElement('option'); 
+    o.value=v.name; 
+    o.textContent=`${v.name} (${v.lang})`; 
+    jaSel.appendChild(o); 
+  });
+  
+  // Set default voices if available
+  state.enVoice = usVoices[0] || ukVoices[0] || enList[0] || all[0] || null; 
+  state.jaVoice = jaList[0] || all[0] || null;
+  
+  if(state.enVoice) enSel.value = state.enVoice.name; 
+  if(state.jaVoice) jaSel.value = state.jaVoice.name;
+}
+
+    // FLASH CARDS
+    function loadCategory(cat){ 
+      state.category = cat; 
+      state.words = getWordsForCategory(cat); 
+      state.idx = 0; 
+      state.shuffled = state.order==='random' ? shuffle(state.words.slice()) : state.words.slice(); 
+      $('#catBadge').textContent = cat === '_DIFFICULT_' ? 'Difficult' : (cat || '—'); 
+      renderCard(); 
+    }
+
+    function renderCard(){
+      if(!state.shuffled || state.shuffled.length===0){ $('#emoji').textContent='❓'; $('#enWord').textContent='-'; $('#jaWord').textContent='-'; $('#posBadge').textContent='0/0'; return; }
+      const w = state.shuffled[state.idx]; $('#emoji').textContent = w.emoji || '❓'; $('#enWord').textContent = w.english || ''; $('#jaWord').textContent = w.japanese || '';
+      $('#enWord').classList.toggle('hidden', !state.showEN); $('#jaWord').classList.toggle('hidden', !state.showJA); $('#posBadge').textContent = `${state.idx+1}/${state.shuffled.length}`;
+      pushLastFive(w);
+      if(state.autoEN) speak(w.english, 'en-US','en'); if(state.autoJA) setTimeout(()=>speak(w.japanese,'ja-JP','ja'), 350);
+    }
+
+    function nextCard(){ 
+      if(state.idx < state.shuffled.length - 1){ 
+        state.idx++; 
+        renderCard(); 
+      } else { 
+        $('#posBadge').textContent = `${state.shuffled.length}/${state.shuffled.length}`; 
+      } 
+    }
+    
+    function prevCard(){ 
+      if(state.idx>0){ 
+        state.idx--; 
+        renderCard(); 
+      } 
+    }
+
+    // last five stored in localStorage
+    function pushLastFive(w){ 
+      if(!w) return; 
+      let arr = JSON.parse(localStorage.getItem(LAST5_KEY) || '[]'); 
+      const key = JSON.stringify({english:w.english,japanese:w.japanese,emoji:w.emoji}); 
+      arr = arr.filter(x => JSON.stringify(x)!==key); 
+      arr.push({english:w.english,japanese:w.japanese,emoji:w.emoji}); 
+      while(arr.length>5) arr.shift(); 
+      localStorage.setItem(LAST5_KEY, JSON.stringify(arr)); 
+      state.lastFive = arr; 
+      
+      // Start game after 5 cards have been seen
+      if(state.autoGame && arr.length===5){ 
+        localStorage.setItem(GAME_KEY, JSON.stringify(arr)); 
+        // Save current position in flash cards
+        state.flashPosition = state.idx;
+        setTimeout(()=>{ 
+          buildGame(arr); 
+          showScreen('game'); 
+        }, 250); 
+      } 
+    }
+
+    // GAME logic
+    let selEN=null, selJA=null, matched=0;
+    function buildGame(fromPairs){
+      const pairs = (fromPairs && fromPairs.length===5) ? fromPairs.slice() : JSON.parse(localStorage.getItem(GAME_KEY) || '[]');
+      let pool = pairs && pairs.length===5 ? pairs.slice() : (state.words.slice().length>=5 ? shuffle(state.words.slice()).slice(0,5) : (pairs||[]));
+      if(pool.length < 5){ const root = getVocabularyRoot() || {}; const all = Object.values(root).flat(); pool = shuffle(all).slice(0,5); }
+      state.gamePairs = pool; matched = 0; selEN = selJA = null; $('#matchedCount').textContent = matched;
+      const left = $('#colEN'); const right = $('#colJA'); left.innerHTML=''; right.innerHTML='';
+      const leftItems = pool.map(w=>({key:w.english, entext:w.english}));
+      const rightItems = pool.map(w=>({key:w.english, jatext:w.japanese, emoji:w.emoji}));
+      shuffle(leftItems); shuffle(rightItems);
+      leftItems.forEach(item=>{
+        const b = document.createElement('button'); b.className='game-btn'; b.dataset.key=item.key; b.dataset.entext = item.entext; b.dataset.side='en'; b.innerHTML = `<div style="padding-left:1.0vh">${escapeHtml(item.entext)}</div>`; b.onclick = ()=> onGamePress(b); b.tabIndex = 0; left.appendChild(b);
+      });
+      rightItems.forEach(item=>{
+        const b = document.createElement('button'); b.className='game-btn'; b.dataset.key=item.key; b.dataset.jatext=item.jatext; b.dataset.side='ja'; b.innerHTML = `<div style="display:flex;align-items:center"><div class="emoji-small">${escapeHtml(item.emoji||'')}</div><div>${escapeHtml(item.jatext)}</div></div>`; b.onclick = ()=> onGamePress(b); b.tabIndex = 0; right.appendChild(b);
+      });
+      updateFocusableElements();
+    }
+
+    function onGamePress(btn){ 
+      if(btn.disabled) return; 
+      const side = btn.dataset.side; 
+      btn.classList.toggle('selected'); 
+      if(side==='en'){ 
+        if(selEN && selEN!==btn) selEN.classList.remove('selected'); 
+        selEN = (selEN===btn)?null:btn; 
+        if(selEN) speak(selEN.dataset.entext || selEN.dataset.key, 'en-US','en'); 
+      } else { 
+        if(selJA && selJA!==btn) selJA.classList.remove('selected'); 
+        selJA = (selJA===btn)?null:btn; 
+        if(selJA) speak(selJA.dataset.jatext || selJA.dataset.key, 'ja-JP','ja'); 
+      } 
+      if(selEN && selJA){ 
+        if(selEN.dataset.key === selJA.dataset.key){ 
+          selEN.disabled = selJA.disabled = true; 
+          selEN.classList.remove('selected'); 
+          selJA.classList.remove('selected'); 
+          selEN.classList.add('matched'); 
+          selJA.classList.add('matched'); 
+          matched++; 
+          $('#matchedCount').textContent = matched; 
+          selEN = selJA = null; 
+          if(matched>=5){ 
+            setTimeout(()=>{ 
+              flashMatchComplete(); 
+            }, 400); 
+          } 
+        } else { 
+          const a=[selEN,selJA]; 
+          a.forEach(el=>{ 
+            if(!el) return; 
+            el.animate([{transform:'translateX(0)'},{transform:'translateX(8px)'},{transform:'translateX(-8px)'},{transform:'translateX(0)'}],{duration:220}); 
+            el.classList.remove('selected'); 
+          }); 
+          selEN = selJA = null; 
+        } 
+      } 
+    }
+
+    function flashMatchComplete(){ 
+      // Return to flash cards where we left off
+      setTimeout(()=> {
+        showScreen('flash');
+        // Clear the last five to allow for new game triggering
+        localStorage.removeItem(LAST5_KEY);
+        state.lastFive = [];
+      }, 700); 
+    }
+    
+    function escapeHtml(s){ return String(s||'').replace(/[&<>"]|'/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+    // Wiring & init
+    function init(){
+      // menu inputs
+      document.querySelectorAll('input[name="order"]').forEach(r=>r.onchange = ()=>{ state.order = r.value; if(state.category) loadCategory(state.category); });
+      $('#autoEN').onchange = e=> state.autoEN = e.target.checked; $('#autoJA').onchange = e => state.autoJA = e.target.checked; $('#showEN').onchange = e => { state.showEN = e.target.checked; renderCard(); }; $('#showJA').onchange = e => { state.showJA = e.target.checked; renderCard(); }; $('#enableAudio').onchange = e=> state.enableAudio = e.target.checked; $('#autoGame').onchange = e=> state.autoGame = e.target.checked;
+
+      // flash buttons
+      $('#startFlash').onclick = ()=>{ const val = $('#categorySelect').value; if(val) { loadCategory(val); showScreen('flash'); } };
+      $('#startGame').onclick = ()=>{ buildGame(); showScreen('game'); };
+      $('#openFlash').onclick = ()=>{ const val = $('#categorySelect').value; if(val){ loadCategory(val); showScreen('flash'); } };
+      $('#openGame').onclick = ()=>{ buildGame(); showScreen('game'); };
+      $('#prevBtn').onclick = prevCard; $('#nextBtn').onclick = nextCard; $('#saveBtn').onclick = ()=>{ const w = state.shuffled[state.idx]; if(w) saveDifficult(w); };
+      $('#playEN').onclick = ()=>{ const w = state.shuffled[state.idx]; if(w) speak(w.english,'en-US','en'); };
+      $('#playJA').onclick = ()=>{ const w = state.shuffled[state.idx]; if(w) speak(w.japanese,'ja-JP','ja'); };
+
+      // toggle EN/JA on flash
+      $('#toggleEN').onclick = ()=>{ state.showEN = !state.showEN; $('#showEN').checked = state.showEN; renderCard(); };
+      $('#toggleJA').onclick = ()=>{ state.showJA = !state.showJA; $('#showJA').checked = state.showJA; renderCard(); };
+
+      $('#backToMenu').onclick = ()=> showScreen('menu'); 
+      $('#gameBack').onclick = ()=> {
+        // Return to flash cards where we left off
+        showScreen('flash');
+      }; 
+      $('#regenGame').onclick = ()=> buildGame(); 
+      $('#wipeDifficult').onclick = ()=> wipeDifficult();
+      $('#categorySelect').onchange = e=>{ state.category = e.target.value; loadCategory(state.category); };
+
+      // keyboard navigation for TV
+      window.addEventListener('keydown', e=>{
+        const onFlash = screens.flash.classList.contains('active');
+        const onGame = screens.game.classList.contains('active');
+        const onMenu = screens.menu.classList.contains('active');
+        
+        if (onFlash || onGame || onMenu) {
+          handleTVNavigation(e);
+        }
+      });
+
+      // Initialize
+      buildCategorySelect(); updateDiffBadge(); pickVoices();
+    }
+
+    // Start when ready
+    if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+  </script>
+</body>
+</html>
