@@ -1157,9 +1157,8 @@
             <select id="classSelector">
                 <option value="">Select Class</option>
                 
-                <optgroup label="Beginner">
-                    <option value="C">C Class (Very Basic)</option>
-                    <option value="X">X Class (Beginner)</option>
+                <optgroup label="Featured">
+                    <option value="Adult">Adult</option>
                 </optgroup>
                 
                 <optgroup label="EIKEN Junior">
@@ -1168,7 +1167,7 @@
                     <option value="Gold">Gold (Intro)</option>
                 </optgroup>
                 
-                <optgroup label="EIKEN Main">
+                <optgroup label="EIKEN Foundation">
                     <option value="Eiken7">Eiken 7</option>
                     <option value="Eiken6">Eiken 6</option>
                     <option value="Eiken5">Eiken 5</option>
@@ -1176,7 +1175,7 @@
                     <option value="Eiken3">Eiken 3</option>
                 </optgroup>
                 
-                <optgroup label="EIKEN Pre">
+                <optgroup label="EIKEN Advanced">
                     <option value="EikenPre2">Eiken Pre-2</option>
                     <option value="EikenPre2Plus">Eiken Pre-2 Plus</option>
                     <option value="Eiken2">Eiken 2</option>
@@ -1184,10 +1183,15 @@
                     <option value="Eiken1">Eiken 1</option>
                 </optgroup>
                 
+                <optgroup label="Vocabulary">
+                    <option value="VocabEiken5">Eiken 5 Vocabulary</option>
+                </optgroup>
+                
                 <optgroup label="Other">
                     <option value="Conversation">Conversation Practice</option>
-                    <option value="Adult">Adult</option>
-                    <option value="HighSchool">Vocabulary</option>
+                    <option value="HighSchool">High School (Legacy)</option>
+                    <option value="C">C Class (Legacy)</option>
+                    <option value="X">X Class (Legacy)</option>
                 </optgroup>
             </select>
         </div>
@@ -1265,9 +1269,10 @@
     
     <!-- Load external scripts -->
 <script src="content/adult/adult.js"></script>
+<script src="content/extras/vocabulary.js"></script>
 <script src="content/extras/vocab.js"></script>
-<script src="content/beginners/level-x.js"></script>
-<script src="content/beginners/level-c.js"></script>
+<script src="content/beginners/x.js"></script>
+<script src="content/beginners/c.js"></script>
 <script src="QA5.js"></script>
 <script src="content/eiken-junior/bronze.js"></script>
 <script src="content/eiken-junior/silver.js"></script>
@@ -1453,28 +1458,25 @@ const maxFontSize = 8; // vw/rem units
 
 function populateStorySelector(cls) {
     storySelector.innerHTML = '<option value="">Select Story</option>';
-
     if (!lessonsData[cls]) return;
 
-    let optionIndex = 0;
-    
-    // Add questions first if they exist
+    // Add questions first if they exist (without numbering)
     if (lessonsData[cls].questions) {
         const option = document.createElement('option');
         option.value = 'questions';
-        option.textContent = `${optionIndex + 1}. QA Questions`;
+        option.textContent = 'QA Questions';
         storySelector.appendChild(option);
-        optionIndex++;
     }
 
-    // Add stories
+    // Add stories with clean numbering starting at 1
     if (lessonsData[cls].stories) {
-        lessonsData[cls].stories.forEach((story, index) => {
+        lessonsData[cls].stories.forEach((story, idx) => {
             const option = document.createElement('option');
-            option.value = optionIndex;
-            option.textContent = `${optionIndex + 1}. ${story.title}`;
+            option.value = idx; // direct index into stories array
+            // Strip any leading numbers/dots from title for clean display
+            let cleanTitle = story.title.replace(/^\d+\.\s*/, '');
+            option.textContent = `${idx + 1}. ${cleanTitle}`;
             storySelector.appendChild(option);
-            optionIndex++;
         });
     }
 
@@ -1515,35 +1517,21 @@ function loadTextContent(cls) {
     let content;
     if (currentStory === 'questions') {
         content = lessonsData[cls].questions;
-} else {
-    const selectorIndex = parseInt(currentStory);
-    if (isNaN(selectorIndex)) {
-        console.error('Invalid story index:', currentStory);
-        alert('Invalid story selection');
-        exitReadingMode();
-        return;
-    }
-
-    // Adjust index based on questions presence
-    let storyIndex = selectorIndex;
-    if (lessonsData[cls].questions) {
-        storyIndex = selectorIndex - 1;
-    }
-
-    if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
-        console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
-        alert('Invalid story selection');
-        exitReadingMode();
-        return;
-    }
-    content = lessonsData[cls].stories[storyIndex].content;
-}
-
-    if (!content) {
-        console.error('Content not found for story:', currentStory, 'in class:', cls);
-        alert(`Content not found for selected story`);
-        exitReadingMode();
-        return;
+    } else {
+        const storyIndex = parseInt(currentStory);
+        if (isNaN(storyIndex)) {
+            console.error('Invalid story index:', currentStory);
+            alert('Invalid story selection');
+            exitReadingMode();
+            return;
+        }
+        if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
+            console.error('Invalid story index:', storyIndex, 'for class:', cls);
+            alert('Invalid story selection');
+            exitReadingMode();
+            return;
+        }
+        content = lessonsData[cls].stories[storyIndex].content;
     }
 
     if (!content) {
@@ -2126,48 +2114,114 @@ function applyFontSize() {
         translationLang = '';
     }
 
-    function fetchTranslation(text, lang) {
+    // Translation API Endpoints (FREE)
+    const translationApis = [
+        {
+            name: 'MyMemory (direct)',
+            fetch: async (text, langPair) => {
+                const encodedText = encodeURIComponent(text);
+                const encodedLangPair = encodeURIComponent(langPair);
+                const apiUrl = `https://api.mymemory.translated.net/get?q=${encodedText}&langpair=${encodedLangPair}`;
+                const response = await fetch(apiUrl);
+                if (!response.ok) throw new Error('MyMemory: Network error');
+                const data = await response.json();
+                if (!data.responseData || !data.responseData.translatedText) {
+                    throw new Error('MyMemory: No translation data');
+                }
+                console.log('Translation successful with MyMemory');
+                return data.responseData.translatedText;
+            }
+        },
+        {
+            name: 'LibreTranslate (argos)',
+            fetch: async (text, langPair) => {
+                const [sourceLang, targetLang] = langPair.split('|');
+                const apiUrl = 'https://translate.argosopentech.com/translate';
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        q: text,
+                        source: sourceLang,
+                        target: targetLang,
+                        format: 'text'
+                    })
+                });
+                if (!response.ok) throw new Error('LibreTranslate argos: Network error');
+                const data = await response.json();
+                if (!data.translatedText) throw new Error('LibreTranslate argos: No translation');
+                console.log('Translation successful with LibreTranslate (argos)');
+                return data.translatedText;
+            }
+        },
+        {
+            name: 'LibreTranslate (de)',
+            fetch: async (text, langPair) => {
+                const [sourceLang, targetLang] = langPair.split('|');
+                const apiUrl = 'https://libretranslate.de/translate';
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        q: text,
+                        source: sourceLang,
+                        target: targetLang,
+                        format: 'text'
+                    })
+                });
+                if (!response.ok) throw new Error('LibreTranslate de: Network error');
+                const data = await response.json();
+                if (!data.translatedText) throw new Error('LibreTranslate de: No translation');
+                console.log('Translation successful with LibreTranslate (de)');
+                return data.translatedText;
+            }
+        }
+    ];
+
+    async function fetchTranslation(text, lang) {
         const langPair = lang === 'en' ? 'en|ja' : 'ja|en';
-        const encodedText = encodeURIComponent(text);
-        const encodedLangPair = encodeURIComponent(langPair);
-        const apiUrl = `https://api.mymemory.translated.net/get?q=${encodedText}&langpair=${encodedLangPair}`;
-        const proxyUrl = 'https://corsproxy.io/?';
         
-        fetch(proxyUrl + apiUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.responseData && data.responseData.translatedText) {
-                    let translatedText = data.responseData.translatedText;
-                    translatedText = translatedText
-                        .replace(/[#*_~`^]/g, '')
-                        .replace(/\{.*?\}/g, '')
-                        .replace(/\[.*?\]/g, '')
-                        .replace(/\(.*?\)/g, '')
-                        .replace(/\d+/g, '')
-                        .trim();
-                    
-                    if (!translatedText) {
-                        throw new Error('Translation returned empty after cleaning');
-                    }
-                    
-                    translationResult.textContent = translatedText;
-                } else {
-                    throw new Error('No translation data received');
-                }
-            })
-            .catch(error => {
-                console.error('Translation error:', error);
-                translationResult.textContent = "Unable to get translation";
+        // Update status
+        translationResult.textContent = "Loading translation...";
+        
+        // Try each API in order, with fallback
+        for (const api of translationApis) {
+            try {
+                console.log(`Trying ${api.name}...`);
                 
-                if (text.length < 20) {
-                    trySimpleDictionaryLookup(text, lang);
+                let translatedText = await api.fetch(text, langPair);
+                
+                // Clean the translation
+                translatedText = translatedText
+                    .replace(/[#*_~`^]/g, '')
+                    .replace(/\{.*?\}/g, '')
+                    .replace(/\[.*?\]/g, '')
+                    .replace(/\(.*?\)/g, '')
+                    .replace(/\d+/g, '')
+                    .trim();
+                
+                if (!translatedText) {
+                    throw new Error('Translation returned empty after cleaning');
                 }
-            });
+                
+                console.log(`Translation successful with ${api.name}`);
+                translationResult.textContent = translatedText;
+                return;
+                
+            } catch (error) {
+                console.error(`${api.name} failed:`, error.message);
+                // Continue to next API
+            }
+        }
+        
+        // All APIs failed
+        console.error('All translation APIs failed');
+        translationResult.textContent = "Unable to get translation";
+        
+        // Try local dictionary as last resort for short text
+        if (text.length < 20) {
+            trySimpleDictionaryLookup(text, lang);
+        }
     }
 
     function trySimpleDictionaryLookup(text, lang) {
@@ -2846,6 +2900,14 @@ function loadLessonsData() {
                             content: typeof wouldyourather !== 'undefined' ? wouldyourather.questions : []
                         }
                     ]
+                },
+                'VocabEiken5': {
+                    stories: typeof vocabularyCategories !== 'undefined' ? Object.entries(vocabularyCategories).map(([category, words]) => ({
+                        title: category,
+                        content: words.map((word, i) => 
+                            `${i+1}. ${word.emoji || ''} ${word.english} - ${word.japanese}`
+                        ).join('\n')
+                    })) : []
                 }
             };
 
