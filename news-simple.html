@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson News - Simple Mode</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    header {
+      padding: 1.5rem 2rem;
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      color: #00ff87;
+    }
+    
+    .datetime {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    
+    .ticker-section {
+      background: #0a0a1a;
+      border-bottom: 3px solid #00ff87;
+      overflow: hidden;
+    }
+    
+    .ticker {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      white-space: nowrap;
+      animation: scroll 30s linear infinite;
+      cursor: pointer;
+      hover: {
+        animation-play-state: paused;
+      }
+    }
+    
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    .ticker .breaking {
+      background: #ff4444;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      animation: blink 1s ease-in-out infinite;
+    }
+    
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    
+    .ticker-item {
+      display: inline-block;
+      font-size: 1.4rem;
+      padding: 0 2rem;
+    }
+    
+    .ticker-source {
+      color: #00ff87;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+    
+    .weather-ticker {
+      background: #1a1a3a;
+      overflow: hidden;
+      border-bottom: 2px solid #4a90e2;
+    }
+    
+    .weather-ticker-content {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 0;
+      white-space: nowrap;
+      animation: scroll 40s linear infinite;
+    }
+    
+    .weather-item {
+      display: inline-block;
+      padding: 0 1.5rem;
+      font-size: 1.3rem;
+    }
+    
+    .weather-city {
+      color: #ffa500;
+      font-weight: bold;
+    }
+    
+    .weather-emoji {
+      margin-left: 0.5rem;
+    }
+    
+    main {
+      flex: 1;
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    .headline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    
+    h2 {
+      font-size: 1.4rem;
+      color: #00ff87;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid rgba(0, 255, 135, 0.3);
+    }
+    
+    .headline {
+      background: rgba(255,255,255,0.05);
+      padding: 1.2rem 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-left: 4px solid #00ff87;
+    }
+    
+    .headline:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateX(5px);
+    }
+    
+    .headline-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    
+    .headline-meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+    
+    .headline-source {
+      color: #00ff87;
+    }
+    
+    .headline-time {
+      color: #ffa500;
+    }
+    
+    footer {
+      padding: 1rem 2rem;
+      background: #0a0a1a;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+    
+    .source-selector {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+      justify-content: center;
+    }
+    
+    .source-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(0, 255, 135, 0.3);
+      background: rgba(0, 255, 135, 0.1);
+      color: #00ff87;
+      cursor: pointer;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+    
+    .source-btn:hover {
+      background: rgba(0, 255, 135, 0.3);
+      border-color: #00ff87;
+    }
+    
+    .source-btn.active {
+      background: #00ff87;
+      color: #1a1a2e;
+      font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+      .datetime {
+        font-size: 1rem;
+      }
+      
+      .ticker-item {
+        font-size: 1rem;
+      }
+      
+      .headline .headline-title {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>📺 Lesson News</h1>
+      <div class="datetime">
+        <span id="time">00:00 AM</span>
+        <span id="date">Wednesday, January 1</span>
+      </div>
+    </div>
+  </header>
+  
+  <div class="ticker-section">
+    <div class="ticker" id="newsTicker">
+      <span class="breaking">BREAKING</span>
+      <span class="ticker-item">Loading news...</span>
+    </div>
+  </div>
+  
+  <div class="weather-ticker">
+    <div class="weather-ticker-content" id="weatherTicker">
+      <span class="weather-item">Loading weather...</span>
+    </div>
+  </div>
+  
+  <main>
+    <div class="source-selector">
+      <button class="source-btn active" data-source="bbc">BBC News</button>
+      <button class="source-btn" data-source="reuters">Reuters</button>
+      <button class="source-btn" data-source="ap">Associated Press</button>
+    </div>
+    
+    <h2 id="sourceTitle">BBC News Headlines</h2>
+    <div class="headline-list" id="headlineList">
+      <div class="headline">
+        <div class="headline-title">Loading news...</div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>Simple news ticker for classroom discussion • Click headlines to read more</p>
+  </footer>
+
+  <script>
+    // Configuration
+    const config = {
+      rssParserAPI: 'https://api.rss2json.com/v1/api.json?rss_url=',
+      sources: {
+        bbc: {
+          name: 'BBC News',
+          url: 'http://feeds.bbci.co.uk/news/rss.xml'
+        },
+        reuters: {
+          name: 'Reuters',
+          url: 'https://www.reutersagency.com/rss/feed/news' // Using Reuters News Agency feed
+        },
+        ap: {
+          name: 'Associated Press',
+          url: 'https://rssfeeds.apnews.com/apnews-topnews'
+        }
+      },
+      cities: [
+        { name: 'Tokyo', temp: 15, weather: '☀️' },
+        { name: 'Osaka', temp: 13, weather: '☀️' },
+        { name: 'Kyoto', temp: 14, weather: '⛅' },
+        { name: 'London', temp: 8, weather: '🌧️' },
+        { name: 'New York', temp: 12, weather: '☁️' },
+        { name: 'Paris', temp: 10, weather: '🌧️' },
+        { name: 'Sydney', temp: 22, weather: '☀️' },
+        { name: 'Singapore', temp: 28, weather: '☀️' },
+        { name: 'Dubai', temp: 26, weather: '☀️' },
+        { name: 'Vancouver', temp: 9, weather: '🌧️' }
+      ]
+    };
+    
+    // State
+    let currentSource = 'bbc';
+    let headlines = [];
+    let cache = {};
+    const CACHE_TTL = 30 * 60 * 1000; // 30 minutes
+    
+    // DOM Elements
+    const timeEl = document.getElementById('time');
+    const dateEl = document.getElementById('date');
+    const newsTicker = document.getElementById('newsTicker');
+    const weatherTicker = document.getElementById('weatherTicker');
+    const headlineList = document.getElementById('headlineList');
+    const sourceTitle = document.getElementById('sourceTitle');
+    const sourceBtns = document.querySelectorAll('.source-btn');
+    
+    // Time and Date
+    function updateDateTime() {
+      const now = new Date();
+      
+      // Format time (12-hour format)
+      let hours = now.getHours();
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12;
+      hours = hours ? hours : 12;
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      
+      timeEl.textContent = `${hours}:${minutes} ${ampm}`;
+      
+      // Format date (Day, Month Day, Year)
+      const options = { weekday: 'long', month: 'long', day: 'numeric' };
+      dateEl.textContent = now.toLocaleDateString('en-US', options);
+    }
+    
+    // Weather Ticker
+    function initWeatherTicker() {
+      const items = config.cities.map(city => 
+        `<span class="weather-item">
+          <span class="weather-city">${city.name}:</span>
+          ${city.temp}°C ${city.weather}
+        </span>`
+      ).join('');
+      
+      weatherTicker.innerHTML = items;
+    }
+    
+    // News Fetching
+    async function fetchHeadlines() {
+      const source = config.sources[currentSource];
+      const cacheKey = `news_${currentSource}`;
+      
+      // Check cache
+      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
+        headlines = cache[cacheKey].data;
+        updateUI();
+        return;
+      }
+      
+      try {
+        const proxyUrl = config.rssParserAPI + encodeURIComponent(source.url);
+        const response = await fetch(proxyUrl);
+        const data = await response.json();
+        
+        if (data.items && data.items.length) {
+          headlines = data.items.map(item => ({
+            title: item.title || 'No title',
+            link: item.link || '#',
+            pubDate: item.pubDate || new Date(),
+            source: source.name
+          }));
+          
+          // Cache
+          cache[cacheKey] = {
+            data: headlines,
+            time: Date.now()
+          };
+          
+          updateUI();
+        }
+      } catch (error) {
+        console.error('Failed to fetch news:', error);
+        headlineList.innerHTML = `
+          <div class="headline">
+            <div class="headline-title">Unable to load news</div>
+            <div class="headline-meta">Please check your connection</div>
+          </div>
+        `;
+      }
+    }
+    
+    // Update UI
+    function updateUI() {
+      // Update ticker
+      const tickerItems = headlines.slice(0, 8).map(h =>
+        `<span class="ticker-item">
+          <span class="ticker-source">[${h.source}]</span>
+          ${h.title}
+        </span>`
+      ).join('');
+      
+      newsTicker.innerHTML = `
+        <span class="breaking">BREAKING</span>
+        ${tickerItems}
+      `;
+      
+      // Update headline list
+      headlineList.innerHTML = headlines.slice(0, 15).map(h => {
+        const date = new Date(h.pubDate);
+        const timeAgo = getTimeAgo(date);
+        
+        return `
+          <div class="headline" onclick="window.open('${h.link}', '_blank')">
+            <div class="headline-title">${h.title}</div>
+            <div class="headline-meta">
+              <span class="headline-source">${h.source}</span>
+              <span class="headline-time">${timeAgo}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+      
+      // Update title
+      sourceTitle.textContent = `${source.name} Headlines`;
+    }
+    
+    // Time ago helper
+    function getTimeAgo(date) {
+      const seconds = Math.floor((new Date() - date) / 1000);
+      
+      if (seconds < 60) return 'Just now';
+      if (seconds < 3600) return `${Math.floor(seconds / 60)} min ago`;
+      if (seconds < 86400) return `${Math.floor(seconds / 3600)} hours ago`;
+      return `${Math.floor(seconds / 86400)} days ago`;
+    }
+    
+    // Source switching
+    function switchSource(source) {
+      currentSource = source;
+      sourceBtns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.source === source);
+      });
+      fetchHeadlines();
+    }
+    
+    // Event Listeners
+    sourceBtns.forEach(btn => {
+      btn.addEventListener('click', () => switchSource(btn.dataset.source));
+    });
+    
+    // Initialize
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+    initWeatherTicker();
+    fetchHeadlines();
+    
+    // Refresh every 30 minutes
+    setInterval(fetchHeadlines, 30 * 60 * 1000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards - Japanese Vocabulary & Kanji</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+    }
+    
+    header {
+      padding: 1.5rem 2rem;
+      background: rgba(0,0,0,0.2);
+    }
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .subtitle {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    
+    .stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .stat {
+      background: rgba(255,255,255,0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+    
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    
+    .deck-selector {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
+      max-width: 1000px;
+    }
+    
+    .deck-btn {
+      padding: 0.75rem 1.5rem;
+      border: 2px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+    
+    .deck-btn:hover {
+      background: rgba(255,255,255,0.3);
+      border-color: #fff;
+    }
+    
+    .deck-btn.active {
+      background: #fff;
+      color: #764ba2;
+      border-color: #fff;
+    }
+    
+    .card-container {
+      perspective: 1000px;
+      width: 600px;
+      height: 350px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+      cursor: pointer;
+    }
+    
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+    
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: #fff;
+      color: #333;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .card-back {
+      transform: rotateY(180deg);
+    }
+    
+    .card-front .japanese {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-front .reading {
+      font-size: 1.8rem;
+      color: #764ba2;
+      margin-bottom: 1rem;
+    }
+    
+    .card-back .word {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-back .example {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #666;
+      line-height: 1.4;
+      font-weight: normal;
+    }
+    
+    .card-hint {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.9rem;
+      color: #999;
+      font-weight: normal;
+    }
+    
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .control-btn {
+      padding: 1rem 2rem;
+      border: 2px solid rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      min-width: 120px;
+    }
+    
+    .control-btn:hover {
+      background: rgba(255,255,255,0.4);
+      border-color: #fff;
+    }
+    
+    .progress {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+    }
+    
+    .mode-toggle {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .mode-btn {
+      padding: 0.5rem 1rem;
+      border: 2px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border-radius: 15px;
+    }
+    
+    .mode-btn.active {
+      background: #fff;
+      color: #764ba2;
+    }
+    
+    .difficulty {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    
+    .difficulty span {
+      color: #ffd700;
+    }
+    
+    @media (max-width: 768px) {
+      .card-container {
+        width: 95vw;
+        height: 60vw;
+      }
+      
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+      .card-face {
+        font-size: 1.8rem;
+      }
+      
+      .card-front .japanese {
+        font-size: 2.5rem;
+      }
+      
+      .card-front .reading {
+        font-size: 1.2rem;
+      }
+      
+      .card-back .word {
+        font-size: 1.5rem;
+      }
+      
+      .card-back .example {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 Flashcards - Japanese Vocabulary & Kanji</h1>
+    <p class="subtitle">Tap card to flip • Select deck to practice</p>
+    <div class="stats">
+      <div class="stat">Correct: <span id="correct">0</span></div>
+      <div class="stat">Total: <span id="total">0</span></div>
+      <div class="stat">Accuracy: <span id="accuracy">0%</span></div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="deck-selector">
+      <button class="deck-btn active" data-deck="n5">N5 Basic</button>
+      <button class="deck-btn" data-deck="n4">N4 Intermediate</button>
+      <button class="deck-btn" data-deck="n3">N3 Upper-Intermediate</button>
+      <button class="deck-btn" data-deck="kanji">Kanji Daily</button>
+      <button class="deck-btn" data-deck="verbs">Common Verbs</button>
+    </div>
+    
+    <div class="card-container">
+      <div class="card" id="card">
+        <div class="card-face card-front">
+          <div class="japanese" id="japanese">こんにちは</div>
+          <div class="reading" id="reading">konnichiwa</div>
+          <div class="card-hint">Tap to see meaning</div>
+        </div>
+        <div class="card-face card-back">
+          <div class="word" id="word">Hello</div>
+          <div class="example" id="example">"Konnichiwa! Ogenki desu ka?" (Hello! How are you?)</div>
+          <div class="card-hint">Tap for next card</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="progress">
+      <span id="progress">Card 1 of 20</span>
+    </div>
+    
+    <div class="controls">
+      <button class="control-btn" id="prev-btn">← Previous</button>
+      <button class="control-btn" id="flip-btn">Flip Card</button>
+      <button class="control-btn" id="know-btn">✓ Know</button>
+      <button class="control-btn" id="next-btn">Next →</button>
+    </div>
+    
+    <div class="mode-toggle">
+      <button class="mode-btn active" data-mode="all">All Cards</button>
+      <button class="mode-btn" data-mode="wrong">Wrong Only</button>
+      <button class="mode-btn" data-mode="new">New Only</button>
+    </div>
+    
+    <div class="difficulty">
+      Current Deck: <span id="current-deck">N5 Basic</span>
+    </div>
+  </main>
+
+  <script>
+    // Flashcard decks
+    const decks = {
+      n5: [
+        { japanese: "こんにちは", reading: "konnichiwa", word: "Hello", example: "Konnichiwa! Ogenki desu ka?" },
+        { japanese: "ありがとう", reading: "arigatou", word: "Thank you", example: "Arigatou gozaimasu!" },
+        { japanese: "さようなら", reading: "sayounara", word: "Goodbye", example: "Sayounara, mata ashita!" },
+        { japanese: "お元気ですか", reading: "ogenki desu ka", word: "How are you?", example: "Ogenki desu ka? Genki desu!" },
+        { japanese: "はい", reading: "hai", word: "Yes", example: "Hai, wakarimashita." },
+        { japanese: "いいえ", reading: "iie", word: "No", example: "Iie, chigaimasu." },
+        { japanese: "水", reading: "mizu", word: "Water", example: "Mizu o kudasai." },
+        { japanese: "食べる", reading: "taberu", word: "To eat", example: "Gohan o tabemasu." },
+        { japanese: "見る", reading: "miru", word: "To see/look", example: "Eiga o mimashita." },
+        { japanese: "行く", reading: "iku", word: "To go", example: "Gakkou e ikimasu." },
+        { japanese: "来る", reading: "kuru", word: "To come", example: "Asa kimasu." },
+        { japanese: "勉強", reading: "benkyou", word: "Study", example: "Nihongo no benkyou." },
+        { japanese: "先生", reading: "sensei", word: "Teacher", example: "Sensei, ohayou gozaimasu." },
+        { japanese: "学生", reading: "gakusei", word: "Student", example: "Gakusei to shite benkyou." },
+        { japanese: "日本語", reading: "nihongo", word: "Japanese language", example: "Nihongo ga suki desu." },
+        { japanese: "英語", reading: "eigo", word: "English language", example: "Eigo o naraimasu." },
+        { japanese: "友達", reading: "tomodachi", word: "Friend", example: "Tomodachi ga takusan arimasu." },
+        { japanese: "家族", reading: "kazoku", word: "Family", example: "Kazoku to doko e ikimasu ka." },
+        { japanese: "時間", reading: "jikan", word: "Time", example: "Jikan ga ari masen." },
+        { japanese: "場所", reading: "basho", word: "Place", example: "Basho o shirimasu ka." }
+      ],
+      n4: [
+        { japanese: "約束", reading: "yakusoku", word: "Promise", example: "Yakusoku o mamorimashou." },
+        { japanese: "経験", reading: "keiken", word: "Experience", example: "Taihen na keiken deshita." },
+        { japanese: "成功", reading: "seikou", word: "Success", example: "Seikou ga ganbaru." },
+        { japanese: "将来", reading: "shourai", word: "Future", example: "Shourai no yume." },
+        { japanese: "問題", reading: "mondai", word: "Problem", example: "Mondai ga nai." },
+        { japanese: "理由", reading: "riyuu", word: "Reason", example: "Dou shite? - Riyuu ga?" },
+        { japanese: "場合", reading: "baai", word: "Case/occasion", example: "Kono baai ni wa..." },
+        { japanese: "最近", reading: "saikin", word: "Recently", example: "Saikin wa isogashii desu." },
+        { japanese: "実際", reading: "jissai", word: "Actually", example: "Jissai wa sou desu." },
+        { japanese: "特に", reading: "toku ni", word: "Especially", example: "Toku ni suki na tabemono." },
+        { japanese: "結構", reading: "kekkou", word: "Quite/rather", example: "Kekkou omoshiroi." },
+        { japanese: "当然", reading: "touzen", word: "Naturally", example: "Touzen desu." },
+        { japanese: "丁寧", reading: "teinei", word: "Polite", example: "Teinei ni hanashimasu." },
+        { japanese: "簡単", reading: "kantan", word: "Simple", example: "Kantan desu ne." },
+        { japanese: "複雑", reading: "fukuzatsu", word: "Complex", example: "Fukuzatsu na mondai." },
+        { japanese: "必要", reading: "hitsuyou", word: "Necessary", example: "Hitsuyou na koto." },
+        { japanese: "十分", reading: "juubun", word: "Enough", example: "Juubun arimasu." },
+        { japanese: "安全", reading: "anzen", word: "Safe", example: "Anzen na basho." },
+        { japanese: "注意", reading: "chuui", word: "Caution/attention", example: "Chuui shite kudasai." },
+        { japanese: "開発", reading: "kaihatsu", word: "Development", example: "Sekai no kaihatsu." }
+      ],
+      n3: [
+        { japanese: "努力", reading: "doryoku", word: "Effort", example: "Doryoku wa muda dewa nai." },
+        { japanese: "達成", reading: "tassei", word: "Achievement", example: "Yaritai koto no tassei." },
+        { japanese: "建設", reading: "kensetsu", word: "Construction", example: "Kensetsu ga hajimaru." },
+        { japanese: "改善", reading: "kaizen", word: "Improvement", example: "Kaizen ga hitsuyou." },
+        { japanese: "推進", reading: "suishin", word: "Promotion", example: "Keikaku no suishin." },
+        { japanese: "実現", reading: "jitsugen", word: "Realization", example: "Yume no jitsugen." },
+        { japanese: "適応", reading: "tekikin", word: "Adaptation", example: "Kankyou no tekkin." },
+        { japanese: "拡張", reading: "kakuchou", word: "Expansion", example: "Jouhou no kakuchou." },
+        { japanese: "維持", reading: "iji", word: "Maintenance", example: "Kankyou no iji." },
+        { japanese: "運営", reading: "un'ei", word: "Management", example: "Kigyou no un'ei." },
+        { japanese: "実行", reading: "jikkou", word: "Execution", example: "Keikaku no jikkou." },
+        { japanese: "決定", reading: "kettei", word: "Decision", example: "Kettei ga mata." },
+        { japanese: "判断", reading: "handan", word: "Judgment", example: "Bubun no handan." },
+        { japanese: "調整", reading: "chousei", word: "Adjustment", example: "Ryouritsu no chousei." },
+        { japanese: "確実", reading: "kakujitsu", word: "Certain", example: "Kakujitsu na jouhou." },
+        { japanese: "予想", reading: "yousou", word: "Expectation", example: "Yousou wo koeru." },
+        { japanese: "観測", reading: "kansoku", word: "Observation", example: "Tenmon no kansoku." },
+        { japanese: "調査", reading: "chousa", word: "Investigation", example: "Jiko no chousa." },
+        { japanese: "報告", reading: "houkoku", word: "Report", example: "Kekka no houkoku." },
+        { japanese: "提案", reading: "teian", word: "Proposal", example: "Shin souchi no teian." }
+      ],
+      kanji: [
+        { japanese: "日", reading: "hi/nichi", word: "Day/Sun", example: "Kyou wa nanyoubi?" },
+        { japanese: "月", reading: "tsuki/gatsu", word: "Moon/Month", example: "Tsuki ga kirei." },
+        { japanese: "火", reading: "hi/ka", word: "Fire", example: "Hi ga tsuyoi." },
+        { japanese: "水", reading: "mizu/sui", word: "Water", example: "Mizu o nomu." },
+        { japanese: "木", reading: "ki/moku", word: "Tree/Wood", example: "Ki ga takai." },
+        { japanese: "金", reading: "kin/gold", word: "Gold/Money", example: "Kin ga hoshii." },
+        { japanese: "土", reading: "tsuchi/to", word: "Soil/Saturday", example: "Tsuchi ga aru." },
+        { japanese: "山", reading: "yama/san", word: "Mountain", example: "Yama e noboru." },
+        { japanese: "川", reading: "kawa/sen", word: "River", example: "Kawa no soto." },
+        { japanese: "人", reading: "hito/jin", word: "Person", example: "Hito ga suki." },
+        { japanese: "大", reading: "dai", word: "Big/Large", example: "Ookii ie." },
+        { japanese: "小", reading: "chi/ko", word: "Small", example: "Chiisai inu." },
+        { japanese: "中", reading: "naka/chuu", word: "Middle/Inside", example: "Heya no naka." },
+        { japanese: "上", reading: "ue/jou", word: "Up/Above", example: "Tenjou ga takai." },
+        { japanese: "下", reading: "shita/ge", word: "Down/Below", example: "Shita e mieru." },
+        { japanese: "左", reading: "hidari/sa", word: "Left", example: "Hidari te." },
+        { japanese: "右", reading: "migi/uu", word: "Right", example: "Migi gawa." },
+        { japanese: "男", reading: "otoko/dan", word: "Man/Male", example: "Otoko no hito." },
+        { japanese: "女", reading: "onna/jo", word: "Woman/Female", example: "Onna no ko." },
+        { japanese: "子", reading: "ko/shi", word: "Child", example: "Kodomo ga iru." }
+      ],
+      verbs: [
+        { japanese: "話す", reading: "hanasu", word: "To speak", example: "Nihongo o hanashimasu." },
+        { japanese: "聞く", reading: "kiku", word: "To listen/hear", example: "Ongaku o kiku." },
+        { japanese: "読む", reading: "yomu", word: "To read", example: "Hon o yomu." },
+        { japanese: "書く", reading: "kaku", word: "To write", example: "Nihongo o kaku." },
+        { japanese: "見る", reading: "miru", word: "To see/watch", example: "Eiga o miru." },
+        { japanese: "行く", reading: "iku", word: "To go", example: "Gakkou e iku." },
+        { japanese: "来る", reading: "kuru", word: "To come", example: "Ie e kuru." },
+        { japanese: "帰る", reading: "kaeru", word: "To return", example: "Ie e kaeru." },
+        { japanese: "食べる", reading: "taberu", word: "To eat", example: "Gohan o taberu." },
+        { japanese: "飲む", reading: "nomu", word: "To drink", example: "Mizu o nomu." },
+        { japanese: "寝る", reading: "neru", word: "To sleep", example: "10-ji ni neru." },
+        { japanese: "起きる", reading: "okiru", word: "To wake up", example: "6-ji ni okiru." },
+        { japanese: "する", reading: "suru", word: "To do", example: "Benkyou o suru." },
+        { japanese: "もらう", reading: "morau", word: "To receive", example: "Purezento o morau." },
+        { japanese: "あげる", reading: "ageru", word: "To give (someone)", example: "Hana o ageru." },
+        { japanese: "買う", reading: "kau", word: "To buy", example: "Pan kau." },
+        { japanese: "売る", reading: "uru", word: "To sell", example: "Hon o uru." },
+        { japanese: "持つ", reading: "motsu", word: "To have/hold", example: "Kuruma o motsu." },
+        { japanese: "待つ", reading: "matsu", word: "To wait", example: "Chotto matsu." },
+        { japanese: "働く", reading: "hataraku", word: "To work", example: "Kaisha de hataraku." },
+        { japanese: "遊ぶ", reading: "asobu", word: "To play", example: "Tomodachi to asobu." }
+      ]
+    };
+    
+    // State
+    let currentDeck = 'n5';
+    let currentCards = [...decks.n5];
+    let currentIndex = 0;
+    let isFlipped = false;
+    let correctCount = 0;
+    let totalCards = 0;
+    let wrongCards = [];
+    let knownCards = [];
+    let mode = 'all';
+    
+    // DOM Elements
+    const card = document.getElementById('card');
+    const japaneseEl = document.getElementById('japanese');
+    const readingEl = document.getElementById('reading');
+    const wordEl = document.getElementById('word');
+    const exampleEl = document.getElementById('example');
+    const progressEl = document.getElementById('progress');
+    const correctEl = document.getElementById('correct');
+    const totalEl = document.getElementById('total');
+    const accuracyEl = document.getElementById('accuracy');
+    const currentDeckEl = document.getElementById('current-deck');
+    const deckBtns = document.querySelectorAll('.deck-btn');
+    const modeBtns = document.querySelectorAll('.mode-btn');
+    
+    // Functions
+    function updateCard() {
+      const cardData = currentCards[currentIndex];
+      japaneseEl.textContent = cardData.japanese;
+      readingEl.textContent = cardData.reading;
+      wordEl.textContent = cardData.word;
+      exampleEl.textContent = `"${cardData.example}"`;
+      progressEl.textContent = `Card ${currentIndex + 1} of ${currentCards.length}`;
+      isFlipped = false;
+      card.classList.remove('flipped');
+    }
+    
+    function flipCard() {
+      isFlipped = !isFlipped;
+      card.classList.toggle('flipped', isFlipped);
+    }
+    
+    function nextCard() {
+      if (currentIndex < currentCards.length - 1) {
+        currentIndex++;
+        updateCard();
+      } else {
+        alert('Deck complete! 🎉');
+        shuffleDeck();
+        currentIndex = 0;
+        updateCard();
+      }
+    }
+    
+    function prevCard() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCard();
+      }
+    }
+    
+    function markKnown() {
+      const cardData = currentCards[currentIndex];
+      knownCards.push(cardData);
+      correctCount++;
+      totalCards++;
+      updateStats();
+      nextCard();
+    }
+    
+    function markWrong() {
+      const cardData = currentCards[currentIndex];
+      wrongCards.push(cardData);
+      totalCards++;
+      updateStats();
+      shuffleDeck();
+      currentIndex = 0;
+      updateCard();
+    }
+    
+    function updateStats() {
+      correctEl.textContent = correctCount;
+      totalEl.textContent = totalCards;
+      const accuracy = totalCards > 0 ? Math.round((correctCount / totalCards) * 100) : 0;
+      accuracyEl.textContent = accuracy + '%';
+    }
+    
+    function shuffleDeck() {
+      switch(mode) {
+        case 'wrong':
+          currentCards = [...wrongCards];
+          break;
+        case 'new':
+          currentCards = [...decks[currentDeck]].filter(c => !knownCards.includes(c));
+          break;
+        default:
+          currentCards = [...decks[currentDeck]];
+      }
+      // Fisher-Yates shuffle
+      for (let i = currentCards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [currentCards[i], currentCards[j]] = [currentCards[j], currentCards[i]];
+      }
+    }
+    
+    function switchDeck(deckName) {
+      currentDeck = deckName;
+      currentDeckEl.textContent = deckName.replace('_', ' ').toUpperCase() + ' DECK';
+      knownCards = [];
+      wrongCards = [];
+      currentIndex = 0;
+      shuffleDeck();
+      updateCard();
+      
+      deckBtns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.deck === deckName);
+      });
+    }
+    
+    function switchMode(modeName) {
+      mode = modeName;
+      switchDeck(currentDeck);
+      
+      modeBtns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.mode === modeName);
+      });
+    }
+    
+    // Event Listeners
+    card.addEventListener('click', () => {
+      if (!isFlipped) {
+        flipCard();
+      } else {
+        nextCard();
+      }
+    });
+    
+    document.getElementById('flip-btn').addEventListener('click', flipCard);
+    document.getElementById('next-btn').addEventListener('click', nextCard);
+    document.getElementById('prev-btn').addEventListener('click', prevCard);
+    document.getElementById('know-btn').addEventListener('click', markKnown);
+    
+    deckBtns.forEach(btn => {
+      btn.addEventListener('click', () => switchDeck(btn.dataset.deck));
+    });
+    
+    modeBtns.forEach(btn => {
+      btn.addEventListener('click', () => switchMode(btn.dataset.mode));
+    });
+    
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+      switch(e.key) {
+        case ' ':
+        case 'Enter':
+          flipCard();
+          break;
+        case 'ArrowRight':
+          nextCard();
+          break;
+        case 'ArrowLeft':
+          prevCard();
+          break;
+        case 'y':
+        case 'Y':
+          if (isFlipped) markKnown();
+          break;
+        case 'n':
+        case 'N':
+          if (isFlipped) markWrong();
+          break;
+      }
+    });
+    
+    // Initialize
+    shuffleDeck();
+    updateCard();
+  </script>
+</body>
+</html>
