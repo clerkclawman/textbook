@@ -1476,7 +1476,8 @@ const maxFontSize = 8; // vw/rem units
             'Bronze': 'Bronze (Phonics)',
             'Silver': 'Silver (Patterns)',
             'Gold': 'Gold (Intro)',
-            'Adult': 'Adult Calendar Stories',
+            'X': 'X Class Stories',
+            'C': 'C Class Stories',
             'Eiken7': 'Eiken 7',
             'Eiken6': 'Eiken 6',
             'Eiken5': 'Eiken 5',
@@ -1486,15 +1487,17 @@ const maxFontSize = 8; // vw/rem units
             'EikenPre2Plus': 'Eiken Pre-2 Plus',
             'Eiken2': 'Eiken 2',
             'EikenPre1': 'Eiken Pre-1',
-            'Eiken1': 'Eiken 1',
-            'X': 'X Class Stories',
-            'C': 'C Class Stories'
+            'Eiken1': 'Eiken 1'
         },
         qa: {
             'Calendar': 'Calendar Questions',
-            'Conversation': 'Conversation Practice',
+            'ConversationQA': 'Conversation Practice',
+            'Eiken5Questions': 'Eiken 5 Questions',
             'Eiken3Questions': 'Eiken 3 Questions',
-            'Qa5': 'General Q&A'
+            'Eiken2Questions': 'Eiken 2 Questions',
+            'Eiken1Questions': 'Eiken 1 Questions',
+            'EikenPre2Questions': 'Eiken Pre-2 Questions',
+            'EikenPre1Questions': 'Eiken Pre-1 Questions'
         }
     };
 
@@ -3028,11 +3031,24 @@ function loadLessonsData() {
                 };
             }
             if (typeof qa5 !== 'undefined') {
-                lessonsData['Qa5'] = {
-                    stories: [{ title: 'General Q&A', content: qa5.questions }]
+                lessonsData['Eiken5Questions'] = {
+                    stories: [{ title: 'Eiken 5 Questions', content: qa5.questions }]
                 };
             }
-            
+            // Add placeholders for other Eiken Q&A sections (coming soon)
+            lessonsData['Eiken2Questions'] = {
+                stories: [{ title: 'Eiken 2 Questions', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['Eiken1Questions'] = {
+                stories: [{ title: 'Eiken 1 Questions', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['EikenPre2Questions'] = {
+                stories: [{ title: 'Eiken Pre-2 Questions', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+            lessonsData['EikenPre1Questions'] = {
+                stories: [{ title: 'Eiken Pre-1 Questions', content: 'Q & A content coming soon!\nQ & Aコンテンツは近日公開予定です！' }]
+            };
+
             if (Object.keys(lessonsData).length > 0) {
                 resolve();
             } else {
