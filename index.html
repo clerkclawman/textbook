@@ -1130,31 +1130,33 @@
 
 </head>
 <body>
-    <button class="night-mode-toggle" id="nightModeToggle">🌙</button>
+    <button class="night-mode-toggle" id="nightModeToggle" aria-label="Toggle dark mode" role="switch" aria-checked="false">🌙</button>
 
-<div class="container" id="mainContainer">
-    <div class="header">CHATTERBOX HOUSE</div>
+<main class="container" id="mainContainer">
+    <h1 class="header">CHATTERBOX HOUSE</h1>
 
-    <a href="news.html" class="news-button" style="
-        display: inline-block;
-        background-color: #f72585;
-        color: white;
-        padding: 15px 30px;
-        margin: 20px 0;
-        border-radius: 50px;
-        font-weight: bold;
-        font-size: 1.5rem;
-        text-decoration: none;
-        box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-        animation: pulse 2s infinite;
-    ">News</a>
+    <nav aria-label="Main navigation">
+        <a href="news.html" class="news-button" style="
+            display: inline-block;
+            background-color: #f72585;
+            color: white;
+            padding: 15px 30px;
+            margin: 20px 0;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        ">News</a>
+    </nav>
 
-    <div class="controls-row">
+    <form class="controls-row" role="form" aria-label="Content selection">
         <div class="dropdown">
-            <select id="contentTypeSelector">
+            <select id="contentTypeSelector" aria-label="Select content type" required>
                 <option value="">Content Type</option>
                 <option value="vocab">📚 Vocabulary</option>
                 <option value="story">📖 Stories</option>
@@ -1163,7 +1165,7 @@
         </div>
 
         <div class="dropdown">
-            <select id="classSelector" disabled>
+            <select id="classSelector" aria-label="Select class" disabled required>
                 <option value="">Select Class</option>
 
                 <optgroup label="Featured">
@@ -1206,71 +1208,71 @@
         </div>
 
         <div class="dropdown">
-            <select id="storySelector" disabled>
+            <select id="storySelector" aria-label="Select story" disabled required>
                 <option value="">Select Story</option>
             </select>
         </div>
-    </div>
-</div>
+    </form>
+</main>
 
     <!-- READING MODE CONTAINER -->
-    <div class="reading-container" id="readingModeContainer" style="display: none;">
-<div class="reading-header">
-    <div class="page-counter">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></div>
-    <button id="exitReading" class="exit-reading">X</button>
-</div>
+    <article class="reading-container" id="readingModeContainer" style="display: none;" aria-live="polite">
+<header class="reading-header">
+    <div class="page-counter" aria-live="polite">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></div>
+    <button id="exitReading" class="exit-reading" aria-label="Exit reading mode">✕</button>
+</header>
 
-        <div class="reading-content">
+        <section class="reading-content" aria-label="Content display">
 <div class="sentence-row">
     <div class="sentence-controls">
-        <button id="playEnglish" class="play-btn">▶</button>
-        <div id="englishSentence" class="sentence-display"></div>
+        <button id="playEnglish" class="play-btn" aria-label="Play English audio">▶</button>
+        <div id="englishSentence" class="sentence-display" lang="en" role="status"></div>
     </div>
 </div>
 
 <div class="sentence-row">
     <div class="sentence-controls">
-        <button id="playJapanese" class="play-btn">▶</button>
-        <div id="japaneseSentence" class="sentence-display"></div>
+        <button id="playJapanese" class="play-btn" aria-label="Play Japanese audio">▶</button>
+        <div id="japaneseSentence" class="sentence-display" lang="ja" role="status"></div>
     </div>
 </div>
 
-<div class="reading-footer">
+<nav class="reading-footer" aria-label="Reading controls">
     <div class="font-controls">
-        <button id="decreaseFont" class="font-btn">A-</button>
-        <button id="increaseFont" class="font-btn">A+</button>
+        <button id="decreaseFont" class="font-btn" aria-label="Decrease font size">A-</button>
+        <button id="increaseFont" class="font-btn" aria-label="Increase font size">A+</button>
     </div>
 
     <div class="nav-group">
-        <button id="prevSentence" class="nav-btn">←</button>
-        <button id="nextSentence" class="nav-btn">→</button>
+        <button id="prevSentence" class="nav-btn" aria-label="Previous sentence">←</button>
+        <button id="nextSentence" class="nav-btn" aria-label="Next sentence">→</button>
     </div>
 
-    <div class="display-toggle">
-        <button id="displayEnglish" class="display-btn active">EN</button>
-        <button id="displayJapanese" class="display-btn">JP</button>
-        <button id="displayBoth" class="display-btn">BOTH</button>
+    <div class="display-toggle" role="group" aria-label="Display mode">
+        <button id="displayEnglish" class="display-btn active" aria-pressed="true" aria-label="Display English only">EN</button>
+        <button id="displayJapanese" class="display-btn" aria-pressed="false" aria-label="Display Japanese only">JP</button>
+        <button id="displayBoth" class="display-btn" aria-pressed="false" aria-label="Display both English and Japanese">BOTH</button>
     </div>
 
-    <button id="fruitToggle" class="fruit-toggle">🎰 Fruit Game OFF</button>
-</div>
-    </div>
+    <button id="fruitToggle" class="fruit-toggle" aria-label="Toggle fruit game" aria-pressed="false">🎰 Fruit Game OFF</button>
+</nav>
+    </section>
 
     <!-- Translation Popup -->
-    <div class="translation-overlay" id="translationOverlay"></div>
+    <div class="translation-overlay" id="translationOverlay" role="dialog" aria-modal="true" aria-labelledby="translationTitle" hidden>
 <div class="translation-popup" id="translationPopup">
-    <div class="translation-popup-header">
-        <h3>TRANSLATION</h3>
-        <button class="translation-popup-close" id="closeTranslationPopup">×</button>
-    </div>
+    <header class="translation-popup-header">
+        <h3 id="translationTitle">TRANSLATION</h3>
+        <button class="translation-popup-close" id="closeTranslationPopup" aria-label="Close translation">✕</button>
+    </header>
     <div class="translation-content">
         <div class="language-label" id="sourceLanguageLabel">English:</div>
-        <div class="translation-original" id="translationOriginal"></div>
+        <div class="translation-original" id="translationOriginal" lang="en" role="presentation"></div>
 
         <div class="language-label" id="targetLanguageLabel">Japanese:</div>
-        <div class="translation-result" id="translationResult"></div>
+        <div class="translation-result" id="translationResult" lang="ja" role="presentation"></div>
 
-        <button class="translation-tts" id="translationTts">
+        <button class="translation-tts" id="translationTts" aria-label="Play translation audio">
             <span>🔊 PLAY SOUND</span>
         </button>
     </div>
@@ -1743,9 +1745,16 @@ function countEnglishChars(str) {
         displayMode = mode;
         localStorage.setItem('displayMode', mode);
 
-        document.getElementById('displayEnglish').classList.toggle('active', mode === 'english');
-        document.getElementById('displayJapanese').classList.toggle('active', mode === 'japanese');
-        document.getElementById('displayBoth').classList.toggle('active', mode === 'both');
+        const displayEnglish = document.getElementById('displayEnglish');
+        const displayJapanese = document.getElementById('displayJapanese');
+        const displayBoth = document.getElementById('displayBoth');
+
+        displayEnglish.classList.toggle('active', mode === 'english');
+        displayEnglish.setAttribute('aria-pressed', mode === 'english');
+        displayJapanese.classList.toggle('active', mode === 'japanese');
+        displayJapanese.setAttribute('aria-pressed', mode === 'japanese');
+        displayBoth.classList.toggle('active', mode === 'both');
+        displayBoth.setAttribute('aria-pressed', mode === 'both');
 
         applyDisplayMode();
 
@@ -2541,9 +2550,11 @@ const categories = [
         if (fruitGameEnabled) {
             fruitToggleBtn.innerHTML = '🍏';
             fruitToggleBtn.style.color = 'var(--success)';
+            fruitToggleBtn.setAttribute('aria-pressed', 'true');
         } else {
             fruitToggleBtn.innerHTML = '🍎';
             fruitToggleBtn.style.color = 'var(--warning)';
+            fruitToggleBtn.setAttribute('aria-pressed', 'false');
         }
 
         fruitToggleBtn.classList.toggle('on', fruitGameEnabled);
@@ -3075,7 +3086,9 @@ function loadLessonsData() {
     function toggleNightMode() {
         isNightMode = !isNightMode;
         document.body.classList.toggle('dark-mode', isNightMode);
-        document.getElementById('nightModeToggle').textContent = isNightMode ? '☀️' : '🌙';
+        const toggle = document.getElementById('nightModeToggle');
+        toggle.textContent = isNightMode ? '☀️' : '🌙';
+        toggle.setAttribute('aria-checked', isNightMode);
         localStorage.setItem('nightMode', isNightMode);
     }
 
