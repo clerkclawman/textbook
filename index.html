@@ -54,7 +54,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     }
 
     body {
@@ -70,6 +70,8 @@
         font-size: 16px;
         transition: var(--transition);
         line-height: 1.6;
+        /* Emergency visibility fix - ensure content is always visible */
+        min-height: 100vh;
     }
 
     body.dark-mode {
@@ -106,11 +108,16 @@
         max-width: 1200px;
         padding: var(--container-padding);
         font-size: 1.2rem;
+        /* Failsafe visibility */
+        background-color: var(--card-bg);
+        color: var(--text);
     }
 
     #mainContainer .header {
         font-size: 4rem;
         margin-bottom: 50px;
+        /* Failsafe visibility */
+        color: var(--primary) !important;
     }
 
 
@@ -1336,7 +1343,7 @@
     // ====================
     // DEBUG & LOGGER SETUP
     // ====================
-    const DEBUG = false; // Set to true for development, false for production
+    const DEBUG = true; // Temporarily enabled for debugging visibility issues
 
     // Conditional logger - only logs when DEBUG is true
     const logger = {
