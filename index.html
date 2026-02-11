@@ -1122,7 +1122,37 @@
         box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
     }
 }
-</style>
+
+/* News button - moved from inline styles */
+.news-button {
+    display: inline-block;
+    background-color: #f72585;
+    color: white;
+    padding: 15px 30px;
+    margin: 20px 0;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+/* Fruit game result container */
+#fruitResult {
+    font-size: 2rem;
+    min-height: 60px;
+    margin: 20px 0;
+}
+
+/* Exit game button */
+#exitFruitGame {
+    margin-top: 20px;
+    background-color: var(--warning);
+}
 
 </head>
 <body>
@@ -1132,22 +1162,7 @@
     <h1 class="header">CHATTERBOX HOUSE</h1>
 
     <nav aria-label="Main navigation">
-        <a href="news.html" class="news-button" style="
-            display: inline-block;
-            background-color: #f72585;
-            color: white;
-            padding: 15px 30px;
-            margin: 20px 0;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.5rem;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-        ">News</a>
+        <a href="news.html" class="news-button">News</a>
     </nav>
 
     <form class="controls-row" role="form" aria-label="Content selection">
@@ -2627,8 +2642,8 @@ const categories = [
                         <div class="fruit-name" id="name3"></div>
                     </div>
                 </div>
-                <div id="fruitResult" style="font-size: 2rem; min-height: 60px; margin: 20px 0;"></div>
-                <button id="exitFruitGame" class="btn" style="margin-top: 20px; background-color: var(--warning);">Exit Game</button>
+                <div id="fruitResult"></div>
+                <button id="exitFruitGame" class="btn">Exit Game</button>
             </div>
         `;
 
