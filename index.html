@@ -1339,9 +1339,9 @@
 
     // Conditional logger - only logs when DEBUG is true
     const logger = {
-        log: (...args) => { if (DEBUG) logger.log(...args); },
-        warn: (...args) => { if (DEBUG) logger.warn(...args); },
-        error: (...args) => { if (DEBUG) logger.error(...args); },
+        log: (...args) => { if (DEBUG) console.log(...args); },
+        warn: (...args) => { if (DEBUG) console.warn(...args); },
+        error: (...args) => { if (DEBUG) console.error(...args); },
         debug: (...args) => { if (DEBUG) console.debug(...args); }
     };
 
