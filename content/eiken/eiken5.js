@@ -1,12 +1,5 @@
 // eiken5story.js
-// Generate vocabulary stories for Eiken 5
-var vocabStories = (typeof vocabularyCategories !== 'undefined')
-  ? Object.entries(vocabularyCategories).map(([category, words]) => ({
-      title: category,
-      content: words.map(w => `${w.emoji || ''} ${w.english}\n${w.japanese}`).join('\n')
-    }))
-  : [];
-var eiken5 = vocabStories.concat([
+var eiken5 = [
     // Story 1 - My Family
     {
         title: "My Family (Present Simple / Be Verbs)",
@@ -2166,4 +2159,4 @@ Tシャツを着ますか？
 💭 Is your dream big?
 あなたの夢は大きいですか？`
     }
-]);
+];

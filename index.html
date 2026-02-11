@@ -1183,6 +1183,10 @@
                     <option value="Eiken1">Eiken 1</option>
                 </optgroup>
                 
+                <optgroup label="Vocabulary">
+                    <option value="VocabEiken5">Eiken 5 Vocabulary</option>
+                </optgroup>
+                
                 <optgroup label="Other">
                     <option value="Conversation">Conversation Practice</option>
                     <option value="HighSchool">High School (Legacy)</option>
@@ -2897,7 +2901,7 @@ function loadLessonsData() {
                         }
                     ]
                 },
-                'Vocabulary': {
+                'VocabEiken5': {
                     stories: typeof vocabularyCategories !== 'undefined' ? Object.entries(vocabularyCategories).map(([category, words]) => ({
                         title: category,
                         content: words.map((word, i) => 
