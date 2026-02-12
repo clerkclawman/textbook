@@ -109,6 +109,10 @@
         margin-bottom: 50px;
     }
 
+ body.has-home-tickers #mainContainer.container {
+        padding-top: 40px;
+    }
+
 
     /* ============ */
     /* TYPOGRAPHY */
@@ -1166,16 +1170,161 @@
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
     }
+
+    /* ==================== */
+    /* HOME PAGE TICKERS      */
+    /* ==================== */
+    .home-ticker-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: #fbbf24;
+        color: #000;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        z-index: 999;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .home-ticker-content {
+        display: inline-block;
+        white-space: nowrap;
+        animation: scroll 30s linear infinite;
+        padding-left: 100vw;
+    }
+
+    @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+
+    .home-ticker-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        z-index: 999;
+        font-size: 14px;
+    }
+
+    .home-ticker-item {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    /* ==================== */
+    /* PROVERB / IDIOM      */
+    /* ==================== */
+    .proverb-container {
+        background: linear-gradient(135deg, rgba(67, 97, 238, 0.1), rgba(72, 149, 239, 0.1));
+        border: 2px solid rgba(67, 97, 238, 0.2);
+        border-radius: 15px;
+        padding: 20px 30px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .proverb-title {
+        color: var(--info);
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .proverb-text {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        font-style: italic;
+    }
+
+    .proverb-english {
+        color: var(--text);
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-top: 8px;
+    }
+
+    /* ==================== */
+    /* ENLARGED CLOCK CORNER */
+    /* ==================== */
+    .corner-clock {
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        z-index: 1000;
+        font-family: 'Courier New', monospace;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text);
+        background: rgba(255,255,255,0.95);
+        padding: 10px 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        border: 2px solid var(--primary);
+        line-height: 1.6;
+    }
+
+    body.dark-mode .corner-clock {
+        color: #e6e6e6;
+        background: rgba(22, 33, 62, 0.95);
+        border-color: var(--accent);
+    }
+
+    @media TV {
+        .home-ticker-top, .home-ticker-bottom {
+            height: 50px;
+            font-size: 1.5rem;
+        }
+
+        .proverb-text {
+            font-size: 2rem;
+        }
+
+        .proverb-english {
+            font-size: 1.5rem;
+        }
+
+        .corner-clock {
+            font-size: 1.3rem;
+            padding: 12px 20px;
+            top: 60px;
+        }
+    }
 }
 </style>
 
 </head>
 <body>
     <button class="night-mode-toggle" id="nightModeToggle">🌙</button>
-    <div class="mini-clock" id="miniClock" style="position: fixed; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; font-family: 'Courier New', monospace; font-size: 1.2rem; font-weight: 700; color: #4361ee; background: rgba(255,255,255,0.95); padding: 0.6rem 1.2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); border: 2px solid #4361ee;"></div>
+
+    <!-- Top Ticker -->
+    <div class="home-ticker-top">
+        <div class="home-ticker-content" id="homeTopTicker">Loading headlines...</div>
+    </div>
+
+    <!-- Corner Clock -->
+    <div class="corner-clock" id="cornerClock"></div>
 
 <div class="container" id="mainContainer">
-    <div class="header" style="animation: bounce 2s ease infinite; text-shadow: 3px 3px 0 rgba(0,0,0,0.2);">🎉 CHATTERBOX HOUSE 🎉</div>
+    <div class="header" style="font-size: 1.8rem !important; text-shadow: 2px 2px 0 rgba(0,0,0,0.2);">Chatterbox House</div>
+
+    <!-- Proverb / Idiom -->
+    <div class="proverb-container">
+        <div class="proverb-title">💎 今日のことわざ / Idiom of the Day</div>
+        <div class="proverb-text" id="proverbText">Loading...</div>
+        <div class="proverb-english" id="proverbEnglish">Loading...</div>
+    </div>
 
     <!-- Classroom Tools Navigation -->
     <div class="tools-nav" id="startScreenToolsNav" style=
@@ -1363,6 +1512,11 @@
         </button>
     </div>
 </div>
+
+    <!-- Bottom Ticker -->
+    <div class="home-ticker-bottom">
+        <div class="home-ticker-content" id="homeBottomTicker">Loading weather...</div>
+    </div>
 
     <!-- Footer - Classroom Tools Navigation -->
     <footer class="footer-tools" id="footerTools" style="
@@ -3342,6 +3496,101 @@ function loadLessonsData() {
         setTimeout(listVoices, 1000);
     });
     
+    // ====================
+    // HOME PAGE TICKERS & PROVERBS
+    // ====================
+
+    const proverbs = [
+        { en: "Actions speak louder than words.", jp: "不言実行" },
+        { en: "A picture is worth a thousand words.", jp: "百聞は一見に如かず" },
+        { en: "Where there's a will, there's a way.", jp: "精神一到何事か成らざらん" },
+        { en: "Time flies when you're having fun.", jp: "光陰矢の如し" },
+        { en: "A friend in need is a friend indeed.", jp: "困った時の友こそ真の友" },
+        { en: "Better late than never.", jp: "遅れ馳せより延び馴せ" },
+        { en: "Don't count your chickens before they hatch.", jp: "蒔かぬ種は生えぬ" },
+        { en: "Every cloud has a silver lining.", jp: "雨降って地固まる" },
+        { en: "Look before you leap.", jp: "突きは三文の得" },
+        { en: "Practice makes perfect.", jp: "習うより慣れろ" },
+        { en: "Rome wasn't built in a day.", jp: "石の上にも三年" },
+        { en: "When in Rome, do as the Romans do.", jp: "郷に入っては郷に従え" },
+        { en: "The early bird catches the worm.", jp: "早起きは三文の得" },
+        { en: "Two heads are better than one.", jp: "三人寄れば文殊の知恵" },
+        { en: "Too many cooks spoil the broth.", jp: "船頭多して船上山る" },
+        { en: "A penny saved is a penny earned.", jp: "塵も積もれば山となる" },
+        { en: "Don't put all your eggs in one basket.", jp: "卵を一つのカゴに盛るな" },
+        { en: "Haste makes waste.", jp: "急いては事を仕損じる" },
+        { en: "Make hay while the sun shines.", jp: "好機逸するべからず" },
+        { en: "Out of sight, out of mind.", jp: "去る者は日々に疎し" }
+    ];
+
+    const weatherEmojis = {
+      0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
+      45: '🌫️', 48: '🌫️',
+      51: '🌦️', 53: '🌦️', 55: '🌦️',
+      61: '🌧️', 63: '🌧️', 65: '🌧️',
+      71: '🌨️', 73: '🌨️', 75: '🌨️',
+      80: '🌦️', 81: '🌦️', 82: '🌦️',
+      95: '⛈️', 96: '⛈️', 99: '⛈️'
+    };
+
+    const cities = [
+      { name: 'Osaka', lat: 34.6937, lon: 135.5023 },
+      { name: 'Sapporo', lat: 43.0642, lon: 141.3469 },
+      { name: 'Naha', lat: 26.2124, lon: 127.6792 },
+      { name: 'New York', lat: 40.7128, lon: -74.0060 },
+      { name: 'London', lat: 51.5074, lon: -0.1278 },
+      { name: 'Lancaster', lat: 54.0466, lon: -2.8008 },
+      { name: 'Moscow', lat: 55.7558, lon: 37.6173 },
+      { name: 'Beijing', lat: 39.9042, lon: 116.4074 },
+      { name: 'Hollywood', lat: 34.0928, lon: -118.3287 }
+    ];
+
+    async function fetchHomeWeather() {
+      try {
+        const weatherData = await Promise.all(cities.map(async city => {
+          const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current_weather=true`;
+          const response = await fetch(url);
+          const data = await response.json();
+          return {
+            name: city.name,
+            temp: Math.round(data.current_weather.temperature),
+            code: data.current_weather.weathercode
+          };
+        }));
+
+        document.getElementById('homeBottomTicker').innerHTML = weatherData.map(city => {
+          const emoji = weatherEmojis[city.code] || '🌡️';
+          return `<span class="home-ticker-item">🌡️ ${city.name}: ${city.temp}°C ${emoji}</span>`;
+        }).join('');
+      } catch (e) { console.log('Weather error:', e); }
+    }
+
+    async function fetchHomeNews() {
+      try {
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('http://feeds.bbci.co.uk/news/rss.xml'));
+        const data = await response.json();
+
+        if (data.items) {
+          const headlines = data.items.slice(0, 8).map(h => `📰 ${h.title}`).join('    •    ');
+          document.getElementById('homeTopTicker').innerHTML = headlines;
+        }
+      } catch (e) { console.log('News error:', e); }
+    }
+
+    function displayRandomProverb() {
+      const index = Math.floor(Math.random() * proverbs.length);
+      const proverb = proverbs[index];
+      document.getElementById('proverbText').textContent = proverb.jp;
+      document.getElementById('proverbEnglish').textContent = proverb.en;
+    }
+
+    function updateCornerClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const date = now.toLocaleString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      document.getElementById('cornerClock').innerHTML = `<div>${date}</div><div>${time}</div>`;
+    }
+
     // Mini clock
     function updateMiniClock() {
       const now = new Date();
@@ -3350,9 +3599,21 @@ function loadLessonsData() {
       const miniClock = document.getElementById('miniClock');
       if (miniClock) miniClock.textContent = `${date} ${time}`;
     }
-    
+
     setInterval(updateMiniClock, 1000);
     updateMiniClock();
+
+    // Home page features - only run if on main page
+    if (document.getElementById('homeTopTicker')) {
+      document.body.classList.add('has-home-tickers');
+      updateCornerClock();
+      setInterval(updateCornerClock, 1000);
+      displayRandomProverb();
+      fetchHomeWeather();
+      fetchHomeNews();
+      setInterval(fetchHomeWeather, 30 * 60 * 1000);
+      setInterval(fetchHomeNews, 30 * 60 * 1000);
+    }
 </body>
 </html>
 
