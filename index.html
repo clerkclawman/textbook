@@ -1895,6 +1895,7 @@
 
     <!-- Load external scripts -->
 <script src="content/adult/adult.js"></script>
+<script src="content/adult/adult-questions.js"></script>
 <script src="content/extras/vocabulary.js"></script>
 <script src="content/extras/vocab.js"></script>
 <script src="content/beginners/x.js"></script>
@@ -2117,6 +2118,7 @@ const maxFontSize = 8; // vw/rem units
             'Eiken1': 'Eiken 1'
         },
         qa: {
+            'AdultQuestions': 'Adult (Calendar) Questions',
             'Calendar': 'Calendar Questions',
             'ConversationQA': 'Conversation Practice',
             'Eiken7Questions': 'Eiken 7 Questions *',
@@ -3647,6 +3649,11 @@ function loadLessonsData() {
             });
             
             // Create additional organized classes for Q&A
+            if (typeof adultquestions !== 'undefined') {
+                lessonsData['AdultQuestions'] = {
+                    questions: adultquestions.questions
+                };
+            }
             if (lessonsData['Adult']?.questions) {
                 lessonsData['Calendar'] = { questions: lessonsData['Adult'].questions };
             }
