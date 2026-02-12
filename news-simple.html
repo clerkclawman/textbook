@@ -211,19 +211,19 @@
       padding: 1.5vh 2vw;
       font-size: 4vh;
       line-height: 1.3;
-      display: flex;
-      gap: 1.5vw;
-      align-items: flex-start;
+      cursor: pointer;
+      transition: all 0.2s ease;
       color: #e5e7eb;
       border-radius: 8px;
       overflow: visible;
+      text-overflow: clip;
+      white-space: normal;
       word-wrap: break-word;
       hyphens: auto;
-      cursor: pointer;
-      transition: all 0.2s;
-      text-decoration: none;
       font-weight: 600;
-      min-height: 6vh;
+      min-height: 5vh;
+      display: inline-block;
+      text-decoration: none;
     }
     .wiki-item:hover {
       background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
@@ -232,21 +232,18 @@
     }
 
     .wiki-year {
-      background: #ef4444;
-      color: #fff;
-      padding: 0.5vh 1vw;
-      font-weight: 900;
-      font-size: 4vh;
-      border-radius: 8px;
-      flex-shrink: 0;
+      font-size: 2.5vh;
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.2);
+      padding: 0.3vh 0.8vw;
+      border-radius: 6px;
+      font-weight: 500;
+      margin-left: 1vw;
+      display: inline-block;
     }
 
     .wiki-text {
-      flex: 1;
-      word-wrap: break-word;
-      hyphens: auto;
-      line-height: 1.3;
-      font-size: 4vh;
+      display: inline;
     }
     
     .pagination {
@@ -609,8 +606,7 @@
         const wikiLink = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' }))}&fulltext=1`;
         document.getElementById('wikiContent').innerHTML = `
           <a href="${wikiLink}" target="_blank" class="wiki-item">
-            <div class="wiki-year">${now.getFullYear()}</div>
-            <div class="wiki-text">Today is ${now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} 📅</div>
+            Today is ${now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} 📅 <span class="wiki-year">${now.getFullYear()}</span>
           </a>`;
       }
     }
@@ -672,8 +668,7 @@
         const wikiLink = `https://en.wikipedia.org/wiki/Special:Search?search=${searchQuery}&fulltext=1`;
         return `
           <a href="${wikiLink}" target="_blank" class="wiki-item">
-            <div class="wiki-year">${e.year}</div>
-            <div class="wiki-text">${escapeHtml(e.description)} 🔗</div>
+            ${escapeHtml(e.description)} <span class="wiki-year">${e.year}</span>
           </a>
         `;
       }).join('');
