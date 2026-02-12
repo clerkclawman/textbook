@@ -477,9 +477,9 @@
     
     function updateMiniClock() {
       const now = new Date();
-      const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-      const date = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-      document.getElementById('miniClock').textContent = `${date} ${time}`;
+      const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit' });
+      const date = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+      document.getElementById('miniClock').textContent = `${date} | ${time}`;
     }
     
     function rotatePage() {

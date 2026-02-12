@@ -3694,18 +3694,18 @@ function loadLessonsData() {
 
     function updateCornerClock() {
       const now = new Date();
-      const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-      const date = now.toLocaleString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit' });
+      const date = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
       document.getElementById('cornerClock').innerHTML = `<div>${date}</div><div>${time}</div>`;
     }
 
     // Mini clock
     function updateMiniClock() {
       const now = new Date();
-      const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-      const date = now.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+      const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit' });
+      const date = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
       const miniClock = document.getElementById('miniClock');
-      if (miniClock) miniClock.textContent = `${date} ${time}`;
+      if (miniClock) miniClock.textContent = `${date} | ${time}`;
     }
 
     setInterval(updateMiniClock, 1000);
@@ -3766,10 +3766,13 @@ function loadLessonsData() {
         function updateCornerClock() {
             try {
                 const now = new Date();
-                const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-                const date = now.toLocaleString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+                const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit' });
+                const date = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
                 const cornerClock = document.getElementById('cornerClock');
-                if (cornerClock) cornerClock.innerHTML = `<div>${date}</div><div>${time}</div>`;
+                if (cornerClock) {
+                    document.getElementById('cornerTime').textContent = time;
+                    document.getElementById('cornerDate').textContent = date;
+                }
             } catch (e) { console.error('Clock error:', e); }
         }
 
