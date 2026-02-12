@@ -198,6 +198,13 @@
       overflow: visible;
       word-wrap: break-word;
       hyphens: auto;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .wiki-item:hover {
+      background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+      border-left-color: #f59e0b;
     }
 
     .wiki-year {
@@ -539,11 +546,12 @@
         }
       } catch (e) {
         console.log('Wiki error:', e);
+        const wikiLink = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' }))}&fulltext=1`;
         document.getElementById('wikiContent').innerHTML = `
-          <div class="wiki-item">
+          <a href="${wikiLink}" target="_blank" class="wiki-item">
             <div class="wiki-year">${now.getFullYear()}</div>
-            <div class="wiki-text">Today is ${now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}</div>
-          </div>`;
+            <div class="wiki-text">Today is ${now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} 📅</div>
+          </a>`;
       }
     }
     
@@ -587,12 +595,16 @@
       const end = start + itemsPerPage;
       const items = wikiData.slice(start, end);
       
-      document.getElementById('wikiContent').innerHTML = items.map(e => `
-        <div class="wiki-item">
-          <div class="wiki-year">${e.year}</div>
-          <div class="wiki-text">${escapeHtml(e.description)}</div>
-        </div>
-      `).join('');
+      document.getElementById('wikiContent').innerHTML = items.map(e => {
+        const searchQuery = encodeURIComponent(e.description.replace(/ \(.+\)$/, '').substring(0, 50));
+        const wikiLink = `https://en.wikipedia.org/wiki/Special:Search?search=${searchQuery}&fulltext=1`;
+        return `
+          <a href="${wikiLink}" target="_blank" class="wiki-item">
+            <div class="wiki-year">${e.year}</div>
+            <div class="wiki-text">${escapeHtml(e.description)} 🔗</div>
+          </a>
+        `;
+      }).join('');
       
       renderPagination('wikiPagination', page, itemsPerPage, setWikiPage);
     }
