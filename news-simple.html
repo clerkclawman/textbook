@@ -45,51 +45,54 @@
     }
     
     .logo {
-      font-size: 1.8vh;
+      font-size: 2.8vh;
       font-weight: 700;
       letter-spacing: 1px;
+      text-transform: uppercase;
     }
-    
+
     .page-info {
       background: rgba(251, 191, 36, 0.2);
       color: #fbbf24;
-      padding: 0.3rem 0.7rem;
+      padding: 0.5rem 1rem;
       font-weight: 700;
-      border-radius: 6px;
-      font-size: 1.3vh;
+      border-radius: 8px;
+      font-size: 2vh;
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      border: 1px solid rgba(251, 191, 36, 0.3);
+      gap: 0.5rem;
+      border: 2px solid rgba(251, 191, 36, 0.3);
     }
-    
+
     .page-indicator {
-      font-size: 1.6vh;
+      font-size: 2.5vh;
       font-weight: 800;
     }
     
     .mini-clock {
       font-family: 'Courier New', 'Segoe UI', monospace;
-      font-size: 3vh;
+      font-size: 4vh;
       color: #0f0;
       background: rgba(0,0,0,0.85);
-      padding: 0.8rem 1rem;
-      border-radius: 8px;
-      border: 2px solid rgba(0,255,0,0.4);
-      min-width: 250px;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      border: 3px solid rgba(0,255,0,0.4);
+      min-width: 350px;
       font-weight: bold;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
     }
     
     .ticker-container {
       background: #fbbf24;
       color: #000;
-      padding: 1.5vh 0;
+      padding: 2vh 0;
       flex-shrink: 0;
-      font-size: 3.5vh;
+      font-size: 5vh;
       border-bottom: 3px solid #1e40af;
       overflow: hidden;
       font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .ticker-content {
@@ -104,7 +107,7 @@
     .ticker-item {
       display: inline-block;
       font-weight: 700;
-      margin: 0 2vw;
+      margin: 0 3vw;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
@@ -141,15 +144,15 @@
     .page-title {
       background: linear-gradient(90deg, #1e3a8a, #1e40af);
       color: #fff;
-      padding: 1vh 1.5vw;
+      padding: 1.5vh 2vw;
       font-weight: 800;
       text-align: center;
-      font-size: 3.5vh;
-      border-radius: 10px;
-      margin-bottom: 1.2vh;
+      font-size: 5vh;
+      border-radius: 12px;
+      margin-bottom: 1.8vh;
       text-transform: uppercase;
       letter-spacing: 2px;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
       flex-shrink: 0;
     }
     
@@ -164,56 +167,62 @@
     
     .headline-item {
       background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-      border-left: 6px solid #22d3ee;
-      padding: 1vh 1.5vw;
-      font-size: 2vh;
-      line-height: 1.4;
+      border-left: 8px solid #22d3ee;
+      padding: 1.5vh 2vw;
+      font-size: 4.5vh;
+      line-height: 1.3;
       cursor: pointer;
       transition: all 0.2s ease;
       color: #e5e7eb;
-      border-radius: 6px;
+      border-radius: 8px;
       overflow: visible;
       text-overflow: clip;
       white-space: normal;
       word-wrap: break-word;
       hyphens: auto;
+      font-weight: 600;
+      min-height: 5vh;
     }
-    
+
     .headline-item:hover {
       background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
-      transform: translateX(5px);
+      transform: translateX(8px);
+      border-left-color: #0ea5e9;
     }
     
     .wiki-item {
       background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-      border-left: 6px solid #fbbf24;
-      padding: 1vh 1.5vw;
-      font-size: 2vh;
-      line-height: 1.4;
+      border-left: 8px solid #fbbf24;
+      padding: 1.5vh 2vw;
+      font-size: 4vh;
+      line-height: 1.3;
       display: flex;
-      gap: 1vw;
+      gap: 1.5vw;
       align-items: flex-start;
       color: #e5e7eb;
-      border-radius: 6px;
+      border-radius: 8px;
       overflow: visible;
       word-wrap: break-word;
       hyphens: auto;
       cursor: pointer;
       transition: all 0.2s;
       text-decoration: none;
+      font-weight: 600;
+      min-height: 6vh;
     }
     .wiki-item:hover {
       background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
       border-left-color: #f59e0b;
+      transform: translateX(8px);
     }
 
     .wiki-year {
       background: #ef4444;
       color: #fff;
-      padding: 0.3rem 0.8rem;
+      padding: 0.5vh 1vw;
       font-weight: 900;
-      font-size: 2vh;
-      border-radius: 6px;
+      font-size: 4vh;
+      border-radius: 8px;
       flex-shrink: 0;
     }
 
@@ -221,42 +230,45 @@
       flex: 1;
       word-wrap: break-word;
       hyphens: auto;
-      line-height: 1.4;
+      line-height: 1.3;
+      font-size: 4vh;
     }
     
     .pagination {
       display: flex;
       justify-content: center;
-      gap: 0.4vw;
+      gap: 0.6vw;
       margin-top: auto;
-      padding-top: 0.5vh;
+      padding-top: 1vh;
     }
-    
+
     .page-btn {
       background: rgba(34, 211, 238, 0.3);
       color: #22d3ee;
-      border: 1px solid rgba(34, 211, 238, 0.5);
-      padding: 0.3vh 0.7vw;
-      font-size: 1.2vh;
+      border: 2px solid rgba(34, 211, 238, 0.5);
+      padding: 0.6vh 1vw;
+      font-size: 2.5vh;
       cursor: pointer;
       font-weight: 600;
-      border-radius: 5px;
+      border-radius: 8px;
       transition: all 0.2s;
     }
-    
-    .page-btn:hover { background: rgba(34, 211, 238, 0.5); }
+
+    .page-btn:hover { background: rgba(34, 211, 238, 0.5); transform: scale(1.1); }
     .page-btn.active { background: #fbbf24; color: #000; border-color: #fbbf24; }
-    .page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+    .page-btn:disabled { opacity: 0.3; cursor: not-allowed; transform: none; }
 
     .weather-container {
       background: linear-gradient(135deg, #059669 0%, #047857 100%);
       color: #fff;
-      padding: 1.5vh 0;
+      padding: 2vh 0;
       flex-shrink: 0;
-      font-size: 3vh;
+      font-size: 5vh;
       border-top: 3px solid #10b981;
       overflow: hidden;
       font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .weather-content {
@@ -268,10 +280,10 @@
 
     .weather-item {
       display: inline-block;
-      margin: 0 2vw;
-      padding: 0.4vh 1vw;
+      margin: 0 3vw;
+      padding: 0.6vh 1.2vw;
       background: rgba(255,255,255,0.15);
-      border-radius: 6px;
+      border-radius: 8px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -308,16 +320,17 @@
     
     @media TV {
       header { padding: 1.5vh 2vw; }
-      .logo { font-size: 4vh; }
-      .page-info { font-size: 2.5vh; padding: 0.6vh 1.2vw; }
-      .page-indicator { font-size: 3.5vh; }
-      .mini-clock { font-size: 2.2vh; min-width: 180px; padding: 0.5rem 0.8rem; }
-      .ticker-container, .weather-container { font-size: 2.5vh; }
-      .page-title { font-size: 5vh; padding: 1.2vh 2vw; }
-      .headline-item, .wiki-item { font-size: 2.5vh; padding: 1.2vh 2vw; }
-      .wiki-year { font-size: 2.5vh; }
-      .page-btn { font-size: 2rem; padding: 0.6vh 1.2vw; }
-      .home-btn { font-size: 0.8rem; }
+      .logo { font-size: 5vh; }
+      .page-info { font-size: 3.5vh; padding: 0.8vh 1.5vw; }
+      .page-indicator { font-size: 4vh; }
+      .mini-clock { font-size: 4vh; min-width: 350px; padding: 1rem 1.2rem; }
+      .ticker-container, .weather-container { font-size: 5.5vh; }
+      .page-title { font-size: 6vh; padding: 1.8vh 2.5vw; }
+      .headline-item, .wiki-item { font-size: 5vh; padding: 2vh 2.5vw; }
+      .wiki-year { font-size: 5vh; }
+      .wiki-text { font-size: 5vh; }
+      .page-btn { font-size: 3rem; padding: 1vh 1.5vw; }
+      .home-btn { font-size: 1rem; }
     }
     
     @media (max-width: 768px) {
