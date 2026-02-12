@@ -18,17 +18,21 @@
     }
     
     header {
-      padding: 0.5rem 1rem;
-      background: rgba(255,255,255,0.05);
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      padding: 0.3rem 0.6rem;
+      background: rgba(0,0,0,0.3);
+      border-radius: 8px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-shrink: 0;
+      z-index: 100;
     }
     
     .mini-clock {
       font-family: 'Courier New', monospace;
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       color: #00ff87;
     }
     
@@ -42,57 +46,65 @@
     }
     
     .timer-display {
-      font-size: 20vw;
-      font-weight: bold;
+      font-size: 28vw;
+      font-weight: 900;
       color: #fff;
-      text-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+      text-shadow: 5px 5px 0 rgba(0,0,0,0.5), 0 0 50px rgba(0,255,135,0.3);
       line-height: 1;
-      margin-top: -5vh;
+      margin-bottom: -3vh;
     }
     
     .timer-display.warning {
       color: #FFD700;
       animation: pulse 1s infinite;
+      text-shadow: 5px 5px 0 rgba(0,0,0,0.5), 0 0 50px rgba(255,215,0,0.5);
     }
     
     .timer-display.danger {
       color: #FF0000;
       animation: shake 0.2s infinite;
+      text-shadow: 5px 5px 0 rgba(0,0,0,0.5), 0 0 50px rgba(255,0,0,0.5);
     }
     
     @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.07); } }
-    @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-12px); } 75% { transform: translateX(12px); } }
+    @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
     
     .controls-row {
+      position: fixed;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
       display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      width: 100%;
-      padding: 0 2rem;
-      margin-top: 2rem;
+      flex-direction: row;
+      gap: 0.4rem;
+      padding: 0.4rem 0.6rem;
+      background: rgba(0,0,0,0.3);
+      border-radius: 20px;
+      z-index: 100;
+      width: auto;
     }
     
     .controls-group {
       display: flex;
-      gap: 0.8rem;
+      gap: 0.3rem;
       flex-wrap: wrap;
       justify-content: center;
     }
     
     button, select {
-      padding: 1rem 1.5rem;
-      border: 3px solid rgba(255,255,255,0.3);
+      padding: 0.3rem 0.6rem;
+      border: 1.5px solid rgba(255,255,255,0.3);
       background: rgba(255,255,255,0.1);
       color: #fff;
-      font-size: 1rem;
+      font-size: 0.7rem;
       cursor: pointer;
-      border-radius: 15px;
-      font-weight: bold;
+      border-radius: 12px;
+      font-weight: 600;
       font-family: 'Segoe UI', sans-serif;
-      transition: all 0.3s;
+      transition: all 0.2s;
     }
     
-    button:hover, select:hover { transform: scale(1.05); background: rgba(255,255,255,0.2); }
+    button:hover, select:hover { background: rgba(255,255,255,0.2); }
     button.active, select.active { background: #00ff87; color: #1a1a2e; border-color: #00ff87; }
     
     .btn-green { border-color: #4CAF50; }
@@ -100,8 +112,8 @@
     .btn-yellow { border-color: #FFD93D; }
     
     @media TV {
-      .timer-display { font-size: 25vh !important; }
-      button, select { font-size: 1.5rem; min-width: 180px; }
+      .timer-display { font-size: 38vh !important; }
+      button, select { font-size: 0.9rem; min-width: auto; }
     }
   </style>
 </head>
