@@ -1746,8 +1746,12 @@ const maxFontSize = 8; // vw/rem units
         storySelector = document.getElementById('storySelector');
         const nightModeToggle = document.getElementById('nightModeToggle');
 
-        // Only check for reading mode elements if those elements exist (i.e., reading mode DOM is loaded)
-        // On home page, these elements don't exist and that's OK
+        // Check if main container exists (essential for both pages)
+        if (!mainContainer) {
+            console.error('Main container not found');
+            return false;
+        }
+
         return true;
     }
 
@@ -1761,39 +1765,47 @@ const maxFontSize = 8; // vw/rem units
         loadSavedPreferences();
         loadExternalData().then(() => {
             console.log('All external data loaded');
-            classSelector.focus();
+            if (classSelector) classSelector.focus();
         }).catch(error => {
             console.error('Error loading external data:', error);
-            alert('Error loading required data files. Please check the console for details.');
+            if (classSelector) {
+                alert('Error loading required data files. Please check the console for details.');
+            }
         });
     }
 
     function setupEventListeners() {
-        // Content type, class and story selection
+        // Reading mode navigation buttons (only in reading mode)
+        if (prevSentenceBtn) prevSentenceBtn.addEventListener('click', showPreviousSentence);
+        if (nextSentenceBtn) nextSentenceBtn.addEventListener('click', showNextSentence);
+        if (playEnglishBtn) playEnglishBtn.addEventListener('click', () => playSentence('english'));
+        if (playJapaneseBtn) playJapaneseBtn.addEventListener('click', () => playSentence('japanese'));
+        if (exitReadingBtn) exitReadingBtn.addEventListener('click', exitReadingMode);
+        if (fruitToggleBtn) fruitToggleBtn.addEventListener('click', toggleFruitGame);
+
+        // Font controls (reading mode)
+        const increaseFontBtn = document.getElementById('increaseFont');
+        const decreaseFontBtn = document.getElementById('decreaseFont');
+        if (increaseFontBtn) increaseFontBtn.addEventListener('click', increaseFontSize);
+        if (decreaseFontBtn) decreaseFontBtn.addEventListener('click', decreaseFontSize);
+
+        // Display mode controls (reading mode)
+        const displayEnglishBtn = document.getElementById('displayEnglish');
+        const displayJapaneseBtn = document.getElementById('displayJapanese');
+        const displayBothBtn = document.getElementById('displayBoth');
+        if (displayEnglishBtn) displayEnglishBtn.addEventListener('click', () => setDisplayMode('english'));
+        if (displayJapaneseBtn) displayJapaneseBtn.addEventListener('click', () => setDisplayMode('japanese'));
+        if (displayBothBtn) displayBothBtn.addEventListener('click', () => setDisplayMode('both'));
+
+        // Content type, class and story selection (home page)
         const contentTypeSelector = document.getElementById('contentTypeSelector');
         if (contentTypeSelector) contentTypeSelector.addEventListener('change', handleContentTypeChange);
         if (classSelector) classSelector.addEventListener('change', handleClassSelect);
-        storySelector.addEventListener('change', handleStorySelect);
-
-        // Font controls
-        document.getElementById('increaseFont').addEventListener('click', increaseFontSize);
-        document.getElementById('decreaseFont').addEventListener('click', decreaseFontSize);
-
-        // Display mode controls
-        document.getElementById('displayEnglish').addEventListener('click', () => setDisplayMode('english'));
-        document.getElementById('displayJapanese').addEventListener('click', () => setDisplayMode('japanese'));
-        document.getElementById('displayBoth').addEventListener('click', () => setDisplayMode('both'));
-
-        // Reading mode navigation
-        prevSentenceBtn.addEventListener('click', showPreviousSentence);
-        nextSentenceBtn.addEventListener('click', showNextSentence);
-        playEnglishBtn.addEventListener('click', () => playSentence('english'));
-        playJapaneseBtn.addEventListener('click', () => playSentence('japanese'));
-        exitReadingBtn.addEventListener('click', exitReadingMode);
-        fruitToggleBtn.addEventListener('click', toggleFruitGame);
+        if (storySelector) storySelector.addEventListener('change', handleStorySelect);
 
         // Night mode toggle
-        document.getElementById('nightModeToggle').addEventListener('click', toggleNightMode);
+        const nightModeToggle = document.getElementById('nightModeToggle');
+        if (nightModeToggle) nightModeToggle.addEventListener('click', toggleNightMode);
 
         // Keyboard navigation
         document.addEventListener('keydown', handleRemoteInput);
