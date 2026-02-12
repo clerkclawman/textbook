@@ -37,7 +37,21 @@
     
     @media TV { .mini-clock { font-size: 1rem; } }
     
-    .controls {
+    .controls-top {
+      position: fixed;
+      top: 8px;
+      right: 8px;
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      padding: 0.4rem 0.6rem;
+      background: rgba(0,0,0,0.3);
+      border-radius: 15px;
+      z-index: 100;
+    }
+    
+    .controls-bottom {
       position: fixed;
       bottom: 8px;
       left: 50%;
@@ -52,24 +66,34 @@
       z-index: 100;
     }
     
-    .controls button, .controls select {
+    .controls button, .controls select, .controls-top button, .controls-top select, .controls-bottom button, .controls-bottom select {
       padding: 0.4rem 0.8rem;
       border: 1.5px solid rgba(255,255,255,0.3);
       background: rgba(255,255,255,0.1);
       color: #fff;
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       cursor: pointer;
-      border-radius: 15px;
+      border-radius: 12px;
       transition: all 0.2s ease;
       font-weight: 600;
     }
     
-    .controls button:hover, .controls select:hover {
+    .controls-top button, .controls-top select {
+      font-size: 0.6rem;
+      padding: 0.3rem 0.6rem;
+    }
+    
+    .controls-bottom button, .controls-bottom select {
+      font-size: 0.7rem;
+      padding: 0.5rem 0.9rem;
+    }
+    
+    .controls button:hover, .controls select:hover, .controls-top button:hover, .controls-top select:hover, .controls-bottom button:hover, .controls-bottom select:hover {
       background: rgba(255,255,255,0.2);
       border-color: rgba(255,255,255,0.5);
     }
     
-    .controls button.active, .controls select.active {
+    .controls button.active, .controls select.active, .controls-top button.active, .controls-top select.active, .controls-bottom button.active, .controls-bottom select.active {
       background: rgba(255,255,255,0.25);
       color: #fbbf24;
       border-color: #fbbf24;
@@ -131,13 +155,13 @@
       .card-front { font-size: 500px !important; }
       .card-back { font-size: 320px !important; }
       .emoji { font-size: 300px !important; }
-      .controls button, .controls select { font-size: 1rem; padding: 0.6rem 1rem; }
+      .controls button, .controls select, .controls-top button, .controls-top select, .controls-bottom button, .controls-bottom select { font-size: 0.9rem; padding: 0.6rem 1rem; }
       .home-btn { font-size: 0.8rem; }
     }
     
     .home-btn {
       position: fixed;
-      bottom: 8px;
+      bottom: 50px;
       right: 8px;
       background: rgba(255,255,255,0.15);
       color: #fff;
@@ -160,29 +184,28 @@
     <div class="mini-clock" id="miniClock"></div>
   </header>
   
-  <div class="controls">
+  <div class="controls-top">
     <select id="deckSelect">
-      <option value="basic">Bookmarks: Basic Alphabet</option>
-      <option value="advanced">Bookmarks: Advanced Phonics</option>
-      <option value="sight-words">Bookmarks: Sight Words</option>
+      <option value="basic">Basic</option>
+      <option value="advanced">Phonics</option>
+      <option value="sight-words">Sight</option>
     </select>
-    
     <select id="caseSelect">
-      <option value="upper">Uppercase ABC</option>
-      <option value="lower">Lowercase abc</option>
+      <option value="upper">ABC</option>
+      <option value="lower">abc</option>
     </select>
-    
-    <button id="orderBtn" data-order="alphabetical">A to Z</button>
-    <button id="jumbleBtn" data-order="jumble">Jumble</button>
-    
+    <button id="orderBtn" data-order="alphabetical">A→Z</button>
+    <button id="jumbleBtn" data-order="jumble">🔀</button>
+  </div>
+  
+  <div class="controls-bottom">
+    <button id="prevBtn">←</button>
     <select id="autoRotateSelect">
       <option value="off">Auto: Off</option>
-      <option value="slow">Auto: Slow (3s)</option>
-      <option value="fast">Auto: Fast (1s)</option>
+      <option value="slow">3s</option>
+      <option value="fast">1s</option>
     </select>
-    
-    <button id="prevBtn">← Prev</button>
-    <button id="nextBtn">Next →</button>
+    <button id="nextBtn">→</button>
   </div>
   
   <div class="card-container">
