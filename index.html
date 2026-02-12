@@ -1230,7 +1230,7 @@
             transition: all 0.3s ease;
             border: 2px solid #4a90e2;
         ">
-            📺 News Simple
+            📺 News
         </a>
     </div>
 
@@ -1359,7 +1359,7 @@
 </div>
 
     <!-- Footer - Classroom Tools Navigation -->
-    <footer class="footer-tools" style="
+    <footer class="footer-tools" id="footerTools" style="
         background: linear-gradient(135deg, rgba(67, 97, 238, 0.05) 0%, rgba(103, 126, 234, 0.1) 100%);
         padding: 30px 20px;
         margin-top: 20px;
@@ -1382,8 +1382,8 @@
             max-width: 1200px;
             margin: 0 auto;
         ">
-            <a href="news.html" class="tool-button" style="
-                background: linear-gradient(135deg, #f72585 0%, #b5179e 100%);
+            <a href="news-simple.html" class="tool-button" style="
+                background: linear-gradient(135deg, #0f3460 0%, #0a0a1a 100%);
                 color: white;
                 padding: 12px 25px;
                 border-radius: 30px;
@@ -1394,6 +1394,7 @@
                 align-items: center;
                 gap: 8px;
                 transition: all 0.3s ease;
+                border: 2px solid #4a90e2;
             " onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform=''; this.style.boxShadow=''">
                 📰 News
             </a>
@@ -1445,7 +1446,7 @@
                 transition: all 0.3s ease;
                 border: 2px solid #4a90e2;
             " onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform=''; this.style.boxShadow=''">
-                📺 News Simple
+                📺 News
             </a>
         </div>
     </footer>
@@ -1727,7 +1728,9 @@ function populateStorySelector(cls) {
     // ====================
     function enterReadingMode(cls) {
         const toolsNav = document.getElementById("startScreenToolsNav");
+        const footerTools = document.getElementById("footerTools");
         if (toolsNav) toolsNav.style.display = "none";
+        if (footerTools) footerTools.style.display = "none";
         if (mainContainer) mainContainer.style.display = 'none';
         if (readingModeContainer) readingModeContainer.style.display = 'flex';
 
@@ -1737,7 +1740,9 @@ function populateStorySelector(cls) {
 
     function exitReadingMode() {
         const toolsNav = document.getElementById("startScreenToolsNav");
+        const footerTools = document.getElementById("footerTools");
         if (toolsNav) toolsNav.style.display = "flex";
+        if (footerTools) footerTools.style.display = "block";
         mainContainer.style.display = 'block';
         readingModeContainer.style.display = 'none';
         stopSpeech();
