@@ -1718,6 +1718,8 @@ function populateStorySelector(cls) {
     // READING MODE FUNCTIONS
     // ====================
     function enterReadingMode(cls) {
+        const toolsNav = document.getElementById("startScreenToolsNav");
+        if (toolsNav) toolsNav.style.display = "none";
         if (mainContainer) mainContainer.style.display = 'none';
         if (readingModeContainer) readingModeContainer.style.display = 'flex';
 
@@ -1726,6 +1728,8 @@ function populateStorySelector(cls) {
     }
 
     function exitReadingMode() {
+        const toolsNav = document.getElementById("startScreenToolsNav");
+        if (toolsNav) toolsNav.style.display = "flex";
         mainContainer.style.display = 'block';
         readingModeContainer.style.display = 'none';
         stopSpeech();
