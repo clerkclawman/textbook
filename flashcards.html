@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌟 Phonics Flashcards - Fun Learning!</title>
+  <title>Phonics Flashcards</title>
   <style>
     * {
       box-sizing: border-box;
@@ -13,110 +13,55 @@
     
     body {
       font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       color: #fff;
-      animation: gradientBG 10s ease infinite;
       overflow: hidden;
     }
     
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    
-    header {
-      padding: 1.5rem 2rem;
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
-      text-align: center;
-    }
-    
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
-      animation: bounce 2s ease infinite;
-    }
-    
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    
-    .subtitle {
-      font-size: 1.2rem;
-      opacity: 0.95;
-      font-weight: bold;
-    }
-    
-    .stats {
-      display: flex;
-      gap: 1.5rem;
-      margin-top: 1rem;
-      justify-content: center;
-      font-size: 1.1rem;
-    }
-    
-    .stat {
-      background: rgba(255,255,255,0.25);
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-    
-    .deck-selector {
+    .controls {
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 2rem;
+      padding: 1rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
     }
     
-    .deck-btn {
-      padding: 1rem 2rem;
-      border: 3px solid rgba(255,255,255,0.5);
-      background: linear-gradient(145deg, #ffffff30, #ffffff10);
+    .controls button, .controls select {
+      padding: 0.8rem 1.5rem;
+      border: 2px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.15);
       color: #fff;
-      font-size: 1.1rem;
+      font-size: 1rem;
       cursor: pointer;
-      border-radius: 35px;
+      border-radius: 10px;
       transition: all 0.3s ease;
       font-weight: bold;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
-    .deck-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    }
-    
-    .deck-btn.active {
-      background: linear-gradient(145deg, #ffffff50, #ffffff30);
-      transform: scale(1.1);
+    .controls button:hover, .controls select:hover {
+      background: rgba(255,255,255,0.3);
       border-color: #fff;
+    }
+    
+    .controls button.active {
+      background: #fff;
+      color: #667eea;
     }
     
     .card-container {
       perspective: 1000px;
-      width: 800px;
-      height: 450px;
-      margin-bottom: 2rem;
+      width: min(90vw, 80vh);
+      height: min(70vh, 60vw);
+      max-width: 600px;
+      max-height: 500px;
     }
     
     .card {
@@ -124,7 +69,7 @@
       height: 100%;
       position: relative;
       transform-style: preserve-3d;
-      transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: transform 0.6s ease;
       cursor: pointer;
     }
     
@@ -138,491 +83,215 @@
       height: 100%;
       backface-visibility: hidden;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
-      border-radius: 40px;
+      border-radius: 25px;
       box-shadow: 0 20px 60px rgba(0,0,0,0.3);
       font-weight: bold;
-      text-align: center;
     }
     
     .card-front {
-      background: linear-gradient(145deg, #ffffff, #f0f0f0);
-      color: #333;
-      border: 5px solid #FFD700;
+      background: #fff;
+      color: #667eea;
+      font-size: min(35vw, 30vh);
     }
     
     .card-back {
-      transform: rotateY(180deg);
       background: linear-gradient(145deg, #fff9c4, #fff59d);
       color: #333;
-      border: 5px solid #4CAF50;
-    }
-    
-    .card-front .big-letter {
-      font-size: 8rem;
-      margin-bottom: 0.5rem;
-      line-height: 1;
-      color: #FF6B6B;
-      text-shadow: 4px 4px 0 #FFD700;
-    }
-    
-    .card-front .phonics-sentence {
-      font-size: 2.5rem;
-      color: #4ECDC4;
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-    
-    .card-front .emoji {
-      font-size: 5rem;
-      animation: wobble 2s ease infinite;
-    }
-    
-    @keyframes wobble {
-      0%, 100% { transform: rotate(-5deg); }
-      50% { transform: rotate(5deg); }
-    }
-    
-    .card-back .word-list {
-      font-size: 1.8rem;
-      color: #333;
-      line-height: 2.5;
-    }
-    
-    .card-back .word-list span {
-      background: rgba(255,255,255,0.7);
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      margin: 0.3rem;
-      display: inline-block;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    
-    .card-back .play-btn {
-      margin-top: 1.5rem;
-      padding: 1rem 2rem;
-      background: linear-gradient(145deg, #FF6B6B, #FF5252);
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
-    }
-    
-    .card-back .play-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
-    }
-    
-    .card-hint {
-      position: absolute;
-      bottom: 1.5rem;
-      font-size: 1.1rem;
-      color: #666;
-      font-weight: normal;
-    }
-    
-    .controls {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .control-btn {
-      padding: 1.2rem 2.5rem;
-      border: 3px solid rgba(255,255,255,0.6);
-      background: linear-gradient(145deg, #ffffff30, #ffffff15);
-      color: #fff;
-      font-size: 1.4rem;
-      cursor: pointer;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      min-width: 140px;
-      font-weight: bold;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    
-    .control-btn:hover {
-      transform: scale(1.1) translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    }
-    
-    .progress {
-      font-size: 1.4rem;
-      margin: 1.5rem 0;
-      font-weight: bold;
-      text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
-    }
-    
-    .tts-toggle {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 1rem;
-      background: rgba(255,255,255,0.2);
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      font-size: 1.1rem;
-    }
-    
-    .tts-toggle input {
-      width: 25px;
-      height: 25px;
-      cursor: pointer;
-    }
-    
-    .mode-selector {
-      margin-top: 1rem;
-      display: flex;
+      transform: rotateY(180deg);
+      font-size: min(25vw, 20vh);
+      flex-direction: column;
       gap: 1rem;
     }
     
-    .mode-btn {
-      padding: 0.8rem 1.5rem;
-      border: 2px solid rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.1);
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-    
-    .mode-btn.active {
-      background: rgba(255,255,255,0.3);
-      border-color: #fff;
-    }
-    
-    @media (max-width: 768px) {
-      .card-container {
-        width: 95vw;
-        height: 55vw;
-      }
-      
-      h1 { font-size: 1.8rem; }
-      
-      .card-front .big-letter { font-size: 4rem !important; }
-      .card-front .phonics-sentence { font-size: 1.5rem !important; }
-      .card-front .emoji { font-size: 3rem !important; }
-      .card-back .word-list { font-size: 1.2rem !important; }
-      
-      .deck-btn, .control-btn {
-        padding: 0.8rem 1.2rem;
-        font-size: 0.95rem;
-        min-width: 110px;
-      }
+    .emoji {
+      font-size: min(20vw, 18vh);
     }
     
     @media TV {
       .card-container {
-        width: 90vw;
-        height: 50vh;
+        max-width: 800px;
+        max-height: 600px;
       }
       
-      .card-front .big-letter {
-        font-size: 12rem !important;
+      .card-front {
+        font-size: 400px;
       }
       
-      .card-front .phonics-sentence {
-        font-size: 4rem !important;
+      .card-back {
+        font-size: 250px;
       }
       
-      .card-front .emoji {
-        font-size: 8rem !important;
+      .emoji {
+        font-size: 200px;
       }
       
-      .card-back .word-list {
-        font-size: 2.5rem !important;
-      }
-      
-      .card-back .play-btn {
-        font-size: 2rem !important;
-      }
-      
-      .deck-btn, .control-btn {
-        min-width: 220px;
-        padding: 1.5rem 3rem;
-        font-size: 1.8rem !important;
-        min-height: 80px;
-      }
-      
-      h1 {
-        font-size: 4rem !important;
-      }
-      
-      .stats {
-        font-size: 1.8rem;
+      .controls button, .controls select {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        min-width: 200px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🌟 Phonics Flashcards 🌟</h1>
-    <p class="subtitle">Fun learning for kids! Tap card to flip • 🔊 Play for sounds</p>
-    <div class="stats">
-      <div class="stat">⭐ Correct: <span id="correct">0</span></div>
-      <div class="stat">📊 Total: <span id="total">0</span></div>
-      <div class="stat">🎯 Accuracy: <span id="accuracy">0%</span></div>
-    </div>
-  </header>
+  <div class="controls">
+    <select id="caseSelect">
+      <option value="upper">A B C - Uppercase</option>
+      <option value="lower">a b c - Lowercase</option>
+    </select>
+    
+    <button id="orderBtn" data-order="alphabetical">Alphabetical</button>
+    <button id="jumbleBtn" data-order="jumble">Jumble</button>
+    
+    <select id="autoRotate">
+      <option value="off">Auto: Off</option>
+      <option value="slow">Auto: Slow (3s)</option>
+      <option value="fast">Auto: Fast (1s)</option>
+    </select>
+    
+    <button id="prevBtn">← Prev</button>
+    <button id="nextBtn">Next →</button>
+  </div>
   
-  <main>
-    <div class="deck-selector">
-      <button class="deck-btn active" data-deck="short-a">Short A</button>
-      <button class="deck-btn" data-deck="short-e">Short E</button>
-      <button class="deck-btn" data-deck="short-i">Short I</button>
-      <button class="deck-btn" data-deck="short-o">Short O</button>
-      <button class="deck-btn" data-deck="short-u">Short U</button>
-    </div>
-    
-    <div class="mode-selector">
-      <button class="mode-btn active" data-mode="easy">😊 Easy</button>
-      <button class="mode-btn" data-mode="teacher">👩‍🏫 Teacher Mode</button>
-    </div>
-    
-    <div class="card-container">
-      <div class="card" id="card">
-        <div class="card-face card-front">
-          <div class="big-letter" id="big-letter">A</div>
-          <div class="phonics-sentence" id="phonics-sentence">A is for Apple</div>
-          <div class="emoji" id="emoji">🍎</div>
-          <div class="card-hint">Tap to see more words!</div>
-        </div>
-        <div class="card-face card-back">
-          <div class="word-list" id="word-list">
-            <span>🍎 apple</span>
-            <span>🐜 ant</span>
-            <span>🐱 cat</span>
-            <span>🦇 bat</span>
-          </div>
-          <button class="play-btn" id="ttsPlay">🔊 Play Sound</button>
-          <div class="card-hint">Tap for next card!</div>
-        </div>
+  <div class="card-container">
+    <div class="card" id="card">
+      <div class="card-face card-front">
+        <div id="letter">A</div>
+      </div>
+      <div class="card-face card-back">
+        <div id="word">apple</div>
+        <div class="emoji" id="emoji">🍎</div>
       </div>
     </div>
-    
-    <div class="progress">
-      <span id="progress">📚 Card 1 of 20</span>
-    </div>
-    
-    <div class="tts-toggle">
-      <input type="checkbox" id="ttsEnabled" checked>
-      <label for="ttsEnabled">🔊 Auto-play sounds</label>
-    </div>
-    
-    <div class="controls">
-      <button class="control-btn" id="prev-btn">⬅️ Back</button>
-      <button class="control-btn" id="flip-btn">🔄 Flip</button>
-      <button class="control-btn" id="know-btn">⭐ Know!</button>
-      <button class="control-btn" id="next-btn">Next ➡️</button>
-    </div>
-  </main>
+  </div>
 
   <script>
-    // Phonics decks - Kid-friendly "A is for Apple" style
-    const decks = {
-      'short-a': [
-        { letter: 'A', phonics: 'A is for', word: 'Apple', emoji: '🍎', examples: ['🍎 apple', '🐜 ant', '🐱 cat', '🦇 bat', '🎩 hat', '🧘 mat', '🗺️ map', '👟 tap'] },
-        { letter: 'A', phonics: 'A says', word: 'ah', emoji: '😮', examples: ['👨 dad', '🎒 bag', '😢 sad', '🎁 glad', '🔨 mad', '🏃 run', '🐀 rat', '🚿 nap'] }
-      ],
-      'short-e': [
-        { letter: 'E', phonics: 'E is for', word: 'Egg', emoji: '🥚', examples: ['🥚 egg', '👗 red', '🛏️ bed', '🐔 hen', '✏️ pen', '🦶 leg', '🌲 ten', '👀 see'] },
-        { letter: 'E', phonics: 'E says', word: 'eh', emoji: '😊', examples: ['📱 yes', '📝 pen', '🪑 sit', '🖐️ five', '🚚 get', '🎳 let', '🪟 wet', '👔 vest'] }
-      ],
-      'short-i': [
-        { letter: 'I', phonics: 'I is for', word: 'Igloo', emoji: '🏠', examples: ['🐷 pig', '⛸️ ice', '📷 pic', '💊 pill', '🔥 lit', '🎸 dig', '🦴 fin', '🏆 win'] },
-        { letter: 'I', phonics: 'I says', word: 'ih', emoji: '😄', examples: ['🧱 big', '🐱 six', '🪑 sit', '🦃 hit', '🚲 fit', '🎈 kit', '🦷 bit', '👔 knit'] }
-      ],
-      'short-o': [
-        { letter: 'O', phonics: 'O is for', word: 'Octopus', emoji: '🐙', examples: ['🐕 dog', '🐸 frog', '🧹 mop', '🔝 top', '🎲 dot', '💿 cot', '🌞 hot', '🚙 lot'] },
-        { letter: 'O', phonics: 'O says', word: 'ah', emoji: '😍', examples: ['👨 dad', '🏠 mom', '🎁 box', '🔴 fox', '🏊 ox', '👀 pop', '🥣 pot', '🌌 fog'] }
-      ],
-      'short-u': [
-        { letter: 'U', phonics: 'U is for', word: 'Umbrella', emoji: '☂️', examples: ['🦆 duck', '🚌 bus', '☀️ sun', '🏐 mug', '🏃 run', '🐛 bug', '🟣 plum', '🎭 drum'] },
-        { letter: 'U', phonics: 'U says', word: 'uh', emoji: '🤔', examples: ['🍵 cup', '🖐️ up', '🦴 pup', '🎓 gum', '🖱️ but', '📏 cut', '🪜 nut', '👔 hut'] }
-      ]
-    };
+    const phonicsData = [
+      { letter: 'A', word: 'apple', emoji: '🍎' },
+      { letter: 'B', word: 'ball', emoji: '⚽' },
+      { letter: 'C', word: 'cat', emoji: '🐱' },
+      { letter: 'D', word: 'dog', emoji: '🐕' },
+      { letter: 'E', word: 'egg', emoji: '🥚' },
+      { letter: 'F', word: 'fish', emoji: '🐟' },
+      { letter: 'G', word: 'goat', emoji: '🐐' },
+      { letter: 'H', word: 'hat', emoji: '🎩' },
+      { letter: 'I', word: 'ice cream', emoji: '🍦' },
+      { letter: 'J', word: 'juice', emoji: '🧃' },
+      { letter: 'K', word: 'kite', emoji: '🪁' },
+      { letter: 'L', word: 'lemon', emoji: '🍋' },
+      { letter: 'M', word: 'milk', emoji: '🥛' },
+      { letter: 'N', word: 'nest', emoji: '🪺' },
+      { letter: 'O', word: 'orange', emoji: '🍊' },
+      { letter: 'P', word: 'pig', emoji: '🐷' },
+      { letter: 'Q', word: 'queen', emoji: '👸' },
+      { letter: 'R', word: 'rabbit', emoji: '🐰' },
+      { letter: 'S', word: 'sun', emoji: '☀️' },
+      { letter: 'T', word: 'tree', emoji: '🌳' },
+      { letter: 'U', word: 'umbrella', emoji: '☂️' },
+      { letter: 'V', word: 'van', emoji: '🚐' },
+      { letter: 'W', word: 'water', emoji: '💧' },
+      { letter: 'X', word: 'xylophone', emoji: '🎵' },
+      { letter: 'Y', word: 'yogurt', emoji: '🥣' },
+      { letter: 'Z', word: 'zebra', emoji: '🦓' }
+    ];
     
-    // State
-    let currentDeck = 'short-a';
-    let currentCards = [...decks['short-a']];
     let currentIndex = 0;
     let isFlipped = false;
-    let correctCount = 0;
-    let totalCards = 0;
-    let knownCards = [];
-    let ttsEnabled = true;
-    let mode = 'easy';
+    let autoRotateInterval = null;
+    let useUppercase = true;
+    let useAlphabetical = true;
     
-    // DOM Elements
     const card = document.getElementById('card');
-    const bigLetterEl = document.getElementById('big-letter');
-    const phonicsSentenceEl = document.getElementById('phonics-sentence');
+    const letterEl = document.getElementById('letter');
+    const wordEl = document.getElementById('word');
     const emojiEl = document.getElementById('emoji');
-    const wordListEl = document.getElementById('word-list');
-    const progressEl = document.getElementById('progress');
-    const correctEl = document.getElementById('correct');
-    const totalEl = document.getElementById('total');
-    const accuracyEl = document.getElementById('accuracy');
-    const ttsPlayBtn = document.getElementById('ttsPlay');
-    const ttsToggle = document.getElementById('ttsEnabled');
-    const deckBtns = document.querySelectorAll('.deck-btn');
-    const modeBtns = document.querySelectorAll('.mode-btn');
+    const caseSelect = document.getElementById('caseSelect');
+    const orderBtn = document.getElementById('orderBtn');
+    const jumbleBtn = document.getElementById('jumbleBtn');
+    const autoRotateSelect = document.getElementById('autoRotate');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
     
-    // Colors for letters
-    const letterColors = {
-      'A': '#FF6B6B',
-      'E': '#4ECDC4',
-      'I': '#45B7D1',
-      'O': '#FFD93D',
-      'U': '#6BCB77'
-    };
-    
-    // Functions
     function updateCard() {
-      const cardData = currentCards[currentIndex];
-      bigLetterEl.textContent = cardData.letter || '';
-      bigLetterEl.style.color = letterColors[cardData.letter] || '#FF6B6B';
-      phonicsSentenceEl.textContent = `${cardData.phonics} ${cardData.word}`;
-      emojiEl.textContent = cardData.emoji;
-      
-      if (mode === 'teacher') {
-        // Teacher mode: show more words
-        wordListEl.innerHTML = cardData.examples.map(ex => `<span>${ex}</span>`).join('');
-      } else {
-        // Easy mode: show fewer words
-        wordListEl.innerHTML = cardData.examples.slice(0, 4).map(ex => `<span>${ex}</span>`).join('');
-      }
-      
-      progressEl.textContent = `📚 Card ${currentIndex + 1} of ${currentCards.length}`;
+      const item = phonicsData[currentIndex];
+      letterEl.textContent = useUppercase ? item.letter.toUpperCase() : item.letter.toLowerCase();
+      wordEl.textContent = item.word;
+      emojiEl.textContent = item.emoji;
       isFlipped = false;
       card.classList.remove('flipped');
     }
     
-    function playTTS(text) {
-      const cleanText = text.replace(/[🌟⭐📊🎯😊👩‍🏫➡️⬅️🔄🍎🐜🐱🦇🎩🧘🗺️👟😮👨🎒😢🎁🔨🏃🐀🚿🥚👗🛏️🐔✏️🦶🌲👀📱📝🪑🖐️💊⛸️📷🔥🎸🧱✋😄🦃🚲🎈🦷👔🐙🐸🧹🔝🎲💿🧹🚙😍🏠🎁🔴🏊👀🌌☂️🦆🚌☀️🏐🏃🐛🟣🎭🤔🍵🖐️🦴🎓🖱️📏🪜👔🔊]/g, '');
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.rate = 0.85;
-      utterance.pitch = 1.1;
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
-    
     function flipCard() {
       isFlipped = !isFlipped;
-      card.classList.toggle('flipped', isFlipped);
-      
-      if (isFlipped && ttsEnabled) {
-        const phonics = phonicsSentenceEl.textContent;
-        playTTS(phonics.replace(/ is for | says /g, ' '));
-      }
+      card.classList.toggle('flipped');
     }
     
     function nextCard() {
-      if (currentIndex < currentCards.length - 1) {
-        currentIndex++;
-        updateCard();
-      } else {
-        alert('🎉 Great job! Deck complete! 🌟');
-        shuffleDeck();
-        currentIndex = 0;
-        updateCard();
-      }
+      currentIndex = (currentIndex + 1) % phonicsData.length;
+      updateCard();
     }
     
     function prevCard() {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updateCard();
-      }
-    }
-    
-    function markKnown() {
-      knownCards.push(currentCards[currentIndex]);
-      correctCount++;
-      totalCards++;
-      updateStats();
-      nextCard();
-    }
-    
-    function updateStats() {
-      correctEl.textContent = correctCount;
-      totalEl.textContent = totalCards;
-      const accuracy = totalCards > 0 ? Math.round((correctCount / totalCards) * 100) : 0;
-      accuracyEl.textContent = accuracy + '%';
-    }
-    
-    function shuffleDeck() {
-      for (let i = currentCards.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [currentCards[i], currentCards[j]] = [currentCards[j], currentCards[i]];
-      }
-    }
-    
-    function switchDeck(deckName) {
-      currentDeck = deckName;
-      knownCards = [];
-      currentIndex = 0;
-      currentCards = [...decks[deckName]];
-      shuffleDeck();
+      currentIndex = (currentIndex - 1 + phonicsData.length) % phonicsData.length;
       updateCard();
-      
-      deckBtns.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.deck === deckName);
-      });
     }
     
-    function switchMode(modeName) {
-      mode = modeName;
-      updateCard();
-      
-      modeBtns.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.mode === modeName);
-      });
-    }
-    
-    // Event Listeners
-    card.addEventListener('click', () => {
-      if (!isFlipped) {
-        flipCard();
+    function sortData() {
+      if (useAlphabetical) {
+        phonicsData.sort((a, b) => a.letter.localeCompare(b.letter));
+        orderBtn.classList.add('active');
+        jumbleBtn.classList.remove('active');
       } else {
-        nextCard();
+        phonicsData.sort(() => Math.random() - 0.5);
+        orderBtn.classList.remove('active');
+        jumbleBtn.classList.add('active');
       }
+      currentIndex = 0;
+      updateCard();
+    }
+    
+    function setAutoRotate() {
+      clearInterval(autoRotateInterval);
+      
+      const value = autoRotateSelect.value;
+      if (value === 'slow') {
+        autoRotateInterval = setInterval(() => {
+          if (isFlipped) {
+            flipCard();
+          } else {
+            nextCard();
+          }
+        }, 3000);
+      } else if (value === 'fast') {
+        autoRotateInterval = setInterval(() => {
+          if (isFlipped) {
+            flipCard();
+          } else {
+            nextCard();
+          }
+        }, 1000);
+      }
+    }
+    
+    card.addEventListener('click', flipCard);
+    nextBtn.addEventListener('click', nextCard);
+    prevBtn.addEventListener('click', prevCard);
+    caseSelect.addEventListener('change', () => {
+      useUppercase = caseSelect.value === 'upper';
+      updateCard();
     });
-    
-    document.getElementById('flip-btn').addEventListener('click', flipCard);
-    document.getElementById('next-btn').addEventListener('click', nextCard);
-    document.getElementById('prev-btn').addEventListener('click', prevCard);
-    document.getElementById('know-btn').addEventListener('click', markKnown);
-    
-    ttsPlayBtn.addEventListener('click', () => {
-      const phonics = phonicsSentenceEl.textContent;
-      const word = phonics.split(' ').pop();
-      playTTS(word);
+    orderBtn.addEventListener('click', () => {
+      useAlphabetical = true;
+      sortData();
     });
-    
-    ttsToggle.addEventListener('change', (e) => {
-      ttsEnabled = e.target.checked;
+    jumbleBtn.addEventListener('click', () => {
+      useAlphabetical = false;
+      sortData();
     });
+    autoRotateSelect.addEventListener('change', setAutoRotate);
     
-    deckBtns.forEach(btn => {
-      btn.addEventListener('click', () => switchDeck(btn.dataset.deck));
-    });
-    
-    modeBtns.forEach(btn => {
-      btn.addEventListener('click', () => switchMode(btn.dataset.mode));
-    });
-    
-    // Keyboard support
     document.addEventListener('keydown', (e) => {
       switch(e.key) {
         case ' ':
@@ -635,23 +304,11 @@
         case 'ArrowLeft':
           prevCard();
           break;
-        case 'y':
-        case 'Y':
-          if (isFlipped) markKnown();
-          break;
-        case 'p':
-        case 'P':
-          if (!isFlipped) {
-            const phonics = phonicsSentenceEl.textContent;
-            playTTS(phonics);
-          }
-          break;
       }
     });
     
-    // Initialize
-    shuffleDeck();
     updateCard();
+    orderBtn.classList.add('active');
   </script>
 </body>
 </html>
