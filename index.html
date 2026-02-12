@@ -61,6 +61,11 @@
         padding: 3vh 4vw;
         overflow: hidden;
       }
+      
+      #miniClock {
+        font-size: 1.5rem !important;
+        padding: 0.8vh 1.5vw !important;
+      }
     }
 
     body.dark-mode {
@@ -1167,7 +1172,7 @@
 </head>
 <body>
     <button class="night-mode-toggle" id="nightModeToggle">🌙</button>
-    <div class="mini-clock" id="miniClock" style="position: fixed; top: 10px; left: 10px; z-index: 1000; font-family: 'Courier New', monospace; font-size: 0.9rem; color: rgba(255,255,255,0.8); background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 8px;"></div>
+    <div class="mini-clock" id="miniClock" style="position: fixed; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; font-family: 'Courier New', monospace; font-size: 1.2rem; font-weight: 700; color: #4361ee; background: rgba(255,255,255,0.95); padding: 0.6rem 1.2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); border: 2px solid #4361ee;"></div>
 
 <div class="container" id="mainContainer">
     <div class="header" style="animation: bounce 2s ease infinite; text-shadow: 3px 3px 0 rgba(0,0,0,0.2);">🎉 CHATTERBOX HOUSE 🎉</div>
@@ -3340,8 +3345,8 @@ function loadLessonsData() {
     // Mini clock
     function updateMiniClock() {
       const now = new Date();
-      const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-      const date = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+      const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const date = now.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
       const miniClock = document.getElementById('miniClock');
       if (miniClock) miniClock.textContent = `${date} ${time}`;
     }
