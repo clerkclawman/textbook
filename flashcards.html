@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flashcards - Japanese Vocabulary & Kanji</title>
+  <title>Phonics Flashcards - Eikaiwa Practice</title>
   <style>
     * {
       box-sizing: border-box;
@@ -21,17 +21,17 @@
     }
     
     header {
-      padding: 1.5rem 2rem;
+      padding: 2rem;
       background: rgba(0,0,0,0.2);
     }
     
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
     
     .subtitle {
-      font-size: 1rem;
+      font-size: 1.1rem;
       opacity: 0.9;
     }
     
@@ -39,13 +39,16 @@
       display: flex;
       gap: 2rem;
       margin-top: 1rem;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
     
     .stat {
-      background: rgba(255,255,255,0.1);
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
+      background: rgba(255,255,255,0.15);
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     
     main {
@@ -54,44 +57,38 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      padding: 1rem;
     }
     
     .deck-selector {
       display: flex;
-      gap: 0.5rem;
+      gap: 0.8rem;
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 2rem;
-      max-width: 1000px;
     }
     
     .deck-btn {
-      padding: 0.75rem 1.5rem;
-      border: 2px solid rgba(255,255,255,0.3);
-      background: rgba(255,255,255,0.1);
+      padding: 1rem 2rem;
+      border: 2px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.15);
       color: #fff;
       font-size: 1rem;
       cursor: pointer;
-      border-radius: 25px;
+      border-radius: 30px;
       transition: all 0.3s ease;
+      font-weight: 600;
     }
     
-    .deck-btn:hover {
+    .deck-btn:hover, .deck-btn.active {
       background: rgba(255,255,255,0.3);
-      border-color: #fff;
-    }
-    
-    .deck-btn.active {
-      background: #fff;
-      color: #764ba2;
       border-color: #fff;
     }
     
     .card-container {
       perspective: 1000px;
-      width: 600px;
-      height: 350px;
+      width: 750px;
+      height: 400px;
       margin-bottom: 1.5rem;
     }
     
@@ -120,9 +117,9 @@
       padding: 2rem;
       background: #fff;
       color: #333;
-      border-radius: 20px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-      font-size: 2.5rem;
+      border-radius: 25px;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.4);
+      font-size: 3rem;
       font-weight: bold;
       text-align: center;
     }
@@ -131,34 +128,58 @@
       transform: rotateY(180deg);
     }
     
-    .card-front .japanese {
-      font-size: 4rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    .card-front .reading {
-      font-size: 1.8rem;
-      color: #764ba2;
+    .card-front .letter {
+      font-size: 6rem;
       margin-bottom: 1rem;
+      line-height: 1;
     }
     
-    .card-back .word {
+    .card-front .sound {
       font-size: 2.2rem;
+      color: #764ba2;
       margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    
+    .card-front .word {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #222;
     }
     
     .card-back .example {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       font-style: italic;
       color: #666;
       line-height: 1.4;
       font-weight: normal;
     }
     
+    .card-back .play-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .card-back .play-btn:hover {
+      background: #764ba2;
+      transform: scale(1.05);
+    }
+    
     .card-hint {
       position: absolute;
       bottom: 1rem;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #999;
       font-weight: normal;
     }
@@ -167,6 +188,8 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     
     .control-btn {
@@ -174,91 +197,107 @@
       border: 2px solid rgba(255,255,255,0.5);
       background: rgba(255,255,255,0.2);
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       cursor: pointer;
-      border-radius: 15px;
+      border-radius: 20px;
       transition: all 0.3s ease;
-      min-width: 120px;
+      min-width: 130px;
+      font-weight: 600;
     }
     
     .control-btn:hover {
       background: rgba(255,255,255,0.4);
       border-color: #fff;
+      transform: translateY(-2px);
     }
     
     .progress {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin: 1rem 0;
+      font-weight: 600;
     }
     
-    .mode-toggle {
+    .tts-toggle {
       display: flex;
-      gap: 0.5rem;
+      align-items: center;
+      gap: 0.8rem;
       margin-top: 1rem;
-    }
-    
-    .mode-btn {
-      padding: 0.5rem 1rem;
-      border: 2px solid rgba(255,255,255,0.3);
       background: rgba(255,255,255,0.1);
-      color: #fff;
-      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+    }
+    
+    .tts-toggle label {
+      font-size: 1rem;
       cursor: pointer;
-      border-radius: 15px;
-    }
-    
-    .mode-btn.active {
-      background: #fff;
-      color: #764ba2;
-    }
-    
-    .difficulty {
-      margin-top: 1rem;
-      font-size: 0.95rem;
-    }
-    
-    .difficulty span {
-      color: #ffd700;
     }
     
     @media (max-width: 768px) {
       .card-container {
-        width: 95vw;
-        height: 60vw;
+        width: 90vw;
+        height: 50vw;
       }
       
-      h1 {
-        font-size: 1.5rem;
+      h1 { font-size: 1.8rem; }
+      
+      .card-face { font-size: 2rem; }
+      
+      .card-front .letter { font-size: 3rem !important; }
+      .card-front .word { font-size: 1.5rem !important; }
+      .card-back .example { font-size: 1rem !important; }
+      
+      .deck-btn, .control-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+        min-width: 100px;
+      }
+    }
+    
+    @media TV {
+      .card-container {
+        width: 90vw;
+        height: 50vh;
       }
       
-      .card-face {
-        font-size: 1.8rem;
+      .card-front .letter {
+        font-size: 8rem !important;
       }
       
-      .card-front .japanese {
-        font-size: 2.5rem;
+      .card-front .sound {
+        font-size: 3rem !important;
       }
       
-      .card-front .reading {
-        font-size: 1.2rem;
-      }
-      
-      .card-back .word {
-        font-size: 1.5rem;
+      .card-front .word {
+        font-size: 3.5rem !important;
       }
       
       .card-back .example {
-        font-size: 0.9rem;
+        font-size: 1.8rem !important;
+      }
+      
+      .deck-btn, .control-btn {
+        min-width: 200px;
+        padding: 1.2rem 2.5rem;
+        font-size: 1.5rem !important;
+        min-height: 70px;
+      }
+      
+      h1 {
+        font-size: 3rem !important;
+      }
+      
+      .stats {
+        font-size: 1.3rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>📚 Flashcards - Japanese Vocabulary & Kanji</h1>
-    <p class="subtitle">Tap card to flip • Select deck to practice</p>
+    <h1>🔤 Phonics Flashcards</h1>
+    <p class="subtitle">Phonics practice for Eikaiwa • Tap card to flip • 🔊 Play for TTS</p>
     <div class="stats">
-      <div class="stat">Correct: <span id="correct">0</span></div>
+      <div class="stat">✓ Correct: <span id="correct">0</span></div>
       <div class="stat">Total: <span id="total">0</span></div>
       <div class="stat">Accuracy: <span id="accuracy">0%</span></div>
     </div>
@@ -266,24 +305,25 @@
   
   <main>
     <div class="deck-selector">
-      <button class="deck-btn active" data-deck="n5">N5 Basic</button>
-      <button class="deck-btn" data-deck="n4">N4 Intermediate</button>
-      <button class="deck-btn" data-deck="n3">N3 Upper-Intermediate</button>
-      <button class="deck-btn" data-deck="kanji">Kanji Daily</button>
-      <button class="deck-btn" data-deck="verbs">Common Verbs</button>
+      <button class="deck-btn active" data-deck="short-vowels">Short Vowels</button>
+      <button class="deck-btn" data-deck="consonants">Consonants</button>
+      <button class="deck-btn" data-deck="long-vowels">Long Vowels</button>
+      <button class="deck-btn" data-deck="blends">Blends</button>
+      <button class="deck-btn" data-deck="digraphs">Digraphs</button>
     </div>
     
     <div class="card-container">
       <div class="card" id="card">
         <div class="card-face card-front">
-          <div class="japanese" id="japanese">こんにちは</div>
-          <div class="reading" id="reading">konnichiwa</div>
-          <div class="card-hint">Tap to see meaning</div>
+          <div class="letter" id="letter">a</div>
+          <div class="sound" id="sound">/æ/</div>
+          <div class="word" id="word">apple</div>
+          <div class="card-hint">Tap to see example</div>
         </div>
         <div class="card-face card-back">
-          <div class="word" id="word">Hello</div>
-          <div class="example" id="example">"Konnichiwa! Ogenki desu ka?" (Hello! How are you?)</div>
-          <div class="card-hint">Tap for next card</div>
+          <div class="example" id="example">"A is for apple!" 🍎</div>
+          <button class="play-btn" id="ttsPlay">🔊 Play Sound</button>
+          <div class="card-hint">Tap card or TTS for next</div>
         </div>
       </div>
     </div>
@@ -292,180 +332,205 @@
       <span id="progress">Card 1 of 20</span>
     </div>
     
+    <div class="tts-toggle">
+      <input type="checkbox" id="ttsEnabled" checked>
+      <label for="ttsEnabled">Auto-play TTS on flip</label>
+    </div>
+    
     <div class="controls">
       <button class="control-btn" id="prev-btn">← Previous</button>
       <button class="control-btn" id="flip-btn">Flip Card</button>
       <button class="control-btn" id="know-btn">✓ Know</button>
       <button class="control-btn" id="next-btn">Next →</button>
     </div>
-    
-    <div class="mode-toggle">
-      <button class="mode-btn active" data-mode="all">All Cards</button>
-      <button class="mode-btn" data-mode="wrong">Wrong Only</button>
-      <button class="mode-btn" data-mode="new">New Only</button>
-    </div>
-    
-    <div class="difficulty">
-      Current Deck: <span id="current-deck">N5 Basic</span>
-    </div>
   </main>
 
   <script>
-    // Flashcard decks
+    // Phonics decks (Eikaiwa-appropriate)
     const decks = {
-      n5: [
-        { japanese: "こんにちは", reading: "konnichiwa", word: "Hello", example: "Konnichiwa! Ogenki desu ka?" },
-        { japanese: "ありがとう", reading: "arigatou", word: "Thank you", example: "Arigatou gozaimasu!" },
-        { japanese: "さようなら", reading: "sayounara", word: "Goodbye", example: "Sayounara, mata ashita!" },
-        { japanese: "お元気ですか", reading: "ogenki desu ka", word: "How are you?", example: "Ogenki desu ka? Genki desu!" },
-        { japanese: "はい", reading: "hai", word: "Yes", example: "Hai, wakarimashita." },
-        { japanese: "いいえ", reading: "iie", word: "No", example: "Iie, chigaimasu." },
-        { japanese: "水", reading: "mizu", word: "Water", example: "Mizu o kudasai." },
-        { japanese: "食べる", reading: "taberu", word: "To eat", example: "Gohan o tabemasu." },
-        { japanese: "見る", reading: "miru", word: "To see/look", example: "Eiga o mimashita." },
-        { japanese: "行く", reading: "iku", word: "To go", example: "Gakkou e ikimasu." },
-        { japanese: "来る", reading: "kuru", word: "To come", example: "Asa kimasu." },
-        { japanese: "勉強", reading: "benkyou", word: "Study", example: "Nihongo no benkyou." },
-        { japanese: "先生", reading: "sensei", word: "Teacher", example: "Sensei, ohayou gozaimasu." },
-        { japanese: "学生", reading: "gakusei", word: "Student", example: "Gakusei to shite benkyou." },
-        { japanese: "日本語", reading: "nihongo", word: "Japanese language", example: "Nihongo ga suki desu." },
-        { japanese: "英語", reading: "eigo", word: "English language", example: "Eigo o naraimasu." },
-        { japanese: "友達", reading: "tomodachi", word: "Friend", example: "Tomodachi ga takusan arimasu." },
-        { japanese: "家族", reading: "kazoku", word: "Family", example: "Kazoku to doko e ikimasu ka." },
-        { japanese: "時間", reading: "jikan", word: "Time", example: "Jikan ga ari masen." },
-        { japanese: "場所", reading: "basho", word: "Place", example: "Basho o shirimasu ka." }
+      'short-vowels': [
+        { letter: 'a', sound: '/æ/', word: 'apple', example: 'A is for apple!' },
+        { letter: 'a', sound: '/æ/', word: 'ant', example: 'A tiny ant climbs the hill.' },
+        { letter: 'a', sound: '/æ/', word: 'cat', example: 'The cat sat on the mat.' },
+        { letter: 'a', sound: '/æ/', word: 'bat', example: 'The bat flew at night.' },
+        { letter: 'a', sound: '/æ/', word: 'hat', example: 'Where is my lucky hat?' },
+        { letter: 'a', sound: '/æ/', word: 'mat', example: 'Yoga mat for stretching.' },
+        { letter: 'a', sound: '/æ/', word: 'rat', example: 'Rat runs in the maze.' },
+        { letter: 'a', sound: '/æ/', word: 'nap', example: 'Take a nice nap.' },
+        { letter: 'a', sound: '/æ/', word: 'bag', example: 'Pack your school bag.' },
+        { letter: 'a', sound: '/æ/', word: 'map', example: 'Look at the map.' },
+        { letter: 'a', sound: '/æ/', word: 'tap', example: 'Tap your feet to the music.' },
+        { letter: 'a', sound: '/æ/', word: 'dad', example: 'Dad plays with me.' },
+        { letter: 'a', sound: '/æ/', word: 'sad', example: 'Do not be sad, be glad!' },
+        { letter: 'a', sound: '/æ/', word: 'glad', example: 'I am so glad you are here!' },
+        { letter: 'a', sound: '/æ/', word: 'mad', example: 'Do not be mad, be glad!' },
+        { letter: 'a', sound: '/æ/', word: 'bad', example: 'That was not a bad test!' },
+        { letter: 'a', sound: '/æ/', word: 'add', example: 'Let me add to the fun!' },
+        { letter: 'e', sound: '/e/', word: 'egg', example: 'Egg for breakfast?' },
+        { letter: 'e', sound: '/e/', word: 'red', example: 'A red dress for the bed.' },
+        { letter: 'e', sound: '/e/', word: 'bed', example: 'Time for bed!' },
+        { letter: 'e', sound: '/e/', word: 'hen', example: 'The hen lays an egg.' },
+        { letter: 'e', sound: '/e/', word: 'pen', example: 'Use a pen for writing.' },
+        { letter: 'i', sound: '/ɪ/', word: 'pig', example: 'The pig is pink.' },
+        { letter: 'i', sound: '/ɪ/', word: 'dig', example: 'Dig a hole in the ground.' },
+        { letter: 'i', sound: '/ɪ/', word: 'sit', example: 'Please sit down.' },
+        { letter: 'i', sound: '/ɪ/', word: 'big', example: 'Big as a pig!' },
+        { letter: 'i', sound: '/ɪ/', word: 'fin', example: 'Fish fins swim well.' },
+        { letter: 'i', sound: '/ɪ/', word: 'win', example: 'Winner gets a star!' },
+        { letter: 'i', sound: '/ɪ/', word: 'ship', example: 'The ship sails on the sea.' },
+        { letter: 'i', sound: '/ɪ/', word: 'lip', example: 'Zip your lip!' },
+        { letter: 'o', sound: '/ɒ/', word: 'dog', example: 'The dog is in the fog.' },
+        { letter: 'o', sound: '/ɒ/', word: 'frog', example: 'Frog jumps into the pond.' },
+        { letter: 'o', sound: '/ɒ/', word: 'mop', example: 'Mop up the mess.' },
+        { letter: 'o', sound: '/ɒ/', word: 'top', example: 'On top of the hill.' },
+        { letter: 'u', sound: '/ʌ/', word: 'cup', example: 'Cup of tea or cup of coffee?' },
+        { letter: 'u', sound: '/ʌ/', word: 'bus', example: 'The bus drives to school.' },
+        { letter: 'u', sound: '/ʌ/', word: 'sun', example: 'Sun in the sky is fun!' },
+        { letter: 'u', sound: '/ʌ/', word: 'duck', example: 'The duck swims in water.' },
+        { letter: 'u', sound: '/ʌ/', word: 'run', example: 'Run, run, as fast as you can!' }
       ],
-      n4: [
-        { japanese: "約束", reading: "yakusoku", word: "Promise", example: "Yakusoku o mamorimashou." },
-        { japanese: "経験", reading: "keiken", word: "Experience", example: "Taihen na keiken deshita." },
-        { japanese: "成功", reading: "seikou", word: "Success", example: "Seikou ga ganbaru." },
-        { japanese: "将来", reading: "shourai", word: "Future", example: "Shourai no yume." },
-        { japanese: "問題", reading: "mondai", word: "Problem", example: "Mondai ga nai." },
-        { japanese: "理由", reading: "riyuu", word: "Reason", example: "Dou shite? - Riyuu ga?" },
-        { japanese: "場合", reading: "baai", word: "Case/occasion", example: "Kono baai ni wa..." },
-        { japanese: "最近", reading: "saikin", word: "Recently", example: "Saikin wa isogashii desu." },
-        { japanese: "実際", reading: "jissai", word: "Actually", example: "Jissai wa sou desu." },
-        { japanese: "特に", reading: "toku ni", word: "Especially", example: "Toku ni suki na tabemono." },
-        { japanese: "結構", reading: "kekkou", word: "Quite/rather", example: "Kekkou omoshiroi." },
-        { japanese: "当然", reading: "touzen", word: "Naturally", example: "Touzen desu." },
-        { japanese: "丁寧", reading: "teinei", word: "Polite", example: "Teinei ni hanashimasu." },
-        { japanese: "簡単", reading: "kantan", word: "Simple", example: "Kantan desu ne." },
-        { japanese: "複雑", reading: "fukuzatsu", word: "Complex", example: "Fukuzatsu na mondai." },
-        { japanese: "必要", reading: "hitsuyou", word: "Necessary", example: "Hitsuyou na koto." },
-        { japanese: "十分", reading: "juubun", word: "Enough", example: "Juubun arimasu." },
-        { japanese: "安全", reading: "anzen", word: "Safe", example: "Anzen na basho." },
-        { japanese: "注意", reading: "chuui", word: "Caution/attention", example: "Chuui shite kudasai." },
-        { japanese: "開発", reading: "kaihatsu", word: "Development", example: "Sekai no kaihatsu." }
+      'consonants': [
+        { letter: 'b', sound: '/b/', word: 'ball', example: 'Bounce the ball!' },
+        { letter: 'c', sound: '/k/', word: 'cat', example: 'The cat is sitting.' },
+        { letter: 'c', sound: '/k/', word: 'car', example: 'Red car, blue car.' },
+        { letter: 'd', sound: '/d/', word: 'dog', example: 'Dog plays with ball.' },
+        { letter: 'f', sound: '/f/', word: 'fish', example: 'Fish swim in the sea.' },
+        { letter: 'g', sound: '/g/', word: 'girl', example: 'The girl has short hair.' },
+        { letter: 'h', sound: '/h/', word: 'hat', example: 'Hat on your head.' },
+        { letter: 'j', sound: '/dʒ/', word: 'jam', example: 'Jam on toast.' },
+        { letter: 'k', sound: '/k/', word: 'kite', example: 'Kite flies in the sky.' },
+        { letter: 'l', sound: '/l/', word: 'lamp', example: 'Turn on the lamp.' },
+        { letter: 'm', sound: '/m/', word: 'map', example: 'Look at the map.' },
+        { letter: 'n', sound: '/n/', word: 'net', example: 'Fish caught in net.' },
+        { letter: 'p', sound: '/p/', word: 'pan', example: 'Fry an egg in the pan.' },
+        { letter: 'q', sound: '/kw/', word: 'quack', example: 'Duck says quack!' },
+        { letter: 'r', sound: '/r/', word: 'rat', example: 'Rat runs fast.' },
+        { letter: 's', sound: '/s/', word: 'sun', example: 'Sun is hot.' },
+        { letter: 't', sound: '/t/', word: 'top', example: 'Top of the hill.' },
+        { letter: 'v', sound: '/v/', word: 'van', example: 'Van goes fast.' },
+        { letter: 'w', sound: '/w/', word: 'win', example: 'Winner gets a prize!' },
+        { letter: 'x', sound: '/ks/', word: 'fox', example: 'Fox runs fast.' },
+        { letter: 'y', sound: '/j/', word: 'yes', example: 'Yes, yes, yes!' },
+        { letter: 'z', sound: '/z/', word: 'zoo', example: 'Visit the zoo!' }
       ],
-      n3: [
-        { japanese: "努力", reading: "doryoku", word: "Effort", example: "Doryoku wa muda dewa nai." },
-        { japanese: "達成", reading: "tassei", word: "Achievement", example: "Yaritai koto no tassei." },
-        { japanese: "建設", reading: "kensetsu", word: "Construction", example: "Kensetsu ga hajimaru." },
-        { japanese: "改善", reading: "kaizen", word: "Improvement", example: "Kaizen ga hitsuyou." },
-        { japanese: "推進", reading: "suishin", word: "Promotion", example: "Keikaku no suishin." },
-        { japanese: "実現", reading: "jitsugen", word: "Realization", example: "Yume no jitsugen." },
-        { japanese: "適応", reading: "tekikin", word: "Adaptation", example: "Kankyou no tekkin." },
-        { japanese: "拡張", reading: "kakuchou", word: "Expansion", example: "Jouhou no kakuchou." },
-        { japanese: "維持", reading: "iji", word: "Maintenance", example: "Kankyou no iji." },
-        { japanese: "運営", reading: "un'ei", word: "Management", example: "Kigyou no un'ei." },
-        { japanese: "実行", reading: "jikkou", word: "Execution", example: "Keikaku no jikkou." },
-        { japanese: "決定", reading: "kettei", word: "Decision", example: "Kettei ga mata." },
-        { japanese: "判断", reading: "handan", word: "Judgment", example: "Bubun no handan." },
-        { japanese: "調整", reading: "chousei", word: "Adjustment", example: "Ryouritsu no chousei." },
-        { japanese: "確実", reading: "kakujitsu", word: "Certain", example: "Kakujitsu na jouhou." },
-        { japanese: "予想", reading: "yousou", word: "Expectation", example: "Yousou wo koeru." },
-        { japanese: "観測", reading: "kansoku", word: "Observation", example: "Tenmon no kansoku." },
-        { japanese: "調査", reading: "chousa", word: "Investigation", example: "Jiko no chousa." },
-        { japanese: "報告", reading: "houkoku", word: "Report", example: "Kekka no houkoku." },
-        { japanese: "提案", reading: "teian", word: "Proposal", example: "Shin souchi no teian." }
+      'long-vowels': [
+        { letter: 'a', sound: '/eɪ/', word: 'cake', example: 'Birthday cake with candles.' },
+        { letter: 'a', sound: '/eɪ/', word: 'make', example: 'Let us make a cake.' },
+        { letter: 'a', sound: '/eɪ/', word: 'game', example: 'Play a fun game.' },
+        { letter: 'e', sound: '/i:/', word: 'leaf', example: 'Green leaf on tree.' },
+        { letter: 'e', sound: '/i:/', word: 'tree', example: 'Climb up the tree.' },
+        { letter: 'e', sound: '/i:/', word: 'see', example: 'I see you!' },
+        { letter: 'i', sound: '/aɪ/', word: 'ice', example: 'Ice cream is cold.' },
+        { letter: 'i', sound: '/aɪ/', word: 'bike', example: 'Ride your bike.' },
+        { letter: 'i', sound: '/aɪ/', word: 'kite', example: 'Fly a kite high.' },
+        { letter: 'o', sound: '/əʊ/', word: 'boat', example: 'Boat floats on water.' },
+        { letter: 'o', sound: '/əʊ/', word: 'goat', example: 'The goat eats grass.' },
+        { letter: 'o', sound: '/əʊ/', word: 'home', example: 'Go to your home.' },
+        { letter: 'u', sound: '/ju:/', word: 'cube', example: 'Rubik cube puzzle.' },
+        { letter: 'u', sound: '/ju:/', word: 'mule', example: 'A mule pulls the cart.' },
+        { letter: 'u', sound: '/ju:/', word: 'music', example: 'Listen to music.' }
       ],
-      kanji: [
-        { japanese: "日", reading: "hi/nichi", word: "Day/Sun", example: "Kyou wa nanyoubi?" },
-        { japanese: "月", reading: "tsuki/gatsu", word: "Moon/Month", example: "Tsuki ga kirei." },
-        { japanese: "火", reading: "hi/ka", word: "Fire", example: "Hi ga tsuyoi." },
-        { japanese: "水", reading: "mizu/sui", word: "Water", example: "Mizu o nomu." },
-        { japanese: "木", reading: "ki/moku", word: "Tree/Wood", example: "Ki ga takai." },
-        { japanese: "金", reading: "kin/gold", word: "Gold/Money", example: "Kin ga hoshii." },
-        { japanese: "土", reading: "tsuchi/to", word: "Soil/Saturday", example: "Tsuchi ga aru." },
-        { japanese: "山", reading: "yama/san", word: "Mountain", example: "Yama e noboru." },
-        { japanese: "川", reading: "kawa/sen", word: "River", example: "Kawa no soto." },
-        { japanese: "人", reading: "hito/jin", word: "Person", example: "Hito ga suki." },
-        { japanese: "大", reading: "dai", word: "Big/Large", example: "Ookii ie." },
-        { japanese: "小", reading: "chi/ko", word: "Small", example: "Chiisai inu." },
-        { japanese: "中", reading: "naka/chuu", word: "Middle/Inside", example: "Heya no naka." },
-        { japanese: "上", reading: "ue/jou", word: "Up/Above", example: "Tenjou ga takai." },
-        { japanese: "下", reading: "shita/ge", word: "Down/Below", example: "Shita e mieru." },
-        { japanese: "左", reading: "hidari/sa", word: "Left", example: "Hidari te." },
-        { japanese: "右", reading: "migi/uu", word: "Right", example: "Migi gawa." },
-        { japanese: "男", reading: "otoko/dan", word: "Man/Male", example: "Otoko no hito." },
-        { japanese: "女", reading: "onna/jo", word: "Woman/Female", example: "Onna no ko." },
-        { japanese: "子", reading: "ko/shi", word: "Child", example: "Kodomo ga iru." }
+      'blends': [
+        { letter: 'bl', sound: '/bl/', word: 'blue', example: 'The sky is blue.' },
+        { letter: 'bl', sound: '/bl/', word: 'block', example: 'Build with blocks.' },
+        { letter: 'cl', sound: '/kl/', word: 'clock', example: 'Look at the clock.' },
+        { letter: 'cl', sound: '/kl/', word: 'clap', example: 'Clap your hands.' },
+        { letter: 'fl', sound: '/fl/', word: 'flag', example: 'Wave the flag.' },
+        { letter: 'fl', sound: '/fl/', word: 'fly', example: 'Birds fly high.' },
+        { letter: 'pl', sound: '/pl/', word: 'plant', example: 'Plant a flower.' },
+        { letter: 'pl', sound: '/pl/', word: 'play', example: 'Let us play together.' },
+        { letter: 'sl', sound: '/sl/', word: 'slip', example: 'Do not slip on ice.' },
+        { letter: 'sl', sound: '/sl/', word: 'slow', example: 'Go slow, be careful.' },
+        { letter: 'br', sound: '/br/', word: 'brown', example: 'I like brown bread.' },
+        { letter: 'br', sound: '/br/', word: 'bridge', example: 'Walk on the bridge.' },
+        { letter: 'cr', sound: '/kr/', word: 'cry', example: 'Do not cry, be happy.' },
+        { letter: 'cr', sound: '/kr/', word: 'cross', example: 'Cross the street.' },
+        { letter: 'dr', sound: '/dr/', word: 'drink', example: 'Drink some water.' },
+        { letter: 'dr', sound: '/dr/', word: 'drive', example: 'Drive the car.' },
+        { letter: 'fr', sound: '/fr/', word: 'frog', example: 'Frog jumps in pond.' },
+        { letter: 'fr', sound: '/fr/', word: 'fruit', example: 'Eat fresh fruit.' },
+        { letter: 'gr', sound: '/gr/', word: 'green', example: 'The grass is green.' },
+        { letter: 'gr', sound: '/gr/', word: 'grape', example: 'Eat a purple grape.' },
+        { letter: 'pr', sound: '/pr/', word: 'apple', example: 'Apple pie is yummy.' },
+        { letter: 'pr', sound: '/pr/', word: 'price', example: 'The price is low.' },
+        { letter: 'tr', sound: '/tr/', word: 'tree', example: 'Climb the tree.' },
+        { letter: 'tr', sound: '/tr/', word: 'train', example: 'Take the train.' }
       ],
-      verbs: [
-        { japanese: "話す", reading: "hanasu", word: "To speak", example: "Nihongo o hanashimasu." },
-        { japanese: "聞く", reading: "kiku", word: "To listen/hear", example: "Ongaku o kiku." },
-        { japanese: "読む", reading: "yomu", word: "To read", example: "Hon o yomu." },
-        { japanese: "書く", reading: "kaku", word: "To write", example: "Nihongo o kaku." },
-        { japanese: "見る", reading: "miru", word: "To see/watch", example: "Eiga o miru." },
-        { japanese: "行く", reading: "iku", word: "To go", example: "Gakkou e iku." },
-        { japanese: "来る", reading: "kuru", word: "To come", example: "Ie e kuru." },
-        { japanese: "帰る", reading: "kaeru", word: "To return", example: "Ie e kaeru." },
-        { japanese: "食べる", reading: "taberu", word: "To eat", example: "Gohan o taberu." },
-        { japanese: "飲む", reading: "nomu", word: "To drink", example: "Mizu o nomu." },
-        { japanese: "寝る", reading: "neru", word: "To sleep", example: "10-ji ni neru." },
-        { japanese: "起きる", reading: "okiru", word: "To wake up", example: "6-ji ni okiru." },
-        { japanese: "する", reading: "suru", word: "To do", example: "Benkyou o suru." },
-        { japanese: "もらう", reading: "morau", word: "To receive", example: "Purezento o morau." },
-        { japanese: "あげる", reading: "ageru", word: "To give (someone)", example: "Hana o ageru." },
-        { japanese: "買う", reading: "kau", word: "To buy", example: "Pan kau." },
-        { japanese: "売る", reading: "uru", word: "To sell", example: "Hon o uru." },
-        { japanese: "持つ", reading: "motsu", word: "To have/hold", example: "Kuruma o motsu." },
-        { japanese: "待つ", reading: "matsu", word: "To wait", example: "Chotto matsu." },
-        { japanese: "働く", reading: "hataraku", word: "To work", example: "Kaisha de hataraku." },
-        { japanese: "遊ぶ", reading: "asobu", word: "To play", example: "Tomodachi to asobu." }
+      'digraphs': [
+        { letter: 'sh', sound: '/ʃ/', word: 'ship', example: 'The ship sails away.' },
+        { letter: 'sh', sound: '/ʃ/', word: 'sheep', example: 'Count the sheep.' },
+        { letter: 'ch', sound: '/tʃ/', word: 'chip', example: 'Fish and chips.' },
+        { letter: 'ch', sound: '/tʃ/', word: 'chair', example: 'Sit on the chair.' },
+        { letter: 'th', sound: '/θ/', word: 'thumb', example: 'Thumbs up!' },
+        { letter: 'th', sound: '/θ/', word: 'three', example: 'One, two, three!' },
+        { letter: 'th', sound: '/ð/', word: 'this', example: 'This is my book.' },
+        { letter: 'th', sound: '/ð/', word: 'that', example: 'That cat is amazing!' },
+        { letter: 'wh', sound: '/w/', word: 'when', example: 'When is the party?' },
+        { letter: 'wh', sound: '/w/', word: 'what', example: 'What is your name?' },
+        { letter: 'wh', sound: '/h/', word: 'who', example: 'Who is that?' },
+        { letter: 'ph', sound: '/f/', word: 'phone', example: 'Phone a friend.' },
+        { letter: 'ph', sound: '/f/', word: 'photo', example: 'Take a photo.' },
+        { letter: 'ck', sound: '/k/', word: 'duck', example: 'The quack duck.' },
+        { letter: 'ck', sound: '/k/', word: 'black', example: 'Black cat, white cat.' },
+        { letter: 'ng', sound: '/ŋ/', word: 'sing', example: 'Sing a song.' },
+        { letter: 'ng', sound: '/ŋ/', word: 'ring', example: 'Ring the bell.' }
       ]
     };
     
     // State
-    let currentDeck = 'n5';
-    let currentCards = [...decks.n5];
+    let currentDeck = 'short-vowels';
+    let currentCards = [...decks['short-vowels']];
     let currentIndex = 0;
     let isFlipped = false;
     let correctCount = 0;
     let totalCards = 0;
-    let wrongCards = [];
     let knownCards = [];
-    let mode = 'all';
+    let ttsEnabled = true;
     
     // DOM Elements
     const card = document.getElementById('card');
-    const japaneseEl = document.getElementById('japanese');
-    const readingEl = document.getElementById('reading');
+    const letterEl = document.getElementById('letter');
+    const soundEl = document.getElementById('sound');
     const wordEl = document.getElementById('word');
     const exampleEl = document.getElementById('example');
     const progressEl = document.getElementById('progress');
     const correctEl = document.getElementById('correct');
     const totalEl = document.getElementById('total');
     const accuracyEl = document.getElementById('accuracy');
-    const currentDeckEl = document.getElementById('current-deck');
+    const ttsPlayBtn = document.getElementById('ttsPlay');
+    const ttsToggle = document.getElementById('ttsEnabled');
     const deckBtns = document.querySelectorAll('.deck-btn');
-    const modeBtns = document.querySelectorAll('.mode-btn');
     
     // Functions
     function updateCard() {
       const cardData = currentCards[currentIndex];
-      japaneseEl.textContent = cardData.japanese;
-      readingEl.textContent = cardData.reading;
-      wordEl.textContent = cardData.word;
-      exampleEl.textContent = `"${cardData.example}"`;
+      letterEl.textContent = cardData.letter || '';
+      soundEl.textContent = cardData.sound || '';
+      wordEl.textContent = cardData.word || '';
+      exampleEl.textContent = cardData.example ? `"${cardData.example}"` : `"${cardData.word}!"`;
       progressEl.textContent = `Card ${currentIndex + 1} of ${currentCards.length}`;
       isFlipped = false;
       card.classList.remove('flipped');
     }
     
+    function playTTS(text) {
+      // Remove emojis for cleaner speech
+      const cleanText = text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '');
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.rate = 0.9;
+      utterance.pitch = 1.0;
+      utterance.lang = 'en-US';
+      window.speechSynthesis.speak(utterance);
+    }
+    
     function flipCard() {
       isFlipped = !isFlipped;
       card.classList.toggle('flipped', isFlipped);
+      
+      if (isFlipped && ttsEnabled) {
+        const word = wordEl.textContent;
+        playTTS(word);
+      }
     }
     
     function nextCard() {
@@ -488,22 +553,11 @@
     }
     
     function markKnown() {
-      const cardData = currentCards[currentIndex];
-      knownCards.push(cardData);
+      knownCards.push(currentCards[currentIndex]);
       correctCount++;
       totalCards++;
       updateStats();
       nextCard();
-    }
-    
-    function markWrong() {
-      const cardData = currentCards[currentIndex];
-      wrongCards.push(cardData);
-      totalCards++;
-      updateStats();
-      shuffleDeck();
-      currentIndex = 0;
-      updateCard();
     }
     
     function updateStats() {
@@ -514,17 +568,6 @@
     }
     
     function shuffleDeck() {
-      switch(mode) {
-        case 'wrong':
-          currentCards = [...wrongCards];
-          break;
-        case 'new':
-          currentCards = [...decks[currentDeck]].filter(c => !knownCards.includes(c));
-          break;
-        default:
-          currentCards = [...decks[currentDeck]];
-      }
-      // Fisher-Yates shuffle
       for (let i = currentCards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [currentCards[i], currentCards[j]] = [currentCards[j], currentCards[i]];
@@ -533,24 +576,14 @@
     
     function switchDeck(deckName) {
       currentDeck = deckName;
-      currentDeckEl.textContent = deckName.replace('_', ' ').toUpperCase() + ' DECK';
       knownCards = [];
-      wrongCards = [];
       currentIndex = 0;
+      currentCards = [...decks[deckName]];
       shuffleDeck();
       updateCard();
       
       deckBtns.forEach(btn => {
         btn.classList.toggle('active', btn.dataset.deck === deckName);
-      });
-    }
-    
-    function switchMode(modeName) {
-      mode = modeName;
-      switchDeck(currentDeck);
-      
-      modeBtns.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.mode === modeName);
       });
     }
     
@@ -568,12 +601,18 @@
     document.getElementById('prev-btn').addEventListener('click', prevCard);
     document.getElementById('know-btn').addEventListener('click', markKnown);
     
-    deckBtns.forEach(btn => {
-      btn.addEventListener('click', () => switchDeck(btn.dataset.deck));
+    ttsPlayBtn.addEventListener('click', () => {
+      const word = wordEl.textContent;
+      const example = exampleEl.textContent;
+      playTTS(word + '. ' + example);
     });
     
-    modeBtns.forEach(btn => {
-      btn.addEventListener('click', () => switchMode(btn.dataset.mode));
+    ttsToggle.addEventListener('change', (e) => {
+      ttsEnabled = e.target.checked;
+    });
+    
+    deckBtns.forEach(btn => {
+      btn.addEventListener('click', () => switchDeck(btn.dataset.deck));
     });
     
     // Keyboard support
@@ -593,9 +632,11 @@
         case 'Y':
           if (isFlipped) markKnown();
           break;
-        case 'n':
-        case 'N':
-          if (isFlipped) markWrong();
+        case 'p':
+        case 'P':
+          if (!isFlipped) {
+            playTTS(wordEl.textContent);
+          }
           break;
       }
     });
