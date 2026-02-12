@@ -431,8 +431,14 @@
         border-color: var(--accent);
     }
 
-    body.reading-mode-active .home-ticker-bottom {
+    .home-ticker-bottom {
         display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        width: 0 !important;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
     }
 
     .dropdown:after {
@@ -1784,11 +1790,6 @@
         </button>
     </div>
 </div>
-
-    <!-- Bottom Ticker -->
-    <div class="home-ticker-bottom">
-        <div class="home-ticker-content" id="homeBottomTicker">Loading weather...</div>
-    </div>
 
     <!-- Footer - Classroom Tools Navigation -->
     <footer class="footer-tools" id="footerTools" style="
@@ -3843,10 +3844,13 @@ function loadLessonsData() {
           };
         }));
 
-        document.getElementById('homeBottomTicker').innerHTML = weatherData.map(city => {
-          const emoji = weatherEmojis[city.code] || '🌡️';
-          return `<span class="home-ticker-item">🌡️ ${city.name}: ${city.temp}°C ${emoji}</span>`;
-        }).join('');
+        const bottomTicker = document.getElementById('homeBottomTicker');
+        if (bottomTicker) {
+          bottomTicker.innerHTML = weatherData.map(city => {
+            const emoji = weatherEmojis[city.code] || '🌡️';
+            return `<span class="home-ticker-item">🌡️ ${city.name}: ${city.temp}°C ${emoji}</span>`;
+          }).join('');
+        }
       } catch (e) { console.log('Weather error:', e); }
     }
 
@@ -3993,16 +3997,13 @@ function loadLessonsData() {
         // Initialize when DOM is ready
         function initHomeFeatures() {
             setTimeout(() => {
-                if (document.getElementById('homeBottomTicker') || document.getElementById('cornerClock')) {
+                if (document.getElementById('cornerClock')) {
                     updateCornerClock();
                     setInterval(updateCornerClock, 1000);
-                    displayRandomProverb();
-                    fetchHomeWeather();
-                    setInterval(fetchHomeWeather, 30 * 60 * 1000);
-                    console.log('Home page features initialized');
-                } else {
-                    console.log('Not on home page');
+                    console.log('Corner clock initialized');
                 }
+                displayRandomProverb();
+                console.log('Home page features initialized');
             }, 100);
         }
 
