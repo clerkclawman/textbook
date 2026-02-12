@@ -1299,6 +1299,80 @@
             top: 60px;
         }
     }
+    
+    @media (max-width: 768px) {
+      body { padding: 45px 10px 45px 10px; }
+      
+      .home-ticker-top, .home-ticker-bottom {
+        height: 30px;
+        font-size: 0.8rem;
+      }
+      
+      .ticker-item { margin: 0 1vw; }
+      
+      .corner-clock {
+        top: 35px;
+        right: 10px;
+        font-size: 0.65rem;
+        padding: 6px 10px;
+        line-height: 1.4;
+      }
+      
+      .container { padding: 20px 15px; }
+      #mainContainer.container { padding: 20px 15px; font-size: 1rem; }
+      
+      #mainContainer .header {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+      }
+      
+      .proverb-container {
+        padding: 15px 20px;
+        margin: 15px 0;
+        border-radius: 10px;
+      }
+      
+      .proverb-title { font-size: 0.7rem; }
+      .proverb-text { font-size: 1rem; margin-bottom: 5px; }
+      .proverb-english { font-size: 0.85rem; }
+      
+      .controls-row { gap: 10px; margin-bottom: 20px; }
+      
+      select, .btn, .file-input-label {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+      }
+      
+      .tools-nav {
+        gap: 8px;
+        padding: 12px;
+        margin: 20px 0;
+      }
+      
+      .tools-nav a {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+      }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1023px) {
+      body { padding: 48px 15px 48px 15px; }
+      
+      .home-ticker-top, .home-ticker-bottom {
+        height: 35px;
+        font-size: 1rem;
+      }
+      
+      .corner-clock {
+        top: 40px;
+        font-size: 0.85rem;
+        padding: 8px 15px;
+      }
+      
+      #mainContainer .header { font-size: 1.6rem; }
+      .proverb-text { font-size: 1.2rem; }
+      .proverb-english { font-size: 1rem; }
+    }
 }
 </style>
 

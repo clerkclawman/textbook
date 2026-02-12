@@ -159,6 +159,80 @@
       .home-btn { font-size: 0.8rem; }
     }
     
+    @media (max-width: 768px) {
+      .mini-clock { font-size: 0.6rem; padding: 0.2rem 0.4rem; }
+      
+      .controls-top {
+        top: 4px;
+        right: 4px;
+        left: 4px;
+        justify-content: center;
+        gap: 0.3rem;
+        padding: 0.3rem 0.5rem;
+        flex-wrap: wrap;
+      }
+      
+      .controls-top button, .controls-top select {
+        font-size: 0.55rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 8px;
+      }
+      
+      .controls-bottom {
+        bottom: 4px;
+        left: 4px;
+        right: 4px;
+        transform: none;
+        gap: 0.4rem;
+        padding: 0.4rem 0.6rem;
+        width: auto;
+      }
+      
+      .controls-bottom button, .controls-bottom select {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.7rem;
+        border-radius: 10px;
+      }
+      
+      .card-container {
+        width: 85vw;
+        height: 45vh;
+        margin-top: 8vh;
+      }
+      
+      .card-front { font-size: 30vw; }
+      .card-back { font-size: 18vw; }
+      .emoji { font-size: 22vw; }
+      
+      .home-btn {
+        bottom: 45px;
+        right: 4px;
+        font-size: 0.55rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1023px) {
+      .card-container {
+        width: 80vw;
+        height: 55vh;
+      }
+      
+      .card-front { font-size: 25vw; }
+      .card-back { font-size: 15vw; }
+      .emoji { font-size: 18vw; }
+      
+      .controls-top {
+        top: 6px;
+        padding: 0.4rem 0.7rem;
+      }
+      
+      .controls-bottom {
+        bottom: 6px;
+        padding: 0.5rem 0.8rem;
+      }
+    }
+    
     .home-btn {
       position: fixed;
       bottom: 50px;
