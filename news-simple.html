@@ -3,223 +3,332 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News Center</title>
+  <title>NEWS</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     
     body {
-      font-family: 'Segoe UI', 'Tahoma', 'sans-serif';
-      background: #1a1a2e;
-      color: #eee;
+      font-family: 'Segoe UI', 'Poppins', 'Helvetica Neue', 'Arial', sans-serif;
+      background: #000000;
+      color: #fff;
       height: 100vh;
+      width: 100vw;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      overflow: hidden;
     }
     
     header {
-      padding: 0.8rem 1rem;
-      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      color: #fff;
+      padding: 1vh 1.5vw;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-shrink: 0;
+      border-bottom: 3px solid #fbbf24;
+    }
+    
+    .logo {
+      font-size: 2.5vh;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 #1e40af;
+    }
+    
+    .page-info {
+      background: #fbbf24;
+      color: #000;
+      padding: 0.4vh 1vw;
+      font-weight: 800;
+      border-radius: 5px;
+      font-size: 1.6vh;
+      display: flex;
+      align-items: center;
+      gap: 0.5vw;
+    }
+    
+    .page-indicator {
+      font-size: 2.2vh;
+      font-weight: 900;
     }
     
     .mini-clock {
       font-family: 'Courier New', monospace;
-      font-size: 0.9rem;
-      color: #00ff87;
+      font-size: 1.6vh;
+      color: #fef3c7;
+      background: rgba(0,0,0,0.3);
+      padding: 0.3rem 0.8rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
     }
     
-    .ticker-section {
-      background: #0a0a1a;
-      border-bottom: 2px solid #00ff87;
+    .ticker-container {
+      background: #fbbf24;
+      color: #000;
+      padding: 0.5vh 0;
       flex-shrink: 0;
-    }
-    
-    .ticker {
-      display: flex;
-      align-items: center;
-      padding: 0.4rem 0;
-      white-space: nowrap;
-      animation: scroll 30s linear infinite;
-    }
-    
-    @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
-    
-    .ticker .breaking {
-      background: #ff4444;
-      color: white;
-      padding: 0.1rem 0.5rem;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 0.75rem;
-      margin-right: 0.5rem;
-    }
-    
-    .ticker-item { display: inline-block; font-size: 0.9rem; padding: 0 1rem; }
-    
-    .weather-ticker {
-      background: #1a1a3a;
-      border-bottom: 2px solid #4a90e2;
-      flex-shrink: 0;
-    }
-    
-    .weather-ticker-content {
-      display: flex;
-      align-items: center;
-      padding: 0.4rem 0;
-      white-space: nowrap;
-      animation: scroll 25s linear infinite;
-    }
-    
-    .weather-item { display: inline-block; padding: 0 1rem; font-size: 0.9rem; }
-    .weather-city { color: #ffa500; font-weight: bold; }
-    
-    main {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.8rem;
-      padding: 0.8rem;
+      font-size: 1.5vh;
+      border-bottom: 2px solid #1e40af;
       overflow: hidden;
     }
     
-    .section {
-      background: rgba(255,255,255,0.05);
-      border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.1);
+    .ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll 35s linear infinite;
+      padding-left: 100vw;
+    }
+    
+    @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+    
+    .ticker-item {
+      display: inline-block;
+      font-weight: 600;
+      margin: 0 2vw;
+    }
+    
+    .main-container {
+      flex: 1;
+      position: relative;
       display: flex;
       flex-direction: column;
-      overflow: hidden;
     }
     
-    .section-header {
-      padding: 0.5rem 0.7rem;
-      background: rgba(0,255,135,0.1);
-      border-bottom: 1px solid rgba(0,255,135,0.2);
-      font-size: 0.9rem;
-      color: #00ff87;
-      font-weight: bold;
-      flex-shrink: 0;
+    .page {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1.5vh 1.5vw;
+      display: none;
+      flex-direction: column;
+    }
+    
+    .page.active {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      animation: slideIn 0.4s ease;
     }
     
-    .pagination { display: flex; gap: 0.4rem; }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
     
-    .page-btn {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.3);
+    .page-title {
+      background: linear-gradient(90deg, #1e3a8a, #1e40af);
       color: #fff;
-      padding: 0.25rem 0.6rem;
-      font-size: 0.75rem;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: all 0.2s ease;
+      padding: 0.8vh 1vw;
+      font-weight: 700;
+      text-align: center;
+      font-size: 2.2vh;
+      border-radius: 8px;
+      margin-bottom: 1vh;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
-    
-    .page-btn:hover { background: rgba(255,255,255,0.2); }
-    .page-btn.active { background: #00ff87; color: #1a1a2e; }
-    .page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
     
     .content-area {
       flex: 1;
-      padding: 0.5rem 0.7rem;
-      overflow-y: auto;
-      overflow-x: hidden;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6vh;
     }
     
-    .headline {
-      background: rgba(255,255,255,0.05);
-      padding: 0.5rem 0.6rem;
-      border-radius: 6px;
-      margin-bottom: 0.4rem;
-      border-left: 3px solid #00ff87;
-      font-size: 0.9rem;
-      line-height: 1.3;
+    .headline-item {
+      background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+      border-left: 5px solid #22d3ee;
+      padding: 0.8vh 1vw;
+      font-size: 1.9vh;
+      line-height: 1.4;
       cursor: pointer;
+      transition: all 0.2s ease;
+      color: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     
-    .headline:hover { background: rgba(255,255,255,0.1); }
-    .headline-title { color: #fff; font-weight: 500; }
-    .headline-time { color: #888; font-size: 0.75rem; margin-top: 0.15rem; }
+    .headline-item:hover {
+      background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+      transform: translateX(5px);
+    }
     
     .wiki-item {
-      background: rgba(255,255,255,0.05);
-      padding: 0.5rem 0.6rem;
-      border-radius: 6px;
-      margin-bottom: 0.4rem;
-      border-left: 3px solid #ffa500;
-      font-size: 0.9rem;
-      line-height: 1.3;
+      background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+      border-left: 5px solid #fbbf24;
+      padding: 0.8vh 1vw;
+      font-size: 1.9vh;
+      line-height: 1.4;
+      display: flex;
+      gap: 0.8vw;
+      align-items: flex-start;
+      color: #e5e7eb;
+      border-radius: 4px;
     }
     
-    .wiki-year { color: #ffa500; font-weight: bold; font-size: 0.95rem; }
-    .wiki-text { color: #ddd; margin-top: 0.15rem; }
+    .wiki-year {
+      background: #ef4444;
+      color: #fff;
+      padding: 0.2rem 0.6rem;
+      font-weight: 800;
+      font-size: 1.5vh;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    
+    .wiki-text {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.6vw;
+      margin-top: auto;
+      padding-top: 1vh;
+    }
+    
+    .page-btn {
+      background: #22d3ee;
+      color: #000;
+      border: none;
+      padding: 0.6vh 1vw;
+      font-size: 1.5vh;
+      cursor: pointer;
+      font-weight: 700;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    
+    .page-btn:hover { background: #67e8f9; transform: scale(1.1); }
+    .page-btn.active { background: #fbbf24; transform: scale(1.15); }
+    .page-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+    
+    .weather-container {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      color: #fff;
+      padding: 0.5vh 0;
+      flex-shrink: 0;
+      font-size: 1.4vh;
+      border-top: 2px solid #10b981;
+      overflow: hidden;
+    }
+    
+    .weather-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll 30s linear infinite;
+      padding-left: 100vw;
+    }
+    
+    .weather-item {
+      display: inline-block;
+      margin: 0 1.5vw;
+      padding: 0.2vh 0.6vw;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+    }
+    
+    .weather-temp {
+      font-weight: 700;
+      color: #fef3c7;
+    }
+    
+    .progress-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.4vh;
+      background: #1f2937;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #22d3ee, #fbbf24);
+      transition: width 0.3s linear;
+      border-radius: 2px;
+    }
     
     @media TV {
       header { padding: 1.5vh 2vw; }
-      h1 { font-size: 2.5rem; }
-      .section-header { font-size: 1.5rem; padding: 0.8vh 1vw; }
-      .page-btn { padding: 0.5rem 1rem; font-size: 1rem; }
-      .headline, .wiki-item { font-size: 1.2rem; padding: 1vh 1vw; margin-bottom: 0.5rem; }
-      .headline-time { font-size: 0.9rem; }
+      .logo { font-size: 3.5vh; }
+      .page-info { font-size: 2.2vh; padding: 0.6vh 1.2vw; }
+      .page-indicator { font-size: 3vh; }
+      .mini-clock { font-size: 2.2vh; }
+      .ticker-container, .weather-container { font-size: 2vh; }
+      .page-title { font-size: 3vh; padding: 1vh 1.5vw; }
+      .headline-item, .wiki-item { font-size: 2.6vh; padding: 1vh 1.5vw; }
+      .page-btn { font-size: 2rem; padding: 0.8vh 1.2vw; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>📺 NEWS</h1>
+    <div class="logo">📺 NEWS</div>
+    <div class="page-info">
+      PAGE <span class="page-indicator" id="pageIndicator">1</span> / 2
+    </div>
     <div class="mini-clock" id="miniClock"></div>
   </header>
   
-  <div class="ticker-section">
-    <div class="ticker" id="newsTicker">
-      <span class="breaking">BREAKING</span>
-      <span class="ticker-item">Loading...</span>
+  <div class="ticker-container">
+    <div class="ticker-content" id="tickerContent">
+      Loading headlines...
     </div>
   </div>
   
-  <div class="weather-ticker">
-    <div class="weather-ticker-content" id="weatherTicker">
-      <span class="weather-item">Loading weather...</span>
-    </div>
-  </div>
-  
-  <main>
-    <div class="section">
-      <div class="section-header">
-        <span>📅 On This Day</span>
-        <div class="pagination" id="wikiPagination"></div>
+  <div class="main-container">
+    <div class="page active" id="page1">
+      <div class="page-title">🇬🇧 BBC NEWS</div>
+      <div class="content-area" id="bbcContent">
+        <div class="headline-item">Loading BBC News...</div>
       </div>
-      <div class="content-area" id="wikiContent">
-        <div class="wiki-item">Loading...</div>
-      </div>
+      <div class="pagination" id="bbcPagination"></div>
     </div>
     
-    <div class="section">
-      <div class="section-header">
-        <span>🇬🇧 BBC News</span>
-        <div class="pagination" id="bbcPagination"></div>
+    <div class="page" id="page2">
+      <div class="page-title">📅 ON THIS DAY</div>
+      <div class="content-area" id="wikiContent">
+        <div class="wiki-item">Loading Wikipedia...</div>
       </div>
-      <div class="content-area" id="bbcContent">
-        <div class="headline">Loading...</div>
-      </div>
+      <div class="pagination" id="wikiPagination"></div>
     </div>
-  </main>
+  </div>
+  
+  <div class="weather-container">
+    <div class="weather-content" id="weatherContent">
+      Loading weather...
+    </div>
+  </div>
+  
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
 
   <script>
     let bbcData = [];
     let wikiData = [];
     let bbcPage = 1;
     let wikiPage = 1;
-    const CACHE_TTL = 30 * 60 * 1000;
-    const cache = {};
+    let currentPage = 1;
+    const PAGE_ROTATION_TIME = 10000;
+    let pageRotationInterval = null;
     
-    const rssParserAPI = 'https://api.rss2json.com/v1/api.json?rss_url=';
+    const weatherEmojis = {
+      0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
+      45: '🌫️', 48: '🌫️',
+      51: '🌦️', 53: '🌦️', 55: '🌦️',
+      61: '🌧️', 63: '🌧️', 65: '🌧️',
+      71: '🌨️', 73: '🌨️', 75: '🌨️',
+      80: '🌦️', 81: '🌦️', 82: '🌦️',
+      95: '⛈️', 96: '⛈️', 99: '⛈️'
+    };
     
     const cities = [
       { name: 'Osaka', lat: 34.6937, lon: 135.5023 },
@@ -233,16 +342,6 @@
       { name: 'Hollywood', lat: 34.0928, lon: -118.3287 }
     ];
     
-    const weatherEmojis = {
-      0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
-      45: '🌫️', 48: '🌫️',
-      51: '🌦️', 53: '🌦️', 55: '🌦️',
-      61: '🌧️', 63: '🌧️', 65: '🌧️',
-      71: '🌨️', 73: '🌨️', 75: '🌨️',
-      80: '🌦️', 81: '🌦️', 82: '🌦️',
-      95: '⛈️', 96: '⛈️', 99: '⛈️'
-    };
-    
     function updateMiniClock() {
       const now = new Date();
       const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
@@ -250,15 +349,37 @@
       document.getElementById('miniClock').textContent = `${date} ${time}`;
     }
     
-    async function fetchWeather() {
-      const cacheKey = 'weather';
-      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
-        updateWeather(cache[cacheKey].data);
-        return;
-      }
+    function rotatePage() {
+      currentPage = currentPage === 1 ? 2 : 1;
+      document.getElementById('page1').classList.toggle('active', currentPage === 1);
+      document.getElementById('page2').classList.toggle('active', currentPage === 2);
+      document.getElementById('pageIndicator').textContent = currentPage;
+    }
+    
+    function startPageRotation() {
+      clearInterval(pageRotationInterval);
+      updateProgressBar(0);
       
+      let progress = 0;
+      const progressInterval = setInterval(() => {
+        progress += 1;
+        updateProgressBar((progress / (PAGE_ROTATION_TIME / 100)) * 100);
+      }, PAGE_ROTATION_TIME / 100);
+      
+      pageRotationInterval = setInterval(() => {
+        rotatePage();
+        clearInterval(progressInterval);
+        progress = 0;
+      }, PAGE_ROTATION_TIME);
+    }
+    
+    function updateProgressBar(percent) {
+      document.getElementById('progressBar').style.width = `${percent}%`;
+    }
+    
+    async function fetchWeather() {
       try {
-        const promises = cities.map(async city => {
+        const weatherData = await Promise.all(cities.map(async city => {
           const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current_weather=true`;
           const response = await fetch(url);
           const data = await response.json();
@@ -267,29 +388,16 @@
             temp: Math.round(data.current_weather.temperature),
             code: data.current_weather.weathercode
           };
-        });
+        }));
         
-        weatherData = await Promise.all(promises);
-        cache[cacheKey] = { data: weatherData, time: Date.now() };
-        updateWeather(weatherData);
+        document.getElementById('weatherContent').innerHTML = weatherData.map(city => {
+          const emoji = weatherEmojis[city.code] || '🌡️';
+          return `<span class="weather-item">${city.name}: <span class="weather-temp">${city.temp}°C</span> ${emoji}</span>`;
+        }).join('');
       } catch (e) { console.log('Weather error:', e); }
     }
     
-    function updateWeather(data) {
-      document.getElementById('weatherTicker').innerHTML = data.map(city => {
-        const emoji = weatherEmojis[city.code] || '🌡️';
-        return `<span class="weather-item">${city.name}: ${city.temp}°C ${emoji}</span>`;
-      }).join('');
-    }
-    
     async function fetchWiki() {
-      const cacheKey = 'wiki';
-      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < 60 * 60 * 1000) {
-        wikiData = cache[cacheKey].data;
-        updateWiki(wikiPage);
-        return;
-      }
-      
       const now = new Date();
       const month = now.getMonth() + 1;
       const day = now.getDate();
@@ -300,8 +408,7 @@
         const data = await response.json();
         
         if (data.events && data.events.length) {
-          wikiData = data.events.sort((a, b) => b.year - a.year).slice(0, 50);
-          cache[cacheKey] = { data: wikiData, time: Date.now() };
+          wikiData = data.events.sort((a, b) => b.year - a.year).slice(0, 100);
           updateWiki(1);
         }
       } catch (e) {
@@ -315,96 +422,99 @@
     }
     
     async function fetchBBC() {
-      const cacheKey = 'bbc';
-      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
-        bbcData = cache[cacheKey].data;
-        updateBBC(bbcPage);
-        return;
-      }
-      
       try {
-        const response = await fetch(rssParserAPI + encodeURIComponent('http://feeds.bbci.co.uk/news/rss.xml'));
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('http://feeds.bbci.co.uk/news/rss.xml'));
         const data = await response.json();
         
         if (data.items) {
           bbcData = data.items.map(item => ({
             title: item.title,
-            link: item.link,
-            pubDate: new Date(item.pubDate)
+            link: item.link
           }));
-          cache[cacheKey] = { data: bbcData, time: Date.now() };
           updateBBC(1);
+          updateTicker();
         }
       } catch (e) { console.log('BBC error:', e); }
     }
     
-    function renderPagination(elId, currentPage, setPage) {
-      const section = elId.includes('wiki') ? 'wiki' : 'bbc';
-      const data = section === 'wiki' ? wikiData : bbcData;
-      const totalPages = Math.ceil(data.length / 20) || 1;
-      let html = '';
-      
-      html += `<button class="page-btn ${currentPage === 1 ? 'disabled' : ''}" onclick="set${section.charAt(0).toUpperCase() + section.slice(1)}Page(1)">«</button>`;
-      
-      for (let i = 1; i <= totalPages; i++) {
-        const active = i === currentPage ? 'active' : '';
-        html += `<button class="page-btn ${active}" onclick="set${section.charAt(0).toUpperCase() + section.slice(1)}Page(${i})">${i}</button>`;
-      }
-      
-      html += `<button class="page-btn ${currentPage === totalPages ? 'disabled' : ''}" onclick="set${section.charAt(0).toUpperCase() + section.slice(1)}Page(${totalPages})">»</button>`;
-      
-      document.getElementById(elId).innerHTML = html;
+    function updateTicker() {
+      const headlines = bbcData.slice(0, 10).map(h => '📰 ' + h.title).join('    •    ');
+      document.getElementById('tickerContent').innerHTML = headlines;
     }
     
     function updateBBC(page) {
-      const start = (page - 1) * 20;
-      const end = start + 20;
+      const itemsPerPage = 10;
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
       const items = bbcData.slice(start, end);
       
       document.getElementById('bbcContent').innerHTML = items.map(h => `
-        <div class="headline" onclick="window.open('${h.link}', '_blank')">
-          <div class="headline-title">${h.title}</div>
-          <div class="headline-time">${getTimeAgo(h.pubDate)}</div>
-        </div>
+        <div class="headline-item" onclick="window.open('${h.link}', '_blank')">${escapeHtml(h.title)}</div>
       `).join('');
       
-      renderPagination('bbcPagination', page, setBBCPage);
-      
-      const tickerItems = bbcData.slice(0, 8).map(h => `<span class="ticker-item">${h.title}</span>`).join('');
-      document.getElementById('newsTicker').innerHTML = `<span class="breaking">BREAKING</span>${tickerItems}`;
+      renderPagination('bbcPagination', page, itemsPerPage, setBBCPage);
     }
     
     function updateWiki(page) {
-      const start = (page - 1) * 20;
-      const end = start + 20;
+      const itemsPerPage = 10;
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
       const items = wikiData.slice(start, end);
       
-      document.getElementById('wikiContent').innerHTML = items.map(e => 
-        `<div class="wiki-item">
+      document.getElementById('wikiContent').innerHTML = items.map(e => `
+        <div class="wiki-item">
           <div class="wiki-year">${e.year}</div>
-          <div class="wiki-text">${e.description}</div>
-        </div>`
-      ).join('');
+          <div class="wiki-text">${escapeHtml(e.description)}</div>
+        </div>
+      `).join('');
       
-      renderPagination('wikiPagination', page, setWikiPage);
+      renderPagination('wikiPagination', page, itemsPerPage, setWikiPage);
     }
     
-    function getTimeAgo(date) {
-      const seconds = Math.floor((new Date() - date) / 1000);
-      if (seconds < 60) return 'Just now';
-      if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
-      if (seconds < 86400) return `${Math.floor(seconds / 3600)}h ago`;
-      return `${Math.floor(seconds / 86400)}d ago`;
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+    
+    function renderPagination(elId, currentPage, itemsPerPage, setPage) {
+      const data = elId.includes('wiki') ? wikiData : bbcData;
+      const totalPages = Math.ceil(data.length / itemsPerPage) || 1;
+      let html = '';
+      
+      html += `<button class="page-btn ${currentPage === 1 ? 'active' : ''}" onclick="${elId === 'bbcPagination' ? 'setBBCPage' : 'setWikiPage'}(1)">1</button>`;
+      
+      if (totalPages <= 7) {
+        for (let i = 2; i <= totalPages; i++) {
+          html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="${elId === 'bbcPagination' ? 'setBBCPage' : 'setWikiPage'}(${i})">${i}</button>`;
+        }
+      } else {
+        if (currentPage > 4) html += `<button class="page-btn" disabled>...</button>`;
+        
+        const start = Math.max(2, currentPage - 2);
+        const end = Math.min(totalPages - 1, currentPage + 2);
+        
+        for (let i = start; i <= end; i++) {
+          html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="${elId === 'bbcPagination' ? 'setBBCPage' : 'setWikiPage'}(${i})">${i}</button>`;
+        }
+        
+        if (currentPage < totalPages - 3) html += `<button class="page-btn" disabled>...</button>`;
+        html += `<button class="page-btn ${totalPages === currentPage ? 'active' : ''}" onclick="${elId === 'bbcPagination' ? 'setBBCPage' : 'setWikiPage'}(${totalPages})">${totalPages}</button>`;
+      }
+      
+      document.getElementById(elId).innerHTML = html;
     }
     
     function setBBCPage(page) {
       bbcPage = page;
       updateBBC(page);
+      startPageRotation();
     }
     
     function setWikiPage(page) {
       wikiPage = page;
       updateWiki(page);
+      startPageRotation();
     }
     
     updateMiniClock();
@@ -416,6 +526,8 @@
     
     setInterval(fetchWeather, 30 * 60 * 1000);
     setInterval(fetchBBC, 30 * 60 * 1000);
+    
+    startPageRotation();
   </script>
 </body>
 </html>
