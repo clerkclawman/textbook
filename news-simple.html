@@ -6,14 +6,14 @@
   <title>NEWS</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    
+
     html {
       overflow: hidden;
       scrollbar-width: none;
     }
-    
+
     html::-webkit-scrollbar { display: none; }
-    
+
     body {
       font-family: 'Segoe UI', 'Poppins', 'Helvetica Neue', 'Arial', sans-serif;
       background: #000000;
@@ -25,7 +25,7 @@
       display: flex;
       flex-direction: column;
     }
-    
+
     header {
       position: fixed;
       top: 8px;
@@ -43,7 +43,7 @@
       overflow: hidden;
       height: 4vh;
     }
-    
+
     .logo {
       font-size: 2.8vh;
       font-weight: 700;
@@ -68,26 +68,52 @@
       font-size: 2.5vh;
       font-weight: 800;
     }
-    
+
+    .section-toggle {
+      display: flex;
+      gap: 1vw;
+    }
+
+    .toggle-btn {
+      background: rgba(102, 126, 234, 0.3);
+      border: 2px solid rgba(102, 126, 234, 0.5);
+      color: #e5e7eb;
+      padding: 0.5vh 1vw;
+      font-size: 2vh;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .toggle-btn:hover {
+      background: rgba(102, 126, 234, 0.5);
+    }
+
+    .toggle-btn.active {
+      background: rgba(102, 126, 234, 0.8);
+      border-color: #667eea;
+    }
+
     .mini-clock {
       font-family: 'Courier New', 'Segoe UI', monospace;
-      font-size: 4vh;
+      font-size: 3vh;
       color: #0f0;
       background: rgba(0,0,0,0.85);
-      padding: 1rem 1.2rem;
-      border-radius: 10px;
-      border: 3px solid rgba(0,255,0,0.4);
-      min-width: 350px;
+      padding: 0.6vh 1.2vw;
+      border-radius: 8px;
+      border: 2px solid rgba(0,255,0,0.4);
+      min-width: 280px;
       font-weight: bold;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
     }
-    
+
     .ticker-container {
       background: #fbbf24;
       color: #000;
-      padding: 2vh 0;
+      padding: 1.5vh 0;
       flex-shrink: 0;
-      font-size: 5vh;
+      font-size: 4vh;
       border-bottom: 3px solid #1e40af;
       overflow: hidden;
       font-weight: bold;
@@ -111,7 +137,7 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-    
+
     .main-container {
       flex: 1;
       position: relative;
@@ -120,8 +146,9 @@
       overflow: hidden;
       min-height: 0;
       padding-top: 6vh;
+      padding-bottom: 6vh;
     }
-    
+
     .page {
       position: absolute;
       top: 0;
@@ -133,29 +160,29 @@
       flex-direction: column;
       overflow: hidden;
     }
-    
+
     .page.active {
       display: flex;
       animation: slideIn 0.4s ease;
     }
-    
+
     @keyframes slideIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
-    
+
     .page-title {
       background: linear-gradient(90deg, #1e3a8a, #1e40af);
       color: #fff;
-      padding: 1.5vh 2vw;
+      padding: 1.2vh 2vw;
       font-weight: 800;
       text-align: center;
-      font-size: 5vh;
-      border-radius: 12px;
-      margin-bottom: 1.8vh;
+      font-size: 4vh;
+      border-radius: 10px;
+      margin-bottom: 1.5vh;
       text-transform: uppercase;
       letter-spacing: 2px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.4);
       flex-shrink: 0;
     }
-    
+
     .content-area {
       flex: 1;
       overflow: hidden;
@@ -164,12 +191,12 @@
       gap: 0.8vh;
       min-height: 0;
     }
-    
+
     .headline-item {
       background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
       border-left: 8px solid #22d3ee;
       padding: 1.5vh 2vw;
-      font-size: 4.5vh;
+      font-size: 3.5vh;
       line-height: 1.3;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -195,7 +222,7 @@
     }
 
     .headline-time {
-      font-size: 2.5vh;
+      font-size: 2.2vh;
       color: #9ca3af;
       background: rgba(255,255,255,0.1);
       padding: 0.3vh 0.8vw;
@@ -204,12 +231,12 @@
       margin-left: 1vw;
       flex-shrink: 0;
     }
-    
+
     .wiki-item {
       background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
       border-left: 8px solid #fbbf24;
       padding: 1.5vh 2vw;
-      font-size: 4vh;
+      font-size: 3.5vh;
       line-height: 1.3;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -232,7 +259,7 @@
     }
 
     .wiki-year {
-      font-size: 2.5vh;
+      font-size: 2.2vh;
       color: #fbbf24;
       background: rgba(251, 191, 36, 0.2);
       padding: 0.3vh 0.8vw;
@@ -245,239 +272,130 @@
     .wiki-text {
       display: inline;
     }
-    
-    .pagination {
-      display: flex;
-      justify-content: center;
-      gap: 0.6vw;
-      margin-top: auto;
-      padding-top: 1vh;
-    }
-
-    .page-btn {
-      background: rgba(34, 211, 238, 0.3);
-      color: #22d3ee;
-      border: 2px solid rgba(34, 211, 238, 0.5);
-      padding: 0.6vh 1vw;
-      font-size: 2.5vh;
-      cursor: pointer;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: all 0.2s;
-    }
-
-    .page-btn:hover { background: rgba(34, 211, 238, 0.5); transform: scale(1.1); }
-    .page-btn.active { background: #fbbf24; color: #000; border-color: #fbbf24; }
-    .page-btn:disabled { opacity: 0.3; cursor: not-allowed; transform: none; }
 
     .weather-container {
-      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      background: linear-gradient(135deg, #059669, #047857);
       color: #fff;
-      padding: 2vh 0;
+      padding: 1.5vh 0;
       flex-shrink: 0;
-      font-size: 5vh;
-      border-top: 3px solid #10b981;
+      font-size: 3.5vh;
+      border-top: 3px solid rgba(255,255,255,0.3);
       overflow: hidden;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 1px;
     }
 
     .weather-content {
       display: inline-block;
       white-space: nowrap;
-      animation: scroll 45s linear infinite;
+      animation: scroll 60s linear infinite;
       padding-left: 100vw;
     }
 
     .weather-item {
       display: inline-block;
-      margin: 0 3vw;
-      padding: 0.6vh 1.2vw;
+      margin: 0 2.5vw;
+      padding: 0 1vw;
       background: rgba(255,255,255,0.15);
       border-radius: 8px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
-    
-    .weather-temp {
-      font-weight: 700;
-      color: #fef3c7;
-    }
-    
-    .bottom-tickers {
-      display: flex;
-      flex-direction: column;
-      flex-shrink: 0;
-      overflow: hidden;
-    }
-    
-    .progress-container {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0.4vh;
-      background: #1f2937;
-      z-index: 101;
-    }
-    
-    .progress-bar {
-      height: 100%;
-      background: linear-gradient(90deg, #22d3ee, #fbbf24);
-      transition: width 0.3s linear;
-      border-radius: 2px;
-    }
-    
-    @media TV {
-      header { padding: 1.5vh 2vw; }
-      .logo { font-size: 5vh; }
-      .page-info { font-size: 3.5vh; padding: 0.8vh 1.5vw; }
-      .page-indicator { font-size: 4vh; }
-      .mini-clock { font-size: 4vh; min-width: 350px; padding: 1rem 1.2rem; }
-      .ticker-container, .weather-container { font-size: 5.5vh; }
-      .page-title { font-size: 6vh; padding: 1.8vh 2.5vw; }
-      .headline-item, .wiki-item { font-size: 5vh; padding: 2vh 2.5vw; }
-      .wiki-year { font-size: 5vh; }
-      .wiki-text { font-size: 5vh; }
-      .page-btn { font-size: 3rem; padding: 1vh 1.5vw; }
-      .home-btn { font-size: 1rem; }
-    }
-    
-    @media (max-width: 768px) {
-      header {
-        top: 4px;
-        left: 4px;
-        right: 4px;
-        padding: 0.3vh 0.5vw;
-        height: 3vh;
-      }
-      
-      .logo { font-size: 1vh; }
-      .page-info { font-size: 0.9vh; padding: 0.2rem 0.4rem; }
-      .page-indicator { font-size: 1.1vh; }
-      .mini-clock { font-size: 0.8vh; padding: 0.15rem 0.4rem; }
-      
-      .ticker-container { height: 30px; font-size: 1vh; }
-      .weather-container { height: 30px; font-size: 1vh; }
-      .ticker-item { margin: 0 1vw; }
-      .weather-item { margin: 0 1vw; padding: 0.1vh 0.4vw; }
-      
-      .main-container { padding-top: 4vh; padding-bottom: 65px; }
-      .page { padding: 1vh 1vw; }
-      
-      .page-title {
-        font-size: 2vh;
-        padding: 0.5vh 1vw;
-        margin-bottom: 0.8vh;
-        border-radius: 8px;
-      }
-      
-      .headline-item, .wiki-item {
-        font-size: 1.6vh;
-        padding: 0.6vh 1vw;
-        gap: 0.5vw;
-      }
-      
-      .wiki-year {
-        font-size: 1.5vh;
-        padding: 0.15rem 0.5rem;
-      }
-      
-      .pagination { padding-top: 0.5vh; gap: 0.3vw; }
-      .page-btn {
-        font-size: 1.2vh;
-        padding: 0.3vh 0.6vw;
-        border-radius: 4px;
-      }
-      
-      .home-btn { bottom: 70px; font-size: 0.55rem; padding: 0.25rem 0.5rem; }
-    }
-    
-    @media (min-width: 769px) and (max-width: 1023px) {
-      header { top: 6px; }
-      .ticker-container, .weather-container { height: 35px; }
-      .main-container { padding-top: 5vh; }
-      .page-title { font-size: 3vh; }
-      .headline-item, .wiki-item { font-size: 2.2vh; }
-      .home-btn { bottom: 50px; }
-    }
-    
+
     .home-btn {
       position: fixed;
-      bottom: 5vh;
-      right: 8px;
-      background: rgba(255,255,255,0.15);
+      bottom: 70px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.2);
       color: #fff;
-      border: 1.5px solid rgba(255,255,255,0.3);
-      padding: 0.4rem 0.6rem;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 0.8rem 1.2rem;
       border-radius: 8px;
-      font-size: 0.65rem;
-      font-weight: 600;
+      font-size: 1rem;
+      font-weight: bold;
       cursor: pointer;
-      z-index: 102;
-      transition: all 0.2s;
+      z-index: 1000;
       text-decoration: none;
+      transition: all 0.2s;
     }
-    
-    .home-btn:hover { background: rgba(255,255,255,0.25); }
+
+    .home-btn:hover {
+      transform: scale(1.05);
+    }
+
+    @media TV {
+      .logo { font-size: 4.5vh; }
+      .toggle-btn { font-size: 3vh; padding: 0.8vh 1.5vw; }
+      .page-title { font-size: 6vh; }
+      .headline-item, .wiki-item { font-size: 5vh; }
+      .mini-clock { font-size: 4vh; }
+      .ticker-container, .weather-container { font-size: 5.5vh; }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+        padding: 1vh 1.5vw;
+        height: auto;
+        gap: 1vh;
+      }
+      .logo { font-size: 2.2vh; }
+      .toggle-btn { font-size: 1.6vh; padding: 0.5vh 1vw; }
+      .mini-clock {
+        order: 3;
+        width: 100%;
+        font-size: 2vh;
+        min-width: 180px;
+      }
+      .ticker-container { font-size: 2.5vh; }
+      .weather-container { font-size: 2.2vh; }
+      .headline-item, .wiki-item { font-size: 2.2vh; padding: 1.5vh 1.5vw; }
+      .page-title { font-size: 3vh; }
+      .main-container { padding-top: 10vh; padding-bottom: 8vh; }
+      .home-btn { bottom: 55px; right: 8px; font-size: 0.85rem; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">📺 NEWS</div>
+    <div class="section-toggle">
+      <button class="toggle-btn active" id="bbcBtn" onclick="showSection('bbc')">BBC</button>
+      <button class="toggle-btn" id="intlBtn" onclick="showSection('intl')">WORLD</button>
+      <button class="toggle-btn" id="wikiBtn" onclick="showSection('wiki')">WIKI</button>
+    </div>
     <div class="page-info">
-      PAGE <span class="page-indicator" id="pageIndicator">1</span> / 2
+      <span id="pageIndicator">Loading...</span>
     </div>
-    <div class="mini-clock" id="miniClock"></div>
+    <div class="mini-clock" id="miniClock">Loading...</div>
   </header>
-  
-  <div class="main-container">
-    <div class="page active" id="page1">
-      <div class="page-title">🇬🇧 BBC NEWS</div>
-      <div class="content-area" id="bbcContent">
-        <div class="headline-item">Loading BBC News...</div>
-      </div>
-      <div class="pagination" id="bbcPagination"></div>
-    </div>
-    
-    <div class="page" id="page2">
-      <div class="page-title">📅 ON THIS DAY</div>
-      <div class="content-area" id="wikiContent">
-        <div class="wiki-item">Loading Wikipedia...</div>
-      </div>
-      <div class="pagination" id="wikiPagination"></div>
-    </div>
-  </div>
-  
-  <div class="bottom-tickers">
-    <div class="ticker-container">
-      <div class="ticker-content" id="tickerContent">
-        Loading headlines...
-      </div>
-    </div>
-    
-    <div class="weather-container">
-      <div class="weather-content" id="weatherContent">
-        Loading weather...
-      </div>
-    </div>
-  </div>
-  
-  <div class="progress-container">
-    <div class="progress-bar" id="progressBar"></div>
+
+  <div class="ticker-container">
+    <div class="ticker-content" id="tickerContent">Loading news...</div>
   </div>
 
+  <div class="main-container">
+    <div class="page active" id="bbcPage">
+      <div class="page-title">🇬🇧 BBC NEWS</div>
+      <div class="content-area" id="bbcContent">Loading...</div>
+    </div>
+
+    <div class="page" id="intlPage">
+      <div class="page-title">🌍 INTERNATIONAL NEWS</div>
+      <div class="content-area" id="intlContent">Loading...</div>
+    </div>
+
+    <div class="page" id="wikiPage">
+      <div class="page-title">📅 WIKIPEDIA ON THIS DAY</div>
+      <div class="content-area" id="wikiContent">Loading...</div>
+    </div>
+  </div>
+
+  <div class="weather-container">
+    <div class="weather-content" id="weatherContent">Loading...</div>
+  </div>
+
+  <a href="index.html" class="home-btn">🏠</a>
+
   <script>
-    let bbcData = [];
-    let wikiData = [];
-    let bbcPage = 1;
-    let wikiPage = 1;
-    let currentPage = 1;
-    const PAGE_ROTATION_TIME = 10000;
-    let pageRotationInterval = null;
-    
     const weatherEmojis = {
       0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
       45: '🌫️', 48: '🌫️',
@@ -487,86 +405,180 @@
       80: '🌦️', 81: '🌦️', 82: '🌦️',
       95: '⛈️', 96: '⛈️', 99: '⛈️'
     };
-    
+
     const cities = [
       { name: 'Osaka', lat: 34.6937, lon: 135.5023 },
       { name: 'Sapporo', lat: 43.0642, lon: 141.3469 },
       { name: 'Naha', lat: 26.2124, lon: 127.6792 },
       { name: 'New York', lat: 40.7128, lon: -74.0060 },
       { name: 'London', lat: 51.5074, lon: -0.1278 },
-      { name: 'Lancaster', lat: 54.0466, lon: -2.8008 },
-      { name: 'Madrid', lat: 40.4168, lon: -3.7038 },
-      { name: 'Moscow', lat: 55.7558, lon: 37.6173 },
-      { name: 'Beijing', lat: 39.9042, lon: 116.4074 },
-      { name: 'Hollywood', lat: 34.0928, lon: -118.3287 }
+      { name: 'Lancaster', lat: 54.0466, lon: -2.8008 }
     ];
-    
+
+    let bbcData = [];
+    let intlData = [];
+    let wikiData = [];
+    let bbcPage = 1;
+    let intlPage = 1;
+    let wikiPage = 1;
+    let currentSection = 'bbc';
+
     function updateMiniClock() {
       const now = new Date();
-      const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit' });
-      const date = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-      document.getElementById('miniClock').textContent = `${date} | ${time}`;
+      const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+      const date = now.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+      document.getElementById('miniClock').textContent = `${date} ${time}`;
     }
-    
-    let currentPageType = 'bbc';
-    let bbcPageNum = 1;
 
-    function rotatePage() {
-      const itemsPerPage = 3;
-      const totalBbcPages = Math.ceil(bbcData.length / itemsPerPage);
-      const totalWikiPages = Math.ceil(wikiData.length / 10);
+    function formatPubDate(dateStr) {
+      const date = new Date(dateStr);
+      const hours = date.getHours().toString().padStart(2, '0');
+      const mins = date.getMinutes().toString().padStart(2, '0');
+      return `${hours}:${mins}`;
+    }
 
-      if (currentPageType === 'bbc') {
-        if (bbcPageNum < totalBbcPages) {
-          bbcPageNum++;
-          updateBBC(bbcPageNum);
-          document.getElementById('pageIndicator').textContent = `${bbcPageNum} / ${totalBbcPages}`;
-        } else {
-          currentPageType = 'wiki';
-          currentPage = 1;
-          updateWiki(1);
-          document.getElementById('pageIndicator').textContent = `1 / ${totalWikiPages}`;
-          document.getElementById('page1').classList.remove('active');
-          document.getElementById('page2').classList.add('active');
-        }
+    function showSection(section) {
+      currentSection = section;
+      document.getElementById('bbcBtn').classList.toggle('active', section === 'bbc');
+      document.getElementById('intlBtn').classList.toggle('active', section === 'intl');
+      document.getElementById('wikiBtn').classList.toggle('active', section === 'wiki');
+
+      document.getElementById('bbcPage').classList.remove('active');
+      document.getElementById('intlPage').classList.remove('active');
+      document.getElementById('wikiPage').classList.remove('active');
+      document.getElementById(section + 'Page').classList.add('active');
+
+      updatePageIndicator();
+    }
+
+    function updatePageIndicator() {
+      let current, total;
+      if (currentSection === 'bbc') {
+        current = bbcPage;
+        total = Math.ceil(bbcData.length / 3) || 1;
+      } else if (currentSection === 'intl') {
+        current = intlPage;
+        total = Math.ceil(intlData.length / 3) || 1;
       } else {
-        if (currentPage < totalWikiPages) {
-          currentPage++;
-          updateWiki(currentPage);
-          document.getElementById('pageIndicator').textContent = `${currentPage} / ${totalWikiPages}`;
-        } else {
-          currentPageType = 'bbc';
-          bbcPageNum = 1;
-          currentPage = 1;
-          updateBBC(1);
-          document.getElementById('pageIndicator').textContent = `1 / ${totalBbcPages}`;
-          document.getElementById('page2').classList.remove('active');
-          document.getElementById('page1').classList.add('active');
+        current = wikiPage;
+        total = Math.ceil(wikiData.length / 10) || 1;
+      }
+      document.getElementById('pageIndicator').textContent = `${current} / ${total}`;
+    }
+
+    async function fetchBBC() {
+      try {
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('http://feeds.bbci.co.uk/news/rss.xml'));
+        const data = await response.json();
+
+        if (data.items) {
+          bbcData = data.items.map(item => ({
+            title: item.title,
+            link: item.link,
+            pubDate: item.pubDate
+          })).slice(0, 30);
+          updateTicker();
+          updateBBCPage();
+          updatePageIndicator();
         }
+      } catch (e) { console.log('BBC error:', e); }
+    }
+
+    async function fetchIntl() {
+      try {
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('http://feeds.reuters.com/Reuters/worldNews'));
+        const data = await response.json();
+
+        if (data.items) {
+          intlData = data.items.map(item => ({
+            title: item.title,
+            link: item.link,
+            pubDate: item.pubDate
+          })).slice(0, 30);
+          updateIntlPage();
+          updatePageIndicator();
+        }
+      } catch (e) { console.log('Intl error:', e); }
+    }
+
+    function updateTicker() {
+      const headlines = [
+        ...bbcData.slice(0, 10).map(h => '🇬🇧 ' + h.title),
+        ...intlData.slice(0, 10).map(h => '🌍 ' + h.title)
+      ].join('    •    ');
+      document.getElementById('tickerContent').innerHTML = headlines;
+    }
+
+    function updateBBCPage() {
+      const itemsPerPage = 3;
+      const start = (bbcPage - 1) * itemsPerPage;
+      const items = bbcData.slice(start, start + itemsPerPage);
+
+      document.getElementById('bbcContent').innerHTML = items.map(h => `
+        <div class="headline-item" onclick="window.open('${h.link}', '_blank')">
+          ${escapeHtml(h.title)} <span class="headline-time">${formatPubDate(h.pubDate)}</span>
+        </div>
+      `).join('');
+    }
+
+    function updateIntlPage() {
+      const itemsPerPage = 3;
+      const start = (intlPage - 1) * itemsPerPage;
+      const items = intlData.slice(start, start + itemsPerPage);
+
+      document.getElementById('intlContent').innerHTML = items.map(h => `
+        <div class="headline-item" style="border-left-color: #f59e0b;" onclick="window.open('${h.link}', '_blank')">
+          ${escapeHtml(h.title)} <span class="headline-time">${formatPubDate(h.pubDate)}</span>
+        </div>
+      `).join('');
+    }
+
+    function updateWikiPage() {
+      const itemsPerPage = 10;
+      const start = (wikiPage - 1) * itemsPerPage;
+      const items = wikiData.slice(start, start + itemsPerPage);
+
+      document.getElementById('wikiContent').innerHTML = items.map(e => {
+        const searchQuery = encodeURIComponent(e.description.replace(/ \(.+\)$/, '').substring(0, 50));
+        const wikiLink = `https://en.wikipedia.org/wiki/Special:Search?search=${searchQuery}&fulltext=1`;
+        return `
+          <a href="${wikiLink}" target="_blank" class="wiki-item">
+            ${escapeHtml(e.description)} <span class="wiki-year">${e.year}</span>
+          </a>
+        `;
+      }).join('');
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    async function fetchWiki() {
+      const now = new Date();
+      const month = now.getMonth() + 1;
+      const day = now.getDate();
+
+      try {
+        const url = `https://byabbe.se/on-this-day/${month}/${day}/events.json`;
+        const response = await fetch(url);
+        const data = await response.json();
+        wikiData = data.events.sort((a, b) => b.year - a.year).slice(0, 20);
+        updateWikiPage();
+        updatePageIndicator();
+      } catch (e) {
+        console.log('Wiki error:', e);
+        const wikiLink = `https://en.wikipedia.org/wiki/${now.getFullYear()}_${month}_${day}`;
+        wikiData = [{
+          year: now.getFullYear(),
+          description: `Today is ${now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} 📅`
+        }];
+        updateWikiPage();
+        updatePageIndicator();
       }
     }
 
-    function startPageRotation() {
-      clearInterval(pageRotationInterval);
-      updateProgressBar(0);
-
-      let progress = 0;
-      const progressInterval = setInterval(() => {
-        progress += 1;
-        updateProgressBar((progress / (PAGE_ROTATION_TIME / 100)) * 100);
-      }, PAGE_ROTATION_TIME / 100);
-
-      pageRotationInterval = setInterval(() => {
-        rotatePage();
-        clearInterval(progressInterval);
-        progress = 0;
-      }, PAGE_ROTATION_TIME);
-    }
-
-    function updateProgressBar(percent) {
-      document.getElementById('progressBar').style.width = `${percent}%`;
-    }
-    
     async function fetchWeather() {
       try {
         const weatherData = await Promise.all(cities.map(async city => {
@@ -579,162 +591,26 @@
             code: data.current_weather.weathercode
           };
         }));
-        
+
         document.getElementById('weatherContent').innerHTML = weatherData.map(city => {
           const emoji = weatherEmojis[city.code] || '🌡️';
           return `<span class="weather-item">${city.name}: <span class="weather-temp">${city.temp}°C</span> ${emoji}</span>`;
         }).join('');
       } catch (e) { console.log('Weather error:', e); }
     }
-    
-    async function fetchWiki() {
-      const now = new Date();
-      const month = now.getMonth() + 1;
-      const day = now.getDate();
-      
-      try {
-        const url = `https://byabbe.se/on-this-day/${month}/${day}/events.json`;
-        const response = await fetch(url);
-        const data = await response.json();
-        
-        if (data.events && data.events.length) {
-          wikiData = data.events.sort((a, b) => b.year - a.year).slice(0, 100);
-          updateWiki(1);
-        }
-      } catch (e) {
-        console.log('Wiki error:', e);
-        const wikiLink = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' }))}&fulltext=1`;
-        document.getElementById('wikiContent').innerHTML = `
-          <a href="${wikiLink}" target="_blank" class="wiki-item">
-            Today is ${now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} 📅 <span class="wiki-year">${now.getFullYear()}</span>
-          </a>`;
-      }
-    }
-    
-    async function fetchBBC() {
-      try {
-        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('http://feeds.bbci.co.uk/news/rss.xml'));
-        const data = await response.json();
-        
-        if (data.items) {
-          bbcData = data.items.map(item => ({
-            title: item.title,
-            link: item.link,
-            pubDate: item.pubDate
-          }));
-          updateBBC(1);
-          updateTicker();
-        }
-      } catch (e) { console.log('BBC error:', e); }
-    }
-    
-    function formatPubDate(dateStr) {
-      const date = new Date(dateStr);
-      const time = date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
-      return time;
-    }
-    
-    function updateTicker() {
-      const headlines = bbcData.slice(0, 10).map(h => '📰 ' + h.title).join('    •    ');
-      document.getElementById('tickerContent').innerHTML = headlines;
-    }
 
-    function updateBBC(page) {
-      const itemsPerPage = 3;
-      const start = (page - 1) * itemsPerPage;
-      const end = start + itemsPerPage;
-      const items = bbcData.slice(start, end);
-      const totalBbcPages = Math.ceil(bbcData.length / itemsPerPage);
-
-      document.getElementById('bbcContent').innerHTML = items.map(h => `
-        <div class="headline-item" onclick="window.open('${h.link}', '_blank')">
-          ${escapeHtml(h.title)} <span class="headline-time">${formatPubDate(h.pubDate)}</span>
-        </div>
-      `).join('');
-
-      document.getElementById('pageIndicator').textContent = `${page} / ${totalBbcPages}`;
-      renderPagination('bbcPagination', page, itemsPerPage, setBBCPage);
-    }
-
-    function updateWiki(page) {
-      const itemsPerPage = 10;
-      const start = (page - 1) * itemsPerPage;
-      const end = start + itemsPerPage;
-      const totalWikiPages = Math.ceil(wikiData.length / itemsPerPage);
-      const items = wikiData.slice(start, end);
-
-      document.getElementById('wikiContent').innerHTML = items.map(e => {
-        const searchQuery = encodeURIComponent(e.description.replace(/ \(.+\)$/, '').substring(0, 50));
-        const wikiLink = `https://en.wikipedia.org/wiki/Special:Search?search=${searchQuery}&fulltext=1`;
-        return `
-          <a href="${wikiLink}" target="_blank" class="wiki-item">
-            ${escapeHtml(e.description)} <span class="wiki-year">${e.year}</span>
-          </a>
-        `;
-      }).join('');
-      
-      renderPagination('wikiPagination', page, itemsPerPage, setWikiPage);
-    }
-    
-    function escapeHtml(text) {
-      const div = document.createElement('div');
-      div.textContent = text;
-      return div.innerHTML;
-    }
-    
-    function renderPagination(elId, currentPage, itemsPerPage, setPage) {
-      const data = elId.includes('wiki') ? wikiData : bbcData;
-      const totalPages = Math.ceil(data.length / itemsPerPage) || 1;
-      let html = '';
-      
-      html += `<button class="page-btn ${currentPage === 1 ? 'active' : ''}" onclick="${elId === 'bbcPagination' ? 'setBBCPage' : 'setWikiPage'}(1)">1</button>`;
-      
-      if (totalPages <= 7) {
-        for (let i = 2; i <= totalPages; i++) {
-          html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="${elId === 'bbcPagination' ? 'setBBCPage' : 'setWikiPage'}(${i})">${i}</button>`;
-        }
-      } else {
-        if (currentPage > 4) html += `<button class="page-btn" disabled>...</button>`;
-        
-        const start = Math.max(2, currentPage - 2);
-        const end = Math.min(totalPages - 1, currentPage + 2);
-        
-        for (let i = start; i <= end; i++) {
-          html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="${elId === 'bbcPagination' ? 'setBBCPage' : 'setWikiPage'}(${i})">${i}</button>`;
-        }
-        
-        if (currentPage < totalPages - 3) html += `<button class="page-btn" disabled>...</button>`;
-        html += `<button class="page-btn ${totalPages === currentPage ? 'active' : ''}" onclick="${elId === 'bbcPagination' ? 'setBBCPage' : 'setWikiPage'}(${totalPages})">${totalPages}</button>`;
-      }
-      
-      document.getElementById(elId).innerHTML = html;
-    }
-    
-    function setBBCPage(page) {
-      bbcPage = page;
-      updateBBC(page);
-      startPageRotation();
-    }
-    
-    function setWikiPage(page) {
-      wikiPage = page;
-      updateWiki(page);
-      startPageRotation();
-    }
-    
     updateMiniClock();
     setInterval(updateMiniClock, 1000);
-    
-    fetchWeather();
-    fetchWiki();
+
     fetchBBC();
-    
+    fetchIntl();
+    fetchWiki();
+    fetchWeather();
+
     setInterval(fetchWeather, 30 * 60 * 1000);
-    setInterval(fetchBBC, 30 * 60 * 1000);
-    
-    startPageRotation();
+    setInterval(fetchBBC, 5 * 60 * 1000);
+    setInterval(fetchIntl, 5 * 60 * 1000);
+    setInterval(fetchWiki, 2 * 60 * 60 * 1000);
   </script>
-  
-  <a href="index.html" class="home-btn">🏠</a>
 </body>
 </html>
