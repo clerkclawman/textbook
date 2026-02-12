@@ -3662,18 +3662,37 @@ function loadLessonsData() {
 
     setInterval(updateMiniClock, 1000);
     updateMiniClock();
+</script>
 
-    // Home page features - only run if on main page
-    if (document.getElementById('homeTopTicker')) {
-      document.body.classList.add('has-home-tickers');
-      updateCornerClock();
-      setInterval(updateCornerClock, 1000);
-      displayRandomProverb();
-      fetchHomeWeather();
-      fetchHomeNews();
-      setInterval(fetchHomeWeather, 30 * 60 * 1000);
-      setInterval(fetchHomeNews, 30 * 60 * 1000);
-    }
+<script>
+    // ====================
+    // HOME PAGE FEATURES
+    // ====================
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize home page features
+        setTimeout(() => {
+            if (document.getElementById('homeTopTicker')) {
+                try {
+                    document.body.classList.add('has-home-tickers');
+                    updateCornerClock();
+                    setInterval(updateCornerClock, 1000);
+                    displayRandomProverb();
+                    fetchHomeWeather();
+                    fetchHomeNews();
+                    setInterval(fetchHomeWeather, 30 * 60 * 1000);
+                    setInterval(fetchHomeNews, 30 * 60 * 1000);
+                    console.log('Home page features initialized');
+                } catch (error) {
+                    console.error('Error initializing home page features:', error);
+                }
+            } else {
+                console.log('homeTopTicker not found - not on home page');
+            }
+        }, 100);
+    });
+</script>
+
 </body>
 </html>
 
