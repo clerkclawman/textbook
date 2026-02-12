@@ -1746,10 +1746,8 @@ const maxFontSize = 8; // vw/rem units
         storySelector = document.getElementById('storySelector');
         const nightModeToggle = document.getElementById('nightModeToggle');
 
-        if (!englishSentence || !japaneseSentence) {
-            console.error('Critical elements not found');
-            return false;
-        }
+        // Only check for reading mode elements if those elements exist (i.e., reading mode DOM is loaded)
+        // On home page, these elements don't exist and that's OK
         return true;
     }
 
