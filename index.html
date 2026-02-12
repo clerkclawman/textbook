@@ -2118,7 +2118,7 @@ const maxFontSize = 8; // vw/rem units
             'Eiken1': 'Eiken 1'
         },
         qa: {
-            'AdultQuestions': 'Adult (Calendar) Questions',
+            'AdultQuestions': 'Adult (Calendar) - 52 Weeks',
             'Calendar': 'Calendar Questions',
             'ConversationQA': 'Conversation Practice',
             'Eiken7Questions': 'Eiken 7 Questions *',
@@ -3647,11 +3647,11 @@ function loadLessonsData() {
                     lessonsData[className].stories?.length || 0, 'stories and',
                     lessonsData[className].questions ? 'questions' : 'no questions');
             });
-            
+
             // Create additional organized classes for Q&A
-            if (typeof adultquestions !== 'undefined') {
+            if (typeof adult !== 'undefined' && adult.stories) {
                 lessonsData['AdultQuestions'] = {
-                    questions: adultquestions.questions
+                    stories: adult.stories
                 };
             }
             if (lessonsData['Adult']?.questions) {
