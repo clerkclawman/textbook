@@ -60,19 +60,21 @@
       color: #fff;
       font-size: 1rem;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 25px;
       transition: all 0.3s ease;
       font-weight: bold;
     }
     
     .controls button:hover, .controls select:hover {
+      transform: scale(1.1);
       background: rgba(255,255,255,0.3);
       border-color: #fff;
     }
     
-    .controls button.active {
+    .controls button.active, .controls select.active {
       background: #fff;
       color: #667eea;
+      border-color: #fff;
     }
     
     .card-container {
@@ -134,17 +136,9 @@
         max-height: 600px;
       }
       
-      .card-front {
-        font-size: 400px;
-      }
-      
-      .card-back {
-        font-size: 250px;
-      }
-      
-      .emoji {
-        font-size: 200px;
-      }
+      .card-front { font-size: 400px !important; }
+      .card-back { font-size: 250px !important; }
+      .emoji { font-size: 200px !important; }
       
       .controls button, .controls select {
         font-size: 1.5rem;
@@ -281,19 +275,11 @@
       const value = autoRotateSelect.value;
       if (value === 'slow') {
         autoRotateInterval = setInterval(() => {
-          if (isFlipped) {
-            flipCard();
-          } else {
-            nextCard();
-          }
+          if (isFlipped) { flipCard(); } else { nextCard(); }
         }, 3000);
       } else if (value === 'fast') {
         autoRotateInterval = setInterval(() => {
-          if (isFlipped) {
-            flipCard();
-          } else {
-            nextCard();
-          }
+          if (isFlipped) { flipCard(); } else { nextCard(); }
         }, 1000);
       }
     }
@@ -327,11 +313,8 @@
         case 'ArrowLeft':
           prevCard();
           break;
-      }
+        }
     });
-    
-    updateCard();
-    orderBtn.classList.add('active');
     
     // Mini clock
     function updateMiniClock() {
@@ -343,8 +326,8 @@
     
     setInterval(updateMiniClock, 1000);
     updateMiniClock();
+    updateCard();
+    orderBtn.classList.add('active');
   </script>
 </body>
 </html>
-
-    function updateMiniClock() {

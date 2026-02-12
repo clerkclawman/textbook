@@ -60,8 +60,8 @@
       animation: shake 0.2s infinite;
     }
     
-    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
-    @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.07); } }
+    @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-12px); } 75% { transform: translateX(12px); } }
     
     .controls-row {
       display: flex;
@@ -79,7 +79,7 @@
       justify-content: center;
     }
     
-    button {
+    button, select {
       padding: 1rem 1.5rem;
       border: 3px solid rgba(255,255,255,0.3);
       background: rgba(255,255,255,0.1);
@@ -92,8 +92,8 @@
       transition: all 0.3s;
     }
     
-    button:hover { transform: scale(1.05); background: rgba(255,255,255,0.2); }
-    button.active { background: #00ff87; color: #1a1a2e; border-color: #00ff87; }
+    button:hover, select:hover { transform: scale(1.05); background: rgba(255,255,255,0.2); }
+    button.active, select.active { background: #00ff87; color: #1a1a2e; border-color: #00ff87; }
     
     .btn-green { border-color: #4CAF50; }
     .btn-red { border-color: #FF5252; }
@@ -101,7 +101,7 @@
     
     @media TV {
       .timer-display { font-size: 25vh !important; }
-      button { font-size: 1.5rem; min-width: 180px; }
+      button, select { font-size: 1.5rem; min-width: 180px; }
     }
   </style>
 </head>
@@ -111,7 +111,7 @@
   </header>
   
   <main>
-    <div class="timer-display" id="timerDisplay">01:00</div>
+    <div class="timer-display" id="timerDisplay">05:00</div>
     
     <div class="controls-row">
       <div class="controls-group">
@@ -121,6 +121,7 @@
       </div>
       
       <div class="controls-group">
+        <button class="preset-btn" data-seconds="5">5s</button>
         <button class="preset-btn" data-seconds="60">1 min</button>
         <button class="preset-btn" data-seconds="120">2 min</button>
         <button class="preset-btn" data-seconds="300">5 min</button>
@@ -130,11 +131,21 @@
       </div>
       
       <div class="controls-group">
-        <button class="sound-btn active" data-sound="countdown">🔢 Countdown</button>
-        <button class="sound-btn" data-sound="bomb">💣 Bomb</button>
-        <button class="sound-btn" data-sound="fireworks">🎆 Fireworks</button>
-        <button class="sound-btn" data-sound="alarm">🚨 Alarm</button>
-        <button class="sound-btn" data-sound="fart">💨 Fart</button>
+        <select id="soundSelect">
+          <option value="bell">🔔 Bell</option>
+          <option value="trump">🎺 Trump</option>
+          <option value="alarm">🚨 Alarm</option>
+          <option value="siren">🚨 Siren</option>
+          <option value="foghorn">🌫️ Foghorn</option>
+          <option value="airhorn">📯 Air Horn</option>
+          <option value="whoop">📢 Whoop</option>
+          <option value="buzz">🔊 Buzz</option>
+          <option value="chime">🔔 Chime</option>
+          <option value="gong">🔔 Gong</option>
+          <option value="horn">📯 Horn</option>
+          <option value="whistle">🎵 Whistle</option>
+          <option value="rooster">🐓 Rooster</option>
+        </select>
       </div>
     </div>
   </main>
@@ -142,9 +153,9 @@
   <script>
     let timerRunning = false;
     let timerInterval = null;
-    let totalSeconds = 60;
-    let remainingSeconds = 60;
-    let currentSoundMode = 'countdown';
+    let totalSeconds = 300;
+    let remainingSeconds = 300;
+    let currentSound = 'bell';
     let audioContext = null;
     
     function initAudio() {
@@ -157,7 +168,7 @@
       const now = new Date();
       const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
       const date = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-      document.getElementById('miniClock').textContent = `${date} ${time}`;
+      document.getElementById('miniClock').textContent = `${date} {time}`;
     }
     
     function playTone(freq, duration, type = 'sine', volume = 0.4) {
@@ -173,94 +184,30 @@
       osc.stop(audioContext.currentTime + duration);
     }
     
+    // Tick sound - quiet
     function playTick() {
       initAudio();
-      playTone(880, 0.05, 'square', 0.15);
+      playTone(600, 0.03, 'square', 0.08);
     }
     
-    function playCountdownSound(seconds) {
+    // Urgent tick - louder
+    function playUrgentTick() {
       initAudio();
-      
-      if (seconds > 10) {
-        playTick();
-      } else {
-        const baseFreq = 600 + (10 - seconds) * 100;
-        const duration = 0.15 - ((10 - seconds) * 0.01);
-        playTone(baseFreq, duration, 'sine', 0.5);
-        
-        if (seconds <= 3 && seconds > 0) {
-          setTimeout(() => {
-            playTone(baseFreq + 200, duration * 0.5, 'sine', 0.3);
-          }, duration * 500);
-        }
-      }
+      playTone(880, 0.08, 'square', 0.25);
     }
     
-    function playBombTick() {
+    function playBell() {
       initAudio();
-      playTone(600, 0.03, 'square', 0.2);
-    }
-    
-    function playBombSound() {
-      initAudio();
-      for (let i = 0; i < 10; i++) {
+      for (let i = 1; i <= 5; i++) {
         setTimeout(() => {
-          playTone(200 + i * 80, 0.05, 'sawtooth', 0.3);
-        }, i * 50);
-      }
-      
-      setTimeout(() => {
-        const osc = audioContext.createOscillator();
-        const gain = audioContext.createGain();
-        const lpf = audioContext.createBiquadFilter();
-        
-        osc.connect(lpf);
-        lpf.connect(gain);
-        gain.connect(audioContext.destination);
-        
-        osc.frequency.setValueAtTime(60, audioContext.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(20, audioContext.currentTime + 1.5);
-        osc.type = 'sawtooth';
-        
-        lpf.frequency.setValueAtTime(500, audioContext.currentTime);
-        lpf.frequency.exponentialRampToValueAtTime(50, audioContext.currentTime + 1.5);
-        
-        gain.gain.setValueAtTime(0.8, audioContext.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1.5);
-        
-        osc.start();
-        osc.stop(audioContext.currentTime + 1.5);
-      }, 500);
-    }
-    
-    function playFireworksSound() {
-      initAudio();
-      const sounds = ['sine', 'triangle', 'square'];
-      const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFD93D'];
-      
-      for (let i = 0; i < 8; i++) {
-        setTimeout(() => {
-          const freq = 200 + Math.random() * 600;
-          const dur = 0.3 + Math.random() * 0.3;
-          playTone(freq, dur, sounds[Math.floor(Math.random() * sounds.length)], 0.3);
-        }, i * 150);
+          playTone(523.25 + (i * 20), 0.3, 'sine', 0.4);
+        }, i * 200);
       }
     }
     
-    function playAlarmSound() {
+    function playTrump() {
       initAudio();
-      let count = 0;
-      const alarmInterval = setInterval(() => {
-        playTone(880, 0.15, 'square', 0.5);
-        setTimeout(() => playTone(880, 0.15, 'square', 0.5), 200);
-        count++;
-        if (count >= 6) clearInterval(alarmInterval);
-      }, 300);
-    }
-    
-    function playFartSound() {
-      initAudio();
-      const duration = 0.8;
+      const duration = 4;
       const osc = audioContext.createOscillator();
       const gain = audioContext.createGain();
       const lpf = audioContext.createBiquadFilter();
@@ -269,20 +216,113 @@
       lpf.connect(gain);
       gain.connect(audioContext.destination);
       
-      osc.frequency.setValueAtTime(120, audioContext.currentTime);
-      osc.frequency.linearRampToValueAtTime(80, audioContext.currentTime + duration * 0.3);
-      osc.frequency.linearRampToValueAtTime(150, audioContext.currentTime + duration * 0.7);
+      // Realistic brass trumpet
+      osc.frequency.setValueAtTime(220, audioContext.currentTime);
+      osc.frequency.setValueAtTime(250, audioContext.currentTime + 0.1);
+      osc.frequency.setValueAtTime(280, audioContext.currentTime + 0.2);
       osc.type = 'sawtooth';
       
-      lpf.frequency.setValueAtTime(400, audioContext.currentTime);
-      lpf.frequency.exponentialRampToValueAtTime(80, audioContext.currentTime + duration);
+      lpf.frequency.setValueAtTime(800, audioContext.currentTime);
+      lpf.frequency.setValueAtTime(1200, audioContext.currentTime + 0.5);
       
-      gain.gain.setValueAtTime(0.5, audioContext.currentTime);
+      gain.gain.setValueAtTime(0.6, audioContext.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
+      
+      // Add vibrato
+      const lfo = audioContext.createOscillator();
+      const lfoGain = audioContext.createGain();
+      lfo.connect(lfoGain);
+      lfoGain.connect(osc.frequency);
+      lfo.frequency.value = 6;
+      lfoGain.gain.value = 5;
+      
+      lfo.start();
+      osc.start();
+      osc.stop(audioContext.currentTime + duration);
+      lfo.stop(audioContext.currentTime + duration);
+    }
+    
+    function playAlarm() {
+      initAudio();
+      for (let i = 0; i < 8; i++) {
+        setTimeout(() => {
+          playTone(880, 0.1, 'square', 0.5);
+          setTimeout(() => playTone(880, 0.1, 'square', 0.5), 100);
+        }, i * 150);
+      }
+    }
+    
+    function playSiren() {
+      initAudio();
+      let freq = 600;
+      const duration = 0.1;
+      for (let i = 0; i < 20; i++) {
+        setTimeout(() => {
+          playTone(freq, duration, 'sawtooth', 0.5);
+          freq = freq === 600 ? 1200 : 600;
+        }, i * duration * 1000);
+      }
+    }
+    
+    function playFoghorn() {
+      initAudio();
+      const duration = 1.0;
+      const osc = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+      
+      osc.connect(gain);
+      gain.connect(audioContext.destination);
+      
+      osc.frequency.setValueAtTime(80, audioContext.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(150, audioContext.currentTime + 0.5);
+      osc.type = 'sawtooth';
+      
+      gain.gain.setValueAtTime(0.7, audioContext.currentTime);
       gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
       
       osc.start();
       osc.stop(audioContext.currentTime + duration);
     }
+    
+    function playAirHorn() {
+      initAudio();
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+          playTone(400, 0.2, 'sawtooth', 0.4);
+          setTimeout(() => playTone(350, 0.1, 'sawtooth', 0.5), 150);
+        }, i * 300);
+      }
+    }
+    
+    function playWhoop() {
+      initAudio();
+      setTimeout(() => {
+        playTone(300, 0.5, 'sine', 0.3);
+      }, 0);
+      setTimeout(() => {
+        playTone(500, 0.4, 'sine', 0.3);
+      }, 500);
+      setTimeout(() => {
+        playTone(800, 0.3, 'sine', 0.3);
+      }, 900);
+    }
+    
+    function playBuzz() {
+      initAudio();
+      const duration = 1.5;
+      for (let i = 0; i < 10; i++) {
+        setTimeout(() => {
+          const freq = 120 + Math.random() * 50;
+          playTone(freq, 0.05, 'sawtooth', 0.4);
+        }, i * (duration / 10) * 1000);
+      }
+    }
+    
+    playChime = () => { initAudio(); playTone(440, 0.2, 'sine', 0.3); playTone(554, 0.2, 'sine', 0.3); };
+    playGong = () => { initAudio(); playTone(200, 1.5, 'triangle', 0.5); };
+    playHorn = () => { initAudio(); playTone(350, 1.0, 'sawtooth', 0.4); };
+    playWhistle = () => { initAudio(); setTimeout(() => playTone(1200, 0.3, 'sine', 0.3), 0); setTimeout(() => playTone(1500, 0.15, 'sine', 0.3), 300); };
+    playRooster = () => { initAudio(); playTone(800, 0.15, 'sawtooth', 0.4); setTimeout(() => playTone(600, 0.2, 'sawtooth', 0.3), 150); setTimeout(() => playTone(1000, 0.5, 'sawtooth', 0.45), 400); };
     
     function formatTime(seconds) {
       const mins = Math.floor(seconds / 60);
@@ -312,24 +352,33 @@
           remainingSeconds--;
           updateDisplay();
           
-          if (currentSoundMode === 'countdown') {
-            playCountdownSound(remainingSeconds);
-          } else if (currentSoundMode === 'bomb' && remainingSeconds <= 10) {
-            playBombTick();
+          // Constant ticking for all modes
+          if (remainingSeconds <= 10) {
+            // Last 10 seconds - loud!
+            playUrgentTick();
+          } else {
+            // Normal quiet tick
+            playTick();
           }
         } else {
           clearInterval(timerInterval);
           timerRunning = false;
           
-          switch(currentSoundMode) {
-            case 'bomb': playBombSound(); break;
-            case 'fireworks': playFireworksSound(); break;
-            case 'alarm': playAlarmSound(); break;
-            case 'fart': playFartSound(); break;
-            default:
-              for (let i = 1; i <= 3; i++) {
-                setTimeout(() => playTone(440 + i * 110, 0.3, 'sine', 0.4), i * 350);
-              }
+          // Big finale sound
+          switch(currentSound) {
+            case 'bell': playBell(); break;
+            case 'trump': playTrump(); break;
+            case 'alarm': setImmediate(() => { playAlarm(); }); break;
+            case 'siren': setImmediate(() => { playSiren(); }); break;
+            case 'foghorn': setImmediate(() => { playFoghorn(); }); break;
+            case 'airhorn': setImmediate(() => { playAirHorn(); }); break;
+            case 'whoop': setImmediate(() => { playWhoop(); }); break;
+            case 'buzz': setImmediate(() => { playBuzz(); }); break;
+            case 'chime': setImmediate(() => { playChime(); }); break;
+            case 'gong': setImmediate(() => { playGong(); }); break;
+            case 'horn': setImmediate(() => { playHorn(); }); break;
+            case 'whistle': setImmediate(() => { playWhistle(); }); break;
+            case 'rooster': setImmediate(() => { playRooster(); }); break;
           }
         }
       }, 1000);
@@ -344,36 +393,39 @@
       stopTimer();
       remainingSeconds = totalSeconds;
       updateDisplay();
+      
+      // Preserve selected preset
+      document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+      const minutes = Math.floor(totalSeconds / 60);
+      document.querySelector(`[data-seconds="${totalSeconds}"]`)?.classList.add('active');
     }
     
-    function switchSound(mode) {
-      currentSoundMode = mode;
-      document.querySelectorAll('.sound-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.sound === mode);
-      });
+    function switchSound(sound) {
+      currentSound = sound;
     }
     
     document.getElementById('startBtn').onclick = startTimer;
     document.getElementById('stopBtn').onclick = stopTimer;
     document.getElementById('resetBtn').onclick = resetTimer;
-    
-    document.querySelectorAll('.sound-btn').forEach(btn => {
-      btn.onclick = () => switchSound(btn.dataset.sound);
-    });
+    document.getElementById('soundSelect').onchange = (e) => switchSound(e.target.value);
     
     document.querySelectorAll('.preset-btn').forEach(btn => {
       btn.onclick = () => {
         if (!timerRunning) {
           totalSeconds = parseInt(btn.dataset.seconds);
           remainingSeconds = totalSeconds;
+          
           document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
+          
           updateDisplay();
         }
       };
     });
     
-    document.querySelectorAll('.preset-btn')[0].classList.add('active');
+    document.querySelectorAll('.preset-btn').forEach(b => {
+      if (b.dataset.seconds === '300') b.classList.add('active');
+    });
     
     document.addEventListener('keydown', e => {
       if (e.code === 'Space') e.preventDefault();
