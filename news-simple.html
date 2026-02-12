@@ -100,10 +100,7 @@
     .ticker-item {
       display: inline-block;
       font-weight: 600;
-      margin: 0 2vw;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      margin: 0 1.5vw;
     }
     
     .main-container {
@@ -163,15 +160,17 @@
       background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
       border-left: 6px solid #22d3ee;
       padding: 1vh 1.5vw;
-      font-size: 2.6vh;
-      line-height: 1.3;
+      font-size: 2vh;
+      line-height: 1.4;
       cursor: pointer;
       transition: all 0.2s ease;
       color: #e5e7eb;
       border-radius: 6px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      overflow: visible;
+      text-overflow: clip;
+      white-space: normal;
+      word-wrap: break-word;
+      hyphens: auto;
     }
     
     .headline-item:hover {
@@ -183,33 +182,33 @@
       background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
       border-left: 6px solid #fbbf24;
       padding: 1vh 1.5vw;
-      font-size: 2.6vh;
-      line-height: 1.3;
+      font-size: 2vh;
+      line-height: 1.4;
       display: flex;
       gap: 1vw;
       align-items: flex-start;
       color: #e5e7eb;
       border-radius: 6px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      overflow: visible;
+      word-wrap: break-word;
+      hyphens: auto;
     }
-    
+
     .wiki-year {
       background: #ef4444;
       color: #fff;
       padding: 0.3rem 0.8rem;
       font-weight: 900;
-      font-size: 2.2vh;
+      font-size: 2vh;
       border-radius: 6px;
       flex-shrink: 0;
     }
-    
+
     .wiki-text {
       flex: 1;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      word-wrap: break-word;
+      hyphens: auto;
+      line-height: 1.4;
     }
     
     .pagination {
@@ -298,8 +297,8 @@
       .mini-clock { font-size: 2.2vh; }
       .ticker-container, .weather-container { font-size: 2.2vh; }
       .page-title { font-size: 5vh; padding: 1.2vh 2vw; }
-      .headline-item, .wiki-item { font-size: 3.5vh; padding: 1.2vh 2vw; }
-      .wiki-year { font-size: 3vh; }
+      .headline-item, .wiki-item { font-size: 2.5vh; padding: 1.2vh 2vw; }
+      .wiki-year { font-size: 2.5vh; }
       .page-btn { font-size: 2rem; padding: 0.6vh 1.2vw; }
       .home-btn { font-size: 0.8rem; }
     }
