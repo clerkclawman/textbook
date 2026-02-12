@@ -182,12 +182,27 @@
       hyphens: auto;
       font-weight: 600;
       min-height: 5vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     .headline-item:hover {
       background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
       transform: translateX(8px);
       border-left-color: #0ea5e9;
+    }
+
+    .headline-time {
+      font-size: 2.5vh;
+      color: #9ca3af;
+      background: rgba(255,255,255,0.1);
+      padding: 0.3vh 0.8vw;
+      border-radius: 6px;
+      font-weight: 500;
+      margin-left: 1vw;
+      flex-shrink: 0;
     }
     
     .wiki-item {
@@ -496,30 +511,61 @@
       document.getElementById('miniClock').textContent = `${date} | ${time}`;
     }
     
+    let currentPageType = 'bbc';
+    let bbcPageNum = 1;
+
     function rotatePage() {
-      currentPage = currentPage === 1 ? 2 : 1;
-      document.getElementById('page1').classList.toggle('active', currentPage === 1);
-      document.getElementById('page2').classList.toggle('active', currentPage === 2);
-      document.getElementById('pageIndicator').textContent = currentPage;
+      const itemsPerPage = 3;
+      const totalBbcPages = Math.ceil(bbcData.length / itemsPerPage);
+      const totalWikiPages = Math.ceil(wikiData.length / 10);
+
+      if (currentPageType === 'bbc') {
+        if (bbcPageNum < totalBbcPages) {
+          bbcPageNum++;
+          updateBBC(bbcPageNum);
+          document.getElementById('pageIndicator').textContent = `${bbcPageNum} / ${totalBbcPages}`;
+        } else {
+          currentPageType = 'wiki';
+          currentPage = 1;
+          updateWiki(1);
+          document.getElementById('pageIndicator').textContent = `1 / ${totalWikiPages}`;
+          document.getElementById('page1').classList.remove('active');
+          document.getElementById('page2').classList.add('active');
+        }
+      } else {
+        if (currentPage < totalWikiPages) {
+          currentPage++;
+          updateWiki(currentPage);
+          document.getElementById('pageIndicator').textContent = `${currentPage} / ${totalWikiPages}`;
+        } else {
+          currentPageType = 'bbc';
+          bbcPageNum = 1;
+          currentPage = 1;
+          updateBBC(1);
+          document.getElementById('pageIndicator').textContent = `1 / ${totalBbcPages}`;
+          document.getElementById('page2').classList.remove('active');
+          document.getElementById('page1').classList.add('active');
+        }
+      }
     }
-    
+
     function startPageRotation() {
       clearInterval(pageRotationInterval);
       updateProgressBar(0);
-      
+
       let progress = 0;
       const progressInterval = setInterval(() => {
         progress += 1;
         updateProgressBar((progress / (PAGE_ROTATION_TIME / 100)) * 100);
       }, PAGE_ROTATION_TIME / 100);
-      
+
       pageRotationInterval = setInterval(() => {
         rotatePage();
         clearInterval(progressInterval);
         progress = 0;
       }, PAGE_ROTATION_TIME);
     }
-    
+
     function updateProgressBar(percent) {
       document.getElementById('progressBar').style.width = `${percent}%`;
     }
@@ -577,7 +623,8 @@
         if (data.items) {
           bbcData = data.items.map(item => ({
             title: item.title,
-            link: item.link
+            link: item.link,
+            pubDate: item.pubDate
           }));
           updateBBC(1);
           updateTicker();
@@ -585,30 +632,41 @@
       } catch (e) { console.log('BBC error:', e); }
     }
     
+    function formatPubDate(dateStr) {
+      const date = new Date(dateStr);
+      const time = date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+      return time;
+    }
+    
     function updateTicker() {
       const headlines = bbcData.slice(0, 10).map(h => '📰 ' + h.title).join('    •    ');
       document.getElementById('tickerContent').innerHTML = headlines;
     }
-    
+
     function updateBBC(page) {
-      const itemsPerPage = 10;
+      const itemsPerPage = 3;
       const start = (page - 1) * itemsPerPage;
       const end = start + itemsPerPage;
       const items = bbcData.slice(start, end);
-      
+      const totalBbcPages = Math.ceil(bbcData.length / itemsPerPage);
+
       document.getElementById('bbcContent').innerHTML = items.map(h => `
-        <div class="headline-item" onclick="window.open('${h.link}', '_blank')">${escapeHtml(h.title)}</div>
+        <div class="headline-item" onclick="window.open('${h.link}', '_blank')">
+          ${escapeHtml(h.title)} <span class="headline-time">${formatPubDate(h.pubDate)}</span>
+        </div>
       `).join('');
-      
+
+      document.getElementById('pageIndicator').textContent = `${page} / ${totalBbcPages}`;
       renderPagination('bbcPagination', page, itemsPerPage, setBBCPage);
     }
-    
+
     function updateWiki(page) {
       const itemsPerPage = 10;
       const start = (page - 1) * itemsPerPage;
       const end = start + itemsPerPage;
+      const totalWikiPages = Math.ceil(wikiData.length / itemsPerPage);
       const items = wikiData.slice(start, end);
-      
+
       document.getElementById('wikiContent').innerHTML = items.map(e => {
         const searchQuery = encodeURIComponent(e.description.replace(/ \(.+\)$/, '').substring(0, 50));
         const wikiLink = `https://en.wikipedia.org/wiki/Special:Search?search=${searchQuery}&fulltext=1`;
