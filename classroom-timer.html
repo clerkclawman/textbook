@@ -131,6 +131,7 @@
       </div>
       
       <div class="controls-group">
+        <button id="testSoundBtn">🔊 Test Sound</button>
         <select id="soundSelect">
           <option value="bell">🔔 Bell</option>
           <option value="trump">🎺 Trump</option>
@@ -145,6 +146,8 @@
           <option value="horn">📯 Horn</option>
           <option value="whistle">🎵 Whistle</option>
           <option value="rooster">🐓 Rooster</option>
+          <option value="fireworks">🎆 Fireworks</option>
+          <option value="bomb">💣 Bomb</option>
         </select>
       </div>
     </div>
@@ -168,7 +171,7 @@
       const now = new Date();
       const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
       const date = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-      document.getElementById('miniClock').textContent = `${date} {time}`;
+      document.getElementById('miniClock').textContent = `${date} ${time}`;
     }
     
     function playTone(freq, duration, type = 'sine', volume = 0.4) {
@@ -184,18 +187,6 @@
       osc.stop(audioContext.currentTime + duration);
     }
     
-    // Tick sound - quiet
-    function playTick() {
-      initAudio();
-      playTone(600, 0.03, 'square', 0.08);
-    }
-    
-    // Urgent tick - louder
-    function playUrgentTick() {
-      initAudio();
-      playTone(880, 0.08, 'square', 0.25);
-    }
-    
     function playBell() {
       initAudio();
       for (let i = 1; i <= 5; i++) {
@@ -207,39 +198,22 @@
     
     function playTrump() {
       initAudio();
-      const duration = 4;
+      const duration = 1.5;
       const osc = audioContext.createOscillator();
       const gain = audioContext.createGain();
-      const lpf = audioContext.createBiquadFilter();
       
-      osc.connect(lpf);
-      lpf.connect(gain);
+      osc.connect(gain);
       gain.connect(audioContext.destination);
       
-      // Realistic brass trumpet
       osc.frequency.setValueAtTime(220, audioContext.currentTime);
-      osc.frequency.setValueAtTime(250, audioContext.currentTime + 0.1);
-      osc.frequency.setValueAtTime(280, audioContext.currentTime + 0.2);
+      osc.frequency.linearRampToValueAtTime(350, audioContext.currentTime + 0.5);
       osc.type = 'sawtooth';
       
-      lpf.frequency.setValueAtTime(800, audioContext.currentTime);
-      lpf.frequency.setValueAtTime(1200, audioContext.currentTime + 0.5);
-      
-      gain.gain.setValueAtTime(0.6, audioContext.currentTime);
+      gain.gain.setValueAtTime(0.5, audioContext.currentTime);
       gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
       
-      // Add vibrato
-      const lfo = audioContext.createOscillator();
-      const lfoGain = audioContext.createGain();
-      lfo.connect(lfoGain);
-      lfoGain.connect(osc.frequency);
-      lfo.frequency.value = 6;
-      lfoGain.gain.value = 5;
-      
-      lfo.start();
       osc.start();
       osc.stop(audioContext.currentTime + duration);
-      lfo.stop(audioContext.currentTime + duration);
     }
     
     function playAlarm() {
@@ -247,7 +221,6 @@
       for (let i = 0; i < 8; i++) {
         setTimeout(() => {
           playTone(880, 0.1, 'square', 0.5);
-          setTimeout(() => playTone(880, 0.1, 'square', 0.5), 100);
         }, i * 150);
       }
     }
@@ -255,18 +228,17 @@
     function playSiren() {
       initAudio();
       let freq = 600;
-      const duration = 0.1;
       for (let i = 0; i < 20; i++) {
         setTimeout(() => {
-          playTone(freq, duration, 'sawtooth', 0.5);
+          playTone(freq, 0.1, 'sawtooth', 0.5);
           freq = freq === 600 ? 1200 : 600;
-        }, i * duration * 1000);
+        }, i * 100);
       }
     }
     
     function playFoghorn() {
       initAudio();
-      const duration = 1.0;
+      const duration = 1.5;
       const osc = audioContext.createOscillator();
       const gain = audioContext.createGain();
       
@@ -274,7 +246,7 @@
       gain.connect(audioContext.destination);
       
       osc.frequency.setValueAtTime(80, audioContext.currentTime);
-      osc.frequency.exponentialRampToValueAtTime(150, audioContext.currentTime + 0.5);
+      osc.frequency.linearRampToValueAtTime(120, audioContext.currentTime + 0.5);
       osc.type = 'sawtooth';
       
       gain.gain.setValueAtTime(0.7, audioContext.currentTime);
@@ -286,43 +258,212 @@
     
     function playAirHorn() {
       initAudio();
-      for (let i = 0; i < 3; i++) {
-        setTimeout(() => {
-          playTone(400, 0.2, 'sawtooth', 0.4);
-          setTimeout(() => playTone(350, 0.1, 'sawtooth', 0.5), 150);
-        }, i * 300);
-      }
+      playTone(400, 0.3, 'sawtooth', 0.5);
+      setTimeout(() => playTone(350, 0.2, 'sawtooth', 0.5), 300);
+      setTimeout(() => playTone(300, 0.1, 'sawtooth', 0.4), 500);
     }
     
     function playWhoop() {
       initAudio();
-      setTimeout(() => {
-        playTone(300, 0.5, 'sine', 0.3);
-      }, 0);
-      setTimeout(() => {
-        playTone(500, 0.4, 'sine', 0.3);
-      }, 500);
-      setTimeout(() => {
-        playTone(800, 0.3, 'sine', 0.3);
-      }, 900);
+      setTimeout(() => playTone(300, 0.3, 'sine', 0.3), 0);
+      setTimeout(() => playTone(500, 0.2, 'sine', 0.3), 300);
+      setTimeout(() => playTone(800, 0.3, 'sine', 0.3), 500);
     }
     
     function playBuzz() {
       initAudio();
-      const duration = 1.5;
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 15; i++) {
         setTimeout(() => {
           const freq = 120 + Math.random() * 50;
           playTone(freq, 0.05, 'sawtooth', 0.4);
-        }, i * (duration / 10) * 1000);
+        }, i * 100);
       }
     }
     
-    playChime = () => { initAudio(); playTone(440, 0.2, 'sine', 0.3); playTone(554, 0.2, 'sine', 0.3); };
-    playGong = () => { initAudio(); playTone(200, 1.5, 'triangle', 0.5); };
-    playHorn = () => { initAudio(); playTone(350, 1.0, 'sawtooth', 0.4); };
-    playWhistle = () => { initAudio(); setTimeout(() => playTone(1200, 0.3, 'sine', 0.3), 0); setTimeout(() => playTone(1500, 0.15, 'sine', 0.3), 300); };
-    playRooster = () => { initAudio(); playTone(800, 0.15, 'sawtooth', 0.4); setTimeout(() => playTone(600, 0.2, 'sawtooth', 0.3), 150); setTimeout(() => playTone(1000, 0.5, 'sawtooth', 0.45), 400); };
+    function playChime() {
+      initAudio();
+      playTone(440, 0.3, 'sine', 0.3);
+      setTimeout(() => playTone(554, 0.3, 'sine', 0.3), 200);
+      setTimeout(() => playTone(659, 0.4, 'sine', 0.3), 400);
+    }
+    
+    function playGong() {
+      initAudio();
+      playTone(200, 2.0, 'triangle', 0.6);
+      playTone(150, 1.5, 'triangle', 0.4);
+    }
+    
+    function playHorn() {
+      initAudio();
+      const duration = 1.0;
+      const osc = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+      
+      osc.connect(gain);
+      gain.connect(audioContext.destination);
+      
+      osc.frequency.setValueAtTime(350, audioContext.currentTime);
+      osc.frequency.linearRampToValueAtTime(300, audioContext.currentTime + 0.5);
+      osc.type = 'sawtooth';
+      
+      gain.gain.setValueAtTime(0.5, audioContext.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
+      
+      osc.start();
+      osc.stop(audioContext.currentTime + duration);
+    }
+    
+    function playWhistle() {
+      initAudio();
+      playTone(1200, 0.2, 'sine', 0.35);
+      setTimeout(() => playTone(1500, 0.15, 'sine', 0.3), 200);
+      setTimeout(() => playTone(1800, 0.1, 'sine', 0.25), 350);
+    }
+    
+    function playRooster() {
+      initAudio();
+      playTone(800, 0.1, 'sawtooth', 0.4);
+      setTimeout(() => playTone(600, 0.15, 'sawtooth', 0.3), 100);
+      setTimeout(() => playTone(1000, 0.4, 'sawtooth', 0.45), 250);
+    }
+    
+    function playFireworks() {
+      initAudio();
+      const explosions = 5;
+      for (let e = 0; e < explosions; e++) {
+        const delay = e * 400;
+        setTimeout(() => {
+          // Whistle up
+          const osc1 = audioContext.createOscillator();
+          const gain1 = audioContext.createGain();
+          osc1.connect(gain1);
+          gain1.connect(audioContext.destination);
+          osc1.frequency.setValueAtTime(200, audioContext.currentTime);
+          osc1.frequency.exponentialRampToValueAtTime(800, audioContext.currentTime + 0.3);
+          osc1.type = 'sine';
+          gain1.gain.setValueAtTime(0.3, audioContext.currentTime);
+          gain1.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+          osc1.start();
+          osc1.stop(audioContext.currentTime + 0.3);
+          
+          // Explosion boom
+          setTimeout(() => {
+            const osc2 = audioContext.createOscillator();
+            const gain2 = audioContext.createGain();
+            const noise = audioContext.createOscillator();
+            const noiseGain = audioContext.createGain();
+            
+            osc2.connect(gain2);
+            gain2.connect(audioContext.destination);
+            osc2.frequency.setValueAtTime(100, audioContext.currentTime);
+            osc2.frequency.exponentialRampToValueAtTime(30, audioContext.currentTime + 0.5);
+            osc2.type = 'sawtooth';
+            gain2.gain.setValueAtTime(0.6, audioContext.currentTime);
+            gain2.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+            osc2.start();
+            osc2.stop(audioContext.currentTime + 0.5);
+            
+            // Crackle
+            for (let c = 0; c < 8; c++) {
+              setTimeout(() => {
+                const crackle = audioContext.createOscillator();
+                const crackleGain = audioContext.createGain();
+                crackle.connect(crackleGain);
+                crackleGain.connect(audioContext.destination);
+                crackle.frequency.value = 500 + Math.random() * 1000;
+                crackle.type = 'square';
+                crackleGain.gain.setValueAtTime(0.15, audioContext.currentTime);
+                crackleGain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.05);
+                crackle.start();
+                crackle.stop(audioContext.currentTime + 0.05);
+              }, c * 50);
+            }
+          }, 300);
+        }, delay);
+      }
+    }
+    
+    function playBomb() {
+      initAudio();
+      
+      // Tick tick tick
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          playTone(1000, 0.05, 'square', 0.2);
+        }, i * 200);
+      }
+      
+      // Fuse burning sound
+      setTimeout(() => {
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        osc.frequency.setValueAtTime(400, audioContext.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(200, audioContext.currentTime + 0.8);
+        osc.type = 'sawtooth';
+        gain.gain.setValueAtTime(0.25, audioContext.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.8);
+        osc.start();
+        osc.stop(audioContext.currentTime + 0.8);
+      }, 1000);
+      
+      // BIG EXPLOSION
+      setTimeout(() => {
+        const osc1 = audioContext.createOscillator();
+        const gain1 = audioContext.createGain();
+        const osc2 = audioContext.createOscillator();
+        const gain2 = audioContext.createGain();
+        
+        osc1.connect(gain1);
+        gain1.connect(audioContext.destination);
+        osc1.frequency.setValueAtTime(80, audioContext.currentTime);
+        osc1.frequency.exponentialRampToValueAtTime(20, audioContext.currentTime + 1.5);
+        osc1.type = 'sawtooth';
+        gain1.gain.setValueAtTime(0.8, audioContext.currentTime);
+        gain1.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1.5);
+        osc1.start();
+        osc1.stop(audioContext.currentTime + 1.5);
+        
+        osc2.connect(gain2);
+        gain2.connect(audioContext.destination);
+        osc2.frequency.setValueAtTime(60, audioContext.currentTime);
+        osc2.frequency.exponentialRampToValueAtTime(15, audioContext.currentTime + 2);
+        osc2.type = 'triangle';
+        gain2.gain.setValueAtTime(0.6, audioContext.currentTime);
+        gain2.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 2);
+        osc2.start();
+        osc2.stop(audioContext.currentTime + 2);
+        
+        // Shockwave
+        for (let w = 0; w < 6; w++) {
+          setTimeout(() => {
+            const osc3 = audioContext.createOscillator();
+            const gain3 = audioContext.createGain();
+            osc3.connect(gain3);
+            gain3.connect(audioContext.destination);
+            osc3.frequency.value = 100 + Math.random() * 200;
+            osc3.type = 'square';
+            gain3.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gain3.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+            osc3.start();
+            osc3.stop(audioContext.currentTime + 0.1);
+          }, w * 100);
+        }
+      }, 1800);
+    }
+    
+    // Tick sound - quiet
+    function playTick() {
+      initAudio();
+      playTone(600, 0.03, 'square', 0.08);
+    }
+    
+    // Urgent tick - louder
+    function playUrgentTick() {
+      initAudio();
+      playTone(880, 0.08, 'square', 0.25);
+    }
     
     function formatTime(seconds) {
       const mins = Math.floor(seconds / 60);
@@ -342,6 +483,26 @@
       }
     }
     
+    function playFinalSound() {
+      switch(currentSound) {
+        case 'bell': playBell(); break;
+        case 'trump': playTrump(); break;
+        case 'alarm': playAlarm(); break;
+        case 'siren': playSiren(); break;
+        case 'foghorn': playFoghorn(); break;
+        case 'airhorn': playAirHorn(); break;
+        case 'whoop': playWhoop(); break;
+        case 'buzz': playBuzz(); break;
+        case 'chime': playChime(); break;
+        case 'gong': playGong(); break;
+        case 'horn': playHorn(); break;
+        case 'whistle': playWhistle(); break;
+        case 'rooster': playRooster(); break;
+        case 'fireworks': playFireworks(); break;
+        case 'bomb': playBomb(); break;
+      }
+    }
+    
     function startTimer() {
       if (timerRunning) return;
       timerRunning = true;
@@ -352,34 +513,16 @@
           remainingSeconds--;
           updateDisplay();
           
-          // Constant ticking for all modes
+          // Constant ticking
           if (remainingSeconds <= 10) {
-            // Last 10 seconds - loud!
             playUrgentTick();
           } else {
-            // Normal quiet tick
             playTick();
           }
         } else {
           clearInterval(timerInterval);
           timerRunning = false;
-          
-          // Big finale sound
-          switch(currentSound) {
-            case 'bell': playBell(); break;
-            case 'trump': playTrump(); break;
-            case 'alarm': setImmediate(() => { playAlarm(); }); break;
-            case 'siren': setImmediate(() => { playSiren(); }); break;
-            case 'foghorn': setImmediate(() => { playFoghorn(); }); break;
-            case 'airhorn': setImmediate(() => { playAirHorn(); }); break;
-            case 'whoop': setImmediate(() => { playWhoop(); }); break;
-            case 'buzz': setImmediate(() => { playBuzz(); }); break;
-            case 'chime': setImmediate(() => { playChime(); }); break;
-            case 'gong': setImmediate(() => { playGong(); }); break;
-            case 'horn': setImmediate(() => { playHorn(); }); break;
-            case 'whistle': setImmediate(() => { playWhistle(); }); break;
-            case 'rooster': setImmediate(() => { playRooster(); }); break;
-          }
+          playFinalSound();
         }
       }, 1000);
     }
@@ -393,8 +536,6 @@
       stopTimer();
       remainingSeconds = totalSeconds;
       updateDisplay();
-      
-      // Preserve selected preset
       document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
       const minutes = Math.floor(totalSeconds / 60);
       document.querySelector(`[data-seconds="${totalSeconds}"]`)?.classList.add('active');
@@ -404,10 +545,16 @@
       currentSound = sound;
     }
     
+    function testSound() {
+      initAudio();
+      playFinalSound();
+    }
+    
     document.getElementById('startBtn').onclick = startTimer;
     document.getElementById('stopBtn').onclick = stopTimer;
     document.getElementById('resetBtn').onclick = resetTimer;
     document.getElementById('soundSelect').onchange = (e) => switchSound(e.target.value);
+    document.getElementById('testSoundBtn').onclick = testSound;
     
     document.querySelectorAll('.preset-btn').forEach(btn => {
       btn.onclick = () => {
