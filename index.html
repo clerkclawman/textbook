@@ -430,6 +430,10 @@
         border-color: var(--accent);
     }
 
+    body.reading-mode-active .home-ticker-bottom {
+        display: none !important;
+    }
+
     .dropdown:after {
         content: "▼";
         font-size: 0.8rem;
@@ -1717,11 +1721,6 @@
         </div>
     </div>
 
-    <!-- Weather Ticker -->
-    <div class="home-ticker-bottom" id="homeBottomTicker">
-        Loading weather...
-    </div>
-
     <!-- READING MODE CONTAINER -->
     <div class="reading-container" id="readingModeContainer" style="display: none;">
 <div class="reading-header">
@@ -2169,6 +2168,7 @@ function populateStorySelector(cls) {
     // READING MODE FUNCTIONS
     // ====================
     function enterReadingMode(cls) {
+        document.body.classList.add('reading-mode-active');
         const toolsNav = document.getElementById("startScreenToolsNav");
         const footerTools = document.getElementById("footerTools");
         if (toolsNav) toolsNav.style.display = "none";
@@ -2181,6 +2181,7 @@ function populateStorySelector(cls) {
     }
 
     function exitReadingMode() {
+        document.body.classList.remove('reading-mode-active');
         const toolsNav = document.getElementById("startScreenToolsNav");
         const footerTools = document.getElementById("footerTools");
         if (toolsNav) toolsNav.style.display = "flex";
