@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson News - Simple Mode</title>
+  <title>Lesson News - TV Mode</title>
   <style>
     * {
       box-sizing: border-box;
@@ -18,50 +18,46 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
     }
     
     header {
-      padding: 1.5rem 2rem;
+      padding: 1rem 1.5rem;
       background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      flex-shrink: 0;
     }
     
     .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
     }
     
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: #00ff87;
     }
     
     .datetime {
       display: flex;
       gap: 1rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: bold;
     }
     
     .ticker-section {
       background: #0a0a1a;
-      border-bottom: 3px solid #00ff87;
+      border-bottom: 2px solid #00ff87;
       overflow: hidden;
+      flex-shrink: 0;
     }
     
     .ticker {
       display: flex;
       align-items: center;
-      padding: 1rem 0;
+      padding: 0.6rem 0;
       white-space: nowrap;
-      animation: scroll 30s linear infinite;
-      cursor: pointer;
-    }
-    
-    .ticker:hover {
-      animation-play-state: paused;
+      animation: scroll 25s linear infinite;
     }
     
     @keyframes scroll {
@@ -72,197 +68,199 @@
     .ticker .breaking {
       background: #ff4444;
       color: white;
-      padding: 0.3rem 0.8rem;
+      padding: 0.2rem 0.6rem;
       border-radius: 5px;
       font-weight: bold;
-      font-size: 0.9rem;
-      animation: blink 1s ease-in-out infinite;
-    }
-    
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
+      font-size: 0.8rem;
+      font-family: 'Arial', sans-serif;
     }
     
     .ticker-item {
       display: inline-block;
-      font-size: 1.4rem;
-      padding: 0 2rem;
+      font-size: 1.1rem;
+      padding: 0 1.5rem;
     }
     
     .ticker-source {
       color: #00ff87;
       font-weight: bold;
-      margin-right: 0.5rem;
+      margin-right: 0.4rem;
+      font-family: 'Arial', sans-serif;
     }
     
     .weather-ticker {
       background: #1a1a3a;
       overflow: hidden;
       border-bottom: 2px solid #4a90e2;
+      flex-shrink: 0;
     }
     
     .weather-ticker-content {
       display: flex;
       align-items: center;
-      padding: 0.8rem 0;
+      padding: 0.6rem 0;
       white-space: nowrap;
-      animation: scroll 40s linear infinite;
+      animation: scroll 35s linear infinite;
     }
     
     .weather-item {
       display: inline-block;
-      padding: 0 1.5rem;
-      font-size: 1.3rem;
+      padding: 0 1.2rem;
+      font-size: 1.1rem;
     }
     
     .weather-city {
       color: #ffa500;
       font-weight: bold;
-    }
-    
-    .weather-emoji {
-      margin-left: 0.5rem;
+      font-family: 'Arial', sans-serif;
     }
     
     main {
       flex: 1;
-      padding: 1rem 2rem;
-      max-width: 1200px;
+      padding: 0.8rem 1.2rem;
+      max-width: 1400px;
       margin: 0 auto;
       width: 100%;
+      display: flex;
+      gap: 0.8rem;
+      overflow: hidden;
     }
     
     .sections {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 0.8rem;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
     }
     
     .section {
       background: rgba(255,255,255,0.05);
-      padding: 1.5rem;
-      border-radius: 15px;
-      border: 2px solid rgba(0, 255, 135, 0.2);
-    }
-    
-    .section.full-width {
-      grid-column: 1 / -1;
-    }
-    
-    h2 {
-      font-size: 1.4rem;
-      color: #00ff87;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid rgba(0, 255, 135, 0.3);
-    }
-    
-    .headline-list {
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 255, 135, 0.15);
       display: flex;
       flex-direction: column;
-      gap: 0.8rem;
+      overflow: hidden;
+    }
+    
+    .section-title {
+      font-size: 1.1rem;
+      color: #00ff87;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid rgba(0, 255, 135, 0.2);
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .content-scroll {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+    .content-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .content-scroll::-webkit-scrollbar-track {
+      background: rgba(255,255,255,0.05);
+    }
+    
+    .content-scroll::-webkit-scrollbar-thumb {
+      background: rgba(0, 255, 135, 0.3);
+      border-radius: 3px;
     }
     
     .headline {
       background: rgba(255,255,255,0.05);
-      padding: 1.2rem 1.5rem;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border-left: 4px solid #00ff87;
+      padding: 0.6rem 0.8rem;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      border-left: 3px solid #00ff87;
+      transition: all 0.2s ease;
     }
     
     .headline:hover {
       background: rgba(255,255,255,0.1);
-      transform: translateX(5px);
     }
     
     .headline-title {
-      font-size: 1.3rem;
+      font-size: 0.95rem;
       font-weight: 600;
-      margin-bottom: 0.5rem;
       color: #fff;
+      line-height: 1.3;
     }
     
     .headline-meta {
       display: flex;
-      gap: 1rem;
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
-    
-    .headline-source {
-      color: #00ff87;
-    }
-    
-    .headline-time {
-      color: #ffa500;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      opacity: 0.6;
+      margin-top: 0.2rem;
     }
     
     .wiki-item {
       background: rgba(255,255,255,0.05);
-      padding: 1rem 1.2rem;
-      border-radius: 8px;
-      margin-bottom: 0.8rem;
+      padding: 0.5rem 0.7rem;
+      border-radius: 6px;
+      margin-bottom: 0.4rem;
       border-left: 3px solid #ffa500;
+      line-height: 1.3;
     }
     
     .wiki-year {
       color: #ffa500;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
+      font-family: 'Arial', sans-serif;
     }
     
     .wiki-text {
-      margin-top: 0.3rem;
-      font-size: 1.1rem;
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
     }
     
-    footer {
-      padding: 1rem 2rem;
-      background: #0a0a1a;
-      text-align: center;
-      font-size: 0.9rem;
-      opacity: 0.6;
-    }
-    
-    .source-selector {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-      justify-content: center;
-    }
-    
-    .source-btn {
-      padding: 0.5rem 1rem;
-      border: 1px solid rgba(0, 255, 135, 0.3);
-      background: rgba(0, 255, 135, 0.1);
-      color: #00ff87;
-      cursor: pointer;
-      border-radius: 20px;
-      transition: all 0.3s ease;
-      font-size: 0.9rem;
-    }
-    
-    .source-btn:hover {
-      background: rgba(0, 255, 135, 0.3);
-    }
-    
-    .source-btn.active {
-      background: #00ff87;
-      color: #1a1a2e;
-      font-weight: bold;
-    }
-    
-    @media (max-width: 768px) {
-      .sections {
-        grid-template-columns: 1fr;
+    @media TV {
+      body {
+        font-size: 1.2rem;
       }
       
       h1 {
+        font-size: 2.5rem;
+      }
+      
+      .datetime {
         font-size: 1.5rem;
+      }
+      
+      .ticker-item {
+        font-size: 1.6rem;
+      }
+      
+      .weather-item {
+        font-size: 1.5rem;
+      }
+      
+      .section-title {
+        font-size: 1.5rem;
+      }
+      
+      .headline-title {
+        font-size: 1.2rem;
+      }
+      
+      .wiki-item {
+        font-size: 1.1rem;
+      }
+      
+      .wiki-year {
+        font-size: 1.2rem;
+      }
+      
+      .wiki-text {
+        font-size: 1.1rem;
       }
     }
   </style>
@@ -270,7 +268,7 @@
 <body>
   <header>
     <div class="header-content">
-      <h1>📺 Lesson News</h1>
+      <h1>📺 News Center</h1>
       <div class="datetime">
         <span id="time">00:00 AM</span>
         <span id="date">Wednesday, January 1</span>
@@ -294,35 +292,33 @@
   <main>
     <div class="sections">
       <div class="section">
-        <div class="source-selector">
-          <button class="source-btn active" data-source="bbc">BBC News</button>
-          <button class="source-btn" data-source="reuters">Reuters</button>
-          <button class="source-btn" data-source="ap">Associated Press</button>
+        <div class="section-title">📅 On This Day</div>
+        <div class="content-scroll" id="wikiContent">
+          <div class="wiki-item">Loading...</div>
         </div>
-        
-        <h2 id="sourceTitle">📰 Today's News</h2>
-        <div class="headline-list" id="headlineList">
+      </div>
+      
+      <div class="section">
+        <div class="section-title">📰 BBC News</div>
+        <div class="content-scroll" id="headlineList">
           <div class="headline">
             <div class="headline-title">Loading news...</div>
           </div>
         </div>
       </div>
       
-      <div class="section">
-        <h2>📅 On This Day</h2>
-        <div id="wikiContent">
-          <div class="wiki-item">Loading...</div>
+      <div class="section" style="display: none;" id="jpNewsSection">
+        <div class="section-title">🇯🇵 Japan News</div>
+        <div class="content-scroll" id="jpHeadlineList">
+          <div class="headline">
+            <div class="headline-title">Loading news...</div>
+          </div>
         </div>
       </div>
     </div>
   </main>
-  
-  <footer>
-    <p>Simple news ticker for classroom discussion • Click headlines to read more</p>
-  </footer>
 
   <script>
-    // Configuration
     const config = {
       rssParserAPI: 'https://api.rss2json.com/v1/api.json?rss_url=',
       sources: {
@@ -330,28 +326,28 @@
           name: 'BBC News',
           url: 'http://feeds.bbci.co.uk/news/rss.xml'
         },
-        reuters: {
-          name: 'Reuters',
-          url: 'https://www.reutersagency.com/rss/feed/news'
+        japanTimes: {
+          name: 'Japan Times',
+          url: 'https://www.japantimes.co.jp/feed/topstories/'
         },
-        ap: {
-          name: 'Associated Press',
-          url: 'https://rssfeeds.apnews.com/apnews-topnews'
+        nhk: {
+          name: 'NHK World',
+          url: 'https://www3.nhk.or.jp/rss/news/cat0.xml'
         }
       },
       cities: [
-        { name: 'Tokyo', lat: 35.6895, lon: 139.6917 },
         { name: 'Osaka', lat: 34.6937, lon: 135.5023 },
-        { name: 'Kyoto', lat: 35.0116, lon: 135.7681 },
-        { name: 'London', lat: 51.5074, lon: -0.1278 },
+        { name: 'Sapporo', lat: 43.0642, lon: 141.3469 },
+        { name: 'Naha', lat: 26.2124, lon: 127.6792 },
         { name: 'New York', lat: 40.7128, lon: -74.0060 },
-        { name: 'Paris', lat: 48.8566, lon: 2.3522 },
-        { name: 'Sydney', lat: -33.8688, lon: 151.2093 },
-        { name: 'Singapore', lat: 1.3521, lon: 103.8198 }
+        { name: 'London', lat: 51.5074, lon: -0.1278 },
+        { name: 'Lancaster', lat: 54.0466, lon: -2.8008 },
+        { name: 'Moscow', lat: 55.7558, lon: 37.6173 },
+        { name: 'Beijing', lat: 39.9042, lon: 116.4074 },
+        { name: 'Hollywood', lat: 34.0928, lon: -118.3287 }
       ]
     };
     
-    // Weather code to emoji mapping
     const weatherEmojis = {
       0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
       45: '🌫️', 48: '🌫️',
@@ -362,24 +358,20 @@
       95: '⛈️', 96: '⛈️', 99: '⛈️'
     };
     
-    // State
-    let currentSource = 'bbc';
-    let headlines = [];
+    let bbcHeadlines = [];
+    let japanHeadlines = [];
     let weatherData = [];
     let cache = {};
-    const CACHE_TTL = 30 * 60 * 1000; // 30 minutes
+    const CACHE_TTL = 30 * 60 * 1000;
     
-    // DOM Elements
     const timeEl = document.getElementById('time');
     const dateEl = document.getElementById('date');
     const newsTicker = document.getElementById('newsTicker');
     const weatherTicker = document.getElementById('weatherTicker');
     const headlineList = document.getElementById('headlineList');
-    const sourceTitle = document.getElementById('sourceTitle');
-    const sourceBtns = document.querySelectorAll('.source-btn');
+    const jpHeadlineList = document.getElementById('jpHeadlineList');
     const wikiContent = document.getElementById('wikiContent');
     
-    // Time and Date
     function updateDateTime() {
       const now = new Date();
       let hours = now.getHours();
@@ -389,16 +381,13 @@
       const minutes = String(now.getMinutes()).padStart(2, '0');
       
       timeEl.textContent = `${hours}:${minutes} ${ampm}`;
-      
       const options = { weekday: 'long', month: 'long', day: 'numeric' };
       dateEl.textContent = now.toLocaleDateString('en-US', options);
     }
     
-    // Real Weather using Open-Meteo (free, no API key)
     async function fetchWeather() {
       const cacheKey = 'weather';
       
-      // Check cache
       if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
         weatherData = cache[cacheKey].data;
         updateWeatherTicker();
@@ -419,22 +408,14 @@
         });
         
         weatherData = await Promise.all(promises);
-        
-        // Cache
-        cache[cacheKey] = {
-          data: weatherData,
-          time: Date.now()
-        };
-        
+        cache[cacheKey] = { data: weatherData, time: Date.now() };
         updateWeatherTicker();
       } catch (error) {
-        console.error('Failed to fetch weather:', error);
-        // Fallback to offline mode
-        weatherTicker.innerHTML = '<span class="weather-item">Weather unavailable - please check connection</span>';
+        console.error('Weather error:', error);
+        weatherTicker.innerHTML = '<span class="weather-item">Weather unavailable</span>';
       }
     }
     
-    // Update weather ticker
     function updateWeatherTicker() {
       const items = weatherData.map(city => {
         const emoji = weatherEmojis[city.code] || '🌡️';
@@ -443,11 +424,9 @@
           ${city.temp}°C ${emoji}
         </span>`;
       }).join('');
-      
       weatherTicker.innerHTML = items;
     }
     
-    // Wikipedia On This Day
     async function fetchWikiOnThisDay() {
       const cacheKey = 'wiki';
       
@@ -461,45 +440,40 @@
       const day = now.getDate();
       
       try {
+        // Try Wikipedia REST API first
         const url = `https://en.wikipedia.org/api/rest_v1/feed/onthisday/all/${month}/${day}`;
         const response = await fetch(url);
         const data = await response.json();
         
         const events = [];
         
-        // Get events from different years
         if (data.events && data.events.length) {
-          for (let i = 0; i < Math.min(8, data.events.length); i++) {
+          for (let i = 0; i < Math.min(6, data.events.length); i++) {
             events.push({
               year: data.events[i].year,
-              text: data.events[i].text
+              text: data.events[i].text.substring(0, 150) + '...'
             });
           }
         }
         
-        // Sort by recency (most recent last)
         events.sort((a, b) => b.year - a.year);
-        
-        // Cache
-        cache[cacheKey] = {
-          data: events,
-          time: Date.now()
-        };
-        
+        cache[cacheKey] = { data: events, time: Date.now() };
         updateWikiContent(events);
       } catch (error) {
-        console.error('Failed to fetch wiki:', error);
-        const now = new Date();
+        console.error('Wiki error:', error);
+        // Fallback
+        const today = new Date();
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                        'July', 'August', 'September', 'October', 'November', 'December'];
         wikiContent.innerHTML = `
           <div class="wiki-item">
-            <div class="wiki-year">${now.getFullYear()}</div>
-            <div class="wiki-text">A great day for learning!</div>
+            <div class="wiki-year">${today.getFullYear()}</div>
+            <div class="wiki-text">Today is ${months[today.getMonth()]} ${today.getDate()} - A great day for learning!</div>
           </div>
         `;
       }
     }
     
-    // Update wiki content
     function updateWikiContent(events) {
       wikiContent.innerHTML = events.map(e => `
         <div class="wiki-item">
@@ -509,53 +483,82 @@
       `).join('');
     }
     
-    // News Fetching
-    async function fetchHeadlines() {
-      const source = config.sources[currentSource];
-      const cacheKey = `news_${currentSource}`;
+    async function fetchBBCNews() {
+      const cacheKey = 'bbc_news';
       
       if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
-        headlines = cache[cacheKey].data;
-        updateUI();
+        bbcHeadlines = cache[cacheKey].data;
+        updateNewsUI();
         return;
       }
       
       try {
-        const proxyUrl = config.rssParserAPI + encodeURIComponent(source.url);
+        const proxyUrl = config.rssParserAPI + encodeURIComponent(config.sources.bbc.url);
         const response = await fetch(proxyUrl);
         const data = await response.json();
         
         if (data.items && data.items.length) {
-          headlines = data.items.map(item => ({
+          bbcHeadlines = data.items.slice(0, 12).map(item => ({
             title: item.title || 'No title',
             link: item.link || '#',
             pubDate: item.pubDate || new Date(),
-            source: source.name
+            source: 'BBC'
           }));
           
-          cache[cacheKey] = {
-            data: headlines,
-            time: Date.now()
-          };
-          
-          updateUI();
+          cache[cacheKey] = { data: bbcHeadlines, time: Date.now() };
+          updateNewsUI();
         }
       } catch (error) {
-        console.error('Failed to fetch news:', error);
-        headlineList.innerHTML = `
-          <div class="headline">
-            <div class="headline-title">Unable to load news</div>
-            <div class="headline-meta">Please check your connection</div>
-          </div>
-        `;
+        console.error('BBC news error:', error);
+        headlineList.innerHTML = '<div class="headline"><div class="headline-title">Unable to load BBC news</div></div>';
       }
     }
     
-    // Update UI
-    function updateUI() {
-      const tickerItems = headlines.slice(0, 8).map(h =>
+    async function fetchJapanNews() {
+      const cacheKey = 'jp_news';
+      
+      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
+        japanHeadlines = cache[cacheKey].data;
+        updateJapanUI();
+        return;
+      }
+      
+      // Try Japanese news sources
+      const sources = [config.sources.japanTimes, config.sources.nhk];
+      
+      for (const source of sources) {
+        try {
+          const proxyUrl = config.rssParserAPI + encodeURIComponent(source.url);
+          const response = await fetch(proxyUrl);
+          const data = await response.json();
+          
+          if (data.items && data.items.length) {
+            japanHeadlines = data.items.slice(0, 8).map(item => ({
+              title: item.title || 'No title',
+              link: item.link || '#',
+              pubDate: item.pubDate || new Date(),
+              source: source.name
+            }));
+            
+            cache[cacheKey] = { data: japanHeadlines, time: Date.now() };
+            updateJapanUI();
+            return;
+          }
+        } catch (error) {
+          console.log(`${source.name} failed:`, error.message);
+        }
+      }
+      
+      // If both fail, hide Japanese section
+      if (japanHeadlines.length === 0) {
+        jpHeadlineList.innerHTML = '<div class="headline"><div class="headline-title">Japan news unavailable</div></div>';
+      }
+    }
+    
+    function updateNewsUI() {
+      const tickerItems = bbcHeadlines.slice(0, 6).map(h =>
         `<span class="ticker-item">
-          <span class="ticker-source">[${h.source}]</span>
+          <span class="ticker-source">[BBC]</span>
           ${h.title}
         </span>`
       ).join('');
@@ -565,54 +568,55 @@
         ${tickerItems}
       `;
       
-      headlineList.innerHTML = headlines.slice(0, 10).map(h => {
+      headlineList.innerHTML = bbcHeadlines.map(h => {
         const date = new Date(h.pubDate);
         const timeAgo = getTimeAgo(date);
-        
         return `
           <div class="headline" onclick="window.open('${h.link}', '_blank')">
             <div class="headline-title">${h.title}</div>
             <div class="headline-meta">
-              <span class="headline-source">${h.source}</span>
-              <span class="headline-time">${timeAgo}</span>
+              <span>${timeAgo}</span>
             </div>
           </div>
         `;
       }).join('');
-      
-      sourceTitle.textContent = `📰 ${source.name}`;
+    }
+    
+    function updateJapanUI() {
+      jpHeadlineList.innerHTML = japanHeadlines.map(h => {
+        const date = new Date(h.pubDate);
+        const timeAgo = getTimeAgo(date);
+        return `
+          <div class="headline" onclick="window.open('${h.link}', '_blank')">
+            <div class="headline-title">${h.title}</div>
+            <div class="headline-meta">
+              <span>${h.source}</span>
+              <span>${timeAgo}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
     }
     
     function getTimeAgo(date) {
       const seconds = Math.floor((new Date() - date) / 1000);
-      
       if (seconds < 60) return 'Just now';
-      if (seconds < 3600) return `${Math.floor(seconds / 60)} min ago`;
-      if (seconds < 86400) return `${Math.floor(seconds / 3600)} hours ago`;
-      return `${Math.floor(seconds / 86400)} days ago`;
+      if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
+      if (seconds < 86400) return `${Math.floor(seconds / 3600)}h ago`;
+      return `${Math.floor(seconds / 86400)}d ago`;
     }
-    
-    function switchSource(source) {
-      currentSource = source;
-      sourceBtns.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.source === source);
-      });
-      fetchHeadlines();
-    }
-    
-    sourceBtns.forEach(btn => {
-      btn.addEventListener('click', () => switchSource(btn.dataset.source));
-    });
     
     updateDateTime();
     setInterval(updateDateTime, 1000);
     fetchWeather();
-    fetchHeadlines();
+    fetchBBCNews();
     fetchWikiOnThisDay();
+    fetchJapanNews();
     
-    setInterval(fetchHeadlines, 30 * 60 * 1000);
+    setInterval(fetchBBCNews, 30 * 60 * 1000);
     setInterval(fetchWeather, 30 * 60 * 1000);
     setInterval(fetchWikiOnThisDay, 60 * 60 * 1000);
+    setInterval(fetchJapanNews, 30 * 60 * 1000);
   </script>
 </body>
 </html>
