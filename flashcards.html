@@ -96,7 +96,6 @@
       height: 100%;
       backface-visibility: hidden;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       border-radius: 25px;
@@ -114,29 +113,20 @@
       background: linear-gradient(145deg, #fff9c4, #fff59d);
       color: #333;
       transform: rotateY(180deg);
-      padding: 1rem;
+      font-size: min(25vw, 20vh);
+      flex-direction: column;
+      gap: 1rem;
     }
     
-    .front-letter { font-size: min(30vw, 25vh); }
-    .front-word { font-size: min(18vw, 15vh); margin-bottom: 0.5rem; }
-    .front-emoji { font-size: min(18vw, 15vh); }
-    
-    .back-word { font-size: min(20vw, 17vh); }
-    .back-jp { font-size: min(14vw, 11vh); color: #ff6b6b; margin-top: 0.3rem; }
-    .back-meaning { font-size: min(12vw, 9vw); color: #4ecdc4; }
-    .back-emoji { font-size: min(18vw, 15vw); }
+    .emoji {
+      font-size: min(20vw, 18vh);
+    }
     
     @media TV {
       .card-container { max-width: 800px; max-height: 600px; }
       .card-front { font-size: 400px !important; }
       .card-back { font-size: 250px !important; }
-      .front-letter { font-size: 300px !important; }
-      .front-word { font-size: 180px !important; }
-      .front-emoji { font-size: 180px !important; }
-      .back-word { font-size: 200px !important; }
-      .back-jp { font-size: 140px !important; }
-      .back-meaning { font-size: 120px !important; }
-      .back-emoji { font-size: 180px !important; }
+      .emoji { font-size: 200px !important; }
       .controls button, .controls select { font-size: 1.5rem; padding: 1rem 2rem; min-width: 200px; }
     }
   </style>
@@ -148,9 +138,9 @@
   
   <div class="controls">
     <select id="deckSelect">
-      <option value="basic">📖 Basic Alphabet</option>
-      <option value="advanced">🎯 Advanced Phonics</option>
-      <option value="sight-words">📚 Sight Words</option>
+      <option value="basic">Bookmarks: Basic Alphabet</option>
+      <option value="advanced">Bookmarks: Advanced Phonics</option>
+      <option value="sight-words">Bookmarks: Sight Words</option>
     </select>
     
     <select id="caseSelect">
@@ -161,7 +151,7 @@
     <button id="orderBtn" data-order="alphabetical">A to Z</button>
     <button id="jumbleBtn" data-order="jumble">Jumble</button>
     
-    <select id="autoRotate">
+    <select id="autoRotateSelect">
       <option value="off">Auto: Off</option>
       <option value="slow">Auto: Slow (3s)</option>
       <option value="fast">Auto: Fast (1s)</option>
@@ -174,21 +164,16 @@
   <div class="card-container">
     <div class="card" id="card">
       <div class="card-face card-front">
-        <div class="front-letter" id="frontLetter">A</div>
-        <div class="front-word" id="frontWord">apple</div>
-        <div class="front-emoji" id="frontEmoji">🍎</div>
+        <div id="letter">A</div>
       </div>
       <div class="card-face card-back">
-        <div class="back-word" id="backWord"></div>
-        <div class="back-jp" id="backJp"></div>
-        <div class="back-meaning" id="backMeaning"></div>
-        <div class="back-emoji" id="backEmoji"></div>
+        <div id="word">apple</div>
+        <div id="emoji">🍎</div>
       </div>
     </div>
   </div>
 
   <script>
-    // Basic alphabet
     const basicData = [
       { letter: 'A', word: 'apple', emoji: '🍎' },
       { letter: 'B', word: 'ball', emoji: '⚽' },
@@ -218,9 +203,7 @@
       { letter: 'Z', word: 'zebra', emoji: '🦓' }
     ];
     
-    // Advanced phonics (digraphs, blends, diphthongs)
     const advancedData = [
-      // Digraphs
       { letter: 'sh', word: 'ship', emoji: '⛵' },
       { letter: 'ch', word: 'chip', emoji: '🍟' },
       { letter: 'th', word: 'thumb', emoji: '👍' },
@@ -228,10 +211,6 @@
       { letter: 'ph', word: 'phone', emoji: '📱' },
       { letter: 'ck', word: 'duck', emoji: '🦆' },
       { letter: 'ng', word: 'sing', emoji: '🎤' },
-      { letter: 'sh', word: 'shoe', emoji: '👟' },
-      { letter: 'ch', word: 'chair', emoji: '🪑' },
-      
-      // Blends (consonants together)
       { letter: 'bl', word: 'blue', emoji: '🔵' },
       { letter: 'cl', word: 'clock', emoji: '⏰' },
       { letter: 'fl', word: 'flower', emoji: '🌸' },
@@ -251,33 +230,10 @@
       { letter: 'sw', word: 'swim', emoji: '🏊' },
       { letter: 'sc', word: 'scarf', emoji: '🧣' },
       { letter: 'sk', word: 'skunk', emoji: '🦨' },
-      
-      // Three-letter blends
       { letter: 'spl', word: 'splash', emoji: '💦' },
       { letter: 'spr', word: 'spring', emoji: '🌷' },
       { letter: 'str', word: 'stripe', emoji: '🐯' },
-      { letter: 'spl', word: 'splice', emoji: '🧵' },
-      { letter: 'spr', word: 'spring', emoji: '🌷' },
-      { letter: 'scr', word: 'scream', emoji: '🍦' },
-      { letter: 'str', word: 'stream', emoji: '🌊' },
-      { letter: 'spl', word: 'split', emoji: '✂️' },
-      { letter: 'spr', word: 'spray', emoji: '🌊' },
-      { letter: 'scr', word: 'scrape', emoji: '🌙' },
-      { letter: 'str', word: 'strong', emoji: '💪' },
-      
-      // Four-letter blends
-      { letter: 'str-1', word: 'strip', emoji: '🎞️' },
-      { letter: 'fl-', word: 'float', emoji: '🎈' },
-      { letter: 'gl-', word: 'glow', emoji: '✨' },
-      { letter: 'br-', word: 'bring', emoji: '📦' },
-      { letter: 'cr-', word: 'crash', emoji: '💥' },
-      { letter: 'dr-', word: 'drive', emoji: '🚗' },
-      { letter: 'fr-', word: 'from', emoji: '➡️' },
-      { letter: 'gr-', word: 'grow', emoji: '🌱' },
-      { letter: 'pr-', word: 'print', emoji: '🖨️' },
-      { letter: 'tr-', word: 'trip', emoji: '✈️' },
-      
-      // Diphthongs (two vowels together)
+      { letter: 'scr', word: 'scream', emoji: '😱' },
       { letter: 'ai', word: 'rain', emoji: '🌧️' },
       { letter: 'ay', word: 'day', emoji: '☀️' },
       { letter: 'ee', word: 'tree', emoji: '🌳' },
@@ -289,62 +245,57 @@
       { letter: 'oo', word: 'moon', emoji: '🌚' },
       { letter: 'ue', word: 'blue', emoji: '🔵' },
       { letter: 'aw', word: 'saw', emoji: '🪚' },
-      { letter: 'ew', word: 'new', emoji: '✨' },
-      { letter: 'oy', word: 'toy', emoji: '🧸' },
-      { letter: 'oi', word: 'oil', emoji: '🛢️' }
+      { letter: 'ew', word: 'new', emoji: '✨' }
     ];
     
-    // Common sight words with Japanese translations
     const sightWordsData = [
-      { word: 'the', emoji: '📝', jp: 'その (sono) - "その"', eng: 'the' },
-      { word: 'be', emoji: '✓', jp: 'ある (aru) - "在る (aru)"', eng: 'is/am' },
-      { word: 'to', emoji: '↘️', jp: 'へ (e) - "へ"', eng: 'to' },
-      { word: 'of', emoji: '📦', jp: 'の (no) - "の"', eng: 'of' },
-      { word: 'and', emoji: '&', jp: 'と (to) - "と"', eng: 'and' },
-      { word: 'I', emoji: '👤', jp: '私 - "私"', eng: 'I' },
-      { word: 'a', emoji: '🔤', jp: '一 - "一"', eng: 'a/an' },
-      { word: 'in', emoji: '📥', jp: 'に (ni) - "に"', eng: 'in' },
-      { word: 'is', emoji: '✅', jp: 'です - "です"', eng: 'is' },
-      { word: 'it', emoji: '📎', jp: 'それ (sore)"', eng: 'it' },
-      { word: 'you', emoji: '👥', jp: 'あなた - "あなた"', eng: 'you' },
-      { word: 'he', emoji: '👨', jp: '彼 - "彼"', eng: 'he' },
-      { word: 'she', emoji: '👩', jp: '彼女 - "カノジョ (kanojo)"', eng: 'she' },
-      { word: 'we', emoji: '👥', jp: '私達 - "私たち"', eng: 'we' },
-      { word: 'they', emoji: '👥', jp: '彼ら - "彼ら"', eng: 'they' },
-      { word: 'have', emoji: '✋', jp: 'ある (aru) - "ある (have)"', eng: 'have' },
-      { word: 'are', emoji: '✅', jp: '～です (~desu) - "～です (are)"', eng: 'are' },
-      { word: 'was', emoji: '✓', jp: 'でした (deshita) - "でした (was)"', eng: 'was' },
-      { word: 'were', emoji: '✓', jp: 'いました (imashita) - "いました (were)"', eng: 'were' },
-      { word: 'what', emoji: '❓', jp: '何 - "何"', eng: 'what' },
-      { word: 'when', emoji: '🕐', jp: 'いつ - "いつ"', eng: 'when' },
-      { word: 'where', emoji: '📍', jp: 'どこ - "どこ"', eng: 'where' },
-      { word: 'who', emoji: '👤', jp: '誰 - "誰"', eng: 'who' },
-      { word: 'how', emoji: '🤔', jp: 'どう - "どう"', eng: 'how' },
-      { word: 'come', emoji: '🏃', jp: '来る (kuru) - "来る (come)"', eng: 'come' },
-      { word: 'go', emoji: '🚶', jp: '行く (iku) - "行く (go)"', eng: 'go' },
-      { word: 'do', emoji: '✍', jp: 'する (suru) - "する (do)"', eng: 'do' },
-      { word: 'will', emoji: '🔮', jp: '～する (suru) - "～する (will)"', eng: 'will' },
-      { word: 'say', emoji: '💬', jp: '言う (iu) - "言う (say)"', eng: 'say' },
-      { word: 'see', emoji: '👀', jp: '見る (miru) - "見る (see)"', eng: 'see' },
-      { word: 'make', emoji: '🔨', jp: '作る (tsukuru) - "作る (make)"', eng: 'make/let' },
-      { word: 'take', emoji: '🤲', jp: '取る (toru) - "取る (take)"', eng: 'take' },
-      { word: 'know', emoji: '💡', jp: '知る (shiru) - "知る (know)"', eng: 'know' },
-      { word: 'think', emoji: '💭', jp: '思う (omou) - "思う (think)"', eng: 'think' },
-      { word: 'look', emoji: '👀', jp: '見る (miru) - "見る (look)"', eng: 'look' },
-      { word: 'want', emoji: '💭', jp: '欲しい (hoshii) - "欲しい (want)"', eng: 'want' },
-      { word: 'like', emoji: '❤️', jp: '好き - "好き (like)"', eng: 'like' },
-      { word: 'love', emoji: '💕', jp: '好き愛 (suki-ai) - "好き愛 (love)"', eng: 'love' },
-      { word: 'can', emoji: '✅', jp: 'できる (dekiru) - "できる (can)"', eng: 'can' },
-      { word: 'will', emoji: '🔮', jp: '～する (suru) - "～する (will)"', eng: 'will' },
-      { word: 'play', emoji: '🎮', jp: '遊ぶ (asobu) - "遊ぶ (play)"', eng: 'play' },
-      { word: 'stop', emoji: '🛑', jp: '止ま (tomeru) - "止まる (stop)"', eng: 'stop' },
-      { word: 'good', emoji: '✨', jp: 'いい (ii) - "いい (good)!"', eng: 'good' },
-      { word: 'bad', emoji: '❌', jp: '悪い (warui) - "悪い (bad)"', eng: 'bad' },
-      { word: 'big', emoji: '🐘', jp: '大きい (ookii) - "大きい (big)"', eng: 'big' },
-      { word: 'little', emoji: '🐣', jp: '小さい (chiisai) - "小さい (little)"', eng: 'little' },
-      { word: 'help', emoji: '🆘', jp: '手伝う (tetsudau) - "手伝う (help)"', eng: 'help' },
-      { word: 'please', emoji: '🙏', jp: 'お願いします (onegaishimas) - 'お願いします', eng: 'please' },
-      { word: 'thank', emoji: '🙏', jp: 'ありがとう (arigatou) - 'ありがとう', eng: 'thank' }
+      { letter: 'the', word: 'その (sono)', emoji: '📝' },
+      { letter: 'be', word: 'ある (aru)', emoji: '✓' },
+      { letter: 'to', word: 'へ (e)', emoji: '↘️' },
+      { letter: 'of', word: 'の (no)', emoji: '📦' },
+      { letter: 'and', word: 'と (to)', emoji: '&' },
+      { letter: 'I', word: '私', emoji: '👤' },
+      { letter: 'a', word: '一 (ichi)', emoji: '🔤' },
+      { letter: 'in', word: 'に (ni)', emoji: '📥' },
+      { letter: 'is', word: 'です (desu)', emoji: '✅' },
+      { letter: 'it', word: 'それ (sore)', emoji: '📎' },
+      { letter: 'you', word: 'あなた', emoji: '👥' },
+      { letter: 'he', word: '彼', emoji: '👨' },
+      { letter: 'she', word: '彼女', emoji: '👩' },
+      { letter: 'we', word: '私達', emoji: '👥' },
+      { letter: 'they', word: '彼ら', emoji: '👥' },
+      { letter: 'have', word: 'ある (aru)', emoji: '✋' },
+      { letter: 'are', word: '～です (~desu)', emoji: '✅' },
+      { letter: 'was', word: 'でした (deshita)', emoji: '✓' },
+      { letter: 'what', word: '何', emoji: '❓' },
+      { letter: 'when', word: 'いつ (itsu)', emoji: '🕐' },
+      { letter: 'where', word: 'どこ (doko)', emoji: '📍' },
+      { letter: 'who', word: '誰', emoji: '👤' },
+      { letter: 'how', word: 'どう', emoji: '🤔' },
+      { letter: 'come', word: '来る (kuru)', emoji: '🏃' },
+      { letter: 'go', word: '行く (iku)', emoji: '🚶' },
+      { letter: 'do', word: 'する (suru)', emoji: '✍' },
+      { letter: 'will', word: '～する (suru)', emoji: '🔮' },
+      { letter: 'say', word: '言う (iu)', emoji: '💬' },
+      { letter: 'see', word: '見る (miru)', emoji: '👀' },
+      { letter: 'make', word: '作る (tsukuru)', emoji: '🔨' },
+      { letter: 'take', word: '取る (toru)', emoji: '🤲' },
+      { letter: 'know', word: '知る (shiru)', emoji: '💡' },
+      { letter: 'think', word: '思う (omou)', emoji: '💭' },
+      { letter: 'look', word: '見る (miru)', emoji: '👀' },
+      { letter: 'want', word: '欲しい (hoshii)', emoji: '💭' },
+      { letter: 'like', word: '好き', emoji: '❤️' },
+      { letter: 'love', word: '好き愛 (suki-ai)', emoji: '💕' },
+      { letter: 'can', word: 'できる (dekiru)', emoji: '✅' },
+      { letter: 'play', word: '遊ぶ (asobu)', emoji: '🎮' },
+      { letter: 'stop', word: '止まる (tomeru)', emoji: '🛑' },
+      { letter: 'good', word: 'いい (ii)', emoji: '✨' },
+      { letter: 'bad', word: '悪い (warui)', emoji: '❌' },
+      { letter: 'big', word: '大きい (ookii)', emoji: '🐘' },
+      { letter: 'little', word: '小さい (chiisai)', emoji: '🐣' },
+      { letter: 'help', word: '手伝う (tetsudau)', emoji: '🆘' },
+      { letter: 'please', word: 'おねがいします', emoji: '🙏' },
+      { letter: 'thank', word: 'ありがとう', emoji: '🙏' }
     ];
     
     let currentDeck = 'basic';
@@ -356,18 +307,14 @@
     let useAlphabetical = true;
     
     const card = document.getElementById('card');
-    const frontLetterEl = document.getElementById('frontLetter');
-    const frontWordEl = document.getElementById('frontWord');
-    const frontEmojiEl = document.getElementById('frontEmoji');
-    const backWordEl = document.getElementById('backWord');
-    const backJpEl = document.getElementById('backJp');
-    const backMeaningEl = document.getElementById('backMeaning');
-    const backEmojiEl = document.getElementById('backEmoji');
+    const letterEl = document.getElementById('letter');
+    const wordEl = document.getElementById('word');
+    const emojiEl = document.getElementById('emoji');
     const deckSelect = document.getElementById('deckSelect');
     const caseSelect = document.getElementById('caseSelect');
     const orderBtn = document.getElementById('orderBtn');
     const jumbleBtn = document.getElementById('jumbleBtn');
-    const autoRotateSelect = document.getElementById('autoRotate');
+    const autoRotateSelect = document.getElementById('autoRotateSelect');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     
@@ -375,24 +322,13 @@
       const item = currentData[currentIndex];
       
       if (currentDeck === 'sight-words') {
-        // Sight words mode
-        frontLetterEl.textContent = item.word.charAt(0).toUpperCase();
-        frontWordEl.textContent = item.word;
-        frontEmojiEl.textContent = item.emoji;
-        
-        backWordEl.textContent = item.eng;
-        backJpEl.textContent = item.jp;
-        backMeaningEl.textContent = '';
+        letterEl.textContent = item.letter;
+        wordEl.textContent = item.word;
+        emojiEl.textContent = item.emoji;
       } else {
-        // Basic or Advanced phonics
-        frontLetterEl.textContent = useUppercase ? item.letter.toUpperCase() : item.letter.toLowerCase();
-        frontWordEl.textContent = item.word;
-        frontEmojiEl.textContent = item.emoji;
-        
-        backWordEl.textContent = '';
-        backJpEl.textContent = '';
-        backMeaningEl.textContent = '';
-        backEmojiEl.textContent = item.emoji;
+        letterEl.textContent = useUppercase ? item.letter.toUpperCase() : item.letter.toLowerCase();
+        wordEl.textContent = item.word;
+        emojiEl.textContent = item.emoji;
       }
       
       isFlipped = false;
@@ -416,11 +352,7 @@
     
     function sortData() {
       if (useAlphabetical) {
-        currentData.sort((a, b) => {
-          const aKey = currentDeck === 'sight-words' ? a.word : (currentDeck === 'advanced' ? a.letter : a.letter);
-          const bKey = currentDeck === 'sight-words' ? b.word : (currentDeck === 'advanced' ? b.letter : b.letter);
-          return aKey.localeCompare(bKey);
-        });
+        currentData.sort((a, b) => a.letter.localeCompare(b.letter));
         orderBtn.classList.add('active');
         jumbleBtn.classList.remove('active');
       } else {
@@ -437,22 +369,12 @@
       currentIndex = 0;
       
       switch(deckName) {
-        case 'basic':
-          currentData = [...basicData];
-          useUppercase = true;
-          break;
-        case 'advanced':
-          currentData = [...advancedData];
-          useUppercase = false;
-          break;
-        case 'sight-words':
-          currentData = [...sightWordsData];
-          useUppercase = false;
-          break;
+        case 'basic': currentData = [...basicData]; useUppercase = true; break;
+        case 'advanced': currentData = [...advancedData]; useUppercase = false; break;
+        case 'sight-words': currentData = [...sightWordsData]; useUppercase = false; break;
       }
       
       useAlphabetical = true;
-      deckSelect.value = deckName;
       updateCard();
     }
     
