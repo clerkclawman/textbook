@@ -1260,23 +1260,21 @@
         position: fixed;
         top: 50px;
         right: 20px;
-        z-index: 1000;
         font-family: 'Courier New', monospace;
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--text);
-        background: rgba(255,255,255,0.95);
-        padding: 10px 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        border: 2px solid var(--primary);
-        line-height: 1.6;
+        font-size: 1.1rem;
+        color: #fff;
+        background: rgba(0,0,0,0.3);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        z-index: 100;
+        line-height: 1.5;
+        text-align: right;
+        border: 1px solid rgba(255,255,255,0.2);
     }
 
     body.dark-mode .corner-clock {
-        color: #e6e6e6;
-        background: rgba(22, 33, 62, 0.95);
-        border-color: var(--accent);
+        background: rgba(0,0,0,0.4);
+        border-color: rgba(255,255,255,0.3);
     }
 
     @media TV {
@@ -1294,9 +1292,7 @@
         }
 
         .corner-clock {
-            font-size: 1.3rem;
-            padding: 12px 20px;
-            top: 60px;
+            font-size: 1.5rem;
         }
     }
     
@@ -1313,9 +1309,8 @@
       .corner-clock {
         top: 35px;
         right: 10px;
-        font-size: 0.65rem;
-        padding: 6px 10px;
-        line-height: 1.4;
+        font-size: 0.75rem;
+        padding: 0.4rem 0.7rem;
       }
       
       .container { padding: 20px 15px; }
@@ -1364,9 +1359,7 @@
       }
       
       .corner-clock {
-        top: 40px;
-        font-size: 0.85rem;
-        padding: 8px 15px;
+        font-size: 1rem;
       }
       
       #mainContainer .header { font-size: 1.6rem; }
