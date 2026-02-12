@@ -78,6 +78,38 @@
       border-color: #fff;
     }
     
+    .presets {
+      display: flex;
+      gap: 0.8rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .preset-btn {
+      padding: 0.8rem 1.5rem;
+      border: 3px solid rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+    
+    .preset-btn:hover {
+      transform: scale(1.1);
+      background: rgba(255,255,255,0.3);
+    }
+    
+    .preset-btn.active {
+      background: #fff;
+      color: #FF6B6B;
+      border-color: #fff;
+      transform: scale(1.15);
+    }
+    
     .timer-container {
       background: rgba(255,255,255,0.15);
       padding: 2rem;
@@ -244,9 +276,18 @@
       <button class="sound-btn" data-sound="horn">📯 Horn</button>
     </div>
     
+    <div class="presets">
+      <button class="preset-btn" data-seconds="60">1 min</button>
+      <button class="preset-btn" data-seconds="120">2 min</button>
+      <button class="preset-btn" data-seconds="300">5 min</button>
+      <button class="preset-btn" data-seconds="600">10 min</button>
+      <button class="preset-btn" data-seconds="1500">25 min</button>
+      <button class="preset-btn" data-seconds="3000">50 min</button>
+    </div>
+    
     <div class="timer-container">
       <div class="phase-display" id="phaseDisplay">Ready to start!</div>
-      <div class="timer-display" id="timerDisplay">05:00</div>
+      <div class="timer-display" id="timerDisplay">01:00</div>
     </div>
     
     <div class="controls">
@@ -274,8 +315,8 @@
     // State
     let timerRunning = false;
     let timerInterval = null;
-    let totalSeconds = 300; // 5 minutes default
-    let remainingSeconds = 300;
+    let totalSeconds = 60; // 1 minute default
+    let remainingSeconds = 60;
     let laps = [];
     let currentSoundMode = 'countdown';
     let countdownSoundInterval = null;
@@ -570,6 +611,26 @@
     soundBtns.forEach(btn => {
       btn.addEventListener('click', () => switchSound(btn.dataset.sound));
     });
+    
+    // Preset buttons
+    const presetBtns = document.querySelectorAll('.preset-btn');
+    presetBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (!timerRunning) {
+          totalSeconds = parseInt(btn.dataset.seconds);
+          remainingSeconds = totalSeconds;
+          
+          // Highlight active preset
+          presetBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          updateDisplay();
+        }
+      });
+    });
+    
+    // Set first preset as active
+    presetBtns[0]?.classList.add('active');
     
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
