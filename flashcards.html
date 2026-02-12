@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phonics Flashcards - Eikaiwa Practice</title>
+  <title>🌟 Phonics Flashcards - Fun Learning!</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,43 +12,62 @@
     }
     
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       color: #fff;
+      animation: gradientBG 10s ease infinite;
+    }
+    
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
     
     header {
-      padding: 2rem;
-      background: rgba(0,0,0,0.2);
+      padding: 1.5rem 2rem;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      text-align: center;
     }
     
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+      animation: bounce 2s ease infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
     
     .subtitle {
-      font-size: 1.1rem;
-      opacity: 0.9;
+      font-size: 1.2rem;
+      opacity: 0.95;
+      font-weight: bold;
     }
     
     .stats {
       display: flex;
-      gap: 2rem;
+      gap: 1.5rem;
       margin-top: 1rem;
-      font-size: 0.95rem;
+      justify-content: center;
+      font-size: 1.1rem;
     }
     
     .stat {
-      background: rgba(255,255,255,0.15);
-      padding: 0.6rem 1.2rem;
-      border-radius: 25px;
+      background: rgba(255,255,255,0.25);
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
     main {
@@ -62,7 +81,7 @@
     
     .deck-selector {
       display: flex;
-      gap: 0.8rem;
+      gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 2rem;
@@ -70,26 +89,33 @@
     
     .deck-btn {
       padding: 1rem 2rem;
-      border: 2px solid rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.15);
+      border: 3px solid rgba(255,255,255,0.5);
+      background: linear-gradient(145deg, #ffffff30, #ffffff10);
       color: #fff;
-      font-size: 1rem;
+      font-size: 1.1rem;
       cursor: pointer;
-      border-radius: 30px;
+      border-radius: 35px;
       transition: all 0.3s ease;
-      font-weight: 600;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
-    .deck-btn:hover, .deck-btn.active {
-      background: rgba(255,255,255,0.3);
+    .deck-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    
+    .deck-btn.active {
+      background: linear-gradient(145deg, #ffffff50, #ffffff30);
+      transform: scale(1.1);
       border-color: #fff;
     }
     
     .card-container {
       perspective: 1000px;
-      width: 750px;
-      height: 400px;
-      margin-bottom: 1.5rem;
+      width: 800px;
+      height: 450px;
+      margin-bottom: 2rem;
     }
     
     .card {
@@ -97,7 +123,7 @@
       height: 100%;
       position: relative;
       transform-style: preserve-3d;
-      transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+      transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       cursor: pointer;
     }
     
@@ -115,141 +141,182 @@
       align-items: center;
       justify-content: center;
       padding: 2rem;
-      background: #fff;
-      color: #333;
-      border-radius: 25px;
-      box-shadow: 0 25px 80px rgba(0,0,0,0.4);
-      font-size: 3rem;
+      border-radius: 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
       font-weight: bold;
       text-align: center;
     }
     
+    .card-front {
+      background: linear-gradient(145deg, #ffffff, #f0f0f0);
+      color: #333;
+      border: 5px solid #FFD700;
+    }
+    
     .card-back {
       transform: rotateY(180deg);
+      background: linear-gradient(145deg, #fff9c4, #fff59d);
+      color: #333;
+      border: 5px solid #4CAF50;
     }
     
-    .card-front .letter {
-      font-size: 6rem;
-      margin-bottom: 1rem;
-      line-height: 1;
-    }
-    
-    .card-front .sound {
-      font-size: 2.2rem;
-      color: #764ba2;
+    .card-front .big-letter {
+      font-size: 8rem;
       margin-bottom: 0.5rem;
-      font-weight: 600;
+      line-height: 1;
+      color: #FF6B6B;
+      text-shadow: 4px 4px 0 #FFD700;
     }
     
-    .card-front .word {
-      font-size: 2.8rem;
+    .card-front .phonics-sentence {
+      font-size: 2.5rem;
+      color: #4ECDC4;
       margin-bottom: 1rem;
-      color: #222;
+      font-weight: bold;
     }
     
-    .card-back .example {
-      font-size: 1.5rem;
-      font-style: italic;
-      color: #666;
-      line-height: 1.4;
-      font-weight: normal;
+    .card-front .emoji {
+      font-size: 5rem;
+      animation: wobble 2s ease infinite;
+    }
+    
+    @keyframes wobble {
+      0%, 100% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+    }
+    
+    .card-back .word-list {
+      font-size: 1.8rem;
+      color: #333;
+      line-height: 2.5;
+    }
+    
+    .card-back .word-list span {
+      background: rgba(255,255,255,0.7);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin: 0.3rem;
+      display: inline-block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     
     .card-back .play-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
       margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
-      background: #667eea;
+      padding: 1rem 2rem;
+      background: linear-gradient(145deg, #FF6B6B, #FF5252);
       color: white;
       border: none;
-      border-radius: 20px;
-      font-size: 1.1rem;
-      font-weight: 600;
+      border-radius: 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
       cursor: pointer;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
     }
     
     .card-back .play-btn:hover {
-      background: #764ba2;
-      transform: scale(1.05);
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
     }
     
     .card-hint {
       position: absolute;
-      bottom: 1rem;
-      font-size: 0.95rem;
-      color: #999;
+      bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #666;
       font-weight: normal;
     }
     
     .controls {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
       flex-wrap: wrap;
       justify-content: center;
     }
     
     .control-btn {
-      padding: 1rem 2rem;
-      border: 2px solid rgba(255,255,255,0.5);
-      background: rgba(255,255,255,0.2);
+      padding: 1.2rem 2.5rem;
+      border: 3px solid rgba(255,255,255,0.6);
+      background: linear-gradient(145deg, #ffffff30, #ffffff15);
       color: #fff;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       cursor: pointer;
-      border-radius: 20px;
+      border-radius: 30px;
       transition: all 0.3s ease;
-      min-width: 130px;
-      font-weight: 600;
+      min-width: 140px;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
     .control-btn:hover {
-      background: rgba(255,255,255,0.4);
-      border-color: #fff;
-      transform: translateY(-2px);
+      transform: scale(1.1) translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     }
     
     .progress {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-      font-weight: 600;
+      font-size: 1.4rem;
+      margin: 1.5rem 0;
+      font-weight: bold;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
     }
     
     .tts-toggle {
       display: flex;
       align-items: center;
-      gap: 0.8rem;
+      gap: 1rem;
       margin-top: 1rem;
-      background: rgba(255,255,255,0.1);
-      padding: 0.6rem 1.2rem;
-      border-radius: 25px;
+      background: rgba(255,255,255,0.2);
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1.1rem;
     }
     
-    .tts-toggle label {
+    .tts-toggle input {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+    
+    .mode-selector {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .mode-btn {
+      padding: 0.8rem 1.5rem;
+      border: 2px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.1);
+      color: #fff;
       font-size: 1rem;
       cursor: pointer;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    
+    .mode-btn.active {
+      background: rgba(255,255,255,0.3);
+      border-color: #fff;
     }
     
     @media (max-width: 768px) {
       .card-container {
-        width: 90vw;
-        height: 50vw;
+        width: 95vw;
+        height: 55vw;
       }
       
       h1 { font-size: 1.8rem; }
       
-      .card-face { font-size: 2rem; }
-      
-      .card-front .letter { font-size: 3rem !important; }
-      .card-front .word { font-size: 1.5rem !important; }
-      .card-back .example { font-size: 1rem !important; }
+      .card-front .big-letter { font-size: 4rem !important; }
+      .card-front .phonics-sentence { font-size: 1.5rem !important; }
+      .card-front .emoji { font-size: 3rem !important; }
+      .card-back .word-list { font-size: 1.2rem !important; }
       
       .deck-btn, .control-btn {
-        padding: 0.7rem 1.2rem;
-        font-size: 0.9rem;
-        min-width: 100px;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.95rem;
+        min-width: 110px;
       }
     }
     
@@ -259,240 +326,148 @@
         height: 50vh;
       }
       
-      .card-front .letter {
+      .card-front .big-letter {
+        font-size: 12rem !important;
+      }
+      
+      .card-front .phonics-sentence {
+        font-size: 4rem !important;
+      }
+      
+      .card-front .emoji {
         font-size: 8rem !important;
       }
       
-      .card-front .sound {
-        font-size: 3rem !important;
+      .card-back .word-list {
+        font-size: 2.5rem !important;
       }
       
-      .card-front .word {
-        font-size: 3.5rem !important;
-      }
-      
-      .card-back .example {
-        font-size: 1.8rem !important;
+      .card-back .play-btn {
+        font-size: 2rem !important;
       }
       
       .deck-btn, .control-btn {
-        min-width: 200px;
-        padding: 1.2rem 2.5rem;
-        font-size: 1.5rem !important;
-        min-height: 70px;
+        min-width: 220px;
+        padding: 1.5rem 3rem;
+        font-size: 1.8rem !important;
+        min-height: 80px;
       }
       
       h1 {
-        font-size: 3rem !important;
+        font-size: 4rem !important;
       }
       
       .stats {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🔤 Phonics Flashcards</h1>
-    <p class="subtitle">Phonics practice for Eikaiwa • Tap card to flip • 🔊 Play for TTS</p>
+    <h1>🌟 Phonics Flashcards 🌟</h1>
+    <p class="subtitle">Fun learning for kids! Tap card to flip • 🔊 Play for sounds</p>
     <div class="stats">
-      <div class="stat">✓ Correct: <span id="correct">0</span></div>
-      <div class="stat">Total: <span id="total">0</span></div>
-      <div class="stat">Accuracy: <span id="accuracy">0%</span></div>
+      <div class="stat">⭐ Correct: <span id="correct">0</span></div>
+      <div class="stat">📊 Total: <span id="total">0</span></div>
+      <div class="stat">🎯 Accuracy: <span id="accuracy">0%</span></div>
     </div>
   </header>
   
   <main>
     <div class="deck-selector">
-      <button class="deck-btn active" data-deck="short-vowels">Short Vowels</button>
-      <button class="deck-btn" data-deck="consonants">Consonants</button>
-      <button class="deck-btn" data-deck="long-vowels">Long Vowels</button>
-      <button class="deck-btn" data-deck="blends">Blends</button>
-      <button class="deck-btn" data-deck="digraphs">Digraphs</button>
+      <button class="deck-btn active" data-deck="short-a">Short A</button>
+      <button class="deck-btn" data-deck="short-e">Short E</button>
+      <button class="deck-btn" data-deck="short-i">Short I</button>
+      <button class="deck-btn" data-deck="short-o">Short O</button>
+      <button class="deck-btn" data-deck="short-u">Short U</button>
+    </div>
+    
+    <div class="mode-selector">
+      <button class="mode-btn active" data-mode="easy">😊 Easy</button>
+      <button class="mode-btn" data-mode="teacher">👩‍🏫 Teacher Mode</button>
     </div>
     
     <div class="card-container">
       <div class="card" id="card">
         <div class="card-face card-front">
-          <div class="letter" id="letter">a</div>
-          <div class="sound" id="sound">/æ/</div>
-          <div class="word" id="word">apple</div>
-          <div class="card-hint">Tap to see example</div>
+          <div class="big-letter" id="big-letter">A</div>
+          <div class="phonics-sentence" id="phonics-sentence">A is for Apple</div>
+          <div class="emoji" id="emoji">🍎</div>
+          <div class="card-hint">Tap to see more words!</div>
         </div>
         <div class="card-face card-back">
-          <div class="example" id="example">"A is for apple!" 🍎</div>
+          <div class="word-list" id="word-list">
+            <span>🍎 apple</span>
+            <span>🐜 ant</span>
+            <span>🐱 cat</span>
+            <span>🦇 bat</span>
+          </div>
           <button class="play-btn" id="ttsPlay">🔊 Play Sound</button>
-          <div class="card-hint">Tap card or TTS for next</div>
+          <div class="card-hint">Tap for next card!</div>
         </div>
       </div>
     </div>
     
     <div class="progress">
-      <span id="progress">Card 1 of 20</span>
+      <span id="progress">📚 Card 1 of 20</span>
     </div>
     
     <div class="tts-toggle">
       <input type="checkbox" id="ttsEnabled" checked>
-      <label for="ttsEnabled">Auto-play TTS on flip</label>
+      <label for="ttsEnabled">🔊 Auto-play sounds</label>
     </div>
     
     <div class="controls">
-      <button class="control-btn" id="prev-btn">← Previous</button>
-      <button class="control-btn" id="flip-btn">Flip Card</button>
-      <button class="control-btn" id="know-btn">✓ Know</button>
-      <button class="control-btn" id="next-btn">Next →</button>
+      <button class="control-btn" id="prev-btn">⬅️ Back</button>
+      <button class="control-btn" id="flip-btn">🔄 Flip</button>
+      <button class="control-btn" id="know-btn">⭐ Know!</button>
+      <button class="control-btn" id="next-btn">Next ➡️</button>
     </div>
   </main>
 
   <script>
-    // Phonics decks (Eikaiwa-appropriate)
+    // Phonics decks - Kid-friendly "A is for Apple" style
     const decks = {
-      'short-vowels': [
-        { letter: 'a', sound: '/æ/', word: 'apple', example: 'A is for apple!' },
-        { letter: 'a', sound: '/æ/', word: 'ant', example: 'A tiny ant climbs the hill.' },
-        { letter: 'a', sound: '/æ/', word: 'cat', example: 'The cat sat on the mat.' },
-        { letter: 'a', sound: '/æ/', word: 'bat', example: 'The bat flew at night.' },
-        { letter: 'a', sound: '/æ/', word: 'hat', example: 'Where is my lucky hat?' },
-        { letter: 'a', sound: '/æ/', word: 'mat', example: 'Yoga mat for stretching.' },
-        { letter: 'a', sound: '/æ/', word: 'rat', example: 'Rat runs in the maze.' },
-        { letter: 'a', sound: '/æ/', word: 'nap', example: 'Take a nice nap.' },
-        { letter: 'a', sound: '/æ/', word: 'bag', example: 'Pack your school bag.' },
-        { letter: 'a', sound: '/æ/', word: 'map', example: 'Look at the map.' },
-        { letter: 'a', sound: '/æ/', word: 'tap', example: 'Tap your feet to the music.' },
-        { letter: 'a', sound: '/æ/', word: 'dad', example: 'Dad plays with me.' },
-        { letter: 'a', sound: '/æ/', word: 'sad', example: 'Do not be sad, be glad!' },
-        { letter: 'a', sound: '/æ/', word: 'glad', example: 'I am so glad you are here!' },
-        { letter: 'a', sound: '/æ/', word: 'mad', example: 'Do not be mad, be glad!' },
-        { letter: 'a', sound: '/æ/', word: 'bad', example: 'That was not a bad test!' },
-        { letter: 'a', sound: '/æ/', word: 'add', example: 'Let me add to the fun!' },
-        { letter: 'e', sound: '/e/', word: 'egg', example: 'Egg for breakfast?' },
-        { letter: 'e', sound: '/e/', word: 'red', example: 'A red dress for the bed.' },
-        { letter: 'e', sound: '/e/', word: 'bed', example: 'Time for bed!' },
-        { letter: 'e', sound: '/e/', word: 'hen', example: 'The hen lays an egg.' },
-        { letter: 'e', sound: '/e/', word: 'pen', example: 'Use a pen for writing.' },
-        { letter: 'i', sound: '/ɪ/', word: 'pig', example: 'The pig is pink.' },
-        { letter: 'i', sound: '/ɪ/', word: 'dig', example: 'Dig a hole in the ground.' },
-        { letter: 'i', sound: '/ɪ/', word: 'sit', example: 'Please sit down.' },
-        { letter: 'i', sound: '/ɪ/', word: 'big', example: 'Big as a pig!' },
-        { letter: 'i', sound: '/ɪ/', word: 'fin', example: 'Fish fins swim well.' },
-        { letter: 'i', sound: '/ɪ/', word: 'win', example: 'Winner gets a star!' },
-        { letter: 'i', sound: '/ɪ/', word: 'ship', example: 'The ship sails on the sea.' },
-        { letter: 'i', sound: '/ɪ/', word: 'lip', example: 'Zip your lip!' },
-        { letter: 'o', sound: '/ɒ/', word: 'dog', example: 'The dog is in the fog.' },
-        { letter: 'o', sound: '/ɒ/', word: 'frog', example: 'Frog jumps into the pond.' },
-        { letter: 'o', sound: '/ɒ/', word: 'mop', example: 'Mop up the mess.' },
-        { letter: 'o', sound: '/ɒ/', word: 'top', example: 'On top of the hill.' },
-        { letter: 'u', sound: '/ʌ/', word: 'cup', example: 'Cup of tea or cup of coffee?' },
-        { letter: 'u', sound: '/ʌ/', word: 'bus', example: 'The bus drives to school.' },
-        { letter: 'u', sound: '/ʌ/', word: 'sun', example: 'Sun in the sky is fun!' },
-        { letter: 'u', sound: '/ʌ/', word: 'duck', example: 'The duck swims in water.' },
-        { letter: 'u', sound: '/ʌ/', word: 'run', example: 'Run, run, as fast as you can!' }
+      'short-a': [
+        { letter: 'A', phonics: 'A is for', word: 'Apple', emoji: '🍎', examples: ['🍎 apple', '🐜 ant', '🐱 cat', '🦇 bat', '🎩 hat', '🧘 mat', '🗺️ map', '👟 tap'] },
+        { letter: 'A', phonics: 'A says', word: 'ah', emoji: '😮', examples: ['👨 dad', '🎒 bag', '😢 sad', '🎁 glad', '🔨 mad', '🏃 run', '🐀 rat', '🚿 nap'] }
       ],
-      'consonants': [
-        { letter: 'b', sound: '/b/', word: 'ball', example: 'Bounce the ball!' },
-        { letter: 'c', sound: '/k/', word: 'cat', example: 'The cat is sitting.' },
-        { letter: 'c', sound: '/k/', word: 'car', example: 'Red car, blue car.' },
-        { letter: 'd', sound: '/d/', word: 'dog', example: 'Dog plays with ball.' },
-        { letter: 'f', sound: '/f/', word: 'fish', example: 'Fish swim in the sea.' },
-        { letter: 'g', sound: '/g/', word: 'girl', example: 'The girl has short hair.' },
-        { letter: 'h', sound: '/h/', word: 'hat', example: 'Hat on your head.' },
-        { letter: 'j', sound: '/dʒ/', word: 'jam', example: 'Jam on toast.' },
-        { letter: 'k', sound: '/k/', word: 'kite', example: 'Kite flies in the sky.' },
-        { letter: 'l', sound: '/l/', word: 'lamp', example: 'Turn on the lamp.' },
-        { letter: 'm', sound: '/m/', word: 'map', example: 'Look at the map.' },
-        { letter: 'n', sound: '/n/', word: 'net', example: 'Fish caught in net.' },
-        { letter: 'p', sound: '/p/', word: 'pan', example: 'Fry an egg in the pan.' },
-        { letter: 'q', sound: '/kw/', word: 'quack', example: 'Duck says quack!' },
-        { letter: 'r', sound: '/r/', word: 'rat', example: 'Rat runs fast.' },
-        { letter: 's', sound: '/s/', word: 'sun', example: 'Sun is hot.' },
-        { letter: 't', sound: '/t/', word: 'top', example: 'Top of the hill.' },
-        { letter: 'v', sound: '/v/', word: 'van', example: 'Van goes fast.' },
-        { letter: 'w', sound: '/w/', word: 'win', example: 'Winner gets a prize!' },
-        { letter: 'x', sound: '/ks/', word: 'fox', example: 'Fox runs fast.' },
-        { letter: 'y', sound: '/j/', word: 'yes', example: 'Yes, yes, yes!' },
-        { letter: 'z', sound: '/z/', word: 'zoo', example: 'Visit the zoo!' }
+      'short-e': [
+        { letter: 'E', phonics: 'E is for', word: 'Egg', emoji: '🥚', examples: ['🥚 egg', '👗 red', '🛏️ bed', '🐔 hen', '✏️ pen', '🦶 leg', '🌲 ten', '👀 see'] },
+        { letter: 'E', phonics: 'E says', word: 'eh', emoji: '😊', examples: ['📱 yes', '📝 pen', '🪑 sit', '🖐️ five', '🚚 get', '🎳 let', '🪟 wet', '👔 vest'] }
       ],
-      'long-vowels': [
-        { letter: 'a', sound: '/eɪ/', word: 'cake', example: 'Birthday cake with candles.' },
-        { letter: 'a', sound: '/eɪ/', word: 'make', example: 'Let us make a cake.' },
-        { letter: 'a', sound: '/eɪ/', word: 'game', example: 'Play a fun game.' },
-        { letter: 'e', sound: '/i:/', word: 'leaf', example: 'Green leaf on tree.' },
-        { letter: 'e', sound: '/i:/', word: 'tree', example: 'Climb up the tree.' },
-        { letter: 'e', sound: '/i:/', word: 'see', example: 'I see you!' },
-        { letter: 'i', sound: '/aɪ/', word: 'ice', example: 'Ice cream is cold.' },
-        { letter: 'i', sound: '/aɪ/', word: 'bike', example: 'Ride your bike.' },
-        { letter: 'i', sound: '/aɪ/', word: 'kite', example: 'Fly a kite high.' },
-        { letter: 'o', sound: '/əʊ/', word: 'boat', example: 'Boat floats on water.' },
-        { letter: 'o', sound: '/əʊ/', word: 'goat', example: 'The goat eats grass.' },
-        { letter: 'o', sound: '/əʊ/', word: 'home', example: 'Go to your home.' },
-        { letter: 'u', sound: '/ju:/', word: 'cube', example: 'Rubik cube puzzle.' },
-        { letter: 'u', sound: '/ju:/', word: 'mule', example: 'A mule pulls the cart.' },
-        { letter: 'u', sound: '/ju:/', word: 'music', example: 'Listen to music.' }
+      'short-i': [
+        { letter: 'I', phonics: 'I is for', word: 'Igloo', emoji: '🏠', examples: ['🐷 pig', '⛸️ ice', '📷 pic', '💊 pill', '🔥 lit', '🎸 dig', '🦴 fin', '🏆 win'] },
+        { letter: 'I', phonics: 'I says', word: 'ih', emoji: '😄', examples: ['🧱 big', '🐱 six', '🪑 sit', '🦃 hit', '🚲 fit', '🎈 kit', '🦷 bit', '👔 knit'] }
       ],
-      'blends': [
-        { letter: 'bl', sound: '/bl/', word: 'blue', example: 'The sky is blue.' },
-        { letter: 'bl', sound: '/bl/', word: 'block', example: 'Build with blocks.' },
-        { letter: 'cl', sound: '/kl/', word: 'clock', example: 'Look at the clock.' },
-        { letter: 'cl', sound: '/kl/', word: 'clap', example: 'Clap your hands.' },
-        { letter: 'fl', sound: '/fl/', word: 'flag', example: 'Wave the flag.' },
-        { letter: 'fl', sound: '/fl/', word: 'fly', example: 'Birds fly high.' },
-        { letter: 'pl', sound: '/pl/', word: 'plant', example: 'Plant a flower.' },
-        { letter: 'pl', sound: '/pl/', word: 'play', example: 'Let us play together.' },
-        { letter: 'sl', sound: '/sl/', word: 'slip', example: 'Do not slip on ice.' },
-        { letter: 'sl', sound: '/sl/', word: 'slow', example: 'Go slow, be careful.' },
-        { letter: 'br', sound: '/br/', word: 'brown', example: 'I like brown bread.' },
-        { letter: 'br', sound: '/br/', word: 'bridge', example: 'Walk on the bridge.' },
-        { letter: 'cr', sound: '/kr/', word: 'cry', example: 'Do not cry, be happy.' },
-        { letter: 'cr', sound: '/kr/', word: 'cross', example: 'Cross the street.' },
-        { letter: 'dr', sound: '/dr/', word: 'drink', example: 'Drink some water.' },
-        { letter: 'dr', sound: '/dr/', word: 'drive', example: 'Drive the car.' },
-        { letter: 'fr', sound: '/fr/', word: 'frog', example: 'Frog jumps in pond.' },
-        { letter: 'fr', sound: '/fr/', word: 'fruit', example: 'Eat fresh fruit.' },
-        { letter: 'gr', sound: '/gr/', word: 'green', example: 'The grass is green.' },
-        { letter: 'gr', sound: '/gr/', word: 'grape', example: 'Eat a purple grape.' },
-        { letter: 'pr', sound: '/pr/', word: 'apple', example: 'Apple pie is yummy.' },
-        { letter: 'pr', sound: '/pr/', word: 'price', example: 'The price is low.' },
-        { letter: 'tr', sound: '/tr/', word: 'tree', example: 'Climb the tree.' },
-        { letter: 'tr', sound: '/tr/', word: 'train', example: 'Take the train.' }
+      'short-o': [
+        { letter: 'O', phonics: 'O is for', word: 'Octopus', emoji: '🐙', examples: ['🐕 dog', '🐸 frog', '🧹 mop', '🔝 top', '🎲 dot', '💿 cot', '🌞 hot', '🚙 lot'] },
+        { letter: 'O', phonics: 'O says', word: 'ah', emoji: '😍', examples: ['👨 dad', '🏠 mom', '🎁 box', '🔴 fox', '🏊 ox', '👀 pop', '🥣 pot', '🌌 fog'] }
       ],
-      'digraphs': [
-        { letter: 'sh', sound: '/ʃ/', word: 'ship', example: 'The ship sails away.' },
-        { letter: 'sh', sound: '/ʃ/', word: 'sheep', example: 'Count the sheep.' },
-        { letter: 'ch', sound: '/tʃ/', word: 'chip', example: 'Fish and chips.' },
-        { letter: 'ch', sound: '/tʃ/', word: 'chair', example: 'Sit on the chair.' },
-        { letter: 'th', sound: '/θ/', word: 'thumb', example: 'Thumbs up!' },
-        { letter: 'th', sound: '/θ/', word: 'three', example: 'One, two, three!' },
-        { letter: 'th', sound: '/ð/', word: 'this', example: 'This is my book.' },
-        { letter: 'th', sound: '/ð/', word: 'that', example: 'That cat is amazing!' },
-        { letter: 'wh', sound: '/w/', word: 'when', example: 'When is the party?' },
-        { letter: 'wh', sound: '/w/', word: 'what', example: 'What is your name?' },
-        { letter: 'wh', sound: '/h/', word: 'who', example: 'Who is that?' },
-        { letter: 'ph', sound: '/f/', word: 'phone', example: 'Phone a friend.' },
-        { letter: 'ph', sound: '/f/', word: 'photo', example: 'Take a photo.' },
-        { letter: 'ck', sound: '/k/', word: 'duck', example: 'The quack duck.' },
-        { letter: 'ck', sound: '/k/', word: 'black', example: 'Black cat, white cat.' },
-        { letter: 'ng', sound: '/ŋ/', word: 'sing', example: 'Sing a song.' },
-        { letter: 'ng', sound: '/ŋ/', word: 'ring', example: 'Ring the bell.' }
+      'short-u': [
+        { letter: 'U', phonics: 'U is for', word: 'Umbrella', emoji: '☂️', examples: ['🦆 duck', '🚌 bus', '☀️ sun', '🏐 mug', '🏃 run', '🐛 bug', '🟣 plum', '🎭 drum'] },
+        { letter: 'U', phonics: 'U says', word: 'uh', emoji: '🤔', examples: ['🍵 cup', '🖐️ up', '🦴 pup', '🎓 gum', '🖱️ but', '📏 cut', '🪜 nut', '👔 hut'] }
       ]
     };
     
     // State
-    let currentDeck = 'short-vowels';
-    let currentCards = [...decks['short-vowels']];
+    let currentDeck = 'short-a';
+    let currentCards = [...decks['short-a']];
     let currentIndex = 0;
     let isFlipped = false;
     let correctCount = 0;
     let totalCards = 0;
     let knownCards = [];
     let ttsEnabled = true;
+    let mode = 'easy';
     
     // DOM Elements
     const card = document.getElementById('card');
-    const letterEl = document.getElementById('letter');
-    const soundEl = document.getElementById('sound');
-    const wordEl = document.getElementById('word');
-    const exampleEl = document.getElementById('example');
+    const bigLetterEl = document.getElementById('big-letter');
+    const phonicsSentenceEl = document.getElementById('phonics-sentence');
+    const emojiEl = document.getElementById('emoji');
+    const wordListEl = document.getElementById('word-list');
     const progressEl = document.getElementById('progress');
     const correctEl = document.getElementById('correct');
     const totalEl = document.getElementById('total');
@@ -500,25 +475,43 @@
     const ttsPlayBtn = document.getElementById('ttsPlay');
     const ttsToggle = document.getElementById('ttsEnabled');
     const deckBtns = document.querySelectorAll('.deck-btn');
+    const modeBtns = document.querySelectorAll('.mode-btn');
+    
+    // Colors for letters
+    const letterColors = {
+      'A': '#FF6B6B',
+      'E': '#4ECDC4',
+      'I': '#45B7D1',
+      'O': '#FFD93D',
+      'U': '#6BCB77'
+    };
     
     // Functions
     function updateCard() {
       const cardData = currentCards[currentIndex];
-      letterEl.textContent = cardData.letter || '';
-      soundEl.textContent = cardData.sound || '';
-      wordEl.textContent = cardData.word || '';
-      exampleEl.textContent = cardData.example ? `"${cardData.example}"` : `"${cardData.word}!"`;
-      progressEl.textContent = `Card ${currentIndex + 1} of ${currentCards.length}`;
+      bigLetterEl.textContent = cardData.letter || '';
+      bigLetterEl.style.color = letterColors[cardData.letter] || '#FF6B6B';
+      phonicsSentenceEl.textContent = `${cardData.phonics} ${cardData.word}`;
+      emojiEl.textContent = cardData.emoji;
+      
+      if (mode === 'teacher') {
+        // Teacher mode: show more words
+        wordListEl.innerHTML = cardData.examples.map(ex => `<span>${ex}</span>`).join('');
+      } else {
+        // Easy mode: show fewer words
+        wordListEl.innerHTML = cardData.examples.slice(0, 4).map(ex => `<span>${ex}</span>`).join('');
+      }
+      
+      progressEl.textContent = `📚 Card ${currentIndex + 1} of ${currentCards.length}`;
       isFlipped = false;
       card.classList.remove('flipped');
     }
     
     function playTTS(text) {
-      // Remove emojis for cleaner speech
-      const cleanText = text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '');
+      const cleanText = text.replace(/[🌟⭐📊🎯😊👩‍🏫➡️⬅️🔄🍎🐜🐱🦇🎩🧘🗺️👟😮👨🎒😢🎁🔨🏃🐀🚿🥚👗🛏️🐔✏️🦶🌲👀📱📝🪑🖐️💊⛸️📷🔥🎸🧱✋😄🦃🚲🎈🦷👔🐙🐸🧹🔝🎲💿🧹🚙😍🏠🎁🔴🏊👀🌌☂️🦆🚌☀️🏐🏃🐛🟣🎭🤔🍵🖐️🦴🎓🖱️📏🪜👔🔊]/g, '');
       const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.rate = 0.9;
-      utterance.pitch = 1.0;
+      utterance.rate = 0.85;
+      utterance.pitch = 1.1;
       utterance.lang = 'en-US';
       window.speechSynthesis.speak(utterance);
     }
@@ -528,8 +521,8 @@
       card.classList.toggle('flipped', isFlipped);
       
       if (isFlipped && ttsEnabled) {
-        const word = wordEl.textContent;
-        playTTS(word);
+        const phonics = phonicsSentenceEl.textContent;
+        playTTS(phonics.replace(/ is for | says /g, ' '));
       }
     }
     
@@ -538,7 +531,7 @@
         currentIndex++;
         updateCard();
       } else {
-        alert('Deck complete! 🎉');
+        alert('🎉 Great job! Deck complete! 🌟');
         shuffleDeck();
         currentIndex = 0;
         updateCard();
@@ -587,6 +580,15 @@
       });
     }
     
+    function switchMode(modeName) {
+      mode = modeName;
+      updateCard();
+      
+      modeBtns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.mode === modeName);
+      });
+    }
+    
     // Event Listeners
     card.addEventListener('click', () => {
       if (!isFlipped) {
@@ -602,9 +604,9 @@
     document.getElementById('know-btn').addEventListener('click', markKnown);
     
     ttsPlayBtn.addEventListener('click', () => {
-      const word = wordEl.textContent;
-      const example = exampleEl.textContent;
-      playTTS(word + '. ' + example);
+      const phonics = phonicsSentenceEl.textContent;
+      const word = phonics.split(' ').pop();
+      playTTS(word);
     });
     
     ttsToggle.addEventListener('change', (e) => {
@@ -613,6 +615,10 @@
     
     deckBtns.forEach(btn => {
       btn.addEventListener('click', () => switchDeck(btn.dataset.deck));
+    });
+    
+    modeBtns.forEach(btn => {
+      btn.addEventListener('click', () => switchMode(btn.dataset.mode));
     });
     
     // Keyboard support
@@ -635,7 +641,8 @@
         case 'p':
         case 'P':
           if (!isFlipped) {
-            playTTS(wordEl.textContent);
+            const phonics = phonicsSentenceEl.textContent;
+            playTTS(phonics);
           }
           break;
       }
