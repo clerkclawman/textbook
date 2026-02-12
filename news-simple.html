@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson News - TV Mode</title>
+  <title>News Center</title>
   <style>
     * {
       box-sizing: border-box;
@@ -15,34 +15,32 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #1a1a2e;
       color: #eee;
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       overflow: hidden;
     }
     
     header {
-      padding: 1rem 1.5rem;
+      padding: 0.5rem 1rem;
       background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
       flex-shrink: 0;
-    }
-    
-    .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
     
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       color: #00ff87;
+      font-weight: bold;
     }
     
     .datetime {
-      display: flex;
-      gap: 1rem;
-      font-size: 1rem;
-      font-weight: bold;
+      font-size: 0.9rem;
+      color: #fff;
     }
     
     .ticker-section {
@@ -55,9 +53,9 @@
     .ticker {
       display: flex;
       align-items: center;
-      padding: 0.6rem 0;
+      padding: 0.4rem 0;
       white-space: nowrap;
-      animation: scroll 25s linear infinite;
+      animation: scroll 30s linear infinite;
     }
     
     @keyframes scroll {
@@ -68,118 +66,116 @@
     .ticker .breaking {
       background: #ff4444;
       color: white;
-      padding: 0.2rem 0.6rem;
-      border-radius: 5px;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
       font-weight: bold;
-      font-size: 0.8rem;
-      font-family: 'Arial', sans-serif;
+      font-size: 0.7rem;
+      margin-right: 0.5rem;
     }
     
     .ticker-item {
       display: inline-block;
-      font-size: 1.1rem;
-      padding: 0 1.5rem;
-    }
-    
-    .ticker-source {
-      color: #00ff87;
-      font-weight: bold;
-      margin-right: 0.4rem;
-      font-family: 'Arial', sans-serif;
+      font-size: 0.85rem;
+      padding: 0 1rem;
     }
     
     .weather-ticker {
       background: #1a1a3a;
-      overflow: hidden;
       border-bottom: 2px solid #4a90e2;
+      overflow: hidden;
       flex-shrink: 0;
     }
     
     .weather-ticker-content {
       display: flex;
       align-items: center;
-      padding: 0.6rem 0;
+      padding: 0.4rem 0;
       white-space: nowrap;
-      animation: scroll 35s linear infinite;
+      animation: scroll 25s linear infinite;
     }
     
     .weather-item {
       display: inline-block;
-      padding: 0 1.2rem;
-      font-size: 1.1rem;
+      padding: 0 1rem;
+      font-size: 0.85rem;
     }
     
     .weather-city {
       color: #ffa500;
       font-weight: bold;
-      font-family: 'Arial', sans-serif;
     }
     
     main {
       flex: 1;
-      padding: 0.8rem 1.2rem;
-      max-width: 1400px;
-      margin: 0 auto;
-      width: 100%;
-      display: flex;
-      gap: 0.8rem;
-      overflow: hidden;
-    }
-    
-    .sections {
       display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 0.8rem;
-      width: 100%;
-      height: 100%;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      padding: 0.5rem;
       overflow: hidden;
     }
     
     .section {
       background: rgba(255,255,255,0.05);
-      padding: 0.8rem 1rem;
-      border-radius: 10px;
-      border: 1px solid rgba(0, 255, 135, 0.15);
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.1);
       display: flex;
       flex-direction: column;
       overflow: hidden;
     }
     
-    .section-title {
-      font-size: 1.1rem;
+    .section-header {
+      padding: 0.4rem 0.6rem;
+      background: rgba(0,255,135,0.1);
+      border-bottom: 1px solid rgba(0,255,135,0.2);
+      font-size: 0.85rem;
       color: #00ff87;
-      margin-bottom: 0.5rem;
-      padding-bottom: 0.3rem;
-      border-bottom: 1px solid rgba(0, 255, 135, 0.2);
-      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     
-    .content-scroll {
+    .pagination {
+      display: flex;
+      gap: 0.4rem;
+    }
+    
+    .page-btn {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.75rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    
+    .page-btn:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    
+    .page-btn.active {
+      background: #00ff87;
+      color: #1a1a2e;
+    }
+    
+    .content-area {
       flex: 1;
+      padding: 0.4rem 0.6rem;
       overflow-y: auto;
       overflow-x: hidden;
     }
     
-    .content-scroll::-webkit-scrollbar {
-      width: 6px;
-    }
-    
-    .content-scroll::-webkit-scrollbar-track {
-      background: rgba(255,255,255,0.05);
-    }
-    
-    .content-scroll::-webkit-scrollbar-thumb {
-      background: rgba(0, 255, 135, 0.3);
-      border-radius: 3px;
-    }
-    
     .headline {
       background: rgba(255,255,255,0.05);
-      padding: 0.6rem 0.8rem;
-      border-radius: 8px;
-      margin-bottom: 0.5rem;
+      padding: 0.5rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.4rem;
       border-left: 3px solid #00ff87;
-      transition: all 0.2s ease;
+      font-size: 0.8rem;
+      line-height: 1.3;
     }
     
     .headline:hover {
@@ -187,44 +183,40 @@
     }
     
     .headline-title {
-      font-size: 0.95rem;
-      font-weight: 600;
       color: #fff;
-      line-height: 1.3;
+      font-weight: 500;
     }
     
-    .headline-meta {
-      display: flex;
-      gap: 0.5rem;
-      font-size: 0.75rem;
-      opacity: 0.6;
+    .headline-time {
+      color: #888;
+      font-size: 0.7rem;
       margin-top: 0.2rem;
     }
     
     .wiki-item {
       background: rgba(255,255,255,0.05);
-      padding: 0.5rem 0.7rem;
-      border-radius: 6px;
-      margin-bottom: 0.4rem;
+      padding: 0.4rem 0.5rem;
+      border-radius: 5px;
+      margin-bottom: 0.3rem;
       border-left: 3px solid #ffa500;
+      font-size: 0.8rem;
       line-height: 1.3;
     }
     
     .wiki-year {
       color: #ffa500;
       font-weight: bold;
-      font-size: 0.9rem;
-      font-family: 'Arial', sans-serif;
+      font-size: 0.85rem;
     }
     
     .wiki-text {
-      font-size: 0.85rem;
-      margin-top: 0.2rem;
+      color: #ddd;
+      margin-top: 0.15rem;
     }
     
     @media TV {
-      body {
-        font-size: 1.2rem;
+      header {
+        padding: 1vh 2vw;
       }
       
       h1 {
@@ -232,54 +224,52 @@
       }
       
       .datetime {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
       
       .ticker-item {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
       }
       
       .weather-item {
+        font-size: 1.3rem;
+      }
+      
+      .section-header {
         font-size: 1.5rem;
+        padding: 0.8vh 1vw;
       }
       
-      .section-title {
-        font-size: 1.5rem;
-      }
-      
-      .headline-title {
-        font-size: 1.2rem;
-      }
-      
-      .wiki-item {
+      .page-btn {
+        padding: 0.5rem 1rem;
         font-size: 1.1rem;
       }
       
-      .wiki-year {
+      .headline, .wiki-item {
         font-size: 1.2rem;
+        padding: 1vh 1vw;
+        margin-bottom: 0.6rem;
       }
       
-      .wiki-text {
-        font-size: 1.1rem;
+      .headline-time {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <h1>📺 News Center</h1>
-      <div class="datetime">
-        <span id="time">00:00 AM</span>
-        <span id="date">Wednesday, January 1</span>
-      </div>
+    <h1>📺 NEWS</h1>
+    <div class="datetime">
+      <span id="time">00:00 AM</span>
+      <span id="date">Jan 1</span>
     </div>
   </header>
   
   <div class="ticker-section">
     <div class="ticker" id="newsTicker">
       <span class="breaking">BREAKING</span>
-      <span class="ticker-item">Loading news...</span>
+      <span class="ticker-item">Loading...</span>
     </div>
   </div>
   
@@ -290,63 +280,61 @@
   </div>
   
   <main>
-    <div class="sections">
-      <div class="section">
-        <div class="section-title">📅 On This Day</div>
-        <div class="content-scroll" id="wikiContent">
-          <div class="wiki-item">Loading...</div>
-        </div>
+    <div class="section">
+      <div class="section-header">
+        <span>📚 On This Day</span>
       </div>
-      
-      <div class="section">
-        <div class="section-title">📰 BBC News</div>
-        <div class="content-scroll" id="headlineList">
-          <div class="headline">
-            <div class="headline-title">Loading news...</div>
-          </div>
-        </div>
+      <div class="content-area" id="wikiContent">
+        <div class="wiki-item">Loading...</div>
       </div>
-      
-      <div class="section" style="display: none;" id="jpNewsSection">
-        <div class="section-title">🇯🇵 Japan News</div>
-        <div class="content-scroll" id="jpHeadlineList">
-          <div class="headline">
-            <div class="headline-title">Loading news...</div>
-          </div>
-        </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <span>🇬🇧 BBC News</span>
+        <div class="pagination" id="bbcpagination"></div>
+      </div>
+      <div class="content-area" id="bbcContent">
+        <div class="headline">Loading...</div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <span>🇯🇵 Japan News</span>
+        <div class="pagination" id="jppagination"></div>
+      </div>
+      <div class="content-area" id="jpContent">
+        <div class="headline">Loading...</div>
       </div>
     </div>
   </main>
 
   <script>
-    const config = {
-      rssParserAPI: 'https://api.rss2json.com/v1/api.json?rss_url=',
-      sources: {
-        bbc: {
-          name: 'BBC News',
-          url: 'http://feeds.bbci.co.uk/news/rss.xml'
-        },
-        japanTimes: {
-          name: 'Japan Times',
-          url: 'https://www.japantimes.co.jp/feed/topstories/'
-        },
-        nhk: {
-          name: 'NHK World',
-          url: 'https://www3.nhk.or.jp/rss/news/cat0.xml'
-        }
-      },
-      cities: [
-        { name: 'Osaka', lat: 34.6937, lon: 135.5023 },
-        { name: 'Sapporo', lat: 43.0642, lon: 141.3469 },
-        { name: 'Naha', lat: 26.2124, lon: 127.6792 },
-        { name: 'New York', lat: 40.7128, lon: -74.0060 },
-        { name: 'London', lat: 51.5074, lon: -0.1278 },
-        { name: 'Lancaster', lat: 54.0466, lon: -2.8008 },
-        { name: 'Moscow', lat: 55.7558, lon: 37.6173 },
-        { name: 'Beijing', lat: 39.9042, lon: 116.4074 },
-        { name: 'Hollywood', lat: 34.0928, lon: -118.3287 }
-      ]
-    };
+    const ITEMS_PER_PAGE = 7;
+    let bbcPage = 1;
+    let jpPage = 1;
+    
+    let bbcData = [];
+    let jpData = [];
+    let weatherData = [];
+    let wikiData = [];
+    const CACHE_TTL = 30 * 60 * 1000;
+    const cache = {};
+    
+    const rssParserAPI = 'https://api.rss2json.com/v1/api.json?rss_url=';
+    
+    const cities = [
+      { name: 'Osaka', lat: 34.6937, lon: 135.5023 },
+      { name: 'Sapporo', lat: 43.0642, lon: 141.3469 },
+      { name: 'Naha', lat: 26.2124, lon: 127.6792 },
+      { name: 'New York', lat: 40.7128, lon: -74.0060 },
+      { name: 'London', lat: 51.5074, lon: -0.1278 },
+      { name: 'Lancaster', lat: 54.0466, lon: -2.8008 },
+      { name: 'Moscow', lat: 55.7558, lon: 37.6173 },
+      { name: 'Beijing', lat: 39.9042, lon: 116.4074 },
+      { name: 'Hollywood', lat: 34.0928, lon: -118.3287 }
+    ];
     
     const weatherEmojis = {
       0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
@@ -358,20 +346,6 @@
       95: '⛈️', 96: '⛈️', 99: '⛈️'
     };
     
-    let bbcHeadlines = [];
-    let japanHeadlines = [];
-    let weatherData = [];
-    let cache = {};
-    const CACHE_TTL = 30 * 60 * 1000;
-    
-    const timeEl = document.getElementById('time');
-    const dateEl = document.getElementById('date');
-    const newsTicker = document.getElementById('newsTicker');
-    const weatherTicker = document.getElementById('weatherTicker');
-    const headlineList = document.getElementById('headlineList');
-    const jpHeadlineList = document.getElementById('jpHeadlineList');
-    const wikiContent = document.getElementById('wikiContent');
-    
     function updateDateTime() {
       const now = new Date();
       let hours = now.getHours();
@@ -380,26 +354,22 @@
       hours = hours ? hours : 12;
       const minutes = String(now.getMinutes()).padStart(2, '0');
       
-      timeEl.textContent = `${hours}:${minutes} ${ampm}`;
-      const options = { weekday: 'long', month: 'long', day: 'numeric' };
-      dateEl.textContent = now.toLocaleDateString('en-US', options);
+      document.getElementById('time').textContent = `${hours}:${minutes} ${ampm}`;
+      document.getElementById('date').textContent = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     }
     
     async function fetchWeather() {
       const cacheKey = 'weather';
-      
       if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
-        weatherData = cache[cacheKey].data;
-        updateWeatherTicker();
+        updateWeather(cache[cacheKey].data);
         return;
       }
       
       try {
-        const promises = config.cities.map(async city => {
+        const promises = cities.map(async city => {
           const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current_weather=true`;
           const response = await fetch(url);
           const data = await response.json();
-          
           return {
             name: city.name,
             temp: Math.round(data.current_weather.temperature),
@@ -409,29 +379,24 @@
         
         weatherData = await Promise.all(promises);
         cache[cacheKey] = { data: weatherData, time: Date.now() };
-        updateWeatherTicker();
-      } catch (error) {
-        console.error('Weather error:', error);
-        weatherTicker.innerHTML = '<span class="weather-item">Weather unavailable</span>';
+        updateWeather(weatherData);
+      } catch (e) {
+        console.log('Weather error:', e);
       }
     }
     
-    function updateWeatherTicker() {
-      const items = weatherData.map(city => {
+    function updateWeather(data) {
+      const items = data.map(city => {
         const emoji = weatherEmojis[city.code] || '🌡️';
-        return `<span class="weather-item">
-          <span class="weather-city">${city.name}:</span>
-          ${city.temp}°C ${emoji}
-        </span>`;
+        return `<span class="weather-item">${city.name}: ${city.temp}°C ${emoji}</span>`;
       }).join('');
-      weatherTicker.innerHTML = items;
+      document.getElementById('weatherTicker').innerHTML = items;
     }
     
-    async function fetchWikiOnThisDay() {
+    async function fetchWiki() {
       const cacheKey = 'wiki';
-      
-      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
-        updateWikiContent(cache[cacheKey].data);
+      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < 60 * 60 * 1000) {
+        updateWiki(cache[cacheKey].data);
         return;
       }
       
@@ -440,42 +405,32 @@
       const day = now.getDate();
       
       try {
-        // Try Wikipedia REST API first
         const url = `https://en.wikipedia.org/api/rest_v1/feed/onthisday/all/${month}/${day}`;
         const response = await fetch(url);
         const data = await response.json();
         
-        const events = [];
-        
         if (data.events && data.events.length) {
-          for (let i = 0; i < Math.min(6, data.events.length); i++) {
-            events.push({
-              year: data.events[i].year,
-              text: data.events[i].text.substring(0, 150) + '...'
-            });
-          }
+          wikiData = data.events.slice(0, 20).map(e => ({
+            year: e.year,
+            text: e.text.substring(0, 100) + (e.text.length > 100 ? '...' : '')
+          }));
+          cache[cacheKey] = { data: wikiData, time: Date.now() };
+          updateWiki(wikiData);
         }
-        
-        events.sort((a, b) => b.year - a.year);
-        cache[cacheKey] = { data: events, time: Date.now() };
-        updateWikiContent(events);
-      } catch (error) {
-        console.error('Wiki error:', error);
+      } catch (e) {
+        console.log('Wiki error:', e);
         // Fallback
-        const today = new Date();
-        const months = ['January', 'February', 'March', 'April', 'May', 'June', 
-                        'July', 'August', 'September', 'October', 'November', 'December'];
-        wikiContent.innerHTML = `
+        document.getElementById('wikiContent').innerHTML = `
           <div class="wiki-item">
-            <div class="wiki-year">${today.getFullYear()}</div>
-            <div class="wiki-text">Today is ${months[today.getMonth()]} ${today.getDate()} - A great day for learning!</div>
+            <div class="wiki-year">${now.getFullYear()}</div>
+            <div class="wiki-text">Today is a great day for learning!</div>
           </div>
         `;
       }
     }
     
-    function updateWikiContent(events) {
-      wikiContent.innerHTML = events.map(e => `
+    function updateWiki(data) {
+      document.getElementById('wikiContent').innerHTML = data.map(e => `
         <div class="wiki-item">
           <div class="wiki-year">${e.year}</div>
           <div class="wiki-text">${e.text}</div>
@@ -483,119 +438,115 @@
       `).join('');
     }
     
-    async function fetchBBCNews() {
-      const cacheKey = 'bbc_news';
-      
+    async function fetchBBC() {
+      const cacheKey = 'bbc';
       if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
-        bbcHeadlines = cache[cacheKey].data;
-        updateNewsUI();
+        bbcData = cache[cacheKey].data;
+        updateBBC(bbcPage);
         return;
       }
       
       try {
-        const proxyUrl = config.rssParserAPI + encodeURIComponent(config.sources.bbc.url);
-        const response = await fetch(proxyUrl);
+        const response = await fetch(rssParserAPI + encodeURIComponent('http://feeds.bbci.co.uk/news/rss.xml'));
         const data = await response.json();
         
-        if (data.items && data.items.length) {
-          bbcHeadlines = data.items.slice(0, 12).map(item => ({
-            title: item.title || 'No title',
-            link: item.link || '#',
-            pubDate: item.pubDate || new Date(),
-            source: 'BBC'
+        if (data.items) {
+          bbcData = data.items.map(item => ({
+            title: item.title,
+            link: item.link,
+            pubDate: new Date(item.pubDate)
           }));
-          
-          cache[cacheKey] = { data: bbcHeadlines, time: Date.now() };
-          updateNewsUI();
+          cache[cacheKey] = { data: bbcData, time: Date.now() };
+          updateBBC(bbcPage);
         }
-      } catch (error) {
-        console.error('BBC news error:', error);
-        headlineList.innerHTML = '<div class="headline"><div class="headline-title">Unable to load BBC news</div></div>';
+      } catch (e) {
+        console.log('BBC error:', e);
       }
     }
     
-    async function fetchJapanNews() {
-      const cacheKey = 'jp_news';
-      
+    async function fetchJapan() {
+      const cacheKey = 'jp';
       if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
-        japanHeadlines = cache[cacheKey].data;
-        updateJapanUI();
+        updateJapan(jpPage);
         return;
       }
       
-      // Try Japanese news sources
-      const sources = [config.sources.japanTimes, config.sources.nhk];
+      // Try multiple sources
+      const sources = [
+        'https://www.japantimes.co.jp/feed/topstories/',
+        'https://www3.nhk.or.jp/rss/news/cat0.xml'
+      ];
       
-      for (const source of sources) {
+      for (const url of sources) {
         try {
-          const proxyUrl = config.rssParserAPI + encodeURIComponent(source.url);
-          const response = await fetch(proxyUrl);
+          const response = await fetch(rssParserAPI + encodeURIComponent(url));
           const data = await response.json();
           
           if (data.items && data.items.length) {
-            japanHeadlines = data.items.slice(0, 8).map(item => ({
-              title: item.title || 'No title',
-              link: item.link || '#',
-              pubDate: item.pubDate || new Date(),
-              source: source.name
+            jpData = data.items.map(item => ({
+              title: item.title,
+              link: item.link,
+              pubDate: new Date(item.pubDate)
             }));
-            
-            cache[cacheKey] = { data: japanHeadlines, time: Date.now() };
-            updateJapanUI();
+            cache[cacheKey] = { data: jpData, time: Date.now() };
+            updateJapan(jpPage);
             return;
           }
-        } catch (error) {
-          console.log(`${source.name} failed:`, error.message);
+        } catch (e) {
+          console.log('Japan source failed:', e.message);
         }
       }
       
-      // If both fail, hide Japanese section
-      if (japanHeadlines.length === 0) {
-        jpHeadlineList.innerHTML = '<div class="headline"><div class="headline-title">Japan news unavailable</div></div>';
+      // Fallback message
+      document.getElementById('jpContent').innerHTML = '<div class="headline">Japan news unavailable</div>';
+    }
+    
+    function renderPagination(elId, total, currentPage, setPage) {
+      const totalPages = Math.ceil(total / ITEMS_PER_PAGE) || 1;
+      let html = '';
+      
+      if (totalPages > 1) {
+        for (let i = 1; i <= totalPages; i++) {
+          const active = i === currentPage ? 'active' : '';
+          html += `<button class="page-btn ${active}" onclick="${setPage}(${i})">${i}</button>`;
+        }
       }
+      
+      document.getElementById(elId).innerHTML = html;
     }
     
-    function updateNewsUI() {
-      const tickerItems = bbcHeadlines.slice(0, 6).map(h =>
-        `<span class="ticker-item">
-          <span class="ticker-source">[BBC]</span>
-          ${h.title}
-        </span>`
-      ).join('');
+    function updateBBC(page) {
+      const start = (page - 1) * ITEMS_PER_PAGE;
+      const end = start + ITEMS_PER_PAGE;
+      const items = bbcData.slice(start, end);
       
-      newsTicker.innerHTML = `
-        <span class="breaking">BREAKING</span>
-        ${tickerItems}
-      `;
+      document.getElementById('bbcContent').innerHTML = items.map(h => `
+        <div class="headline" onclick="window.open('${h.link}', '_blank')">
+          <div class="headline-title">${h.title}</div>
+          <div class="headline-time">${getTimeAgo(h.pubDate)}</div>
+        </div>
+      `).join('');
       
-      headlineList.innerHTML = bbcHeadlines.map(h => {
-        const date = new Date(h.pubDate);
-        const timeAgo = getTimeAgo(date);
-        return `
-          <div class="headline" onclick="window.open('${h.link}', '_blank')">
-            <div class="headline-title">${h.title}</div>
-            <div class="headline-meta">
-              <span>${timeAgo}</span>
-            </div>
-          </div>
-        `;
-      }).join('');
+      renderPagination('bbcpagination', bbcData.length, page, 'setBBCPage');
+      
+      // Update ticker
+      const tickerItems = bbcData.slice(0, 8).map(h => `<span class="ticker-item">${h.title}</span>`).join('');
+      document.getElementById('newsTicker').innerHTML = `<span class="breaking">BREAKING</span>${tickerItems}`;
     }
     
-    function updateJapanUI() {
-      jpHeadlineList.innerHTML = japanHeadlines.map(h => {
-        const date = new Date(h.pubDate);
-        const timeAgo = getTimeAgo(date);
-        return `
-          <div class="headline" onclick="window.open('${h.link}', '_blank')">
-            <div class="headline-title">${h.title}</div>
-            <div class="headline-meta">
-              <span>${h.source}</span>
-              <span>${timeAgo}</span>
-            </div>
-          </div>
-        `;
-      }).join('');
+    function updateJapan(page) {
+      const start = (page - 1) * ITEMS_PER_PAGE;
+      const end = start + ITEMS_PER_PAGE;
+      const items = jpData.slice(start, end);
+      
+      document.getElementById('jpContent').innerHTML = items.map(h => `
+        <div class="headline" onclick="window.open('${h.link}', '_blank')">
+          <div class="headline-title">${h.title}</div>
+          <div class="headline-time">${getTimeAgo(h.pubDate)}</div>
+        </div>
+      `).join('');
+      
+      renderPagination('jppagination', jpData.length, page, 'setJPPage');
     }
     
     function getTimeAgo(date) {
@@ -606,17 +557,27 @@
       return `${Math.floor(seconds / 86400)}d ago`;
     }
     
-    updateDateTime();
-    setInterval(updateDateTime, 1000);
-    fetchWeather();
-    fetchBBCNews();
-    fetchWikiOnThisDay();
-    fetchJapanNews();
+    function setBBCPage(page) {
+      bbcPage = page;
+      updateBBC(page);
+    }
     
-    setInterval(fetchBBCNews, 30 * 60 * 1000);
+    function setJPPage(page) {
+      jpPage = page;
+      updateJapan(page);
+    }
+    
+    updateDateTime();
+    setInterval(updateDateTime, 60000);
+    
+    fetchWeather();
+    fetchWiki();
+    fetchBBC();
+    fetchJapan();
+    
     setInterval(fetchWeather, 30 * 60 * 1000);
-    setInterval(fetchWikiOnThisDay, 60 * 60 * 1000);
-    setInterval(fetchJapanNews, 30 * 60 * 1000);
+    setInterval(fetchBBC, 30 * 60 * 1000);
+    setInterval(fetchJapan, 30 * 60 * 1000);
   </script>
 </body>
 </html>
