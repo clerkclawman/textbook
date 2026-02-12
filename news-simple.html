@@ -12,6 +12,8 @@
       background: #1a1a2e;
       color: #eee;
       height: 100vh;
+      width: 100vw;
+      max-width: 100vw;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -36,6 +38,7 @@
       background: #0a0a1a;
       border-bottom: 2px solid #00ff87;
       flex-shrink: 0;
+      overflow: hidden;
     }
     
     .ticker {
@@ -64,6 +67,7 @@
       background: #1a1a3a;
       border-bottom: 2px solid #4a90e2;
       flex-shrink: 0;
+      overflow: hidden;
     }
     
     .weather-ticker-content {
@@ -128,8 +132,7 @@
     .content-area {
       flex: 1;
       padding: 0.5rem 0.7rem;
-      overflow-y: auto;
-      overflow-x: hidden;
+      overflow: hidden;
     }
     
     .headline {
@@ -141,6 +144,9 @@
       font-size: 0.9rem;
       line-height: 1.3;
       cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     
     .headline:hover { background: rgba(255,255,255,0.1); }
@@ -155,6 +161,9 @@
       border-left: 3px solid #ffa500;
       font-size: 0.9rem;
       line-height: 1.3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     
     .wiki-year { color: #ffa500; font-weight: bold; font-size: 0.95rem; }
