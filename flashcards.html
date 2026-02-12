@@ -23,6 +23,25 @@
       overflow: hidden;
     }
     
+    header {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    
+    .mini-clock {
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      background: rgba(0,0,0,0.2);
+      padding: 0.3rem 0.6rem;
+      border-radius: 8px;
+    }
+    
+    @media TV {
+      .mini-clock { font-size: 1.2rem; }
+    }
+    
     .controls {
       display: flex;
       gap: 1rem;
@@ -136,6 +155,10 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class="mini-clock" id="miniClock"></div>
+  </header>
+  
   <div class="controls">
     <select id="caseSelect">
       <option value="upper">A B C - Uppercase</option>
@@ -309,6 +332,19 @@
     
     updateCard();
     orderBtn.classList.add('active');
+    
+    // Mini clock
+    function updateMiniClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+      const date = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+      document.getElementById('miniClock').textContent = `${date} ${time}`;
+    }
+    
+    setInterval(updateMiniClock, 1000);
+    updateMiniClock();
   </script>
 </body>
 </html>
+
+    function updateMiniClock() {
