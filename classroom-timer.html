@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classroom Timer - Lesson Pacing</title>
+  <title>🎯 Classroom Timer - Fun & Loud!</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,8 +12,8 @@
     }
     
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -22,18 +22,20 @@
     
     header {
       padding: 1.5rem 2rem;
-      background: rgba(0,0,0,0.3);
+      background: rgba(0,0,0,0.2);
       text-align: center;
+      backdrop-filter: blur(10px);
     }
     
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
     }
     
     .subtitle {
-      font-size: 1rem;
-      opacity: 0.8;
+      font-size: 1.1rem;
+      opacity: 0.9;
     }
     
     main {
@@ -45,50 +47,124 @@
       padding: 1rem;
     }
     
-    .timer-display {
-      font-size: 8rem;
+    .sound-selector {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .sound-btn {
+      padding: 0.8rem 1.5rem;
+      border: 3px solid rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: all 0.3s ease;
       font-weight: bold;
-      font-family: 'Courier New', monospace;
-      margin: 1rem 0;
+    }
+    
+    .sound-btn:hover {
+      transform: scale(1.1);
+    }
+    
+    .sound-btn.active {
+      background: #fff;
+      color: #FF6B6B;
+      border-color: #fff;
+    }
+    
+    .timer-container {
+      background: rgba(255,255,255,0.15);
+      padding: 2rem;
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
       text-align: center;
-      color: #00ff87;
-      text-shadow: 0 0 30px rgba(0, 255, 135, 0.5);
+      margin-bottom: 2rem;
+    }
+    
+    .timer-display {
+      font-size: 6rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color: #fff;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+      font-family: 'Courier New', monospace;
     }
     
     .timer-display.warning {
-      color: #ffcc00;
-      text-shadow: 0 0 30px rgba(255, 204, 0, 0.5);
+      color: #FFD700;
+      animation: wobble 0.5s ease-in-out infinite;
     }
     
     .timer-display.danger {
-      color: #ff4444;
-      text-shadow: 0 0 30px rgba(255, 68, 68, 0.5);
-      animation: pulse 1s ease-in-out infinite;
+      color: #FF0000;
+      animation: shake 0.3s ease-in-out infinite;
     }
     
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
+    @keyframes wobble {
+      0%, 100% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+    }
+    
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-10px); }
+      75% { transform: translateX(10px); }
     }
     
     .phase-display {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin-bottom: 0.5rem;
-      opacity: 0.9;
+      font-weight: bold;
     }
+    
+    .controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .btn {
+      padding: 1rem 2rem;
+      border: 3px solid rgba(255,255,255,0.5);
+      background: linear-gradient(145deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+      color: #fff;
+      font-size: 1.3rem;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      min-width: 140px;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .btn:hover {
+      transform: scale(1.1) translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    
+    .btn-green { border-color: #4CAF50; }
+    .btn-red { border-color: #FF5252; }
+    .btn-yellow { border-color: #FFD93D; }
+    .btn-blue { border-color: #2196F3; }
     
     .lap-times {
       background: rgba(255,255,255,0.1);
-      padding: 1.5rem;
-      border-radius: 10px;
-      max-width: 600px;
+      padding: 1rem;
+      border-radius: 20px;
+      max-width: 400px;
       width: 100%;
-      margin-bottom: 1.5rem;
     }
     
     .lap-list {
       list-style: none;
-      max-height: 200px;
+      max-height: 150px;
       overflow-y: auto;
     }
     
@@ -99,440 +175,418 @@
       border-bottom: 1px solid rgba(255,255,255,0.1);
     }
     
-    .lap-item:last-child {
-      border-bottom: none;
-    }
-    
-    .lap-number {
-      font-weight: bold;
-      color: #00ff87;
-    }
-    
-    .controls {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+    .finish-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
       justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-    
-    .btn {
-      padding: 1rem 2rem;
-      border: 2px solid rgba(255,255,255,0.3);
-      background: rgba(255,255,255,0.1);
-      color: #fff;
-      font-size: 1.2rem;
-      cursor: pointer;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-      min-width: 120px;
-      font-weight: bold;
-    }
-    
-    .btn:hover {
-      background: rgba(255,255,255,0.3);
-      border-color: #00ff87;
-    }
-    
-    .btn:active {
-      transform: scale(0.95);
-    }
-    
-    .btn-start { border-color: #00ff87; }
-    .btn-stop { border-color: #ff4444; }
-    .btn-reset { border-color: #ffcc00; }
-    
-    .presets {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-    
-    .preset-btn {
-      padding: 0.5rem 1rem;
-      border: 1px solid rgba(255,255,255,0.3);
-      background: rgba(255,255,255,0.05);
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 20px;
-      transition: all 0.3s ease;
-    }
-    
-    .preset-btn:hover {
-      background: rgba(255,255,255,0.2);
-      border-color: #00ff87;
-    }
-    
-    .settings {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .setting-group {
-      display: flex;
-      flex-direction: column;
       align-items: center;
+      z-index: 1000;
+      pointer-events: none;
     }
     
-    .setting-label {
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-      opacity: 0.7;
-    }
-    
-    .setting-input {
-      padding: 0.5rem;
-      font-size: 1.2rem;
-      text-align: center;
-      border: 2px solid rgba(255,255,255,0.3);
-      background: rgba(255,255,255,0.1);
-      color: #fff;
-      border-radius: 8px;
-      width: 100px;
-      font-weight: bold;
-    }
-    
-    .setting-input:focus {
-      outline: none;
-      border-color: #00ff87;
-    }
-    
-    :placeholder-shown {
-      color: rgba(255,255,255,0.5);
-    }
-    
-    .sound-toggle {
+    .finish-animation.active {
       display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
     }
     
-    .checkbox {
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
+    .finish-emoji {
+      font-size: 15rem;
+      animation: pop 0.5s ease-out;
+    }
+    
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      pointer-events: none;
+      animation: confetti-fall 3s linear forwards;
+    }
+    
+    @keyframes confetti-fall {
+      0% { transform: translateY(-100vh) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(720deg); }
     }
     
     @media (max-width: 768px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-      
-      .timer-display {
-        font-size: 5rem;
-      }
-      
-      .btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-        min-width: 100px;
-      }
+      .timer-display { font-size: 4rem; }
+      .btn { font-size: 1.1rem; min-width: 100px; }
+      h1 { font-size: 1.8rem; }
+    }
+    
+    @media TV {
+      .timer-display { font-size: 12rem; }
+      .btn { font-size: 2rem; min-width: 250px; }
+      h1 { font-size: 4rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>⏱️ Classroom Timer</h1>
-    <p class="subtitle">Perfect for lesson pacing, activities, and breaks</p>
+    <h1>🎯 Classroom Timer</h1>
+    <p class="subtitle">Fun countdown with awesome sounds! 🎉</p>
   </header>
   
   <main>
-    <div class="phase-display" id="phase">Ready to start</div>
-    
-    <div class="timer-display" id="timer">00:00</div>
-    
-    <div class="presets">
-      <button class="preset-btn" data-seconds="60">1 min</button>
-      <button class="preset-btn" data-seconds="180">3 min</button>
-      <button class="preset-btn" data-seconds="300">5 min</button>
-      <button class="preset-btn" data-seconds="600">10 min</button>
-      <button class="preset-btn" data-seconds="900">15 min</button>
-      <button class="preset-btn" data-seconds="1800">30 min</button>
-      <button class="preset-btn" data-seconds="2700">45 min</button>
-      <button class="preset-btn" data-seconds="3600">60 min</button>
+    <div class="sound-selector">
+      <button class="sound-btn active" data-sound="countdown">🔢 Countdown</button>
+      <button class="sound-btn" data-sound="bomb">💣 Bomb</button>
+      <button class="sound-btn" data-sound="fireworks">🎆 Fireworks</button>
+      <button class="sound-btn" data-sound="horn">📯 Horn</button>
     </div>
     
-    <div class="settings">
-      <div class="setting-group">
-        <label class="setting-label">Minutes</label>
-        <input type="number" class="setting-input" id="minutes" value="5" min="0" max="99">
-      </div>
-      <div class="setting-group">
-        <label class="setting-label">Seconds</label>
-        <input type="number" class="setting-input" id="seconds" value="0" min="0" max="59">
-      </div>
-    </div>
-    
-    <div class="sound-toggle">
-      <input type="checkbox" class="checkbox" id="soundEnabled" checked>
-      <label for="soundEnabled">Enable sound alerts</label>
+    <div class="timer-container">
+      <div class="phase-display" id="phaseDisplay">Ready to start!</div>
+      <div class="timer-display" id="timerDisplay">05:00</div>
     </div>
     
     <div class="controls">
-      <button class="btn btn-start" id="startBtn">▶ Start</button>
-      <button class="btn btn-stop" id="stopBtn">⏸ Pause</button>
-      <button class="btn btn-reset" id="resetBtn">↺ Reset</button>
-      <button class="btn" id="lapBtn">⏱ Lap</button>
+      <button class="btn btn-green" id="startBtn">▶️ Start</button>
+      <button class="btn btn-red" id="stopBtn">⏸️ Pause</button>
+      <button class="btn btn-yellow" id="resetBtn">🔄 Reset</button>
+      <button class="btn btn-blue" id="lapBtn">📊 Lap</button>
     </div>
     
     <div class="lap-times">
-      <div style="margin-bottom: 0.5rem; font-weight: bold;">Lap Times</div>
+      <div class="phase-display" style="font-size: 1.2rem;">Lap Times</div>
       <ul class="lap-list" id="lapList">
-        <li class="lap-item" style="color: #00ff87;">No laps recorded</li>
+        <li class="lap-item">
+          <span>No laps yet</span>
+        </li>
       </ul>
     </div>
   </main>
+  
+  <div class="finish-animation" id="finishAnimation">
+    <div class="finish-emoji">🎉</div>
+  </div>
 
   <script>
-    // Timer state
-    let totalSeconds = 300;
-    let remainingSeconds = 300;
+    // State
+    let timerRunning = false;
     let timerInterval = null;
-    let isRunning = false;
-    let lapCount = 0;
+    let totalSeconds = 300; // 5 minutes default
+    let remainingSeconds = 300;
+    let laps = [];
+    let currentSoundMode = 'countdown';
+    let countdownSoundInterval = null;
     
-    // Audio contexts for sounds
+    // Audio Context
     let audioContext = null;
     
+    function initAudio() {
+      if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+    }
+    
+    // Sound Functions
+    function playCountdownSound(seconds) {
+      if (currentSoundMode !== 'countdown') return;
+      
+      initAudio();
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+      
+      oscillator.frequency.setValueAtTime(880 - (seconds * 10), audioContext.currentTime);
+      oscillator.type = 'sine';
+      
+      gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+      
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 0.3);
+    }
+    
+    function playBombSound() {
+      initAudio();
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+      
+      oscillator.frequency.setValueAtTime(100, audioContext.currentTime);
+      oscillator.frequency.exponentialRampToValueAtTime(30, audioContext.currentTime + 1);
+      oscillator.type = 'sawtooth';
+      
+      gainNode.gain.setValueAtTime(0.5, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1);
+      
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 1);
+    }
+    
+    function playFireworksSound() {
+      initAudio();
+      
+      // Multiple explosions
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          const oscillator = audioContext.createOscillator();
+          const gainNode = audioContext.createGain();
+          
+          oscillator.connect(gainNode);
+          gainNode.connect(audioContext.destination);
+          
+          oscillator.frequency.setValueAtTime(200 + Math.random() * 300, audioContext.currentTime);
+          oscillator.type = 'triangle';
+          
+          gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+          gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+          
+          oscillator.start(audioContext.currentTime);
+          oscillator.stop(audioContext.currentTime + 0.5);
+        }, i * 200);
+      }
+    }
+    
+    function playHornSound() {
+      initAudio();
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+      
+      oscillator.frequency.setValueAtTime(350, audioContext.currentTime);
+      oscillator.frequency.setValueAtTime(300, audioContext.currentTime + 0.3);
+      oscillator.type = 'square';
+      
+      gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1);
+      
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 1);
+    }
+    
     // DOM Elements
-    const timerDisplay = document.getElementById('timer');
-    const phaseDisplay = document.getElementById('phase');
+    const timerDisplay = document.getElementById('timerDisplay');
+    const phaseDisplay = document.getElementById('phaseDisplay');
     const startBtn = document.getElementById('startBtn');
     const stopBtn = document.getElementById('stopBtn');
     const resetBtn = document.getElementById('resetBtn');
     const lapBtn = document.getElementById('lapBtn');
-    const minutesInput = document.getElementById('minutes');
-    const secondsInput = document.getElementById('seconds');
     const lapList = document.getElementById('lapList');
-    const soundToggle = document.getElementById('soundEnabled');
+    const soundBtns = document.querySelectorAll('.sound-btn');
+    const finishAnimation = document.getElementById('finishAnimation');
     
-    // Beep sound using Web Audio API
-    function playBeep(frequency = 800, duration = 200) {
-      if (!soundToggle.checked) return;
-      
-      try {
-        if (!audioContext) {
-          audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        }
-        
-        const oscillator = audioContext.createOscillator();
-        const gainNode = audioContext.createGain();
-        
-        oscillator.connect(gainNode);
-        gainNode.connect(audioContext.destination);
-        
-        oscillator.frequency.value = frequency;
-        oscillator.type = 'sine';
-        
-        gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration / 1000);
-        
-        oscillator.start(audioContext.currentTime);
-        oscillator.stop(audioContext.currentTime + duration / 1000);
-      } catch (e) {
-        console.log('Audio not available:', e);
-      }
-    }
-    
-    // Play alarm sound (triple beep)
-    function playAlarm() {
-      playBeep(600, 200);
-      setTimeout(() => playBeep(600, 200), 300);
-      setTimeout(() => playBeep(600, 400), 600);
-    }
-    
+    // Format time
     function formatTime(seconds) {
       const mins = Math.floor(seconds / 60);
       const secs = seconds % 60;
-      return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
     }
     
+    // Update display
     function updateDisplay() {
       timerDisplay.textContent = formatTime(remainingSeconds);
       
-      // Color coding based on time remaining
-      const percentage = remainingSeconds / totalSeconds;
+      // Color coding
       timerDisplay.classList.remove('warning', 'danger');
-      
-      if (percentage <= 0.1) {
+      if (remainingSeconds <= 10) {
         timerDisplay.classList.add('danger');
-      } else if (percentage <= 0.25) {
+        phaseDisplay.textContent = '⚠️ Almost done!';
+      } else if (remainingSeconds <= 30) {
         timerDisplay.classList.add('warning');
+        phaseDisplay.textContent = '⏰ Hurry up!';
+      } else {
+        phaseDisplay.textContent = 'Time ticking...';
       }
     }
     
+    // Start timer
     function startTimer() {
-      if (isRunning) return;
+      if (timerRunning) return;
       
-      isRunning = true;
-      startBtn.disabled = true;
-      stopBtn.disabled = false;
-      phaseDisplay.textContent = '⏱ Timer running...';
-      phaseDisplay.style.color = '#00ff87';
-      
-      playBeep(400, 100); // Start beep
+      timerRunning = true;
+      initAudio();
       
       timerInterval = setInterval(() => {
-        remainingSeconds--;
-        updateDisplay();
-        
-        // At 25% remaining
-        if (remainingSeconds === Math.floor(totalSeconds * 0.25)) {
-          phaseDisplay.textContent = '⚠️ 25% remaining';
-          phaseDisplay.style.color = '#ffcc00';
-          playBeep(500, 150);
-        }
-        
-        // At 10% remaining
-        if (remainingSeconds === Math.floor(totalSeconds * 0.1)) {
-          phaseDisplay.textContent = '🔔 Almost done!';
-          phaseDisplay.style.color = '#ff4444';
-          playBeep(600, 200);
-        }
-        
-        // Timer complete
-        if (remainingSeconds <= 0) {
+        if (remainingSeconds > 0) {
+          remainingSeconds--;
+          updateDisplay();
+          
+          // Countdown sounds (last 10 seconds)
+          if (currentSoundMode === 'countdown' && remainingSeconds <= 10 && remainingSeconds > 0) {
+            playCountdownSound(remainingSeconds);
+          }
+          
+          // Bomb ticking (every second in last 10)
+          if (currentSoundMode === 'bomb' && remainingSeconds <= 10 && remainingSeconds > 0) {
+            initAudio();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            oscillator.frequency.setValueAtTime(1000, audioContext.currentTime);
+            oscillator.type = 'square';
+            gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.1);
+          }
+        } else {
+          // Timer finished!
           clearInterval(timerInterval);
-          isRunning = false;
-          
-          timerDisplay.textContent = '00:00';
-          timerDisplay.classList.remove('warning');
-          timerDisplay.classList.add('danger');
-          
-          phaseDisplay.textContent = '⏰ TIME\'S UP!';
-          
-          playAlarm();
-          stopBtn.disabled = true;
-          startBtn.disabled = false;
-          lapBtn.disabled = true;
+          timerRunning = false;
+          timerFinished();
         }
       }, 1000);
     }
     
-    function pauseTimer() {
-      if (!isRunning) return;
-      
+    // Stop timer
+    function stopTimer() {
+      timerRunning = false;
       clearInterval(timerInterval);
-      isRunning = false;
-      startBtn.disabled = false;
-      stopBtn.disabled = true;
-      phaseDisplay.textContent = '⏸ Paused';
-      phaseDisplay.style.color = '#ffcc00';
+      phaseDisplay.textContent = 'Paused';
     }
     
+    // Reset timer
     function resetTimer() {
-      clearInterval(timerInterval);
-      isRunning = false;
-      
-      // Reset to input values
-      totalSeconds = parseInt(minutesInput.value) * 60 + parseInt(secondsInput.value);
+      stopTimer();
       remainingSeconds = totalSeconds;
-      
+      laps = [];
+      updateLapDisplay();
       updateDisplay();
-      
-      startBtn.disabled = false;
-      stopBtn.disabled = true;
-      lapBtn.disabled = false;
-      lapCount = 0;
-      
+      phaseDisplay.textContent = 'Ready to start!';
       timerDisplay.classList.remove('warning', 'danger');
-      phaseDisplay.textContent = 'Ready to start';
-      phaseDisplay.style.color = '#fff';
-      
-      lapList.innerHTML = '<li class="lap-item" style="color: #00ff87;">No laps recorded</li>';
+      finishAnimation.classList.remove('active');
     }
     
-    function recordLap() {
-      lapCount++;
+    // Lap
+    function lap() {
+      if (!timerRunning) return;
+      
       const lapTime = totalSeconds - remainingSeconds;
-      const li = document.createElement('li');
-      li.className = 'lap-item';
-      li.innerHTML = `
-        <span class="lap-number">Lap ${lapCount}</span>
-        <span>${formatTime(lapTime)}</span>
-      `;
-      
-      // Clear "no laps" message
-      if (lapList.children[0] && lapList.children[0].textContent.includes('No laps')) {
-        lapList.innerHTML = '';
-      }
-      
-      lapList.appendChild(li);
-      lapList.scrollTop = lapList.scrollHeight;
-      
-      playBeep(700, 150); // Lap beep
+      laps.push(lapTime);
+      updateLapDisplay();
     }
     
-    // Quick presets
-    function setPreset(seconds) {
-      totalSeconds = seconds;
-      remainingSeconds = seconds;
-      minutesInput.value = Math.floor(seconds / 60);
-      secondsInput.value = seconds % 60;
-      updateDisplay();
+    // Update lap display
+    function updateLapDisplay() {
+      if (laps.length === 0) {
+        lapList.innerHTML = '<li class="lap-item"><span>No laps yet</span></li>';
+        return;
+      }
+      
+      lapList.innerHTML = laps.map((lap, index) => `
+        <li class="lap-item">
+          <span>Lap ${index + 1}</span>
+          <span>${formatTime(lap)}</span>
+        </li>
+      `).join('');
     }
     
-    // Event Listeners
-    startBtn.addEventListener('click', startTimer);
-    stopBtn.addEventListener('click', pauseTimer);
-    resetBtn.addEventListener('click', resetTimer);
-    lapBtn.addEventListener('click', recordLap);
-    
-    // Change inputs on the fly
-    minutesInput.addEventListener('change', () => {
-      if (!isRunning) {
-        totalSeconds = parseInt(minutesInput.value) * 60 + parseInt(secondsInput.value);
-        remainingSeconds = totalSeconds;
-        updateDisplay();
+    // Timer finished
+    function timerFinished() {
+      phaseDisplay.textContent = '🎉 Time is UP!';
+      timerDisplay.classList.add('danger');
+      
+      // Play finish sound
+      switch (currentSoundMode) {
+        case 'bomb':
+          playBombSound();
+          finishAnimation.innerHTML = '<div class="finish-emoji">💥</div>';
+          break;
+        case 'fireworks':
+          playFireworksSound();
+          finishAnimation.innerHTML = '<div class="finish-emoji">🎆</div>';
+          createConfetti();
+          break;
+        case 'horn':
+          playHornSound();
+          finishAnimation.innerHTML = '<div class="finish-emoji">📯</div>';
+          break;
+        case 'countdown':
+        default:
+          initAudio();
+          const oscillator = audioContext.createOscillator();
+          const gainNode = audioContext.createGain();
+          oscillator.connect(gainNode);
+          gainNode.connect(audioContext.destination);
+          oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime);
+          oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime + 0.3);
+          oscillator.frequency.setValueAtTime(783.99, audioContext.currentTime + 0.6);
+          oscillator.type = 'sine';
+          gainNode.gain.setValueAtTime(0.5, audioContext.currentTime);
+          gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1);
+          oscillator.start(audioContext.currentTime);
+          oscillator.stop(audioContext.currentTime + 1);
+          finishAnimation.innerHTML = '<div class="finish-emoji">⏰</div>';
+          break;
       }
-    });
+      
+      finishAnimation.classList.add('active');
+      setTimeout(() => {
+        finishAnimation.classList.remove('active');
+      }, 3000);
+    }
     
-    secondsInput.addEventListener('change', () => {
-      if (!isRunning) {
-        totalSeconds = parseInt(minutesInput.value) * 60 + parseInt(secondsInput.value);
-        remainingSeconds = totalSeconds;
-        updateDisplay();
+    // Create confetti
+    function createConfetti() {
+      const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFD93D', '#6BCB77'];
+      
+      for (let i = 0; i < 50; i++) {
+        setTimeout(() => {
+          const confetti = document.createElement('div');
+          confetti.className = 'confetti';
+          confetti.style.left = Math.random() * 100 + 'vw';
+          confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+          confetti.style.animationDelay = Math.random() * 2 + 's';
+          document.body.appendChild(confetti);
+          
+          setTimeout(() => confetti.remove(), 5000);
+        }, i * 50);
       }
-    });
+    }
     
-    // Preset buttons
-    document.querySelectorAll('.preset-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (!isRunning) {
-          setPreset(parseInt(btn.dataset.seconds));
-        }
+    // Sound mode switching
+    function switchSound(mode) {
+      currentSoundMode = mode;
+      soundBtns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.sound === mode);
       });
+    }
+    
+    // Event listeners
+    startBtn.addEventListener('click', startTimer);
+    stopBtn.addEventListener('click', stopTimer);
+    resetBtn.addEventListener('click', resetTimer);
+    lapBtn.addEventListener('click', lap);
+    
+    soundBtns.forEach(btn => {
+      btn.addEventListener('click', () => switchSound(btn.dataset.sound));
     });
     
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
-      if (e.target.tagName === 'INPUT') return;
-      
-      switch(e.key) {
-        case ' ':
-        case 'Enter':
-          e.preventDefault();
-          isRunning ? pauseTimer() : startTimer();
-          break;
-        case 'r':
-        case 'R':
-          if (isRunning) pauseTimer();
-          resetTimer();
-          break;
-        case 'l':
-        case 'L':
-          if (isRunning) recordLap();
-          break;
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (timerRunning) {
+          stopTimer();
+        } else {
+          startTimer();
+        }
+      } else if (e.code === 'KeyR') {
+        resetTimer();
+      } else if (e.code === 'KeyL') {
+        lap();
       }
     });
     
     // Initialize
-    stopBtn.disabled = true;
     updateDisplay();
   </script>
 </body>

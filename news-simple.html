@@ -58,9 +58,10 @@
       white-space: nowrap;
       animation: scroll 30s linear infinite;
       cursor: pointer;
-      hover: {
-        animation-play-state: paused;
-      }
+    }
+    
+    .ticker:hover {
+      animation-play-state: paused;
     }
     
     @keyframes scroll {
@@ -132,10 +133,21 @@
       width: 100%;
     }
     
-    .headline-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
+    .sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    
+    .section {
+      background: rgba(255,255,255,0.05);
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 2px solid rgba(0, 255, 135, 0.2);
+    }
+    
+    .section.full-width {
+      grid-column: 1 / -1;
     }
     
     h2 {
@@ -144,6 +156,12 @@
       margin-bottom: 1rem;
       padding-bottom: 0.5rem;
       border-bottom: 2px solid rgba(0, 255, 135, 0.3);
+    }
+    
+    .headline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
     }
     
     .headline {
@@ -182,6 +200,25 @@
       color: #ffa500;
     }
     
+    .wiki-item {
+      background: rgba(255,255,255,0.05);
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #ffa500;
+    }
+    
+    .wiki-year {
+      color: #ffa500;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .wiki-text {
+      margin-top: 0.3rem;
+      font-size: 1.1rem;
+    }
+    
     footer {
       padding: 1rem 2rem;
       background: #0a0a1a;
@@ -211,7 +248,6 @@
     
     .source-btn:hover {
       background: rgba(0, 255, 135, 0.3);
-      border-color: #00ff87;
     }
     
     .source-btn.active {
@@ -221,20 +257,12 @@
     }
     
     @media (max-width: 768px) {
+      .sections {
+        grid-template-columns: 1fr;
+      }
+      
       h1 {
         font-size: 1.5rem;
-      }
-      
-      .datetime {
-        font-size: 1rem;
-      }
-      
-      .ticker-item {
-        font-size: 1rem;
-      }
-      
-      .headline .headline-title {
-        font-size: 1.1rem;
       }
     }
   </style>
@@ -264,16 +292,27 @@
   </div>
   
   <main>
-    <div class="source-selector">
-      <button class="source-btn active" data-source="bbc">BBC News</button>
-      <button class="source-btn" data-source="reuters">Reuters</button>
-      <button class="source-btn" data-source="ap">Associated Press</button>
-    </div>
-    
-    <h2 id="sourceTitle">BBC News Headlines</h2>
-    <div class="headline-list" id="headlineList">
-      <div class="headline">
-        <div class="headline-title">Loading news...</div>
+    <div class="sections">
+      <div class="section">
+        <div class="source-selector">
+          <button class="source-btn active" data-source="bbc">BBC News</button>
+          <button class="source-btn" data-source="reuters">Reuters</button>
+          <button class="source-btn" data-source="ap">Associated Press</button>
+        </div>
+        
+        <h2 id="sourceTitle">📰 Today's News</h2>
+        <div class="headline-list" id="headlineList">
+          <div class="headline">
+            <div class="headline-title">Loading news...</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>📅 On This Day</h2>
+        <div id="wikiContent">
+          <div class="wiki-item">Loading...</div>
+        </div>
       </div>
     </div>
   </main>
@@ -293,7 +332,7 @@
         },
         reuters: {
           name: 'Reuters',
-          url: 'https://www.reutersagency.com/rss/feed/news' // Using Reuters News Agency feed
+          url: 'https://www.reutersagency.com/rss/feed/news'
         },
         ap: {
           name: 'Associated Press',
@@ -301,22 +340,32 @@
         }
       },
       cities: [
-        { name: 'Tokyo', temp: 15, weather: '☀️' },
-        { name: 'Osaka', temp: 13, weather: '☀️' },
-        { name: 'Kyoto', temp: 14, weather: '⛅' },
-        { name: 'London', temp: 8, weather: '🌧️' },
-        { name: 'New York', temp: 12, weather: '☁️' },
-        { name: 'Paris', temp: 10, weather: '🌧️' },
-        { name: 'Sydney', temp: 22, weather: '☀️' },
-        { name: 'Singapore', temp: 28, weather: '☀️' },
-        { name: 'Dubai', temp: 26, weather: '☀️' },
-        { name: 'Vancouver', temp: 9, weather: '🌧️' }
+        { name: 'Tokyo', lat: 35.6895, lon: 139.6917 },
+        { name: 'Osaka', lat: 34.6937, lon: 135.5023 },
+        { name: 'Kyoto', lat: 35.0116, lon: 135.7681 },
+        { name: 'London', lat: 51.5074, lon: -0.1278 },
+        { name: 'New York', lat: 40.7128, lon: -74.0060 },
+        { name: 'Paris', lat: 48.8566, lon: 2.3522 },
+        { name: 'Sydney', lat: -33.8688, lon: 151.2093 },
+        { name: 'Singapore', lat: 1.3521, lon: 103.8198 }
       ]
+    };
+    
+    // Weather code to emoji mapping
+    const weatherEmojis = {
+      0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
+      45: '🌫️', 48: '🌫️',
+      51: '🌦️', 53: '🌦️', 55: '🌦️',
+      61: '🌧️', 63: '🌧️', 65: '🌧️',
+      71: '🌨️', 73: '🌨️', 75: '🌨️',
+      80: '🌦️', 81: '🌦️', 82: '🌦️',
+      95: '⛈️', 96: '⛈️', 99: '⛈️'
     };
     
     // State
     let currentSource = 'bbc';
     let headlines = [];
+    let weatherData = [];
     let cache = {};
     const CACHE_TTL = 30 * 60 * 1000; // 30 minutes
     
@@ -328,12 +377,11 @@
     const headlineList = document.getElementById('headlineList');
     const sourceTitle = document.getElementById('sourceTitle');
     const sourceBtns = document.querySelectorAll('.source-btn');
+    const wikiContent = document.getElementById('wikiContent');
     
     // Time and Date
     function updateDateTime() {
       const now = new Date();
-      
-      // Format time (12-hour format)
       let hours = now.getHours();
       const ampm = hours >= 12 ? 'PM' : 'AM';
       hours = hours % 12;
@@ -342,21 +390,123 @@
       
       timeEl.textContent = `${hours}:${minutes} ${ampm}`;
       
-      // Format date (Day, Month Day, Year)
       const options = { weekday: 'long', month: 'long', day: 'numeric' };
       dateEl.textContent = now.toLocaleDateString('en-US', options);
     }
     
-    // Weather Ticker
-    function initWeatherTicker() {
-      const items = config.cities.map(city => 
-        `<span class="weather-item">
+    // Real Weather using Open-Meteo (free, no API key)
+    async function fetchWeather() {
+      const cacheKey = 'weather';
+      
+      // Check cache
+      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
+        weatherData = cache[cacheKey].data;
+        updateWeatherTicker();
+        return;
+      }
+      
+      try {
+        const promises = config.cities.map(async city => {
+          const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current_weather=true`;
+          const response = await fetch(url);
+          const data = await response.json();
+          
+          return {
+            name: city.name,
+            temp: Math.round(data.current_weather.temperature),
+            code: data.current_weather.weathercode
+          };
+        });
+        
+        weatherData = await Promise.all(promises);
+        
+        // Cache
+        cache[cacheKey] = {
+          data: weatherData,
+          time: Date.now()
+        };
+        
+        updateWeatherTicker();
+      } catch (error) {
+        console.error('Failed to fetch weather:', error);
+        // Fallback to offline mode
+        weatherTicker.innerHTML = '<span class="weather-item">Weather unavailable - please check connection</span>';
+      }
+    }
+    
+    // Update weather ticker
+    function updateWeatherTicker() {
+      const items = weatherData.map(city => {
+        const emoji = weatherEmojis[city.code] || '🌡️';
+        return `<span class="weather-item">
           <span class="weather-city">${city.name}:</span>
-          ${city.temp}°C ${city.weather}
-        </span>`
-      ).join('');
+          ${city.temp}°C ${emoji}
+        </span>`;
+      }).join('');
       
       weatherTicker.innerHTML = items;
+    }
+    
+    // Wikipedia On This Day
+    async function fetchWikiOnThisDay() {
+      const cacheKey = 'wiki';
+      
+      if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
+        updateWikiContent(cache[cacheKey].data);
+        return;
+      }
+      
+      const now = new Date();
+      const month = now.getMonth() + 1;
+      const day = now.getDate();
+      
+      try {
+        const url = `https://en.wikipedia.org/api/rest_v1/feed/onthisday/all/${month}/${day}`;
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        const events = [];
+        
+        // Get events from different years
+        if (data.events && data.events.length) {
+          for (let i = 0; i < Math.min(8, data.events.length); i++) {
+            events.push({
+              year: data.events[i].year,
+              text: data.events[i].text
+            });
+          }
+        }
+        
+        // Sort by recency (most recent last)
+        events.sort((a, b) => b.year - a.year);
+        
+        // Cache
+        cache[cacheKey] = {
+          data: events,
+          time: Date.now()
+        };
+        
+        updateWikiContent(events);
+      } catch (error) {
+        console.error('Failed to fetch wiki:', error);
+        const now = new Date();
+        wikiContent.innerHTML = `
+          <div class="wiki-item">
+            <div class="wiki-year">${now.getFullYear()}</div>
+            <div class="wiki-text">A great day for learning!</div>
+          </div>
+        `;
+      }
+    }
+    
+    // Update wiki content
+    function updateWikiContent(events) {
+      wikiContent.innerHTML = events.map(e => `
+        <div class="wiki-item">
+          <div class="wiki-year">${e.year}</div>
+          <div class="wiki-text">${e.text}</div>
+        </div>
+      `).join('');
     }
     
     // News Fetching
@@ -364,7 +514,6 @@
       const source = config.sources[currentSource];
       const cacheKey = `news_${currentSource}`;
       
-      // Check cache
       if (cache[cacheKey] && Date.now() - cache[cacheKey].time < CACHE_TTL) {
         headlines = cache[cacheKey].data;
         updateUI();
@@ -384,7 +533,6 @@
             source: source.name
           }));
           
-          // Cache
           cache[cacheKey] = {
             data: headlines,
             time: Date.now()
@@ -405,7 +553,6 @@
     
     // Update UI
     function updateUI() {
-      // Update ticker
       const tickerItems = headlines.slice(0, 8).map(h =>
         `<span class="ticker-item">
           <span class="ticker-source">[${h.source}]</span>
@@ -418,8 +565,7 @@
         ${tickerItems}
       `;
       
-      // Update headline list
-      headlineList.innerHTML = headlines.slice(0, 15).map(h => {
+      headlineList.innerHTML = headlines.slice(0, 10).map(h => {
         const date = new Date(h.pubDate);
         const timeAgo = getTimeAgo(date);
         
@@ -434,11 +580,9 @@
         `;
       }).join('');
       
-      // Update title
-      sourceTitle.textContent = `${source.name} Headlines`;
+      sourceTitle.textContent = `📰 ${source.name}`;
     }
     
-    // Time ago helper
     function getTimeAgo(date) {
       const seconds = Math.floor((new Date() - date) / 1000);
       
@@ -448,7 +592,6 @@
       return `${Math.floor(seconds / 86400)} days ago`;
     }
     
-    // Source switching
     function switchSource(source) {
       currentSource = source;
       sourceBtns.forEach(btn => {
@@ -457,19 +600,19 @@
       fetchHeadlines();
     }
     
-    // Event Listeners
     sourceBtns.forEach(btn => {
       btn.addEventListener('click', () => switchSource(btn.dataset.source));
     });
     
-    // Initialize
     updateDateTime();
     setInterval(updateDateTime, 1000);
-    initWeatherTicker();
+    fetchWeather();
     fetchHeadlines();
+    fetchWikiOnThisDay();
     
-    // Refresh every 30 minutes
     setInterval(fetchHeadlines, 30 * 60 * 1000);
+    setInterval(fetchWeather, 30 * 60 * 1000);
+    setInterval(fetchWikiOnThisDay, 60 * 60 * 1000);
   </script>
 </body>
 </html>
