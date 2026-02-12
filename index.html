@@ -101,12 +101,19 @@
     /* TYPOGRAPHY */
     /* ============ */
     .header {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
         font-weight: 700;
         color: var(--primary);
         margin-bottom: 30px;
         text-align: center;
         letter-spacing: -0.5px;
+        text-shadow: 3px 3px 0 var(--accent), 6px 6px 0 rgba(0,0,0,0.1);
+        animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
     }
 
     body.dark-mode .header {
@@ -1154,28 +1161,10 @@
     <button class="night-mode-toggle" id="nightModeToggle">🌙</button>
 
 <div class="container" id="mainContainer">
-    <div class="header">CHATTERBOX HOUSE</div>
-
-    <a href="news.html" class="news-button" style="
-        display: inline-block;
-        background: linear-gradient(135deg, #f72585 0%, #b5179e 100%);
-        color: white;
-        padding: 12px 25px;
-        margin: 15px 0;
-        border-radius: 30px;
-        font-weight: 600;
-        font-size: 1.1rem;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        transition: all 0.3s ease;
-    " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(247, 37, 133, 0.3)'" onmouseout="this.style.transform=''; this.style.boxShadow=''">
-        📰
-    </a>
+    <div class="header" style="animation: bounce 2s ease infinite; text-shadow: 3px 3px 0 rgba(0,0,0,0.2);">🎉 CHATTERBOX HOUSE 🎉</div>
 
     <!-- Classroom Tools Navigation -->
-    <div class="tools-nav" style="
+    <div class="tools-nav" id="startScreenToolsNav" style=
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1377,7 +1366,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         ">Classroom Tools</h3>
-        <div class="tools-nav" style="
+        <div class="tools-nav" id="startScreenToolsNav" style=
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
