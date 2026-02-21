@@ -1,6 +1,7 @@
-var c = {
-    story1: `#STORY
-🍎 Tony and Jay are teachers from England.
+var c = [
+    {
+        title: "Story 1: Apples and Bananas",
+        content: `🍎 Tony and Jay are teachers from England.
 トニーとジェイはイングランド出身の先生です。
 🍌 They like fruit.
 二人は果物が好きです。
@@ -19,10 +20,11 @@ var c = {
 👅 Children taste the fruit.
 子どもたちは果物を味見します。
 😊 Everyone is happy.
-みんな嬉しそうです。
-
-#QUESTIONS
-🍎 Do you like apples?
+みんな嬉しそうです。`
+    },
+    {
+        title: "Questions: Story 1",
+        content: `🍎 Do you like apples?
 りんごは好きですか？
 🍌 Do you like bananas?
 バナナは好きですか？
@@ -49,10 +51,11 @@ var c = {
 👅 Do you want to taste fruit?
 果物を食べてみたいですか？
 👫 Who is your friend?
-あなたの友だちは誰ですか？`,
-
-    story2: `#STORY
-🪑 Tony sits on a small chair.
+あなたの友だちは誰ですか？`
+    },
+    {
+        title: "Story 2: The Chair",
+        content: `🪑 Tony sits on a small chair.
 トニーは小さいいすにすわります。
 😂 Jay laughs.
 ジェイはわらいます。
@@ -71,18 +74,19 @@ var c = {
 😊 Tony sits down and smiles.
 トニーはすわって、にこにこします。
 👏 Jay claps.
-ジェイははくしゅします。
-
-#QUESTIONS
-🪑 Do you like big chairs?
-大きないすがすきですか？
+ジェイははくしゅします。`
+    },
+    {
+        title: "Questions: Story 2",
+        content: `🪑 Do you like big chairs?
+大きいいすがすきですか？
 🪑 Do you like small chairs?
 小さいいすがすきですか？
 🤔 Is your chair big or small?
 あなたのいすは大きいですか？小さいですか？
 🧘‍♂️ Do you like to sit on the floor?
 ゆかにすわるのがすきですか？
-⏱️ Can you sit still for 5 minutes?
+⏱️ Can you sit still for 5 minutes？
 ５分間じっとすわれますか？
 🧑‍🤝‍🧑 Who sits next to you at school?
 がっこうでだれがとなりにすわりますか？
@@ -103,10 +107,11 @@ var c = {
 💪 Do you like strong things?
 つよいものがすきですか？
 📖 Do you like this story?
-このお話がすきですか？`,
-
-    story3: `#STORY
-🦀 Tony shows a crab.
+このお話がすきですか？`
+    },
+    {
+        title: "Story 3: Sea Creatures",
+        content: `🦀 Tony shows a crab.
 トニーはカニをみせます。
 🐚 Jay touches a shell.
 ジェイは貝がらをさわります。
@@ -125,10 +130,11 @@ var c = {
 👏 Tony claps.
 トニーははくしゅします。
 😊 Everyone smiles.
-みんなにこにこします。
-
-#QUESTIONS
-🦀 Do you like crabs?
+みんなにこにこします。`
+    },
+    {
+        title: "Questions: Story 3",
+        content: `🦀 Do you like crabs?
 カニがすきですか？
 🐠 Do you like fish?
 魚がすきですか？
@@ -157,10 +163,11 @@ var c = {
 😊 How do you feel when you see a dolphin?
 イルカを見たとき、どんな気持ちになりますか？
 🌊 Do you want to learn more about sea animals?
-もっと海の動物についてまなびたいですか？`,
-
-    story4: `#STORY
-🍦 Tony goes to the ice cream shop.
+もっと海の動物についてまなびたいですか？`
+    },
+    {
+        title: "Story 4: Ice Cream",
+        content: `🍦 Tony goes to the ice cream shop.
 トニーはアイスクリーム屋にいきます。
 🍫 Tony buys chocolate ice cream.
 トニーはチョコレート味のアイスクリームをかいます。
@@ -179,10 +186,11 @@ var c = {
 🍦 Tony gives a small piece to a child.
 トニーはこどもに小さなアイスをあげます。
 😊 Everyone smiles and eats.
-みんなにこにこして、たべます。
-
-#QUESTIONS
-🍦 Do you like ice cream?
+みんなにこにこして、たべます。`
+    },
+    {
+        title: "Questions: Story 4",
+        content: `🍦 Do you like ice cream?
 アイスクリームがすきですか？
 🍦 Do you want ice cream now?
 今すぐアイスクリームがほしいですか？
@@ -211,10 +219,11 @@ var c = {
 🍨 How many scoops can you eat?
 いくつのアイスクリームをたべられますか？
 🍦👨‍🏫 Do you want to have ice cream with Tony and Jay?
-トニーとジェイといっしょにアイスクリームがほしいですか？`,
-
-    story5: `#STORY
-👕 Tony wears a T-shirt.
+トニーとジェイといっしょにアイスクリームがほしいですか？`
+    },
+    {
+        title: "Story 5: Clothes",
+        content: `👕 Tony wears a T-shirt.
 トニーはＴシャツをきます。
 🩳 Jay wears shorts.
 ジェイはショートパンツをはきます。
@@ -233,10 +242,11 @@ var c = {
 💬 Tony says, "I like my clothes."
 トニーは「服が好きです」といいます。
 😂 All children laugh.
-子どもたちはみんなわらいます。
-
-#QUESTIONS
-👕 Do you wear a T-shirt today?
+子どもたちはみんなわらいます。`
+    },
+    {
+        title: "Questions: Story 5",
+        content: `👕 Do you wear a T-shirt today?
 きょうＴシャツをきていますか？
 🩳 Do you like shorts?
 ショートパンツがすきですか？
@@ -265,10 +275,11 @@ var c = {
 🎨 What color are your clothes today?
 きょうの服は何色ですか？
 😂 Do you laugh when you see funny clothes?
-おもしろい服をみるとき、わらいますか？`,
-
-    story6: `#STORY
-🏃 Tony runs to the slide.
+おもしろい服をみるとき、わらいますか？`
+    },
+    {
+        title: "Story 6: At the Park",
+        content: `🏃 Tony runs to the slide.
 トニーはすべり台にはしります。
 🤸 Jay jumps on the slide.
 ジェイはすべり台でとびます。
@@ -287,10 +298,11 @@ var c = {
 🏞️ Jay answers, "We are at the park."
 ジェイは「公園です」とこたえます。
 😊 Children smile.
-子どもたちはにこにこします。
-
-#QUESTIONS
-🛝 Where is the slide?
+子どもたちはにこにこします。`
+    },
+    {
+        title: "Questions: Story 6",
+        content: `🛝 Where is the slide?
 すべり台はどこにありますか？
 🏃 Can you run fast?
 はやくはしれますか？
@@ -319,10 +331,11 @@ var c = {
 🎨 What color is the leaf?
 葉っぱは何色ですか？
 🏞️ Do you like the park?
-公園がすきですか？`,
-
-    story7: `#STORY
-⚽ Tony kicks a soccer ball.
+公園がすきですか？`
+    },
+    {
+        title: "Story 7: Sports",
+        content: `⚽ Tony kicks a soccer ball.
 トニーはサッカーボールをけります。
 🙌 Jay catches the ball.
 ジェイはボールをキャッチします。
@@ -341,10 +354,11 @@ var c = {
 🧃 The children drink water.
 子どもたちは水をのみます。
 😄 Everyone smiles.
-みんなにこにこします。
-
-#QUESTIONS
-⚽ Do you like soccer?
+みんなにこにこします。`
+    },
+    {
+        title: "Questions: Story 7",
+        content: `⚽ Do you like soccer?
 サッカーがすきですか？
 🦵⚽ Can you kick a ball?
 ボールをけれますか？
@@ -373,10 +387,11 @@ var c = {
 🤔 What sport do you want to try?
 どんなスポーツをやってみたいですか？
 🧑‍🤝‍🧑 Do you like team games?
-チームであそぶゲームがすきですか？`,
-
-    story8: `#STORY
-👨‍👩‍👧‍👦 Tony talks about his family.
+チームであそぶゲームがすきですか？`
+    },
+    {
+        title: "Story 8: Family",
+        content: `👨‍👩‍👧‍👦 Tony talks about his family.
 トニーはかぞくについてはなします。
 👨 "This is my father," he says.
 「これは父です」とトニーはいいます。
@@ -395,10 +410,11 @@ var c = {
 👀 Jay looks at the photo.
 ジェイは写真をみます。
 ❤️ "I love my family," Tony says.
-「かぞくがだいすきです」とトニーはいいます。
-
-#QUESTIONS
-👨‍👩‍👧‍👦 Who is in your family?
+「かぞくがだいすきです」とトニーはいいます。`
+    },
+    {
+        title: "Questions: Story 8",
+        content: `👨‍👩‍👧‍👦 Who is in your family?
 あなたのかぞくにはだれがいますか？
 👧 Do you have a sister?
 妹がいますか？
@@ -427,10 +443,11 @@ var c = {
 ❤️ Do you love your family?
 かぞくをあいしていますか？
 🧸 Who do you play with at home?
-いえでだれとあそびますか？`,
-
-story9: `#STORY
-🦁 Tony sees a big lion.
+いえでだれとあそびますか？`
+    },
+    {
+        title: "Story 9: Zoo Animals",
+        content: `🦁 Tony sees a big lion.
 トニーは大きなライオンを見ます。
 🐵 Jay waves at the monkeys.
 ジェイはサルたちに手をふります。
@@ -449,10 +466,11 @@ story9: `#STORY
 🥤 Jay drinks orange juice.
 ジェイはオレンジジュースを飲みます。
 🚌 They ride the bus home.
-ふたりはバスにのってかえります。
-
-#QUESTIONS
-🦁 Do you like lions?
+ふたりはバスにのってかえります。`
+    },
+    {
+        title: "Questions: Story 9",
+        content: `🦁 Do you like lions?
 ライオンがすきですか？
 🐵 Can you wave like Jay?
 ジェイみたいに手をふれますか？
@@ -471,10 +489,11 @@ story9: `#STORY
 🥤 What do you like to drink?
 なにを飲むのがすきですか？
 🚌 Do you like riding buses?
-バスにのるのがすきですか？`,
-
-story10: `#STORY
-🌧️ It rains and Tony looks out the window.
+バスにのるのがすきですか？`
+    },
+    {
+        title: "Story 10: Rainy Day",
+        content: `🌧️ It rains and Tony looks out the window.
 あめがふって、トニーはまどのそとを見ます。
 ☔ Jay holds an umbrella.
 ジェイはかさを持ちます。
@@ -493,10 +512,11 @@ story10: `#STORY
 ☕ Tony drinks warm milk.
 トニーはあたたかいミルクを飲みます。
 📖 They read a book together.
-ふたりで本を読みます。
-
-#QUESTIONS
-🌧️ Do you like rainy days?
+ふたりで本を読みます。`
+    },
+    {
+        title: "Questions: Story 10",
+        content: `🌧️ Do you like rainy days?
 あめの日はすきですか？
 ☔ Do you have an umbrella?
 かさを持っていますか？
@@ -516,4 +536,5 @@ story10: `#STORY
 ふゆにあたたかい飲みものを飲みますか？
 📖 Do you read books at home?
 家で本を読みますか？`
-};
+    }
+];
