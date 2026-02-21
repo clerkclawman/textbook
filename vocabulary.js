@@ -1,5 +1,5 @@
 // vocabulary.js
-const vocabularyCategories = {
+var vocabularyCategories = {
     "People": [
  {english: "friend", japanese: "友達", emoji: "👫"},
                     {english: "member", japanese: "メンバー", emoji: "👥"},
