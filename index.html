@@ -47,12 +47,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
+        height: 100vh;
         width: 100vw;
-        padding: 20px;
+        padding: 10px;
         font-size: 16px;
         transition: var(--transition);
         line-height: 1.6;
+        overflow: hidden;
     }
 
     body.dark-mode {
@@ -86,13 +87,18 @@
     #mainContainer.container {
         width: 95%;
         max-width: 1200px;
-        padding: 60px 40px;
-        font-size: 1.2rem;
+        padding: 30px 40px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     #mainContainer .header {
-        font-size: 4rem;
-        margin-bottom: 50px;
+        font-size: 3rem;
+        margin-bottom: 30px;
+        line-height: 1.2;
     }
 
     /* ============ */
@@ -135,8 +141,10 @@
     #mainContainer .controls-row {
         display: flex;
         flex-direction: column;
-        margin-bottom: 25px;
-        gap: 30px;
+        margin-bottom: 0;
+        gap: 20px;
+        width: 100%;
+        max-width: 600px;
     }
 
     .dropdown {
@@ -159,8 +167,8 @@
     }
 
     #mainContainer select {
-        padding: 25px 30px;
-        font-size: 1.8rem;
+        padding: 20px 30px;
+        font-size: 1.5rem;
         border-width: 3px;
     }
 
@@ -188,7 +196,7 @@
     }
 
     #mainContainer .dropdown:after {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         right: 30px;
     }
 
@@ -1375,19 +1383,22 @@
 
         let optionIndex = 0;
 
-        if (lessonsData[cls].questions) {
+        // Handle questions (if available for this class)
+        if (lessonsData._questions && lessonsData._questions[cls]) {
             const option = document.createElement('option');
             option.value = 'questions';
-            option.textContent = `${optionIndex + 1}. QA Questions`;
+            option.textContent = `QA Questions`;
             storySelector.appendChild(option);
             optionIndex++;
         }
 
-        if (lessonsData[cls].stories) {
-            lessonsData[cls].stories.forEach((story, index) => {
+        // lessonsData[cls] is now directly an array of story objects
+        if (Array.isArray(lessonsData[cls])) {
+            lessonsData[cls].forEach((story, index) => {
                 const option = document.createElement('option');
                 option.value = optionIndex;
-                option.textContent = `${optionIndex + 1}. ${story.title}`;
+                // Use the title directly (it already has the number)
+                option.textContent = story.title;
                 storySelector.appendChild(option);
                 optionIndex++;
             });
@@ -1430,7 +1441,15 @@
 
         let content;
         if (currentStory === 'questions') {
-            content = lessonsData[cls].questions;
+            // Questions are now in lessonsData._questions[cls]
+            const questions = lessonsData._questions && lessonsData._questions[cls];
+            if (!questions || !Array.isArray(questions) || questions.length === 0) {
+                console.error('Questions not found for class:', cls);
+                alert('Questions not available for this class');
+                exitReadingMode();
+                return;
+            }
+            content = questions[0].content; // Questions are in an array, get first item's content
         } else {
             const selectorIndex = parseInt(currentStory);
             if (isNaN(selectorIndex)) {
@@ -1440,18 +1459,20 @@
                 return;
             }
 
+            // Adjust index if questions exist for this class
             let storyIndex = selectorIndex;
-            if (lessonsData[cls].questions) {
+            if (lessonsData._questions && lessonsData._questions[cls]) {
                 storyIndex = selectorIndex - 1;
             }
 
-            if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
+            // lessonsData[cls] is now directly an array of story objects
+            if (storyIndex < 0 || !Array.isArray(lessonsData[cls]) || !lessonsData[cls][storyIndex]) {
                 console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
                 alert('Invalid story selection');
                 exitReadingMode();
                 return;
             }
-            content = lessonsData[cls].stories[storyIndex].content;
+            content = lessonsData[cls][storyIndex].content;
         }
 
         if (!content) {
@@ -2655,26 +2676,32 @@
     function loadLessonsData() {
         return Promise.resolve().then(() => {
             lessonsData = {
-                'Bronze': { stories: bronzeStories },
-                'Silver': { stories: silverStories },
-                'Gold': { stories: goldStories },
-                'Adult': { stories: adult },
-                'X': { stories: x },
-                'C': { stories: c },
-                'Eiken1': { stories: eiken1 },
-                'Eiken2': { stories: eiken2 },
-                'Eiken3': { stories: eiken3, questions: eiken3questions },
-                'Eiken4': { stories: eiken4 },
-                'Eiken5': { stories: eiken5story, questions: qa5 },
-                'Eiken6': { stories: eiken6story },
-                'Eiken7': { stories: eiken7story },
-                'EikenPre1': { stories: eikenpre1 },
-                'EikenPre2': { stories: eikenpre2 },
-                'EikenPre2Plus': { stories: eikenpre2plus },
+                'Bronze': bronzeStories,
+                'Silver': silverStories,
+                'Gold': goldStories,
+                'Adult': adult,
+                'X': x,
+                'C': c,
+                'Eiken1': eiken1,
+                'Eiken2': eiken2,
+                'Eiken3': eiken3,
+                'Eiken4': eiken4,
+                'Eiken5': eiken5story,
+                'Eiken6': eiken6story,
+                'Eiken7': eiken7story,
+                'EikenPre1': eikenpre1,
+                'EikenPre2': eikenpre2,
+                'EikenPre2Plus': eikenpre2plus,
                 'GettingToKnow': gettingtoknow,
                 'EasyQuestions': easyquestions,
                 'WouldYouRather': wouldyourather,
                 'Vocab': vocab
+            };
+
+            // Add separate questions mapping
+            lessonsData._questions = {
+                'Eiken3': eiken3questions,
+                'Eiken5': qa5
             };
         });
     }
