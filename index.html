@@ -2678,7 +2678,7 @@
                             title: story.title,
                             content: story.content
                         })) : [],
-                        questions: window.eiken3questions ? window.eiken3questions.questions : []
+                        questions: window.eiken3questions ? window.eiken3questions[0].content : []
                     },
                     'Eiken4': {
                         stories: Array.isArray(eiken4) ?
@@ -2708,21 +2708,21 @@
                             title: story.title,
                             content: story.content
                         })) : [],
-                        questions: window.qa5 ? window.qa5.questions : []
+                        questions: window.qa5 ? window.qa5[0].content : []
                     },
                     'HighSchool': {
                         stories: [
                             {
                                 title: 'Getting to Know You',
-                                content: gettingtoknow.questions
+                                content: gettingtoknow[0].content
                             },
                             {
                                 title: 'Easy Questions',
-                                content: easyquestions2.questions
+                                content: easyquestions[0].content
                             },
                             {
                                 title: 'Would You Rather',
-                                content: wouldyourather.questions
+                                content: wouldyourather[0].content
                             }
                         ]
                     }
