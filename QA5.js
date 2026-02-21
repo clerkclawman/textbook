@@ -1,7 +1,8 @@
 // QA5.js
-var qa5 = {
-    questions: `#QUESTIONS
-⏰ What time do you wake up?
+var qa5 = [
+    {
+        title: "Questions: Daily Life",
+        content: `⏰ What time do you wake up?
 何時に起きますか？
 🐶 Do you like dogs?
 犬が好きですか？
@@ -178,6 +179,6 @@ var qa5 = {
 👓 Do you wear sunglasses?
 サングラスをかけますか？
 🍉 Do you plant watermelon seeds?
-スイカの種を植えますか？
-`
-};
+スイカの種を植えますか？`
+    }
+];

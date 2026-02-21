@@ -1,7 +1,8 @@
 // wouldyourather.js
-var wouldyourather = {
-    questions: `#Would You Rather...? 
-1. Would you rather travel back in time to meet your ancestors or forward in time to meet your descendants?
+var wouldyourather = [
+    {
+        title: "Would You Rather",
+        content: `1. Would you rather travel back in time to meet your ancestors or forward in time to meet your descendants?
   祖先に会うために過去に旅行するのと、子孫に会うために未来に旅行するのとどちらがいいですか？
 2. Would you rather have a lifetime subscription to a travel magazine or a luxury car magazine?
   旅行雑誌の生涯購読と高級車雑誌の生涯購読のどちらがいいですか？
@@ -23,7 +24,7 @@ var wouldyourather = {
    現在の年齢の知恵を持ちながら20歳若返るのと現在の年齢のままで財産が2倍になるのとどちらがいいですか？
 11. Would you rather have an endless supply of books or an endless supply of music?
    無限の本の供給を受けるのと無限の音楽の供給を受けるのとどちらがいいですか？
-12. Would you rather be able to remember every conversation you’ve ever had or every book you’ve ever read?
+12. Would you rather be able to remember every conversation you've ever had or every book you've ever read?
    今までにしたすべての会話を覚えているのと今までに読んだすべての本を覚えているのとどちらがいいですか？
 13. Would you rather have a quiet night in with a good book or a fun night out with friends?
    良い本を読んで静かな夜を過ごすのと友達と楽しい夜を過ごすのとどちらがいいですか？
@@ -43,7 +44,7 @@ var wouldyourather = {
    ホームシアターシステムを持つのと最新鋭のキッチンを持つのとどちらがいいですか？
 21. Would you rather be famous in your hometown or unknown everywhere else, or be famous worldwide but unknown in your hometown?
    地元で有名で他の場所では無名になるのと世界的に有名で地元では無名になるのとどちらがいいですか？
-22. Would you rather have a job you love with a modest salary or a high-paying job you don’t enjoy?
+22. Would you rather have a job you love with a modest salary or a high-paying job you don't enjoy?
    控えめな給料の好きな仕事を持つのと楽しめない高給の仕事を持つのとどちらがいいですか？
 23. Would you rather spend a month in the countryside or a week in a big city?
    田舎で1ヶ月過ごすのと大都市で1週間過ごすのとどちらがいいですか？
@@ -63,7 +64,7 @@ var wouldyourather = {
    お気に入りの趣味をいつでも楽しめるのと新しい趣味を瞬時に学べるようになるのとどちらがいいですか？
 31. Would you rather be financially comfortable but always busy or have ample free time but live modestly?
    経済的に快適だが常に忙しいのと十分な自由時間があるが質素に暮らすのとどちらがいいですか？
-32. Would you rather have a voice that can calm any situation or a smile that can brighten anyone’s day?
+32. Would you rather have a voice that can calm any situation or a smile that can brighten anyone's day?
    どんな状況でも落ち着かせる声を持つのと誰の日も明るくする笑顔を持つのとどちらがいいですか？
 33. Would you rather explore outer space or the deepest parts of the ocean?
    宇宙を探検するのと海の最深部を探検するのとどちらがいいですか？
@@ -77,13 +78,13 @@ var wouldyourather = {
    すべての主要なスポーツイベントの最前列の席を持つのとどんなコンサートでもバックステージパスを持つのとどちらがいいですか？
 38. Would you rather be able to control your dreams or watch your dreams on a screen?
    自分の夢をコントロールする能力を持つのと夢をスクリーンで見ることができるのとどちらがいいですか？
-39. Would you rather live in a place where it’s always winter or a place where it’s always summer?
+39. Would you rather live in a place where it's always winter or a place where it's always summer?
    常に冬の場所に住むのと常に夏の場所に住むのとどちらがいいですか？
 40. Would you rather be able to solve complex mathematical problems instantly or master any art technique instantly?
    複雑な数学の問題を瞬時に解決する能力を持つのとどんな芸術技法でも瞬時に習得する能力を持つのとどちらがいいですか？
 41. Would you rather have the power to create world peace or eliminate all disease?
    世界平和を実現する力を持つのとすべての病気を根絶する力を持つのとどちらがいいですか？
-42. Would you rather have unlimited access to your favorite sports team’s games or unlimited access to any museum in the world?
+42. Would you rather have unlimited access to your favorite sports team's games or unlimited access to any museum in the world?
    お気に入りのスポーツチームの試合への無制限のアクセスを持つのと世界中のどんな博物館にも無制限のアクセスを持つのとどちらがいいですか？
 43. Would you rather be able to change one decision in your past or be able to see what your life would be like had you made a different decision?
    過去の一つの決定を変えることができるのと違う決定をした場合の人生を見ることができるのとどちらがいいですか？
@@ -100,6 +101,6 @@ var wouldyourather = {
 49. Would you rather have a talent for painting or a talent for music?
    絵画の才能を持つのと音楽の才能を持つのとどちらがいいですか？
 50. Would you rather have a season ticket to your favorite sports team or a lifetime pass to any movie theater?
-   お気に入りのスポーツチームのシーズンチケットを持つのとどんな映画館にも生涯無料で入れるパスを持つのとどちらがいいですか？
-`  
-};
+   お気に入りのスポーツチームのシーズンチケットを持つのとどんな映画館にも生涯無料で入れるパスを持つのとどちらがいいですか？`
+    }
+];

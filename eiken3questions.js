@@ -1,7 +1,8 @@
 // eiken3questions.js
-var eiken3questions = {
-    questions: `#QUESTIONS
-🍎 What's your favorite fruit? Why?
+var eiken3questions = [
+    {
+        title: "Questions: Favorites and Daily Life",
+        content: `🍎 What's your favorite fruit? Why?
 一番好きな果物は何ですか？なぜですか？
 🐶 Do you have a pet? What's its name?
 ペットを飼っていますか？名前は何ですか？
@@ -110,4 +111,5 @@ var eiken3questions = {
 自転車を持っていますか？何色ですか？
 📚 How many books do you have?
 本を何冊持っていますか？`
-};
+    }
+];

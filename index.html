@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Chatterbox House</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap' rel='stylesheet'>
 
 <style>
     /* ==================== */
@@ -60,7 +60,6 @@
         color: var(--dark-text);
     }
 
-
     /* ============== */
     /* MAIN CONTAINER */
     /* ============== */
@@ -96,7 +95,6 @@
         margin-bottom: 50px;
     }
 
-
     /* ============ */
     /* TYPOGRAPHY */
     /* ============ */
@@ -123,7 +121,6 @@
     body.dark-mode .language-label {
         color: var(--accent);
     }
-
 
     /* ============ */
     /* FORM ELEMENTS */
@@ -180,7 +177,7 @@
     }
 
     .dropdown:after {
-        content: "▼";
+        content: '▼';
         font-size: 0.8rem;
         color: var(--primary);
         position: absolute;
@@ -198,7 +195,6 @@
     body.dark-mode .dropdown:after {
         color: var(--accent);
     }
-
 
     /* ============ */
     /* BUTTONS */
@@ -244,6 +240,24 @@
 
     body.dark-mode .btn:hover {
         background-color: var(--primary-light);
+    }
+
+    /* News button styles - extracted from inline styles */
+    .news-button {
+        display: inline-block;
+        background-color: var(--warning);
+        color: white;
+        padding: 15px 30px;
+        margin: 20px 0;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: var(--transition);
+        animation: pulse 2s infinite;
     }
 
     .file-upload-row {
@@ -301,7 +315,6 @@
     body.dark-mode #fileNameDisplay {
         color: var(--dark-text-light);
     }
-
 
     /* ============ */
     /* READING MODE */
@@ -466,9 +479,9 @@
         padding: 20px !important;
     }
 
-.reading-footer {
+    .reading-footer {
         display: flex;
-        justify-content: center; /* Changed from space-between to center */
+        justify-content: center;
         padding: 10px;
         align-items: center;
         position: fixed;
@@ -480,7 +493,7 @@
         box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
         transition: background-color 0.3s;
         height: 60px;
-        gap: 15px; /* Added spacing between the different groups */
+        gap: 15px;
         overflow-x: auto;
         white-space: nowrap;
     }
@@ -489,7 +502,6 @@
         display: none;
     }
 
-    /* Add this NEW class to group the arrows */
     .nav-group {
         display: flex;
         align-items: center;
@@ -629,7 +641,6 @@
         box-shadow: 0 0 10px var(--success);
     }
 
-
     /* ============ */
     /* TRANSLATION POPUP */
     /* ============ */
@@ -735,7 +746,6 @@
         display: block;
     }
 
-
     /* ============ */
     /* FRUIT GAME */
     /* ============ */
@@ -810,7 +820,6 @@
         min-width: 100px;
     }
 
-
     /* ============ */
     /* UTILITY CLASSES */
     /* ============ */
@@ -843,7 +852,6 @@
         color: var(--dark);
     }
 
-
     /* ============ */
     /* ANIMATIONS */
     /* ============ */
@@ -864,14 +872,28 @@
         20%, 40%, 60%, 80% { transform: translateX(5px); }
     }
 
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(247, 37, 133, 0.7);
+        }
+        70% {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 15px rgba(247, 37, 133, 0);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
+        }
+    }
 
     /* ============ */
     /* RESPONSIVE DESIGN */
     /* ============ */
-@media (max-width: 800px) {
-    .sentence-display {
-        font-size: 32px; /* Removed !important */
-    }
+    @media (max-width: 800px) {
+        .sentence-display {
+            font-size: 32px;
+        }
 
         .controls-row, .file-upload-row {
             flex-direction: column;
@@ -903,42 +925,38 @@
         }
     }
 
-@media (max-width: 768px) {
-    .sentence-row {
-        flex-direction: row;
-        align-items: center;
-        padding: 5px;
-    }
+    @media (max-width: 768px) {
+        .sentence-row {
+            flex-direction: row;
+            align-items: center;
+            padding: 5px;
+            min-height: 80px;
+        }
 
-    .play-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 0.8rem;
-        margin-right: 8px;
-    }
+        .play-btn {
+            width: 32px;
+            height: 32px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+        }
 
-@media (max-width: 768px) {
-    .sentence-display {
-        font-size: 1.5rem; /* Removed !important */
-        padding: 5px;
-        line-height: 1.4;
-        min-height: 60px;
-    }
-}
+        .sentence-display {
+            font-size: 1.5rem;
+            padding: 5px;
+            line-height: 1.4;
+            min-height: 60px;
+        }
 
-    .sentence-row {
-        min-height: 80px;
-    }
-    .font-btn {
-        min-width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-    
-    .reading-footer {
-        padding: 10px 5px;
-        gap: 5px;
-    }
+        .font-btn {
+            min-width: 40px;
+            height: 40px;
+            font-size: 1rem;
+        }
+
+        .reading-footer {
+            padding: 10px 5px;
+            gap: 5px;
+        }
 
         .container {
             padding: 30px 20px;
@@ -1071,181 +1089,133 @@
             margin-bottom: 50px;
         }
     }
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(247, 37, 133, 0.7);
-    }
-    70% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 15px rgba(247, 37, 133, 0);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
-    }
-}
 </style>
 
 </head>
 <body>
-    <button class="night-mode-toggle" id="nightModeToggle">🌙</button>
+    <button class='night-mode-toggle' id='nightModeToggle'>🌙</button>
 
-<div class="container" id="mainContainer">
-    <div class="header">CHATTERBOX HOUSE</div>
+<div class='container' id='mainContainer'>
+    <div class='header'>CHATTERBOX HOUSE</div>
 
-    <a href="eiken5vocab.html" class="news-button" style="
-        display: inline-block;
-        background-color: #f72585;
-        color: white;
-        padding: 15px 30px;
-        margin: 20px 0;
-        border-radius: 50px;
-        font-weight: bold;
-        font-size: 1.5rem;
-        text-decoration: none;
-        box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-        animation: pulse 2s infinite;
-    ">Eiken 5 Vocabulary</a>
-
-    <a href="news.html" class="news-button" style="
-        display: inline-block;
-        background-color: #f72585;
-        color: white;
-        padding: 15px 30px;
-        margin: 20px 0;
-        border-radius: 50px;
-        font-weight: bold;
-        font-size: 1.5rem;
-        text-decoration: none;
-        box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-        animation: pulse 2s infinite;
-    ">News</a>
-
-    <div class="controls-row">
-        <div class="dropdown">
-            <select id="classSelector">
-                <option value="">Select Class</option>
-                <option value="Bronze">Bronze</option>
-                <option value="Silver">Silver</option>
-                <option value="Gold">Gold</option>
-                <option value="Eiken7">Eiken 7</option>
-                <option value="Eiken6">Eiken 6</option>
-                <option value="Eiken5">Eiken 5</option>
-                <option value="Eiken4">Eiken 4</option>
-                <option value="Eiken3">Eiken 3</option>
-                <option value="EikenPre2">Eiken Pre-2</option> 
-                <option value="EikenPre2Plus">Eiken Pre-2 Plus</option>
-                <option value="Eiken2">Eiken 2</option>
-                <option value="EikenPre1">Eiken Pre-1</option>
-                <option value="Eiken1">Eiken 1</option>
-                <option value="C">C Class</option>
-                <option value="X">X Class</option>
-                <option value="HighSchool">High School</option>
-                <option value="Adult">Adult</option>
+    <div class='controls-row'>
+        <div class='dropdown'>
+            <select id='classSelector'>
+                <option value=''>Select Class</option>
+                <option value='Bronze'>Bronze</option>
+                <option value='Silver'>Silver</option>
+                <option value='Gold'>Gold</option>
+                <option value='Eiken7'>Eiken 7</option>
+                <option value='Eiken6'>Eiken 6</option>
+                <option value='Eiken5'>Eiken 5</option>
+                <option value='Eiken4'>Eiken 4</option>
+                <option value='Eiken3'>Eiken 3</option>
+                <option value='EikenPre2'>Eiken Pre-2</option>
+                <option value='EikenPre2Plus'>Eiken Pre-2 Plus</option>
+                <option value='Eiken2'>Eiken 2</option>
+                <option value='EikenPre1'>Eiken Pre-1</option>
+                <option value='Eiken1'>Eiken 1</option>
+                <option value='C'>C Class</option>
+                <option value='X'>X Class</option>
+                <option value='HighSchool'>High School</option>
+                <option value='Adult'>Adult</option>
             </select>
         </div>
-        
-        <div class="dropdown">
-            <select id="storySelector" disabled>
-                <option value="">Select Story</option>
+
+        <div class='dropdown'>
+            <select id='storySelector' disabled>
+                <option value=''>Select Story</option>
             </select>
         </div>
     </div>
 </div>
 
     <!-- READING MODE CONTAINER -->
-    <div class="reading-container" id="readingModeContainer" style="display: none;">
-<div class="reading-header">
-    <div class="page-counter">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></div>
-    <button id="exitReading" class="exit-reading">X</button>
-</div>
-        
-        <div class="reading-content">
-<div class="sentence-row">
-    <div class="sentence-controls">
-        <button id="playEnglish" class="play-btn">▶</button>
-        <div id="englishSentence" class="sentence-display"></div>
-    </div>
+    <div class='reading-container' id='readingModeContainer' style='display: none;'>
+<div class='reading-header'>
+    <div class='page-counter'>Page <span id='currentPage'>1</span> of <span id='totalPages'>1</span></div>
+    <button id='exitReading' class='exit-reading'>X</button>
 </div>
 
-<div class="sentence-row">
-    <div class="sentence-controls">
-        <button id="playJapanese" class="play-btn">▶</button>
-        <div id="japaneseSentence" class="sentence-display"></div>
+        <div class='reading-content'>
+<div class='sentence-row'>
+    <div class='sentence-controls'>
+        <button id='playEnglish' class='play-btn'>▶</button>
+        <div id='englishSentence' class='sentence-display'></div>
     </div>
 </div>
-        
-<div class="reading-footer">
-    <div class="font-controls">
-        <button id="decreaseFont" class="font-btn">A-</button>
-        <button id="increaseFont" class="font-btn">A+</button>
+
+<div class='sentence-row'>
+    <div class='sentence-controls'>
+        <button id='playJapanese' class='play-btn'>▶</button>
+        <div id='japaneseSentence' class='sentence-display'></div>
+    </div>
+</div>
+
+<div class='reading-footer'>
+    <div class='font-controls'>
+        <button id='decreaseFont' class='font-btn'>A-</button>
+        <button id='increaseFont' class='font-btn'>A+</button>
     </div>
 
-    <div class="nav-group">
-        <button id="prevSentence" class="nav-btn">←</button>
-        <button id="nextSentence" class="nav-btn">→</button>
+    <div class='nav-group'>
+        <button id='prevSentence' class='nav-btn'>←</button>
+        <button id='nextSentence' class='nav-btn'>→</button>
     </div>
 
-    <div class="display-toggle">
-        <button id="displayEnglish" class="display-btn active">EN</button>
-        <button id="displayJapanese" class="display-btn">JP</button>
-        <button id="displayBoth" class="display-btn">BOTH</button>
+    <div class='display-toggle'>
+        <button id='displayEnglish' class='display-btn active'>EN</button>
+        <button id='displayJapanese' class='display-btn'>JP</button>
+        <button id='displayBoth' class='display-btn'>BOTH</button>
     </div>
 
-    <button id="fruitToggle" class="fruit-toggle">🎰 Fruit Game OFF</button>
+    <button id='fruitToggle' class='fruit-toggle'>🎰 Fruit Game OFF</button>
 </div>
     </div>
 
     <!-- Translation Popup -->
-    <div class="translation-overlay" id="translationOverlay"></div>
-<div class="translation-popup" id="translationPopup">
-    <div class="translation-popup-header">
+    <div class='translation-overlay' id='translationOverlay'></div>
+<div class='translation-popup' id='translationPopup'>
+    <div class='translation-popup-header'>
         <h3>TRANSLATION</h3>
-        <button class="translation-popup-close" id="closeTranslationPopup">×</button>
+        <button class='translation-popup-close' id='closeTranslationPopup'>×</button>
     </div>
-    <div class="translation-content">
-        <div class="language-label" id="sourceLanguageLabel">English:</div>
-        <div class="translation-original" id="translationOriginal"></div>
-        
-        <div class="language-label" id="targetLanguageLabel">Japanese:</div>
-        <div class="translation-result" id="translationResult"></div>
-        
-        <button class="translation-tts" id="translationTts">
+    <div class='translation-content'>
+        <div class='language-label' id='sourceLanguageLabel'>English:</div>
+        <div class='translation-original' id='translationOriginal'></div>
+
+        <div class='language-label' id='targetLanguageLabel'>Japanese:</div>
+        <div class='translation-result' id='translationResult'></div>
+
+        <button class='translation-tts' id='translationTts'>
             <span>🔊 PLAY SOUND</span>
         </button>
     </div>
 </div>
-    
+
     <!-- Load external scripts -->
-<script src="adult.js"></script>
-<script src="vocab.js"></script>
-<script src="x.js"></script>
-<script src="c.js"></script>
-<script src="QA5.js"></script>
-<script src="bronze.js"></script>
-<script src="silver.js"></script>
-<script src="gold.js"></script>
-        <script src="eiken7story.js"></script>
-        <script src="eiken6story.js"></script>
-<script src="eiken5story.js"></script>
-<script src="eiken3.js"></script>
-<script src="eiken3questions.js"></script>
-<script src="eiken4.js"></script>
-<script src="easyquestions.js"></script>
-<script src="gettingtoknow.js"></script>
-<script src="wouldyourather.js"></script>
-<script src="eikenpre2.js"></script>
-<script src="eikenpre2plus.js"></script>
-<script src="eiken2.js"></script>
-<script src="eikenpre1.js"></script>
-<script src="eiken1.js"></script>
+<script src='adult.js'></script>
+<script src='vocab.js'></script>
+<script src='x.js'></script>
+<script src='c.js'></script>
+<script src='QA5.js'></script>
+<script src='bronze.js'></script>
+<script src='silver.js'></script>
+<script src='gold.js'></script>
+        <script src='eiken7story.js'></script>
+        <script src='eiken6story.js'></script>
+<script src='eiken5story.js'></script>
+<script src='eiken3.js'></script>
+<script src='eiken3questions.js'></script>
+<script src='eiken4.js'></script>
+<script src='easyquestions.js'></script>
+<script src='gettingtoknow.js'></script>
+<script src='wouldyourather.js'></script>
+<script src='eikenpre2.js'></script>
+<script src='eikenpre2plus.js'></script>
+<script src='eiken2.js'></script>
+<script src='eikenpre1.js'></script>
+<script src='eiken1.js'></script>
 
 <script>
     // ====================
@@ -1259,11 +1229,10 @@
     let fruitGameActive = false;
     let shouldAdvanceAfterGame = false;
     let isNightMode = false;
-    let currentFontSize = 5; // vw units by default
-// At the top of your script where variables are declared
-const minFontSize = 2; // vw/rem units
-const maxFontSize = 8; // vw/rem units
-    let displayMode = 'both'; // 'english', 'japanese', or 'both'
+    let currentFontSize = 5;
+    const minFontSize = 2;
+    const maxFontSize = 8;
+    let displayMode = 'both';
     let lessonsData = {};
     let selectedText = '';
     let translationLang = '';
@@ -1318,20 +1287,16 @@ const maxFontSize = 8; // vw/rem units
     }
 
     function setupEventListeners() {
-        // Class and story selection
         if (classSelector) classSelector.addEventListener('change', handleClassSelect);
         storySelector.addEventListener('change', handleStorySelect);
 
-        // Font controls
         document.getElementById('increaseFont').addEventListener('click', increaseFontSize);
         document.getElementById('decreaseFont').addEventListener('click', decreaseFontSize);
 
-        // Display mode controls
         document.getElementById('displayEnglish').addEventListener('click', () => setDisplayMode('english'));
         document.getElementById('displayJapanese').addEventListener('click', () => setDisplayMode('japanese'));
         document.getElementById('displayBoth').addEventListener('click', () => setDisplayMode('both'));
 
-        // Reading mode navigation
         prevSentenceBtn.addEventListener('click', showPreviousSentence);
         nextSentenceBtn.addEventListener('click', showNextSentence);
         playEnglishBtn.addEventListener('click', () => playSentence('english'));
@@ -1339,18 +1304,15 @@ const maxFontSize = 8; // vw/rem units
         exitReadingBtn.addEventListener('click', exitReadingMode);
         fruitToggleBtn.addEventListener('click', toggleFruitGame);
 
-        // Night mode toggle
         document.getElementById('nightModeToggle').addEventListener('click', toggleNightMode);
 
-        // Keyboard navigation
         document.addEventListener('keydown', handleRemoteInput);
 
-        // Initialize speech synthesis
         if ('speechSynthesis' in window) {
             window.speechSynthesis.onvoiceschanged = function() {
                 console.log('Voices loaded');
             };
-            
+
             if (window.speechSynthesis.getVoices().length === 0) {
                 window.speechSynthesis.getVoices();
             }
@@ -1358,7 +1320,6 @@ const maxFontSize = 8; // vw/rem units
     }
 
     function loadSavedPreferences() {
-        // Night mode
         const savedNightMode = localStorage.getItem('nightMode') === 'true';
         if (savedNightMode) {
             isNightMode = true;
@@ -1366,24 +1327,20 @@ const maxFontSize = 8; // vw/rem units
             document.getElementById('nightModeToggle').textContent = '☀️';
         }
 
-        // Font size
         const savedFontSize = parseFloat(localStorage.getItem('fontSize'));
         if (savedFontSize && !isNaN(savedFontSize)) {
             currentFontSize = Math.max(minFontSize, Math.min(maxFontSize, savedFontSize));
         }
 
-        // Display mode
         const savedDisplayMode = localStorage.getItem('displayMode');
         if (savedDisplayMode && ['english', 'japanese', 'both'].includes(savedDisplayMode)) {
             displayMode = savedDisplayMode;
         }
 
-        // Fruit game state
         const savedFruitGameState = localStorage.getItem('fruitGameEnabled');
         fruitGameEnabled = savedFruitGameState === 'true';
         updateFruitButtonState();
 
-        // Initialize button states
         document.getElementById('displayEnglish').classList.toggle('active', displayMode === 'english');
         document.getElementById('displayJapanese').classList.toggle('active', displayMode === 'japanese');
         document.getElementById('displayBoth').classList.toggle('active', displayMode === 'both');
@@ -1395,7 +1352,7 @@ const maxFontSize = 8; // vw/rem units
     function handleClassSelect() {
         currentClass = this.value;
         storySelector.disabled = !currentClass;
-        
+
         if (currentClass) {
             populateStorySelector(currentClass);
         } else {
@@ -1411,43 +1368,42 @@ const maxFontSize = 8; // vw/rem units
         }
     }
 
-function populateStorySelector(cls) {
-    storySelector.innerHTML = '<option value="">Select Story</option>';
+    function populateStorySelector(cls) {
+        storySelector.innerHTML = '<option value="">Select Story</option>';
 
-    if (!lessonsData[cls]) return;
+        if (!lessonsData[cls]) return;
 
-    let optionIndex = 0;
-    
-    // Add questions first if they exist
-    if (lessonsData[cls].questions) {
-        const option = document.createElement('option');
-        option.value = 'questions';
-        option.textContent = `${optionIndex + 1}. QA Questions`;
-        storySelector.appendChild(option);
-        optionIndex++;
-    }
+        let optionIndex = 0;
 
-    // Add stories
-    if (lessonsData[cls].stories) {
-        lessonsData[cls].stories.forEach((story, index) => {
+        if (lessonsData[cls].questions) {
             const option = document.createElement('option');
-            option.value = optionIndex;
-            option.textContent = `${optionIndex + 1}. ${story.title}`;
+            option.value = 'questions';
+            option.textContent = `${optionIndex + 1}. QA Questions`;
             storySelector.appendChild(option);
             optionIndex++;
-        });
+        }
+
+        if (lessonsData[cls].stories) {
+            lessonsData[cls].stories.forEach((story, index) => {
+                const option = document.createElement('option');
+                option.value = optionIndex;
+                option.textContent = `${optionIndex + 1}. ${story.title}`;
+                storySelector.appendChild(option);
+                optionIndex++;
+            });
+        }
+
+        storySelector.disabled = false;
+        storySelector.focus();
     }
 
-    storySelector.disabled = false;
-    storySelector.focus();
-}
     // ====================
     // READING MODE FUNCTIONS
     // ====================
     function enterReadingMode(cls) {
         if (mainContainer) mainContainer.style.display = 'none';
         if (readingModeContainer) readingModeContainer.style.display = 'flex';
-        
+
         initTranslationEvents();
         loadTextContent(cls);
     }
@@ -1456,147 +1412,132 @@ function populateStorySelector(cls) {
         mainContainer.style.display = 'block';
         readingModeContainer.style.display = 'none';
         stopSpeech();
-        
+
         setTimeout(() => {
             classSelector.focus();
         }, 100);
     }
 
-function loadTextContent(cls) {
-    console.log('Loading content for:', cls, 'Story:', currentStory);
+    function loadTextContent(cls) {
+        console.log('Loading content for:', cls, 'Story:', currentStory);
 
-    if (!lessonsData[cls]) {
-        console.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
-        alert(`Data not found for class ${cls}`);
-        exitReadingMode();
-        return;
-    }
+        if (!lessonsData[cls]) {
+            console.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
+            alert(`Data not found for class ${cls}`);
+            exitReadingMode();
+            return;
+        }
 
-    let content;
-    if (currentStory === 'questions') {
-        content = lessonsData[cls].questions;
-} else {
-    const selectorIndex = parseInt(currentStory);
-    if (isNaN(selectorIndex)) {
-        console.error('Invalid story index:', currentStory);
-        alert('Invalid story selection');
-        exitReadingMode();
-        return;
-    }
-
-    // Adjust index based on questions presence
-    let storyIndex = selectorIndex;
-    if (lessonsData[cls].questions) {
-        storyIndex = selectorIndex - 1;
-    }
-
-    if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
-        console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
-        alert('Invalid story selection');
-        exitReadingMode();
-        return;
-    }
-    content = lessonsData[cls].stories[storyIndex].content;
-}
-
-    if (!content) {
-        console.error('Content not found for story:', currentStory, 'in class:', cls);
-        alert(`Content not found for selected story`);
-        exitReadingMode();
-        return;
-    }
-
-    if (!content) {
-        console.error('Content not found for story:', currentStory, 'in class:', cls);
-        alert(`Content not found for selected story`);
-        exitReadingMode();
-        return;
-    }
-
-    sentences = parseStoryFile(content);
-    if (sentences.length > 0) {
-        currentSentenceIndex = 0;
-        displayCurrentSentence();
-        setTimeout(() => {
-            applyDisplayMode();
-            ensureTextVisibility();
-        }, 100);
-    } else {
-        alert('No valid sentences found in this story');
-        exitReadingMode();
-    }
-}
-
-function parseStoryFile(text) {
-    const content = text && typeof text === 'object' ? text.content : text || '';
-    const lines = content.split('\n')
-        .map(line => line.trim())
-        .filter(line => line.length > 0 && !line.startsWith('#'));
-    
-    const result = [];
-    let currentEnglish = null;
-    
-    for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
-        // More accurate language detection:
-        // 1. If line starts with special characters/emojis, treat as English
-        // 2. If line has more Japanese characters than English, treat as Japanese
-        // 3. Otherwise treat as English
-        const isEnglish = /^[→🕰️📉📊🛑🗣️🌊🗳️🆕🤝📉📛🔍💡⚖️🤷🏛️🔄💼💰⏳👵👴🚫🗺️🚫😔📉✌️🌟📈💵🇯🇵🌏🧑🤝🧑🌎🇺🇸🏭🇪🇺🛂✋📱⚠️🛒💊📉👷❤️🧠✊🧩🌪️🌍🤲🚦🌟]/.test(line) ||
-                         (countJapaneseChars(line) < countEnglishChars(line));
-        
-        if (isEnglish) {
-            if (currentEnglish) {
-                result.push({
-                    english: currentEnglish,
-                    japanese: "",
-                    number: result.length + 1
-                });
-            }
-            currentEnglish = line;
+        let content;
+        if (currentStory === 'questions') {
+            content = lessonsData[cls].questions;
         } else {
-            if (currentEnglish) {
-                result.push({
-                    english: currentEnglish,
-                    japanese: line,
-                    number: result.length + 1
-                });
-                currentEnglish = null;
-            } else {
-                result.push({
-                    english: "",
-                    japanese: line,
-                    number: result.length + 1
-                });
+            const selectorIndex = parseInt(currentStory);
+            if (isNaN(selectorIndex)) {
+                console.error('Invalid story index:', currentStory);
+                alert('Invalid story selection');
+                exitReadingMode();
+                return;
             }
+
+            let storyIndex = selectorIndex;
+            if (lessonsData[cls].questions) {
+                storyIndex = selectorIndex - 1;
+            }
+
+            if (storyIndex < 0 || !lessonsData[cls].stories || !lessonsData[cls].stories[storyIndex]) {
+                console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
+                alert('Invalid story selection');
+                exitReadingMode();
+                return;
+            }
+            content = lessonsData[cls].stories[storyIndex].content;
+        }
+
+        if (!content) {
+            console.error('Content not found for story:', currentStory, 'in class:', cls);
+            alert(`Content not found for selected story`);
+            exitReadingMode();
+            return;
+        }
+
+        sentences = parseStoryFile(content);
+        if (sentences.length > 0) {
+            currentSentenceIndex = 0;
+            displayCurrentSentence();
+            setTimeout(() => {
+                applyDisplayMode();
+                ensureTextVisibility();
+            }, 100);
+        } else {
+            alert('No valid sentences found in this story');
+            exitReadingMode();
         }
     }
-    
-    if (currentEnglish) {
-        result.push({
-            english: currentEnglish,
-            japanese: "",
-            number: result.length + 1
-        });
+
+    function parseStoryFile(text) {
+        const content = text && typeof text === 'object' ? text.content : text || '';
+        const lines = content.split('\n')
+            .map(line => line.trim())
+            .filter(line => line.length > 0 && !line.startsWith('#'));
+
+        const result = [];
+        let currentEnglish = null;
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            const isEnglish = /^[→🕰️📉📊🛑🗣️🌊🗳️📊🛑🗣️🌊🗳️🆕🤝📉📛🔍💡⚖️🤷🏛️🔄💼💰⏳👵👴🚫🗺️🚫😔📉✌️🌟📈💵👵👴🚫🗺️🚫😔📉✌️🌟📈💵🇯🇵🌏🧑🤝🧑🌎🌎🇺🇸🏭🇪🇺🛂✋📱⚠️🛒💊📉👷❤️🧠✊🧩🌪️🌍🤲🚦🌟]/.test(line) ||
+                             (countJapaneseChars(line) < countEnglishChars(line));
+
+            if (isEnglish) {
+                if (currentEnglish) {
+                    result.push({
+                        english: currentEnglish,
+                        japanese: "",
+                        number: result.length + 1
+                    });
+                }
+                currentEnglish = line;
+            } else {
+                if (currentEnglish) {
+                    result.push({
+                        english: currentEnglish,
+                        japanese: line,
+                        number: result.length + 1
+                    });
+                    currentEnglish = null;
+                } else {
+                    result.push({
+                        english: "",
+                        japanese: line,
+                        number: result.length + 1
+                    });
+                }
+            }
+        }
+
+        if (currentEnglish) {
+            result.push({
+                english: currentEnglish,
+                japanese: "",
+                number: result.length + 1
+            });
+        }
+
+        return result;
     }
-    
-    return result;
-}
 
-// Helper functions for language detection
-function countJapaneseChars(str) {
-    // Count Japanese characters (hiragana, katakana, kanji)
-    const japaneseRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF\uFF65-\uFF9F]/g;
-    const matches = str.match(japaneseRegex);
-    return matches ? matches.length : 0;
-}
+    function countJapaneseChars(str) {
+        const japaneseRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF\uFF65-\uFF9F]/g;
+        const matches = str.match(japaneseRegex);
+        return matches ? matches.length : 0;
+    }
 
-function countEnglishChars(str) {
-    // Count English letters
-    const englishRegex = /[a-zA-Z]/g;
-    const matches = str.match(englishRegex);
-    return matches ? matches.length : 0;
-}
+    function countEnglishChars(str) {
+        const englishRegex = /[a-zA-Z]/g;
+        const matches = str.match(englishRegex);
+        return matches ? matches.length : 0;
+    }
 
     function displayCurrentSentence() {
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
@@ -1617,16 +1558,16 @@ function countEnglishChars(str) {
         }
 
         const sentence = sentences[currentSentenceIndex];
-        
+
         if (sentence.english) englishSentence.textContent = sentence.english;
         if (sentence.japanese) japaneseSentence.textContent = sentence.japanese;
-        
+
         englishSentence.style.fontSize = '';
         japaneseSentence.style.fontSize = '';
-        
+
         prevSentenceBtn.disabled = false;
         nextSentenceBtn.disabled = false;
-        
+
         ensureTextVisibility();
         applyFontSize();
         applyDisplayMode();
@@ -1635,10 +1576,10 @@ function countEnglishChars(str) {
 
     function updatePageCounter() {
         if (!sentences || sentences.length === 0) return;
-        
+
         const currentPageEl = document.getElementById('currentPage');
         const totalPagesEl = document.getElementById('totalPages');
-        
+
         if (currentPageEl) currentPageEl.textContent = currentSentenceIndex + 1;
         if (totalPagesEl) totalPagesEl.textContent = sentences.length;
     }
@@ -1649,13 +1590,13 @@ function countEnglishChars(str) {
     function setDisplayMode(mode) {
         displayMode = mode;
         localStorage.setItem('displayMode', mode);
-        
+
         document.getElementById('displayEnglish').classList.toggle('active', mode === 'english');
         document.getElementById('displayJapanese').classList.toggle('active', mode === 'japanese');
         document.getElementById('displayBoth').classList.toggle('active', mode === 'both');
-        
+
         applyDisplayMode();
-        
+
         setTimeout(() => {
             applyFontSize();
             ensureTextVisibility();
@@ -1672,13 +1613,13 @@ function countEnglishChars(str) {
             console.error('No sentence rows found');
             return;
         }
-        
+
         if (sentenceRows.length === 0) {
             if (!sentences || sentences.length === 0) {
                 console.warn('No sentences loaded - cannot apply display mode');
                 return;
             }
-            
+
             if (typeof applyDisplayMode.waiting === 'undefined') {
                 applyDisplayMode.waiting = true;
                 setTimeout(() => {
@@ -1687,7 +1628,7 @@ function countEnglishChars(str) {
                 }, 300);
                 return;
             }
-            
+
             console.error('Failed to find sentence rows after waiting');
             return;
         }
@@ -1698,117 +1639,111 @@ function countEnglishChars(str) {
         const japaneseRow = sentenceRows[1] || sentenceRows[0];
         const englishDisplay = englishRow.querySelector('.sentence-display');
         const japaneseDisplay = japaneseRow.querySelector('.sentence-display');
-        
+
         englishRow.classList.remove('full-height');
         japaneseRow.classList.remove('full-height');
         if (englishDisplay) englishDisplay.classList.remove('full-height');
         if (japaneseDisplay) japaneseDisplay.classList.remove('full-height');
-        
+
         englishRow.style.display = 'flex';
         japaneseRow.style.display = 'flex';
         englishRow.style.flex = '1';
         japaneseRow.style.flex = '1';
-        
+
         switch(displayMode) {
             case 'english':
                 japaneseRow.style.display = 'none';
                 englishRow.classList.add('full-height');
                 if (englishDisplay) englishDisplay.classList.add('full-height');
                 break;
-                
+
             case 'japanese':
                 englishRow.style.display = 'none';
                 japaneseRow.classList.add('full-height');
                 if (japaneseDisplay) japaneseDisplay.classList.add('full-height');
                 break;
-                
+
             case 'both':
                 break;
         }
-        
+
         ensureTextVisibility();
     }
 
-function increaseFontSize() {
-    if (currentFontSize < maxFontSize) {
-        currentFontSize += (window.innerWidth <= 768 ? 0.2 : 0.5);
-        applyFontSize();
+    function increaseFontSize() {
+        if (currentFontSize < maxFontSize) {
+            currentFontSize += (window.innerWidth <= 768 ? 0.2 : 0.5);
+            applyFontSize();
+        }
     }
-}
 
-function decreaseFontSize() {
-    if (currentFontSize > minFontSize) {
-        currentFontSize -= (window.innerWidth <= 768 ? 0.2 : 0.5);
-        applyFontSize();
+    function decreaseFontSize() {
+        if (currentFontSize > minFontSize) {
+            currentFontSize -= (window.innerWidth <= 768 ? 0.2 : 0.5);
+            applyFontSize();
+        }
     }
-}
 
-function applyFontSize() {
-    const englishDisplay = document.getElementById('englishSentence');
-    const japaneseDisplay = document.getElementById('japaneseSentence');
-    
-    // First completely reset any font size styles
-    if (englishDisplay) {
-        englishDisplay.style.fontSize = '';
-        englishDisplay.style.removeProperty('font-size');
+    function applyFontSize() {
+        const englishDisplay = document.getElementById('englishSentence');
+        const japaneseDisplay = document.getElementById('japaneseSentence');
+
+        if (englishDisplay) {
+            englishDisplay.style.fontSize = '';
+            englishDisplay.style.removeProperty('font-size');
+        }
+        if (japaneseDisplay) {
+            japaneseDisplay.style.fontSize = '';
+            japaneseDisplay.style.removeProperty('font-size');
+        }
+
+        void englishDisplay?.offsetHeight;
+        void japaneseDisplay?.offsetHeight;
+
+        let size;
+        if (window.innerWidth <= 768) {
+            const baseSize = 1.5;
+            const scaleFactor = currentFontSize / 5;
+            size = `${baseSize * scaleFactor}rem`;
+        } else {
+            size = `${currentFontSize}vw`;
+        }
+
+        if (displayMode === 'english' && englishDisplay) {
+            englishDisplay.style.fontSize = size;
+        }
+        else if (displayMode === 'japanese' && japaneseDisplay) {
+            japaneseDisplay.style.fontSize = size;
+        }
+        else {
+            if (englishDisplay) englishDisplay.style.fontSize = size;
+            if (japaneseDisplay) japaneseDisplay.style.fontSize = size;
+        }
+
+        localStorage.setItem('fontSize', currentFontSize);
+        ensureTextVisibility();
     }
-    if (japaneseDisplay) {
-        japaneseDisplay.style.fontSize = '';
-        japaneseDisplay.style.removeProperty('font-size');
-    }
-    
-    // Force reflow
-    void englishDisplay?.offsetHeight;
-    void japaneseDisplay?.offsetHeight;
-    
-    // Calculate size based on device
-    let size;
-    if (window.innerWidth <= 768) {
-        // For mobile, use rem units that scale with root font size
-        const baseSize = 1.5; // Default mobile size in rem
-        const scaleFactor = currentFontSize / 5; // 5 is default vw size
-        size = `${baseSize * scaleFactor}rem`;
-    } else {
-        // For desktop, use vw units
-        size = `${currentFontSize}vw`;
-    }
-    
-    // Apply the new size
-    if (displayMode === 'english' && englishDisplay) {
-        englishDisplay.style.fontSize = size;
-    } 
-    else if (displayMode === 'japanese' && japaneseDisplay) {
-        japaneseDisplay.style.fontSize = size;
-    }
-    else {
-        if (englishDisplay) englishDisplay.style.fontSize = size;
-        if (japaneseDisplay) japaneseDisplay.style.fontSize = size;
-    }
-    
-    localStorage.setItem('fontSize', currentFontSize);
-    ensureTextVisibility();
-}
 
     function ensureTextVisibility() {
         const activeDisplays = [];
-        
+
         if (displayMode === 'english' || displayMode === 'both') {
             const englishDisplay = document.getElementById('englishSentence');
             if (englishDisplay) activeDisplays.push(englishDisplay);
         }
-        
+
         if (displayMode === 'japanese' || displayMode === 'both') {
             const japaneseDisplay = document.getElementById('japaneseSentence');
             if (japaneseDisplay) activeDisplays.push(japaneseDisplay);
         }
-        
+
         activeDisplays.forEach(display => {
             display.style.fontSize = `${currentFontSize}vw`;
-            
+
             if (display.scrollHeight > display.clientHeight || display.scrollWidth > display.clientWidth) {
                 let fontSize = currentFontSize;
-                while ((display.scrollHeight > display.clientHeight || 
-                       display.scrollWidth > display.clientWidth) && 
+                while ((display.scrollHeight > display.clientHeight ||
+                       display.scrollWidth > display.clientWidth) &&
                        fontSize > 2) {
                     fontSize -= 0.5;
                     display.style.fontSize = `${fontSize}vw`;
@@ -1824,23 +1759,23 @@ function applyFontSize() {
     function showNextSentence() {
         stopSpeech();
         closeTranslationPopupHandler();
-        
+
         if (sentences.length === 0 || fruitGameActive) return;
-        
+
         const isLastPage = currentSentenceIndex >= sentences.length - 1;
-        
+
         if (fruitGameEnabled) {
             shouldAdvanceAfterGame = true;
             showFruitGame();
             return;
         }
-        
+
         if (isLastPage) {
             currentSentenceIndex = 0;
             displayCurrentSentence();
             return;
         }
-        
+
         advanceToNextSentence();
     }
 
@@ -1850,7 +1785,7 @@ function applyFontSize() {
         } else {
             currentSentenceIndex = 0;
         }
-        
+
         displayCurrentSentence();
         updatePageCounter();
     }
@@ -1858,15 +1793,15 @@ function applyFontSize() {
     function showPreviousSentence() {
         stopSpeech();
         closeTranslationPopupHandler();
-        
+
         if (sentences.length === 0) return;
-        
+
         if (currentSentenceIndex > 0) {
             currentSentenceIndex--;
         } else {
             currentSentenceIndex = sentences.length - 1;
         }
-        
+
         displayCurrentSentence();
         updatePageCounter();
     }
@@ -1884,14 +1819,14 @@ function applyFontSize() {
     // ====================
     function playSentence(type) {
         if (sentences.length === 0 || fruitGameActive) return;
-        
+
         const sentence = sentences[currentSentenceIndex];
         let text = type === 'english' ? sentence.english : sentence.japanese;
         const lang = type === 'english' ? 'en-US' : 'ja-JP';
-        
+
         const emojiRegex = /(\p{Emoji_Presentation}|\p{Extended_Pictographic})/gu;
         text = text.replace(emojiRegex, '').trim();
-        
+
         stopSpeech();
         speakSentence(text, lang);
     }
@@ -1919,21 +1854,21 @@ function applyFontSize() {
         const speakWithVoice = () => {
             const voices = window.speechSynthesis.getVoices();
             let voice;
-            
+
             if (lang === 'en-US') {
-                voice = voices.find(v => 
-                    v.lang === 'en-US' && 
+                voice = voices.find(v =>
+                    v.lang === 'en-US' &&
                     v.name.includes('English')
                 );
 
                 if (!voice) {
-                    voice = voices.find(v => 
+                    voice = voices.find(v =>
                         v.lang.startsWith('en-')
                     );
                 }
             } else if (lang === 'ja-JP') {
-                voice = voices.find(v => 
-                    v.lang === 'ja-JP' || 
+                voice = voices.find(v =>
+                    v.lang === 'ja-JP' ||
                     v.lang.startsWith('ja')
                 );
             }
@@ -1979,13 +1914,13 @@ function applyFontSize() {
         translationOriginal = document.getElementById('translationOriginal');
         translationResult = document.getElementById('translationResult');
         translationTts = document.getElementById('translationTts');
-        
-        if (!translationPopup || !translationOverlay || !closeTranslationPopup || 
+
+        if (!translationPopup || !translationOverlay || !closeTranslationPopup ||
             !translationOriginal || !translationResult || !translationTts) {
             console.error('One or more translation elements not found');
             return false;
         }
-        
+
         selectedText = '';
         translationLang = '';
         return true;
@@ -2011,14 +1946,14 @@ function applyFontSize() {
         if (!trimmedText || trimmedText.length < 1 || trimmedText.toLowerCase() === 'translate') {
             return;
         }
-        
+
         closeTranslationPopupHandler();
         selectedText = trimmedText;
         translationLang = lang;
-        
+
         const sourceLabel = document.getElementById('sourceLanguageLabel');
         const targetLabel = document.getElementById('targetLanguageLabel');
-        
+
         if (lang === 'en') {
             sourceLabel.textContent = 'English:';
             targetLabel.textContent = 'Japanese:';
@@ -2026,7 +1961,7 @@ function applyFontSize() {
             sourceLabel.textContent = 'Japanese:';
             targetLabel.textContent = 'English:';
         }
-        
+
         try {
             const selection = window.getSelection();
             if (selection.rangeCount > 0) {
@@ -2039,40 +1974,40 @@ function applyFontSize() {
         } catch (e) {
             console.error('Error highlighting text:', e);
         }
-        
+
         translationOriginal.textContent = selectedText;
-        translationResult.textContent = "Loading translation...";    
+        translationResult.textContent = "Loading translation...";
         translationPopup.classList.add('active');
         translationOverlay.classList.add('active');
-        
+
         fetchTranslation(selectedText, lang);
-        
+
         const nextBtn = document.getElementById('nextSentence');
         const prevBtn = document.getElementById('prevSentence');
-        
+
         const closeOnNav = () => {
             closeTranslationPopupHandler();
             nextBtn.removeEventListener('click', closeOnNav);
             prevBtn.removeEventListener('click', closeOnNav);
         };
-        
+
         nextBtn.addEventListener('click', closeOnNav);
         prevBtn.addEventListener('click', closeOnNav);
     }
 
     function closeTranslationPopupHandler() {
         if (!translationPopup || !translationOverlay) return;
-        
+
         translationPopup.classList.remove('active');
         translationOverlay.classList.remove('active');
         stopSpeech();
         translationOriginal.textContent = '';
         translationResult.textContent = '';
-        
+
         if (window.getSelection) {
             window.getSelection().removeAllRanges();
         }
-        
+
         document.querySelectorAll('.highlighted-text').forEach(el => {
             const parent = el.parentNode;
             while (el.firstChild) {
@@ -2081,7 +2016,7 @@ function applyFontSize() {
             parent.removeChild(el);
             parent.normalize();
         });
-        
+
         selectedText = '';
         translationLang = '';
     }
@@ -2092,7 +2027,7 @@ function applyFontSize() {
         const encodedLangPair = encodeURIComponent(langPair);
         const apiUrl = `https://api.mymemory.translated.net/get?q=${encodedText}&langpair=${encodedLangPair}`;
         const proxyUrl = 'https://corsproxy.io/?';
-        
+
         fetch(proxyUrl + apiUrl)
             .then(response => {
                 if (!response.ok) {
@@ -2110,11 +2045,11 @@ function applyFontSize() {
                         .replace(/\(.*?\)/g, '')
                         .replace(/\d+/g, '')
                         .trim();
-                    
+
                     if (!translatedText) {
                         throw new Error('Translation returned empty after cleaning');
                     }
-                    
+
                     translationResult.textContent = translatedText;
                 } else {
                     throw new Error('No translation data received');
@@ -2123,7 +2058,7 @@ function applyFontSize() {
             .catch(error => {
                 console.error('Translation error:', error);
                 translationResult.textContent = "Unable to get translation";
-                
+
                 if (text.length < 20) {
                     trySimpleDictionaryLookup(text, lang);
                 }
@@ -2140,7 +2075,7 @@ function applyFontSize() {
             'thank you': 'ありがとう',
             'please': 'お願いします'
         };
-        
+
         const jaToEnDict = {
             'こんにちは': 'hello',
             'ありがとう': 'thank you',
@@ -2148,7 +2083,7 @@ function applyFontSize() {
             '番組': 'show',
             '見せる': 'show'
         };
-        
+
         const dict = lang === 'en' ? enToJaDict : jaToEnDict;
         if (dict[word]) {
             translationResult.textContent = dict[word];
@@ -2216,7 +2151,7 @@ function applyFontSize() {
     function getWordAtPoint(element, x, y) {
         const range = document.caretRangeFromPoint(x, y);
         if (!range) return null;
-        
+
         range.expand('word');
         const word = range.toString().trim();
         return word || null;
@@ -2225,11 +2160,11 @@ function applyFontSize() {
     // ====================
     // FRUIT GAME
     // ====================
-const categories = [
-        { 
-            name: 'Animals (Singular)', 
+    const categories = [
+        {
+            name: 'Animals (Singular)',
             items: [
-                {emoji: '🐶', name: 'a dog'}, 
+                {emoji: '🐶', name: 'a dog'},
                 {emoji: '🐱', name: 'a cat'},
                 {emoji: '🐭', name: 'a mouse'},
                 {emoji: '🐰', name: 'a rabbit'},
@@ -2241,10 +2176,10 @@ const categories = [
                 {emoji: '🐦', name: 'a bird'}
             ]
         },
-        { 
-            name: 'Fruit & Food', 
+        {
+            name: 'Fruit & Food',
             items: [
-                {emoji: '🍎', name: 'an apple'}, 
+                {emoji: '🍎', name: 'an apple'},
                 {emoji: '🍊', name: 'an orange'},
                 {emoji: '🍌', name: 'a banana'},
                 {emoji: '🥚', name: 'an egg'},
@@ -2256,10 +2191,10 @@ const categories = [
                 {emoji: '🍩', name: 'a donut'}
             ]
         },
-        { 
-            name: 'Action Verbs 1', 
+        {
+            name: 'Action Verbs 1',
             items: [
-                {emoji: '🏃', name: 'run'}, 
+                {emoji: '🏃', name: 'run'},
                 {emoji: '🚶', name: 'walk'},
                 {emoji: '🏊', name: 'swim'},
                 {emoji: '✈️', name: 'fly'},
@@ -2271,10 +2206,10 @@ const categories = [
                 {emoji: '🎣', name: 'fish'}
             ]
         },
-        { 
-            name: 'Action Verbs 2', 
+        {
+            name: 'Action Verbs 2',
             items: [
-                {emoji: '🥣', name: 'eat'}, 
+                {emoji: '🥣', name: 'eat'},
                 {emoji: '🥛', name: 'drink'},
                 {emoji: '😴', name: 'sleep'},
                 {emoji: '📖', name: 'read'},
@@ -2286,10 +2221,10 @@ const categories = [
                 {emoji: '🎮', name: 'play'}
             ]
         },
-        { 
-            name: 'Adjectives (Feeling)', 
+        {
+            name: 'Adjectives (Feeling)',
             items: [
-                {emoji: '😊', name: 'happy'}, 
+                {emoji: '😊', name: 'happy'},
                 {emoji: '😢', name: 'sad'},
                 {emoji: '😠', name: 'angry'},
                 {emoji: '😴', name: 'sleepy'},
@@ -2301,10 +2236,10 @@ const categories = [
                 {emoji: '🤩', name: 'excited'}
             ]
         },
-        { 
-            name: 'Adjectives (Describing)', 
+        {
+            name: 'Adjectives (Describing)',
             items: [
-                {emoji: '🐘', name: 'big'}, 
+                {emoji: '🐘', name: 'big'},
                 {emoji: '🐜', name: 'small'},
                 {emoji: '🐇', name: 'fast'},
                 {emoji: '🐢', name: 'slow'},
@@ -2316,10 +2251,10 @@ const categories = [
                 {emoji: '🌶️', name: 'spicy'}
             ]
         },
-        { 
-            name: 'School Objects', 
+        {
+            name: 'School Objects',
             items: [
-                {emoji: '✏️', name: 'a pencil'}, 
+                {emoji: '✏️', name: 'a pencil'},
                 {emoji: '🖊️', name: 'a pen'},
                 {emoji: '📕', name: 'a book'},
                 {emoji: '📓', name: 'a notebook'},
@@ -2331,8 +2266,8 @@ const categories = [
                 {emoji: '👨‍🏫', name: 'a teacher'}
             ]
         },
-        { 
-            name: 'Prepositions & Logic', 
+        {
+            name: 'Prepositions & Logic',
             items: [
                 {emoji: '⬆️', name: 'up'},
                 {emoji: '⬇️', name: 'down'},
@@ -2346,10 +2281,10 @@ const categories = [
                 {emoji: '🤝', name: 'with'}
             ]
         },
-        { 
-            name: 'Town & Vehicles', 
+        {
+            name: 'Town & Vehicles',
             items: [
-                {emoji: '🚗', name: 'a car'}, 
+                {emoji: '🚗', name: 'a car'},
                 {emoji: '🚌', name: 'a bus'},
                 {emoji: '🚲', name: 'a bike'},
                 {emoji: '🚕', name: 'a taxi'},
@@ -2361,10 +2296,10 @@ const categories = [
                 {emoji: '✈️', name: 'a plane'}
             ]
         },
-        { 
-            name: 'Clothes', 
+        {
+            name: 'Clothes',
             items: [
-                {emoji: '👕', name: 'a t-shirt'}, 
+                {emoji: '👕', name: 'a t-shirt'},
                 {emoji: '🧢', name: 'a cap'},
                 {emoji: '🧥', name: 'a coat'},
                 {emoji: '👗', name: 'a dress'},
@@ -2386,10 +2321,10 @@ const categories = [
             fruitToggleBtn.innerHTML = '🍎';
             fruitToggleBtn.style.color = 'var(--warning)';
         }
-        
+
         fruitToggleBtn.classList.toggle('on', fruitGameEnabled);
         fruitToggleBtn.title = fruitGameEnabled ? 'Fruit Game is ON' : 'Fruit Game is OFF';
-        
+
         if (fruitGameEnabled) {
             fruitToggleBtn.style.boxShadow = '0 0 10px var(--success)';
             fruitToggleBtn.style.border = '2px solid var(--success)';
@@ -2398,7 +2333,7 @@ const categories = [
             fruitToggleBtn.style.border = '2px solid var(--warning)';
         }
     }
-    
+
     function toggleFruitGame() {
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
@@ -2406,7 +2341,7 @@ const categories = [
 
         fruitGameEnabled = !fruitGameEnabled;
         updateFruitButtonState();
-        
+
         if (fruitGameEnabled) {
             playSound('activate');
             if (navigator.vibrate) navigator.vibrate(50);
@@ -2415,20 +2350,20 @@ const categories = [
                 hideFruitGame();
             }
         }
-        
+
         localStorage.setItem('fruitGameEnabled', fruitGameEnabled);
         console.log('Fruit game is now', fruitGameEnabled ? 'ON' : 'OFF');
     }
-    
+
     function showFruitGame() {
         if (!fruitGameEnabled || fruitGameActive) {
             console.log('Fruit game not shown - enabled:', fruitGameEnabled, 'active:', fruitGameActive);
             return;
         }
-        
+
         stopSpeech();
         fruitGameActive = true;
-        
+
         const gameContainer = document.createElement('div');
         gameContainer.className = 'fruit-game-container';
         gameContainer.innerHTML = `
@@ -2452,7 +2387,7 @@ const categories = [
                 <button id="exitFruitGame" class="btn" style="margin-top: 20px; background-color: var(--warning);">Exit Game</button>
             </div>
         `;
-        
+
         document.body.appendChild(gameContainer);
         spinReels();
         document.getElementById('exitFruitGame').addEventListener('click', hideFruitGame);
@@ -2463,20 +2398,20 @@ const categories = [
         if (game && game.parentNode) {
             game.parentNode.removeChild(game);
         }
-        
+
         fruitGameActive = false;
-        
+
         if (window.AudioContext) {
             const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
             audioCtx.close();
         }
-        
+
         closeTranslationPopupHandler();
-        
+
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
         }
-        
+
         setTimeout(() => {
             if (shouldAdvanceAfterGame) {
                 const isLastPage = currentSentenceIndex >= sentences.length - 1;
@@ -2486,7 +2421,7 @@ const categories = [
             displayCurrentSentence();
         }, 500);
     }
-    
+
     function spinReels() {
         const currentCategory = categories[Math.floor(Math.random() * categories.length)];
         const items = currentCategory.items;
@@ -2496,55 +2431,55 @@ const categories = [
             document.getElementById('reel3')
         ];
         const resultDisplay = document.getElementById('fruitResult');
-        
+
         resultDisplay.textContent = '';
         resultDisplay.style.color = '';
         playSound('spin');
-        
+
         const shouldMatch = Math.random() < 0.33;
         let matchingItem = '';
-        
+
         if (shouldMatch) {
             matchingItem = items[Math.floor(Math.random() * items.length)];
             matchingItem = items.find(item => item.emoji === matchingItem.emoji) || matchingItem;
         }
-        
+
         spinReel(reels[0], 0, items, matchingItem, shouldMatch, () => {
             playSound('reelStop');
             spinReel(reels[1], 300, items, matchingItem, shouldMatch, () => {
                 playSound('reelStop');
                 spinReel(reels[2], 300, items, matchingItem, shouldMatch, () => {
                     playSound('reelStop');
-                    
+
                     setTimeout(() => {
-                        if (shouldMatch && reels[0].textContent === reels[1].textContent && 
+                        if (shouldMatch && reels[0].textContent === reels[1].textContent &&
                             reels[1].textContent === reels[2].textContent) {
                             playSound('win');
                             playSound('coin');
                             resultDisplay.textContent = '🎉 WINNER! 🎉';
                             resultDisplay.style.color = 'var(--success)';
                             resultDisplay.style.fontWeight = 'bold';
-                            
+
                             reels.forEach(reel => {
                                 reel.style.transform = 'scale(1.2)';
                                 reel.style.transition = 'all 0.3s';
                                 reel.style.boxShadow = '0 0 20px gold';
                             });
-                            
+
                             setTimeout(() => {
                                 createConfetti();
                             }, 500);
-                            
+
                             setTimeout(hideFruitGame, 3000);
                         } else {
                             playSound('lose');
                             resultDisplay.textContent = 'Try again!';
                             resultDisplay.style.color = 'var(--warning)';
-                            
+
                             reels.forEach(reel => {
                                 reel.style.animation = 'shake 0.5s';
                             });
-                            
+
                             setTimeout(hideFruitGame, 2000);
                         }
                     }, 300);
@@ -2556,7 +2491,7 @@ const categories = [
     function spinReel(reel, delay, items, matchingItem, shouldMatch, callback) {
         const reelNumber = reel.id.replace('reel', '');
         const nameElement = document.getElementById(`name${reelNumber}`);
-        
+
         setTimeout(() => {
             let spins = 0;
             const spinInterval = setInterval(() => {
@@ -2564,14 +2499,14 @@ const categories = [
                     const randomItem = items[Math.floor(Math.random() * items.length)];
                     reel.textContent = randomItem.emoji;
                     nameElement.textContent = '';
-                } 
+                }
                 else if (spins < 15) {
                     if (spins % 2 === 0) {
                         const randomItem = items[Math.floor(Math.random() * items.length)];
                         reel.textContent = randomItem.emoji;
                         nameElement.textContent = '';
                     }
-                } 
+                }
                 else {
                     clearInterval(spinInterval);
                     let finalItem;
@@ -2582,13 +2517,13 @@ const categories = [
                     }
                     reel.textContent = finalItem.emoji;
                     nameElement.textContent = finalItem.name;
-                    
+
                     if (window.speechSynthesis) {
                         const utterance = new SpeechSynthesisUtterance(finalItem.name);
                         utterance.rate = 0.9;
                         window.speechSynthesis.speak(utterance);
                     }
-                    
+
                     if (callback) callback();
                 }
                 spins++;
@@ -2599,7 +2534,7 @@ const categories = [
     function createConfetti() {
         const container = document.querySelector('.fruit-game-container');
         if (!container) return;
-        
+
         for (let i = 0; i < 100; i++) {
             const confetti = document.createElement('div');
             confetti.style.position = 'absolute';
@@ -2612,9 +2547,9 @@ const categories = [
             confetti.style.opacity = '0.8';
             confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
             confetti.style.animation = `confetti-fall ${2 + Math.random() * 3}s linear forwards`;
-            
+
             container.appendChild(confetti);
-            
+
             setTimeout(() => {
                 confetti.remove();
             }, 5000);
@@ -2623,14 +2558,14 @@ const categories = [
 
     function playSound(type) {
         if (!window.AudioContext) return;
-        
+
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         let oscillator = audioCtx.createOscillator();
         let gainNode = audioCtx.createGain();
-        
+
         oscillator.connect(gainNode);
         gainNode.connect(audioCtx.destination);
-        
+
         switch(type) {
             case 'spin':
                 oscillator.type = 'sawtooth';
@@ -2641,7 +2576,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.8);
                 break;
-                
+
             case 'reelStop':
                 oscillator.type = 'square';
                 oscillator.frequency.setValueAtTime(1000, audioCtx.currentTime);
@@ -2650,7 +2585,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.1);
                 break;
-                
+
             case 'win':
                 oscillator.type = 'sine';
                 oscillator.frequency.setValueAtTime(523.25, audioCtx.currentTime);
@@ -2662,7 +2597,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.5);
                 break;
-                
+
             case 'lose':
                 oscillator.type = 'square';
                 oscillator.frequency.setValueAtTime(349.23, audioCtx.currentTime);
@@ -2672,7 +2607,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.6);
                 break;
-                
+
             case 'activate':
                 oscillator.type = 'sine';
                 oscillator.frequency.setValueAtTime(784, audioCtx.currentTime);
@@ -2681,7 +2616,7 @@ const categories = [
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.3);
                 break;
-                
+
             case 'coin':
                 oscillator.type = 'triangle';
                 oscillator.frequency.setValueAtTime(988, audioCtx.currentTime);
@@ -2716,128 +2651,120 @@ const categories = [
             }
         });
     }
-function loadLessonsData() {
-    return new Promise((resolve, reject) => {
-        try {
-            // Standard format for all classes
-            const classData = {
-                'Bronze': {
-                    stories: typeof bronzeStories !== 'undefined' ? bronzeStories : []
-                },
-                'Silver': {
-                    stories: typeof silverStories !== 'undefined' ? silverStories : []
-                },
-                'Gold': {
-                    stories: typeof goldStories !== 'undefined' ? goldStories : []
-                },
-                'Adult': adult,
-                'X': x,
-                'C': c,
-                'Eiken1': eiken1,
-                'EikenPre1': eikenpre1,
-                'Eiken2': eiken2,
-                'EikenPre2': eikenpre2,
-                'EikenPre2Plus': eikenpre2plus,
-                'Eiken3': {
-                    stories: window.eiken3 ? window.eiken3.map(story => ({
-                        title: story.title,
-                        content: story.content
-                    })) : [],
-                    questions: window.eiken3questions ? window.eiken3questions.questions : []
-                },
-            'Eiken4': {
-    stories: Array.isArray(eiken4) ? 
-        eiken4.map(story => ({
-            title: story.title,
-            content: story.content
-        })) : 
-        Object.values(eiken4).map(story => ({
-            title: story.title,
-            content: story.content
-        }))
-},
-                'Eiken6': {
-    stories: window.eiken6story ? window.eiken6story.map(story => ({
-        title: story.title,
-        content: story.content
-    })) : []
-},
-                'Eiken7': {
-    stories: window.eiken7story ? window.eiken7story.map(story => ({
-        title: story.title,
-        content: story.content
-    })) : []
-},
-// In loadLessonsData function
-'Eiken5': {
-    stories: window.eiken5story ? window.eiken5story.map(story => ({
-        title: story.title,
-        content: story.content
-    })) : [],
-    questions: window.qa5 ? window.qa5.questions : []
-},
-                'HighSchool': {
-                    stories: [
-                        {
-                            title: 'Getting to Know You',
-                            content: gettingtoknow.questions
-                        },
-                        {
-                            title: 'Easy Questions',
-                            content: easyquestions2.questions
-                        },
-                        {
-                            title: 'Would You Rather',
-                            content: wouldyourather.questions
-                        }
-                    ]
-                }
-            };
 
-// Process each class to ensure consistent structure
-            Object.entries(classData).forEach(([className, data]) => {
-                if (!data) return; // Skip if data not loaded
-                
-                if (Array.isArray(data)) {
-                    // UPDATED LOGIC HERE:
-                    // Check if the items inside the array are Objects with a 'title' property
-                    lessonsData[className] = {
-                        stories: data.map((item, i) => ({
-                            // If item.title exists, use it. If not, make a generic "Story X" title.
-                            title: item.title ? item.title : `Story ${i+1}`,
-                            // If item.content exists, use it. If item is just a string, use item itself.
-                            content: item.content ? item.content : item
-                        }))
-                    };
-                } else if (data.stories || data.questions) {
-                    // For classes that already have the right structure
-                    lessonsData[className] = data;
+    function loadLessonsData() {
+        return new Promise((resolve, reject) => {
+            try {
+                const classData = {
+                    'Bronze': {
+                        stories: typeof bronzeStories !== 'undefined' ? bronzeStories : []
+                    },
+                    'Silver': {
+                        stories: typeof silverStories !== 'undefined' ? silverStories : []
+                    },
+                    'Gold': {
+                        stories: typeof goldStories !== 'undefined' ? goldStories : []
+                    },
+                    'Adult': adult,
+                    'X': x,
+                    'C': c,
+                    'Eiken1': eiken1,
+                    'EikenPre1': eikenpre1,
+                    'Eiken2': eiken2,
+                    'EikenPre2': eikenpre2,
+                    'EikenPre2Plus': eikenpre2plus,
+                    'Eiken3': {
+                        stories: window.eiken3 ? window.eiken3.map(story => ({
+                            title: story.title,
+                            content: story.content
+                        })) : [],
+                        questions: window.eiken3questions ? window.eiken3questions.questions : []
+                    },
+                    'Eiken4': {
+                        stories: Array.isArray(eiken4) ?
+                            eiken4.map(story => ({
+                                title: story.title,
+                                content: story.content
+                            })) :
+                            Object.values(eiken4).map(story => ({
+                                title: story.title,
+                                content: story.content
+                            }))
+                    },
+                    'Eiken6': {
+                        stories: window.eiken6story ? window.eiken6story.map(story => ({
+                            title: story.title,
+                            content: story.content
+                        })) : []
+                    },
+                    'Eiken7': {
+                        stories: window.eiken7story ? window.eiken7story.map(story => ({
+                            title: story.title,
+                            content: story.content
+                        })) : []
+                    },
+                    'Eiken5': {
+                        stories: window.eiken5story ? window.eiken5story.map(story => ({
+                            title: story.title,
+                            content: story.content
+                        })) : [],
+                        questions: window.qa5 ? window.qa5.questions : []
+                    },
+                    'HighSchool': {
+                        stories: [
+                            {
+                                title: 'Getting to Know You',
+                                content: gettingtoknow.questions
+                            },
+                            {
+                                title: 'Easy Questions',
+                                content: easyquestions2.questions
+                            },
+                            {
+                                title: 'Would You Rather',
+                                content: wouldyourather.questions
+                            }
+                        ]
+                    }
+                };
+
+                Object.entries(classData).forEach(([className, data]) => {
+                    if (!data) return;
+
+                    if (Array.isArray(data)) {
+                        lessonsData[className] = {
+                            stories: data.map((item, i) => ({
+                                title: item.title ? item.title : `Story ${i+1}`,
+                                content: item.content ? item.content : item
+                            }))
+                        };
+                    } else if (data.stories || data.questions) {
+                        lessonsData[className] = data;
+                    } else {
+                        lessonsData[className] = {
+                            stories: Object.entries(data).map(([key, content]) => ({
+                                title: key.replace(/_/g, ' '),
+                                content: content
+                            }))
+                        };
+                    }
+
+                    console.log(`${className} loaded with`,
+                        lessonsData[className].stories?.length || 0, 'stories and',
+                        lessonsData[className].questions ? 'questions' : 'no questions');
+                });
+
+                if (Object.keys(lessonsData).length > 0) {
+                    resolve();
                 } else {
-                    // For simple objects with content
-                    lessonsData[className] = {
-                        stories: Object.entries(data).map(([key, content]) => ({
-                            title: key.replace(/_/g, ' '),
-                            content: content
-                        }))
-                    };
+                    reject('No lesson data found');
                 }
-                
-                console.log(`${className} loaded with`, 
-                    lessonsData[className].stories?.length || 0, 'stories and',
-                    lessonsData[className].questions ? 'questions' : 'no questions');
-            });
-
-            if (Object.keys(lessonsData).length > 0) {
-                resolve();
-            } else {
-                reject('No lesson data found');
+            } catch (e) {
+                console.error('Error loading lesson data:', e);
+                reject(e);
             }
-        } catch (e) {
-            console.error('Error loading lesson data:', e);
-            reject(e);
-        }
-    });
-}
+        });
+    }
 
     // ====================
     // UTILITY FUNCTIONS
@@ -2851,7 +2778,7 @@ function loadLessonsData() {
 
     function handleRemoteInput(e) {
         const activeElement = document.activeElement;
-        
+
         switch(e.key) {
             case 'ArrowUp':
                 navigateFocus('up');
@@ -2891,20 +2818,20 @@ function loadLessonsData() {
     function navigateFocus(direction) {
         const focusable = Array.from(document.querySelectorAll('button, select, [tabindex="0"]'));
         const currentIndex = focusable.indexOf(document.activeElement);
-        
+
         if (currentIndex === -1) {
             if (focusable.length > 0) focusable[0].focus();
             return;
         }
-        
+
         let nextIndex = currentIndex;
-        
+
         if (direction === 'up' || direction === 'left') {
             nextIndex = Math.max(0, currentIndex - 1);
         } else {
             nextIndex = Math.min(focusable.length - 1, currentIndex + 1);
         }
-        
+
         focusable[nextIndex].focus();
     }
 
@@ -2918,18 +2845,10 @@ function loadLessonsData() {
             document.body.classList.add('dark-mode');
             document.getElementById('nightModeToggle').textContent = '☀️';
         }
-        
+
         init();
         setTimeout(listVoices, 1000);
     });
-</script>   
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
