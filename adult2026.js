@@ -1,5 +1,4 @@
-var adult = {
-    stories: [
+var adult = [
         {
             title: "Week 1: New Year Resolutions & Hatsumode (Jan 1 – Jan 7)",
             content: `1. 🎍 Happy New Year! How did you spend the first day of 2026?
@@ -5554,5 +5553,4 @@ KFCの行列。予約しましたか？
 50. 🎉 Happy New Year! (Almost). See you in 2027!
 明けましておめでとう！（もう少し）。2027年に会いましょう！`
         }
-    ]
-};
+];
