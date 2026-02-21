@@ -1,7 +1,7 @@
 var eiken7story = [
     // Week 1 - Red and Blue (Colors)
     {
-        title: "Red and Blue (Colors / I see...)",
+        title: "1. Red and Blue (Colors / I see...)",
         content: `🍎 I see a red apple.
 赤いリンゴが見えます。
 🎈 I see a red balloon.
@@ -46,7 +46,7 @@ var eiken7story = [
 
     // Week 2 - The Yellow Sun (Shapes and Nature)
     {
-        title: "The Yellow Sun (Colors / Look at...)",
+        title: "2. The Yellow Sun (Colors / Look at...)",
         content: `☀️ Look at the yellow sun.
 黄色い太陽を見て。
 🍌 I see a yellow banana.
@@ -91,7 +91,7 @@ var eiken7story = [
 
     // Week 3 - My Green Bag (School Items)
     {
-        title: "My Green Bag (Classroom / I have...)",
+        title: "3. My Green Bag (Classroom / I have...)",
         content: `🌲 I see a green tree.
 緑の木が見えます。
 🐸 I see a green frog.
@@ -136,7 +136,7 @@ var eiken7story = [
 
     // Week 4 - Big and Small (Adjectives)
     {
-        title: "Big and Small (Sizes / It is...)",
+        title: "4. Big and Small (Sizes / It is...)",
         content: `🐘 The elephant is big.
 ゾウは大きいです。
 🏢 The house is big.
@@ -181,7 +181,7 @@ var eiken7story = [
 
     // Week 5 - One, Two, Three (Numbers 1-5)
     {
-        title: "One, Two, Three (Numbers / How many?)",
+        title: "5. One, Two, Three (Numbers / How many?)",
         content: `☝️ I see one sun.
 太陽が1つ見えます。
 🚲 I see two wheels.
@@ -226,7 +226,7 @@ var eiken7story = [
 
     // Week 6 - Four, Five, Six (Numbers 4-6)
     {
-        title: "Four, Five, Six (Numbers / Chunks)",
+        title: "6. Four, Five, Six (Numbers / Chunks)",
         content: `🚗 I see four cars.
 車が4台見えます。
 🧁 I see five cakes.
@@ -271,7 +271,7 @@ var eiken7story = [
 
     // Week 7 - My Hands (Body Parts)
     {
-        title: "My Hands (Body Parts / I have...)",
+        title: "7. My Hands (Body Parts / I have...)",
         content: `🖐️ I have two hands.
 手は2つあります。
 🦶 I have two feet.
@@ -316,7 +316,7 @@ var eiken7story = [
 
     // Week 8 - Look at My Head (Body Parts / Actions)
     {
-        title: "Look at My Head (Body Parts / Point to...)",
+        title: "8. Look at My Head (Body Parts / Point to...)",
         content: `🙆 Look at my head.
 私の頭を見て。
 💇 Look at my hair.
@@ -360,7 +360,7 @@ var eiken7story = [
  },
 // Week 9 - Stand Up! (Classroom Commands / TPR)
     {
-        title: "Stand Up! (Commands / Let's...)",
+        title: "9. Stand Up! (Commands / Let's...)",
         content: `🙋 Stand up, please.
 立ってください。
 🪑 Sit down, please.
@@ -405,7 +405,7 @@ var eiken7story = [
 
     // Week 10 - The Big Dog (Animals / Sizes)
     {
-        title: "The Big Dog (Animals / This is...)",
+        title: "10. The Big Dog (Animals / This is...)",
         content: `🐕 This is a big dog.
 これは大きな犬です。
 🐩 This is a small dog.
@@ -450,7 +450,7 @@ var eiken7story = [
 
     // Week 11 - The Small Cat (Animals / I like...)
     {
-        title: "The Small Cat (Animals / I like...)",
+        title: "11. The Small Cat (Animals / I like...)",
         content: `🐱 I like this cat.
 私はこの猫が好きです。
 🐶 I like this dog.
@@ -495,7 +495,7 @@ var eiken7story = [
 
     // Week 12 - Hello, Teacher! (Greetings)
     {
-        title: "Hello, Teacher! (Greetings / Social)",
+        title: "12. Hello, Teacher! (Greetings / Social)",
         content: `👋 Hello, teacher.
 先生、こんにちは。
 ☀️ Good morning.
@@ -540,7 +540,7 @@ var eiken7story = [
 
     // Week 13 - I Can Run (Actions / I can...)
     {
-        title: "I Can Run (Actions / I can...)",
+        title: "13. I Can Run (Actions / I can...)",
         content: `🏃 I can run.
 私は走れます。
 🙌 I can jump.
@@ -585,7 +585,7 @@ var eiken7story = [
 
     // Week 14 - I Can Jump (Actions / Let's...)
     {
-        title: "I Can Jump (Actions / Let's...)",
+        title: "14. I Can Jump (Actions / Let's...)",
         content: `🐰 The rabbit can jump.
 ウサギはジャンプできます。
 🐸 The frog can jump.
@@ -630,7 +630,7 @@ var eiken7story = [
 
     // Week 15 - Happy Face (Feelings / Face)
     {
-        title: "Happy Face (Feelings / I am...)",
+        title: "15. Happy Face (Feelings / I am...)",
         content: `😊 I am happy.
 私は幸せです。
 😢 I am sad.
@@ -675,7 +675,7 @@ var eiken7story = [
 
     // Week 16 - Sad Day (Feelings / Empathy)
     {
-        title: "Sad Day (Feelings / Look at...)",
+        title: "16. Sad Day (Feelings / Look at...)",
         content: `😢 Look at the sad boy.
 悲しんでいる男の子を見て。
 😊 Look at the happy girl.
@@ -719,7 +719,7 @@ var eiken7story = [
     },
 // Week 17 - Let's Sit Down (Actions / Classroom)
     {
-        title: "Let's Sit Down (Actions / Commands)",
+        title: "17. Let's Sit Down (Actions / Commands)",
         content: `🪑 Let's sit down.
 座りましょう。
 🙋 Let's stand up.
@@ -764,7 +764,7 @@ var eiken7story = [
 
     // Week 18 - Wash Your Hands (Routines / Hygiene)
     {
-        title: "Wash Your Hands (Routine / Chunks)",
+        title: "18. Wash Your Hands (Routine / Chunks)",
         content: `🧼 I wash my hands.
 私は手を洗います。
 💦 I wash my face.
@@ -809,7 +809,7 @@ var eiken7story = [
 
     // Week 19 - Touch Your Nose (Body Parts / Game)
     {
-        title: "Touch Your Nose (Body Parts / Touch...)",
+        title: "19. Touch Your Nose (Body Parts / Touch...)",
         content: `👃 Touch your nose.
 鼻を触って。
 👂 Touch your ear.
@@ -854,7 +854,7 @@ var eiken7story = [
 
     // Week 20 - Eat an Apple (Food / I like...)
     {
-        title: "Eat an Apple (Food / I eat...)",
+        title: "20. Eat an Apple (Food / I eat...)",
         content: `🍎 I eat a red apple.
 私は赤いリンゴを食べます。
 🍌 I eat a yellow banana.
@@ -899,7 +899,7 @@ var eiken7story = [
 
     // Week 21 - Drink Water (Drinks / Needs)
     {
-        title: "Drink Water (Drinks / I am...)",
+        title: "21. Drink Water (Drinks / I am...)",
         content: `💦 I drink water.
 私はお水を飲みます。
 🥛 I drink milk.
@@ -944,7 +944,7 @@ var eiken7story = [
 
     // Week 22 - Sleepy Bear (Animals / Night)
     {
-        title: "Sleepy Bear (Animals / Night)",
+        title: "22. Sleepy Bear (Animals / Night)",
         content: `🐻 The bear is sleepy.
 熊は眠いです。
 💤 The bear is sleeping.
@@ -989,7 +989,7 @@ var eiken7story = [
 
     // Week 23 - Good Morning! (Time / Greetings)
     {
-        title: "Good Morning! (Greetings / Morning)",
+        title: "23. Good Morning! (Greetings / Morning)",
         content: `☀️ Good morning!
 おはようございます！
 ☀️ The sun is yellow.
@@ -1034,7 +1034,7 @@ var eiken7story = [
 
     // Week 24 - Good Night! (Time / Greetings)
     {
-        title: "Good Night! (Greetings / Evening)",
+        title: "24. Good Night! (Greetings / Evening)",
         content: `🌆 Good evening.
 こんばんは。
 🌙 The moon is white.
@@ -1078,7 +1078,7 @@ var eiken7story = [
     },
 // Week 25 - My Pencil (Classroom Objects)
     {
-        title: "My Pencil (Classroom / This is...)",
+        title: "25. My Pencil (Classroom / This is...)",
         content: `✏️ This is my pencil.
 これは私の鉛筆です。
 🖋️ This is my pen.
@@ -1123,7 +1123,7 @@ var eiken7story = [
 
     // Week 26 - My Book (Classroom Objects)
     {
-        title: "My Book (Classroom / I see... / Point to...)",
+        title: "26. My Book (Classroom / I see... / Point to...)",
         content: `📕 I see a red book.
 赤い本が見えます。
 📘 I see a blue book.
@@ -1168,7 +1168,7 @@ var eiken7story = [
 
     // Week 27 - The Blue Chair (Furniture / Colors)
     {
-        title: "The Blue Chair (Classroom Furniture / It is...)",
+        title: "27. The Blue Chair (Classroom Furniture / It is...)",
         content: `🪑 The chair is blue.
 椅子は青いです。
 🟫 The table is brown.
@@ -1213,7 +1213,7 @@ var eiken7story = [
 
     // Week 28 - The Red Table (Furniture / Colors)
     {
-        title: "The Red Table (Furniture / Chunks)",
+        title: "28. The Red Table (Furniture / Chunks)",
         content: `🟥 This table is red.
 このテーブルは赤いです。
 🟦 This chair is blue.
@@ -1258,7 +1258,7 @@ var eiken7story = [
 
     // Week 29 - My Friend Ken (Names / Friends)
     {
-        title: "My Friend Ken (Friends / Personal)",
+        title: "29. My Friend Ken (Friends / Personal)",
         content: `👦 This is Ken.
 これはケンです。
 👧 This is Hana.
@@ -1303,7 +1303,7 @@ var eiken7story = [
 
     // Week 30 - My Friend Hana (Names / Friends)
     {
-        title: "My Friend Hana (Friends / Actions)",
+        title: "30. My Friend Hana (Friends / Actions)",
         content: `👧 Hana has a book.
 ハナは本を持っています。
 👦 Ken has a pencil.
@@ -1348,7 +1348,7 @@ var eiken7story = [
 
     // Week 31 - Seven, Eight, Nine (Numbers 7-9)
     {
-        title: "Seven, Eight, Nine (Numbers / Counting)",
+        title: "31. Seven, Eight, Nine (Numbers / Counting)",
         content: `🍎 I see seven apples.
 リンゴが7つ見えます。
 🍌 I see eight bananas.
@@ -1393,7 +1393,7 @@ var eiken7story = [
 
     // Week 32 - Ten Little Birds (Numbers 1-10)
     {
-        title: "Ten Little Birds (Counting / Review)",
+        title: "32. Ten Little Birds (Counting / Review)",
         content: `🐦 One little bird.
 1羽の小さな鳥。
 🐦🐦 Two little birds.
@@ -1437,7 +1437,7 @@ var eiken7story = [
     },
 // Week 33 - High and Low (Positions / Opposites)
     {
-        title: "High and Low (Positions / It is...)",
+        title: "33. High and Low (Positions / It is...)",
         content: `☁️ The cloud is high.
 雲は高いところにあります。
 🐜 The ant is low.
@@ -1482,7 +1482,7 @@ var eiken7story = [
 
     // Week 34 - In and Out (Prepositions / Chunks)
     {
-        title: "In and Out (Inside / Where is...)",
+        title: "34. In and Out (Inside / Where is...)",
         content: `📦 The ball is in the box.
 ボールは箱の中にあります。
 🍎 The apple is in the bag.
@@ -1527,7 +1527,7 @@ var eiken7story = [
 
     // Week 35 - Open the Door (Commands / Classroom)
     {
-        title: "Open the Door (Commands / Actions)",
+        title: "35. Open the Door (Commands / Actions)",
         content: `🚪 Open the door.
 ドアを開けて。
 🚪 Close the door.
@@ -1572,7 +1572,7 @@ var eiken7story = [
 
     // Week 36 - Close the Book (Review / Chunks)
     {
-        title: "Close the Book (Classroom Review)",
+        title: "36. Close the Book (Classroom Review)",
         content: `📕 This is a book.
 これは本です。
 ✏️ This is a pencil.
@@ -1617,7 +1617,7 @@ var eiken7story = [
 
     // Week 37 - The Brown Cow (Farm Animals)
     {
-        title: "The Brown Cow (Farm Animals / It is...)",
+        title: "37. The Brown Cow (Farm Animals / It is...)",
         content: `🐄 The cow is brown.
 牛は茶色です。
 🐖 The pig is pink.
@@ -1662,7 +1662,7 @@ var eiken7story = [
 
     // Week 38 - The Pink Pig (Farm Animals / Sounds)
     {
-        title: "The Pink Pig (Animal Sounds / I see...)",
+        title: "38. The Pink Pig (Animal Sounds / I see...)",
         content: `🐖 I see a pink pig.
 ピンクの豚が見えます。
 🐕 I see a brown dog.
@@ -1707,7 +1707,7 @@ var eiken7story = [
 
     // Week 39 - A Green Frog (Nature / Colors)
     {
-        title: "A Green Frog (Nature / I see...)",
+        title: "39. A Green Frog (Nature / I see...)",
         content: `🐸 I see a green frog.
 緑のカエルが見えます。
 🌲 I see a green tree.
@@ -1752,7 +1752,7 @@ var eiken7story = [
 
     // Week 40 - A Yellow Duck (Nature / Sight)
     {
-        title: "A Yellow Duck (Nature / Look at...)",
+        title: "40. A Yellow Duck (Nature / Look at...)",
         content: `🦆 Look at the yellow duck.
 黄色いアヒルを見て。
 🌻 Look at the yellow flower.
@@ -1796,7 +1796,7 @@ var eiken7story = [
     },
 // Week 41 - I See a Bird (Garden / Sight)
     {
-        title: "I See a Bird (Garden / Sight)",
+        title: "41. I See a Bird (Garden / Sight)",
         content: `🐦 I see a small bird.
 小さな鳥が見えます。
 🌳 I see a big tree.
@@ -1841,7 +1841,7 @@ var eiken7story = [
 
     // Week 42 - I See a Fish (Water / Sight)
     {
-        title: "I See a Fish (Sea / Sight)",
+        title: "42. I See a Fish (Sea / Sight)",
         content: `🐟 I see a blue fish.
 青い魚が見えます。
 🐠 I see a yellow fish.
@@ -1886,7 +1886,7 @@ var eiken7story = [
 
     // Week 43 - The Tall Giraffe (Zoo Animals)
     {
-        title: "The Tall Giraffe (Zoo Animals / Sizes)",
+        title: "43. The Tall Giraffe (Zoo Animals / Sizes)",
         content: `🦒 The giraffe is tall.
 キリンは背が高いです。
 🐘 The elephant is big.
@@ -1931,7 +1931,7 @@ var eiken7story = [
 
     // Week 44 - The Strong Lion (Zoo Animals / Colors)
     {
-        title: "The Strong Lion (Zoo / Review)",
+        title: "44. The Strong Lion (Zoo / Review)",
         content: `🦁 Look at the lion.
 ライオンを見て。
 🐯 Look at the tiger.
@@ -1976,7 +1976,7 @@ var eiken7story = [
 
     // Week 45 - It is Sunny (Weather)
     {
-        title: "It is Sunny (Weather / It is...)",
+        title: "45. It is Sunny (Weather / It is...)",
         content: `☀️ It is sunny.
 晴れています。
 ☁️ It is cloudy.
@@ -2021,7 +2021,7 @@ var eiken7story = [
 
     // Week 46 - It is Rainy (Weather / Routine)
     {
-        title: "It is Rainy (Weather / Chunks)",
+        title: "46. It is Rainy (Weather / Chunks)",
         content: `🌧️ I see the rain.
 雨が見えます。
 💦 I see the water.
@@ -2066,7 +2066,7 @@ var eiken7story = [
 
     // Week 47 - I Love English (Feelings / Review)
     {
-        title: "I Love English (Feelings / Social)",
+        title: "47. I Love English (Feelings / Social)",
         content: `💖 I love English.
 私は英語が大好きです。
 😊 English is fun.
@@ -2111,7 +2111,7 @@ var eiken7story = [
 
     // Week 48 - Goodbye, Friends! (Wrap-up)
     {
-        title: "Goodbye, Friends! (Social / Review)",
+        title: "48. Goodbye, Friends! (Social / Review)",
         content: `👋 Goodbye, friends.
 友達のみんな、さようなら。
 👋 Goodbye, teacher.

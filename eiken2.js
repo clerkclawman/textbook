@@ -2,7 +2,7 @@
 var eiken2 = [
     // Story 1 - University Orientation
     {
-        title: "A University Orientation (Relative Clauses / Conditionals)",
+        title: "1. A University Orientation (Relative Clauses / Conditionals)",
         content: `🏫 I attended my university orientation, which was held in the main hall.
 大学のオリエンテーションに参加しましたが、それはメインホールで行われました。
 📚 The campus is so large that I was worried about getting lost.
@@ -46,7 +46,7 @@ var eiken2 = [
     },
     // Story 2 - A Part-Time Job Interview
     {
-        title: "A Part-Time Job Interview (Relative Clauses / Passive Voice)",
+        title: "2. A Part-Time Job Interview (Relative Clauses / Passive Voice)",
         content: `💼 I had a job interview at a popular café last Friday.
 先週の金曜日、人気のあるカフェで面接を受けました。
 📋 The manager, who looked very strict, asked me several questions.
@@ -90,7 +90,7 @@ var eiken2 = [
     },
     // Story 3 - A Study Abroad Experience
     {
-        title: "A Study Abroad Experience (Past Perfect / Conditionals)",
+        title: "3. A Study Abroad Experience (Past Perfect / Conditionals)",
         content: `✈️ I participated in a study abroad program in Canada last summer.
 去年の夏、カナダへの留学プログラムに参加しました。
 🌍 The city where I stayed was famous for its beautiful parks.
@@ -134,7 +134,7 @@ var eiken2 = [
     },
     // Story 4 - Volunteering in the Community
     {
-        title: "Volunteering in the Community (Relative Clauses / Passive Voice)",
+        title: "4. Volunteering in the Community (Relative Clauses / Passive Voice)",
         content: `🌱 I decided to volunteer at the local community garden.
 地元のコミュニティガーデンでボランティアをすることに決めました。
 🌳 The vegetables, which were grown without chemicals, are very healthy.
@@ -178,7 +178,7 @@ var eiken2 = [
     },
     // Story 5 - A Technology Workshop
     {
-        title: "A Technology Workshop (Relative Clauses / Passive Voice)",
+        title: "5. A Technology Workshop (Relative Clauses / Passive Voice)",
         content: `💻 I attended a workshop about the latest computer technology.
 最新のコンピュータ技術に関するワークショップに参加しました。
 🤖 The instructor, who works for a big tech company, was very knowledgeable.
@@ -222,7 +222,7 @@ var eiken2 = [
     },
     // Story 6 - The School Cultural Festival
     {
-        title: "The School Cultural Festival (Relative Clauses / Past Perfect)",
+        title: "6. The School Cultural Festival (Relative Clauses / Past Perfect)",
         content: `🎎 Our school held its annual cultural festival last weekend.
 私たちの学校は先週末、年に一度の文化祭を開催しました。
 🥁 The performances, which were organized by students, were amazing.
@@ -266,7 +266,7 @@ var eiken2 = [
     },
     // Story 7 - A Healthy Lifestyle
     {
-        title: "A Healthy Lifestyle (Infinitives / Relative Clauses)",
+        title: "7. A Healthy Lifestyle (Infinitives / Relative Clauses)",
         content: `🏋️ I started going to the gym to improve my physical health.
 身体の健康を向上させるためにジムに通い始めました。
 💪 The trainer advised me to eat a balanced diet.
@@ -310,7 +310,7 @@ var eiken2 = [
     },
     // Story 8 - Protecting the Environment
     {
-        title: "Protecting the Environment (Passive Voice / Conditionals)",
+        title: "8. Protecting the Environment (Passive Voice / Conditionals)",
         content: `♻️ Our school started a new recycling project last month.
 私たちの学校は先月、新しいリサイクルプロジェクトを始めました。
 🌍 The amount of plastic waste needs to be reduced immediately.
@@ -354,7 +354,7 @@ var eiken2 = [
     },
     // Story 9 - The Importance of Reading
     {
-        title: "The Importance of Reading (Present Perfect Continuous / Relative Clauses)",
+        title: "9. The Importance of Reading (Present Perfect Continuous / Relative Clauses)",
         content: `📚 I have been reading a mystery novel since yesterday.
 昨日からミステリー小説を読んでいます。
 📖 The book, which was written by a British author, is fascinating.
@@ -398,7 +398,7 @@ var eiken2 = [
     },
     // Story 10 - Planning a Trip
     {
-        title: "Planning a Trip (Relative Clauses / Conditionals)",
+        title: "10. Planning a Trip (Relative Clauses / Conditionals)",
         content: `✈️ My family and I are planning a trip to Hokkaido next month.
 家族と私は来月、北海道への旅行を計画しています。
 🗺️ The hotel where we are going to stay looks wonderful.
@@ -442,7 +442,7 @@ var eiken2 = [
  },
 // Story 11 - A Study Group Session
     {
-        title: "A Study Group Session (Relative Clauses / Past Perfect Continuous)",
+        title: "11. A Study Group Session (Relative Clauses / Past Perfect Continuous)",
         content: `📖 I joined a study group to prepare for the upcoming final exams.
 今度の期末試験の準備をするために、勉強会に参加しました。
 ✏️ The leader, who is the top student in our class, explained the math problems clearly.
@@ -486,7 +486,7 @@ var eiken2 = [
     },
     // Story 12 - A Community Cleanup
     {
-        title: "A Community Cleanup (Passive Voice / Conditionals)",
+        title: "12. A Community Cleanup (Passive Voice / Conditionals)",
         content: `🧹 Our neighborhood organized a cleanup event last Sunday.
 先週の日曜日、私たちの近所で清掃イベントが開催されました。
 🌳 I was shocked to see how much trash had been left in the park.
@@ -530,7 +530,7 @@ var eiken2 = [
     },
     // Story 13 - Social Media Safety
     {
-        title: "Social Media Safety (Passive Voice / Conditionals)",
+        title: "13. Social Media Safety (Passive Voice / Conditionals)",
         content: `📱 I attended a lecture about how to use social media safely.
 ソーシャルメディアを安全に使う方法についての講義に参加しました。
 🌐 The speaker emphasized that we must be careful about privacy.
@@ -574,7 +574,7 @@ var eiken2 = [
     },
     // Story 14 - A Charity Fundraiser
     {
-        title: "A Charity Fundraiser (Conditionals / Passive Voice)",
+        title: "14. A Charity Fundraiser (Conditionals / Passive Voice)",
         content: `🤝 My club organized a charity event to help children in need.
 私のクラブは、困っている子供たちを助けるためにチャリティーイベントを企画しました。
 🎗️ We sold homemade cookies and donated all the profits.
@@ -618,7 +618,7 @@ var eiken2 = [
     },
     // Story 15 - An Environmental Club
     {
-        title: "An Environmental Club (Present Perfect / Passive Voice)",
+        title: "15. An Environmental Club (Present Perfect / Passive Voice)",
         content: `🌿 I have been a member of the environmental club for two years.
 私は2年間、環境クラブのメンバーです。
 🌍 We discuss how to reduce energy consumption at school.
@@ -662,7 +662,7 @@ var eiken2 = [
     },
     // Story 16 - A Coding Bootcamp
     {
-        title: "A Coding Bootcamp (Relative Clauses / Past Perfect)",
+        title: "16. A Coding Bootcamp (Relative Clauses / Past Perfect)",
         content: `💻 I signed up for a coding bootcamp during the spring break.
 春休みの間にコーディングブートキャンプに申し込みました。
 📱 The course was designed for beginners who had no experience.
@@ -706,7 +706,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 17 - Job Shadowing
     {
-        title: "Job Shadowing (Passive Voice / Conditionals)",
+        title: "17. Job Shadowing (Passive Voice / Conditionals)",
         content: `💼 I had the opportunity to shadow a graphic designer for a day.
 グラフィックデザイナーの仕事を1日見学（シャドーイング）する機会がありました。
 🎨 The office was filled with creative artwork and computers.
@@ -750,7 +750,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 18 - A Science Fair
     {
-        title: "A Science Fair (Past Perfect Continuous / Conditionals)",
+        title: "18. A Science Fair (Past Perfect Continuous / Conditionals)",
         content: `🔬 I participated in the regional science fair last weekend.
 先週末、地域の科学フェアに参加しました。
 🧪 My project was about the effect of music on plant growth.
@@ -794,7 +794,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 19 - A Music Club
     {
-        title: "A Music Club (Relative Clauses / Present Perfect Continuous)",
+        title: "19. A Music Club (Relative Clauses / Present Perfect Continuous)",
         content: `🎵 I joined the school band to play the trumpet.
 トランペットを吹くために学校のバンドに入りました。
 🎹 The conductor, who is strict but kind, teaches us music theory.
@@ -838,7 +838,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 20 - A Career Workshop
     {
-        title: "A Career Workshop (Conditionals / Passive Voice)",
+        title: "20. A Career Workshop (Conditionals / Passive Voice)",
         content: `💼 The university hosted a workshop to help students find jobs.
 大学は学生が仕事を見つけるのを助けるためのワークショップを主催しました。
 📋 An expert gave us advice on how to write a good resume.
@@ -882,7 +882,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 21 - Public Speaking Class
     {
-        title: "A Public Speaking Class (Relative Clauses / Past Perfect)",
+        title: "21. A Public Speaking Class (Relative Clauses / Past Perfect)",
         content: `🎤 I took a speech class to overcome my fear of speaking in public.
 人前で話すことへの恐怖を克服するために、スピーチの授業を取りました。
 🗣️ The teacher, who is a famous announcer, taught us useful techniques.
@@ -926,7 +926,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 22 - A Health Seminar
     {
-        title: "A Health Seminar (Gerunds / Relative Clauses)",
+        title: "22. A Health Seminar (Gerunds / Relative Clauses)",
         content: `🏥 I attended a seminar about preventing lifestyle-related diseases.
 生活習慣病の予防に関するセミナーに参加しました。
 🥗 The doctor explained that eating too much sugar is dangerous.
@@ -970,7 +970,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 23 - Job Training
     {
-        title: "Job Training (Conditionals / Passive Voice)",
+        title: "23. Job Training (Conditionals / Passive Voice)",
         content: `💼 I started my job training at a new company yesterday.
 昨日、新しい会社で研修を始めました。
 📋 The trainer showed us how to use the copy machine and computers.
@@ -1014,7 +1014,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 24 - A Yoga Class
     {
-        title: "A Yoga Class (Relative Clauses / Conditionals)",
+        title: "24. A Yoga Class (Relative Clauses / Conditionals)",
         content: `🧘 I joined a yoga class to improve my flexibility.
 柔軟性を高めるためにヨガ教室に参加しました。
 🕉️ The studio, which smells of lavender, is very relaxing.
@@ -1058,7 +1058,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 25 - A Photography Exhibit
     {
-        title: "A Photography Exhibit (Relative Clauses / Present Perfect)",
+        title: "25. A Photography Exhibit (Relative Clauses / Present Perfect)",
         content: `📸 I went to a photography exhibit featuring nature photos.
 自然の写真を特集した写真展に行きました。
 🖼️ The pictures, which were taken in Africa, were breathtaking.
@@ -1102,7 +1102,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
      // Story 26 - A Writing Workshop
     {
-        title: "A Writing Workshop (Past Perfect / Conditionals)",
+        title: "26. A Writing Workshop (Past Perfect / Conditionals)",
         content: `✍️ I attended a creative writing workshop at the library.
 図書館でのクリエイティブ・ライティング（創作）ワークショップに参加しました。
 📖 The teacher told us to write a story about our childhood.
@@ -1146,7 +1146,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
      // Story 27 - A Film Festival
     {
-        title: "A Film Festival (Passive Voice / Conditionals)",
+        title: "27. A Film Festival (Passive Voice / Conditionals)",
         content: `🎬 I visited an international film festival in Tokyo.
 東京の国際映画祭を訪れました。
 📽️ The movie I watched was directed by a famous French director.
@@ -1190,7 +1190,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
      // Story 28 - A Debate Club
     {
-        title: "A Debate Club (Conditionals / Passive Voice)",
+        title: "28. A Debate Club (Conditionals / Passive Voice)",
         content: `🗣️ I joined the debate club to improve my critical thinking skills.
 批判的思考力を高めるためにディベート部に入りました。
 📢 The topic for this week was "Should homework be banned?".
@@ -1234,7 +1234,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
 // Story 29 - A Cooking Class
     {
-        title: "A Cooking Class (Relative Clauses / Past Perfect)",
+        title: "29. A Cooking Class (Relative Clauses / Past Perfect)",
         content: `🍳 I signed up for a cooking class to learn how to make Italian food.
 イタリア料理の作り方を学ぶために料理教室に申し込みました。
 🥄 The chef, who was born in Rome, taught us how to make pasta from scratch.
@@ -1278,7 +1278,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 30 - A School Play
     {
-        title: "A School Play (Passive Voice / Past Perfect Continuous)",
+        title: "30. A School Play (Passive Voice / Past Perfect Continuous)",
         content: `🎭 The drama club performed "Romeo and Juliet" last weekend.
 演劇部は先週末、「ロミオとジュリエット」を上演しました。
 🎬 I was chosen to play the main character, which made me very nervous.
@@ -1322,7 +1322,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 31 - A Job Fair
     {
-        title: "A Job Fair (Past Perfect / Conditionals)",
+        title: "31. A Job Fair (Past Perfect / Conditionals)",
         content: `💼 I went to the job fair held at a large convention center.
 大きなコンベンションセンターで開かれた就職フェアに行きました。
 📋 Dozens of companies had booths to explain their businesses.
@@ -1366,7 +1366,7 @@ Pythonを学べば、データを簡単に分析できるようになるでし�
     },
     // Story 32 - Starting a Travel Blog
     {
-        title: "Starting a Travel Blog (Relative Clauses / Present Perfect)",
+        title: "32. Starting a Travel Blog (Relative Clauses / Present Perfect)",
         content: `✈️ I started a blog to share my travel experiences with the world.
 私の旅行体験を世界と共有するためにブログを始めました。
 🌍 The photos, which I took with my smartphone, look professional.
@@ -1410,7 +1410,7 @@ YouTuberやブロガーになりたいですか？
     },
     // Story 33 - A Leadership Seminar
     {
-        title: "A Leadership Seminar (Past Perfect / Conditionals)",
+        title: "33. A Leadership Seminar (Past Perfect / Conditionals)",
         content: `👥 I attended a seminar to learn what makes a good leader.
 何が良いリーダーを作るのかを学ぶためにセミナーに参加しました。
 📈 The speaker said that listening is more important than speaking.
@@ -1454,7 +1454,7 @@ YouTuberやブロガーになりたいですか？
     },
     // Story 34 - A Volunteer Trip Abroad
     {
-        title: "A Volunteer Trip Abroad (Relative Clauses / Past Perfect)",
+        title: "34. A Volunteer Trip Abroad (Relative Clauses / Past Perfect)",
         content: `🌍 I went to the Philippines to help build a library for children.
 子供たちのために図書館を建てるのを手伝うためにフィリピンに行きました。
 🤝 The village, which is located in the mountains, was very beautiful.
@@ -1498,7 +1498,7 @@ YouTuberやブロガーになりたいですか？
     },
     // Story 35 - My Future Career Goal
     {
-        title: "My Future Career Goal (Present Perfect / Conditionals)",
+        title: "35. My Future Career Goal (Present Perfect / Conditionals)",
         content: `💼 I have decided that I want to become an engineer in the future.
 将来エンジニアになりたいと決めました。
 📈 The industry of renewable energy is growing rapidly.
@@ -1542,7 +1542,7 @@ YouTuberやブロガーになりたいですか？
     },
     // Story 36 - A DIY Project
     {
-        title: "A DIY Project (Past Perfect / Conditionals)",
+        title: "36. A DIY Project (Past Perfect / Conditionals)",
         content: `🛠️ I decided to build a bookshelf for my room by myself.
 自分の部屋のために自分で本棚を作ることに決めました。
 📏 I bought the wood and tools at a local home center.
@@ -1586,7 +1586,7 @@ YouTubeで「ハウツー（やり方）」動画を見ますか？
     },
     // Story 37 - Organizing a Summer Festival
     {
-        title: "Organizing a Summer Festival (Passive Voice / Conditionals)",
+        title: "37. Organizing a Summer Festival (Passive Voice / Conditionals)",
         content: `🎉 Our community association held a summer festival last Saturday.
 私たちの自治会は先週の土曜日に夏祭りを開催しました。
 🏮 The park was decorated with red lanterns and lights.
@@ -1630,7 +1630,7 @@ YouTubeで「ハウツー（やり方）」動画を見ますか？
     },
     // Story 38 - A Technology Conference
     {
-        title: "A Technology Conference (Passive Voice / Conditionals)",
+        title: "38. A Technology Conference (Passive Voice / Conditionals)",
         content: `💻 I attended a technology conference in Tokyo yesterday.
 昨日、東京で技術カンファレンスに参加しました。
 🤖 The latest robots were displayed in the main hall.
@@ -1674,7 +1674,7 @@ AIは危険だと思いますか？
     },
     // Story 39 - A Book Club
     {
-        title: "A Book Club (Past Perfect / Conditionals)",
+        title: "39. A Book Club (Past Perfect / Conditionals)",
         content: `📚 I joined a book club that meets once a month.
 月に一度集まる読書クラブに入りました。
 📖 The novel we discussed this week was written in the 19th century.
@@ -1718,7 +1718,7 @@ AIは危険だと思いますか？
     },
     // Story 40 - A Swimming Habit
     {
-        title: "A Swimming Habit (Present Perfect Continuous / Conditionals)",
+        title: "40. A Swimming Habit (Present Perfect Continuous / Conditionals)",
         content: `🏊 I have been going to the swimming pool every Wednesday.
 毎週水曜日にスイミングプールに通っています。
 💧 The instructor told me that swimming is the best full-body exercise.
@@ -1762,7 +1762,7 @@ AIは危険だと思いますか？
     },
     // Story 41 - Learning a New Language
     {
-        title: "Learning a New Language (Present Perfect / Conditionals)",
+        title: "41. Learning a New Language (Present Perfect / Conditionals)",
         content: `🇪🇸 I started learning Spanish online last month.
 先月、オンラインでスペイン語を学び始めました。
 🗣️ The grammar is similar to English in some ways, but different in others.
@@ -1806,7 +1806,7 @@ AIは危険だと思いますか？
     },
     // Story 42 - Visiting an Animal Shelter
     {
-        title: "Visiting an Animal Shelter (Passive Voice / Conditionals)",
+        title: "42. Visiting an Animal Shelter (Passive Voice / Conditionals)",
         content: `🐶 I volunteered at a local animal shelter last weekend.
 先週末、地元の動物保護施設（シェルター）でボランティアをしました。
 🐱 There were many dogs and cats waiting for new homes.
@@ -1850,7 +1850,7 @@ AIは危険だと思いますか？
     },
     // Story 43 - Working at a Convenience Store
     {
-        title: "Working at a Convenience Store (Present Perfect / Conditionals)",
+        title: "43. Working at a Convenience Store (Present Perfect / Conditionals)",
         content: `🏪 I work part-time at a convenience store near my house.
 家の近くのコンビニでアルバイトをしています。
 🛒 My job includes stocking shelves and operating the cash register.
@@ -1894,7 +1894,7 @@ AIは危険だと思いますか？
     },
     // Story 44 - Online Shopping
     {
-        title: "Online Shopping (Past Perfect / Conditionals)",
+        title: "44. Online Shopping (Past Perfect / Conditionals)",
         content: `📦 I bought a new pair of sneakers online yesterday.
 昨日、ネットで新しいスニーカーを買いました。
 💻 The website allowed me to compare prices easily.
@@ -1938,7 +1938,7 @@ AIは危険だと思いますか？
     },
     // Story 45 - A Camping Trip
     {
-        title: "A Camping Trip (Past Perfect / Conditionals)",
+        title: "45. A Camping Trip (Past Perfect / Conditionals)",
         content: `⛺ I went camping with my friends during the holidays.
 休日に友達とキャンプに行きました。
 🔥 We set up our tent near a beautiful river.
@@ -1982,7 +1982,7 @@ AIは危険だと思いますか？
     },
     // Story 46 - A Visit to the Museum
     {
-        title: "A Visit to the Museum (Passive Voice / Conditionals)",
+        title: "46. A Visit to the Museum (Passive Voice / Conditionals)",
         content: `🏛️ I visited the national history museum on a school trip.
 修学旅行で国立歴史博物館を訪れました。
 🏺 Ancient pottery and tools were displayed in glass cases.
@@ -2026,7 +2026,7 @@ AIは危険だと思いますか？
     },
     // Story 47 - Traffic Safety
     {
-        title: "Traffic Safety (Conditionals / Gerunds)",
+        title: "47. Traffic Safety (Conditionals / Gerunds)",
         content: `🚦 We had a traffic safety class at school today.
 今日、学校で交通安全教室がありました。
 🚗 The police officer told us to always wear a seatbelt.
@@ -2070,7 +2070,7 @@ AIは危険だと思いますか？
     },
     // Story 48 - Future Technology
     {
-        title: "Future Technology (Passive Voice / Future Forms)",
+        title: "48. Future Technology (Passive Voice / Future Forms)",
         content: `🚀 I watched a documentary about life in the future.
 未来の生活についてのドキュメンタリーを見ました。
 🤖 Scientists predict that flying cars will exist by 2050.

@@ -2,7 +2,7 @@
 var eiken1 = [
     // Story 1 - Corporate Merger
     {
-        title: "Corporate Merger (Inversion / Subjunctive)",
+        title: "1. Corporate Merger (Inversion / Subjunctive)",
         content: `💼 The conglomerate announced a lucrative merger to consolidate its market dominance.
 その複合企業は、市場支配力を強化するために収益性の高い合併を発表しました。
 📈 Analysts predicted that the acquisition would mitigate the risk of bankruptcy.
@@ -47,7 +47,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 2 - Space Exploration
     {
-        title: "Space Exploration (Inversion / Conditionals)",
+        title: "2. Space Exploration (Inversion / Conditionals)",
         content: `🚀 The agency launched a probe to investigate the celestial bodies in the outer rim.
 その機関は、外縁部の天体を調査するために探査機を打ち上げました。
 🌌 Scientists speculate that the exoplanet may harbor conditions conducive to life.
@@ -92,7 +92,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 3 - Political Election
     {
-        title: "Political Election (Inversion / Subjunctive)",
+        title: "3. Political Election (Inversion / Subjunctive)",
         content: `🗳️ The incumbent president struggled to retain the support of the disillusioned electorate.
 現職の大統領は、幻滅した有権者の支持を維持するのに苦労しました。
 📢 The opposition party capitalized on the scandal to gain leverage in the polls.
@@ -137,7 +137,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 4 - Medical Breakthrough
     {
-        title: "Medical Breakthrough (Inversion / Subjunctive)",
+        title: "4. Medical Breakthrough (Inversion / Subjunctive)",
         content: `💉 The pharmaceutical company unveiled a vaccine to combat the virulent pathogen.
 製薬会社は、毒性の強い病原体と戦うためのワクチンを発表しました。
 🧬 Clinical trials demonstrated the efficacy of the drug in mitigating symptoms.
@@ -181,7 +181,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
     },
 // Story 5 - Environmental Summit
     {
-        title: "Environmental Summit (Inversion / Conditionals)",
+        title: "5. Environmental Summit (Inversion / Conditionals)",
         content: `🌿 The summit convened to address the precarious state of global biodiversity.
 サミットは、地球規模の生物多様性の不安定な状況に対処するために招集されました。
 📊 Panelists engaged in a contentious debate regarding carbon mitigation strategies.
@@ -226,7 +226,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 6 - Tech Summit
     {
-        title: "Tech Summit (Inversion / Subjunctive)",
+        title: "6. Tech Summit (Inversion / Subjunctive)",
         content: `💻 The symposium focused on the ethical ramifications of artificial intelligence.
 シンポジウムは、人工知能の倫理的影響に焦点を当てました。
 🤖 A renowned scholar elucidated the potential risks of autonomous weaponry.
@@ -271,7 +271,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 7 - Book Review
     {
-        title: "Book Review (Inversion / Literary Analysis)",
+        title: "7. Book Review (Inversion / Literary Analysis)",
         content: `📚 I critiqued a novel that delves into the ambiguity of human existence.
 私は人間の存在の曖昧さを掘り下げる小説を批評しました。
 🖋️ The protagonist’s journey serves as an allegory for societal decay.
@@ -316,7 +316,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 8 - Social Issue Debate
     {
-        title: "Social Issue Debate (Inversion / Conditionals)",
+        title: "8. Social Issue Debate (Inversion / Conditionals)",
         content: `🗣️ The forum addressed the widening economic disparity in urban areas.
 フォーラムでは、都市部における拡大する経済格差について取り上げました。
 📢 Participants debated whether systemic reform is feasible under current laws.
@@ -361,7 +361,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 9 - Theater Production
     {
-        title: "Theater Production (Inversion / Arts Vocabulary)",
+        title: "9. Theater Production (Inversion / Arts Vocabulary)",
         content: `🎭 I directed a play that explores the poignant themes of loss and redemption.
 私は喪失と救済という痛切なテーマを探求する劇を演出しました。
 🎬 The production was praised for its avant-garde approach to stage design.
@@ -406,7 +406,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 10 - Art Exhibition
     {
-        title: "Art Exhibition (Inversion / Subjunctive)",
+        title: "10. Art Exhibition (Inversion / Subjunctive)",
         content: `🎨 The exhibition featured a retrospective of the artist's eclectic body of work.
 その展覧会は、アーティストの折衷的な作品群の回顧展を特集しました。
 🖼️ The curator meticulously arranged the pieces to evoke a sense of chronological progression.
@@ -451,7 +451,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 11 - Charity Event
     {
-        title: "Charity Event (Inversion / Conditionals)",
+        title: "11. Charity Event (Inversion / Conditionals)",
         content: `🤝 We organized a gala to mobilize resources for the famine-stricken region.
 私たちは飢饉に見舞われた地域のために資源を動員するためのガラを組織しました。
 🎗️ The philanthropist’s donation was pivotal in launching the sanitation initiative.
@@ -496,7 +496,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 12 - Scientific Experiment
     {
-        title: "Scientific Experiment (Inversion / Scientific Method)",
+        title: "12. Scientific Experiment (Inversion / Scientific Method)",
         content: `🧪 The experiment was designed to corroborate the hypothesis regarding enzyme activity.
 その実験は、酵素活性に関する仮説を裏付けるために設計されました。
 🔬 We adhered to a rigorous methodology to minimize statistical errors.
@@ -541,7 +541,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 13 - Cultural Exchange
     {
-        title: "Cultural Exchange (Inversion / Cultural Vocabulary)",
+        title: "13. Cultural Exchange (Inversion / Cultural Vocabulary)",
         content: `🌍 The program facilitates total immersion to foster cross-cultural understanding.
 このプログラムは、異文化理解を育むために完全な没入を促進します。
 🎎 Participants are encouraged to discard stereotypes and embrace diverse perspectives.
@@ -586,7 +586,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 14 - International Collaboration
     {
-        title: "International Collaboration (Inversion / Conditionals)",
+        title: "14. International Collaboration (Inversion / Conditionals)",
         content: `🤝 The multilateral project aims to tackle the chronic issue of water scarcity.
 この多国間プロジェクトは、慢性的な水不足の問題に取り組むことを目的としています。
 🌍 Synergy between the diverse teams was achieved through transparent communication.
@@ -630,7 +630,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
     },
 // Story 15 - Literary Analysis
     {
-        title: "Literary Analysis (Inversion / Literary Criticism)",
+        title: "15. Literary Analysis (Inversion / Literary Criticism)",
         content: `📖 I authored a critique of a dystopian novel that satirizes totalitarian regimes.
 私は全体主義体制を風刺したディストピア小説の批評を書きました。
 🖋️ The narrative is replete with allegories representing the suppression of free will.
@@ -675,7 +675,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 16 - Environmental Policy
     {
-        title: "Environmental Policy (Inversion / Conditionals)",
+        title: "16. Environmental Policy (Inversion / Conditionals)",
         content: `🌿 I drafted a comprehensive policy to rehabilitate the deteriorating urban ecosystem.
 私は悪化する都市の生態系を修復するための包括的な政策を起草しました。
 📊 The initiative aims to mitigate the "heat island" effect through strategic reforestation.
@@ -720,7 +720,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 17 - Business Strategy
     {
-        title: "Business Strategy (Inversion / Business Vocabulary)",
+        title: "17. Business Strategy (Inversion / Business Vocabulary)",
         content: `💼 I formulated a strategy to penetrate the saturated tech market.
 私は飽和した技術市場に浸透するための戦略を策定しました。
 📈 The plan hinges on leveraging disruptive technology to gain a competitive edge.
@@ -765,7 +765,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 18 - Cultural Festival
     {
-        title: "Cultural Festival (Inversion / Cultural Preservation)",
+        title: "18. Cultural Festival (Inversion / Cultural Preservation)",
         content: `🎎 I orchestrated a festival to celebrate the heritage of the diaspora community.
 私はディアスポラ（離散）コミュニティの遺産を祝うフェスティバルを画策しました。
 🌍 The event served as a conduit for preserving indigenous traditions.
@@ -810,7 +810,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 19 - Academic Conference
     {
-        title: "Academic Conference (Inversion / Academic Discourse)",
+        title: "19. Academic Conference (Inversion / Academic Discourse)",
         content: `📚 I delivered a dissertation on the socioeconomic impacts of globalization.
 私はグローバリゼーションの社会経済的影響に関する論文を発表しました。
 🧑‍🏫 The hypothesis was subjected to rigorous scrutiny by the panel of experts.
@@ -855,7 +855,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 20 - Policy Debate
     {
-        title: "Policy Debate (Inversion / Political Science)",
+        title: "20. Policy Debate (Inversion / Political Science)",
         content: `🗣️ I participated in a debate concerning the efficacy of education reform.
 私は教育改革の有効性に関する討論に参加しました。
 📢 The discourse was characterized by inflammatory rhetoric and partisan deadlock.
@@ -900,7 +900,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 21 - Art Restoration
     {
-        title: "Art Restoration (Inversion / Conservation)",
+        title: "21. Art Restoration (Inversion / Conservation)",
         content: `🎨 I undertook the restoration of a Renaissance masterpiece marred by centuries of grime.
 私は何世紀もの汚れで損なわれたルネサンスの傑作の修復に着手しました。
 🖼️ The deterioration of the varnish obscured the artist's original chromatic brilliance.
@@ -945,7 +945,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 22 - International Law
     {
-        title: "International Law (Inversion / Legal Vocabulary)",
+        title: "22. International Law (Inversion / Legal Vocabulary)",
         content: `⚖️ I interned at a firm specializing in arbitration of transboundary disputes.
 私は国境を越えた紛争の仲裁を専門とする事務所でインターンをしました。
 📜 The case involved a violation of maritime treaties regarding territorial waters.
@@ -990,7 +990,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 23 - Social Entrepreneurship
     {
-        title: "Social Entrepreneurship (Inversion / Business Ethics)",
+        title: "23. Social Entrepreneurship (Inversion / Business Ethics)",
         content: `💡 I established a social enterprise to empower marginalized communities through literacy.
 私は識字を通じて疎外されたコミュニティに力を与えるための社会企業を設立しました。
 📈 The initiative utilizes a microfinance model to ensure financial sustainability.
@@ -1035,7 +1035,7 @@ CEOがデューデリジェンス（適正評価手続き）を行っていれ�
 
     // Story 24 - Literary Festival
     {
-        title: "Literary Festival (Inversion / Literature)",
+        title: "24. Literary Festival (Inversion / Literature)",
         content: `📚 I officiated a literary festival celebrating the genre of short fiction.
 私は短編小説のジャンルを祝う文学祭を執り行いました。
 🖋️ The anthology featured works that challenge conventional narrative structures.
@@ -1079,7 +1079,7 @@ AIはいつかピューリッツァー賞を受賞する小説を書くでしょ
     },
     // Story 25 - Environmental Advocacy
     {
-        title: "Environmental Advocacy (Inversion / Campaign Vocabulary)",
+        title: "25. Environmental Advocacy (Inversion / Campaign Vocabulary)",
         content: `🌿 I spearheaded a grassroots campaign to advocate for marine conservation.
 私は海洋保全を擁護するための草の根キャンペーンを先導しました。
 📢 The initiative sought to galvanize the coastal community against industrial dumping.
@@ -1124,7 +1124,7 @@ AIはいつかピューリッツァー賞を受賞する小説を書くでしょ
 
     // Story 26 - Music Workshop
     {
-        title: "Music Workshop (Inversion / Pedagogy)",
+        title: "26. Music Workshop (Inversion / Pedagogy)",
         content: `🎵 I facilitated a workshop designed to enhance the auditory perception of novices.
 私は初心者の聴覚的知覚を高めるために設計されたワークショップを進行しました。
 🎶 The curriculum focused on the intricate polyrhythms found in jazz improvisation.
@@ -1169,7 +1169,7 @@ AIはいつかピューリッツァー賞を受賞する小説を書くでしょ
 
     // Story 27 - Tech Innovation
     {
-        title: "Tech Innovation (Inversion / Engineering)",
+        title: "27. Tech Innovation (Inversion / Engineering)",
         content: `💻 I engineered a prototype for a home automation system aimed at energy efficiency.
 私はエネルギー効率を目的としたホームオートメーションシステムのプロトタイプを設計しました。
 🤖 The device utilizes algorithms to optimize electricity consumption patterns.
@@ -1214,7 +1214,7 @@ IoT（モノのインターネット）デバイスに対してより厳しい�
 
     // Story 28 - Public Speaking
     {
-        title: "Public Speaking (Inversion / Rhetorical Devices)",
+        title: "28. Public Speaking (Inversion / Rhetorical Devices)",
         content: `🎤 I delivered a keynote address on the importance of resilience in leadership.
 私はリーダーシップにおける回復力の重要性について基調講演を行いました。
 🗣️ The oration was crafted to resonate with a disillusioned youth demographic.
@@ -1259,7 +1259,7 @@ IoT（モノのインターネット）デバイスに対してより厳しい�
 
     // Story 29 - Historical Research
     {
-        title: "Historical Research (Inversion / Historiography)",
+        title: "29. Historical Research (Inversion / Historiography)",
         content: `📜 I conducted an extensive inquiry into the trade routes of antiquity.
 私は古代の交易路について広範な調査を行いました。
 🏛️ The study revealed that cultural diffusion occurred more rapidly than previously assumed.
@@ -1304,7 +1304,7 @@ IoT（モノのインターネット）デバイスに対してより厳しい�
 
     // Story 30 - Volunteer Mission
     {
-        title: "Volunteer Mission (Inversion / Humanitarian Aid)",
+        title: "30. Volunteer Mission (Inversion / Humanitarian Aid)",
         content: `🤝 I participated in a humanitarian mission to construct housing in a developing region.
 私は開発途上地域で住宅を建設するための人道的ミッションに参加しました。
 🏠 The project aimed to ameliorate the living conditions of impoverished families.
@@ -1349,7 +1349,7 @@ IoT（モノのインターネット）デバイスに対してより厳しい�
 
     // Story 31 - Film Project
     {
-        title: "Film Project (Inversion / Cinematic Vocabulary)",
+        title: "31. Film Project (Inversion / Cinematic Vocabulary)",
         content: `🎬 I produced a short film designed to provoke discourse on climate change.
 私は気候変動に関する議論を喚起するために設計された短編映画を制作しました。
 📽️ The narrative arc serves as a poignant allegory for humanity's negligence.
@@ -1394,7 +1394,7 @@ IoT（モノのインターネット）デバイスに対してより厳しい�
 
     // Story 32 - Language Learning
     {
-        title: "Language Learning (Inversion / Cognitive Science)",
+        title: "32. Language Learning (Inversion / Cognitive Science)",
         content: `🗣️ I commenced an intensive course to master the Mandarin language.
 私はマンダリン（中国語）を習得するための集中コースを開始しました。
 📚 The pedagogy emphasizes total immersion to accelerate linguistic proficiency.
@@ -1439,7 +1439,7 @@ IoT（モノのインターネット）デバイスに対してより厳しい�
 
     // Story 33 - Sports Event
     {
-        title: "Sports Event (Inversion / Athletics)",
+        title: "33. Sports Event (Inversion / Athletics)",
         content: `🏅 I orchestrated a philanthropic marathon aimed at promoting youth fitness.
 私は若者のフィットネスを促進することを目的とした慈善マラソンを画策しました。
 🏃 The race was designed to test the endurance and resilience of the participants.
@@ -1484,7 +1484,7 @@ eスポーツは正当なスポーツですか？
 
     // Story 34 - Culinary Class
     {
-        title: "Culinary Class (Inversion / Gastronomy)",
+        title: "34. Culinary Class (Inversion / Gastronomy)",
         content: `🍳 I conducted a culinary seminar focusing on the intricacies of Italian gastronomy.
 私はイタリアの美食の複雑さに焦点を当てた料理セミナーを実施しました。
 🍝 The curriculum was designed to refine the students' palates and technical skills.
@@ -1529,7 +1529,7 @@ eスポーツは正当なスポーツですか？
 
     // Story 35 - Photography Trip
     {
-        title: "Photography Trip (Inversion / Visual Arts)",
+        title: "35. Photography Trip (Inversion / Visual Arts)",
         content: `📸 I led an expedition to capture the panoramic vistas of the alpine region.
 私は高山地域のパノラマの景色を捉えるための遠征を率いました。
 🏞️ The landscape offered a sublime juxtaposition of rugged terrain and serene skies.
@@ -1574,7 +1574,7 @@ eスポーツは正当なスポーツですか？
 
     // Story 36 - Science Fair
     {
-        title: "Science Fair (Inversion / Innovation)",
+        title: "36. Science Fair (Inversion / Innovation)",
         content: `🔬 I submitted a robotics prototype to a prestigious competition for young innovators.
 私は若きイノベーターのための権威あるコンテストにロボットのプロトタイプを提出しました。
 🤖 The automaton was programmed to navigate complex terrains autonomously.
@@ -1619,7 +1619,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 37 - Debate Club
     {
-        title: "Debate Club (Inversion / Logical Reasoning)",
+        title: "37. Debate Club (Inversion / Logical Reasoning)",
         content: `🗣️ I joined a society dedicated to the rigorous discourse of ethical dilemmas.
 私は倫理的ジレンマの厳格な議論に専念する協会に参加しました。
 📢 The motion concerned the moral justifiability of animal experimentation.
@@ -1664,7 +1664,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 38 - Art Workshop
     {
-        title: "Art Workshop (Inversion / Technique)",
+        title: "38. Art Workshop (Inversion / Technique)",
         content: `🎨 I coordinated a workshop exploring the medium of watercolor painting.
 私は水彩画の媒体を探求するワークショップを調整しました。
 🖌️ The session aimed to elucidate the technique of "wet-on-wet" blending.
@@ -1709,7 +1709,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 39 - Coding Bootcamp
     {
-        title: "Coding Bootcamp (Inversion / Programming Concepts)",
+        title: "39. Coding Bootcamp (Inversion / Programming Concepts)",
         content: `💻 I instructed an intensive bootcamp focused on the Python programming language.
 私はPythonプログラミング言語に焦点を当てた集中ブートキャンプを指導しました。
 🐍 The syllabus was rigorous, covering everything from syntax to data structures.
@@ -1754,7 +1754,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 40 - Dance Performance
     {
-        title: "Dance Performance (Inversion / Performance Arts)",
+        title: "40. Dance Performance (Inversion / Performance Arts)",
         content: `💃 I choreographed a contemporary piece that interprets the concept of liberation.
 私は解放の概念を解釈する現代的な作品を振り付けました。
 🕺 The movements were designed to exhibit fluidity and emotional rawness.
@@ -1799,7 +1799,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 41 - Startup Pitch
     {
-        title: "Startup Pitch (Inversion / Business Presentation)",
+        title: "41. Startup Pitch (Inversion / Business Presentation)",
         content: `💼 I presented a business proposition to a panel of venture capitalists.
 私はベンチャーキャピタリストのパネルにビジネス提案を提示しました。
 📈 The concept involves a sustainable technology platform with high scalability.
@@ -1844,7 +1844,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 42 - Astronomy Club
     {
-        title: "Astronomy Club (Inversion / Scientific Observation)",
+        title: "42. Astronomy Club (Inversion / Scientific Observation)",
         content: `🌌 I founded a society dedicated to the observation of celestial phenomena.
 私は天体現象の観測に専念する協会を設立しました。
 🔭 The group convenes weekly to scrutinize the cosmos through high-powered telescopes.
@@ -1889,7 +1889,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 43 - Fashion Design
     {
-        title: "Fashion Design (Inversion / Design Vocabulary)",
+        title: "43. Fashion Design (Inversion / Design Vocabulary)",
         content: `👗 I conceptualized a clothing line that integrates sustainability with high fashion.
 私は持続可能性とハイファッションを統合した衣料品ラインを概念化しました。
 ✂️ The garments utilize ethically sourced textiles to minimize environmental impact.
@@ -1934,7 +1934,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 44 - Community Garden
     {
-        title: "Community Garden (Inversion / Urban Planning)",
+        title: "44. Community Garden (Inversion / Urban Planning)",
         content: `🌱 I inaugurated a horticultural project to cultivate organic produce in an urban setting.
 私は都市環境で有機農産物を栽培するための園芸プロジェクトを開始しました。
 🍅 The plot serves as a communal space for fostering neighborhood cohesion.
@@ -1979,7 +1979,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 45 - Poetry Reading
     {
-        title: "Poetry Reading (Inversion / Poetic Devices)",
+        title: "45. Poetry Reading (Inversion / Poetic Devices)",
         content: `✍️ I curated a literary evening dedicated to the recitation of contemporary verse.
 私は現代詩の朗読に捧げられた文学の夕べを企画しました。
 📖 The poems utilized rich metaphors to explore the human condition.
@@ -2024,7 +2024,7 @@ SFは現実世界の技術にどう影響しますか？`
 
     // Story 46 - Tech Hackathon
     {
-        title: "Tech Hackathon (Inversion / Agile Development)",
+        title: "46. Tech Hackathon (Inversion / Agile Development)",
         content: `💻 I participated in a marathon coding event to develop an AI-driven solution.
 私はAI主導のソリューションを開発するためのマラソンコーディングイベントに参加しました。
 🤖 The constraint of time forced us to prioritize functionality over aesthetics.
@@ -2069,7 +2069,7 @@ AIはいずれ創造的な仕事を奪いますか？
 
     // Story 47 - Travel Blog
     {
-        title: "Travel Blog (Inversion / Cultural Immersion)",
+        title: "47. Travel Blog (Inversion / Cultural Immersion)",
         content: `✈️ I launched a digital chronicle to document my sojourns across Asia.
 私はアジア各地への滞在を記録するためにデジタル年代記を立ち上げました。
 🌏 The narrative seeks to move beyond tourism and explore cultural authenticity.
@@ -2114,7 +2114,7 @@ AIはいずれ創造的な仕事を奪いますか？
 
     // Story 48 - Virtual Reality
     {
-        title: "Virtual Reality (Inversion / Future Tech)",
+        title: "48. Virtual Reality (Inversion / Future Tech)",
         content: `🕶️ I developed an immersive VR simulation designed for pedagogical purposes.
 私は教育目的のために設計された没入型VRシミュレーションを開発しました。
 💻 The program reconstructs historical events, allowing users to witness the past.

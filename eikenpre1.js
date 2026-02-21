@@ -2,7 +2,7 @@
 var eikenpre1 = [
     // Story 1 - A Volunteer Experience
     {
-        title: "A Volunteer Experience (Inversion / Advanced Vocabulary)",
+        title: "1. A Volunteer Experience (Inversion / Advanced Vocabulary)",
         content: `🤝 I engaged in a philanthropic endeavor at a local nursing facility last weekend.  
 先週末、地元の介護施設で慈善活動に従事しました。  
 🏥 The establishment, which houses elderly residents, was in dire need of assistance.  
@@ -47,7 +47,7 @@ var eikenpre1 = [
 
     // Story 2 - A Technology Seminar
     {
-        title: "A Technology Seminar (Inversion / Tech Vocabulary)",
+        title: "2. A Technology Seminar (Inversion / Tech Vocabulary)",
         content: `💻 I attended a comprehensive seminar regarding Artificial Intelligence applications.  
 人工知能の応用に関する包括的なセミナーに参加しました。  
 🤖 The lecturer, a prominent figure in the field, elucidated complex algorithms.  
@@ -92,7 +92,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 3 - A Traditional Craft
     {
-        title: "A Traditional Craft (Inversion / Subjunctive Future)",
+        title: "3. A Traditional Craft (Inversion / Subjunctive Future)",
         content: `🎨 I observed a master artisan creating pottery with exquisite precision.  
 熟練した職人が絶妙な精度で陶器を作っているのを観察しました。  
 🏺 The technique, handed down through generations, is a significant cultural heritage.  
@@ -137,7 +137,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 4 - A Sports Tournament
     {
-        title: "A Sports Tournament (Inversion / Past Unreal Conditional)",
+        title: "4. A Sports Tournament (Inversion / Past Unreal Conditional)",
         content: `🏆 I participated in a rigorous regional tournament last month.  
 先月、厳しい地域大会に参加しました。  
 ⚽ The opponent, known for their aggressive strategy, proved to be formidable.  
@@ -182,7 +182,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 5 - A Local Festival
     {
-        title: "A Local Festival (Inversion / Cultural Vocabulary)",
+        title: "5. A Local Festival (Inversion / Cultural Vocabulary)",
         content: `🏮 I attended a vibrant festival that commemorates the town's founding.  
 町の創設を記念する活気ある祭りに参加しました。  
 🎆 The spectacle, featuring elaborate fireworks, was truly breathtaking.  
@@ -227,7 +227,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 6 - A Debate Club
     {
-        title: "A Debate Club (Subjunctive / Argumentation)",
+        title: "6. A Debate Club (Subjunctive / Argumentation)",
         content: `🗣️ I joined a debate club to enhance my rhetorical capabilities.  
 修辞能力を高めるために討論クラブに参加しました。  
 📢 The topic under discussion was the implementation of a carbon tax.  
@@ -272,7 +272,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 7 - An Eco-Friendly Initiative
     {
-        title: "An Eco-Friendly Initiative (Inversion / Formal Conditionals)",
+        title: "7. An Eco-Friendly Initiative (Inversion / Formal Conditionals)",
         content: `🌱 I spearheaded an initiative to reduce plastic consumption on campus.  
 キャンパスでのプラスチック消費を減らすための取り組みを先導しました。  
 🌍 The proposal, which advocates for biodegradable materials, was well-received.  
@@ -317,7 +317,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 8 - A Historical Documentary
     {
-        title: "A Historical Documentary (Inversion / Past Perfect)",
+        title: "8. A Historical Documentary (Inversion / Past Perfect)",
         content: `🎥 I viewed a documentary that depicts the industrial revolution.  
 産業革命を描いたドキュメンタリーを見ました。  
 🏭 The era, marked by rapid technological advancement, transformed society.  
@@ -362,7 +362,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 9 - A Cooking Class
     {
-        title: "A Cooking Class (Subjunctive / Inversion)",
+        title: "9. A Cooking Class (Subjunctive / Inversion)",
         content: `🍳 I enrolled in a culinary course to master authentic Italian cuisine.  
 本場のイタリア料理を習得するために料理コースに登録しました。  
 🍅 The chef, who is fastidious about ingredients, insisted on freshness.  
@@ -407,7 +407,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 10 - A Science Exhibition
     {
-        title: "A Science Exhibition (Inversion / Scientific Vocabulary)",
+        title: "10. A Science Exhibition (Inversion / Scientific Vocabulary)",
         content: `🧬 I visited a science exhibition featuring breakthrough medical technologies.  
 画期的な医療技術を特集した科学展を訪れました。  
 🔬 The exhibit, which explains gene editing, was particularly illuminating.  
@@ -452,7 +452,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 11 - A Job Interview
     {
-        title: "A Job Interview (Inversion / Formal Conditionals)",
+        title: "11. A Job Interview (Inversion / Formal Conditionals)",
         content: `👔 I attended a formal interview for a prospective managerial position.  
 将来の管理職のための正式な面接に出席しました。  
 📄 The interviewer, keen on assessing my potential, asked probing questions.  
@@ -496,7 +496,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
     },
     // Story 12 - A Study Abroad Experience
     {
-        title: "A Study Abroad Experience (Inversion / Past Unreal Conditional)",
+        title: "12. A Study Abroad Experience (Inversion / Past Unreal Conditional)",
         content: `✈️ I embarked on a study abroad tenure in France to broaden my horizons.  
 視野を広げるために、フランスでの留学期間に乗り出しました。  
 🇫🇷 The city, steeped in history, provided a truly immersive cultural environment.  
@@ -541,7 +541,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 13 - A Part-Time Job
     {
-        title: "A Part-Time Job (Inversion / Business Vocabulary)",
+        title: "13. A Part-Time Job (Inversion / Business Vocabulary)",
         content: `💼 I recently commenced a part-time position at a reputable bookstore.  
 最近、評判の良い書店でアルバイトの地位に就きました。  
 📚 The manager, a proponent of rigorous training, ensured I was well-versed in protocol.  
@@ -586,7 +586,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 14 - A Social Media Campaign
     {
-        title: "A Social Media Campaign (Inversion / Digital Vocabulary)",
+        title: "14. A Social Media Campaign (Inversion / Digital Vocabulary)",
         content: `📱 I initiated a digital campaign aimed at amplifying environmental advocacy.  
 環境擁護を増幅させることを目的としたデジタルキャンペーンを開始しました。  
 🌍 The content, which was highly informative, resonated with a vast demographic.  
@@ -631,7 +631,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 15 - An Environmental Project
     {
-        title: "An Environmental Project (Inversion / Formal Passive)",
+        title: "15. An Environmental Project (Inversion / Formal Passive)",
         content: `🌱 I spearheaded an environmental initiative on campus to curb excessive waste.  
 過剰な廃棄物を抑制するために、キャンパスで環境への取り組みを先導しました。  
 🌍 The scheme, centered on sustainability, significantly diminished our carbon footprint.  
@@ -676,7 +676,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 16 - A Leadership Role
     {
-        title: "A Leadership Role (Inversion / Leadership Vocabulary)",
+        title: "16. A Leadership Role (Inversion / Leadership Vocabulary)",
         content: `👥 I assumed a pivotal leadership role within the student council.  
 学生評議会内で中心的なリーダーシップの役割を引き受けました。  
 📊 The position, inherently demanding, necessitated meticulous organization.  
@@ -721,7 +721,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 17 - A Cultural Exchange
     {
-        title: "A Cultural Exchange (Inversion / Cultural Vocabulary)",
+        title: "17. A Cultural Exchange (Inversion / Cultural Vocabulary)",
         content: `🌍 I participated in a cross-cultural exchange program to broaden my perspective.  
 視野を広げるために、異文化交流プログラムに参加しました。  
 🇯🇵 The experience, undeniably enriching, challenged my preconceived notions.  
@@ -766,7 +766,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 18 - A Volunteer Project
     {
-        title: "A Volunteer Project (Inversion / Community Vocabulary)",
+        title: "18. A Volunteer Project (Inversion / Community Vocabulary)",
         content: `🤝 I volunteered for a communal cleanup initiative over the weekend.  
 週末に、共同清掃の取り組みにボランティアとして参加しました。  
 🌳 The park, having been neglected, required immediate and thorough attention.  
@@ -811,7 +811,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 19 - A Research Internship
     {
-        title: "A Research Internship (Inversion / Academic Vocabulary)",
+        title: "19. A Research Internship (Inversion / Academic Vocabulary)",
         content: `🔬 I completed a rigorous research internship at a prominent laboratory.  
 著名な研究所で厳格な研究インターンシップを完了しました。  
 📊 The project, being highly innovative, focused on renewable energy alternatives.  
@@ -856,7 +856,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 20 - A Leadership Workshop
     {
-        title: "A Leadership Workshop (Inversion / Professional Vocabulary)",
+        title: "20. A Leadership Workshop (Inversion / Professional Vocabulary)",
         content: `👥 I attended a seminar specifically designed to enhance management capabilities.  
 管理能力を高めるために特別に設計されたセミナーに参加しました。  
 📈 The facilitator, a dynamic speaker, engaged us with compelling narratives.  
@@ -901,7 +901,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 21 - A Career Fair
     {
-        title: "A Career Fair (Inversion / Career Vocabulary)",
+        title: "21. A Career Fair (Inversion / Career Vocabulary)",
         content: `💼 I visited a university career fair to explore prospective employment opportunities.  
 将来の雇用の機会を探るために、大学のキャリアフェアを訪れました。  
 📋 The recruiters, possessing extensive industry knowledge, offered pragmatic advice.  
@@ -946,7 +946,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 22 - A Debate Competition
     {
-        title: "A Debate Competition (Inversion / Persuasive Language)",
+        title: "22. A Debate Competition (Inversion / Persuasive Language)",
         content: `🗣️ I competed in a national debate tournament to test my rhetorical skills.  
 修辞スキルを試すために、全国討論大会に出場しました。  
 📢 The topic, highly controversial in nature, challenged our moral reasoning.  
@@ -991,7 +991,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 23 - A Cultural Festival
     {
-        title: "A Cultural Festival (Inversion / Event Management)",
+        title: "23. A Cultural Festival (Inversion / Event Management)",
         content: `🎎 I orchestrated a large-scale cultural festival on the university grounds.  
 大学の敷地内で大規模な文化祭を組織しました。  
 🌍 The event, diverse in its offerings, celebrated a multitude of traditions.  
@@ -1035,7 +1035,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
     },
 // Story 24 - A Language Exchange
     {
-        title: "A Language Exchange (Inversion / Language Learning)",
+        title: "24. A Language Exchange (Inversion / Language Learning)",
         content: `🗣️ I enrolled in a reciprocal language exchange program to enhance my fluency.  
 流暢さを高めるために、相互言語交換プログラムに登録しました。  
 🇬🇧 My partner, a native speaker, possessed an intricate knowledge of local dialects.  
@@ -1080,7 +1080,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 25 - A Community Garden
     {
-        title: "A Community Garden (Inversion / Nature Vocabulary)",
+        title: "25. A Community Garden (Inversion / Nature Vocabulary)",
         content: `🌱 I dedicated my weekends to a horticultural project at a community garden.  
 週末をコミュニティガーデンでの園芸プロジェクトに捧げました。  
 🌻 The endeavor, collaborative in nature, transformed a vacant lot into an oasis.  
@@ -1125,7 +1125,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 26 - A Music Festival
     {
-        title: "A Music Festival (Inversion / Descriptive Vocabulary)",
+        title: "26. A Music Festival (Inversion / Descriptive Vocabulary)",
         content: `🎵 I attended a renowned music festival featuring an eclectic lineup.  
 折衷的なラインナップを特徴とする有名な音楽祭に参加しました。  
 🎸 The bands, ranging from indie to jazz, showcased exceptional musicality.  
@@ -1170,7 +1170,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 27 - A Fitness Challenge
     {
-        title: "A Fitness Challenge (Formal Conditionals / Health Vocabulary)",
+        title: "27. A Fitness Challenge (Formal Conditionals / Health Vocabulary)",
         content: `🏋️ I embarked on a rigorous fitness regimen to improve my cardiovascular endurance.  
 心血管持久力を向上させるために、厳しいフィットネス計画に乗り出しました。  
 💪 The trainer, a strict disciplinarian, established ambitious milestones.  
@@ -1215,7 +1215,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 28 - A Coding Bootcamp
     {
-        title: "A Coding Bootcamp (Conditionals / Tech Vocabulary)",
+        title: "28. A Coding Bootcamp (Conditionals / Tech Vocabulary)",
         content: `💻 I matriculated into an intensive coding bootcamp to pivot my career.  
 キャリアを転換するために、集中的なコーディングブートキャンプに入学しました。  
 📱 The curriculum, covering full-stack development, was incredibly comprehensive.  
@@ -1260,7 +1260,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 29 - A Photography Workshop
     {
-        title: "A Photography Workshop (Inversion / Artistic Vocabulary)",
+        title: "29. A Photography Workshop (Inversion / Artistic Vocabulary)",
         content: `📸 I attended a workshop focused on advanced photographic composition.  
 高度な写真構図に焦点を当てたワークショップに参加しました。  
 🎞️ The instructor, a renowned photojournalist, critiqued our portfolios rigorously.  
@@ -1305,7 +1305,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 30 - A Film Club
     {
-        title: "A Film Club (Inversion / Critical Analysis)",
+        title: "30. A Film Club (Inversion / Critical Analysis)",
         content: `🎬 I became a member of a cinephile society to discuss cinematic theory.  
 映画理論を議論するために、映画愛好家協会の一員になりました。  
 📽️ The screenings, featuring avant-garde films, were intellectually stimulating.  
@@ -1350,7 +1350,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 31 - A Debate Team
     {
-        title: "A Debate Team (Conditionals / Academic Vocabulary)",
+        title: "31. A Debate Team (Conditionals / Academic Vocabulary)",
         content: `🗣️ I joined the university forensic society to refine my argumentative skills.  
 議論のスキルを洗練させるために、大学の弁論協会に参加しました。  
 📢 The coach, a veteran of national tournaments, imposed a rigorous training schedule.  
@@ -1395,7 +1395,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 32 - A Leadership Conference
     {
-        title: "A Leadership Conference (Inversion / Corporate Vocabulary)",
+        title: "32. A Leadership Conference (Inversion / Corporate Vocabulary)",
         content: `👥 I participated in a leadership summit designed for emerging executives.  
 新興の幹部のために設計されたリーダーシップサミットに参加しました。  
 📈 The keynote speaker delivered a visionary address on corporate ethics.  
@@ -1440,7 +1440,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 33 - A Coding Project
     {
-        title: "A Coding Project (Inversion / Project Management)",
+        title: "33. A Coding Project (Inversion / Project Management)",
         content: `💻 I collaborated on a sophisticated software project during a hackathon.  
 ハッカソンの間、洗練されたソフトウェアプロジェクトに協力しました。  
 📱 The application, designed to optimize logistics, addressed a critical market gap.  
@@ -1485,7 +1485,7 @@ AI開発を規制しない限り、倫理的ジレンマは避けられません
 
     // Story 34 - A Business Plan
     {
-        title: "A Business Plan (Formal Conditionals / Business)",
+        title: "34. A Business Plan (Formal Conditionals / Business)",
         content: `💼 I formulated a comprehensive business plan for a sustainable fashion venture.  
 持続可能なファッションベンチャーのために包括的なビジネスプランを策定しました。  
 📈 The strategy, focusing on circular economy principles, attracted venture capital.  
@@ -1530,7 +1530,7 @@ SWOT分析の目的は何ですか？
 
     // Story 35 - A Creative Writing Course
     {
-        title: "A Creative Writing Course (Inversion / Literary Vocabulary)",
+        title: "35. A Creative Writing Course (Inversion / Literary Vocabulary)",
         content: `✍️ I enrolled in a creative writing seminar to hone my narrative techniques.  
 物語の技術を磨くために創作ライティングセミナーに登録しました。  
 📖 The instructor, an award-winning novelist, emphasized the power of subtext.  
@@ -1574,7 +1574,7 @@ SWOT分析の目的は何ですか？
     },
 // Story 36 - A Public Speaking Event
     {
-        title: "A Public Speaking Event (Inversion / Rhetoric)",
+        title: "36. A Public Speaking Event (Inversion / Rhetoric)",
         content: `🎤 I delivered a keynote address at a prominent symposium on social justice.  
 社会正義に関する著名なシンポジウムで基調講演を行いました。  
 📢 The topic, advocating for systemic reform, was both timely and contentious.  
@@ -1619,7 +1619,7 @@ SWOT分析の目的は何ですか？
 
     // Story 37 - A Theater Production
     {
-        title: "A Theater Production (Inversion / Arts Vocabulary)",
+        title: "37. A Theater Production (Inversion / Arts Vocabulary)",
         content: `🎭 I directed an avant-garde theatrical production during the fall semester.  
 秋学期に前衛的な演劇作品を演出しました。  
 🎬 The script, an original composition, explored themes of existential dread.  
@@ -1664,7 +1664,7 @@ SWOT分析の目的は何ですか？
 
     // Story 38 - A Volunteer Teaching Program
     {
-        title: "A Volunteer Teaching Program (Inversion / Education Vocabulary)",
+        title: "38. A Volunteer Teaching Program (Inversion / Education Vocabulary)",
         content: `🤝 I volunteered for an educational program serving underprivileged communities.  
 恵まれないコミュニティに奉仕する教育プログラムにボランティアとして参加しました。  
 📚 The students, despite limited resources, displayed an insatiable thirst for knowledge.  
@@ -1709,7 +1709,7 @@ SWOT分析の目的は何ですか？
 
     // Story 39 - A Career Workshop
     {
-        title: "A Career Workshop (Formal Conditionals / Career)",
+        title: "39. A Career Workshop (Formal Conditionals / Career)",
         content: `💼 I attended a career development workshop to clarify my professional trajectory.  
 専門的な軌道を明確にするために、キャリア開発ワークショップに参加しました。  
 📋 The facilitator, an executive coach, provided tailored guidance on networking.  
@@ -1754,7 +1754,7 @@ SWOT分析の目的は何ですか？
 
     // Story 40 - A Community Service Project
     {
-        title: "A Community Service Project (Inversion / Civic Vocabulary)",
+        title: "40. A Community Service Project (Inversion / Civic Vocabulary)",
         content: `🤝 I led a civic engagement project aimed at revitalizing the local district.  
 地元の地区を活性化することを目的とした市民参加プロジェクトをリードしました。  
 🌍 The initiative, which focused on urban renewal, impacted hundreds of residents.  
@@ -1799,7 +1799,7 @@ SWOT分析の目的は何ですか？
 
     // Story 41 - A Tech Conference
     {
-        title: "A Tech Conference (Inversion / Tech Trends)",
+        title: "41. A Tech Conference (Inversion / Tech Trends)",
         content: `💻 I attended a global technology summit focusing on disruptive innovations.  
 破壊的革新に焦点を当てた世界的な技術サミットに参加しました。  
 📱 The speakers, leaders in their respective fields, shared proprietary insights.  
@@ -1844,7 +1844,7 @@ SWOT分析の目的は何ですか？
 
     // Story 42 - A Business Internship
     {
-        title: "A Business Internship (Inversion / Business Formal)",
+        title: "42. A Business Internship (Inversion / Business Formal)",
         content: `💼 I completed a highly competitive internship at a multinational conglomerate.  
 多国籍コングロマリットで非常に競争の激しいインターンシップを完了しました。  
 📊 The firm, a market leader, provided exposure to corporate strategy.  
@@ -1889,7 +1889,7 @@ SWOT分析の目的は何ですか？
 
     // Story 43 - A Creative Project
     {
-        title: "A Creative Project (Conditionals / Abstract Vocabulary)",
+        title: "43. A Creative Project (Conditionals / Abstract Vocabulary)",
         content: `🎨 I executed a conceptual art project for my final semester thesis.  
 最終学期の論文のために概念的なアートプロジェクトを実行しました。  
 🖌️ The theme, focusing on abstract expressionism, challenged conventional aesthetics.  
@@ -1934,7 +1934,7 @@ SWOT分析の目的は何ですか？
 
     // Story 44 - A Volunteer Abroad Trip
     {
-        title: "A Volunteer Abroad Trip (Inversion / Global Issues)",
+        title: "44. A Volunteer Abroad Trip (Inversion / Global Issues)",
         content: `🌍 I participated in an international humanitarian mission in a developing nation.  
 発展途上国での国際的な人道支援任務に参加しました。  
 🤝 The program, aimed at infrastructure development, provided crucial aid.  
@@ -1979,7 +1979,7 @@ SWOT分析の目的は何ですか？
 
     // Story 45 - A Science Fair
     {
-        title: "A Science Fair (Formal Conditionals / Scientific Method)",
+        title: "45. A Science Fair (Formal Conditionals / Scientific Method)",
         content: `🔬 I competed in a prestigious science fair featuring youth innovation.  
 若者の革新を特集した名誉ある科学フェアで競いました。  
 📊 My hypothesis, concerning renewable energy efficiency, was rigorously tested.  
@@ -2024,7 +2024,7 @@ SWOT分析の目的は何ですか？
 
     // Story 46 - A Language Course
     {
-        title: "A Language Course (Conditionals / Linguistics)",
+        title: "46. A Language Course (Conditionals / Linguistics)",
         content: `🗣️ I enrolled in an advanced seminar to master linguistic nuances.  
 言語のニュアンスを習得するために高度なセミナーに登録しました。  
 🇪🇸 The instructor, a philologist, delved into the etymology of idioms.  
@@ -2069,7 +2069,7 @@ SWOT分析の目的は何ですか？
 
     // Story 47 - A Sustainability Club
     {
-        title: "A Sustainability Club (Inversion / Environmentalism)",
+        title: "47. A Sustainability Club (Inversion / Environmentalism)",
         content: `🌿 I became an active member of a society dedicated to ecological preservation.  
 生態系保全に専念する協会の活発なメンバーになりました。  
 🌍 The group, comprised of passionate advocates, promoted carbon reduction.  
@@ -2114,7 +2114,7 @@ SWOT分析の目的は何ですか？
 
     // Story 48 - A Career Mentorship
     {
-        title: "A Career Mentorship (Subjunctive / Mentorship)",
+        title: "48. A Career Mentorship (Subjunctive / Mentorship)",
         content: `💼 I participated in a mentorship scheme aimed at professional acceleration.  
 専門的な加速を目的としたメンターシップ制度に参加しました。  
 📋 My mentor, a seasoned industry veteran, provided invaluable counsel.  

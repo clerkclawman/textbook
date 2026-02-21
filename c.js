@@ -1,31 +1,7 @@
 var c = [
-    {
-        title: "Story 1: Apples and Bananas",
-        content: `🍎 Tony and Jay are teachers from England.
-トニーとジェイはイングランド出身の先生です。
-🍌 They like fruit.
-二人は果物が好きです。
-🍎 Today, Tony has an apple.
-今日はトニーがりんごを持っています。
-🍌 Jay has a banana.
-ジェイがバナナを持っています。
-👦 They show the fruit to the children.
-二人は子どもたちに果物を見せます。
-🗣️ Children say "I like apples." or "I like bananas."
-子どもたちは「りんごが好きです。」や「バナナが好きです。」と言います。
-❓ Tony asks, "What is this?"
-トニーが「これは何ですか？」と聞きます。
-💬 Jay answers, "This is an apple."
-ジェイが「これはりんごです。」と答えます。
-👅 Children taste the fruit.
-子どもたちは果物を味見します。
-😊 Everyone is happy.
-みんな嬉しそうです。`
-    },
-    {
-        title: "Questions: Story 1",
-        content: `🍎 Do you like apples?
-りんごは好きですか？
+        {
+            title: "0. Questions",
+            content: `りんごは好きですか？
 🍌 Do you like bananas?
 バナナは好きですか？
 🍇 Do you like grapes?
@@ -51,34 +27,7 @@ var c = [
 👅 Do you want to taste fruit?
 果物を食べてみたいですか？
 👫 Who is your friend?
-あなたの友だちは誰ですか？`
-    },
-    {
-        title: "Story 2: The Chair",
-        content: `🪑 Tony sits on a small chair.
-トニーは小さいいすにすわります。
-😂 Jay laughs.
-ジェイはわらいます。
-💥 The chair makes a noise.
-いすが音をたてます。
-🏃‍♂️ Tony stands up quickly.
-トニーはすぐにたちます。
-😤 "This chair is too small!" Tony says.
-「このいすは小さすぎる！」とトニーがいいます。
-🪑 Jay brings a big chair.
-ジェイが大きないすをもってきます。
-😐 Tony tries again.
-トニーがもう一度ためします。
-💪 The big chair is strong.
-大きないすはじょうぶです。
-😊 Tony sits down and smiles.
-トニーはすわって、にこにこします。
-👏 Jay claps.
-ジェイははくしゅします。`
-    },
-    {
-        title: "Questions: Story 2",
-        content: `🪑 Do you like big chairs?
+
 大きいいすがすきですか？
 🪑 Do you like small chairs?
 小さいいすがすきですか？
@@ -107,34 +56,7 @@ var c = [
 💪 Do you like strong things?
 つよいものがすきですか？
 📖 Do you like this story?
-このお話がすきですか？`
-    },
-    {
-        title: "Story 3: Sea Creatures",
-        content: `🦀 Tony shows a crab.
-トニーはカニをみせます。
-🐚 Jay touches a shell.
-ジェイは貝がらをさわります。
-🐠 The fish swims in the water.
-魚は水の中でおよぎます。
-❓ Tony asks, "What is this?"
-トニーは「これは何ですか？」とききます。
-😊 Jay answers, "This is a crab."
-ジェイは「これはカニです」とこたえます。
-🐙 Tony points at an octopus.
-トニーはタコをさします。
-💬 Jay says, "This is an octopus."
-ジェイは「これはタコです」といいます。
-🐬💦 The dolphin jumps out of the water.
-イルカは水からとび出します。
-👏 Tony claps.
-トニーははくしゅします。
-😊 Everyone smiles.
-みんなにこにこします。`
-    },
-    {
-        title: "Questions: Story 3",
-        content: `🦀 Do you like crabs?
+
 カニがすきですか？
 🐠 Do you like fish?
 魚がすきですか？
@@ -163,34 +85,7 @@ var c = [
 😊 How do you feel when you see a dolphin?
 イルカを見たとき、どんな気持ちになりますか？
 🌊 Do you want to learn more about sea animals?
-もっと海の動物についてまなびたいですか？`
-    },
-    {
-        title: "Story 4: Ice Cream",
-        content: `🍦 Tony goes to the ice cream shop.
-トニーはアイスクリーム屋にいきます。
-🍫 Tony buys chocolate ice cream.
-トニーはチョコレート味のアイスクリームをかいます。
-🍓 Jay buys strawberry ice cream.
-ジェイはイチゴ味のアイスクリームをかいます。
-😋 Tony says, "This ice cream is yummy."
-トニーは「このアイスクリームはおいしいです」といいます。
-😊 Jay says, "I like strawberry."
-ジェイは「イチゴがすきです」といいます。
-😋 Tony tastes Jay's ice cream.
-トニーはジェイのアイスクリームをあじわいます。
-👀 Jay watches Tony eat.
-ジェイはトニーがアイスクリームをたべるのをみます。
-🧒 The children see the ice cream.
-こどもたちはアイスクリームをみます。
-🍦 Tony gives a small piece to a child.
-トニーはこどもに小さなアイスをあげます。
-😊 Everyone smiles and eats.
-みんなにこにこして、たべます。`
-    },
-    {
-        title: "Questions: Story 4",
-        content: `🍦 Do you like ice cream?
+
 アイスクリームがすきですか？
 🍦 Do you want ice cream now?
 今すぐアイスクリームがほしいですか？
@@ -219,34 +114,7 @@ var c = [
 🍨 How many scoops can you eat?
 いくつのアイスクリームをたべられますか？
 🍦👨‍🏫 Do you want to have ice cream with Tony and Jay?
-トニーとジェイといっしょにアイスクリームがほしいですか？`
-    },
-    {
-        title: "Story 5: Clothes",
-        content: `👕 Tony wears a T-shirt.
-トニーはＴシャツをきます。
-🩳 Jay wears shorts.
-ジェイはショートパンツをはきます。
-🩴 Tony puts on sandals.
-トニーはサンダルをはきます。
-🎩 Jay puts on a hat.
-ジェイは帽子をかぶります。
-🕶️ Tony takes off his sunglasses.
-トニーはサングラスをはずします。
-🕶️ Jay puts on sunglasses.
-ジェイはサングラスをかけます。
-🪞 Tony looks in the mirror.
-トニーはかがみをみます。
-😄 Jay smiles.
-ジェイはほほえみます。
-💬 Tony says, "I like my clothes."
-トニーは「服が好きです」といいます。
-😂 All children laugh.
-子どもたちはみんなわらいます。`
-    },
-    {
-        title: "Questions: Story 5",
-        content: `👕 Do you wear a T-shirt today?
+
 きょうＴシャツをきていますか？
 🩳 Do you like shorts?
 ショートパンツがすきですか？
@@ -275,34 +143,7 @@ var c = [
 🎨 What color are your clothes today?
 きょうの服は何色ですか？
 😂 Do you laugh when you see funny clothes?
-おもしろい服をみるとき、わらいますか？`
-    },
-    {
-        title: "Story 6: At the Park",
-        content: `🏃 Tony runs to the slide.
-トニーはすべり台にはしります。
-🤸 Jay jumps on the slide.
-ジェイはすべり台でとびます。
-🐦 The bird sings.
-鳥がさえずります。
-👀 Tony watches the bird.
-トニーは鳥をみます。
-🌳 Jay climbs the tree.
-ジェイは木によじのぼります。
-🍂 Tony finds a leaf.
-トニーは葉っぱをみつけます。
-🍂 Jay holds the leaf.
-ジェイは葉っぱをにぎります。
-❓ Tony asks, "Where are we?"
-トニーは「私たちはどこですか？」とたずねます。
-🏞️ Jay answers, "We are at the park."
-ジェイは「公園です」とこたえます。
-😊 Children smile.
-子どもたちはにこにこします。`
-    },
-    {
-        title: "Questions: Story 6",
-        content: `🛝 Where is the slide?
+
 すべり台はどこにありますか？
 🏃 Can you run fast?
 はやくはしれますか？
@@ -331,34 +172,7 @@ var c = [
 🎨 What color is the leaf?
 葉っぱは何色ですか？
 🏞️ Do you like the park?
-公園がすきですか？`
-    },
-    {
-        title: "Story 7: Sports",
-        content: `⚽ Tony kicks a soccer ball.
-トニーはサッカーボールをけります。
-🙌 Jay catches the ball.
-ジェイはボールをキャッチします。
-🏀 A child throws a basketball.
-子どもがバスケットボールをなげます。
-🏃💨 Tony runs fast.
-トニーははやくはしります。
-🤸‍♂️ Jay jumps high.
-ジェイはたかくとびます。
-🏐 Everyone plays volleyball.
-みんなでバレーボールをします。
-😅 Tony says, "I'm tired!"
-トニーは「つかれた！」といいます。
-😂 Jay laughs.
-ジェイはわらいます。
-🧃 The children drink water.
-子どもたちは水をのみます。
-😄 Everyone smiles.
-みんなにこにこします。`
-    },
-    {
-        title: "Questions: Story 7",
-        content: `⚽ Do you like soccer?
+
 サッカーがすきですか？
 🦵⚽ Can you kick a ball?
 ボールをけれますか？
@@ -387,34 +201,7 @@ var c = [
 🤔 What sport do you want to try?
 どんなスポーツをやってみたいですか？
 🧑‍🤝‍🧑 Do you like team games?
-チームであそぶゲームがすきですか？`
-    },
-    {
-        title: "Story 8: Family",
-        content: `👨‍👩‍👧‍👦 Tony talks about his family.
-トニーはかぞくについてはなします。
-👨 "This is my father," he says.
-「これは父です」とトニーはいいます。
-👩 "This is my mother," Jay says.
-「これは母です」とジェイはいいます。
-👧 Tony has one sister.
-トニーには妹がいます。
-👦 Jay has one brother.
-ジェイには弟がいます。
-👵😊 Tony's grandmother smiles.
-トニーのおばあさんがにこにこします。
-👴👋 Jay's grandfather waves.
-ジェイのおじいさんがてをふります。
-🖼️ Tony shows a photo.
-トニーは写真をみせます。
-👀 Jay looks at the photo.
-ジェイは写真をみます。
-❤️ "I love my family," Tony says.
-「かぞくがだいすきです」とトニーはいいます。`
-    },
-    {
-        title: "Questions: Story 8",
-        content: `👨‍👩‍👧‍👦 Who is in your family?
+
 あなたのかぞくにはだれがいますか？
 👧 Do you have a sister?
 妹がいますか？
@@ -443,34 +230,7 @@ var c = [
 ❤️ Do you love your family?
 かぞくをあいしていますか？
 🧸 Who do you play with at home?
-いえでだれとあそびますか？`
-    },
-    {
-        title: "Story 9: Zoo Animals",
-        content: `🦁 Tony sees a big lion.
-トニーは大きなライオンを見ます。
-🐵 Jay waves at the monkeys.
-ジェイはサルたちに手をふります。
-🐘 Tony points at an elephant.
-トニーはゾウを指さします。
-🐧 Jay laughs at the funny penguins.
-ジェイはおもしろいペンギンたちを見てわらいます。
-🐍 Tony jumps when he sees a snake.
-トニーはヘビを見てびっくりしてジャンプします。
-🦒 Jay says, "Look! A tall giraffe!"
-ジェイは「見て！たかいキリンだよ！」といいます。
-🦓 They both watch the zebras run.
-ふたりはしまうまがはしるのを見ます。
-🍌 Tony eats a banana.
-トニーはバナナを食べます。
-🥤 Jay drinks orange juice.
-ジェイはオレンジジュースを飲みます。
-🚌 They ride the bus home.
-ふたりはバスにのってかえります。`
-    },
-    {
-        title: "Questions: Story 9",
-        content: `🦁 Do you like lions?
+
 ライオンがすきですか？
 🐵 Can you wave like Jay?
 ジェイみたいに手をふれますか？
@@ -489,34 +249,7 @@ var c = [
 🥤 What do you like to drink?
 なにを飲むのがすきですか？
 🚌 Do you like riding buses?
-バスにのるのがすきですか？`
-    },
-    {
-        title: "Story 10: Rainy Day",
-        content: `🌧️ It rains and Tony looks out the window.
-あめがふって、トニーはまどのそとを見ます。
-☔ Jay holds an umbrella.
-ジェイはかさを持ちます。
-👢 Tony wears his rain boots.
-トニーはレインブーツをはきます。
-💦 They jump in puddles together.
-ふたりはいっしょにみずたまりではねます。
-🐸 Jay sees a frog.
-ジェイはカエルを見ます。
-😆 Tony laughs and points at it.
-トニーはわらって、それを指さします。
-🏠 They go back inside.
-ふたりは家の中にもどります。
-🍪 Jay eats a cookie.
-ジェイはクッキーを食べます。
-☕ Tony drinks warm milk.
-トニーはあたたかいミルクを飲みます。
-📖 They read a book together.
-ふたりで本を読みます。`
-    },
-    {
-        title: "Questions: Story 10",
-        content: `🌧️ Do you like rainy days?
+
 あめの日はすきですか？
 ☔ Do you have an umbrella?
 かさを持っていますか？
@@ -534,7 +267,216 @@ var c = [
 どんなおやつがすきですか？
 ☕ Do you drink warm drinks in winter?
 ふゆにあたたかい飲みものを飲みますか？
-📖 Do you read books at home?
-家で本を読みますか？`
-    }
-];
+📖 Do you read books at home?`
+        },
+        {
+            title: "1. Apples and Bananas",
+            content: `トニーとジェイはイングランド出身の先生です。
+🍌 They like fruit.
+二人は果物が好きです。
+🍎 Today, Tony has an apple.
+今日はトニーがりんごを持っています。
+🍌 Jay has a banana.
+ジェイがバナナを持っています。
+👦 They show the fruit to the children.
+二人は子どもたちに果物を見せます。
+🗣️ Children say "I like apples." or "I like bananas."
+子どもたちは「りんごが好きです。」や「バナナが好きです。」と言います。
+❓ Tony asks, "What is this?"
+トニーが「これは何ですか？」と聞きます。
+💬 Jay answers, "This is an apple."
+ジェイが「これはりんごです。」と答えます。
+👅 Children taste the fruit.
+子どもたちは果物を味見します。
+😊 Everyone is happy.`
+        },
+        {
+            title: "2. The Chair",
+            content: `トニーは小さいいすにすわります。
+😂 Jay laughs.
+ジェイはわらいます。
+💥 The chair makes a noise.
+いすが音をたてます。
+🏃‍♂️ Tony stands up quickly.
+トニーはすぐにたちます。
+😤 "This chair is too small!" Tony says.
+「このいすは小さすぎる！」とトニーがいいます。
+🪑 Jay brings a big chair.
+ジェイが大きないすをもってきます。
+😐 Tony tries again.
+トニーがもう一度ためします。
+💪 The big chair is strong.
+大きないすはじょうぶです。
+😊 Tony sits down and smiles.
+トニーはすわって、にこにこします。
+👏 Jay claps.`
+        },
+        {
+            title: "3. Sea Creatures",
+            content: `トニーはカニをみせます。
+🐚 Jay touches a shell.
+ジェイは貝がらをさわります。
+🐠 The fish swims in the water.
+魚は水の中でおよぎます。
+❓ Tony asks, "What is this?"
+トニーは「これは何ですか？」とききます。
+😊 Jay answers, "This is a crab."
+ジェイは「これはカニです」とこたえます。
+🐙 Tony points at an octopus.
+トニーはタコをさします。
+💬 Jay says, "This is an octopus."
+ジェイは「これはタコです」といいます。
+🐬💦 The dolphin jumps out of the water.
+イルカは水からとび出します。
+👏 Tony claps.
+トニーははくしゅします。
+😊 Everyone smiles.`
+        },
+        {
+            title: "4. Ice Cream",
+            content: `トニーはアイスクリーム屋にいきます。
+🍫 Tony buys chocolate ice cream.
+トニーはチョコレート味のアイスクリームをかいます。
+🍓 Jay buys strawberry ice cream.
+ジェイはイチゴ味のアイスクリームをかいます。
+😋 Tony says, "This ice cream is yummy."
+トニーは「このアイスクリームはおいしいです」といいます。
+😊 Jay says, "I like strawberry."
+ジェイは「イチゴがすきです」といいます。
+😋 Tony tastes Jay's ice cream.
+トニーはジェイのアイスクリームをあじわいます。
+👀 Jay watches Tony eat.
+ジェイはトニーがアイスクリームをたべるのをみます。
+🧒 The children see the ice cream.
+こどもたちはアイスクリームをみます。
+🍦 Tony gives a small piece to a child.
+トニーはこどもに小さなアイスをあげます。
+😊 Everyone smiles and eats.`
+        },
+        {
+            title: "5. Clothes",
+            content: `トニーはＴシャツをきます。
+🩳 Jay wears shorts.
+ジェイはショートパンツをはきます。
+🩴 Tony puts on sandals.
+トニーはサンダルをはきます。
+🎩 Jay puts on a hat.
+ジェイは帽子をかぶります。
+🕶️ Tony takes off his sunglasses.
+トニーはサングラスをはずします。
+🕶️ Jay puts on sunglasses.
+ジェイはサングラスをかけます。
+🪞 Tony looks in the mirror.
+トニーはかがみをみます。
+😄 Jay smiles.
+ジェイはほほえみます。
+💬 Tony says, "I like my clothes."
+トニーは「服が好きです」といいます。
+😂 All children laugh.`
+        },
+        {
+            title: "6. At the Park",
+            content: `トニーはすべり台にはしります。
+🤸 Jay jumps on the slide.
+ジェイはすべり台でとびます。
+🐦 The bird sings.
+鳥がさえずります。
+👀 Tony watches the bird.
+トニーは鳥をみます。
+🌳 Jay climbs the tree.
+ジェイは木によじのぼります。
+🍂 Tony finds a leaf.
+トニーは葉っぱをみつけます。
+🍂 Jay holds the leaf.
+ジェイは葉っぱをにぎります。
+❓ Tony asks, "Where are we?"
+トニーは「私たちはどこですか？」とたずねます。
+🏞️ Jay answers, "We are at the park."
+ジェイは「公園です」とこたえます。
+😊 Children smile.`
+        },
+        {
+            title: "7. Sports",
+            content: `トニーはサッカーボールをけります。
+🙌 Jay catches the ball.
+ジェイはボールをキャッチします。
+🏀 A child throws a basketball.
+子どもがバスケットボールをなげます。
+🏃💨 Tony runs fast.
+トニーははやくはしります。
+🤸‍♂️ Jay jumps high.
+ジェイはたかくとびます。
+🏐 Everyone plays volleyball.
+みんなでバレーボールをします。
+😅 Tony says, "I'm tired!"
+トニーは「つかれた！」といいます。
+😂 Jay laughs.
+ジェイはわらいます。
+🧃 The children drink water.
+子どもたちは水をのみます。
+😄 Everyone smiles.`
+        },
+        {
+            title: "8. Family",
+            content: `トニーはかぞくについてはなします。
+👨 "This is my father," he says.
+「これは父です」とトニーはいいます。
+👩 "This is my mother," Jay says.
+「これは母です」とジェイはいいます。
+👧 Tony has one sister.
+トニーには妹がいます。
+👦 Jay has one brother.
+ジェイには弟がいます。
+👵😊 Tony's grandmother smiles.
+トニーのおばあさんがにこにこします。
+👴👋 Jay's grandfather waves.
+ジェイのおじいさんがてをふります。
+🖼️ Tony shows a photo.
+トニーは写真をみせます。
+👀 Jay looks at the photo.
+ジェイは写真をみます。
+❤️ "I love my family," Tony says.`
+        },
+        {
+            title: "9. Zoo Animals",
+            content: `トニーは大きなライオンを見ます。
+🐵 Jay waves at the monkeys.
+ジェイはサルたちに手をふります。
+🐘 Tony points at an elephant.
+トニーはゾウを指さします。
+🐧 Jay laughs at the funny penguins.
+ジェイはおもしろいペンギンたちを見てわらいます。
+🐍 Tony jumps when he sees a snake.
+トニーはヘビを見てびっくりしてジャンプします。
+🦒 Jay says, "Look! A tall giraffe!"
+ジェイは「見て！たかいキリンだよ！」といいます。
+🦓 They both watch the zebras run.
+ふたりはしまうまがはしるのを見ます。
+🍌 Tony eats a banana.
+トニーはバナナを食べます。
+🥤 Jay drinks orange juice.
+ジェイはオレンジジュースを飲みます。
+🚌 They ride the bus home.`
+        },
+        {
+            title: "10. Rainy Day",
+            content: `あめがふって、トニーはまどのそとを見ます。
+☔ Jay holds an umbrella.
+ジェイはかさを持ちます。
+👢 Tony wears his rain boots.
+トニーはレインブーツをはきます。
+💦 They jump in puddles together.
+ふたりはいっしょにみずたまりではねます。
+🐸 Jay sees a frog.
+ジェイはカエルを見ます。
+😆 Tony laughs and points at it.
+トニーはわらって、それを指さします。
+🏠 They go back inside.
+ふたりは家の中にもどります。
+🍪 Jay eats a cookie.
+ジェイはクッキーを食べます。
+☕ Tony drinks warm milk.
+トニーはあたたかいミルクを飲みます。
+📖 They read a book together.`
+        }
+    ];

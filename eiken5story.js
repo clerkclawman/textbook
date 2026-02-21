@@ -2,7 +2,7 @@
 var eiken5story = [
     // Story 1 - My Family
     {
-        title: "My Family (Present Simple / Be Verbs)",
+        title: "1. My Family (Present Simple / Be Verbs)",
         content: `🏠 I live in a small house with my family.
 私は家族と小さな家に住んでいます。
 👨 My father is a teacher.
@@ -47,7 +47,7 @@ var eiken5story = [
 
     // Story 2 - My School
     {
-        title: "My School (Verbs: Go/Walk / School Vocab)",
+        title: "2. My School (Verbs: Go/Walk / School Vocab)",
         content: `🏫 I go to Sakura Elementary School.
 私はサクラ小学校に行きます。
 🚶 I walk to school with my friends.
@@ -92,7 +92,7 @@ var eiken5story = [
 
     // Story 3 - Breakfast Time
     {
-        title: "Breakfast Time (Time / Daily Routine)",
+        title: "3. Breakfast Time (Time / Daily Routine)",
         content: `🌞 I wake up at six thirty.
 私は6時半に起きます。
 🍞 I eat toast for breakfast.
@@ -137,7 +137,7 @@ var eiken5story = [
 
     // Story 4 - Baseball
     {
-        title: "Baseball (Likes / Can / Sports)",
+        title: "4. Baseball (Likes / Can / Sports)",
         content: `⚾ I like baseball very much.
 私は野球が大好きです。
 🧢 I have a blue cap.
@@ -182,7 +182,7 @@ var eiken5story = [
 
     // Story 5 - Sunday Morning
     {
-        title: "Sunday Morning (Do not / Days of the Week)",
+        title: "5. Sunday Morning (Do not / Days of the Week)",
         content: `📅 Today is Sunday.
 今日は日曜日です。
 🚫 I do not go to school.
@@ -227,7 +227,7 @@ var eiken5story = [
 
     // Story 6 - My Cat
     {
-        title: "My Cat (3rd Person Singular / Pets)",
+        title: "6. My Cat (3rd Person Singular / Pets)",
         content: `🐱 I have a cat named Tama.
 私にはタマという名前の猫がいます。
 ⚪ She is small and white.
@@ -272,7 +272,7 @@ var eiken5story = [
 
     // Story 7 - The Library
     {
-        title: "The Library (Places / Prepositions)",
+        title: "7. The Library (Places / Prepositions)",
         content: `📚 I go to the library.
 私は図書館に行きます。
 🤫 It is very quiet here.
@@ -317,7 +317,7 @@ var eiken5story = [
 
     // Story 8 - Shopping
     {
-        title: "Shopping (Action Verbs / Plurals)",
+        title: "8. Shopping (Action Verbs / Plurals)",
         content: `🛍️ I go shopping with my mother.
 私は母と買い物に行きます。
 🏬 We go to the supermarket.
@@ -362,7 +362,7 @@ var eiken5story = [
 
     // Story 9 - Piano Lesson
     {
-        title: "Piano Lesson (Habits / Adjectives)",
+        title: "9. Piano Lesson (Habits / Adjectives)",
         content: `🎹 I have a piano lesson on Tuesday.
 私は火曜日にピアノのレッスンがあります。
 🚶 I walk to the music school.
@@ -407,7 +407,7 @@ var eiken5story = [
 
     // Story 10 - Rainy Day
     {
-        title: "Rainy Day (Weather / Clothing)",
+        title: "10. Rainy Day (Weather / Clothing)",
         content: `🌧️ It is raining today.
 今日は雨が降っています。
 ☔ I take my umbrella.
@@ -452,7 +452,7 @@ var eiken5story = [
 
     // Story 11 - My Friend
     {
-        title: "My Friend (Be from / Languages)",
+        title: "11. My Friend (Be from / Languages)",
         content: `👦 My friend is Tom.
 私の友達はトムです。
 🇺🇸 He is from America.
@@ -497,7 +497,7 @@ var eiken5story = [
 
     // Story 12 - Summer Vacation
     {
-        title: "Summer Vacation (Seasons / Activities)",
+        title: "12. Summer Vacation (Seasons / Activities)",
         content: `🌻 It is summer vacation.
 夏休みです。
 🌡️ It is very hot.
@@ -542,7 +542,7 @@ var eiken5story = [
 
     // Story 13 - My Birthday
     {
-        title: "My Birthday (Numbers / Give & Get)",
+        title: "13. My Birthday (Numbers / Give & Get)",
         content: `🎂 Today is my birthday.
 今日は私の誕生日です。
 🔟 I am ten years old.
@@ -587,7 +587,7 @@ var eiken5story = [
 
     // Story 14 - Curry Rice
     {
-        title: "Curry Rice (Cooking / Sensory Verbs)",
+        title: "14. Curry Rice (Cooking / Sensory Verbs)",
         content: `🍛 We make curry for dinner.
 私たちは夕食にカレーを作ります。
 🥔 I wash the potatoes.
@@ -632,7 +632,7 @@ var eiken5story = [
 
     // Story 15 - The Zoo
     {
-        title: "The Zoo (Animals / Action Verbs)",
+        title: "15. The Zoo (Animals / Action Verbs)",
         content: `🦁 I go to the zoo.
 私は動物園に行きます。
 🐘 I see a big elephant.
@@ -677,7 +677,7 @@ var eiken5story = [
 
     // Story 16 - My Bicycle
     {
-        title: "My Bicycle (Have / Colors)",
+        title: "16. My Bicycle (Have / Colors)",
         content: `🚲 I have a new bicycle.
 私は新しい自転車を持っています。
 🎨 It is green.
@@ -722,7 +722,7 @@ var eiken5story = [
 
     // Story 17 - Winter
     {
-        title: "Winter (Weather / Clothes)",
+        title: "17. Winter (Weather / Clothes)",
         content: `❄️ It snows in winter.
 冬には雪が降ります。
 🧤 I wear gloves.
@@ -767,7 +767,7 @@ var eiken5story = [
 
     // Story 18 - Being Kind
     {
-        title: "Being Kind (Giving / Politeness)",
+        title: "18. Being Kind (Giving / Politeness)",
         content: `👴 I see an old man on the bus.
 私はバスでおじいさんを見かけます。
 💺 I give him my seat.
@@ -812,7 +812,7 @@ var eiken5story = [
 
     // Story 19 - English Class
     {
-        title: "English Class (Classroom English / Interrogatives)",
+        title: "19. English Class (Classroom English / Interrogatives)",
         content: `🇺🇸 I like English class.
 私は英語の授業が好きです。
 👨‍🏫 My teacher is Mr. Smith.
@@ -857,7 +857,7 @@ var eiken5story = [
 
     // Story 20 - Trip to Tokyo
     {
-        title: "Trip to Tokyo (Want to / Cities)",
+        title: "20. Trip to Tokyo (Want to / Cities)",
         content: `🚅 I want to go to Tokyo.
 私は東京に行きたいです。
 🚄 I like the Shinkansen.
@@ -902,7 +902,7 @@ var eiken5story = [
 
     // Story 21 - Grandma's Garden
     {
-        title: "Grandma's Garden (There is/are / Plants)",
+        title: "21. Grandma's Garden (There is/are / Plants)",
         content: `👵 My grandmother has a garden.
 私の祖母は庭を持っています。
 🌷 There are many flowers.
@@ -947,7 +947,7 @@ var eiken5story = [
 
     // Story 22 - Cleaning Time
     {
-        title: "Cleaning Time (Chores / Adjectives)",
+        title: "22. Cleaning Time (Chores / Adjectives)",
         content: `🧹 School finishes at three.
 学校は3時に終わります。
 🧼 It is cleaning time.
@@ -992,7 +992,7 @@ var eiken5story = [
 
     // Story 23 - Movies
     {
-        title: "Movies (Likes / Entertainment)",
+        title: "23. Movies (Likes / Entertainment)",
         content: `🎬 I like movies.
 私は映画が好きです。
 🍿 I go to the theater.
@@ -1037,7 +1037,7 @@ var eiken5story = [
 
     // Story 24 - Christmas
     {
-        title: "Christmas (Holidays / Giving)",
+        title: "24. Christmas (Holidays / Giving)",
         content: `🎄 It is Christmas.
 クリスマスです。
 🎅 Santa Claus comes.
@@ -1082,7 +1082,7 @@ var eiken5story = [
 
     // Story 25 - Fishing
     {
-        title: "Fishing (Outdoor Activities / Verbs)",
+        title: "25. Fishing (Outdoor Activities / Verbs)",
         content: `🎣 I go fishing on Saturday.
 私は土曜日に釣りに行きます。
 🚗 We go to the lake.
@@ -1127,7 +1127,7 @@ var eiken5story = [
 
     // Story 26 - Pet Shop
     {
-        title: "Pet Shop (Animals / Plurals)",
+        title: "26. Pet Shop (Animals / Plurals)",
         content: `🏪 I go to the pet shop.
 私はペットショップに行きます。
 🐶 I see many animals.
@@ -1172,7 +1172,7 @@ var eiken5story = [
 
     // Story 27 - Art Class
     {
-        title: "Art Class (Colors / Drawing)",
+        title: "27. Art Class (Colors / Drawing)",
         content: `🎨 I like art class.
 私は図工の授業が好きです。
 🖌️ We paint pictures.
@@ -1217,7 +1217,7 @@ var eiken5story = [
 
     // Story 28 - Studying
     {
-        title: "Studying (Study Verbs / Want to)",
+        title: "28. Studying (Study Verbs / Want to)",
         content: `📖 I study every day.
 私は毎日勉強します。
 🎧 I listen to a CD.
@@ -1262,7 +1262,7 @@ var eiken5story = [
 
     // Story 29 - Helping Mom
     {
-        title: "Helping Mom (Helping / Food)",
+        title: "29. Helping Mom (Helping / Food)",
         content: `🍽️ It is dinner time.
 夕食の時間です。
 👩 My mother cooks.
@@ -1307,7 +1307,7 @@ var eiken5story = [
 
     // Story 30 - My Robot
     {
-        title: "My Robot (Pronoun 'It' / Toys)",
+        title: "30. My Robot (Pronoun 'It' / Toys)",
         content: `🤖 I have a robot toy.
 私はロボットのおもちゃを持っています。
 🎁 It is a present.
@@ -1352,7 +1352,7 @@ var eiken5story = [
 
     // Story 31 - Hiking
     {
-        title: "Hiking (Nature / Fall Words)",
+        title: "31. Hiking (Nature / Fall Words)",
         content: `⛰️ I go hiking in autumn.
 私は秋にハイキングに行きます。
 🍁 The mountains are nice.
@@ -1397,7 +1397,7 @@ var eiken5story = [
 
     // Story 32 - Being Sick
     {
-        title: "Being Sick (Health / Body Parts)",
+        title: "32. Being Sick (Health / Body Parts)",
         content: `🤒 I am sick today.
 今日、私は病気です。
 🤕 My head hurts.
@@ -1442,7 +1442,7 @@ var eiken5story = [
 
     // Story 33 - Swimming
     {
-        title: "Swimming (Can / Sports)",
+        title: "33. Swimming (Can / Sports)",
         content: `🏊 It is summer.
 夏です。
 🌊 I go to the pool.
@@ -1487,7 +1487,7 @@ var eiken5story = [
 
     // Story 34 - Brother's Bike
     {
-        title: "Brother's Bike (Family / Vehicles)",
+        title: "34. Brother's Bike (Family / Vehicles)",
         content: `🚲 My brother has a bike.
 兄は自転車を持っています。
 🔵 It is blue.
@@ -1532,7 +1532,7 @@ var eiken5story = [
 
     // Story 35 - The Park
     {
-        title: "The Park (Prepositions: at/on / Play)",
+        title: "35. The Park (Prepositions: at/on / Play)",
         content: `🌳 I am at the park.
 私は公園にいます。
 🌞 It is sunny.
@@ -1577,7 +1577,7 @@ var eiken5story = [
 
     // Story 36 - Favorite Book
     {
-        title: "Favorite Book (Reading / Adjectives)",
+        title: "36. Favorite Book (Reading / Adjectives)",
         content: `📕 I have a favorite book.
 私にはお気に入りの本があります。
 🐻 It is about a bear.
@@ -1622,7 +1622,7 @@ var eiken5story = [
 
     // Story 37 - Aquarium
     {
-        title: "Aquarium (Sea Animals / Action)",
+        title: "37. Aquarium (Sea Animals / Action)",
         content: `🐬 I go to the aquarium.
 私は水族館に行きます。
 🐟 I see fish.
@@ -1667,7 +1667,7 @@ var eiken5story = [
 
     // Story 38 - Father's Car
     {
-        title: "Father's Car (Possession / Drive)",
+        title: "38. Father's Car (Possession / Drive)",
         content: `🚗 My father has a car.
 父は車を持っています。
 ⚪ It is white.
@@ -1712,7 +1712,7 @@ var eiken5story = [
 
     // Story 39 - Mother's Day
     {
-        title: "Mother's Day (Making / Verbs)",
+        title: "39. Mother's Day (Making / Verbs)",
         content: `💌 I make a card.
 私はカードを作ります。
 📃 I use pink paper.
@@ -1757,7 +1757,7 @@ var eiken5story = [
 
     // Story 40 - Picnic
     {
-        title: "Picnic (Seasons / Food)",
+        title: "40. Picnic (Seasons / Food)",
         content: `🌸 It is spring.
 春です。
 🍒 The flowers bloom.
@@ -1802,7 +1802,7 @@ var eiken5story = [
 
     // Story 41 - Music Festival
     {
-        title: "Music Festival (Instruments / Music)",
+        title: "41. Music Festival (Instruments / Music)",
         content: `🎵 We have a music festival.
 音楽会があります。
 🎹 I play the piano.
@@ -1847,7 +1847,7 @@ var eiken5story = [
 
     // Story 42 - Computer
     {
-        title: "Computer (Technology / Verbs)",
+        title: "42. Computer (Technology / Verbs)",
         content: `💻 My father has a computer.
 父はパソコンを持っています。
 🖱️ I use it.
@@ -1892,7 +1892,7 @@ var eiken5story = [
 
     // Story 43 - New Shoes
     {
-        title: "New Shoes (Clothing / Adjectives)",
+        title: "43. New Shoes (Clothing / Adjectives)",
         content: `👟 My shoes are old.
 私の靴は古いです。
 🏬 I go to the store.
@@ -1937,7 +1937,7 @@ var eiken5story = [
 
     // Story 44 - Hot Day
     {
-        title: "Hot Day (Weather / Want)",
+        title: "44. Hot Day (Weather / Want)",
         content: `☀️ It is hot today.
 今日は暑いです。
 🌡️ It is summer.
@@ -1982,7 +1982,7 @@ Tシャツを着ますか？
 
     // Story 45 - My Town
     {
-        title: "My Town (There is/are / Facilities)",
+        title: "45. My Town (There is/are / Facilities)",
         content: `🏘️ I live in a town.
 私は町に住んでいます。
 🏞️ There is a park.
@@ -2027,7 +2027,7 @@ Tシャツを着ますか？
 
     // Story 46 - Vegetables
     {
-        title: "Vegetables (Growing / Colors)",
+        title: "46. Vegetables (Growing / Colors)",
         content: `🌱 We have a garden.
 私たちは庭を持っています。
 🍅 We grow tomatoes.
@@ -2072,7 +2072,7 @@ Tシャツを着ますか？
 
     // Story 47 - Playing Tag
     {
-        title: "Playing Tag (Play / Action Verbs)",
+        title: "47. Playing Tag (Play / Action Verbs)",
         content: `🏃 It is break time.
 休み時間です。
 👫 I play tag.
@@ -2117,7 +2117,7 @@ Tシャツを着ますか？
 
     // Story 48 - My Dream
     {
-        title: "My Dream (Want to be / Future)",
+        title: "48. My Dream (Want to be / Future)",
         content: `💭 I have a dream.
 私には夢があります。
 ⚽ I want to be a soccer player.

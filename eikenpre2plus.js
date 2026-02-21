@@ -2,7 +2,7 @@
 var eikenpre2plus = [
     // Story 1 - A Responsible Part-Time Job
     {
-        title: "A Responsible Part-Time Job (Present Perfect Continuous)",
+        title: "1. A Responsible Part-Time Job (Present Perfect Continuous)",
         content: `📚 I have been working at a local bookstore for six months now.
 私は今、地元の書店で6ヶ月間働いています。
 💼 The manager, who has a lot of experience, taught me how to organize the shelves.
@@ -47,7 +47,7 @@ var eikenpre2plus = [
 
     // Story 2 - The School Art Exhibition
     {
-        title: "The School Art Exhibition (Relative Clauses / Subjunctive)",
+        title: "2. The School Art Exhibition (Relative Clauses / Subjunctive)",
         content: `🎨 Our art club is holding an exhibition in the school cafeteria next week.
 私たちのアートクラブは、来週学校のカフェテリアで展覧会を開催します。
 🖌️ The painting that I am working on features a beautiful landscape from my hometown.
@@ -92,7 +92,7 @@ var eikenpre2plus = [
 
     // Story 3 - Environmental Volunteer Work
     {
-        title: "Environmental Volunteer Work (Relative Clauses / It is... to)",
+        title: "3. Environmental Volunteer Work (Relative Clauses / It is... to)",
         content: `🏖️ Last weekend, I participated in a beach cleanup event with my neighbors.
 先週末、私は近所の人たちとビーチ清掃イベントに参加しました。
 🌊 We were shocked to see how much plastic waste had washed up on the shore.
@@ -137,7 +137,7 @@ var eikenpre2plus = [
 
     // Story 4 - A Special Cooking Lesson
     {
-        title: "A Special Cooking Lesson (Relative Clauses / Passive Voice)",
+        title: "4. A Special Cooking Lesson (Relative Clauses / Passive Voice)",
         content: `🍳 I took a cooking class yesterday to learn how to make Italian food.
 私は昨日、イタリア料理の作り方を学ぶために料理教室を受けました。
 👩‍🍳 The chef, who comes from Rome, taught us how to make pasta from scratch.
@@ -182,7 +182,7 @@ var eikenpre2plus = [
 
     // Story 5 - The Science Fair Project
     {
-        title: "The Science Fair Project (Subjunctive Past / Present Perfect Continuous)",
+        title: "5. The Science Fair Project (Subjunctive Past / Present Perfect Continuous)",
         content: `🔬 My partner and I have been working on our science project for two weeks.
 パートナーと私は、2週間科学プロジェクトに取り組んでいます。
 🌋 We decided to build a model volcano using baking soda and vinegar.
@@ -227,7 +227,7 @@ var eikenpre2plus = [
 
     // Story 6 - An Exciting Music Concert
     {
-        title: "An Exciting Music Concert (Subjunctive Past / Relative Clauses)",
+        title: "6. An Exciting Music Concert (Subjunctive Past / Relative Clauses)",
         content: `🎵 I went to a pop concert at the big stadium in the city last night.
 昨夜、私は街の大きなスタジアムへポップコンサートに行きました。
 🎤 The singer, who is famous worldwide, has an amazing voice.
@@ -272,7 +272,7 @@ var eikenpre2plus = [
 
     // Story 7 - Local Park Cleanup
     {
-        title: "Local Park Cleanup (Relative Clauses / Gerunds)",
+        title: "7. Local Park Cleanup (Relative Clauses / Gerunds)",
         content: `🤝 My community organized a cleanup day at the central park.
 私の地域社会は、中央公園で清掃デーを企画しました。
 🌳 The park, which is used by many children, had become dirty recently.
@@ -317,7 +317,7 @@ var eikenpre2plus = [
 
     // Story 8 - The Championship Game
     {
-        title: "The Championship Game (Relative Clauses / Present Perfect)",
+        title: "8. The Championship Game (Relative Clauses / Present Perfect)",
         content: `⚽ Our soccer team has finally reached the championship final.
 私たちのサッカーチームはついに決勝戦に進出しました。
 🏃 The coach, who is very strict, made us practice every day.
@@ -362,7 +362,7 @@ var eikenpre2plus = [
 
     // Story 9 - My Sister's Birthday Party
     {
-        title: "My Sister's Birthday Party (Subjunctive Past / Relative Clauses)",
+        title: "9. My Sister's Birthday Party (Subjunctive Past / Relative Clauses)",
         content: `🎉 We held a surprise birthday party for my sister last Sunday.
 私たちは先週の日曜日、姉のためにサプライズ誕生日パーティーを開きました。
 🍰 I was in charge of buying the cake and decorating the living room.
@@ -407,7 +407,7 @@ var eikenpre2plus = [
 
     // Story 10 - History Presentation Project
     {
-        title: "History Presentation Project (Relative Clauses / Passive Voice)",
+        title: "10. History Presentation Project (Relative Clauses / Passive Voice)",
         content: `📝 We were assigned to create a presentation about local history.
 私たちは地元の歴史についてのプレゼンテーションを作るように割り当てられました。
 🏰 I chose to research the old castle that stands in the city center.
@@ -452,7 +452,7 @@ var eikenpre2plus = [
 
     // Story 11 - A Day at the Zoo
     {
-        title: "A Day at the Zoo (Relative Clauses / Subjunctive Past)",
+        title: "11. A Day at the Zoo (Relative Clauses / Subjunctive Past)",
         content: `🦒 I visited the city zoo with my younger brother last weekend.
 私は先週末、弟と一緒に市立動物園を訪れました。
 🐘 The elephant, which is the largest animal there, was eating grass.
@@ -497,7 +497,7 @@ var eikenpre2plus = [
 
     // Story 12 - Learning a New Language
     {
-        title: "Learning a New Language (Relative Clauses / Gerunds)",
+        title: "12. Learning a New Language (Relative Clauses / Gerunds)",
         content: `🗣️ I have started learning Spanish because I want to travel to Spain.
 私はスペインへ旅行したいので、スペイン語を学び始めました。
 🇪🇸 My teacher, who is a native speaker, corrects my pronunciation.
@@ -542,7 +542,7 @@ var eikenpre2plus = [
 
     // Story 13 - Movie Night with Friends
     {
-        title: "Movie Night with Friends (Subjunctive Past / Comparisons)",
+        title: "13. Movie Night with Friends (Subjunctive Past / Comparisons)",
         content: `🎬 My friends and I went to the cinema to see the latest action movie.
 友達と私は最新のアクション映画を見るために映画館へ行きました。
 🍿 The theater was crowded because it was the first day of the release.
@@ -587,7 +587,7 @@ var eikenpre2plus = [
 
     // Story 14 - Hiking in the Mountains
     {
-        title: "Hiking in the Mountains (Relative Clauses / Sense Verbs)",
+        title: "14. Hiking in the Mountains (Relative Clauses / Sense Verbs)",
         content: `🥾 I woke up early to go hiking on Mt. Takao with my family.
 私は家族と高尾山へハイキングに行くために早起きしました。
 ⛰️ The trail, which is steep, was challenging but beautiful.
@@ -632,7 +632,7 @@ var eikenpre2plus = [
 
     // Story 15 - The Summer Festival
     {
-        title: "The Summer Festival (So... That... / Relative Clauses)",
+        title: "15. The Summer Festival (So... That... / Relative Clauses)",
         content: `🎉 I wore a yukata to go to the summer festival last night.
 昨夜、私は夏祭りに行くために浴衣を着ました。
 🏮 The streets were decorated with many red paper lanterns.
@@ -677,7 +677,7 @@ var eikenpre2plus = [
 
     // Story 16 - My Photography Hobby
     {
-        title: "My Photography Hobby (Present Perfect Continuous / Infinitives)",
+        title: "16. My Photography Hobby (Present Perfect Continuous / Infinitives)",
         content: `📸 I bought a digital camera because I wanted to take better pictures.
 私はもっと良い写真を撮りたかったので、デジタルカメラを買いました。
 🌄 My favorite subject to photograph is the sunset over the ocean.
@@ -722,7 +722,7 @@ var eikenpre2plus = [
 
     // Story 17 - Technology in the Classroom
     {
-        title: "Technology in the Classroom (Present Perfect / Conditionals)",
+        title: "17. Technology in the Classroom (Present Perfect / Conditionals)",
         content: `💻 Our school has introduced tablets for every student this year.
 今年、私たちの学校は全生徒のためにタブレットを導入しました。
 🖥️ The teacher uses an electronic whiteboard to show us videos and diagrams.
@@ -767,7 +767,7 @@ var eikenpre2plus = [
 
     // Story 18 - Dance Team Practice
     {
-        title: "Dance Team Practice (Relative Clauses / Gerunds)",
+        title: "18. Dance Team Practice (Relative Clauses / Gerunds)",
         content: `💃 I joined a dance team to perform at the school festival.
 私は学校祭で踊るためにダンスチームに入りました。
 🎶 The music we chose is fast and has a strong beat.
@@ -812,7 +812,7 @@ var eikenpre2plus = [
 
     // Story 19 - Shopping for Clothes
     {
-        title: "Shopping for Clothes (Relative Clauses / Present Perfect Continuous)",
+        title: "19. Shopping for Clothes (Relative Clauses / Present Perfect Continuous)",
         content: `🛍️ I went to the shopping mall to buy a new coat for winter.
 私は冬用の新しいコートを買うためにショッピングモールへ行きました。
 👗 The store, which just opened last month, was very trendy.
@@ -857,7 +857,7 @@ var eikenpre2plus = [
 
     // Story 20 - Life with My Pet Dog
     {
-        title: "Life with My Pet Dog (Relative Clauses / Conditionals)",
+        title: "20. Life with My Pet Dog (Relative Clauses / Conditionals)",
         content: `🐶 I have a golden retriever named Max who is three years old.
 私にはマックスという名前の3歳のゴールデンレトリバーがいます。
 🐾 Taking him for a walk every morning is my daily routine.
@@ -902,7 +902,7 @@ var eikenpre2plus = [
 
     // Story 21 - The Study Group
     {
-        title: "The Study Group (Relative Clauses / Superlatives)",
+        title: "21. The Study Group (Relative Clauses / Superlatives)",
         content: `📚 I joined a study group to prepare for the upcoming math test.
 私は今度の数学のテストに備えるために勉強グループに入りました。
 ✏️ My friend, who is good at math, explained the formulas to me.
@@ -947,7 +947,7 @@ var eikenpre2plus = [
 
     // Story 22 - A Handmade Craft Fair
     {
-        title: "A Handmade Craft Fair (Relative Clauses / Present Perfect Continuous)",
+        title: "22. A Handmade Craft Fair (Relative Clauses / Present Perfect Continuous)",
         content: `✂️ I visited a craft fair where local artists sell their handmade items.
 私は地元のアーティストが手作り品を売るクラフトフェアを訪れました。
 🎨 The accessories, which were made of glass, sparkled beautifully.
@@ -992,7 +992,7 @@ var eikenpre2plus = [
 
     // Story 23 - Game Night with Family
     {
-        title: "Game Night with Family (Relative Clauses / Present Perfect)",
+        title: "23. Game Night with Family (Relative Clauses / Present Perfect)",
         content: `🎲 My family has a tradition of playing board games every Friday night.
 私の家族には、毎週金曜日の夜にボードゲームをする伝統があります。
 🃏 We played a card game that relies on strategy and luck.
@@ -1037,7 +1037,7 @@ var eikenpre2plus = [
 
     // Story 24 - Studying at the Library
     {
-        title: "Studying at the Library (Relative Clauses / Present Perfect Continuous)",
+        title: "24. Studying at the Library (Relative Clauses / Present Perfect Continuous)",
         content: `📚 I went to the city library to do research for my essay.
 私はエッセイの調査をするために市立図書館へ行きました。
 📖 The library, which was renovated recently, is very modern and quiet.
@@ -1081,7 +1081,7 @@ var eikenpre2plus = [
    },
 // Story 25 - The School Debate Team
     {
-        title: "The School Debate Team (Gerunds / Conditionals)",
+        title: "25. The School Debate Team (Gerunds / Conditionals)",
         content: `🗣️ I joined the school debate team to improve my speaking skills.
 私はスピーキングスキルを向上させるために学校のディベートチームに入りました。
 📢 The topic we discussed yesterday was about school uniforms.
@@ -1126,7 +1126,7 @@ var eikenpre2plus = [
 
     // Story 26 - The Local Cultural Festival
     {
-        title: "The Local Cultural Festival (Present Perfect Continuous / Conditionals)",
+        title: "26. The Local Cultural Festival (Present Perfect Continuous / Conditionals)",
         content: `🎎 My town holds a cultural festival every autumn to celebrate traditions.
 私の町は伝統を祝うために、毎年秋に文化祭を開催します。
 🥁 I played the traditional drums on a large wooden stage.
@@ -1171,7 +1171,7 @@ var eikenpre2plus = [
 
     // Story 27 - Gardening on the Weekend
     {
-        title: "Gardening on the Weekend (Present Perfect / Conditionals)",
+        title: "27. Gardening on the Weekend (Present Perfect / Conditionals)",
         content: `🌱 I decided to plant some vegetables in my garden this spring.
 私はこの春、庭に野菜を植えることに決めました。
 🌷 My mother taught me how to water the flowers properly.
@@ -1216,7 +1216,7 @@ var eikenpre2plus = [
 
     // Story 28 - Visiting the History Museum
     {
-        title: "Visiting the History Museum (Present Perfect / Passive Voice)",
+        title: "28. Visiting the History Museum (Present Perfect / Passive Voice)",
         content: `🏛️ Our class went to the national museum to learn about ancient history.
 私たちのクラスは古代の歴史について学ぶために国立博物館へ行きました。
 🗿 The artifacts displayed there were thousands of years old.
@@ -1261,7 +1261,7 @@ var eikenpre2plus = [
 
     // Story 29 - Basketball Practice
     {
-        title: "Basketball Practice (Present Perfect / Conditionals)",
+        title: "29. Basketball Practice (Present Perfect / Conditionals)",
         content: `🏀 I practice basketball with my teammates every day after school.
 私は放課後毎日、チームメイトとバスケットボールを練習します。
 👟 My shoes are worn out because I run so much on the court.
@@ -1306,7 +1306,7 @@ var eikenpre2plus = [
 
     // Story 30 - Family Trip to Kyoto
     {
-        title: "Family Trip to Kyoto (Relative Clauses / Subjunctive Past)",
+        title: "30. Family Trip to Kyoto (Relative Clauses / Subjunctive Past)",
         content: `🚌 My family went on a trip to Kyoto during the summer vacation.
 私の家族は夏休みの間、京都へ旅行に行きました。
 🏯 We visited Kinkakuji, which is famous for its golden pavilion.
@@ -1351,7 +1351,7 @@ var eikenpre2plus = [
 
     // Story 31 - The Creative Writing Club
     {
-        title: "The Creative Writing Club (Present Perfect / Conditionals)",
+        title: "31. The Creative Writing Club (Present Perfect / Conditionals)",
         content: `✍️ I joined the writing club to express my imagination through stories.
 私は物語を通して想像力を表現するためにライティングクラブに入りました。
 📖 Every week, we write a short story and read it to each other.
@@ -1396,7 +1396,7 @@ var eikenpre2plus = [
 
     // Story 32 - The Cooking Competition
     {
-        title: "The Cooking Competition (Present Perfect Continuous / Subjunctive Past)",
+        title: "32. The Cooking Competition (Present Perfect Continuous / Subjunctive Past)",
         content: `🍴 I participated in a local cooking competition last Sunday.
 私は先週の日曜日、地元の料理コンテストに参加しました。
 🍳 The theme of the contest was using local vegetables.
@@ -1441,7 +1441,7 @@ var eikenpre2plus = [
 
     // Story 33 - The School Play
     {
-        title: "The School Play (Passive Voice / Relative Clauses)",
+        title: "33. The School Play (Passive Voice / Relative Clauses)",
         content: `🎭 I was chosen to play the main character in the school play.
 私は学校の劇で主人公を演じるように選ばれました。
 🎬 The story is about a hero who saves a village.
@@ -1486,7 +1486,7 @@ var eikenpre2plus = [
 
     // Story 34 - Helping at a Charity Event
     {
-        title: "Helping at a Charity Event (Relative Clauses / Conditionals)",
+        title: "34. Helping at a Charity Event (Relative Clauses / Conditionals)",
         content: `🤝 I volunteered at a charity run to raise money for a hospital.
 私は病院のために資金を集めるチャリティーランでボランティアをしました。
 🏃 The runners, who ranged from children to seniors, were energetic.
@@ -1531,7 +1531,7 @@ var eikenpre2plus = [
 
     // Story 35 - The Future Technology Fair
     {
-        title: "The Future Technology Fair (Relative Clauses / Present Perfect Continuous)",
+        title: "35. The Future Technology Fair (Relative Clauses / Present Perfect Continuous)",
         content: `💻 I visited a technology fair to see the latest robots.
 私は最新のロボットを見るために技術フェアを訪れました。
 🤖 One robot, which looked like a dog, could run and jump.
@@ -1576,7 +1576,7 @@ VRを試したことがありますか？
 
     // Story 36 - Cycling Along the River
     {
-        title: "Cycling Along the River (Present Perfect / Conditionals)",
+        title: "36. Cycling Along the River (Present Perfect / Conditionals)",
         content: `🚴 I went cycling along the river with my friends on Saturday.
 私は土曜日に友達と川沿いをサイクリングしました。
 🌊 The cycling path is flat and safe for beginners.
@@ -1621,7 +1621,7 @@ VRを試したことがありますか？
 
     // Story 37 - Chemistry Class Experiment
     {
-        title: "Chemistry Class Experiment (Present Perfect / Conditionals)",
+        title: "37. Chemistry Class Experiment (Present Perfect / Conditionals)",
         content: `🔬 In chemistry class, we mixed two liquids to see a reaction.
 化学の授業で、私たちは反応を見るために2つの液体を混ぜました。
 🧪 The mixture turned blue and started to create bubbles.
@@ -1666,7 +1666,7 @@ VRを試したことがありますか？
 
     // Story 38 - A Relaxing Picnic
     {
-        title: "A Relaxing Picnic (Present Perfect / Conditionals)",
+        title: "38. A Relaxing Picnic (Present Perfect / Conditionals)",
         content: `🧺 I went to the botanical garden for a picnic with my family.
 私は家族とピクニックのために植物園へ行きました。
 🥪 My mother made sandwiches with ham, cheese, and lettuce.
@@ -1711,7 +1711,7 @@ VRを試したことがありますか？
 
     // Story 39 - Piano Lesson Progress
     {
-        title: "Piano Lesson Progress (Present Perfect Continuous / Relative Clauses)",
+        title: "39. Piano Lesson Progress (Present Perfect Continuous / Relative Clauses)",
         content: `🎹 I have been taking piano lessons since I was six years old.
 私は6歳の時からピアノのレッスンを受けています。
 🎶 Currently, I am practicing a famous classical piece by Mozart.
@@ -1756,7 +1756,7 @@ VRを試したことがありますか？
 
     // Story 40 - Environmental Awareness Project
     {
-        title: "Environmental Awareness Project (Present Perfect / Conditionals)",
+        title: "40. Environmental Awareness Project (Present Perfect / Conditionals)",
         content: `🌍 Our school started a project to reduce plastic waste.
 私たちの学校はプラスチックごみを減らすプロジェクトを始めました。
 ♻️ We encourage students to bring their own reusable bottles.
@@ -1801,7 +1801,7 @@ VRを試したことがありますか？
 
     // Story 41 - The School Trip to Hiroshima
     {
-        title: "The School Trip to Hiroshima (Present Perfect / Relative Clauses)",
+        title: "41. The School Trip to Hiroshima (Present Perfect / Relative Clauses)",
         content: `🚌 We went to Hiroshima on a school trip to learn about peace.
 私たちは平和について学ぶために修学旅行で広島へ行きました。
 🕊️ The Peace Memorial Park was beautiful and very quiet.
@@ -1846,7 +1846,7 @@ VRを試したことがありますか？
 
     // Story 42 - Pottery Workshop
     {
-        title: "Pottery Workshop (Present Perfect / Gerunds)",
+        title: "42. Pottery Workshop (Present Perfect / Gerunds)",
         content: `🏺 I joined a pottery workshop to make my own cup.
 私は自分のカップを作るために陶芸ワークショップに参加しました。
 🎨 The teacher showed us how to shape the clay on a wheel.
@@ -1891,7 +1891,7 @@ VRを試したことがありますか？
 
     // Story 43 - The Movie Discussion Club
     {
-        title: "The Movie Discussion Club (Present Perfect / Subjunctive Past)",
+        title: "43. The Movie Discussion Club (Present Perfect / Subjunctive Past)",
         content: `🎬 Our club meets every Friday to watch and discuss movies.
 私たちのクラブは毎週金曜日に集まり、映画を見て議論します。
 🍿 We watched a classic black-and-white film yesterday.
@@ -1936,7 +1936,7 @@ VRを試したことがありますか？
 
     // Story 44 - Fitness and Health
     {
-        title: "Fitness and Health (Present Perfect / Conditionals)",
+        title: "44. Fitness and Health (Present Perfect / Conditionals)",
         content: `🏋️ I started going to the gym to get stronger and healthier.
 私はより強く、より健康的になるためにジムに通い始めました。
 💪 My trainer showed me how to use the weight machines safely.
@@ -1981,7 +1981,7 @@ VRを試したことがありますか？
 
     // Story 45 - The Reading Challenge
     {
-        title: "The Reading Challenge (Present Perfect / So... That...)",
+        title: "45. The Reading Challenge (Present Perfect / So... That...)",
         content: `📚 I challenged myself to read fifty books this year.
 私は今年、50冊の本を読むことに挑戦しました。
 📖 Reading broadens our knowledge and improves our vocabulary.
@@ -2026,7 +2026,7 @@ VRを試したことがありますか？
 
     // Story 46 - The Brass Band Concert
     {
-        title: "The Brass Band Concert (Present Perfect Continuous / Conditionals)",
+        title: "46. The Brass Band Concert (Present Perfect Continuous / Conditionals)",
         content: `🎺 I play the trumpet in the school brass band.
 私は学校のブラスバンドでトランペットを演奏しています。
 🎵 We practiced every day for the annual contest.
@@ -2071,7 +2071,7 @@ VRを試したことがありますか？
 
     // Story 47 - Hiking Club Adventure
     {
-        title: "Hiking Club Adventure (Present Perfect / Subjunctive Past)",
+        title: "47. Hiking Club Adventure (Present Perfect / Subjunctive Past)",
         content: `🥾 Our hiking club climbed a mountain to see the autumn leaves.
 私たちのハイキングクラブは紅葉を見るために山に登りました。
 🍁 The trees were red and yellow, creating a beautiful scene.
@@ -2116,7 +2116,7 @@ VRを試したことがありますか？
 
     // Story 48 - Photography Club Exhibition
     {
-        title: "Photography Club Exhibition (Present Perfect Continuous / Subjunctive Past)",
+        title: "48. Photography Club Exhibition (Present Perfect Continuous / Subjunctive Past)",
         content: `📸 The photography club held an exhibition in the school hall.
 写真部は学校のホールで展覧会を開催しました。
 🖼️ My photo of a stray cat was displayed near the entrance.

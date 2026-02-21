@@ -1,6 +1,6 @@
 var adult = [
         {
-            title: "Week 1: New Year Resolutions & Hatsumode (Jan 1 – Jan 7)",
+            title: "1. Week 1: New Year Resolutions & Hatsumode (Jan 1 – Jan 7)",
             content: `1. 🎍 Happy New Year! How did you spend the first day of 2026?
 明けましておめでとうございます！2026年の元日はどのように過ごしましたか？
 
@@ -153,7 +153,7 @@ var adult = [
 2026年を素晴らしい年にしましょう。明日踏み出す小さな一歩は何ですか？`
         },
         {
-            title: "Week 2: Coming of Age & Milestones (Jan 8 – Jan 14)",
+            title: "2. Week 2: Coming of Age & Milestones (Jan 8 – Jan 14)",
             content: `1. 👘 This week is "Coming of Age Day" in Japan. Do you remember when you turned 20?
 今週は日本の「成人の日」です。20歳になった時のことを覚えていますか？
 
@@ -305,7 +305,7 @@ USJのようなテーマパークを楽しむのに年齢制限はあると思�
 未来に乾杯しましょう！今月楽しみにしていることは何ですか？`
         },
         {
-            title: "Week 3: Dreams, Heroes & Equality (Jan 15 – Jan 21)",
+            title: "3. Week 3: Dreams, Heroes & Equality (Jan 15 – Jan 21)",
             content: `1. 🗣️ This week in the USA is Martin Luther King Jr. Day. Do you know his famous speech "I Have a Dream"?
 今週、アメリカはマーティン・ルーサー・キング・ジュニア・デーです。彼の有名な演説「私には夢がある」を知っていますか？
 
@@ -457,7 +457,7 @@ AI（人工知能）は平等の達成を助けるでしょうか、それとも
 夢に締め切りはありません。新しいことを始めるのに遅すぎるということはありますか？`
         },
         {
-            title: "Week 4: Scottish Pride & Comfort Food (Jan 22 – Jan 28)",
+            title: "4. Week 4: Scottish Pride & Comfort Food (Jan 22 – Jan 28)",
             content: `1. 🏴󠁧󠁢󠁳󠁣󠁴󠁿 January 25th is "Burns Night" in Scotland. Have you ever heard of the poet Robert Burns?
 1月25日はスコットランドの「バーンズ・ナイト」です。詩人のロバート・バーンズを聞いたことがありますか？
 
@@ -609,7 +609,7 @@ AI（人工知能）は平等の達成を助けるでしょうか、それとも
 「空腹は最高のソースである」。このことわざに同意しますか？`
         },
       {
-            title: "Week 5: Demons & Touchdowns (Jan 29 – Feb 4)",
+            title: "5. Week 5: Demons & Touchdowns (Jan 29 – Feb 4)",
             content: `1. 👹 February 3rd is Setsubun. Do you throw beans at home?
 2月3日は節分です。家で豆まきをしますか？
 2. 🥜 "Oni wa soto, Fuku wa uchi!" (Demons out, Luck in!). Do you shout this loudly?
@@ -712,7 +712,7 @@ AI（人工知能）は平等の達成を助けるでしょうか、それとも
 冬も半分終わりました。もう寒さにはうんざりですか？`
         },
         {
-            title: "Week 6: Snow Festivals & Winter Trips (Feb 5 – Feb 11)",
+            title: "6. Week 6: Snow Festivals & Winter Trips (Feb 5 – Feb 11)",
             content: `1. ❄️ The Sapporo Snow Festival is famous worldwide. Have you ever been to Hokkaido?
 さっぽろ雪まつりは世界的に有名です。北海道に行ったことはありますか？
 2. ⛷️ Do you know how to ski or snowboard? Which do you prefer?
@@ -815,7 +815,7 @@ AI（人工知能）は平等の達成を助けるでしょうか、それとも
 冬は美しいですが過酷です。快適さと美しさ、どちらを選びますか？`
         },
         {
-            title: "Week 7: Pancakes & Love (Feb 12 – Feb 18)",
+            title: "7. Week 7: Pancakes & Love (Feb 12 – Feb 18)",
             content: `1. 🍫 February 14th is Valentine's Day. Is it a big event for you?
 2月14日はバレンタインデーです。あなたにとって大きなイベントですか？
 2. 🥞 February 17th is "Shrove Tuesday" (Pancake Day) in the UK. Do you like pancakes?
@@ -918,7 +918,7 @@ LINEやメールで別れ話をするのはアリですか？
 「愛こそはすべて」。ビートルズに同意しますか？`
         },
         {
-            title: "Week 8: Presidents & History (Feb 19 – Feb 25)",
+            title: "8. Week 8: Presidents & History (Feb 19 – Feb 25)",
             content: `1. 🇺🇸 Presidents' Day is in February in the US. Who is the most famous US President?
 アメリカでは2月に大統領の日があります。一番有名なアメリカ大統領は誰ですか？
 2. 🎩 Abraham Lincoln is on the $5 bill and the penny. Who is on the 1000 yen bill now?
@@ -1021,7 +1021,7 @@ LINEやメールで別れ話をするのはアリですか？
 もし2026年の歴史書に一文だけ書き込めるなら、何と書きますか？`
         },
       {
-            title: "Week 9: Girls' Day & Welsh Dragons (Feb 26 – Mar 4)",
+            title: "9. Week 9: Girls' Day & Welsh Dragons (Feb 26 – Mar 4)",
             content: `1. 🎎 March 3rd is Hina Matsuri (Girls' Day). Do you display dolls at home?
 3月3日はひな祭りです。家にお雛様を飾りますか？
 2. 🏴󠁧󠁢󠁷󠁬󠁳󠁿 March 1st is St. David's Day in Wales. Do you know where Wales is?
@@ -1124,7 +1124,7 @@ LINEやメールで別れ話をするのはアリですか？
 家族の女性をお祝いしましょう。あなたの家族のボスは誰ですか？`
         },
         {
-            title: "Week 10: International Women (Mar 5 – Mar 11)",
+            title: "10. Week 10: International Women (Mar 5 – Mar 11)",
             content: `1. 👩‍🦰 March 8th is International Women's Day. Is this day famous in Japan?
 3月8日は国際女性デーです。この日は日本で有名ですか？
 2. 🌼 In Italy, men give women Mimosa flowers on this day. Do you like yellow flowers?
@@ -1227,7 +1227,7 @@ LINEやメールで別れ話をするのはアリですか？
 すべてのお母さん、姉妹、娘たちへ：ありがとう。今日誰に感謝しますか？`
         },
         {
-            title: "Week 11: Green & White (Mar 12 – Mar 18)",
+            title: "11. Week 11: Green & White (Mar 12 – Mar 18)",
             content: `1. 🍬 March 14th is White Day. Did you receive or give any return gifts?
 3月14日はホワイトデーです。お返しをもらいましたか、あげましたか？
 2. ☘️ March 17th is St. Patrick's Day (Ireland). Why is everything green?
@@ -1330,7 +1330,7 @@ LINEやメールで別れ話をするのはアリですか？
 「道があなたを迎えに来ますように（旅の無事を祈る）」（アイルランドの祝福）。何か祝福の言葉を知っていますか？`
         },
         {
-            title: "Week 12: Farewells & Graduation (Mar 19 – Mar 25)",
+            title: "12. Week 12: Farewells & Graduation (Mar 19 – Mar 25)",
             content: `1. 🌸 March is the season of farewells in Japan. Is it a sad or happy time for you?
 日本では3月は別れの季節です。あなたにとって悲しい時期ですか、嬉しい時期ですか？
 2. 🎓 Did you cry at your graduation ceremony?
@@ -1433,7 +1433,7 @@ LINEやメールで別れ話をするのはアリですか？
 さようなら3月、こんにちは4月！来シーズンの目標は何ですか？`
         },
 {
-            title: "Week 13: Pranks & Picnics (Mar 26 – Apr 1)",
+            title: "13. Week 13: Pranks & Picnics (Mar 26 – Apr 1)",
             content: `1. 🃏 April 1st is April Fool's Day. Do you like playing pranks on people?
 4月1日はエイプリルフールです。人にいたずらをするのは好きですか？
 2. 🤥 Have you ever been tricked by a fake news story on April 1st?
@@ -1536,7 +1536,7 @@ LINEやメールで別れ話をするのはアリですか？
 バレずに上司に嘘をつけるなら、仕事を休みますか？`
         },
         {
-            title: "Week 14: Easter Eggs & Bunnies (Apr 2 – Apr 8)",
+            title: "14. Week 14: Easter Eggs & Bunnies (Apr 2 – Apr 8)",
             content: `1. 🥚 Easter is this Sunday (April 5th, 2026). Do you celebrate Easter?
 今週の日曜（2026年4月5日）はイースターです。イースターを祝いますか？
 2. 🐰 The Easter Bunny brings eggs. Why a bunny? Bunnies don't lay eggs!
@@ -1639,7 +1639,7 @@ USJにはイースターパレードがあります。テーマパークのパ�
 ハッピーイースター！あなたのバスケットがチョコでいっぱいになりますように。`
         },
         {
-            title: "Week 15: Fresh Starts (Apr 9 – Apr 15)",
+            title: "15. Week 15: Fresh Starts (Apr 9 – Apr 15)",
             content: `1. 🆕 The new school/business year has truly started. How is your stress level?
 新学期・新年度が本格的に始まりました。ストレスレベルはどうですか？
 2. 👔 Have you introduced yourself (Jiko-shokai) recently? Are you good at it?
@@ -1742,7 +1742,7 @@ USJにはイースターパレードがあります。テーマパークのパ�
 新たなスタートは心構え次第です。未来について前向きですか？`
         },
         {
-            title: "Week 16: Planet Earth (Apr 16 – Apr 22)",
+            title: "16. Week 16: Planet Earth (Apr 16 – Apr 22)",
             content: `1. 🌍 April 22nd is Earth Day. Do you do anything for the environment?
 4月22日はアースデイです。環境のために何かしていますか？
 2. ♻️ Recycling in Japan is complicated. Do you separate your trash correctly?
@@ -1845,7 +1845,7 @@ USJにはイースターパレードがあります。テーマパークのパ�
 「第2の地球」はありません。未来を考えることは怖いですか、それともやる気が出ますか？`
         },
         {
-            title: "Week 17: Legends & Dragons (Apr 23 – Apr 29)",
+            title: "17. Week 17: Legends & Dragons (Apr 23 – Apr 29)",
             content: `1. 🐲 April 23rd is St. George's Day (England). Legend says he killed a dragon. Do you like fantasy stories?
 4月23日は聖ジョージの日（イングランド）です。伝説では彼はドラゴンを退治しました。ファンタジーの話は好きですか？
 2. 🐉 Western dragons breathe fire and are "monsters." Eastern dragons are water gods. Which is cooler?
@@ -1948,7 +1948,7 @@ USJにはイースターパレードがあります。テーマパークのパ�
 「いつまでも幸せに暮らしましたとさ」。現実の人生にハッピーエンドはありますか？`
         },
         {
-            title: "Week 18: Golden Week vs. May Day (Apr 30 – May 6)",
+            title: "18. Week 18: Golden Week vs. May Day (Apr 30 – May 6)",
             content: `1. 🌟 Golden Week has started! How many consecutive days off do you have?
 ゴールデンウィークが始まりました！何連休ですか？
 2. ✈️ Travel prices skyrocket during Golden Week. Is it worth it to travel now?
@@ -2051,7 +2051,7 @@ Netflixの一気見。シリーズを一度に見終わったことはありま�
 明日は仕事です。心の準備を！`
         },
         {
-            title: "Week 19: Mothers & Blues (May 7 – May 13)",
+            title: "19. Week 19: Mothers & Blues (May 7 – May 13)",
             content: `1. 🌹 Mother's Day is this Sunday (2nd Sunday of May). Have you bought a gift?
 今週の日曜は母の日です。プレゼントは買いましたか？
 2. 😨 "Gogatsu-byo" (May Blues/May Sickness). Do you feel unmotivated after the holidays?
@@ -2154,7 +2154,7 @@ Netflixの一気見。シリーズを一度に見終わったことはありま�
 明日も日は昇ります。憂鬱も過ぎ去ります。`
         },
         {
-            title: "Week 20: Wellness & Tea (May 14 – May 20)",
+            title: "20. Week 20: Wellness & Tea (May 14 – May 20)",
             content: `1. 🍵 May is the season of Shincha (New Tea). Do you drink green tea daily?
 5月は新茶の季節です。毎日緑茶を飲みますか？
 2. 🧘‍♀️ May is Mental Health Awareness Month in the US/UK. How do you relax?
@@ -2257,7 +2257,7 @@ Netflixの一気見。シリーズを一度に見終わったことはありま�
 「一杯のお茶が全てを解決する」。イギリス人に同意しますか？`
         },
         {
-            title: "Week 21: Gardens & Flowers (May 21 – May 27)",
+            title: "21. Week 21: Gardens & Flowers (May 21 – May 27)",
             content: `1. 🌹 The Chelsea Flower Show is held in London this week. Do you like gardening?
 今週ロンドンでチェルシー・フラワー・ショーが開催されます。ガーデニングは好きですか？
 2. 🏡 In the UK/US, people have big lawns. In Osaka, we have balconies. Do you have plants on your balcony?
@@ -2360,7 +2360,7 @@ Netflixの一気見。シリーズを一度に見終わったことはありま�
 地球は大きな庭です。私たちが手入れしなければなりません。`
         },
         {
-            title: "Week 22: BBQ Season (May 28 – June 3)",
+            title: "22. Week 22: BBQ Season (May 28 – June 3)",
             content: `1. 🍖 In the US, Memorial Day (end of May) starts the BBQ season. Do you own a BBQ grill?
 米国ではメモリアルデー（5月末）がBBQシーズンの始まりです。BBQグリルを持っていますか？
 2. 🥩 American BBQ (slow cooked ribs) vs. Japanese Yakiniku (grilled thin meat). Which do you prefer?
@@ -2463,7 +2463,7 @@ BBQは社交の場です。新しい人と話しますか？
 ミート・スウェット（肉の食べ過ぎで汗が出る）。お腹いっぱいですか？`
         },
         {
-            title: "Week 23: The Rainy Season (June 4 – June 10)",
+            title: "23. Week 23: The Rainy Season (June 4 – June 10)",
             content: `1. ☔ "Tsuyu" (Rainy Season) has started. Do you like rain?
 「梅雨」が始まりました。雨は好きですか？
 2. 🇬🇧 In the UK, people talk about the weather constantly. Do you check the forecast every day?
@@ -2566,7 +2566,7 @@ BBQは社交の場です。新しい人と話しますか？
 「雨がなければ花は咲かない（苦労なくして成果なし）」。`
         },
         {
-            title: "Week 24: Royalty & Fathers (June 11 – June 17)",
+            title: "24. Week 24: Royalty & Fathers (June 11 – June 17)",
             content: `1. 👑 The King's Birthday (Trooping the Colour) is celebrated in London in June. Do you like parades?
 6月にロンドンで国王の誕生日（トゥルーピング・ザ・カラー）が祝われます。パレードは好きですか？
 2. 👔 Next Sunday is Father's Day. Is it less popular than Mother's Day?
@@ -2669,7 +2669,7 @@ BBQは社交の場です。新しい人と話しますか？
 自分の人生の王様/女王様になろう。`
         },
       {
-            title: "Week 25: The Longest Day (June 18 – June 24)",
+            title: "25. Week 25: The Longest Day (June 18 – June 24)",
             content: `1. ☀️ The Summer Solstice (Geshi) is this week. It is the longest day of the year.
 夏至は今週です。一年で最も日が長い日です。
 2. 🗿 In the UK, people gather at Stonehenge to watch the sunrise. Do you like ancient ruins?
@@ -2772,7 +2772,7 @@ BBQは社交の場です。新しい人と話しますか？
 太陽を楽しんで、でも気をつけて！`
         },
         {
-            title: "Week 26: School's Out! (June 25 – July 1)",
+            title: "26. Week 26: School's Out! (June 25 – July 1)",
             content: `1. 🏫 In the US/UK, school finishes now for summer. Japanese kids have to wait until late July. Is that fair?
 米英では今学校が夏休みに入ります。日本の子供は7月下旬まで待たなければなりません。公平ですか？
 2. 🏖️ Western summer holidays are long (2 months). What would you do with 2 months off?
@@ -2875,7 +2875,7 @@ BBQは社交の場です。新しい人と話しますか？
 良い夏を！たくさんの思い出を作ってください。`
         },
         {
-            title: "Week 27: Stars & Stripes (July 2 – July 8)",
+            title: "27. Week 27: Stars & Stripes (July 2 – July 8)",
             content: `1. 🇺🇸 July 4th is Independence Day in the USA. Have you been to America?
 7月4日はアメリカの独立記念日です。アメリカに行ったことはありますか？
 2. 🎋 July 7th is Tanabata (Star Festival) in Japan. Which festival is quieter?
@@ -2978,7 +2978,7 @@ NYでは7月4日にホットドッグ早食い大会が有名です。70個も�
 星を見上げ続けよう！`
         },
         {
-            title: "Week 28: Festival Fever (July 9 – July 15)",
+            title: "28. Week 28: Festival Fever (July 9 – July 15)",
             content: `1. 🏮 Gion Matsuri (Kyoto) has started. It is one of the biggest festivals. Have you been?
 祇園祭（京都）が始まりました。最大級の祭りです。行ったことはありますか？
 2. 🎆 Tenjin Matsuri (Osaka) is coming soon. Which do you prefer: Kyoto's elegance or Osaka's energy?
@@ -3081,7 +3081,7 @@ NYでは7月4日にホットドッグ早食い大会が有名です。70個も�
 祭りの熱気を楽しんで！年に一度だけですよ。`
         },  
         {
-            title: "Week 29: The Sea & Holidays (July 16 – July 22)",
+            title: "29. Week 29: The Sea & Holidays (July 16 – July 22)",
             content: `1. 🏖️ Marine Day (Umi no Hi) is this week. Do you like the sea?
 今週は海の日です。海は好きですか？
 2. 👙 In the West, people go to the beach to get a tan. In Japan, many avoid the sun. Which are you?
@@ -3184,7 +3184,7 @@ NYでは7月4日にホットドッグ早食い大会が有名です。70個も�
 「海は人のすべての病を癒やす」（プラトン）。同意しますか？`
         },
         {
-            title: "Week 30: Osaka's Big Night (July 23 – July 29)",
+            title: "30. Week 30: Osaka's Big Night (July 23 – July 29)",
             content: `1. 🎆 This week is the climax of the Tenjin Matsuri (July 25). Are you going?
 今週は天神祭のクライマックス（7月25日）です。行きますか？
 2. 🚤 The boat procession (Funatogyo) is unique to Osaka. Have you seen the bonfire boats?
@@ -3287,7 +3287,7 @@ NYでは7月4日にホットドッグ早食い大会が有名です。70個も�
 大阪、君はうるさくて、暑くて、素晴らしい！`
         },
         {
-            title: "Week 31: Summer Heat (July 30 – August 5)",
+            title: "31. Week 31: Summer Heat (July 30 – August 5)",
             content: `1. 🥵 It is August. The temperature is over 35°C. Are you melting?
 8月です。気温は35度を超えています。溶けていませんか？
 2. 🎐 Shochu-mimai (Summer greeting cards). Do you send them?
@@ -3390,7 +3390,7 @@ NYでは7月4日にホットドッグ早食い大会が有名です。70個も�
 適者生存。秋まで生き残れるはず！`
         },
         {
-            title: "Week 32: Comedy & Arts (August 6 – August 12)",
+            title: "32. Week 32: Comedy & Arts (August 6 – August 12)",
             content: `1. 🎭 The Edinburgh Fringe Festival (biggest arts fest) is in August. Do you like live theater?
 エディンバラ・フリンジ・フェスティバル（最大の芸術祭）は8月です。生の演劇は好きですか？
 2. 🤣 Osaka is the capital of comedy in Japan. Do you watch Yoshimoto Shinkigeki?
@@ -3493,7 +3493,7 @@ NYでは7月4日にホットドッグ早食い大会が有名です。70個も�
 笑っていよう！人々を戸惑わせるから。`
         },
         {
-            title: "Week 33: Spirits & Hometowns (Aug 13 – Aug 19)",
+            title: "33. Week 33: Spirits & Hometowns (Aug 13 – Aug 19)",
             content: `1. 🍆 Obon is this week. Do you make a horse out of a cucumber? (Shoryo-uma).
 今週はお盆です。きゅうりで馬を作りますか？（精霊馬）。
 2. 🐄 Do you make a cow out of an eggplant? Why is the cow slower?
@@ -3596,7 +3596,7 @@ NYでは7月4日にホットドッグ早食い大会が有名です。70個も�
 さようなら霊たち。ナスの牛に乗って気をつけて帰ってね。`
         },
         {
-            title: "Week 34: Sports Fanatics (Aug 20 – Aug 26)",
+            title: "34. Week 34: Sports Fanatics (Aug 20 – Aug 26)",
             content: `1. ⚾ Koshien (High School Baseball) final is this week. Are you watching?
 甲子園（高校野球）の決勝は今週です。見ていますか？
 2. 🏟️ Koshien Stadium is legendary. Have you ever been there? The ivy is beautiful.
@@ -3699,7 +3699,7 @@ NYでは7月4日にホットドッグ早食い大会が有名です。70個も�
 スポーツは勝ち方と負け方を教えてくれます。`
         },
         {
-            title: "Week 35: Back to School (Aug 27 – Sep 2)",
+            title: "35. Week 35: Back to School (Aug 27 – Sep 2)",
             content: `1. 🏫 August 31st is a nightmare for students. Did you finish your homework early?
 8月31日は学生にとって悪夢です。宿題は早く終わらせましたか？
 2. 🎒 In the US, "Back to School" sales are huge. Stationery, clothes, laptops.
@@ -3802,7 +3802,7 @@ Gap（服屋）で大セール。今、秋服を買いますか？
 季節の変わり目を受け入れよう。さようなら夏！`
         },
         {
-            title: "Week 36: Work & Labor (Sep 3 – Sep 9)",
+            title: "36. Week 36: Work & Labor (Sep 3 – Sep 9)",
             content: `1. 🛠️ First Monday of September is Labor Day in the USA/Canada.
 9月の第一月曜は米国・カナダの労働者の日（レーバーデー）です。
 2. 👔 "Karoshi" (Death by overwork) is a Japanese word famous worldwide. Is it shameful?
@@ -3905,7 +3905,7 @@ Zoom会議。「ミュートになってますよ」。今年の流行語。
 よく働き、よく遊べ。遊ぶのを忘れないで！`
         },
         {
-            title: "Week 37: Respect & The Moon (Sep 10 – Sep 16)",
+            title: "37. Week 37: Respect & The Moon (Sep 10 – Sep 16)",
             content: `1. 🎑 Tsukimi (Moon Viewing) season. Do you look up at the moon?
 お月見の季節です。月を見上げますか？
 2. 🐰 In Japan, a rabbit is pounding mochi on the moon. In the US, it's a man's face. What do you see?
@@ -4008,7 +4008,7 @@ Zoom会議。「ミュートになってますよ」。今年の流行語。
 長寿への感謝。毎日に感謝しましょう。`
         },
         {
-            title: "Week 38: Silver Week & Equinox (Sep 17 – Sep 23)",
+            title: "38. Week 38: Silver Week & Equinox (Sep 17 – Sep 23)",
             content: `1. 📆 "Silver Week" occurs when holidays line up in September. Do we have a long weekend this year?
 9月に祝日が並ぶと「シルバーウィーク」になります。今年は連休ですか？
 2. 🍂 Autumn Equinox (Shubun no Hi). Day and night are equal length. Balance.
@@ -4111,7 +4111,7 @@ Zoom会議。「ミュートになってますよ」。今年の流行語。
 秋分のように人生のバランスをとろう。仕事と休息。`
         },
         {
-            title: "Week 39: Beer & Harvest (Sep 24 – Sep 30)",
+            title: "39. Week 39: Beer & Harvest (Sep 24 – Sep 30)",
             content: `1. 🍺 Oktoberfest starts in September (ironically). Do you like German beer?
 オクトーバーフェストは（皮肉にも）9月に始まります。ドイツビールは好きですか？
 2. 🥨 Pretzels and Sausages. German food matches beer perfectly.
@@ -4214,7 +4214,7 @@ Zoom会議。「ミュートになってますよ」。今年の流行語。
 収穫に乾杯！食べて、飲んで、楽しんで。`
         },
         {
-            title: "Week 40: Fashion Change (Oct 1 – Oct 7)",
+            title: "40. Week 40: Fashion Change (Oct 1 – Oct 7)",
             content: `1. 👗 "Koromogae" (Wardrobe Change). October 1st is the traditional day. Did you switch?
 「衣替え」。10月1日が伝統的な日です。入れ替えましたか？
 2. 🐆 Osaka is famous for leopard print (Hyo-gara). Do you own any animal print?
@@ -4317,7 +4317,7 @@ Zoom会議。「ミュートになってますよ」。今年の流行語。
 自分が幸せになる服を着よう！自信が最高のファッションです。`
         }, 
         {
-            title: "Week 41: Sports & Thanksgiving (Oct 8 – Oct 14)",
+            title: "41. Week 41: Sports & Thanksgiving (Oct 8 – Oct 14)",
             content: `1. 🏃‍♂️ Sports Day (Taiiku no Hi) is this week. Do you exercise?
 今週はスポーツの日です。運動しますか？
 2. 🦃 Canadian Thanksgiving is also this week. Did you know Canada celebrates early?
@@ -4420,7 +4420,7 @@ NFLを見る。ルールがややこしいです。
 「ありがとう」。今日誰かに言ってください。`
         },
         {
-            title: "Week 42: Autumn Leaves (Oct 15 – Oct 21)",
+            title: "42. Week 42: Autumn Leaves (Oct 15 – Oct 21)",
             content: `1. 🍁 "Momiji-gari" (Hunting for autumn leaves). Have you gone yet?
 「紅葉狩り」。もう行きましたか？
 2. 🏞️ Minoo Park in Osaka is famous for red leaves and... monkeys. Be careful!
@@ -4523,7 +4523,7 @@ NFLを見る。ルールがややこしいです。
 永遠に続くものはありません。それが秋の美しさです。`
         },
         {
-            title: "Week 43: Spooky Prep (Oct 22 – Oct 28)",
+            title: "43. Week 43: Spooky Prep (Oct 22 – Oct 28)",
             content: `1. 🎃 Halloween is coming! Do you carve a Jack-o'-lantern?
 ハロウィンが来ます！ジャック・オー・ランタンを彫りますか？
 2. 👻 Have you decided on a costume? Witch? Zombie? Minion?
@@ -4626,7 +4626,7 @@ YouTubeのゾンビメイク講座。試しましたか？
 ばあ！怖かった？`
         },
         {
-            title: "Week 44: Halloween Madness (Oct 29 – Nov 4)",
+            title: "44. Week 44: Halloween Madness (Oct 29 – Nov 4)",
             content: `1. 🎃 Happy Halloween (Oct 31)! Are you going to a party?
 ハッピーハロウィン（10月31日）！パーティーに行きますか？
 2. 🌉 Dotonbori in Osaka is chaotic on Halloween. Have you seen the crowds?
@@ -4730,7 +4730,7 @@ KFCがクリスマスチキンの注文受付。日本だけです。
         },
         
 {
-            title: "Week 45: Remembering (Nov 5 – Nov 11)",
+            title: "45. Week 45: Remembering (Nov 5 – Nov 11)",
             content: `1. 🔥 November 5th is Guy Fawkes Night in the UK. They light big bonfires. Do you like fire?
 11月5日は英国のガイ・フォークス・ナイトです。大きな焚き火をします。火は好きですか？
 2. 🌺 Remembrance Day (Nov 11) in the UK/Canada. People wear red poppies. Have you seen them?
@@ -4833,7 +4833,7 @@ KFCがクリスマスチキンの注文受付。日本だけです。
 火を絶やさないで。暖かくして！`
         },
         {
-            title: "Week 46: Children's Milestones (Nov 12 – Nov 18)",
+            title: "46. Week 46: Children's Milestones (Nov 12 – Nov 18)",
             content: `1. 👘 November 15th is Shichi-Go-San (7-5-3). Did you celebrate it as a child?
 11月15日は七五三です。子供の頃お祝いしましたか？
 2. 🍬 Chitose-ame (Long candy). It symbolizes long life. Did you eat it?
@@ -4936,7 +4936,7 @@ KFCがクリスマスチキンの注文受付。日本だけです。
 すべての子供は星です。輝かせてあげて。`
         },
         {
-            title: "Week 47: Gratitude (Nov 19 – Nov 25)",
+            title: "47. Week 47: Gratitude (Nov 19 – Nov 25)",
             content: `1. 🌾 November 23rd is Labor Thanksgiving Day in Japan. Who do you thank?
 11月23日は日本の勤労感謝の日です。誰に感謝しますか？
 2. 🦃 In the US, Thanksgiving is next week. Are you ready for a feast?
@@ -5039,7 +5039,7 @@ KFCがクリスマスチキンの注文受付。日本だけです。
 感謝は態度を変えます。感謝しましょう。`
         },
         {
-            title: "Week 48: Turkey & Shopping (Nov 26 – Dec 2)",
+            title: "48. Week 48: Turkey & Shopping (Nov 26 – Dec 2)",
             content: `1. 🦃 Happy Thanksgiving (US - Nov 26). Did you eat too much?
 ハッピーサンクスギビング（米国11/26）。食べすぎましたか？
 2. 🛍️ Black Friday (Nov 27). Did you fight for a cheap TV?
@@ -5142,7 +5142,7 @@ Netflixでクリスマス映画。また「ホーム・アローン」？
 12月の魔法。お祭り気分を楽しんで！`
         },
 {
-            title: "Week 49: Lights of the City (Dec 3 – Dec 9)",
+            title: "49. Week 49: Lights of the City (Dec 3 – Dec 9)",
             content: `1. 💡 The Midosuji Illumination is famous. It is the longest illuminated street. Have you walked it?
 御堂筋イルミネーションは有名です。最も長いイルミネーションストリートです。歩きましたか？
 2. 🕯️ Kobe Luminarie is beautiful but sad (memorial). Do you go every year?
@@ -5245,7 +5245,7 @@ USJのツリーは電飾数でギネス記録を持っています。眩しす�
 あなたは世の光です。輝いて！`
         },
         {
-            title: "Week 50: Party Season (Dec 10 – Dec 16)",
+            title: "50. Week 50: Party Season (Dec 10 – Dec 16)",
             content: `1. 🍻 "Bonenkai" means "Forget the Year Party." What do you want to forget from 2026?
 「忘年会」は年を忘れるパーティーです。2026年の何を忘れたいですか？
 2. 👔 Company Bonenkai. Is it mandatory? Do you hate it?
@@ -5348,7 +5348,7 @@ USJのツリーは電飾数でギネス記録を持っています。眩しす�
 クリスマスまであと1週間。生き残れ！`
         },
         {
-            title: "Week 51: Fried Chicken or Roast? (Dec 17 – Dec 23)",
+            title: "51. Week 51: Fried Chicken or Roast? (Dec 17 – Dec 23)",
             content: `1. 🍗 KFC for Christmas is a Japanese tradition. Foreigners are shocked. Are you?
 クリスマスのKFCは日本の伝統です。外国人はショックを受けます。あなたは？
 2. 🦃 Roast Turkey is the Western tradition. Do you have an oven big enough?
@@ -5451,7 +5451,7 @@ KFCの行列。予約しましたか？
 メリークリスマス！（24日じゃなくて25日に言ってね！）。`
         },
         {
-            title: "Week 52: Christmas & Boxing Day (Dec 24 – Dec 30)",
+            title: "52. Week 52: Christmas & Boxing Day (Dec 24 – Dec 30)",
             content: `1. 🎁 Christmas Day (Dec 25). Did you get what you wanted?
 クリスマス当日（12/25）。欲しかったものはもらえましたか？
 2. 📦 Boxing Day (Dec 26) in UK. It's for shopping, not fighting.

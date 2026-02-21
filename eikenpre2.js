@@ -3,7 +3,7 @@ var eikenpre2 = [
     // Story 1 - A New Routine
     // Target Grammar: Present Perfect / Comparatives
     {
-        title: "A New Routine (Present Perfect / Comparatives)",
+        title: "1. A New Routine (Present Perfect / Comparatives)",
         content: `🏡 Emma has decided to change her lifestyle this month.
 エマは今月、生活様式を変えることに決めました。
 🏃‍♀️ She has started jogging in the park every morning.
@@ -50,7 +50,7 @@ var eikenpre2 = [
     // Story 2 - Helping at Home
     // Target Grammar: Passive Voice / Adverbs
     {
-        title: "Helping at Home (Passive Voice / Adverbs)",
+        title: "2. Helping at Home (Passive Voice / Adverbs)",
         content: `🧹 Kenta is busy because he helps his parents every day.
 ケンタは毎日両親を手伝っているので忙しいです。
 🍽️ The dishes are usually washed by Kenta after dinner.
@@ -97,7 +97,7 @@ var eikenpre2 = [
     // Story 3 - Joining a Music Club
     // Target Grammar: Gerunds / Infinitive
     {
-        title: "Joining a Music Club (Gerunds / Infinitive)",
+        title: "3. Joining a Music Club (Gerunds / Infinitive)",
         content: `🎵 Yui joined the school music club in April.
 ユイは4月に学校の音楽部に入りました。
 🎸 She is interested in playing the guitar.
@@ -144,7 +144,7 @@ var eikenpre2 = [
     // Story 4 - Preparing for a Speech
     // Target Grammar: Superlative / Adjectives
     {
-        title: "Preparing for a Speech (Superlative / Adjectives)",
+        title: "4. Preparing for a Speech (Superlative / Adjectives)",
         content: `🗣️ Daiki has to give a speech in English class tomorrow.
 ダイキは明日、英語の授業でスピーチをしなければなりません。
 📝 He has been writing his draft for two days.
@@ -191,7 +191,7 @@ var eikenpre2 = [
     // Story 5 - Weekend Part-Time Job
     // Target Grammar: Relative Clause / SVOO
     {
-        title: "Weekend Part-Time Job (Relative Clause / SVOO)",
+        title: "5. Weekend Part-Time Job (Relative Clause / SVOO)",
         content: `☕ Haruka works at a cafe that is near the station.
 ハルカは駅の近くにあるカフェで働いています。
 📅 She usually works on Saturday and Sunday.
@@ -238,7 +238,7 @@ var eikenpre2 = [
     // Story 6 - Visiting Grandparents
     // Target Grammar: Be going to / When clause
     {
-        title: "Visiting Grandparents (Be going to / When clause)",
+        title: "6. Visiting Grandparents (Be going to / When clause)",
         content: `🚅 Satoshi is going to visit his grandparents next week.
 サトシは来週、祖父母を訪ねる予定です。
 🏡 They live in a small village in the mountains.
@@ -285,7 +285,7 @@ var eikenpre2 = [
     // Story 7 - A Study Abroad Dream
     // Target Grammar: If clause / Auxiliaries
     {
-        title: "A Study Abroad Dream (If clause / Auxiliaries)",
+        title: "7. A Study Abroad Dream (If clause / Auxiliaries)",
         content: `✈️ Mei has a dream of studying in Canada.
 メイにはカナダに留学するという夢があります。
 🇨🇦 She thinks Canada is a beautiful and safe country.
@@ -332,7 +332,7 @@ var eikenpre2 = [
     // Story 8 - Starting a Blog
     // Target Grammar: Present Perfect Continuous / Adjectives
     {
-        title: "Starting a Blog (Present Perfect Continuous / Adjectives)",
+        title: "8. Starting a Blog (Present Perfect Continuous / Adjectives)",
         content: `💻 Ryo has been writing a blog for three months.
 リョウは3ヶ月間ブログを書いています。
 📝 He writes about his daily life and hobbies.
@@ -379,7 +379,7 @@ SNSに写真を投稿するのは好きですか？
     // Story 9 - Training for Sports Day
     // Target Grammar: Because / Comparative
     {
-        title: "Training for Sports Day (Because / Comparative)",
+        title: "9. Training for Sports Day (Because / Comparative)",
         content: `🏃‍♂️ Koki is training hard because Sports Day is coming.
 運動会が近づいているので、コウキは一生懸命トレーニングしています。
 👟 He runs faster than any other student in his class.
@@ -426,7 +426,7 @@ SNSに写真を投稿するのは好きですか？
     // Story 10 - Working on a Group Project
     // Target Grammar: Make + Object + Adjective
     {
-        title: "Working on a Group Project (Make + Object + Adjective)",
+        title: "10. Working on a Group Project (Make + Object + Adjective)",
         content: `🧪 Hana is working on a science project with her group.
 ハナはグループで科学のプロジェクトに取り組んでいます。
 🎨 They decided to make a big poster about space.
@@ -473,7 +473,7 @@ SNSに写真を投稿するのは好きですか？
     // Story 11 - A School Festival Day
     // Target Grammar: Passive Voice / Be covered with
     {
-        title: "A School Festival Day (Passive Voice / Be covered with)",
+        title: "11. A School Festival Day (Passive Voice / Be covered with)",
         content: `🎪 Yuna is very busy preparing for the school festival.
 ユナは学園祭の準備でとても忙しいです。
 🎨 Her classroom is decorated with colorful papers.
@@ -520,7 +520,7 @@ SNSに写真を投稿するのは好きですか？
     // Story 12 - A Trip to the Aquarium
     // Target Grammar: Look + Adjective / Interested in
     {
-        title: "A Trip to the Aquarium (Look + Adjective / Interested in)",
+        title: "12. A Trip to the Aquarium (Look + Adjective / Interested in)",
         content: `🐟 Takumi visited a large aquarium last Sunday.
 タクミは先週の日曜日に大きな水族館を訪れました。
 🦈 He was surprised to see the big sharks.
@@ -567,7 +567,7 @@ SNSに写真を投稿するのは好きですか？
     // Story 13 - Learning to Cook
     // Target Grammar: How to... / Give + Person + Thing
     {
-        title: "Learning to Cook (How to... / Give + Person + Thing)",
+        title: "13. Learning to Cook (How to... / Give + Person + Thing)",
         content: `🍳 Miki has started learning how to cook.
 ミキは料理の仕方を学び始めました。
 👩‍🍳 Her mother teaches her how to make miso soup.
@@ -614,7 +614,7 @@ YouTubeで料理の動画を見ますか？
     // Story 14 - A Rainy Day at Home
     // Target Grammar: Present Perfect Continuous / Stop -ing
     {
-        title: "A Rainy Day at Home (Present Perfect Continuous / Stop -ing)",
+        title: "14. A Rainy Day at Home (Present Perfect Continuous / Stop -ing)",
         content: `🌧️ It has been raining since this morning.
 今朝からずっと雨が降っています。
 🏠 Ayaka decided to stay at home today.
@@ -661,7 +661,7 @@ YouTubeで料理の動画を見ますか？
     // Story 15 - Practicing an Instrument
     // Target Grammar: Comparative / Want to be
     {
-        title: "Practicing an Instrument (Comparative / Want to be)",
+        title: "15. Practicing an Instrument (Comparative / Want to be)",
         content: `🎻 Shun practices the violin every day after school.
 シュンは放課後毎日バイオリンを練習します。
 🏠 He usually practices in his room for two hours.
@@ -708,7 +708,7 @@ YouTubeで料理の動画を見ますか？
     // Story 16 - Cleaning the Local Park
     // Target Grammar: Passive Voice / Be glad to
     {
-        title: "Cleaning the Local Park (Passive Voice / Be glad to)",
+        title: "16. Cleaning the Local Park (Passive Voice / Be glad to)",
         content: `🌳 Riku joined a volunteer group last Saturday.
 リクは先週の土曜日にボランティアグループに参加しました。
 🧤 They went to the local park to pick up trash.
@@ -755,7 +755,7 @@ YouTubeで料理の動画を見ますか？
     // Story 17 - A Long Phone Call
     // Target Grammar: Enjoy -ing / Adverbial clauses
     {
-        title: "A Long Phone Call (Enjoy -ing / Adverbial clauses)",
+        title: "17. A Long Phone Call (Enjoy -ing / Adverbial clauses)",
         content: `📱 Saki called her cousin who lives in Tokyo.
 サキは東京に住んでいるいとこに電話しました。
 🏙️ Her cousin has just started high school life there.
@@ -802,7 +802,7 @@ YouTubeで料理の動画を見ますか？
     // Story 18 - Visiting a Museum
     // Target Grammar: Be interested in / Passive
     {
-        title: "Visiting a Museum (Be interested in / Passive)",
+        title: "18. Visiting a Museum (Be interested in / Passive)",
         content: `🏛️ Haru went to the history museum with his class.
 ハルはクラスと一緒に歴史博物館へ行きました。
 🚌 They went there by bus from their school.
@@ -849,7 +849,7 @@ YouTubeで料理の動画を見ますか？
     // Story 19 - Starting a New Club
     // Target Grammar: Relative pronoun / Try to
     {
-        title: "Starting a New Club (Relative pronoun / Try to)",
+        title: "19. Starting a New Club (Relative pronoun / Try to)",
         content: `📝 Aya loves writing stories and poems.
 アヤは物語や詩を書くのが大好きです。
 🏫 She decided to start a Creative Writing Club at school.
@@ -896,7 +896,7 @@ YouTubeで料理の動画を見ますか？
     // Story 20 - A Busy Morning
     // Target Grammar: Too... to... / Be late for
     {
-        title: "A Busy Morning (Too... to... / Be late for)",
+        title: "20. A Busy Morning (Too... to... / Be late for)",
         content: `⏰ Ken overslept this morning because his alarm didn't ring.
 今朝、目覚ましが鳴らなかったのでケンは寝坊しました。
 😱 He was too shocked to move for a moment.
@@ -943,7 +943,7 @@ YouTubeで料理の動画を見ますか？
     // Story 21 - A Visit to the Library
     // Target Grammar: Present Perfect / Recommend
     {
-        title: "A Visit to the Library (Present Perfect / Recommend)",
+        title: "21. A Visit to the Library (Present Perfect / Recommend)",
         content: `📚 Haruka has visited the school library many times this month.
 ハルカは今月、何度も学校の図書室を訪れています。
 📖 She likes reading mystery novels very much.
@@ -990,7 +990,7 @@ YouTubeで料理の動画を見ますか？
     // Story 22 - A New Pet
     // Target Grammar: Take care of / Adjective
     {
-        title: "A New Pet (Take care of / Adjective)",
+        title: "22. A New Pet (Take care of / Adjective)",
         content: `🐹 Nao got a hamster for her birthday last week.
 ナオは先週の誕生日にハムスターをもらいました。
 🏠 She bought a small cage and put it in her room.
@@ -1037,7 +1037,7 @@ YouTubeで料理の動画を見ますか？
     // Story 23 - A Class Debate
     // Target Grammar: Agree/Disagree with / Opinion
     {
-        title: "A Class Debate (Agree/Disagree with / Opinion)",
+        title: "23. A Class Debate (Agree/Disagree with / Opinion)",
         content: `🗣️ Yuto's class had a debate yesterday.
 ユウトのクラスは昨日討論会をしました。
 📱 The topic was "Students should not use smartphones at school."
@@ -1084,7 +1084,7 @@ YouTubeで料理の動画を見ますか？
     // Story 24 - A Snowy Morning
     // Target Grammar: So... that... / It is [adjective] to...
     {
-        title: "A Snowy Morning (So... that... / It is [adjective] to...)",
+        title: "24. A Snowy Morning (So... that... / It is [adjective] to...)",
         content: `❄️ It snowed heavily last night.
 昨夜、雪が激しく降りました。
 ⛄ The garden was covered with white snow this morning.
@@ -1131,7 +1131,7 @@ YouTubeで料理の動画を見ますか？
     // Story 25 - Preparing for a Test
     // Target Grammar: Help + Person + Verb / As... as possible
     {
-        title: "Preparing for a Test (Help + Person + Verb / As... as possible)",
+        title: "25. Preparing for a Test (Help + Person + Verb / As... as possible)",
         content: `📝 Mei has a big math test next week.
 メイは来週、大きな数学のテストがあります。
 📚 She is studying as hard as possible.
@@ -1178,7 +1178,7 @@ YouTubeで料理の動画を見ますか？
     // Story 26 - A Day at the Beach
     // Target Grammar: Sound/Look/Feel + Adjective / Comparison
     {
-        title: "A Day at the Beach (Sound/Look/Feel + Adjective / Comparison)",
+        title: "26. A Day at the Beach (Sound/Look/Feel + Adjective / Comparison)",
         content: `🏖️ Sora went to the beach with his family last August.
 ソラは去年の8月、家族と海に行きました。
 🚗 It took two hours to get there by car.
@@ -1225,7 +1225,7 @@ YouTubeで料理の動画を見ますか？
     // Story 27 - Choosing a Birthday Gift
     // Target Grammar: Give + Person + Thing / Something + Adjective
     {
-        title: "Choosing a Birthday Gift (Give + Person + Thing / Something + Adjective)",
+        title: "27. Choosing a Birthday Gift (Give + Person + Thing / Something + Adjective)",
         content: `🎁 Emi is looking for a birthday gift for her best friend.
 エミは親友への誕生日プレゼントを探しています。
 📅 Her friend's birthday is next Saturday.
@@ -1272,7 +1272,7 @@ YouTubeで料理の動画を見ますか？
     // Story 28 - Trying a New Sport
     // Target Grammar: Be good at / Practice -ing
     {
-        title: "Trying a New Sport (Be good at / Practice -ing)",
+        title: "28. Trying a New Sport (Be good at / Practice -ing)",
         content: `🏸 Rina started playing badminton in high school.
 リナは高校でバドミントンを始めました。
 🏃‍♀️ She wanted to try something new and exciting.
@@ -1319,7 +1319,7 @@ YouTubeで料理の動画を見ますか？
     // Story 29 - Helping a Neighbor
     // Target Grammar: Ask + Person + To / Passive
     {
-        title: "Helping a Neighbor (Ask + Person + To / Passive)",
+        title: "29. Helping a Neighbor (Ask + Person + To / Passive)",
         content: `🏡 Aoi lives next to an elderly woman named Mrs. Tanaka.
 アオイは田中さんという年配の女性の隣に住んでいます。
 👵 Mrs. Tanaka lives alone and sometimes needs help.
@@ -1366,7 +1366,7 @@ YouTubeで料理の動画を見ますか？
     // Story 30 - A New Hobby: Photography
     // Target Grammar: Enjoy -ing / Pictures of
     {
-        title: "A New Hobby: Photography (Enjoy -ing / Pictures of)",
+        title: "30. A New Hobby: Photography (Enjoy -ing / Pictures of)",
         content: `📸 Yuki bought a new camera last month.
 ユキは先月新しいカメラを買いました。
 🏞️ He enjoys taking pictures of nature.
@@ -1413,7 +1413,7 @@ YouTubeで料理の動画を見ますか？
     // Story 31 - Experiencing a Cultural Event
     // Target Grammar: Passive Voice / Be interested in
     {
-        title: "Experiencing a Cultural Event (Passive Voice / Be interested in)",
+        title: "31. Experiencing a Cultural Event (Passive Voice / Be interested in)",
         content: `🎎 Kana attended a traditional tea ceremony yesterday.
 カナは昨日、伝統的な茶道に参加しました。
 🍵 The ceremony was held in a quiet Japanese room.
@@ -1460,7 +1460,7 @@ YouTubeで料理の動画を見ますか？
     // Story 32 - Babysitting a Little Cousin
     // Target Grammar: Ask + Person + To / Give + Person + Thing
     {
-        title: "Babysitting a Little Cousin (Ask + Person + To / Give + Person + Thing)",
+        title: "32. Babysitting a Little Cousin (Ask + Person + To / Give + Person + Thing)",
         content: `👶 Hiro looked after his little cousin last weekend.
 ヒロは先週末、小さないとこの世話をしました。
 🏠 His aunt asked him to watch the boy for three hours.
@@ -1507,7 +1507,7 @@ YouTubeで料理の動画を見ますか？
     // Story 33 - A School Recycling Project
     // Target Grammar: Passive Voice / It is important to...
     {
-        title: "A School Recycling Project (Passive Voice / It is important to...)",
+        title: "33. A School Recycling Project (Passive Voice / It is important to...)",
         content: `♻️ The student council started a recycling project.
 生徒会はリサイクルプロジェクトを始めました。
 🗑️ Plastic bottles are collected in a special box.
@@ -1554,7 +1554,7 @@ YouTubeで料理の動画を見ますか？
     // Story 34 - Camping in the Mountains
     // Target Grammar: Past Continuous / Comparative
     {
-        title: "Camping in the Mountains (Past Continuous / Comparative)",
+        title: "34. Camping in the Mountains (Past Continuous / Comparative)",
         content: `⛺ Daigo went camping with his friends in August.
 ダイゴは8月に友達とキャンプに行きました。
 🌲 They set up a tent near a beautiful river.
@@ -1601,7 +1601,7 @@ YouTubeで料理の動画を見ますか？
     // Story 35 - Taking Online Lessons
     // Target Grammar: Present Perfect Continuous / Look forward to
     {
-        title: "Taking Online Lessons (Present Perfect Continuous / Look forward to)",
+        title: "35. Taking Online Lessons (Present Perfect Continuous / Look forward to)",
         content: `💻 Mina has been taking English lessons online for a year.
 ミナは1年間オンラインで英語のレッスンを受けています。
 🇵🇭 Her teacher lives in the Philippines.
@@ -1648,7 +1648,7 @@ YouTubeで料理の動画を見ますか？
     // Story 36 - Visiting Someone in Hospital
     // Target Grammar: Relative Pronoun / Hope that
     {
-        title: "Visiting Someone in Hospital (Relative Pronoun / Hope that)",
+        title: "36. Visiting Someone in Hospital (Relative Pronoun / Hope that)",
         content: `🏥 Taku went to the hospital to visit his grandfather.
 タクは祖父を見舞うために病院へ行きました。
 🛏️ His grandfather, who broke his leg, was in bed.
@@ -1695,7 +1695,7 @@ YouTubeで料理の動画を見ますか？
     // Story 37 - Playing Music at the Station
     // Target Grammar: Participle / Stop to...
     {
-        title: "Playing Music at the Station (Participle / Stop to...)",
+        title: "37. Playing Music at the Station (Participle / Stop to...)",
         content: `🎷 A group of students was playing jazz at the station.
 学生のグループが駅でジャズを演奏していました。
 🚉 Many people stopped to listen to their music.
@@ -1742,7 +1742,7 @@ YouTubeで料理の動画を見ますか？
     // Story 38 - Learning Calligraphy
     // Target Grammar: Gerund / As... as
     {
-        title: "Learning Calligraphy (Gerund / As... as)",
+        title: "38. Learning Calligraphy (Gerund / As... as)",
         content: `🖌️ Rika goes to a calligraphy class every Tuesday.
 リカは毎週火曜日に書道教室に行きます。
 ⚫ She uses a brush and black ink to write kanji.
@@ -1789,7 +1789,7 @@ YouTubeで料理の動画を見ますか？
     // Story 39 - Helping with Homework
     // Target Grammar: Help + Person + Verb / Show + Person + Thing
     {
-        title: "Helping with Homework (Help + Person + Verb / Show + Person + Thing)",
+        title: "39. Helping with Homework (Help + Person + Verb / Show + Person + Thing)",
         content: `📚 Yuna helps her younger brother with his homework.
 ユナは弟の宿題を手伝います。
 🔢 He is not good at math, so he needs help.
@@ -1836,7 +1836,7 @@ YouTubeで料理の動画を見ますか？
     // Story 40 - A Trip to the Planetarium
     // Target Grammar: Be covered with / Look like
     {
-        title: "A Trip to the Planetarium (Be covered with / Look like)",
+        title: "40. A Trip to the Planetarium (Be covered with / Look like)",
         content: `🌌 Tomoki visited the city planetarium yesterday.
 トモキは昨日、市のプラネタリウムを訪れました。
 🏛️ The room was dark and cool inside.
@@ -1883,7 +1883,7 @@ YouTubeで料理の動画を見ますか？
     // Story 41 - Moving to a New House
     // Target Grammar: Present Perfect / Comparative
     {
-        title: "Moving to a New House (Present Perfect / Comparative)",
+        title: "41. Moving to a New House (Present Perfect / Comparative)",
         content: `📦 Yoshi has just moved to a new house.
 ヨシはちょうど新しい家に引っ越したところです。
 🚚 His new house is bigger than his old one.
@@ -1930,7 +1930,7 @@ YouTubeで料理の動画を見ますか？
     // Story 42 - Shopping Online
     // Target Grammar: It is [adjective] to... / Too... to...
     {
-        title: "Shopping Online (It is [adjective] to... / Too... to...)",
+        title: "42. Shopping Online (It is [adjective] to... / Too... to...)",
         content: `🛒 Ryo likes buying clothes online.
 リョウはオンラインで服を買うのが好きです。
 📱 It is easy to find the size and color he wants.
@@ -1977,7 +1977,7 @@ Amazonや楽天を使いますか？
     // Story 43 - Raising Money for Charity
     // Target Grammar: Want + Person + To / Passive Voice
     {
-        title: "Raising Money for Charity (Want + Person + To / Passive Voice)",
+        title: "43. Raising Money for Charity (Want + Person + To / Passive Voice)",
         content: `🍪 The students decided to have a charity sale.
 生徒たちはチャリティーセールをすることに決めました。
 🍪 They baked cookies and cakes at home.
@@ -2024,7 +2024,7 @@ Amazonや楽天を使いますか？
     // Story 44 - Practicing a Foreign Language
     // Target Grammar: Present Perfect Continuous / Look forward to
     {
-        title: "Practicing a Foreign Language (Present Perfect Continuous / Look forward to)",
+        title: "44. Practicing a Foreign Language (Present Perfect Continuous / Look forward to)",
         content: `🗣️ Erika has been studying French for six months.
 エリカは6ヶ月間フランス語を勉強しています。
 📱 She uses a smartphone app to practice every day.
@@ -2071,7 +2071,7 @@ Amazonや楽天を使いますか？
     // Story 45 - Joining a Drama Club
     // Target Grammar: Relative Pronoun / Try to
     {
-        title: "Joining a Drama Club (Relative Pronoun / Try to)",
+        title: "45. Joining a Drama Club (Relative Pronoun / Try to)",
         content: `🎭 Kenta joined the drama club this semester.
 ケンタは今学期、演劇部に入りました。
 📜 They are practicing a play that is very funny.
@@ -2118,7 +2118,7 @@ Amazonや楽天を使いますか？
     // Story 46 - Volunteering at an Animal Shelter
     // Target Grammar: Stop -ing / Make + Person + Adjective
     {
-        title: "Volunteering at an Animal Shelter (Stop -ing / Make + Person + Adjective)",
+        title: "46. Volunteering at an Animal Shelter (Stop -ing / Make + Person + Adjective)",
         content: `🐕 Haru volunteers at an animal shelter on weekends.
 ハルは週末に動物保護施設でボランティアをしています。
 🏠 There are many dogs and cats that have no home.
@@ -2165,7 +2165,7 @@ SNSでニュースを共有しますか？
     // Story 47 - Taking Care of Houseplants
     // Target Grammar: Remember to / Be interested in
     {
-        title: "Taking Care of Houseplants (Remember to / Be interested in)",
+        title: "47. Taking Care of Houseplants (Remember to / Be interested in)",
         content: `🌿 Maki bought a small plant for her room.
 マキは部屋のために小さな植物を買いました。
 🪴 It is a green plant that is easy to grow.
@@ -2212,7 +2212,7 @@ SNSでニュースを共有しますか？
     // Story 48 - Looking Back on the Year
     // Target Grammar: Present Perfect / Be going to
     {
-        title: "Looking Back on the Year (Present Perfect / Be going to)",
+        title: "48. Looking Back on the Year (Present Perfect / Be going to)",
         content: `📅 It is December, and the year is ending soon.
 12月になり、もうすぐ一年が終わります。
 🤔 Saki is thinking about what she did this year.
