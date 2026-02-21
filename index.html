@@ -2653,116 +2653,31 @@
     }
 
     function loadLessonsData() {
-        return new Promise((resolve, reject) => {
-            try {
-                const classData = {
-                    'Bronze': {
-                        stories: typeof bronzeStories !== 'undefined' ? bronzeStories : []
-                    },
-                    'Silver': {
-                        stories: typeof silverStories !== 'undefined' ? silverStories : []
-                    },
-                    'Gold': {
-                        stories: typeof goldStories !== 'undefined' ? goldStories : []
-                    },
-                    'Adult': adult,
-                    'X': x,
-                    'C': c,
-                    'Eiken1': eiken1,
-                    'EikenPre1': eikenpre1,
-                    'Eiken2': eiken2,
-                    'EikenPre2': eikenpre2,
-                    'EikenPre2Plus': eikenpre2plus,
-                    'Eiken3': {
-                        stories: window.eiken3 ? window.eiken3.map(story => ({
-                            title: story.title,
-                            content: story.content
-                        })) : [],
-                        questions: window.eiken3questions ? window.eiken3questions[0].content : []
-                    },
-                    'Eiken4': {
-                        stories: Array.isArray(eiken4) ?
-                            eiken4.map(story => ({
-                                title: story.title,
-                                content: story.content
-                            })) :
-                            Object.values(eiken4).map(story => ({
-                                title: story.title,
-                                content: story.content
-                            }))
-                    },
-                    'Eiken6': {
-                        stories: window.eiken6story ? window.eiken6story.map(story => ({
-                            title: story.title,
-                            content: story.content
-                        })) : []
-                    },
-                    'Eiken7': {
-                        stories: window.eiken7story ? window.eiken7story.map(story => ({
-                            title: story.title,
-                            content: story.content
-                        })) : []
-                    },
-                    'Eiken5': {
-                        stories: window.eiken5story ? window.eiken5story.map(story => ({
-                            title: story.title,
-                            content: story.content
-                        })) : [],
-                        questions: window.qa5 ? window.qa5[0].content : []
-                    },
-                    'HighSchool': {
-                        stories: [
-                            {
-                                title: 'Getting to Know You',
-                                content: gettingtoknow[0].content
-                            },
-                            {
-                                title: 'Easy Questions',
-                                content: easyquestions[0].content
-                            },
-                            {
-                                title: 'Would You Rather',
-                                content: wouldyourather[0].content
-                            }
-                        ]
-                    }
-                };
-
-                Object.entries(classData).forEach(([className, data]) => {
-                    if (!data) return;
-
-                    if (Array.isArray(data)) {
-                        lessonsData[className] = {
-                            stories: data.map((item, i) => ({
-                                title: item.title ? item.title : `Story ${i+1}`,
-                                content: item.content ? item.content : item
-                            }))
-                        };
-                    } else if (data.stories || data.questions) {
-                        lessonsData[className] = data;
-                    } else {
-                        lessonsData[className] = {
-                            stories: Object.entries(data).map(([key, content]) => ({
-                                title: key.replace(/_/g, ' '),
-                                content: content
-                            }))
-                        };
-                    }
-
-                    console.log(`${className} loaded with`,
-                        lessonsData[className].stories?.length || 0, 'stories and',
-                        lessonsData[className].questions ? 'questions' : 'no questions');
-                });
-
-                if (Object.keys(lessonsData).length > 0) {
-                    resolve();
-                } else {
-                    reject('No lesson data found');
-                }
-            } catch (e) {
-                console.error('Error loading lesson data:', e);
-                reject(e);
-            }
+        return Promise.resolve().then(() => {
+            lessonsData = {
+                'Bronze': bronzeStories,
+                'Silver': silverStories,
+                'Gold': goldStories,
+                'Adult': adult,
+                'X': x,
+                'C': c,
+                'Eiken1': eiken1,
+                'Eiken2': eiken2,
+                'Eiken3': eiken3,
+                'Eiken3_Questions': eiken3questions,
+                'Eiken4': eiken4,
+                'Eiken5': eiken5story,
+                'Eiken5_Questions': qa5,
+                'Eiken6': eiken6story,
+                'Eiken7': eiken7story,
+                'EikenPre1': eikenpre1,
+                'EikenPre2': eikenpre2,
+                'EikenPre2Plus': eikenpre2plus,
+                'GettingToKnow': gettingtoknow,
+                'EasyQuestions': easyquestions,
+                'WouldYouRather': wouldyourather,
+                'Vocab': vocab
+            };
         });
     }
 
