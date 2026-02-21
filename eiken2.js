@@ -1,5 +1,5 @@
 // eiken2_improved.js - Eiken 2 Stories (Revised)
-const eiken2 = [
+var eiken2 = [
     // Story 1 - University Orientation
     {
         title: "A University Orientation (Relative Clauses / Conditionals)",

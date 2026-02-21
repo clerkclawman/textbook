@@ -1,5 +1,5 @@
 // eiken1_remastered.js
-const eiken1 = [
+var eiken1 = [
     // Story 1 - Corporate Merger
     {
         title: "Corporate Merger (Inversion / Subjunctive)",

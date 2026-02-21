@@ -1,5 +1,5 @@
 // eikenpre1_remastered.js
-const eikenpre1 = [
+var eikenpre1 = [
     // Story 1 - A Volunteer Experience
     {
         title: "A Volunteer Experience (Inversion / Advanced Vocabulary)",

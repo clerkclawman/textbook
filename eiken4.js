@@ -1,5 +1,5 @@
 // eiken4.js
-const eiken4 = [
+var eiken4 = [
     {
         title: "1. Last Weekend (Past Tense)",
         content: `🏞️ I went to the park last Sunday.

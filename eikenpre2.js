@@ -1,5 +1,5 @@
 // eikenpre2_remastered.js - Eiken Pre-2 Stories
-const eikenpre2 = [
+var eikenpre2 = [
     // Story 1 - A New Routine
     // Target Grammar: Present Perfect / Comparatives
     {

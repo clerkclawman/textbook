@@ -1,5 +1,5 @@
 // eikenpre2plus_remastered.js
-const eikenpre2plus = [
+var eikenpre2plus = [
     // Story 1 - A Responsible Part-Time Job
     {
         title: "A Responsible Part-Time Job (Present Perfect Continuous)",
