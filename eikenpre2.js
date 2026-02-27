@@ -1518,6 +1518,10 @@ YouTubeで料理の動画を見ますか？
 キャップも新しいものを作るためにリサイクルされます。
 🌍 It is important to reduce waste for the earth.
 地球のためにゴミを減らすことは重要です。
+✅ If students recycle more, they will reduce waste faster.
+生徒たちがもっとリサイクルすれば、ゴミはもっと早く減ります。
+✅ If everyone cooperates, the project will be successful.
+みんなが協力すれば、プロジェクトは成功するでしょう。
 📄 They made posters to explain the rules.
 彼らはルールを説明するためにポスターを作りました。
 🤝 Everyone is cooperating with the project.
@@ -1569,6 +1573,10 @@ YouTubeで料理の動画を見ますか？
 星は街よりもずっと明るかったです。
 🐻 They were a little afraid of wild animals.
 彼らは野生動物を少し怖がっていました。
+✅ If it rains heavily, they will move the tent to a shelter.
+雨が激しく降れば、彼らはテントを避難所に移動するでしょう。
+✅ If they see wild animals, they will be very careful.
+野生動物を見れば、彼らはとても注意深くなるでしょう。
 💤 Sleeping in a sleeping bag was a new experience.
 寝袋で寝るのは新しい経験でした。
 🌅 The sunrise the next morning was amazing.
@@ -1616,6 +1624,10 @@ YouTubeで料理の動画を見ますか？
 彼女はニュース記事を読んでレッスンの予習をします。
 😊 Her speaking skills are getting better.
 彼女のスピーキングスキルは良くなってきています。
+✅ If she practices every day, she will improve quickly.
+毎日練習すれば、彼女はすぐに上達するでしょう。
+✅ If she continues taking lessons, her English will become excellent.
+レッスンを続ければ、彼女の英語は素晴らしくなるでしょう。
 ✈️ She looks forward to visiting her teacher someday.
 彼女はいつか先生を訪ねるのを楽しみにしています。
 🌏 Technology helps us connect with the world.
@@ -1663,6 +1675,10 @@ YouTubeで料理の動画を見ますか？
 医者は、彼には歩く練習が必要だと言いました。
 💪 Taku hopes that his grandfather gets well soon.
 タクは祖父が早く良くなることを願っています。
+✅ If the family supports him, he will recover faster.
+家族が彼を支えれば、彼はもっと早く回復するでしょう。
+✅ If he practices walking every day, he will get stronger.
+毎日歩く練習をすれば、彼はもっと強くなるでしょう。
 🏠 He wants to go back home as soon as possible.
 彼はできるだけ早く家に帰りたがっています。
 👨‍👩‍👦 Family support is very important when someone is sick.
@@ -1712,6 +1728,10 @@ YouTubeで料理の動画を見ますか？
 帽子にお金を入れる人もいました。
 🎵 Music has the power to change people's mood.
 音楽には人々の気分を変える力があります。
+✅ If they practice more, they will become professional musicians.
+もっと練習すれば、彼らはプロの音楽家になれるでしょう。
+✅ If people enjoy the music, they will come again tomorrow.
+人々が音楽を楽しめば、明日また来るでしょう。
 📸 I took a video of their performance.
 私は彼らの演奏の動画を撮りました。
 🌟 I want to learn how to play the saxophone.
@@ -1757,6 +1777,10 @@ YouTubeで料理の動画を見ますか？
 リカは同じ文字を何度も練習します。
 😊 When she writes well, she feels satisfied.
 上手に書けると、彼女は満足感を感じます。
+✅ If she practices hard, she will win another prize.
+一生懸命練習すれば、彼女はまた賞を取れるでしょう。
+✅ If she continues taking lessons, her calligraphy will be as beautiful as art.
+レッスンを続ければ、彼女の書道は芸術のように美しくなるでしょう。
 🏆 She won a prize in a contest last year.
 彼女は昨年、コンクールで賞を取りました。
 🏠 She displays her best work in her room.
@@ -1796,6 +1820,10 @@ YouTubeで料理の動画を見ますか？
 彼は数学が得意ではないので、助けが必要です。
 👩‍🏫 Yuna shows him how to solve the problems.
 ユナは彼に問題の解き方を教えます。
+✅ If Yuna explains clearly, her brother will understand better.
+ユナがはっきり説明すれば、弟はよりよく理解するでしょう。
+✅ If he studies hard, his math skills will improve.
+一生懸命勉強すれば、彼の数学能力は向上するでしょう。
 🤔 Sometimes, the questions are difficult for Yuna too.
 時々、その質問はユナにとっても難しいです。
 📝 She tells him to write the answers clearly.
@@ -1857,6 +1885,10 @@ YouTubeで料理の動画を見ますか？
 彼は銀河のポストカードを買いました。
 🌟 He wants to buy a telescope to see real stars.
 彼は本物の星を見るために望遠鏡を買いたいと思っています。
+✅ If he buys a telescope, he will see real stars every night.
+望遠鏡を買えば、彼は毎晩本物の星を見ることができるでしょう。
+✅ If he learns more about space, he will become an astronomer.
+宇宙についてもっと学べば、彼は天文学者になるでしょう。
 
 🌌 Have you ever been to a planetarium?
 プラネタリウムに行ったことがありますか？
