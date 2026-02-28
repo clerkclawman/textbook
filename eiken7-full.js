@@ -13,7 +13,7 @@ var eiken7full = [
   },
   {
     "title": "4. Family Feelings",
-    "content": "😊 I am happy today.\n私は今日幸せです。\n\n👨 My father is strong.\n私の父は強いです。\n\n👩 My mother is nice.\n私の母はいい人です。\n\n👶 My sister is small.\n私の妹は小さいです。\n\n👧 My brother is big.\n私の弟は大きいです。\n\n❤️ We feel love.\n私たちは愛を感じます。\n\n😢 Sometimes I feel sad.\n時々悲しい気分になります。\n\n😊 But I feel happy soon.\nでもすぐに幸せになります。\n\n👨 My family loves me.\n私の家族は私を愛しています。\n\n👩 I love my family too.\n私も家族を愛しています。\n\n😊 Are you happy today?\nあなたは今日幸せですか？\n\n👨 Is your father strong?\nあなたの父は強いですか？\n\n👩 Is your mother nice?\nあなたの母はいい人ですか？\n\n👶 Is your sister small?\nあなたの妹は小さいですか？\n\n👧 Is your brother big?\nあなたの弟は大きいですか？\n\n❤️ Do you feel love?\nあなたは愛を感じますか？\n\n😢 Do you feel sad?\nあなたは悲しい気分ですか？\n\n😊 Do you feel happy?\nあなたは幸せですか？\n\n👨 Do they love you?\n彼らはあなたを愛していますか？\n\n👩 Do you love your family?\nあなたは家族を愛していますか？"
+    "content": "😊 I am happy today.\n私は今日幸せです。\n\n👨 My father is strong.\n私の父は強いです。\n\n👩 My mother is nice.\n私の母はいい人です。\n\n👶 My sister is small.\n私の妹は小さいです。\n\n👧 My brother is big.\n私の弟は大きいです。\n\n❤️ We love each other.\n私たちはお互いを愛しています。\n\n😢 I am sad sometimes.\n私は時々悲しいです。\n\n😊 I am happy again.\n私はまた幸せです。\n\n👨 My family loves me.\n私の家族は私を愛しています。\n\n👩 I love my family too.\n私も家族を愛しています。\n\n😊 Are you happy today?\nあなたは今日幸せですか？\n\n👨 Is your father strong?\nあなたの父は強いですか？\n\n👩 Is your mother nice?\nあなたの母はいい人ですか？\n\n👶 Is your sister small?\nあなたの妹は小さいですか？\n\n👧 Is your brother big?\nあなたの弟は大きいですか？\n\n❤️ Do you love your family?\nあなたは家族を愛していますか？\n\n😢 Do you feel sad?\nあなたは悲しい気分ですか？\n\n😊 Do you feel happy?\nあなたは幸せですか？\n\n👨 Do they love you?\n彼らはあなたを愛していますか？\n\n👩 Do you love your family?\nあなたは家族を愛していますか？"
   },
   {
     "title": "5. Pets I Like",
@@ -109,7 +109,7 @@ var eiken7full = [
   },
   {
     "title": "28. At the Festival (Basic Phrases)",
-    "content": "🎏 The festival is fun.\nお祭りは楽しい.\n🍜 I eat food.\n私は食べ物を食べます.\n🎶 I listen to music.\n私は音楽を聞きます.\n🎎 I dance.\n私は踊ります.\n🏮 It is pretty.\nそれはきれいです.\n🎉 Happy!\nハッピー！\n🎫 I buy a ticket.\n私はチケットを買います.\n🚮 I see a bin.\n私はゴミ箱を見ます.\n🎇 Wow!\nすごい！\n📸 Nice photo.\nいい写真.\n🎏 Is it fun？\n楽しいですか？\n🍜 Do you eat？\nあなたは食べますか？\n🎶 Do you listen？\nあなたは聞きますか？\n🎎 Do you dance？\nあなたは踊りますか？\n🏮 Is it pretty？\nそれはきれいですか？\n🎉 Are you happy？\nあなたは幸せですか？\n🎫 Do you buy？\nあなたは買いますか？\n🚮 Do you see？\nあなたは見ますか？\n🎇 Wow!\nすごい！\n📸 Is it nice？\nそれはいいですか？"
+    "content": "🎏 The festival is fun.\nお祭りは楽しい.\n🍜 I eat food.\n私は食べ物を食べます.\n🎶 I listen to music.\n私は音楽を聞きます.\n🎎 I dance.\n私は踊ります.\n🏮 It is pretty.\nそれはきれいです.\n🎉 I am happy!\n嬉しい！\n🎫 I buy a ticket.\n私はチケットを買います.\n🚮 I see a bin.\n私はゴミ箱を見ます.\n🎇 Wow!\nすごい！\n📸 The photo is nice.\n写真はいい。\n🎏 Is it fun？\n楽しいですか？\n🍜 Do you eat？\nあなたは食べますか？\n🎶 Do you listen？\nあなたは聞きますか？\n🎎 Do you dance？\nあなたは踊りますか？\n🏮 Is it pretty？\nそれはきれいですか？\n🎉 Are you happy？\nあなたは幸せですか？\n🎫 Do you buy？\nあなたは買いますか？\n🚮 Do you see？\nあなたは見ますか？\n🎇 Wow!\nすごい！\n📸 Is it nice？\nそれはいいですか？"
   },
   {
     "title": "29. Obon Numbers (Numbers)",
@@ -117,11 +117,11 @@ var eiken7full = [
   },
   {
     "title": "30. Fireworks! (Basic Phrases)",
-    "content": "🎆 Look up!\n見上げてください！\n💥 Boom!\nドーン！\n👶 Children smile.\n子供たちは笑います.\n🌃 The sky is bright.\n空は明るい.\n💔 The dog runs.\n犬は走ります.\n🎇 See colors.\n色を見てください.\n🎉 Happy!\nハッピー！\n🏙️ Big city!\n大きな都市.\n✨ Beautiful!\n綺麗！\n🎆 I see fire.\n私は火を見ます.\n🎆 Look!\n見て！\n💥 What noise？\nどんな音？\n👶 Are they happy？\n彼らは幸せですか？\n🌃 Is it bright？\n明るいですか？\n💔 Does it run？\nそれは走りますか？\n🎇 What color？\n何色？\n🎉 Are you happy？\nあなたは幸せですか？\n🏙️ Is it big？\nそれは大きいですか？\n✨ Is it beautiful？\nそれは綺麗ですか？\n🎆 Do you see？\nあなたは見ますか？"
+    "content": "🎆 Look up!\n見上げてください！\n💥 Boom!\nドーン！\n👶 Children smile.\n子供たちは笑います.\n🌃 The sky is bright.\n空は明るい.\n💔 The dog runs.\n犬は走ります.\n🎇 See colors.\n色を見てください.\n🎉 I am happy!\n嬉しい！\n🏙️ Big city!\n大きな都市.\n✨ Beautiful!\n綺麗！\n🎆 I see fire.\n私は火を見ます.\n🎆 Look!\n見て！\n💥 What noise？\nどんな音？\n👶 Are they happy？\n彼らは幸せですか？\n🌃 Is it bright？\n明るいですか？\n💔 Does it run？\nそれは走りますか？\n🎇 What color？\n何色？\n🎉 Are you happy？\nあなたは幸せですか？\n🏙️ Is it big？\nそれは大きいですか？\n✨ Is it beautiful？\nそれは綺麗ですか？\n🎆 Do you see？\nあなたは見ますか？"
   },
   {
     "title": "31. Hot Summer (Basic / Be-Verb)",
-    "content": "🌡️ It is hot.\n暑い.\n☀️ The sun is hot.\n太陽は熱い.\n🏙️ I walk.\n私は歩きます.\n💧 Water is good.\n水は良い.\n🌲 It is cool.\n涼しい.\n💷 I sit inside.\n私は中に座ります.\n🚿 I wash.\n私は洗います.\n🌅 The sun sets.\n太陽が沈む.\n🍶 I eat.\n私は食べます.\n🌡️ Very hot.\nとても暑い.\n🌡️ Is it hot？\n暑いですか？\n☀️ Is it sunny？\n晴れていますか？\n🏙️ Do you walk？\nあなたは歩きますか？\n💧 Is water good？\n水は良いですか？\n🌲 Is it cool？\n涼しいですか？\n💷 Is it inside？\nそれは中ですか？\n🚿 Do you wash？\nあなたは洗いますか？\n🌅 Is it sunset？\n日没ですか？\n🍶 Do you eat？\nあなたは食べますか？\n🌡️ Is it very hot？\nとても暑いですか？"
+    "content": "🌡️ It is hot.\n暑い.\n☀️ The sun is hot.\n太陽は熱い.\n🏙️ I walk.\n私は歩きます.\n💧 Water is good.\n水は良い.\n🌲 It is cool.\n涼しい.\n💷 I sit inside.\n私は中に座ります.\n🚿 I wash.\n私は洗います.\n🌅 The sun sets.\n太陽が沈む.\n🍶 I eat.\n私は食べます.\n🌡️ It is very hot.\nとても暑い。\n🌡️ Is it hot？\n暑いですか？\n☀️ Is it sunny？\n晴れていますか？\n🏙️ Do you walk？\nあなたは歩きますか？\n💧 Is water good？\n水は良いですか？\n🌲 Is it cool？\n涼しいですか？\n💷 Is it inside？\nそれは中ですか？\n🚿 Do you wash？\nあなたは洗いますか？\n🌅 Is it sunset？\n日没ですか？\n🍶 Do you eat？\nあなたは食べますか？\n🌡️ Is it very hot？\nとても暑いですか？"
   },
   {
     "title": "32. School Things (Basic Phrases)",
@@ -161,7 +161,7 @@ var eiken7full = [
   },
   {
     "title": "41. Numbers 1-10",
-    "content": "1️⃣ One apple. りんご二つ.\n2️⃣ Two books. 本二冊.\n3️⃣ Three cats. 猫三匹.\n4️⃣ Four dogs. 犬四匹.\n5️⃣ Five pens. ペン五本.\n6️⃣ Six stars. 星六つ.\n7️⃣ Seven days. 七日間.\n8️⃣ Eight cars. 車八台.\n9️⃣ Nine birds. 鳥九羽.\n🔟 Ten trees. 木十本.\n1️⃣ How many apples？ 何個のりんご？\n2️⃣ How many books？ 何冊の本？\n3️⃣ Do you like cats？ 猫は好きですか？\n4️⃣ Do you have dogs？ 犬はいますか？\n5️⃣ Do you write pens？ ペンを書きますか？\n6️⃣ Can you see stars？ 星が見えますか？\n7️⃣ How many days？ 何日間？\n8️⃣ Do you have a car？ 車はありますか？\n9️⃣ Do you like birds？ 鳥は好きですか？\n🔟 How many trees？ 何本の木？"
+    "content": "1️⃣ One apple. りんご二つ.\n2️⃣ Two books. 本二冊.\n3️⃣ Three cats. 猫三匹.\n4️⃣ Four dogs. 犬四匹.\n5️⃣ Five pens. ペン五本.\n6️⃣ Six stars. 星六つ.\n7️⃣ Seven days. 七日間.\n8️⃣ Eight cars. 車八台.\n9️⃣ Nine birds. 鳥九羽.\n🔟 Ten trees. 木十本.\n1️⃣ How many apples？ 何個のりんご？\n2️⃣ How many books？ 何冊の本？\n3️⃣ Do you like cats？ 猫は好きですか？\n4️⃣ Do you have dogs？ 犬はいますか？\n5️⃣ Do you use pens? ペンを使いますか？\n6️⃣ Can you see stars？ 星が見えますか？\n7️⃣ How many days？ 何日間？\n8️⃣ Do you have a car？ 車はありますか？\n9️⃣ Do you like birds？ 鳥は好きですか？\n🔟 How many trees？ 何本の木？"
   },
   {
     "title": "42. Colors and Weather",
