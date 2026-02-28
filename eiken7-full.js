@@ -37,7 +37,7 @@ var eiken7full = [
   },
   {
     "title": "10. My Things",
-    "content": "I have a bag.\n私はカバンを持っています。\n\nThe bag is blue.\nカバンは青いです。\n\nI have a pencil.\n私は鉛筆を持っています。\n\nI have a book.\n私は本を持っています。\n\nI have a pen.\n私はペンを持っています。\n\nThe book is red.\n本は赤いです。\n\nThe pen is black.\nペンは黒いです。\n\nThese are my things.\nこれらは私のものです。\n\nI like my things.\n私は自分のものが好きです。\n\nThings are good.\nものは良いです。\n\nDo you have a bag？\nカバンを持っていますか？\n\nWhat color is your bag？\nあなたのカバンは何色ですか？\n\nDo you have a book？\n本を持っていますか？\n\nDo you have a pen？\nペンを持っていますか？\n\nWhat color is your pen？\nあなたのペンは何色ですか？\n\nWhat things do you have？\nどのようなものを持っていますか？\n\nDo you like your things？\nあなたのものは好きですか？\n\nIs your book red？\nあなたの本は赤いですか？\n\nIs your pen black？\nあなたのペンは黒いですか？\n\nWhat is your favorite color？\n一番好きな色は何ですか？\n"
+    "content": "I have a bag.\n私はカバンを持っています。\n\nThe bag is blue.\nカバンは青いです。\n\nI have a pencil.\n私は鉛筆を持っています。\n\nI have a book.\n私は本を持っています。\n\nI have a pen.\n私はペンを持っています。\n\nThe book is red.\n本は赤いです。\n\nThe pen is black.\nペンは黒いです。\n\nThese are my things.\nこれらは私のものです。\n\nI like my things.\n私は自分のものが好きです。\n\nThings are good.\nものは良いです。\n\nDo you have a bag？\nカバンを持っていますか？\n\nWhat color is your bag？\nあなたのカバンは何色ですか？\n\nDo you have a book？\n本を持っていますか？\n\nDo you have a pen？\nペンを持っていますか？\n\nWhat color is your pen？\nあなたのペンは何色ですか？\n\nWhat do you have？\nどのようなものを持っていますか？\n\nDo you like your things？\nあなたのものは好きですか？\n\nIs your book red？\nあなたの本は赤いですか？\n\nIs your pen black？\nあなたのペンは黒いですか？\n\nWhat is your favorite color？\n一番好きな色は何ですか？\n"
   },
   {
     "title": "11. Food",
@@ -73,7 +73,7 @@ var eiken7full = [
   },
   {
     "title": "19. Greetings",
-    "content": "👋 Hello.\nこんにちは.\n\n👋 Good morning.\nおはようございます.\n\n👋 Good afternoon.\nこんにちは.\n\n👋 Good evening.\nこんばんは.\n\n😊 I am fine, thank you.\n私は元気です、ありがとう.\n\n👋 Goodbye.\nさようなら.\n\n👋 See you later.\nまた会いましょう.\n\n👋 Nice to meet you.\nはじめまして.\n\n👋 How are you？\nお元気ですか？\n\n😊 Thank you very much.\nどうもありがとうございます.\n\n❓ How do you say hello in English？\n英語でこんにちはと言うにはどうしますか？\n\n👋 What do you say in the morning？\n朝には何と言いますか？\n\n👋 What do you say at night？\n夜には何と言いますか？\n\n😊 How are you today？\n今日はお元気ですか？\n\n👋 When do you say goodbye？\nさようならと言うのはいつですか？\n\n👋 What do you say to a new friend？\n新しい友達に何と言いますか？\n\n😊 Do you say thank you？\nあなたはありがとうと言いますか？\n\n👋 What do you say in the afternoon？\n午後に何と言いますか？\n\n👋 How do you greet your teacher？\nあなたは先生にどのように挨拶しますか？\n\n😊 Are you happy today？\n今日は幸せですか？"
+    "content": "👋 Hello.\nこんにちは.\n\n👋 Good morning.\nおはようございます.\n\n👋 Good afternoon.\nこんにちは.\n\n👋 Good evening.\nこんばんは.\n\n😊 I am fine, thank you.\n私は元気です、ありがとう.\n\n👋 Goodbye.\nさようなら.\n\n👋 See you later.\nまた会いましょう.\n\n👋 Nice to meet you.\nはじめまして.\n\n👋 How are you？\nお元気ですか？\n\n😊 Thank you very much.\nどうもありがとうございます.\n\n❓ Say hello!\nこんにちは！英語でこんにちはと言うにはどうしますか？\n\n👋 What do you say in the morning？\n朝には何と言いますか？\n\n👋 What do you say at night？\n夜には何と言いますか？\n\n😊 How are you today？\n今日はお元気ですか？\n\n👋 Say goodbye!\nさようなら！さようならと言うのはいつですか？\n\n👋 What do you say to a new friend？\n新しい友達に何と言いますか？\n\n😊 Do you say thank you？\nあなたはありがとうと言いますか？\n\n👋 What do you say in the afternoon？\n午後に何と言いますか？\n\n👋 Be kind to your teacher.\n先生に優しく。あなたは先生にどのように挨拶しますか？\n\n😊 Are you happy today？\n今日は幸せですか？"
   },
   {
     "title": "20. My Family",
@@ -93,7 +93,7 @@ var eiken7full = [
   },
   {
     "title": "24. Simple Actions",
-    "content": "🚶 I walk.\n私は歩く.\n\n🏃 I run.\n私は走る.\n\n🧘 I sit.\n私は座る.\n\n🛏️ I sleep.\n私は眠る.\n\n🤗 I stand.\n私は立つ.\n\n😊 I smile.\n私は微笑む.\n\n🗣️ I speak.\n私は話す.\n\n👂 I listen.\n私は聞く.\n\n👁️ I look.\n私は見る.\n\n🙋 I raise my hand.\n私は手を挙げる.\n\n❓ What do you do？\nあなたは何をしますか？\n\n🚶 Do you walk to school？\nあなたは学校へ歩いて行きますか？\n\n🏃 Can you run fast？\nあなたは速く走ることができますか？\n\n😊 Do you smile every day？\nあなたは毎日微笑みますか？\n\n🗣️ What language do you speak？\nあなたはどの言語を話しますか？\n\n👂 Do you listen to music？\nあなたは音楽を聴きますか？\n\n👁️ What do you look at？\nあなたは何を見ますか？\n\n🧘 Where do you sit？\nどこに座りますか？\n\n🛏️ Do you sleep well？\nあなたはよく眠れますか？\n\n🙋 When do you raise your hand？\nいつ手を挙げますか？"
+    "content": "🚶 I walk.\n私は歩く.\n\n🏃 I run.\n私は走る.\n\n🧘 I sit.\n私は座る.\n\n🛏️ I sleep.\n私は眠る.\n\n🤗 I stand.\n私は立つ.\n\n😊 I smile.\n私は微笑む.\n\n🗣️ I speak.\n私は話す.\n\n👂 I listen.\n私は聞く.\n\n👁️ I look.\n私は見る.\n\n🙋 I raise my hand.\n私は手を挙げる.\n\n❓ What do you do？\nあなたは何をしますか？\n\n🚶 Do you walk to school？\nあなたは学校へ歩いて行きますか？\n\n🏃 Can you run fast？\nあなたは速く走ることができますか？\n\n😊 Do you smile every day？\nあなたは毎日微笑みますか？\n\n🗣️ Do you speak English？\nあなたは英語を話しますか？\n\n👂 Do you listen to music？\nあなたは音楽を聴きますか？\n\n👁️ What do you look at？\nあなたは何を見ますか？\n\n🧘 Where do you sit？\nどこに座りますか？\n\n🛏️ Do you sleep well？\nあなたはよく眠れますか？\n\n🙋 When do you raise your hand？\nいつ手を挙げますか？"
   },
   {
     "title": "25. Counting Summer Things (Numbers)",
@@ -117,7 +117,7 @@ var eiken7full = [
   },
   {
     "title": "30. Fireworks! (Basic Phrases)",
-    "content": "🎆 Look up!\n見上げてください！\n💥 Boom!\nドーン！\n👶 Children smile.\n子供たちは笑います.\n🌃 The sky is bright.\n空は明るい.\n💔 The dog runs.\n犬は走ります.\n🎇 See colors.\n色を見てください.\n🎉 I am happy!\n嬉しい！\n🏙️ Big city!\n大きな都市.\n✨ Beautiful!\n綺麗！\n🎆 I see fire.\n私は火を見ます.\n🎆 Look!\n見て！\n💥 What noise？\nどんな音？\n👶 Are they happy？\n彼らは幸せですか？\n🌃 Is it bright？\n明るいですか？\n💔 Does it run？\nそれは走りますか？\n🎇 What color？\n何色？\n🎉 Are you happy？\nあなたは幸せですか？\n🏙️ Is it big？\nそれは大きいですか？\n✨ Is it beautiful？\nそれは綺麗ですか？\n🎆 Do you see？\nあなたは見ますか？"
+    "content": "🎆 Look up!\n見上げてください！\n💥 Boom!\nドーン！\n👶 Children smile.\n子供たちは笑います.\n🌃 The sky is bright.\n空は明るい.\n💔 The dog runs.\n犬は走ります.\n🎇 See colors.\n色を見てください.\n🎉 I am happy!\n嬉しい！\n🏙️ Big city!\n大きな都市.\n✨ It is beautiful!\nきれい！\n🎆 I see fire.\n私は火を見ます.\n🎆 Look!\n見て！\n💥 What noise？\nどんな音？\n👶 Are they happy？\n彼らは幸せですか？\n🌃 Is it bright？\n明るいですか？\n💔 Does it run？\nそれは走りますか？\n🎇 What color？\n何色？\n🎉 Are you happy？\nあなたは幸せですか？\n🏙️ Is it big？\nそれは大きいですか？\n✨ Is it beautiful？\nそれは綺麗ですか？\n🎆 Do you see？\nあなたは見ますか？"
   },
   {
     "title": "31. Hot Summer (Basic / Be-Verb)",
@@ -192,3 +192,4 @@ var eiken7full = [
     "content": "😊 I am happy. 私は幸せです.\n😢 I am sad sometimes. 時々悲しいです.\n😠 I am angry sometimes. 時々怒っています.\n😰 I am scared sometimes. 時々怖いです.\n😴 I am tired at night. 夜は疲れています.\n❤️ I like December. 私は12月が好きです.\n❤️ I like winter. 私は冬が好きです.\n❤️ I like snow. 私は雪が好きです.\n❤️ I like holidays. 私は祝日が好きです.\n❤️ I like my family. 私は私の家族が好きです.\n😊 How do you feel today？ 今日は気分はどうですか？\n😢 Are you sad or happy？ 悲しいですか、それとも幸せですか？\n😠 Do you get angry often？ よく怒りますか？\n😰 Are you scared of snow？ 雪が怖いですか？\n😴 Do you sleep well？ よく眠れますか？\n❤️ What do you like？ 何が好きですか？\n❤️ Do you like December？ 12月は好きですか？\n❤️ Do you like winter？ 冬は好きですか？\n❤️ What holidays do you like？ どんな祝日が好きですか？\n❤️ Do you like your family？ 家族は好きですか？"
   }
 ];
+
