@@ -1,177 +1,1269 @@
 {
   "metadata": {
     "level": "Eiken Grade 5",
-    "totalWords": 500,
+    "totalWords": 557,
     "targetFull": 653,
-    "lastUpdated": "2026-03-01",
+    "lastUpdated": "2026-03-01 (added adverbs)",
     "status": "Curated list - modifiable based on exam data",
     "source": "Common Eiken 5 vocabulary from teaching materials"
   },
   "categories": {
     "verbs_top50": [
-      {"word": "be", "jp": "である", "forms": "am/is/are, was/were, been", "examples": ["I am a student.", "She is happy.", "They were here."]},
-      {"word": "have", "jp": "持っている", "forms": "have/has, had, had", "examples": ["I have a cat.", "She has a book."]},
-      {"word": "do", "jp": "する", "forms": "do/does, did, done", "examples": ["I do homework.", "He did it well."]},
-      {"word": "go", "jp": "行く", "forms": "go/goes, went, gone", "examples": ["I go to school.", "She went home."]},
-      {"word": "come", "jp": "来る", "forms": "come/comes, came, come", "examples": ["Come here.", "He came yesterday."]},
-      {"word": "eat", "jp": "食べる", "forms": "eat/eats, ate, eaten", "examples": ["I eat breakfast.", "She ate lunch."]},
-      {"word": "drink", "jp": "飲む", "forms": "drink/drinks, drank, drunk", "examples": ["Drink water.", "He drank tea."]},
-      {"word": "sleep", "jp": "寝る", "forms": "sleep/sleeps, slept, slept", "examples": ["I sleep at 10.", "She slept late."]},
-      {"word": "wake up", "jp": "起きる", "forms": "wake/wakes, woke, woken", "examples": ["I wake up at 7.", "He woke early."]},
-      {"word": "read", "jp": "読む", "forms": "read/reads, read, read", "examples": ["I read books.", "She reads fast."]},
-      {"word": "write", "jp": "書く", "forms": "write/writes, wrote, written", "examples": ["Write your name.", "He wrote a letter."]},
-      {"word": "speak", "jp": "話す", "forms": "speak/speaks, spoke, spoken", "examples": ["Speak English.", "She spoke kindly."]},
-      {"word": "listen", "jp": "聞く", "forms": "listen/listens, listened, listened", "examples": ["Listen carefully.", "She listened to music."]},
-      {"word": "watch", "jp": "見る", "forms": "watch/watches, watched, watched", "examples": ["Watch TV.", "He watched the game."]},
-      {"word": "play", "jp": "遊ぶ", "forms": "play/plays, played, played", "examples": ["Play outside.", "They played games."]},
-      {"word": "study", "jp": "勉強する", "forms": "study/studies, studied, studied", "examples": ["Study hard.", "She studied well."]},
-      {"word": "work", "jp": "働く", "forms": "work/works, worked, worked", "examples": ["Work in Tokyo.", "He worked late."]},
-      {"word": "live", "jp": "住む", "forms": "live/lives, lived, lived", "examples": ["I live in Japan.", "She lived there."]},
-      {"word": "like", "jp": "好きだ", "forms": "like/likes, liked, liked", "examples": ["I like cats.", "She liked dogs."]},
-      {"word": "want", "jp": "欲しい", "forms": "want/wants, wanted, wanted", "examples": ["I want water.", "She wanted help."]},
-      {"word": "need", "jp": "必要だ", "forms": "need/needs, needed, needed", "examples": ["I need help.", "She needed rest."]},
-      {"word": "love", "jp": "愛している", "forms": "love/loves, loved, loved", "examples": ["I love my family.", "She loves music."]},
-      {"word": "help", "jp": "助ける", "forms": "help/helps, helped, helped", "examples": ["Help me.", "He helped her."]},
-      {"word": "use", "jp": "使う", "forms": "use/uses, used, used", "examples": ["Use the pen.", "She used it."]},
-      {"word": "make", "jp": "作る", "forms": "make/makes, made, made", "examples": ["Make lunch.", "He made a cake."]},
-      {"word": "take", "jp": "取る", "forms": "take/takes, took, taken", "examples": ["Take your time.", "She took the bus."]},
-      {"word": "give", "jp": "与える", "forms": "give/gives, gave, given", "examples": ["Give it to me.", "He gave a gift."]},
-      {"word": "get", "jp": "得る", "forms": "get/gets, got, got/gotten", "examples": ["Get up.", "He got home."]},
-      {"word": "put", "jp": "置く", "forms": "put/puts, put, put", "examples": ["Put it here.", "She put it there."]},
-      {"word": "think", "jp": "思う", "forms": "think/thinks, thought, thought", "examples": ["Think carefully.", "She thought about it."]},
-      {"word": "know", "jp": "知っている", "forms": "know/knows, knew, known", "examples": ["I know him.", "She knew the answer."]},
-      {"word": "understand", "jp": "理解する", "forms": "understand/understands, understood, understood", "examples": ["Understand this.", "She understood."]},
-      {"word": "learn", "jp": "学ぶ", "forms": "learn/learns, learned, learned", "examples": ["Learn English.", "She learned fast."]},
-      {"word": "teach", "jp": "教える", "forms": "teach/teaches, taught, taught", "examples": ["Teach me.", "She taught him."]},
-      {"word": "see", "jp": "見える", "forms": "see/sees, saw, seen", "examples": ["See the movie.", "She saw it."]},
-      {"word": "look", "jp": "見る", "forms": "look/looks, looked, looked", "examples": ["Look at me.", "She looked away."]},
-      {"word": "talk", "jp": "話す", "forms": "talk/talks, talked, talked", "examples": ["Talk slowly.", "She talked to him."]},
-      {"word": "walk", "jp": "歩く", "forms": "walk/walks, walked, walked", "examples": ["Walk to school.", "She walked quickly."]},
-      {"word": "run", "jp": "走る", "forms": "run/runs, ran, run", "examples": ["Run fast.", "He ran home."]},
-      {"word": "buy", "jp": "買う", "forms": "buy/buys, bought, bought", "examples": ["Buy bread.", "She bought milk."]},
-      {"word": "sell", "jp": "売る", "forms": "sell/sells, sold, sold", "examples": ["Sell tickets.", "He sold his car."]},
-      {"word": "open", "jp": "開ける", "forms": "open/opens, opened, opened", "examples": ["Open the door.", "She opened it."]},
-      {"word": "close", "jp": "閉じる", "forms": "close/closes, closed, closed", "examples": ["Close the window.", "She closed it."]},
-      {"word": "start", "jp": "始まる", "forms": "start/starts, started, started", "examples": ["Start now.", "It started at 9."]},
-      {"word": "stop", "jp": "止まる", "forms": "stop/stops, stopped, stopped", "examples": ["Stop there.", "She stopped walking."]},
-      {"word": "finish", "jp": "終わる", "forms": "finish/finishes, finished, finished", "examples": ["Finish it.", "She finished early."]},
-      {"word": "begin", "jp": "始める", "forms": "begin/begins, began, begun", "examples": ["Begin now.", "It began at 7."]},
-      {"word": "meet", "jp": "会う", "forms": "meet/meets, met, met", "examples": ["Meet me there.", "She met him."]},
-      {"word": "call", "jp": "電話する", "forms": "call/calls, called, called", "examples": ["Call me.", "She called you."]},
-      {"word": "ask", "jp": "聞く", "forms": "ask/asks, asked, asked", "examples": ["Ask a question.", "She asked him."]}
+      {
+        "word": "be",
+        "jp": "である",
+        "forms": "am/is/are, was/were, been",
+        "examples": [
+          "I am a student.",
+          "She is happy.",
+          "They were here."
+        ]
+      },
+      {
+        "word": "have",
+        "jp": "持っている",
+        "forms": "have/has, had, had",
+        "examples": [
+          "I have a cat.",
+          "She has a book."
+        ]
+      },
+      {
+        "word": "do",
+        "jp": "する",
+        "forms": "do/does, did, done",
+        "examples": [
+          "I do homework.",
+          "He did it well."
+        ]
+      },
+      {
+        "word": "go",
+        "jp": "行く",
+        "forms": "go/goes, went, gone",
+        "examples": [
+          "I go to school.",
+          "She went home."
+        ]
+      },
+      {
+        "word": "come",
+        "jp": "来る",
+        "forms": "come/comes, came, come",
+        "examples": [
+          "Come here.",
+          "He came yesterday."
+        ]
+      },
+      {
+        "word": "eat",
+        "jp": "食べる",
+        "forms": "eat/eats, ate, eaten",
+        "examples": [
+          "I eat breakfast.",
+          "She ate lunch."
+        ]
+      },
+      {
+        "word": "drink",
+        "jp": "飲む",
+        "forms": "drink/drinks, drank, drunk",
+        "examples": [
+          "Drink water.",
+          "He drank tea."
+        ]
+      },
+      {
+        "word": "sleep",
+        "jp": "寝る",
+        "forms": "sleep/sleeps, slept, slept",
+        "examples": [
+          "I sleep at 10.",
+          "She slept late."
+        ]
+      },
+      {
+        "word": "wake up",
+        "jp": "起きる",
+        "forms": "wake/wakes, woke, woken",
+        "examples": [
+          "I wake up at 7.",
+          "He woke early."
+        ]
+      },
+      {
+        "word": "read",
+        "jp": "読む",
+        "forms": "read/reads, read, read",
+        "examples": [
+          "I read books.",
+          "She reads fast."
+        ]
+      },
+      {
+        "word": "write",
+        "jp": "書く",
+        "forms": "write/writes, wrote, written",
+        "examples": [
+          "Write your name.",
+          "He wrote a letter."
+        ]
+      },
+      {
+        "word": "speak",
+        "jp": "話す",
+        "forms": "speak/speaks, spoke, spoken",
+        "examples": [
+          "Speak English.",
+          "She spoke kindly."
+        ]
+      },
+      {
+        "word": "listen",
+        "jp": "聞く",
+        "forms": "listen/listens, listened, listened",
+        "examples": [
+          "Listen carefully.",
+          "She listened to music."
+        ]
+      },
+      {
+        "word": "watch",
+        "jp": "見る",
+        "forms": "watch/watches, watched, watched",
+        "examples": [
+          "Watch TV.",
+          "He watched the game."
+        ]
+      },
+      {
+        "word": "play",
+        "jp": "遊ぶ",
+        "forms": "play/plays, played, played",
+        "examples": [
+          "Play outside.",
+          "They played games."
+        ]
+      },
+      {
+        "word": "study",
+        "jp": "勉強する",
+        "forms": "study/studies, studied, studied",
+        "examples": [
+          "Study hard.",
+          "She studied well."
+        ]
+      },
+      {
+        "word": "work",
+        "jp": "働く",
+        "forms": "work/works, worked, worked",
+        "examples": [
+          "Work in Tokyo.",
+          "He worked late."
+        ]
+      },
+      {
+        "word": "live",
+        "jp": "住む",
+        "forms": "live/lives, lived, lived",
+        "examples": [
+          "I live in Japan.",
+          "She lived there."
+        ]
+      },
+      {
+        "word": "like",
+        "jp": "好きだ",
+        "forms": "like/likes, liked, liked",
+        "examples": [
+          "I like cats.",
+          "She liked dogs."
+        ]
+      },
+      {
+        "word": "want",
+        "jp": "欲しい",
+        "forms": "want/wants, wanted, wanted",
+        "examples": [
+          "I want water.",
+          "She wanted help."
+        ]
+      },
+      {
+        "word": "need",
+        "jp": "必要だ",
+        "forms": "need/needs, needed, needed",
+        "examples": [
+          "I need help.",
+          "She needed rest."
+        ]
+      },
+      {
+        "word": "love",
+        "jp": "愛している",
+        "forms": "love/loves, loved, loved",
+        "examples": [
+          "I love my family.",
+          "She loves music."
+        ]
+      },
+      {
+        "word": "help",
+        "jp": "助ける",
+        "forms": "help/helps, helped, helped",
+        "examples": [
+          "Help me.",
+          "He helped her."
+        ]
+      },
+      {
+        "word": "use",
+        "jp": "使う",
+        "forms": "use/uses, used, used",
+        "examples": [
+          "Use the pen.",
+          "She used it."
+        ]
+      },
+      {
+        "word": "make",
+        "jp": "作る",
+        "forms": "make/makes, made, made",
+        "examples": [
+          "Make lunch.",
+          "He made a cake."
+        ]
+      },
+      {
+        "word": "take",
+        "jp": "取る",
+        "forms": "take/takes, took, taken",
+        "examples": [
+          "Take your time.",
+          "She took the bus."
+        ]
+      },
+      {
+        "word": "give",
+        "jp": "与える",
+        "forms": "give/gives, gave, given",
+        "examples": [
+          "Give it to me.",
+          "He gave a gift."
+        ]
+      },
+      {
+        "word": "get",
+        "jp": "得る",
+        "forms": "get/gets, got, got/gotten",
+        "examples": [
+          "Get up.",
+          "He got home."
+        ]
+      },
+      {
+        "word": "put",
+        "jp": "置く",
+        "forms": "put/puts, put, put",
+        "examples": [
+          "Put it here.",
+          "She put it there."
+        ]
+      },
+      {
+        "word": "think",
+        "jp": "思う",
+        "forms": "think/thinks, thought, thought",
+        "examples": [
+          "Think carefully.",
+          "She thought about it."
+        ]
+      },
+      {
+        "word": "know",
+        "jp": "知っている",
+        "forms": "know/knows, knew, known",
+        "examples": [
+          "I know him.",
+          "She knew the answer."
+        ]
+      },
+      {
+        "word": "understand",
+        "jp": "理解する",
+        "forms": "understand/understands, understood, understood",
+        "examples": [
+          "Understand this.",
+          "She understood."
+        ]
+      },
+      {
+        "word": "learn",
+        "jp": "学ぶ",
+        "forms": "learn/learns, learned, learned",
+        "examples": [
+          "Learn English.",
+          "She learned fast."
+        ]
+      },
+      {
+        "word": "teach",
+        "jp": "教える",
+        "forms": "teach/teaches, taught, taught",
+        "examples": [
+          "Teach me.",
+          "She taught him."
+        ]
+      },
+      {
+        "word": "see",
+        "jp": "見える",
+        "forms": "see/sees, saw, seen",
+        "examples": [
+          "See the movie.",
+          "She saw it."
+        ]
+      },
+      {
+        "word": "look",
+        "jp": "見る",
+        "forms": "look/looks, looked, looked",
+        "examples": [
+          "Look at me.",
+          "She looked away."
+        ]
+      },
+      {
+        "word": "talk",
+        "jp": "話す",
+        "forms": "talk/talks, talked, talked",
+        "examples": [
+          "Talk slowly.",
+          "She talked to him."
+        ]
+      },
+      {
+        "word": "walk",
+        "jp": "歩く",
+        "forms": "walk/walks, walked, walked",
+        "examples": [
+          "Walk to school.",
+          "She walked quickly."
+        ]
+      },
+      {
+        "word": "run",
+        "jp": "走る",
+        "forms": "run/runs, ran, run",
+        "examples": [
+          "Run fast.",
+          "He ran home."
+        ]
+      },
+      {
+        "word": "buy",
+        "jp": "買う",
+        "forms": "buy/buys, bought, bought",
+        "examples": [
+          "Buy bread.",
+          "She bought milk."
+        ]
+      },
+      {
+        "word": "sell",
+        "jp": "売る",
+        "forms": "sell/sells, sold, sold",
+        "examples": [
+          "Sell tickets.",
+          "He sold his car."
+        ]
+      },
+      {
+        "word": "open",
+        "jp": "開ける",
+        "forms": "open/opens, opened, opened",
+        "examples": [
+          "Open the door.",
+          "She opened it."
+        ]
+      },
+      {
+        "word": "close",
+        "jp": "閉じる",
+        "forms": "close/closes, closed, closed",
+        "examples": [
+          "Close the window.",
+          "She closed it."
+        ]
+      },
+      {
+        "word": "start",
+        "jp": "始まる",
+        "forms": "start/starts, started, started",
+        "examples": [
+          "Start now.",
+          "It started at 9."
+        ]
+      },
+      {
+        "word": "stop",
+        "jp": "止まる",
+        "forms": "stop/stops, stopped, stopped",
+        "examples": [
+          "Stop there.",
+          "She stopped walking."
+        ]
+      },
+      {
+        "word": "finish",
+        "jp": "終わる",
+        "forms": "finish/finishes, finished, finished",
+        "examples": [
+          "Finish it.",
+          "She finished early."
+        ]
+      },
+      {
+        "word": "begin",
+        "jp": "始める",
+        "forms": "begin/begins, began, begun",
+        "examples": [
+          "Begin now.",
+          "It began at 7."
+        ]
+      },
+      {
+        "word": "meet",
+        "jp": "会う",
+        "forms": "meet/meets, met, met",
+        "examples": [
+          "Meet me there.",
+          "She met him."
+        ]
+      },
+      {
+        "word": "call",
+        "jp": "電話する",
+        "forms": "call/calls, called, called",
+        "examples": [
+          "Call me.",
+          "She called you."
+        ]
+      },
+      {
+        "word": "ask",
+        "jp": "聞く",
+        "forms": "ask/asks, asked, asked",
+        "examples": [
+          "Ask a question.",
+          "She asked him."
+        ]
+      }
     ],
-    
     "adjectives_top50": [
-      {"word": "good", "jp": "良い", "comparative": "better", "examples": ["The book is good.", "Good morning."]},
-      {"word": "bad", "jp": "悪い", "comparative": "worse", "examples": ["The weather is bad.", "Bad idea."]},
-      {"word": "big", "jp": "大きい", "comparative": "bigger", "examples": ["A big dog.", "Big apple."]},
-      {"word": "small", "jp": "小さい", "comparative": "smaller", "examples": ["A small cat.", "Small room."]},
-      {"word": "tall", "jp": "背が高い", "comparative": "taller", "examples": ["A tall man.", "Tall tree."]},
-      {"word": "short", "jp": "背が低い/短い", "comparative": "shorter", "examples": ["A short story.", "Short time."]},
-      {"word": "long", "jp": "長い", "comparative": "longer", "examples": ["A long road.", "Long time."]},
-      {"word": "new", "jp": "新しい", "comparative": "newer", "examples": ["New car.", "New book."]},
-      {"word": "old", "jp": "古い", "comparative": "older", "examples": ["Old house.", "Old friend."]},
-      {"word": "young", "jp": "若い", "comparative": "younger", "examples": ["Young person.", "Young child."]},
-      {"word": "fast", "jp": "速い", "comparative": "faster", "examples": ["Fast car.", "Fast runner."]},
-      {"word": "slow", "jp": "遅い", "comparative": "slower", "examples": ["Slow walk.", "Slow driver."]},
-      {"word": "hot", "jp": "暑い/熱い", "comparative": "hotter", "examples": ["Hot weather.", "Hot tea."]},
-      {"word": "cold", "jp": "寒い/冷たい", "comparative": "colder", "examples": ["Cold day.", "Cold water."]},
-      {"word": "happy", "jp": "幸せ", "comparative": "happier", "examples": ["Happy person.", "Happy feeling."]},
-      {"word": "sad", "jp": "悲しい", "comparative": "sadder", "examples": ["Sad movie.", "Sad story."]},
-      {"word": "busy", "jp": "忙しい", "comparative": "busier", "examples": ["Busy day.", "Busy person."]},
-      {"word": "tired", "jp": "疲れている", "comparative": "more tired", "examples": ["Tired dog.", "Tired student."]},
-      {"word": "hungry", "jp": "お腹が空いている", "comparative": "hungrier", "examples": ["Hungry cat.", "Hungry person."]},
-      {"word": "thirsty", "jp": "喉が渇いている", "comparative": "thirstier", "examples": ["Thirsty dog.", "Thirsty child."]},
-      {"word": "easy", "jp": "簡単", "comparative": "easier", "examples": ["Easy test.", "Easy question."]},
-      {"word": "hard", "jp": "難しい", "comparative": "harder", "examples": ["Hard work.", "Hard exam."]},
-      {"word": "beautiful", "jp": "美しい", "comparative": "more beautiful", "examples": ["Beautiful flower.", "Beautiful woman."]},
-      {"word": "strong", "jp": "強い", "comparative": "stronger", "examples": ["Strong man.", "Strong coffee."]},
-      {"word": "weak", "jp": "弱い", "comparative": "weaker", "examples": ["Weak point.", "Weak person."]},
-      {"word": "rich", "jp": "金持ち", "comparative": "richer", "examples": ["Rich man.", "Rich family."]},
-      {"word": "poor", "jp": "貧しい", "comparative": "poorer", "examples": ["Poor family.", "Poor people."]},
-      {"word": "cheap", "jp": "安い", "comparative": "cheaper", "examples": ["Cheap book.", "Cheap food."]},
-      {"word": "expensive", "jp": "高い", "comparative": "more expensive", "examples": ["Expensive car.", "Expensive restaurant."]},
-      {"word": "clean", "jp": "綺麗", "comparative": "cleaner", "examples": ["Clean room.", "Clean clothes."]},
-      {"word": "dirty", "jp": "汚い", "comparative": "dirtier", "examples": ["Dirty floor.", "Dirty dish."]},
-      {"word": "loud", "jp": "うるさい", "comparative": "louder", "examples": ["Loud music.", "Loud noise."]},
-      {"word": "quiet", "jp": "静か", "comparative": "quieter", "examples": ["Quiet room.", "Quiet place."]},
-      {"word": "kind", "jp": "親切", "comparative": "kinder", "examples": ["Kind person.", "Kind teacher."]},
-      {"word": "nice", "jp": "いい", "comparative": "nicer", "examples": ["Nice day.", "Nice person."]},
-      {"word": "brave", "jp": "勇敢", "comparative": "braver", "examples": ["Brave soldier.", "Brave child."]},
-      {"word": "scared", "jp": "怖がっている", "comparative": "more scared", "examples": ["Scared cat.", "Scared girl."]},
-      {"word": "angry", "jp": "怒っている", "comparative": "angrier", "examples": ["Angry man.", "Angry person."]},
-      {"word": "sick", "jp": "病気", "comparative": "sicker", "examples": ["Sick person.", "Sick child."]},
-      {"word": "healthy", "jp": "健康", "comparative": "healthier", "examples": ["Healthy food.", "Healthy person."]},
-      {"word": "open", "jp": "開いている", "comparative": "more open", "examples": ["Open door.", "Open window."]},
-      {"word": "closed", "jp": "閉じている", "comparative": "more closed", "examples": ["Closed shop.", "Closed door."]},
-      {"word": "heavy", "jp": "重い", "comparative": "heavier", "examples": ["Heavy box.", "Heavy rain."]},
-      {"word": "light", "jp": "軽い", "comparative": "lighter", "examples": ["Light bag.", "Light room."]},
-      {"word": "dark", "jp": "暗い", "comparative": "darker", "examples": ["Dark room.", "Dark night."]},
-      {"word": "bright", "jp": "明るい", "comparative": "brighter", "examples": ["Bright sun.", "Bright light."]},
-      {"word": "right", "jp": "右/正しい", "comparative": "more right", "examples": ["Right answer.", "Right way."]},
-      {"word": "wrong", "jp": "間違った", "comparative": "more wrong", "examples": ["Wrong answer.", "Wrong way."]},
-      {"word": "important", "jp": "重要", "comparative": "more important", "examples": ["Important person.", "Important lesson."]},
-      {"word": "interesting", "jp": "面白い", "comparative": "more interesting", "examples": ["Interesting book.", "Interesting story."]}
+      {
+        "word": "good",
+        "jp": "良い",
+        "comparative": "better",
+        "examples": [
+          "The book is good.",
+          "Good morning."
+        ]
+      },
+      {
+        "word": "bad",
+        "jp": "悪い",
+        "comparative": "worse",
+        "examples": [
+          "The weather is bad.",
+          "Bad idea."
+        ]
+      },
+      {
+        "word": "big",
+        "jp": "大きい",
+        "comparative": "bigger",
+        "examples": [
+          "A big dog.",
+          "Big apple."
+        ]
+      },
+      {
+        "word": "small",
+        "jp": "小さい",
+        "comparative": "smaller",
+        "examples": [
+          "A small cat.",
+          "Small room."
+        ]
+      },
+      {
+        "word": "tall",
+        "jp": "背が高い",
+        "comparative": "taller",
+        "examples": [
+          "A tall man.",
+          "Tall tree."
+        ]
+      },
+      {
+        "word": "short",
+        "jp": "背が低い/短い",
+        "comparative": "shorter",
+        "examples": [
+          "A short story.",
+          "Short time."
+        ]
+      },
+      {
+        "word": "long",
+        "jp": "長い",
+        "comparative": "longer",
+        "examples": [
+          "A long road.",
+          "Long time."
+        ]
+      },
+      {
+        "word": "new",
+        "jp": "新しい",
+        "comparative": "newer",
+        "examples": [
+          "New car.",
+          "New book."
+        ]
+      },
+      {
+        "word": "old",
+        "jp": "古い",
+        "comparative": "older",
+        "examples": [
+          "Old house.",
+          "Old friend."
+        ]
+      },
+      {
+        "word": "young",
+        "jp": "若い",
+        "comparative": "younger",
+        "examples": [
+          "Young person.",
+          "Young child."
+        ]
+      },
+      {
+        "word": "fast",
+        "jp": "速い",
+        "comparative": "faster",
+        "examples": [
+          "Fast car.",
+          "Fast runner."
+        ]
+      },
+      {
+        "word": "slow",
+        "jp": "遅い",
+        "comparative": "slower",
+        "examples": [
+          "Slow walk.",
+          "Slow driver."
+        ]
+      },
+      {
+        "word": "hot",
+        "jp": "暑い/熱い",
+        "comparative": "hotter",
+        "examples": [
+          "Hot weather.",
+          "Hot tea."
+        ]
+      },
+      {
+        "word": "cold",
+        "jp": "寒い/冷たい",
+        "comparative": "colder",
+        "examples": [
+          "Cold day.",
+          "Cold water."
+        ]
+      },
+      {
+        "word": "happy",
+        "jp": "幸せ",
+        "comparative": "happier",
+        "examples": [
+          "Happy person.",
+          "Happy feeling."
+        ]
+      },
+      {
+        "word": "sad",
+        "jp": "悲しい",
+        "comparative": "sadder",
+        "examples": [
+          "Sad movie.",
+          "Sad story."
+        ]
+      },
+      {
+        "word": "busy",
+        "jp": "忙しい",
+        "comparative": "busier",
+        "examples": [
+          "Busy day.",
+          "Busy person."
+        ]
+      },
+      {
+        "word": "tired",
+        "jp": "疲れている",
+        "comparative": "more tired",
+        "examples": [
+          "Tired dog.",
+          "Tired student."
+        ]
+      },
+      {
+        "word": "hungry",
+        "jp": "お腹が空いている",
+        "comparative": "hungrier",
+        "examples": [
+          "Hungry cat.",
+          "Hungry person."
+        ]
+      },
+      {
+        "word": "thirsty",
+        "jp": "喉が渇いている",
+        "comparative": "thirstier",
+        "examples": [
+          "Thirsty dog.",
+          "Thirsty child."
+        ]
+      },
+      {
+        "word": "easy",
+        "jp": "簡単",
+        "comparative": "easier",
+        "examples": [
+          "Easy test.",
+          "Easy question."
+        ]
+      },
+      {
+        "word": "hard",
+        "jp": "難しい",
+        "comparative": "harder",
+        "examples": [
+          "Hard work.",
+          "Hard exam."
+        ]
+      },
+      {
+        "word": "beautiful",
+        "jp": "美しい",
+        "comparative": "more beautiful",
+        "examples": [
+          "Beautiful flower.",
+          "Beautiful woman."
+        ]
+      },
+      {
+        "word": "strong",
+        "jp": "強い",
+        "comparative": "stronger",
+        "examples": [
+          "Strong man.",
+          "Strong coffee."
+        ]
+      },
+      {
+        "word": "weak",
+        "jp": "弱い",
+        "comparative": "weaker",
+        "examples": [
+          "Weak point.",
+          "Weak person."
+        ]
+      },
+      {
+        "word": "rich",
+        "jp": "金持ち",
+        "comparative": "richer",
+        "examples": [
+          "Rich man.",
+          "Rich family."
+        ]
+      },
+      {
+        "word": "poor",
+        "jp": "貧しい",
+        "comparative": "poorer",
+        "examples": [
+          "Poor family.",
+          "Poor people."
+        ]
+      },
+      {
+        "word": "cheap",
+        "jp": "安い",
+        "comparative": "cheaper",
+        "examples": [
+          "Cheap book.",
+          "Cheap food."
+        ]
+      },
+      {
+        "word": "expensive",
+        "jp": "高い",
+        "comparative": "more expensive",
+        "examples": [
+          "Expensive car.",
+          "Expensive restaurant."
+        ]
+      },
+      {
+        "word": "clean",
+        "jp": "綺麗",
+        "comparative": "cleaner",
+        "examples": [
+          "Clean room.",
+          "Clean clothes."
+        ]
+      },
+      {
+        "word": "dirty",
+        "jp": "汚い",
+        "comparative": "dirtier",
+        "examples": [
+          "Dirty floor.",
+          "Dirty dish."
+        ]
+      },
+      {
+        "word": "loud",
+        "jp": "うるさい",
+        "comparative": "louder",
+        "examples": [
+          "Loud music.",
+          "Loud noise."
+        ]
+      },
+      {
+        "word": "quiet",
+        "jp": "静か",
+        "comparative": "quieter",
+        "examples": [
+          "Quiet room.",
+          "Quiet place."
+        ]
+      },
+      {
+        "word": "kind",
+        "jp": "親切",
+        "comparative": "kinder",
+        "examples": [
+          "Kind person.",
+          "Kind teacher."
+        ]
+      },
+      {
+        "word": "nice",
+        "jp": "いい",
+        "comparative": "nicer",
+        "examples": [
+          "Nice day.",
+          "Nice person."
+        ]
+      },
+      {
+        "word": "brave",
+        "jp": "勇敢",
+        "comparative": "braver",
+        "examples": [
+          "Brave soldier.",
+          "Brave child."
+        ]
+      },
+      {
+        "word": "scared",
+        "jp": "怖がっている",
+        "comparative": "more scared",
+        "examples": [
+          "Scared cat.",
+          "Scared girl."
+        ]
+      },
+      {
+        "word": "angry",
+        "jp": "怒っている",
+        "comparative": "angrier",
+        "examples": [
+          "Angry man.",
+          "Angry person."
+        ]
+      },
+      {
+        "word": "sick",
+        "jp": "病気",
+        "comparative": "sicker",
+        "examples": [
+          "Sick person.",
+          "Sick child."
+        ]
+      },
+      {
+        "word": "healthy",
+        "jp": "健康",
+        "comparative": "healthier",
+        "examples": [
+          "Healthy food.",
+          "Healthy person."
+        ]
+      },
+      {
+        "word": "open",
+        "jp": "開いている",
+        "comparative": "more open",
+        "examples": [
+          "Open door.",
+          "Open window."
+        ]
+      },
+      {
+        "word": "closed",
+        "jp": "閉じている",
+        "comparative": "more closed",
+        "examples": [
+          "Closed shop.",
+          "Closed door."
+        ]
+      },
+      {
+        "word": "heavy",
+        "jp": "重い",
+        "comparative": "heavier",
+        "examples": [
+          "Heavy box.",
+          "Heavy rain."
+        ]
+      },
+      {
+        "word": "light",
+        "jp": "軽い",
+        "comparative": "lighter",
+        "examples": [
+          "Light bag.",
+          "Light room."
+        ]
+      },
+      {
+        "word": "dark",
+        "jp": "暗い",
+        "comparative": "darker",
+        "examples": [
+          "Dark room.",
+          "Dark night."
+        ]
+      },
+      {
+        "word": "bright",
+        "jp": "明るい",
+        "comparative": "brighter",
+        "examples": [
+          "Bright sun.",
+          "Bright light."
+        ]
+      },
+      {
+        "word": "right",
+        "jp": "右/正しい",
+        "comparative": "more right",
+        "examples": [
+          "Right answer.",
+          "Right way."
+        ]
+      },
+      {
+        "word": "wrong",
+        "jp": "間違った",
+        "comparative": "more wrong",
+        "examples": [
+          "Wrong answer.",
+          "Wrong way."
+        ]
+      },
+      {
+        "word": "important",
+        "jp": "重要",
+        "comparative": "more important",
+        "examples": [
+          "Important person.",
+          "Important lesson."
+        ]
+      },
+      {
+        "word": "interesting",
+        "jp": "面白い",
+        "comparative": "more interesting",
+        "examples": [
+          "Interesting book.",
+          "Interesting story."
+        ]
+      }
     ]
   },
-  
   "nouns_by_category": {
     "family_people": [
-      {"word": "father", "jp": "父"}, {"word": "mother", "jp": "母"},
-      {"word": "brother", "jp": "兄弟"}, {"word": "sister", "jp": "姉妹"},
-      {"word": "family", "jp": "家族"}, {"word": "friend", "jp": "友達"},
-      {"word": "teacher", "jp": "先生"}, {"word": "student", "jp": "学生"},
-      {"word": "doctor", "jp": "医者"}, {"word": "police", "jp": "警察"}
+      {
+        "word": "father",
+        "jp": "父"
+      },
+      {
+        "word": "mother",
+        "jp": "母"
+      },
+      {
+        "word": "brother",
+        "jp": "兄弟"
+      },
+      {
+        "word": "sister",
+        "jp": "姉妹"
+      },
+      {
+        "word": "family",
+        "jp": "家族"
+      },
+      {
+        "word": "friend",
+        "jp": "友達"
+      },
+      {
+        "word": "teacher",
+        "jp": "先生"
+      },
+      {
+        "word": "student",
+        "jp": "学生"
+      },
+      {
+        "word": "doctor",
+        "jp": "医者"
+      },
+      {
+        "word": "police",
+        "jp": "警察"
+      }
     ],
     "school": [
-      {"word": "school", "jp": "学校"}, {"word": "book", "jp": "本"},
-      {"word": "pencil", "jp": "鉛筆"}, {"word": "paper", "jp": "紙"},
-      {"word": "desk", "jp": "机"}, {"word": "chair", "jp": "椅子"},
-      {"word": "homework", "jp": "宿題"}, {"word": "test", "jp": "テスト"},
-      {"word": "class", "jp": "授業"}, {"word": "question", "jp": "質問"},
-      {"word": "answer", "jp": "答え"}
+      {
+        "word": "school",
+        "jp": "学校"
+      },
+      {
+        "word": "book",
+        "jp": "本"
+      },
+      {
+        "word": "pencil",
+        "jp": "鉛筆"
+      },
+      {
+        "word": "paper",
+        "jp": "紙"
+      },
+      {
+        "word": "desk",
+        "jp": "机"
+      },
+      {
+        "word": "chair",
+        "jp": "椅子"
+      },
+      {
+        "word": "homework",
+        "jp": "宿題"
+      },
+      {
+        "word": "test",
+        "jp": "テスト"
+      },
+      {
+        "word": "class",
+        "jp": "授業"
+      },
+      {
+        "word": "question",
+        "jp": "質問"
+      },
+      {
+        "word": "answer",
+        "jp": "答え"
+      }
     ],
     "food": [
-      {"word": "apple", "jp": "りんご"}, {"word": "bread", "jp": "パン"},
-      {"word": "rice", "jp": "ご飯"}, {"word": "meat", "jp": "肉"},
-      {"word": "fish", "jp": "魚"}, {"word": "egg", "jp": "卵"},
-      {"word": "milk", "jp": "牛乳"}, {"word": "water", "jp": "水"},
-      {"word": "tea", "jp": "お茶"}, {"word": "coffee", "jp": "コーヒー"},
-      {"word": "breakfast", "jp": "朝食"}, {"word": "lunch", "jp": "昼食"},
-      {"word": "dinner", "jp": "夕食"}
+      {
+        "word": "apple",
+        "jp": "りんご"
+      },
+      {
+        "word": "bread",
+        "jp": "パン"
+      },
+      {
+        "word": "rice",
+        "jp": "ご飯"
+      },
+      {
+        "word": "meat",
+        "jp": "肉"
+      },
+      {
+        "word": "fish",
+        "jp": "魚"
+      },
+      {
+        "word": "egg",
+        "jp": "卵"
+      },
+      {
+        "word": "milk",
+        "jp": "牛乳"
+      },
+      {
+        "word": "water",
+        "jp": "水"
+      },
+      {
+        "word": "tea",
+        "jp": "お茶"
+      },
+      {
+        "word": "coffee",
+        "jp": "コーヒー"
+      },
+      {
+        "word": "breakfast",
+        "jp": "朝食"
+      },
+      {
+        "word": "lunch",
+        "jp": "昼食"
+      },
+      {
+        "word": "dinner",
+        "jp": "夕食"
+      }
     ],
     "places": [
-      {"word": "house", "jp": "家"}, {"word": "room", "jp": "部屋"},
-      {"word": "kitchen", "jp": "台所"}, {"word": "bathroom", "jp": "風呂場"},
-      {"word": "garden", "jp": "庭"}, {"word": "park", "jp": "公園"},
-      {"word": "shop", "jp": "店"}, {"word": "hospital", "jp": "病院"},
-      {"word": "library", "jp": "図書館"}
+      {
+        "word": "house",
+        "jp": "家"
+      },
+      {
+        "word": "room",
+        "jp": "部屋"
+      },
+      {
+        "word": "kitchen",
+        "jp": "台所"
+      },
+      {
+        "word": "bathroom",
+        "jp": "風呂場"
+      },
+      {
+        "word": "garden",
+        "jp": "庭"
+      },
+      {
+        "word": "park",
+        "jp": "公園"
+      },
+      {
+        "word": "shop",
+        "jp": "店"
+      },
+      {
+        "word": "hospital",
+        "jp": "病院"
+      },
+      {
+        "word": "library",
+        "jp": "図書館"
+      }
     ],
     "time_weather": [
-      {"word": "today", "jp": "今日"}, {"word": "tomorrow", "jp": "明日"},
-      {"word": "yesterday", "jp": "昨日"}, {"word": "morning", "jp": "朝"},
-      {"word": "evening", "jp": "夜"}, {"word": "week", "jp": "週"},
-      {"word": "month", "jp": "月"}, {"word": "year", "jp": "年"},
-      {"word": "spring", "jp": "春"}, {"word": "summer", "jp": "夏"},
-      {"word": "autumn", "jp": "秋"}, {"word": "winter", "jp": "冬"},
-      {"word": "sunny", "jp": "晴れ"}, {"word": "rainy", "jp": "雨"},
-      {"word": "cloudy", "jp": "曇り"}
+      {
+        "word": "today",
+        "jp": "今日"
+      },
+      {
+        "word": "tomorrow",
+        "jp": "明日"
+      },
+      {
+        "word": "yesterday",
+        "jp": "昨日"
+      },
+      {
+        "word": "morning",
+        "jp": "朝"
+      },
+      {
+        "word": "evening",
+        "jp": "夜"
+      },
+      {
+        "word": "week",
+        "jp": "週"
+      },
+      {
+        "word": "month",
+        "jp": "月"
+      },
+      {
+        "word": "year",
+        "jp": "年"
+      },
+      {
+        "word": "spring",
+        "jp": "春"
+      },
+      {
+        "word": "summer",
+        "jp": "夏"
+      },
+      {
+        "word": "autumn",
+        "jp": "秋"
+      },
+      {
+        "word": "winter",
+        "jp": "冬"
+      },
+      {
+        "word": "sunny",
+        "jp": "晴れ"
+      },
+      {
+        "word": "rainy",
+        "jp": "雨"
+      },
+      {
+        "word": "cloudy",
+        "jp": "曇り"
+      }
     ],
     "numbers_colors": [
-      {"word": "one", "jp": "一"}, {"word": "two", "jp": "二"},
-      {"word": "three", "jp": "三"}, {"word": "four", "jp": "四"},
-      {"word": "five", "jp": "五"}, {"word": "red", "jp": "赤"},
-      {"word": "blue", "jp": "青"}, {"word": "green", "jp": "緑"},
-      {"word": "yellow", "jp": "黄色"}, {"word": "white", "jp": "白"},
-      {"word": "black", "jp": "黒"}
+      {
+        "word": "one",
+        "jp": "一"
+      },
+      {
+        "word": "two",
+        "jp": "二"
+      },
+      {
+        "word": "three",
+        "jp": "三"
+      },
+      {
+        "word": "four",
+        "jp": "四"
+      },
+      {
+        "word": "five",
+        "jp": "五"
+      },
+      {
+        "word": "red",
+        "jp": "赤"
+      },
+      {
+        "word": "blue",
+        "jp": "青"
+      },
+      {
+        "word": "green",
+        "jp": "緑"
+      },
+      {
+        "word": "yellow",
+        "jp": "黄色"
+      },
+      {
+        "word": "white",
+        "jp": "白"
+      },
+      {
+        "word": "black",
+        "jp": "黒"
+      }
     ]
   },
-  
   "function_words": {
-    "articles": ["the", "a", "an"],
-    "prepositions": ["at", "in", "on", "to", "from", "with", "without", "for", "by", "about", "before", "after", "between", "under", "over", "behind", "next to", "near", "far"],
-    "conjunctions": ["and", "but", "or", "because", "so", "if", "when"],
-    "pronouns": ["I", "you", "he", "she", "it", "we", "they", "me", "him", "her", "us", "them"],
-    "interjections": ["yes", "no", "please", "thank you", "hello", "goodbye", "good morning", "good afternoon", "good evening"]
+    "articles": [
+      "the",
+      "a",
+      "an"
+    ],
+    "prepositions": [
+      "at",
+      "in",
+      "on",
+      "to",
+      "from",
+      "with",
+      "without",
+      "for",
+      "by",
+      "about",
+      "before",
+      "after",
+      "between",
+      "under",
+      "over",
+      "behind",
+      "next to",
+      "near",
+      "far"
+    ],
+    "conjunctions": [
+      "and",
+      "but",
+      "or",
+      "because",
+      "so",
+      "if",
+      "when"
+    ],
+    "pronouns": [
+      "I",
+      "you",
+      "he",
+      "she",
+      "it",
+      "we",
+      "they",
+      "me",
+      "him",
+      "her",
+      "us",
+      "them"
+    ],
+    "interjections": [
+      "yes",
+      "no",
+      "please",
+      "thank you",
+      "hello",
+      "goodbye",
+      "good morning",
+      "good afternoon",
+      "good evening"
+    ]
   }
 }
