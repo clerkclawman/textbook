@@ -1389,7 +1389,15 @@
     function populateStorySelector(cls) {
         storySelector.innerHTML = '<option value="">Select Story</option>';
 
-        if (!lessonsData[cls]) return;
+        console.log('populateStorySelector called with:', cls);
+        console.log('lessonsData[cls]:', lessonsData[cls]);
+        console.log('lessonsData[cls] type:', typeof lessonsData[cls]);
+        console.log('lessonsData[cls] is array?', Array.isArray(lessonsData[cls]));
+
+        if (!lessonsData[cls]) {
+            console.error('lessonsData[' + cls + '] is undefined');
+            return;
+        }
 
         let optionIndex = 0;
 
@@ -1400,10 +1408,12 @@
             option.textContent = `QA Questions`;
             storySelector.appendChild(option);
             optionIndex++;
+            console.log('Added questions option');
         }
 
         // lessonsData[cls] is now directly an array of story objects
         if (Array.isArray(lessonsData[cls])) {
+            console.log('Processing ' + lessonsData[cls].length + ' stories');
             lessonsData[cls].forEach((story, index) => {
                 const option = document.createElement('option');
                 option.value = optionIndex;
@@ -2728,6 +2738,9 @@
                 'WouldYouRather': wouldyourather,
                 'Vocab': vocab
             };
+
+            console.log('Lesson data loaded:', Object.keys(lessonsData));
+            console.log('Eiken5 stories:', lessonsData['Eiken5'] ? lessonsData['Eiken5'].length + ' stories' : 'NOT FOUND);
 
             // Add separate questions mapping
             lessonsData._questions = {
