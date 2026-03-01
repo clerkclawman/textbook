@@ -3,9 +3,10 @@
     "level": "Eiken Grade 5",
     "totalWords": 557,
     "targetFull": 653,
-    "lastUpdated": "2026-03-01 (added adverbs)",
+    "lastUpdated": "2026-03-01 (added emojis to all words)",
     "status": "Curated list - modifiable based on exam data",
-    "source": "Common Eiken 5 vocabulary from teaching materials"
+    "source": "Common Eiken 5 vocabulary from teaching materials",
+    "hasEmojis": true
   },
   "categories": {
     "verbs_top50": [
@@ -17,7 +18,8 @@
           "I am a student.",
           "She is happy.",
           "They were here."
-        ]
+        ],
+        "emoji": "👤"
       },
       {
         "word": "have",
@@ -26,7 +28,8 @@
         "examples": [
           "I have a cat.",
           "She has a book."
-        ]
+        ],
+        "emoji": "📦"
       },
       {
         "word": "do",
@@ -35,7 +38,8 @@
         "examples": [
           "I do homework.",
           "He did it well."
-        ]
+        ],
+        "emoji": "✅"
       },
       {
         "word": "go",
@@ -44,7 +48,8 @@
         "examples": [
           "I go to school.",
           "She went home."
-        ]
+        ],
+        "emoji": "🚶"
       },
       {
         "word": "come",
@@ -53,7 +58,8 @@
         "examples": [
           "Come here.",
           "He came yesterday."
-        ]
+        ],
+        "emoji": "👋"
       },
       {
         "word": "eat",
@@ -62,7 +68,8 @@
         "examples": [
           "I eat breakfast.",
           "She ate lunch."
-        ]
+        ],
+        "emoji": "🍽️"
       },
       {
         "word": "drink",
@@ -71,7 +78,8 @@
         "examples": [
           "Drink water.",
           "He drank tea."
-        ]
+        ],
+        "emoji": "🍷"
       },
       {
         "word": "sleep",
@@ -80,7 +88,8 @@
         "examples": [
           "I sleep at 10.",
           "She slept late."
-        ]
+        ],
+        "emoji": "😴"
       },
       {
         "word": "wake up",
@@ -89,7 +98,8 @@
         "examples": [
           "I wake up at 7.",
           "He woke early."
-        ]
+        ],
+        "emoji": "⏰"
       },
       {
         "word": "read",
@@ -98,7 +108,8 @@
         "examples": [
           "I read books.",
           "She reads fast."
-        ]
+        ],
+        "emoji": "📖"
       },
       {
         "word": "write",
@@ -107,7 +118,8 @@
         "examples": [
           "Write your name.",
           "He wrote a letter."
-        ]
+        ],
+        "emoji": "✍️"
       },
       {
         "word": "speak",
@@ -116,7 +128,8 @@
         "examples": [
           "Speak English.",
           "She spoke kindly."
-        ]
+        ],
+        "emoji": "🗣️"
       },
       {
         "word": "listen",
@@ -125,7 +138,8 @@
         "examples": [
           "Listen carefully.",
           "She listened to music."
-        ]
+        ],
+        "emoji": "👂"
       },
       {
         "word": "watch",
@@ -134,7 +148,8 @@
         "examples": [
           "Watch TV.",
           "He watched the game."
-        ]
+        ],
+        "emoji": "👀"
       },
       {
         "word": "play",
@@ -143,7 +158,8 @@
         "examples": [
           "Play outside.",
           "They played games."
-        ]
+        ],
+        "emoji": "🎮"
       },
       {
         "word": "study",
@@ -152,7 +168,8 @@
         "examples": [
           "Study hard.",
           "She studied well."
-        ]
+        ],
+        "emoji": "📚"
       },
       {
         "word": "work",
@@ -161,7 +178,8 @@
         "examples": [
           "Work in Tokyo.",
           "He worked late."
-        ]
+        ],
+        "emoji": "💼"
       },
       {
         "word": "live",
@@ -170,7 +188,8 @@
         "examples": [
           "I live in Japan.",
           "She lived there."
-        ]
+        ],
+        "emoji": "🏠"
       },
       {
         "word": "like",
@@ -179,7 +198,8 @@
         "examples": [
           "I like cats.",
           "She liked dogs."
-        ]
+        ],
+        "emoji": "❤️"
       },
       {
         "word": "want",
@@ -188,7 +208,8 @@
         "examples": [
           "I want water.",
           "She wanted help."
-        ]
+        ],
+        "emoji": "🎯"
       },
       {
         "word": "need",
@@ -197,7 +218,8 @@
         "examples": [
           "I need help.",
           "She needed rest."
-        ]
+        ],
+        "emoji": "🔧"
       },
       {
         "word": "love",
@@ -206,7 +228,8 @@
         "examples": [
           "I love my family.",
           "She loves music."
-        ]
+        ],
+        "emoji": "💖"
       },
       {
         "word": "help",
@@ -215,7 +238,8 @@
         "examples": [
           "Help me.",
           "He helped her."
-        ]
+        ],
+        "emoji": "🤝"
       },
       {
         "word": "use",
@@ -224,7 +248,8 @@
         "examples": [
           "Use the pen.",
           "She used it."
-        ]
+        ],
+        "emoji": "🔨"
       },
       {
         "word": "make",
@@ -233,7 +258,8 @@
         "examples": [
           "Make lunch.",
           "He made a cake."
-        ]
+        ],
+        "emoji": "🛠️"
       },
       {
         "word": "take",
@@ -242,7 +268,8 @@
         "examples": [
           "Take your time.",
           "She took the bus."
-        ]
+        ],
+        "emoji": "✋"
       },
       {
         "word": "give",
@@ -251,7 +278,8 @@
         "examples": [
           "Give it to me.",
           "He gave a gift."
-        ]
+        ],
+        "emoji": "🎁"
       },
       {
         "word": "get",
@@ -260,7 +288,8 @@
         "examples": [
           "Get up.",
           "He got home."
-        ]
+        ],
+        "emoji": "📥"
       },
       {
         "word": "put",
@@ -269,7 +298,8 @@
         "examples": [
           "Put it here.",
           "She put it there."
-        ]
+        ],
+        "emoji": "📥"
       },
       {
         "word": "think",
@@ -278,7 +308,8 @@
         "examples": [
           "Think carefully.",
           "She thought about it."
-        ]
+        ],
+        "emoji": "🤔"
       },
       {
         "word": "know",
@@ -287,7 +318,8 @@
         "examples": [
           "I know him.",
           "She knew the answer."
-        ]
+        ],
+        "emoji": "🧠"
       },
       {
         "word": "understand",
@@ -296,7 +328,8 @@
         "examples": [
           "Understand this.",
           "She understood."
-        ]
+        ],
+        "emoji": "💡"
       },
       {
         "word": "learn",
@@ -305,7 +338,8 @@
         "examples": [
           "Learn English.",
           "She learned fast."
-        ]
+        ],
+        "emoji": "🎓"
       },
       {
         "word": "teach",
@@ -314,7 +348,8 @@
         "examples": [
           "Teach me.",
           "She taught him."
-        ]
+        ],
+        "emoji": "👩‍🏫"
       },
       {
         "word": "see",
@@ -323,7 +358,8 @@
         "examples": [
           "See the movie.",
           "She saw it."
-        ]
+        ],
+        "emoji": "👁️"
       },
       {
         "word": "look",
@@ -332,7 +368,8 @@
         "examples": [
           "Look at me.",
           "She looked away."
-        ]
+        ],
+        "emoji": "👀"
       },
       {
         "word": "talk",
@@ -341,7 +378,8 @@
         "examples": [
           "Talk slowly.",
           "She talked to him."
-        ]
+        ],
+        "emoji": "🗣️"
       },
       {
         "word": "walk",
@@ -350,7 +388,8 @@
         "examples": [
           "Walk to school.",
           "She walked quickly."
-        ]
+        ],
+        "emoji": "🚶"
       },
       {
         "word": "run",
@@ -359,7 +398,8 @@
         "examples": [
           "Run fast.",
           "He ran home."
-        ]
+        ],
+        "emoji": "🏃"
       },
       {
         "word": "buy",
@@ -368,7 +408,8 @@
         "examples": [
           "Buy bread.",
           "She bought milk."
-        ]
+        ],
+        "emoji": "🛍️"
       },
       {
         "word": "sell",
@@ -377,7 +418,8 @@
         "examples": [
           "Sell tickets.",
           "He sold his car."
-        ]
+        ],
+        "emoji": "💰"
       },
       {
         "word": "open",
@@ -386,7 +428,8 @@
         "examples": [
           "Open the door.",
           "She opened it."
-        ]
+        ],
+        "emoji": "🔓"
       },
       {
         "word": "close",
@@ -395,7 +438,8 @@
         "examples": [
           "Close the window.",
           "She closed it."
-        ]
+        ],
+        "emoji": "🚪"
       },
       {
         "word": "start",
@@ -404,7 +448,8 @@
         "examples": [
           "Start now.",
           "It started at 9."
-        ]
+        ],
+        "emoji": "▶️"
       },
       {
         "word": "stop",
@@ -413,7 +458,8 @@
         "examples": [
           "Stop there.",
           "She stopped walking."
-        ]
+        ],
+        "emoji": "🛑"
       },
       {
         "word": "finish",
@@ -422,7 +468,8 @@
         "examples": [
           "Finish it.",
           "She finished early."
-        ]
+        ],
+        "emoji": "🏁"
       },
       {
         "word": "begin",
@@ -431,7 +478,8 @@
         "examples": [
           "Begin now.",
           "It began at 7."
-        ]
+        ],
+        "emoji": "🎬"
       },
       {
         "word": "meet",
@@ -440,7 +488,8 @@
         "examples": [
           "Meet me there.",
           "She met him."
-        ]
+        ],
+        "emoji": "🤝"
       },
       {
         "word": "call",
@@ -449,7 +498,8 @@
         "examples": [
           "Call me.",
           "She called you."
-        ]
+        ],
+        "emoji": "📞"
       },
       {
         "word": "ask",
@@ -458,7 +508,8 @@
         "examples": [
           "Ask a question.",
           "She asked him."
-        ]
+        ],
+        "emoji": "❓"
       }
     ],
     "adjectives_top50": [
@@ -469,7 +520,8 @@
         "examples": [
           "The book is good.",
           "Good morning."
-        ]
+        ],
+        "emoji": "👍"
       },
       {
         "word": "bad",
@@ -478,7 +530,8 @@
         "examples": [
           "The weather is bad.",
           "Bad idea."
-        ]
+        ],
+        "emoji": "👎"
       },
       {
         "word": "big",
@@ -487,7 +540,8 @@
         "examples": [
           "A big dog.",
           "Big apple."
-        ]
+        ],
+        "emoji": "🐘"
       },
       {
         "word": "small",
@@ -496,7 +550,8 @@
         "examples": [
           "A small cat.",
           "Small room."
-        ]
+        ],
+        "emoji": "🐭"
       },
       {
         "word": "tall",
@@ -505,7 +560,8 @@
         "examples": [
           "A tall man.",
           "Tall tree."
-        ]
+        ],
+        "emoji": "🏗️"
       },
       {
         "word": "short",
@@ -514,7 +570,8 @@
         "examples": [
           "A short story.",
           "Short time."
-        ]
+        ],
+        "emoji": "📏"
       },
       {
         "word": "long",
@@ -523,7 +580,8 @@
         "examples": [
           "A long road.",
           "Long time."
-        ]
+        ],
+        "emoji": "📏"
       },
       {
         "word": "new",
@@ -532,7 +590,8 @@
         "examples": [
           "New car.",
           "New book."
-        ]
+        ],
+        "emoji": "✨"
       },
       {
         "word": "old",
@@ -541,7 +600,8 @@
         "examples": [
           "Old house.",
           "Old friend."
-        ]
+        ],
+        "emoji": "👴"
       },
       {
         "word": "young",
@@ -550,7 +610,8 @@
         "examples": [
           "Young person.",
           "Young child."
-        ]
+        ],
+        "emoji": "👶"
       },
       {
         "word": "fast",
@@ -559,7 +620,8 @@
         "examples": [
           "Fast car.",
           "Fast runner."
-        ]
+        ],
+        "emoji": "⚡"
       },
       {
         "word": "slow",
@@ -568,7 +630,8 @@
         "examples": [
           "Slow walk.",
           "Slow driver."
-        ]
+        ],
+        "emoji": "🐢"
       },
       {
         "word": "hot",
@@ -577,7 +640,8 @@
         "examples": [
           "Hot weather.",
           "Hot tea."
-        ]
+        ],
+        "emoji": "🔥"
       },
       {
         "word": "cold",
@@ -586,7 +650,8 @@
         "examples": [
           "Cold day.",
           "Cold water."
-        ]
+        ],
+        "emoji": "❄️"
       },
       {
         "word": "happy",
@@ -595,7 +660,8 @@
         "examples": [
           "Happy person.",
           "Happy feeling."
-        ]
+        ],
+        "emoji": "😊"
       },
       {
         "word": "sad",
@@ -604,7 +670,8 @@
         "examples": [
           "Sad movie.",
           "Sad story."
-        ]
+        ],
+        "emoji": "😢"
       },
       {
         "word": "busy",
@@ -613,7 +680,8 @@
         "examples": [
           "Busy day.",
           "Busy person."
-        ]
+        ],
+        "emoji": "🚧"
       },
       {
         "word": "tired",
@@ -622,7 +690,8 @@
         "examples": [
           "Tired dog.",
           "Tired student."
-        ]
+        ],
+        "emoji": "😫"
       },
       {
         "word": "hungry",
@@ -631,7 +700,8 @@
         "examples": [
           "Hungry cat.",
           "Hungry person."
-        ]
+        ],
+        "emoji": "🍽️"
       },
       {
         "word": "thirsty",
@@ -640,7 +710,8 @@
         "examples": [
           "Thirsty dog.",
           "Thirsty child."
-        ]
+        ],
+        "emoji": "🥤"
       },
       {
         "word": "easy",
@@ -649,7 +720,8 @@
         "examples": [
           "Easy test.",
           "Easy question."
-        ]
+        ],
+        "emoji": "😌"
       },
       {
         "word": "hard",
@@ -658,7 +730,8 @@
         "examples": [
           "Hard work.",
           "Hard exam."
-        ]
+        ],
+        "emoji": "💪"
       },
       {
         "word": "beautiful",
@@ -667,7 +740,8 @@
         "examples": [
           "Beautiful flower.",
           "Beautiful woman."
-        ]
+        ],
+        "emoji": "🌸"
       },
       {
         "word": "strong",
@@ -676,7 +750,8 @@
         "examples": [
           "Strong man.",
           "Strong coffee."
-        ]
+        ],
+        "emoji": "💪"
       },
       {
         "word": "weak",
@@ -685,7 +760,8 @@
         "examples": [
           "Weak point.",
           "Weak person."
-        ]
+        ],
+        "emoji": "😟"
       },
       {
         "word": "rich",
@@ -694,7 +770,8 @@
         "examples": [
           "Rich man.",
           "Rich family."
-        ]
+        ],
+        "emoji": "💎"
       },
       {
         "word": "poor",
@@ -703,7 +780,8 @@
         "examples": [
           "Poor family.",
           "Poor people."
-        ]
+        ],
+        "emoji": "🪙"
       },
       {
         "word": "cheap",
@@ -712,7 +790,8 @@
         "examples": [
           "Cheap book.",
           "Cheap food."
-        ]
+        ],
+        "emoji": "💸"
       },
       {
         "word": "expensive",
@@ -721,7 +800,8 @@
         "examples": [
           "Expensive car.",
           "Expensive restaurant."
-        ]
+        ],
+        "emoji": "💰"
       },
       {
         "word": "clean",
@@ -730,7 +810,8 @@
         "examples": [
           "Clean room.",
           "Clean clothes."
-        ]
+        ],
+        "emoji": "✨"
       },
       {
         "word": "dirty",
@@ -739,7 +820,8 @@
         "examples": [
           "Dirty floor.",
           "Dirty dish."
-        ]
+        ],
+        "emoji": "🗑️"
       },
       {
         "word": "loud",
@@ -748,7 +830,8 @@
         "examples": [
           "Loud music.",
           "Loud noise."
-        ]
+        ],
+        "emoji": "📢"
       },
       {
         "word": "quiet",
@@ -757,7 +840,8 @@
         "examples": [
           "Quiet room.",
           "Quiet place."
-        ]
+        ],
+        "emoji": "🤫"
       },
       {
         "word": "kind",
@@ -766,7 +850,8 @@
         "examples": [
           "Kind person.",
           "Kind teacher."
-        ]
+        ],
+        "emoji": "💜"
       },
       {
         "word": "nice",
@@ -775,7 +860,8 @@
         "examples": [
           "Nice day.",
           "Nice person."
-        ]
+        ],
+        "emoji": "👍"
       },
       {
         "word": "brave",
@@ -784,7 +870,8 @@
         "examples": [
           "Brave soldier.",
           "Brave child."
-        ]
+        ],
+        "emoji": "🦸"
       },
       {
         "word": "scared",
@@ -793,7 +880,8 @@
         "examples": [
           "Scared cat.",
           "Scared girl."
-        ]
+        ],
+        "emoji": "😨"
       },
       {
         "word": "angry",
@@ -802,7 +890,8 @@
         "examples": [
           "Angry man.",
           "Angry person."
-        ]
+        ],
+        "emoji": "😠"
       },
       {
         "word": "sick",
@@ -811,7 +900,8 @@
         "examples": [
           "Sick person.",
           "Sick child."
-        ]
+        ],
+        "emoji": "🤒"
       },
       {
         "word": "healthy",
@@ -820,7 +910,8 @@
         "examples": [
           "Healthy food.",
           "Healthy person."
-        ]
+        ],
+        "emoji": "🥗"
       },
       {
         "word": "open",
@@ -829,7 +920,8 @@
         "examples": [
           "Open door.",
           "Open window."
-        ]
+        ],
+        "emoji": "🔓"
       },
       {
         "word": "closed",
@@ -838,7 +930,8 @@
         "examples": [
           "Closed shop.",
           "Closed door."
-        ]
+        ],
+        "emoji": "🔒"
       },
       {
         "word": "heavy",
@@ -847,7 +940,8 @@
         "examples": [
           "Heavy box.",
           "Heavy rain."
-        ]
+        ],
+        "emoji": "🏋️"
       },
       {
         "word": "light",
@@ -856,7 +950,8 @@
         "examples": [
           "Light bag.",
           "Light room."
-        ]
+        ],
+        "emoji": "💡"
       },
       {
         "word": "dark",
@@ -865,7 +960,8 @@
         "examples": [
           "Dark room.",
           "Dark night."
-        ]
+        ],
+        "emoji": "🌑"
       },
       {
         "word": "bright",
@@ -874,7 +970,8 @@
         "examples": [
           "Bright sun.",
           "Bright light."
-        ]
+        ],
+        "emoji": "😎"
       },
       {
         "word": "right",
@@ -883,7 +980,8 @@
         "examples": [
           "Right answer.",
           "Right way."
-        ]
+        ],
+        "emoji": "✅"
       },
       {
         "word": "wrong",
@@ -892,7 +990,8 @@
         "examples": [
           "Wrong answer.",
           "Wrong way."
-        ]
+        ],
+        "emoji": "❌"
       },
       {
         "word": "important",
@@ -901,7 +1000,8 @@
         "examples": [
           "Important person.",
           "Important lesson."
-        ]
+        ],
+        "emoji": "⭐"
       },
       {
         "word": "interesting",
@@ -910,7 +1010,8 @@
         "examples": [
           "Interesting book.",
           "Interesting story."
-        ]
+        ],
+        "emoji": "🤩"
       }
     ]
   },
