@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary & Grammar Index — Eiken Textbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .search-section {
+            margin-bottom: 40px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1rem;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filters {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .grammar-point {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .grammar-point:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .grammar-point h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .level-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        .vocabulary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .vocabulary-table th, .vocabulary-table td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .vocabulary-table th {
+            background: #667eea;
+            color: white;
+        }
+
+        .vocabulary-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 10px;
+            }
+
+            .header {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .filters {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .filter-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Vocabulary & Grammar Index</h1>
+            <p>Search grammar points and vocabulary by level across all Eiken content</p>
+            <a href="index.html" class="back-link">← Back to Textbook</a>
+        </div>
+
+        <div class="content">
+            <div class="search-section">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search grammar points or vocabulary...">
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-level="all">All Levels</button>
+                    <button class="filter-btn" data-level="grade1">Grade 1</button>
+                    <button class="filter-btn" data-level="pre1">Pre-1</button>
+                    <button class="filter-btn" data-level="pre2plus">Pre-2+</button>
+                    <button class="filter-btn" data-level="pre2">Pre-2</button>
+                    <button class="filter-btn" data-level="grade2">Grade 2</button>
+                    <button class="filter-btn" data-level="grade3">Grade 3</button>
+                    <button class="filter-btn" data-level="grade4">Grade 4</button>
+                    <button class="filter-btn" data-level="grade5">Grade 5</button>
+                    <button class="filter-btn" data-level="grade6">Grade 6</button>
+                    <button class="filter-btn" data-level="grade7">Grade 7</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎓 Grammar Points by Level</h2>
+                <div id="grammarPoints">
+                    <!-- Grade 7 -->
+                    <div class="grammar-point" data-level="grade7">
+                        <h3>Basic Greetings <span class="level-badge">Grade 7</span></h3>
+                        <p>Hello, thank you, good morning, good afternoon, good evening, goodbye, nice to meet you</p>
+                    </div>
+
+                    <!-- Grade 6 -->
+                    <div class="grammar-point" data-level="grade6">
+                        <h3>Basic Present Tense <span class="level-badge">Grade 6</span></h3>
+                        <p>Present simple: I am, you are, he/she is. Question forms: Are you...? Is he...?</p>
+                    </div>
+
+                    <!-- Grade 5 -->
+                    <div class="grammar-point" data-level="grade5">
+                        <h3>Present Continuous <span class="level-badge">Grade 5</span></h3>
+                        <p>What are you doing? I am reading. He is cooking. Emphasis on current actions.</p>
+                    </div>
+
+                    <!-- Grade 4 -->
+                    <div class="grammar-point" data-level="grade4">
+                        <h3>Past Simple <span class="level-badge">Grade 4</span></h3>
+                        <p>I went to school yesterday. She watched TV last night. Regular and irregular past forms.</p>
+                    </div>
+
+                    <!-- Grade 4 -->
+                    <div class="grammar-point" data-level="grade4">
+                        <h3>Future with Will <span class="level-badge">Grade 4</span></h3>
+                        <p>I will go tomorrow. She will study English. Predictions and offers.</p>
+                    </div>
+
+                    <!-- Grade 3 -->
+                    <div class="grammar-point" data-level="grade3">
+                        <h3>Present Perfect <span class="level-badge">Grade 3</span></h3>
+                        <p>I have been to Tokyo. She has finished her homework. Experiences and completed actions.</p>
+                    </div>
+
+                    <!-- Grade 3 -->
+                    <div class="grammar-point" data-level="grade3">
+                        <h3>Relative Clauses (Basic) <span class="level-badge">Grade 3</span></h3>
+                        <p>The book that I bought is interesting. The person who called me is my friend.</p>
+                    </div>
+
+                    <!-- Pre-2 -->
+                    <div class="grammar-point" data-level="pre2">
+                        <h3>Modals (Core) <span class="level-badge">Pre-2</span></h3>
+                        <p>Can, could, may, might, must. 88 occurrences — THE key feature of Pre-2.</p>
+                    </div>
+
+                    <!-- Pre-2 -->
+                    <div class="grammar-point" data-level="pre2">
+                        <h3>First Conditionals <span class="level-badge">Pre-2</span></h3>
+                        <p>If it rains, I will stay home. If you study hard, you will pass.</p>
+                    </div>
+
+                    <!-- Pre-2+ -->
+                    <div class="grammar-point" data-level="pre2plus">
+                        <h3>Passive Voice (Explosion) <span class="level-badge">Pre-2+</span></h3>
+                        <p>The house was built in 1990. English is spoken worldwide. +300% increase from Pre-2.</p>
+                    </div>
+
+                    <!-- Grade 2 -->
+                    <div class="grammar-point" data-level="grade2">
+                        <h3>Past Perfect <span class="level-badge">Grade 2</span></h3>
+                        <p>I had already left when he arrived. She had finished before I started.</p>
+                    </div>
+
+                    <!-- Pre-1 -->
+                    <div class="grammar-point" data-level="pre1">
+                        <h3>Discourse Markers <span class="level-badge">Pre-1</span></h3>
+                        <p>However, therefore, consequently, in addition, furthermore. Academic register.</p>
+                    </div>
+
+                    <!-- Grade 1 -->
+                    <div class="grammar-point" data-level="grade1">
+                        <h3>Hedging/Stance Markers <span class="level-badge">Grade 1</span></h3>
+                        <p>Reportedly, apparently, seemingly, arguably. Academic tone and careful qualification.</p>
+                    </div>
+
+                    <!-- Grade 1 -->
+                    <div class="grammar-point" data-level="grade1">
+                        <h3>Academic Passive <span class="level-badge">Grade 1</span></h3>
+                        <p>It is argued that..., It has been shown that..., It should be noted that...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📊 Vocabulary Progression</h2>
+                <table class="vocabulary-table">
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Grade</th>
+                            <th>Vocabulary</th>
+                            <th>Growth</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grade 7</td>
+                            <td>7級</td>
+                            <td>~558 words</td>
+                            <td>Entry level</td>
+                        </tr>
+                        <tr>
+                            <td>Grade 6</td>
+                            <td>6級</td>
+                            <td>~653 words</td>
+                            <td>+17%</td>
+                        </tr>
+                        <tr>
+                            <td>Grade 5</td>
+                            <td>5級</td>
+                            <td>~653 words</td>
+                            <td>Base</td>
+                        </tr>
+                        <tr>
+                            <td>Grade 4</td>
+                            <td>4級</td>
+                            <td>1,120 words</td>
+                            <td><strong>+71%</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Grade 3</td>
+                            <td>3級</td>
+                            <td>1,828 words</td>
+                            <td>+63%</td>
+                        </tr>
+                        <tr>
+                            <td>Pre-2</td>
+                            <td>準2級</td>
+                            <td>2,977 words</td>
+                            <td><strong>+63%</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Grade 2</td>
+                            <td>2級</td>
+                            <td>3,556 words</td>
+                            <td>+19%</td>
+                        </tr>
+                        <tr>
+                            <td>Pre-1</td>
+                            <td>準1級</td>
+                            <td>3,561 words</td>
+                            <td>Stable</td>
+                        </tr>
+                        <tr>
+                            <td>Grade 1</td>
+                            <td>1級</td>
+                            <td>5,018 words</td>
+                            <td><strong>+41%</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="grammar-point" style="margin-top: 20px;">
+                    <h3>💡 Critical Vocabulary Jumps</h3>
+                    <p><strong>Grade 4 (+71%)</strong> — Introduction of past/future tenses and reading passages</p>
+                    <p><strong>Pre-2 (+63%)</strong> — Massive modal vocabulary (can, could, may, might, must)</p>
+                    <p><strong>Grade 1 (+41%)</strong> — Academic, formal, and hedging vocabulary</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔍 Quick Search Examples</h2>
+                <p><strong>Try these searches:</strong></p>
+                <ul>
+                    <li>"passive" — Find all levels using passive voice</li>
+                    <li>"modals" — Locate modal grammar points</li>
+                    <li>"present" — Present simple, continuous, perfect</li>
+                    <li>"conditionals" — If-clauses and conditions</li>
+                    <li>"academic" — Academic register features</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const grammarPoints = document.querySelectorAll('.grammar-point');
+        let currentFilter = 'all';
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            
+            grammarPoints.forEach(point => {
+                const text = point.textContent.toLowerCase();
+                const level = point.dataset.level;
+                
+                const matchesSearch = text.includes(searchTerm);
+                const matchesFilter = currentFilter === 'all' || level === currentFilter;
+                
+                if (matchesSearch && matchesFilter) {
+                    point.classList.remove('hidden');
+                } else {
+                    point.classList.add('hidden');
+                }
+            });
+        });
+
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                currentFilter = this.dataset.level;
+                
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                grammarPoints.forEach(point => {
+                    const text = point.textContent.toLowerCase();
+                    const level = point.dataset.level;
+                    
+                    const matchesSearch = searchTerm === '' || text.includes(searchTerm);
+                    const matchesFilter = currentFilter === 'all' || level === currentFilter;
+                    
+                    if (matchesSearch && matchesFilter) {
+                        point.classList.remove('hidden');
+                    } else {
+                        point.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
