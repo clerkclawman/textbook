@@ -1288,10 +1288,15 @@
             return;
         }
 
-        setupEventListeners();
+        // Initialize with class selector disabled until data loads
+        classSelector.disabled = true;
+
         loadSavedPreferences();
         loadExternalData().then(() => {
             console.log('All external data loaded');
+            // Enable class selector and set up event listeners only after data loads
+            classSelector.disabled = false;
+            setupEventListeners();
             classSelector.focus();
         }).catch(error => {
             console.error('Error loading external data:', error);
