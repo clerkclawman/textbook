@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics — Eiken Textbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-card h3 {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .chart-container {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .level-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .level-bar {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .level-label {
+            min-width: 100px;
+            font-weight: bold;
+        }
+
+        .bar-container {
+            flex: 1;
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        .bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 15px;
+            color: white;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th, .table td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .table th {
+            background: #667eea;
+            color: white;
+        }
+
+        .table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #764ba2;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #bd2130;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .level-bar {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .level-label {
+                min-width: auto;
+            }
+
+            .bar-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Usage Analytics</h1>
+            <p>Track how teachers and students use the Eiken textbook</p>
+            <a href="index.html" class="back-link">← Back to Textbook</a>
+        </div>
+
+        <div class="content">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Level Views</h3>
+                    <div class="value" id="totalLevelViews">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Stories Read</h3>
+                    <div class="value" id="totalStories">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Days Visited</h3>
+                    <div class="value" id="daysVisited">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Pages Viewed</h3>
+                    <div class="value" id="totalPages">0</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🏆 Most Viewed Levels</h2>
+                <div class="chart-container">
+                    <div class="level-bars" id="levelBars">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📅 Last 7 Days</h2>
+                <div class="chart-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Page Views</th>
+                            </tr>
+                        </thead>
+                        <tbody id="weeklyTable">
+                            <!-- Dynamic content -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📖 Story Views by Level</h2>
+                <div class="chart-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Story</th>
+                                <th>Views</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="storyTable">
+                            <!-- Dynamic content -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🛠️ Actions</h2>
+                <div class="chart-container">
+                    <button class="btn btn-primary" onclick="exportData()">📤 Export Data</button>
+                    <button class="btn btn-danger" onclick="clearData()">🗑️ Clear Data</button>
+                </div>
+                <p style="margin-top: 10px; color: #666; font-size: 0.9em;">
+                    Note: Analytics data is stored locally in your browser. Clearing data cannot be undone.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script>
+        // Track page view
+        Analytics.trackPageView('analytics.html');
+
+        // Update dashboard
+        function updateDashboard() {
+            const summary = Analytics.getSummary();
+
+            // Update stats cards
+            document.getElementById('totalLevelViews').textContent = summary.totalLevelViews.toLocaleString();
+            document.getElementById('totalStories').textContent = summary.totalStories.toLocaleString();
+            document.getElementById('daysVisited').textContent = summary.daysVisited.toLocaleString();
+            document.getElementById('totalPages').textContent = summary.totalPages;
+
+            // Update level bars
+            const levelBars = document.getElementById('levelBars');
+            const maxViews = Math.max(...summary.topLevels.map(([, views]) => views), 1);
+
+            levelBars.innerHTML = summary.topLevels.map(([level, views]) => {
+                const percentage = (views / maxViews) * 100;
+                return `
+                    <div class="level-bar">
+                        <span class="level-label">${level}</span>
+                        <div class="bar-container">
+                            <div class="bar" style="width: ${percentage}%">${views}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Update weekly table
+            const weeklyTable = document.getElementById('weeklyTable');
+            const weekly = Analytics.getWeeklyViews();
+
+            weeklyTable.innerHTML = weekly.map(({ date, views }) => `
+                <tr>
+                    <td>${date}</td>
+                    <td>${views}</td>
+                </tr>
+            `).join('');
+
+            // Update story table
+            const storyTable = document.getElementById('storyTable');
+            const sortedStories = Object.entries(summary.storyViews)
+                .sort(([,a], [,b]) => b - a)
+                .slice(0, 10);
+
+            storyTable.innerHTML = sortedStories.map(([story, views]) => {
+                const [storyName, date] = story.split('_story_');
+                return `
+                    <tr>
+                        <td>${storyName} #${date}</td>
+                        <td>${views}</td>
+                        <td>-</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Export data
+        function exportData() {
+            const data = Analytics.export();
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'textbook-analytics.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Clear data
+        function clearData() {
+            if (confirm('Are you sure you want to clear all analytics data? This cannot be undone.')) {
+                Analytics.clear();
+                updateDashboard();
+            }
+        }
+
+        // Initialize
+        updateDashboard();
+
+        // Refresh every 30 seconds
+        setInterval(updateDashboard, 30000);
+    </script>
+</body>
+</html>

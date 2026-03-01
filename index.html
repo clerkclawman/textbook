@@ -1108,6 +1108,7 @@
 
     <a href='eiken-dashboard.html' class='dashboard-link'>🎯 Eiken Alignment Dashboard</a>
     <a href='vocabulary-grammar-index.html' class='dashboard-link'>📚 Vocabulary & Grammar Index</a>
+    <a href='analytics.html' class='dashboard-link'>📊 Usage Analytics</a>
 
     <div class='controls-row'>
         <div class='dropdown'>
@@ -2814,5 +2815,34 @@
         setTimeout(listVoices, 1000);
     });
 </script>
+    <script src="analytics.js"></script>
+    <script>
+        // Track page view
+        Analytics.trackPageView('index.html');
+
+        // Track level selection when dropdown changes
+        const classSelector = document.getElementById('classSelector');
+        let lastLevel = null;
+
+        if (classSelector) {
+            classSelector.addEventListener('change', function() {
+                const level = this.value;
+                if (level) {
+                    Analytics.trackLevelView(level);
+                    console.log('Analytics: Level selected:', level);
+                }
+                lastLevel = level;
+            });
+        }
+
+        // Track story navigation (when user moves between stories)
+        // This is a simplified version - in production you'd integrate with existing navigation logic
+        setInterval(() => {
+            const currentStory = window.currentStory || 0;
+            if (lastLevel && currentStory > 0) {
+                Analytics.trackStoryView(lastLevel, currentStory);
+            }
+        }, 5000);
+    </script>
 </body>
 </html>
