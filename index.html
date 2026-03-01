@@ -1106,6 +1106,8 @@
 <div class='container' id='mainContainer'>
     <div class='header'>CHATTERBOX HOUSE</div>
 
+    <a href='eiken-dashboard.html' class='dashboard-link'>🎯 Eiken Alignment Dashboard</a>
+
     <div class='controls-row'>
         <div class='dropdown'>
             <select id='classSelector'>
@@ -2492,6 +2494,27 @@
                             }, 500);
 
                             setTimeout(hideFruitGame, 3000);
+
+    .dashboard-link {
+        display: block;
+        text-align: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 15px 30px;
+        border-radius: var(--border-radius);
+        margin: 20px auto;
+        width: fit-content;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: var(--transition);
+        box-shadow: var(--box-shadow);
+    }
+
+    .dashboard-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);
+    }
                         } else {
                             playSound('lose');
                             resultDisplay.textContent = 'Try again!';
