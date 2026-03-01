@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Examples — Eiken Textbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .sidebar {
+            width: 300px;
+            float: left;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-right: 20px;
+            max-height: 700px;
+            overflow-y: auto;
+        }
+
+        .sidebar h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .level-section {
+            margin-bottom: 20px;
+        }
+
+        .level-title {
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+
+        .grammar-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .grammar-link:hover {
+            background: #e9ecef;
+            border-color: #667eea;
+        }
+
+        .grammar-link.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .main-content {
+            margin-left: 320px;
+        }
+
+        .grammar-detail {
+            display: none;
+        }
+
+        .grammar-detail.active {
+            display: block;
+        }
+
+        .grammar-title {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .level-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .examples-section {
+            margin-bottom: 30px;
+        }
+
+        .examples-section h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .example-pair {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .example-pair:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .english {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            border-left: 3px solid #667eea;
+        }
+
+        .japanese {
+            font-size: 1em;
+            color: #666;
+            padding-left: 15px;
+            border-left: 3px solid #764ba2;
+            font-style: italic;
+        }
+
+        .context-tag {
+            display: inline-block;
+            background: #e9ecef;
+            color: #666;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.75em;
+            margin-left: 10px;
+            font-style: normal;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+
+        .empty-state h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 100%;
+                float: none;
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-height: none;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📖 Grammar Point Examples</h1>
+            <p>Explore detailed bilingual examples for each grammar point</p>
+            <a href="vocabulary-grammar-index.html" class="back-link">← Back to Index</a>
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                <h3>Select Grammar Point</h3>
+                
+                <div class="level-section">
+                    <div class="level-title">Grade 7</div>
+                    <div class="grammar-link" onclick="showGrammar('basic-greetings')">Basic Greetings</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Grade 6</div>
+                    <div class="grammar-link" onclick="showGrammar('basic-present-tense')">Basic Present Tense</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Grade 5</div>
+                    <div class="grammar-link" onclick="showGrammar('present-continuous')">Present Continuous</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Grade 4</div>
+                    <div class="grammar-link" onclick="showGrammar('past-simple')">Past Simple</div>
+                    <div class="grammar-link" onclick="showGrammar('future-will')">Future with Will</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Grade 3</div>
+                    <div class="grammar-link" onclick="showGrammar('present-perfect')">Present Perfect</div>
+                    <div class="grammar-link" onclick="showGrammar('relative-clauses')">Relative Clauses</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Pre-2</div>
+                    <div class="grammar-link" onclick="showGrammar('modals-core')">Modals (Core)</div>
+                    <div class="grammar-link" onclick="showGrammar('first-conditionals')">First Conditionals</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Pre-2+</div>
+                    <div class="grammar-link" onclick="showGrammar('passive-voice-explosion')">Passive Voice (Explosion)</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Grade 2</div>
+                    <div class="grammar-link" onclick="showGrammar('past-perfect')">Past Perfect</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Pre-1</div>
+                    <div class="grammar-link" onclick="showGrammar('discourse-markers')">Discourse Markers</div>
+                </div>
+
+                <div class="level-section">
+                    <div class="level-title">Grade 1</div>
+                    <div class="grammar-link" onclick="showGrammar('hedging-stance-markers')">Hedging/Stance Markers</div>
+                    <div class="grammar-link" onclick="showGrammar('academic-passive')">Academic Passive</div>
+                </div>
+            </div>
+
+            <div class="main-content" id="mainContent">
+                <div class="empty-state">
+                    <h3>👈 Select a grammar point from the sidebar</h3>
+                    <p>Click on any grammar point to see bilingual examples illustrating the variety of expression.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script>
+        // Grammar data with examples
+        const grammarData = {
+            'basic-greetings': {
+                title: 'Basic Greetings',
+                level: 'Grade 7',
+                badge: '7級',
+                description: 'Everyday greetings used when meeting people, saying hello, saying goodbye, and basic politeness expressions. These are the foundation of English communication.',
+                examples: [
+                    { en: 'Hello!', jp: 'こんにちは！', context: 'Basic greeting' },
+                    { en: 'Good morning!', jp: 'おはようございます！', context: 'Morning greeting (formal)' },
+                    { en: 'Hi!', jp: 'やあ！', context: 'Casual greeting' },
+                    { en: 'Good afternoon!', jp: 'こんにちは！', context: 'Afternoon greeting' },
+                    { en: 'Good evening!', jp: 'こんばんは！', context: 'Evening greeting' },
+                    { en: 'Goodbye!', jp: 'さようなら！', context: 'Basic farewell' },
+                    { en: 'See you later!', jp: 'また後で！', context: 'Casual farewell' },
+                    { en: 'Thank you!', jp: 'ありがとうございます！', context: 'Gratitude' },
+                    { en: 'You\'re welcome!', jp: 'どういたしまして！', context: 'Response to thanks' },
+                    { en: 'Nice to meet you!', jp: 'はじめまして！', context: 'First meeting' },
+                    { en: 'How are you?', jp: 'お元気ですか？', context: 'Asking about someone' },
+                    { en: 'I\'m fine, thank you.', jp: '元気です、ありがとう。', context: 'Responding to greeting' }
+                ]
+            },
+
+            'basic-present-tense': {
+                title: 'Basic Present Tense',
+                level: 'Grade 6',
+                badge: '6級',
+                description: 'Using the verb "to be" (am, is, are) to describe people, things, and states. Forms yes/no questions and simple descriptions.',
+                examples: [
+                    { en: 'I am a student.', jp: '私は学生です。', context: 'Identity' },
+                    { en: 'She is my teacher.', jp: '彼女は私の先生です。', context: 'Relationship' },
+                    { en: 'They are friends.', jp: '彼らは友達です。', context: 'Group description' },
+                    { en: 'Is this your book?', jp: 'これはあなたの本ですか？', context: 'Yes/no question' },
+                    { en: 'Are you hungry?', jp: 'お腹が空いていますか？', context: 'State question' },
+                    { en: 'He is not here.', jp: '彼はここにいません。', context: 'Negation' },
+                    { en: 'We are happy.', jp: '私たちは幸せです。', context: 'Emotion' },
+                    { en: 'It is cold today.', jp: '今日は寒いです。', context: 'Weather/state' },
+                    { en: 'Are you ready?', jp: '準備はいいですか？', context: 'Readiness question' },
+                    { en: 'I am fine.', jp: '私は元気です。', context: 'Well-being' }
+                ]
+            },
+
+            'present-continuous': {
+                title: 'Present Continuous',
+                level: 'Grade 5',
+                badge: '5級',
+                description: 'Actions happening right now using "is/are + verb-ing". Emphasizes current, ongoing activities.',
+                examples: [
+                    { en: 'I am reading a book.', jp: '私は本を読んでいます。', context: 'Current action' },
+                    { en: 'She is cooking dinner.', jp: '彼女は夕食を作っています。', context: 'Household activity' },
+                    { en: 'They are playing football.', jp: '彼らはサッカーをしています。', context: 'Sports/leisure' },
+                    { en: 'What are you doing?', jp: '何をしていますか？', context: 'Questioning action' },
+                    { en: 'He is sleeping.', jp: '彼は寝ています。', context: 'Resting' },
+                    { en: 'We are studying English.', jp: '私たちは英語を勉強しています。', context: 'Learning' },
+                    { en: 'The cat is eating.', jp: '猫が食べています。', context: 'Animal action' },
+                    { en: 'I am not working today.', jp: '今日は働いていません。', context: 'Negation' },
+                    { en: 'Are you listening?', jp: '聞いていますか？', context: 'Attention check' },
+                    { en: 'The phone is ringing.', jp: '電話が鳴っています。', context: 'Sound/event' }
+                ]
+            },
+
+            'past-simple': {
+                title: 'Past Simple',
+                level: 'Grade 4',
+                badge: '4級',
+                description: 'Actions completed in the past using -ed endings or irregular past forms. Discusses what happened yesterday, last week, or before now.',
+                examples: [
+                    { en: 'I went to school yesterday.', jp: '昨日、学校へ行きました。', context: 'Daily activity' },
+                    { en: 'She watched TV last night.', jp: '昨夜、彼女はテレビを見ました。', context: 'Entertainment' },
+                    { en: 'They finished their homework.', jp: '彼らは宿題を終えました。', context: 'Task completion' },
+                    { en: 'He lived in Tokyo.', jp: '彼は東京に住んでいました。', context: 'Past residence' },
+                    { en: 'I liked the movie.', jp: 'その映画が好きでした。', context: 'Opinion' },
+                    { en: 'Did you visit Japan?', jp: '日本を訪れましたか？', context: 'Past question' },
+                    { en: 'We played tennis.', jp: '私たちはテニスをしました。', context: 'Sports' },
+                    { en: 'She didn\'t come.', jp: '彼女は来ませんでした。', context: 'Negation' },
+                    { en: 'He worked hard.', jp: '彼は一生懸命働きました。', context: 'Work effort' },
+                    { en: 'I bought a new car.', jp: '新しい車を買いました。', context: 'Purchase' },
+                    { en: 'It rained yesterday.', jp: '昨日は雨でした。', context: 'Weather' },
+                    { en: 'We ate at a restaurant.', jp: '私たちはレストランで食べました。', context: 'Dining' }
+                ]
+            },
+
+            'future-will': {
+                title: 'Future with Will',
+                level: 'Grade 4',
+                badge: '4級',
+                description: 'Using "will" to talk about the future. Predictions, promises, and spontaneous decisions.',
+                examples: [
+                    { en: 'I will go to school tomorrow.', jp: '明日、学校へ行きます。', context: 'Future plan' },
+                    { en: 'She will study hard.', jp: '彼女は一生懸命勉強するでしょう。', context: 'Prediction' },
+                    { en: 'We will meet at 5 o\'clock.', jp: '5時に会いましょう。', context: 'Appointment' },
+                    { en: 'It will rain.', jp: '雨が降るでしょう。', context: 'Weather prediction' },
+                    { en: 'I will help you.', jp: '手伝います。', context: 'Offer/help' },
+                    { en: 'He will win the game.', jp: '彼は試合に勝つでしょう。', context: 'Prediction' },
+                    { en: 'They will arrive soon.', jp: '彼らはすぐに着くでしょう。', context: 'Arrival prediction' },
+                    { en: 'I won\'t forget.', jp: '忘れません。', context: 'Promise' },
+                    { en: 'Will you come?', jp: '来ますか？', context: 'Invitation' },
+                    { en: 'The party will be fun.', jp: 'パーティーは楽しいでしょう。', context: 'Future description' }
+                ]
+            },
+
+            'present-perfect': {
+                title: 'Present Perfect',
+                level: 'Grade 3',
+                badge: '3級',
+                description: 'Using "have/has + past participle" to connect past to present. Experiences and actions that happened at an unspecified time.',
+                examples: [
+                    { en: 'I have been to Tokyo.', jp: '東京に行ったことがあります。', context: 'Experience' },
+                    { en: 'She has finished her homework.', jp: '彼女は宿題を終えました。', context: 'Completed action' },
+                    { en: 'We have eaten breakfast.', jp: '朝食を食べました。', context: 'Recent completion' },
+                    { en: 'He has lost his key.', jp: '彼は鍵を失くしました。', context: 'Consequences' },
+                    { en: 'I have never seen snow.', jp: '雪を見たことがありません。', context: 'Never experienced' },
+                    { en: 'They have visited Japan twice.', jp: '彼らは日本を2回訪れました。', context: 'Multiple experiences' },
+                    { en: 'Have you read this book?', jp: 'この本を読んだことがありますか？', context: 'Experience question' },
+                    { en: 'I have lived here for 10 years.', jp: 'ここに10年住んでいます。', context: 'Duration' },
+                    { en: 'She has already arrived.', jp: '彼女はすでに着きました。', context: 'Recent completion' },
+                    { en: 'I haven\'t decided yet.', jp: 'まだ決めていません。', context: 'Indecision' }
+                ]
+            },
+
+            'relative-clauses': {
+                title: 'Relative Clauses',
+                level: 'Grade 3',
+                badge: '3級',
+                description: 'Using "who," "that," and "which" to describe people and things. Connects ideas smoothly.',
+                examples: [
+                    { en: 'The book that I read was interesting.', jp: '私が読んだ本は面白かったです。', context: 'Describing things' },
+                    { en: 'The person who called me is my friend.', jp: '私に電話をかけた人は友達です。', context: 'Identifying people' },
+                    { en: 'The car that hit me was red.', jp: '私をはねた車は赤でした。', context: 'Event description' },
+                    { en: 'I know the girl who lives next door.', jp: '隣に住んでいる女の子を知っています。', context: 'Neighbor' },
+                    { en: 'The movie we watched was great.', jp: '私たちが見た映画は最高でした。', context: 'Entertainment' },
+                    { en: 'He is the man who helped me.', jp: '彼は私を助けてくれた人です。', context: 'Gratitude' },
+                    { en: 'The house which we bought is big.', jp: '私たちが買った家は大きいです。', context: 'Property' },
+                    { en: 'The woman I saw was your mother.', jp: '私が見た女性はあなたの母でした。', context: 'Identification' },
+                    { en: 'The dog that bit me was small.', jp: '私を噛んだ犬は小さかったです。', context: 'Unpleasant experience' },
+                    { en: 'The city where I live is beautiful.', jp: '私が住んでいる都市は美しいです。', context: 'Location' }
+                ]
+            },
+
+            'modals-core': {
+                title: 'Modals (Core)',
+                level: 'Pre-2',
+                badge: '準2級',
+                description: 'The core modals can, could, may, might, must. Express ability, possibility, permission, necessity. THE key feature of Pre-2 (88 occurrences).',
+                examples: [
+                    { en: 'I can swim.', jp: '私は泳げます。', context: 'Ability' },
+                    { en: 'Could you help me?', jp: '手伝ってもらえますか？', context: 'Polite request' },
+                    { en: 'You may enter.', jp: '入ってもいいですよ。', context: 'Permission' },
+                    { en: 'It might rain.', jp: '雨が降るかもしれません。', context: 'Possibility' },
+                    { en: 'You must study.', jp: '勉強しなければなりません。', context: 'Obligation' },
+                    { en: 'I could do it.', jp: 'それをする能力がありました。', context: 'Past ability' },
+                    { en: 'May I ask a question?', jp: '質問してもいいですか？', context: 'Polite permission' },
+                    { en: 'He might be late.', jp: '彼は遅れるかもしれません。', context: 'Possibility' },
+                    { en: 'We must be careful.', jp: '気をつけなければなりません。', context: 'Necessity' },
+                    { en: 'Can you speak English?', jp: '英語は話せますか？', context: 'Ability question' },
+                    { en: 'She could have come.', jp: '彼女は来ることもできました。', context: 'Possibility (unrealized)' },
+                    { en: 'It may be true.', jp: '本当かもしれません。', context: 'Possibility' },
+                    { en: 'We might win.', jp: '私たちが勝つかもしれません。', context: 'Possibility' },
+                    { en: 'I must go now.', jp: '行かなければなりません。', context: 'Urgent obligation' }
+                ]
+            },
+
+            'first-conditionals': {
+                title: 'First Conditionals',
+                level: 'Pre-2',
+                badge: '準2級',
+                description: 'Using "if...will" to describe probable future conditions. Real situations and their likely results.',
+                examples: [
+                    { en: 'If it rains, I will stay home.', jp: '雨が降ったら、家にいるでしょう。', context: 'Weather decision' },
+                    { en: 'If you study hard, you will pass.', jp: '一生懸命勉強すれば、合格します。', context: 'Study advice' },
+                    { en: 'If she calls, I will tell her.', jp: '彼女が電話したら、伝えます。', context: 'Communication' },
+                    { en: 'If we hurry, we will catch the train.', jp: '急げば電車に間に合います。', context: 'Time sensitivity' },
+                    { en: 'If I have time, I will visit you.', jp: '時間があれば、訪ねます。', context: 'Social promise' },
+                    { en: 'If he is hungry, he will eat.', jp: 'お腹が空いていれば、食べるでしょう。', context: 'Basic need' },
+                    { en: 'If you help me, I will pay you.', jp: '手伝ってくれたら、払います。', context: 'Exchange' },
+                    { en: 'If it snows, schools will close.', jp: '雪が降れば、学校が休みになります。', context: 'Weather impact' },
+                    { en: 'If you win, you will be happy.', jp: '勝てば、幸せになるでしょう。', context: 'Emotion' },
+                    { en: 'If we work together, we will finish.', jp: '一緒に働けば、終わります。', context: 'Collaboration' }
+                ]
+            },
+
+            'passive-voice-explosion': {
+                title: 'Passive Voice (Explosion)',
+                level: 'Pre-2+',
+                badge: '準2級プラス',
+                description: 'Passive constructions using "be + past participle." The action happens to the subject. +300% increase from Pre-2.',
+                examples: [
+                    { en: 'The house was built in 1990.', jp: 'その家は1990年に建てられました。', context: 'Construction' },
+                    { en: 'English is spoken worldwide.', jp: '英語は世界中で話されています。', context: 'Language spread' },
+                    { en: 'The book was written by a famous author.', jp: 'その本は有名な作家によって書かれました。', context: 'Authorship' },
+                    { en: 'The cake was eaten by the children.', jp: 'そのケーキは子供たちによって食べられました。', context: 'Action received' },
+                    { en: 'The car is being repaired.', jp: 'その車は修理されています。', context: 'Maintenance' },
+                    { en: 'The problem was solved quickly.', jp: 'その問題はすぐに解決されました。', context: 'Problem resolution' },
+                    { en: 'The meeting was canceled.', jp: '会議はキャンセルされました。', context: 'Event cancellation' },
+                    { en: 'The emails are sent daily.', jp: 'メールは毎日送信されています。', context: 'Routine' },
+                    { en: 'The invention was patented.', jp: 'その発明は特許を取得しました。', context: 'Legal' },
+                    { en: 'The patient was treated by the doctor.', jp: 'その患者は医者によって治療されました。', context: 'Medical' },
+                    { en: 'The message was received yesterday.', jp: 'そのメッセージは昨日受信されました。', context: 'Communication' },
+                    { en: 'The product is sold in stores.', jp: 'その製品は店で売られています。', context: 'Commerce' }
+                ]
+            },
+
+            'past-perfect': {
+                title: 'Past Perfect',
+                level: 'Grade 2',
+                badge: '2級',
+                description: 'Using "had + past participle" to describe actions that happened before another past action. Advanced timeline sequencing.',
+                examples: [
+                    { en: 'I had already left when he arrived.', jp: '彼が到着した時、私はすでに出発していました。', context: 'Sequence' },
+                    { en: 'She had finished before I started.', jp: '私が始める前に、彼女は終えていました。', context: 'Completion' },
+                    { en: 'We had already eaten when they came.', jp: '彼らが来た時、私たちはすでに食べていました。', context: 'Past event' },
+                    { en: 'He had never been abroad before.', jp: '以前、彼は海外へ行ったことがありませんでした。', context: 'Experience' },
+                    { en: 'The train had already left.', jp: '電車はすでに出発していました。', context: 'Transportation' },
+                    { en: 'I had studied for three years.', jp: '私は3年間勉強していました。', context: 'Duration' },
+                    { en: 'She had forgotten my name.', jp: '彼女は私の名前を忘れていました。', context: 'Memory' },
+                    { en: 'They had decided to move.', jp: '彼らは引越すことを決めていました。', context: 'Decision' },
+                    { en: 'The movie had started when we entered.', jp: '私たちが入った時、映画は始まっていました。', context: 'Timing' },
+                    { en: 'I had realized my mistake.', jp: '私は自分の間違いに気づいていました。', context: 'Awareness' }
+                ]
+            },
+
+            'discourse-markers': {
+                title: 'Discourse Markers',
+                level: 'Pre-1',
+                badge: '準1級',
+                description: 'Academic register words that connect ideas and show logical relationships. Essential for formal writing and advanced speaking.',
+                examples: [
+                    { en: 'However, the results were unexpected.', jp: 'しかし、結果は予想外でした。', context: 'Contrast' },
+                    { en: 'Therefore, we must act now.', jp: 'したがって、今行動しなければなりません。', context: 'Conclusion' },
+                    { en: 'Consequently, prices rose.', jp: 'その結果、価格は上昇しました。', context: 'Result' },
+                    { en: 'In addition, we must consider the cost.', jp: 'さらに、費用を考慮する必要があります。', context: 'Addition' },
+                    { en: 'Furthermore, the data supports this.', jp: 'さらに、データがこれを支持しています。', context: 'Evidential support' },
+                    { en: 'Nevertheless, we continue.', jp: 'それにもかかわらず、継続します。', context: 'Persistence' },
+                    { en: 'Moreover, the benefits are clear.', jp: 'さらに、利点は明確です。', context: 'Emphasis' },
+                    { en: 'On the other hand, critics disagree.', jp: '一方、批評家は異なっています。', context: 'Counterpoint' },
+                    { en: 'Thus, the hypothesis is confirmed.', jp: 'したがって、仮説が確認されました。', context: 'Deduction' },
+                    { en: 'Accordingly, the plan changed.', jp: 'それに応じて、計画が変更されました。', context: 'Adaptation' }
+                ]
+            },
+
+            'hedging-stance-markers': {
+                title: 'Hedging/Stance Markers',
+                level: 'Grade 1',
+                badge: '1級',
+                description: 'Academic tone words that soften statements and show careful qualification. Distinguishes Grade 1 from Pre-1.',
+                examples: [
+                    { en: 'Reportedly, the CEO will resign.', jp: '報道によると、CEOは辞任するそうです。', context: 'Attribution' },
+                    { en: 'Apparently, the deal failed.', jp: 'どうやら、その取引は失敗したようです。', context: 'Observation' },
+                    { en: 'Seemingly, the problem persists.', jp: 'どうやら、問題は続いているようです。', context: 'Assessment' },
+                    { en: 'Arguably, the plan is flawed.', jp: '議論の余地はありますが、その計画には欠陥があります。', context: 'Qualified opinion' },
+                    { en: 'Reportedly, the team won.', jp: '報道によると、そのチームが勝ったそうです。', context: 'News attribution' },
+                    { en: 'Apparently, she was wrong.', jp: 'どうやら、彼女が間違っていたようです。', context: 'Correction' },
+                    { en: 'Seemingly, no one noticed.', jp: 'どうやら、誰も気づかなかったようです。', context: 'Observation' },
+                    { en: 'Arguably, this is the best approach.', jp: '議論の余地はありますが、これが最善のアプローチです。', context: 'Recommendation' },
+                    { en: 'Reportedly, sales have increased.', jp: '報道によると、売上が増加したそうです。', context: 'Business news' },
+                    { en: 'Apparently, it\'s true.', jp: 'どうやら、本当のようです。', context: 'Verification' },
+                    { en: 'Seemingly, everything is fine.', jp: 'どうやら、すべて順調なようです。', context: 'Status check' },
+                    { en: 'Arguably, the evidence is insufficient.', jp: '議論の余地はありますが、証拠は不十分です。', context: 'Critical assessment' }
+                ]
+            },
+
+            'academic-passive': {
+                title: 'Academic Passive',
+                level: 'Grade 1',
+                badge: '1級',
+                description: 'Formal passive constructions used in academic writing to create objective tone. It is argued/has been shown/should be noted.',
+                examples: [
+                    { en: 'It is argued that climate change is real.', jp: '気候変動が現実であると議論されています。', context: 'Academic assertion' },
+                    { en: 'It has been shown that training works.', jp: 'トレーニングが効果的であることが示されています。', context: 'Research findings' },
+                    { en: 'It should be noted that results vary.', jp: '結果は異なることに注意すべきです。', context: 'Caveat' },
+                    { en: 'It is believed that education is key.', jp: '教育が鍵であると信じられています。', context: 'Common belief' },
+                    { en: 'It has been observed that patterns emerge.', jp: 'パターンが現れることが観察されています。', context: 'Observation' },
+                    { en: 'It is suggested that we wait.', jp: '待つことが提案されています。', context: 'Recommendation' },
+                    { en: 'It has been proven that the method works.', jp: 'その方法が有効であることが証明されています。', context: 'Validation' },
+                    { en: 'It is recommended that students practice.', jp: '学生が練習することが推奨されています。', context: 'Education advice' },
+                    { en: 'It is assumed that everyone agrees.', jp: '全員が同意していると仮定されています。', context: 'Assumption' },
+                    { en: 'It has been demonstrated that...', jp: '...であることが実証されています。', context: 'Empirical evidence' }
+                ]
+            }
+        };
+
+        // Track page view
+        Analytics.trackPageView('grammar-examples.html');
+
+        // Show grammar point
+        function showGrammar(grammarId) {
+            const data = grammarData[grammarId];
+            if (!data) return;
+
+            // Update active link
+            document.querySelectorAll('.grammar-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update main content
+            const mainContent = document.getElementById('mainContent');
+            
+            mainContent.innerHTML = `
+                <div class="grammar-detail active">
+                    <h1 class="grammar-title">${data.title}</h1>
+                    <div class="level-badge">${data.badge}</div>
+                    <div class="description">${data.description}</div>
+                    
+                    <div class="examples-section">
+                        <h3>📝 Example Sentences</h3>
+                        ${data.examples.map(example => `
+                            <div class="example-pair">
+                                <div class="english">
+                                    ${example.en}
+                                    <span class="context-tag">${example.context}</span>
+                                </div>
+                                <div class="japanese">${example.jp}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -451,6 +451,18 @@
     <script>
         Analytics.trackPageView('eiken-dashboard.html');
     </script>
+    <script src="analytics.js"></script>
+    <script>
+        Analytics.trackPageView('vocabulary-grammar-index.html');
+
+        // Add click tracking for grammar points
+        document.querySelectorAll('.grammar-point').forEach(point => {
+            point.addEventListener('click', function() {
+                const level = this.dataset.level;
+                Analytics.trackLevelView(level);
+            });
+        });
+    </script>
 </script>
 </body>
 </html>
