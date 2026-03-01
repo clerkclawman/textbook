@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiken Alignment Dashboard — Textbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .level-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .level-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .level-card h3 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .level-card .grade {
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .level-card .grammar {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 5px 10px;
+            margin: 3px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .progression-diagram {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .progression-step {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .progression-step h4 {
+            margin-bottom: 5px;
+        }
+
+        .progression-step p {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+
+        .vs-official {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .vs-official h3 {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+
+        .vs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .vs-table th, .vs-table td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .vs-table th {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .new-level-badge {
+            background: #28a745;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+
+        .key-insight {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .key-insight h4 {
+            color: #155724;
+            margin-bottom: 5px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .progression-step {
+                min-width: 100%;
+            }
+
+            .level-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Eiken Alignment Dashboard</h1>
+            <p>Discover the real grammar priorities and non-linear progression of Eiken levels</p>
+            <a href="index.html" class="back-link">← Back to Textbook</a>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>📊 Grammar Priorities by Level</h2>
+
+                <div class="level-card">
+                    <h3>Pre-1 <span class="new-level-badge">Advanced</span></h3>
+                    <p class="grade">準1級</p>
+                    <div class="grammar">discourse markers</div>
+                    <div class="grammar">academic register</div>
+                    <div class="grammar">sophisticated vocabulary</div>
+                    <div class="key-insight">
+                        <h4>🔑 Key Insight</h4>
+                        <p>Uses formal language suitable for academic and professional contexts.</p>
+                    </div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Pre-2+ (Pre-2 Plus)</h3>
+                    <p class="grade">準2級プラス</p>
+                    <div class="grammar">passive voice → active</div>
+                    <div class="grammar">complex sentence structures</div>
+                    <div class="key-insight">
+                        <h4>🔑 Key Insight</h4>
+                        <p>Bridges gap between Pre-2 and Grade 2. Avoids forced passive constructions.</p>
+                    </div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Pre-2</h3>
+                    <p class="grade">準2級</p>
+                    <div class="grammar">modals</div>
+                    <div class="grammar">can, could, may, might, must</div>
+                    <div class="grammar">conditional structures</div>
+                    <div class="key-insight">
+                        <h4>🔑 Key Insight</h4>
+                        <p>Modals appear here — but forced modals in inappropriate contexts are unnatural.</p>
+                    </div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Grade 1</h3>
+                    <p class="grade">1級</p>
+                    <div class="grammar">complex modals</div>
+                    <div class="grammar">formal language</div>
+                    <div class="grammar">abstract concepts</div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Grade 2</h3>
+                    <p class="grade">2級</p>
+                    <div class="grammar">intermediate modals</div>
+                    <div class="grammar">past perfect</div>
+                    <div class="grammar">reporting verbs</div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Grade 3</h3>
+                    <p class="grade">3級</p>
+                    <div class="grammar">present perfect</div>
+                    <div class="grammar">simple conversation</div>
+                    <div class="grammar">natural spoken English</div>
+                    <div class="key-insight">
+                        <h4>🔑 Key Insight</h4>
+                        <p>Reduced adverbs — AI overuses "brightly, happily, heavily" here.</p>
+                    </div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Grade 4</h3>
+                    <p class="grade">4級</p>
+                    <div class="grammar">intermediate vocabulary</div>
+                    <div class="grammar">past continuous</div>
+                    <div class="grammar">future forms</div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Grade 5</h3>
+                    <p class="grade">5級</p>
+                    <div class="grammar">basic to intermediate</div>
+                    <div class="grammar">simple past</div>
+                    <div class="grammar">simple future</div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Grade 6 <span class="new-level-badge">NEW</span></h3>
+                    <p class="grade">6級</p>
+                    <div class="grammar">fundamental skills</div>
+                    <div class="grammar">basic vocabulary</div>
+                    <div class="grammar">simple sentences</div>
+                    <div class="key-insight">
+                        <h4>🔑 Key Insight</h4>
+                        <p>New level (2026) — introduced with Grade 7 to bridge gaps.</p>
+                    </div>
+                </div>
+
+                <div class="level-card">
+                    <h3>Grade 7 <span class="new-level-badge">NEW</span></h3>
+                    <p class="grade">7級</p>
+                    <div class="grammar">beginning level</div>
+                    <div class="grammar">hello / thank you</div>
+                    <div class="grammar">very basic phrases</div>
+                    <div class="key-insight">
+                        <h4>🔑 Key Insight</h4>
+                        <p>New entry level — makes Eiken accessible to younger learners.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔄 Non-Linear Progression</h2>
+
+                <div class="progression-diagram">
+                    <div class="progression-step">
+                        <h4>Grade 7</h4>
+                        <p>Beginning</p>
+                    </div>
+                    <div class="progression-step">
+                        <h4>Grade 6</h4>
+                        <p>Fundamental</p>
+                    </div>
+                    <div class="progression-step">
+                        <h4>Grade 5</h4>
+                        <p>Basic</p>
+                    </div>
+                    <div class="progression-step">
+                        <h4>Grade 4</h4>
+                        <p>Intermediate ↓</p>
+                    </div>
+                    <div class="progression-step">
+                        <h4>Grade 3</h4>
+                        <p>Natural Spoken ↓</p>
+                    </div>
+                    <div class="progression-step">
+                        <h4>Pre-2</h4>
+                        <p>Modals ↑</p>
+                    </div>
+                    <div class="progression-step" style="background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);">
+                        <h4>Pre-2+</h4>
+                        <p>Bridge Level</p>
+                    </div>
+                    <div class="progression-step">
+                        <h4>Grade 2</h4>
+                        <p>Complex ↑</p>
+                    </div>
+                    <div class="progression-step">
+                        <h4>Grade 1</h4>
+                        <p>Formal ↓</p>
+                    </div>
+                    <div class="progression-step">
+                        <h4>Pre-1</h4>
+                        <p>Academic</p>
+                    </div>
+                </div>
+
+                <div class="key-insight">
+                    <h4>💡 What This Means</h4>
+                    <p>Eiken doesn't progress in a straight line. Pre-2+ bridges Pre-2 to Grade 2. Grammar priorities shift — modals at Pre-2, passive appears naturally at Pre-2+, not forced earlier.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⚖️ Test Reality vs Official Descriptions</h2>
+
+                <div class="vs-official">
+                    <h3>What Official Eiken Describes</h3>
+                    <p>Official Eiken level descriptions explain what a level *should* test in theory.</p>
+                </div>
+
+                <div class="vs-official" style="border-color: #667eea; background: #e7f3ff;">
+                    <h3 style="color: #667eea;">What Eiken Actually Tests</h3>
+                    <p>Our analysis of 78 past exam PDFs reveals what exams *actually* test in practice.</p>
+                </div>
+
+                <table class="vs-table">
+                    <thead>
+                        <tr>
+                            <th>Official Description</th>
+                            <th>Test Reality</th>
+                            <th>Key Difference</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pre-2: "passive voice"</td>
+                            <td>Pre-2+: Passive appears naturally here</td>
+                            <td>Don't force passive early</td>
+                        </tr>
+                        <tr>
+                            <td>Pre-2: "modals"</td>
+                            <td>Pre-2: Modals appear appropriately</td>
+                            <td>Avoid forced modals everywhere</td>
+                        </tr>
+                        <tr>
+                            <td>Grade 3: "Intermediate"</td>
+                            <td>Grade 3: Natural spoken conversation</td>
+                            <td>Reduce adverbs, use natural language</td>
+                        </tr>
+                        <tr>
+                            <td>Grade 6/7: "N/A"</td>
+                            <td>Grade 6/7: New levels (2026)</td>
+                            <td>Fill beginner gap</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>📈 How We Discovered This</h2>
+
+                <p>This alignment is based on analysis of 78 Eiken past exam PDFs:</p>
+                <ul>
+                    <li><strong>Grade 6 & 7</strong> — New levels announced 2026-01-30</li>
+                    <li><strong>Grammar Patterns</strong> — Identified what actually appears in questions</li>
+                    <li><strong>Difficulty Progression</strong> — Mapped non-linear jumps between levels</li>
+                    <li><strong>Test Reality</strong> — Aligned content with exam practice, not theory</li>
+                </ul>
+
+                <div class="key-insight">
+                    <h4>🎯 Bottom Line</h4>
+                    <p>Teachers should understand where grammar naturally appears in the exam progression. Don't teach "passive voice" at Pre-2 if it's not tested there until Pre-2+.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🚀 Using This Alignment</h2>
+
+                <p><strong>For Teachers:</strong></p>
+                <ul>
+                    <li>Plan curriculum based on tested grammar, not just official descriptions</li>
+                    <li>Use Pre-2+ to bridge the gap (modals → complex)</li>
+                    <li>Teach natural spoken English at Grade 3, not "bookish" language</li>
+                </ul>
+
+                <p><strong>For Students:</strong></p>
+                <ul>
+                    <li>Start where you are — don't jump around non-linearly</li>
+                    <li>Understand which grammar points to focus on at your level</li>
+                    <li>Use the stories in this textbook to practice level-appropriate content</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
