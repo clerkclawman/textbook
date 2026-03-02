@@ -234,15 +234,24 @@
             background: white;
             border-radius: 20px;
             min-height: 350px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s ease;
+            cursor: pointer;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .flashcard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transform-style: preserve-3d;
+            padding: 40px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 40px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            cursor: pointer;
-            transition: transform 0.6s ease;
-            position: relative;
         }
 
         .flashcard.flipped {
@@ -251,14 +260,12 @@
 
         .flashcard-front, .flashcard-back {
             backface-visibility: hidden;
-            width: 100%;
             position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
             height: 100%;
-        }
-
-        .flashcard-front {
+            padding: 40px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -267,10 +274,6 @@
 
         .flashcard-back {
             transform: rotateY(180deg);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
 
         .word-emoji {
@@ -824,23 +827,25 @@
 
                     <div class="card-area">
                         <div class="flashcard" id="flashcard" onclick="flipCard()">
-                            <div class="flashcard-front">
-                                ${word.emoji ? `<div class="word-emoji">${word.emoji}</div>` : ''}
-                                <div class="word-english">${word.word}</div>
-                                <button class="audio-btn" onclick="event.stopPropagation(); speakWord('${word.word}')" title="🔊 Play audio">
-                                    🔊
-                                </button>
-                            </div>
-                            <div class="flashcard-back">
-                                ${word.emoji ? `<div class="word-emoji">${word.emoji}</div>` : ''}
-                                <div class="word-english">${word.word}</div>
-                                <div class="word-pos">${word.pos}</div>
-                                <div class="word-japanese">${word.jp}</div>
-                                <div class="word-example">${word.example.en}</div>
-                                <div class="word-example">${word.example.jp}</div>
-                                <button class="audio-btn" onclick="event.stopPropagation(); speakWord('${word.word}')" title="🔊 Play audio">
-                                    🔊
-                                </button>
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">
+                                    ${word.emoji ? `<div class="word-emoji">${word.emoji}</div>` : ''}
+                                    <div class="word-english">${word.word}</div>
+                                    <button class="audio-btn" onclick="event.stopPropagation(); speakWord('${word.word}')" title="🔊 Play audio">
+                                        🔊
+                                    </button>
+                                </div>
+                                <div class="flashcard-back">
+                                    ${word.emoji ? `<div class="word-emoji">${word.emoji}</div>` : ''}
+                                    <div class="word-english">${word.word}</div>
+                                    <div class="word-pos">${word.pos}</div>
+                                    <div class="word-japanese">${word.jp}</div>
+                                    <div class="word-example">${word.example.en}</div>
+                                    <div class="word-example">${word.example.jp}</div>
+                                    <button class="audio-btn" onclick="event.stopPropagation(); speakWord('${word.word}')" title="🔊 Play audio">
+                                        🔊
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
