@@ -171,6 +171,34 @@
             color: #666;
         }
 
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .category-btn {
+            padding: 25px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .category-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .category-all {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
         .flashcard-mode {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -772,10 +800,16 @@
         }
 
         // Flashcard Mode
-        function startFlashcardMode() {
+        function startFlashcardMode(category = null) {
             currentMode = 'flashcards';
-            currentWords = getPracticeWords(20); // 20 cards per session
             currentCardIndex = 0;
+
+            if (category === null) {
+                showFlashcardCategorySelect();
+                return;
+            }
+
+            currentWords = getPracticeWords(20, category);
             if (currentWords.length === 0) {
                 alert('No words available for study!');
                 goToStart();
@@ -784,15 +818,65 @@
             showFlashcard();
         }
 
-        function getPracticeWords(count, reviewOnly = false) {
+        function showFlashcardCategorySelect() {
+            const categories = {};
+            vocabularyData.forEach(word => {
+                const pos = word.pos || 'other';
+                if (!categories[pos]) {
+                    categories[pos] = 0;
+                }
+                categories[pos]++;
+            });
+
+            const categoryButtons = Object.entries(categories).map(([pos, count]) => {
+                const icon = getCategoryIcon(pos);
+                return `<button class="category-btn" onclick="startFlashcardMode('${pos}')">
+                    ${icon} ${pos.charAt(0).toUpperCase() + pos.slice(1)} (${count})
+                </button>`;
+            }).join('');
+
+            const mainContent = document.getElementById('mainContent');
+            mainContent.innerHTML = `
+                <div class="flashcard-container">
+                    <h2>🎴 Choose a Category</h2>
+                    <p>Select a category to practice</p>
+                    <div class="category-grid">
+                        ${categoryButtons}
+                        <button class="category-btn category-all" onclick="startFlashcardMode('all')">
+                            🎲 All Words (${vocabularyData.length})
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getCategoryIcon(pos) {
+            const icons = {
+                'verb': '🏃',
+                'noun': '📦',
+                'adjective': '🎨',
+                'adverb': '⚡',
+                'preposition': '📍',
+                'conjunction': '🔗',
+                'pronoun': '👤',
+                'determiner': '🔣',
+                'interjection': '❗'
+            };
+            return icons[pos] || '📝';
+        }
+
+        function getPracticeWords(count, category = null) {
             const learningData = getLearningData();
             const mastery = learningData.mastery || {};
 
-            let wordsToStudy = vocabularyData.filter(word => {
-                if (reviewOnly) {
-                    const wordData = mastery[word.word];
-                    return wordData && wordData.level < 5;
-                }
+            let filteredWords = vocabularyData;
+
+            // Filter by category if specified
+            if (category && category !== 'all') {
+                filteredWords = vocabularyData.filter(word => word.pos === category);
+            }
+
+            let wordsToStudy = filteredWords.filter(word => {
                 // New words or words needing review
                 const wordData = mastery[word.word];
                 return !wordData || wordData.level < 5;
