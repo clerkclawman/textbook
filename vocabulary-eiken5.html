@@ -447,23 +447,38 @@
                         });
                     }
                     
-                    // Function words (at root level, not in categories object)
-                    if (data.function_words) {
-                        const funcWords = [
-                            ...data.function_words.articles.map(w => ({ word: w, pos: 'article' })),
-                            ...data.function_words.prepositions.map(w => ({ word: w, pos: 'preposition' })),
-                            ...data.function_words.conjunctions.map(w => ({ word: w, pos: 'conjunction' })),
-                            ...data.function_words.pronouns.map(w => ({ word: w, pos: 'pronoun' })),
-                            ...data.function_words.interjections.map(w => ({ word: w, pos: 'interjection' }))
-                        ];
-                        
-                        funcWords.forEach(item => {
-                            eiken5Vocab.push({
-                                en: item.word,
-                                jp: '',
-                                pos: item.pos,
-                                example: { en: item.word, jp: '' }
+                    // Function words (prepositions, conjunctions, pronouns, determiners, interjections, adverbs)
+                    const functionWordCategories = ['prepositions', 'conjunctions', 'pronouns', 'determiners', 'interjections'];
+                    functionWordCategories.forEach(posType => {
+                        if (data.categories[posType]) {
+                            data.categories[posType].forEach(item => {
+                                const word = item.word || item;
+                                const jp = item.jp || '';
+                                const pos = posType.slice(0, -1); // remove 's' from end
+                                eiken5Vocab.push({
+                                    en: word,
+                                    jp: jp,
+                                    pos: pos,
+                                    example: { en: word, jp: jp }
+                                });
                             });
+                        }
+                    });
+                    
+                    // Adverbs
+                    if (data.categories.adverbs_top30) {
+                        data.categories.adverbs_top30.forEach(item => {
+                            if (item.word) {
+                                eiken5Vocab.push({
+                                    en: item.word,
+                                    jp: item.jp,
+                                    pos: 'adverb',
+                                    emoji: item.emoji || '',
+                                    example: item.examples && item.examples[0]
+                                        ? { en: item.examples[0], jp: item.jp }
+                                        : { en: item.word, jp: item.jp }
+                                });
+                            }
                         });
                     }
                 }
