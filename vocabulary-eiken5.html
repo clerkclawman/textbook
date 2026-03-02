@@ -423,9 +423,9 @@
                         });
                     }
                     
-                    // Nouns by category
-                    if (data.categories.nouns_by_category) {
-                        Object.values(data.categories.nouns_by_category).forEach(category => {
+                    // Nouns by category (at root level, not in categories object)
+                    if (data.nouns_by_category) {
+                        Object.values(data.nouns_by_category).forEach(category => {
                             category.forEach(item => {
                                 if (item.word) {
                                     eiken5Vocab.push({
@@ -439,14 +439,14 @@
                         });
                     }
                     
-                    // Function words
-                    if (data.categories.function_words) {
+                    // Function words (at root level, not in categories object)
+                    if (data.function_words) {
                         const funcWords = [
-                            ...data.categories.function_words.articles.map(w => ({ word: w, pos: 'article' })),
-                            ...data.categories.function_words.prepositions.map(w => ({ word: w, pos: 'preposition' })),
-                            ...data.categories.function_words.conjunctions.map(w => ({ word: w, pos: 'conjunction' })),
-                            ...data.categories.function_words.pronouns.map(w => ({ word: w, pos: 'pronoun' })),
-                            ...data.categories.function_words.interjections.map(w => ({ word: w, pos: 'interjection' }))
+                            ...data.function_words.articles.map(w => ({ word: w, pos: 'article' })),
+                            ...data.function_words.prepositions.map(w => ({ word: w, pos: 'preposition' })),
+                            ...data.function_words.conjunctions.map(w => ({ word: w, pos: 'conjunction' })),
+                            ...data.function_words.pronouns.map(w => ({ word: w, pos: 'pronoun' })),
+                            ...data.function_words.interjections.map(w => ({ word: w, pos: 'interjection' }))
                         ];
                         
                         funcWords.forEach(item => {
