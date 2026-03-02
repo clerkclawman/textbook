@@ -397,8 +397,8 @@
                 // Add words from all categories
                 if (data.categories) {
                     // Verbs from JSON
-                    if (data.categories.verbs_top50) {
-                        data.categories.verbs_top50.forEach(item => {
+                    if (data.categories.verbs_top80) {
+                        data.categories.verbs_top80.forEach(item => {
                             if (item.word) {
                                 eiken5Vocab.push({
                                     en: item.word,
@@ -414,8 +414,8 @@
                     }
                     
                     // Adjectives
-                    if (data.categories.adjectives_top50) {
-                        data.categories.adjectives_top50.forEach(item => {
+                    if (data.categories.adjectives_top60) {
+                        data.categories.adjectives_top60.forEach(item => {
                             if (item.word) {
                                 eiken5Vocab.push({
                                     en: item.word,
@@ -430,9 +430,9 @@
                         });
                     }
                     
-                    // Nouns by category (at root level, not in categories object)
-                    if (data.nouns_by_category) {
-                        Object.values(data.nouns_by_category).forEach(category => {
+                    // Nouns by category (in categories object)
+                    if (data.categories.nouns_by_category) {
+                        Object.values(data.categories.nouns_by_category).forEach(category => {
                             category.forEach(item => {
                                 if (item.word) {
                                     eiken5Vocab.push({
