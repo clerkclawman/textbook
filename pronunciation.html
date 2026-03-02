@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiken Pronunciation Practice | 英検発音練習</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --light-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #ffffff;
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            --grade-pre2: #fcd34d;
+            --grade-2: #fb923c;
+            --grade-pre1: #a855f7;
+            --grade-1: #3b82f6;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--light-gradient);
+            min-height: 100vh;
+            padding: 1rem;
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .card {
+            background: var(--bg);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        select, input {
+            padding: 0.75rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .sentence-display {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .english-sentence {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .japanese-sentence {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .grade-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .grade-badge.pre2 { background: var(--grade-pre2); color: #1f2937; }
+        .grade-badge.l2 { background: var(--grade-2); }
+        .grade-badge.pre1 { background: var(--grade-pre1); }
+        .grade-badge.l1 { background: var(--grade-1); }
+
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            min-height: 48px;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-listen {
+            background: var(--primary-gradient);
+            color: white;
+        }
+
+        .btn-listen:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-record {
+            background: var(--success);
+            color: white;
+        }
+
+        .btn-record:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-record.recording {
+            background: var(--error);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .btn-analyze {
+            background: var(--warning);
+            color: #1f2937;
+        }
+
+        .btn-analyze:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-random {
+            background: #6366f1;
+            color: white;
+        }
+
+        .btn-random:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feedback-area {
+            min-height: 100px;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .feedback-area.success {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        }
+
+        .feedback-area.warning {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+
+        .feedback-area.error {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+        }
+
+        .score-display {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .score-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .feedback-message {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .word-analysis {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .word-tag {
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .word-tag.correct {
+            background: var(--success);
+            color: white;
+        }
+
+        .word-tag.incorrect {
+            background: var(--error);
+            color: white;
+        }
+
+        .word-tag.missed {
+            background: var(--warning);
+            color: #1f2937;
+        }
+
+        .stats-panel {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 12px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .recording-indicator {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: var(--error);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            animation: pulse 1.5s infinite;
+        }
+
+        .recording-indicator.active {
+            display: flex;
+        }
+
+        .recording-dot {
+            width: 12px;
+            height: 12px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse-dot 1s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--success);
+            transition: width 0.3s;
+        }
+
+        .sentence-counter {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .english-sentence {
+                font-size: 1.2rem;
+            }
+
+            .japanese-sentence {
+                font-size: 1rem;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .score-display {
+                font-size: 2rem;
+            }
+        }
+
+        .initial-state {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+        }
+
+        .initial-state .emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .word-detail {
+            margin-top: 1rem;
+            text-align: left;
+        }
+
+        .word-detail-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .word-detail-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎤 Eiken Pronunciation Practice</h1>
+            <p class="subtitle">英検発音練習 | Speak & Practice</p>
+        </header>
+
+        <div class="card">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="grade-select">Select Grade / 級</label>
+                    <select id="grade-select">
+                        <option value="pre2">Pre-2 (準2級)</option>
+                        <option value="2">Grade 2 (2級)</option>
+                        <option value="pre1">Pre-1 (準1級)</option>
+                        <option value="1">Grade 1 (1級)</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="sentence-number">Sentence / 文</label>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <input type="number" id="sentence-number" min="1" value="1" style="flex: 1;">
+                        <button class="btn-random" id="btn-random" title="Random Sentence">🎲</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sentence-counter" id="sentence-counter">
+                Sentence 1 of 30
+            </div>
+
+            <div class="sentence-display">
+                <span class="grade-badge pre2" id="grade-badge">Pre-2</span>
+                <p class="english-sentence" id="english-sentence">Loading sentence...</p>
+                <p class="japanese-sentence" id="japanese-sentence">Loading...</p>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-listen" id="btn-listen">
+                    🔊 Listen
+                </button>
+                <button class="btn-record" id="btn-record">
+                    🎙️ Record
+                </button>
+                <button class="btn-analyze" id="btn-analyze" disabled>
+                    ⏹️ Stop & Analyze
+                </button>
+            </div>
+
+            <div class="recording-indicator" id="recording-indicator">
+                <div class="recording-dot"></div>
+                <span>Recording... Speak now!</span>
+            </div>
+
+            <div class="feedback-area" id="feedback-area">
+                <div class="initial-state">
+                    <div class="emoji">🎯</div>
+                    <p>Listen, then record your pronunciation!</p>
+                    <p>聞いてから、発音を録音しましょう！</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 style="text-align: center; margin-bottom: 1rem; color: var(--text);">📊 Your Progress / 進捗</h3>
+            <div class="stats-panel">
+                <div class="stat-item">
+                    <div class="stat-value" id="stat-total">0</div>
+                    <div class="stat-label">Total Practices</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="stat-accuracy">0%</div>
+                    <div class="stat-label">Average Accuracy</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="stat-streak">0</div>
+                    <div class="stat-label">Best Streak</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="stat-mastered">0</div>
+                    <div class="stat-label">Words Mastered</div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%;"></div>
+            </div>
+            <p style="text-align: center; margin-top: 0.5rem; color: var(--text-light); font-size: 0.85rem;">
+                Progress in this grade / 現在の級の進捗
+            </p>
+        </div>
+
+        <footer style="text-align: center; color: var(--text-light); font-size: 0.85rem; margin-top: 2rem;">
+            <p>🎓 Eiken Pronunciation Practice Tool</p>
+            <p style="margin-top: 0.5rem;">Works best in Chrome, Edge, or Safari</p>
+        </footer>
+    </div>
+
+    <script>
+        // Eiken Sentence Data
+        const eikenData = {
+            "pre2": [
+                { en: "I usually go to school by bus.", jp: "通常バスで学校に行きます。" },
+                { en: "She has never been to America.", jp: "彼女はアメリカに行ったことがありません。" },
+                { en: "Are you going to join the club?", jp: "そのクラブに入るつもりですか？" },
+                { en: "I have to finish my homework first.", jp: "まず宿題を終わらなければなりません。" },
+                { en: "The movie was very interesting.", jp: "その映画はとても面白かったです。" },
+                { en: "Can you help me with this problem?", jp: "この問題を手伝ってくれませんか？" },
+                { en: "It's raining heavily outside.", jp: "外は激しく雨が降っています。" },
+                { en: "I want to become a teacher in the future.", jp: "将来、教師になりたいです。" },
+                { en: "They have been friends since childhood.", jp: "彼らは子供の頃からの友達です。" },
+                { en: "This book is too difficult for me.", jp: "この本は私には難しすぎます。" },
+                { en: "My mother likes cooking very much.", jp: "母は料理がとても好きです。" },
+                { en: "How often do you go to the library?", jp: "どれくらいの頻度で図書館に行きますか？" },
+                { en: "I've lived in this city for ten years.", jp: "私はこの市に10年間住んでいます。" },
+                { en: "The weather is getting warmer.", jp: "天気は暖かくなってきています。" },
+                { en: "Did you enjoy the party last night?", jp: "昨夜のパーティーを楽しみましたか？" },
+                { en: "He studies English every morning.", jp: "彼は毎朝英語を勉強します。" },
+                { en: "That restaurant serves delicious food.", jp: "あのレストランは美味しい料理を出します。" },
+                { en: "I'm looking forward to seeing you.", jp: "あなたに会うのを楽しみにしています。" },
+                { en: "We have to protect the environment.", jp: "私たちは環境を守らなければなりません。" },
+                { en: "She speaks three languages fluently.", jp: "彼女は3か国語を流暢に話せます。" },
+                { en: "The train arrives at 8:30 every morning.", jp: "電車は毎朝8時30分に到着します。" },
+                { en: "I forgot to bring my umbrella.", jp: "傘を持参するのを忘れました。" },
+                { en: "He is too young to drive a car.", jp: "彼は車を運転するには若すぎます。" },
+                { en: "The cat is sleeping on the sofa.", jp: "猫はソファで寝ています。" },
+                { en: "Would you mind opening the window?", jp: "窓を開けていただけませんか？" },
+                { en: "I was surprised at the news.", jp: "そのニュースに驚きました。" },
+                { en: "They decided to go on a trip.", jp: "彼らは旅行に行くことにしました。" },
+                { en: "Which one do you like better?", jp: "どちらの方が好きですか？" },
+                { en: "I hope it doesn't rain tomorrow.", jp: "明日雨が降らないといいのですが。" },
+                { en: "She gave me a beautiful present.", jp: "彼女は私に素敵なプレゼントをくれました。" }
+            ],
+            "2": [
+                { en: "The company announced the new policy yesterday.", jp: "会社は昨日新しい方針を発表しました。" },
+                { en: "I regret not studying harder when I was young.", jp: "若いときにもっと勉強しておけばよかったと後悔しています。" },
+                { en: "The government should take more action on climate change.", jp: "政府は気候変動についてさらに行動すべきです。" },
+                { en: "She insisted that she had seen him at the station.", jp: "彼女は駅で彼を見たと主張しました。" },
+                { en: "It is essential to maintain a healthy work-life balance.", jp: "ワークライフバランスを保つことは不可欠です。" },
+                { en: "The experiment produced unexpected results.", jp: "実験は予想外の結果をもたらしました。" },
+                { en: "I'd appreciate it if you could send me the report.", jp: "レポートを送っていただけると感謝します。" },
+                { en: "The museum displays artifacts from ancient civilizations.", jp: "博物館は古代文明の遺物を展示しています。" },
+                { en: "He proposed several solutions to the problem.", jp: "彼はその問題に対していくつかの解決策を提案しました。" },
+                { en: "The lecture focused on the importance of education.", jp: "講義は教育の重要性に焦点を当てました。" },
+                { en: "She managed to complete the project on time.", jp: "彼女は時間通りにプロジェクトを完了させることができました。" },
+                { en: "The economic situation has improved slightly.", jp: "経済状況は少し改善しました。" },
+                { en: "I was deeply impressed by his speech.", jp: "彼のスピーチに深く感銘を受けました。" },
+                { en: "The new law will come into effect next month.", jp: "新しい法律は来月から施行されます。" },
+                { en: "We need to consider the long-term consequences.", jp: "長期的な結果を考慮する必要があります。" },
+                { en: "She devoted her life to helping others.", jp: "彼女は人生を他者を助けることに捧げました。" },
+                { en: "The company has expanded its business overseas.", jp: "会社は海外に事業を拡大しました。" },
+                { en: "I'm concerned about the environmental impact.", jp: "環境への影響が心配です。" },
+                { en: "The investigation revealed several problems.", jp: "調査はいくつかの問題を明らかにしました。" },
+                { en: "He struggled to make himself understood.", jp: "彼は自分を理解させようと苦労しました。" },
+                { en: "The conference attracted participants from around the world.", jp: "会議は世界中から参加者を集めました。" },
+                { en: "It is crucial to follow the safety regulations.", jp: "安全規則に従うことは極めて重要です。" },
+                { en: "She encouraged me to pursue my dreams.", jp: "彼女は私に夢を追いかけるよう励ましてくれました。" },
+                { en: "The technology has advanced rapidly in recent years.", jp: "技術は近年急速に進歩しました。" },
+                { en: "I suggest we postpone the meeting until Monday.", jp: "会議を月曜日まで延期することを提案します。" },
+                { en: "The documentary explores social issues.", jp: "ドキュメンタリーは社会問題を探求します。" },
+                { en: "He was accused of stealing the money.", jp: "彼はお金を盗んだと告発されました。" },
+                { en: "The book provides valuable insights into culture.", jp: "その本は文化に関する貴重な洞察を提供します。" },
+                { en: "We need to adapt to changing circumstances.", jp: "変化する状況に適応する必要があります。" },
+                { en: "The team celebrated their victory enthusiastically.", jp: "チームは熱心に勝利を祝いました。" }
+            ],
+            "pre1": [
+                { en: "The government should implement stricter environmental regulations.", jp: "政府はより厳しい環境規制を実施すべきです。" },
+                { en: "The rapid advancement of artificial intelligence raises ethical concerns.", jp: "人工知能の急速な進歩は倫理的懸念を引き起こします。" },
+                { en: "Education systems must adapt to prepare students for future challenges.", jp: "教育システムは未来の課題に備えるために適応しなければなりません。" },
+                { en: "The correlation between diet and health has been extensively researched.", jp: "食事と健康の相関関係は広範囲に研究されてきました。" },
+                { en: "Cultural heritage plays a significant role in shaping national identity.", jp: "文化的遺産は国民的アイデンティティの形成において重要な役割を果たします。" },
+                { en: "The conference addressed crucial issues regarding global economic stability.", jp: "会議は世界経済の安定に関する重要な問題に対処しました。" },
+                { en: "Scientific research often requires collaboration across international borders.", jp: "科学研究はしばしば国境を越えた協力を必要とします。" },
+                { en: "The impact of social media on mental health is a growing concern.", jp: "ソーシャルメディアが精神衛生に与える影響は懸念が高まっています。" },
+                { en: "Urbanization presents both opportunities and challenges for modern society.", jp: "都市化は現代社会にとって機会と課題の両方をもたらします。" },
+                { en: "The company's expansion strategy involved acquiring smaller competitors.", jp: "会社の拡大戦略は小さな競合他社の買収を含んでいました。" },
+                { en: "Public transportation systems contribute significantly to reducing carbon emissions.", jp: "公共交通機関は炭素排出削減に大きく貢献します。" },
+                { en: "The documentary highlighted the plight of endangered species.", jp: "ドキュメンタリーは絶滅危惧種の窮状を強調しました。" },
+                { en: "Effective communication is essential for successful international relations.", jp: "効果的なコミュニケーションは成功する国際関係にとって不可欠です。" },
+                { en: "The economic recession affected various sectors of society.", jp: "経済不況は社会の様々な部門に影響を与えました。" },
+                { en: "Technological innovation continues to transform traditional industries.", jp: "技術革新は伝統的な産業を変え続けています。" },
+                { en: "The study examined the psychological effects of prolonged isolation.", jp: "研究は長期間の孤立の心理的影響を調査しました。" },
+                { en: "Climate change poses an existential threat to many coastal communities.", jp: "気候変動は多くの沿岸地域に存続の脅威をもたらします。" },
+                { en: "The new legislation aims to protect consumer rights more effectively.", jp: "新しい法律は消費者の権利をより効果的に保護することを目指しています。" },
+                { en: "Intercultural understanding is vital in our increasingly interconnected world.", jp: "異文化理解はますます相互接続された世界で重要です。" },
+                { en: "The pharmaceutical industry invests heavily in research and development.", jp: "製薬業界は研究開発に巨額を投資しています。" },
+                { en: "Renewable energy sources are becoming more economically viable.", jp: "再生可能エネルギー源は経済的により実現可能になりつつあります。" },
+                { en: "The report analyzed trends in global migration patterns.", jp: "報告書は世界の移住パターンの傾向を分析しました。" },
+                { en: "Maintaining work-life balance is increasingly difficult in modern society.", jp: "ワークライフバランスを維持することは現代社会でますます困難になっています。" },
+                { en: "The artist's work reflects the social movements of the era.", jp: "その芸術家の作品は時代の社会運動を反映しています。" },
+                { en: "Healthcare systems face unprecedented challenges due to aging populations.", jp: "医療制度は人口の高齢化により前例のない課題に直面しています。" },
+                { en: "The negotiation process required considerable diplomatic skill.", jp: "交渉プロセスは相当な外交スキルを必要としました。" },
+                { en: "Access to quality education remains unequal across different regions.", jp: "質の高い教育への機会は異なる地域間で依然として不平等です。" },
+                { en: "The novel explores themes of identity and self-discovery.", jp: "その小説はアイデンティティと自己発見のテーマを探求します。" },
+                { en: "Financial literacy should be taught from an early age.", jp: "金融リテラシーは幼い頃から教えられるべきです。" },
+                { en: "The archaeological discovery shed new light on ancient civilization.", jp: "考古学的発見は古代文明に関する新たな光を当てました。" },
+                { en: "Sustainable development requires balancing economic growth with environmental protection.", jp: "持続可能な開発は経済成長と環境保護のバランスを必要とします。" }
+            ],
+            "1": [
+                { en: "The comprehensive study revealed significant correlations between economic growth and educational attainment.", jp: "包括的な調査は、経済成長と教育達成度の間に有意な相関関係があることを明らかにしました。" },
+                { en: "Philosophical discourse surrounding consciousness remains one of the most debated topics in academia.", jp: "意識をめぐる哲学的議論は、学界で最も議論されるトピックの一つであり続けています。" },
+                { en: "The geopolitical landscape has undergone fundamental transformations in recent decades.", jp: "地政学的情勢はここ数十年で根本的な変革を遂げました。" },
+                { en: "Quantum computing represents a paradigm shift that could revolutionize numerous fields.", jp: "量子コンピューティングは多くの分野を革命化する可能性のあるパラダイムシフトを表しています。" },
+                { en: "The proliferation of digital information necessitates sophisticated filtering mechanisms.", jp: "デジタル情報の増殖は洗練されたフィルタリングメカニズムを必要としています。" },
+                { en: "Socioeconomic disparities often perpetuate cycles of inequality across generations.", jp: "社会経済的格差はしばしば世代を超えた不平等のサイクルを永続させます。" },
+                { en: "The reconciliation of scientific methodology with philosophical inquiry presents unique challenges.", jp: "科学的 метод論と哲学的探求の調和は独自の課題を提示します。" },
+                { en: "Rhetorical strategies employed in political discourse influence public opinion significantly.", jp: "政治的言説で採用される修辞的戦略は世論に大きな影響を与えます。" },
+                { en: "The interdisciplinary approach to problem-solving fosters innovation and creativity.", jp: "問題解決への学際的なアプローチは革新と創造性を促進します。" },
+                { en: "Epistemological questions regarding the nature of knowledge continue to perplex philosophers.", jp: "知識の本質に関する認識論的問題は哲学者たちを当惑させ続けています。" },
+                { en: "The ethical implications of biotechnology require careful consideration by all stakeholders.", jp: "バイオテクノロジーの倫理的意味合いはすべてのステークホルダーによる慎重な検討を必要とします。" },
+                { en: "Cultural relativism challenges the universality of certain moral principles.", jp: "文化的相対主義は特定の道徳原則の普遍性に異議を唱えます。" },
+                { en: "The technological singularity represents a hypothetical future moment of unprecedented advancement.", jp: "技術的特異点は未曾有の進歩の仮説的な未来的瞬間を表しています。" },
+                { en: "Linguistic diversity reflects the richness of human cognitive and cultural development.", jp: "言語的多様性は人間の認知的・文化的発展の豊かさを反映しています。" },
+                { en: "The concept of social mobility is closely tied to educational access and opportunity.", jp: "社会的流動性の概念は教育へのアクセスと機会と密接に結びついています。" },
+                { en: "Molecular biology has fundamentally altered our understanding of heredity and disease.", jp: "分子生物学は遺伝と病気に関する私たちの理解を根本的に変えました。" },
+                { en: "The aesthetics of modern architecture prioritize functionality while embracing minimalism.", jp: "現代建築の美学は機能性を優先しながらミニマリズムを受け入れています。" },
+                { en: "Cognitive biases systematically affect human decision-making processes in predictable ways.", jp: "認知バイアスは人間の意思決定プロセスに予測可能な方法で体系的に影響を与えます。" },
+                { en: "The integration of artificial intelligence into healthcare presents both opportunities and ethical concerns.", jp: "医療への人工知能の統合は機会と倫理的懸念の両方を提示しています。" },
+                { en: "Semiotics offers a framework for analyzing how meaning is constructed and communicated.", jp: "記号論は意味がどのように構築され伝達されるかを分析するための枠組みを提供します。" },
+                { en: "The democratization of information has empowered individuals while creating new challenges.", jp: "情報の民主化は個人を力強くしながら新しい課題を創出しました。" },
+                { en: "Neuroplasticity demonstrates the brain's remarkable capacity for adaptation and recovery.", jp: "神経可塑性は脳の適応と回復の並外れた能力を実証しています。" },
+                { en: "The convergence of technology and biology blurs traditional disciplinary boundaries.", jp: "技術と生物学の収束は伝統的な学際的境界を曖昧にします。" },
+                { en: "Sociological theories provide frameworks for understanding complex social phenomena.", jp: "社会学理論は複雑な社会現象を理解するための枠組みを提供します。" },
+                { en: "The philosophy of language examines the relationship between language and reality.", jp: "言語哲学は言語と現実の関係を検討します。" },
+                { en: "Globalization has transformed economic relationships while exposing vulnerabilities in local economies.", jp: "グローバル化は経済関係を変革しながら地域経済の脆弱性を暴露しました。" },
+                { en: "The concept of sustainability encompasses environmental, social, and economic dimensions.", jp: "持続可能性の概念は環境的、社会的、経済的側面を包含しています。" },
+                { en: "Advances in neuroscience continue to challenge traditional notions of consciousness and free will.", jp: "神経科学の進歩は意識と自由意志の伝統的概念に挑戦し続けています。" },
+                { en: "The proliferation of misinformation poses significant threats to democratic institutions.", jp: "誤情報の増殖は民主主義制度に重大な脅威をもたらします。" },
+                { en: "Evolutionary psychology offers insights into the origins of human behavior and cognition.", jp: "進化心理学は人間の行動と認知の起源に関する洞察を提供します。" },
+                { en: "The exploration of space continues to expand humanity's understanding of the cosmos.", jp: "宇宙の探求は人類の宇宙に関する理解を拡大し続けています。" }
+            ]
+        };
+
+        // App State
+        let currentGrade = 'pre2';
+        let currentIndex = 0;
+        let isRecording = false;
+        let recognition = null;
+        let progress = {
+            total: { total: 0, accuracy: 0, streak: 0, bestStreak: 0, mastered: {} },
+            pre2: { attempts: [], accuracy: 0, mastered: new Set() },
+            '2': { attempts: [], accuracy: 0, mastered: new Set() },
+            pre1: { attempts: [], accuracy: 0, mastered: new Set() },
+            '1': { attempts: [], accuracy: 0, mastered: new Set() }
+        };
+
+        // DOM Elements
+        const gradeSelect = document.getElementById('grade-select');
+        const sentenceNumber = document.getElementById('sentence-number');
+        const btnRandom = document.getElementById('btn-random');
+        const englishSentence = document.getElementById('english-sentence');
+        const japaneseSentence = document.getElementById('japanese-sentence');
+        const gradeBadge = document.getElementById('grade-badge');
+        const btnListen = document.getElementById('btn-listen');
+        const btnRecord = document.getElementById('btn-record');
+        const btnAnalyze = document.getElementById('btn-analyze');
+        const recordingIndicator = document.getElementById('recording-indicator');
+        const feedbackArea = document.getElementById('feedback-area');
+        const sentenceCounter = document.getElementById('sentence-counter');
+        const statTotal = document.getElementById('stat-total');
+        const statAccuracy = document.getElementById('stat-accuracy');
+        const statStreak = document.getElementById('stat-streak');
+        const statMastered = document.getElementById('stat-mastered');
+        const progressFill = document.getElementById('progress-fill');
+
+        // Initialize Speech Recognition
+        function initSpeechRecognition() {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (!SpeechRecognition) {
+                showFeedback('error', 'Speech Recognition', 'Your browser does not support speech recognition. Please use Chrome, Edge, or Safari.');
+                return null;
+            }
+
+            const recognition = new SpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = true;
+            recognition.lang = 'en-US';
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                if (event.results[0].isFinal) {
+                    analyzePronunciation(transcript);
+                }
+            };
+
+            recognition.onerror = (event) => {
+                console.error('Speech recognition error:', event.error);
+                stopRecording();
+                
+                if (event.error === 'not-allowed') {
+                    showFeedback('error', 'Microphone Access Denied', 'Please allow microphone access to use the recording feature.');
+                } else if (event.error === 'no-speech') {
+                    showFeedback('warning', 'No Speech Detected', 'Please speak clearly and try again.');
+                } else {
+                    showFeedback('error', 'Error', `Speech recognition error: ${event.error}`);
+                }
+            };
+
+            recognition.onend = () => {
+                stopRecording();
+            };
+
+            return recognition;
+        }
+
+        // Load progress from localStorage
+        function loadProgress() {
+            const saved = localStorage.getItem('eikenPronunciationProgress');
+            if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    
+                    // Convert mastered Sets back from arrays
+                    if (data.pre2 && data.pre2.mastered) {
+                        data.pre2.mastered = new Set(data.pre2.mastered);
+                    }
+                    if (data['2'] && data['2'].mastered) {
+                        data['2'].mastered = new Set(data['2'].mastered);
+                    }
+                    if (data.pre1 && data.pre1.mastered) {
+                        data.pre1.mastered = new Set(data.pre1.mastered);
+                    }
+                    if (data['1'] && data['1'].mastered) {
+                        data['1'].mastered = new Set(data['1'].mastered);
+                    }
+                    
+                    progress = { ...progress, ...data };
+                } catch (e) {
+                    console.error('Error loading progress:', e);
+                }
+            }
+            updateStats();
+        }
+
+        // Save progress to localStorage
+        function saveProgress() {
+            const toSave = {
+                total: progress.total,
+                pre2: { attempts: progress.pre2.attempts, accuracy: progress.pre2.accuracy, mastered: Array.from(progress.pre2.mastered) },
+                '2': { attempts: progress['2'].attempts, accuracy: progress['2'].accuracy, mastered: Array.from(progress['2'].mastered) },
+                pre1: { attempts: progress.pre1.attempts, accuracy: progress.pre1.accuracy, mastered: Array.from(progress.pre1.mastered) },
+                '1': { attempts: progress['1'].attempts, accuracy: progress['1'].accuracy, mastered: Array.from(progress['1'].mastered) }
+            };
+            localStorage.setItem('eikenPronunciationProgress', JSON.stringify(toSave));
+        }
+
+        // Update sentence display
+        function updateSentence() {
+            const sentences = eikenData[currentGrade];
+            currentIndex = Math.max(0, Math.min(currentIndex, sentences.length - 1));
+            
+            const sentence = sentences[currentIndex];
+            englishSentence.textContent = sentence.en;
+            japaneseSentence.textContent = sentence.jp;
+            
+            // Update grade badge
+            gradeBadge.textContent = getGradeLabel(currentGrade);
+            gradeBadge.className = `grade-badge ${getGradeClass(currentGrade)}`;
+            
+            // Update sentence counter
+            sentenceCounter.textContent = `Sentence ${currentIndex + 1} of ${sentences.length}`;
+            
+            // Update sentence number input
+            sentenceNumber.value = currentIndex + 1;
+            sentenceNumber.max = sentences.length;
+            
+            // Reset feedback
+            resetFeedback();
+        }
+
+        // Get grade label
+        function getGradeLabel(grade) {
+            const labels = {
+                'pre2': 'Pre-2',
+                '2': 'Grade 2',
+                'pre1': 'Pre-1',
+                '1': 'Grade 1'
+            };
+            return labels[grade] || grade;
+        }
+
+        // Get grade CSS class
+        function getGradeClass(grade) {
+            const classes = {
+                'pre2': 'pre2',
+                '2': 'l2',
+                'pre1': 'pre1',
+                '1': 'l1'
+            };
+            return classes[grade] || grade;
+        }
+
+        // Text-to-Speech
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                // Cancel any ongoing speech
+                window.speechSynthesis.cancel();
+                
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.9;
+                utterance.pitch = 1;
+                
+                utterance.onstart = () => {
+                    btnListen.disabled = true;
+                };
+                
+                utterance.onend = () => {
+                    btnListen.disabled = false;
+                };
+                
+                utterance.onerror = () => {
+                    btnListen.disabled = false;
+                };
+                
+                window.speechSynthesis.speak(utterance);
+            } else {
+                showFeedback('error', 'Text-to-Speech', 'Your browser does not support speech synthesis.');
+            }
+        }
+
+        // Start recording
+        function startRecording() {
+            if (!recognition) {
+                recognition = initSpeechRecognition();
+                if (!recognition) return;
+            }
+            
+            try {
+                recognition.start();
+                isRecording = true;
+                btnRecord.classList.add('recording');
+                btnAnalyze.disabled = false;
+                recordingIndicator.classList.add('active');
+            } catch (e) {
+                console.error('Error starting recognition:', e);
+                showFeedback('error', 'Error', 'Could not start recording. Please try again.');
+            }
+        }
+
+        // Stop recording
+        function stopRecording() {
+            if (recognition && isRecording) {
+                try {
+                    recognition.stop();
+                } catch (e) {
+                    // Recognition already stopped
+                }
+            }
+            
+            isRecording = false;
+            btnRecord.classList.remove('recording');
+            btnAnalyze.disabled = true;
+            recordingIndicator.classList.remove('active');
+        }
+
+        // Analyze pronunciation
+        function analyzePronunciation(spokenText) {
+            const targetSentence = eikenData[currentGrade][currentIndex].en.toLowerCase();
+            const spokenWords = spokenText.toLowerCase().replace(/[.,!?;:]/g, '').split(/\s+/).filter(w => w.length > 0);
+            const targetWords = targetSentence.replace(/[.,!?;:]/g, '').split(/\s+/).filter(w => w.length > 0);
+            
+            const correctWords = [];
+            const incorrectWords = [];
+            const missedWords = [];
+            
+            // Simple word-level matching
+            for (let i = 0; i < targetWords.length; i++) {
+                const target = targetWords[i].toLowerCase().trim();
+                let found = false;
+                
+                // Look for this word in the spoken text
+                for (let j = 0; j < spokenWords.length; j++) {
+                    const spoken = spokenWords[j].toLowerCase().trim();
+                    if (spoken === target || spoken.includes(target) || target.includes(spoken)) {
+                        if (!correctWords.includes(target)) {
+                            correctWords.push(target);
+                            found = true;
+                        }
+                        break;
+                    }
+                }
+                
+                if (!found && !missedWords.includes(target)) {
+                    missedWords.push(target);
+                }
+            }
+            
+            // Find words that were spoken but incorrect
+            for (let i = 0; i < spokenWords.length; i++) {
+                const spoken = spokenWords[i].toLowerCase().trim();
+                let isTarget = false;
+                for (let j = 0; j < targetWords.length; j++) {
+                    const target = targetWords[j].toLowerCase().trim();
+                    if (spoken === target || spoken.includes(target) || target.includes(spoken)) {
+                        isTarget = true;
+                        break;
+                    }
+                }
+                if (!isTarget && !incorrectWords.includes(spoken)) {
+                    incorrectWords.push(spoken);
+                }
+            }
+            
+            const totalTargetWords = targetWords.length;
+            const matchedWords = correctWords.length;
+            const accuracy = totalTargetWords > 0 ? Math.round((matchedWords / totalTargetWords) * 100) : 0;
+            
+            // Determine feedback type and message
+            let feedbackType, feedbackMessage;
+            if (accuracy >= 90) {
+                feedbackType = 'success';
+                feedbackMessage = 'Excellent! 🎉';
+            } else if (accuracy >= 70) {
+                feedbackType = 'success';
+                feedbackMessage = 'Great job! 👍';
+            } else if (accuracy >= 50) {
+                feedbackType = 'warning';
+                feedbackMessage = 'Good effort! Keep practicing!';
+            } else {
+                feedbackType = 'error';
+                feedbackMessage = 'Let\'s try again! Listen and repeat';
+            }
+            
+            // Show feedback
+            showFeedbackWithWords(feedbackType, feedbackMessage, accuracy, correctWords, incorrectWords, missedWords, spokenText);
+            
+            // Update progress
+            updateProgress(accuracy, correctWords, incorrectWords, missedWords);
+        }
+
+        // Show feedback with word analysis
+        function showFeedbackWithWords(type, message, accuracy, correctWords, incorrectWords, missedWords, spokenText) {
+            feedbackArea.className = `feedback-area ${type}`;
+            
+            let wordAnalysisHtml = '';
+            
+            if (correctWords.length > 0 || incorrectWords.length > 0 || missedWords.length > 0) {
+                wordAnalysisHtml = `
+                    <div class="word-detail">
+                        <div class="word-detail-title">Your speech: "${spokenText}"</div>
+                        <div class="word-detail-title" style="margin-top: 1rem;">Word Analysis:</div>
+                        <div class="word-detail-list">
+                `;
+                
+                if (correctWords.length > 0) {
+                    wordAnalysisHtml += `
+                        <div>
+                            <span style="font-size: 0.85rem; color: var(--success);">✓ Correct:</span>
+                            <div class="word-detail-list" style="margin-top: 0.25rem;">
+                                ${correctWords.map(w => `<span class="word-tag correct">${w}</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                if (missedWords.length > 0) {
+                    wordAnalysisHtml += `
+                        <div>
+                            <span style="font-size: 0.85rem; color: var(--warning);">○ Missed:</span>
+                            <div class="word-detail-list" style="margin-top: 0.25rem;">
+                                ${missedWords.map(w => `<span class="word-tag missed">${w}</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                if (incorrectWords.length > 0) {
+                    wordAnalysisHtml += `
+                        <div>
+                            <span style="font-size: 0.85rem; color: var(--error);">✗ Extra/Mismatched:</span>
+                            <div class="word-detail-list" style="margin-top: 0.25rem;">
+                                ${incorrectWords.map(w => `<span class="word-tag incorrect">${w}</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                wordAnalysisHtml += `
+                        </div>
+                    </div>
+                `;
+            }
+            
+            feedbackArea.innerHTML = `
+                <div class="score-display">${accuracy}%</div>
+                <div class="score-label">Pronunciation Accuracy</div>
+                <div class="feedback-message">${message}</div>
+                ${wordAnalysisHtml}
+            `;
+        }
+
+        // Show feedback (simple version)
+        function showFeedback(type, title, message) {
+            feedbackArea.className = `feedback-area ${type}`;
+            feedbackArea.innerHTML = `
+                <div class="feedback-message">${title}</div>
+                <p>${message}</p>
+            `;
+        }
+
+        // Reset feedback to initial state
+        function resetFeedback() {
+            feedbackArea.className = 'feedback-area';
+            feedbackArea.innerHTML = `
+                <div class="initial-state">
+                    <div class="emoji">🎯</div>
+                    <p>Listen, then record your pronunciation!</p>
+                    <p>聞いてから、発音を録音しましょう！</p>
+                </div>
+            `;
+        }
+
+        // Update progress
+        function updateProgress(accuracy, correctWords, incorrectWords, missedWords) {
+            const gradeProgress = progress[currentGrade];
+            
+            // Add to attempts
+            gradeProgress.attempts.push({
+                sentenceIndex: currentIndex,
+                accuracy: accuracy,
+                timestamp: Date.now()
+            });
+            
+            // Calculate average accuracy for this grade
+            if (gradeProgress.attempts.length > 0) {
+                const total = gradeProgress.attempts.reduce((sum, a) => sum + a.accuracy, 0);
+                gradeProgress.accuracy = Math.round(total / gradeProgress.attempts.length);
+            }
+            
+            // Add correct words to mastered
+            correctWords.forEach(word => {
+                if (!progress.total.mastered[word]) {
+                    progress.total.mastered[word] = { count: 0 };
+                }
+                progress.total.mastered[word].count++;
+                
+                // Consider mastered if pronounced correctly 5+ times
+                if (progress.total.mastered[word].count >= 5) {
+                    gradeProgress.mastered.add(word);
+                }
+            });
+            
+            // Update total stats
+            progress.total.total++;
+            
+            const totalAccuracySum = Object.values(progress).reduce((sum, grade) => {
+                if (grade.accuracy) return sum + grade.accuracy;
+                return sum;
+            }, 0);
+            const gradeCount = 4; // pre2, 2, pre1, 1
+            progress.total.accuracy = Math.round(totalAccuracySum / gradeCount);
+            
+            // Update streak
+            if (accuracy >= 70) {
+                progress.total.streak++;
+                if (progress.total.streak > progress.total.bestStreak) {
+                    progress.total.bestStreak = progress.total.streak;
+                }
+            } else {
+                progress.total.streak = 0;
+            }
+            
+            saveProgress();
+            updateStats();
+        }
+
+        // Update stats display
+        function updateStats() {
+            statTotal.textContent = progress.total.total || 0;
+            statAccuracy.textContent = `${progress.total.accuracy || 0}%`;
+            statStreak.textContent = progress.total.bestStreak || 0;
+            
+            // Count total mastered words
+            const totalMastered = new Set();
+            Object.keys(progress).forEach(grade => {
+                if (progress[grade].mastered && progress[grade].mastered.forEach) {
+                    progress[grade].mastered.forEach(word => totalMastered.add(word));
+                }
+            });
+            statMastered.textContent = totalMastered.size;
+            
+            // Update progress bar
+            const gradeProgress = progress[currentGrade];
+            const sentences = eikenData[currentGrade];
+            const practicedSentences = new Set();
+            
+            if (gradeProgress.attempts) {
+                gradeProgress.attempts.forEach(attempt => {
+                    practicedSentences.add(attempt.sentenceIndex);
+                });
+            }
+            
+            const progressPercent = Math.round((practicedSentences.size / sentences.length) * 100);
+            progressFill.style.width = `${progressPercent}%`;
+        }
+
+        // Show random sentence
+        function showRandomSentence() {
+            const sentences = eikenData[currentGrade];
+            const randomIndex = Math.floor(Math.random() * sentences.length);
+            currentIndex = randomIndex;
+            updateSentence();
+        }
+
+        // Event Listeners
+        gradeSelect.addEventListener('change', (e) => {
+            currentGrade = e.target.value;
+            currentIndex = 0;
+            updateSentence();
+            updateStats();
+        });
+
+        sentenceNumber.addEventListener('change', (e) => {
+            const value = parseInt(e.target.value) - 1;
+            const sentences = eikenData[currentGrade];
+            if (value >= 0 && value < sentences.length) {
+                currentIndex = value;
+                updateSentence();
+            }
+        });
+
+        btnListen.addEventListener('click', () => {
+            const sentence = eikenData[currentGrade][currentIndex].en;
+            speakText(sentence);
+        });
+
+        btnRecord.addEventListener('click', () => {
+            if (isRecording) {
+                stopRecording();
+            } else {
+                startRecording();
+            }
+        });
+
+        btnAnalyze.addEventListener('click', () => {
+            stopRecording();
+        });
+
+        btnRandom.addEventListener('click', showRandomSentence);
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Don't trigger shortcuts when typing in input
+            if (e.target === sentenceNumber) return;
+            
+            if (e.code === 'Space' && !e.repeat) {
+                e.preventDefault();
+                if (isRecording) {
+                    stopRecording();
+                } else {
+                    startRecording();
+                }
+            } else if (e.code === 'KeyL') {
+                const sentence = eikenData[currentGrade][currentIndex].en;
+                speakText(sentence);
+            } else if (e.code === 'KeyR') {
+                e.preventDefault();
+                showRandomSentence();
+            }
+        });
+
+        // Initialize
+        function init() {
+            loadProgress();
+            recognition = initSpeechRecognition();
+            updateSentence();
+        }
+
+        init();
+    </script>
+</body>
+</html>
