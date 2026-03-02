@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiken 5 Vocabulary Practice - Learn & Master</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .nav-bar {
+            background: rgba(255,255,255,0.95);
+            padding: 15px 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-left a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .stats-display {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #666;
+            display: block;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .fire {
+            font-size: 1.8rem;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .mode-toggle {
+            background: white;
+            color: #667eea;
+        }
+
+        .mode-toggle.active {
+            background: #ffd700;
+            color: #333;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            min-height: 400px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        /* Start Screen */
+        .start-screen {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .start-screen h2 {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .start-screen p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .practice-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .practice-card {
+            padding: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .practice-card:hover {
+            transform: scale(1.05);
+            border-color: #667eea;
+        }
+
+        .practice-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .practice-card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .flashcard-mode {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .quiz-mode {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .spelling-mode {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .btn-large {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-large:hover {
+            background: #5568d3;
+        }
+
+        /* Flashcard Mode */
+        .flashcard-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            height: 12px;
+            background: #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.5s ease;
+        }
+
+        .card-area {
+            perspective: 1000px;
+            margin: 30px 0;
+        }
+
+        .flashcard {
+            background: white;
+            border-radius: 20px;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: transform 0.6s ease;
+            position: relative;
+        }
+
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-front, .flashcard-back {
+            backface-visibility: hidden;
+            width: 100%;
+        }
+
+        .flashcard-back {
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .word-emoji {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .word-english {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .word-japanese {
+            font-size: 2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .word-pos {
+            font-size: 1.2rem;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .word-example {
+            font-size: 1.3rem;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .audio-btn {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 15px;
+            transition: transform 0.2s ease;
+        }
+
+        .audio-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .card-controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .btn-study {
+            background: #f5576c;
+            color: white;
+        }
+
+        .btn-mastered {
+            background: #4facfe;
+            color: white;
+        }
+
+        /* Quiz Mode */
+        .quiz-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .quiz-question {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .quiz-word {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .quiz-option {
+            padding: 25px;
+            background: #f8f9fa;
+            border: 3px solid #e9ecef;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-option:hover {
+            border-color: #667eea;
+            background: #f0f0ff;
+        }
+
+        .quiz-option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+        }
+
+        .quiz-option.wrong {
+            background: #f8d7da;
+            border-color: #dc3545;
+        }
+
+        /* Spelling Mode */
+        .spelling-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .spelling-word {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        .spelling-input {
+            font-size: 2rem;
+            padding: 15px;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px 0;
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .spelling-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .spelling-hint {
+            font-size: 1.3rem;
+            color: #999;
+            margin-top: 20px;
+        }
+
+        /* Completion Screen */
+        .completion-screen {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .completion-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .completion-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .completion-stat {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .completion-stat h3 {
+            font-size: 2.5rem;
+            color: #667eea;
+        }
+
+        .completion-stat p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Class Mode - TV Display */
+        body.class-mode {
+            font-size: 120%;
+        }
+
+        body.class-mode h1 {
+            font-size: 3.5rem;
+        }
+
+        body.class-mode .nav-bar {
+            padding: 20px 30px;
+            font-size: 120%;
+        }
+
+        body.class-mode .stat-value {
+            font-size: 2.5rem;
+        }
+
+        body.class-mode .word-english {
+            font-size: 5rem;
+        }
+
+        body.class-mode .word-japanese {
+            font-size: 3.5rem;
+        }
+
+        body.class-mode .flashcard {
+            min-height: 450px;
+        }
+
+        body.class-mode .word-emoji {
+            font-size: 7rem;
+        }
+
+        body.class-mode button {
+            padding: 18px 35px;
+            font-size: 1.3rem;
+        }
+
+        body.class-mode .quiz-question {
+            font-size: 3rem;
+        }
+
+        body.class-mode .quiz-word {
+            font-size: 4.5rem;
+        }
+
+        body.class-mode .quiz-option {
+            padding: 35px;
+            font-size: 2.2rem;
+        }
+
+        /* Animations */
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .shake {
+            animation: shake 0.5s ease;
+        }
+
+        @keyframes celebrate {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .celebrate {
+            animation: celebrate 0.5s ease;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-center {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .stats-display {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+
+            .word-english {
+                font-size: 2rem;
+            }
+
+            .word-japanese {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Eiken 5 Vocabulary Practice</h1>
+
+        <div class="nav-bar">
+            <div class="nav-left">
+                <a href="vocabulary-eiken5.html">← Back to List</a>
+            </div>
+            <div class="nav-center">
+                <div class="stats-display">
+                    <div class="stat-item">
+                        <span class="stat-label">Streak</span>
+                        <span class="stat-value" id="streak">🔥 0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Mastered</span>
+                        <span class="stat-value" id="mastered">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Accuracy</span>
+                        <span class="stat-value" id="accuracy">--</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="mode-toggle" id="classModeToggle" onclick="toggleClassMode()">📺 Class Mode</button>
+                <button class="mode-toggle" onclick="goToStart()">🏠 Home</button>
+            </div>
+        </div>
+
+        <div class="main-content" id="mainContent">
+            <!-- Content loaded dynamically -->
+        </div>
+    </div>
+
+    <script>
+        // Data and State
+        let vocabularyData = [];
+        let currentMode = 'start';
+        let currentCardIndex = 0;
+        let currentWords = [];
+        let currentQuestion = {};
+        let correctAnswers = 0;
+        let totalQuestions = 0;
+        let classMode = false;
+
+        // Storage keys
+        const STORAGE_KEY = 'eiken5_learning';
+        const CLASS_MODE_KEY = 'eiken5_class_mode';
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', init);
+
+        async function init() {
+            loadClassMode();
+            updateStatsDisplay();
+            await loadVocabularyData();
+            goToStart();
+        }
+
+        function loadClassMode() {
+            const saved = localStorage.getItem(CLASS_MODE_KEY);
+            if (saved === 'true') {
+                classMode = true;
+                document.body.classList.add('class-mode');
+                document.getElementById('classModeToggle').classList.add('active');
+            }
+        }
+
+        function toggleClassMode() {
+            classMode = !classMode;
+            document.body.classList.toggle('class-mode');
+            document.getElementById('classModeToggle').classList.toggle('active');
+            localStorage.setItem(CLASS_MODE_KEY, classMode);
+        }
+
+        async function loadVocabularyData() {
+            try {
+                const response = await fetch('vocabulary-data/eiken5-500.json');
+                const data = await response.json();
+                vocabularyData = data.categories.verbs_top80 || []
+                    .concat(data.categories.adjectives_top60 || [])
+                    .concat(data.categories.nouns_by_category ? Object.values(data.categories.nouns_by_category).flat() : [])
+                    .concat(data.categories.adverbs_top30 || [])
+                    .concat(data.categories.prepositions || [])
+                    .concat(data.categories.conjunctions || [])
+                    .concat(data.categories.pronouns || [])
+                    .concat(data.categories.determiners || [])
+                    .concat(data.categories.interjections || []);
+
+                // Normalize data structure
+                vocabularyData = vocabularyData.map(item => {
+                    const word = item.word || item;
+                    return {
+                        word: typeof word === 'object' ? word.word || word : word,
+                        jp: item.jp || '',
+                        pos: item.pos || '',
+                        example: item.example || { en: word, jp: item.jp || '' },
+                        emoji: item.emoji || ''
+                    };
+                });
+            } catch (error) {
+                console.error('Error loading vocabulary:', error);
+                showStartScreen();
+            }
+        }
+
+        function getLearningData() {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            return saved ? JSON.parse(saved) : {
+                last_studied: null,
+                streak: 0,
+                mastery: {},
+                stats: {
+                    total_time_seconds: 0,
+                    sessions: 0,
+                    cards_mastered: 0,
+                    correct_answers: 0,
+                    total_answers: 0
+                }
+            };
+        }
+
+        function saveLearningData(data) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+            updateStreak();
+            updateStatsDisplay();
+        }
+
+        function updateStreak() {
+            const data = getLearningData();
+            const today = new Date().toDateString();
+            const lastStudied = data.last_studied;
+
+            if (lastStudied) {
+                const lastDate = new Date(lastStudied);
+                const yesterday = new Date();
+                yesterday.setDate(yesterday.getDate() - 1);
+
+                if (lastDate.toDateString() === today) {
+                    // Already studied today, keep streak
+                } else if (lastDate.toDateString() === yesterday.toDateString()) {
+                    // Studied yesterday, increment streak
+                    data.streak = (data.streak || 0) + 1;
+                } else {
+                    // Missed a day, reset streak
+                    data.streak = 1;
+                }
+            } else {
+                data.streak = 1;
+            }
+
+            data.last_studied = today;
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        }
+
+        function updateStatsDisplay() {
+            const data = getLearningData();
+            const stats = data.stats || {};
+
+            document.getElementById('streak').textContent = '🔥 ' + (data.streak || 0);
+            document.getElementById('mastered').textContent = stats.cards_mastered || 0;
+
+            if (stats.total_answers > 0) {
+                const accuracy = Math.round((stats.correct_answers / stats.total_answers) * 100);
+                document.getElementById('accuracy').textContent = accuracy + '%';
+            } else {
+                document.getElementById('accuracy').textContent = '--';
+            }
+        }
+
+        function goToStart() {
+            currentMode = 'start';
+            showStartScreen();
+        }
+
+        function showStartScreen() {
+            const mainContent = document.getElementById('mainContent');
+            mainContent.innerHTML = `
+                <div class="start-screen">
+                    <h2>🎯 Ready to Learn?</h2>
+                    <p>Choose a practice mode to master Eiken 5 vocabulary</p>
+                    <div class="practice-options">
+                        <div class="practice-card flashcard-mode" onclick="startFlashcardMode()">
+                            <h3>🎴 Flashcards</h3>
+                            <p>Flip cards to learn meanings</p>
+                        </div>
+                        <div class="practice-card quiz-mode" onclick="startQuizMode()">
+                            <h3>❓ Quiz</h3>
+                            <p>Test your knowledge</p>
+                        </div>
+                        <div class="practice-card spelling-mode" onclick="startSpellingMode()">
+                            <h3>✍️ Spelling</h3>
+                            <p>Type the correct word</p>
+                        </div>
+                    </div>
+                    <button class="btn-large" onclick="startReviewMode()">🔄 Review Difficult Words</button>
+                </div>
+            `;
+        }
+
+        // Flashcard Mode
+        function startFlashcardMode() {
+            currentMode = 'flashcards';
+            currentWords = getPracticeWords(20); // 20 cards per session
+            currentCardIndex = 0;
+            if (currentWords.length === 0) {
+                alert('No words available for study!');
+                goToStart();
+                return;
+            }
+            showFlashcard();
+        }
+
+        function getPracticeWords(count, reviewOnly = false) {
+            const learningData = getLearningData();
+            const mastery = learningData.mastery || {};
+
+            let wordsToStudy = vocabularyData.filter(word => {
+                if (reviewOnly) {
+                    const wordData = mastery[word.word];
+                    return wordData && wordData.level < 5;
+                }
+                // New words or words needing review
+                const wordData = mastery[word.word];
+                return !wordData || wordData.level < 5;
+            });
+
+            // Sort by level (lower level = needs more review)
+            wordsToStudy.sort((a, b) => {
+                const aLevel = mastery[a.word]?.level || 0;
+                const bLevel = mastery[b.word]?.level || 0;
+                return aLevel - bLevel;
+            });
+
+            return wordsToStudy.slice(0, count);
+        }
+
+        function showFlashcard() {
+            if (currentCardIndex >= currentWords.length) {
+                showCompletion();
+                return;
+            }
+
+            const word = currentWords[currentCardIndex];
+            const mainContent = document.getElementById('mainContent');
+            const progress = ((currentCardIndex) / currentWords.length) * 100;
+
+            mainContent.innerHTML = `
+                <div class="flashcard-container">
+                    <div class="progress-header">
+                        <span>Card ${currentCardIndex + 1} of ${currentWords.length}</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${progress}%"></div>
+                        </div>
+                        <span>${Math.round(progress)}%</span>
+                    </div>
+
+                    <div class="card-area">
+                        <div class="flashcard" id="flashcard" onclick="flipCard()">
+                            <div class="flashcard-front">
+                                ${word.emoji ? `<div class="word-emoji">${word.emoji}</div>` : ''}
+                                <div class="word-english">${word.word}</div>
+                                <button class="audio-btn" onclick="event.stopPropagation(); speakWord('${word.word}')" title="🔊 Play audio">
+                                    🔊
+                                </button>
+                            </div>
+                            <div class="flashcard-back">
+                                ${word.emoji ? `<div class="word-emoji">${word.emoji}</div>` : ''}
+                                <div class="word-english">${word.word}</div>
+                                <div class="word-pos">${word.pos}</div>
+                                <div class="word-japanese">${word.jp}</div>
+                                <div class="word-example">${word.example.en}</div>
+                                <div class="word-example">${word.example.jp}</div>
+                                <button class="audio-btn" onclick="event.stopPropagation(); speakWord('${word.word}')" title="🔊 Play audio">
+                                    🔊
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-controls" id="cardControls" style="display: none;">
+                        <button class="btn-study" onclick="studyAgain()">📚 Study Again</button>
+                        <button class="btn-mastered" onclick="markMastered()">✅ Got It!</button>
+                    </div>
+                    <p style="margin-top: 20px; color: #666;">Tap card to flip</p>
+                </div>
+            `;
+        }
+
+        function flipCard() {
+            const flashcard = document.getElementById('flashcard');
+            const controls = document.getElementById('cardControls');
+            flashcard.classList.toggle('flipped');
+            controls.style.display = 'flex';
+        }
+
+        function speakWord(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-US';
+            speechSynthesis.speak(utterance);
+        }
+
+        function studyAgain() {
+            updateWordMastery(currentWords[currentCardIndex].word, 'study_again');
+            currentCardIndex++;
+            showFlashcard();
+        }
+
+        function markMastered() {
+            updateWordMastery(currentWords[currentCardIndex].word, 'mastered');
+            currentCardIndex++;
+            showFlashcard();
+        }
+
+        function updateWordMastery(word, result) {
+            const learningData = getLearningData();
+            if (!learningData.mastery) {
+                learningData.mastery = {};
+            }
+
+            const wordData = learningData.mastery[word] || {
+                attempts: 0,
+                correct: 0,
+                level: 0,
+                last_reviewed: null,
+                next_review: null
+            };
+
+            wordData.attempts++;
+            wordData.last_reviewed = new Date().toISOString();
+
+            if (result === 'mastered') {
+                wordData.correct++;
+                wordData.level = Math.min(5, wordData.level + 1);
+            } else {
+                wordData.level = Math.max(0, wordData.level - 1);
+            }
+
+            // Update overall stats
+            if (!learningData.stats) {
+                learningData.stats = {};
+            }
+
+            if (result === 'mastered') {
+                learningData.stats.correct_answers = (learningData.stats.correct_answers || 0) + 1;
+            }
+            learningData.stats.total_answers = (learningData.stats.total_answers || 0) + 1;
+
+            // Check if fully mastered
+            if (wordData.level >= 5 && learningData.mastery[word].level < 5) {
+                learningData.stats.cards_mastered = (learningData.stats.cards_mastered || 0) + 1;
+            }
+
+            learningData.mastery[word] = wordData;
+            saveLearningData(learningData);
+        }
+
+        // Quiz Mode
+        function startQuizMode() {
+            currentMode = 'quiz';
+            currentWords = getPracticeWords(10);
+            currentCardIndex = 0;
+            correctAnswers = 0;
+            totalQuestions = 0;
+
+            if (currentWords.length === 0) {
+                alert('No words available!');
+                goToStart();
+                return;
+            }
+
+            showQuizQuestion();
+        }
+
+        function showQuizQuestion() {
+            if (currentCardIndex >= currentWords.length) {
+                showCompletion();
+                return;
+            }
+
+            const correctWord = currentWords[currentCardIndex];
+            const wrongWords = vocabularyData
+                .filter(w => w.word !== correctWord.word)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 3);
+
+            const options = [correctWord, ...wrongWords].sort(() => Math.random() - 0.5);
+            currentQuestion = correctWord;
+
+            const mainContent = document.getElementById('mainContent');
+            const progress = ((currentCardIndex) / currentWords.length) * 100;
+
+            mainContent.innerHTML = `
+                <div class="quiz-container">
+                    <div class="progress-header">
+                        <span>Question ${currentCardIndex + 1} of ${currentWords.length}</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${progress}%"></div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">What does this mean?</div>
+                    ${correctWord.emoji ? `<div style="font-size: 4rem; margin: 20px 0;">${correctWord.emoji}</div>` : ''}
+                    <div class="quiz-word">${correctWord.word}</div>
+
+                    <div class="quiz-options">
+                        ${options.map(opt => `
+                            <div class="quiz-option" onclick="checkQuizAnswer(this, '${opt.word}', '${correctWord.word}')">
+                                ${opt.jp}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+
+            speakWord(correctWord.word);
+        }
+
+        function checkQuizAnswer(element, selected, correct) {
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach(opt => opt.style.pointerEvents = 'none');
+
+            totalQuestions++;
+            const isCorrect = selected === correct;
+
+            if (isCorrect) {
+                element.classList.add('correct');
+                element.classList.add('celebrate');
+                correctAnswers++;
+                updateWordMastery(currentQuestion.word, 'mastered');
+            } else {
+                element.classList.add('wrong');
+                element.classList.add('shake');
+                options.forEach(opt => {
+                    if (opt.textContent.trim() === currentQuestion.jp) {
+                        opt.classList.add('correct');
+                    }
+                });
+                updateWordMastery(currentQuestion.word, 'study_again');
+            }
+
+            setTimeout(() => {
+                currentCardIndex++;
+                showQuizQuestion();
+            }, 1500);
+        }
+
+        // Spelling Mode
+        function startSpellingMode() {
+            currentMode = 'spelling';
+            currentWords = getPracticeWords(10);
+            currentCardIndex = 0;
+            correctAnswers = 0;
+            totalQuestions = 0;
+
+            if (currentWords.length === 0) {
+                alert('No words available!');
+                goToStart();
+                return;
+            }
+
+            showSpellingQuestion();
+        }
+
+        function showSpellingQuestion() {
+            if (currentCardIndex >= currentWords.length) {
+                showCompletion();
+                return;
+            }
+
+            const word = currentWords[currentCardIndex];
+            const hint = word.word.substring(0, 2) + '_'.repeat(word.word.length - 2);
+
+            const mainContent = document.getElementById('mainContent');
+            const progress = ((currentCardIndex) / currentWords.length) * 100;
+
+            mainContent.innerHTML = `
+                <div class="spelling-container">
+                    <div class="progress-header">
+                        <span>Word ${currentCardIndex + 1} of ${currentWords.length}</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${progress}%"></div>
+                        </div>
+                    </div>
+
+                    <div class="spelling-word">${word.jp}</div>
+                    <div class="spelling-hint">Type the English word</div>
+
+                    <input type="text" class="spelling-input" id="spellingInput"
+                           placeholder="Type your answer..."
+                           onkeypress="if(event.key === 'Enter') checkSpelling()"
+                           autocomplete="off"
+                           autocapitalize="none"
+                           spellcheck="false">
+
+                    <button class="btn-large" onclick="checkSpelling()">Check Answer</button>
+
+                    <div class="spelling-hint" style="margin-top: 30px;">
+                        Hint: ${hint}
+                    </div>
+                </div>
+            `;
+
+            // Auto-focus input
+            setTimeout(() => document.getElementById('spellingInput').focus(), 100);
+        }
+
+        function checkSpelling() {
+            const input = document.getElementById('spellingInput');
+            const answer = input.value.trim().toLowerCase();
+            const correct = currentWords[currentCardIndex].word.toLowerCase();
+            const isCorrect = answer === correct;
+
+            totalQuestions++;
+
+            if (isCorrect) {
+                input.style.borderColor = '#28a745';
+                input.style.backgroundColor = '#d4edda';
+                input.classList.add('celebrate');
+                correctAnswers++;
+                updateWordMastery(currentWords[currentCardIndex].word, 'mastered');
+                speakWord(currentWords[currentCardIndex].word);
+            } else {
+                input.style.borderColor = '#dc3545';
+                input.style.backgroundColor = '#f8d7da';
+                input.classList.add('shake');
+                updateWordMastery(currentWords[currentCardIndex].word, 'study_again');
+
+                // Show correct answer
+                const container = document.querySelector('.spelling-container');
+                const feedback = document.createElement('div');
+                feedback.style.color = '#dc3545';
+                feedback.style.fontSize = '1.3rem';
+                feedback.style.marginTop = '15px';
+                feedback.textContent = `Correct answer: ${currentWords[currentCardIndex].word}`;
+                container.appendChild(feedback);
+            }
+
+            setTimeout(() => {
+                currentCardIndex++;
+                showSpellingQuestion();
+            }, 1500);
+        }
+
+        // Review Mode
+        function startReviewMode() {
+            currentMode = 'review';
+            currentWords = getPracticeWords(20, true); // Only difficult words
+
+            if (currentWords.length === 0) {
+                alert('No difficult words to review! Great job! 🎉');
+                goToStart();
+                return;
+            }
+
+            // Show review count
+            if (confirm(`You have ${currentWords.length} words that need review. Start reviewing them?`)) {
+                currentCardIndex = 0;
+                showFlashcard();
+            }
+        }
+
+        // Completion Screen
+        function showCompletion() {
+            const learningData = getLearningData();
+            const stats = learningData.stats || {};
+
+            const accuracy = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
+            const totalMastered = stats.cards_mastered || 0;
+            const totalTime = Math.round((stats.total_time_seconds || 0) / 60); // in minutes
+
+            const mainContent = document.getElementById('mainContent');
+
+            let message = '';
+            let icon = '🎉';
+            if (accuracy >= 90) {
+                message = 'Excellent work! You\'re a vocabulary master! 🏆';
+                icon = '🏆';
+            } else if (accuracy >= 70) {
+                message = 'Great job! Keep up the good work! 🌟';
+                icon = '🎉';
+            } else if (accuracy >= 50) {
+                message = 'Good effort! Practice makes perfect! 💪';
+                icon = '📚';
+            } else {
+                message = 'Keep practicing! You\'ll get there! 🔥';
+                icon = '🎯';
+            }
+
+            mainContent.innerHTML = `
+                <div class="completion-screen">
+                    <div class="completion-icon">${icon}</div>
+                    <h2>${message}</h2>
+
+                    <div class="completion-stats">
+                        <div class="completion-stat">
+                            <h3>${accuracy}%</h3>
+                            <p>Accuracy</p>
+                        </div>
+                        <div class="completion-stat">
+                            <h3>${correctAnswers}/${totalQuestions}</h3>
+                            <p>Correct</p>
+                        </div>
+                        <div class="completion-stat">
+                            <h3>${totalMastered}</h3>
+                            <p>Total Mastered</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                        <button class="btn-large" onclick="goToStart()">🏠 Home</button>
+                        <button class="btn-large" onclick="startReviewMode()">🔄 Review Difficult</button>
+                        <button class="mode-toggle" onclick="goToStart()">📋 Word List</button>
+                    </div>
+                </div>
+            `;
+
+            // Update session stats
+            stats.sessions = (stats.sessions || 0) + 1;
+            stats.total_time_seconds += 5; // Approximate 5 minutes per session
+            learningData.stats = stats;
+            saveLearningData(learningData);
+        }
+    </script>
+</body>
+</html>
