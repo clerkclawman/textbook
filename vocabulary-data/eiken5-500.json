@@ -1,1370 +1,6362 @@
 {
   "metadata": {
-    "level": "Eiken Grade 5",
-    "totalWords": 557,
-    "targetFull": 653,
-    "lastUpdated": "2026-03-01 (added emojis to all words)",
-    "status": "Curated list - modifiable based on exam data",
-    "source": "Common Eiken 5 vocabulary from teaching materials",
-    "hasEmojis": true
+    "level": "Eiken 5",
+    "totalWords": 573,
+    "hasEmojis": true,
+    "lastUpdated": "2026-03-02",
+    "description": "Comprehensive Eiken Grade 5 vocabulary for upper elementary school students (ages 10-12)"
   },
   "categories": {
-    "verbs_top50": [
+    "verbs_top80": [
       {
         "word": "be",
-        "jp": "である",
-        "forms": "am/is/are, was/were, been",
+        "jp": "～である、いる、ある",
+        "pos": "verb",
+        "emoji": "🎭",
         "examples": [
-          "I am a student.",
-          "She is happy.",
-          "They were here."
-        ],
-        "emoji": "👤"
+          "I am happy today.",
+          "She is a student.",
+          "They are my friends."
+        ]
       },
       {
         "word": "have",
         "jp": "持っている",
-        "forms": "have/has, had, had",
+        "pos": "verb",
+        "emoji": "🎬",
         "examples": [
-          "I have a cat.",
-          "She has a book."
-        ],
-        "emoji": "📦"
+          "I have a new book.",
+          "He has two cats.",
+          "We have lunch at 12 o'clock."
+        ]
       },
       {
         "word": "do",
         "jp": "する",
-        "forms": "do/does, did, done",
+        "pos": "verb",
+        "emoji": "🎬",
         "examples": [
-          "I do homework.",
-          "He did it well."
-        ],
-        "emoji": "✅"
+          "I do my homework every day.",
+          "What do you do on Sundays?",
+          "She does yoga in the morning."
+        ]
       },
       {
         "word": "go",
         "jp": "行く",
-        "forms": "go/goes, went, gone",
+        "pos": "verb",
+        "emoji": "🚶",
         "examples": [
-          "I go to school.",
-          "She went home."
-        ],
-        "emoji": "🚶"
+          "I go to school by bus.",
+          "We go to the park on weekends.",
+          "He goes to bed at 9 o'clock."
+        ]
       },
       {
         "word": "come",
         "jp": "来る",
-        "forms": "come/comes, came, come",
+        "pos": "verb",
+        "emoji": "🚶",
         "examples": [
-          "Come here.",
-          "He came yesterday."
-        ],
-        "emoji": "👋"
-      },
-      {
-        "word": "eat",
-        "jp": "食べる",
-        "forms": "eat/eats, ate, eaten",
-        "examples": [
-          "I eat breakfast.",
-          "She ate lunch."
-        ],
-        "emoji": "🍽️"
-      },
-      {
-        "word": "drink",
-        "jp": "飲む",
-        "forms": "drink/drinks, drank, drunk",
-        "examples": [
-          "Drink water.",
-          "He drank tea."
-        ],
-        "emoji": "🍷"
-      },
-      {
-        "word": "sleep",
-        "jp": "寝る",
-        "forms": "sleep/sleeps, slept, slept",
-        "examples": [
-          "I sleep at 10.",
-          "She slept late."
-        ],
-        "emoji": "😴"
-      },
-      {
-        "word": "wake up",
-        "jp": "起きる",
-        "forms": "wake/wakes, woke, woken",
-        "examples": [
-          "I wake up at 7.",
-          "He woke early."
-        ],
-        "emoji": "⏰"
-      },
-      {
-        "word": "read",
-        "jp": "読む",
-        "forms": "read/reads, read, read",
-        "examples": [
-          "I read books.",
-          "She reads fast."
-        ],
-        "emoji": "📖"
-      },
-      {
-        "word": "write",
-        "jp": "書く",
-        "forms": "write/writes, wrote, written",
-        "examples": [
-          "Write your name.",
-          "He wrote a letter."
-        ],
-        "emoji": "✍️"
-      },
-      {
-        "word": "speak",
-        "jp": "話す",
-        "forms": "speak/speaks, spoke, spoken",
-        "examples": [
-          "Speak English.",
-          "She spoke kindly."
-        ],
-        "emoji": "🗣️"
-      },
-      {
-        "word": "listen",
-        "jp": "聞く",
-        "forms": "listen/listens, listened, listened",
-        "examples": [
-          "Listen carefully.",
-          "She listened to music."
-        ],
-        "emoji": "👂"
-      },
-      {
-        "word": "watch",
-        "jp": "見る",
-        "forms": "watch/watches, watched, watched",
-        "examples": [
-          "Watch TV.",
-          "He watched the game."
-        ],
-        "emoji": "👀"
-      },
-      {
-        "word": "play",
-        "jp": "遊ぶ",
-        "forms": "play/plays, played, played",
-        "examples": [
-          "Play outside.",
-          "They played games."
-        ],
-        "emoji": "🎮"
-      },
-      {
-        "word": "study",
-        "jp": "勉強する",
-        "forms": "study/studies, studied, studied",
-        "examples": [
-          "Study hard.",
-          "She studied well."
-        ],
-        "emoji": "📚"
-      },
-      {
-        "word": "work",
-        "jp": "働く",
-        "forms": "work/works, worked, worked",
-        "examples": [
-          "Work in Tokyo.",
-          "He worked late."
-        ],
-        "emoji": "💼"
-      },
-      {
-        "word": "live",
-        "jp": "住む",
-        "forms": "live/lives, lived, lived",
-        "examples": [
-          "I live in Japan.",
-          "She lived there."
-        ],
-        "emoji": "🏠"
-      },
-      {
-        "word": "like",
-        "jp": "好きだ",
-        "forms": "like/likes, liked, liked",
-        "examples": [
-          "I like cats.",
-          "She liked dogs."
-        ],
-        "emoji": "❤️"
+          "Please come here.",
+          "My friends come to my house.",
+          "Spring comes after winter."
+        ]
       },
       {
         "word": "want",
-        "jp": "欲しい",
-        "forms": "want/wants, wanted, wanted",
+        "jp": "～したい、欲しい",
+        "pos": "verb",
+        "emoji": "💠",
         "examples": [
-          "I want water.",
-          "She wanted help."
-        ],
-        "emoji": "🎯"
+          "I want to play soccer.",
+          "She wants a new bag.",
+          "Do you want some tea?"
+        ]
       },
       {
         "word": "need",
-        "jp": "必要だ",
-        "forms": "need/needs, needed, needed",
+        "jp": "必要とする",
+        "pos": "verb",
+        "emoji": "💡",
         "examples": [
-          "I need help.",
-          "She needed rest."
-        ],
-        "emoji": "🔧"
+          "I need my pencil.",
+          "We need to study hard.",
+          "She needs some help."
+        ]
       },
       {
-        "word": "love",
-        "jp": "愛している",
-        "forms": "love/loves, loved, loved",
+        "word": "like",
+        "jp": "～が好き",
+        "pos": "verb",
+        "emoji": "❤️",
         "examples": [
-          "I love my family.",
-          "She loves music."
-        ],
-        "emoji": "💖"
-      },
-      {
-        "word": "help",
-        "jp": "助ける",
-        "forms": "help/helps, helped, helped",
-        "examples": [
-          "Help me.",
-          "He helped her."
-        ],
-        "emoji": "🤝"
-      },
-      {
-        "word": "use",
-        "jp": "使う",
-        "forms": "use/uses, used, used",
-        "examples": [
-          "Use the pen.",
-          "She used it."
-        ],
-        "emoji": "🔨"
-      },
-      {
-        "word": "make",
-        "jp": "作る",
-        "forms": "make/makes, made, made",
-        "examples": [
-          "Make lunch.",
-          "He made a cake."
-        ],
-        "emoji": "🛠️"
-      },
-      {
-        "word": "take",
-        "jp": "取る",
-        "forms": "take/takes, took, taken",
-        "examples": [
-          "Take your time.",
-          "She took the bus."
-        ],
-        "emoji": "✋"
-      },
-      {
-        "word": "give",
-        "jp": "与える",
-        "forms": "give/gives, gave, given",
-        "examples": [
-          "Give it to me.",
-          "He gave a gift."
-        ],
-        "emoji": "🎁"
-      },
-      {
-        "word": "get",
-        "jp": "得る",
-        "forms": "get/gets, got, got/gotten",
-        "examples": [
-          "Get up.",
-          "He got home."
-        ],
-        "emoji": "📥"
-      },
-      {
-        "word": "put",
-        "jp": "置く",
-        "forms": "put/puts, put, put",
-        "examples": [
-          "Put it here.",
-          "She put it there."
-        ],
-        "emoji": "📥"
+          "I like apples.",
+          "She likes reading books.",
+          "Do you like music?"
+        ]
       },
       {
         "word": "think",
         "jp": "思う",
-        "forms": "think/thinks, thought, thought",
+        "pos": "verb",
+        "emoji": "💡",
         "examples": [
-          "Think carefully.",
-          "She thought about it."
-        ],
-        "emoji": "🤔"
+          "I think it will rain today.",
+          "She thinks this is a good idea.",
+          "What do you think about this?"
+        ]
       },
       {
-        "word": "know",
-        "jp": "知っている",
-        "forms": "know/knows, knew, known",
+        "word": "feel",
+        "jp": "感じる",
+        "pos": "verb",
+        "emoji": "😊",
         "examples": [
-          "I know him.",
-          "She knew the answer."
-        ],
-        "emoji": "🧠"
+          "I feel happy.",
+          "She feels sick today.",
+          "I feel cold in winter."
+        ]
       },
       {
-        "word": "understand",
-        "jp": "理解する",
-        "forms": "understand/understands, understood, understood",
+        "word": "say",
+        "jp": "言う",
+        "pos": "verb",
+        "emoji": "🎤",
         "examples": [
-          "Understand this.",
-          "She understood."
-        ],
-        "emoji": "💡"
+          "Please say hello.",
+          "He says he is busy.",
+          "What did she say?"
+        ]
       },
       {
-        "word": "learn",
-        "jp": "学ぶ",
-        "forms": "learn/learns, learned, learned",
+        "word": "eat",
+        "jp": "食べる",
+        "pos": "verb",
+        "emoji": "🍽️",
         "examples": [
-          "Learn English.",
-          "She learned fast."
-        ],
-        "emoji": "🎓"
+          "I eat breakfast at 7 o'clock.",
+          "She eats lunch at school.",
+          "We eat dinner together."
+        ]
       },
       {
-        "word": "teach",
-        "jp": "教える",
-        "forms": "teach/teaches, taught, taught",
+        "word": "drink",
+        "jp": "飲む",
+        "pos": "verb",
+        "emoji": "☕",
         "examples": [
-          "Teach me.",
-          "She taught him."
-        ],
-        "emoji": "👩‍🏫"
+          "I drink milk every morning.",
+          "He drinks water when he is thirsty.",
+          "She likes to drink tea."
+        ]
       },
       {
-        "word": "see",
-        "jp": "見える",
-        "forms": "see/sees, saw, seen",
+        "word": "play",
+        "jp": "遊ぶ、演奏する",
+        "pos": "verb",
+        "emoji": "🎮",
         "examples": [
-          "See the movie.",
-          "She saw it."
-        ],
-        "emoji": "👁️"
+          "I play soccer with my friends.",
+          "She plays the piano.",
+          "We play games in the park."
+        ]
       },
       {
-        "word": "look",
+        "word": "watch",
         "jp": "見る",
-        "forms": "look/looks, looked, looked",
+        "pos": "verb",
+        "emoji": "👁️",
         "examples": [
-          "Look at me.",
-          "She looked away."
-        ],
-        "emoji": "👀"
+          "I watch TV every evening.",
+          "She watches movies on weekends.",
+          "We watch the stars at night."
+        ]
       },
       {
-        "word": "talk",
-        "jp": "話す",
-        "forms": "talk/talks, talked, talked",
+        "word": "listen",
+        "jp": "聞く",
+        "pos": "verb",
+        "emoji": "👂",
         "examples": [
-          "Talk slowly.",
-          "She talked to him."
-        ],
-        "emoji": "🗣️"
+          "I listen to music.",
+          "She listens to her teacher.",
+          "Please listen to me."
+        ]
+      },
+      {
+        "word": "read",
+        "jp": "読む",
+        "pos": "verb",
+        "emoji": "📖",
+        "examples": [
+          "I read books every night.",
+          "She reads the newspaper.",
+          "We read many stories at school."
+        ]
+      },
+      {
+        "word": "write",
+        "jp": "書く",
+        "pos": "verb",
+        "emoji": "✏️",
+        "examples": [
+          "I write my diary.",
+          "She writes letters to her friends.",
+          "We write with pencils."
+        ]
+      },
+      {
+        "word": "speak",
+        "jp": "話す",
+        "pos": "verb",
+        "emoji": "🎤",
+        "examples": [
+          "I speak English at school.",
+          "She speaks Japanese at home.",
+          "They speak Chinese."
+        ]
+      },
+      {
+        "word": "study",
+        "jp": "勉強する",
+        "pos": "verb",
+        "emoji": "📚",
+        "examples": [
+          "I study English every day.",
+          "She studies math on Mondays.",
+          "We study hard for the test."
+        ]
+      },
+      {
+        "word": "work",
+        "jp": "働く",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "My father works in an office.",
+          "She works at a hospital.",
+          "We work together on projects."
+        ]
       },
       {
         "word": "walk",
         "jp": "歩く",
-        "forms": "walk/walks, walked, walked",
+        "pos": "verb",
+        "emoji": "🚶",
         "examples": [
-          "Walk to school.",
-          "She walked quickly."
-        ],
-        "emoji": "🚶"
+          "I walk to school.",
+          "She walks her dog.",
+          "We walk in the park."
+        ]
       },
       {
         "word": "run",
         "jp": "走る",
-        "forms": "run/runs, ran, run",
+        "pos": "verb",
+        "emoji": "🏃",
         "examples": [
-          "Run fast.",
-          "He ran home."
-        ],
-        "emoji": "🏃"
+          "I run fast.",
+          "He runs in the morning.",
+          "They run in the race."
+        ]
+      },
+      {
+        "word": "jump",
+        "jp": "跳ぶ",
+        "pos": "verb",
+        "emoji": "🏃",
+        "examples": [
+          "The rabbit can jump high.",
+          "She jumps over the rope.",
+          "We play jump rope at recess."
+        ]
+      },
+      {
+        "word": "sleep",
+        "jp": "寝る",
+        "pos": "verb",
+        "emoji": "🛏️",
+        "examples": [
+          "I sleep for 8 hours.",
+          "The baby sleeps in the afternoon.",
+          "We sleep at night."
+        ]
+      },
+      {
+        "word": "wake",
+        "jp": "目覚める",
+        "pos": "verb",
+        "emoji": "⏰",
+        "examples": [
+          "I wake up at 6 o'clock.",
+          "She wakes up early.",
+          "My alarm wakes me."
+        ]
+      },
+      {
+        "word": "get",
+        "jp": "得る、手に入れる",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I get up early.",
+          "She gets a new book.",
+          "We get good grades."
+        ]
+      },
+      {
+        "word": "make",
+        "jp": "作る",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I make breakfast.",
+          "She makes cakes.",
+          "We make crafts at school."
+        ]
+      },
+      {
+        "word": "take",
+        "jp": "取る",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I take a shower.",
+          "She takes pictures.",
+          "We take the bus to school."
+        ]
+      },
+      {
+        "word": "give",
+        "jp": "あげる",
+        "pos": "verb",
+        "emoji": "🎁",
+        "examples": [
+          "I give a gift to my friend.",
+          "She gives food to the cat.",
+          "We give presents on birthday."
+        ]
+      },
+      {
+        "word": "know",
+        "jp": "知っている",
+        "pos": "verb",
+        "emoji": "💡",
+        "examples": [
+          "I know the answer.",
+          "She knows how to swim.",
+          "We know many English words."
+        ]
+      },
+      {
+        "word": "understand",
+        "jp": "理解する",
+        "pos": "verb",
+        "emoji": "💡",
+        "examples": [
+          "I understand the lesson.",
+          "She understands Japanese music.",
+          "We understand each other."
+        ]
+      },
+      {
+        "word": "learn",
+        "jp": "学ぶ",
+        "pos": "verb",
+        "emoji": "🎓",
+        "examples": [
+          "I learn new things every day.",
+          "She learns to play the guitar.",
+          "We learn English at school."
+        ]
+      },
+      {
+        "word": "teach",
+        "jp": "教える",
+        "pos": "verb",
+        "emoji": "🏫",
+        "examples": [
+          "My mom teaches me cooking.",
+          "He teaches English.",
+          "She teaches us math."
+        ]
+      },
+      {
+        "word": "help",
+        "jp": "助ける",
+        "pos": "verb",
+        "emoji": "💪",
+        "examples": [
+          "I help my mother.",
+          "She helps her friends.",
+          "We help each other."
+        ]
+      },
+      {
+        "word": "clean",
+        "jp": "きれいにする",
+        "pos": "verb",
+        "emoji": "🧹",
+        "examples": [
+          "I clean my room.",
+          "She cleans the desk.",
+          "We clean the classroom together."
+        ]
+      },
+      {
+        "word": "cook",
+        "jp": "料理する",
+        "pos": "verb",
+        "emoji": "🍽️",
+        "examples": [
+          "I cook dinner for my family.",
+          "She cooks tasty food.",
+          "My mother cooks lunch."
+        ]
       },
       {
         "word": "buy",
         "jp": "買う",
-        "forms": "buy/buys, bought, bought",
+        "pos": "verb",
+        "emoji": "🛒",
         "examples": [
-          "Buy bread.",
-          "She bought milk."
-        ],
-        "emoji": "🛍️"
+          "I buy books at the shop.",
+          "She buys a new dress.",
+          "We buy food at the supermarket."
+        ]
       },
       {
-        "word": "sell",
-        "jp": "売る",
-        "forms": "sell/sells, sold, sold",
+        "word": "see",
+        "jp": "見える、見る",
+        "pos": "verb",
+        "emoji": "👁️",
         "examples": [
-          "Sell tickets.",
-          "He sold his car."
-        ],
-        "emoji": "💰"
+          "I see a bird in the tree.",
+          "She sees her friends at school.",
+          "We see many stars at night."
+        ]
       },
       {
-        "word": "open",
-        "jp": "開ける",
-        "forms": "open/opens, opened, opened",
+        "word": "look",
+        "jp": "見る",
+        "pos": "verb",
+        "emoji": "👁️",
         "examples": [
-          "Open the door.",
-          "She opened it."
-        ],
-        "emoji": "🔓"
+          "Look at the blackboard.",
+          "She looks happy.",
+          "We look at the pictures."
+        ]
       },
       {
-        "word": "close",
-        "jp": "閉じる",
-        "forms": "close/closes, closed, closed",
+        "word": "talk",
+        "jp": "話す",
+        "pos": "verb",
+        "emoji": "🎤",
         "examples": [
-          "Close the window.",
-          "She closed it."
-        ],
-        "emoji": "🚪"
-      },
-      {
-        "word": "start",
-        "jp": "始まる",
-        "forms": "start/starts, started, started",
-        "examples": [
-          "Start now.",
-          "It started at 9."
-        ],
-        "emoji": "▶️"
-      },
-      {
-        "word": "stop",
-        "jp": "止まる",
-        "forms": "stop/stops, stopped, stopped",
-        "examples": [
-          "Stop there.",
-          "She stopped walking."
-        ],
-        "emoji": "🛑"
-      },
-      {
-        "word": "finish",
-        "jp": "終わる",
-        "forms": "finish/finishes, finished, finished",
-        "examples": [
-          "Finish it.",
-          "She finished early."
-        ],
-        "emoji": "🏁"
-      },
-      {
-        "word": "begin",
-        "jp": "始める",
-        "forms": "begin/begins, began, begun",
-        "examples": [
-          "Begin now.",
-          "It began at 7."
-        ],
-        "emoji": "🎬"
+          "I talk to my friends.",
+          "She talks on the phone.",
+          "We talk about our day."
+        ]
       },
       {
         "word": "meet",
         "jp": "会う",
-        "forms": "meet/meets, met, met",
+        "pos": "verb",
+        "emoji": "👤",
         "examples": [
-          "Meet me there.",
-          "She met him."
-        ],
-        "emoji": "🤝"
+          "I meet my friends at school.",
+          "She meets her teacher.",
+          "We meet in the park."
+        ]
       },
       {
-        "word": "call",
-        "jp": "電話する",
-        "forms": "call/calls, called, called",
+        "word": "start",
+        "jp": "始める",
+        "pos": "verb",
+        "emoji": "🎬",
         "examples": [
-          "Call me.",
-          "She called you."
-        ],
-        "emoji": "📞"
+          "School starts at 8 o'clock.",
+          "She starts her homework now.",
+          "The movie starts soon."
+        ]
+      },
+      {
+        "word": "finish",
+        "jp": "終わる",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I finish my homework.",
+          "She finishes lunch at 1 o'clock.",
+          "The class finishes early today."
+        ]
+      },
+      {
+        "word": "open",
+        "jp": "開ける",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I open the door.",
+          "She opens the window.",
+          "We open our books."
+        ]
+      },
+      {
+        "word": "close",
+        "jp": "閉める",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "Please close the door.",
+          "She closes her eyes.",
+          "The shop closes at 9 o'clock."
+        ]
+      },
+      {
+        "word": "use",
+        "jp": "使う",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I use a computer.",
+          "She uses a pen.",
+          "We use English in class."
+        ]
+      },
+      {
+        "word": "find",
+        "jp": "見つける",
+        "pos": "verb",
+        "emoji": "💡",
+        "examples": [
+          "I find my lost key.",
+          "She finds interesting books.",
+          "We find the answer."
+        ]
+      },
+      {
+        "word": "lose",
+        "jp": "失う、なくす",
+        "pos": "verb",
+        "emoji": "💡",
+        "examples": [
+          "I lose my pencil sometimes.",
+          "She loses her umbrella.",
+          "Don't lose your way."
+        ]
       },
       {
         "word": "ask",
-        "jp": "聞く",
-        "forms": "ask/asks, asked, asked",
+        "jp": "聞く、尋ねる",
+        "pos": "verb",
+        "emoji": "🎤",
         "examples": [
-          "Ask a question.",
-          "She asked him."
-        ],
-        "emoji": "❓"
+          "I ask the teacher a question.",
+          "She asks for help.",
+          "We ask about the homework."
+        ]
+      },
+      {
+        "word": "answer",
+        "jp": "答える",
+        "pos": "verb",
+        "emoji": "💡",
+        "examples": [
+          "I answer the question.",
+          "She answers the phone.",
+          "We answer in English."
+        ]
+      },
+      {
+        "word": "call",
+        "jp": "呼ぶ、電話する",
+        "pos": "verb",
+        "emoji": "📞",
+        "examples": [
+          "I call my grandmother.",
+          "She calls her friend.",
+          "Please call me later."
+        ]
+      },
+      {
+        "word": "show",
+        "jp": "見せる",
+        "pos": "verb",
+        "emoji": "👁️",
+        "examples": [
+          "I show my picture.",
+          "She shows her new toy.",
+          "We show our homework."
+        ]
+      },
+      {
+        "word": "tell",
+        "jp": "話す、伝える",
+        "pos": "verb",
+        "emoji": "🎤",
+        "examples": [
+          "I tell my mother about school.",
+          "She tells stories.",
+          "He tells the truth."
+        ]
+      },
+      {
+        "word": "sit",
+        "jp": "座る",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I sit at my desk.",
+          "She sits on the chair.",
+          "We sit together."
+        ]
+      },
+      {
+        "word": "stand",
+        "jp": "立つ",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "Please stand up.",
+          "She stands in line.",
+          "We stand for the flag."
+        ]
+      },
+      {
+        "word": "wait",
+        "jp": "待つ",
+        "pos": "verb",
+        "emoji": "⏰",
+        "examples": [
+          "I wait for the bus.",
+          "She waits for her friend.",
+          "We wait for our turn."
+        ]
+      },
+      {
+        "word": "smile",
+        "jp": "微笑む",
+        "pos": "verb",
+        "emoji": "😊",
+        "examples": [
+          "I smile when I'm happy.",
+          "She smiles at her friends.",
+          "We smile for the photo."
+        ]
+      },
+      {
+        "word": "laugh",
+        "jp": "笑う",
+        "pos": "verb",
+        "emoji": "😊",
+        "examples": [
+          "I laugh at funny stories.",
+          "She laughs with her friends.",
+          "We laugh together."
+        ]
+      },
+      {
+        "word": "cry",
+        "jp": "泣く",
+        "pos": "verb",
+        "emoji": "😢",
+        "examples": [
+          "The baby cries.",
+          "She cries when she is sad.",
+          "Don't cry over small things."
+        ]
+      },
+      {
+        "word": "love",
+        "jp": "愛する",
+        "pos": "verb",
+        "emoji": "❤️",
+        "examples": [
+          "I love my family.",
+          "She loves her cat.",
+          "We love chocolate cake."
+        ]
+      },
+      {
+        "word": "hate",
+        "jp": "嫌い",
+        "pos": "verb",
+        "emoji": "😠",
+        "examples": [
+          "I hate rainy days.",
+          "She hates going to bed early.",
+          "Don't hate others."
+        ]
+      },
+      {
+        "word": "remember",
+        "jp": "覚えている、思い出す",
+        "pos": "verb",
+        "emoji": "💡",
+        "examples": [
+          "I remember your name.",
+          "She remembers the song.",
+          "We remember our holidays."
+        ]
+      },
+      {
+        "word": "forget",
+        "jp": "忘れる",
+        "pos": "verb",
+        "emoji": "💡",
+        "examples": [
+          "Sorry, I forget your name.",
+          "She forgets her homework.",
+          "Don't forget to smile."
+        ]
+      },
+      {
+        "word": "bring",
+        "jp": "持ってくる",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I bring my lunch.",
+          "She brings her umbrella.",
+          "Please bring your book."
+        ]
+      },
+      {
+        "word": "carry",
+        "jp": "運ぶ、持つ",
+        "pos": "verb",
+        "emoji": "💪",
+        "examples": [
+          "I carry my bag.",
+          "She carries the baby.",
+          "We carry the boxes."
+        ]
+      },
+      {
+        "word": "wear",
+        "jp": "着る",
+        "pos": "verb",
+        "emoji": "👕",
+        "examples": [
+          "I wear a uniform to school.",
+          "She wears a pretty dress.",
+          "We wear warm clothes in winter."
+        ]
+      },
+      {
+        "word": "put",
+        "jp": "置く",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "I put my book on the desk.",
+          "She puts the bag on the chair.",
+          "We put the plates on the table."
+        ]
+      },
+      {
+        "word": "keep",
+        "jp": "保つ、持続する",
+        "pos": "verb",
+        "emoji": "💡",
+        "examples": [
+          "I keep my room clean.",
+          "She keeps her promise.",
+          "We keep our secrets."
+        ]
+      },
+      {
+        "word": "stop",
+        "jp": "止まる",
+        "pos": "verb",
+        "emoji": "🎬",
+        "examples": [
+          "The bus stops here.",
+          "She stops running.",
+          "We stop at the red light."
+        ]
+      },
+      {
+        "word": "move",
+        "jp": "動く、移動する",
+        "pos": "verb",
+        "emoji": "🚶",
+        "examples": [
+          "I move to a new city.",
+          "She moves the chair.",
+          "We move around the room."
+        ]
+      },
+      {
+        "word": "live",
+        "jp": "住んでいる",
+        "pos": "verb",
+        "emoji": "🏠",
+        "examples": [
+          "I live in Japan.",
+          "She lives in Tokyo.",
+          "We live near the school."
+        ]
+      },
+      {
+        "word": "grow",
+        "jp": "成長する",
+        "pos": "verb",
+        "emoji": "🌱",
+        "examples": [
+          "Plants grow in spring.",
+          "She grows taller every year.",
+          "We grow up together."
+        ]
+      },
+      {
+        "word": "change",
+        "jp": "変わる、変える",
+        "pos": "verb",
+        "emoji": "🎯",
+        "examples": [
+          "The weather changes quickly.",
+          "She changes her clothes.",
+          "We change our plans."
+        ]
+      },
+      {
+        "word": "stay",
+        "jp": "とどまる",
+        "pos": "verb",
+        "emoji": "🏠",
+        "examples": [
+          "I stay at home today.",
+          "She stays with her grandmother.",
+          "We stay for dinner."
+        ]
+      },
+      {
+        "word": "try",
+        "jp": "試みる、やってみる",
+        "pos": "verb",
+        "emoji": "💪",
+        "examples": [
+          "I try my best.",
+          "She tries new food.",
+          "We try again."
+        ]
+      },
+      {
+        "word": "enjoy",
+        "jp": "楽しむ",
+        "pos": "verb",
+        "emoji": "😊",
+        "examples": [
+          "I enjoy reading books.",
+          "She enjoys playing music.",
+          "We enjoy our holiday."
+        ]
+      },
+      {
+        "word": "hope",
+        "jp": "望む",
+        "pos": "verb",
+        "emoji": "⭐",
+        "examples": [
+          "I hope to see you soon.",
+          "She hopes for good weather.",
+          "We hope you come."
+        ]
       }
     ],
-    "adjectives_top50": [
+    "adjectives_top60": [
       {
         "word": "good",
-        "jp": "良い",
-        "comparative": "better",
+        "jp": "いい、良い",
+        "pos": "adjective",
+        "emoji": "⭐",
         "examples": [
-          "The book is good.",
-          "Good morning."
-        ],
-        "emoji": "👍"
+          "This is a good book.",
+          "She is a good friend.",
+          "We have a good time."
+        ]
       },
       {
         "word": "bad",
         "jp": "悪い",
-        "comparative": "worse",
+        "pos": "adjective",
+        "emoji": "😠",
         "examples": [
+          "Sorry, it's a bad day.",
           "The weather is bad.",
-          "Bad idea."
-        ],
-        "emoji": "👎"
+          "Not all habits are bad."
+        ]
       },
       {
         "word": "big",
         "jp": "大きい",
-        "comparative": "bigger",
+        "pos": "adjective",
+        "emoji": "🔶",
         "examples": [
-          "A big dog.",
-          "Big apple."
-        ],
-        "emoji": "🐘"
+          "That's a big house.",
+          "She has a big smile.",
+          "We see a big dog."
+        ]
       },
       {
         "word": "small",
         "jp": "小さい",
-        "comparative": "smaller",
+        "pos": "adjective",
+        "emoji": "🔶",
         "examples": [
-          "A small cat.",
-          "Small room."
-        ],
-        "emoji": "🐭"
+          "I have a small bag.",
+          "She needs a small table.",
+          "The kitten is small."
+        ]
       },
       {
         "word": "tall",
         "jp": "背が高い",
-        "comparative": "taller",
+        "pos": "adjective",
+        "emoji": "🔶",
         "examples": [
-          "A tall man.",
-          "Tall tree."
-        ],
-        "emoji": "🏗️"
+          "My father is tall.",
+          "That tree is very tall.",
+          "She is tall for her age."
+        ]
       },
       {
         "word": "short",
-        "jp": "背が低い/短い",
-        "comparative": "shorter",
+        "jp": "背が低い、短い",
+        "pos": "adjective",
+        "emoji": "🔶",
         "examples": [
-          "A short story.",
-          "Short time."
-        ],
-        "emoji": "📏"
+          "The story is short.",
+          "She has short hair.",
+          "My brother is short."
+        ]
       },
       {
         "word": "long",
         "jp": "長い",
-        "comparative": "longer",
+        "pos": "adjective",
+        "emoji": "🔶",
         "examples": [
-          "A long road.",
-          "Long time."
-        ],
-        "emoji": "📏"
+          "She has long hair.",
+          "The river is very long.",
+          "It takes a long time."
+        ]
       },
       {
         "word": "new",
         "jp": "新しい",
-        "comparative": "newer",
+        "pos": "adjective",
+        "emoji": "⭐",
         "examples": [
-          "New car.",
-          "New book."
-        ],
-        "emoji": "✨"
+          "I have a new bag.",
+          "She wears new shoes.",
+          "We move to a new house."
+        ]
       },
       {
         "word": "old",
-        "jp": "古い",
-        "comparative": "older",
+        "jp": "古い、年老いた",
+        "pos": "adjective",
+        "emoji": "⭐",
         "examples": [
-          "Old house.",
-          "Old friend."
-        ],
-        "emoji": "👴"
+          "My grandmother is old.",
+          "This book is very old.",
+          "He is ten years old."
+        ]
       },
       {
         "word": "young",
         "jp": "若い",
-        "comparative": "younger",
+        "pos": "adjective",
+        "emoji": "👶",
         "examples": [
-          "Young person.",
-          "Young child."
-        ],
-        "emoji": "👶"
-      },
-      {
-        "word": "fast",
-        "jp": "速い",
-        "comparative": "faster",
-        "examples": [
-          "Fast car.",
-          "Fast runner."
-        ],
-        "emoji": "⚡"
-      },
-      {
-        "word": "slow",
-        "jp": "遅い",
-        "comparative": "slower",
-        "examples": [
-          "Slow walk.",
-          "Slow driver."
-        ],
-        "emoji": "🐢"
-      },
-      {
-        "word": "hot",
-        "jp": "暑い/熱い",
-        "comparative": "hotter",
-        "examples": [
-          "Hot weather.",
-          "Hot tea."
-        ],
-        "emoji": "🔥"
-      },
-      {
-        "word": "cold",
-        "jp": "寒い/冷たい",
-        "comparative": "colder",
-        "examples": [
-          "Cold day.",
-          "Cold water."
-        ],
-        "emoji": "❄️"
+          "My brother is young.",
+          "She looks young.",
+          "Children are young."
+        ]
       },
       {
         "word": "happy",
-        "jp": "幸せ",
-        "comparative": "happier",
+        "jp": "嬉しい、幸せ",
+        "pos": "adjective",
+        "emoji": "😊",
         "examples": [
-          "Happy person.",
-          "Happy feeling."
-        ],
-        "emoji": "😊"
+          "I am happy today.",
+          "She has a happy family.",
+          "We feel happy together."
+        ]
       },
       {
         "word": "sad",
         "jp": "悲しい",
-        "comparative": "sadder",
+        "pos": "adjective",
+        "emoji": "😢",
         "examples": [
-          "Sad movie.",
-          "Sad story."
-        ],
-        "emoji": "😢"
-      },
-      {
-        "word": "busy",
-        "jp": "忙しい",
-        "comparative": "busier",
-        "examples": [
-          "Busy day.",
-          "Busy person."
-        ],
-        "emoji": "🚧"
-      },
-      {
-        "word": "tired",
-        "jp": "疲れている",
-        "comparative": "more tired",
-        "examples": [
-          "Tired dog.",
-          "Tired student."
-        ],
-        "emoji": "😫"
-      },
-      {
-        "word": "hungry",
-        "jp": "お腹が空いている",
-        "comparative": "hungrier",
-        "examples": [
-          "Hungry cat.",
-          "Hungry person."
-        ],
-        "emoji": "🍽️"
-      },
-      {
-        "word": "thirsty",
-        "jp": "喉が渇いている",
-        "comparative": "thirstier",
-        "examples": [
-          "Thirsty dog.",
-          "Thirsty child."
-        ],
-        "emoji": "🥤"
-      },
-      {
-        "word": "easy",
-        "jp": "簡単",
-        "comparative": "easier",
-        "examples": [
-          "Easy test.",
-          "Easy question."
-        ],
-        "emoji": "😌"
-      },
-      {
-        "word": "hard",
-        "jp": "難しい",
-        "comparative": "harder",
-        "examples": [
-          "Hard work.",
-          "Hard exam."
-        ],
-        "emoji": "💪"
-      },
-      {
-        "word": "beautiful",
-        "jp": "美しい",
-        "comparative": "more beautiful",
-        "examples": [
-          "Beautiful flower.",
-          "Beautiful woman."
-        ],
-        "emoji": "🌸"
-      },
-      {
-        "word": "strong",
-        "jp": "強い",
-        "comparative": "stronger",
-        "examples": [
-          "Strong man.",
-          "Strong coffee."
-        ],
-        "emoji": "💪"
-      },
-      {
-        "word": "weak",
-        "jp": "弱い",
-        "comparative": "weaker",
-        "examples": [
-          "Weak point.",
-          "Weak person."
-        ],
-        "emoji": "😟"
-      },
-      {
-        "word": "rich",
-        "jp": "金持ち",
-        "comparative": "richer",
-        "examples": [
-          "Rich man.",
-          "Rich family."
-        ],
-        "emoji": "💎"
-      },
-      {
-        "word": "poor",
-        "jp": "貧しい",
-        "comparative": "poorer",
-        "examples": [
-          "Poor family.",
-          "Poor people."
-        ],
-        "emoji": "🪙"
-      },
-      {
-        "word": "cheap",
-        "jp": "安い",
-        "comparative": "cheaper",
-        "examples": [
-          "Cheap book.",
-          "Cheap food."
-        ],
-        "emoji": "💸"
-      },
-      {
-        "word": "expensive",
-        "jp": "高い",
-        "comparative": "more expensive",
-        "examples": [
-          "Expensive car.",
-          "Expensive restaurant."
-        ],
-        "emoji": "💰"
-      },
-      {
-        "word": "clean",
-        "jp": "綺麗",
-        "comparative": "cleaner",
-        "examples": [
-          "Clean room.",
-          "Clean clothes."
-        ],
-        "emoji": "✨"
-      },
-      {
-        "word": "dirty",
-        "jp": "汚い",
-        "comparative": "dirtier",
-        "examples": [
-          "Dirty floor.",
-          "Dirty dish."
-        ],
-        "emoji": "🗑️"
-      },
-      {
-        "word": "loud",
-        "jp": "うるさい",
-        "comparative": "louder",
-        "examples": [
-          "Loud music.",
-          "Loud noise."
-        ],
-        "emoji": "📢"
-      },
-      {
-        "word": "quiet",
-        "jp": "静か",
-        "comparative": "quieter",
-        "examples": [
-          "Quiet room.",
-          "Quiet place."
-        ],
-        "emoji": "🤫"
-      },
-      {
-        "word": "kind",
-        "jp": "親切",
-        "comparative": "kinder",
-        "examples": [
-          "Kind person.",
-          "Kind teacher."
-        ],
-        "emoji": "💜"
-      },
-      {
-        "word": "nice",
-        "jp": "いい",
-        "comparative": "nicer",
-        "examples": [
-          "Nice day.",
-          "Nice person."
-        ],
-        "emoji": "👍"
-      },
-      {
-        "word": "brave",
-        "jp": "勇敢",
-        "comparative": "braver",
-        "examples": [
-          "Brave soldier.",
-          "Brave child."
-        ],
-        "emoji": "🦸"
-      },
-      {
-        "word": "scared",
-        "jp": "怖がっている",
-        "comparative": "more scared",
-        "examples": [
-          "Scared cat.",
-          "Scared girl."
-        ],
-        "emoji": "😨"
+          "I feel sad sometimes.",
+          "The story is sad.",
+          "Don't be sad."
+        ]
       },
       {
         "word": "angry",
         "jp": "怒っている",
-        "comparative": "angrier",
+        "pos": "adjective",
+        "emoji": "😠",
         "examples": [
-          "Angry man.",
-          "Angry person."
-        ],
-        "emoji": "😠"
+          "Don't be angry.",
+          "She looks angry.",
+          "Why are you angry?"
+        ]
+      },
+      {
+        "word": "scared",
+        "jp": "怖い",
+        "pos": "adjective",
+        "emoji": "😨",
+        "examples": [
+          "I am scared of dogs.",
+          "She is scared of the dark.",
+          "Don't be scared."
+        ]
+      },
+      {
+        "word": "beautiful",
+        "jp": "美しい",
+        "pos": "adjective",
+        "emoji": "⭐",
+        "examples": [
+          "She is beautiful.",
+          "The flower is beautiful.",
+          "We see a beautiful sunset."
+        ]
+      },
+      {
+        "word": "ugly",
+        "jp": "醜い",
+        "pos": "adjective",
+        "emoji": "😠",
+        "examples": [
+          "The old car looks ugly.",
+          "Not all things are ugly.",
+          "Beauty and ugliness exist."
+        ]
+      },
+      {
+        "word": "hot",
+        "jp": "暑い、熱い",
+        "pos": "adjective",
+        "emoji": "☀️",
+        "examples": [
+          "Today is very hot.",
+          "The tea is hot.",
+          "I feel hot in summer."
+        ]
+      },
+      {
+        "word": "cold",
+        "jp": "寒い",
+        "pos": "adjective",
+        "emoji": "❄️",
+        "examples": [
+          "Winter is cold.",
+          "The water is cold.",
+          "I feel cold."
+        ]
+      },
+      {
+        "word": "warm",
+        "jp": "暖かい",
+        "pos": "adjective",
+        "emoji": "☀️",
+        "examples": [
+          "Spring is warm.",
+          "The soup is warm.",
+          "I wear warm clothes."
+        ]
+      },
+      {
+        "word": "cool",
+        "jp": "涼しい",
+        "pos": "adjective",
+        "emoji": "☀️",
+        "examples": [
+          "Autumn is cool.",
+          "The wind is cool.",
+          "She looks cool."
+        ]
+      },
+      {
+        "word": "red",
+        "jp": "赤い",
+        "pos": "adjective",
+        "emoji": "🔴",
+        "examples": [
+          "I like red apples.",
+          "She wears a red dress.",
+          "The sunset is red."
+        ]
+      },
+      {
+        "word": "blue",
+        "jp": "青い",
+        "pos": "adjective",
+        "emoji": "🔵",
+        "examples": [
+          "The sky is blue.",
+          "He has blue eyes.",
+          "I like blue cars."
+        ]
+      },
+      {
+        "word": "green",
+        "jp": "緑色の",
+        "pos": "adjective",
+        "emoji": "🔵",
+        "examples": [
+          "The grass is green.",
+          "She wears a green hat.",
+          "Trees are green in summer."
+        ]
+      },
+      {
+        "word": "yellow",
+        "jp": "黄色い",
+        "pos": "adjective",
+        "emoji": "🟡",
+        "examples": [
+          "The sun is yellow.",
+          "She has yellow hair.",
+          "I like yellow flowers."
+        ]
+      },
+      {
+        "word": "orange",
+        "jp": "オレンジ色の",
+        "pos": "adjective",
+        "emoji": "🟠",
+        "examples": [
+          "The carrot is orange.",
+          "She likes orange juice.",
+          "Autumn leaves are orange."
+        ]
+      },
+      {
+        "word": "purple",
+        "jp": "紫の",
+        "pos": "adjective",
+        "emoji": "🟣",
+        "examples": [
+          "The flower is purple.",
+          "She has a purple bag.",
+          "I like purple grapes."
+        ]
+      },
+      {
+        "word": "pink",
+        "jp": "ピンク色の",
+        "pos": "adjective",
+        "emoji": "🩷",
+        "examples": [
+          "The flowers are pink.",
+          "She wears pink shoes.",
+          "I like pink candy."
+        ]
+      },
+      {
+        "word": "white",
+        "jp": "白い",
+        "pos": "adjective",
+        "emoji": "⚪",
+        "examples": [
+          "Snow is white.",
+          "She wears a white shirt.",
+          "The cloud is white."
+        ]
+      },
+      {
+        "word": "black",
+        "jp": "黒い",
+        "pos": "adjective",
+        "emoji": "⚫",
+        "examples": [
+          "My bag is black.",
+          "She has black hair.",
+          "The night is black."
+        ]
+      },
+      {
+        "word": "brown",
+        "jp": "茶色の",
+        "pos": "adjective",
+        "emoji": "🟤",
+        "examples": [
+          "The dog is brown.",
+          "She has brown eyes.",
+          "Chocolate is brown."
+        ]
+      },
+      {
+        "word": "easy",
+        "jp": "簡単な",
+        "pos": "adjective",
+        "emoji": "💡",
+        "examples": [
+          "This test is easy.",
+          "English is easy for her.",
+          "Nothing is too easy."
+        ]
+      },
+      {
+        "word": "difficult",
+        "jp": "難しい",
+        "pos": "adjective",
+        "emoji": "💡",
+        "examples": [
+          "Math is difficult today.",
+          "She finds it difficult.",
+          "Some things are difficult."
+        ]
+      },
+      {
+        "word": "hard",
+        "jp": "硬い、難しい",
+        "pos": "adjective",
+        "emoji": "💡",
+        "examples": [
+          "The stone is hard.",
+          "She works hard.",
+          "It's hard to believe."
+        ]
+      },
+      {
+        "word": "soft",
+        "jp": "柔らかい",
+        "pos": "adjective",
+        "emoji": "💠",
+        "examples": [
+          "The pillow is soft.",
+          "She has soft hair.",
+          "The cake is soft."
+        ]
+      },
+      {
+        "word": "loud",
+        "jp": "うるさい",
+        "pos": "adjective",
+        "emoji": "🔊",
+        "examples": [
+          "The music is loud.",
+          "Don't be loud.",
+          "He speaks loudly."
+        ]
+      },
+      {
+        "word": "quiet",
+        "jp": "静かな",
+        "pos": "adjective",
+        "emoji": "🔇",
+        "examples": [
+          "The library is quiet.",
+          "She is quiet today.",
+          "Please be quiet."
+        ]
+      },
+      {
+        "word": "fast",
+        "jp": "速い",
+        "pos": "adjective",
+        "emoji": "🏃",
+        "examples": [
+          "The car is fast.",
+          "She runs fast.",
+          "Time goes fast."
+        ]
+      },
+      {
+        "word": "slow",
+        "jp": "遅い",
+        "pos": "adjective",
+        "emoji": "🐢",
+        "examples": [
+          "The turtle is slow.",
+          "She walks slowly.",
+          "Time goes slow today."
+        ]
+      },
+      {
+        "word": "clean",
+        "jp": "きれいな",
+        "pos": "adjective",
+        "emoji": "✨",
+        "examples": [
+          "My room is clean.",
+          "She keeps her desk clean.",
+          "The water is clean."
+        ]
+      },
+      {
+        "word": "dirty",
+        "jp": "汚い",
+        "pos": "adjective",
+        "emoji": "😷",
+        "examples": [
+          "Your hands are dirty.",
+          "The room looks dirty.",
+          "Please clean dirty things."
+        ]
+      },
+      {
+        "word": "full",
+        "jp": "いっぱいの",
+        "pos": "adjective",
+        "emoji": "💯",
+        "examples": [
+          "The cup is full.",
+          "She is full after lunch.",
+          "My heart is full of joy."
+        ]
+      },
+      {
+        "word": "empty",
+        "jp": "空の",
+        "pos": "adjective",
+        "emoji": "🔚",
+        "examples": [
+          "The glass is empty.",
+          "The room is empty.",
+          "She feels empty inside."
+        ]
+      },
+      {
+        "word": "hungry",
+        "jp": "お腹が空いている",
+        "pos": "adjective",
+        "emoji": "🍽️",
+        "examples": [
+          "I am hungry.",
+          "She feels hungry before lunch.",
+          "Are you hungry?"
+        ]
+      },
+      {
+        "word": "thirsty",
+        "jp": "喉が渇いている",
+        "pos": "adjective",
+        "emoji": "💧",
+        "examples": [
+          "I am thirsty.",
+          "She feels thirsty after running.",
+          "Would you like a drink?"
+        ]
+      },
+      {
+        "word": "tired",
+        "jp": "疲れている",
+        "pos": "adjective",
+        "emoji": "😴",
+        "examples": [
+          "I am tired today.",
+          "She looks tired.",
+          "We feel tired after work."
+        ]
       },
       {
         "word": "sick",
-        "jp": "病気",
-        "comparative": "sicker",
+        "jp": "病気の",
+        "pos": "adjective",
+        "emoji": "🤢",
         "examples": [
-          "Sick person.",
-          "Sick child."
-        ],
-        "emoji": "🤒"
+          "I am sick today.",
+          "She goes to the hospital when sick.",
+          "Get well soon!"
+        ]
       },
       {
-        "word": "healthy",
-        "jp": "健康",
-        "comparative": "healthier",
+        "word": "busy",
+        "jp": "忙しい",
+        "pos": "adjective",
+        "emoji": "🏃",
         "examples": [
-          "Healthy food.",
-          "Healthy person."
-        ],
-        "emoji": "🥗"
+          "I am busy now.",
+          "She is busy with work.",
+          "We are very busy today."
+        ]
       },
       {
-        "word": "open",
-        "jp": "開いている",
-        "comparative": "more open",
+        "word": "free",
+        "jp": "自由な、時間がある",
+        "pos": "adjective",
+        "emoji": "🕊️",
         "examples": [
-          "Open door.",
-          "Open window."
-        ],
-        "emoji": "🔓"
+          "I am free on Sunday.",
+          "She has free time.",
+          "Feel free to ask."
+        ]
       },
       {
-        "word": "closed",
-        "jp": "閉じている",
-        "comparative": "more closed",
+        "word": "kind",
+        "jp": "親切な",
+        "pos": "adjective",
+        "emoji": "❤️",
         "examples": [
-          "Closed shop.",
-          "Closed door."
-        ],
-        "emoji": "🔒"
+          "She is kind to everyone.",
+          "My teacher is kind.",
+          "Be kind to others."
+        ]
       },
       {
-        "word": "heavy",
-        "jp": "重い",
-        "comparative": "heavier",
+        "word": "brave",
+        "jp": "勇敢な",
+        "pos": "adjective",
+        "emoji": "💪",
         "examples": [
-          "Heavy box.",
-          "Heavy rain."
-        ],
-        "emoji": "🏋️"
+          "She is brave.",
+          "Firefighters are brave.",
+          "Be brave when scared."
+        ]
       },
       {
-        "word": "light",
-        "jp": "軽い",
-        "comparative": "lighter",
+        "word": "smart",
+        "jp": "賢い",
+        "pos": "adjective",
+        "emoji": "💡",
         "examples": [
-          "Light bag.",
-          "Light room."
-        ],
-        "emoji": "💡"
+          "She is very smart.",
+          "He is smart at math.",
+          "Smart students study well."
+        ]
       },
       {
-        "word": "dark",
-        "jp": "暗い",
-        "comparative": "darker",
+        "word": "strong",
+        "jp": "強い",
+        "pos": "adjective",
+        "emoji": "💪",
         "examples": [
-          "Dark room.",
-          "Dark night."
-        ],
-        "emoji": "🌑"
+          "My father is strong.",
+          "She is strong in sports.",
+          "We are strong together."
+        ]
       },
       {
-        "word": "bright",
-        "jp": "明るい",
-        "comparative": "brighter",
+        "word": "weak",
+        "jp": "弱い",
+        "pos": "adjective",
+        "emoji": "🥀",
         "examples": [
-          "Bright sun.",
-          "Bright light."
-        ],
-        "emoji": "😎"
-      },
-      {
-        "word": "right",
-        "jp": "右/正しい",
-        "comparative": "more right",
-        "examples": [
-          "Right answer.",
-          "Right way."
-        ],
-        "emoji": "✅"
-      },
-      {
-        "word": "wrong",
-        "jp": "間違った",
-        "comparative": "more wrong",
-        "examples": [
-          "Wrong answer.",
-          "Wrong way."
-        ],
-        "emoji": "❌"
+          "She feels weak today.",
+          "The small dog looks weak.",
+          "Practice makes you strong, not weak."
+        ]
       },
       {
         "word": "important",
-        "jp": "重要",
-        "comparative": "more important",
+        "jp": "重要な",
+        "pos": "adjective",
+        "emoji": "⭐",
         "examples": [
-          "Important person.",
-          "Important lesson."
-        ],
-        "emoji": "⭐"
+          "English is important.",
+          "Family is important to me.",
+          "Health is very important."
+        ]
       },
       {
         "word": "interesting",
         "jp": "面白い",
-        "comparative": "more interesting",
+        "pos": "adjective",
+        "emoji": "💡",
         "examples": [
-          "Interesting book.",
-          "Interesting story."
-        ],
-        "emoji": "🤩"
-      }
-    ]
-  },
-  "nouns_by_category": {
-    "family_people": [
-      {
-        "word": "father",
-        "jp": "父"
+          "The book is interesting.",
+          "She thinks school is interesting.",
+          "Tell me something interesting."
+        ]
       },
       {
-        "word": "mother",
-        "jp": "母"
+        "word": "boring",
+        "jp": "退屈な",
+        "pos": "adjective",
+        "emoji": "😴",
+        "examples": [
+          "The movie is boring.",
+          "Nothing is boring if you try.",
+          "I find math boring."
+        ]
       },
       {
-        "word": "brother",
-        "jp": "兄弟"
+        "word": "expensive",
+        "jp": "高い",
+        "pos": "adjective",
+        "emoji": "💴",
+        "examples": [
+          "This car is expensive.",
+          "She wants an expensive dress.",
+          "We buy cheap things, not expensive."
+        ]
       },
       {
-        "word": "sister",
-        "jp": "姉妹"
+        "word": "cheap",
+        "jp": "安い",
+        "pos": "adjective",
+        "emoji": "💴",
+        "examples": [
+          "This book is cheap.",
+          "She buys cheap snacks.",
+          "I like cheap but good things."
+        ]
       },
       {
-        "word": "family",
-        "jp": "家族"
+        "word": "favorite",
+        "jp": "お気に入りの",
+        "pos": "adjective",
+        "emoji": "⭐",
+        "examples": [
+          "Red is my favorite color.",
+          "She has a favorite song.",
+          "Pizza is my favorite food."
+        ]
       },
       {
-        "word": "friend",
-        "jp": "友達"
+        "word": "different",
+        "jp": "違った",
+        "pos": "adjective",
+        "emoji": "💠",
+        "examples": [
+          "We are different.",
+          "She has different ideas.",
+          "Every day is different."
+        ]
       },
       {
-        "word": "teacher",
-        "jp": "先生"
-      },
-      {
-        "word": "student",
-        "jp": "学生"
-      },
-      {
-        "word": "doctor",
-        "jp": "医者"
-      },
-      {
-        "word": "police",
-        "jp": "警察"
-      }
-    ],
-    "school": [
-      {
-        "word": "school",
-        "jp": "学校"
-      },
-      {
-        "word": "book",
-        "jp": "本"
-      },
-      {
-        "word": "pencil",
-        "jp": "鉛筆"
-      },
-      {
-        "word": "paper",
-        "jp": "紙"
-      },
-      {
-        "word": "desk",
-        "jp": "机"
-      },
-      {
-        "word": "chair",
-        "jp": "椅子"
-      },
-      {
-        "word": "homework",
-        "jp": "宿題"
-      },
-      {
-        "word": "test",
-        "jp": "テスト"
-      },
-      {
-        "word": "class",
-        "jp": "授業"
-      },
-      {
-        "word": "question",
-        "jp": "質問"
-      },
-      {
-        "word": "answer",
-        "jp": "答え"
+        "word": "same",
+        "jp": "同じ",
+        "pos": "adjective",
+        "emoji": "💠",
+        "examples": [
+          "We are in the same class.",
+          "She wears the same clothes.",
+          "I want the same thing."
+        ]
       }
     ],
-    "food": [
+    "adverbs_top30": [
       {
-        "word": "apple",
-        "jp": "りんご"
+        "word": "always",
+        "jp": "いつも",
+        "pos": "adverb",
+        "emoji": "🔄",
+        "examples": [
+          "I always brush my teeth.",
+          "She is always happy.",
+          "We always help each other."
+        ]
       },
       {
-        "word": "bread",
-        "jp": "パン"
+        "word": "usually",
+        "jp": "たいてい、普通は",
+        "pos": "adverb",
+        "emoji": "🔄",
+        "examples": [
+          "I usually wake up at 7.",
+          "She usually walks to school.",
+          "We usually eat lunch together."
+        ]
       },
       {
-        "word": "rice",
-        "jp": "ご飯"
+        "word": "often",
+        "jp": "よく、頻繁に",
+        "pos": "adverb",
+        "emoji": "🔄",
+        "examples": [
+          "I often go to the park.",
+          "She often reads books.",
+          "We often play games."
+        ]
       },
       {
-        "word": "meat",
-        "jp": "肉"
+        "word": "sometimes",
+        "jp": "時々",
+        "pos": "adverb",
+        "emoji": "🔄",
+        "examples": [
+          "I sometimes eat sandwiches.",
+          "She sometimes visits her grandmother.",
+          "We sometimes go on trips."
+        ]
       },
       {
-        "word": "fish",
-        "jp": "魚"
+        "word": "never",
+        "jp": "決して～ない",
+        "pos": "adverb",
+        "emoji": "🚫",
+        "examples": [
+          "I am never late.",
+          "She never forgets homework.",
+          "We never give up."
+        ]
       },
       {
-        "word": "egg",
-        "jp": "卵"
+        "word": "now",
+        "jp": "今",
+        "pos": "adverb",
+        "emoji": "⏰",
+        "examples": [
+          "I am doing homework now.",
+          "She is eating now.",
+          "We are studying now."
+        ]
       },
-      {
-        "word": "milk",
-        "jp": "牛乳"
-      },
-      {
-        "word": "water",
-        "jp": "水"
-      },
-      {
-        "word": "tea",
-        "jp": "お茶"
-      },
-      {
-        "word": "coffee",
-        "jp": "コーヒー"
-      },
-      {
-        "word": "breakfast",
-        "jp": "朝食"
-      },
-      {
-        "word": "lunch",
-        "jp": "昼食"
-      },
-      {
-        "word": "dinner",
-        "jp": "夕食"
-      }
-    ],
-    "places": [
-      {
-        "word": "house",
-        "jp": "家"
-      },
-      {
-        "word": "room",
-        "jp": "部屋"
-      },
-      {
-        "word": "kitchen",
-        "jp": "台所"
-      },
-      {
-        "word": "bathroom",
-        "jp": "風呂場"
-      },
-      {
-        "word": "garden",
-        "jp": "庭"
-      },
-      {
-        "word": "park",
-        "jp": "公園"
-      },
-      {
-        "word": "shop",
-        "jp": "店"
-      },
-      {
-        "word": "hospital",
-        "jp": "病院"
-      },
-      {
-        "word": "library",
-        "jp": "図書館"
-      }
-    ],
-    "time_weather": [
       {
         "word": "today",
-        "jp": "今日"
+        "jp": "今日",
+        "pos": "adverb",
+        "emoji": "📅",
+        "examples": [
+          "I have school today.",
+          "She is happy today.",
+          "We play soccer today."
+        ]
       },
       {
         "word": "tomorrow",
-        "jp": "明日"
+        "jp": "明日",
+        "pos": "adverb",
+        "emoji": "📅",
+        "examples": [
+          "See you tomorrow.",
+          "She has a test tomorrow.",
+          "We go on a trip tomorrow."
+        ]
       },
       {
         "word": "yesterday",
-        "jp": "昨日"
+        "jp": "昨日",
+        "pos": "adverb",
+        "emoji": "📅",
+        "examples": [
+          "I went shopping yesterday.",
+          "She was busy yesterday.",
+          "We studied English yesterday."
+        ]
       },
       {
-        "word": "morning",
-        "jp": "朝"
+        "word": "early",
+        "jp": "早く",
+        "pos": "adverb",
+        "emoji": "⏰",
+        "examples": [
+          "I wake up early.",
+          "She comes to school early.",
+          "We go to bed early."
+        ]
       },
       {
-        "word": "evening",
-        "jp": "夜"
+        "word": "late",
+        "jp": "遅く",
+        "pos": "adverb",
+        "emoji": "⏰",
+        "examples": [
+          "I go to bed late.",
+          "She is late for school.",
+          "Don't be late."
+        ]
       },
       {
-        "word": "week",
-        "jp": "週"
+        "word": "soon",
+        "jp": "すぐに、まもなく",
+        "pos": "adverb",
+        "emoji": "⏰",
+        "examples": [
+          "See you soon.",
+          "She will arrive soon.",
+          "Winter will come soon."
+        ]
       },
       {
-        "word": "month",
-        "jp": "月"
+        "word": "here",
+        "jp": "ここに",
+        "pos": "adverb",
+        "emoji": "📍",
+        "examples": [
+          "Please come here.",
+          "She lives here.",
+          "We study here."
+        ]
       },
       {
-        "word": "year",
-        "jp": "年"
+        "word": "there",
+        "jp": "そこに",
+        "pos": "adverb",
+        "emoji": "📍",
+        "examples": [
+          "Look there!",
+          "She is over there.",
+          "We went there yesterday."
+        ]
       },
       {
-        "word": "spring",
-        "jp": "春"
+        "word": "everywhere",
+        "jp": "至る所に",
+        "pos": "adverb",
+        "emoji": "🌍",
+        "examples": [
+          "Flowers are everywhere.",
+          "We look everywhere.",
+          "Music is everywhere."
+        ]
       },
       {
-        "word": "summer",
-        "jp": "夏"
+        "word": "home",
+        "jp": "家に",
+        "pos": "adverb",
+        "emoji": "🏠",
+        "examples": [
+          "I go home at 5.",
+          "She is at home.",
+          "We walk home together."
+        ]
       },
       {
-        "word": "autumn",
-        "jp": "秋"
+        "word": "outside",
+        "jp": "外で",
+        "pos": "adverb",
+        "emoji": "🌳",
+        "examples": [
+          "Let's play outside.",
+          "She is waiting outside.",
+          "We eat outside."
+        ]
       },
       {
-        "word": "winter",
-        "jp": "冬"
+        "word": "inside",
+        "jp": "中で",
+        "pos": "adverb",
+        "emoji": "🏠",
+        "examples": [
+          "Please come inside.",
+          "She is inside the house.",
+          "We stay inside on rainy days."
+        ]
       },
       {
-        "word": "sunny",
-        "jp": "晴れ"
+        "word": "quickly",
+        "jp": "速く",
+        "pos": "adverb",
+        "emoji": "⚡",
+        "examples": [
+          "I eat quickly.",
+          "She runs quickly.",
+          "We finish quickly."
+        ]
       },
       {
-        "word": "rainy",
-        "jp": "雨"
+        "word": "slowly",
+        "jp": "ゆっくりと",
+        "pos": "adverb",
+        "emoji": "🐢",
+        "examples": [
+          "Please write slowly.",
+          "She walks slowly.",
+          "We work slowly today."
+        ]
       },
       {
-        "word": "cloudy",
-        "jp": "曇り"
+        "word": "carefully",
+        "jp": "注意深く",
+        "pos": "adverb",
+        "emoji": "🔍",
+        "examples": [
+          "I listen carefully.",
+          "She writes carefully.",
+          "We work carefully."
+        ]
+      },
+      {
+        "word": "happily",
+        "jp": "幸せに",
+        "pos": "adverb",
+        "emoji": "😊",
+        "examples": [
+          "She sings happily.",
+          "We play happily.",
+          "I live happily."
+        ]
+      },
+      {
+        "word": "sadly",
+        "jp": "悲しく",
+        "pos": "adverb",
+        "emoji": "😢",
+        "examples": [
+          "She sadly says goodbye.",
+          "We look at the photo sadly.",
+          "He talks sadly."
+        ]
+      },
+      {
+        "word": "loudly",
+        "jp": "大声で",
+        "pos": "adverb",
+        "emoji": "🔊",
+        "examples": [
+          "Don't speak loudly.",
+          "She laughs loudly.",
+          "They sing loudly."
+        ]
+      },
+      {
+        "word": "quietly",
+        "jp": "静かに",
+        "pos": "adverb",
+        "emoji": "🔇",
+        "examples": [
+          "She walks quietly.",
+          "We speak quietly.",
+          "The baby sleeps quietly."
+        ]
+      },
+      {
+        "word": "really",
+        "jp": "本当に",
+        "pos": "adverb",
+        "emoji": "💯",
+        "examples": [
+          "I really like it.",
+          "She is really kind.",
+          "We are really happy."
+        ]
+      },
+      {
+        "word": "very",
+        "jp": "とても",
+        "pos": "adverb",
+        "emoji": "💯",
+        "examples": [
+          "It is very hot.",
+          "She is very smart.",
+          "We are very tired."
+        ]
+      },
+      {
+        "word": "too",
+        "jp": "あまりにも、～すぎる",
+        "pos": "adverb",
+        "emoji": "💯",
+        "examples": [
+          "It's too cold.",
+          "She is too busy.",
+          "We are too tired to play."
+        ]
+      },
+      {
+        "word": "well",
+        "jp": "よく、上手に",
+        "pos": "adverb",
+        "emoji": "⭐",
+        "examples": [
+          "She speaks English well.",
+          "I sleep well.",
+          "They play soccer well."
+        ]
+      },
+      {
+        "word": "badly",
+        "jp": "悪く",
+        "pos": "adverb",
+        "emoji": "😠",
+        "examples": [
+          "He behaved badly.",
+          "She sings badly.",
+          "Don't do it badly."
+        ]
+      },
+      {
+        "word": "together",
+        "jp": "一緒に",
+        "pos": "adverb",
+        "emoji": "👫",
+        "examples": [
+          "We study together.",
+          "She plays with friends together.",
+          "They work together."
+        ]
+      },
+      {
+        "word": "alone",
+        "jp": "一人で",
+        "pos": "adverb",
+        "emoji": "👤",
+        "examples": [
+          "I walk home alone.",
+          "She eats alone today.",
+          "He studies alone."
+        ]
+      },
+      {
+        "word": "again",
+        "jp": "また",
+        "pos": "adverb",
+        "emoji": "🔄",
+        "examples": [
+          "Let's play again.",
+          "She sings again.",
+          "We go there again."
+        ]
       }
     ],
-    "numbers_colors": [
-      {
-        "word": "one",
-        "jp": "一"
-      },
-      {
-        "word": "two",
-        "jp": "二"
-      },
-      {
-        "word": "three",
-        "jp": "三"
-      },
-      {
-        "word": "four",
-        "jp": "四"
-      },
-      {
-        "word": "five",
-        "jp": "五"
-      },
-      {
-        "word": "red",
-        "jp": "赤"
-      },
-      {
-        "word": "blue",
-        "jp": "青"
-      },
-      {
-        "word": "green",
-        "jp": "緑"
-      },
-      {
-        "word": "yellow",
-        "jp": "黄色"
-      },
-      {
-        "word": "white",
-        "jp": "白"
-      },
-      {
-        "word": "black",
-        "jp": "黒"
-      }
-    ]
-  },
-  "function_words": {
-    "articles": [
-      "the",
-      "a",
-      "an"
-    ],
+    "nouns_by_category": {
+      "family_people": [
+        {
+          "word": "family",
+          "jp": "家族",
+          "pos": "noun",
+          "emoji": "👨‍👩‍👧‍👦",
+          "examples": [
+            "I love my family.",
+            "She has a big family.",
+            "We are a happy family."
+          ]
+        },
+        {
+          "word": "mother",
+          "jp": "母",
+          "pos": "noun",
+          "emoji": "👩",
+          "examples": [
+            "My mother is kind.",
+            "She is a good mother.",
+            "I help my mother."
+          ]
+        },
+        {
+          "word": "father",
+          "jp": "父",
+          "pos": "noun",
+          "emoji": "👨",
+          "examples": [
+            "My father works hard.",
+            "He is a tall father.",
+            "I love my father."
+          ]
+        },
+        {
+          "word": "parents",
+          "jp": "両親",
+          "pos": "noun",
+          "emoji": "👨‍👩",
+          "examples": [
+            "My parents are nice.",
+            "She lives with her parents.",
+            "We visit our parents."
+          ]
+        },
+        {
+          "word": "sister",
+          "jp": "姉妹",
+          "pos": "noun",
+          "emoji": "👧",
+          "examples": [
+            "My sister is 12 years old.",
+            "She has two sisters.",
+            "I play with my sister."
+          ]
+        },
+        {
+          "word": "brother",
+          "jp": "兄弟",
+          "pos": "noun",
+          "emoji": "👦",
+          "examples": [
+            "My brother likes soccer.",
+            "He has a big brother.",
+            "She has one brother."
+          ]
+        },
+        {
+          "word": "grandmother",
+          "jp": "祖母",
+          "pos": "noun",
+          "emoji": "👵",
+          "examples": [
+            "My grandmother is old.",
+            "She visits her grandmother.",
+            "Grandmothers are kind."
+          ]
+        },
+        {
+          "word": "grandfather",
+          "jp": "祖父",
+          "pos": "noun",
+          "emoji": "👴",
+          "examples": [
+            "My grandfather likes fishing.",
+            "He tells stories to his grandfather.",
+            "Grandfathers are wise."
+          ]
+        },
+        {
+          "word": "child",
+          "jp": "子供",
+          "pos": "noun",
+          "emoji": "👶",
+          "examples": [
+            "Every child goes to school.",
+            "She is a happy child.",
+            "We see many children in the park."
+          ]
+        },
+        {
+          "word": "friend",
+          "jp": "友達",
+          "pos": "noun",
+          "emoji": "👫",
+          "examples": [
+            "She is my best friend.",
+            "I have many friends at school.",
+            "We play with friends."
+          ]
+        },
+        {
+          "word": "teacher",
+          "jp": "先生",
+          "pos": "noun",
+          "emoji": "👨‍🏫",
+          "examples": [
+            "Our teacher is kind.",
+            "She wants to be a teacher.",
+            "We like our teacher."
+          ]
+        },
+        {
+          "word": "student",
+          "jp": "学生",
+          "pos": "noun",
+          "emoji": "👨‍🎓",
+          "examples": [
+            "I am a student.",
+            "She is a good student.",
+            "Every student studies hard."
+          ]
+        },
+        {
+          "word": "doctor",
+          "jp": "医者",
+          "pos": "noun",
+          "emoji": "👨‍⚕️",
+          "examples": [
+            "The doctor helps sick people.",
+            "She wants to be a doctor.",
+            "We go to the doctor when sick."
+          ]
+        },
+        {
+          "word": "person",
+          "jp": "人",
+          "pos": "noun",
+          "emoji": "👤",
+          "examples": [
+            "She is a nice person.",
+            "I see a new person.",
+            "Every person is different."
+          ]
+        },
+        {
+          "word": "people",
+          "jp": "人々",
+          "pos": "noun",
+          "emoji": "👥",
+          "examples": [
+            "Many people like music.",
+            "She helps many people.",
+            "We see people everywhere."
+          ]
+        },
+        {
+          "word": "boy",
+          "jp": "男の子",
+          "pos": "noun",
+          "emoji": "👦",
+          "examples": [
+            "The boy plays soccer.",
+            "She has a brother, a boy.",
+            "Boys are active."
+          ]
+        },
+        {
+          "word": "girl",
+          "jp": "女の子",
+          "pos": "noun",
+          "emoji": "👧",
+          "examples": [
+            "The girl reads a book.",
+            "She is a nice girl.",
+            "Girls like dancing."
+          ]
+        },
+        {
+          "word": "baby",
+          "jp": "赤ちゃん",
+          "pos": "noun",
+          "emoji": "👶",
+          "examples": [
+            "The baby is cute.",
+            "She has a baby sister.",
+            "Babies need care."
+          ]
+        },
+        {
+          "word": "man",
+          "jp": "男",
+          "pos": "noun",
+          "emoji": "👨",
+          "examples": [
+            "The man is tall.",
+            "She sees a man in the park.",
+            "A man walks down the street."
+          ]
+        },
+        {
+          "word": "woman",
+          "jp": "女",
+          "pos": "noun",
+          "emoji": "👩",
+          "examples": [
+            "The woman is beautiful.",
+            "She helps the woman.",
+            "A woman carries a bag."
+          ]
+        }
+      ],
+      "school_education": [
+        {
+          "word": "school",
+          "jp": "学校",
+          "pos": "noun",
+          "emoji": "🏫",
+          "examples": [
+            "I go to school every day.",
+            "She likes her school.",
+            "Our school is big."
+          ]
+        },
+        {
+          "word": "class",
+          "jp": "クラス、授業",
+          "pos": "noun",
+          "emoji": "📖",
+          "examples": [
+            "We have English class.",
+            "She is in class 5-2.",
+            "The class is quiet."
+          ]
+        },
+        {
+          "word": "lesson",
+          "jp": "授業、レッスン",
+          "pos": "noun",
+          "emoji": "📚",
+          "examples": [
+            "We have a math lesson.",
+            "She studies the lesson.",
+            "The lesson is easy."
+          ]
+        },
+        {
+          "word": "homework",
+          "jp": "宿題",
+          "pos": "noun",
+          "emoji": "📝",
+          "examples": [
+            "I do my homework.",
+            "She finishes her homework quickly.",
+            "Homework helps us learn."
+          ]
+        },
+        {
+          "word": "book",
+          "jp": "本",
+          "pos": "noun",
+          "emoji": "📖",
+          "examples": [
+            "I read a book.",
+            "She has many books.",
+            "We use books in class."
+          ]
+        },
+        {
+          "word": "pencil",
+          "jp": "鉛筆",
+          "pos": "noun",
+          "emoji": "✏️",
+          "examples": [
+            "I write with a pencil.",
+            "She has a red pencil.",
+            "We need pencils for drawing."
+          ]
+        },
+        {
+          "word": "pen",
+          "jp": "ペン",
+          "pos": "noun",
+          "emoji": "✒️",
+          "examples": [
+            "I write with a pen.",
+            "She has a blue pen.",
+            "The pen writes well."
+          ]
+        },
+        {
+          "word": "eraser",
+          "jp": "消しゴム",
+          "pos": "noun",
+          "emoji": "🧹",
+          "examples": [
+            "I use an eraser.",
+            "She needs a new eraser.",
+            "We erase mistakes."
+          ]
+        },
+        {
+          "word": "notebook",
+          "jp": "ノート",
+          "pos": "noun",
+          "emoji": "📒",
+          "examples": [
+            "I write in my notebook.",
+            "She has a cute notebook.",
+            "We take notes in the notebook."
+          ]
+        },
+        {
+          "word": "desk",
+          "jp": "机",
+          "pos": "noun",
+          "emoji": "🪑",
+          "examples": [
+            "I sit at my desk.",
+            "She cleans her desk.",
+            "The desk is wooden."
+          ]
+        },
+        {
+          "word": "chair",
+          "jp": "椅子",
+          "pos": "noun",
+          "emoji": "🪑",
+          "examples": [
+            "I sit on a chair.",
+            "She moves her chair.",
+            "We have comfortable chairs."
+          ]
+        },
+        {
+          "word": "blackboard",
+          "jp": "黒板",
+          "pos": "noun",
+          "emoji": "⬛",
+          "examples": [
+            "The teacher writes on the blackboard.",
+            "We look at the blackboard.",
+            "She cleans the blackboard."
+          ]
+        },
+        {
+          "word": "test",
+          "jp": "テスト",
+          "pos": "noun",
+          "emoji": "📄",
+          "examples": [
+            "We have a test today.",
+            "She studies for the test.",
+            "I do well on the test."
+          ]
+        },
+        {
+          "word": "question",
+          "jp": "質問",
+          "pos": "noun",
+          "emoji": "❓",
+          "examples": [
+            "I ask a question.",
+            "She answers every question.",
+            "We have a hard question."
+          ]
+        },
+        {
+          "word": "answer",
+          "jp": "答え",
+          "pos": "noun",
+          "emoji": "✅",
+          "examples": [
+            "I give the answer.",
+            "She knows the answer.",
+            "The answer is correct."
+          ]
+        },
+        {
+          "word": "grade",
+          "jp": "成績、学年",
+          "pos": "noun",
+          "emoji": "📊",
+          "examples": [
+            "I get good grades.",
+            "She is in grade 5.",
+            "We study hard for good grades."
+          ]
+        },
+        {
+          "word": "English",
+          "jp": "英語",
+          "pos": "noun",
+          "emoji": "🇬🇧",
+          "examples": [
+            "We learn English.",
+            "She speaks English well.",
+            "English is fun."
+          ]
+        },
+        {
+          "word": "Japanese",
+          "jp": "日本語",
+          "pos": "noun",
+          "emoji": "🇯🇵",
+          "examples": [
+            "We speak Japanese.",
+            "She learns Japanese history.",
+            "Japanese is interesting."
+          ]
+        },
+        {
+          "word": "math",
+          "jp": "数学",
+          "pos": "noun",
+          "emoji": "➕",
+          "examples": [
+            "I like math.",
+            "She studies math.",
+            "Math helps us think."
+          ]
+        },
+        {
+          "word": "science",
+          "jp": "理科",
+          "pos": "noun",
+          "emoji": "🔬",
+          "examples": [
+            "Science is interesting.",
+            "She likes science class.",
+            "We learn about nature in science."
+          ]
+        },
+        {
+          "word": "music",
+          "jp": "音楽",
+          "pos": "noun",
+          "emoji": "🎵",
+          "examples": [
+            "I like music.",
+            "She plays music.",
+            "We listen to music in music class."
+          ]
+        },
+        {
+          "word": "art",
+          "jp": "美術",
+          "pos": "noun",
+          "emoji": "🎨",
+          "examples": [
+            "I draw in art class.",
+            "She is good at art.",
+            "Art is creative."
+          ]
+        },
+        {
+          "word": "PE",
+          "jp": "体育",
+          "pos": "noun",
+          "emoji": "⚽",
+          "examples": [
+            "We play sports in PE.",
+            "She likes PE class.",
+            "PE helps us stay healthy."
+          ]
+        },
+        {
+          "word": "library",
+          "jp": "図書室",
+          "pos": "noun",
+          "emoji": "📚",
+          "examples": [
+            "I go to the library.",
+            "She reads in the library.",
+            "The library has many books."
+          ]
+        },
+        {
+          "word": "uniform",
+          "jp": "制服",
+          "pos": "noun",
+          "emoji": "👔",
+          "examples": [
+            "I wear a school uniform.",
+            "She has a cute uniform.",
+            "We wear uniforms to school."
+          ]
+        }
+      ],
+      "home_daily_life": [
+        {
+          "word": "house",
+          "jp": "家",
+          "pos": "noun",
+          "emoji": "🏠",
+          "examples": [
+            "I have a nice house.",
+            "She lives in a big house.",
+            "We clean our house."
+          ]
+        },
+        {
+          "word": "home",
+          "jp": "家",
+          "pos": "noun",
+          "emoji": "🏡",
+          "examples": [
+            "I go home after school.",
+            "She is at home.",
+            "Home is where we feel safe."
+          ]
+        },
+        {
+          "word": "room",
+          "jp": "部屋",
+          "pos": "noun",
+          "emoji": "🚪",
+          "examples": [
+            "My room is small.",
+            "She cleans her room.",
+            "We have a living room."
+          ]
+        },
+        {
+          "word": "bedroom",
+          "jp": "寝室",
+          "pos": "noun",
+          "emoji": "🛏️",
+          "examples": [
+            "I sleep in my bedroom.",
+            "She has a tidy bedroom.",
+            "The bedroom is quiet."
+          ]
+        },
+        {
+          "word": "living room",
+          "jp": "居間",
+          "pos": "noun",
+          "emoji": "🛋️",
+          "examples": [
+            "We watch TV in the living room.",
+            "She sits in the living room.",
+            "The living room is big."
+          ]
+        },
+        {
+          "word": "kitchen",
+          "jp": "台所",
+          "pos": "noun",
+          "emoji": "🍳",
+          "examples": [
+            "My mother cooks in the kitchen.",
+            "She helps in the kitchen.",
+            "The kitchen is clean."
+          ]
+        },
+        {
+          "word": "bathroom",
+          "jp": "浴室",
+          "pos": "noun",
+          "emoji": "🚿",
+          "examples": [
+            "I take a shower in the bathroom.",
+            "She cleans the bathroom.",
+            "The bathroom has a bathtub."
+          ]
+        },
+        {
+          "word": "toilet",
+          "jp": "トイレ",
+          "pos": "noun",
+          "emoji": "🚽",
+          "examples": [
+            "I go to the toilet.",
+            "She cleans the toilet.",
+            "The toilet is clean."
+          ]
+        },
+        {
+          "word": "bed",
+          "jp": "ベッド",
+          "pos": "noun",
+          "emoji": "🛏️",
+          "examples": [
+            "I sleep in my bed.",
+            "She makes her bed.",
+            "The bed is comfortable."
+          ]
+        },
+        {
+          "word": "table",
+          "jp": "テーブル",
+          "pos": "noun",
+          "emoji": "🪑",
+          "examples": [
+            "We eat at the table.",
+            "She clears the table.",
+            "The table is made of wood."
+          ]
+        },
+        {
+          "word": "chair",
+          "jp": "椅子",
+          "pos": "noun",
+          "emoji": "🪑",
+          "examples": [
+            "I sit on the chair.",
+            "She moves the chair.",
+            "The chairs match the table."
+          ]
+        },
+        {
+          "word": "sofa",
+          "jp": "ソファ",
+          "pos": "noun",
+          "emoji": "🛋️",
+          "examples": [
+            "We sit on the sofa.",
+            "She sleeps on the sofa.",
+            "The sofa is comfortable."
+          ]
+        },
+        {
+          "word": "window",
+          "jp": "窓",
+          "pos": "noun",
+          "emoji": "🪟",
+          "examples": [
+            "I look out the window.",
+            "She opens the window.",
+            "The window is big."
+          ]
+        },
+        {
+          "word": "door",
+          "jp": "ドア",
+          "pos": "noun",
+          "emoji": "🚪",
+          "examples": [
+            "I open the door.",
+            "She closes the door.",
+            "The door is locked."
+          ]
+        },
+        {
+          "word": "phone",
+          "jp": "電話",
+          "pos": "noun",
+          "emoji": "📞",
+          "examples": [
+            "I use the phone.",
+            "She talks on the phone.",
+            "The phone rings."
+          ]
+        },
+        {
+          "word": "computer",
+          "jp": "コンピューター",
+          "pos": "noun",
+          "emoji": "💻",
+          "examples": [
+            "I use a computer.",
+            "She studies on the computer.",
+            "Computers are useful."
+          ]
+        },
+        {
+          "word": "TV",
+          "jp": "テレビ",
+          "pos": "noun",
+          "emoji": "📺",
+          "examples": [
+            "I watch TV.",
+            "She likes cartoons on TV.",
+            "We watch movies on TV."
+          ]
+        },
+        {
+          "word": "clock",
+          "jp": "時計",
+          "pos": "noun",
+          "emoji": "⏰",
+          "examples": [
+            "I look at the clock.",
+            "She sets the clock.",
+            "The clock shows the time."
+          ]
+        },
+        {
+          "word": "light",
+          "jp": "光、電気",
+          "pos": "noun",
+          "emoji": "💡",
+          "examples": [
+            "I turn on the light.",
+            "She turns off the light.",
+            "The light is bright."
+          ]
+        },
+        {
+          "word": "shower",
+          "jp": "シャワー",
+          "pos": "noun",
+          "emoji": "🚿",
+          "examples": [
+            "I take a shower.",
+            "She likes hot showers.",
+            "The shower is in the bathroom."
+          ]
+        },
+        {
+          "word": "toothbrush",
+          "jp": "歯ブラシ",
+          "pos": "noun",
+          "emoji": "🪥",
+          "examples": [
+            "I brush my teeth with a toothbrush.",
+            "She has a new toothbrush.",
+            "We use toothbrushes every day."
+          ]
+        },
+        {
+          "word": "towel",
+          "jp": "タオル",
+          "pos": "noun",
+          "emoji": "🧻",
+          "examples": [
+            "I use a towel after a shower.",
+            "She has a colored towel.",
+            "We dry with towels."
+          ]
+        },
+        {
+          "word": "mirror",
+          "jp": "鏡",
+          "pos": "noun",
+          "emoji": "🪞",
+          "examples": [
+            "I look in the mirror.",
+            "She checks her hair in the mirror.",
+            "The mirror is clean."
+          ]
+        },
+        {
+          "word": "basket",
+          "jp": "かご",
+          "pos": "noun",
+          "emoji": "🧺",
+          "examples": [
+            "I put clothes in the basket.",
+            "She carries a basket.",
+            "We use baskets for laundry."
+          ]
+        },
+        {
+          "word": "key",
+          "jp": "鍵",
+          "pos": "noun",
+          "emoji": "🔑",
+          "examples": [
+            "I have a key.",
+            "She loses her key.",
+            "We lock the door with a key."
+          ]
+        },
+        {
+          "word": "bag",
+          "jp": "バッグ",
+          "pos": "noun",
+          "emoji": "👜",
+          "examples": [
+            "I carry a school bag.",
+            "She has a cute bag.",
+            "We pack our bags."
+          ]
+        },
+        {
+          "word": "box",
+          "jp": "箱",
+          "pos": "noun",
+          "emoji": "📦",
+          "examples": [
+            "I put my toys in the box.",
+            "She opens the box.",
+            "We have many boxes."
+          ]
+        },
+        {
+          "word": "cup",
+          "jp": "カップ",
+          "pos": "noun",
+          "emoji": "☕",
+          "examples": [
+            "I drink from a cup.",
+            "She has a favorite cup.",
+            "We wash the cups."
+          ]
+        },
+        {
+          "word": "plate",
+          "jp": "皿",
+          "pos": "noun",
+          "emoji": "🍽️",
+          "examples": [
+            "I eat from a plate.",
+            "She breaks a plate.",
+            "We clean the plates."
+          ]
+        },
+        {
+          "word": "knife",
+          "jp": "ナイフ",
+          "pos": "noun",
+          "emoji": "🔪",
+          "examples": [
+            "I use a knife carefully.",
+            "She cuts with a knife.",
+            "Knives are sharp."
+          ]
+        },
+        {
+          "word": "fork",
+          "jp": "フォーク",
+          "pos": "noun",
+          "emoji": "🍴",
+          "examples": [
+            "I eat with a fork.",
+            "She uses a fork.",
+            "We need forks for dinner."
+          ]
+        },
+        {
+          "word": "spoon",
+          "jp": "スプーン",
+          "pos": "noun",
+          "emoji": "🥄",
+          "examples": [
+            "I eat soup with a spoon.",
+            "She uses a spoon.",
+            "We wash spoons."
+          ]
+        }
+      ],
+      "food_drink": [
+        {
+          "word": "food",
+          "jp": "食べ物",
+          "pos": "noun",
+          "emoji": "🍽️",
+          "examples": [
+            "I love food.",
+            "She buys food at the shop.",
+            "We eat good food."
+          ]
+        },
+        {
+          "word": "breakfast",
+          "jp": "朝食",
+          "pos": "noun",
+          "emoji": "🍳",
+          "examples": [
+            "I eat breakfast at 7.",
+            "She likes a big breakfast.",
+            "We have eggs for breakfast."
+          ]
+        },
+        {
+          "word": "lunch",
+          "jp": "昼食",
+          "pos": "noun",
+          "emoji": "🥪",
+          "examples": [
+            "I eat lunch at school.",
+            "She makes her own lunch.",
+            "We have lunch at 12."
+          ]
+        },
+        {
+          "word": "dinner",
+          "jp": "夕食",
+          "pos": "noun",
+          "emoji": "🍽️",
+          "examples": [
+            "We eat dinner together.",
+            "She cooks dinner.",
+            "Dinner is at 7 o'clock."
+          ]
+        },
+        {
+          "word": "meal",
+          "jp": "食事",
+          "pos": "noun",
+          "emoji": "🍽️",
+          "examples": [
+            "I have three meals a day.",
+            "She enjoys the meal.",
+            "We have a nice meal."
+          ]
+        },
+        {
+          "word": "bread",
+          "jp": "パン",
+          "pos": "noun",
+          "emoji": "🍞",
+          "examples": [
+            "I eat bread for breakfast.",
+            "She likes fresh bread.",
+            "We make sandwiches with bread."
+          ]
+        },
+        {
+          "word": "rice",
+          "jp": "米",
+          "pos": "noun",
+          "emoji": "🍚",
+          "examples": [
+            "We eat rice every day.",
+            "She cooks rice.",
+            "Rice is popular in Japan."
+          ]
+        },
+        {
+          "word": "egg",
+          "jp": "卵",
+          "pos": "noun",
+          "emoji": "🥚",
+          "examples": [
+            "I eat an egg for breakfast.",
+            "She likes boiled eggs.",
+            "We cook eggs."
+          ]
+        },
+        {
+          "word": "meat",
+          "jp": "肉",
+          "pos": "noun",
+          "emoji": "🥩",
+          "examples": [
+            "I like chicken meat.",
+            "She cooks meat.",
+            "We eat meat for dinner."
+          ]
+        },
+        {
+          "word": "fish",
+          "jp": "魚",
+          "pos": "noun",
+          "emoji": "🐟",
+          "examples": [
+            "I eat fish.",
+            "She likes grilled fish.",
+            "Fish is healthy."
+          ]
+        },
+        {
+          "word": "chicken",
+          "jp": "鶏肉",
+          "pos": "noun",
+          "emoji": "🍗",
+          "examples": [
+            "I eat chicken.",
+            "She cooks chicken.",
+            "We have chicken for dinner."
+          ]
+        },
+        {
+          "word": "fruit",
+          "jp": "果物",
+          "pos": "noun",
+          "emoji": "🍎",
+          "examples": [
+            "I like fruit.",
+            "She eats an apple.",
+            "We buy fresh fruit."
+          ]
+        },
+        {
+          "word": "apple",
+          "jp": "りんご",
+          "pos": "noun",
+          "emoji": "🍎",
+          "examples": [
+            "I eat an apple.",
+            "She likes red apples.",
+            "We have apple trees."
+          ]
+        },
+        {
+          "word": "banana",
+          "jp": "バナナ",
+          "pos": "noun",
+          "emoji": "🍌",
+          "examples": [
+            "I eat a banana.",
+            "She likes bananas.",
+            "Bananas are yellow."
+          ]
+        },
+        {
+          "word": "orange",
+          "jp": "オレンジ",
+          "pos": "noun",
+          "emoji": "🍊",
+          "examples": [
+            "I drink orange juice.",
+            "She eats an orange.",
+            "Oranges are sweet."
+          ]
+        },
+        {
+          "word": "grape",
+          "jp": "ブドウ",
+          "pos": "noun",
+          "emoji": "🍇",
+          "examples": [
+            "I eat grapes.",
+            "She likes purple grapes.",
+            "Grapes grow in bunches."
+          ]
+        },
+        {
+          "word": "strawberry",
+          "jp": "イチゴ",
+          "pos": "noun",
+          "emoji": "🍓",
+          "examples": [
+            "I like strawberries.",
+            "She picks strawberries.",
+            "Strawberries are red."
+          ]
+        },
+        {
+          "word": "vegetable",
+          "jp": "野菜",
+          "pos": "noun",
+          "emoji": "🥕",
+          "examples": [
+            "I eat vegetables.",
+            "She likes fresh vegetables.",
+            "We grow vegetables."
+          ]
+        },
+        {
+          "word": "carrot",
+          "jp": "人参",
+          "pos": "noun",
+          "emoji": "🥕",
+          "examples": [
+            "I eat carrots.",
+            "She cooks carrots.",
+            "Rabbits like carrots."
+          ]
+        },
+        {
+          "word": "tomato",
+          "jp": "トマト",
+          "pos": "noun",
+          "emoji": "🍅",
+          "examples": [
+            "I eat tomatoes.",
+            "She likes tomato soup.",
+            "Tomatoes are red."
+          ]
+        },
+        {
+          "word": "potato",
+          "jp": "ジャガイモ",
+          "pos": "noun",
+          "emoji": "🥔",
+          "examples": [
+            "I eat potatoes.",
+            "She cooks potatoes.",
+            "We make chips from potatoes."
+          ]
+        },
+        {
+          "word": "onion",
+          "jp": "玉ねぎ",
+          "pos": "noun",
+          "emoji": "🧅",
+          "examples": [
+            "I use onions in cooking.",
+            "She cuts onions.",
+            "Onions make us cry."
+          ]
+        },
+        {
+          "word": "cake",
+          "jp": "ケーキ",
+          "pos": "noun",
+          "emoji": "🎂",
+          "examples": [
+            "I eat cake on my birthday.",
+            "She bakes a cake.",
+            "We love chocolate cake."
+          ]
+        },
+        {
+          "word": "cookie",
+          "jp": "クッキー",
+          "pos": "noun",
+          "emoji": "🍪",
+          "examples": [
+            "I eat a cookie.",
+            "She bakes cookies.",
+            "Cookies are sweet."
+          ]
+        },
+        {
+          "word": "chocolate",
+          "jp": "チョコレート",
+          "pos": "noun",
+          "emoji": "🍫",
+          "examples": [
+            "I like chocolate.",
+            "She eats chocolate.",
+            "We buy chocolate."
+          ]
+        },
+        {
+          "word": "candy",
+          "jp": "キャンディ",
+          "pos": "noun",
+          "emoji": "🍬",
+          "examples": [
+            "I eat candy.",
+            "She likes sour candy.",
+            "Candy is sweet."
+          ]
+        },
+        {
+          "word": "ice cream",
+          "jp": "アイスクリーム",
+          "pos": "noun",
+          "emoji": "🍦",
+          "examples": [
+            "I eat ice cream.",
+            "She likes vanilla ice cream.",
+            "We have ice cream in summer."
+          ]
+        },
+        {
+          "word": "water",
+          "jp": "水",
+          "pos": "noun",
+          "emoji": "💧",
+          "examples": [
+            "I drink water.",
+            "She likes cold water.",
+            "We drink water every day."
+          ]
+        },
+        {
+          "word": "milk",
+          "jp": "牛乳",
+          "pos": "noun",
+          "emoji": "🥛",
+          "examples": [
+            "I drink milk.",
+            "She has milk with breakfast.",
+            "Milk is white."
+          ]
+        },
+        {
+          "word": "tea",
+          "jp": "お茶",
+          "pos": "noun",
+          "emoji": "☕",
+          "examples": [
+            "I drink tea.",
+            "She likes green tea.",
+            "We have tea in the afternoon."
+          ]
+        },
+        {
+          "word": "coffee",
+          "jp": "コーヒー",
+          "pos": "noun",
+          "emoji": "☕",
+          "examples": [
+            "My father drinks coffee.",
+            "She likes hot coffee.",
+            "Coffee smells good."
+          ]
+        },
+        {
+          "word": "juice",
+          "jp": "ジュース",
+          "pos": "noun",
+          "emoji": "🧃",
+          "examples": [
+            "I drink orange juice.",
+            "She likes apple juice.",
+            "We buy juice at the shop."
+          ]
+        }
+      ],
+      "animals": [
+        {
+          "word": "animal",
+          "jp": "動物",
+          "pos": "noun",
+          "emoji": "🐾",
+          "examples": [
+            "I like animals.",
+            "She sees animals at the zoo.",
+            "We learn about animals."
+          ]
+        },
+        {
+          "word": "dog",
+          "jp": "犬",
+          "pos": "noun",
+          "emoji": "🐕",
+          "examples": [
+            "I have a dog.",
+            "She walks her dog.",
+            "Dogs are friendly."
+          ]
+        },
+        {
+          "word": "cat",
+          "jp": "猫",
+          "pos": "noun",
+          "emoji": "🐱",
+          "examples": [
+            "I have a cat.",
+            "She likes cats.",
+            "Cats are cute."
+          ]
+        },
+        {
+          "word": "bird",
+          "jp": "鳥",
+          "pos": "noun",
+          "emoji": "🐦",
+          "examples": [
+            "I see a bird.",
+            "She feeds birds.",
+            "Birds fly in the sky."
+          ]
+        },
+        {
+          "word": "fish",
+          "jp": "魚",
+          "pos": "noun",
+          "emoji": "🐟",
+          "examples": [
+            "I catch a fish.",
+            "She keeps fish in a tank.",
+            "Fish swim in water."
+          ]
+        },
+        {
+          "word": "rabbit",
+          "jp": "うさぎ",
+          "pos": "noun",
+          "emoji": "🐰",
+          "examples": [
+            "I see a rabbit.",
+            "She has a pet rabbit.",
+            "Rabbits hop."
+          ]
+        },
+        {
+          "word": "hamster",
+          "jp": "ハムスター",
+          "pos": "noun",
+          "emoji": "🐹",
+          "examples": [
+            "I have a hamster.",
+            "She feeds the hamster.",
+            "Hamsters run in wheels."
+          ]
+        },
+        {
+          "word": "mouse",
+          "jp": "ネズミ",
+          "pos": "noun",
+          "emoji": "🐭",
+          "examples": [
+            "I see a mouse.",
+            "She is afraid of mice.",
+            "The mouse is small."
+          ]
+        },
+        {
+          "word": "horse",
+          "jp": "馬",
+          "pos": "noun",
+          "emoji": "🐴",
+          "examples": [
+            "I see a horse.",
+            "She rides a horse.",
+            "Horses run fast."
+          ]
+        },
+        {
+          "word": "cow",
+          "jp": "牛",
+          "pos": "noun",
+          "emoji": "🐄",
+          "examples": [
+            "I see a cow.",
+            "Cows eat grass.",
+            "Cows give milk."
+          ]
+        },
+        {
+          "word": "pig",
+          "jp": "豚",
+          "pos": "noun",
+          "emoji": "🐷",
+          "examples": [
+            "I see a pig.",
+            "Pigs are pink.",
+            "Pigs like to eat."
+          ]
+        },
+        {
+          "word": "sheep",
+          "jp": "羊",
+          "pos": "noun",
+          "emoji": "🐑",
+          "examples": [
+            "I see sheep.",
+            "Sheep eat grass.",
+            "Sheep have wool."
+          ]
+        },
+        {
+          "word": "chicken",
+          "jp": "鶏",
+          "pos": "noun",
+          "emoji": "🐔",
+          "examples": [
+            "I see a chicken.",
+            "Chickens lay eggs.",
+            "Chickens say cluck."
+          ]
+        },
+        {
+          "word": "duck",
+          "jp": "アヒル",
+          "pos": "noun",
+          "emoji": "🦆",
+          "examples": [
+            "I see a duck.",
+            "Ducks swim in water.",
+            "Ducks say quack."
+          ]
+        },
+        {
+          "word": "butterfly",
+          "jp": "蝶",
+          "pos": "noun",
+          "emoji": "🦋",
+          "examples": [
+            "I see a butterfly.",
+            "Butterflies are beautiful.",
+            "Butterflies fly."
+          ]
+        },
+        {
+          "word": "bee",
+          "jp": "ミツバチ",
+          "pos": "noun",
+          "emoji": "🐝",
+          "examples": [
+            "I see a bee.",
+            "Bees make honey.",
+            "Bees fly to flowers."
+          ]
+        },
+        {
+          "word": "ant",
+          "jp": "アリ",
+          "pos": "noun",
+          "emoji": "🐜",
+          "examples": [
+            "I see an ant.",
+            "Ants work together.",
+            "Ants are small."
+          ]
+        },
+        {
+          "word": "spider",
+          "jp": "クモ",
+          "pos": "noun",
+          "emoji": "🕷️",
+          "examples": [
+            "I see a spider.",
+            "Spiders make webs.",
+            "Spiders have eight legs."
+          ]
+        },
+        {
+          "word": "lion",
+          "jp": "ライオン",
+          "pos": "noun",
+          "emoji": "🦁",
+          "examples": [
+            "I see a lion at the zoo.",
+            "Lions are big cats.",
+            "Lions roar."
+          ]
+        },
+        {
+          "word": "elephant",
+          "jp": "象",
+          "pos": "noun",
+          "emoji": "🐘",
+          "examples": [
+            "I see an elephant.",
+            "Elephants are big.",
+            "Elephants have long noses."
+          ]
+        }
+      ],
+      "weather_nature": [
+        {
+          "word": "weather",
+          "jp": "天気",
+          "pos": "noun",
+          "emoji": "☀️",
+          "examples": [
+            "The weather is nice today.",
+            "She likes good weather.",
+            "We check the weather."
+          ]
+        },
+        {
+          "word": "sun",
+          "jp": "太陽",
+          "pos": "noun",
+          "emoji": "☀️",
+          "examples": [
+            "The sun shines.",
+            "She likes the sun.",
+            "The sun is hot."
+          ]
+        },
+        {
+          "word": "moon",
+          "jp": "月",
+          "pos": "noun",
+          "emoji": "🌙",
+          "examples": [
+            "I see the moon.",
+            "The moon is bright.",
+            "The moon is round."
+          ]
+        },
+        {
+          "word": "star",
+          "jp": "星",
+          "pos": "noun",
+          "emoji": "⭐",
+          "examples": [
+            "I see stars.",
+            "Stars shine at night.",
+            "The star is bright."
+          ]
+        },
+        {
+          "word": "sky",
+          "jp": "空",
+          "pos": "noun",
+          "emoji": "🌌",
+          "examples": [
+            "The sky is blue.",
+            "She looks at the sky.",
+            "We see birds in the sky."
+          ]
+        },
+        {
+          "word": "cloud",
+          "jp": "雲",
+          "pos": "noun",
+          "emoji": "☁️",
+          "examples": [
+            "I see a cloud.",
+            "The cloud is white.",
+            "Clouds bring rain."
+          ]
+        },
+        {
+          "word": "rain",
+          "jp": "雨",
+          "pos": "noun",
+          "emoji": "🌧️",
+          "examples": [
+            "It rains today.",
+            "She likes rain.",
+            "We need rain for plants."
+          ]
+        },
+        {
+          "word": "snow",
+          "jp": "雪",
+          "pos": "noun",
+          "emoji": "❄️",
+          "examples": [
+            "It snows in winter.",
+            "She likes snow.",
+            "We play in the snow."
+          ]
+        },
+        {
+          "word": "wind",
+          "jp": "風",
+          "pos": "noun",
+          "emoji": "💨",
+          "examples": [
+            "The wind blows.",
+            "She feels the wind.",
+            "The wind is strong today."
+          ]
+        },
+        {
+          "word": "storm",
+          "jp": "嵐",
+          "pos": "noun",
+          "emoji": "⛈️",
+          "examples": [
+            "The storm is loud.",
+            "She stays inside during a storm.",
+            "We hear the storm."
+          ]
+        },
+        {
+          "word": "thunder",
+          "jp": "雷",
+          "pos": "noun",
+          "emoji": "🌩️",
+          "examples": [
+            "I hear thunder.",
+            "Thunder is loud.",
+            "She is afraid of thunder."
+          ]
+        },
+        {
+          "word": "lightning",
+          "jp": "稲妻",
+          "pos": "noun",
+          "emoji": "⚡",
+          "examples": [
+            "I see lightning.",
+            "Lightning is bright.",
+            "We see lightning in the sky."
+          ]
+        },
+        {
+          "word": "rainbow",
+          "jp": "虹",
+          "pos": "noun",
+          "emoji": "🌈",
+          "examples": [
+            "I see a rainbow.",
+            "The rainbow is beautiful.",
+            "Rainbows appear after rain."
+          ]
+        },
+        {
+          "word": "fog",
+          "jp": "霧",
+          "pos": "noun",
+          "emoji": "🌫️",
+          "examples": [
+            "There is fog.",
+            "She cannot see in the fog.",
+            "The fog clears."
+          ]
+        },
+        {
+          "word": "nature",
+          "jp": "自然",
+          "pos": "noun",
+          "emoji": "🌿",
+          "examples": [
+            "I love nature.",
+            "She walks in nature.",
+            "Nature is beautiful."
+          ]
+        },
+        {
+          "word": "plant",
+          "jp": "植物",
+          "pos": "noun",
+          "emoji": "🌱",
+          "examples": [
+            "I water the plant.",
+            "She has many plants.",
+            "Plants grow."
+          ]
+        },
+        {
+          "word": "flower",
+          "jp": "花",
+          "pos": "noun",
+          "emoji": "🌸",
+          "examples": [
+            "I like flowers.",
+            "She picks a flower.",
+            "Flowers are beautiful."
+          ]
+        },
+        {
+          "word": "tree",
+          "jp": "木",
+          "pos": "noun",
+          "emoji": "🌳",
+          "examples": [
+            "I see a tree.",
+            "She climbs trees.",
+            "We plant trees."
+          ]
+        },
+        {
+          "word": "grass",
+          "jp": "草",
+          "pos": "noun",
+          "emoji": "🌿",
+          "examples": [
+            "The grass is green.",
+            "She plays on the grass.",
+            "We cut the grass."
+          ]
+        },
+        {
+          "word": "leaf",
+          "jp": "葉",
+          "pos": "noun",
+          "emoji": "🍃",
+          "examples": [
+            "I see a leaf.",
+            "Leaves fall in autumn.",
+            "The leaf is green."
+          ]
+        },
+        {
+          "word": "mountain",
+          "jp": "山",
+          "pos": "noun",
+          "emoji": "⛰️",
+          "examples": [
+            "I see a mountain.",
+            "She climbs mountains.",
+            "The mountain is high."
+          ]
+        },
+        {
+          "word": "hill",
+          "jp": "丘",
+          "pos": "noun",
+          "emoji": "🏞️",
+          "examples": [
+            "I walk up the hill.",
+            "She plays on the hill.",
+            "The hill is small."
+          ]
+        },
+        {
+          "word": "river",
+          "jp": "川",
+          "pos": "noun",
+          "emoji": "🌊",
+          "examples": [
+            "I see a river.",
+            "The river is long.",
+            "We swim in the river."
+          ]
+        },
+        {
+          "word": "lake",
+          "jp": "湖",
+          "pos": "noun",
+          "emoji": "🏞️",
+          "examples": [
+            "I see a lake.",
+            "The lake is big.",
+            "We fish in the lake."
+          ]
+        },
+        {
+          "word": "sea",
+          "jp": "海",
+          "pos": "noun",
+          "emoji": "🌊",
+          "examples": [
+            "I go to the sea.",
+            "She likes the sea.",
+            "The sea is blue."
+          ]
+        },
+        {
+          "word": "beach",
+          "jp": "ビーチ",
+          "pos": "noun",
+          "emoji": "🏖️",
+          "examples": [
+            "I go to the beach.",
+            "She plays on the beach.",
+            "The beach has sand."
+          ]
+        },
+        {
+          "word": "sand",
+          "jp": "砂",
+          "pos": "noun",
+          "emoji": "🏖️",
+          "examples": [
+            "I play in the sand.",
+            "She builds with sand.",
+            "Sand is soft."
+          ]
+        },
+        {
+          "word": "rock",
+          "jp": "岩",
+          "pos": "noun",
+          "emoji": "🪨",
+          "examples": [
+            "I see a rock.",
+            "She sits on a rock.",
+            "The rock is hard."
+          ]
+        },
+        {
+          "word": "stone",
+          "jp": "石",
+          "pos": "noun",
+          "emoji": "🪨",
+          "examples": [
+            "I pick up a stone.",
+            "She throws stones.",
+            "Stones are small."
+          ]
+        }
+      ],
+      "time_seasons": [
+        {
+          "word": "time",
+          "jp": "時間",
+          "pos": "noun",
+          "emoji": "⏰",
+          "examples": [
+            "What time is it?",
+            "She checks the time.",
+            "Time goes fast."
+          ]
+        },
+        {
+          "word": "morning",
+          "jp": "朝",
+          "pos": "noun",
+          "emoji": "🌅",
+          "examples": [
+            "I wake up in the morning.",
+            "She exercises in the morning.",
+            "The morning is bright."
+          ]
+        },
+        {
+          "word": "afternoon",
+          "jp": "午後",
+          "pos": "noun",
+          "emoji": "☀️",
+          "examples": [
+            "I have lunch in the afternoon.",
+            "She reads in the afternoon.",
+            "The afternoon is warm."
+          ]
+        },
+        {
+          "word": "evening",
+          "jp": "夕方",
+          "pos": "noun",
+          "emoji": "🌆",
+          "examples": [
+            "I eat dinner in the evening.",
+            "She watches TV in the evening.",
+            "The evening is dark."
+          ]
+        },
+        {
+          "word": "night",
+          "jp": "夜",
+          "pos": "noun",
+          "emoji": "🌙",
+          "examples": [
+            "I sleep at night.",
+            "She studies at night.",
+            "The night is dark."
+          ]
+        },
+        {
+          "word": "day",
+          "jp": "日",
+          "pos": "noun",
+          "emoji": "☀️",
+          "examples": [
+            "I have a good day.",
+            "She works all day.",
+            "The day is long."
+          ]
+        },
+        {
+          "word": "week",
+          "jp": "週",
+          "pos": "noun",
+          "emoji": "📅",
+          "examples": [
+            "I have a busy week.",
+            "She studies every week.",
+            "There are 7 days in a week."
+          ]
+        },
+        {
+          "word": "month",
+          "jp": "月",
+          "pos": "noun",
+          "emoji": "📅",
+          "examples": [
+            "June is my birthday month.",
+            "She visits every month.",
+            "There are 12 months in a year."
+          ]
+        },
+        {
+          "word": "year",
+          "jp": "年",
+          "pos": "noun",
+          "emoji": "📅",
+          "examples": [
+            "This year is 2026.",
+            "She is ten years old.",
+            "We celebrate the New Year."
+          ]
+        },
+        {
+          "word": "season",
+          "jp": "季節",
+          "pos": "noun",
+          "emoji": "🌸",
+          "examples": [
+            "I like all seasons.",
+            "She loves spring season.",
+            "There are four seasons."
+          ]
+        },
+        {
+          "word": "spring",
+          "jp": "春",
+          "pos": "noun",
+          "emoji": "🌸",
+          "examples": [
+            "Spring is warm.",
+            "She likes spring flowers.",
+            "We celebrate in spring."
+          ]
+        },
+        {
+          "word": "summer",
+          "jp": "夏",
+          "pos": "noun",
+          "emoji": "☀️",
+          "examples": [
+            "Summer is hot.",
+            "She likes summer.",
+            "We swim in summer."
+          ]
+        },
+        {
+          "word": "autumn",
+          "jp": "秋",
+          "pos": "noun",
+          "emoji": "🍂",
+          "examples": [
+            "Autumn is cool.",
+            "She likes autumn leaves.",
+            "We eat in autumn."
+          ]
+        },
+        {
+          "word": "winter",
+          "jp": "冬",
+          "pos": "noun",
+          "emoji": "❄️",
+          "examples": [
+            "Winter is cold.",
+            "She likes winter sports.",
+            "We wear warm clothes in winter."
+          ]
+        },
+        {
+          "word": "holiday",
+          "jp": "休日",
+          "pos": "noun",
+          "emoji": "🎉",
+          "examples": [
+            "I love holidays.",
+            "She travels on holiday.",
+            "We have fun on holidays."
+          ]
+        },
+        {
+          "word": "vacation",
+          "jp": "休暇",
+          "pos": "noun",
+          "emoji": "🏖️",
+          "examples": [
+            "I go on vacation.",
+            "She enjoys vacation.",
+            "We have summer vacation."
+          ]
+        },
+        {
+          "word": "birthday",
+          "jp": "誕生日",
+          "pos": "noun",
+          "emoji": "🎂",
+          "examples": [
+            "Today is my birthday.",
+            "She has a birthday party.",
+            "We eat cake on birthdays."
+          ]
+        },
+        {
+          "word": "Christmas",
+          "jp": "クリスマス",
+          "pos": "noun",
+          "emoji": "🎄",
+          "examples": [
+            "I like Christmas.",
+            "She gets presents at Christmas.",
+            "We celebrate Christmas."
+          ]
+        },
+        {
+          "word": "New Year",
+          "jp": "新年",
+          "pos": "noun",
+          "emoji": "🎆",
+          "examples": [
+            "Happy New Year!",
+            "She visits family on New Year.",
+            "We celebrate the New Year."
+          ]
+        },
+        {
+          "word": "festival",
+          "jp": "祭り",
+          "pos": "noun",
+          "emoji": "🎪",
+          "examples": [
+            "I go to the festival.",
+            "She likes the music festival.",
+            "We have fun at festivals."
+          ]
+        }
+      ],
+      "places_transportation": [
+        {
+          "word": "place",
+          "jp": "場所",
+          "pos": "noun",
+          "emoji": "📍",
+          "examples": [
+            "This is a nice place.",
+            "She knows many places.",
+            "We visit new places."
+          ]
+        },
+        {
+          "word": "city",
+          "jp": "都市",
+          "pos": "noun",
+          "emoji": "🏙️",
+          "examples": [
+            "I live in a city.",
+            "She likes the city.",
+            "The city is big."
+          ]
+        },
+        {
+          "word": "town",
+          "jp": "町",
+          "pos": "noun",
+          "emoji": "🏘️",
+          "examples": [
+            "I live in a small town.",
+            "She walks around the town.",
+            "Our town is nice."
+          ]
+        },
+        {
+          "word": "village",
+          "jp": "村",
+          "pos": "noun",
+          "emoji": "🏘️",
+          "examples": [
+            "I visit a village.",
+            "She lives in a village.",
+            "The village is quiet."
+          ]
+        },
+        {
+          "word": "country",
+          "jp": "国",
+          "pos": "noun",
+          "emoji": "🌏",
+          "examples": [
+            "I live in Japan.",
+            "She visits many countries.",
+            "We love our country."
+          ]
+        },
+        {
+          "word": "park",
+          "jp": "公園",
+          "pos": "noun",
+          "emoji": "🌳",
+          "examples": [
+            "I play in the park.",
+            "She walks in the park.",
+            "We have a nice park."
+          ]
+        },
+        {
+          "word": "garden",
+          "jp": "庭",
+          "pos": "noun",
+          "emoji": "🌻",
+          "examples": [
+            "I have a garden.",
+            "She plants flowers in the garden.",
+            "We sit in the garden."
+          ]
+        },
+        {
+          "word": "shop",
+          "jp": "店",
+          "pos": "noun",
+          "emoji": "🏪",
+          "examples": [
+            "I go to the shop.",
+            "She works in a shop.",
+            "We buy things at the shop."
+          ]
+        },
+        {
+          "word": "market",
+          "jp": "市場",
+          "pos": "noun",
+          "emoji": "🏪",
+          "examples": [
+            "I go to the market.",
+            "She buys food at the market.",
+            "The market is busy."
+          ]
+        },
+        {
+          "word": "supermarket",
+          "jp": "スーパーマーケット",
+          "pos": "noun",
+          "emoji": "🛒",
+          "examples": [
+            "I buy food at the supermarket.",
+            "She works at the supermarket.",
+            "We go to the supermarket."
+          ]
+        },
+        {
+          "word": "hospital",
+          "jp": "病院",
+          "pos": "noun",
+          "emoji": "🏥",
+          "examples": [
+            "I go to the hospital.",
+            "She works at the hospital.",
+            "The hospital helps sick people."
+          ]
+        },
+        {
+          "word": "bank",
+          "jp": "銀行",
+          "pos": "noun",
+          "emoji": "🏦",
+          "examples": [
+            "I go to the bank.",
+            "She saves money at the bank.",
+            "The bank is near my house."
+          ]
+        },
+        {
+          "word": "post office",
+          "jp": "郵便局",
+          "pos": "noun",
+          "emoji": "📮",
+          "examples": [
+            "I go to the post office.",
+            "She sends letters at the post office.",
+            "The post office is near school."
+          ]
+        },
+        {
+          "word": "police station",
+          "jp": "警察署",
+          "pos": "noun",
+          "emoji": "🚔",
+          "examples": [
+            "I see a police station.",
+            "She works at the police station.",
+            "The police station helps people."
+          ]
+        },
+        {
+          "word": "fire station",
+          "jp": "消防署",
+          "pos": "noun",
+          "emoji": "🚒",
+          "examples": [
+            "I see a fire station.",
+            "Firefighters work at the fire station.",
+            "The fire station helps put out fires."
+          ]
+        },
+        {
+          "word": "station",
+          "jp": "駅",
+          "pos": "noun",
+          "emoji": "🚉",
+          "examples": [
+            "I go to the station.",
+            "She meets me at the station.",
+            "The train station is busy."
+          ]
+        },
+        {
+          "word": "airport",
+          "jp": "空港",
+          "pos": "noun",
+          "emoji": "✈️",
+          "examples": [
+            "I go to the airport.",
+            "She flies from the airport.",
+            "The airport has many planes."
+          ]
+        },
+        {
+          "word": "hotel",
+          "jp": "ホテル",
+          "pos": "noun",
+          "emoji": "🏨",
+          "examples": [
+            "I stay at a hotel.",
+            "She works at a hotel.",
+            "The hotel is nice."
+          ]
+        },
+        {
+          "word": "restaurant",
+          "jp": "レストラン",
+          "pos": "noun",
+          "emoji": "🍽️",
+          "examples": [
+            "I eat at a restaurant.",
+            "She works in a restaurant.",
+            "The restaurant serves good food."
+          ]
+        },
+        {
+          "word": "cafe",
+          "jp": "カフェ",
+          "pos": "noun",
+          "emoji": "☕",
+          "examples": [
+            "I go to a cafe.",
+            "She likes the cafe.",
+            "We drink tea at the cafe."
+          ]
+        },
+        {
+          "word": "library",
+          "jp": "図書館",
+          "pos": "noun",
+          "emoji": "📚",
+          "examples": [
+            "I study at the library.",
+            "She reads at the library.",
+            "The library has many books."
+          ]
+        },
+        {
+          "word": "museum",
+          "jp": "博物館",
+          "pos": "noun",
+          "emoji": "🏛️",
+          "examples": [
+            "I visit a museum.",
+            "She likes the museum.",
+            "We learn at the museum."
+          ]
+        },
+        {
+          "word": "theater",
+          "jp": "劇場",
+          "pos": "noun",
+          "emoji": "🎭",
+          "examples": [
+            "I go to the theater.",
+            "She acts in the theater.",
+            "We watch at the theater."
+          ]
+        },
+        {
+          "word": "cinema",
+          "jp": "映画館",
+          "pos": "noun",
+          "emoji": "🎬",
+          "examples": [
+            "I go to the cinema.",
+            "She likes the cinema.",
+            "We watch movies at the cinema."
+          ]
+        },
+        {
+          "word": "car",
+          "jp": "車",
+          "pos": "noun",
+          "emoji": "🚗",
+          "examples": [
+            "I have a car.",
+            "She drives a car.",
+            "We go by car."
+          ]
+        },
+        {
+          "word": "bus",
+          "jp": "バス",
+          "pos": "noun",
+          "emoji": "🚌",
+          "examples": [
+            "I take the bus.",
+            "She rides the bus.",
+            "We go by bus."
+          ]
+        },
+        {
+          "word": "train",
+          "jp": "電車",
+          "pos": "noun",
+          "emoji": "🚆",
+          "examples": [
+            "I take the train.",
+            "She rides the train.",
+            "We go by train."
+          ]
+        },
+        {
+          "word": "plane",
+          "jp": "飛行機",
+          "pos": "noun",
+          "emoji": "✈️",
+          "examples": [
+            "I fly on a plane.",
+            "She likes planes.",
+            "We travel by plane."
+          ]
+        },
+        {
+          "word": "bicycle",
+          "jp": "自転車",
+          "pos": "noun",
+          "emoji": "🚲",
+          "examples": [
+            "I ride a bicycle.",
+            "She has a new bicycle.",
+            "We go by bicycle."
+          ]
+        },
+        {
+          "word": "boat",
+          "jp": "ボート",
+          "pos": "noun",
+          "emoji": "⛵",
+          "examples": [
+            "I see a boat.",
+            "She rides a boat.",
+            "We go on a boat."
+          ]
+        },
+        {
+          "word": "ticket",
+          "jp": "切符",
+          "pos": "noun",
+          "emoji": "🎫",
+          "examples": [
+            "I buy a ticket.",
+            "She has a ticket.",
+            "We need tickets."
+          ]
+        },
+        {
+          "word": "map",
+          "jp": "地図",
+          "pos": "noun",
+          "emoji": "🗺️",
+          "examples": [
+            "I look at a map.",
+            "She uses a map.",
+            "We find our way with a map."
+          ]
+        }
+      ],
+      "body_parts_health": [
+        {
+          "word": "body",
+          "jp": "体",
+          "pos": "noun",
+          "emoji": "🧘",
+          "examples": [
+            "I exercise my body.",
+            "She has a strong body.",
+            "We take care of our body."
+          ]
+        },
+        {
+          "word": "head",
+          "jp": "頭",
+          "pos": "noun",
+          "emoji": "🗣️",
+          "examples": [
+            "I shake my head.",
+            "She has a small head.",
+            "We all have a head."
+          ]
+        },
+        {
+          "word": "hair",
+          "jp": "髪の毛",
+          "pos": "noun",
+          "emoji": "💇",
+          "examples": [
+            "I have long hair.",
+            "She has short hair.",
+            "We brush our hair."
+          ]
+        },
+        {
+          "word": "face",
+          "jp": "顔",
+          "pos": "noun",
+          "emoji": "🙂",
+          "examples": [
+            "I wash my face.",
+            "She has a pretty face.",
+            "We see each other's face."
+          ]
+        },
+        {
+          "word": "eye",
+          "jp": "目",
+          "pos": "noun",
+          "emoji": "👁️",
+          "examples": [
+            "I have two eyes.",
+            "She has brown eyes.",
+            "We see with our eyes."
+          ]
+        },
+        {
+          "word": "ear",
+          "jp": "耳",
+          "pos": "noun",
+          "emoji": "👂",
+          "examples": [
+            "I have two ears.",
+            "She has small ears.",
+            "We hear with our ears."
+          ]
+        },
+        {
+          "word": "nose",
+          "jp": "鼻",
+          "pos": "noun",
+          "emoji": "👃",
+          "examples": [
+            "I have a nose.",
+            "She has a small nose.",
+            "We smell with our nose."
+          ]
+        },
+        {
+          "word": "mouth",
+          "jp": "口",
+          "pos": "noun",
+          "emoji": "👄",
+          "examples": [
+            "I open my mouth.",
+            "She has a red mouth.",
+            "We eat with our mouth."
+          ]
+        },
+        {
+          "word": "tooth",
+          "jp": "歯",
+          "pos": "noun",
+          "emoji": "🦷",
+          "examples": [
+            "I brush my teeth.",
+            "She has white teeth.",
+            "We have many teeth."
+          ]
+        },
+        {
+          "word": "tongue",
+          "jp": "舌",
+          "pos": "noun",
+          "emoji": "👅",
+          "examples": [
+            "I use my tongue.",
+            "She sticks out her tongue.",
+            "We taste with our tongue."
+          ]
+        },
+        {
+          "word": "neck",
+          "jp": "首",
+          "pos": "noun",
+          "emoji": "🦒",
+          "examples": [
+            "I have a neck.",
+            "She has a long neck.",
+            "We all have a neck."
+          ]
+        },
+        {
+          "word": "shoulder",
+          "jp": "肩",
+          "pos": "noun",
+          "emoji": "🤷",
+          "examples": [
+            "I shrug my shoulders.",
+            "She has small shoulders.",
+            "We carry bags on our shoulders."
+          ]
+        },
+        {
+          "word": "arm",
+          "jp": "腕",
+          "pos": "noun",
+          "emoji": "💪",
+          "examples": [
+            "I have two arms.",
+            "She has strong arms.",
+            "We work with our arms."
+          ]
+        },
+        {
+          "word": "hand",
+          "jp": "手",
+          "pos": "noun",
+          "emoji": "🤚",
+          "examples": [
+            "I have two hands.",
+            "She has small hands.",
+            "We use our hands."
+          ]
+        },
+        {
+          "word": "finger",
+          "jp": "指",
+          "pos": "noun",
+          "emoji": "🖐️",
+          "examples": [
+            "I have ten fingers.",
+            "She points with her finger.",
+            "We count with our fingers."
+          ]
+        },
+        {
+          "word": "thumb",
+          "jp": "親指",
+          "pos": "noun",
+          "emoji": "👍",
+          "examples": [
+            "I give a thumbs up.",
+            "She has a small thumb.",
+            "We have two thumbs."
+          ]
+        },
+        {
+          "word": "chest",
+          "jp": "胸",
+          "pos": "noun",
+          "emoji": "💓",
+          "examples": [
+            "I have pain in my chest.",
+            "She has a strong chest.",
+            "We breathe with our chest."
+          ]
+        },
+        {
+          "word": "stomach",
+          "jp": "お腹",
+          "pos": "noun",
+          "emoji": "🤰",
+          "examples": [
+            "My stomach hurts.",
+            "She has a full stomach.",
+            "We digest food in our stomach."
+          ]
+        },
+        {
+          "word": "back",
+          "jp": "背中",
+          "pos": "noun",
+          "emoji": "🔙",
+          "examples": [
+            "My back hurts.",
+            "She has a strong back.",
+            "We sit on our back."
+          ]
+        },
+        {
+          "word": "leg",
+          "jp": "脚",
+          "pos": "noun",
+          "emoji": "🦵",
+          "examples": [
+            "I have two legs.",
+            "She has long legs.",
+            "We walk with our legs."
+          ]
+        },
+        {
+          "word": "knee",
+          "jp": "膝",
+          "pos": "noun",
+          "emoji": "🦵",
+          "examples": [
+            "I hurt my knee.",
+            "She has small knees.",
+            "We bend our knees."
+          ]
+        },
+        {
+          "word": "foot",
+          "jp": "足",
+          "pos": "noun",
+          "emoji": "🦶",
+          "examples": [
+            "I have two feet.",
+            "She has small feet.",
+            "We walk on our feet."
+          ]
+        },
+        {
+          "word": "heart",
+          "jp": "心臓",
+          "pos": "noun",
+          "emoji": "❤️",
+          "examples": [
+            "My heart beats fast.",
+            "She has a kind heart.",
+            "We love with our heart."
+          ]
+        },
+        {
+          "word": "health",
+          "jp": "健康",
+          "pos": "noun",
+          "emoji": "💪",
+          "examples": [
+            "I have good health.",
+            "She cares about her health.",
+            "We exercise for health."
+          ]
+        },
+        {
+          "word": "illness",
+          "jp": "病気",
+          "pos": "noun",
+          "emoji": "🤢",
+          "examples": [
+            "She has an illness.",
+            "Many illnesses have cures.",
+            "We fight illness."
+          ]
+        },
+        {
+          "word": "pain",
+          "jp": "痛み",
+          "pos": "noun",
+          "emoji": "😣",
+          "examples": [
+            "I have pain in my leg.",
+            "She feels no pain.",
+            "Pain is bad."
+          ]
+        },
+        {
+          "word": "fever",
+          "jp": "熱",
+          "pos": "noun",
+          "emoji": "🤒",
+          "examples": [
+            "I have a fever.",
+            "She has a high fever.",
+            "We check for fever."
+          ]
+        },
+        {
+          "word": "medicine",
+          "jp": "薬",
+          "pos": "noun",
+          "emoji": "💊",
+          "examples": [
+            "I take medicine.",
+            "She gives me medicine.",
+            "Medicine helps us."
+          ]
+        }
+      ],
+      "numbers_math": [
+        {
+          "word": "number",
+          "jp": "数字",
+          "pos": "noun",
+          "emoji": "🔢",
+          "examples": [
+            "I know many numbers.",
+            "She likes numbers.",
+            "We use numbers in math."
+          ]
+        },
+        {
+          "word": "one",
+          "jp": "1",
+          "pos": "noun",
+          "emoji": "1️⃣",
+          "examples": [
+            "I have one book.",
+            "She eats one apple.",
+            "We have one cat."
+          ]
+        },
+        {
+          "word": "two",
+          "jp": "2",
+          "pos": "noun",
+          "emoji": "2️⃣",
+          "examples": [
+            "I have two hands.",
+            "She has two cats.",
+            "We are two people."
+          ]
+        },
+        {
+          "word": "three",
+          "jp": "3",
+          "pos": "noun",
+          "emoji": "3️⃣",
+          "examples": [
+            "I have three meals.",
+            "She has three dogs.",
+            "We see three birds."
+          ]
+        },
+        {
+          "word": "four",
+          "jp": "4",
+          "pos": "noun",
+          "emoji": "4️⃣",
+          "examples": [
+            "I have four legs.",
+            "She has four friends.",
+            "We have four seasons."
+          ]
+        },
+        {
+          "word": "five",
+          "jp": "5",
+          "pos": "noun",
+          "emoji": "5️⃣",
+          "examples": [
+            "I have five fingers.",
+            "She is ten years old.",
+            "We study in grade five."
+          ]
+        },
+        {
+          "word": "six",
+          "jp": "6",
+          "pos": "noun",
+          "emoji": "6️⃣",
+          "examples": [
+            "I have six pencils.",
+            "She wakes up at six.",
+            "We have six eggs."
+          ]
+        },
+        {
+          "word": "seven",
+          "jp": "7",
+          "pos": "noun",
+          "emoji": "7️⃣",
+          "examples": [
+            "I wake up at seven.",
+            "She has seven books.",
+            "We eat at seven o'clock."
+          ]
+        },
+        {
+          "word": "eight",
+          "jp": "8",
+          "pos": "noun",
+          "emoji": "8️⃣",
+          "examples": [
+            "I have eight fingers.",
+            "She is eight years old.",
+            "We see eight stars."
+          ]
+        },
+        {
+          "word": "nine",
+          "jp": "9",
+          "pos": "noun",
+          "emoji": "9️⃣",
+          "examples": [
+            "I have nine crayons.",
+            "She is nine years old.",
+            "We have nine students."
+          ]
+        },
+        {
+          "word": "ten",
+          "jp": "10",
+          "pos": "noun",
+          "emoji": "🔟",
+          "examples": [
+            "I have ten fingers.",
+            "She is ten years old.",
+            "We count to ten."
+          ]
+        },
+        {
+          "word": "hundred",
+          "jp": "100",
+          "pos": "noun",
+          "emoji": "💯",
+          "examples": [
+            "There are a hundred people.",
+            "She has a hundred yen.",
+            "We count to hundred."
+          ]
+        },
+        {
+          "word": "thousand",
+          "jp": "1000",
+          "pos": "noun",
+          "emoji": "🔟",
+          "examples": [
+            "There are a thousand books.",
+            "She has a thousand yen.",
+            "We count to thousand."
+          ]
+        },
+        {
+          "word": "first",
+          "jp": "最初の",
+          "pos": "noun",
+          "emoji": "1️⃣",
+          "examples": [
+            "I am the first student.",
+            "She comes in first place.",
+            "We are the first team."
+          ]
+        },
+        {
+          "word": "second",
+          "jp": "2番目の",
+          "pos": "noun",
+          "emoji": "2️⃣",
+          "examples": [
+            "I am the second runner.",
+            "She comes in second.",
+            "We are the second class."
+          ]
+        },
+        {
+          "word": "third",
+          "jp": "3番目の",
+          "pos": "noun",
+          "emoji": "3️⃣",
+          "examples": [
+            "I am the third child.",
+            "She comes in third place.",
+            "We are the third team."
+          ]
+        },
+        {
+          "word": "math",
+          "jp": "数学",
+          "pos": "noun",
+          "emoji": "➕",
+          "examples": [
+            "I like math.",
+            "She studies math.",
+            "We learn math at school."
+          ]
+        },
+        {
+          "word": "addition",
+          "jp": "足し算",
+          "pos": "noun",
+          "emoji": "➕",
+          "examples": [
+            "I learn addition.",
+            "She does addition problems.",
+            "We add numbers."
+          ]
+        },
+        {
+          "word": "subtraction",
+          "jp": "引き算",
+          "pos": "noun",
+          "emoji": "➖",
+          "examples": [
+            "I learn subtraction.",
+            "She does subtraction problems.",
+            "We take away numbers."
+          ]
+        },
+        {
+          "word": "multiplication",
+          "jp": "掛け算",
+          "pos": "noun",
+          "emoji": "✖️",
+          "examples": [
+            "I learn multiplication.",
+            "She knows the multiplication table.",
+            "We multiply numbers."
+          ]
+        },
+        {
+          "word": "division",
+          "jp": "割り算",
+          "pos": "noun",
+          "emoji": "➗",
+          "examples": [
+            "I learn division.",
+            "She does division problems.",
+            "We share numbers with division."
+          ]
+        },
+        {
+          "word": "fraction",
+          "jp": "分数",
+          "pos": "noun",
+          "emoji": "➗",
+          "examples": [
+            "I learn fractions.",
+            "She likes fractions.",
+            "We use fractions in math."
+          ]
+        },
+        {
+          "word": "shape",
+          "jp": "形",
+          "pos": "noun",
+          "emoji": "🔶",
+          "examples": [
+            "I know many shapes.",
+            "She draws shapes.",
+            "We learn about shapes."
+          ]
+        },
+        {
+          "word": "circle",
+          "jp": "円",
+          "pos": "noun",
+          "emoji": "⭕",
+          "examples": [
+            "I draw a circle.",
+            "She sees a circle.",
+            "The moon is a circle."
+          ]
+        },
+        {
+          "word": "square",
+          "jp": "正方形",
+          "pos": "noun",
+          "emoji": "⬛",
+          "examples": [
+            "I draw a square.",
+            "She likes squares.",
+            "A box is a square."
+          ]
+        },
+        {
+          "word": "triangle",
+          "jp": "三角形",
+          "pos": "noun",
+          "emoji": "🔺",
+          "examples": [
+            "I draw a triangle.",
+            "She likes triangles.",
+            "A mountain looks like a triangle."
+          ]
+        },
+        {
+          "word": "rectangle",
+          "jp": "長方形",
+          "pos": "noun",
+          "emoji": "▭",
+          "examples": [
+            "I draw a rectangle.",
+            "She likes rectangles.",
+            "A door is a rectangle."
+          ]
+        },
+        {
+          "word": "line",
+          "jp": "線",
+          "pos": "noun",
+          "emoji": "〰️",
+          "examples": [
+            "I draw a straight line.",
+            "She draws a curved line.",
+            "We see lines."
+          ]
+        }
+      ],
+      "colors_shapes": [
+        {
+          "word": "color",
+          "jp": "色",
+          "pos": "noun",
+          "emoji": "🎨",
+          "examples": [
+            "I like many colors.",
+            "She paints with color.",
+            "We see colors everywhere."
+          ]
+        },
+        {
+          "word": "red",
+          "jp": "赤",
+          "pos": "noun",
+          "emoji": "🔴",
+          "examples": [
+            "Red is my favorite color.",
+            "She wears red.",
+            "We see red apples."
+          ]
+        },
+        {
+          "word": "blue",
+          "jp": "青",
+          "pos": "noun",
+          "emoji": "🔵",
+          "examples": [
+            "Blue is the sky color.",
+            "She likes blue.",
+            "We see blue water."
+          ]
+        },
+        {
+          "word": "green",
+          "jp": "緑",
+          "pos": "noun",
+          "emoji": "🟢",
+          "examples": [
+            "Green is grass color.",
+            "She wears green.",
+            "We see green leaves."
+          ]
+        },
+        {
+          "word": "yellow",
+          "jp": "黄",
+          "pos": "noun",
+          "emoji": "🟡",
+          "examples": [
+            "Yellow is the sun color.",
+            "She likes yellow flowers.",
+            "We see yellow bananas."
+          ]
+        },
+        {
+          "word": "orange",
+          "jp": "オレンジ",
+          "pos": "noun",
+          "emoji": "🟠",
+          "examples": [
+            "Orange is a fruit color.",
+            "She likes orange.",
+            "We see orange carrots."
+          ]
+        },
+        {
+          "word": "purple",
+          "jp": "紫",
+          "pos": "noun",
+          "emoji": "🟣",
+          "examples": [
+            "Purple is a royal color.",
+            "She likes purple.",
+            "We see purple grapes."
+          ]
+        },
+        {
+          "word": "pink",
+          "jp": "ピンク",
+          "pos": "noun",
+          "emoji": "🩷",
+          "examples": [
+            "Pink is a cute color.",
+            "She likes pink.",
+            "We see pink flowers."
+          ]
+        },
+        {
+          "word": "black",
+          "jp": "黒",
+          "pos": "noun",
+          "emoji": "⬛",
+          "examples": [
+            "Black is dark.",
+            "She likes black.",
+            "We see black night."
+          ]
+        },
+        {
+          "word": "white",
+          "jp": "白",
+          "pos": "noun",
+          "emoji": "⬜",
+          "examples": [
+            "White is light.",
+            "She likes white.",
+            "We see white snow."
+          ]
+        }
+      ],
+      "clothes_accessories": [
+        {
+          "word": "clothes",
+          "jp": "服",
+          "pos": "noun",
+          "emoji": "👕",
+          "examples": [
+            "I wear clothes.",
+            "She buys new clothes.",
+            "We wash our clothes."
+          ]
+        },
+        {
+          "word": "shirt",
+          "jp": "シャツ",
+          "pos": "noun",
+          "emoji": "👕",
+          "examples": [
+            "I wear a shirt.",
+            "She has a nice shirt.",
+            "We wash shirts."
+          ]
+        },
+        {
+          "word": "T-shirt",
+          "jp": "Tシャツ",
+          "pos": "noun",
+          "emoji": "👕",
+          "examples": [
+            "I wear a T-shirt.",
+            "She has many T-shirts.",
+            "We like T-shirts."
+          ]
+        },
+        {
+          "word": "dress",
+          "jp": "ドレス",
+          "pos": "noun",
+          "emoji": "👗",
+          "examples": [
+            "She wears a dress.",
+            "I don't wear dresses.",
+            "We see beautiful dresses."
+          ]
+        },
+        {
+          "word": "skirt",
+          "jp": "スカート",
+          "pos": "noun",
+          "emoji": "👗",
+          "examples": [
+            "She wears a skirt.",
+            "I don't wear skirts.",
+            "We like long skirts."
+          ]
+        },
+        {
+          "word": "trousers",
+          "jp": "ズボン",
+          "pos": "noun",
+          "emoji": "👖",
+          "examples": [
+            "I wear trousers.",
+            "She wears trousers too.",
+            "We have many trousers."
+          ]
+        },
+        {
+          "word": "jeans",
+          "jp": "ジーンズ",
+          "pos": "noun",
+          "emoji": "👖",
+          "examples": [
+            "I wear jeans.",
+            "She likes jeans.",
+            "We wash our jeans."
+          ]
+        },
+        {
+          "word": "shorts",
+          "jp": "ショートパンツ",
+          "pos": "noun",
+          "emoji": "🩳",
+          "examples": [
+            "I wear shorts in summer.",
+            "She wears shorts too.",
+            "We like shorts."
+          ]
+        },
+        {
+          "word": "jacket",
+          "jp": "ジャケット",
+          "pos": "noun",
+          "emoji": "🧥",
+          "examples": [
+            "I wear a jacket.",
+            "She has a cool jacket.",
+            "We wear jackets in winter."
+          ]
+        },
+        {
+          "word": "coat",
+          "jp": "コート",
+          "pos": "noun",
+          "emoji": "🧥",
+          "examples": [
+            "I wear a coat in winter.",
+            "She has a warm coat.",
+            "We wear coats."
+          ]
+        }
+      ],
+      "hobbies_free_time": [
+        {
+          "word": "hobby",
+          "jp": "趣味",
+          "pos": "noun",
+          "emoji": "🎯",
+          "examples": [
+            "Reading is my hobby.",
+            "She has many hobbies.",
+            "We talk about our hobbies."
+          ]
+        },
+        {
+          "word": "sport",
+          "jp": "スポーツ",
+          "pos": "noun",
+          "emoji": "⚽",
+          "examples": [
+            "I like sports.",
+            "She plays sports.",
+            "We watch sports on TV."
+          ]
+        },
+        {
+          "word": "soccer",
+          "jp": "サッカー",
+          "pos": "noun",
+          "emoji": "⚽",
+          "examples": [
+            "I play soccer.",
+            "She likes soccer.",
+            "We watch soccer matches."
+          ]
+        },
+        {
+          "word": "basketball",
+          "jp": "バスケットボール",
+          "pos": "noun",
+          "emoji": "🏀",
+          "examples": [
+            "I play basketball.",
+            "She likes basketball.",
+            "We watch basketball games."
+          ]
+        },
+        {
+          "word": "tennis",
+          "jp": "テニス",
+          "pos": "noun",
+          "emoji": "🎾",
+          "examples": [
+            "I play tennis.",
+            "She likes tennis.",
+            "We watch tennis."
+          ]
+        },
+        {
+          "word": "baseball",
+          "jp": "野球",
+          "pos": "noun",
+          "emoji": "⚾",
+          "examples": [
+            "I play baseball.",
+            "She likes baseball.",
+            "We watch baseball games."
+          ]
+        },
+        {
+          "word": "swimming",
+          "jp": "水泳",
+          "pos": "noun",
+          "emoji": "🏊",
+          "examples": [
+            "I like swimming.",
+            "She goes swimming.",
+            "We go to the pool."
+          ]
+        },
+        {
+          "word": "music",
+          "jp": "音楽",
+          "pos": "noun",
+          "emoji": "🎵",
+          "examples": [
+            "I listen to music.",
+            "She plays music.",
+            "We like music."
+          ]
+        },
+        {
+          "word": "song",
+          "jp": "歌",
+          "pos": "noun",
+          "emoji": "🎤",
+          "examples": [
+            "I sing a song.",
+            "She likes songs.",
+            "We listen to songs."
+          ]
+        },
+        {
+          "word": "dance",
+          "jp": "ダンス",
+          "pos": "noun",
+          "emoji": "💃",
+          "examples": [
+            "I like to dance.",
+            "She dances well.",
+            "We dance together."
+          ]
+        },
+        {
+          "word": "drawing",
+          "jp": "絵を描くこと",
+          "pos": "noun",
+          "emoji": "🎨",
+          "examples": [
+            "I like drawing.",
+            "She draws pictures.",
+            "We draw at school."
+          ]
+        },
+        {
+          "word": "painting",
+          "jp": "絵画",
+          "pos": "noun",
+          "emoji": "🎨",
+          "examples": [
+            "I like painting.",
+            "She paints pictures.",
+            "We paint at art class."
+          ]
+        },
+        {
+          "word": "reading",
+          "jp": "読書",
+          "pos": "noun",
+          "emoji": "📖",
+          "examples": [
+            "Reading is my hobby.",
+            "She likes reading.",
+            "We read books."
+          ]
+        },
+        {
+          "word": "story",
+          "jp": "物語",
+          "pos": "noun",
+          "emoji": "📚",
+          "examples": [
+            "I read a story.",
+            "She tells a story.",
+            "We like stories."
+          ]
+        },
+        {
+          "word": "movie",
+          "jp": "映画",
+          "pos": "noun",
+          "emoji": "🎬",
+          "examples": [
+            "I watch a movie.",
+            "She likes movies.",
+            "We go to the cinema."
+          ]
+        },
+        {
+          "word": "game",
+          "jp": "ゲーム",
+          "pos": "noun",
+          "emoji": "🎮",
+          "examples": [
+            "I play games.",
+            "She likes video games.",
+            "We play games together."
+          ]
+        },
+        {
+          "word": "puzzle",
+          "jp": "パズル",
+          "pos": "noun",
+          "emoji": "🧩",
+          "examples": [
+            "I do puzzles.",
+            "She likes puzzles.",
+            "We solve a puzzle."
+          ]
+        },
+        {
+          "word": "internet",
+          "jp": "インターネット",
+          "pos": "noun",
+          "emoji": "💻",
+          "examples": [
+            "I use the internet.",
+            "She learns on the internet.",
+            "We find things on the internet."
+          ]
+        },
+        {
+          "word": "trip",
+          "jp": "旅行",
+          "pos": "noun",
+          "emoji": "✈️",
+          "examples": [
+            "I go on a trip.",
+            "She likes trips.",
+            "We travel together."
+          ]
+        },
+        {
+          "word": "holiday",
+          "jp": "休日",
+          "pos": "noun",
+          "emoji": "🎉",
+          "examples": [
+            "I enjoy holidays.",
+            "She likes holidays.",
+            "We have fun on holidays."
+          ]
+        }
+      ],
+      "emotions_feelings": [
+        {
+          "word": "feeling",
+          "jp": "感情",
+          "pos": "noun",
+          "emoji": "😊",
+          "examples": [
+            "I have many feelings.",
+            "She has happy feelings.",
+            "We talk about feelings."
+          ]
+        },
+        {
+          "word": "happiness",
+          "jp": "幸せ",
+          "pos": "noun",
+          "emoji": "😊",
+          "examples": [
+            "I feel happiness.",
+            "She brings happiness.",
+            "We share happiness."
+          ]
+        },
+        {
+          "word": "sadness",
+          "jp": "悲しみ",
+          "pos": "noun",
+          "emoji": "😢",
+          "examples": [
+            "I feel sadness.",
+            "She overcomes sadness.",
+            "We help with sadness."
+          ]
+        },
+        {
+          "word": "anger",
+          "jp": "怒り",
+          "pos": "noun",
+          "emoji": "😠",
+          "examples": [
+            "I feel anger.",
+            "She controls her anger.",
+            "We avoid anger."
+          ]
+        },
+        {
+          "word": "fear",
+          "jp": "恐怖",
+          "pos": "noun",
+          "emoji": "😨",
+          "examples": [
+            "I feel fear.",
+            "She has no fear.",
+            "We overcome fear."
+          ]
+        },
+        {
+          "word": "love",
+          "jp": "愛",
+          "pos": "noun",
+          "emoji": "❤️",
+          "examples": [
+            "I feel love.",
+            "She gives love.",
+            "We share love."
+          ]
+        },
+        {
+          "word": "joy",
+          "jp": "喜び",
+          "pos": "noun",
+          "emoji": "😊",
+          "examples": [
+            "I feel joy.",
+            "She brings joy.",
+            "We share joy."
+          ]
+        },
+        {
+          "word": "hope",
+          "jp": "希望",
+          "pos": "noun",
+          "emoji": "⭐",
+          "examples": [
+            "I have hope.",
+            "She keeps hope.",
+            "We share hope."
+          ]
+        },
+        {
+          "word": "dream",
+          "jp": "夢",
+          "pos": "noun",
+          "emoji": "💭",
+          "examples": [
+            "I have a dream.",
+            "She follows her dream.",
+            "We dream together."
+          ]
+        },
+        {
+          "word": "worry",
+          "jp": "心配",
+          "pos": "noun",
+          "emoji": "😰",
+          "examples": [
+            "I have worry.",
+            "She has no worry.",
+            "We share our worries."
+          ]
+        },
+        {
+          "word": "surprise",
+          "jp": "驚き",
+          "pos": "noun",
+          "emoji": "😮",
+          "examples": [
+            "I feel surprise.",
+            "She likes surprises.",
+            "We give a surprise."
+          ]
+        },
+        {
+          "word": "excitement",
+          "jp": "興奮",
+          "pos": "noun",
+          "emoji": "🎉",
+          "examples": [
+            "I feel excitement.",
+            "She has excitement.",
+            "We share excitement."
+          ]
+        },
+        {
+          "word": "peace",
+          "jp": "平和",
+          "pos": "noun",
+          "emoji": "☮️",
+          "examples": [
+            "I like peace.",
+            "She wants peace.",
+            "We make peace."
+          ]
+        },
+        {
+          "word": "relaxation",
+          "jp": "リラックス",
+          "pos": "noun",
+          "emoji": "😌",
+          "examples": [
+            "I need relaxation.",
+            "She enjoys relaxation.",
+            "We have relaxation time."
+          ]
+        },
+        {
+          "word": "confidence",
+          "jp": "自信",
+          "pos": "noun",
+          "emoji": "💪",
+          "examples": [
+            "I have confidence.",
+            "She builds confidence.",
+            "We gain confidence."
+          ]
+        }
+      ],
+      "direction_position": [
+        {
+          "word": "direction",
+          "jp": "方向",
+          "pos": "noun",
+          "emoji": "🧭",
+          "examples": [
+            "I check the direction.",
+            "She goes in a new direction.",
+            "We follow the right direction."
+          ]
+        },
+        {
+          "word": "up",
+          "jp": "上",
+          "pos": "noun",
+          "emoji": "⬆️",
+          "examples": [
+            "I look up.",
+            "She goes up the stairs.",
+            "We go up."
+          ]
+        },
+        {
+          "word": "down",
+          "jp": "下",
+          "pos": "noun",
+          "emoji": "⬇️",
+          "examples": [
+            "I look down.",
+            "She goes down the hill.",
+            "We go down."
+          ]
+        },
+        {
+          "word": "left",
+          "jp": "左",
+          "pos": "noun",
+          "emoji": "⬅️",
+          "examples": [
+            "I turn left.",
+            "She sits on the left.",
+            "We go to the left."
+          ]
+        },
+        {
+          "word": "right",
+          "jp": "右",
+          "pos": "noun",
+          "emoji": "➡️",
+          "examples": [
+            "I turn right.",
+            "She sits on the right.",
+            "We go to the right."
+          ]
+        },
+        {
+          "word": "front",
+          "jp": "前",
+          "pos": "noun",
+          "emoji": "⬆️",
+          "examples": [
+            "I stand in front.",
+            "She sits in the front.",
+            "We go to the front."
+          ]
+        },
+        {
+          "word": "back",
+          "jp": "後ろ",
+          "pos": "noun",
+          "emoji": "⬇️",
+          "examples": [
+            "I stand in back.",
+            "She sits in the back.",
+            "We go to the back."
+          ]
+        },
+        {
+          "word": "side",
+          "jp": "横",
+          "pos": "noun",
+          "emoji": "↔️",
+          "examples": [
+            "I sit on the side.",
+            "She stands by my side.",
+            "We are on the same side."
+          ]
+        },
+        {
+          "word": "top",
+          "jp": "上",
+          "pos": "noun",
+          "emoji": "🔝",
+          "examples": [
+            "I am on top.",
+            "She reaches the top.",
+            "We go to the top."
+          ]
+        },
+        {
+          "word": "bottom",
+          "jp": "底",
+          "pos": "noun",
+          "emoji": "🔽",
+          "examples": [
+            "I am at the bottom.",
+            "She goes to the bottom.",
+            "We start from the bottom."
+          ]
+        },
+        {
+          "word": "middle",
+          "jp": "真ん中",
+          "pos": "noun",
+          "emoji": "⏺️",
+          "examples": [
+            "I sit in the middle.",
+            "She stands in the middle.",
+            "We meet in the middle."
+          ]
+        },
+        {
+          "word": "center",
+          "jp": "中心",
+          "pos": "noun",
+          "emoji": "⏺️",
+          "examples": [
+            "I live in the center.",
+            "She goes to the city center.",
+            "We meet at the center."
+          ]
+        },
+        {
+          "word": "corner",
+          "jp": "角",
+          "pos": "noun",
+          "emoji": "📍",
+          "examples": [
+            "I sit in the corner.",
+            "She stands at the corner.",
+            "We turn at the corner."
+          ]
+        },
+        {
+          "word": "inside",
+          "jp": "中",
+          "pos": "noun",
+          "emoji": "🏠",
+          "examples": [
+            "I stay inside.",
+            "She works inside.",
+            "We are inside."
+          ]
+        },
+        {
+          "word": "outside",
+          "jp": "外",
+          "pos": "noun",
+          "emoji": "🌳",
+          "examples": [
+            "I go outside.",
+            "She plays outside.",
+            "We are outside."
+          ]
+        }
+      ]
+    },
     "prepositions": [
-      "at",
-      "in",
-      "on",
-      "to",
-      "from",
-      "with",
-      "without",
-      "for",
-      "by",
-      "about",
-      "before",
-      "after",
-      "between",
-      "under",
-      "over",
-      "behind",
-      "next to",
-      "near",
-      "far"
+      {
+        "word": "in",
+        "jp": "～の中に",
+        "pos": "preposition",
+        "emoji": "📦",
+        "examples": [
+          "I am in the room.",
+          "She is in the car.",
+          "We are in the house."
+        ]
+      },
+      {
+        "word": "on",
+        "jp": "～の上に",
+        "pos": "preposition",
+        "emoji": "⬆️",
+        "examples": [
+          "The book is on the desk.",
+          "She sits on the chair.",
+          "We walk on the street."
+        ]
+      },
+      {
+        "word": "at",
+        "jp": "～に",
+        "pos": "preposition",
+        "emoji": "📍",
+        "examples": [
+          "I am at school.",
+          "She is at home.",
+          "We meet at the park."
+        ]
+      },
+      {
+        "word": "under",
+        "jp": "～の下に",
+        "pos": "preposition",
+        "emoji": "⬇️",
+        "examples": [
+          "The cat is under the table.",
+          "She sits under a tree.",
+          "We walk under the bridge."
+        ]
+      },
+      {
+        "word": "over",
+        "jp": "～の上に越えて",
+        "pos": "preposition",
+        "emoji": "⬆️",
+        "examples": [
+          "The bird flies over the tree.",
+          "She jumps over the rope.",
+          "We walk over the bridge."
+        ]
+      },
+      {
+        "word": "above",
+        "jp": "～の上に",
+        "pos": "preposition",
+        "emoji": "⬆️",
+        "examples": [
+          "The sun is above the clouds.",
+          "She lives above the shop.",
+          "We fly above the city."
+        ]
+      },
+      {
+        "word": "below",
+        "jp": "～の下に",
+        "pos": "preposition",
+        "emoji": "⬇️",
+        "examples": [
+          "The fish is below the water.",
+          "She sits below me.",
+          "We go below the hill."
+        ]
+      },
+      {
+        "word": "to",
+        "jp": "～へ",
+        "pos": "preposition",
+        "emoji": "➡️",
+        "examples": [
+          "I go to school.",
+          "She walks to the park.",
+          "We fly to Tokyo."
+        ]
+      },
+      {
+        "word": "from",
+        "jp": "～から",
+        "pos": "preposition",
+        "emoji": "⬅️",
+        "examples": [
+          "I come from Japan.",
+          "She is from Tokyo.",
+          "We start from here."
+        ]
+      },
+      {
+        "word": "with",
+        "jp": "～と一緒に",
+        "pos": "preposition",
+        "emoji": "🤝",
+        "examples": [
+          "I go with my friend.",
+          "She plays with her sister.",
+          "We work with each other."
+        ]
+      },
+      {
+        "word": "without",
+        "jp": "～なしに",
+        "pos": "preposition",
+        "emoji": "➖",
+        "examples": [
+          "I cannot do without help.",
+          "She goes without me.",
+          "We work without a break."
+        ]
+      },
+      {
+        "word": "for",
+        "jp": "～のために",
+        "pos": "preposition",
+        "emoji": "🎁",
+        "examples": [
+          "This is for you.",
+          "She buys a gift for mom.",
+          "We study for the test."
+        ]
+      },
+      {
+        "word": "by",
+        "jp": "～のそばに",
+        "pos": "preposition",
+        "emoji": "📍",
+        "examples": [
+          "I sit by the window.",
+          "She stands by the door.",
+          "We live by the river."
+        ]
+      },
+      {
+        "word": "about",
+        "jp": "～について",
+        "pos": "preposition",
+        "emoji": "💬",
+        "examples": [
+          "I talk about my day.",
+          "She learns about science.",
+          "We think about the future."
+        ]
+      },
+      {
+        "word": "around",
+        "jp": "～の周りに",
+        "pos": "preposition",
+        "emoji": "🔄",
+        "examples": [
+          "I walk around the park.",
+          "She looks around the room.",
+          "We go around the city."
+        ]
+      },
+      {
+        "word": "between",
+        "jp": "～の間に",
+        "pos": "preposition",
+        "emoji": "↔️",
+        "examples": [
+          "I sit between Tom and Mary.",
+          "She stands between the trees.",
+          "We walk between the shops."
+        ]
+      },
+      {
+        "word": "among",
+        "jp": "～の中に",
+        "pos": "preposition",
+        "emoji": "👥",
+        "examples": [
+          "I am among friends.",
+          "She works among students.",
+          "We are among family."
+        ]
+      },
+      {
+        "word": "through",
+        "jp": "～を通って",
+        "pos": "preposition",
+        "emoji": "➡️",
+        "examples": [
+          "I walk through the door.",
+          "She runs through the park.",
+          "We go through the tunnel."
+        ]
+      },
+      {
+        "word": "before",
+        "jp": "～の前に",
+        "pos": "preposition",
+        "emoji": "⏰",
+        "examples": [
+          "I come before lunch.",
+          "She leaves before dinner.",
+          "We sleep before midnight."
+        ]
+      },
+      {
+        "word": "after",
+        "jp": "～の後に",
+        "pos": "preposition",
+        "emoji": "⏰",
+        "examples": [
+          "I eat after school.",
+          "She plays after homework.",
+          "We sleep after dinner."
+        ]
+      }
     ],
     "conjunctions": [
-      "and",
-      "but",
-      "or",
-      "because",
-      "so",
-      "if",
-      "when"
+      {
+        "word": "and",
+        "jp": "～と",
+        "pos": "conjunction",
+        "emoji": "➕",
+        "examples": [
+          "I like tea and coffee.",
+          "She plays and studies.",
+          "We read and write."
+        ]
+      },
+      {
+        "word": "but",
+        "jp": "しかし",
+        "pos": "conjunction",
+        "emoji": "⚠️",
+        "examples": [
+          "I like tea but not coffee.",
+          "She studies but is tired.",
+          "We try but fail sometimes."
+        ]
+      },
+      {
+        "word": "or",
+        "jp": "それとも",
+        "pos": "conjunction",
+        "emoji": "❓",
+        "examples": [
+          "Do you like tea or coffee?",
+          "She goes by bus or train.",
+          "We can go or stay."
+        ]
+      },
+      {
+        "word": "because",
+        "jp": "なぜなら",
+        "pos": "conjunction",
+        "emoji": "💡",
+        "examples": [
+          "I am happy because it's sunny.",
+          "She sleeps late because she works.",
+          "We stay because it's raining."
+        ]
+      },
+      {
+        "word": "so",
+        "jp": "だから",
+        "pos": "conjunction",
+        "emoji": "⇒",
+        "examples": [
+          "It's raining so I stay home.",
+          "She is sick so she rests.",
+          "We study so we pass."
+        ]
+      },
+      {
+        "word": "when",
+        "jp": "～の時",
+        "pos": "conjunction",
+        "emoji": "⏰",
+        "examples": [
+          "I eat when I am hungry.",
+          "She sleeps when she is tired.",
+          "We play when it's sunny."
+        ]
+      },
+      {
+        "word": "while",
+        "jp": "～する間に",
+        "pos": "conjunction",
+        "emoji": "⏱️",
+        "examples": [
+          "I read while she cooks.",
+          "She sings while dancing.",
+          "We study while listening."
+        ]
+      },
+      {
+        "word": "if",
+        "jp": "もし～なら",
+        "pos": "conjunction",
+        "emoji": "❓",
+        "examples": [
+          "I will go if it's sunny.",
+          "She studies if she has a test.",
+          "We play if we have time."
+        ]
+      },
+      {
+        "word": "although",
+        "jp": "～だけれども",
+        "pos": "conjunction",
+        "emoji": "⚠️",
+        "examples": [
+          "Although it's cold, I go out.",
+          "She studies although she is tired.",
+          "We try although it's hard."
+        ]
+      },
+      {
+        "word": "since",
+        "jp": "～以来",
+        "pos": "conjunction",
+        "emoji": "⏰",
+        "examples": [
+          "I have lived here since 2020.",
+          "She studies since morning.",
+          "We are friends since school."
+        ]
+      }
     ],
     "pronouns": [
-      "I",
-      "you",
-      "he",
-      "she",
-      "it",
-      "we",
-      "they",
-      "me",
-      "him",
-      "her",
-      "us",
-      "them"
+      {
+        "word": "I",
+        "jp": "私",
+        "pos": "pronoun",
+        "emoji": "👤",
+        "examples": [
+          "I am happy.",
+          "I like reading.",
+          "I go to school."
+        ]
+      },
+      {
+        "word": "you",
+        "jp": "あなた",
+        "pos": "pronoun",
+        "emoji": "👤",
+        "examples": [
+          "You are my friend.",
+          "You like music.",
+          "You go to school."
+        ]
+      },
+      {
+        "word": "he",
+        "jp": "彼",
+        "pos": "pronoun",
+        "emoji": "👨",
+        "examples": [
+          "He is tall.",
+          "He plays soccer.",
+          "He is my brother."
+        ]
+      },
+      {
+        "word": "she",
+        "jp": "彼女",
+        "pos": "pronoun",
+        "emoji": "👩",
+        "examples": [
+          "She is kind.",
+          "She likes cats.",
+          "She is my sister."
+        ]
+      },
+      {
+        "word": "it",
+        "jp": "それ",
+        "pos": "pronoun",
+        "emoji": "🔵",
+        "examples": [
+          "It is a book.",
+          "It is cold today.",
+          "It is nice."
+        ]
+      },
+      {
+        "word": "we",
+        "jp": "私たち",
+        "pos": "pronoun",
+        "emoji": "👥",
+        "examples": [
+          "We are students.",
+          "We study together.",
+          "We play soccer."
+        ]
+      },
+      {
+        "word": "they",
+        "jp": "彼ら",
+        "pos": "pronoun",
+        "emoji": "👥",
+        "examples": [
+          "They are friends.",
+          "They play together.",
+          "They like sports."
+        ]
+      },
+      {
+        "word": "my",
+        "jp": "私の",
+        "pos": "pronoun",
+        "emoji": "👤",
+        "examples": [
+          "This is my book.",
+          "My brother is tall.",
+          "My school is big."
+        ]
+      },
+      {
+        "word": "your",
+        "jp": "あなたの",
+        "pos": "pronoun",
+        "emoji": "👤",
+        "examples": [
+          "This is your pen.",
+          "Your sister is nice.",
+          "Your school is good."
+        ]
+      },
+      {
+        "word": "his",
+        "jp": "彼の",
+        "pos": "pronoun",
+        "emoji": "👨",
+        "examples": [
+          "This is his bag.",
+          "His father is kind.",
+          "His cat is black."
+        ]
+      },
+      {
+        "word": "her",
+        "jp": "彼女の",
+        "pos": "pronoun",
+        "emoji": "👩",
+        "examples": [
+          "This is her room.",
+          "Her mother works hard.",
+          "Her dog is white."
+        ]
+      },
+      {
+        "word": "its",
+        "jp": "その",
+        "pos": "pronoun",
+        "emoji": "🔵",
+        "examples": [
+          "The dog and its tail.",
+          "The tree and its leaves.",
+          "The house and its garden."
+        ]
+      },
+      {
+        "word": "our",
+        "jp": "私たちの",
+        "pos": "pronoun",
+        "emoji": "👥",
+        "examples": [
+          "This is our house.",
+          "Our teacher is kind.",
+          "Our school is old."
+        ]
+      },
+      {
+        "word": "their",
+        "jp": "彼らの",
+        "pos": "pronoun",
+        "emoji": "👥",
+        "examples": [
+          "This is their room.",
+          "Their parents visit.",
+          "Their dog is cute."
+        ]
+      },
+      {
+        "word": "this",
+        "jp": "これ",
+        "pos": "pronoun",
+        "emoji": "👆",
+        "examples": [
+          "This is a book.",
+          "I like this.",
+          "This is nice."
+        ]
+      }
+    ],
+    "determiners": [
+      {
+        "word": "a",
+        "jp": "一つの",
+        "pos": "determiner",
+        "emoji": "1️⃣",
+        "examples": [
+          "I have a book.",
+          "She eats an apple.",
+          "We see a bird."
+        ]
+      },
+      {
+        "word": "an",
+        "jp": "一つの",
+        "pos": "determiner",
+        "emoji": "1️⃣",
+        "examples": [
+          "I have an apple.",
+          "She eats an orange.",
+          "We see an eagle."
+        ]
+      },
+      {
+        "word": "the",
+        "jp": "その",
+        "pos": "determiner",
+        "emoji": "🎯",
+        "examples": [
+          "The book is good.",
+          "The sun is hot.",
+          "The cat is cute."
+        ]
+      },
+      {
+        "word": "this",
+        "jp": "これ",
+        "pos": "determiner",
+        "emoji": "👆",
+        "examples": [
+          "This book is good.",
+          "This is my pen.",
+          "This is nice."
+        ]
+      },
+      {
+        "word": "that",
+        "jp": "あれ",
+        "pos": "determiner",
+        "emoji": "👉",
+        "examples": [
+          "That book is old.",
+          "That is my bag.",
+          "That is far away."
+        ]
+      },
+      {
+        "word": "these",
+        "jp": "これら",
+        "pos": "determiner",
+        "emoji": "👆",
+        "examples": [
+          "These books are good.",
+          "These are my pens.",
+          "These are nice."
+        ]
+      },
+      {
+        "word": "those",
+        "jp": "あれら",
+        "pos": "determiner",
+        "emoji": "👉",
+        "examples": [
+          "Those books are old.",
+          "Those are my bags.",
+          "Those are far away."
+        ]
+      },
+      {
+        "word": "some",
+        "jp": "いくつかの",
+        "pos": "determiner",
+        "emoji": "🔢",
+        "examples": [
+          "I have some books.",
+          "She eats some cake.",
+          "We see some birds."
+        ]
+      },
+      {
+        "word": "any",
+        "jp": "いくつかの",
+        "pos": "determiner",
+        "emoji": "❓",
+        "examples": [
+          "Do you have any books?",
+          "She doesn't have any money.",
+          "We don't need any help."
+        ]
+      },
+      {
+        "word": "every",
+        "jp": "すべての",
+        "pos": "determiner",
+        "emoji": "♾️",
+        "examples": [
+          "Every student studies.",
+          "She plays every day.",
+          "We go to school every day."
+        ]
+      }
     ],
     "interjections": [
-      "yes",
-      "no",
-      "please",
-      "thank you",
-      "hello",
-      "goodbye",
-      "good morning",
-      "good afternoon",
-      "good evening"
+      {
+        "word": "hello",
+        "jp": "こんにちは",
+        "pos": "interjection",
+        "emoji": "👋",
+        "examples": [
+          "Hello, my friend!",
+          "She says hello.",
+          "We say hello to everyone."
+        ]
+      },
+      {
+        "word": "hi",
+        "jp": "やあ",
+        "pos": "interjection",
+        "emoji": "👋",
+        "examples": [
+          "Hi, how are you?",
+          "She says hi.",
+          "We say hi to friends."
+        ]
+      },
+      {
+        "word": "goodbye",
+        "jp": "さようなら",
+        "pos": "interjection",
+        "emoji": "👋",
+        "examples": [
+          "Goodbye, see you!",
+          "She says goodbye.",
+          "We say goodbye to friends."
+        ]
+      },
+      {
+        "word": "bye",
+        "jp": "さようなら",
+        "pos": "interjection",
+        "emoji": "👋",
+        "examples": [
+          "Bye, see you later!",
+          "She says bye.",
+          "We say bye quickly."
+        ]
+      },
+      {
+        "word": "yes",
+        "jp": "はい",
+        "pos": "interjection",
+        "emoji": "✅",
+        "examples": [
+          "Yes, I agree.",
+          "She says yes.",
+          "We say yes to questions."
+        ]
+      },
+      {
+        "word": "no",
+        "jp": "いいえ",
+        "pos": "interjection",
+        "emoji": "❌",
+        "examples": [
+          "No, I don't want.",
+          "She says no.",
+          "We say no politely."
+        ]
+      },
+      {
+        "word": "thanks",
+        "jp": "ありがとう",
+        "pos": "interjection",
+        "emoji": "🙏",
+        "examples": [
+          "Thanks for your help.",
+          "She says thanks.",
+          "We say thanks often."
+        ]
+      },
+      {
+        "word": "please",
+        "jp": "お願い",
+        "pos": "interjection",
+        "emoji": "🙏",
+        "examples": [
+          "Please help me.",
+          "She says please.",
+          "We use please politely."
+        ]
+      },
+      {
+        "word": "excuse me",
+        "jp": "すみません",
+        "pos": "interjection",
+        "emoji": "🙋",
+        "examples": [
+          "Excuse me, where is the station?",
+          "She says excuse me.",
+          "We use excuse me politely."
+        ]
+      },
+      {
+        "word": "sorry",
+        "jp": "ごめんなさい",
+        "pos": "interjection",
+        "emoji": "😔",
+        "examples": [
+          "Sorry, I am late.",
+          "She says sorry.",
+          "We say sorry when we make mistakes."
+        ]
+      }
     ]
   }
 }

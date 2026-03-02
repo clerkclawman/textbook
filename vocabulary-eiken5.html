@@ -338,12 +338,17 @@
             <div class="toolbar">
                 <input type="text" id="searchInput" class="search-box" placeholder="Search vocabulary...">
                 
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="nouns">Nouns (452)</button>
-                <button class="filter-btn" data-filter="verbs">Verbs (102)</button>
-                <button class="filter-btn" data-filter="adjectives">Adjectives (63)</button>
-                <button class="filter-btn" data-filter="adverbs">Adverbs (24)</button>
-                <button class="filter-btn" data-filter="prepositions">Prepositions (12)</button>
+                <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                <button class="filter-btn" data-filter="nouns" id="filter-nouns">Nouns (0)</button>
+                <button class="filter-btn" data-filter="verbs" id="filter-verbs">Verbs (0)</button>
+                <button class="filter-btn" data-filter="adjectives" id="filter-adjectives">Adjectives (0)</button>
+                <button class="filter-btn" data-filter="adverbs" id="filter-adverbs">Adverbs (0)</button>
+                <button class="filter-btn" data-filter="prepositions" id="filter-prepositions">Prepositions (0)</button>
+                <button class="filter-btn" data-filter="conjunctions" id="filter-conjunctions">Conjunctions (0)</button>
+                <button class="filter-btn" data-filter="pronouns" id="filter-pronouns">Pronouns (0)</button>
+                <button class="filter-btn" data-filter="determiners" id="filter-determiners">Determiners (0)</button>
+                <button class="filter-btn" data-filter="articles" id="filter-articles">Articles (0)</button>
+                <button class="filter-btn" data-filter="interjections" id="filter-interjections">Interjections (0)</button>
 
                 <div class="mode-toggle">
                     <button class="filter-btn" id="toggleJapanese">Show/Hide Japanese</button>
@@ -498,13 +503,16 @@
         // Render vocabulary cards
         function renderVocabulary(vocabList) {
             const grid = document.getElementById('vocabGrid');
-            
+
             if (vocabList.length === 0) {
                 grid.innerHTML = '<div class="empty-state"><h3>No words found</h3><p>Try adjusting your search or filter.</p></div>';
                 return;
             }
 
-            grid.innerHTML = vocabList.map((word, index) => `
+            // Sort alphabetically by English word
+            const sortedList = [...vocabList].sort((a, b) => a.en.localeCompare(b.en));
+
+            grid.innerHTML = sortedList.map((word, index) => `
                 <div class="vocab-card" data-word="${word.en}" data-pos="${word.pos}">
                     <div class="card-header">
                         <div class="english-word">${word.emoji ? word.emoji + ' ' : ''}${word.en}</div>
@@ -620,11 +628,57 @@
             }
         }
         
+        // Update filter button counts
+        function updateFilterCounts() {
+            const filterMap = {
+                'nouns': 'Nouns',
+                'verbs': 'Verbs',
+                'adjectives': 'Adjectives',
+                'adverbs': 'Adverbs',
+                'prepositions': 'Prepositions',
+                'conjunctions': 'Conjunctions',
+                'pronouns': 'Pronouns',
+                'determiners': 'Determiners',
+                'articles': 'Articles',
+                'interjections': 'Interjections'
+            };
+
+            const posMap = {
+                'nouns': 'noun',
+                'verbs': 'verb',
+                'adjectives': 'adjective',
+                'adverbs': 'adverb',
+                'prepositions': 'preposition',
+                'conjunctions': 'conjunction',
+                'pronouns': 'pronoun',
+                'determiners': 'determiner',
+                'articles': 'article',
+                'interjections': 'interjection'
+            };
+
+            Object.keys(filterMap).forEach(filterKey => {
+                const label = filterMap[filterKey];
+                const pos = posMap[filterKey];
+                const count = eiken5Vocab.filter(word => word.pos === pos).length;
+                const btn = document.getElementById(`filter-${filterKey}`);
+                if (btn) {
+                    btn.textContent = `${label} (${count})`;
+                }
+            });
+
+            // Update All button with total count
+            const allBtn = document.getElementById('filter-all');
+            if (allBtn) {
+                allBtn.textContent = `All (${eiken5Vocab.length})`;
+            }
+        }
+
         // Initialize UI after vocabulary is loaded
         function initializeVocabularyUI() {
+            updateFilterCounts();
             renderVocabulary(eiken5Vocab);
             updateStats();
-            
+
             // Mark mastered words
             Object.keys(masteredWords).forEach(word => {
                 if (masteredWords[word]) {
