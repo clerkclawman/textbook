@@ -252,14 +252,21 @@
         .flashcard-front, .flashcard-back {
             backface-visibility: hidden;
             width: 100%;
-        }
-
-        .flashcard-back {
-            transform: rotateY(180deg);
             position: absolute;
             top: 0;
             left: 0;
             height: 100%;
+        }
+
+        .flashcard-front {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flashcard-back {
+            transform: rotateY(180deg);
             display: flex;
             flex-direction: column;
             justify-content: center;
