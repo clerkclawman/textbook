@@ -361,163 +361,117 @@
         // Track page view
         Analytics.trackPageView('vocabulary-eiken5.html');
 
-        // Eiken 5 vocabulary database (sample of key words)
-        const eiken5Vocab = [
-            // Numbers, colors, time
-            { en: 'one', jp: '一番', pos: 'noun', example: { en: 'I have one apple.', jp: 'りんごを一つ持っています。' } },
-            { en: 'two', jp: '二つ', pos: 'noun', example: { en: 'There are two cats.', jp: '猫が二匹います。' } },
-            { en: 'three', jp: '三つ', pos: 'noun', example: { en: 'Three birds are flying.', jp: '三羽の鳥が飛んでいます。' } },
-            { en: 'red', jp: '赤', pos: 'adjective', example: { en: 'The car is red.', jp: 'その車は赤です。' } },
-            { en: 'blue', jp: '青', pos: 'adjective', example: { en: 'The sky is blue.', jp: '空は青いです。' } },
-            { en: 'morning', jp: '朝', pos: 'noun', example: { en: 'Good morning!', jp: 'おはようございます！' } },
-            { en: 'evening', jp: '夜', pos: 'noun', example: { en: 'Good evening!', jp: 'こんばんは！' } },
-
-            // Common verbs
-            { en: 'to be (am, is, are)', jp: 'である', pos: 'verb', example: { en: 'I am a student.', jp: '私は学生です。' } },
-            { en: 'to have', jp: '持っている', pos: 'verb', example: { en: 'I have a cat.', jp: '私は猫を飼っています。' } },
-            { en: 'to do', jp: 'する', pos: 'verb', example: { en: 'I do my homework.', jp: '宿題をします。' } },
-            { en: 'to go', jp: '行く', pos: 'verb', example: { en: 'I go to school.', jp: '私は学校へ行きます。' } },
-            { en: 'to come', jp: '来る', pos: 'verb', example: { en: 'Please come here.', jp: 'ここに来てください。' } },
-            { en: 'to eat', jp: '食べる', pos: 'verb', example: { en: 'I eat lunch at 12.', jp: '12時に昼食を食べます。' } },
-            { en: 'to drink', jp: '飲む', pos: 'verb', example: { en: 'I drink water.', jp: '水を飲みます。' } },
-            { en: 'to sleep', jp: '寝る', pos: 'verb', example: { en: 'I sleep at 10.', jp: '10時に寝ます。' } },
-            { en: 'to wake up', jp: '起きる', pos: 'verb', example: { en: 'I wake up at 7.', jp: '7時に起きます。' } },
-            { en: 'to read', jp: '読む', pos: 'verb', example: { en: 'I read books.', jp: '本を読みます。' } },
-            { en: 'to write', jp: '書く', pos: 'verb', example: { en: 'I write letters.', jp: '手紙を書きます。' } },
-            { en: 'to speak', jp: '話す', pos: 'verb', example: { en: 'He speaks English.', jp: '彼は英語を話します。' } },
-            { en: 'to listen', jp: '聞く', pos: 'verb', example: { en: 'I listen to music.', jp: '音楽を聴きます。' } },
-            { en: 'to watch', jp: '見る', pos: 'verb', example: { en: 'I watch TV.', jp: 'テレビを見ます。' } },
-            { en: 'to play', jp: '遊ぶ', pos: 'verb', example: { en: 'Children play in the park.', jp: '子供たちは公園で遊びます。' } },
-            { en: 'to study', jp: '勉強する', pos: 'verb', example: { en: 'I study hard.', jp: '一生懸命勉強します。' } },
-            { en: 'to work', jp: '働く', pos: 'verb', example: { en: 'He works in Tokyo.', jp: '彼は東京で働きます。' } },
-            { en: 'to live', jp: '住む', pos: 'verb', example: { en: 'I live in Japan.', jp: '日本に住んでいます。' } },
-            { en: 'to like', jp: '好きだ', pos: 'verb', example: { en: 'I like cats.', jp: '猫が好きです。' } },
-            { en: 'to want', jp: '欲しい', pos: 'verb', example: { en: 'I want to go.', jp: '行きたいです。' } },
-            { en: 'to need', jp: '必要だ', pos: 'verb', example: { en: 'I need help.', jp: '助けが必要です。' } },
-
-            // Family & people
-            { en: 'father', jp: '父', pos: 'noun', example: { en: 'My father works hard.', jp: '私の父は一生懸命働いています。' } },
-            { en: 'mother', jp: '母', pos: 'noun', example: { en: 'My mother cooks well.', jp: '母は料理が上手です。' } },
-            { en: 'brother', jp: '兄弟', pos: 'noun', example: { en: 'I have one brother.', jp: '兄が一人います。' } },
-            { en: 'sister', jp: '姉妹', pos: 'noun', example: { en: 'I have two sisters.', jp: '姉が二人います。' } },
-            { en: 'family', jp: '家族', pos: 'noun', example: { en: 'My family is big.', jp: '私の家族は大きな家族です。' } },
-            { en: 'friend', jp: '友達', pos: 'noun', example: { en: 'She is my best friend.', jp: '彼女は親友です。' } },
-            { en: 'teacher', jp: '先生', pos: 'noun', example: { en: 'He is a teacher.', jp: '彼は先生です。' } },
-            { en: 'student', jp: '学生', pos: 'noun', example: { en: 'She is a student.', jp: '彼女は学生です。' } },
-            { en: 'doctor', jp: '医者', pos: 'noun', example: { en: 'The doctor helps me.', jp: '医者が私を助けてくれます。' } },
-            { en: 'police', jp: '警察', pos: 'noun', example: { en: 'Call the police!', jp: '警察を呼んでください！' } },
-
-            // School & education
-            { en: 'school', jp: '学校', pos: 'noun', example: { en: 'I go to school.', jp: '学校へ行きます。' } },
-            { en: 'book', jp: '本', pos: 'noun', example: { en: 'Read the book.', jp: 'その本を読んでください。' } },
-            { en: 'pencil', jp: '鉛筆', pos: 'noun', example: { en: 'I need a pencil.', jp: '鉛筆が必要です。' } },
-            { en: 'paper', jp: '紙', pos: 'noun', example: { en: 'Write on this paper.', jp: 'この紙に書いてください。' } },
-            { en: 'desk', jp: '机', pos: 'noun', example: { en: 'There is a desk here.', jp: 'ここに机があります。' } },
-            { en: 'chair', jp: '椅子', pos: 'noun', example: { en: 'Sit in the chair.', jp: '椅子に座ってください。' } },
-            { en: 'homework', jp: '宿題', pos: 'noun', example: { en: 'Do your homework.', jp: '宿題をしなさい。' } },
-            { en: 'test', jp: 'テスト', pos: 'noun', example: { en: 'The test is tomorrow.', jp: 'テストは明日です。' } },
-            { en: 'class', jp: '授業', pos: 'noun', example: { en: 'The class starts at 9.', jp: '授業は9時に始まります。' } },
-            { en: 'question', jp: '質問', pos: 'noun', example: { en: 'Ask a question.', jp: '質問を聞いてください。' } },
-            { en: 'answer', jp: '答え', pos: 'noun', example: { en: 'What is the answer?', jp: '答えは何ですか？' } },
-
-            // Food
-            { en: 'apple', jp: 'りんご', pos: 'noun', example: { en: 'I eat an apple.', jp: 'りんごを食べます。' } },
-            { en: 'bread', jp: 'パン', pos: 'noun', example: { en: 'Eat bread for breakfast.', jp: '朝食にパンを食べます。' } },
-            { en: 'rice', jp: 'ご飯', pos: 'noun', example: { en: 'I like rice.', jp: 'ご飯が好きです。' } },
-            { en: 'meat', jp: '肉', pos: 'noun', example: { en: 'I don\'t eat meat.', jp: '肉を食べません。' } },
-            { en: 'fish', jp: '魚', pos: 'noun', example: { en: 'The fish is fresh.', jp: 'その魚は新鮮です。' } },
-            { en: 'egg', jp: '卵', pos: 'noun', example: { en: 'I eat eggs.', jp: '卵を食べます。' } },
-            { en: 'milk', jp: '牛乳', pos: 'noun', example: { en: 'Drink milk.', jp: '牛乳を飲みます。' } },
-            { en: 'water', jp: '水', pos: 'noun', example: { en: 'Give me water.', jp: '水をください。' } },
-            { en: 'tea', jp: 'お茶', pos: 'noun', example: { en: 'Would you like tea?', jp: 'お茶はいかがですか？' } },
-            { en: 'coffee', jp: 'コーヒー', pos: 'noun', example: { en: 'I drink coffee.', jp: 'コーヒーを飲みます。' } },
-            { en: 'breakfast', jp: '朝食', pos: 'noun', example: { en: 'Eat breakfast.', jp: '朝食を食べます。' } },
-            { en: 'lunch', jp: '昼食', pos: 'noun', example: { en: 'Have lunch.', jp: '昼食をとりましょう。' } },
-            { en: 'dinner', jp: '夕食', pos: 'noun', example: { en: 'Make dinner.', jp: '夕食を作ります。' } },
-
-            // Clothes & body
-            { en: 'shirt', jp: 'シャツ', pos: 'noun', example: { en: 'Wear a white shirt.', jp: '白いシャツを着てください。' } },
-            { en: 'pants', jp: 'ズボン', pos: 'noun', example: { en: 'Buy new pants.', jp: '新しいズボンを買います。' } },
-            { en: 'shoes', jp: '靴', pos: 'noun', example: { en: 'Put on shoes.', jp: '靴を履いてください。' } },
-            { en: 'hat', jp: '帽子', pos: 'noun', example: { en: 'Wear a hat.', jp: '帽子を被ってください。' } },
-            { en: 'eye', jp: '目', pos: 'noun', example: { en: 'Close your eyes.', jp: '目を閉じてください。' } },
-            { en: 'ear', jp: '耳', pos: 'noun', example: { en: 'Listen with your ears.', jp: '耳で聞いてください。' } },
-            { en: 'nose', jp: '鼻', pos: 'noun', example: { en: 'The nose is big.', jp: '鼻が大きいです。' } },
-            { en: 'mouth', jp: '口', pos: 'noun', example: { en: 'Open your mouth.', jp: '口を開けてください。' } },
-            { en: 'hand', jp: '手', pos: 'noun', example: { en: 'Raise your hand.', jp: '手を挙げてください。' } },
-            { en: 'foot', jp: '足', pos: 'noun', example: { en: 'Wash your feet.', jp: '足を洗ってください。' } },
-
-            // Places
-            { en: 'house', jp: '家', pos: 'noun', example: { en: 'Go home.', jp: '家に帰ってください。' } },
-            { en: 'room', jp: '部屋', pos: 'noun', example: { en: 'Clean your room.', jp: '部屋を片付けてください。' } },
-            { en: 'kitchen', jp: '台所', pos: 'noun', example: { en: 'Cook in the kitchen.', jp: '台所で料理します。' } },
-            { en: 'bathroom', jp: '風呂場', pos: 'noun', example: { en: 'The bathroom is clean.', jp: '風呂場は清潔です。' } },
-            { en: 'garden', jp: '庭', pos: 'noun', example: { en: 'Work in the garden.', jp: '庭で働きます。' } },
-            { en: 'park', jp: '公園', pos: 'noun', example: { en: 'Walk in the park.', jp: '公園を散歩します。' } },
-            { en: 'shop', jp: '店', pos: 'noun', example: { en: 'Go to the shop.', jp: '店に行きます。' } },
-            { en: 'hospital', jp: '病院', pos: 'noun', example: { en: 'Go to the hospital.', jp: '病院に行きます。' } },
-            { en: 'school', jp: '学校', pos: 'noun', example: { en: 'Go to school.', jp: '学校へ行きます。' } },
-            { en: 'library', jp: '図書館', pos: 'noun', example: { en: 'Study at the library.', jp: '図書館で勉強します。' } },
-
-            // Time & weather
-            { en: 'today', jp: '今日', pos: 'noun', example: { en: 'Today is Monday.', jp: '今日は月曜日です。' } },
-            { en: 'tomorrow', jp: '明日', pos: 'noun', example: { en: 'We meet tomorrow.', jp: '明日に会いましょう。' } },
-            { en: 'yesterday', jp: '昨日', pos: 'noun', example: { en: 'I was busy yesterday.', jp: '昨日は忙しかったです。' } },
-            { en: 'week', jp: '週', pos: 'noun', example: { en: 'I study every week.', jp: '毎週勉強します。' } },
-            { en: 'month', jp: '月', pos: 'noun', example: { en: 'This month is cold.', jp: '今月は寒いです。' } },
-            { en: 'year', jp: '年', pos: 'noun', example: { en: 'This year is hot.', jp: '今年は暑いです。' } },
-            { en: 'spring', jp: '春', pos: 'noun', example: { en: 'Spring is beautiful.', jp: '春は美しいです。' } },
-            { en: 'summer', jp: '夏', pos: 'noun', example: { en: 'Summer is hot.', jp: '夏は暑いです。' } },
-            { en: 'autumn', jp: '秋', pos: 'noun', example: { en: 'Autumn is cool.', jp: '秋は涼しいです。' } },
-            { en: 'winter', jp: '冬', pos: 'noun', example: { en: 'Winter is cold.', jp: '冬は寒いです。' } },
-            { en: 'sunny', jp: '晴れている', pos: 'adjective', example: { en: 'It is sunny today.', jp: '今日は晴れています。' } },
-            { en: 'rainy', jp: '雨', pos: 'adjective', example: { en: 'It is rainy today.', jp: '今日は雨です。' } },
-            { en: 'cloudy', jp: '曇り', pos: 'adjective', example: { en: 'It is cloudy.', jp: '曇っています。' } },
-            { en: 'windy', jp: '風が強い', pos: 'adjective', example: { en: 'It is windy.', jp: '風が強いです。' } },
-            { en: 'snowy', jp: '雪', pos: 'adjective', example: { en: 'It is snowy.', jp: '雪が降っています。' } },
-
-            // Adjectives
-            { en: 'good', jp: '良い', pos: 'adjective', example: { en: 'The book is good.', jp: 'その本は良いです。' } },
-            { en: 'bad', jp: '悪い', pos: 'adjective', example: { en: 'The food is bad.', jp: 'その食べ物は悪いです。' } },
-            { en: 'big', jp: '大きい', pos: 'adjective', example: { en: 'The house is big.', jp: 'その家は大きいです。' } },
-            { en: 'small', jp: '小さい', pos: 'adjective', example: { en: 'The cat is small.', jp: 'その猫は小さいです。' } },
-            { en: 'tall', jp: '高い', pos: 'adjective', example: { en: 'He is tall.', jp: '彼は背が高いです。' } },
-            { en: 'short', jp: '背が低い', pos: 'adjective', example: { en: 'She is short.', jp: '彼女は背が低いです。' } },
-            { en: 'long', jp: '長い', pos: 'adjective', example: { en: 'The road is long.', jp: 'その道は長いです。' } },
-            { en: 'fast', jp: '速い', pos: 'adjective', example: { en: 'The car is fast.', jp: 'その車は速いです。' } },
-            { en: 'slow', jp: '遅い', pos: 'adjective', example: { en: 'He is slow.', jp: '彼は遅いです。' } },
-            { en: 'hot', jp: '暑い', pos: 'adjective', example: { en: 'The tea is hot.', jp: 'そのお茶は熱いです。' } },
-            { en: 'cold', jp: '寒い', pos: 'adjective', example: { en: 'The water is cold.', jp: 'その水は冷たいです。' } },
-            { en: 'new', jp: '新しい', pos: 'adjective', example: { en: 'This is a new car.', jp: 'これは新しい車です。' } },
-            { en: 'old', jp: '古い', pos: 'adjective', example: { en: 'This is an old book.', jp: 'これは古い本です。' } },
-            { en: 'young', jp: '若い', pos: 'adjective', example: { en: 'She is young.', jp: '彼女は若いです。' } },
-            { en: 'easy', jp: '簡単', pos: 'adjective', example: { en: 'The test is easy.', jp: 'テストは簡単です。' } },
-            { en: 'hard', jp: '難しい', pos: 'adjective', example: { en: 'The question is hard.', jp: 'その質問は難しいです。' } },
-            { en: 'happy', jp: '幸せ', pos: 'adjective', example: { en: 'I am happy.', jp: '私は幸せです。' } },
-            { en: 'sad', jp: '悲しい', pos: 'adjective', example: { en: 'I am sad.', jp: '私は悲しいです。' } },
-            { en: 'busy', jp: '忙しい', pos: 'adjective', example: { en: 'I am busy.', jp: '私は忙しいです。' } },
-            { en: 'tired', jp: '疲れている', pos: 'adjective', example: { en: 'I am tired.', jp: '私は疲れています。' } },
-            { en: 'hungry', jp: 'お腹が空いている', pos: 'adjective', example: { en: 'I am hungry.', jp: 'お腹が空いています。' } },
-
-            // Prepositions
-            { en: 'at', jp: 'で', pos: 'preposition', example: { en: 'Meet me at 5.', jp: '5時に会いましょう。' } },
-            { en: 'in', jp: 'で', pos: 'preposition', example: { en: 'I live in Japan.', jp: '日本に住んでいます。' } },
-            { en: 'on', jp: 'の上に', pos: 'preposition', example: { en: 'The book is on the desk.', jp: '本は机の上にあります。' } },
-            { en: 'to', jp: 'へ', pos: 'preposition', example: { en: 'Go to school.', jp: '学校へ行きます。' } },
-            { en: 'from', jp: 'から', pos: 'preposition', example: { en: 'I am from Tokyo.', jp: '東京から来ました。' } },
-            { en: 'with', jp: 'と', pos: 'preposition', example: { en: 'I go with Tom.', jp: 'トムと行きます。' } },
-            { en: 'without', jp: 'なしで', pos: 'preposition', example: { en: 'I go without him.', jp: '彼なしで行きます。' } },
-
-            // Adverbs
-            { en: 'always', jp: 'いつも', pos: 'adverb', example: { en: 'I always study.', jp: '私はいつも勉強します。' } },
-            { en: 'never', jp: '決してない', pos: 'adverb', example: { en: 'I never eat meat.', jp: '私は決して肉を食べません。' } },
-            { en: 'often', jp: 'よく', pos: 'adverb', example: { en: 'I often go there.', jp: '私はよくそこに行きます。' } },
-            { en: 'sometimes', jp: '時々', pos: 'adverb', example: { en: 'I sometimes eat out.', jp: '時々外食します。' } },
-            { en: 'now', jp: '今', pos: 'adverb', example: { en: 'Do it now.', jp: '今それをしてください。' } },
-            { en: 'soon', jp: 'すぐ', pos: 'adverb', example: { en: 'See you soon.', jp: 'またすぐ会いましょう。' } },
-            { en: 'already', jp: 'すでに', pos: 'adverb', example: { en: 'I already finished.', jp: 'すでに終わりました。' } }
-        ];
-
+        // Load vocabulary data from JSON
+        let eiken5Vocab = [];
+        
+        async function loadVocabulary() {
+            try {
+                const response = await fetch('vocabulary-data/eiken5-500.json');
+                const data = await response.json();
+                
+                // Convert JSON structure to flat array
+                eiken5Vocab = [];
+                
+                // Helper to convert category arrays to flat vocab items
+                function addVocabItems(items, defaultPos = 'noun') {
+                    if (!items) return;
+                    items.forEach(item => {
+                        if (item.word && item.jp) {
+                            eiken5Vocab.push({
+                                en: item.word,
+                                jp: item.jp,
+                                pos: item.pos || defaultPos,
+                                example: item.examples && item.examples[0] 
+                                    ? { en: item.examples[0], jp: item.jp } 
+                                    : { en: item.word, jp: item.jp }
+                            });
+                        }
+                    });
+                }
+                
+                // Add words from all categories
+                if (data.categories) {
+                    // Verbs from JSON
+                    if (data.categories.verbs_top50) {
+                        data.categories.verbs_top50.forEach(item => {
+                            if (item.word) {
+                                eiken5Vocab.push({
+                                    en: item.word,
+                                    jp: item.jp,
+                                    pos: 'verb',
+                                    example: item.examples && item.examples[0]
+                                        ? { en: item.examples[0], jp: item.jp }
+                                        : { en: item.word, jp: item.jp }
+                                });
+                            }
+                        });
+                    }
+                    
+                    // Adjectives
+                    if (data.categories.adjectives_top50) {
+                        data.categories.adjectives_top50.forEach(item => {
+                            if (item.word) {
+                                eiken5Vocab.push({
+                                    en: item.word,
+                                    jp: item.jp,
+                                    pos: 'adjective',
+                                    example: item.examples && item.examples[0]
+                                        ? { en: item.examples[0], jp: item.jp }
+                                        : { en: item.word, jp: item.jp }
+                                });
+                            }
+                        });
+                    }
+                    
+                    // Nouns by category
+                    if (data.categories.nouns_by_category) {
+                        Object.values(data.categories.nouns_by_category).forEach(category => {
+                            category.forEach(item => {
+                                if (item.word) {
+                                    eiken5Vocab.push({
+                                        en: item.word,
+                                        jp: item.jp,
+                                        pos: 'noun',
+                                        example: { en: item.word, jp: item.jp }
+                                    });
+                                }
+                            });
+                        });
+                    }
+                    
+                    // Function words
+                    if (data.categories.function_words) {
+                        const funcWords = [
+                            ...data.categories.function_words.articles.map(w => ({ word: w, pos: 'article' })),
+                            ...data.categories.function_words.prepositions.map(w => ({ word: w, pos: 'preposition' })),
+                            ...data.categories.function_words.conjunctions.map(w => ({ word: w, pos: 'conjunction' })),
+                            ...data.categories.function_words.pronouns.map(w => ({ word: w, pos: 'pronoun' })),
+                            ...data.categories.function_words.interjections.map(w => ({ word: w, pos: 'interjection' }))
+                        ];
+                        
+                        funcWords.forEach(item => {
+                            eiken5Vocab.push({
+                                en: item.word,
+                                jp: '',
+                                pos: item.pos,
+                                example: { en: item.word, jp: '' }
+                            });
+                        });
+                    }
+                }
+                
+                // Update page title with actual count
+                document.title = `Eiken 5 Vocabulary List — ${eiken5Vocab.length} Words`;
+                
+                // Initialize UI now that data is loaded
+                initializeVocabularyUI();
+                
+            } catch (error) {
+                console.error('Failed to load vocabulary:', error);
+                alert('Failed to load vocabulary data');
+            }
+        }
+        
         // Initialize mastery tracking
         let masteredWords = JSON.parse(localStorage.getItem('vocabularyMastered') || '{}');
 
@@ -657,10 +611,23 @@
                 renderVocabulary(filtered);
             }
         }
+        
+        // Initialize UI after vocabulary is loaded
+        function initializeVocabularyUI() {
+            renderVocabulary(eiken5Vocab);
+            updateStats();
+            
+            // Mark mastered words
+            Object.keys(masteredWords).forEach(word => {
+                if (masteredWords[word]) {
+                    const card = document.querySelector(`.vocab-card[data-word="${word}"]`);
+                    if (card) card.classList.add('mastered');
+                }
+            });
+        }
 
-        // Initialize
-        renderVocabulary(eiken5Vocab);
-        updateStats();
+        // Initialize - load vocabulary data
+        loadVocabulary();
 
         // Say something
         function sayIt(msg) {
