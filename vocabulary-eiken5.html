@@ -399,6 +399,7 @@
                                     en: item.word,
                                     jp: item.jp,
                                     pos: 'verb',
+                                    emoji: item.emoji || '',
                                     example: item.examples && item.examples[0]
                                         ? { en: item.examples[0], jp: item.jp }
                                         : { en: item.word, jp: item.jp }
@@ -415,6 +416,7 @@
                                     en: item.word,
                                     jp: item.jp,
                                     pos: 'adjective',
+                                    emoji: item.emoji || '',
                                     example: item.examples && item.examples[0]
                                         ? { en: item.examples[0], jp: item.jp }
                                         : { en: item.word, jp: item.jp }
@@ -432,6 +434,7 @@
                                         en: item.word,
                                         jp: item.jp,
                                         pos: 'noun',
+                                        emoji: item.emoji || '',
                                         example: { en: item.word, jp: item.jp }
                                     });
                                 }
@@ -462,6 +465,11 @@
                 
                 // Update page title with actual count
                 document.title = `Eiken 5 Vocabulary List — ${eiken5Vocab.length} Words`;
+                // Also update the heading
+                const heading = document.querySelector('.header h1');
+                if (heading) {
+                    heading.textContent = `📚 Eiken 5 Vocabulary List — ${eiken5Vocab.length} Words`;
+                }
                 
                 // Initialize UI now that data is loaded
                 initializeVocabularyUI();
@@ -499,7 +507,7 @@
             grid.innerHTML = vocabList.map((word, index) => `
                 <div class="vocab-card" data-word="${word.en}" data-pos="${word.pos}">
                     <div class="card-header">
-                        <div class="english-word">${word.en}</div>
+                        <div class="english-word">${word.emoji ? word.emoji + ' ' : ''}${word.en}</div>
                         <div class="pos">${word.pos}</div>
                     </div>
                     <div class="pronunciation" onclick="speak('${word.en}')">
