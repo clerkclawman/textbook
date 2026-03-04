@@ -1,6 +1,6 @@
 #!/bin/bash
 # Push textbook changes to GitHub
-# Usage: push-textbook-changes.sh "Commit message"
+# Usage: push-textbook.sh "Commit message" [target-branch]
 
 set -e
 
@@ -13,14 +13,15 @@ if [ -z "$(git status --porcelain)" ]; then
     exit 0
 fi
 
-# Add all changes
+# Add and commit
 git add .
-
-# Commit with provided message or default
 MESSAGE="${1:-Update textbook}"
 git commit -m "$MESSAGE"
 
-# Push to GitHub
-git push origin main
+# Determine target branch (default: main, or use second argument)
+TARGET_BRANCH="${2:-main}"
 
-echo "✅ Changes pushed to GitHub"
+# Push to GitHub
+git push origin "$(git branch --show-current):$TARGET_BRANCH"
+
+echo "✅ Changes pushed to GitHub ($TARGET_BRANCH)"
