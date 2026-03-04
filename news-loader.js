@@ -57,17 +57,24 @@ async function loadNewsFile(filename) {
  */
 function parseJavaScriptNews(javascript) {
     try {
+        console.log("parseJavaScriptNews: Received", javascript.length, "chars");
+        
         // Extract title: title: "Text",
         const titleMatch = javascript.match(/title:\s*"([^"]+)"/);
         const title = titleMatch ? titleMatch[1] : 'News';
+        console.log("parseJavaScriptNews: Title =", title);
 
         // Extract content from template string: content: `...`
         const contentMatch = javascript.match(/content:\s*`([^`]*)`/s);
         const content = contentMatch ? contentMatch[1] : '';
+        console.log("parseJavaScriptNews: Content length =", content.length);
 
         if (title && content) {
+            console.log("parseJavaScriptNews: Success!");
             return [{ title, content }];
         }
+        
+        console.log("parseJavaScriptNews: Failed, returning null");
         return null;
     } catch (e) {
         console.warn('Failed to parse news data:', e);
