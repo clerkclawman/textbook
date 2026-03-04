@@ -79,10 +79,31 @@ cd /home/tony/.openclaw/workspace/textbook
 
 ## Content Guidelines
 
-### Target Audience
-- Adult students
-- Older teenagers (High School class)
-- Students interested in current events
+### File Format (Simple & Standard)
+
+Moneypenny's news files follow standard JavaScript array syntax:
+
+```javascript
+var news20260304 = [
+    {
+        title: "March 4, 2026: World News, Life & Random Thoughts",
+        content: `1. 🚨 English question here
+Japanese translation here
+
+2. 🤖 Second item
+日本語の翻訳`
+    }
+];
+```
+
+**Key points:**
+- Variable name: `newsYYYYMMDD` (must match filename)
+- Array format: Standard JavaScript `[...]`
+- Content in backticks: Allows multi-line text
+- Number each question: `1.`, `2.`, `3.`, etc.
+- Perfect for bilingual format (EN + JP on separate lines)
+
+**No special escaping needed** — just write naturally in the backticks.
 
 ### Recommended Topics
 - World news (politics, science, technology)
@@ -143,9 +164,35 @@ How it works:
 3. **Write content**: Add 10-20 bilingual questions based on news
 4. **Save**: File is automatically picked up by the textbook
 5. **Test**: Open textbook locally, select "News (Daily)" class
-6. **Done!** News auto-expires in 48 hours
+6. **Commit locally**: `git add news-YYYY-MM-DD.js && git commit -m "Add daily news"`
+7. **Push to GitHub**: Run `./push-textbook.sh "Add daily news: YYYY-MM-DD"`
+8. **Done!** News auto-expires in 48 hours
 
----
+### Pushing to GitHub
+
+**Moneypenny CAN:**
+- ✅ Create news files
+- ✅ Edit and update content
+- ✅ Commit changes locally
+
+**Moneypenny CANNOT:**
+- ❌ `git push` to GitHub (requires network access — intentionally restricted)
+
+**Solution: `push-textbook.sh` helper script**
+
+After committing locally, Moneypenny can run:
+```bash
+./push-textbook.sh "Add daily news: 2026-03-05"
+```
+
+This script:
+1. Adds all changes
+2. Commits with your message
+3. Pushes to GitHub
+
+**Or ask Actor:** Moneypenny tells Tony "News file ready for push" → Tony asks Actor → Actor pushes.
+
+
 
 ## Git Workflow
 
