@@ -1222,6 +1222,7 @@
 <script src='gold.js'></script>
         <script src='eiken7story.js'></script>
         <script src='eiken6story.js'></script>
+<script src='qa-loader.js'></script>
 <script src='eiken5story.js'></script>
 <script src='eiken3.js'></script>
 <script src='eiken3questions.js'></script>
@@ -2731,11 +2732,17 @@
             console.log('News articles:', newsData.length + ' entries');
             console.log('Eiken5 stories:', lessonsData['Eiken5'] ? lessonsData['Eiken5'].length + ' stories' : 'NOT FOUND');
 
-            // Add separate questions mapping
-            lessonsData._questions = {
-                'Eiken3': eiken3questions,
-                'Eiken5': qa5
-            };
+            // Load Q&A questions from qa-loader
+            loadAllQA().then(qaData => {
+                lessonsData._questions = qaData;
+                console.log('Q&A loaded for levels:', Object.keys(qaData));
+            }).catch(error => {
+                console.error('Failed to load Q&A:', error);
+                lessonsData._questions = {
+                    'Eiken3': eiken3questions,
+                    'Eiken5': qa5
+                };
+            });
         });
     }
 
