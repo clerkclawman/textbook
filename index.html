@@ -2775,15 +2775,22 @@
             // Load Q&A questions from qa-loader (with fallback)
             if (typeof loadAllQA === 'function') {
                 loadAllQA().then(qaData => {
-                lessonsData._questions = qaData;
-                console.log('Q&A loaded for levels:', Object.keys(qaData));
-            }).catch(error => {
-                console.error('Failed to load Q&A:', error);
+                    lessonsData._questions = qaData;
+                    console.log('Q&A loaded for levels:', Object.keys(qaData));
+                }).catch(error => {
+                    console.error('Failed to load Q&A:', error);
+                    lessonsData._questions = {
+                        'Eiken3': eiken3questions,
+                        'Eiken5': qa5
+                    };
+                });
+            } else {
+                console.warn('Using fallback for Q&A');
                 lessonsData._questions = {
                     'Eiken3': eiken3questions,
                     'Eiken5': qa5
                 };
-            });
+            }
         });
     }
 
