@@ -12,7 +12,7 @@ const newsCache = new Map();
 /**
  * Get YYYY-MM-DD format for a date
  */
-function formatDate(date) {
+function formatDateNews(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
@@ -87,7 +87,7 @@ async function getRecentNews() {
     for (let i = 0; i < 2; i++) {
         const date = new Date(now);
         date.setDate(date.getDate() - i);
-        const filename = formatDate(date);
+        const filename = formatDateNews(date);
         const newsDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
         const ageHours = (now - newsDate) / (1000 * 60 * 60);
 

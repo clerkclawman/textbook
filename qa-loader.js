@@ -13,7 +13,7 @@ const EIKEN_LEVELS = ['7', '6', '5', '4', '3', '2', '1', 'pre2', 'pre2plus', 'pr
 /**
  * Get YYYY-MM-DD format for a date
  */
-function formatDate(date) {
+function formatDateQA(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
@@ -24,7 +24,7 @@ function formatDate(date) {
  * Get Q&A filename for a level and date
  */
 function getQAFilename(level, date) {
-    const dateStr = formatDate(date);
+    const dateStr = formatDateQA(date);
     return `eiken${level}qa-${dateStr}.js`;
 }
 
