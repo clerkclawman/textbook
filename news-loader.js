@@ -44,6 +44,9 @@ async function loadNewsFile(filename) {
 
         if (newsData) {
             newsCache.set(filename, newsData);
+            console.log(`Loaded news from ${filename}:`, newsData.length, 'articles');
+        } else {
+            console.warn(`No news data found in ${filename}`);
         }
         return newsData;
     } catch (error) {
@@ -56,16 +59,23 @@ async function loadNewsFile(filename) {
  * Parse JavaScript news file to extract data
  */
 function parseJavaScriptNews(javascript) {
-    // Try to match "var news20260304 = [...]" or "const news20260304 = [...]"
-    const match = javascript.match(/(?:var|const)\s+news\d{8}\s*=\s*(\[.+\])/s);
-    if (match) {
-        try {
-            return JSON.parse(match[1].replace(/'/g, '"'));
-        } catch (e) {
-            console.warn('Failed to parse news data:', e);
+    try {
+        // Extract title: title: "Text",
+        const titleMatch = javascript.match(/title:\s*"([^"]+)"/);
+        const title = titleMatch ? titleMatch[1] : 'News';
+
+        // Extract content from template string: content: `...`
+        const contentMatch = javascript.match(/content:\s*`([^`]*)`/s);
+        const content = contentMatch ? contentMatch[1] : '';
+
+        if (title && content) {
+            return [{ title, content }];
         }
+        return null;
+    } catch (e) {
+        console.warn('Failed to parse news data:', e);
+        return null;
     }
-    return null;
 }
 
 /**
@@ -75,18 +85,26 @@ async function getRecentNews() {
     const availableNews = [];
     const now = new Date();
 
+    console.log('Checking for recent news files...');
     // Check today and yesterday
     for (let i = 0; i < 2; i++) {
         const date = new Date(now);
         date.setDate(date.getDate() - i);
         const filename = formatDate(date);
         const newsDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+        const ageHours = (now - newsDate) / (1000 * 60 * 60);
 
+        console.log(`Checking ${filename} (age: ${ageHours.toFixed(1)}h)`);
         if (isNewsFresh(newsDate)) {
             const news = await loadNewsFile(filename);
             if (news && news.length > 0) {
                 availableNews.push({ date: newsDate, filename, news });
+                console.log(`✓ Found ${news.length} articles in ${filename}`);
+            } else {
+                console.log(`✗ No valid news in ${filename}`);
             }
+        } else {
+            console.log(`✗ ${filename} is older than 48 hours`);
         }
     }
 
