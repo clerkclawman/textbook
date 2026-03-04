@@ -1395,13 +1395,30 @@
     function populateStorySelector(cls) {
         storySelector.innerHTML = '<option value="">Select Story</option>';
 
-        console.log('populateStorySelector called with:', cls);
-        console.log('lessonsData[cls]:', lessonsData[cls]);
-        console.log('lessonsData[cls] type:', typeof lessonsData[cls]);
-        console.log('lessonsData[cls] is array?', Array.isArray(lessonsData[cls]));
+        console.log('=== POPULATE STORY SELECTOR ===');
+        console.log('Class:', cls);
+        console.log('lessonsData keys:', Object.keys(lessonsData));
 
-        if (!lessonsData[cls]) {
-            console.error('lessonsData[' + cls + '] is undefined');
+        if (!lessonsData || !cls) {
+            console.error('lessonsData or class is missing');
+            return;
+        }
+
+        const classData = lessonsData[cls];
+        console.log('classData:', classData);
+        console.log('classData type:', typeof classData);
+        console.log('classData is array?', Array.isArray(classData));
+        console.log('classData length:', Array.isArray(classData) ? classData.length : 'N/A');
+
+        if (!classData) {
+            console.error('lessonsData[' + cls + '] is undefined or null');
+            storySelector.innerHTML = '<option value="">No stories available</option>';
+            return;
+        }
+
+        if (!Array.isArray(classData)) {
+            console.error('lessonsData[' + cls + '] is not an array!', classData);
+            storySelector.innerHTML = '<option value="">Error: data format incorrect</option>';
             return;
         }
 
@@ -1414,28 +1431,28 @@
             option.textContent = `QA Questions`;
             storySelector.appendChild(option);
             optionIndex++;
-            console.log('Added questions option');
         }
 
         // lessonsData[cls] is now directly an array of story objects
-        if (Array.isArray(lessonsData[cls])) {
-            console.log('Processing ' + lessonsData[cls].length + ' stories');
-            lessonsData[cls].forEach((story, index) => {
-                const option = document.createElement('option');
+        console.log('Processing', classData.length, 'stories');
+        classData.forEach((story, index) => {
+            if (story && story.title) {
+                cons' + 't option = document.createElement("' + 'option' + '");
                 option.value = optionIndex;
-                // Use the title directly (it already has the number)
                 option.textContent = story.title;
                 storySelector.appendChild(option);
                 optionIndex++;
-            });
-        }
+            } else {
+                console.warn('Invalid story at index', index, ':', story);
+            }
+        });
 
+        console.log('Added', optionIndex, 'options to story selector');
         storySelector.disabled = false;
         storySelector.focus();
     }
 
-    // ====================
-    // READING MODE FUNCTIONS
+    // ==================== // READING MODE FUNCTIONS
     // ====================
     function enterReadingMode(cls) {
         if (mainContainer) mainContainer.style.display = 'none';
