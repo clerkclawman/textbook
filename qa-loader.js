@@ -44,9 +44,6 @@ async function loadQAFile(filename) {
 
         if (qaData) {
             qaCache.set(filename, qaData);
-            console.log(`Loaded Q&A from ${filename}:`, qaData.length, 'questions');
-        } else {
-            console.warn(`No Q&A data found in ${filename}`);
         }
         return qaData;
     } catch (error) {
@@ -89,24 +86,18 @@ async function getRecentQA(level) {
         'pre1': 'Pre-1'
     };
 
-    console.log(`Checking for recent Q&A files for Eiken ${levelMap[level] || level}...`);
-
     // Check up to 7 days back (weekly rotation)
     for (let i = 0; i < 7; i++) {
         const date = new Date(now);
         date.setDate(date.getDate() - i);
         const filename = getQAFilename(level, date);
 
-        console.log(`Checking ${filename} (${formatDate(date)})`);
-
         const qa = await loadQAFile(filename);
         if (qa && qa.length > 0) {
-            console.log(`✓ Found ${qa[0].content.split('\n\n').length} questions in ${filename}`);
             return { date, filename, qa };
         }
     }
 
-    console.log(`✗ No Q&A found for Eiken ${levelMap[level] || level} in the last 7 days`);
     return null;
 }
 

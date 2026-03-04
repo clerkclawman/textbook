@@ -44,9 +44,6 @@ async function loadNewsFile(filename) {
 
         if (newsData) {
             newsCache.set(filename, newsData);
-            console.log(`Loaded news from ${filename}:`, newsData.length, 'articles');
-        } else {
-            console.warn(`No news data found in ${filename}`);
         }
         return newsData;
     } catch (error) {
