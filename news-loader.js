@@ -74,7 +74,19 @@ function parseJavaScriptNews(javascript) {
             return [{ title, content }];
         }
         
-        console.log("parseJavaScriptNews: Failed, returning null");
+        console.log("parseJavaScriptNews: Strict parsing failed, trying fallback extraction...");
+        
+        // Fallback: try to extract var declaration content
+        const fallbackMatch = javascript.match(/var\s+news\d{8}\s*=\s*\[\s*\{\s*title:\s*"([^"]+)",\s*content:\s*`([^`]*)`/s);
+        if (fallbackMatch) {
+            console.log("parseJavaScriptNews: Fallback extraction worked!");
+            return [{
+                title: fallbackMatch[1],
+                content: fallbackMatch[2]
+            }];
+        }
+        
+        console.log("parseJavaScriptNews: Fallback also failed");
         return null;
     } catch (e) {
         console.warn('Failed to parse news data:', e);
