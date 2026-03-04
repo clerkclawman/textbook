@@ -1437,7 +1437,7 @@
         console.log('Processing', classData.length, 'stories');
         classData.forEach((story, index) => {
             if (story && story.title) {
-                cons' + 't option = document.createElement("' + 'option' + '");
+                const option = document.createElement("option");
                 option.value = optionIndex;
                 option.textContent = story.title;
                 storySelector.appendChild(option);
