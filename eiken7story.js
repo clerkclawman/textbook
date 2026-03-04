@@ -1,4 +1,4 @@
-var eiken7fun = [
+var eiken7story = [
   {
     "title": "1. Week 1 - Cat in a Box",
     "content": "😺 😺 I have a cat. 私は猫を飼っています。\n\n\n\n✨ 😸 Her name is Mochi. 彼女の名前はチョコです。\n\n\n\n✨ 📦 One day Mochi sees a box. ある日チョコは箱を見つけます。\n\n\n\n✨ 🙀 She jumps in the box! 彼女は箱の中に飛び込みます！\n\n\n\n😴 😴 She sleeps in the box. 彼女は箱の中で寝ます。\n\n\n\n😴 ⏰ Mochi sleeps for hours. チョコは何時間も寝ています。\n\n\n\n✨ 😵 She cannot get out! 彼女は出られません！\n\n\n\n✨ 😿 Mochi meows for help. チョコは助けを求めてニャーと鳴きます。\n\n\n\n✨ 💪 I help Mochi get out. 私はチョコを助けて出します。\n\n\n\n😊 😊 Mochi is happy again! チョコはまた幸せです！\n\n\n\n😺 Do you have a cat? あなたは猫を飼っていますか？\n\n\n\n😺 What is your cat's name? あなたの猫の名前は何ですか？\n\n\n\n✨ Do you like boxes? 箱は好きですか？\n\n\n\n✨ What do you do when you need help? 助けが必要なときはどうしますか？\n\n\n\n👫 Do you help your friends? 友達を手伝いますか？\n\n\n\n😴 Where do you like to sleep? どこで寝るのが好きですか？\n\n\n\n😺 What sound does your cat make? あなたの猫はどんな音を出しますか？\n\n\n\n🏠 Do you stay at home sometimes? 時々家にいますか？\n\n\n\n😊 Are you happy most of the time? 多くの時間、幸せですか？\n\n\n\n👨‍👩‍👦 Does your family have pets? あなたの家族はペットを飼っていますか？"
