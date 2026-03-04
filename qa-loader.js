@@ -58,11 +58,12 @@ async function loadQAFile(filename) {
 function parseJavaScriptQA(javascript) {
     try {
         // Extract title: title: "Text",
-        const titleMatch = javascript.match(/title:\s*"([^"]+)"/);
-        const title = titleMatch ? titleMatch[1] : 'Q&A';
+        const jsonTitleMatch = javascript.match(/"title":\s*"([^"]+)"/);
+        const plainTitleMatch = javascript.match(/title:\s*"([^"]+)"/);
+        const title = jsonTitleMatch ? jsonTitleMatch[1] : (plainTitleMatch ? plainTitleMatch[1] : null);
 
         // Extract content from template string: content: `...`
-        const contentMatch = javascript.match(/content:\s*`([^`]*)`/s);
+        const contentMatch = javascript.match(/(?:content:\s*|"content":\s*)`([^`]*)`/s);
         const content = contentMatch ? contentMatch[1] : '';
 
         if (title && content) {
