@@ -2702,7 +2702,30 @@
     function loadLessonsData() {
         return Promise.resolve().then(async () => {
             // Load news dynamically (handles 48-hour auto-deletion)
-            const newsData = await getCombinedNews();
+            let newsData;
+
+            try {
+                if (typeof getCombinedNews === 'function') {
+                    newsData = await getCombinedNews();
+                } else {
+                    console.warn('getCombinedNews not available - using fallback news');
+                    newsData = [{
+                        title: "📰 News",
+                        content: "News loading failed. Please refresh the page."
+                    }];
+                }
+            } catch (error) {
+                console.error('Failed to load news:', error);
+                newsData = [{
+                    title: "📰 News",
+                    content: "News loading failed. Please refresh the page."
+                }];
+            }
+
+            // Fallback for Q&A loader
+            if (typeof loadAllQA !== 'function') {
+                console.warn('loadAllQA not available, checking later');
+            }
 
             lessonsData = {
                 'Bronze': bronzeStories,
@@ -2732,8 +2755,9 @@
             console.log('News articles:', newsData.length + ' entries');
             console.log('Eiken5 stories:', lessonsData['Eiken5'] ? lessonsData['Eiken5'].length + ' stories' : 'NOT FOUND');
 
-            // Load Q&A questions from qa-loader
-            loadAllQA().then(qaData => {
+            // Load Q&A questions from qa-loader (with fallback)
+            if (typeof loadAllQA === 'function') {
+                loadAllQA().then(qaData => {
                 lessonsData._questions = qaData;
                 console.log('Q&A loaded for levels:', Object.keys(qaData));
             }).catch(error => {
