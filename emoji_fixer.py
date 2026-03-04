@@ -1,0 +1,384 @@
+#!/usr/bin/env python3
+# Emoji fixer for Eiken 7 stories
+# Ensures each sentence has a unique, relevant emoji
+
+import re
+import json
+
+# Comprehensive emoji library for Eiken 7 (8-year-olds)
+EMOJI_LIBRARY = {
+    # Animals
+    'cat': ['😺', '😸', '😹', '😻', '🐱', '🐈', '🐈‍⬛'],
+    'dog': ['🐶', '🐕', '🐕‍🦺', '🐩', '🦮', '🦯'],
+    'bird': ['🐦', '🐧', '🕊️', '🦅', '🦆', '🦢', '🦜', '🦉'],
+    'fish': ['🐟', '🐠', '🐡', '🐳', '🐋', '🦈', '🦐', '🦑'],
+    'rabbit': ['🐰', '🐇'],
+    'mouse': ['🐭'],
+    'hamster': ['🐹'],
+    'bear': ['🐻', '🐻‍❄️', '🐼'],
+    'pig': ['🐷', '🐽'],
+    'cow': ['🐮'],
+    'bull': ['🐂'],
+    'buffalo': ['🐃'],
+    'deer': ['🦌', '🦌🦫'],
+    'fox': ['🦊'],
+    'wolf': ['🐺'],
+    'lion': ['🦁'],
+    'tiger': ['🐯'],
+    'leopard': ['🐆'],
+    'horse': ['🐎', '🐴', '🦄', '🦓'],
+    'zebra': ['🦓'],
+    'elephant': ['🐘'],
+    'rhino': ['🦏'],
+    'hippo': ['🦛'],
+    'giraffe': ['🦒'],
+    'camel': ['🐪'],
+    'llama': ['🦙'],
+    'kangaroo': ['🦘'],
+    'koala': ['🐨'],
+    'panda': ['🐼'],
+    'sloth': ['🦥'],
+    'otter': ['🦦'],
+    'raccoon': ['🦝'],
+    'beaver': ['🦫'],
+    'skunk': ['🦨'],
+    'fox': ['🦊'],
+    'duck': ['🦆'],
+    'goose': ['🦢'],
+    'chicken': ['🐔', '🐣', '🐤', '🐥'],
+    'peacock': ['🦚'],
+    'owl': ['🦉'],
+    'frog': ['🐸'],
+    'turtle': ['🐢'],
+    'snake': ['🐍'],
+    'lizard': ['🦎'],
+    'dinosaur': ['🦕', '🦖'],
+    'dragon': ['🐉'],
+    'unicorn': ['🦄'],
+    'bug': ['🐜', '🐛', '🦗', '🕷️', '🦂', '🐞', '🦂'],
+    'butterfly': ['🦋'],
+    'bee': ['🐝'],
+    'ant': ['🐜'],
+    'snail': ['🐌'],
+    'worm': ['🪱'],
+    'crab': ['🦀', '🦞'],
+    'shrimp': ['🦐'],
+    'squid': ['🦑'],
+    'shark': ['🦈'],
+    'whale': ['🐳', '🐋'],
+    'dolphin': ['🐬'],
+    'seal': ['🦭'],
+    'octopus': ['🐙'],
+    'shell': ['🐚', '🐚'],
+    'starfish': ['⭐'],
+    'coral': ['🪸'],
+
+    # Family & People
+    'baby': ['👶', '👧', '🧒', '👦', '🧑'],
+    'child': ['👦', '👧', '🧒', '🧑', '👶'],
+    'boy': ['👦'],
+    'girl': ['👧'],
+    'father': ['👨', '👨‍👦', '👨‍👧', '👨‍👦‍👦', '👨‍👧‍👦', '👨‍👧‍👧', '👨‍👩', '👨‍👩‍👦'],
+    'mother': ['👩', '👩‍👦', '👩‍👧', '👩‍👦‍👦', '👩‍👧‍👦', '👩‍👧‍👧', '👨‍👩', '👨‍👩‍👦'],
+    'brother': ['👦'],
+    'sister': ['👧'],
+    'family': ['👨‍👩‍👦', '👨‍👩‍👧', '👨‍👨‍👦', '👩‍👧', '👨‍👦', '👫', '👭', '🥰', '💑'],
+    'grandma': ['👵'],
+    'grandpa': ['👴'],
+    'friend': ['👫', '👭', '👬'],
+    'teacher': ['👩‍🏫', '👨‍🏫'],
+    'student': ['👨‍🎓', '👩‍🎓'],
+    'doctor': ['👨‍⚕️', '👩‍⚕️'],
+    'police': ['👮'],
+    'firefighter': ['👨‍🚒', '👩‍🚒'],
+    'clown': ['🤡'],
+
+    # Food
+    'apple': ['🍎', '🍏'],
+    'banana': ['🍌'],
+    'grapes': ['🍇'],
+    'melon': ['🍈', '🍉'],
+    'peach': ['🍑'],
+    'cherry': ['🍒'],
+    'strawberry': ['🍓'],
+    'orange': ['🍊'],
+    'lemon': ['🍋'],
+    'pineapple': ['🍍'],
+    'kiwi': ['🥝'],
+    'tomato': ['🍅'],
+    'carrot': ['🥕'],
+    'corn': ['🌽'],
+    'potato': ['🥔'],
+    'sweet potato': ['🍠'],
+    'bread': ['🍞', '🥐'],
+    'rice': ['🍚', '🍙', '🍱'],
+    'noodle': ['🍜'],
+    'pasta': ['🍝', '🍝'],
+    'pizza': ['🍕'],
+    'burger': ['🍔'],
+    'sandwich': ['🥪'],
+    'cheese': ['🧀'],
+    'meat': ['🥩', '🥩'],
+    'chicken': ['🍗'],
+    'egg': ['🥚'],
+    'milk': ['🥛'],
+    'water': ['💧', '🚰'],
+    'juice': ['🧃', '🥤'],
+    'tea': ['🍵'],
+    'coffee': ['☕', '☕'],
+    'soup': ['🍲'],
+    'salad': ['🥗'],
+    'cake': ['🍰', '🧁'],
+    'cookie': ['🍪', '🍪'],
+    'chocolate': ['🍫'],
+    'candy': ['🍬', '🍭'],
+    'ice cream': ['🍦', '🍦', '🍨'],
+    'donut': ['🍩'],
+    'pie': ['🥧'],
+    'cherry': ['🍒'],
+    'grapes': ['🍇'],
+    'banana': ['🍌'],
+    'lemon': ['🍋'],
+    'strawberry': ['🍓'],
+    'watermelon': ['🍉'],
+    'tangerine': ['🍊'],
+    'hot pepper': ['🌶️'],
+    'salt': ['🧂'],
+    'spice': ['🧂'],
+    'breakfast': ['🍳'],
+    'lunch': ['🍱', '🍛'],
+    'dinner': ['🍽', '🍲'],
+    'snack': ['🍿', '🍿'],
+
+    # Nature & Weather
+    'sun': ['☀️', '🌅', '🌄', '🌞'],
+    'moon': ['🌙', '🌕', '🌖', '🌗', '🌘', '🌑'],
+    'star': ['⭐', '🌟', '✨', '💫'],
+    'rain': ['🌧', '☔', '🌦', '🌂'],
+    'snow': ['❄️', '☃️', '⛄', '🏔', '🏂', '🎿'],
+    'wind': ['🌬', '🍃', '💨', '🌪'],
+    'storm': ['⛈', '⛈', '🌪'],
+    'rainbow': ['🌈'],
+    'cloud': ['☁️', '⛅', '⛈', '🌩'],
+    'lightning': ['⚡', '🌩'],
+    'thunder': ['⛈'],
+    'fog': ['🌫'],
+    'temperature': ['🌡', '❄️', '🔥'],
+    'hot': ['🥵', '☀️', '🔥'],
+    'cold': ['🥶', '❄️', '️⛄'],
+    'sky': ['🌌', '🎑', '🏞', '🌅', '☀️', '🌙'],
+    'tree': ['🌳', '🌲', '🌴', '🌵'],
+    'flower': ['🌸', '🌺', '🌻', '🌼', '🌷', '💐', '🥀', '🌹'],
+    'rose': ['🌹', '🌹'],
+    'sunflower': ['🌻', '🌻'],
+    'tulip': ['🌷', '🌷'],
+    'leaf': ['🍂', '🍁', '🌿'],
+    'grass': ['🌱', '🌿'],
+    'forest': ['🌲', '🌳', '🏞'],
+    'mountain': ['🏔', '⛰', '🏕', '🏔️'],
+    'valley': ['🏞️'],
+    'cave': ['🗻'],
+    'river': ['🏞', '🌊', '🚣'],
+    'lake': ['🏞', '💧', '🚣'],
+    'sea': ['🌊', '🏊'],
+    'ocean': ['🌊', '🌊', '🏊'],
+    'waterfall': ['🌊'],
+    'fire': ['🔥', '🚒', '🕯'],
+    'earth': ['🌍', '🌎'],
+    'season': ['🌸', '☀️', '🍂', '❄️'],
+
+    # Places
+    'home': ['🏠', '🏢', '🏭', '🏚', '🏘'],
+    'house': ['🏠', '🏘'],
+    'school': ['🏫', '🏫'],
+    'hospital': ['🏥'],
+    'library': ['📚'],
+    'museum': ['🏛'],
+    'church': ['⛪'],
+    'park': ['🌳', '🌿', '🏞'],
+    'playground': ['🏞', '🎠', '🎡'],
+    'zoo': ['🦁', '🐯', '🐘', '🐼'],
+    'circus': ['🎪', '🤹'],
+    'market': ['🏪', '🛒'],
+    'shop': ['🏪', '🏬', '🏪'],
+    'store': ['🏪', '🏬'],
+    'restaurant': ['🍽️', '🥘'],
+    'cafe': ['☕', '⚡'],
+    'hotel': ['🏨'],
+    'city': ['🏙', '🏢', '🏯'],
+    'village': ['🏘', '🏞'],
+    'countryside': ['🏞', '🌳'],
+    'beach': ['🏖', '🏝', '🌊'],
+    'mountain': ['🏔', '⛰', '🏕'],
+
+    # Activities
+    'sport': ['⚽', '🏀', '🏈', '⚾', '🎾', '🏐', '🏉'],
+    'soccer': ['⚽'],
+    'basketball': ['🏀'],
+    'baseball': ['⚾'],
+    'tennis': ['🎾'],
+    'swim': ['🏊', '🏊‍♂️', '🏊‍♀️', '🏊'],
+    'run': ['🏃', '🏃‍♂️', '🏃‍♀️'],
+    'walk': ['🚶', '🚶‍♂️', '🚶‍♀️'],
+    'jump': ['🏃', '🤸', '🦘'],
+    'dance': ['💃', '🕺'],
+    'sing': ['🎤', '🎵', '🎶'],
+    'music': ['🎵', '🎶', '🎸', '🎹', '🎷', '🎺', '🪕'],
+    'draw': ['🎨', '🖍️', '🖌'],
+    'read': ['📖', '📚'],
+    'write': ['✍️', '✏️', '📝'],
+    'study': ['📚', '📝'],
+    'learn': ['📚', '🎓'],
+    'play': ['🎮', '🎲', '🎯', '🎹', '🎨'],
+    'game': ['🎮', '🎲', '🎯', '🃏', '🀄'],
+    'birthday': ['🎂', '🎁', '🎉'],
+    'christmas': ['🎄', '🎅', '🎁'],
+    'party': ['🎉', '🥳', '🎊'],
+    'festival': ['🎉', '🎊', '🏮'],
+    'carnival': ['🎠', '🎡', '🎪'],
+    'gift': ['🎁', '🎀', '🎀', '🧧', '🌈'],
+    'card': ['💌', '💳'],
+    'balloon': ['🎈', '🎈', '🎈'],
+    'kite': ['🪁'],
+    'bicycle': ['🚲', '🚲'],
+    'car': ['🚗', '🚙', '🚕', '🚙'],
+    'bus': ['🚌', '🚏'],
+    'train': ['🚂', '🚆', '🚇', '🚈'],
+    'plane': ['✈️', '✈️', '✈️'],
+    'boat': ['⛵', '🚤', '🛳', '🚢'],
+    'rocket': ['🚀'],
+    'ufo': ['🛸'],
+    'helicopter': ['🚁'],
+    'ship': ['🚢', '🛳'],
+    'submarine': ['🚢'],
+    'fireworks': ['🎆', '🎇', '✨'],
+    'magic': ['🎩', '🪄', '✨', '🎰'],
+    'trick': ['🎩', '🃏', '🎴'],
+
+    # Objects
+    'book': ['📖', '📚', '📓', '📒', '📕', '📗', '📘', '📙'],
+    'pen': ['🖊', '✍️', '✏️', '📝'],
+    'pencil': ['✏️', '🖊'],
+    'paper': ['📄', '📃'],
+    'scissors': ['✂️', '🖊'],
+    'ruler': ['📏'],
+    'eraser': ['🧽'],
+    'chair': ['🪑', '🛋', '💺'],
+    'table': ['🪑', '🍽', '🍷'],
+    'bed': ['🛏', '🛌'],
+    'desk': ['✏️', '💻'],
+    'lamp': ['💡', '🔦'],
+    'clock': ['⏰', '⌚', '🕰'],
+    'watch': ['⌚', '🕰'],
+    'phone': ['📱', '☎️', '📞'],
+    'computer': ['💻', '🖥'],
+    'television': ['📺', '📽'],
+    'camera': ['📷', '📸'],
+    'radio': ['📻'],
+    'music': ['🎵', '🎶', '🎸', '🎹', '🎷'],
+    'instrument': ['🎹', '🎸', '🎺', '🎷', '🪕', '🎻'],
+    'piano': ['🎹', '🎹'],
+    'guitar': ['🎸', '🎸'],
+    'drum': ['🥁', '🥁'],
+    'violin': ['🎻'],
+    'flute': ['🪈'],
+    'trumpet': ['🎺'],
+    'shoe': ['👟', '👟'],
+    'hat': ['🎩', '⛑', '👑', '👒', '🧢', '🎓', '💂', '🥽', '🪖'],
+    'shirt': ['👕', '🧥'],
+    'pants': ['👖'],
+    'dress': ['👗'],
+    'skirt': ['👗'],
+    'coat': ['🧥', '🧣'],
+    'jacket': ['🧥'],
+    'glove': ['🧤'],
+    'scarf': ['🧣'],
+    'bag': ['👜', '🎒', '🎒', '💼', '👜'],
+    'box': ['📦', '🎁', '📮'],
+    'key': ['🔑', '🗝', '🗝'],
+    'door': ['🚪'],
+    'window': ['🪟'],
+    'wall': ['🧱'],
+    'floor': ['🏠', '🏢'],
+    'roof': ['🏠', '🏛'],
+
+    # Colors
+    'red': ['❤️', '🔴', '🟥', '❤️', '💋', '🎈', '🚩'],
+    'orange': ['🧡', '🟠', '🟠', '🍊', '🎃', '🎃'],
+    'yellow': ['💛', '🟡', '🟡', '💛', '💛'],
+    'green': ['💚', '🟢', '🟢'],
+    'blue': ['💙', '🔵', '🟦'],
+    'purple': ['💜', '🟣'],
+    'pink': ['💗', '🩷', '🌸', '🌷'],
+    'black': ['🖤', '⬛', '⚫', '🏴'],
+    'white': ['🤍', '⬜', '🤝'],
+    'gray': ['🧔', '🩶', '🩶'],
+    'brown': ['🤎', '🟫'],
+    'colorful': ['🌈', '🟥🟧🟨', '🎨'],
+
+    # Emotions & Expressions
+    'happy': ['😊', '😄', '😁', '🥰', '😍', '🤩'],
+    'sad': ['😢', '😭', '😿', '😔'],
+    'angry': ['😠', '😡', '🤬'],
+    'scared': ['😨', '😱', '😰', '😶'],
+    'surprised': ['😲', '😮', '😯'],
+    'laugh': ['😂', '🤣', '😆', '😄'],
+    'love': ['❤️', '💕', '💖', '💗', '💘', '❤', '🥰', '😍'],
+    'like': ['👍', '🤙', '🤘', '👌'],
+    'dislike': ['👎']
+}
+
+def get_relevant_emoji(text):
+    """Get a relevant emoji based on text content"""
+    text_lower = text.lower()
+
+    # Check for keywords
+    for keyword, emojis in EMOJI_LIBRARY.items():
+        if keyword in text_lower:
+            # Cycle through emoji options to avoid repetition
+            if not hasattr(get_relevant_emoji, 'emoji_indices'):
+                get_relevant_emoji.emoji_indices = {}
+            if keyword not in get_relevant_emoji.emoji_indices:
+                get_relevant_emoji.emoji_indices[keyword] = 0
+
+            emoji_index = get_relevant_emoji.emoji_indices[keyword]
+            get_relevant_emoji.emoji_indices[keyword] = (emoji_index + 1) % len(emojis)
+
+            return emojis[emoji_index]
+
+    # Default random emoji if no keyword match
+    default_emojis = ['🌟', '✨', '⭐', '💫', '🎯', '🏆']
+    if not hasattr(get_relevant_emoji, 'default_index'):
+        get_relevant_emoji.default_index = 0
+    else:
+        get_relevant_emoji.default_index = (get_relevant_emoji.default_index + 1) % len(default_emojis)
+
+    return default_emojis[get_relevant_emoji.default_index]
+
+def fix_story_emojis(story):
+    """Fix emojis for a single story"""
+    lines = story['content'].split('\n')
+    fixed_lines = []
+
+    for line in lines:
+        if line.strip():  # Don't fix empty lines
+            # Check if line already has emoji at start
+            if line[0] in '😃😄😁😆😅🤣😂🙂🙃😉😊😇🥰😍🤩😘😗😙😚😋😛😜🝪🝨🤑🤗🤭🤫🤔🤐🤨😐😑😶😏😒🙄😬🤥😶‍🌫😴😪😵🥴😷🤒🤕🤧🥵🥶🥴😶‍🌫😶😶😶🤐😲😰😨😥😢😭😱😖😣😞😓😩😫🥺😤😡😠🤬😈👿💀☠💩🤡👹👺🤧💆💇🛀🧊☠😵‍💫🥵🚑💉🤮🚰💈💊🦠🧼🧽🗑🧰🎊🎉🎈🎁🎀🎗🏆🥇🥈🥉🏅🥇⚽🥎🏎🎲🏏👑👑🏢🏬🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰🏳🏤🏵🏸🏺🏻🏼🏽🏾🏿🗺🗿🗾🌍🌏🌐🌎🌏🌏🌌🎑🗾🛕🌋⛩':
+                try:
+                    # Extract emoji current using
+                    existing_emoji, rest_of_line = line[0], line[1:]
+                    # Keep it if it exists
+                    fixed_lines.append(line)
+                except IndexError:
+                    fixed_lines.append(get_relevant_emoji(rest_of_line) + ' ' + rest_of_line.lstrip())
+            else:
+                # Add relevant emoji if none exists
+                fixed_lines.append(get_relevant_emoji(line) + ' ' + line)
+        else:
+            fixed_lines.append(line)  # Keep empty lines
+
+    story['content'] = '\n\n'.join(fixed_lines)
+    return story
+
+print("Emoji fixer loaded with " + str(len(EMOJI_LIBRARY)) + " keyword categories")
+print("Fixes stories by matching keywords to relevant emojis")
