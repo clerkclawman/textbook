@@ -134,3 +134,10 @@ async function getCombinedNews() {
 
     return combined;
 }
+// Export functions for use by main script
+if (typeof window !== 'undefined') {
+    window.getCombinedNews = getCombinedNews;
+    window.getRecentNews = getRecentNews;
+}
+
+console.log('News loader functions exported: getCombinedNews =', typeof getCombinedNews);

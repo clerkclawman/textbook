@@ -133,3 +133,15 @@ async function getQAForLevel(level) {
         content: `Q&A questions are updated weekly. Check back soon!\n\nQ&A問題は毎週更新されています。もうすぐチェックしてください！`
     }];
 }
+// Export function for use by main script
+const loadAllQA = getAllQA;
+
+// Make functions available globally
+if (typeof window !== 'undefined') {
+    window.loadAllQA = loadAllQA;
+}
+if (typeof getCombinedNews === 'function' && typeof window !== 'undefined') {
+    window.getCombinedNews = getCombinedNews;
+}
+
+console.log('QA loader functions exported: loadAllQA =', typeof loadAllQA);
