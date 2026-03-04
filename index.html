@@ -1133,6 +1133,7 @@
                 <option value='X'>X Class</option>
                 <option value='HighSchool'>High School</option>
                 <option value='Adult'>Adult</option>
+                <option value='News'>News (Daily)</option>
             </select>
         </div>
 
@@ -1209,6 +1210,9 @@
 
     <!-- Load external scripts -->
 <script src='adult.js'></script>
+<script src='news-loader.js'></script>
+<!-- Static news loaded dynamically via news-loader.js -->
+<!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
 <script src='x.js'></script>
 <script src='c.js'></script>
@@ -2695,12 +2699,16 @@
     }
 
     function loadLessonsData() {
-        return Promise.resolve().then(() => {
+        return Promise.resolve().then(async () => {
+            // Load news dynamically (handles 48-hour auto-deletion)
+            const newsData = await getCombinedNews();
+
             lessonsData = {
                 'Bronze': bronzeStories,
                 'Silver': silverStories,
                 'Gold': goldStories,
                 'Adult': adult,
+                'News': newsData,
                 'X': x,
                 'C': c,
                 'Eiken1': eiken1,
@@ -2720,6 +2728,7 @@
             };
 
             console.log('Lesson data loaded:', Object.keys(lessonsData));
+            console.log('News articles:', newsData.length + ' entries');
             console.log('Eiken5 stories:', lessonsData['Eiken5'] ? lessonsData['Eiken5'].length + ' stories' : 'NOT FOUND');
 
             // Add separate questions mapping
