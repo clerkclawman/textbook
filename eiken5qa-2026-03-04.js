@@ -1,157 +1,157 @@
 var eiken5qa = [
   {
     "title": "Eiken 5 Q&A - Week of March 4, 2026",
-    "content": `😊 What did you do last weekend?
-先週の週末は何をしましたか？
+    "content": `😊 What are you doing right now?
+あなたは今何をしていますか？
 
-📚 What books have you read recently?
-最近どんな本を読みましたか？
+📚 What is your friend reading at the moment?
+友達は今何を読んでいますか？
 
-🎮 What games do you like to play in free time?
-自由の時間はどんなゲームをしますか？
+🎮 What games are you playing these days?
+最近どんなゲームをしていますか？
 
-⚽ What sports do you want to play this year?
-今年はどんなスポーツをしてみたいですか？
+⚽ Where is your team playing this weekend?
+今週末どこで試合をしていますか？
 
-🎨 Do you like drawing? What do you draw?
-絵を描くのは好きですか？何を描きますか？
+🎨 What are you drawing in your notebook now?
+今、ノートに何を描いていますか？
 
-🎵 What kind of music do you listen to?
-どんな音楽を聴きますか？
+🎵 What music are you listening to right now?
+今、どんな音楽を聴いていますか？
 
-😂 Who makes you laugh the most?
-誰と一緒にいると一番笑いますか？
+😂 Who is making you laugh right now?
+今、誰があなたを笑わせていますか？
 
-😴 What time do you usually go to bed?
-普段は何時に寝ますか？
+😴 What is your brother doing in his room?
+お兄さんは部屋で何をしていますか？
 
-🤔 What is your favorite subject at school?
-学校で一番好きな教科は何ですか？
+🤔 What is your teacher talking about now?
+先生は今何について話していますか？
 
-🌟 What are you doing tomorrow?
-明日は何をしますか？
+🌟 What are you planning to do after school?
+学校の後、何をする予定ですか？
 
-🌸 What do you like about spring?
-春のどんなところが好きですか？
+🌸 What is happening in the park this week?
+今週、公園で何が起きていますか？
 
-☀️ What do you do on sunny days?
-晴れた日は何をしますか？
+☀️ What are you doing on sunny days like this?
+今日のような晴れた日はあなたは何をしていますか？
 
-🌧️ Do you like rainy days? Why or why not?
-雨の日は好きですか？なぜですか？
+🌧️ What are the people doing in the rain?
+雨の中で人々は何をしていますか？
 
-📺 What TV shows do you watch?
-どんなテレビ番組を見ますか？
+📺 What show are you watching on TV right now?
+今、テレビで何を見ていますか？
 
-🎬 What was the last movie you saw?
-最後に見た映画は何ですか？
+🎬 What is your sister watching at the cinema?
+妹は映画館で何を見ていますか？
 
-🎒 How do you come to school every day?
-毎日どうやって学校に来ていますか？
+🎒 Where are your friends going after school?
+友達たちは学校の後どこへ行っていますか？
 
-👥 Who is your best friend? What do you do together?
-一番の親友は誰ですか？一緒に何をしますか？
+👥 Who is your friend calling on the phone?
+電話で誰と友達が話していますか？
 
-💭 What do you want to be when you grow up?
-大人になったら何になりたいですか？
+💭 What are you thinking about right now?
+今、何について考えていますか？
 
-🍕 What is your favorite food?
-一番好きな食べ物は何ですか？
+🍕 What is your mom cooking in the kitchen?
+お母さんはキッチンで何を料理していますか？
 
-🍦 What flavor of ice cream do you like?
-どんな味のアイスクリームが好きですか？
+🍦 Where is the ice cream truck going right now?
+アイスクリームトラックは今どこへ行っていますか？
 
-🥤 What do you usually drink after school?
-学校の後は普段何を飲みますか？
+🥤 What is everyone drinking at the party?
+パーティーではみんな何を飲んでいますか？
 
-🎁 What do you want for your birthday?
-誕生日には何が欲しいですか？
+🎁 What are you making for your friend's birthday?
+友達の誕生日のために何を作っていますか？
 
-🌍 Where do you want to go on vacation?
-バケーションはどこに行きたいですか？
+🌍 Where is your family traveling to this summer?
+今年の夏、あなたの家族はどこへ旅行していますか？
 
-✈️ Which country do you want to visit someday?
-いつかどこの国に行きたいですか？
+✈️ Where is the plane flying to right now?
+飛行機は今どこへ向かっていますか？
 
-🏠 What do you do at home in the evening?
-家では夜何をしていますか？
+🏠 What is happening at your house tonight?
+今夜、あなたの家で何が起きていますか？
 
-🌳 What do you do when you go to the park?
-公園に行ったら何をしますか？
+🌳 What are the birds doing in the trees?
+鳥は木の中で何をしていますか？
 
-🎤 Can you sing? What song do you like?
-歌えますか？どんな歌が好きですか？
+🎤 What song is your friend singing right now?
+友達は今どんな歌を歌っていますか？
 
-🎹 What instrument would you like to learn?
-どんな楽器を習いたいですか？
+🎹 Who is playing the piano in the music room?
+音楽室で誰がピアノを弾いていますか？
 
-🏃 Do you like running? How far can you run?
-走るのは好きですか？どれくらい走れますか？
+🏃 Who is running the fastest in the race?
+レースで誰が一番速く走っていますか？
 
-🎨 What is your favorite color? Why?
-一番好きな色は何ですか？なぜですか？
+🎨 What is the artist painting on the canvas?
+芸術家はキャンバスに何を描いていますか？
 
-📝 What do you write in your notebook?
-ノートには何を書いていますか？
+📝 What are you writing in your diary today?
+今日は日記に何を書いていますか？
 
-📸 Do you like taking photos? What do you take photos of?
-写真を撮るのは好きですか？何の写真を撮りますか？
+📸 What is your dad taking photos of right now?
+お父さんは今、何の写真を撮っていますか？
 
-😬 What are you afraid of?
-何が怖いですか？
+😬 What is the cat doing on the table?
+猫はテーブルの上で何をしていますか？
 
-😭 What makes you sad sometimes?
-時々悲しくなるのは何ですか？
+😭 Who is crying in the corner?
+誰が隅で泣いていますか？
 
-😱 What was the scariest thing you ever saw?
-今まで見た中で一番怖いものは何でしたか？
+😱 What is making that scary noise outside?
+外で何が怖い音を立てているのですか？
 
-🤢 What food do you hate to eat?
-食べるのが一番嫌いな食べ物は何ですか？
+🤢 What is your sister eating that looks so strange?
+妹は何を食べているのですかそんなに見た目が変なのは？
 
-😡 What makes you angry sometimes?
-時々怒ってしまうのは何ですか？
+😡 What is annoying you right now?
+今、何があなたを悩ませていますか？
 
-👻 Do you believe in ghosts? Why or why not?
-お化けはいると思いますか？なぜですか？
+👻 What is floating next to that tree?
+あの木のそばで何が浮かんでいますか？
 
-🎭 Do you like acting? What character would you be?
-演技するのは好きですか？どんな役になりたいですか？
+🎭 Who is acting on stage right now?
+今、ステージで誰が演技していますか？
 
-🎪 If you went to a circus, what would you see?
-サーカスに行ったら、何が見たいですか？
+🎪 What are the clowns doing at the circus?
+サーカスではピエロが何をしていますか？
 
-🎯 What is your goal for this year?
-今年の目標は何ですか？
+🎯 What are you aiming for in the game?
+ゲームでは何を目指していますか？
 
-🏆 What is something you want to win someday?
-いつか勝ち取りたいものは何ですか？
+🏆 Who is winning the competition right now?
+今、誰がコンテットに勝っていますか？
 
-🌈 Have you ever seen a rainbow? When?
-虹を見たことがありますか？いつですか？
+🌈 Where is the rainbow appearing right now?
+虹は今どこに見えていますか？
 
-🦋 Do you like insects? Which one is your favorite?
-虫は好きですか？一番好きなのはどれですか？
+🦋 What is the butterfly doing near the flowers?
+蝶は花のそばで何をしていますか？
 
-🐝 What do you know about bees?
-ハチについて何を知っていますか？
+🐝 What is the bee flying to right now?
+ハチは今どこへ飛んでいますか？
 
-🌙 What do you think of when you see the moon?
-月を見たら何を考えますか？
+🌙 What is happening in the night sky tonight?
+今夜、夜空で何が起きていますか？
 
-⭐ Do you like looking at the stars?
-星を見るのは好きですか？
+⭐ What are you wishing for this evening?
+今夜、何を願っていますか？
 
-🎸 What musical instrument do you like the most?
-一番好きな楽器は何ですか？
+🎸 What is your friend practicing on the guitar?
+友達はギターで何を練習していますか？
 
-🎬 What kind of movies do you like to watch?
-どんな映画を見るのが好きですか？
+🎬 What movie is showing at the theater now?
+映画館では今、どんな映画が上映されていますか？
 
-⚡ What is the most exciting thing you've ever done?
-今までした中で一番面白いことは何ですか？
+⚡ What is everyone shouting about so excitedly?
+みんなが興奮して叫んでいるのは何についてですか？
 
-🎉 What was your favorite birthday present ever?
-今までの中で一番好きな誕生日プレゼントは何でしたか？`
+🎉 What are everyone celebrating so happily?
+みんなが幸せそうに祝っているのは何ですか？`
   }
 ];

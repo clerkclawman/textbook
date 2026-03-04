@@ -7,8 +7,8 @@ var eikenpre2plusqa = [
 📚 Which book has been read the most times at your school?
 あなたの学校で一番読まれたことのある本はどれですか？
 
-🎮 What game would you prefer to play if you had the time?
-もし時間があるなら、どのゲームをしたがりますか？
+🎮 What game is being played by your friends right now?
+今、あなたの友達がしているゲームは何ですか？
 
 ⚽ When was the last match played by your team?
 あなたのチームの最後の試合はいつ行われましたか？
@@ -86,12 +86,12 @@ var eikenpre2plusqa = [
 ステージのミュージシャンが演奏している楽器はどれですか？
 
 🏃 What race was won by the athlete who trained hardest?
-一番懸命に練習した選手が勝ったレースはどれですか？
+一番一番懸命に練習した選手が勝ったレースはどれですか？
 
 🎨 What color is being used most by fashion designers this year?
 今年、ファッションデザイナーによって最も使われている色は何ですか？
 
-📝 When are reports usually submitted to the supervisor？
+📝 When are reports usually submitted to the supervisor?
 報告書は通常いつ上司に提出されますか？
 
 📸 What picture was taken by your camera that you like the most?
@@ -115,49 +115,52 @@ var eikenpre2plusqa = [
 👻 What story was told by your family that still scares you?
 あなたの家族が語った今でも怖い話はどれですか？
 
-🎭 What role was played by an actor who became famous later？
+🎭 What role was played by an actor who became famous later?
 後に有名になった俳優が演じた役はどれですか？
 
-🎪 What trick was performed by the magician that amazed everyone？
+🎪 What trick was performed by the magician that amazed everyone?
 手品師が演じた全員を驚かせた手品は何ですか？
 
-🎯 What skill was learned by someone who practiced every day？
+🎯 What skill was learned by someone who practiced every day?
 毎日練習した誰かが学んだスキルは何ですか？
 
-🏆 What prize was won by the team that worked together？
+🏆 What prize was won by the team that worked together?
 協力したチームが勝った賞はどれですか？
 
-🌈 Why are rainbows usually seen after rain stops？
+🌈 Why are rainbows usually seen after rain stops?
 なぜ虹は通常雨が止んだ後に見られますか？
 
-🦋 What flower is usually visited by butterflies in spring？
+🦋 What flower is usually visited by butterflies in spring?
 春にはどの花が蝶に訪れられますか？
 
-🐝 What crop is pollinated the most by bees worldwide？
+🐝 What crop is pollinated the most by bees worldwide?
 世界中でハチによって最も受粉される作物は何ですか？
 
-🌙 What is often written about in poems that describe the night？
+🌙 What is often written about in poems that describe the night?
 夜を描写する詩では何について書かれることがよくありますか？
 
-⭐ What is often wished upon by people when they see it？
+⭐ What is often wished upon by people when they see it?
 人々がそれを見た時に願い事をするものは何ですか？
 
-🎸 What song is being played by the radio station right now？
+🎸 What song is being played by the radio station right now?
 今、ラジオ局が再生している曲はどれですか？
 
-🎬 What was filmed in your country that became famous worldwide？
+🎬 What was filmed in your country that became famous worldwide?
 あなたの国で撮影されて世界中で有名になったものは何ですか？
 
-⚡ What was discovered that changed how we use electricity？
+⚡ What was discovered that changed how we use electricity?
 電力をどのように使用するかを変えた発見は何ですか？
 
-🎉 What is celebrated by your family every year without fail？
+🎉 What is celebrated by your family every year without fail?
 あなたの家族が欠かさず毎年祝うことは何ですか？
 
-🎓 What is required to be accepted by universities in your country？
+🎓 What is required to be accepted by universities in your country?
 あなたの国の大学に受け入れられるためには何が求められますか？
 
-🌏 What is being destroyed by climate change most urgently？
-気候変動によって最も緊急に破壊されているものは何ですか？`
+🌏 What is being destroyed by climate change most urgently?
+気候変動によって最も緊急に破壊されているものは何ですか？
+
+🏨 Which hotel is being visited most often by tourists in your city?
+あなたの都市ではどのホテルが観光客に最もよく訪れられていますか？`
   }
 ];
