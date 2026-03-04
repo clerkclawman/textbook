@@ -144,4 +144,6 @@ if (typeof getCombinedNews === 'function' && typeof window !== 'undefined') {
     window.getCombinedNews = getCombinedNews;
 }
 
+// Debug: log when loadAllQA is called
+console.log('✓ loadAllQA function ready and exported');
 console.log('QA loader functions exported: loadAllQA =', typeof loadAllQA);
