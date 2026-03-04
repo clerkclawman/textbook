@@ -1,0 +1,1109 @@
+{
+  "metadata": {
+    "level": "Eiken Grade 3",
+    "totalWords": 150,
+    "hasEmojis": true
+  },
+  "words": [
+    {
+      "word": "people",
+      "jp": "人々",
+      "pos": "noun",
+      "emoji": "👥",
+      "examples": [
+        "Many people like music.",
+        "She helps many people in her town."
+      ]
+    },
+    {
+      "word": "festival",
+      "jp": "祭り",
+      "pos": "noun",
+      "emoji": "🎪",
+      "examples": [
+        "I go to a summer festival every year.",
+        "The festival is very popular in our town."
+      ]
+    },
+    {
+      "word": "vegetables",
+      "jp": "野菜",
+      "pos": "noun",
+      "emoji": "🥕",
+      "examples": [
+        "I eat vegetables every day.",
+        "She grows vegetables in her garden."
+      ]
+    },
+    {
+      "word": "library",
+      "jp": "図書館",
+      "pos": "noun",
+      "emoji": "📚",
+      "examples": [
+        "I study at the library after school.",
+        "She borrows books from the library."
+      ]
+    },
+    {
+      "word": "museum",
+      "jp": "博物館",
+      "pos": "noun",
+      "emoji": "🏛️",
+      "examples": [
+        "I visited a history museum last week.",
+        "She likes art museums."
+      ]
+    },
+    {
+      "word": "city",
+      "jp": "都市",
+      "pos": "noun",
+      "emoji": "🏙️",
+      "examples": [
+        "I live in a big city.",
+        "She visits Tokyo city often."
+      ]
+    },
+    {
+      "word": "lunch",
+      "jp": "昼食",
+      "pos": "noun",
+      "emoji": "🥪",
+      "examples": [
+        "I eat lunch at the school cafeteria.",
+        "She makes her own lunch."
+      ]
+    },
+    {
+      "word": "saturday",
+      "jp": "土曜日",
+      "pos": "noun",
+      "emoji": "📅",
+      "examples": [
+        "I play soccer on Saturday.",
+        "She goes shopping on Saturdays."
+      ]
+    },
+    {
+      "word": "friend",
+      "jp": "友達",
+      "pos": "noun",
+      "emoji": "👫",
+      "examples": [
+        "I met a new friend at school.",
+        "She is my best friend."
+      ]
+    },
+    {
+      "word": "japanese",
+      "jp": "日本語",
+      "pos": "adjective",
+      "emoji": "🇯🇵",
+      "examples": [
+        "I study Japanese culture.",
+        "She likes Japanese food."
+      ]
+    },
+    {
+      "word": "right",
+      "jp": "右、正しい",
+      "pos": "adjective",
+      "emoji": "✅",
+      "examples": [
+        "Your answer is right.",
+        "Turn right at the corner."
+      ]
+    },
+    {
+      "word": "hobby",
+      "jp": "趣味",
+      "pos": "noun",
+      "emoji": "🎯",
+      "examples": [
+        "Reading is my hobby.",
+        "She has many hobbies."
+      ]
+    },
+    {
+      "word": "trip",
+      "jp": "旅行",
+      "pos": "noun",
+      "emoji": "✈️",
+      "examples": [
+        "I went on a trip to Kyoto last summer.",
+        "She enjoys school trips."
+      ]
+    },
+    {
+      "word": "travel",
+      "jp": "旅行する",
+      "pos": "verb",
+      "emoji": "✈️",
+      "examples": [
+        "I like to travel to new places.",
+        "She travels with her family in summer."
+      ]
+    },
+    {
+      "word": "vacation",
+      "jp": "休暇",
+      "pos": "noun",
+      "emoji": "🏖️",
+      "examples": [
+        "I have summer vacation in August.",
+        "She enjoys her winter vacation."
+      ]
+    },
+    {
+      "word": "visit",
+      "jp": "訪れる",
+      "pos": "verb",
+      "emoji": "📍",
+      "examples": [
+        "I visit my grandmother every month.",
+        "She visited many places in Japan."
+      ]
+    },
+    {
+      "word": "place",
+      "jp": "場所",
+      "pos": "noun",
+      "emoji": "📍",
+      "examples": [
+        "This is a nice place to study.",
+        "She knows many interesting places."
+      ]
+    },
+    {
+      "word": "country",
+      "jp": "国",
+      "pos": "noun",
+      "emoji": "🌏",
+      "examples": [
+        "I want to visit many countries.",
+        "She lives in Japan, her country."
+      ]
+    },
+    {
+      "word": "language",
+      "jp": "言語",
+      "pos": "noun",
+      "emoji": "🗣️",
+      "examples": [
+        "I study English as a second language.",
+        "She speaks three languages."
+      ]
+    },
+    {
+      "word": "experience",
+      "jp": "経験",
+      "pos": "noun",
+      "emoji": "💫",
+      "examples": [
+        "I had a good experience at the festival.",
+        "She has many interesting experiences."
+      ]
+    },
+    {
+      "word": "news",
+      "jp": "ニュース",
+      "pos": "noun",
+      "emoji": "📰",
+      "examples": [
+        "I watch news on TV every evening.",
+        "She reads the news online."
+      ]
+    },
+    {
+      "word": "story",
+      "jp": "物語",
+      "pos": "noun",
+      "emoji": "📚",
+      "examples": [
+        "I like reading interesting stories.",
+        "She tells stories to her little brother."
+      ]
+    },
+    {
+      "word": "music",
+      "jp": "音楽",
+      "pos": "noun",
+      "emoji": "🎵",
+      "examples": [
+        "I listen to music every day.",
+        "She plays music in the school band."
+      ]
+    },
+    {
+      "word": "movie",
+      "jp": "映画",
+      "pos": "noun",
+      "emoji": "🎬",
+      "examples": [
+        "I watch movies on weekends.",
+        "She likes action movies."
+      ]
+    },
+    {
+      "word": "picture",
+      "jp": "写真、絵",
+      "pos": "noun",
+      "emoji": "🖼️",
+      "examples": [
+        "I took many pictures at the festival.",
+        "She draws pictures in her notebook."
+      ]
+    },
+    {
+      "word": "game",
+      "jp": "ゲーム、試合",
+      "pos": "noun",
+      "emoji": "🎮",
+      "examples": [
+        "I play video games sometimes.",
+        "Our team won the soccer game."
+      ]
+    },
+    {
+      "word": "sport",
+      "jp": "スポーツ",
+      "pos": "noun",
+      "emoji": "⚽",
+      "examples": [
+        "Soccer is my favorite sport.",
+        "She plays sports after school."
+      ]
+    },
+    {
+      "word": "match",
+      "jp": "試合",
+      "pos": "noun",
+      "emoji": "🏆",
+      "examples": [
+        "I watched a tennis match yesterday.",
+        "She won her tennis match."
+      ]
+    },
+    {
+      "word": "team",
+      "jp": "チーム",
+      "pos": "noun",
+      "emoji": "👥",
+      "examples": [
+        "I am on the school soccer team.",
+        "Her team won the game."
+      ]
+    },
+    {
+      "word": "club",
+      "jp": "クラブ",
+      "pos": "noun",
+      "emoji": "🎵",
+      "examples": [
+        "I joined the English club.",
+        "She is in the music club."
+      ]
+    },
+    {
+      "word": "meeting",
+      "jp": "会議、集まり",
+      "pos": "noun",
+      "emoji": "👥",
+      "examples": [
+        "We have a club meeting every week.",
+        "She attends the student council meeting."
+      ]
+    },
+    {
+      "word": "discussion",
+      "jp": "議論、話し合い",
+      "pos": "noun",
+      "emoji": "💬",
+      "examples": [
+        "We had a discussion about the project.",
+        "She likes group discussions."
+      ]
+    },
+    {
+      "word": "opinion",
+      "jp": "意見",
+      "pos": "noun",
+      "emoji": "💭",
+      "examples": [
+        "I want to hear your opinion.",
+        "She shares her opinion in class."
+      ]
+    },
+    {
+      "word": "idea",
+      "jp": "アイデア、考え",
+      "pos": "noun",
+      "emoji": "💡",
+      "examples": [
+        "I have a good idea for the project.",
+        "She always has interesting ideas."
+      ]
+    },
+    {
+      "word": "feeling",
+      "jp": "気持ち",
+      "pos": "noun",
+      "emoji": "😊",
+      "examples": [
+        "She has a good feeling about the test.",
+        "I share my feelings with my friends."
+      ]
+    },
+    {
+      "word": "emotion",
+      "jp": "感情",
+      "pos": "noun",
+      "emoji": "😊",
+      "examples": [
+        "She understands different emotions.",
+        "My emotion changed after hearing the news."
+      ]
+    },
+    {
+      "word": "happy",
+      "jp": "幸せ、嬉しい",
+      "pos": "adjective",
+      "emoji": "😊",
+      "examples": [
+        "I am happy to see my friends.",
+        "She feels happy about her grade."
+      ]
+    },
+    {
+      "word": "excited",
+      "jp": "興奮した、わくわくした",
+      "pos": "adjective",
+      "emoji": "🎉",
+      "examples": [
+        "I am excited about the school trip.",
+        "She is excited to learn English."
+      ]
+    },
+    {
+      "word": "surprised",
+      "jp": "驚いた",
+      "pos": "adjective",
+      "emoji": "😮",
+      "examples": [
+        "I was surprised by the test result.",
+        "She was surprised to see her friend."
+      ]
+    },
+    {
+      "word": "worried",
+      "jp": "心配している",
+      "pos": "adjective",
+      "emoji": "😰",
+      "examples": [
+        "I am worried about the exam.",
+        "She looks worried today."
+      ]
+    },
+    {
+      "word": "nervous",
+      "jp": "緊張している",
+      "pos": "adjective",
+      "emoji": "😬",
+      "examples": [
+        "I am nervous before the test.",
+        "She gets nervous when speaking in public."
+      ]
+    },
+    {
+      "word": "proud",
+      "jp": "誇りに思う",
+      "pos": "adjective",
+      "emoji": "😤",
+      "examples": [
+        "I am proud of my English skills.",
+        "She is proud of her school team."
+      ]
+    },
+    {
+      "word": "satisfied",
+      "jp": "満足している",
+      "pos": "adjective",
+      "emoji": "😌",
+      "examples": [
+        "I am satisfied with my test score.",
+        "She looks satisfied with her work."
+      ]
+    },
+    {
+      "word": "interesting",
+      "jp": "面白い",
+      "pos": "adjective",
+      "emoji": "🤔",
+      "examples": [
+        "This book is very interesting.",
+        "She finds English interesting."
+      ]
+    },
+    {
+      "word": "wonderful",
+      "jp": "素晴らしい",
+      "pos": "adjective",
+      "emoji": "⭐",
+      "examples": [
+        "I had a wonderful time at the festival.",
+        "She thinks the view is wonderful."
+      ]
+    },
+    {
+      "word": "terrible",
+      "jp": "ひどい",
+      "pos": "adjective",
+      "emoji": "😠",
+      "examples": [
+        "The weather was terrible yesterday.",
+        "She had a terrible headache."
+      ]
+    },
+    {
+      "word": "enjoy",
+      "jp": "楽しむ",
+      "pos": "verb",
+      "emoji": "😊",
+      "examples": [
+        "I enjoy reading books.",
+        "She enjoys her weekend."
+      ]
+    },
+    {
+      "word": "prefer",
+      "jp": "～を好む",
+      "pos": "verb",
+      "emoji": "❤️",
+      "examples": [
+        "I prefer tea to coffee.",
+        "She prefers studying in the morning."
+      ]
+    },
+    {
+      "word": "agree",
+      "jp": "同意する",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "I agree with your opinion.",
+        "She agrees to help with the project."
+      ]
+    },
+    {
+      "word": "disagree",
+      "jp": "同意しない",
+      "pos": "verb",
+      "emoji": "❌",
+      "examples": [
+        "I disagree with that idea.",
+        "She politely disagrees sometimes."
+      ]
+    },
+    {
+      "word": "believe",
+      "jp": "信じる",
+      "pos": "verb",
+      "emoji": "💪",
+      "examples": [
+        "I believe I can pass the test.",
+        "She believes in her friends."
+      ]
+    },
+    {
+      "word": "hope",
+      "jp": "望む、～だといい",
+      "pos": "verb",
+      "emoji": "⭐",
+      "examples": [
+        "I hope to see you again.",
+        "She hopes to study abroad."
+      ]
+    },
+    {
+      "word": "wish",
+      "jp": "～だといいと思う",
+      "pos": "verb",
+      "emoji": "💫",
+      "examples": [
+        "I wish I could speak English better.",
+        "She wishes for good weather."
+      ]
+    },
+    {
+      "word": "dream",
+      "jp": "夢を見る、夢",
+      "pos": "verb",
+      "emoji": "💭",
+      "examples": [
+        "I dream about traveling the world.",
+        "She dreams of becoming a teacher."
+      ]
+    },
+    {
+      "word": "decide",
+      "jp": "決める",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "I decided to study harder.",
+        "She decides what to wear in the morning."
+      ]
+    },
+    {
+      "word": "plan",
+      "jp": "計画を立てる",
+      "pos": "verb",
+      "emoji": "📋",
+      "examples": [
+        "I plan my study schedule carefully.",
+        "She plans her weekend activities."
+      ]
+    },
+    {
+      "word": "choose",
+      "jp": "選ぶ",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "I choose my favorite book to read.",
+        "She chooses English as her elective."
+      ]
+    },
+    {
+      "word": "suggest",
+      "jp": "提案する",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "I suggest we study together.",
+        "She suggested a good restaurant."
+      ]
+    },
+    {
+      "word": "invite",
+      "jp": "招待する",
+      "pos": "verb",
+      "emoji": "📩",
+      "examples": [
+        "I invite my friends to my birthday party.",
+        "She was invited to the festival."
+      ]
+    },
+    {
+      "word": "accept",
+      "jp": "受け入れる",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "I accept your help with gratitude.",
+        "She accepts the challenge."
+      ]
+    },
+    {
+      "word": "refuse",
+      "jp": "断る",
+      "pos": "verb",
+      "emoji": "❌",
+      "examples": [
+        "I had to refuse the invitation.",
+        "She politely refused my offer."
+      ]
+    },
+    {
+      "word": "introduce",
+      "jp": "紹介する",
+      "pos": "verb",
+      "emoji": "👋",
+      "examples": [
+        "Let me introduce my friend to you.",
+        "She introduced herself at the meeting."
+      ]
+    },
+    {
+      "word": "explain",
+      "jp": "説明する",
+      "pos": "verb",
+      "emoji": "💬",
+      "examples": [
+        "Can you explain this word?",
+        "She explains English grammar clearly."
+      ]
+    },
+    {
+      "word": "describe",
+      "jp": "描写する、述べる",
+      "pos": "verb",
+      "emoji": "📝",
+      "examples": [
+        "I describe my hometown in the essay.",
+        "She described the festival in detail."
+      ]
+    },
+    {
+      "word": "discuss",
+      "jp": "議論する、話し合う",
+      "pos": "verb",
+      "emoji": "💬",
+      "examples": [
+        "We discuss the project in class.",
+        "She discusses problems with her friends."
+      ]
+    },
+    {
+      "word": "improve",
+      "jp": "向上させる、改善する",
+      "pos": "verb",
+      "emoji": "📈",
+      "examples": [
+        "I want to improve my English skills.",
+        "She improves her pronunciation every day."
+      ]
+    },
+    {
+      "word": "practice",
+      "jp": "練習する",
+      "pos": "verb",
+      "emoji": "🏋️",
+      "examples": [
+        "I practice English every morning.",
+        "She practices piano for an hour daily."
+      ]
+    },
+    {
+      "word": "prepare",
+      "jp": "準備する",
+      "pos": "verb",
+      "emoji": "📚",
+      "examples": [
+        "I prepare for the Eiken test.",
+        "She prepares her lunch in the morning."
+      ]
+    },
+    {
+      "word": "memorize",
+      "jp": "暗記する",
+      "pos": "verb",
+      "emoji": "🧠",
+      "examples": [
+        "I memorize new vocabulary words.",
+        "She memorized the speech perfectly."
+      ]
+    },
+    {
+      "word": "understand",
+      "jp": "理解する",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "I understand the lesson clearly.",
+        "She understands difficult topics well."
+      ]
+    },
+    {
+      "word": "realize",
+      "jp": "気づく、実感する",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "I realized my mistake later.",
+        "She realized how important English is."
+      ]
+    },
+    {
+      "word": "remember",
+      "jp": "覚えている、思い出す",
+      "pos": "verb",
+      "emoji": "🧠",
+      "examples": [
+        "I remember my first day of school.",
+        "She remembers all the vocabulary."
+      ]
+    },
+    {
+      "word": "forget",
+      "jp": "忘れる",
+      "pos": "verb",
+      "emoji": "🚫",
+      "examples": [
+        "I sometimes forget to do homework.",
+        "She never forgets my birthday."
+      ]
+    },
+    {
+      "word": "complete",
+      "jp": "完成させる、終える",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "I completed my homework early.",
+        "She completed her project successfully."
+      ]
+    },
+    {
+      "word": "finish",
+      "jp": "終える",
+      "pos": "verb",
+      "emoji": "🏁",
+      "examples": [
+        "I finish school at 3 o'clock.",
+        "She finished reading the book."
+      ]
+    },
+    {
+      "word": "start",
+      "jp": "始める",
+      "pos": "verb",
+      "emoji": "🚀",
+      "examples": [
+        "I start my morning with breakfast.",
+        "She started to learn English last year."
+      ]
+    },
+    {
+      "word": "continue",
+      "jp": "続ける",
+      "pos": "verb",
+      "emoji": "▶️",
+      "examples": [
+        "I continue to study every day.",
+        "She continues her music lessons."
+      ]
+    },
+    {
+      "word": "repeat",
+      "jp": "繰り返す",
+      "pos": "verb",
+      "emoji": "🔄",
+      "examples": [
+        "I repeat the word several times.",
+        "She repeated the question."
+      ]
+    },
+    {
+      "word": "develop",
+      "jp": "発展させる、開発する",
+      "pos": "verb",
+      "emoji": "📈",
+      "examples": [
+        "Develop good study habits.",
+        "She develops her skills every day."
+      ]
+    },
+    {
+      "word": "grow",
+      "jp": "成長する",
+      "pos": "verb",
+      "emoji": "🌱",
+      "examples": [
+        "Children grow taller every year.",
+        "She grows vegetables in her garden."
+      ]
+    },
+    {
+      "word": "change",
+      "jp": "変わる、変える",
+      "pos": "verb",
+      "emoji": "🔄",
+      "examples": [
+        "My feelings change over time.",
+        "She changed her mind."
+      ]
+    },
+    {
+      "word": "happen",
+      "jp": "起こる",
+      "pos": "verb",
+      "emoji": "❓",
+      "examples": [
+        "What happened yesterday?",
+        "Something interesting happens every day."
+      ]
+    },
+    {
+      "word": "appear",
+      "jp": "現れる、現わす",
+      "pos": "verb",
+      "emoji": "👁️",
+      "examples": [
+        "The answer appeared in my mind.",
+        "She appeared on TV last week."
+      ]
+    },
+    {
+      "word": "exist",
+      "jp": "存在する",
+      "pos": "verb",
+      "emoji": "🌍",
+      "examples": [
+        "Many problems exist in the world.",
+        "She believes happy endings exist."
+      ]
+    },
+    {
+      "word": "belong",
+      "jp": "属する",
+      "pos": "verb",
+      "emoji": "🏠",
+      "examples": [
+        "I belong to the English club.",
+        "She belongs to a big family."
+      ]
+    },
+    {
+      "word": "depend",
+      "jp": "頼る、次第である",
+      "pos": "verb",
+      "emoji": "🤝",
+      "examples": [
+        "I depend on my friends.",
+        "Good grades depend on hard work."
+      ]
+    },
+    {
+      "word": "include",
+      "jp": "含む",
+      "pos": "verb",
+      "emoji": "📦",
+      "examples": [
+        "The price includes tax.",
+        "She includes all the details."
+      ]
+    },
+    {
+      "word": "provide",
+      "jp": "提供する",
+      "pos": "verb",
+      "emoji": "🎁",
+      "examples": [
+        "The school provides good textbooks.",
+        "She provides help to her classmates."
+      ]
+    },
+    {
+      "word": "offer",
+      "jp": "申し出る、提供する",
+      "pos": "verb",
+      "emoji": "🎁",
+      "examples": [
+        "I offer my help to you.",
+        "She offered me a seat on the train."
+      ]
+    },
+    {
+      "word": "receive",
+      "jp": "受け取る",
+      "pos": "verb",
+      "emoji": "📬",
+      "examples": [
+        "I received a gift from my friend.",
+        "She received a good grade."
+      ]
+    },
+    {
+      "word": "achieve",
+      "jp": "達成する",
+      "pos": "verb",
+      "emoji": "🏆",
+      "examples": [
+        "She achieved her goal.",
+        "I want to achieve good results."
+      ]
+    },
+    {
+      "word": "succeed",
+      "jp": "成功する",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "She succeeds in everything she does.",
+        "I hope to succeed in the exam."
+      ]
+    },
+    {
+      "word": "fail",
+      "jp": "失敗する",
+      "pos": "verb",
+      "emoji": "❌",
+      "examples": [
+        "Don't worry if you fail sometimes.",
+        "She failed the test but studied harder."
+      ]
+    },
+    {
+      "word": "try",
+      "jp": "試みる、やってみる",
+      "pos": "verb",
+      "emoji": "💪",
+      "examples": [
+        "I try my best in every class.",
+        "She tries new challenges bravely."
+      ]
+    },
+    {
+      "word": "attempt",
+      "jp": "試みる",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "She attempts the difficult problem.",
+        "I made an attempt to solve it."
+      ]
+    },
+    {
+      "word": "manage",
+      "jp": "うまくやる、管理する",
+      "pos": "verb",
+      "emoji": "📊",
+      "examples": [
+        "I manage my time well.",
+        "She manages to study despite being busy."
+      ]
+    },
+    {
+      "word": "handle",
+      "jp": "扱う、処理する",
+      "pos": "verb",
+      "emoji": "🤲",
+      "examples": [
+        "She can handle difficult situations.",
+        "I handle the problem calmly."
+      ]
+    },
+    {
+      "word": "avoid",
+      "jp": "避ける",
+      "pos": "verb",
+      "emoji": "🚫",
+      "examples": [
+        "I avoid difficult questions at first.",
+        "She avoids mistakes by checking her work."
+      ]
+    },
+    {
+      "word": "face",
+      "jp": "直面する、顔を向ける",
+      "pos": "verb",
+      "emoji": "😐",
+      "examples": [
+        "She faces her challenges bravely.",
+        "I face the problem with confidence."
+      ]
+    },
+    {
+      "word": "solve",
+      "jp": "解決する",
+      "pos": "verb",
+      "emoji": "🧩",
+      "examples": [
+        "I solve math problems every day.",
+        "She solved the difficult puzzle."
+      ]
+    },
+    {
+      "word": "answer",
+      "jp": "答える、答え",
+      "pos": "verb",
+      "emoji": "✍️",
+      "examples": [
+        "I answer the questions carefully.",
+        "She answers the phone politely."
+      ]
+    },
+    {
+      "word": "respond",
+      "jp": "応答する",
+      "pos": "verb",
+      "emoji": "💬",
+      "examples": [
+        "She responds quickly to messages.",
+        "I respond to my teacher's questions."
+      ]
+    },
+    {
+      "word": "communicate",
+      "jp": "コミュニケートする、伝達する",
+      "pos": "verb",
+      "emoji": "🗣️",
+      "examples": [
+        "I communicate with my friends in English.",
+        "She communicates her ideas clearly."
+      ]
+    },
+    {
+      "word": "express",
+      "jp": "表現する",
+      "pos": "verb",
+      "emoji": "🎨",
+      "examples": [
+        "I express my feelings in English.",
+        "She expresses herself through art."
+      ]
+    },
+    {
+      "word": "translate",
+      "jp": "翻訳する",
+      "pos": "verb",
+      "emoji": "📝",
+      "examples": [
+        "I translate Japanese to English.",
+        "She translates English sentences well."
+      ]
+    },
+    {
+      "word": "pronounce",
+      "jp": "発音する",
+      "pos": "verb",
+      "emoji": "🗣️",
+      "examples": [
+        "I pronounce words carefully.",
+        "She pronounces English clearly."
+      ]
+    },
+    {
+      "word": "speak",
+      "jp": "話す",
+      "pos": "verb",
+      "emoji": "🗣️",
+      "examples": [
+        "I speak English better now.",
+        "She speaks three languages."
+      ]
+    },
+    {
+      "word": "write",
+      "jp": "書く",
+      "pos": "verb",
+      "emoji": "✍️",
+      "examples": [
+        "I write in my diary every night.",
+        "She writes beautiful essays."
+      ]
+    },
+    {
+      "word": "read",
+      "jp": "読む",
+      "pos": "verb",
+      "emoji": "📖",
+      "examples": [
+        "I read English newspapers.",
+        "She reads faster than last year."
+      ]
+    },
+    {
+      "word": "listen",
+      "jp": "聞く",
+      "pos": "verb",
+      "emoji": "👂",
+      "examples": [
+        "I listen to English radio.",
+        "She listens carefully in class."
+      ]
+    }
+  ]
+}

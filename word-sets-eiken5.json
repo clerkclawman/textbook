@@ -1,0 +1,130 @@
+{
+  "eiken_grade_5_word_sets": [
+    {
+      "theme": "Family",
+      "description": "Family members and relationships",
+      "words": [
+        "father", "mother", "parent", "dad", "mom", "brother", "sister", "sibling", 
+        "grandfather", "grandmother", "grandparent", "grandpa", "grandma", 
+        "uncle", "aunt", "cousin", "family", "home", "house", "love", "care", 
+        "help", "talk", "play", "together", "happy", "kind", "nice", "strong"
+      ],
+      "word_count": 28
+    },
+    {
+      "theme": "School & Classroom",
+      "description": "School environment, people, and objects",
+      "words": [
+        "teacher", "student", "class", "classroom", "desk", "chair", "table", 
+        "book", "notebook", "pen", "pencil", "eraser", "paper", "school", 
+        "study", "learn", "read", "write", "draw", "color", "picture", 
+        "blackboard", "chalk", "bag", "backpack", "lunch", "friend", "playground",
+        "bell", "clock"
+      ],
+      "word_count": 30
+    },
+    {
+      "theme": "Food & Meals",
+      "description": "Food items and meal times",
+      "words": [
+        "breakfast", "lunch", "dinner", "meal", "food", "eat", "drink", 
+        "rice", "bread", "noodle", "soup", "meat", "fish", "chicken", 
+        "egg", "milk", "water", "juice", "tea", "fruit", "apple", "banana", 
+        "orange", "grape", "vegetable", "carrot", "tomato", "potato", 
+        "onion", "salad"
+      ],
+      "word_count": 30
+    },
+    {
+      "theme": "Daily Routine",
+      "description": "Everyday activities and schedule",
+      "words": [
+        "get up", "wake up", "morning", "brush", "teeth", "wash", "face", 
+        "dress", "clothes", "go to school", "walk", "bus", "bicycle", "bike", 
+        "study", "class", "lunchtime", "play", "game", "come home", "homework", 
+        "watch", "TV", "read", "book", "dinner", "bath", "shower", "sleep", 
+        "bed"
+      ],
+      "word_count": 30
+    },
+    {
+      "theme": "Weather & Seasons",
+      "description": "Weather conditions and seasons",
+      "words": [
+        "weather", "sunny", "rainy", "cloudy", "windy", "snowy", "hot", 
+        "cold", "warm", "cool", "rain", "snow", "wind", "cloud", "sun", 
+        "sky", "season", "spring", "summer", "autumn", "fall", "winter", 
+        "flower", "tree", "leaf", "ice", "umbrella", "coat", "jacket", 
+        "boot"
+      ],
+      "word_count": 30
+    },
+    {
+      "theme": "Sports & Hobbies",
+      "description": "Sports, games, and leisure activities",
+      "words": [
+        "sport", "play", "game", "run", "jump", "swim", "walk", "tennis", 
+        "soccer", "baseball", "basketball", "volleyball", "bicycle", "bike", 
+        "music", "sing", "song", "dance", "draw", "picture", "paint", 
+        "color", "read", "book", "movie", "TV", "computer", "phone", 
+        "friend", "fun"
+      ],
+      "word_count": 30
+    },
+    {
+      "theme": "Colors & Clothes",
+      "description": "Colors and clothing items",
+      "words": [
+        "color", "red", "blue", "green", "yellow", "orange", "purple", 
+        "pink", "brown", "black", "white", "gray", "clothes", "shirt", 
+        "pants", "dress", "skirt", "shoes", "socks", "hat", "cap", 
+        "jacket", "coat", "sweater", "T-shirt", "short", "long", "big", 
+        "small", "new"
+      ],
+      "word_count": 30
+    },
+    {
+      "theme": "Animals",
+      "description": "Common animals and pets",
+      "words": [
+        "animal", "dog", "cat", "bird", "rabbit", "fish", "mouse", "rat", 
+        "hamster", "turtle", "snake", "lion", "tiger", "elephant", "monkey", 
+        "bear", "horse", "cow", "pig", "sheep", "goat", "chicken", "duck", 
+        "frog", "butterfly", "bee", "ant", "spider", "pet", "friend"
+      ],
+      "word_count": 30
+    },
+    {
+      "theme": "Numbers & Time",
+      "description": "Numbers, time expressions, and daily schedule",
+      "words": [
+        "one", "two", "three", "four", "five", "six", "seven", "eight", 
+        "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", 
+        "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "number", 
+        "count", "time", "morning", "afternoon", "evening", "night", "noon", 
+        "midnight", "clock"
+      ],
+      "word_count": 30
+    },
+    {
+      "theme": "Home & Rooms",
+      "description": "House rooms and household items",
+      "words": [
+        "home", "house", "room", "kitchen", "bedroom", "bathroom", "living room", 
+        "dining room", "door", "window", "wall", "floor", "ceiling", "roof", 
+        "table", "chair", "sofa", "bed", "desk", "shelf", "cabinet", "refrigerator", 
+        "stove", "sink", "toilet", "bathtub", "shower", "light", "lamp", "TV"
+      ],
+      "word_count": 30
+    }
+  ],
+  "metadata": {
+    "level": "Eiken Grade 5",
+    "total_word_sets": 10,
+    "total_words": 298,
+    "spelling": "US English",
+    "created_date": "2026-03-03",
+    "purpose": "Vocabulary building for Eiken Grade 5 preparation",
+    "notes": "Each word set contains 20-30 relevant Eiken 5-level words organized by theme. All words use US spelling conventions."
+  }
+}

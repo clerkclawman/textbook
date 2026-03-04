@@ -1,0 +1,1283 @@
+{
+  "metadata": {
+    "level": "Eiken Pre-1",
+    "totalWords": 400,
+    "hasEmojis": true
+  },
+  "words": [
+    {
+      "word": "nevertheless",
+      "jp": "それにもかかわらず",
+      "pos": "adverb",
+      "emoji": "➡️",
+      "examples": [
+        "It was raining. Nevertheless, we continued.",
+        "She knows the risk. Nevertheless, she studies."
+      ]
+    },
+    {
+      "word": "however",
+      "jp": "しかしながら",
+      "pos": "adverb",
+      "emoji": "↔️",
+      "examples": [
+        "However, we must consider other factors.",
+        "The cost is high. However, quality is excellent."
+      ]
+    },
+    {
+      "word": "moreover",
+      "jp": "さらに、その上",
+      "pos": "adverb",
+      "emoji": "➕",
+      "examples": [
+        "Moreover, the policy saves money.",
+        "She is talented. Moreover, she works hard."
+      ]
+    },
+    {
+      "word": "furthermore",
+      "jp": "さらに加えて",
+      "pos": "adverb",
+      "emoji": "➕",
+      "examples": [
+        "Furthermore, the benefits are clear.",
+        "He is smart. Furthermore, he is kind."
+      ]
+    },
+    {
+      "word": "in addition",
+      "jp": "さらに、加えて",
+      "pos": "phrase",
+      "emoji": "➕",
+      "examples": [
+        "In addition, we reduced emissions.",
+        "She speaks English. In addition, she speaks French."
+      ]
+    },
+    {
+      "word": "therefore",
+      "jp": "それゆえ、したがって",
+      "pos": "adverb",
+      "emoji": "➡️",
+      "examples": [
+        "Therefore, action is necessary.",
+        "She studied hard. Therefore, she passed."
+      ]
+    },
+    {
+      "word": "consequently",
+      "jp": "その結果",
+      "pos": "adverb",
+      "emoji": "➡️",
+      "examples": [
+        "Consequently, biodiversity declines.",
+        "She missed the train. Consequently, she was late."
+      ]
+    },
+    {
+      "word": "accordingly",
+      "jp": "従って、それに応じて",
+      "pos": "adverb",
+      "emoji": "➡️",
+      "examples": [
+        "Accordingly, we adjusted our plans.",
+        "She was promoted. Accordingly, more work followed."
+      ]
+    },
+    {
+      "word": "as a result",
+      "jp": "その結果として",
+      "pos": "phrase",
+      "emoji": "➡️",
+      "examples": [
+        "As a result, pollution increased.",
+        "She was sick. As a result, she missed work."
+      ]
+    },
+    {
+      "word": "on the other hand",
+      "jp": "一方では",
+      "pos": "phrase",
+      "emoji": "↔️",
+      "examples": [
+        "On the other hand, some disagree.",
+        "She likes tea. On the other hand, she also likes coffee."
+      ]
+    },
+    {
+      "word": "in contrast",
+      "jp": "対照的に",
+      "pos": "phrase",
+      "emoji": "↔️",
+      "examples": [
+        "In contrast, rural areas suffer less.",
+        "She is talkative. In contrast, her sister is quiet."
+      ]
+    },
+    {
+      "word": "for example",
+      "jp": "例えば",
+      "pos": "phrase",
+      "emoji": "📝",
+      "examples": [
+        "Many emissions, for example, come from transport.",
+        "She likes fruits, for example, apples and oranges."
+      ]
+    },
+    {
+      "word": "for instance",
+      "jp": "例えば",
+      "pos": "phrase",
+      "emoji": "📝",
+      "examples": [
+        "Some species, for instance, are endangered.",
+        "She visits many places, for instance, museums and parks."
+      ]
+    },
+    {
+      "word": "such as",
+      "jp": "～などといった",
+      "pos": "phrase",
+      "emoji": "📝",
+      "examples": [
+        "Animals such as bears need protection.",
+        "She enjoys activities such as hiking and reading."
+      ]
+    },
+    {
+      "word": "namely",
+      "jp": "すなわち",
+      "pos": "adverb",
+      "emoji": "📝",
+      "examples": [
+        "She likes music, namely classical.",
+        "Two cities, namely Tokyo and Osaka, are large."
+      ]
+    },
+    {
+      "word": "that is",
+      "jp": "つまり",
+      "pos": "phrase",
+      "emoji": "💡",
+      "examples": [
+        "She studies English, that is, academic writing.",
+        "He came later, that is, after midnight."
+      ]
+    },
+    {
+      "word": "in other words",
+      "jp": "言い換えれば",
+      "pos": "phrase",
+      "emoji": "💬",
+      "examples": [
+        "In other words, we need urgent action.",
+        "She is efficient. In other words, she works quickly."
+      ]
+    },
+    {
+      "word": "to sum up",
+      "jp": "要約すると",
+      "pos": "phrase",
+      "emoji": "📊",
+      "examples": [
+        "To sum up, environmental action is urgent.",
+        "To sum up, we need more funding."
+      ]
+    },
+    {
+      "word": "in conclusion",
+      "jp": "結論として",
+      "pos": "phrase",
+      "emoji": "🎯",
+      "examples": [
+        "In conclusion, sustainable living is essential.",
+        "In conclusion, the results were impressive."
+      ]
+    },
+    {
+      "word": "to conclude",
+      "jp": "結論として",
+      "pos": "phrase",
+      "emoji": "🎯",
+      "examples": [
+        "To conclude, I would like to thank everyone.",
+        "To conclude, climate change is our challenge."
+      ]
+    },
+    {
+      "word": "frankly speaking",
+      "jp": "率直に言えば",
+      "pos": "phrase",
+      "emoji": "💬",
+      "examples": [
+        "Frankly speaking, the situation is concerning.",
+        "Frankly speaking, I disagree with you."
+      ]
+    },
+    {
+      "word": "generally speaking",
+      "jp": "一般的に言えば",
+      "pos": "phrase",
+      "emoji": "📢",
+      "examples": [
+        "Generally speaking, people want to protect the environment.",
+        "Generally speaking, summers are hot."
+      ]
+    },
+    {
+      "word": "in my opinion",
+      "jp": "私の意見では",
+      "pos": "phrase",
+      "emoji": "💭",
+      "examples": [
+        "In my opinion, renewable energy is vital.",
+        "In my opinion, she studies effectively."
+      ]
+    },
+    {
+      "word": "from my perspective",
+      "jp": "私の観点からは",
+      "pos": "phrase",
+      "emoji": "👀",
+      "examples": [
+        "From my perspective, the policy works.",
+        "From my perspective, this is important."
+      ]
+    },
+    {
+      "word": "as far as I am concerned",
+      "jp": "私限ったことではないが",
+      "pos": "phrase",
+      "emoji": "🤔",
+      "examples": [
+        "As far as I am concerned, we should act.",
+        "As far as I am concerned, it is fine."
+      ]
+    },
+    {
+      "word": "it seems that",
+      "jp": "～のように思われる",
+      "pos": "phrase",
+      "emoji": "🤔",
+      "examples": [
+        "It seems that climate change is accelerating.",
+        "It seems that she is busy."
+      ]
+    },
+    {
+      "word": "it appears that",
+      "jp": "～であるように見える",
+      "pos": "phrase",
+      "emoji": "👁️",
+      "examples": [
+        "It appears that the ecosystem is fragile.",
+        "It appears that she succeeded."
+      ]
+    },
+    {
+      "word": "meanwhile",
+      "jp": "その間に、一方では",
+      "pos": "adverb",
+      "emoji": "⏱️",
+      "examples": [
+        "Meanwhile, temperatures continue rising.",
+        "She works hard. Meanwhile, her sister studies."
+      ]
+    },
+    {
+      "word": "at the same time",
+      "jp": "同時に",
+      "pos": "phrase",
+      "emoji": "⏰",
+      "examples": [
+        "We need development at the same time as conservation.",
+        "She listens to music. At the same time, she reads."
+      ]
+    },
+    {
+      "word": "simultaneously",
+      "jp": "同時に",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Simultaneously, prices dropped.",
+        "She translated simultaneously."
+      ]
+    },
+    {
+      "word": "eventually",
+      "jp": "最終的に",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Eventually, the company adopted policies.",
+        "Eventually, she succeeded."
+      ]
+    },
+    {
+      "word": "ultimately",
+      "jp": "究極的には",
+      "pos": "adverb",
+      "emoji": "🎯",
+      "examples": [
+        "Ultimately, global cooperation is necessary.",
+        "Ultimately, we face the consequences."
+      ]
+    },
+    {
+      "word": "basically",
+      "jp": "基本的に",
+      "pos": "adverb",
+      "emoji": "📋",
+      "examples": [
+        "Basically, we must reduce emissions.",
+        "Basically, she means well."
+      ]
+    },
+    {
+      "word": "essentially",
+      "jp": "本質的に",
+      "pos": "adverb",
+      "emoji": "💎",
+      "examples": [
+        "Essentially, it's about balance.",
+        "Essentially, the problem remains."
+      ]
+    },
+    {
+      "word": "technically",
+      "jp": "技術的に、法的に",
+      "pos": "adverb",
+      "emoji": "⚙️",
+      "examples": [
+        "Technically, the law applies.",
+        "Technically, the system is efficient."
+      ]
+    },
+    {
+      "word": "practically",
+      "jp": "事実上、実用的に",
+      "pos": "adverb",
+      "emoji": "🔧",
+      "examples": [
+        "Practically, we need funds.",
+        "It's practically impossible."
+      ]
+    },
+    {
+      "word": "theoretically",
+      "jp": "理論的には",
+      "pos": "adverb",
+      "emoji": "🔬",
+      "examples": [
+        "Theoretically, it could work.",
+        "Theoretically, the plan is perfect."
+      ]
+    },
+    {
+      "word": "relatively",
+      "jp": "比較的",
+      "pos": "adverb",
+      "emoji": "⚖️",
+      "examples": [
+        "Relatively, the impact is small.",
+        "Relatively, the price is affordable."
+      ]
+    },
+    {
+      "word": "absolutely",
+      "jp": "全く、絶対に",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "Absolutely, action is required.",
+        "She is absolutely correct."
+      ]
+    },
+    {
+      "word": "definitely",
+      "jp": "確かに",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "Definitely, we need change.",
+        "Definitely, she will come."
+      ]
+    },
+    {
+      "word": "certainly",
+      "jp": "確かに",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "Certainly, conservation matters.",
+        "Certainly, she understands."
+      ]
+    },
+    {
+      "word": "undoubtedly",
+      "jp": "疑いなく",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "Undoubtedly, human activity affects climate.",
+        "Undoubtedly, she succeeded."
+      ]
+    },
+    {
+      "word": "obviously",
+      "jp": "明らかに",
+      "pos": "adverb",
+      "emoji": "👁️",
+      "examples": [
+        "Obviously, pollution harms wildlife.",
+        "Obviously, she is talented."
+      ]
+    },
+    {
+      "word": "clearly",
+      "jp": "明らかに、はっきりと",
+      "pos": "adverb",
+      "emoji": "👁️",
+      "examples": [
+        "Clearly, we need action.",
+        "She thinks clearly."
+      ]
+    },
+    {
+      "word": "evidently",
+      "jp": "明らかに",
+      "pos": "adverb",
+      "emoji": "👁️",
+      "examples": [
+        "Evidently, environmental damage accelerates.",
+        "Evidently, she tried hard."
+      ]
+    },
+    {
+      "word": "apparently",
+      "jp": "どうも～のようだ",
+      "pos": "adverb",
+      "emoji": "🤔",
+      "examples": [
+        "Apparently, the plan failed.",
+        "Apparently, she lives there."
+      ]
+    },
+    {
+      "word": "supposedly",
+      "jp": "そのようだ、噂によると",
+      "pos": "adverb",
+      "emoji": "🤔",
+      "examples": [
+        "Supposedly, it's effective.",
+        "Supposedly, she is rich."
+      ]
+    },
+    {
+      "word": "arguably",
+      "jp": "いえるかもしれない",
+      "pos": "adverb",
+      "emoji": "💬",
+      "examples": [
+        "Arguably, climate change is urgent.",
+        "Arguably, she is the best."
+      ]
+    },
+    {
+      "word": "presumably",
+      "jp": "恐らく",
+      "pos": "adverb",
+      "emoji": "🤔",
+      "examples": [
+        "Presumably, the problem will be solved.",
+        "Presumably, she will agree."
+      ]
+    },
+    {
+      "word": "ideally",
+      "jp": "理想的には",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Ideally, we reduce all waste.",
+        "Ideally, she studies daily."
+      ]
+    },
+    {
+      "word": "regrettably",
+      "jp": "残念ながら",
+      "pos": "adverb",
+      "emoji": "😔",
+      "examples": [
+        "Regrettably, progress is slow.",
+        "Regrettably, she cannot come."
+      ]
+    },
+    {
+      "word": "fortunately",
+      "jp": "幸いなことに",
+      "pos": "adverb",
+      "emoji": "😊",
+      "examples": [
+        "Fortunately, awareness is growing.",
+        "Fortunately, she is safe."
+      ]
+    },
+    {
+      "word": "unfortunately",
+      "jp": "不幸なことに",
+      "pos": "adverb",
+      "emoji": "😔",
+      "examples": [
+        "Unfortunately, pollution continues.",
+        "Unfortunately, she was late."
+      ]
+    },
+    {
+      "word": "luckily",
+      "jp": "幸運にも",
+      "pos": "adverb",
+      "emoji": "🍀",
+      "examples": [
+        "Luckily, the impact was limited.",
+        "Luckily, she found it."
+      ]
+    },
+    {
+      "word": "interestingly",
+      "jp": "興味深いことに",
+      "pos": "adverb",
+      "emoji": "🤔",
+      "examples": [
+        "Interestingly, renewable energy becomes cheaper.",
+        "Interestingly, she loves this."
+      ]
+    },
+    {
+      "word": "surprisingly",
+      "jp": "驚くことに",
+      "pos": "adverb",
+      "emoji": "😮",
+      "examples": [
+        "Surprisingly, emissions dropped.",
+        "Surprisingly, she succeeded."
+      ]
+    },
+    {
+      "word": "ironically",
+      "jp": "皮肉にも",
+      "pos": "adverb",
+      "emoji": "😏",
+      "examples": [
+        "Ironically, consumption increases.",
+        "Ironically, she became a teacher."
+      ]
+    },
+    {
+      "word": "notably",
+      "jp": "特に、著名に",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Notably, temperatures increased.",
+        "Notably, she is the youngest."
+      ]
+    },
+    {
+      "word": "specifically",
+      "jp": "具体的に",
+      "pos": "adverb",
+      "emoji": "🎯",
+      "examples": [
+        "Specifically, carbon emissions must drop.",
+        "Specifically, what do you mean?"
+      ]
+    },
+    {
+      "word": "particularly",
+      "jp": "特に",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Particularly, air pollution is severe.",
+        "Particularly, she likes math."
+      ]
+    },
+    {
+      "word": "especially",
+      "jp": "とりわけ",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Especially, Arctic regions are warming.",
+        "Especially, she enjoys reading."
+      ]
+    },
+    {
+      "word": "mainly",
+      "jp": "主に",
+      "pos": "adverb",
+      "emoji": "🎯",
+      "examples": [
+        "Mainly, fossil fuels cause warming.",
+        "Mainly, she studies English."
+      ]
+    },
+    {
+      "word": "primarily",
+      "jp": "主として",
+      "pos": "adverb",
+      "emoji": "🎯",
+      "examples": [
+        "Primarily, industry drives emissions.",
+        "Primarily, she wants to help."
+      ]
+    },
+    {
+      "word": "largely",
+      "jp": "主として、大部分",
+      "pos": "adverb",
+      "emoji": "📊",
+      "examples": [
+        "Largely, human activity causes climate change.",
+        "Largely, she is responsible."
+      ]
+    },
+    {
+      "word": "mostly",
+      "jp": "大部分は",
+      "pos": "adverb",
+      "emoji": "📊",
+      "examples": [
+        "Mostly, people want sustainability.",
+        "Mostly, she stays home."
+      ]
+    },
+    {
+      "word": "usually",
+      "jp": "通常",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Usually, she recycles everything.",
+        "Usually, summer is hot."
+      ]
+    },
+    {
+      "word": "typically",
+      "jp": "典型的に、普通は",
+      "pos": "adverb",
+      "emoji": "🎭",
+      "examples": [
+        "Typically, environmental policies take time.",
+        "Typically, she arrives early."
+      ]
+    },
+    {
+      "word": "frequently",
+      "jp": "頻繁に",
+      "pos": "adverb",
+      "emoji": "🔄",
+      "examples": [
+        "Frequently, natural disasters occur.",
+        "Frequently, she asks questions."
+      ]
+    },
+    {
+      "word": "regularly",
+      "jp": "定期的に",
+      "pos": "adverb",
+      "emoji": "📅",
+      "examples": [
+        "We check the weather regularly.",
+        "She exercises regularly."
+      ]
+    },
+    {
+      "word": "repeatedly",
+      "jp": "繰り返し",
+      "pos": "adverb",
+      "emoji": "🔄",
+      "examples": [
+        "Repeatedly, emissions increase.",
+        "She asked repeatedly."
+      ]
+    },
+    {
+      "word": "continuously",
+      "jp": "絶えず",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Continuously, pollution affects air quality.",
+        "She works continuously."
+      ]
+    },
+    {
+      "word": "constantly",
+      "jp": "絶えず、常に",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Constantly, the climate changes.",
+        "She moves constantly."
+      ]
+    },
+    {
+      "word": "permanently",
+      "jp": "永久的に",
+      "pos": "adverb",
+      "emoji": "♾️",
+      "examples": [
+        "The species might be lost permanently.",
+        "She stays permanently."
+      ]
+    },
+    {
+      "word": "temporarily",
+      "jp": "一時的に",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "The store is closed temporarily.",
+        "She stays temporarily."
+      ]
+    },
+    {
+      "word": "occasionally",
+      "jp": "時折",
+      "pos": "adverb",
+      "emoji": "📅",
+      "examples": [
+        "Occasionally, problems arise.",
+        "Occasionally, she travels."
+      ]
+    },
+    {
+      "word": "rarely",
+      "jp": "めったに～ない",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Rarely, severe weather occurs previously.",
+        "She rarely complains."
+      ]
+    },
+    {
+      "word": "seldom",
+      "jp": "めったに～ない",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Seldom does she miss class.",
+        "They seldom agree."
+      ]
+    },
+    {
+      "word": "scarcely",
+      "jp": "ほとんど～ない",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Scarcely can we find untouched forests.",
+        "She scarcely ate anything."
+      ]
+    },
+    {
+      "word": "barely",
+      "jp": "ほとんど～ない、辛うじて",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Barely, we saw any animals.",
+        "She barely passed."
+      ]
+    },
+    {
+      "word": "hardly",
+      "jp": "ほとんど～ない",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "Hardly anyone disagrees.",
+        "She hardly spoke."
+      ]
+    },
+    {
+      "word": "no longer",
+      "jp": "もはや～ない",
+      "pos": "phrase",
+      "emoji": "🚫",
+      "examples": [
+        "We no longer ignore climate change.",
+        "She no longer lives there."
+      ]
+    },
+    {
+      "word": "not anymore",
+      "jp": "もう～ない",
+      "pos": "phrase",
+      "emoji": "🚫",
+      "examples": [
+        "I not anymore think about it.",
+        "She does not work there anymore."
+      ]
+    },
+    {
+      "word": "already",
+      "jp": "すでに",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "We already see effects of warming.",
+        "She already finished."
+      ]
+    },
+    {
+      "word": "yet",
+      "jp": "まだ",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "We have not acted yet.",
+        "She hasn't called yet."
+      ]
+    },
+    {
+      "word": "still",
+      "jp": "まだ",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "We still have time.",
+        "She still studies English."
+      ]
+    },
+    {
+      "word": "just",
+      "jp": "ちょうど、ただ",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Just recently, we saw extreme weather.",
+        "She just arrived."
+      ]
+    },
+    {
+      "word": "recently",
+      "jp": "最近",
+      "pos": "adverb",
+      "emoji": "📅",
+      "examples": [
+        "Recently, environmental awareness has grown.",
+        "She recently moved."
+      ]
+    },
+    {
+      "word": "currently",
+      "jp": "現在",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Currently, negotiations continue.",
+        "She currently studies at university."
+      ]
+    },
+    {
+      "word": "presently",
+      "jp": "現在、すぐに",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Presently, the team works on this project.",
+        "She will be here presently."
+      ]
+    },
+    {
+      "word": "nowadays",
+      "jp": "今日では",
+      "pos": "adverb",
+      "emoji": "📅",
+      "examples": [
+        "Nowadays, green technology is popular.",
+        "Nowadays, children use smartphones."
+      ]
+    },
+    {
+      "word": "these days",
+      "jp": "最近は",
+      "pos": "phrase",
+      "emoji": "📅",
+      "examples": [
+        "These days, people discuss climate.",
+        "These days, she is busy."
+      ]
+    },
+    {
+      "word": "now",
+      "jp": "今",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "Now is the time to act.",
+        "She understands now."
+      ]
+    },
+    {
+      "word": "right now",
+      "jp": "今すぐ",
+      "pos": "phrase",
+      "emoji": "⚡",
+      "examples": [
+        "Right now, action is urgent.",
+        "She is eating right now."
+      ]
+    },
+    {
+      "word": "immediately",
+      "jp": "直ちに",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "We must act immediately.",
+        "She responded immediately."
+      ]
+    },
+    {
+      "word": "promptly",
+      "jp": "即座に",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "We need to address this promptly.",
+        "She answered promptly."
+      ]
+    },
+    {
+      "word": "directly",
+      "jp": "直接に",
+      "pos": "adverb",
+      "emoji": "➡️",
+      "examples": [
+        "Climate directly affects us.",
+        "She worked directly with him."
+      ]
+    },
+    {
+      "word": "indirectly",
+      "jp": "間接的に",
+      "pos": "adverb",
+      "emoji": "↔️",
+      "examples": [
+        "Indirectly, policies influence lifestyle.",
+        "She helped indirectly."
+      ]
+    },
+    {
+      "word": "individually",
+      "jp": "個別に",
+      "pos": "adverb",
+      "emoji": "👤",
+      "examples": [
+        "Individually, we can make a difference.",
+        "She answered individually."
+      ]
+    },
+    {
+      "word": "collectively",
+      "jp": "集団的に",
+      "pos": "adverb",
+      "emoji": "👥",
+      "examples": [
+        "Collectively, nations must cooperate.",
+        "Collectively, they solved it."
+      ]
+    },
+    {
+      "word": "together",
+      "jp": "一緒に、協力して",
+      "pos": "adverb",
+      "emoji": "🤝",
+      "examples": [
+        "We can protect nature together.",
+        "She works together with them."
+      ]
+    },
+    {
+      "word": "alone",
+      "jp": "単独で、一人",
+      "pos": "adverb/adjective",
+      "emoji": "👤",
+      "examples": [
+        "She does yoga alone.",
+        "She is not alone."
+      ]
+    },
+    {
+      "word": "by oneself",
+      "jp": "一人で",
+      "pos": "phrase",
+      "emoji": "👤",
+      "examples": [
+        "She studies by herself.",
+        "He did it by himself."
+      ]
+    },
+    {
+      "word": "mutually",
+      "jp": "相互に",
+      "pos": "adverb",
+      "emoji": "🔄",
+      "examples": [
+        "The benefits are mutually shared.",
+        "They respect each other mutually."
+      ]
+    },
+    {
+      "word": "separately",
+      "jp": "別々に",
+      "pos": "adverb",
+      "emoji": "↔️",
+      "examples": [
+        "They work separately.",
+        "She ate separately."
+      ]
+    },
+    {
+      "word": "together",
+      "jp": "一緒に",
+      "pos": "adverb",
+      "emoji": "🤝",
+      "examples": [
+        "We studied together.",
+        "She lives together with her family."
+      ]
+    },
+    {
+      "word": "increasingly",
+      "jp": "ますます",
+      "pos": "adverb",
+      "emoji": "📈",
+      "examples": [
+        "Increasingly, businesses adopt green practices.",
+        "She studies increasingly harder."
+      ]
+    },
+    {
+      "word": "decreasingly",
+      "jp": "減りながら",
+      "pos": "adverb",
+      "emoji": "📉",
+      "examples": [
+        "Biodiversity is decreasingly widespread.",
+        "She visits decreasingly often."
+      ]
+    },
+    {
+      "word": "gradually",
+      "jp": "徐々に",
+      "pos": "adverb",
+      "emoji": "📈",
+      "examples": [
+        "Gradually, temperatures rise.",
+        "Gradually, she understood."
+      ]
+    },
+    {
+      "word": "suddenly",
+      "jp": "突然",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "Suddenly, extreme weather occurred.",
+        "She left suddenly."
+      ]
+    },
+    {
+      "word": "immediately",
+      "jp": "直ちに",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "Immediately, she took action.",
+        "Respond immediately."
+      ]
+    },
+    {
+      "word": "abruptly",
+      "jp": "不意に",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "Abruptly, the conversation changed.",
+        "She stopped abruptly."
+      ]
+    },
+    {
+      "word": "rapidly",
+      "jp": "急速に",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "The situation deteriorates rapidly.",
+        "She learns rapidly."
+      ]
+    },
+    {
+      "word": "quickly",
+      "jp": "速く",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "She works quickly.",
+        "Come quickly."
+      ]
+    },
+    {
+      "word": "swiftly",
+      "jp": "迅速に",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "Swiftly, the team responded.",
+        "She runs swiftly."
+      ]
+    },
+    {
+      "word": "nervously",
+      "jp": "緊張して",
+      "pos": "adverb",
+      "emoji": "😬",
+      "examples": [
+        "Nervously, she spoke.",
+        "He smiled nervously."
+      ]
+    },
+    {
+      "word": "carefully",
+      "jp": "注意深く",
+      "pos": "adverb",
+      "emoji": "🔍",
+      "examples": [
+        "She reads carefully.",
+        "Work carefully."
+      ]
+    },
+    {"word":"thoughtfully","jp":"思慮深く","pos":"adverb","emoji":"🤔","examples":["She thoughtfully considers options.","The teacher answered thoughtfully."]},
+    {"word":"honestly","jp":"正直に","pos":"adverb","emoji":"😊","examples":["Honestly, she dislikes this.","Honestly, why are you late?"]},
+    {"word":"sincerely","jp":"心から","pos":"adverb","emoji":"❤️","examples":["Sincerely, she cares.","She wrote sincerely."]},
+    {"word":"truly","jp":"真に","pos":"adverb","emoji":"✅","examples":["Truly, environmental action matters.","Truly, she is talented."]},
+    {"word":"candidly","jp":"率直に","pos":"adverb","emoji":"💬","examples":["Candidly, I disagree.","She candidly spoke."]},
+    {"word":"frankly","jp":"率直に","pos":"adverb","emoji":"💬","examples":["Frankly, the plan works.","Frankly, I prefer tea."]},
+    {"word":"broadly","jp":"広く","pos":"adverb","emoji":"📐","examples":["Broadly, the policy affects everyone.","She thinks broadly."]},
+    {"word":"widely","jp":"広く","pos":"adverb","emoji":"🌐","examples":["Widely, people accept this technology.","She researched widely."]},
+    {"word":"fully","jp":"完全に","pos":"adverb","emoji":"✅","examples":["We fully support the initiative.","She fully understands."]},
+    {"word":"completely","jp":"完全に","pos":"adverb","emoji":"✅","examples":["Completely, the forest recovered.","She finished completely."]},
+    {"word":"thoroughly","jp":"徹底的に","pos":"adverb","emoji":"🔍","examples":["Thoroughly, scientists studied the ecosystem.","She cleaned thoroughly."]},
+    {"word":"partially","jp":"部分的に","pos":"adverb","emoji":"📊","examples":["Partially, the damage was prevented.","She succeeded partially."]},
+    {"word":"entirely","jp":"全く","pos":"adverb","emoji":"✅","examples":["Entirely, the approach changed.","She agrees entirely."]},
+    {"word":"overall","jp":"全体的に","pos":"adverb","emoji":"📊","examples":["Overall, the trend is negative.","Overall, she performed well."]},
+    {"word":"worldwide","jp":"世界中で","pos":"adverb","emoji":"🌍","examples":["Worldwide, temperatures rise.","She is famous worldwide."]},
+    {"word":"globally","jp":"世界規模で","pos":"adverb","emoji":"🌍","examples":["Globally, countries cooperate.","She studies globally."]},
+    {"word":"internationally","jp":"国際的に","pos":"adverb","emoji":"🌏","examples":["Internationally, negotiations continue.","She is known internationally."]},
+    {"word":"nationally","jp":"全国的に","pos":"adverb","emoji":"🇯🇵","examples":["Nationally, policies are implemented.","She is recognized nationally."]}, 
+    {"word":"locally","jp":"地域的に","pos":"adverb","emoji":"📍","examples":["Locally, communities take action.","She acts locally."]},
+    {"word":"environmentally","jp":"環境的に","pos":"adverb","emoji":"🌿","examples":["Environmentally, we must do better.","She values environmentally friendly habits."]},
+    {"word":"economically","jp":"経済的に","pos":"adverb","emoji":"💰","examples":["Economically, green energy makes sense.","She decides economically."]},
+    {"word":"socially","jp":"社会的に","pos":"adverb","emoji":"👥","examples":["Socially, people pressure companies.","She is outgoing socially."]},
+    {"word":"politically","jp":"政治的に","pos":"adverb","emoji":"🏛️","examples":["Politically, climate change is debated.","She became involved politically."]},
+    {"word":"legally","jp":"法的に","pos":"adverb","emoji":"⚖️","examples":["Legally, they must comply.","She acted legally."]},
+    {"word":"technically","jp":"技術的に","pos":"adverb","emoji":"⚙️","examples":["Technically, the system is efficient.","She solved it technically."]},
+    {"word":"academically","jp":"学術的に","pos":"adverb","emoji":"🎓","examples":["Academically, she excels.","Academically, the research is thorough."]},
+    {"word":"personally","jp":"個人的に","pos":"adverb","emoji":"👤","examples":["Personally, I agree.","Personally, she worries."]}]，
+    {"word":"professionally","jp":"専門的に、職業的に","pos":"adverb","emoji":"💼","examples":["Professionally, she respects deadlines.","It was done professionally."]},
+    {"word":"emotionally","jp":"感情的に","pos":"adverb","emoji":"😊","examples":["Emotionally, she was affected.","She reacted emotionally."]},
+    {"word":"physically","jp":"身体的に","pos":"adverb","emoji":"💪","examples":["Physically, she was exhausted.","Physically, the work is demanding."]},
+    {"word":"mentally","jp":"精神的に","pos":"adverb","emoji":"🧠","examples":["Mentally, she prepared.","She felt tired mentally."]},
+    {"word":"financially","jp":"財政的に","pos":"adverb","emoji":"💵","examples":["Financially, the company struggles.","She is stable financially."]},
+    {"word":"structurally","jp":"構造的に","pos":"adverb","emoji":"🏗️","examples":["Structurally, the building is sound.","Structurally, the plan works."]},
+    {"word":"functionally","jp":"機能的に","pos":"adverb","emoji":"⚙️","examples":["Functionally, the device works.","Functionally, the organization is efficient."]},
+    {"word":"aesthetically","jp":"美学的に","pos":"adverb","emoji":"🎨","examples":["Aesthetically, the design is pleasing.","She values aesthetically pleasing things."]},
+    {"word":"strategically","jp":"戦略的に","pos":"adverb","emoji":"♟️","examples":["Strategically, they positioned themselves.","Strategically, she planned her career."]},
+    {"word":"tactically","jp":"戦術的に","pos":"adverb","emoji":"⚙️","examples":["Tactically, they moved carefully.","Tactically, the team operates."]},
+    {"word":"practically","jp":"実用的に","pos":"adverb","emoji":"🔧","examples":["Practically, this works.","She speaks practically."]},
+    {"word":"logically","jp":"論理的に","pos":"adverb","emoji":"🧠","examples":["Logically, her reasoning holds.","She thinks logically."]}, 
+    {"word":"emotionally","jp":"感情的に","pos":"adverb","emoji":"😢","examples":["Emotionally, the story moves her.","She reacts emotionally."]},
+    {"word":"instinctively","jp":"本能的に","pos":"adverb","emoji":"🦁","examples":["Instinctively, she knew.","Instinctively, animals protect their young."]},
+    {"word":"intuitively","jp":"直感的に","pos":"adverb","emoji":"💡","examples":["Intuitively, she solves problems.Intuitively, some understand complex ideas."]},
+    {"word":"consciously","jp":"意識的に","pos":"adverb","emoji":"🧠","examples":["Consciously, she tries to be eco-friendly.Consciously, the team worked."]},
+    {"word":"unconsciously","jp":"無意識に","pos":"adverb","emoji":"😴","examples":["Unconsciously, we harm nature.Unconsciously, she hummed a song."]},
+    {"word":"deliberately","jp":"意図的に","pos":"adverb","emoji":"🎯","examples":["Deliberately, the company reduced waste.Deliberately, she chose the harder path."]},
+    {"word":"intentionally","jp":"意図的に","pos":"adverb","emoji":"🎯","examples":["Intentionally, she saved time.Intentionally, the law favors green energy."]},
+    {"word":"accidentally","jp":"偶然に","pos":"adverb","emoji":"❓","examples":["Accidentally, she dropped her phone.Accidentally, they discovered oil."]},
+    {"word":"inevitably","jp":"避けられずに","pos":"adverb","emoji":"⏰","examples":["Inevitably, resources run out.Inevitably, humans adapt."]},
+    {"word":"unavoidably","jp":"避けられずに","pos":"adverb","emoji":"🚫","examples":["Unavoidably, conflicts arise.Unavoidably, prices change."]},
+    {"word":"undoubtedly","jp":"疑いなく","pos":"adverb","emoji":"✅","examples":["Undoubtedly, the climate affects us.Undoubtedly, she deserves praise."]},
+    {"word":"unquestionably","jp":"間違いなく","pos":"adverb","emoji":"✅","examples":["Unquestionably, action is needed.She unquestionably excels."]},
+    {"word":"undeniably","jp":"否定できないほどに","pos":"adverb","emoji":"✅","examples":["Undeniably, pollution worsens.Undeniably, she is creative."]},
+    {"word":"irrefutably","jp":"反論の余地なく","pos":"adverb","emoji":"✅","examples":["Irrefutably, the data shows change.She succeeded irrefutably."]},
+    {"word":"indisputably","jp":"疑いの余地なく","pos":"adverb","emoji":"✅","examples":["Indisputably, the planet warms.She is indisputably the best."]},
+    {"word":"undeniably","jp":"否定できないほどに","pos":"adverb","emoji":"✅","examples":["Undeniably, she influenced the team.Undeniably, environmental impact is serious."]},
+    {"word":"apparently","jp":"どうも～のようだ","pos":"adverb","emoji":"🤔","examples":["Apparently, emissions have stabilized.Apparently, she finished last."]},
+    {"word":"seemingly","jp":"一見～のように","pos":"adverb","emoji":"👁️","examples":["Seemingly, the problem is solved.Seemingly, it was easy."]},
+    {"word":"supposedly","jp":"そのように言われている","pos":"adverb","emoji":"🤔","examples":["Supposedly, green energy will dominate.Supposedly, she moved abroad."]},
+    {"word":"theoretically","jp":"理論的には","pos":"adverb","emoji":"🔬","examples":["Theoretically, hydrogen replaces fossil fuels.Theoretically, it should work."]},
+    {"word":"hypothetically","jp":"仮定として","pos":"adverb","emoji":"❓","examples":["Hypothetically, if emissions stop, temperatures stabilize.Hypothetically, this solves the problem."]},
+    {"word":"ideally","jp":"理想的には","pos":"adverb","emoji":"⭐","examples":["Ideally, all companies would become green.Ideally, the answer is clear."]},
+    {"word":"ideologically","jp":"イデオロギー的に","pos":"adverb","emoji":"🎯","examples":["Ideologically, they differ.Ideologically, she supports sustainability."]},
+    {"word":"philosophically","jp":"哲学的に","pos":"adverb","emoji":"🤔","examples":["Philosophically, her approach is interesting.Philosophically, the question is deep."]},
+    {"word":"ethically","jp":"倫理的に","pos":"adverb","emoji":"⚖️","examples":["Ethically, the decision was right.Ethically, we must consider future generations."]},
+    {"word":"morally","jp":"道徳的に","pos":"adverb","emoji":"⚖️","examples":["Morally, we have a responsibility.She made a morally difficult choice."]},
+    {"word":"culturally","jp":"文化的に","pos":"adverb","emoji":"🌏","examples":["Culturally, views on nature vary.Culturally, the food is unique."]},
+    {"word":"historically","jp":"歴史的に","pos":"adverb","emoji":"📜","examples":["Historically, societies have adapted.Historically, the region was agricultural."]},
+    {"word","geographically","jp":"地理的に","pos":"adverb","emoji":"🗺️","examples":["Geographically, Japan is mountainous.Geographically, its location matters."]},
+    {"word":"demographically","jp":"人口統計的に","pos":"adverb","emoji":"👥","examples":["Demographically, the population is aging.She studies demographics."]},
+    {"word":"statistically","jp":"統計的に","pos":"adverb","emoji":"📊","examples":["Statistically, the data is significant.Statistically, it is likely."]},
+    {"word":"numerically","jp":"数字的に","pos":"adverb","emoji":"🔢","examples":["Numerically, the workforce is shrinking.She counts numerically."]},
+    {"word":"quantitatively","jp":"量的に","pos":"adverb","emoji":"📊","examples":["Quantitatively, the impact is huge.She analyzes quantitatively."]},
+    {"word":"qualitatively","jp":"質的に","pos":"adverb","emoji":"📋","examples":["Qualitatively, the change is positive.Qualitatively, the product is superior."]},
+    {"word":"subjectively","jp":"主観的に","pos":"adverb","emoji":"🧠","examples":["Subjectively, I prefer tea.She evaluates subjectively."]},
+    {"word":"objectively","jp":"客観的に","pos":"adverb","emoji":"🧐","examples":["Objectively, the data speaks.She judges objectively."]},
+    {"word":"comparatively","jp":"比較的に","pos":"adverb","emoji":"⚖️","examples":["Comparatively, the price is reasonable.She worked comparatively well."]},
+    {"word":"relatively","jp":"相対的に","pos":"adverb","emoji":"⚖️","examples":["Relatively, the policy is flexible.Relatively, she is tall."]},
+    {"word":"absolutely","jp":"全く","pos":"adverb","emoji":"✅","examples":["Absolutely, she succeeded.Absolutely, we act now."]},
+    {"word":"completely","jp":"完全に","pos":"adverb","emoji":"✅","examples":["Completely, the forest recovered.She answered completely."]},
+    {"word":"totally","jp":"全く","pos":"adverb","emoji":"✅","examples":["Totally, she forgot.Totally, this matters."]},
+    {"word":"utterly","jp":"全く、完全に","pos":"adverb","emoji":"✅","examples":["Utterly, she disagrees.Utterly, the situation improved."]},
+    {"word":"hardly","jp":"ほとんど～ない","pos":"adverb","emoji":"🚫","examples":["Hardly anyone came.She hardly spoke."]},
+    {"word":"scarcely","jp":"ほとんど～ない","pos":"adverb","emoji":"🚫","examples":["Scarcely could we see.She scarcely noticed."]},
+    {"word":"barely","jp":"ほとんど～ない","pos":"adverb","emoji":"🚫","examples":["Barely, she passed.Barely, she slept."]},
+    {"word":"partially","jp":"部分的に","pos":"adverb","emoji":"📊","examples":["Partially completed.Partially, I agree."]},
+    {"word":"wholly","jp":"全く","pos":"adverb","emoji":"✅","examples":["Wholly, she agreed.Wholly, the issue is resolved."]},
+    {"word":"fully","jp":"完全に","pos":"adverb","emoji":"✅","examples":["Fully, we appreciate her.Fully, it works."]},
+    {"word":"entirely","jp":"全く","pos":"adverb","emoji":"✅","examples":["Entirely, she devoted herself.Entirely, the plan changed."]},
+    {"word":"primarily","jp":"主として","pos":"adverb","emoji":"🎯","examples":["Primarily, she studies English.Primarily, this matters."]},
+    {"word":"mostly","jp":"大部分は","pos":"adverb","emoji":"📊","examples":["Mostly, the students attend.Mostly, she stays home."]},
+    {"word":"largely","jp":"大部分は","pos":"adverb","emoji":"📊","examples":["Largely, they depend on oil.Largely, she is responsible."]},
+    {"word":"mainly","jp":"主に","pos":"adverb","emoji":"🎯","examples":["Mainly, she worries about climate.Mainly, the team agrees."]},
+    {"word":"chiefly","jp":"主として","pos":"adverb","emoji":"🎯","examples":["Chiefly, this policy affects industry.She studies chiefly art."]},
+    {"word":"mostly","jp":"大部分は","pos":"adverb","emoji":"📊","examples":["Mostly, the area is natural.Mostly, people agree."]},
+    {"word":"frequently","jp":"頻繁に","pos":"adverb","emoji":"🔄","examples":["Frequently, we see extreme weather.Frequently, she asks questions."]},
+    {"word":"often","jp":"よく","pos":"adverb","emoji":"🔄","examples":["Often, she visits the park.Often, the traffic is bad."]},
+    {"word":"repeatedly","jp":"繰り返し","pos":"adverb","emoji":"🔄","examples":["Repeatedly, she tried.Repeatedly, they failed."]},
+    {"word":"periodically","jp":"定期的に","pos":"adverb","emoji":"📅","examples":["Periodically, they check the data.She visits periodically."]},
+    {"word":"occasionally","jp":"時折","pos":"adverb","emoji":"📅","examples":["Occasionally, she travels.Occasionally, the system fails."]},
+    {"word":"seldom","jp":"めったに～ない","pos":"adverb","emoji":"📅","examples":["Seldom, she complains.Seldom do we see snow."]},
+    {"word":"rarely","jp":"まれに","pos":"adverb","emoji":"📅","examples":["Rarely, she is late.Rarely, these opportunities arise."]},
+    {"word":"usually","jp":"通常","pos":"adverb","emoji":"⏰","examples":["Usually, she is kind.Usually, trains are on time."]},
+    {"word":"normally","jp":"普通は","pos":"adverb","emoji":"⏰","examples":["Normally, we recycle glass.Normally, she works till 6."]},
+    {"word":"typically","jp":"典型的に","pos":"adverb","emoji":"🎭","examples":["Typically, she arrives early.Typically, this area is wet."]},
+    {"word":"commonly","jp":"一般に","pos":"adverb","emoji":"🌐","examples":["Commonly, this approach works.Commonly adopted strategies."]},
+    {"word":"generally","jp":"一般に","pos":"adverb","emoji":"🌐","examples":["Generally, the weather is nice here.Generally, she succeeds."]},
+    {"word":"commonly","jp":"一般的に","pos":"adverb","emoji":"🌐","examples":["Commonly, consumers buy sustainable products.Commonly, she finds errors."]},
+    {"word":"universally","jp":"普遍的に","pos":"adverb","emoji":"🌏","examples":["Universally, music is appreciated.Universally, they agreed on action."]},
+    {"word":"globally","jp":"世界で","pos":"adverb","emoji":"🌍","examples":["Globally, warming is evident.Globally, English is spoken."]},
+    {"word":"regionally","jp":"地域的に","pos":"adverb","emoji":"🗺️","examples":["Regionally, strategies vary.She operates regionally."]},
+    {"word":"locally","jp":"地域的に","pos":"adverb","emoji":"📍","examples":["Locally, the pollution is high.Locally sourced vegetables."]},
+    {"word":"internationally","jp":"国際的に","pos":"adverb","emoji":"🌏","examples":["Internationally, treaties exist.Internationally, she is admired."]},
+    {"word":"nationally","jp":"全国的に","pos":"adverb","emoji":"🇯🇵","examples":["Nationally, conservation efforts grow.Nationally, she is famous."]},
+    {"word":"culturally","jp":"文化的に","pos":"adverb","emoji":"🌏","examples":["Culturally, views differ.She adapts culturally."]}  
+  ]
+}

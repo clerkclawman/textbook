@@ -1,0 +1,769 @@
+{
+  "metadata": {
+    "level": "Eiken Grade 5",
+    "totalWords": 80,
+    "hasEmojis": true
+  },
+  "words": [
+    {
+      "word": "grade",
+      "jp": "学年、成績",
+      "pos": "noun",
+      "emoji": "📊",
+      "examples": [
+        "I am in fifth grade at school.",
+        "She gets good grades in all her subjects."
+      ]
+    },
+    {
+      "word": "your",
+      "jp": "あなたの",
+      "pos": "pronoun",
+      "emoji": "👤",
+      "examples": [
+        "Is this your book?",
+        "Your name is written on the paper."
+      ]
+    },
+    {
+      "word": "every",
+      "jp": "すべての",
+      "pos": "adjective",
+      "emoji": "♾️",
+      "examples": [
+        "I study English every day.",
+        "She goes to school every morning."
+      ]
+    },
+    {
+      "word": "yes",
+      "jp": "はい",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "Yes, I can help you.",
+        "Yes, I like apples very much."
+      ]
+    },
+    {
+      "word": "girl",
+      "jp": "女の子",
+      "pos": "noun",
+      "emoji": "👧",
+      "examples": [
+        "The girl plays soccer in the park.",
+        "My sister is a kind girl."
+      ]
+    },
+    {
+      "word": "question",
+      "jp": "質問",
+      "pos": "noun",
+      "emoji": "❓",
+      "examples": [
+        "Can I ask you a question?",
+        "The teacher answers every question."
+      ]
+    },
+    {
+      "word": "eiken",
+      "jp": "英検",
+      "pos": "noun",
+      "emoji": "📝",
+      "examples": [
+        "I study hard for the Eiken test.",
+        "Many students take the Eiken exam."
+      ]
+    },
+    {
+      "word": "boy",
+      "jp": "男の子",
+      "pos": "noun",
+      "emoji": "👦",
+      "examples": [
+        "The boy reads books every day.",
+        "He is a smart boy who likes math."
+      ]
+    },
+    {
+      "word": "teacher",
+      "jp": "先生",
+      "pos": "noun",
+      "emoji": "👨‍🏫",
+      "examples": [
+        "Our teacher is very kind.",
+        "The teacher teaches English at school."
+      ]
+    },
+    {
+      "word": "school",
+      "jp": "学校",
+      "pos": "noun",
+      "emoji": "🏫",
+      "examples": [
+        "I go to school by bus every morning.",
+        "Our school has a big playground."
+      ]
+    },
+    {
+      "word": "today",
+      "jp": "今日",
+      "pos": "adverb",
+      "emoji": "📅",
+      "examples": [
+        "Today is Monday.",
+        "I have a test today."
+      ]
+    },
+    {
+      "word": "listening",
+      "jp": "聞くこと",
+      "pos": "verb",
+      "emoji": "👂",
+      "examples": [
+        "I am listening to music.",
+        "She enjoys listening to stories."
+      ]
+    },
+    {
+      "word": "good",
+      "jp": "良い",
+      "pos": "adjective",
+      "emoji": "⭐",
+      "examples": [
+        "This is a good book.",
+        "She is a good friend."
+      ]
+    },
+    {
+      "word": "where",
+      "jp": "どこ",
+      "pos": "adverb",
+      "emoji": "📍",
+      "examples": [
+        "Where is my bag?",
+        "Where do you live?"
+      ]
+    },
+    {
+      "word": "play",
+      "jp": "遊ぶ、演奏する",
+      "pos": "verb",
+      "emoji": "🎮",
+      "examples": [
+        "I play soccer with my friends.",
+        "She plays the piano very well."
+      ]
+    },
+    {
+      "word": "how",
+      "jp": "どのように",
+      "pos": "adverb",
+      "emoji": "❓",
+      "examples": [
+        "How are you today?",
+        "How do you spell your name?"
+      ]
+    },
+    {
+      "word": "please",
+      "jp": "お願いします",
+      "pos": "adverb",
+      "emoji": "🙏",
+      "examples": [
+        "Please help me with my homework.",
+        "Please sit down."
+      ]
+    },
+    {
+      "word": "too",
+      "jp": "～もまた",
+      "pos": "adverb",
+      "emoji": "➕",
+      "examples": [
+        "I like apples too.",
+        "She is tall too."
+      ]
+    },
+    {
+      "word": "book",
+      "jp": "本",
+      "pos": "noun",
+      "emoji": "📖",
+      "examples": [
+        "I read a book before going to bed.",
+        "She has many books in her room."
+      ]
+    },
+    {
+      "word": "mom",
+      "jp": "お母さん",
+      "pos": "noun",
+      "emoji": "👩",
+      "examples": [
+        "My mom cooks delicious food.",
+        "Mom helps me with my homework."
+      ]
+    },
+    {
+      "word": "let",
+      "jp": "～させる",
+      "pos": "verb",
+      "emoji": "🤝",
+      "examples": [
+        "Let's go to the park together.",
+        "Let me help you."
+      ]
+    },
+    {
+      "word": "english",
+      "jp": "英語",
+      "pos": "noun",
+      "emoji": "🇬🇧",
+      "examples": [
+        "I study English at school.",
+        "She speaks English very well."
+      ]
+    },
+    {
+      "word": "old",
+      "jp": "古い、年老いた",
+      "pos": "adjective",
+      "emoji": "👴",
+      "examples": [
+        "My grandmother is old.",
+        "This book is very old."
+      ]
+    },
+    {
+      "word": "his",
+      "jp": "彼の",
+      "pos": "pronoun",
+      "emoji": "👨",
+      "examples": [
+        "His name is Ken.",
+        "His bag is blue."
+      ]
+    },
+    {
+      "word": "father",
+      "jp": "父",
+      "pos": "noun",
+      "emoji": "👨",
+      "examples": [
+        "My father works in an office.",
+        "Her father is tall."
+      ]
+    },
+    {
+      "word": "who",
+      "jp": "誰",
+      "pos": "pronoun",
+      "emoji": "❓",
+      "examples": [
+        "Who is your friend?",
+        "Who is that girl over there?"
+      ]
+    },
+    {
+      "word": "years",
+      "jp": "年（複数）",
+      "pos": "noun",
+      "emoji": "📅",
+      "examples": [
+        "She is ten years old.",
+        "I have studied English for three years."
+      ]
+    },
+    {
+      "word": "many",
+      "jp": "多くの",
+      "pos": "adjective",
+      "emoji": "🔢",
+      "examples": [
+        "I have many friends at school.",
+        "There are many books in the library."
+      ]
+    },
+    {
+      "word": "train",
+      "jp": "電車",
+      "pos": "noun",
+      "emoji": "🚆",
+      "examples": [
+        "I take the train to school.",
+        "The train is late today."
+      ]
+    },
+    {
+      "word": "tennis",
+      "jp": "テニス",
+      "pos": "noun",
+      "emoji": "🎾",
+      "examples": [
+        "I play tennis on weekends.",
+        "She is good at tennis."
+      ]
+    },
+    {
+      "word": "morning",
+      "jp": "朝",
+      "pos": "noun",
+      "emoji": "🌅",
+      "examples": [
+        "I wake up early in the morning.",
+        "We have breakfast in the morning."
+      ]
+    },
+    {
+      "word": "mother",
+      "jp": "母",
+      "pos": "noun",
+      "emoji": "👩",
+      "examples": [
+        "My mother is kind.",
+        "Her mother works at home."
+      ]
+    },
+    {
+      "word": "watch",
+      "jp": "見る、時計",
+      "pos": "verb",
+      "emoji": "👁️",
+      "examples": [
+        "I watch TV in the evening.",
+        "Let's watch the game together."
+      ]
+    },
+    {
+      "word": "bag",
+      "jp": "バッグ",
+      "pos": "noun",
+      "emoji": "👜",
+      "examples": [
+        "My school bag is heavy.",
+        "She carries a red bag."
+      ]
+    },
+    {
+      "word": "chair",
+      "jp": "椅子",
+      "pos": "noun",
+      "emoji": "🪑",
+      "examples": [
+        "Please sit on the chair.",
+        "The chair is made of wood."
+      ]
+    },
+    {
+      "word": "see",
+      "jp": "見る",
+      "pos": "verb",
+      "emoji": "👁️",
+      "examples": [
+        "I see birds in the sky.",
+        "Can you see the blackboard?"
+      ]
+    },
+    {
+      "word": "park",
+      "jp": "公園",
+      "pos": "noun",
+      "emoji": "🌳",
+      "examples": [
+        "We play in the park.",
+        "The park has many trees."
+      ]
+    },
+    {
+      "word": "bus",
+      "jp": "バス",
+      "pos": "noun",
+      "emoji": "🚌",
+      "examples": [
+        "I take the bus to school.",
+        "The bus is coming now."
+      ]
+    },
+    {
+      "word": "day",
+      "jp": "日",
+      "pos": "noun",
+      "emoji": "☀️",
+      "examples": [
+        "Today is a sunny day.",
+        "I study every day."
+      ]
+    },
+    {
+      "word": "she",
+      "jp": "彼女",
+      "pos": "pronoun",
+      "emoji": "👩",
+      "examples": [
+        "She is my friend.",
+        "She likes music."
+      ]
+    },
+    {
+      "word": "name",
+      "jp": "名前",
+      "pos": "noun",
+      "emoji": "🏷️",
+      "examples": [
+        "What is your name?",
+        "My name is Ken."
+      ]
+    },
+    {
+      "word": "go",
+      "jp": "行く",
+      "pos": "verb",
+      "emoji": "🚶",
+      "examples": [
+        "I go to school by bus.",
+        "Let's go to the park."
+      ]
+    },
+    {
+      "word": "like",
+      "jp": "～が好き",
+      "pos": "verb",
+      "emoji": "❤️",
+      "examples": [
+        "I like reading books.",
+        "She likes her new school."
+      ]
+    },
+    {
+      "word": "have",
+      "jp": "持っている",
+      "pos": "verb",
+      "emoji": "📦",
+      "examples": [
+        "I have a dog.",
+        "She has a new bag."
+      ]
+    },
+    {
+      "word": "time",
+      "jp": "時間",
+      "pos": "noun",
+      "emoji": "⏰",
+      "examples": [
+        "What time is it now?",
+        "I don't have time today."
+      ]
+    },
+    {
+      "word": "home",
+      "jp": "家",
+      "pos": "noun",
+      "emoji": "🏠",
+      "examples": [
+        "I go home at 4 o'clock.",
+        "My home is near the school."
+      ]
+    },
+    {
+      "word": "friend",
+      "jp": "友達",
+      "pos": "noun",
+      "emoji": "👫",
+      "examples": [
+        "She is my best friend.",
+        "I have many friends at school."
+      ]
+    },
+    {
+      "word": "family",
+      "jp": "家族",
+      "pos": "noun",
+      "emoji": "👨‍👩‍👧‍👦",
+      "examples": [
+        "I love my family.",
+        "My family has four people."
+      ]
+    },
+    {
+      "word": "food",
+      "jp": "食べ物",
+      "pos": "noun",
+      "emoji": "🍽️",
+      "examples": [
+        "Japanese food is delicious.",
+        "I like eating healthy food."
+      ]
+    },
+    {
+      "word": "water",
+      "jp": "水",
+      "pos": "noun",
+      "emoji": "💧",
+      "examples": [
+        "I drink water every day.",
+        "The water is cold."
+      ]
+    },
+    {
+      "word": "color",
+      "jp": "色",
+      "pos": "noun",
+      "emoji": "🎨",
+      "examples": [
+        "Red is my favorite color.",
+        "The flower has a beautiful color."
+      ]
+    },
+    {
+      "word": "red",
+      "jp": "赤い",
+      "pos": "adjective",
+      "emoji": "🔴",
+      "examples": [
+        "I like red apples.",
+        "She has a red bag."
+      ]
+    },
+    {
+      "word": "blue",
+      "jp": "青い",
+      "pos": "adjective",
+      "emoji": "🔵",
+      "examples": [
+        "The sky is blue.",
+        "She likes blue."
+      ]
+    },
+    {
+      "word": "big",
+      "jp": "大きい",
+      "pos": "adjective",
+      "emoji": "🔶",
+      "examples": [
+        "My school is very big.",
+        "A big dog is playing in the park."
+      ]
+    },
+    {
+      "word": "small",
+      "jp": "小さい",
+      "pos": "adjective",
+      "emoji": "🔶",
+      "examples": [
+        "The bird is small.",
+        "I have a small bag."
+      ]
+    },
+    {
+      "word": "happy",
+      "jp": "嬉しい、幸せ",
+      "pos": "adjective",
+      "emoji": "😊",
+      "examples": [
+        "I am happy today.",
+        "She has a happy family."
+      ]
+    },
+    {
+      "word": "eat",
+      "jp": "食べる",
+      "pos": "verb",
+      "emoji": "🍽️",
+      "examples": [
+        "I eat breakfast at 7 o'clock.",
+        "She eats lunch at school."
+      ]
+    },
+    {
+      "word": "drink",
+      "jp": "飲む",
+      "pos": "verb",
+      "emoji": "🥤",
+      "examples": [
+        "I drink milk every morning.",
+        "She drinks tea in the afternoon."
+      ]
+    },
+    {
+      "word": "read",
+      "jp": "読む",
+      "pos": "verb",
+      "emoji": "📖",
+      "examples": [
+        "I read books before bed.",
+        "She reads the newspaper."
+      ]
+    },
+    {
+      "word": "write",
+      "jp": "書く",
+      "pos": "verb",
+      "emoji": "✏️",
+      "examples": [
+        "I write in my notebook.",
+        "She writes letters to her friends."
+      ]
+    },
+    {
+      "word": "run",
+      "jp": "走る",
+      "pos": "verb",
+      "emoji": "🏃",
+      "examples": [
+        "I run in the park.",
+        "She runs fast."
+      ]
+    },
+    {
+      "word": "walk",
+      "jp": "歩く",
+      "pos": "verb",
+      "emoji": "🚶",
+      "examples": [
+        "I walk to school.",
+        "We walk in the park together."
+      ]
+    },
+    {
+      "word": "talk",
+      "jp": "話す",
+      "pos": "verb",
+      "emoji": "🗣️",
+      "examples": [
+        "I talk to my friends.",
+        "She talks on the phone."
+      ]
+    },
+    {
+      "word": "know",
+      "jp": "知っている",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "I know the answer.",
+        "She knows how to swim."
+      ]
+    },
+    {
+      "word": "think",
+      "jp": "思う",
+      "pos": "verb",
+      "emoji": "💭",
+      "examples": [
+        "I think it will rain.",
+        "She thinks English is fun."
+      ]
+    },
+    {
+      "word": "want",
+      "jp": "～したい",
+      "pos": "verb",
+      "emoji": "💠",
+      "examples": [
+        "I want to play soccer.",
+        "She wants a new book."
+      ]
+    },
+    {
+      "word": "need",
+      "jp": "必要とする",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "I need my pencil.",
+        "She needs help with her homework."
+      ]
+    },
+    {
+      "word": "help",
+      "jp": "助ける",
+      "pos": "verb",
+      "emoji": "🆘",
+      "examples": [
+        "I help my mother cook dinner.",
+        "She helps her friends."
+      ]
+    },
+    {
+      "word": "study",
+      "jp": "勉強する",
+      "pos": "verb",
+      "emoji": "📚",
+      "examples": [
+        "I study English every day.",
+        "She studies math at school."
+      ]
+    },
+    {
+      "word": "learn",
+      "jp": "学ぶ",
+      "pos": "verb",
+      "emoji": "🎓",
+      "examples": [
+        "I learn new words every day.",
+        "She learns to play the piano."
+      ]
+    },
+    {
+      "word": "can",
+      "jp": "～できる",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "I can swim very well.",
+        "She can speak English."
+      ]
+    },
+    {
+      "word": "do",
+      "jp": "する",
+      "pos": "verb",
+      "emoji": "🎬",
+      "examples": [
+        "I do my homework every night.",
+        "She does her best at school."
+      ]
+    },
+    {
+      "word": "make",
+      "jp": "作る",
+      "pos": "verb",
+      "emoji": "🎬",
+      "examples": [
+        "I make breakfast for my family.",
+        "She makes a birthday cake."
+      ]
+    },
+    {
+      "word": "come",
+      "jp": "来る",
+      "pos": "verb",
+      "emoji": "🚶",
+      "examples": [
+        "Please come to my house.",
+        "She comes to school early."
+      ]
+    },
+    {
+      "word": "is",
+      "jp": "～です、～いる",
+      "pos": "verb",
+      "emoji": "🎭",
+      "examples": [
+        "She is my friend.",
+        "The book is on the desk."
+      ]
+    },
+    {
+      "word": "are",
+      "jp": "～です、～いる",
+      "pos": "verb",
+      "emoji": "🎭",
+      "examples": [
+        "We are students.",
+        "They are playing in the park."
+      ]
+    }
+  ]
+}

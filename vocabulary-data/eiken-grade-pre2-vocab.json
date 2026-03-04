@@ -1,0 +1,1939 @@
+{
+  "metadata": {
+    "level": "Eiken Pre-2",
+    "totalWords": 200,
+    "hasEmojis": true
+  },
+  "words": [
+    {
+      "word": "pollution",
+      "jp": "汚染",
+      "pos": "noun",
+      "emoji": "🌫️",
+      "examples": [
+        "Air pollution is a serious problem in cities.",
+        "We need to reduce water pollution."
+      ]
+    },
+    {
+      "word": "environment",
+      "jp": "環境",
+      "pos": "noun",
+      "emoji": "🌍",
+      "examples": [
+        "Protecting the environment is important.",
+        "The environment is changing due to climate."
+      ]
+    },
+    {
+      "word": "recycle",
+      "jp": "リサイクルする",
+      "pos": "verb",
+      "emoji": "♻️",
+      "examples": [
+        "We should recycle paper and plastic.",
+        "She recycles bottles every week."
+      ]
+    },
+    {
+      "word": "recycling",
+      "jp": "リサイクル",
+      "pos": "noun",
+      "emoji": "♻️",
+      "examples": [
+        "Recycling helps protect the earth.",
+        "Our city has a good recycling system."
+      ]
+    },
+    {
+      "word": "product",
+      "jp": "製品",
+      "pos": "noun",
+      "emoji": "📦",
+      "examples": [
+        "This product is made from recycled materials.",
+        "She buys eco-friendly products."
+      ]
+    },
+    {
+      "word": "material",
+      "jp": "材料、物質",
+      "pos": "noun",
+      "emoji": "🧱",
+      "examples": [
+        "The material is biodegradable.",
+        "She uses natural materials."
+      ]
+    },
+    {
+      "word": "village",
+      "jp": "村",
+      "pos": "noun",
+      "emoji": "🏘️",
+      "examples": [
+        "She lives in a small village.",
+        "The village has beautiful scenery."
+      ]
+    },
+    {
+      "word": "beavers",
+      "jp": "ビーバー",
+      "pos": "noun",
+      "emoji": "🦫",
+      "examples": [
+        "Beavers build dams in rivers.",
+        "The village has many beavers."
+      ]
+    },
+    {
+      "word": "salt",
+      "jp": "塩",
+      "pos": "noun",
+      "emoji": "🧂",
+      "examples": [
+        "Too much salt is bad for health.",
+        "She adds a little salt to the soup."
+      ]
+    },
+    {
+      "word": "used",
+      "jp": "使用された",
+      "pos": "adjective",
+      "emoji": "♻️",
+      "examples": [
+        "I bought a used bicycle.",
+        "The used car is cheap but good."
+      ]
+    },
+    {
+      "word": "actually",
+      "jp": "実際に",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "Actually, I don't know the answer.",
+        "She is actually younger than she looks."
+      ]
+    },
+    {
+      "word": "really",
+      "jp": "本当に",
+      "pos": "adverb",
+      "emoji": "💯",
+      "examples": [
+        "I really appreciate your help.",
+        "She really likes studying English."
+      ]
+    },
+    {
+      "word": "please",
+      "jp": "お願いします",
+      "pos": "adverb",
+      "emoji": "🙏",
+      "examples": [
+        "Please tell me more about this.",
+        "She helps me, please thank her."
+      ]
+    },
+    {
+      "word": "thank",
+      "jp": "感謝する",
+      "pos": "verb",
+      "emoji": "🙏",
+      "examples": [
+        "I thank you for your kindness.",
+        "She thanks her teacher."
+      ]
+    },
+    {
+      "word": "man",
+      "jp": "男、人",
+      "pos": "noun",
+      "emoji": "👨",
+      "examples": [
+        "The man is walking his dog.",
+        "She talks to the man at the station."
+      ]
+    },
+    {
+      "word": "woman",
+      "jp": "女",
+      "pos": "noun",
+      "emoji": "👩",
+      "examples": [
+        "The woman is planting flowers.",
+        "She helps the old woman."
+      ]
+    },
+    {
+      "word": "need",
+      "jp": "必要とする",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "I need to study harder.",
+        "She needs your help."
+      ]
+    },
+    {
+      "word": "great",
+      "jp": "すばらしい、偉大な",
+      "pos": "adjective",
+      "emoji": "⭐",
+      "examples": [
+        "She is a great friend.",
+        "This is a great opportunity."
+      ]
+    },
+    {
+      "word": "animals",
+      "jp": "動物",
+      "pos": "noun",
+      "emoji": "🐾",
+      "examples": [
+        "Many animals live in the forest.",
+        "She loves all kinds of animals."
+      ]
+    },
+    {
+      "word": "use",
+      "jp": "使う",
+      "pos": "verb",
+      "emoji": "🛠️",
+      "examples": [
+        "I use English every day.",
+        "She uses public transportation."
+      ]
+    },
+    {
+      "word": "well",
+      "jp": "良く、上手に",
+      "pos": "adverb",
+      "emoji": "⭐",
+      "examples": [
+        "She speaks English very well.",
+        "I hope you are well."
+      ]
+    },
+    {
+      "word": "only",
+      "jp": "だけ、唯一の",
+      "pos": "adverb",
+      "emoji": "🔢",
+      "examples": [
+        "I have only five minutes.",
+        "She is the only one in the room."
+      ]
+    },
+    {
+      "word": "play",
+      "jp": "遊ぶ、演奏する",
+      "pos": "verb",
+      "emoji": "🎮",
+      "examples": [
+        "Children play in the park.",
+        "She plays tennis with her friends."
+      ]
+    },
+    {
+      "word": "see",
+      "jp": "見る",
+      "pos": "verb",
+      "emoji": "👁️",
+      "examples": [
+        "I see many people at the festival.",
+        "She sees her friends every day."
+      ]
+    },
+    {
+      "word": "sure",
+      "jp": "確か、確信している",
+      "pos": "adjective",
+      "emoji": "✅",
+      "examples": [
+        "I am sure about the answer.",
+        "She is sure to pass the exam."
+      ]
+    },
+    {
+      "word": "wanted",
+      "jp": "望んでいた",
+      "pos": "adjective",
+      "emoji": "💭",
+      "examples": [
+        "She wanted to visit that place.",
+        "I wanted to talk to you."
+      ]
+    },
+    {
+      "word": "here",
+      "jp": "ここに",
+      "pos": "adverb",
+      "emoji": "📍",
+      "examples": [
+        "Please come here.",
+        "She is here now."
+      ]
+    },
+    {
+      "word": "bought",
+      "jp": "買った",
+      "pos": "verb",
+      "emoji": "🛒",
+      "examples": [
+        "I bought a new book yesterday.",
+        "She bought flowers for her mother."
+      ]
+    },
+    {
+      "word": "collect",
+      "jp": "集める",
+      "pos": "verb",
+      "emoji": "📦",
+      "examples": [
+        "The town collects garbage every week.",
+        "She collects stamps."
+      ]
+    },
+    {
+      "word": "collects",
+      "jp": "集める（三人称単数）",
+      "pos": "verb",
+      "emoji": "📦",
+      "examples": [
+        "The city collects bottles for recycling.",
+        "She collects rare coins."
+      ]
+    },
+    {
+      "word": "plastic",
+      "jp": "プラスチック",
+      "pos": "noun",
+      "emoji": "🥤",
+      "examples": [
+        "Plastic bottles are bad for the environment.",
+        "She avoids using plastic bags."
+      ]
+    },
+    {
+      "word": "bottles",
+      "jp": "ボトル（複数）",
+      "pos": "noun",
+      "emoji": "🍶",
+      "examples": [
+        "We recycle plastic bottles.",
+        "She collects empty bottles."
+      ]
+    },
+    {
+      "word": "try",
+      "jp": "試みる、～する",
+      "pos": "verb",
+      "emoji": "💪",
+      "examples": [
+        "I try to help the environment.",
+        "She tries her best."
+      ]
+    },
+    {
+      "word": "make",
+      "jp": "作る、～にする",
+      "pos": "verb",
+      "emoji": "🎬",
+      "examples": [
+        "We make the environment better.",
+        "She makes a difference."
+      ]
+    },
+    {
+      "word": "better",
+      "jp": "より良い",
+      "pos": "adjective",
+      "emoji": "📈",
+      "examples": [
+        "This way is better.",
+        "Her English is getting better."
+      ]
+    },
+    {
+      "word": "becoming",
+      "jp": "～になっている",
+      "pos": "verb",
+      "emoji": "🔄",
+      "examples": [
+        "The environment is becoming important.",
+        "She is becoming famous."
+      ]
+    },
+    {
+      "word": "important",
+      "jp": "重要な",
+      "pos": "adjective",
+      "emoji": "⭐",
+      "examples": [
+        "It is important to protect nature.",
+        "English is important for her future."
+      ]
+    },
+    {
+      "word": "take",
+      "jp": "取る、～する",
+      "pos": "verb",
+      "emoji": "🎬",
+      "examples": [
+        "Take care of the environment.",
+        "She takes responsibility."
+      ]
+    },
+    {
+      "word": "care",
+      "jp": "世話、心配",
+      "pos": "noun",
+      "emoji": "💚",
+      "examples": [
+        "We take care of our planet.",
+        "She gives care to elderly people."
+      ]
+    },
+    {
+      "word": "families",
+      "jp": "家族たち",
+      "pos": "noun",
+      "emoji": "👨‍👩‍👧‍👦",
+      "examples": [
+        "Many families use recycled products.",
+        "She visits her grandparents' families."
+      ]
+    },
+    {
+      "word": "in",
+      "jp": "～の中に",
+      "pos": "preposition",
+      "emoji": "📦",
+      "examples": [
+        "She lives in the city.",
+        "I study in the library."
+      ]
+    },
+    {
+      "word": "this",
+      "jp": "これ",
+      "pos": "pronoun",
+      "emoji": "👆",
+      "examples": [
+        "This is my book.",
+        "She likes this color."
+      ]
+    },
+    {
+      "word": "way",
+      "jp": "方法、道",
+      "pos": "noun",
+      "emoji": "🛣️",
+      "examples": [
+        "In this way, we help the earth.",
+        "She knows the way to the station."
+      ]
+    },
+    {
+      "word": "they",
+      "jp": "彼ら",
+      "pos": "pronoun",
+      "emoji": "👥",
+      "examples": [
+        "They work together.",
+        "They are my friends."
+      ]
+    },
+    {
+      "word": "situation",
+      "jp": "状況",
+      "pos": "noun",
+      "emoji": "📊",
+      "examples": [
+        "The situation is improving.",
+        "She analyzes the situation carefully."
+      ]
+    },
+    {
+      "word": "picture",
+      "jp": "絵、写真",
+      "pos": "noun",
+      "emoji": "🖼️",
+      "examples": [
+        "Look at this picture.",
+        "She draws pictures in her notebook."
+      ]
+    },
+    {
+      "word": "different",
+      "jp": "違った、様々な",
+      "pos": "adjective",
+      "emoji": "🌈",
+      "examples": [
+        "People are doing different things.",
+        "She likes different music styles."
+      ]
+    },
+    {
+      "word": "things",
+      "jp": "こと、物",
+      "pos": "noun",
+      "emoji": "📦",
+      "examples": [
+        "Tell me as much as you can.",
+        "She buys many things at the store."
+      ]
+    },
+    {
+      "word": "as",
+      "jp": "～として、～ほど",
+      "pos": "preposition",
+      "emoji": "📊",
+      "examples": [
+        "As much as you can.",
+        "She runs as fast as her brother."
+      ]
+    },
+    {
+      "word": "much",
+      "jp": "たくさんの",
+      "pos": "adverb",
+      "emoji": "🔢",
+      "examples": [
+        "Tell me as much as possible.",
+        "She studies very much."
+      ]
+    },
+    {
+      "word": "can",
+      "jp": "～できる",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "We can help the environment.",
+        "She can speak English fluently."
+      ]
+    },
+    {
+      "word": "about",
+      "jp": "～について",
+      "pos": "preposition",
+      "emoji": "💬",
+      "examples": [
+        "Tell me about what you see.",
+        "She talks about her family."
+      ]
+    },
+    {
+      "word": "what",
+      "jp": "何",
+      "pos": "pronoun",
+      "emoji": "❓",
+      "examples": [
+        "What are they doing?",
+        "She knows what to do."
+      ]
+    },
+    {
+      "word": "are",
+      "jp": "～です、～いる",
+      "pos": "verb",
+      "emoji": "🎭",
+      "examples": [
+        "They are walking in the park.",
+        "We are students."
+      ]
+    },
+    {
+      "word": "doing",
+      "jp": "している、やっている",
+      "pos": "verb",
+      "emoji": "🎬",
+      "examples": [
+        "They are doing different activities.",
+        "She is doing her homework."
+      ]
+    },
+    {
+      "word": "girl",
+      "jp": "女の子",
+      "pos": "noun",
+      "emoji": "👧",
+      "examples": [
+        "The girl is planting flowers.",
+        "She is a nice girl."
+      ]
+    },
+    {
+      "word": "is",
+      "jp": "～です、～いる",
+      "pos": "verb",
+      "emoji": "🎭",
+      "examples": [
+        "She is walking her dog.",
+        "The cat is cute."
+      ]
+    },
+    {
+      "word": "walking",
+      "jp": "歩いている",
+      "pos": "verb",
+      "emoji": "🚶",
+      "examples": [
+        "A woman is walking her dog.",
+        "She enjoys walking in the park."
+      ]
+    },
+    {
+      "word": "her",
+      "jp": "彼女の",
+      "pos": "pronoun",
+      "emoji": "👩",
+      "examples": [
+        "She walks her dog.",
+        "Her name is Yumi."
+      ]
+    },
+    {
+      "word": "dog",
+      "jp": "犬",
+      "pos": "noun",
+      "emoji": "🐕",
+      "examples": [
+        "Her dog is very friendly.",
+        "I like dogs very much."
+      ]
+    },
+    {
+      "word": "another",
+      "jp": "もう一人の、別の",
+      "pos": "adjective",
+      "emoji": "👥",
+      "examples": [
+        "Another woman is in the picture.",
+        "She wants another cup of coffee."
+      ]
+    },
+    {
+      "word": "painting",
+      "jp": "絵を描く、塗装する",
+      "pos": "verb",
+      "emoji": "🎨",
+      "examples": [
+        "A man is painting the wall.",
+        "She is painting a picture."
+      ]
+    },
+    {
+      "word": "wall",
+      "jp": "壁",
+      "pos": "noun",
+      "emoji": "🧱",
+      "examples": [
+        "He paints the wall white.",
+        "There is a clock on the wall."
+      ]
+    },
+    {
+      "word": "riding",
+      "jp": "乗っている",
+      "pos": "verb",
+      "emoji": "🚴",
+      "examples": [
+        "A boy is riding a bicycle.",
+        "She enjoys riding horses."
+      ]
+    },
+    {
+      "word": "bicycle",
+      "jp": "自転車",
+      "pos": "noun",
+      "emoji": "🚲",
+      "examples": [
+        "The boy is on his bicycle.",
+        "She goes to school by bicycle."
+      ]
+    },
+    {
+      "word": "think",
+      "jp": "思う、考える",
+      "pos": "verb",
+      "emoji": "💭",
+      "examples": [
+        "Do you think it will be popular?",
+        "She thinks carefully before answering."
+      ]
+    },
+    {
+      "word": "drinks",
+      "jp": "飲み物",
+      "pos": "noun",
+      "emoji": "🥤",
+      "examples": [
+        "Drinks in plastic bottles are common.",
+        "She buys healthy drinks."
+      ]
+    },
+    {
+      "word": "more",
+      "jp": "もっと多くの",
+      "pos": "adjective",
+      "emoji": "➕",
+      "examples": [
+        "More people will use recyclable products.",
+        "She needs more time to study."
+      ]
+    },
+    {
+      "word": "popular",
+      "jp": "人気のある",
+      "pos": "adjective",
+      "emoji": "⭐",
+      "examples": [
+        "This type of bottle will be more popular.",
+        "She is popular at school."
+      ]
+    },
+    {
+      "word": "carry",
+      "jp": "運ぶ、持つ",
+      "pos": "verb",
+      "emoji": "🎒",
+      "examples": [
+        "People can carry drinks in bottles easily.",
+        "She carries her backpack."
+      ]
+    ],
+    {
+      "word": "easily",
+      "jp": "簡単に",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "You can carry them easily.",
+        "She solves problems easily."
+      ]
+    },
+    {
+      "word": "kinds",
+      "jp": "種類",
+      "pos": "noun",
+      "emoji": "🔢",
+      "examples": [
+        "More kinds of drinks will be sold.",
+        "She likes many kinds of music."
+      ]
+    },
+    {
+      "word": "sold",
+      "jp": "売られる",
+      "pos": "verb",
+      "emoji": "🏪",
+      "examples": [
+        "These bottles are sold everywhere.",
+        "She sold her old bicycle."
+      ]
+    },
+    {
+      "word": "will",
+      "jp": "～だろう",
+      "pos": "verb",
+      "emoji": "🔮",
+      "examples": [
+        "More people will buy recycled products.",
+        "She will succeed."
+      ]
+    },
+    {
+      "word": "try",
+      "jp": "試みる、努力する",
+      "pos": "verb",
+      "emoji": "💪",
+      "examples": [
+        "Many people will try not to buy plastic bottles.",
+        "She tries hard every day."
+      ]
+    },
+    {
+      "word": "newspapers",
+      "jp": "新聞（複数）",
+      "pos": "noun",
+      "emoji": "📰",
+      "examples": [
+        "There are many kinds of newspapers.",
+        "She reads newspapers daily."
+      ]
+    },
+    {
+      "word": "do",
+      "jp": "する",
+      "pos": "verb",
+      "emoji": "🎬",
+      "examples": [
+        "Do you usually read a newspaper?",
+        "She does her best."
+      ]
+    },
+    {
+      "word": "usually",
+      "jp": "たいてい、普段",
+      "pos": "adverb",
+      "emoji": "📅",
+      "examples": [
+        "She usually goes to school by bus.",
+        "I usually wake up at 7 o'clock."
+      ]
+    },
+    {
+      "word": "read",
+      "jp": "読む",
+      "pos": "verb",
+      "emoji": "📖",
+      "examples": [
+        "I often read newspapers.",
+        "She reads books every night."
+      ]
+    },
+    {
+      "word": "often",
+      "jp": "しばしば、よく",
+      "pos": "adverb",
+      "emoji": "🔄",
+      "examples": [
+        "I often visit the library.",
+        "She often helps her friends."
+      ]
+    },
+    {
+      "word": "should",
+      "jp": "～すべきだ",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "We should protect the environment.",
+        "She should study harder."
+      ]
+    },
+    {
+      "word": "must",
+      "jp": "～しなければならない",
+      "pos": "verb",
+      "emoji": "❗",
+      "examples": [
+        "We must take care of nature.",
+        "She must finish her homework."
+      ]
+    },
+    {
+      "word": "could",
+      "jp": "～できた、～できるだろう",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "We could use less plastic.",
+        "She could help you."
+      ]
+    },
+    {
+      "word": "would",
+      "jp": "～だろう、～するつもりだ",
+      "pos": "verb",
+      "emoji": "🤔",
+      "examples": [
+        "I would like to visit that place.",
+        "She would agree with you."
+      ]
+    },
+    {
+      "word": "might",
+      "jp": "～かもしれない",
+      "pos": "verb",
+      "emoji": "❓",
+      "examples": [
+        "It might rain tomorrow.",
+        "She might come to the party."
+      ]
+    },
+    {
+      "word": "can",
+      "jp": "～できる",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "We can make a difference.",
+        "She can solve this problem."
+      ]
+    },
+    {
+      "word": "able",
+      "jp": "～できる",
+      "pos": "adjective",
+      "emoji": "💪",
+      "examples": [
+        "She is able to speak three languages.",
+        "I am able to help you."
+      ]
+    },
+    {
+      "word": "if",
+      "jp": "もし～なら",
+      "pos": "conjunction",
+      "emoji": "❓",
+      "examples": [
+        "If we recycle, we help the earth.",
+        "She would be happy if she passed."
+      ]
+    },
+    {
+      "word": "condition",
+      "jp": "条件",
+      "pos": "noun",
+      "emoji": "📋",
+      "examples": [
+        "The condition of the road is bad.",
+        "She is in good condition."
+      ]
+    },
+    {
+      "word": "although",
+      "jp": "～だけれども",
+      "pos": "conjunction",
+      "emoji": "⚠️",
+      "examples": [
+        "Although it is expensive, it is good.",
+        "She studies hard although she is busy."
+      ]
+    },
+    {
+      "word": "while",
+      "jp": "～する間に",
+      "pos": "conjunction",
+      "emoji": "⏱️",
+      "examples": [
+        "I study while listening to music.",
+        "She reads while she eats."
+      ]
+    },
+    {
+      "word": "because",
+      "jp": " потому что",
+      "pos": "conjunction",
+      "emoji": "💡",
+      "examples": [
+        "I study English because it is useful.",
+        "She is tired because she worked hard."
+      ]
+    },
+    {
+      "word": "since",
+      "jp": "～以来、～なので",
+      "pos": "conjunction",
+      "emoji": "📅",
+      "examples": [
+        "I have studied here since last year.",
+        "Since it is raining, let's stay inside."
+      ]
+    },
+    {
+      "word": "however",
+      "jp": "しかし",
+      "pos": "adverb",
+      "emoji": "↔️",
+      "examples": [
+        "However, there are still problems.",
+        "She studied hard; however, she failed."
+      ]
+    },
+    {
+      "word": "on",
+      "jp": "～の上に、～で",
+      "pos": "preposition",
+      "emoji": "⬆️",
+      "examples": [
+        "The book is on the desk.",
+        "She works on weekends."
+      ]
+    },
+    {
+      "word": "at",
+      "jp": "～で、～に",
+      "pos": "preposition",
+      "emoji": "📍",
+      "examples": [
+        "I meet her at the station.",
+        "She studies at the library."
+      ]
+    },
+    {
+      "word": "from",
+      "jp": "～から",
+      "pos": "preposition",
+      "emoji": "📍",
+      "examples": [
+        "She comes from Tokyo.",
+        "I get letters from my friends."
+      ]
+    },
+    {
+      "word": "to",
+      "jp": "～へ、～に",
+      "pos": "preposition",
+      "emoji": "➡️",
+      "examples": [
+        "I go to school every day.",
+        "She listens to music."
+      ]
+    },
+    {
+      "word": "for",
+      "jp": "～のために",
+      "pos": "preposition",
+      "emoji": "🎁",
+      "examples": [
+        "This gift is for you.",
+        "She studies for the exam."
+      ]
+    },
+    {
+      "word": "with",
+      "jp": "～と一緒に",
+      "pos": "preposition",
+      "emoji": "🤝",
+      "examples": [
+        "I play soccer with my friends.",
+        "She goes shopping with her sister."
+      ]
+    },
+    {
+      "word": "without",
+      "jp": "～なしに",
+      "pos": "preposition",
+      "emoji": "🚫",
+      "examples": [
+        "She cannot study without music.",
+        "I live without fear."
+      ]
+    },
+    {
+      "word": "by",
+      "jp": "～のそばに、～で",
+      "pos": "preposition",
+      "emoji": "📍",
+      "examples": [
+        "I go to school by bus.",
+        "She sits by the window."
+      ]
+    },
+    {
+      "word": "about",
+      "jp": "～について",
+      "pos": "preposition",
+      "emoji": "💬",
+      "examples": [
+        "She talks about her hobbies.",
+        "I worry about the test."
+      ]
+    },
+    {
+      "word": "through",
+      "jp": "～を通って",
+      "pos": "preposition",
+      "emoji": "➡️",
+      "examples": [
+        "She walks through the park.",
+        "We learn through experience."
+      ]
+    },
+    {
+      "word": "before",
+      "jp": "～の前に",
+      "pos": "preposition",
+      "emoji": "⏰",
+      "examples": [
+        "I eat breakfast before school.",
+        "She reads before sleeping."
+      ]
+    },
+    {
+      "word": "after",
+      "jp": "～の後で",
+      "pos": "preposition",
+      "emoji": "⏰",
+      "examples": [
+        "I study after school.",
+        "She exercises after dinner."
+      ]
+    },
+    {
+      "word": "during",
+      "jp": "～の間に",
+      "pos": "preposition",
+      "emoji": "⏱️",
+      "examples": [
+        "She studies during the summer.",
+        "I read many books during vacation."
+      ]
+    },
+    {
+      "word": "within",
+      "jp": "～以内に",
+      "pos": "preposition",
+      "emoji": "⏰",
+      "examples": [
+        "Please finish within an hour.",
+        "She lives within walking distance."
+      ]
+    },
+    {
+      "word": "among",
+      "jp": "～の中で",
+      "pos": "preposition",
+      "emoji": "👥",
+      "examples": [
+        "She is popular among her friends.",
+        "He chose among many options."
+      ]
+    },
+    {
+      "word": "between",
+      "jp": "～の間に",
+      "pos": "preposition",
+      "emoji": "↔️",
+      "examples": [
+        "She sits between two friends.",
+        "The road is between two cities."
+      ]
+    },
+    {
+      "word": "except",
+      "jp": "～を除いて",
+      "pos": "preposition",
+      "emoji": "🚫",
+      "examples": [
+        "Everyone came except Tom.",
+        "She studies every day except Sunday."
+      ]
+    },
+    {
+      "word": "problem",
+      "jp": "問題",
+      "pos": "noun",
+      "emoji": "❓",
+      "examples": [
+        "This is a serious problem.",
+        "She solves the math problem."
+      ]
+    },
+    {
+      "word": "solution",
+      "jp": "解決策",
+      "pos": "noun",
+      "emoji": "💡",
+      "examples": [
+        "We need a solution to this problem.",
+        "She finds a solution quickly."
+      ]
+    },
+    {
+      "word": "result",
+      "jp": "結果",
+      "pos": "noun",
+      "emoji": "📊",
+      "examples": [
+        "The result of the test was good.",
+        "She gets good results in school."
+      ]
+    },
+    {
+      "word": "effect",
+      "jp": "効果、影響",
+      "pos": "noun",
+      "emoji": "💫",
+      "examples": [
+        "The effect of pollution is serious.",
+        "She has a positive effect on others."
+      ]
+    },
+    {
+      "word": "cause",
+      "jp": "原因、引き起こす",
+      "pos": "noun",
+      "emoji": "⚡",
+      "examples": [
+        "The cause of the fire is unknown.",
+        "She finds the cause of the error."
+      ]
+    },
+    {
+      "word": "purpose",
+      "jp": "目的",
+      "pos": "noun",
+      "emoji": "🎯",
+      "examples": [
+        "She knows the purpose of studying.",
+        "I have clear purposes in life."
+      ]
+    },
+    {
+      "word": "reason",
+      "jp": "理由",
+      "pos": "noun",
+      "emoji": "💡",
+      "examples": [
+        "The reason is simple.",
+        "She explains the reason clearly."
+      ]
+    },
+    {
+      "word": "goal",
+      "jp": "目標",
+      "pos": "noun",
+      "emoji": "🎯",
+      "examples": [
+        "Her goal is to pass Eiken Pre-2.",
+        "I set goals every year."
+      ]
+    },
+    {
+      "word": "plan",
+      "jp": "計画",
+      "pos": "noun",
+      "emoji": "📋",
+      "examples": [
+        "We have a plan for the weekend.",
+        "She makes a study plan."
+      ]
+    },
+    {
+      "word": "method",
+      "jp": "方法",
+      "pos": "noun",
+      "emoji": "🛠️",
+      "examples": [
+        "This method is very effective.",
+        "She uses a good method to study."
+      ]
+    },
+    {
+      "word": "system",
+      "jp": "システム",
+      "pos": "noun",
+      "emoji": "⚙️",
+      "examples": [
+        "The transport system is convenient.",
+        "She understands the education system."
+      ]
+    },
+    {
+      "word": "process",
+      "jp": "プロセス、過程",
+      "pos": "noun",
+      "emoji": "🔄",
+      "examples": [
+        "The process takes time.",
+        "She explains the process step by step."
+      ]
+    },
+    {
+      "word": "change",
+      "jp": "変化",
+      "pos": "noun",
+      "emoji": "🔄",
+      "examples": [
+        "The world is changing rapidly.",
+        "She accepts change positively."
+      ]
+    },
+    {
+      "word": "development",
+      "jp": "発展、開発",
+      "pos": "noun",
+      "emoji": "📈",
+      "examples": [
+        "The city's development is amazing.",
+        "She contributes to environmental development."
+      ]
+    },
+    {
+      "word": "improvement",
+      "jp": "改善",
+      "pos": "noun",
+      "emoji": "📈",
+      "examples": [
+        "She shows great improvement.",
+        "I need improvement in speaking."
+      ]
+    },
+    {
+      "word": "progress",
+      "jp": "進歩",
+      "pos": "noun",
+      "emoji": "📈",
+      "examples": [
+        "Make progress in your studies.",
+        "She makes steady progress."
+      ]
+    },
+    {
+      "word": "success",
+      "jp": "成功",
+      "pos": "noun",
+      "emoji": "✅",
+      "examples": [
+        "Success requires effort.",
+        "She achieves success in her career."
+      ]
+    },
+    {
+      "word": "failure",
+      "jp": "失敗",
+      "pos": "noun",
+      "emoji": "❌",
+      "examples": [
+        "Failure teaches us lessons.",
+        "She overcomes failure with courage."
+      ]
+    },
+    {
+      "word": "opportunity",
+      "jp": "機会",
+      "pos": "noun",
+      "emoji": "🌟",
+      "examples": [
+        "This is a great opportunity.",
+        "She seizes opportunities."
+      ]
+    },
+    {
+      "word": "challenge",
+      "jp": "挑戦",
+      "pos": "noun",
+      "emoji": "💪",
+      "examples": [
+        "She accepts every challenge.",
+        "This challenge is difficult but possible."
+      ]
+    },
+    {
+      "word": "experience",
+      "jp": "経験",
+      "pos": "noun",
+      "emoji": "💫",
+      "examples": [
+        "I have valuable experience.",
+        "She gains work experience."
+      ]
+    },
+    {
+      "word": "knowledge",
+      "jp": "知識",
+      "pos": "noun",
+      "emoji": "🧠",
+      "examples": [
+        "Knowledge is power.",
+        "She expands her knowledge daily."
+      ]
+    },
+    {
+      "word": "skill",
+      "jp": "技能",
+      "pos": "noun",
+      "emoji": "🛠️",
+      "examples": [
+        "She has good communication skills.",
+        "I improve my English skills."
+      ]
+    },
+    {
+      "word": "ability",
+      "jp": "能力",
+      "pos": "noun",
+      "emoji": "💪",
+      "examples": [
+        "She has the ability to succeed.",
+        "I trust in my ability."
+      ]
+    },
+    {
+      "word": "talent",
+      "jp": "才能",
+      "pos": "noun",
+      "emoji": "⭐",
+      "examples": [
+        "She has musical talent.",
+        "Everyone has some talent."
+      ]
+    },
+    {
+      "word": "creativity",
+      "jp": "創造性",
+      "pos": "noun",
+      "emoji": "🎨",
+      "examples": [
+        "Creativity is important in art.",
+        "She shows great creativity."
+      ]
+    },
+    {
+      "word": "imagination",
+      "jp": "想像力",
+      "pos": "noun",
+      "emoji": "💭",
+      "examples": [
+        "She has a rich imagination.",
+        "Use your imagination."
+      ]
+    },
+    {
+      "word": "intelligence",
+      "jp": "知性、知能",
+      "pos": "noun",
+      "emoji": "🧠",
+      "examples": [
+        "She is very intelligent.",
+        "Artificial intelligence is developing."
+      ]
+    },
+    {
+      "word": "wisdom",
+      "jp": "智慧",
+      "pos": "noun",
+      "emoji": "🦉",
+      "examples": [
+        "Wisdom comes with experience.",
+        "She shows great wisdom."
+      ]
+    },
+    {
+      "word": "truth",
+      "jp": "真実",
+      "pos": "noun",
+      "emoji": "✅",
+      "examples": [
+        "She always tells the truth.",
+        "Truth is important."
+      ]
+    },
+    {
+      "word": "reality",
+      "jp": "現実",
+      "pos": "noun",
+      "emoji": "🌍",
+      "examples": [
+        "Face reality bravely.",
+        "She accepts reality."
+      ]
+    },
+    {
+      "word": "dream",
+      "jp": "夢",
+      "pos": "noun",
+      "emoji": "💭",
+      "examples": [
+        "Follow your dreams.",
+        "She has a big dream."
+      ]
+    },
+    {
+      "word": "hope",
+      "jp": "希望",
+      "pos": "noun",
+      "emoji": "⭐",
+      "examples": [
+        "Never lose hope.",
+        "She gives hope to others."
+      ]
+    },
+    {
+      "word": "confidence",
+      "jp": "自信",
+      "pos": "noun",
+      "emoji": "💪",
+      "examples": [
+        "Be confident in yourself.",
+        "She has great confidence."
+      ]
+    },
+    {
+      "word": "courage",
+      "jp": "勇気",
+      "pos": "noun",
+      "emoji": "🦁",
+      "examples": [
+        "She shows great courage.",
+        "Have courage to try."
+      ]
+    },
+    {
+      "word": "patience",
+      "jp": "忍耐",
+      "pos": "noun",
+      "emoji": "🧘",
+      "examples": [
+        "Success requires patience.",
+        "She has great patience."
+      ]
+    },
+    {
+      "word": "effort",
+      "jp": "努力",
+      "pos": "noun",
+      "emoji": "💪",
+      "examples": [
+        "Put effort into your studies.",
+        "Her effort paid off."
+      ]
+    },
+    {
+      "word": "achievement",
+      "jp": "達成",
+      "pos": "noun",
+      "emoji": "🏆",
+      "examples": [
+        "She feels proud of her achievement.",
+        "I celebrate my achievements."
+      ]
+    },
+    {
+      "word": "reward",
+      "jp": "報酬、褒美",
+      "pos": "noun",
+      "emoji": "🎁",
+      "examples": [
+        "Hard work brings rewards.",
+        "She deserves a reward."
+      ]
+    },
+    {
+      "word": "value",
+      "jp": "価値",
+      "pos": "noun",
+      "emoji": "💎",
+      "examples": [
+        "This book has great value.",
+        "She values friendship."
+      ]
+    },
+    {
+      "word": "importance",
+      "jp": "重要性",
+      "pos": "noun",
+      "emoji": "⭐",
+      "examples": [
+        "Education has great importance.",
+        "She understands the importance of health."
+      ]
+    },
+    {
+      "word": "quality",
+      "jp": "質",
+      "pos": "noun",
+      "emoji": "⭐",
+      "examples": [
+        "High quality is important.",
+        "She values quality over quantity."
+      ]
+    },
+    {
+      "word": "quantity",
+      "jp": "量",
+      "pos": "noun",
+      "emoji": "🔢",
+      "examples": [
+        "Quantity is not everything.",
+        "She checks the quantity carefully."
+      ]
+    },
+    {
+      "word": "character",
+      "jp": "性格",
+      "pos": "noun",
+      "emoji": "👤",
+      "examples": [
+        "She has a good character.",
+        "Character is important."
+      ]
+    },
+    {
+      "word": "personality",
+      "jp": "個性",
+      "pos": "noun",
+      "emoji": "🌟",
+      "examples": [
+        "She has a pleasant personality.",
+        "Her personality attracts people."
+      ]
+    },
+    {
+      "word": "behavior",
+      "jp": "行動",
+      "pos": "noun",
+      "emoji": "👣",
+      "examples": [
+        "Her behavior is excellent.",
+        "Good behavior is important."
+      ]
+    },
+    {
+      "word": "attitude",
+      "jp": "態度",
+      "pos": "noun",
+      "emoji": "😊",
+      "examples": [
+        "She has a positive attitude.",
+        "A good attitude helps success."
+      ]
+    },
+    {
+      "word": "relationship",
+      "jp": "関係",
+      "pos": "noun",
+      "emoji": "🤝",
+      "examples": [
+        "She has good relationships.",
+        "Friendship is an important relationship."
+      ]
+    },
+    {
+      "word": "friendship",
+      "jp": "友情",
+      "pos": "noun",
+      "emoji": "👫",
+      "examples": [
+        "She treasures friendship.",
+        "True friendship lasts forever."
+      ]
+    },
+    {
+      "word": "communication",
+      "jp": "コミュニケーション",
+      "pos": "noun",
+      "emoji": "💬",
+      "examples": [
+        "Good communication is essential.",
+        "She has excellent communication skills."
+      ]
+    },
+    {
+      "word": "conversation",
+      "jp": "会話",
+      "pos": "noun",
+      "emoji": "💬",
+      "examples": [
+        "She enjoys conversation.",
+        "Our conversation was interesting."
+      ]
+    },
+    {
+      "word": "discussion",
+      "jp": "議論",
+      "pos": "noun",
+      "emoji": "💬",
+      "examples": [
+        "We had a productive discussion.",
+        "She leads the discussion well."
+      ]
+    },
+    {
+      "word": "agreement",
+      "jp": "同意",
+      "pos": "noun",
+      "emoji": "🤝",
+      "examples": [
+        "We reached an agreement.",
+        "She shows her agreement."
+      ]
+    },
+    {
+      "word": "disagreement",
+      "jp": "不一致",
+      "pos": "noun",
+      "emoji": "❌",
+      "examples": [
+        "Handle disagreement politely.",
+        "She avoids unnecessary disagreement."
+      ]
+    },
+    {
+      "word": "argument",
+      "jp": "論争",
+      "pos": "noun",
+      "emoji": "🗣️",
+      "examples": [
+        "She presents a clear argument.",
+        "Avoid unnecessary argument."
+      ]
+    },
+    {
+      "word": "debate",
+      "jp": "討論",
+      "pos": "noun",
+      "emoji": "🎙️",
+      "examples": [
+        "She excels in debates.",
+        "We had a friendly debate."
+      ]
+    },
+    {
+      "word": "influence",
+      "jp": "影響",
+      "pos": "noun",
+      "emoji": "💫",
+      "examples": [
+        "She has a positive influence.",
+        "His influence is significant."
+      ]
+    },
+    {
+      "word": "impact",
+      "jp": "インパクト、影響",
+      "pos": "noun",
+      "emoji": "💥",
+      "examples": [
+        "The environmental impact is serious.",
+        "She makes a positive impact."
+      ]
+    },
+    {
+      "word": "consequence",
+      "jp": "結果、結末",
+      "pos": "noun",
+      "emoji": "📊",
+      "examples": [
+        "Consider the consequences.",
+        "She accepts the consequences."
+      ]
+    },
+    {
+      "word": "responsibility",
+      "jp": "責任",
+      "pos": "noun",
+      "emoji": "📋",
+      "examples": [
+        "She takes responsibility seriously.",
+        "We all have responsibilities."
+      ]
+    },
+    {
+      "word": "duty",
+      "jp": "義務",
+      "pos": "noun",
+      "emoji": "📋",
+      "examples": [
+        "It is her duty to help.",
+        "We fulfill our duties."
+      ]
+    },
+    {
+      "word": "obligation",
+      "jp": "義務",
+      "pos": "noun",
+      "emoji": "📜",
+      "examples": [
+        "She understands her obligations.",
+        "We have a legal obligation."
+      ]
+    },
+    {
+      "word": "freedom",
+      "jp": "自由",
+      "pos": "noun",
+      "emoji": "🦅",
+      "examples": [
+        "She values her freedom.",
+        "Freedom is precious."
+      ]
+    },
+    {
+      "word": "liberty",
+      "jp": "自由",
+      "pos": "noun",
+      "emoji": "🦅",
+      "examples": [
+        "Liberty is a fundamental right.",
+        "She fights for liberty."
+      ]
+    },
+    {
+      "word": "justice",
+      "jp": "正義",
+      "pos": "noun",
+      "emoji": "⚖️",
+      "examples": [
+        "She believes in justice.",
+        "Justice must be served."
+      ]
+    },
+    {
+      "word": "equality",
+      "jp": "平等",
+      "pos": "noun",
+      "emoji": "⚖️",
+      "examples": [
+        "She advocates for equality.",
+        "Equality is important."
+      ]
+    },
+    {
+      "word": "peace",
+      "jp": "平和",
+      "pos": "noun",
+      "emoji": "☮️",
+      "examples": [
+        "She loves peace.",
+        "World peace is our goal."
+      ]
+    },
+    {
+      "word": "safety",
+      "jp": "安全",
+      "pos": "noun",
+      "emoji": "🛡️",
+      "examples": [
+        "Safety comes first.",
+        "She ensures safety."
+      ]
+    },
+    {
+      "word": "security",
+      "jp": "安全保障",
+      "pos": "noun",
+      "emoji": "🔒",
+      "examples": [
+        "Job security is important.",
+        "She values security."
+      ]
+    },
+    {
+      "word": "protection",
+      "jp": "保護",
+      "pos": "noun",
+      "emoji": "🛡️",
+      "examples": [
+        "Environmental protection is crucial.",
+        "She needs protection from harm."
+      ]
+    },
+    {
+      "word": "support",
+      "jp": "支援",
+      "pos": "noun",
+      "emoji": "💪",
+      "examples": [
+        "She gives her full support.",
+        "I appreciate your support."
+      ]
+    },
+    {
+      "word": "assistance",
+      "jp": "援助",
+      "pos": "noun",
+      "emoji": "🆘",
+      "examples": [
+        "She provides assistance.",
+        "I need assistance with this."
+      ]
+    },
+    {
+      "word": "cooperation",
+      "jp": "協力",
+      "pos": "noun",
+      "emoji": "🤝",
+      "examples": [
+        "Cooperation leads to success.",
+        "She values cooperation."
+      ]
+    },
+    {
+      "word": "collaboration",
+      "jp": "協業",
+      "pos": "noun",
+      "emoji": "🤝",
+      "examples": [
+        "Teamwork requires collaboration.",
+        "She works well in collaboration."
+      ]
+    },
+    {
+      "word": "partnership",
+      "jp": "パートナーシップ",
+      "pos": "noun",
+      "emoji": "🤝",
+      "examples": [
+        "They have a successful partnership.",
+        "She values business partnership."
+      ]
+    },
+    {
+      "word": "society",
+      "jp": "社会",
+      "pos": "noun",
+      "emoji": "🌍",
+      "examples": [
+        "She contributes to society.",
+        "Society needs volunteers."
+      ]
+    },
+    {
+      "word": "community",
+      "jp": "コミュニティ",
+      "pos": "noun",
+      "emoji": "🏘️",
+      "examples": [
+        "She is active in her community.",
+        "The community supports her."
+      ]
+    },
+    {
+      "word": "culture",
+      "jp": "文化",
+      "pos": "noun",
+      "emoji": "🎭",
+      "examples": [
+        "She is interested in foreign culture.",
+        "Culture shapes our identity."
+      ]
+    },
+    {
+      "word": "tradition",
+      "jp": "伝統",
+      "pos": "noun",
+      "emoji": "🏮",
+      "examples": [
+        "She respects tradition.",
+        "Tradition is important."
+      ]
+    },
+    {
+      "word": "custom",
+      "jp": "習慣",
+      "pos": "noun",
+      "emoji": "🎭",
+      "examples": [
+        "She learns about Japanese customs.",
+        "Customs differ by country."
+      ]
+    },
+    {
+      "word": "education",
+      "jp": "教育",
+      "pos": "noun",
+      "emoji": "📚",
+      "examples": [
+        "She values education highly.",
+        "Education is powerful."
+      ]
+    },
+    {
+      "word": "knowledge",
+      "jp": "知識",
+      "pos": "noun",
+      "emoji": "🧠",
+      "examples": [
+        "Knowledge is valuable.",
+        "She seeks knowledge."
+      ]
+    }
+  ]
+}

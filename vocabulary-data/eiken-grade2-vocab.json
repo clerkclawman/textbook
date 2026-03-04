@@ -1,0 +1,2682 @@
+{
+  "metadata": {
+    "level": "Eiken Grade 2",
+    "totalWords": 300,
+    "hasEmojis": true
+  },
+  "words": [
+    {
+      "word": "customer",
+      "jp": "顧客",
+      "pos": "noun",
+      "emoji": "👤",
+      "examples": [
+        "Satisfied customers return to our business.",
+        "The company treats every customer with respect."
+      ]
+    },
+    {
+      "word": "service",
+      "jp": "サービス",
+      "pos": "noun",
+      "emoji": "🛎️",
+      "examples": [
+        "Good service keeps customers happy.",
+        "The hotel provides excellent service."
+      ]
+    },
+    {
+      "word": "shopping",
+      "jp": "買い物",
+      "pos": "noun",
+      "emoji": "🛒",
+      "examples": [
+        "She enjoys shopping for clothes.",
+        "Shopping centers are crowded on weekends."
+      ]
+    },
+    {
+      "word": "center",
+      "jp": "センター、中央",
+      "pos": "noun",
+      "emoji": "🏢",
+      "examples": [
+        "Shopping centers offer various services.",
+        "The city center is busy during the day."
+      ]
+    },
+    {
+      "word": "crowded",
+      "jp": "混雑した",
+      "pos": "adjective",
+      "emoji": "👥",
+      "examples": [
+        "The train is crowded in the morning.",
+        "She dislikes crowded places."
+      ]
+    },
+    {
+      "word": "troublesome",
+      "jp": "厄介な",
+      "pos": "adjective",
+      "emoji": "😰",
+      "examples": [
+        "Finding parking can be troublesome.",
+        "It is troublesome to solve this problem."
+      ]
+    },
+    {
+      "word": "childcare",
+      "jp": "保育、子供の世話",
+      "pos": "noun",
+      "emoji": "👶",
+      "examples": [
+        "The company provides childcare services.",
+        "Quality childcare is important for working parents."
+      ]
+    },
+    {
+      "word": "choose",
+      "jp": "選ぶ",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "Customers choose stores with childcare.",
+        "She always chooses quality products."
+      ]
+    },
+    {
+      "word": "easily",
+      "jp": "簡単に",
+      "pos": "adverb",
+      "emoji": "✅",
+      "examples": [
+        "Parents can shop easily with childcare.",
+        "She solves problems easily."
+      ]
+    },
+    {
+      "word": "such",
+      "jp": "そのような",
+      "pos": "adjective",
+      "emoji": "➡️",
+      "examples": [
+        "Such services are becoming popular.",
+        "She likes such restaurants."
+      ]
+    },
+    {
+      "word": "theater",
+      "jp": "劇場",
+      "pos": "noun",
+      "emoji": "🎭",
+      "examples": [
+        "You can find childcare at theaters too.",
+        "She goes to the theater monthly."
+      ]
+    },
+    {
+      "word": "hospital",
+      "jp": "病院",
+      "pos": "noun",
+      "emoji": "🏥",
+      "examples": [
+        "The hospital provides childcare for visitors.",
+        "She visited the hospital yesterday."
+      ]
+    },
+    {
+      "word": "art",
+      "jp": "美術、芸術",
+      "pos": "noun",
+      "emoji": "🎨",
+      "examples": [
+        "The art museum offers childcare.",
+        "She appreciates modern art."
+      ]
+    },
+    {
+      "word": "museum",
+      "jp": "博物館",
+      "pos": "noun",
+      "emoji": "🏛️",
+      "examples": [
+        "The family visited the art museum.",
+        "She likes history museums."
+      ]
+    },
+    {
+      "word": "offered",
+      "jp": "提供された",
+      "pos": "adjective",
+      "emoji": "🎁",
+      "examples": [
+        "Childcare is offered at many places.",
+        "The job was offered to her."
+      ]
+    },
+    {
+      "word": "ten",
+      "jp": "10",
+      "pos": "number",
+      "emoji": "🔟",
+      "examples": [
+        "Ten minutes later, they continued their visit.",
+        "She has ten books on her shelf."
+      ]
+    },
+    {
+      "word": "minute",
+      "jp": "分",
+      "pos": "noun",
+      "emoji": "⏰",
+      "examples": [
+        "Wait a minute please.",
+        "It takes about twenty minutes."
+      ]
+    },
+    {
+      "word": "later",
+      "jp": "後で",
+      "pos": "adverb",
+      "emoji": "⏰",
+      "examples": [
+        "She called me later that day.",
+        "We can discuss this topic later."
+      ]
+    },
+    {
+      "word": "put",
+      "jp": "置く、入れる",
+      "pos": "verb",
+      "emoji": "📦",
+      "examples": [
+        "He puts his bag into a locker.",
+        "She puts her books on the desk."
+      ]
+    },
+    {
+      "word": "locker",
+      "jp": "ロッカー",
+      "pos": "noun",
+      "emoji": "🔒",
+      "examples": [
+        "She stores her bag in a locker.",
+        "The locker room is on the first floor."
+      ]
+    },
+    {
+      "word": "looking",
+      "jp": "見ている、探している",
+      "pos": "verb",
+      "emoji": "👁️",
+      "examples": [
+        "She is looking forward to the exhibit.",
+        "I'm looking for my lost phone."
+      ]
+    },
+    {
+      "word": "forward",
+      "jp": "前へ、未来",
+      "pos": "adverb",
+      "emoji": "➡️",
+      "examples": [
+        "I look forward to meeting you.",
+        "She moves forward in her career."
+      ]
+    },
+    {
+      "word": "two",
+      "jp": "2",
+      "pos": "number",
+      "emoji": "2️⃣",
+      "examples": [
+        "Two hours later, they finished shopping.",
+        "She has two cats."
+      ]
+    },
+    {
+      "word": "hour",
+      "jp": "時間",
+      "pos": "noun",
+      "emoji": "⏰",
+      "examples": [
+        "The museum is open for several hours.",
+        "She studies for three hours daily."
+      ]
+    },
+    {
+      "word": "gift",
+      "jp": "贈り物",
+      "pos": "noun",
+      "emoji": "🎁",
+      "examples": [
+        "He was choosing a toy for their baby.",
+        "She gives gifts on birthdays."
+      ]
+    },
+    {
+      "word": "store",
+      "jp": "店、蓄える",
+      "pos": "noun",
+      "emoji": "🏪",
+      "examples": [
+        "The gift store had many items.",
+        "She stores her memories in photos."
+      ]
+    },
+    {
+      "word": "worried",
+      "jp": "心配している",
+      "pos": "adjective",
+      "emoji": "😰",
+      "examples": [
+        "Mrs. Sasaki was worried about the baby.",
+        "I feel worried about the exam."
+      ]
+    },
+    {
+      "word": "might",
+      "jp": "～かもしれない",
+      "pos": "verb",
+      "emoji": "❓",
+      "examples": [
+        "The baby might be crying.",
+        "She might come to the party."
+      ]
+    },
+    {
+      "word": "parent",
+      "jp": "親",
+      "pos": "noun",
+      "emoji": "👨‍👩",
+      "examples": [
+        "Parents have too much freedom these days.",
+        "Her parent works hard."
+      ]
+    },
+    {
+      "word": "strict",
+      "jp": "厳しい",
+      "pos": "adjective",
+      "emoji": "😓",
+      "examples": [
+        "Some parents are not strict enough.",
+        "Her teacher is but fair."
+      ]
+    },
+    {
+      "word": "control",
+      "jp": "制御、管理する",
+      "pos": "verb",
+      "emoji": "🎮",
+      "examples": [
+        "Parents control their children too much.",
+        "She tries to control her emotions."
+      ]
+    },
+    {
+      "word": "pressure",
+      "jp": "プレッシャー、圧力",
+      "pos": "noun",
+      "emoji": "😰",
+      "examples": [
+        "Children feel pressure from parents.",
+        "She handles pressure well."
+      ]
+    },
+    {
+      "word": "disagree",
+      "jp": "同意しない",
+      "pos": "verb",
+      "emoji": "🙅",
+      "examples": [
+        "I disagree with that opinion.",
+        "She politely disagrees."
+      ]
+    },
+    {
+      "word": "secondhand",
+      "jp": "中古の",
+      "pos": "adjective",
+      "emoji": "♻️",
+      "examples": [
+        "More people buy secondhand goods.",
+        "She likes secondhand books."
+      ]
+    },
+    {
+      "word": "buy",
+      "jp": "買う",
+      "pos": "verb",
+      "emoji": "🛒",
+      "examples": [
+        "People buy used books and clothing.",
+        "She buys vegetables every week."
+      ]
+    },
+    {
+      "word": "future",
+      "jp": "未来",
+      "pos": "noun",
+      "emoji": "🔮",
+      "examples": [
+        "More people will buy secondhand goods in the future.",
+        "She worries about the future."
+      ]
+    },
+    {
+      "word": "save",
+      "jp": "節約する、救う",
+      "pos": "verb",
+      "emoji": "💰",
+      "examples": [
+        "People can save money by buying used items.",
+        "She saves part of her income."
+      ]
+    },
+    {
+      "word": "expensive",
+      "jp": "高価な",
+      "pos": "adjective",
+      "emoji": "💴",
+      "examples": [
+        "New things are often expensive.",
+        "She buys expensive but quality items."
+      ]
+    },
+    {
+      "word": "new",
+      "jp": "新しい",
+      "pos": "adjective",
+      "emoji": "✨",
+      "examples": [
+        "Most people prefer to buy new things.",
+        "She likes new technology."
+      ]
+    },
+    {
+      "word": "prefer",
+      "jp": "好む",
+      "pos": "verb",
+      "emoji": "❤️",
+      "examples": [
+        "She prefers coffee over tea.",
+        "I prefer reading in the morning."
+      ]
+    },
+    {
+      "word": "sell",
+      "jp": "売る",
+      "pos": "verb",
+      "emoji": "🏪",
+      "examples": [
+        "Secondhand stores sell various items.",
+        "She sells handicrafts online."
+      ]
+    },
+    {
+      "word": "global",
+      "jp": "地球規模の",
+      "pos": "adjective",
+      "emoji": "🌍",
+      "examples": [
+        "Global warming is a serious problem.",
+        "She is interested in global issues."
+      ]
+    },
+    {
+      "word": "warming",
+      "jp": "温暖化",
+      "pos": "noun",
+      "emoji": "🌡️",
+      "examples": [
+        "Global warming affects the environment.",
+        "She studies the causes of global warming."
+      ]
+    },
+    {
+      "word": "climate",
+      "jp": "気候",
+      "pos": "noun",
+      "emoji": "🌤️",
+      "examples": [
+        "Climate change is concerning.",
+        "She enjoys the mild climate."
+      ]
+    },
+    {
+      "word": "change",
+      "jp": "変化、変わる",
+      "pos": "noun/verb",
+      "emoji": "🔄",
+      "examples": [
+        "Climate change accelerates worldwide.",
+        "She welcomes positive change."
+      ]
+    },
+    {
+      "word": "energy",
+      "jp": "エネルギー",
+      "pos": "noun",
+      "emoji": "⚡",
+      "examples": [
+        "We need to conserve energy.",
+        "She uses renewable energy."
+      ]
+    },
+    {
+      "word": "source",
+      "jp": "起源、源",
+      "pos": "noun",
+      "emoji": "📍",
+      "examples": [
+        "We need clean energy sources.",
+        "She finds the source of the problem."
+      ]
+    },
+    {
+      "word": "fossil",
+      "jp": "化石の",
+      "pos": "adjective",
+      "emoji": "🦕",
+      "examples": [
+        "Fossil fuels contribute to climate change.",
+        "She opposes using fossil fuels."
+      ]
+    },
+    {
+      "word": "fuel",
+      "jp": "燃料",
+      "pos": "noun",
+      "emoji": "⛽",
+      "examples": [
+        "Fossil fuels harm the atmosphere.",
+        "The car needs more fuel."
+      ]
+    },
+    {
+      "word": "renewable",
+      "jp": "再生可能な",
+      "pos": "adjective",
+      "emoji": "♻️",
+      "examples": [
+        "Renewable energy is the future.",
+        "She supports renewable energy."
+      ]
+    },
+    {
+      "word": "solar",
+      "jp": "太陽の",
+      "pos": "adjective",
+      "emoji": "☀️",
+      "examples": [
+        "Solar power is becoming popular.",
+        "She installs solar panels."
+      ]
+    },
+    {
+      "word": "wind",
+      "jp": "風",
+      "pos": "noun",
+      "emoji": "💨",
+      "examples": [
+        "Wind energy is clean and renewable.",
+        "The wind was strong yesterday."
+      ]
+    },
+    {
+      "word": "reduce",
+      "jp": "減らす",
+      "pos": "verb",
+      "emoji": "📉",
+      "examples": [
+        "We must reduce carbon emissions.",
+        "She reduces waste by recycling."
+      ]
+    },
+    {
+      "word": "emission",
+      "jp": "排出",
+      "pos": "noun",
+      "emoji": "💨",
+      "examples": [
+        "Carbon emission causes global warming.",
+        "The factory reduces its emissions."
+      ]
+    },
+    {
+      "word": "carbon",
+      "jp": "炭素",
+      "pos": "noun",
+      "emoji": "⚫",
+      "examples": [
+        "Carbon dioxide is a greenhouse gas.",
+        "She studies carbon footprints."
+      ]
+    },
+    {
+      "word": "greenhouse",
+      "jp": "温室",
+      "pos": "noun",
+      "emoji": "🌡️",
+      "examples": [
+        "Greenhouse gases warm the planet.",
+        "She studies greenhouse effects."
+      ]
+    },
+    {
+      "word": "gas",
+      "jp": "ガス",
+      "pos": "noun",
+      "emoji": "💨",
+      "examples": [
+        "Natural gas is cleaner than coal.",
+        "She uses gas for cooking."
+      ]
+    },
+    {
+      "word": "temperature",
+      "jp": "温度、気温",
+      "pos": "noun",
+      "emoji": "🌡️",
+      "examples": [
+        "Global temperature is rising.",
+        "She checks the temperature daily."
+      ]
+    },
+    {
+      "word": "rise",
+      "jp": "上昇する",
+      "pos": "verb",
+      "emoji": "📈",
+      "examples": [
+        "Sea levels are rising due to warming.",
+        "She rises early every morning."
+      ]
+    },
+    {
+      "word": "sea",
+      "jp": "海",
+      "pos": "noun",
+      "emoji": "🌊",
+      "examples": [
+        "Sea levels threaten coastal cities.",
+        "She loves swimming in the sea."
+      ]
+    },
+    {
+      "word": "level",
+      "jp": "レベル、水位",
+      "pos": "noun",
+      "emoji": "📊",
+      "examples": [
+        "Pollution levels are concerning.",
+        "She reaches a high English level."
+      ]
+    },
+    {
+      "word": "threaten",
+      "jp": "脅かす",
+      "pos": "verb",
+      "emoji": "⚠️",
+      "examples": [
+        "Climate change threatens ecosystems.",
+        "She feels threatened by challenges."
+      ]
+    },
+    {
+      "word": "ecosystem",
+      "jp": "生態系",
+      "pos": "noun",
+      "emoji": "🌿",
+      "examples": [
+        "The ecosystem needs protection.",
+        "She studies marine ecosystems."
+      ]
+    },
+    {
+      "word": "species",
+      "jp": "種",
+      "pos": "noun",
+      "emoji": "🐾",
+      "examples": [
+        "Many species face extinction.",
+        "She researches endangered species."
+      ]
+    },
+    {
+      "word": "endangered",
+      "jp": "絶滅危惧の",
+      "pos": "adjective",
+      "emoji": "❗",
+      "examples": [
+        "Endangered species need protection.",
+        "She supports endangered wildlife."
+      ]
+    },
+    {
+      "word": "protect",
+      "jp": "保護する",
+      "pos": "verb",
+      "emoji": "🛡️",
+      "examples": [
+        "We must protect endangered species.",
+        "She protects the environment."
+      ]
+    },
+    {
+      "word": "preserve",
+      "jp": "保つ、保存する",
+      "pos": "verb",
+      "emoji": "💾",
+      "examples": [
+        "We should preserve natural resources.",
+        "She preserves old traditions."
+      ]
+    },
+    {
+      "word": "conservation",
+      "jp": "保護、保存",
+      "pos": "noun",
+      "emoji": "♻️",
+      "examples": [
+        "Wildlife conservation is essential.",
+        "She works in conservation."
+      ]
+    },
+    {
+      "word": "wildlife",
+      "jp": "野生動物",
+      "pos": "noun",
+      "emoji": "🦁",
+      "examples": [
+        "Wildlife attracts many tourists.",
+        "She photographs wildlife."
+      ]
+    },
+    {
+      "word": "forest",
+      "jp": "森",
+      "pos": "noun",
+      "emoji": "🌲",
+      "examples": [
+        "Forests absorb carbon dioxide.",
+        "She enjoys walking in forests."
+      ]
+    },
+    {
+      "word": "ocean",
+      "jp": "海洋",
+      "pos": "noun",
+      "emoji": "🌊",
+      "examples": [
+        "Oceans regulate the climate.",
+        "She swims in the ocean."
+      ]
+    },
+    {
+      "word": "pollution",
+      "jp": "汚染",
+      "pos": "noun",
+      "emoji": "🌫️",
+      "examples": [
+        "Ocean pollution affects marine life.",
+        "She fights against pollution."
+      ]
+    },
+    {
+      "word": "plastic",
+      "jp": "プラスチック",
+      "pos": "noun",
+      "emoji": "🥤",
+      "examples": [
+        "Plastic pollution harms sea creatures.",
+        "She avoids using plastic products."
+      ]
+    },
+    {
+      "word": "debris",
+      "jp": "残骸",
+      "pos": "noun",
+      "emoji": "🗑️",
+      "examples": [
+        "Marine debris threatens animals.",
+        "She helps clean up debris."
+      ]
+    },
+    {
+      "word": "environmentalist",
+      "jp": "環境活動家",
+      "pos": "noun",
+      "emoji": "🌍",
+      "examples": [
+        "Environmentalists advocate for change.",
+        "She is an environmentalist."
+      ]
+    },
+    {
+      "word": "activist",
+      "jp": "活動家",
+      "pos": "noun",
+      "emoji": "✊",
+      "examples": [
+        "Activists organize protests.",
+        "She is a climate activist."
+      ]
+    },
+    {
+      "word": "campaign",
+      "jp": "キャンペーン、運動",
+      "pos": "noun",
+      "emoji": "📢",
+      "examples": [
+        "The campaign aims to raise awareness.",
+        "She organizes a recycling campaign."
+      ]
+    },
+    {
+      "word": "awareness",
+      "jp": "認識、意識",
+      "pos": "noun",
+      "emoji": "💡",
+      "examples": [
+        "Environmental awareness is increasing.",
+        "She raises awareness about issues."
+      ]
+    },
+    {
+      "word": "sustainable",
+      "jp": "持続可能な",
+      "pos": "adjective",
+      "emoji": "♻️",
+      "examples": [
+        "Sustainable development is essential.",
+        "She chooses sustainable products."
+      ]
+    },
+    {
+      "word": "development",
+      "jp": "開発、発展",
+      "pos": "noun",
+      "emoji": "📈",
+      "examples": [
+        "Economic development must be sustainable.",
+        "She works in international development."
+      ]
+    },
+    {
+      "word": "economy",
+      "jp": "経済",
+      "pos": "noun",
+      "emoji": "💰",
+      "examples": [
+        "The economy depends on environment.",
+        "She studies the global economy."
+      ]
+    },
+    {
+      "word": "economic",
+      "jp": "経済の",
+      "pos": "adjective",
+      "emoji": "💹",
+      "examples": [
+        "Economic growth requires sustainable practices.",
+        "She analyzes economic trends."
+      ]
+    },
+    {
+      "word": "growth",
+      "jp": "成長、増加",
+      "pos": "noun",
+      "emoji": "📈",
+      "examples": [
+        "Economic growth creates opportunities.",
+        "She shows steady growth in skills."
+      ]
+    },
+    {
+      "word": "opportunity",
+      "jp": "機会",
+      "pos": "noun",
+      "emoji": "🌟",
+      "examples": [
+        "Climate change creates new opportunities.",
+        "She seizes opportunities."
+      ]
+    },
+    {
+      "word": "technology",
+      "jp": "技術",
+      "pos": "noun",
+      "emoji": "💻",
+      "examples": [
+        "Technology helps solve environmental problems.",
+        "She studies renewable technology."
+      ]
+    },
+    {
+      "word": "innovation",
+      "jp": "革新",
+      "pos": "noun",
+      "emoji": "💡",
+      "examples": [
+        "Innovation drives environmental solutions.",
+        "She appreciates technological innovation."
+      ]
+    },
+    {
+      "word": "research",
+      "jp": "研究",
+      "pos": "noun/verb",
+      "emoji": "🔬",
+      "examples": [
+        "Research leads to new discoveries.",
+        "She researches climate change."
+      ]
+    },
+    {
+      "word": "discovery",
+      "jp": "発見",
+      "pos": "noun",
+      "emoji": "🔭",
+      "examples": [
+        "Scientific discoveries improve lives.",
+        "She made an important discovery."
+      ]
+    },
+    {
+      "word": "medical",
+      "jp": "医学の",
+      "pos": "adjective",
+      "emoji": "🏥",
+      "examples": [
+        "Medical research saves lives.",
+        "She works in a medical field."
+      ]
+    },
+    {
+      "word": "advance",
+      "jp": "進歩する、進める",
+      "pos": "verb",
+      "emoji": "🚀",
+      "examples": [
+        "Medical science advances rapidly.",
+        "She advances in her career."
+      ]
+    },
+    {
+      "word": "progress",
+      "jp": "進歩、前進",
+      "pos": "noun",
+      "emoji": "📈",
+      "examples": [
+        "Scientific progress benefits humanity.",
+        "She makes steady progress."
+      ]
+    },
+    {
+      "word": "benefit",
+      "jp": "利益、恩恵",
+      "pos": "noun/verb",
+      "emoji": "🎁",
+      "examples": [
+        "Many people benefit from new technology.",
+        "This policy benefits everyone."
+      ]
+    },
+    {
+      "word": "challenge",
+      "jp": "挑戦、課題",
+      "pos": "noun/verb",
+      "emoji": "💪",
+      "examples": [
+        "Climate change presents big challenges.",
+        "She challenges herself."
+      ]
+    },
+    {
+      "word": "solution",
+      "jp": "解決策",
+      "pos": "noun",
+      "emoji": "💡",
+      "examples": [
+        "We need innovative environmental solutions.",
+        "She finds creative solutions."
+      ]
+    },
+    {
+      "word": "problem",
+      "jp": "問題",
+      "pos": "noun",
+      "emoji": "❓",
+      "examples": [
+        "We must solve environmental problems.",
+        "She solves complex problems."
+      ]
+    },
+    {
+      "word": "solve",
+      "jp": "解決する",
+      "pos": "verb",
+      "emoji": "🧩",
+      "examples": [
+        "We must solve pressing environmental issues.",
+        "She solves math problems."
+      ]
+    },
+    {
+      "word": "address",
+      "jp": "対処する、住所",
+      "pos": "verb/noun",
+      "emoji": "📍",
+      "examples": [
+        "We must address climate change now.",
+        "She lives at that address."
+      ]
+    },
+    {
+      "word": "urgent",
+      "jp": "緊急の",
+      "pos": "adjective",
+      "emoji": "🚨",
+      "examples": [
+        "Action on climate change is urgent.",
+        "She needs urgent help."
+      ]
+    },
+    {
+      "word": "immediately",
+      "jp": "直ちに",
+      "pos": "adverb",
+      "emoji": "⚡",
+      "examples": [
+        "We must act immediately.",
+        "She responds immediately to requests."
+      ]
+    },
+    {
+      "word": "critical",
+      "jp": "重大な、批判的な",
+      "pos": "adjective",
+      "emoji": "❗",
+      "examples": [
+        "Critical action is needed on climate.",
+        "She analyzes the situation critically."
+      ]
+    },
+    {
+      "word": "significant",
+      "jp": "重要な、著しい",
+      "pos": "adjective",
+      "emoji": "⭐",
+      "examples": [
+        "This has a significant impact on us.",
+        "She makes significant contributions."
+      ]
+    },
+    {
+      "word": "impact",
+      "jp": "影響、インパクト",
+      "pos": "noun",
+      "emoji": "💥",
+      "examples": [
+        "Human activities impact climate.",
+        "Her work has a positive impact."
+      ]
+    },
+    {
+      "word": "human",
+      "jp": "人間の",
+      "pos": "adjective/noun",
+      "emoji": "👤",
+      "examples": [
+        "Human activity accelerates warming.",
+        "She studies human rights."
+      ]
+    },
+    {
+      "word": "activity",
+      "jp": "活動",
+      "pos": "noun",
+      "emoji": "🏃",
+      "examples": [
+        "Industrial activity causes pollution.",
+        "She enjoys outdoor activities."
+      ]
+    },
+    {
+      "word": "industrial",
+      "jp": "産業の",
+      "pos": "adjective",
+      "emoji": "🏭",
+      "examples": [
+        "Industrial development affects the environment.",
+        "She works in industrial design."
+      ]
+    },
+    {
+      "word": "agriculture",
+      "jp": "農業",
+      "pos": "noun",
+      "emoji": "🌾",
+      "examples": [
+        "Sustainable agriculture preserves soil.",
+        "She studies agriculture at university."
+      ]
+    },
+    {
+      "word": "farming",
+      "jp": "農場経営",
+      "pos": "noun",
+      "emoji": "🚜",
+      "examples": [
+        "Organic farming is gaining popularity.",
+        "She visits a farming community."
+      ]
+    },
+    {
+      "word": "production",
+      "jp": "生産",
+      "pos": "noun",
+      "emoji": "🏭",
+      "examples": [
+        "Sustainable production protects the planet.",
+        "She works in food production."
+      ]
+    },
+    {
+      "word": "consume",
+      "jp": "消費する",
+      "pos": "verb",
+      "emoji": "🛒",
+      "examples": [
+        "We consume too many resources.",
+        "She consumes organic food."
+      ]
+    },
+    {
+      "word": "consumption",
+      "jp": "消費",
+      "pos": "noun",
+      "emoji": "📊",
+      "examples": [
+        "Reducing energy consumption saves money.",
+        "She tracks her daily consumption."
+      ]
+    },
+    {
+      "word": "waste",
+      "jp": "廃棄物、浪費",
+      "pos": "noun/verb",
+      "emoji": "🗑️",
+      "examples": [
+        "We must reduce food waste.",
+        "She does not waste time."
+      ]
+    },
+    {
+      "word": "recycle",
+      "jp": "リサイクルする",
+      "pos": "verb",
+      "emoji": "♻️",
+      "examples": [
+        "She recycles paper and plastic.",
+        "We should recycle more."
+      ]
+    },
+    {
+      "word": "reuse",
+      "jp": "再利用する",
+      "pos": "verb",
+      "emoji": "♻️",
+      "examples": [
+        "We can reuse shopping bags.",
+        "She reuses old containers."
+      ]
+    },
+    {
+      "word": "reduce",
+      "jp": "減らす、低減する",
+      "pos": "verb",
+      "emoji": "📉",
+      "examples": [
+        "We must reduce our carbon footprint.",
+        "She reduces waste by planning."
+      ]
+    },
+    {
+      "word": "footprint",
+      "jp": "足跡、環境への影響",
+      "pos": "noun",
+      "emoji": "👣",
+      "examples": [
+        "We want to reduce our carbon footprint.",
+        "She tracks her ecological footprint."
+      ]
+    },
+    {
+      "word": "ecological",
+      "jp": "生態学的な",
+      "pos": "adjective",
+      "emoji": "🌿",
+      "examples": [
+        "Ecological balance is essential.",
+        "She studies ecological systems."
+      ]
+    },
+    {
+      "word": "balance",
+      "jp": "バランス、均衡",
+      "pos": "noun",
+      "emoji": "⚖️",
+      "examples": [
+        "Nature maintains a delicate balance.",
+        "She balances work and study."
+      ]
+    },
+    {
+      "word": "harmony",
+      "jp": "調和",
+      "pos": "noun",
+      "emoji": "🎵",
+      "examples": [
+        "We must live in harmony with nature.",
+        "Her voice is in perfect harmony."
+      ]
+    },
+    {
+      "word": "coexist",
+      "jp": "共存する",
+      "pos": "verb",
+      "emoji": "🤝",
+      "examples": [
+        "Humans and animals must coexist.",
+        "Different cultures coexist in cities."
+      ]
+    },
+    {
+      "word": "society",
+      "jp": "社会",
+      "pos": "noun",
+      "emoji": "🌍",
+      "examples": [
+        "Society faces many environmental challenges.",
+        "She contributes to society."
+      ]
+    },
+    {
+      "word": "citizen",
+      "jp": "市民",
+      "pos": "noun",
+      "emoji": "👤",
+      "examples": [
+        "Every citizen has environmental responsibilities.",
+        "She is an active citizen."
+      ]
+    },
+    {
+      "word": "responsibility",
+      "jp": "責任",
+      "pos": "noun",
+      "emoji": "📋",
+      "examples": [
+        "We all have environmental responsibilities.",
+        "She takes responsibility seriously."
+      ]
+    },
+    {
+      "word": "government",
+      "jp": "政府",
+      "pos": "noun",
+      "emoji": "🏛️",
+      "examples": [
+        "The government implements environmental policies.",
+        "She works in government."
+      ]
+    },
+    {
+      "word": "policy",
+      "jp": "政策",
+      "pos": "noun",
+      "emoji": "📜",
+      "examples": [
+        "Environmental policy affects everything.",
+        "She studies public policy."
+      ]
+    },
+    {
+      "word": "implement",
+      "jp": "実施する",
+      "pos": "verb",
+      "emoji": "📋",
+      "examples": [
+        "The government implements new regulations.",
+        "She implements effective strategies."
+      ]
+    },
+    {
+      "word": "regulation",
+      "jp": "規則、規制",
+      "pos": "noun",
+      "emoji": "⚖️",
+      "examples": [
+        "Stricter environmental regulations are needed.",
+        "She follows safety regulations."
+      ]
+    },
+    {
+      "word": "restrict",
+      "jp": "制限する",
+      "pos": "verb",
+      "emoji": "🚫",
+      "examples": [
+        "The government restricts hunting.",
+        "She restricts her sugar intake."
+      ]
+    },
+    {
+      "word": "prohibit",
+      "jp": "禁止する",
+      "pos": "verb",
+      "emoji": "🚫",
+      "examples": [
+        "The law prohibits smoking in public.",
+        "Some cities prohibit plastic bags."
+      ]
+    },
+    {
+      "word": "forbid",
+      "jp": "禁止する",
+      "pos": "verb",
+      "emoji": "🙅",
+      "examples": [
+        "Regulations forbid dumping waste.",
+        "Her parents forbid certain activities."
+      ]
+    },
+    {
+      "word": "allow",
+      "jp": "許可する",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "The law allows renewable energy subsidies.",
+        "Her parents allow her freedom."
+      ]
+    },
+    {
+      "word": "encourage",
+      "jp": "奨励する",
+      "pos": "verb",
+      "emoji": "💪",
+      "examples": [
+        "We should encourage sustainable practices.",
+        "She encourages her friends."
+      ]
+    },
+    {
+      "word": "support",
+      "jp": "支援する、支持する",
+      "pos": "verb/noun",
+      "emoji": "💪",
+      "examples": [
+        "Many people support environmental policies.",
+        "She supports her family."
+      ]
+    },
+    {
+      "word": "oppose",
+      "jp": "反対する",
+      "pos": "verb",
+      "emoji": "🙅",
+      "examples": [
+        "Some groups oppose new regulations.",
+        "She opposes injustice."
+      ]
+    },
+    {
+      "word": "debate",
+      "jp": "議論、討論する",
+      "pos": "noun/verb",
+      "emoji": "🗣️",
+      "examples": [
+        "The parliament debates environmental bills.",
+        "She debates important issues."
+      ]
+    },
+    {
+      "word": "argue",
+      "jp": "議論する、主張する",
+      "pos": "verb",
+      "emoji": "💬",
+      "examples": [
+        "Experts argue about climate solutions.",
+        "She argues her position clearly."
+      ]
+    },
+    {
+      "word": "perspective",
+      "jp": "視点",
+      "pos": "noun",
+      "emoji": "👀",
+      "examples": [
+        "She has a unique perspective.",
+        "Consider different perspectives."
+      ]
+    },
+    {
+      "word": "viewpoint",
+      "jp": "観点",
+      "pos": "noun",
+      "emoji": "👀",
+      "examples": [
+        "Consider the issue from different viewpoints.",
+        "She expresses her viewpoint."
+      ]
+    },
+    {
+      "word": "opinion",
+      "jp": "意見",
+      "pos": "noun",
+      "emoji": "💭",
+      "examples": [
+        "Everyone has an opinion on this issue.",
+        "She respects different opinions."
+      ]
+    },
+    {
+      "word": "attitude",
+      "jp": "態度",
+      "pos": "noun",
+      "emoji": "😊",
+      "examples": [
+        "A positive attitude helps solve problems.",
+        "She has a good attitude."
+      ]
+    },
+    {
+      "word": "behavior",
+      "jp": "行動",
+      "pos": "noun",
+      "emoji": "👣",
+      "examples": [
+        "Consumer behavior affects the environment.",
+        "She observes animal behavior."
+      ]
+    },
+    {
+      "word": "habit",
+      "jp": "習慣",
+      "pos": "noun",
+      "emoji": "🔄",
+      "examples": [
+        "Changing habits helps the environment.",
+        "She has good study habits."
+      ]
+    },
+    {
+      "word": "lifestyle",
+      "jp": "生活様式",
+      "pos": "noun",
+      "emoji": "🏠",
+      "examples": [
+        "Sustainable lifestyle choices matter.",
+        "She enjoys a healthy lifestyle."
+      ]
+    },
+    {
+      "word": "consumer",
+      "jp": "消費者",
+      "pos": "noun",
+      "emoji": "🛒",
+      "examples": [
+        "Consumers drive environmental change.",
+        "She is a conscious consumer."
+      ]
+    },
+    {
+      "word": "demand",
+      "jp": "要求、需要",
+      "pos": "noun/verb",
+      "emoji": "📈",
+      "examples": [
+        "Consumer demand for green products rises.",
+        "She demands better service."
+      ]
+    },
+    {
+      "word": "supply",
+      "jp": "供給",
+      "pos": "noun/verb",
+      "emoji": "📦",
+      "examples": [
+        "Energy supply must be reliable.",
+        "The store supplies fresh food."
+      ]
+    },
+    {
+      "word": "market",
+      "jp": "市場",
+      "pos": "noun",
+      "emoji": "🏪",
+      "examples": [
+        "The green market is expanding.",
+        "She shops at the local market."
+      ]
+    },
+    {
+      "word": "business",
+      "jp": "ビジネス、企業",
+      "pos": "noun",
+      "emoji": "💼",
+      "examples": [
+        "Business adapts to environmental concerns.",
+        "She runs a small business."
+      ]
+    },
+    {
+      "word": "corporate",
+      "jp": "企業の",
+      "pos": "adjective",
+      "emoji": "🏢",
+      "examples": [
+        "Corporate responsibility is important.",
+        "She works in corporate finance."
+      ]
+    },
+    {
+      "word": "company",
+      "jp": "会社",
+      "pos": "noun",
+      "emoji": "🏢",
+      "examples": [
+        "The company reduces its environmental impact.",
+        "She works for a multinational company."
+      ]
+    },
+    {
+      "word": "industry",
+      "jp": "産業",
+      "pos": "noun",
+      "emoji": "🏭",
+      "examples": [
+        "The auto industry invests in electric cars.",
+        "She works in the entertainment industry."
+      ]
+    },
+    {
+      "word": "manufacturing",
+      "jp": "製造業",
+      "pos": "noun",
+      "emoji": "🏭",
+      "examples": [
+        "Sustainable manufacturing is the future.",
+        "She studies advanced manufacturing."
+      ]
+    },
+    {
+      "word": "transportation",
+      "jp": "輸送、交通",
+      "pos": "noun",
+      "emoji": "🚌",
+      "examples": [
+        "Public transportation reduces emissions.",
+        "She works in transportation."
+      ]
+    },
+    {
+      "word": "vehicle",
+      "jp": "乗り物",
+      "pos": "noun",
+      "emoji": "🚗",
+      "examples": [
+        "Electric vehicles are becoming popular.",
+        "She owns a hybrid vehicle."
+      ]
+    },
+    {
+      "word": "electric",
+      "jp": "電気の",
+      "pos": "adjective",
+      "emoji": "⚡",
+      "examples": [
+        "Electric cars reduce pollution.",
+        "She uses electric appliances."
+      ]
+    },
+    {
+      "word": "hybrid",
+      "jp": "ハイブリッド",
+      "pos": "adjective/noun",
+      "emoji": "🔋",
+      "examples": [
+        "Hybrid cars combine gas and electric power.",
+        "She drives a hybrid vehicle."
+      ]
+    },
+    {
+      "word": "infrastructure",
+      "jp": "インフラ",
+      "pos": "noun",
+      "emoji": "🏗️",
+      "examples": [
+        "Green infrastructure improves cities.",
+        "She works on infrastructure projects."
+      ]
+    },
+    {
+      "word": "investment",
+      "jp": "投資",
+      "pos": "noun",
+      "emoji": "💰",
+      "examples": [
+        "Green investment is increasing.",
+        "She studies smart investments."
+      ]
+    },
+    {
+      "word": "finance",
+      "jp": "財政、金融",
+      "pos": "noun",
+      "emoji": "💵",
+      "examples": [
+        "Green finance supports sustainability.",
+        "She works in international finance."
+      ]
+    },
+    {
+      "word": "economic",
+      "jp": "経済的な",
+      "pos": "adjective",
+      "emoji": "💹",
+      "examples": [
+        "Economic incentives drive green behavior.",
+        "She analyzes economic indicators."
+      ]
+    },
+    {
+      "word": "incentive",
+      "jp": "インセンティブ",
+      "pos": "noun",
+      "emoji": "🎁",
+      "examples": [
+        "Tax incentives encourage green investment.",
+        "She needs incentives to improve."
+      ]
+    },
+    {
+      "word": "subsidy",
+      "jp": "助成金",
+      "pos": "noun",
+      "emoji": "💰",
+      "examples": [
+        "The government provides renewable energy subsidies.",
+        "She applies for a subsidy."
+      ]
+    },
+    {
+      "word": "tax",
+      "jp": "税",
+      "pos": "noun/verb",
+      "emoji": "💴",
+      "examples": [
+        "Green taxes discourage pollution.",
+        "She pays income tax."
+      ]
+    },
+    {
+      "word": "fund",
+      "jp": "資金、基金",
+      "pos": "noun/verb",
+      "emoji": "💵",
+      "examples": [
+        "We fund environmental research.",
+        "The fund supports startups."
+      ]
+    },
+    {
+      "word": "capital",
+      "jp": "資本",
+      "pos": "noun",
+      "emoji": "💰",
+      "examples": [
+        "Venture capital funds green startups.",
+        "Tokyo is the capital of Japan."
+      ]
+    },
+    {
+      "word": "venture",
+      "jp": "冒険、ベンチャー",
+      "pos": "noun/verb",
+      "emoji": "🚀",
+      "examples": [
+        "Venture capital invests in new businesses.",
+        "She ventures into unknown territory."
+      ]
+    },
+    {
+      "word": "startup",
+      "jp": "スタートアップ",
+      "pos": "noun",
+      "emoji": "🚀",
+      "examples": [
+        "Green startups create innovative solutions.",
+        "She founded a successful startup."
+      ]
+    },
+    {
+      "word": "entrepreneur",
+      "jp": "起業家",
+      "pos": "noun",
+      "emoji": "💼",
+      "examples": [
+        "Entrepreneurs lead green innovation.",
+        "She is an ambitious entrepreneur."
+      ]
+    },
+    {
+      "word": "innovation",
+      "jp": "革新",
+      "pos": "noun",
+      "emoji": "💡",
+      "examples": [
+        "Innovation drives progress.",
+        "She appreciates digital innovation."
+      ]
+    },
+    {
+      "word": "creative",
+      "jp": "創造的な",
+      "pos": "adjective",
+      "emoji": "🎨",
+      "examples": [
+        "Creative solutions solve complex problems.",
+        "She is a creative thinker."
+      ]
+    },
+    {
+      "word": "original",
+      "jp": "オリジナルの",
+      "pos": "adjective",
+      "emoji": "✨",
+      "examples": [
+        "She has original ideas.",
+        "The original text is in English."
+      ]
+    },
+    {
+      "word": "unique",
+      "jp": "独特の、唯一の",
+      "pos": "adjective",
+      "emoji": "⭐",
+      "examples": [
+        "Each species is unique and valuable.",
+        "She has a unique perspective."
+      ]
+    },
+    {
+      "word": "diverse",
+      "jp": "多様な",
+      "pos": "adjective",
+      "emoji": "🌈",
+      "examples": [
+        "Biodiversity ensures resilience.",
+        "She respects diverse cultures."
+      ]
+    },
+    {
+      "word": "diversity",
+      "jp": "多様性",
+      "pos": "noun",
+      "emoji": "🌈",
+      "examples": [
+        "Cultural diversity enriches society.",
+        "She values diversity."
+      ]
+    },
+    {
+      "word": "culture",
+      "jp": "文化",
+      "pos": "noun",
+      "emoji": "🎭",
+      "examples": [
+        "Culture shapes environmental attitudes.",
+        "She studies different cultures."
+      ]
+    },
+    {
+      "word": "tradition",
+      "jp": "伝統",
+      "pos": "noun",
+      "emoji": "🏮",
+      "examples": [
+        "Tradition influences lifestyle choices.",
+        "She respects traditional wisdom."
+      ]
+    },
+    {
+      "word": "respect",
+      "jp": "尊重する",
+      "pos": "verb/noun",
+      "emoji": "🙏",
+      "examples": [
+        "We must respect nature.",
+        "She earns respect from others."
+      ]
+    },
+    {
+      "word": "value",
+      "jp": "価値、大切にする",
+      "pos": "noun/verb",
+      "emoji": "💎",
+      "examples": [
+        "She values education.",
+        "Her contributions are valuable."
+      ]
+    },
+    {
+      "word": "appreciate",
+      "jp": "感謝する、評価する",
+      "pos": "verb",
+      "emoji": "🙏",
+      "examples": [
+        "She appreciates nature's beauty.",
+        "I appreciate your help."
+      ]
+    },
+    {
+      "word": "recognize",
+      "jp": "認識する、認める",
+      "pos": "verb",
+      "emoji": "👁️",
+      "examples": [
+        "We must recognize environmental challenges.",
+        "She recognizes familiar faces."
+      ]
+    },
+    {
+      "word": "acknowledge",
+      "jp": "認める、認知する",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "She acknowledges global warming's reality.",
+        "He acknowledges her help."
+      ]
+    },
+    {
+      "word": "realize",
+      "jp": "実現する、気づく",
+      "pos": "verb",
+      "emoji": "💡",
+      "examples": [
+        "We must realize the urgency of climate change.",
+        "She realizes her mistakes."
+      ]
+    },
+    {
+      "word": "understand",
+      "jp": "理解する",
+      "pos": "verb",
+      "emoji": "🧠",
+      "examples": [
+        "Understanding the problem is the first step.",
+        "She understands the issue deeply."
+      ]
+    },
+    {
+      "word": "comprehend",
+      "jp": "理解する",
+      "pos": "verb",
+      "emoji": "🧠",
+      "examples": [
+        "She comprehends complex issues.",
+        "Students must comprehend the text."
+      ]
+    },
+    {
+      "word": "perceive",
+      "jp": "知覚する、認識する",
+      "pos": "verb",
+      "emoji": "👁️",
+      "examples": [
+        "People perceive climate change differently.",
+        "She perceives subtle changes."
+      ]
+    },
+    {
+      "word": "observe",
+      "jp": "観察する",
+      "pos": "verb",
+      "emoji": "👀",
+      "examples": [
+        "Scientists observe climate patterns.",
+        "She observes the stars."
+      ]
+    },
+    {
+      "word": "analyze",
+      "jp": "分析する",
+      "pos": "verb",
+      "emoji": "📊",
+      "examples": [
+        "Researchers analyze environmental data.",
+        "She analyzes test results."
+      ]
+    },
+    {
+      "word": "evaluate",
+      "jp": "評価する",
+      "pos": "verb",
+      "emoji": "📋",
+      "examples": [
+        "We must evaluate environmental policies.",
+        "She evaluates student performance."
+      ]
+    },
+    {
+      "word": "assess",
+      "jp": "評価する、見積もる",
+      "pos": "verb",
+      "emoji": "📊",
+      "examples": [
+        "Experts assess climate risks.",
+        "She assesses situations carefully."
+      ]
+    },
+    {
+      "word": "estimate",
+      "jp": "見積もる",
+      "pos": "verb",
+      "emoji": "📊",
+      "examples": [
+        "Scientists estimate future temperature rise.",
+        "She can estimate well."
+      ]
+    },
+    {
+      "word": "predict",
+      "jp": "予測する",
+      "pos": "verb",
+      "emoji": "🔮",
+      "examples": [
+        "Models predict more extreme weather.",
+        "She predicts the outcome."
+      ]
+    },
+    {
+      "word": "forecast",
+      "jp": "予報、予測する",
+      "pos": "noun/verb",
+      "emoji": "🌦️",
+      "examples": [
+        "Weather forecasts help us prepare.",
+        "She forecasts economic trends."
+      ]
+    },
+    {
+      "word": "project",
+      "jp": "プロジェクト、予測する",
+      "pos": "noun/verb",
+      "emoji": "📋",
+      "examples": [
+        "The project aims to reduce emissions.",
+        "Researchers project rising temperatures."
+      ]
+    },
+    {
+      "word": "measure",
+      "jp": "測定する、措置",
+      "pos": "verb/noun",
+      "emoji": "📏",
+      "examples": [
+        "We measure environmental impact.",
+        "She takes measures to improve."
+      ]
+    },
+    {
+      "word": "monitor",
+      "jp": "監視する",
+      "pos": "verb",
+      "emoji": "👁️",
+      "examples": [
+        "Scientists monitor climate change.",
+        "She monitors her progress."
+      ]
+    },
+    {
+      "word": "track",
+      "jp": "追跡する",
+      "pos": "verb",
+      "emoji": "📍",
+      "examples": [
+        "We track carbon emissions globally.",
+        "She tracks her expenses."
+      ]
+    },
+    {
+      "word": "record",
+      "jp": "記録、記録する",
+      "pos": "noun/verb",
+      "emoji": "📝",
+      "examples": [
+        "Temperature records show rising trends.",
+        "She records important data."
+      ]
+    },
+    {
+      "word": "report",
+      "jp": "報告する、報告書",
+      "pos": "verb/noun",
+      "emoji": "📄",
+      "examples": [
+        "Scientists report on climate research.",
+        "She writes a detailed report."
+      ]
+    },
+    {
+      "word": "publish",
+      "jp": "発表する、出版する",
+      "pos": "verb",
+      "emoji": "📚",
+      "examples": [
+        "Journals publish research findings.",
+        "She publishes her articles."
+      ]
+    },
+    {
+      "word": "communicate",
+      "jp": "コミュニケートする",
+      "pos": "verb",
+      "emoji": "💬",
+      "examples": [
+        "Scientists communicate their findings.",
+        "She communicates clearly."
+      ]
+    },
+    {
+      "word": "disseminate",
+      "jp": "広める、配布する",
+      "pos": "verb",
+      "emoji": "📢",
+      "examples": [
+        "We must disseminate climate information.",
+        "She disseminates research."
+      ]
+    },
+    {
+      "word": "educate",
+      "jp": "教育する",
+      "pos": "verb",
+      "emoji": "📚",
+      "examples": [
+        "Education raises environmental awareness.",
+        "She educates the public."
+      ]
+    },
+    {
+      "word": "inform",
+      "jp": "知らせる",
+      "pos": "verb",
+      "emoji": "💬",
+      "examples": [
+        "We must inform people about climate risks.",
+        "She informs the team."
+      ]
+    },
+    {
+      "word": "influence",
+      "jp": "影響する、影響",
+      "pos": "verb/noun",
+      "emoji": "🔮",
+      "examples": [
+        "Public opinion influences policy.",
+        "She has positive influence."
+      ]
+    },
+    {
+      "word": "impact",
+      "jp": "影響、衝撃",
+      "pos": "noun/verb",
+      "emoji": "💥",
+      "examples": [
+        "Our actions impact the environment.",
+        "Her work has great impact."
+      ]
+    },
+    {
+      "word": "effect",
+      "jp": "効果、影響",
+      "pos": "noun",
+      "emoji": "💫",
+      "examples": [
+        "The greenhouse effect warms the planet.",
+        "She studies environmental effects."
+      ]
+    },
+    {
+      "word": "cause",
+      "jp": "原因、引き起こす",
+      "pos": "noun/verb",
+      "emoji": "⚡",
+      "examples": [
+        "Carbon emissions cause global warming.",
+        "She finds the root cause."
+      ]
+    },
+    {
+      "word": "result",
+      "jp": "結果",
+      "pos": "noun",
+      "emoji": "📊",
+      "examples": [
+        "Climate change has devastating results.",
+        "The result surprised everyone."
+      ]
+    },
+    {
+      "word": "consequence",
+      "jp": "結果、結末",
+      "pos": "noun",
+      "emoji": "⚖️",
+      "examples": [
+        "Environmental neglect has serious consequences.",
+        "She considers all consequences."
+      ]
+    },
+    {
+      "word": "outcome",
+      "jp": "結果",
+      "pos": "noun",
+      "emoji": "🎯",
+      "examples": [
+        "The conference's outcome was positive.",
+        "She predicts the outcome."
+      ]
+    },
+    {
+      "word": "achievement",
+      "jp": "達成",
+      "pos": "noun",
+      "emoji": "🏆",
+      "examples": [
+        "Environmental protection is our shared achievement.",
+        "She celebrates her achievement."
+      ]
+    },
+    {
+      "word": "accomplish",
+      "jp": "成し遂げる",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "We must accomplish ambitious environmental goals.",
+        "She accomplishes much."
+      ]
+    },
+    {
+      "word": "succeed",
+      "jp": "成功する",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "We must succeed in protecting the planet.",
+        "She succeeds in her goals."
+      ]
+    },
+    {
+      "word": "fail",
+      "jp": "失敗する",
+      "pos": "verb",
+      "emoji": "❌",
+      "examples": [
+        "We cannot fail to address climate change.",
+        "Sometimes we fail before succeeding."
+      ]
+    },
+    {
+      "word": "attempt",
+      "jp": "試みる",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "We attempt to solve environmental problems.",
+        "She makes every attempt possible."
+      ]
+    },
+    {
+      "word": "try",
+      "jp": "試みる、努力する",
+      "pos": "verb",
+      "emoji": "💪",
+      "examples": [
+        "We all try to reduce our environmental impact.",
+        "She tries her hardest."
+      ]
+    },
+    {
+      "word": "strive",
+      "jp": "努力する",
+      "pos": "verb",
+      "emoji": "💪",
+      "examples": [
+        "We strive for sustainability.",
+        "She strives for excellence."
+      ]
+    },
+    {
+      "word": "endeavor",
+      "jp": "努力、試み",
+      "pos": "noun/verb",
+      "emoji": "💪",
+      "examples": [
+        "This is a collective endeavor.",
+        "She endeavors daily."
+      ]
+    },
+    {
+      "word": "commit",
+      "jp": "コミットする、約束する",
+      "pos": "verb",
+      "emoji": "🤝",
+      "examples": [
+        "Countries commit to reducing emissions.",
+        "She commits to her responsibilities."
+      ]
+    },
+    {
+      "word": "dedicate",
+      "jp": "ささげる、専念する",
+      "pos": "verb",
+      "emoji": "❤️",
+      "examples": [
+        "She dedicates herself to environmental causes.",
+        "Dedication is essential."
+      ]
+    },
+    {
+      "word": "devote",
+      "jp": "ささげる",
+      "pos": "verb",
+      "emoji": "❤️",
+      "examples": [
+        "She devotes time to charity.",
+        "Devote effort to helping others."
+      ]
+    },
+    {
+      "word": "sacrifice",
+      "jp": "犠牲",
+      "pos": "noun/verb",
+      "emoji": "🙏",
+      "examples": [
+        "Environmental protection requires some sacrifice.",
+        "She makes sacrifices for family."
+      ]
+    },
+    {
+      "word": "compromise",
+      "jp": "妥協、妥協する",
+      "pos": "noun/verb",
+      "emoji": "⚖️",
+      "examples": [
+        "We sometimes must compromise to find solutions.",
+        "She doesn't compromise on values."
+      ]
+    },
+    {
+      "word": "balance",
+      "jp": "バランス、均衡を保つ",
+      "pos": "noun/verb",
+      "emoji": "⚖️",
+      "examples": [
+        "We must balance development and conservation.",
+        "She balances work and life."
+      ]
+    },
+    {
+      "word": "sustainable",
+      "jp": "持続可能な",
+      "pos": "adjective",
+      "emoji": "♻️",
+      "examples": [
+        "Sustainable development benefits future generations.",
+        "She lives a sustainable lifestyle."
+      ]
+    },
+    {
+      "word": "generation",
+      "jp": "世代",
+      "pos": "noun",
+      "emoji": "👨‍👩‍👧‍👦",
+      "examples": [
+        "We must protect the environment for future generations.",
+        "She belongs to the younger generation."
+      ]
+    },
+    {
+      "word": "future",
+      "jp": "未来",
+      "pos": "noun",
+      "emoji": "🔮",
+      "examples": [
+        "Our choices affect the future.",
+        "She plans her future carefully."
+      ]
+    },
+    {
+      "word": "hope",
+      "jp": "希望、望む",
+      "pos": "noun/verb",
+      "emoji": "⭐",
+      "examples": [
+        "Environmentalism gives hope for the future.",
+        "She hopes for a better world."
+      ]
+    },
+    {
+      "word": "optimism",
+      "jp": "楽観",
+      "pos": "noun",
+      "emoji": "😊",
+      "examples": [
+        "Optimism drives environmental activism.",
+        "She maintains optimism."
+      ]
+    },
+    {
+      "word": "pessimism",
+      "jp": "悲観",
+      "pos": "noun",
+      "emoji": "😔",
+      "examples": [
+        "Pessimism hinders action.",
+        "She avoids pessimism."
+      ]
+    },
+    {
+      "word": "resilience",
+      "jp": "回復力、適応力",
+      "pos": "noun",
+      "emoji": "💪",
+      "examples": [
+        "Resilience helps us face environmental challenges.",
+        "She shows great resilience."
+      ]
+    },
+    {
+      "word": "adapt",
+      "jp": "適応する",
+      "pos": "verb",
+      "emoji": "🔄",
+      "examples": [
+        "We must adapt to climate change.",
+        "She adapts to new situations."
+      ]
+    },
+    {
+      "word": "adjust",
+      "jp": "調整する",
+      "pos": "verb",
+      "emoji": "⚙️",
+      "examples": [
+        "She adjusts her behavior to protect the environment.",
+        "We adjust to circumstances."
+      ]
+    },
+    {
+      "word": "overcome",
+      "jp": "克服する",
+      "pos": "verb",
+      "emoji": "🏆",
+      "examples": [
+        "We must overcome environmental challenges.",
+        "She overcomes obstacles."
+      ]
+    },
+    {
+      "word": "conquer",
+      "jp": "征服する",
+      "pos": "verb",
+      "emoji": "⚔️",
+      "examples": [
+        "Humanity can conquer pollution.",
+        "She conquers her fears."
+      ]
+    },
+    {
+      "word": "transform",
+      "jp": "変える、変革する",
+      "pos": "verb",
+      "emoji": "🔄",
+      "examples": [
+        "Green technology transforms industry.",
+        "She transforms herself continuously."
+      ]
+    },
+    {
+      "word": "revolutionize",
+      "jp": "革命を起こす",
+      "pos": "verb",
+      "emoji": "🔥",
+      "examples": [
+        "Renewable energy revolutionizes power generation.",
+        "Technology revolutionizes education."
+      ]
+    },
+    {
+      "word": "evolve",
+      "jp": "進化する",
+      "pos": "verb",
+      "emoji": "🔬",
+      "examples": [
+        "Society evolves to address environmental issues.",
+        "She evolves professionally."
+      ]
+    },
+    {
+      "word": "develop",
+      "jp": "開発する、発展する",
+      "pos": "verb",
+      "emoji": "📈",
+      "examples": [
+        "We develop sustainable solutions.",
+        "She develops her skills."
+      ]
+    },
+    {
+      "word": "create",
+      "jp": "創造する",
+      "pos": "verb",
+      "emoji": "🎨",
+      "examples": [
+        "We create a better future.",
+        "She creates art."
+      ]
+    },
+    {
+      "word": "build",
+      "jp": "建設する",
+      "pos": "verb",
+      "emoji": "🏗️",
+      "examples": [
+        "We build a sustainable world.",
+        "She builds strong relationships."
+      ]
+    },
+    {
+      "word": "construct",
+      "jp": "建設する、構成する",
+      "pos": "verb",
+      "emoji": "🏗️",
+      "examples": [
+        "They construct environmentally friendly buildings.",
+        "She constructs logical arguments."
+      ]
+    },
+    {
+      "word": "establish",
+      "jp": "確立する",
+      "pos": "verb",
+      "emoji": "🏛️",
+      "examples": [
+        "We establish protected areas.",
+        "She establishes routines."
+      ]
+    },
+    {
+      "word": "found",
+      "jp": "設立する",
+      "pos": "verb",
+      "emoji": "🏛️",
+      "examples": [
+        "She founded an environmental organization.",
+        "He founded a company."
+      ]
+    },
+    {
+      "word": "initiate",
+      "jp": "開始する",
+      "pos": "verb",
+      "emoji": "🚀",
+      "examples": [
+        "The government initiates new policies.",
+        "She initiates changes."
+      ]
+    },
+    {
+      "word": "launch",
+      "jp": "開始する、開始",
+      "pos": "verb/noun",
+      "emoji": "🚀",
+      "examples": [
+        "They launched a green initiative.",
+        "The product launch was successful."
+      ]
+    },
+    {
+      "word": "introduce",
+      "jp": "導入する、紹介する",
+      "pos": "verb",
+      "emoji": "📢",
+      "examples": [
+        "The company introduces sustainable packaging.",
+        "She introduces herself."
+      ]
+    },
+    {
+      "word": "implement",
+      "jp": "実施する",
+      "pos": "verb",
+      "emoji": "📋",
+      "examples": [
+        "They implement environmental regulations.",
+        "She implements ideas."
+      ]
+    },
+    {
+      "word": "execute",
+      "jp": "実行する",
+      "pos": "verb",
+      "emoji": "⚡",
+      "examples": [
+        "Companies execute sustainability plans.",
+        "She executes strategies well."
+      ]
+    },
+    {
+      "word": "perform",
+      "jp": "実行する、行う",
+      "pos": "verb",
+      "emoji": "🎭",
+      "examples": [
+        "She performs experiments.",
+        "The team performs well."
+      ]
+    },
+    {
+      "word": "achieve",
+      "jp": "達成する",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "Countries achieve emission reduction targets.",
+        "She achieves her goals."
+      ]
+    },
+    {
+      "word": "attain",
+      "jp": "達成する",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "We attain sustainable development goals.",
+        "She attains professional growth."
+      ]
+    },
+    {
+      "word": "reach",
+      "jp": "到達する",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "We reach important environmental milestones.",
+        "She reaches her destination."
+      ]
+    },
+    {
+      "word": "complete",
+      "jp": "完了する",
+      "pos": "verb",
+      "emoji": "✅",
+      "examples": [
+        "She completes the project on time.",
+        "Complete your homework."
+      ]
+    },
+    {
+      "word": "finish",
+      "jp": "終える",
+      "pos": "verb",
+      "emoji": "🏁",
+      "examples": [
+        "She finished the environmental report.",
+        "They finish the meeting."
+      ]
+    },
+    {
+      "word": "conclude",
+      "jp": "結論を出す、終わる",
+      "pos": "verb",
+      "emoji": "🎯",
+      "examples": [
+        "The conference concludes with action plans.",
+        "She concludes her presentation."
+      ]
+    },
+    {
+      "word": "continue",
+      "jp": "続ける",
+      "pos": "verb",
+      "emoji": "▶️",
+      "examples": [
+        "We continue environmental protection efforts.",
+        "She continues to improve."
+      ]
+    },
+    {
+      "word": "persist",
+      "jp": "持続する、固執する",
+      "pos": "verb",
+      "emoji": "💪",
+      "examples": [
+        "She persists in her efforts.",
+        "The problem persists."
+      ]
+    },
+    {
+      "word": "maintain",
+      "jp": "維持する",
+      "pos": "verb",
+      "emoji": "🔧",
+      "examples": [
+        "We maintain high environmental standards.",
+        "She maintains good relationships."
+      ]
+    },
+    {
+      "word": "preserve",
+      "jp": "保存する",
+      "pos": "verb",
+      "emoji": "💾",
+      "examples": [
+        "We must preserve natural habitats.",
+        "She preserves memories."
+      ]
+    },
+    {
+      "word": "protect",
+      "jp": "保護する",
+      "pos": "verb",
+      "emoji": "🛡️",
+      "examples": [
+        "We protect endangered species.",
+        "She protects her belongings."
+      ]
+    },
+    {
+      "word": "conserve",
+      "jp": "保存する、節約する",
+      "pos": "verb",
+      "emoji": "♻️",
+      "examples": [
+        "We must conserve water resources.",
+        "She conserves energy."
+      ]
+    },
+    {
+      "word": "save",
+      "jp": "救う、節約する",
+      "pos": "verb",
+      "emoji": "💰",
+      "examples": [
+        "We save the environment by reducing waste.",
+        "She saves money every month."
+      ]
+    },
+    {
+      "word": "rescue",
+      "jp": "救助する",
+      "pos": "verb",
+      "emoji": "❤️‍🩹",
+      "examples": [
+        "Teams rescue stranded animals.",
+        "She rescues abandoned pets."
+      ]
+    },
+    {
+      "word": "help",
+      "jp": "助ける",
+      "pos": "verb",
+      "emoji": "🆘",
+      "examples": [
+        "We help protect the planet.",
+        "She helps her friends."
+      ]
+    },
+    {
+      "word": "assist",
+      "jp": "支援する",
+      "pos": "verb",
+      "emoji": "🤝",
+      "examples": [
+        "Programs assist environmental research.",
+        "She assists students."
+      ]
+    },
+    {
+      "word": "collaborate",
+      "jp": "協力する",
+      "pos": "verb",
+      "emoji": "🤝",
+      "examples": [
+        "International teams collaborate on climate solutions.",
+        "She collaborates with colleagues."
+      ]
+    },
+    {
+      "word": "cooperate",
+      "jp": "協力する",
+      "pos": "verb",
+      "emoji": "🤝",
+      "examples": [
+        "Nations cooperate to reduce emissions.",
+        "She cooperates with neighbors."
+      ]
+    },
+    {
+      "word": "coordinate",
+      "jp": "調整する",
+      "pos": "verb",
+      "emoji": "�
