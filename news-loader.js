@@ -54,40 +54,56 @@ async function loadNewsFile(filename) {
 
 /**
  * Parse JavaScript news file to extract data
+ * Handles arrays of news items with multiple sections
  */
 function parseJavaScriptNews(javascript) {
     try {
         console.log("parseJavaScriptNews: Received", javascript.length, "chars");
         
-        // Extract title: title: "Text",
-        const titleMatch = javascript.match(/title:\s*"([^"]+)"/);
-        const title = titleMatch ? titleMatch[1] : 'News';
-        console.log("parseJavaScriptNews: Title =", title);
-
-        // Extract content from template string: content: `...`
-        const contentMatch = javascript.match(/content:\s*`([^`]*)`/s);
-        const content = contentMatch ? contentMatch[1] : '';
-        console.log("parseJavaScriptNews: Content length =", content.length);
-
-        if (title && content) {
-            console.log("parseJavaScriptNews: Success!");
-            return [{ title, content }];
+        // Match the array structure: var newsYYYYMMDD = [ { title: "...", content: "..." }, { title: "...", content: "..." } ]
+        const arrayMatch = javascript.match(/var\s+news\d{8}\s*=\s*\[([\s\S]+)\]\s*;/);
+        
+        if (!arrayMatch) {
+            console.log("parseJavaScriptNews: No array structure found");
+            return null;
         }
+
+        const arrayContent = arrayMatch[1];
+        console.log("parseJavaScriptNews: Found array content, length =", arrayContent.length);
+
+        // Extract all news items using regex to match multiple { title, content } objects
+        const newsItems = [];
+        const itemPattern = /\{\s*title:\s*"([^"]+)",\s*content:\s*`([\s\S]*?)`\s*\}/g;
         
-        console.log("parseJavaScriptNews: Strict parsing failed, trying fallback extraction...");
-        
-        // Fallback: try to extract var declaration content
-        const fallbackMatch = javascript.match(/var\s+news\d{8}\s*=\s*\[\s*\{\s*title:\s*"([^"]+)",\s*content:\s*`([^`]*)`/s);
-        if (fallbackMatch) {
-            console.log("parseJavaScriptNews: Fallback extraction worked!");
-            return [{
-                title: fallbackMatch[1],
-                content: fallbackMatch[2]
-            }];
+        let match;
+        let itemCount = 0;
+        while ((match = itemPattern.exec(arrayContent)) !== null) {
+            itemCount++;
+            newsItems.push({
+                title: match[1],
+                content: match[2]
+            });
         }
-        
-        console.log("parseJavaScriptNews: Fallback also failed");
-        return null;
+
+        console.log(`parseJavaScriptNews: Extracted ${itemCount} news items`);
+
+        if (newsItems.length === 0) {
+            console.log("parseJavaScriptNews: No items extracted, trying fallback...");
+            // Fallback: single item extraction
+            const titleMatch = javascript.match(/title:\s*"([^"]+)"/);
+            const contentMatch = javascript.match(/content:\s*`([\s\S]*?)`/);
+            
+            if (titleMatch && contentMatch) {
+                return [{
+                    title: titleMatch[1],
+                    content: contentMatch[1]
+                }];
+            }
+            return null;
+        }
+
+        console.log("parseJavaScriptNews: Success! Returning", newsItems.length, "items");
+        return newsItems;
     } catch (e) {
         console.warn('Failed to parse news data:', e);
         return null;
