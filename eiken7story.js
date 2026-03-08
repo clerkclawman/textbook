@@ -1,194 +1,2261 @@
-var eiken7story = [
-  {
-    "title": "1. Week 1 - Cat in a Box",
-    "content": "😺 I have a cat.\n\n私は猫を飼っています。 \n\n✨ Her name is Mochi.\n\n彼女の名前はチョコです。 \n\n✨ One day Mochi sees a box.\n\nある日チョコは箱を見つけます。 \n\n✨ She jumps in the box!\n\n彼女は箱の中に飛び込みます！ \n\n😴 She sleeps in the box.\n\n彼女は箱の中で寝ます。 \n\n😴 Mochi sleeps for hours.\n\nチョコは何時間も寝ています。 \n\n✨ She cannot get out!\n\n彼女は出られません！ \n\n✨ Mochi meows for help.\n\nチョコは助けを求めてニャーと鳴きます。 \n\n✨ I help Mochi get out.\n\n私はチョコを助けて出します。 \n\n😊 Mochi is happy again!\n\nチョコはまた幸せです！ \n\n😺 Do you have a cat?\n\nあなたは猫を飼っていますか？ \n\n😺 What is your cat's name?\n\nあなたの猫の名前は何ですか？ \n\n✨ Do you like boxes?\n\n箱は好きですか？ \n\n✨ What do you do when you need help?\n\n助けが必要なときはどうしますか？ \n\n👫 Do you help your friends?\n\n友達を手伝いますか？ \n\n😴 Where do you like to sleep?\n\nどこで寝るのが好きですか？ \n\n😺 What sound does your cat make?\n\nあなたの猫はどんな音を出しますか？ \n\n🏠 Do you stay at home sometimes?\n\n時々家にいますか？ \n\n😊 Are you happy most of the time?\n\n多くの時間、幸せですか？ \n\n👨‍👩‍👦 Does your family have pets?\n\nあなたの家族はペットを飼っていますか？ "
-  },
-  {
-    "title": "2. Week 1 - Funny Lunch",
-    "content": "👩 Mom makes my lunch.\n\nお母さんがお弁当を作ってくれます。 \n\n✨ She makes rice balls.\n\nおにぎりを作ります。 \n\n🎉 She makes one funny rice ball!\n\n面白いおにぎりを一つ作りました！ \n\n😺 It looks like my cat!\n\n私の猫みたいに見えます！ \n\n😂 I laugh so much!\n\n私はとても笑います！ \n\n✨ I take a photo first.\n\n最初に写真を撮ります。 \n\n😋 Then I eat the rice.\n\nそれから食べます。 \n\n✨ My lunch is yummy!\n\nお弁当は美味しいです！ \n\n😺 That rice cat is cute!\n\nそのお米の猫は可愛い！ \n\n👩 Thank you, Mom!\n\nありがとう、お母さん！ \n\n👩 Does your mom make your lunch?\n\nお母さんはお弁当を作りますか？ \n\n🍽️ What food do you like for lunch?\n\nランチにはどんな食べ物が好きですか？ \n\n🎉 Do you like funny things?\n\n面白いものは好きですか？ \n\n✨ Do you take photos?\n\n写真を撮りますか？ \n\n🧸 What is your favorite toy?\n\n一番好きなおもちゃは何ですか？ \n\n✨ Do you say thank you?\n\nありがとうと言いますか？ \n\n✨ Who cooks in your house?\n\nあなたの家では誰が料理をしますか？ \n\n🍽️ Do you like food shaped like animals?\n\n動物の形をした食べ物は好きですか？ \n\n😊 Are you a happy person?\n\nあなたは幸せな人ですか？ \n\n🍽️ Do you help make food?\n\n料理を手伝いますか？ "
-  },
-  {
-    "title": "3. Week 1 - Sticky Situation",
-    "content": "🎨 I paint a picture today.\n\n今日は絵を描きます。 \n\n❤️ I use my red crayon.\n\n赤いクレヨンを使います。 \n\n✨ I am hungry.\n\nお腹が空いています。 \n\n😋 I eat an apple.\n\nりんごを食べます。 \n\n🎨 I go back to drawing.\n\n落ち着いて描きます。 \n\n✨ I touch the paper.\n\n紙に触れます。 \n\n❤️ Oh no! Sticky red hands!\n\nおっと！赤い手がベタベタ！ \n\n✨ The paper is messy now!\n\n紙が汚くなりました！ \n\n👩 Mom helps me clean.\n\nお母さんがきれいにするのを助けてくれます。 \n\n😋 Next time I eat first!\n\n今度は先に食べます！ \n\n🎨 Do you like to draw?\n\n絵を描くのは好きですか？ \n\n🌈 What is your favorite color?\n\n一番好きな色は何ですか？ \n\n✨ Do you get hungry often?\n\nよくお腹が空きますか？ \n\n✨ What fruit do you like?\n\nどんな果物が好きですか？ \n\n✨ Do you like clean hands?\n\nきれいな手が好きですか？ \n\n✨ Do your parents help you?\n\n親はあなたを助けてくれますか？ \n\n🚗 Are you careful or messy?\n\n慎重ですか、それとも雑念ですか？ \n\n✨ Do you use crayons?\n\nクレヨンを使いますか？ \n\n✨ What do you do when things go wrong?\n\nうまくいかないときはどうしますか？ \n\n✨ Do you make mistakes?\n\n間違いをしますか？ "
-  },
-  {
-    "title": "4. Week 2 - Missing Ball",
-    "content": "🎮 I play soccer.\n\n私はサッカーをします。 \n\n✨ I kick the ball hard.\n\n私はボールを力強く蹴ります。 \n\n✨ The ball flies away!\n\nボールが飛び去ります！ \n\n🌳 It goes behind a tree.\n\n木の後ろへ行きました。 \n\n✨ I cannot see the ball.\n\nボールが見えません。 \n\n✨ Where is my ball?\n\n私のボールはどこかな？ \n\n🚌 I look behind the bush.\n\nブッシュの後ろを見ます。 \n\n😺 My cat sleeps on the ball!\n\n猫がボールの上で寝ています！ \n\n😺 My ball is a cat bed!\n\nボールは猫のベッドになりました！ \n\n🎉 That is so funny!\n\nそれは本当に面白いです！ \n\n🎮 Do you play ball games?\n\nボールゲームをしますか？ \n\n✨ Do you have a garden?\n\n庭がありますか？ \n\n✨ Do you lose things sometimes?\n\n時々物を失くしますか？ \n\n✨ Where do you look for lost things?\n\n失くしたものをどこで探しますか？ \n\n😺 Do you like cats?\n\n猫は好きですか？ \n\n😺 What does your cat do?\n\nあなたの猫は何をしますか？ \n\n😺 Do you think cats are funny?\n\n猫は面白いと思いますか？ \n\n😂 Do you laugh a lot?\n\nよく笑いますか？ \n\n🌳 Do you like trees?\n\n木は好きですか？ \n\n✨ What sports do you like?\n\nどんなスポーツが好きですか？ "
-  },
-  {
-    "title": "5. Week 2 - Singing Bird",
-    "content": "🐦 I see a bird.\n\n私は鳥を見ます。 \n\n🐦 The bird is in a box.\n\n鳥は箱の中にいます。 \n\n🐦 The bird sings a song.\n\n鳥は歌を歌います。 \n\n✨ The song is beautiful.\n\n歌はきれいです。 \n\n👧 My sister hears the song.\n\n妹が歌を聞きます。 \n\n🎤 She wants to sing too.\n\n彼女も歌いたいです。 \n\n🎤 She sings very loudly.\n\n彼女はとても大きく歌います。 \n\n🐦 The bird flies away!\n\n鳥が飛んで逃げました！ \n\n🐦 The bird is scared!\n\n鳥は怖がっています！ \n\n👧 My sister is too loud!\n\n妹は声が大きすぎました！ \n\n🐦 Do you like birds?\n\n鳥は好きですか？ \n\n🎤 Do you like singing?\n\n歌うのは好きですか？ \n\n👧 Do you have brothers or sisters?\n\n兄弟や姉妹はいますか？ \n\n🎤 Do you sing loudly or quietly?\n\n大きく歌いますか、それとも小さく歌いますか？ \n\n🎵 Do you like music?\n\n音楽は好きですか？ \n\n🎵 What music do you like?\n\nどんな音楽が好きですか？ \n\n😨 Are you scared sometimes?\n\n時々怖くなりますか？ \n\n😨 What are you scared of?\n\n何が怖いですか？ \n\n🏃 Do animals run away?\n\n動物は逃げますか？ \n\n✨ Do you make noise?\n\nあなたは音を出しますか？ "
-  },
-  {
-    "title": "6. Week 2 - Rainy Day",
-    "content": "🌧 It rains today.\n\n今日雨が降ります。 \n\n🎮 I want to play outside.\n\n外で遊びたいです。 \n\n✨ But I cannot go.\n\nでも行けません。 \n\n🌧 The rain is heavy!\n\n雨がすごい！ \n\n🏃 I run back inside.\n\n元の場所に戻ります。 \n\n🌳 No park for me.\n\n公園に行けません。 \n\n✨ I stay in my room.\n\n部屋にいます。 \n\n🎮 I play games inside.\n\n家の中でゲームをします。 \n\n😺 My cat plays too.\n\n猫も遊びます。 \n\n☀️ Maybe tomorrow will be sunny!\n\n明日は晴れるかもしれません！ \n\n🌧 Do you like rain?\n\n雨は好きですか？ \n\n🎮 Do you like to play outside?\n\n外で遊ぶのは好きですか？ \n\n🌧 What do you do when it rains?\n\n雨のときは何をしますか？ \n\n✨ Do you have a room?\n\n部屋はありますか？ \n\n🎮 What games do you play?\n\nどんなゲームをしますか？ \n\n🎮 Do you play alone or with friends?\n\n一人で遊びますか、それとも友達と？ \n\n☀️ Do you like sunny days better?\n\n晴れた日は好きですか？ \n\n😋 What is your favorite weather?\n\n一番好きな天気は何ですか？ \n\n😋 Do you look at the weather?\n\n天気を見ますか？ \n\n😊 Are you happy tomorrow?\n\n明日は幸せになりたいですか？ "
-  },
-  {
-    "title": "7. Week 3 - Birthday Cake",
-    "content": "🎂 Today is my birthday.\n\n今日は私の誕生日です。 \n\n✨ I am nine years old.\n\n9歳になりました。\n\n👨‍👩‍👦 My family is here.\n\n家族がここにいます。 \n\n👩 Mom has a cake.\n\nお母さんがケーキを持っています。 \n\n✨ It smells so good!\n\nとても良い匂いがします！ \n\n✨ There are nine candles.\n\n9本のろうそくがあります。\n\n✨ I make a wish.\n\n願い事をします。 \n\n✨ I blow the candles.\n\nろうそくを吹き消します。 \n\n😊 Everyone says happy birthday.\n\nみんなハッピーバースデーと言います。 \n\n😋 Now I eat cake!\n\n今ケーキを食べます！ \n\n🎂 When is your birthday?\n\n誕生日はいつですか？ \n\n✨ How old are you?\n\nあなたは何歳ですか？ \n\n👨‍👩‍👦 Do you like your family?\n\n家族は好きですか？ \n\n✨ Do you like cake?\n\nケーキは好きですか？ \n\n🍽️ What food smells good?\n\nどんな食べ物が良い匂いがしますか？ \n\n✨ Do you make wishes?\n\n願い事をしますか？ \n\n✨ What do you wish for?\n\n何を願いますか？ \n\n😊 Do people say happy birthday to you?\n\nハッピーバースデーと言われますか？ \n\n🍽️ Do you like sweet food?\n\n甘い食べ物は好きですか？ \n\n✨ Are you nine years old or older? 9歳ですか、それともそれ以上ですか？"
-  },
-  {
-    "title": "8. Week 3 - Dog Chase",
-    "content": "🐶 I have a dog.\n\n私は犬を飼っています。 \n\n✨ His name is Pochi.\n\n彼の名前はポチです。 \n\n❤️ He loves his ball.\n\n彼はボールが大好きです。 \n\n✨ I throw the ball far!\n\nボールを遠くへ投げます。 \n\n🏃 Pochi runs very fast!\n\nポチはとても速く走ります！ \n\n😺 My cat sees the ball.\n\n猫がボールを見ます。 \n\n😺 The cat runs too!\n\n猫も走ります！ \n\n✨ They both chase the ball!\n\n両方がボールを追いかけます！ \n\n✨ Pochi gets the ball first!\n\nポチが最初にボールを取ります！ \n\n😺 The cat looks sad.\n\n猫は悲しそうに見えます。 \n\n🐶 Do you have a dog?\n\n犬を飼っていますか？ \n\n✨ What is your pet's name?\n\nペットの名前は何ですか？ \n\n🧸 Do you have a favorite toy?\n\n好きなおもちゃはありますか？ \n\n🏃 Do you like to run?\n\n走るのは好きですか？ \n\n🏃 Who runs fast?\n\n誰が速く走りますか？ \n\n🐶 Do dogs run fast?\n\n犬は速く走りますか？ \n\n😺 Do you like cats or dogs better?\n\n猫と犬、どちらが好きですか？ \n\n😢 Do you feel sad sometimes?\n\n時々悲しい気持ちになりますか？ \n\n😢 What do you do when you feel sad?\n\n悲しいときはどうしますか？ \n\n✨ Do you like to win?\n\n勝つのは好きですか？ "
-  },
-  {
-    "title": "9. Week 3 - Star Confusion",
-    "content": "✨ I look at the sky.\n\n空を見ます。 \n\n✨ I see a bright light.\n\n明るい光が見えます。 \n\n✈️ Is it an airplane?\n\n飛行機かな？ \n\n✨ Is it a spaceship?\n\n宇宙船かな？ \n\n✨ Is it a UFO? UFOかな？\n\n✨ Is it an alien?\n\n宇宙人かな？ \n\n✨ The light moves fast!\n\n光が速く動きます！ \n\n🌈 It changes colors!\n\n色が変わります！ \n\n✨ Now I see a butterfly!\n\n今、蝶が見えます！ \n\n✨ It is just a bug light!\n\nただの虫の光でした！ \n\n✨ Do you look at the sky?\n\n空を見ますか？ \n\n🌙 Do you like the night?\n\n夜は好きですか？ \n\n✈️ Have you seen an airplane?\n\n飛行機を見たことがありますか？ \n\n✨ Do you like space?\n\n宇宙は好きですか？ \n\n🌈 Do things change color?\n\n色が変わるものはありますか？ \n\n✨ Do you like butterflies?\n\n蝶は好きですか？ \n\n✨ Do bugs fly?\n\n虫は空を飛びますか？ \n\n✨ Do you get confused sometimes?\n\n時々混乱することがありますか？ \n\n✨ What is in the sky?\n\n空には何がありますか？ \n\n✨ Do you like surprises?\n\n驚きは好きですか？ "
-  },
-  {
-    "title": "10. Week 4 - Circus Surprise",
-    "content": "✨ I go to the circus.\n\nサーカスに行きます。 \n\n✨ I see a clown.\n\nピエロがいます。 \n\n✨ The clown does tricks.\n\nピエロは手品をします。 \n\n✨ He pulls a rabbit from a hat.\n\n帽子からウサギを取り出します。 \n\n✨ Wow! The rabbit is big!\n\nわあ！ウサギは大きいです！ \n\n✨ The rabbit hops away.\n\nウサギが飛び去ります。 \n\n😂 Everyone laughs!\n\nみんな笑います！ \n\n✨ Then I see a lion.\n\nライオンも見ます。 \n\n✨ The lion can jump!\n\nライオンはジャンプできます！ \n\n✨ The circus is amazing!\n\nサーカスは素晴らしいです！ \n\n✨ Do you like shows?\n\nショーは好きですか？ \n\n✨ Do you like clowns?\n\nピエロは好きですか？ \n\n🎩 Do you like magic tricks?\n\n手品は好きですか？ \n\n✨ Do you like rabbits?\n\nウサギは好きですか？ \n\n✨ Do you wear a hat?\n\n帽子をかぶりますか？ \n\n🎉 Do people laugh at funny things?\n\n人々は面白いものを見て笑いますか？ \n\n😂 Do you like to laugh?\n\n笑うのは好きですか？ \n\n✨ Do you like lions?\n\nライオンは好きですか？ \n\n✨ Can you jump?\n\nジャンプできますか？ \n\n✨ Do you like amazing things?\n\n驚きの体験は好きですか？ "
-  },
-  {
-    "title": "11. Week 4 - Pizza Disaster",
-    "content": "😋 We eat pizza for lunch.\n\nランチにピザを食べます。 \n\n✨ I like cheese a lot.\n\nチーズがとても好きです。 \n\n✨ There is pepperoni too.\n\nペパロニもあります。 \n\n👧 My sister wants olives.\n\n妹はオリーブが欲しがります。 \n\n✨ I do not like olives!\n\n私はオリーブが嫌いです！ \n\n✨ But we share the pizza.\n\nでもピザをシェアします。 \n\n✨ The pizza is so good!\n\nピザはとても美味しいです！ \n\n✨ Everyone likes the pizza!\n\nみんなピザが好きです！ \n\n✨ Now I want more!\n\nもっと欲しいです！ \n\n🍽️ Pizza is my favorite food!\n\nピザは一番好きな食べ物です！ \n\n✨ Do you like pizza?\n\nピザは好きですか？ \n\n🍽️ What food do you eat for lunch?\n\nランチには何を食べますか？ \n\n✨ What toppings do you like?\n\nどんなトッピングが好きですか？ \n\n👧 Do you have brothers or sisters?\n\n兄弟や姉妹はいますか？ \n\n🍽️ Do you sometimes dislike food?\n\n時々食べ物が嫌いですか？ \n\n✨ Do you share with others?\n\n他の人とシェアしますか？ \n\n🍽️ Is good food important?\n\n美味しい食べ物は重要ですか？ \n\n👨‍👩‍👦 Does your family like the same food?\n\n家族は同じ食べ物が好きですか？ \n\n🍽️ What is your favorite food?\n\n一番好きな食べ物は何ですか？ \n\n🍽️ Do you want more good food?\n\nもっと美味しい食べ物が欲しいですか？ "
-  },
-  {
-    "title": "12. Week 4 - School Adventure",
-    "content": "🏫 I go to school.\n\n学校に行きます。 \n\n✨ We learn math today.\n\n今日は数学を学びます。 \n\n✨ One plus one is two.\n\n1足す1は2です。\n\n🎉 Math is fun!\n\n数学は楽しいです！ \n\n📖 Then we read books.\n\nそれから本を読みます。 \n\n✨ The story is about a frog.\n\n物語はカエルの話です。 \n\n🌙 The frog jumps to the moon.\n\nカエルが月へ跳びます。 \n\n🌙 The frog is on the moon!\n\nカエルが月の上にいます！ \n\n✨ That is so silly!\n\nそれはとても面白い！ \n\n🏫 I love school stories!\n\n学校の物語は大好き！ \n\n🏫 Do you go to school?\n\n学校に行きますか？ \n\n🏫 What do you learn at school?\n\n学校では何を学びますか？ \n\n✨ Do you like math?\n\n数学は好きですか？ \n\n✨ Can you add numbers?\n\n数字を足せますか？ \n\n🎉 Do you like fun things?\n\n楽しいことは好きですか？ \n\n📖 Do you read books?\n\n本を読みますか？ \n\n✨ Do you like frogs?\n\nカエルは好きですか？ \n\n🌙 Do you like the moon?\n\n月は好きですか？ \n\n✨ Do you like silly stories?\n\nおかしな物語は好きですか？ \n\n🏫 Do you love school?\n\n学校は好きですか？ "
-  },
-  {
-    "title": "13. Week 5 - Baseball Game",
-    "content": "🎮 I play baseball today.\n\n今日は野球をします。 \n\n✨ We go to the field.\n\nフィールドに行きます。 \n\n🎮 My team has good players.\n\n私のチームには良い選手がいます。 \n\n✨ The pitcher throws the ball.\n\nピッチャーがボールを投げます。 \n\n✨ I swing the bat!\n\n私はバットを振ります！ \n\n✨ I hit the ball!\n\nボールに当たりました！ \n\n✨ The ball goes far!\n\nボールが遠くへ行きました！ \n\n🏃 I run bases fast!\n\n私はベースを速く走ります！ \n\n🎮 My team wins the game!\n\n私のチームが勝ちました！ \n\n😊 We are so happy!\n\n私たちはとても幸せです！ \n\n✨ Do you like baseball?\n\n野球は好きですか？ \n\n🎮 What sports do you play?\n\nどんなスポーツをしますか？ \n\n🏃 Do you run fast?\n\n速く走れますか？ \n\n🎮 Do you win games often?\n\nよく試合に勝ちますか？ \n\n🎮 Does your team have good players?\n\nあなたのチームには良い選手がいますか？ \n\n✨ Do you like team sports?\n\nチームスポーツは好きですか？ \n\n😊 Do you feel happy when you win?\n\n勝つときは幸せですか？ \n\n✨ Do you practice sports often?\n\nスポーツの練習はよくしますか？ \n\n🏃 Do you like to run?\n\n走るのは好きですか？ \n\n✨ Do you like to try new things?\n\n新しいことに挑戦するのは好きですか？ "
-  },
-  {
-    "title": "14. Week 5 - Zoo Visit",
-    "content": "🦁 I visit the zoo today.\n\n今日は動物園に行きます。 \n\n✨ I see big tigers.\n\n大きなトラを見ます。 \n\n✨ I see big elephants too.\n\n大きなゾウも見ます。 \n\n✨ The giraffe is very tall.\n\nキリンはとても背が高いです。 \n\n✨ The zebra has stripes.\n\nシマウマにはしま模様があります。 \n\n✨ Parrots talk to me.\n\nオウムが私に話しかけます。 \n\n✨ The penguin cannot fly.\n\nペンギンは飛べません。 \n\n🏊 The dolphin swims fast.\n\nイルカは速く泳ぎます。 \n\n✨ I like all the animals.\n\nすべての動物が好きです。 \n\n🎉 The zoo is so fun!\n\n動物園はとても楽しい！ \n\n🦁 Do you like zoos?\n\n動物園は好きですか？ \n\n✨ What is your favorite animal?\n\n一番好きな動物は何ですか？ \n\n✨ Have you seen a tiger?\n\nトラを見たことがありますか？ \n\n✨ Do you like tall animals?\n\n背の高い動物は好きですか？ \n\n🐦 Do birds talk to you?\n\n鳥はあなたに話しかけますか？ \n\n🏊 Do you like swimming?\n\n泳ぐのは好きですか？ \n\n✨ Do you like to visit new places?\n\n新しい場所を訪れるのは好きですか？ \n\n✨ Do you learn about animals?\n\n動物について学びますか？ \n\n✨ Have you seen big animals?\n\n大きな動物を見たことがありますか？ \n\n🎉 Do you have fun at the zoo?\n\n動物園は楽しいですか？ "
-  },
-  {
-    "title": "15. Week 5 - Car Ride",
-    "content": "👨 My dad drives the car.\n\nお父さんが車を運転します。 \n\n🚗 The car is blue.\n\n車は青いです。 \n\n🎮 Music plays in the car.\n\n車で音楽が流れています。 \n\n🎤 I sing along to the songs.\n\n歌に合わせて歌います。 \n\n🌳 We drive down the street.\n\n道の下を走ります。 \n\n🏫 We go to the school.\n\n学校に行きます。 \n\n🏠 Then we go back home.\n\nそれから家に帰ります。 \n\n🚗 The car goes fast.\n\n車は速いです。 \n\n🚗 I like car rides.\n\n車での移動は好きです。 \n\n👨 My dad drives safely.\n\nお父さんは安全に運転します。 \n\n🚗 Do you like cars?\n\n車は好きですか？ \n\n👨 Does your dad drive?\n\nお父さんは運転しますか？ \n\n🚗 What color is your car?\n\nあなたの車は何色ですか？ \n\n🚗 Do you like music in the car?\n\n車では音楽が好きですか？ \n\n🎤 Do you sing when you travel?\n\n旅行のときは歌いますか？ \n\n✨ Do you drive slowly or fast?\n\nゆっくり運転しますか、それとも速く？ \n\n🏫 Do you go to school by car?\n\n車で学校に行きますか？ \n\n🚗 Do you feel safe in the car?\n\n車の中で安全ですか？ \n\n👨‍👩‍👦 Does your family travel often?\n\n家族はよく旅行しますか？ \n\n🏠 Do you go back home often?\n\nよく家に帰りますか？ "
-  },
-  {
-    "title": "16. Week 5 - Ice Cream Shop",
-    "content": "✨ I go to the ice cream shop.\n\nアイスクリーム店に行きます。 \n\n✨ There are many flavors.\n\nたくさんの味があります。 \n\n👧 My sister wants chocolate.\n\n妹はチョコレートが欲しいです。 \n\n👫 My friend wants lemon.\n\n友達はレモンが欲しいです。 \n\n✨ I want strawberry!\n\n私はイチゴが欲しい！ \n\n✨ We all get different flavors.\n\nみんな違う味を選びます。 \n\n✨ The ice cream is cold!\n\nアイスクリームは冷たいです！ \n\n✨ It tastes sweet!\n\n甘くて美味しいです！ \n\n😋 We eat it all fast!\n\n全部速く食べました！ \n\n✨ We want more ice cream!\n\nもっとアイスクリームが欲しい！ \n\n✨ Do you like ice cream?\n\nアイスクリームは好きですか？ \n\n✨ What flavor do you like best?\n\nどんな味が一番好きですか？ \n\n🍽️ Do you like cold food?\n\n冷たい食べ物は好きですか？ \n\n🍽️ Do you like sweet food?\n\n甘い食べ物は好きですか？ \n\n😋 Do you eat fast or slowly?\n\n速く食べますか、それともゆっくり？ \n\n👧 Does your sister like chocolate?\n\n妹はチョコレートが好きですか？ \n\n✨ Do you have a favorite flavor?\n\n好きな味はありますか？ \n\n😋 Do you eat snacks often?\n\nおやつはよく食べますか？ \n\n😋 What do you like to eat?\n\nあなたは何が食べたいですか？ \n\n🍽️ Do you want more tasty food?\n\nもっと美味しい食べ物が欲しいですか？ "
-  },
-  {
-    "title": "17. Week 5 - TV Show",
-    "content": "✨ I watch TV.\n\n私はテレビを見ます。 \n\n⭐ My favorite show starts.\n\n好きな番組が始まりました。 \n\n🎉 The show is very funny!\n\n番組はとても面白いです！ \n\n✨ People act in the show.\n\n俳優が出演します。 \n\n💃 They dance and sing.\n\n歌とダンスをします。 \n\n👩 My mom watches with me.\n\nお母さんと一緒に見ます。 \n\n👨 My dad sits too.\n\nお父さんも座っています。 \n\n😂 We all laugh together.\n\nみんなで一緒に笑います。 \n\n✨ The show is over soon!\n\n番組はすぐに終わります！ \n\n🎉 TV is fun to watch!\n\nテレビを見るのは楽しい！ \n\n✨ Do you watch TV?\n\nテレビは見ますか？ \n\n🎉 Do you like funny shows?\n\n面白い番組は好きですか？ \n\n😂 Do you like to laugh?\n\n笑うのは好きですか？ \n\n🎵 Do you like music?\n\n音楽は好きですか？ \n\n🎤 Do you sing along sometimes?\n\n時々歌に合わせて歌いますか？ \n\n👨‍👩‍👦 Does your family watch TV too?\n\n家族もテレビを見ますか？ \n\n💃 Do you like to dance?\n\nダンスは好きですか？ \n\n👫 Do you sit together with friends?\n\n友達と一緒に座りますか？ \n\n✨ Do you like movies or TV better?\n\n映画とテレビ、どちらが好きですか？ \n\n✨ Do you like ending stories?\n\n物語の結末は好きですか？ "
-  },
-  {
-    "title": "18. Week 5 - Beach Day",
-    "content": "🏖 We go to the beach.\n\n海に行きます。 \n\n💙 The sea is blue.\n\n海は青いです。 \n\n☀️ The sun is hot.\n\n太陽は暑いです。 \n\n✨ The sand is white.\n\n砂は白いです。 \n\n🏃 We run on the sand.\n\n砂の上を走ります。 \n\n🏊 I swim in the water.\n\n私は水で泳ぎます。 \n\n✨ The water feels good.\n\n水は気持ちいいです。 \n\n✨ I sit under an umbrella.\n\n傘の下に座ります。 \n\n✨ I find a seashell.\n\n貝殻を見つけました。 \n\n❤️ I love the beach!\n\n海が大好きです！ \n\n🏖 Do you like the beach?\n\n海は好きですか？ \n\n🏊 Do you like swimming?\n\n泳ぐのは好きですか？ \n\n☀️ Do you like sunny days?\n\n晴れた日は好きですか？ \n\n✨ Do you like sand?\n\n砂は好きですか？ \n\n🏃 Do you run on the beach?\n\n海で走りますか？ \n\n☀️ Do you feel hot in summer?\n\n夏は暑いと感じますか？ \n\n✨ Do you like umbrellas?\n\n傘は好きですか？ \n\n✨ Have you found seashells?\n\n貝殻を見つけたことがありますか？ \n\n✨ Do you like to find things?\n\n探検するのは好きですか？ \n\n✨ Do you like the sea?\n\n海は好きですか？ \n\n🎉 Do you have fun outside?\n\n外では楽しいですか？ "
-  },
-  {
-    "title": "19. Week 6 - Park Play",
-    "content": "🌳 I go to the park.\n\n公園に行きます。 \n\n🌸 There are many flowers.\n\nたくさんの花があります。 \n\n🐦 A bird sings on a tree.\n\n木の上で鳥が歌っています。 \n\n✨ I sit on a bench.\n\nベンチに座ります。 \n\n🐶 A dog runs by.\n\n犬が走っていきます。 \n\n👫 My friend walks over.\n\n友達が歩いてきました。 \n\n🎮 We play soccer together.\n\nサッカーを一緒にします。 \n\n🏃 We run a lot!\n\n私たちはたくさん走ります！ \n\n✨ We drink water.\n\n私たちは水を飲みます。 \n\n🌳 The park is nice!\n\n公園はいいところです！ \n\n🌳 Do you go to the park?\n\n公園に行きますか？ \n\n🌸 Do you like flowers?\n\n花は好きですか？ \n\n🌳 Do you like trees?\n\n木は好きですか？ \n\n🐦 Do birds sing where you live?\n\nあなたの住んでいる場所で鳥は歌いますか？ \n\n🐶 Do you like dogs?\n\n犬は好きですか？ \n\n✨ Do you have a bench near you?\n\nあなたのそばにベンチはありますか？ \n\n🏃 Do you like to run?\n\n走るのは好きですか？ \n\n✨ Do you drink water often?\n\nよく水を飲みますか？ \n\n✨ Do you feel hot sometimes?\n\n時々暑いと感じますか？ \n\n🎮 Do you play with friends often?\n\n友達とよく遊びますか？ \n\n✨ Do you like nice places?\n\nいい場所は好きですか？ "
-  },
-  {
-    "title": "20. Week 6 - Music Lesson",
-    "content": "✨ I have piano lessons.\n\nピアノのレッスンがあります。 \n\n👩‍🏫 The teacher is nice.\n\n先生は優しいです。 \n\n✨ She teaches me a song.\n\n先生は私に歌を教室してくれます。 \n\n🎮 I play the piano.\n\n私はピアノを演奏します。 \n\n👨‍👩‍👦 My family listens.\n\n家族が聞いています。 \n\n✨ The song is beautiful.\n\n歌はきれいです。 \n\n😊 I feel happy!\n\n幸せを感じます！ \n\n🎮 Tomorrow I play guitar.\n\n明日はギターを演奏します。 \n\n🎤 I can sing too!\n\n歌うこともできます！ \n\n😊 Music makes me happy!\n\n音楽は私を幸せにします！ \n\n🎮 Do you play an instrument?\n\n楽器を演奏しますか？ \n\n✨ Do you like piano?\n\nピアノは好きですか？ \n\n👩‍🏫 Do music teachers help you?\n\n音楽の先生はあなたを助けてくれますか？ \n\n✨ Do you learn new songs?\n\n新しい歌を学びますか？ \n\n👨‍👩‍👦 Does your family like music?\n\n家族は音楽が好きですか？ \n\n✨ Do you like beautiful songs?\n\nきれいな歌は好きですか？ \n\n😊 Do you feel happy today?\n\n今日は幸せですか？ \n\n✨ Do you like to try new things?\n\n新しいことに挑戦するのは好きですか？ \n\n🎤 Do you like singing?\n\n歌うのは好きですか？ \n\n🎮 Do you play other instruments?\n\n他の楽器も演奏しますか？ \n\n😊 Does music make you happy?\n\n音楽はあなたを幸せにしますか？ "
-  },
-  {
-    "title": "21. Week 6 - Brother's Birthday",
-    "content": "👦 It is my brother's birthday.\n\n兄のお誕生日です。 \n\n✨ He is six years old.\n\n彼は 6歳です。\n\n✨ We have a small party.\n\n小さなパーティーをします。 \n\n👩 Mom and Dad come too.\n\nお父さんとお母さんも来ます。 \n\n👩 Mom makes chocolate cake.\n\nお母さんがチョコレートケーキを焼きます。 \n\n✨ We light the candles.\n\nろうそくに火をつけます。 \n\n😊 We sing happy birthday together.\n\n一緒に歌います。 \n\n🎁 He opens his gifts.\n\n彼はプレゼントを開けます。 \n\n😊 He is very happy!\n\n彼はとても幸せです！ \n\n👦 I love my brother!\n\n私は兄が大好きです！ \n\n👦 Do you have a brother?\n\n兄はいますか？ \n\n✨ How old is he now?\n\n彼は今何歳ですか？ \n\n✨ Do you have parties?\n\nパーティーはありますか？ \n\n✨ Do your parents come?\n\n親は来ますか？ \n\n👩 Does your mom bake cakes?\n\nお母さんはケーキを焼きますか？ \n\n😊 Do you sing happy birthday?\n\nハッピーバースデーの歌を歌いますか？ \n\n🎂 Do you get gifts on your birthday?\n\n誕生日にプレゼントをもらいますか？ \n\n👨‍👩‍👦 Do you like family parties?\n\n家族のパーティーは好きですか？ \n\n👦 Are you happy for your brother?\n\n兄のために幸せですか？ \n\n👨‍👩‍👦 Do you love your family?\n\n家族を愛していますか？ \n\n🎉 Do you have fun together?\n\n一緒に楽しみますか？ "
-  },
-  {
-    "title": "22. Week 6 - Bicycle Ride",
-    "content": "✨ I ride my bike.\n\n自転車に乗ります。 \n\n✨ My bike is purple.\n\n自転車は紫です。 \n\n✨ It has two wheels.\n\n車輪が 2つあります。\n\n✨ I ride fast!\n\n私は速く乗ります！ \n\n✨ I wear my helmet.\n\nヘルメットをかぶります。 \n\n✨ We ride on the path.\n\n道で乗ります。 \n\n🌳 We go around the park.\n\n公園の周りを走ります。 \n\n🎉 Riding is so fun!\n\n乗るのはとても楽しい！ \n\n🌬 I feel the wind!\n\n風を感じます！ \n\n😋 My bike is great!\n\n自転車は最高です！ \n\n✨ Do you have a bike?\n\n自転車を持っていますか？ \n\n🌈 What color is your bike?\n\nあなたの自転車は何色ですか？ \n\n✨ Do you wear a helmet?\n\nヘルメットをかぶりますか？ \n\n✨ Do you ride fast?\n\n速く乗りますか？ \n\n✨ Do you have paths near your house?\n\n家のそばに道はありますか？ \n\n🌳 Do you like parks?\n\n公園は好きですか？ \n\n🌬 Do you ride in the wind?\n\n風の中で乗りますか？ \n\n🎉 Do you have fun bikes?\n\n楽しい自転車はありますか？ \n\n🌬 Do you feel the wind outside?\n\n外で風を感じますか？ \n\n✨ Do you like to go fast?\n\n速く行くのは好きですか？ \n\n👫 Do you ride with friends?\n\n友達と乗りますか？ "
-  },
-  {
-    "title": "23. Week 7 - Library",
-    "content": "✨ I go to the library.\n\n図書館に行きます。 \n\n✨ The building is big.\n\n建物は大きいです。 \n\n📖 I see many books.\n\nたくさんの本を見ます。 \n\n📖 I find a bear book.\n\nクマの本を見つけました。 \n\n🌈 The pictures are colorful.\n\n挿絵はカラフルです。 \n\n📖 I find a butterfly book too.\n\n蝶の本も見つけました。 \n\n✨ I sit and read.\n\n座って読みます。 \n\n✨ The story is good.\n\n物語は良いです。 \n\n✨ The library is quiet.\n\n図書館は静かです。 \n\n📖 I like reading books.\n\n本を読むのが好きです。 \n\n✨ Do you go to the library?\n\n図書館に行きますか？ \n\n✨ Do you like big buildings?\n\n大きな建物は好きですか？ \n\n✨ Do you like to read?\n\n本を読むのは好きですか？ \n\n✨ Do you like bears?\n\nクマは好きですか？ \n\n✨ Do you like butterflies?\n\n蝶は好きですか？ \n\n🌈 Do you like colorful pictures?\n\nカラフルな挿絵は好きですか？ \n\n✨ Do you sit when you read?\n\n読むときは座りますか？ \n\n✨ Do you like good stories?\n\n良い物語は好きですか？ \n\n✨ Do you like quiet places?\n\n静かな場所は好きですか？ \n\n✨ Do you read every day?\n\n毎日読みますか？ \n\n📖 Do you want more books?\n\nもっと本が欲しいですか？ "
-  },
-  {
-    "title": "24. Week 7 - Card for Mom",
-    "content": "👩 I make a card for Mom.\n\nお母さんにカードを作ります。 \n\n❤️ I write I love you on it.\n\n「愛してる」と書きます。 \n\n🌸 I draw flowers too.\n\n花も描きます。 \n\n🌸 The flowers are red and pink.\n\n花は赤とピンクです。 \n\n👩 Mom opens the card later.\n\nお母さんが後でカードを開けます。 \n\n😊 She smiles big.\n\n彼女は大きく微笑みます。 \n\n✨ She gives me a hug.\n\n私に抱擁をくれます。 \n\n😊 I feel happy forever!\n\n私は永遠に幸せです！ \n\n❤️ Love is wonderful!\n\n愛は素晴らしい！ \n\n🚗 Do you make cards?\n\nカードを作りますか？ \n\n✨ Do you write messages?\n\nメッセージを書きますか？ \n\n🎨 Do you like drawing pictures?\n\n絵を描くのは好きですか？ \n\n🌸 Do you like flowers?\n\n花は好きですか？ \n\n🌈 What are your favorite colors?\n\n好きな色は何ですか？ \n\n🎁 Do you give gifts often?\n\nよくプレゼントをあげますか？ \n\n👩 Does your mom smile a lot?\n\nお母さんはよく笑いますか？ \n\n✨ Do you like hugs?\n\n抱擁は好きですか？ \n\n😊 Do you feel happy often?\n\nよく幸せですか？ \n\n👨‍👩‍👦 Is your family important to you?\n\n家族はあなたにとって重要ですか？ \n\n❤️ Do you like to say you love someone?\n\n「愛してる」と言うのは好きですか？ "
-  },
-  {
-    "title": "25. Week 7 - Rainbow After Rain",
-    "content": "🌧 It stops raining.\n\n雨が止みます。 \n\n☀️ The sun comes out.\n\n太陽が出ます。 \n\n🌧 A rainbow appears!\n\n虹が見えます！ \n\n🌈 It has many colors.\n\nたくさんの色があります。 \n\n❤️ I like red.\n\n私は赤が好きです。 \n\n👫 My friend likes green.\n\n友達は緑が好きです。 \n\n🌧 We look at the rainbow.\n\n私たちは虹を見ます。 \n\n👨 Dad takes a photo.\n\nお父さんが写真を撮ります。 \n\n🌧 The rainbow is beautiful!\n\n虹は美しいです！ \n\n🌧 Do you like rainbows?\n\n虹は好きですか？ \n\n🌈 What is your favorite color?\n\n一番好きな色は何ですか？ \n\n☀️ Do you like sunny days?\n\n晴れた日は好きですか？ \n\n✨ Do you like storms?\n\n嵐は好きですか？ \n\n✨ Do you take photos?\n\n写真を撮りますか？ \n\n👨 Does your dad take photos too?\n\nお父さんも写真を撮りますか？ \n\n✨ Do you like beautiful things?\n\n美しいものは好きですか？ \n\n✨ Do you like the sky?\n\n空は好きですか？ \n\n🌧 Do you see rainbows often?\n\nよく虹を見ますか？ \n\n🌈 Do you have a favorite color preference?\n\n色の好みはありますか？ \n\n😋 Do you like weather like this?\n\nこんな天気は好きですか？ "
-  },
-  {
-    "title": "26. Week 8 - Butterfly",
-    "content": "✨ I see a butterfly.\n\n私は蝶を見ます。 \n\n🌸 It flies to a flower.\n\n花に飛びます。 \n\n🌸 The flower is pink.\n\n花はピンクです。 \n\n✨ I watch it fly.\n\n蝶が飛びます。 \n\n🐦 A bird flies by too.\n\n鳥も飛びます。 \n\n✨ A snail walks slowly.\n\nカタツムリはゆっくり歩きます。 \n\n✨ An ant walks too.\n\nアリも歩きます。 \n\n✨ I water the plants.\n\n私は植物に水をやります。 \n\n🌸 The flowers grow.\n\n花は育ちます。 \n\n✨ Butterflies are beautiful!\n\n蝶は美しいです！ \n\n✨ Do you like insects?\n\n昆虫は好きですか？ \n\n🌸 Do you like flowers?\n\n花は好きですか？ \n\n🌈 What color do you like?\n\nどんな色が好きですか？ \n\n🐦 Do birds fly near you?\n\n鳥はあなたのそばで飛びますか？ \n\n✨ Do snails walk fast or slowly?\n\nカタツムリは速く歩きますか、それともゆっくり？ \n\n✨ Do you water plants?\n\n植物に水をやりますか？ \n\n✨ Do things grow where you live?\n\nあなたの住んでいる場所で物は育ちますか？ \n\n✨ Do you like beautiful insects?\n\n美しい昆虫は好きですか？ \n\n✨ Do you watch animals closely?\n\n動物をよく観察しますか？ \n\n✨ Do you help nature?\n\n自然を助けることはありますか？ \n\n✨ Do you like gardens?\n\n庭は好きですか？ "
-  },
-  {
-    "title": "27. Week 8 - Baby Bird",
-    "content": "🐦 I see a baby bird.\n\n私はひな鳥を見ます。 \n\n🌳 It is in a tree.\n\n木の中にいます。 \n\n✨ It cannot fly.\n\n飛ぶことができません。 \n\n🐦 The bird looks hungry.\n\n鳥はお腹が空いてそうです。 \n\n✨ I find some bread.\n\nパンを見つけました。 \n\n🌳 I put the bread near the tree.\n\n木のそばにパンを置きます。 \n\n🐦 The big bird comes.\n\n親鳥が来ます。 \n\n🐦 The baby bird eats.\n\nひな鳥が食べます。 \n\n🐦 Now the bird is happy!\n\n今、鳥は幸せです！ \n\n🐦 Can the bird fly now?\n\n今、鳥は飛べますか？ \n\n✨ Do you help baby animals?\n\n子供の動物を助けますか？ \n\n🍽️ Do you give food to animals?\n\n動物に食べ物を与えますか？ \n\n🏠 Do you have bread at home?\n\n家にはパンはありますか？ \n\n✨ Do baby animals need you?\n\n子供の動物はあなたを必要としていますか？ \n\n🐦 Do you like birds?\n\n鳥は好きですか？ \n\n🌳 Do you have trees near you?\n\nあなたのそばに木はありますか？ \n\n🐦 Do you watch birds?\n\n鳥を見ますか？ \n\n🐦 Do you feed birds often?\n\nよく鳥に餌をやりますか？ \n\n😊 Do you feel happy when you help?\n\n助けるとき幸せですか？ \n\n✨ Do you like small animals?\n\n小さな動物は好きですか？ "
-  },
-  {
-    "title": "28. Week 8 - Star",
-    "content": "🌙 I look at the night sky.\n\n夜空を見ます。 \n\n⭐ I see a bright star.\n\n明るい星が見えます。 \n\n✨ It shines very bright!\n\nとても明るく輝いています！ \n\n✈️ A plane flies by.\n\n飛行機が飛びます。 \n\n✨ Is it a UFO? UFOかな？」\n\n✈️ No, it is just a plane.\n\nいや、ただの飛行機です。 \n\n✨ I make a wish.\n\n願い事をします。 \n\n😊 I wish to be happy.\n\n幸せになりたいと願います。 \n\n🌙 The night sky is amazing!\n\n夜空は素晴らしいです！ \n\n⭐ Do you look at the stars?\n\n星を見ますか？ \n\n🌙 Do you like the night?\n\n夜は好きですか？ \n\n✈️ Do you see planes often?\n\nよく飛行機を見ますか？ \n\n✨ Do you like space?\n\n宇宙は好きですか？ \n\n✨ Do you make wishes often?\n\nよく願い事をしますか？ \n\n😊 Do you hope to be happy?\n\n幸せになりたいと思いますか？ \n\n✈️ Do you like flying in planes?\n\n飛行機で空を飛ぶのは好きですか？ \n\n✨ Do you believe in UFOs? UFOを信じますか？\n\n✨ Do you like amazing things?\n\n驚きは好きですか？ \n\n🌙 Do you watch the sky at night?\n\n夜空を見ますか？ \n\n✨ Do you want to travel?\n\n旅行に行きたいですか？ "
-  },
-  {
-    "title": "29. Week 9 - Christmas",
-    "content": "🎄 It is Christmas day.\n\nクリスマスです。 \n\n❄️ Snow falls today.\n\n今日は雪が降ります。 \n\n✨ Santa Claus is coming!\n\nサンタクロースが来ます！ \n\n🌳 We put gifts under the tree.\n\n木の下にプレゼントを置きます。 \n\n🎄 We sing Christmas songs.\n\nクリスマスソングを歌います。 \n\n✨ We drink hot cocoa.\n\nホットココアを飲みます。 \n\n😋 We eat Christmas cookies.\n\nクリスマスクッキーを食べます。 \n\n🎁 We open gifts together.\n\n一緒にプレゼントを開けます。 \n\n🎄 Christmas is my favorite day!\n\nクリスマスは私の一番好きな日です！ \n\n🎄 Do you like Christmas?\n\nクリスマスは好きですか？ \n\n❄️ Does it snow where you live?\n\nあなたが住んでいる場所では雪が降りますか？ \n\n🏠 Do you have a tree at home?\n\n家にはツリーはありますか？ \n\n✨ Do you like presents?\n\nプレゼントは好きですか？ \n\n🎤 Do you sing songs?\n\n歌を歌いますか？ \n\n✨ Do you like hot drinks?\n\n温かい飲み物は好きですか？ \n\n✨ Do you like cookies?\n\nクッキーは好きですか？ \n\n👨‍👩‍👦 Does your family celebrate together?\n\n家族は一緒にお祝いしますか？ \n\n🎄 Is Christmas important to you?\n\nクリスマスは重要ですか？ \n\n🎁 Do you get gifts on this day?\n\nこの日にはプレゼントをもらいますか？ \n\n✨ Do you like to give presents?\n\nプレゼントをあげるのは好きですか？ "
-  },
-  {
-    "title": "30. Week 9 - Carnival",
-    "content": "🚗 We go to the carnival.\n\n私たちはカーニバルに行きます。 \n\n✨ Many people are there!\n\nたくさんの人がいます！ \n\n✨ We ride the merry-go-round.\n\nメリーゴーラウンドに乗ります。 \n\n✨ It goes round and round!\n\nくるくると回ります！ \n\n✨ I want balloons.\n\n風船が欲しいです。 \n\n😋 We eat popcorn.\n\nポップコーンを食べます。 \n\n✨ We see a clown.\n\nピエロがいます。 \n\n🎉 He is very funny!\n\n彼はとても面白いです！ \n\n😂 We laugh so much!\n\n私たちはたくさん笑います！ \n\n🚗 Do you like carnivals?\n\nカーニバルは好きですか？ \n\n✨ Do you like people?\n\n人々は好きですか？ \n\n✨ Do you ride rides often?\n\n乗り物によく乗りますか？ \n\n✨ Do things spin where you live?\n\n回転するものはありますか？ \n\n✨ Do you like balloons?\n\n風船は好きですか？ \n\n✨ Do you like popcorn?\n\nポップコーンは好きですか？ \n\n😂 Do clowns make you laugh?\n\nピエロはあなたを笑わせますか？ \n\n😂 Do you laugh a lot?\n\nよく笑いますか？ \n\n✨ Do you like entertainment shows?\n\nエンターテインメントは好きですか？ \n\n🎉 Do you have fun with people?\n\n人々と楽しみますか？ "
-  },
-  {
-    "title": "31. Week 10 - Swimming",
-    "content": "🏊 I go swimming.\n\n私は水泳に行きます。 \n\n✨ The pool is big.\n\nプールは大きいです。 \n\n💙 The water is blue.\n\n水は青いです。 \n\n✨ It is cold!\n\n冷たいです！ \n\n✨ I jump into the water.\n\n水に飛び込みます！ \n\n🏊 I swim fast!\n\n速く泳ぎます！ \n\n🏊 My friend swims too.\n\n友達も泳ぎます。 \n\n🏊 My friend swims past me.\n\n友達が追い越しさます！ \n\n✨ We have a race.\n\nレースをします。 \n\n🎉 Swimming is so fun!\n\n水泳はとても楽しい！ \n\n🏊 Do you like swimming?\n\n水泳は好きですか？ \n\n✨ Do you have a pool?\n\nプールはありますか？ \n\n✨ Do you like cold water?\n\n冷たい水は好きですか？ \n\n✨ Do you jump into water?\n\n水に飛び込みますか？ \n\n🏊 Do you swim fast?\n\n速く泳げますか？ \n\n🏊 Do friends swim with you?\n\n友達はあなたと泳ぎますか？ \n\n✨ Do you like races?\n\nレースは好きですか？ \n\n✨ Do you win sometimes?\n\n時々勝つことはありますか？ \n\n✨ Do you like water sports?\n\n水上スポーツは好きですか？ \n\n✨ Do you feel good in water?\n\n水の中で気分は良いですか？ "
-  },
-  {
-    "title": "32. Week 10 - Flute",
-    "content": "🎮 I play the flute.\n\n私はフルートを演奏します。 \n\n✨ It is a small instrument.\n\n小さな楽器です。 \n\n🎮 I play a song.\n\n歌を演奏します。 \n\n✨ My song is nice.\n\n私の歌は良いです。 \n\n👫 My friends listen.\n\n友達が耳を傾けます。 \n\n✨ They clap their hands.\n\n彼らは拍手します。 \n\n😊 I feel happy.\n\n幸せを感じます。 \n\n🎮 Tomorrow I play trumpet.\n\n明日はトランペットを演奏します。 \n\n🎤 I can sing too！\n\n歌うこともできます！ \n\n❤️ I love music！\n\n音楽は大好きです！ \n\n🎮 Do you play an instrument?\n\n楽器を演奏しますか？ \n\n✨ Do you like small instruments?\n\n小さな楽器は好きですか？ \n\n🎵 Do you like music?\n\n音楽は好きですか？ \n\n👫 Do your friends like your songs?\n\n友達はあなたの歌が好きですか？ \n\n✨ Do people clap for you?\n\n人々はあなたのために拍手しますか？ \n\n✨ Do you like different instruments?\n\nいろんな楽器は好きですか？ \n\n😊 Do you feel happy often?\n\nよく幸せですか？ \n\n✨ Do you try new things often?\n\nよく新しいことを試しますか？ \n\n🎤 Do you like singing?\n\n歌うのは好きですか？ \n\n❤️ Do you love music?\n\n音楽は大好きですか？ \n\n🎮 Do your friends think you play well?\n\n友達はあなたがよく演奏すると思いますか？ "
-  },
-  {
-    "title": "33. Week 10 - Roller Coaster",
-    "content": "🌳 We go to the amusement park.\n\n遊園地に行きます。 \n\n✨ There are many rides!\n\nたくさんの乗り物があります！ \n\n✨ I want the roller coaster!\n\nローラーコースターに乗りたい！ \n\n✨ It goes very high!\n\nとても高いところへ！ \n\n✨ Then it goes down fast!\n\nそして速く下がります！ \n\n✨ I yell\"Ahhh!\"\n\n私は「アーッ！」と叫びます！ \n\n😂 My friends laugh too!\n\n友達も笑います！ \n\n✨ We ride again!\n\nもう一度乗ります！ \n\n✨ The roller coaster is thrilling！\n\nローラーコースターはスリル満点です！ \n\n🌳 Do you like amusement parks?\n\n遊園地は好きですか？ \n\n✨ Do you like rides?\n\n乗り物は好きですか？ \n\n✨ Do you like high places?\n\n高いところは好きですか？ \n\n✨ Do you like going down?\n\n下がるのは好きですか？ \n\n😨 Do you yell when scared?\n\n怖いときは叫びますか？ \n\n😂 Do you laugh with friends?\n\n友達と笑いますか？ \n\n✨ Have you gone on rides again?\n\nもう一度乗りましたか？ \n\n✨ Do you like thrilling things?\n\nスリルがあるものは好きですか？ \n\n✨ Do you like fast rides?\n\n速い乗り物は好きですか？ \n\n👫 Do your friends like exciting things?\n\n友達は盛り上がるのが好きですか？ \n\n✨ Do you feel brave?\n\n勇敢であると感じますか？ \n\n✨ Do you like to scream sometimes?\n\n時々叫びたくなりますか？ "
-  },
-  {
-    "title": "34. Week 11 - My Teacher",
-    "content": "👩‍🏫 I have a nice teacher.\n\n私は良い先生を持っています。 \n\n✨ Her name is Ms. Tanaka.\n\n先生の名前は田中先生です。 \n\n😊 She smiles a lot.\n\n彼女はよく笑います。 \n\n✨ She teaches us math.\n\n私たちに数学を教えてくれます。 \n\n✨ I learn numbers.\n\n数字を学びます。 \n\n✨ She reads stories too.\n\n物語も読んでくれます。 \n\n🎨 I draw pictures in her class.\n\n彼女のクラスで絵を描きます。 \n\n✨ She is kind and smart.\n\n彼女は親切で聡明です。 \n\n👩‍🏫 I love my teacher!\n\n私は先生が大好きです！ \n\n👩‍🏫 Is your teacher nice?\n\nあなたの先生は良い人ですか？ \n\n👩‍🏫 What is your teacher's name?\n\n先生の名前は何ですか？ \n\n🏫 Do you learn math at school?\n\n学校では数学を学びますか？ \n\n✨ Do you like numbers?\n\n数字は好きですか？ \n\n👩‍🏫 Does your teacher read stories?\n\n先生は物語を読んでくれますか？ \n\n🎨 Do you draw pictures often?\n\n絵をよく描きますか？ \n\n👩‍🏫 Are teachers smart?\n\n先生は聡明ですか？ \n\n🏫 Do you like school?\n\n学校は好きですか？ \n\n👩‍🏫 Does your teacher smile at you?\n\n先生はあなたに微笑みますか？ \n\n👩‍🏫 Is your teacher kind?\n\n先生は親切ですか？ \n\n👩‍🏫 Do you help your teacher?\n\n先生を助けますか？ "
-  },
-  {
-    "title": "35. Week 11 - Windy Day",
-    "content": "🌬 Today is a windy day.\n\n今日は風が強い日です。 \n\n🌳 The trees sway.\n\n木が揺れます。 \n\n✨ Leaves fly in the air!\n\n葉っぱが飛びます！ \n\n✨ My kite flies high!\n\n私の凧が高く飛びます！ \n\n🏃 I run very fast!\n\n私は速く走ります！ \n\n✨ The kite goes up!\n\n凧が上がります！ \n\n✨ It touches a cloud!\n\n雲に触れました！ \n\n✨ The kite flies down!\n\n凧が下がります！ \n\n🎉 Flying a kite is fun!\n\n凧揚げは楽しいです！ \n\n🌬 Do you like windy days?\n\n風が強い日は好きですか？ \n\n🌳 Do you like trees?\n\n木は好きですか？ \n\n🍂 Do leaves fall in autumn?\n\n秋には葉っぱが落ちますか？ \n\n✨ Do you like kites?\n\n凧は好きですか？ \n\n✨ Do you have a kite?\n\n凧を持っていますか？ \n\n🏃 Do you run fast?\n\n速く走れますか？ \n\n✨ Do you look at the sky often?\n\nよく空を見ますか？ \n\n✨ Do clouds look near?\n\n雲は近くに見えますか？ \n\n✨ Do things fly near you?\n\n飛んでいくものがありますか？ \n\n🎉 Do you have fun with wind?\n\n風と楽しみますか？ \n\n✨ Do you look up at the sky?\n\n空を見上げますか？ "
-  },
-  {
-    "title": "36. Week 11 - Parrot",
-    "content": "✨ I see a parrot.\n\n私はオウムを見ます。 \n\n🌈 It is colorful.\n\nカラフルです。 \n\n😋 It has green feathers.\n\n緑の羽があります。 \n\n😋 It has red feathers too.\n\n赤い羽もあります。 \n\n✨ The parrot talks!\n\nオウムが話します！ \n\n✨ It can say hello!\n\n「こんにちは！」と言えます！ \n\n😋 It eats an apple.\n\nりんごを食べます。 \n\n😋 It eats nuts too.\n\nナ�も食べます。 \n\n✨ The parrot is clever!\n\nオウムは賢いです！ \n\n🐦 Do you like colorful birds?\n\nカラフルな鳥は好きですか？ \n\n🌈 What color do you like best?\n\nどんな色が一番好きですか？ \n\n💚 Do you have green things?\n\n緑色のものはありますか？ \n\n❤️ Do you like red things?\n\n赤いものは好きですか？ \n\n✨ Do parrots really talk?\n\nオウムは本当に話しますか？ \n\n✨ Have you heard a parrot?\n\nオウムの声を聞いたことがありますか？ \n\n✨ Do you like apples?\n\nりんごは好きですか？ \n\n😋 Do you eat fruit?\n\n果物を食べますか？ \n\n✨ Do you like smart animals?\n\n賢い動物は好きですか？ \n\n🐦 Do you like birds that talk?\n\n話せる鳥は好きですか？ \n\n✨ Do you like learning from animals?\n\n動物から学ぶのは好きですか？ \n\n✨ Do you have a clever pet?\n\n賢いペットはいますか？ "
-  },
-  {
-    "title": "37. Week 12 - Sandcastle",
-    "content": "🏖 We go to the beach.\n\n私たちは海に行きます。 \n\n✨ The sand is warm.\n\n砂は暖かいです。 \n\n✨ I build a sandcastle.\n\n砂城を作ります。 \n\n✨ It has high walls.\n\n高い壁があります。 \n\n✨ I make a moat around it.\n\n堀を作ります。 \n\n👧 My sister builds a castle too.\n\n妹も城を作ります。 \n\n✨ We put shells on top.\n\n貝殻を載せます。 \n\n✨ A wave comes!\n\n波が来ます！ \n\n✨ It washes the castle away.\n\n城をさらいます！ \n\n😂 We laugh and build another!\n\n笑って、もう一つ作ります！ \n\n🏖 Do you like the beach?\n\n海は好きですか？ \n\n✨ Do you like sand?\n\n砂は好きですか？ \n\n✨ Do you build things?\n\nものを作りますか？ \n\n😋 Do you like to create?\n\n作るのは好きですか？ \n\n👧 Do you have brothers or sisters?\n\n兄弟や姉妹はいますか？ \n\n✨ Do you like seashells?\n\n貝殻は好きですか？ \n\n✨ Do you like waves?\n\n波は好きですか？ \n\n✨ Do you like to fix and rebuild?\n\n元通りに修復して、もう一度作りますか？ \n\n✨ Do you like the sea?\n\n海は好きですか？ \n\n😋 Do you have fun creating?\n\n創造するのは楽しいですか？ \n\n✨ Do you like nature?\n\n自然は好きですか？ "
-  },
-  {
-    "title": "38. Week 12 - The Play",
-    "content": "🎮 My class has a play today.\n\nクラスは今日劇をします。 \n\n🎮 I act in the play.\n\n私は劇に出演します。 \n\n✨ I am a brave character.\n\n私は勇敢な役を演じます。 \n\n✨ I wear a costume.\n\n衣装を着ます。 \n\n💙 It is a blue suit.\n\n青いスーツです。 \n\n✨ I say my lines\n\nセリフを言います。 \n\n✨ My voice is loud.\n\n私の声は大きいです。 \n\n✨ The audience claps.\n\n観衆が拍手します。 \n\n✨ I feel proud of myself.\n\n自分を誇りに思います。 \n\n🎉 Acting is fun!\n\n演技は楽しい！ \n\n😋 Do you like theater?\n\n劇場は好きですか？ \n\n✨ Do you act in shows?\n\nショーに出演しますか？ \n\n✨ Do you like to be brave?\n\n勇敢であるのは好きですか？ \n\n✨ Do you have a costume?\n\n衣装はありますか？ \n\n✨ Do you speak loudly?\n\n大きく話しますか？ \n\n✨ Do people like your voice?\n\n人々はあなたの声が好きですか？ \n\n✨ Do you feel proud sometimes?\n\n時々誇りに思いますか？ \n\n✨ Do you like to perform?\n\n演技をするのは好きですか？ \n\n✨ Do people listen to you?\n\n人々はあなたの話を聞きますか？ \n\n✨ Do you like the stage?\n\nステージは好きですか？ "
-  },
-  {
-    "title": "39. Week 12 - Balloons",
-    "content": "✨ Today is balloon day!\n\n今日は風船の日です！ \n\n❤️ I have a red balloon.\n\n赤い風船を持っています。 \n\n👫 My friend has a pink one.\n\n友達はピンクの風船を持っています。 \n\n👧 My sister has blue one.\n\n妹は青いを持っています。 \n\n✨ We let them go!\n\n風船を離します！ \n\n✨ The balloons fly up!\n\n風船が上へ飛びます！ \n\n✨ They touch clouds!\n\n雲に触れました！ \n\n✨ We watch them fly!\n\n飛んでいくのを見ます！ \n\n✨ They go so high!\n\nとても高く行きます！ \n\n✨ Do you like balloons?\n\n風船は好きですか？ \n\n🌈 Do you have a favorite color?\n\n好きな色はありますか？ \n\n✨ Do you like pink?\n\nピンクは好きですか？ \n\n💙 Do you like blue?\n\n青は好きですか？ \n\n✨ Do you look at the sky?\n\n空を見ますか？ \n\n✨ Do clouds look white?\n\n雲は白く見えますか？ \n\n✨ Do things fly near you?\n\n飛んでいくものはありますか？ \n\n✨ Do you look up often?\n\nよく上を見ますか？ \n\n✨ Do you like heights?\n\n高いところは好きですか？ \n\n✨ Do you feel free when things fly above?\n\n上に何か飛んでいると感じますか？ "
-  },
-  {
-    "title": "40. Week 12 - Target Game",
-    "content": "✨ I practice throwing a ball.\n\nボールを投げる練習をします。 \n\n✨ The target is far.\n\nターゲットは遠いです。 \n\n✨ I throw hard!\n\n力強く投げます！ \n\n✨ The ball goes fast!\n\nボールが速く飛びます！ \n\n✨ I hit the target!\n\nターゲットに当たりました！ \n\n✨ Yay, I win!\n\nやった、勝ちました！ \n\n👫 My friends clap for me.\n\n友達が私に拍手してくれます。 \n\n✨ I feel proud!\n\n誇りに思います！ \n\n✨ Practice helps me win!\n\n練習は勝つ助けになります！ \n\n✨ Do you throw balls?\n\nボールを投げますか？ \n\n🎮 Do you like games?\n\nゲームは好きですか？ \n\n✨ Do you practice sports?\n\nスポーツの練習をしますか？ \n\n✨ Do you win sometimes?\n\n時々勝ちますか？ \n\n👫 Do your friends like you?\n\n友達はあなたが好きですか？ \n\n✨ Do people cheer for you?\n\n人々はあなたを応援しますか？ \n\n✨ Do you feel proud?\n\n誇りを感じますか？ \n\n✨ Do you like challenges?\n\n挑戦は好きですか？ \n\n✨ Do you work hard一生懸命仕事をしますか？\n\n✨ Do you help others win?\n\n他の人が勝つの手助けますか？ "
-  },
-  {
-    "title": "41. Week 13 - Flower Garden",
-    "content": "✨ Grandma has a garden.\n\n祖母は庭を持っています。 \n\n🌸 There are many flowers.\n\nたくさんの花があります。 \n\n❤️ Red roses grow there.\n\n赤いバラが咲いています。 \n\n☀️ Sunflowers grow too.\n\nひまわりも咲いています。 \n\n🌸 Butterflies visit the flowers.\n\n蝶が花を訪れます。 \n\n✨ Bees fly around too.\n\nハチも飛び回っています。 \n\n🌸 Grandma waters the flowers.\n\n祖母が花に水をやります。 \n\n🌸 The flowers smell good!\n\n花は良い匂いがします！ \n\n❤️ I love the garden!\n\n庭が大好きです！ \n\n👨‍👩‍👦 Does your family have a garden?\n\n家族は庭を持っていますか？ \n\n✨ Do you like roses?\n\nバラは好きですか？ \n\n☀️ Do you like sunflowers?\n\nひまわりは好きですか？ \n\n✨ Do butterflies live near you?\n\n蝶はあなたの近くに住んでいますか？ \n\n✨ Do bees live near you?\n\nハチはあなたの近くに住んでいますか？ \n\n✨ Do you help with the garden?\n\n庭の手伝いをしますか？ \n\n✨ Do you like good smells?\n\n良い匂いは好きですか？ \n\n❤️ Do you love beautiful places?\n\n美しい場所は好きですか？ \n\n✨ Do you like nature?\n\n自然は好きですか？ "
-  },
-  {
-    "title": "42. Week 13 - Magic Show",
-    "content": "🏫 A magician comes to school!\n\n魔術使いが学校に来ます！ \n\n🎩 He shows us magic.\n\n魔術を見せてくれます！ \n\n✨ He pulls a rabbit from a hat.\n\n帽子からウサギを取り出します。 \n\n✨ We are all surprised!\n\n私たちは皆驚きました！ \n\n🚗 He shows cards too.\n\nカードも見せてくれます。 \n\n🚗 The card is in his pocket!\n\nカードがポケットにありました！ \n\n😂 Everyone laughs!\n\nみんな笑います！ \n\n🎩 The magic is amazing!\n\n魔術は素晴らい！ \n\n🎩 I want to learn magic!\n\n魔法を習いたいです！ \n\n🎩 Do you like magic?\n\n魔法は好きですか？ \n\n🏫 Do people visit your school often?\n\n学校には人がよく来ますか？ \n\n✨ Do you like tricks?\n\n手品は好きですか？ \n\n✨ Do you like surprises?\n\n驚きは好きですか？ \n\n🚗 Do cards amaze you?\n\nカードはあなたを驚かせますか？ \n\n🎉 Do you laugh at funny things?\n\n面白いものを見て笑いますか？ \n\n✨ Do you want to learn new things?\n\n新しいことを学びたいですか？ \n\n✨ Do you have amazing experiences?\n\n驚きの体験をしていますか？ "
-  },
-  {
-    "title": "43. Week 14 - The Ocean",
-    "content": "✨ We visit the ocean.\n\n海を訪れます。 \n\n✨ The sea is huge.\n\n海は広大です。 \n\n✨ We see big ships.\n\n大きな船を見ます。 \n\n🐟 Fish swim in the water.\n\n魚が水の中を泳いでいます。 \n\n✨ I see a crab.\n\nカニを見ました。 \n\n✨ I find a seashell.\n\n貝殻を見つけました。 \n\n🏖 The beach has white sand.\n\nビーチには白い砂があります。 \n\n✨ I feel relaxed.\n\nリラックスした気分です。 \n\n✨ The ocean is beautiful!\n\n海は美しいです！ \n\n✨ Do you like the ocean?\n\n海は好きですか？ \n\n✨ Do you like big ships?\n\n大きな船は好きですか？ \n\n🏊 Do you like swimming in the sea?\n\n海で泳ぐのは好きですか？ \n\n✨ Do you like crabs?\n\nカニは好きですか？ \n\n✨ Do you find seashells?\n\n貝殻を見つけますか？ \n\n✨ Do you like white sand?\n\n白い砂は好きですか？ \n\n✨ Do you feel relaxed often?\n\nよくリラックスしますか？ \n\n✨ Do you like beautiful places?\n\n美しい場所は好きですか？ \n\n✨ Do you like to explore?\n\n探検するのは好きですか？ "
-  },
-  {
-    "title": "44. Week 14 - Art Class",
-    "content": "✨ I have art class.\n\n私は美術の授業があります。 \n\n✨ I use crayons.\n\nクレヨンを使います。 \n\n☀️ I draw a big sun.\n\n大きな太陽を描きます。 \n\n💛 It has yellow and orange.\n\n黄色とオレンジです。 \n\n🌳 I draw green trees.\n\n緑の木を描きます。 \n\n😺 I draw my cat too.\n\n猫も描きます。 \n\n🎨 My drawing is colorful.\n\n私の絵はカラフルです。 \n\n👩‍🏫 The teacher says good job.\n\n先生は「良い仕事！」と言います。 \n\n✨ I am so proud!\n\nとても誇りです！ \n\n✨ Do you like art class?\n\n美術の授業は好きですか？ \n\n✨ Do you use crayons?\n\nクレヨンを使いますか？ \n\n🎨 What do you like to draw?\n\nどんなものを描きますか？ \n\n☀️ Do you like the sun?\n\n太陽は好きですか？ \n\n💚 Do you like green?\n\n緑は好きですか？ \n\n🎨 Do you draw your pets?\n\nペットを描きますか？ \n\n🎨 Is your drawing colorful?\n\nあなたの絵はカラフルですか？ \n\n✨ Do you get good grades?\n\n良い成績を取りますか？ \n\n✨ Do you feel proud of your work?\n\nあなたの作品を誇りに思いますか？ \n\n😋 Do you like to create?\n\n創作することは好きですか？ "
-  },
-  {
-    "title": "45. Week 14 - Music Day",
-    "content": "🎵 Today is music day!\n\n今日は音楽の日です！ \n\n🎤 We sing many songs.\n\nたくさんの歌を歌います。 \n\n🎮 Some students play guitar.\n\n生徒の中にはギターを弾く人がいます。 \n\n🎮 Some play drums.\n\nドラムを弾く人もいます。 \n\n🎮 I play the flute.\n\n私はフルートを演奏します。 \n\n🎮 My friend plays piano.\n\n友達はピアノを弾きます。 \n\n🎵 We make music together.\n\n私たちは音楽を作ります！ \n\n✨ We have a contest.\n\nコンテストがあります。 \n\n✨ Our class wins!\n\n私たちのクラスが勝ちます！ \n\n🎵 Do you like music?\n\n音楽は好きですか？ \n\n🎤 Do you sing in class?\n\nクラスで歌いますか？ \n\n🎮 Do you play instruments?\n\n楽器を演奏しますか？ \n\n✨ Do you like guitar?\n\nギターは好きですか？ \n\n✨ Do you like drums?\n\nドラムは好きですか？ \n\n🎮 Does your friend play piano?\n\n友達はピアノを演奏しますか？ \n\n✨ Do you like to work together?\n\n一緒に働くのは好きですか？ \n\n🎮 Does your class win games?\n\nあなたのクラスはゲームに勝ちますか？ \n\n✨ Do you feel excited when you win?\n\n勝つことは興奮していますか？ \n\n✨ Do you like contests?\n\nコンテストは好きですか？ "
-  },
-  {
-    "title": "46. Week 15 - Duck Pond",
-    "content": "✨ I see a duck at the pond.\n\n池でアヒルを見ます。 \n\n🏊 It swims in the water.\n\n水の中を泳いでいます。 \n\n✨ It lays an egg!\n\n卵を産みました！ \n\n✨ The egg hatches!\n\n卵が孵ります！ \n\n✨ A baby duck comes out!\n\nひな鳥が出てきました！ \n\n👩 It swims with its mom.\n\nお母さんと一緒に泳いでいます！ \n\n✨ The baby duck is cute!\n\nひな鳥は可愛いです！ \n\n✨ I feed the ducks bread.\n\nパンをあげます。 \n\n😊 The ducks are happy!\n\nアヒルは幸せです！ \n\n✨ Do you like ponds?\n\n池は好きですか？ \n\n✨ Do you like ducks?\n\nアヒルは好きですか？ \n\n🐦 Do birds lay eggs?\n\n鳥は卵を産みますか？ \n\n✨ Do you see baby animals?\n\n子供の動物を見ますか？ \n\n🏊 Do ducks swim fast?\n\nアヒルは速く泳ぎますか？ \n\n✨ Do you feed animals often?\n\n動物に餌をやることがよくありますか？ \n\n✨ Do you like cute animals?\n\n可愛い動物は好きですか？ \n\n🐦 Do you like to feed birds?\n\n鳥にエサをやるのは好きですか？ \n\n😊 Do animals make you happy?\n\n動物はあなたを幸せにしますか？ "
-  },
-  {
-    "title": "47. Week 15 - Fireworks",
-    "content": "🌙 It is festival night!\n\n祭りの夜です！ \n\n✨ We watch fireworks.\n\n花火を見ます！ \n\n🌈 They are so colorful!\n\nとてもカラフルです！ \n\n❤️ Red ones boom!\n\n赤いのがドーンと！ \n\n💙 Blue ones shine bright!\n\n青いのが明るく輝きます！ \n\n✨ Everyone looks up.\n\n全員が上を見ます。 \n\n✨ They are beautiful!\n\nとても美しいです！ \n\n🌙 The night is amazing!\n\n夜は素晴らしい！ \n\n❤️ I love fireworks!\n\n花火は大好き！ \n\n✨ Do you like festivals?\n\n祭りは好きですか？ \n\n✨ Do you watch fireworks?\n\n花火を見ますか？ \n\n🌈 Do you like bright colors?\n\n明るい色は好きですか？ \n\n✨ Do you like loud sounds?\n\n大きな音は好きですか？ \n\n✨ Does everyone look up?\n\nみんな上を見ますか？ \n\n🌙 Do you like the night sky?\n\n夜空は好きですか？ \n\n🌈 Are colorful things beautiful?\n\nカラフルなものは美しいですか？ \n\n🌙 Do you like nighttime?\n\n夜は好きですか？ \n\n✨ Do fireworks excite you?\n\n花火はあなたを興奮させますか？ "
-  },
-  {
-    "title": "48. Week 15 - Happy End",
-    "content": "😊 Today is a happy day!\n\n今日は幸せな日です！ \n\n☀️ The sun is warm.\n\n太陽は暖かいです。 \n\n🌸 Flowers are blooming.\n\n花が咲いています。 \n\n🐦 Birds sing around.\n\n鳥が周りで歌っています。 \n\n👨‍👩‍👦 I play with my family.\n\n家族と遊びます。 \n\n🐶 My dog plays too.\n\n犬も遊びます。 \n\n🍽️ We eat yummy food.\n\n美味しい食べ物を食べます。 \n\n😊 We listen to happy music.\n\n幸せな音楽を聴きます。 \n\n✨ Life is wonderful!\n\n人生は素晴らしいです！ \n\n😊 Are you happy today?\n\n今日は幸せですか？ \n\n☀️ Is the sun warm today?\n\n今日は太陽は暖かいですか？ \n\n🌸 Do you see flowers blooming?\n\n花が咲いているのを見ますか？ \n\n🐦 Do birds sing near you?\n\n鳥はあなたのそばで歌いますか？ \n\n👨‍👩‍👦 Do you like your family?\n\n家族は好きですか？ \n\n🎮 Do you play with your pets?\n\nペットと遊びますか？ \n\n🍽️ Do you like good food?\n\n美味しい食べ物は好きですか？ \n\n🎵 Do you listen to music often?\n\nよく音楽を聴きますか？ \n\n😊 Do you like happy music?\n\n幸せな音楽は好きですか？ \n\n✨ Is your life wonderful?\n\n人生は素晴らしいですか？ \n\n✨ Do you feel grateful for today?\n\n今日は感謝していますか？ "
-  }
+// EIKEN 7 - Complete Set (Stories 1-48)
+// Target: 3rd-4th graders, 3-4 word sentences, 1st person ONLY
+// Format: ALL lines = Emoji + English + Japanese (matching EIKEN 5 style)
+// Status: COMPLETE - All 48 stories merged and ready for use
+
+var eiken7complete = [
+{
+  "title": "1. My Cat",
+  "content": `🐱 I have a cat.
+私は猫がいます。
+
+🐱 Her name is Mochi.
+名前はモチです。
+
+😺 She is small.
+彼女は小さいです。
+
+😺 She is white.
+彼女は白いです。
+
+😺 I like cats.
+私は猫が好き。
+
+😺 She plays with me.
+彼女は私と遊ぶ。
+
+😺 We are friends.
+私たちは友達。
+
+😺 She is cute.
+彼女はかわいい。
+
+😺 I love Mochi.
+モチが大好き。
+
+😺 Mochi is happy.
+モチは幸せ。
+
+🐱 Do you have a pet?
+ペットはいますか？
+
+🐱 What is your pet's name?
+ペットの名前は何？
+
+😺 Do you like cats?
+猫は好きですか？
+
+😺 Is your cat small?
+あなたの猫は小さい？
+
+🎨 What color is your cat?
+猫は何色ですか？
+
+🎾 Do you play with pets?
+ペットと遊びますか？
+
+👫 Are you friends with your pet?
+ペットと友達ですか？
+
+😺 Is your pet cute?
+ペットはかわいい？
+
+💕 Do you love your pet?
+ペットを愛していますか？
+
+😊 Is your pet happy?
+ペットは幸せですか？
+`
+},
+{
+  "title": "2. My Family",
+  "content": `👨 I have a family.
+私には家族がいます。
+
+👨 My mom is kind.
+お母さんは優しい。
+
+👨 My dad is funny.
+お父さんは面白い。
+
+👨 I have a sister.
+姉がいます。
+
+👨 She is nice.
+彼女は優しい。
+
+👨 We eat together.
+一緒に食べます。
+
+👨 We play together.
+一緒に遊びます。
+
+👨 We are happy.
+私たちは幸せ。
+
+👨 I love family.
+家族が大好き。
+
+👨 Family is important.
+家族は大切。
+
+👨 Do you have family?
+家族はいますか？
+
+👩 Is your mom kind?
+お母さんは優しい？
+
+👨 Is your dad funny?
+お父さんは面白い？
+
+👫 Do you have sisters?
+姉妹はいますか？
+
+🍽️ Do you eat together?
+一緒に食べますか？
+
+🎮 Do you play together?
+一緒に遊びますか？
+
+😊 Are you happy?
+幸せですか？
+
+💕 Do you love family?
+家族を愛していますか？
+
+⭐ Is family important?
+家族は大切ですか？
+
+👨 Do you like family?
+家族は好きですか？
+`
+},
+{
+  "title": "3. Red Apple",
+  "content": `🍎 I see an apple.
+りんごを見ます。
+
+🍎 It is red.
+それは赤い。
+
+🍎 It is round.
+それは丸い。
+
+🍎 It looks good.
+おいしそう。
+
+🍎 I eat it.
+それを食べる。
+
+🍎 It is sweet.
+それは甘い。
+
+🍎 It is yummy.
+とてもおいしい。
+
+🍎 I like apples.
+りんごが好き。
+
+🍎 Apples are good.
+りんごは良い。
+
+🍎 I want more.
+もっと欲しい。
+
+🍎 Do you like apples?
+りんごは好き？
+
+🍎 What color is apple?
+りんごは何色？
+
+🍎 Is apple round?
+りんごは丸い？
+
+🍎 Do you eat fruit?
+果物を食べますか？
+
+🍎 Is fruit sweet?
+果物は甘い？
+
+🍎 Do you like red?
+赤は好き？
+
+🍎 What fruit is yummy?
+どの果物がおいしい？
+
+🍎 Do you want more?
+もっと欲しい？
+
+🍎 Are apples good?
+りんごは良い？
+
+🍎 Do you eat apples?
+りんごを食べますか？
+`
+},
+{
+  "title": "4. Blue Sky",
+  "content": `☀️ I look up.
+上を見ます。
+
+☀️ The sky is blue.
+空は青い。
+
+☀️ The sun shines.
+太陽が光る。
+
+☀️ It is bright.
+それは明るい。
+
+☀️ I see clouds.
+雲が見える。
+
+☀️ Clouds are white.
+雲は白い。
+
+☀️ Birds fly high.
+鳥が高く飛ぶ。
+
+☀️ The day is nice.
+今日は良い日。
+
+☀️ I am happy.
+私は幸せ。
+
+☀️ I like days.
+这样的日子我喜欢。
+
+☀️ Do you look up?
+上を見ますか？
+
+☀️ Is sky blue?
+空は青い？
+
+☀️ Do you see sun?
+太陽が見える？
+
+☀️ Is sun bright?
+太陽は明るい？
+
+☀️ Do you see clouds?
+雲が見える？
+
+☁️ What color are clouds?
+雲は何色？
+
+🐦 Do you see birds?
+鳥が見える？
+
+☀️ Is today nice?
+今日は良い日？
+
+😊 Are you happy?
+幸せですか？
+
+☀️ Do you like sunny days?
+晴れた日は好き？
+`
+},
+{
+  "title": "5. My Friend",
+  "content": `👫 I have a friend.
+友達がいます。
+
+👫 His name is Ken.
+名前はケン。
+
+👫 He is nice.
+彼は優しい。
+
+👫 We play ball.
+ボールで遊ぶ。
+
+👫 We run fast.
+速く走る。
+
+👫 We laugh a lot.
+たくさん笑う。
+
+👫 We are happy.
+私たちは幸せ。
+
+👫 Ken is fun.
+ケンは楽しい。
+
+👫 I like Ken.
+ケンのことが好き。
+
+👫 We are friends.
+私たちは友達。
+
+👫 Do you have friends?
+友達はいますか？
+
+👫 What is their name?
+名前は？
+
+👫 Is your friend nice?
+友達は優しい？
+
+⚽ Do you play ball?
+ボールで遊びますか？
+
+🏃 Do you run fast?
+速く走りますか？
+
+😂 Do you laugh a lot?
+たくさん笑いますか？
+
+😊 Are you happy?
+幸せですか？
+
+👫 Is your friend fun?
+友達は楽しい？
+
+👫 Do you like friends?
+友達は好き？
+
+👫 Are you good friends?
+良い友達？
+`
+},
+{
+  "title": "6. Good Morning",
+  "content": `☀️ It is morning.
+朝です。
+
+☀️ I wake up.
+目が覚める。
+
+☀️ I say good morning.
+おはようと言う。
+
+☀️ Mom says good morning.
+母がおはようと言う。
+
+☀️ I eat breakfast.
+朝ごはんを食べる。
+
+☀️ I eat bread.
+パンを食べる。
+
+☀️ I drink milk.
+牛乳を飲む。
+
+☀️ I am ready.
+準備完了。
+
+☀️ I go to school.
+学校に行く。
+
+☀️ Morning is good.
+朝は良い。
+
+⏰ Do you wake up?
+目が覚める？
+
+🗣️ Do you say good morning?
+おはようと言う？
+
+🗣️ Does mom say good morning?
+母はおはようと言う？
+
+🍞 Do you eat breakfast?
+朝ごはんを食べる？
+
+🍞 What do you eat?
+何を食べますか？
+
+🥛 What do you drink?
+何を飲む？
+
+🎒 Are you ready?
+準備いい？
+
+🏫 Do you go to school?
+学校に行く？
+
+☀️ Is morning good?
+朝は良い？
+
+☀️ Do you like morning?
+朝は好き？
+`
+},
+{
+  "title": "7. At School",
+  "content": `🏫 I am at school.
+学校にいます。
+
+🏫 This is my classroom.
+私の教室。
+
+🏫 My teacher is here.
+先生がいます。
+
+🏫 We read books.
+本を読む。
+
+🏫 We write words.
+言葉を書く。
+
+🏫 We learn new things.
+新しいことを学ぶ。
+
+🏫 School is fun.
+学校は楽しい。
+
+🏫 I like school.
+学校が好き。
+
+🏫 My friends are here.
+友達がいる。
+
+🏫 We are happy.
+私たちは幸せ。
+
+🏫 Are you at school?
+学校にいますか？
+
+🏫 Is this your classroom?
+あなたの教室？
+
+👨‍🏫 Is your teacher here?
+先生はいますか？
+
+📚 Do you read books?
+本を読む？
+
+✏️ Do you write words?
+言葉を書く？
+
+📚 Do you learn new things?
+新しいことを学ぶ？
+
+🏫 Is school fun?
+学校は楽しい？
+
+🏫 Do you like school?
+学校は好き？
+
+👫 Are your friends here?
+友達はいますか？
+
+😊 Are you happy?
+幸せですか？
+`
+},
+{
+  "title": "8. Lunch Time",
+  "content": `🍱 It is lunch time.
+昼ごはんの時間。
+
+🍱 I have bento.
+お弁当がある。
+
+🍱 It is yummy.
+おいしい。
+
+🍱 I eat rice.
+ご飯を食べる。
+
+🍱 I eat fish.
+魚を食べる。
+
+🍱 I eat vegetables.
+野菜を食べる。
+
+🍱 My friend sits near.
+友達が隣に座る。
+
+🍱 We talk and eat.
+話しながら食べる。
+
+🍱 Lunch is fun.
+昼ごはんは楽しい。
+
+🍱 I am happy.
+私は幸せ。
+
+🍱 Do you eat lunch?
+昼ごはんを食べる？
+
+🍱 Do you have bento?
+お弁当がある？
+
+😋 Is it yummy?
+おいしい？
+
+🍚 Do you eat rice?
+ご飯を食べる？
+
+🐟 Do you eat fish?
+魚を食べる？
+
+🥕 Do you eat vegetables?
+野菜を食べる？
+
+👫 Does your friend sit near?
+友達も隣？
+
+🗣️ Do you talk?
+話す？
+
+🍱 Is lunch fun?
+昼ごはんは楽しい？
+
+😊 Are you happy?
+幸せ？
+`
+},
+{
+  "title": "9. After School",
+  "content": `🏫 School ends now.
+学校が終わる。
+
+🏫 I go home.
+家に帰る。
+
+🏫 My dog waits.
+犬が待っている。
+
+🏫 He is happy.
+彼は幸せ。
+
+🏫 I play with him.
+彼と遊ぶ。
+
+🏫 We run outside.
+外を走る。
+
+🏫 We play ball.
+ボールで遊ぶ。
+
+🏫 It is fun.
+それは楽しい。
+
+🏫 I am tired.
+疲れた。
+
+🏫 But I am happy.
+でも幸せ。
+
+🔔 Does school end?
+学校は終わる？
+
+🏠 Do you go home?
+家に帰る？
+
+🐕 Does your dog wait?
+犬が待ってる？
+
+🐕 Is he happy?
+彼は幸せ？
+
+🎾 Do you play with him?
+彼と遊ぶ？
+
+🏃 Do you run outside?
+外を走る？
+
+⚽ Do you play ball?
+ボールで遊ぶ？
+
+😄 Is it fun?
+楽しい？
+
+😴 Are you tired?
+疲れた？
+
+😊 Are you happy?
+幸せ？
+`
+},
+{
+  "title": "10. Dinner Time",
+  "content": `🍲 It is dinner time.
+夕ごはんの時間。
+
+🍲 Mom cooks food.
+母が料理を作る。
+
+🍲 It smells good.
+いい匂い。
+
+🍲 We eat together.
+一緒に食べる。
+
+🍲 We talk a lot.
+たくさん話す。
+
+🍲 The food is yummy.
+ごはんはおいしい。
+
+🍲 I eat a lot.
+たくさん食べる。
+
+🍲 Dad smiles too.
+父も笑う。
+
+🍲 We are happy.
+私たちは幸せ。
+
+🍲 Dinner is good.
+夕ごはんは良い。
+
+🍲 Do you eat dinner?
+夕ごはんを食べる？
+
+👩 Does mom cook?
+母が料理を作る？
+
+👃 Does it smell good?
+いい匂い？
+
+👨‍👩‍👧 Do you eat together?
+一緒に食べる？
+
+🗣️ Do you talk a lot?
+たくさん話す？
+
+😋 Is food yummy?
+ごはんはおいしい？
+
+🍽️ Do you eat a lot?
+たくさん食べる？
+
+😊 Does dad smile?
+父も笑う？
+
+👨‍👩‍👧 Are you happy?
+幸せ？
+
+🌟 Is dinner good?
+夕ごはんは良い？
+`
+},
+{
+  "title": "11. Bed Time",
+  "content": `🌙 It is night.
+夜です。
+
+🌙 I am tired.
+疲れた。
+
+🌙 I go to bed.
+ベッドに行く。
+
+🌙 My bed is soft.
+ベッドは柔らかい。
+
+🌙 I close my eyes.
+目を閉じる。
+
+🌙 I sleep well.
+よく眠る。
+
+🌙 I dream dreams.
+夢を見る。
+
+🌙 The dreams are nice.
+夢は良い。
+
+🌙 I am happy.
+私は幸せ。
+
+🌙 Good night!
+おやすみ！
+
+🌙 Is it night?
+夜？
+
+😴 Are you tired?
+疲れた？
+
+🛏️ Do you go to bed?
+ベッドに行く？
+
+🛏️ Is your bed soft?
+ベッドは柔らかい？
+
+👁️ Do you close your eyes?
+目を閉じる？
+
+😴 Do you sleep well?
+よく眠る？
+
+💭 Do you dream dreams?
+夢を見る？
+
+🌈 Are dreams nice?
+夢は良い？
+
+😊 Are you happy?
+幸せ？
+
+🌙 Good night?
+おやすみ？
+`
+},
+{
+  "title": "12. Sunday Fun",
+  "content": `☀️ Today is Sunday.
+今日は日曜日。
+
+☀️ No school today.
+今日は学校がない。
+
+☀️ I play at home.
+家で遊ぶ。
+
+☀️ I watch TV.
+テレビを見る。
+
+☀️ My friend comes.
+友達が来る。
+
+☀️ We play games.
+ゲームで遊ぶ。
+
+☀️ We laugh a lot.
+たくさん笑う。
+
+☀️ It is fun.
+それは楽しい。
+
+☀️ I am happy.
+私は幸せ。
+
+☀️ Sunday is good.
+日曜日は良い。
+
+📅 Is today Sunday?
+今日日曜日？
+
+📅 Is there no school?
+学校がない？
+
+🏠 Do you play at home?
+家で遊ぶ？
+
+📺 Do you watch TV?
+テレビを見る？
+
+👫 Does your friend come?
+友達が来る？
+
+🎮 Do you play games?
+ゲームで遊ぶ？
+
+😂 Do you laugh a lot?
+たくさん笑う？
+
+😄 Is it fun?
+楽しい？
+
+😊 Are you happy?
+幸せ？
+
+📅 Is Sunday good?
+日曜日は良い？
+`
+},{
+  "title": "13. My Dog",
+  "content": `🐕 I have a dog.
+私は犬がいます。
+
+🐕 His name is Pochi.
+名前はポチ。
+
+🐕 He is big.
+彼は大きい。
+
+🐕 He is brown.
+彼は茶色。
+
+🐕 He runs fast.
+彼は速く走る。
+
+🐕 He plays with me.
+彼は私と遊ぶ。
+
+🐕 We are friends.
+私たちは友達。
+
+🐕 He is cute.
+彼はかわいい。
+
+🐕 I love Pochi.
+ポチが大好き。
+
+🐕 Pochi is happy.
+ポチは幸せ。
+
+🐕 Do you have a dog?
+犬はいますか？
+
+🐕 What is your dog's name?
+犬の名前は何？
+
+🐕 Is your dog big?
+犬は大きい？
+
+🐕 What color is your dog?
+犬は何色？
+
+🐕 Does your dog run fast?
+犬は速く走る？
+
+🐕 Do you play with your dog?
+犬と遊びますか？
+
+🐕 Is your dog your friend?
+犬は友達？
+
+🐕 Is your dog cute?
+犬はかわいい？
+
+🐕 Do you love your dog?
+犬を愛していますか？
+
+🐕 Is your dog happy?
+犬は幸せ？
+`
+},
+{
+  "title": "14. My House",
+  "content": `🏠 I have a house.
+家にいます。
+
+🏠 It is big.
+それは大きい。
+
+🏠 It is white.
+それは白い。
+
+🏠 I live here.
+ここに住んでいます。
+
+🏠 My family lives here.
+家族が住んでいます。
+
+🏠 We are happy.
+私たちは幸せ。
+
+🏠 I love my house.
+家が大好き。
+
+🏠 House is home.
+家は故郷。
+
+🏠 Home is good.
+故郷は良い。
+
+🏠 I am safe.
+私は安全。
+
+🏠 Do you have a house?
+家はありますか？
+
+🏠 Is your house big?
+家は大きい？
+
+🏠 What color is your house?
+家は何色？
+
+🏠 Do you live here?
+ここに住んでいますか？
+
+🏠 Does your family live here?
+家族はここに住んでいますか？
+
+🏠 Are you happy at home?
+家で幸せ？
+
+🏠 Do you love your house?
+家を愛していますか？
+
+🏠 Is home good?
+故郷は良い？
+
+🏠 Are you safe at home?
+家で安全？
+
+🏠 Do you like your home?
+故郷は好き？
+`
+},
+{
+  "title": "15. Green Frog",
+  "content": `🐸 I see a frog.
+カエルを見る。
+
+🐸 It is green.
+それは緑。
+
+🐸 It is small.
+それは小さい。
+
+🐸 It sits on a leaf.
+葉の上に座る。
+
+🐸 It jumps high.
+高くジャンプ。
+
+🐸 It lands in water.
+水に着地。
+
+🐸 Splash! It swims.
+splash! 泳ぐ。
+
+🐸 The frog is happy.
+カエルは幸せ。
+
+🐸 I like frogs.
+カエルが好き。
+
+🐸 Frogs are cute.
+カエルはかわいい。
+
+🐸 Do you see frogs?
+カエルを見る？
+
+🐸 What color is the frog?
+カエルは何色？
+
+🐸 Is the frog small?
+カエルは小さい？
+
+🐸 Where does it sit?
+どこに座る？
+
+🐸 Does it jump high?
+高くジャンプ？
+
+🐸 Does it swim?
+泳ぐ？
+
+🐸 Is the frog happy?
+カエルは幸せ？
+
+🐸 Do you like frogs?
+カエルは好き？
+
+🐸 Are frogs cute?
+カエルはかわいい？
+
+🐸 Do you want a pet frog?
+カエルを飼いたい？
+`
+},
+{
+  "title": "16. My Bike",
+  "content": `🚲 I have a bike.
+自転車があります。
+
+🚲 It is red.
+それは赤。
+
+🚲 It is fast.
+それは速い。
+
+🚲 I ride every day.
+毎日乗る。
+
+🚲 I ride to school.
+学校に乗って行く。
+
+🚲 I ride to the park.
+公園に乗って行く。
+
+🚲 I wear a helmet.
+ヘルメットをかぶる。
+
+🚲 I am safe.
+私は安全。
+
+🚲 I like my bike.
+自転車が好き。
+
+🚲 Bike is fun.
+自転車は楽しい。
+
+🚲 Do you have a bike?
+自転車はありますか？
+
+🚲 What color is your bike?
+自転車は何色？
+
+🚲 Is your bike fast?
+自転車は速い？
+
+🚲 Do you ride every day?
+毎日乗りますか？
+
+🚲 Where do you ride?
+どこに乗りますか？
+
+🚲 Do you wear a helmet?
+ヘルメットをかぶりますか？
+
+🚲 Are you safe?
+安全？
+
+🚲 Do you like your bike?
+自転車は好き？
+
+🚲 Is biking fun?
+自転車は楽しい？
+
+🚲 Do you ride with friends?
+友達と乗りますか？
+`
+},
+{
+  "title": "17. Rainy Day",
+  "content": `🌧 It rains today.
+今日は雨。
+
+🌧 I stay inside.
+中にいる。
+
+🌧 I read books.
+本を読む。
+
+🌧 I play games.
+ゲームをする。
+
+🌧 I watch TV.
+テレビを見る。
+
+🌧 I eat snacks.
+おやつを食べる。
+
+🌧 I am warm.
+暖かい。
+
+🌧 I am dry.
+乾いている。
+
+🌧 I am happy.
+幸せ。
+
+🌧 Rain is okay.
+雨は okay。
+
+🌧 Do you like rain?
+雨は好き？
+
+🌧 Do you stay inside?
+中にいますか？
+
+🌧 Do you read books?
+本を読む？
+
+🌧 Do you play games?
+ゲームをする？
+
+🌧 Do you watch TV?
+テレビを見る？
+
+🌧 Do you eat snacks?
+おやつを食べる？
+
+🌧 Are you warm?
+暖かい？
+
+🌧 Are you dry?
+乾いている？
+
+🌧 Are you happy?
+幸せ？
+
+🌧 Is rain okay?
+雨は okay？
+`
+},
+{
+  "title": "18. My Toy",
+  "content": `🧸 I have a toy.
+おもちゃがあります。
+
+🧸 It is a bear.
+それは熊。
+
+🧸 His name is Bear.
+名前は Bear。
+
+🧸 He is soft.
+彼は柔らかい。
+
+🧸 He is brown.
+彼は茶色。
+
+🧸 I hug him.
+彼を抱く。
+
+🧸 I sleep with him.
+彼と寝る。
+
+🧸 He is my friend.
+彼は友達。
+
+🧸 I love Bear.
+Bear が大好き。
+
+🧸 Bear is cute.
+Bear はかわいい。
+
+🧸 Do you have toys?
+おもちゃはありますか？
+
+🧸 What is your toy?
+あなたのおもちゃは何？
+
+🧸 What is its name?
+名前は？
+
+🧸 Is it soft?
+柔らかい？
+
+🧸 What color is it?
+何色？
+
+🧸 Do you hug it?
+抱きますか？
+
+🧸 Do you sleep with it?
+一緒に寝ますか？
+
+🧸 Is it your friend?
+友達？
+
+🧸 Do you love it?
+愛していますか？
+
+🧸 Is it cute?
+かわいい？
+`
+},
+{
+  "title": "19. Ice Cream",
+  "content": `🍦 I like ice cream.
+アイスが好き。
+
+🍦 It is cold.
+それは冷たい。
+
+🍦 It is sweet.
+それは甘い。
+
+🍦 I eat it fast.
+速く食べる。
+
+🍦 My head hurts!
+頭が痛い！
+
+🍦 But it is yummy.
+でもおいしい。
+
+🍦 I want more.
+もっと欲しい。
+
+🍦 Mom says no.
+母がダメと言う。
+
+🍦 I am sad.
+悲しい。
+
+🍦 But I am full.
+でもお腹いっぱい。
+
+🍦 Do you like ice cream?
+アイスは好き？
+
+🍦 Is it cold?
+冷たい？
+
+🍦 Is it sweet?
+甘い？
+
+🍦 Do you eat fast?
+速く食べる？
+
+🍦 Does your head hurt?
+頭が痛い？
+
+🍦 Is it yummy?
+おいしい？
+
+🍦 Do you want more?
+もっと欲しい？
+
+🍦 Does mom say no?
+母がダメと言う？
+
+🍦 Are you sad?
+悲しい？
+
+🍦 Are you full?
+お腹いっぱい？
+`
+},
+{
+  "title": "20. The Park",
+  "content": `🌳 I go to the park.
+公園に行く。
+
+🌳 It is big.
+それは大きい。
+
+🌳 It has trees.
+木がある。
+
+🌳 It has flowers.
+花がある。
+
+🌳 I run on grass.
+芝生を走る。
+
+🌳 I play on swings.
+ブランコで遊ぶ。
+
+🌳 I slide down.
+滑り台を滑る。
+
+🌳 I laugh a lot.
+たくさん笑う。
+
+🌳 I am happy.
+幸せ。
+
+🌳 I love the park.
+公園が好き。
+
+🌳 Do you go to the park?
+公園に行く？
+
+🌳 Is it big?
+大きい？
+
+🌳 Does it have trees?
+木がある？
+
+🌳 Does it have flowers?
+花がある？
+
+🌳 Do you run on grass?
+芝生を走る？
+
+🌳 Do you play on swings?
+ブランコで遊ぶ？
+
+🌳 Do you slide?
+滑る？
+
+🌳 Do you laugh?
+笑う？
+
+🌳 Are you happy?
+幸せ？
+
+🌳 Do you love the park?
+公園が好き？
+`
+},
+{
+  "title": "21. My Teacher",
+  "content": `👩 I have a teacher.
+先生がいます。
+
+👩 Her name is Sato.
+名前はサトウ。
+
+👩 She is nice.
+彼女は優しい。
+
+👩 She is kind.
+彼女は親切。
+
+👩 She teaches me.
+彼女は教える。
+
+👩 I learn a lot.
+たくさん学ぶ。
+
+👩 She smiles at me.
+彼女は微笑む。
+
+👩 I like Sato.
+サトウが好き。
+
+👩 She is good.
+彼女は良い。
+
+👩 I am happy.
+私は幸せ。
+
+👩 Do you have a teacher?
+先生はいますか？
+
+👩 What is their name?
+名前は？
+
+👩 Is your teacher nice?
+先生は優しい？
+
+👩 Is your teacher kind?
+先生は親切？
+
+👩 Does she teach you?
+教えますか？
+
+👩 Do you learn a lot?
+たくさん学ぶ？
+
+👩 Does she smile?
+微笑む？
+
+👩 Do you like your teacher?
+先生は好き？
+
+👩 Is she good?
+彼女は良い？
+
+👩 Are you happy?
+幸せ？
+`
+},
+{
+  "title": "22. Bath Time",
+  "content": `🛁 It is bath time.
+お風呂の時間。
+
+🛁 I go to the bath.
+お風呂に行く。
+
+🛁 The water is warm.
+お湯は暖かい。
+
+🛁 I wash my body.
+体を洗う。
+
+🛁 I wash my hair.
+髪を洗う。
+
+🛁 I play with bubbles.
+泡で遊ぶ。
+
+🛁 I am clean now.
+きれいになった。
+
+🛁 I smell good.
+いい匂い。
+
+🛁 I am happy.
+幸せ。
+
+🛁 Bath is fun.
+お風呂は楽しい。
+
+🛁 Do you take baths?
+お風呂に入る？
+
+🛁 Is the water warm?
+お湯は暖かい？
+
+🛁 Do you wash your body?
+体を洗う？
+
+🛁 Do you wash your hair?
+髪を洗う？
+
+🛁 Do you play with bubbles?
+泡で遊ぶ？
+
+🛁 Are you clean?
+きれい？
+
+🛁 Do you smell good?
+いい匂い？
+
+🛁 Are you happy?
+幸せ？
+
+🛁 Is bath fun?
+お風呂は楽しい？
+
+🛁 Do you like baths?
+お風呂は好き？
+`
+},
+{
+  "title": "23. Bedtime Story",
+  "content": `📖 It is bedtime.
+寝る時間。
+
+📖 I go to bed.
+ベッドに行く。
+
+📖 Mom comes in.
+母が入ってくる。
+
+📖 She has a book.
+彼女が本を持っている。
+
+📖 She reads to me.
+彼女は私に読む。
+
+📖 The story is good.
+話は良い。
+
+📖 I close my eyes.
+目を閉じる。
+
+📖 I fall asleep.
+眠りにつく。
+
+📖 I dream dreams.
+夢を見る。
+
+📖 Good night!
+おやすみ！
+
+📖 Do you go to bed?
+ベッドに行く？
+
+📖 Does mom come in?
+母が入ってくる？
+
+📖 Does she have a book?
+本を持っている？
+
+📖 Does she read to you?
+読んでくれる？
+
+📖 Is the story good?
+話は良い？
+
+📖 Do you close your eyes?
+目を閉じる？
+
+📖 Do you fall asleep?
+眠りにつく？
+
+📖 Do you dream dreams?
+夢を見る？
+
+📖 Good night?
+おやすみ？
+
+📖 Do you like bedtime?
+寝る時間は好き？
+`
+},
+{
+  "title": "24. Saturday Fun",
+  "content": `📅 Today is Saturday.
+今日は土曜日。
+
+📅 No school today.
+今日は学校がない。
+
+📅 I play all day.
+一日中游ぶ。
+
+📅 I watch TV.
+テレビを見る。
+
+📅 I play games.
+ゲームをする。
+
+📅 I go to the park.
+公園に行く。
+
+📅 I see friends.
+友達に会う。
+
+📅 We laugh a lot.
+たくさん笑う。
+
+📅 I am happy.
+幸せ。
+
+📅 Saturday is fun.
+土曜日は楽しい。
+
+📅 Do you like Saturday?
+土曜日は好き？
+
+📅 Is there no school?
+学校がない？
+
+📅 Do you play all day?
+一日中游ぶ？
+
+📅 Do you watch TV?
+テレビを見る？
+
+📅 Do you play games?
+ゲームをする？
+
+📅 Do you go to the park?
+公園に行く？
+
+📅 Do you see friends?
+友達に会う？
+
+📅 Do you laugh?
+笑う？
+
+📅 Are you happy?
+幸せ？
+
+📅 Is Saturday fun?
+土曜日は楽しい？
+`
+},{
+  "title": "25. My Mom",
+  "content": `👩 I have a mom.
+私には母がいます。
+
+👩 Her name is Emi.
+名前はエミ。
+
+👩 She is kind.
+彼女は優しい。
+
+👩 She is nice.
+彼女は親切。
+
+👩 She cooks food.
+彼女は料理を作る。
+
+👩 She cleans my room.
+彼女は部屋を掃除。
+
+👩 She helps me.
+彼女は助けてくれる。
+
+👩 I love Mom.
+母が大好き。
+
+👩 Mom is great.
+母はすごい。
+
+👩 I hug Mom.
+母を抱きしめる。
+
+👩 Do you have a mom?
+お母さんはいますか？
+
+👩 What is her name?
+お母さんの名前は？
+
+👩 Is your mom kind?
+お母さんは優しい？
+
+👩 Is your mom nice?
+お母さんは親切？
+
+👩 Does she cook?
+料理をしますか？
+
+👩 Does she clean?
+掃除をしますか？
+
+👩 Does she help you?
+助けてくれますか？
+
+👩 Do you love Mom?
+お母さんを愛していますか？
+
+👩 Is Mom great?
+お母さんはすごい？
+
+👩 Do you hug Mom?
+お母さんを抱きしめますか？
+`
+},
+{
+  "title": "26. My Dad",
+  "content": `👨 I have a dad.
+私には父がいます。
+
+👨 His name is Ken.
+名前はケン。
+
+👨 He is strong.
+彼は強い。
+
+👨 He is tall.
+彼は背が高い。
+
+👨 He works hard.
+彼は一生懸命働く。
+
+👨 He plays with me.
+彼は私と遊ぶ。
+
+👨 He reads to me.
+彼は読んでくれる。
+
+👨 I love Dad.
+父が大好き。
+
+👨 Dad is great.
+父はすごい。
+
+👨 I hug Dad.
+父を抱きしめる。
+
+👨 Do you have a dad?
+お父さんはいますか？
+
+👨 What is his name?
+お父さんの名前は？
+
+👨 Is your dad strong?
+お父さんは強い？
+
+👨 Is your dad tall?
+お父さんは背が高い？
+
+👨 Does he work hard?
+一生懸命働きますか？
+
+👨 Does he play with you?
+一緒に遊びますか？
+
+👨 Does he read to you?
+読んでくれますか？
+
+👨 Do you love Dad?
+お父さんを愛していますか？
+
+👨 Is Dad great?
+お父さんはすごい？
+
+👨 Do you hug Dad?
+お父さんを抱きしめますか？
+`
+},
+{
+  "title": "27. Little Bird",
+  "content": `🐦 I see a bird.
+鳥を見る。
+
+🐦 It is small.
+それは小さい。
+
+🐦 It is blue.
+それは青い。
+
+🐦 It sits on a tree.
+木に座る。
+
+🐦 It sings a song.
+歌を歌う。
+
+🐦 The song is sweet.
+歌は甘い。
+
+🐦 It flies high.
+高く飛ぶ。
+
+🐦 It is free.
+それは自由。
+
+🐦 I like birds.
+鳥が好き。
+
+🐦 Birds are cute.
+鳥はかわいい。
+
+🐦 Do you see birds?
+鳥を見る？
+
+🐦 Is the bird small?
+鳥は小さい？
+
+🐦 What color is it?
+何色？
+
+🐦 Where does it sit?
+どこに座る？
+
+🐦 Does it sing?
+歌う？
+
+🐦 Is the song sweet?
+歌は甘い？
+
+🐦 Does it fly high?
+高く飛ぶ？
+
+🐦 Is it free?
+自由？
+
+🐦 Do you like birds?
+鳥は好き？
+
+🐦 Are birds cute?
+鳥はかわいい？
+`
+},
+{
+  "title": "28. Butterfly",
+  "content": `🦋 I see a butterfly.
+蝶を見る。
+
+🦋 It is pretty.
+それはきれい。
+
+🦋 It has colors.
+色がある。
+
+🦋 It flies slow.
+ゆっくり飛ぶ。
+
+🦋 It lands on flowers.
+花に止まる。
+
+🦋 It drinks nectar.
+蜜を飲む。
+
+🦋 It is gentle.
+それは優しい。
+
+🦋 I watch it.
+それを見る。
+
+🦋 It flies away.
+飛び去る。
+
+🦋 Bye bye butterfly!
+さようなら蝶！
+
+🦋 Do you see butterflies?
+蝶を見る？
+
+🦋 Is it pretty?
+きれい？
+
+🦋 What colors does it have?
+何色？
+
+🦋 Does it fly slow?
+ゆっくり飛ぶ？
+
+🦋 Where does it land?
+どこに止まる？
+
+🦋 What does it drink?
+何を飲む？
+
+🦋 Is it gentle?
+優しい？
+
+🦋 Do you watch it?
+見る？
+
+🦋 Does it fly away?
+飛び去る？
+
+🦋 Do you like butterflies?
+蝶は好き？
+`
+},
+{
+  "title": "29. Flowers",
+  "content": `🌸 I see flowers.
+花を見る。
+
+🌸 They are pretty.
+きれいです。
+
+🌸 They are colorful.
+カラフル。
+
+🌸 Some are red.
+赤もある。
+
+🌸 Some are pink.
+ピンクもある。
+
+🌸 Some are white.
+白もある。
+
+🌸 They smell good.
+いい匂い。
+
+🌸 I pick one.
+一つ摘む。
+
+🌸 I give it to Mom.
+母にあげる。
+
+🌸 Mom smiles!
+母が微笑む！
+
+🌸 Do you see flowers?
+花を見る？
+
+🌸 Are they pretty?
+きれい？
+
+🌸 Are they colorful?
+カラフル？
+
+🌸 What color do you like?
+何色が好き？
+
+🌸 Do they smell good?
+いい匂い？
+
+🌸 Do you pick flowers?
+花を摘む？
+
+🌸 Who do you give to?
+誰にあげる？
+
+🌸 Does Mom smile?
+母は微笑む？
+
+🌸 Do you like flowers?
+花は好き？
+
+🌸 Are flowers pretty?
+花はきれい？
+`
+},
+{
+  "title": "30. Sunny Day",
+  "content": `☀️ It is sunny.
+晴れです。
+
+☀️ The sky is blue.
+空は青い。
+
+☀️ The sun is bright.
+太陽は明るい。
+
+☀️ I go outside.
+外に行く。
+
+☀️ I play with friends.
+友達と遊ぶ。
+
+☀️ We run and laugh.
+走って笑う。
+
+☀️ We are happy.
+私たちは幸せ。
+
+☀️ It is warm.
+暖かい。
+
+☀️ I like sunny days.
+晴れの日が好き。
+
+☀️ Sunny days are fun!
+晴れの日は楽しい！
+
+☀️ Is it sunny?
+晴れ？
+
+☀️ Is the sky blue?
+空は青い？
+
+☀️ Is the sun bright?
+太陽は明るい？
+
+☀️ Do you go outside?
+外に行く？
+
+☀️ Do you play with friends?
+友達と遊ぶ？
+
+☀️ Do you run and laugh?
+走って笑う？
+
+☀️ Are you happy?
+幸せ？
+
+☀️ Is it warm?
+暖かい？
+
+☀️ Do you like sunny days?
+晴れは好き？
+
+☀️ Are sunny days fun?
+晴れの日は楽しい？
+`
+},
+{
+  "title": "31. Cloudy Day",
+  "content": `☁️ It is cloudy.
+曇りです。
+
+☁️ The sky is gray.
+空は灰色。
+
+☁️ The sun is hiding.
+太陽が隠れている。
+
+☁️ I stay inside.
+中にいる。
+
+☁️ I read books.
+本を読む。
+
+☁️ I draw pictures.
+絵を描く。
+
+☁️ I play games.
+ゲームをする。
+
+☁️ I am warm.
+暖かい。
+
+☁️ I am cozy.
+居心地が良い。
+
+☁️ Cloudy days are okay!
+曇りも okay！
+
+☁️ Is it cloudy?
+曇り？
+
+☁️ Is the sky gray?
+空は灰色？
+
+☁️ Is the sun hiding?
+太陽は隠れてる？
+
+☁️ Do you stay inside?
+中にいる？
+
+☁️ Do you read books?
+本を読む？
+
+☁️ Do you draw pictures?
+絵を描く？
+
+☁️ Do you play games?
+ゲームをする？
+
+☁️ Are you warm?
+暖かい？
+
+☁️ Are you cozy?
+居心地良い？
+
+☁️ Are cloudy days okay?
+曇りも okay？
+`
+},
+{
+  "title": "32. Windy Day",
+  "content": `💨 It is windy.
+風が強い。
+
+💨 The trees move.
+木が動く。
+
+💨 The leaves fly.
+葉が飛ぶ。
+
+💨 I go outside.
+外に行く。
+
+💨 I fly a kite.
+凧を上げる。
+
+💨 The kite goes high.
+凧が高く上がる。
+
+💨 I run fast.
+速く走る。
+
+💨 I laugh a lot.
+たくさん笑う。
+
+💨 Wind is fun!
+風は楽しい！
+
+💨 I love windy days!
+風の日が好き！
+
+💨 Is it windy?
+風が強い？
+
+💨 Do the trees move?
+木が動く？
+
+💨 Do the leaves fly?
+葉が飛ぶ？
+
+💨 Do you go outside?
+外に行く？
+
+💨 Do you fly kites?
+凧を上げる？
+
+💨 Does the kite go high?
+凧は高く上がる？
+
+💨 Do you run fast?
+速く走る？
+
+💨 Do you laugh?
+笑う？
+
+💨 Is wind fun?
+風は楽しい？
+
+💨 Do you like windy days?
+風の日は好き？
+`
+},
+{
+  "title": "33. Snowy Day",
+  "content": "❄️ It is snowy.\n雪です。\n\n❄️ Everything is white.\nすべてが白い。\n\n❄️ It is cold.\n寒い。\n\n❄️ I wear a coat.\nコートを着る。\n\n❄️ I wear gloves.\n手袋をする。\n\n❄️ I make a snowman.\n雪だるまを作る。\n\n❄️ I throw snowballs.\n雪玉を投げる。\n\n❄️ I play with friends.\n友達と遊ぶ。\n\n❄️ We are happy.\n私たちは幸せ。\n\n❄️ Snow is fun!\n雪は楽しい！\n\n❄️ Is it snowy?\n雪？\n\n❄️ Is everything white?\nすべて白い？\n\n❄️ Is it cold?\n寒い？\n\n❄️ Do you wear a coat?\nコートを着る？\n\n❄️ Do you wear gloves?\n手袋をする？\n\n❄️ Do you make snowmen?\n雪だるまを作る？\n\n❄️ Do you throw snowballs?\n雪玉を投げる？\n\n❄️ Do you play with friends?\n友達と遊ぶ？\n\n❄️ Are you happy?\n幸せ？\n\n❄️ Is snow fun?\n雪は楽しい？"
+},
+{
+  "title": "34. My Sister",
+  "content": `👧 I have a sister.
+姉がいます。
+
+👧 Her name is Yuki.
+名前はユキ。
+
+👧 She is young.
+彼女は若い。
+
+👧 She is cute.
+彼女はかわいい。
+
+👧 She plays with me.
+彼女は私と遊ぶ。
+
+👧 She shares toys.
+彼女はおもちゃを共有。
+
+👧 She is nice.
+彼女は優しい。
+
+👧 I love Yuki.
+ユキが好き。
+
+👧 Yuki is great.
+ユキはすごい。
+
+👧 We are happy.
+私たちは幸せ。
+
+👧 Do you have a sister?
+姉はいますか？
+
+👧 What is her name?
+彼女の名前は？
+
+👧 Is she young?
+彼女は若い？
+
+👧 Is she cute?
+彼女はかわいい？
+
+👧 Does she play with you?
+彼女とは遊ぶ？
+
+👧 Does she share?
+共有する？
+
+👧 Is she nice?
+彼女は優しい？
+
+👧 Do you love her?
+彼女を愛していますか？
+
+👧 Is she great?
+彼女はすごい？
+
+👧 Are you happy?
+幸せ？
+`
+},
+{
+  "title": "35. My Brother",
+  "content": `👦 I have a brother.
+兄がいます。
+
+👦 His name is Taro.
+名前はタロウ。
+
+👦 He is older.
+彼は年上。
+
+👦 He is strong.
+彼は強い。
+
+👦 He plays with me.
+彼は私と遊ぶ。
+
+👦 He helps me.
+彼は助けてくれる。
+
+👦 He is kind.
+彼は優しい。
+
+👦 I love Taro.
+タロウが好き。
+
+👦 Taro is great.
+タロウはすごい。
+
+👦 We are happy.
+私たちは幸せ。
+
+👦 Do you have a brother?
+兄はいますか？
+
+👦 What is his name?
+彼の名前は？
+
+👦 Is he older?
+彼は年上？
+
+👦 Is he strong?
+彼は強い？
+
+👦 Does he play with you?
+彼とは遊ぶ？
+
+👦 Does he help you?
+彼は助けてくれる？
+
+👦 Is he kind?
+彼は優しい？
+
+👦 Do you love him?
+彼を愛していますか？
+
+👦 Is he great?
+彼はすごい？
+
+👦 Are you happy?
+幸せ？
+`
+},
+{
+  "title": "36. Grandparents",
+  "content": `👴 I have grandparents.
+祖父母がいます。
+
+👴 They are old.
+彼らは年寄り。
+
+👴 They are kind.
+彼らは優しい。
+
+👴 They tell stories.
+彼らは話す。
+
+👴 They give hugs.
+彼らは抱きしめる。
+
+👴 They give candy.
+彼らはキャンディーをくれる。
+
+👴 I visit them.
+私は彼らに会う。
+
+👴 I love them.
+彼らが大好き。
+
+👴 They are great.
+彼らはすごい。
+
+👴 We are happy.
+私たちは幸せ。
+
+👴 Do you have grandparents?
+祖父母はいますか？
+
+👴 Are they old?
+彼らは年寄り？
+
+👴 Are they kind?
+彼らは優しい？
+
+👴 Do they tell stories?
+彼らは話す？
+
+👴 Do they give hugs?
+抱きしめる？
+
+👴 Do they give candy?
+キャンディーをくれる？
+
+👴 Do you visit them?
+彼らに会いますか？
+
+👴 Do you love them?
+彼らを愛していますか？
+
+👴 Are they great?
+彼らはすごい？
+
+👴 Are you happy?
+幸せ？
+`
+},{
+  "title": "37. At the Zoo",
+  "content": `🦁 I go to the zoo.\n私は動物園に行く。\n\n🦁 I see lions.\nライオンを見る。\n\n🦁 They are big.\n彼らは大きい。\n\n🦁 I see monkeys.\n猿を見る。\n\n🦁 They are funny.\n彼らは面白い。\n\n🦁 I see elephants.\nゾウを見る。\n\n🦁 They are huge.\n彼らは巨大。\n\n🦁 I see pandas.\nパンダを見る。\n\n🦁 They are cute.\n彼らはかわいい。\n\n🦁 I love the zoo!\n動物園が大好き！\n\n🦁 Do you go to the zoo?\n動物園に行く？\n\n🦁 Do you see lions?\nライオンを見る？\n\n🦁 Are they big?\n彼らは大きい？\n\n🦁 Do you see monkeys?\n猿を見る？\n\n🦁 Are they funny?\n彼らは面白い？\n\n🦁 Do you see elephants?\nゾウを見る？\n\n🦁 Are they huge?\n彼らは巨大？\n\n🦁 Do you see pandas?\nパンダを見る？\n\n🦁 Are they cute?\n彼らはかわいい？\n\n🦁 Do you love the zoo?\n動物園は好き？\n`
+},
+{
+  "title": "38. At the Beach",
+  "content": `🏖 I go to the beach.\n私は海に行く。\n\n🏖 The sand is hot.\n砂は熱い。\n\n🏖 The water is blue.\n水は青い。\n\n🏖 I swim in the sea.\n海で泳ぐ。\n\n🏖 I play in the sand.\n砂で遊ぶ。\n\n🏖 I build a castle.\n城を作る。\n\n🏖 I find a shell.\n貝殻を見つける。\n\n🏖 I am happy.\n私は幸せ。\n\n🏖 I love the beach!\n海が大好き！\n\n🏖 Beach days are fun!\nビーチは楽しい！\n\n🏖 Do you go to the beach?\n海に行く？\n\n🏖 Is the sand hot?\n砂は熱い？\n\n🏖 Is the water blue?\n水は青い？\n\n🏖 Do you swim?\n泳ぐ？\n\n🏖 Do you play in sand?\n砂で遊ぶ？\n\n🏖 Do you build castles?\n城を作る？\n\n🏖 Do you find shells?\n貝殻を見つける？\n\n🏖 Are you happy?\n幸せ？\n\n🏖 Do you love the beach?\n海は好き？\n\n🏖 Are beach days fun?\nビーチは楽しい？\n`
+},
+{
+  "title": "39. At the Store",
+  "content": `🛒 I go to the store.\n店に行く。\n\n🛒 I see toys.\nおもちゃを見る。\n\n🛒 I see candy.\nキャンディーを見る。\n\n🛒 I want toys.\nおもちゃが欲しい。\n\n🛒 I want candy.\nキャンディーが欲しい。\n\n🛒 Mom says no.\n母がダメと言う。\n\n🛒 I am sad.\n悲しい。\n\n🛒 Mom buys fruit.\n母が果物を買う。\n\n🛒 I am happy.\n私は幸せ。\n\n🛒 Fruit is good!\n果物は良い！\n\n🛒 Do you go to stores?\n店に行く？\n\n🛒 Do you see toys?\nおもちゃを見る？\n\n🛒 Do you see candy?\nキャンディーを見る？\n\n🛒 Do you want toys?\nおもちゃが欲しい？\n\n🛒 Do you want candy?\nキャンディーが欲しい？\n\n🛒 Does mom say no?\n母がダメと言う？\n\n🛒 Are you sad?\n悲しい？\n\n🛒 Does mom buy fruit?\n母が果物を買う？\n\n🛒 Are you happy?\n幸せ？\n\n🛒 Is fruit good?\n果物は良い？\n`
+},
+{
+  "title": "40. Birthday Party",
+  "content": `🎂 Today is my birthday.\n今日は私の誕生日。\n\n🎂 I am happy.\n私は幸せ。\n\n🎂 I have a party.\nパーティーがある。\n\n🎂 Friends come over.\n友達が来る。\n\n🎂 We play games.\nゲームをする。\n\n🎂 We eat cake.\nケーキを食べる。\n\n🎂 The cake is sweet.\nケーキは甘い。\n\n🎂 I get presents.\nプレゼントをもらう。\n\n🎂 I am so happy!\nとても幸せ！\n\n🎂 Best day ever!\n最高の一日！\n\n🎂 Is today your birthday?\n今日誕生日？\n\n🎂 Are you happy?\n幸せ？\n\n🎂 Do you have a party?\nパーティーがある？\n\n🎂 Do friends come?\n友達が来る？\n\n🎂 Do you play games?\nゲームをする？\n\n🎂 Do you eat cake?\nケーキを食べる？\n\n🎂 Is the cake sweet?\nケーキは甘い？\n\n🎂 Do you get presents?\nプレゼントをもらう？\n\n🎂 Are you so happy?\nとても幸せ？\n\n🎂 Is it the best day?\n最高の一日？\n`
+},
+{
+  "title": "41. Christmas Day",
+  "content": `🎄 It is Christmas.\nクリスマスです。\n\n🎄 I am excited.\nワクワクする。\n\n🎄 I open presents.\nプレゼントを開ける。\n\n🎄 I get toys.\nおもちゃをもらう。\n\n🎄 I get candy.\nキャンディーをもらう。\n\n🎄 Family is here.\n家族がいる。\n\n🎄 We eat together.\n一緒に食べる。\n\n🎄 We are happy.\n私たちは幸せ。\n\n🎄 I love Christmas!\nクリスマスが大好き！\n\n🎄 Best holiday ever!\n最高の休日！\n\n🎄 Is it Christmas?\nクリスマス？\n\n🎄 Are you excited?\nワクワクする？\n\n🎄 Do you open presents?\nプレゼントを開ける？\n\n🎄 Do you get toys?\nおもちゃをもらう？\n\n🎄 Do you get candy?\nキャンディーをもらう？\n\n🎄 Is family here?\n家族がいる？\n\n🎄 Do you eat together?\n一緒に食べる？\n\n🎄 Are you happy?\n幸せ？\n\n🎄 Do you love Christmas?\nクリスマスは好き？\n\n🎄 Is it the best holiday?\n最高の休日？\n`
+},
+{
+  "title": "42. New Year",
+  "content": `🎆 It is New Year.\n正月です。\n\n🎆 I am happy.\n私は幸せ。\n\n🎆 I wear new clothes.\n新しい服を着る。\n\n🎆 I eat good food.\n良い食べ物食べる。\n\n🎆 I see friends.\n友達に会う。\n\n🎆 We play games.\nゲームをする。\n\n🎆 We laugh a lot.\nたくさん笑う。\n\n🎆 I get money.\nお金をもらう。\n\n🎆 I am so happy!\nとても幸せ！\n\n🎆 Happy New Year!\n明けましておめでとう！\n\n🎆 Is it New Year?\n正月？\n\n🎆 Are you happy?\n幸せ？\n\n🎆 Do you wear new clothes?\n新しい服を着る？\n\n🎆 Do you eat good food?\n良い食べ物食べる？\n\n🎆 Do you see friends?\n友達に会う？\n\n🎆 Do you play games?\nゲームをする？\n\n🎆 Do you laugh a lot?\nたくさん笑う？\n\n🎆 Do you get money?\nお金をもらう？\n\n🎆 Are you so happy?\nとても幸せ？\n\n🎆 Happy New Year?\n明けましておめでとう？\n`
+},
+{
+  "title": "43. Doctor Visit",
+  "content": `👨‍⚕️ I go to the doctor.\n医者に行く。\n\n👨‍⚕️ I am sick.\n病気。\n\n👨‍⚕️ The doctor is nice.\n医者は優しい。\n\n👨‍⚕️ He checks me.\n彼はチェックする。\n\n👨‍⚕️ He says rest.\n彼は安静と言う。\n\n👨‍⚕️ He gives medicine.\n彼は薬をくれる。\n\n👨‍⚕️ I take medicine.\n薬を飲む。\n\n👨‍⚕️ I rest in bed.\nベッドで休む。\n\n👨‍⚕️ I feel better.\n良くなった。\n\n👨‍⚕️ I am healthy!\n健康！\n\n👨‍⚕️ Do you go to the doctor?\n医者に行く？\n\n👨‍⚕️ Are you sick?\n病気？\n\n👨‍⚕️ Is the doctor nice?\n医者は優しい？\n\n👨‍⚕️ Does he check you?\n彼はチェックする？\n\n👨‍⚕️ Does he say rest?\n彼は安静と言う？\n\n👨‍⚕️ Does he give medicine?\n彼は薬をくれる？\n\n👨‍⚕️ Do you take medicine?\n薬を飲む？\n\n👨‍⚕️ Do you rest in bed?\nベッドで休む？\n\n👨‍⚕️ Do you feel better?\n良くなった？\n\n👨‍⚕️ Are you healthy?\n健康？\n`
+},
+{
+  "title": "44. Haircut Day",
+  "content": `💇 My hair is long.\n髪が長い。\n\n💇 I go to the salon.\nサロンに行く。\n\n💇 The lady is nice.\n女性は優しい。\n\n💇 She cuts my hair.\n彼女は髪を切る。\n\n💇 It is short now.\n短くなった。\n\n💇 I look in the mirror.\n鏡を見る。\n\n💇 I look new!\n新しく見える！\n\n💇 I am happy.\n私は幸せ。\n\n💇 I like my hair!\n髪が好き！\n\n💇 It feels good!\n気持ちいい！\n\n💇 Is your hair long?\n髪は長い？\n\n💇 Do you go to the salon?\nサロンに行く？\n\n💇 Is the lady nice?\n女性は優しい？\n\n💇 Does she cut your hair?\n彼女は髪を切る？\n\n💇 Is it short now?\n短くなった？\n\n💇 Do you look in the mirror?\n鏡を見る？\n\n💇 Do you look new?\n新しく見える？\n\n💇 Are you happy?\n幸せ？\n\n💇 Do you like your hair?\n髪は好き？\n\n💇 Does it feel good?\n気持ちいい？\n`
+},
+{
+  "title": "45. Lost and Found",
+  "content": `🔑 I lose my key.\n鍵をなくす。\n\n🔑 I am sad.\n悲しい。\n\n🔑 I look everywhere.\nあちこち探す。\n\n🔑 I look in my bag.\nバッグの中探す。\n\n🔑 I look on my desk.\n机の上探す。\n\n🔑 I cannot find it.\n見つからない。\n\n🔑 My friend sees it.\n友達が見つけた。\n\n🔑 She gives it back.\n彼女は返してくれる。\n\n🔑 I am so happy!\nとても幸せ！\n\n🔑 Thank you, friend!\nありがとう、友達！\n\n🔑 Do you lose things?\n物をなくす？\n\n🔑 Are you sad?\n悲しい？\n\n🔑 Do you look everywhere?\nあちこち探す？\n\n🔑 Do you look in your bag?\nバッグの中探す？\n\n🔑 Do you look on your desk?\n机の上探す？\n\n🔑 Do you find it?\n見つかる？\n\n🔑 Does your friend see it?\n友達が見つけた？\n\n🔑 Does she give it back?\n彼女は返してくれる？\n\n🔑 Are you so happy?\nとても幸せ？\n\n🔑 Do you say thank you?\nありがとうと言う？\n`
+},
+{
+  "title": "46. First Day of School",
+  "content": `🏫 It is my first day.\n初めての一日。\n\n🏫 I am nervous.\nドキドキする。\n\n🏫 I go to school.\n学校に行く。\n\n🏫 I see my teacher.\n先生に会う。\n\n🏫 She is nice.\n彼女は優しい。\n\n🏫 I see friends.\n友達に会う。\n\n🏫 They are nice too.\n彼らも優しい。\n\n🏫 We play together.\n一緒に遊ぶ。\n\n🏫 I am happy.\n私は幸せ。\n\n🏫 School is fun!\n学校は楽しい！\n\n🏫 Is it your first day?\n初めての一日？\n\n🏫 Are you nervous?\nドキドキする？\n\n🏫 Do you go to school?\n学校に行く？\n\n🏫 Do you see your teacher?\n先生に会う？\n\n🏫 Is she nice?\n彼女は優しい？\n\n🏫 Do you see friends?\n友達に会う？\n\n🏫 Are they nice?\n彼らも優しい？\n\n🏫 Do you play together?\n一緒に遊ぶ？\n\n🏫 Are you happy?\n幸せ？\n\n🏫 Is school fun?\n学校は楽しい？\n`
+},
+{
+  "title": "47. Sports Day",
+  "content": `🏃 It is sports day.\n体育の日。\n\n🏃 I run fast.\n速く走る。\n\n🏃 I jump high.\n高くジャンプ。\n\n🏃 I throw the ball.\nボールを投げる。\n\n🏃 My team cheers.\nチームが応援する。\n\n🏃 We win a prize.\n賞をもらう。\n\n🏃 I am so happy!\nとても幸せ！\n\n🏃 Sports are fun!\nスポーツは楽しい！\n\n🏃 I love sports day!\n体育の日が大好き！\n\n🏃 Is it sports day?\n体育の日？\n\n🏃 Do you run fast?\n速く走る？\n\n🏃 Do you jump high?\n高くジャンプ？\n\n🏃 Do you throw the ball?\nボールを投げる？\n\n🏃 Does your team cheer?\nチームが応援する？\n\n🏃 Do you win a prize?\n賞をもらう？\n\n🏃 Are you so happy?\nとても幸せ？\n\n🏃 Are sports fun?\nスポーツは楽しい？\n\n🏃 Do you love sports day?\n体育の日は好き？\n\n🏃 Do you like sports?\nスポーツは好き？\n`
+},
+{
+  "title": "48. I Love English",
+  "content": `📚 I learn English.\n英語を学ぶ。\n\n📚 It is fun.\nそれは楽しい。\n\n📚 I say hello.\nこんにちはと言う。\n\n📚 I say thank you.\nありがとうと言う。\n\n📚 I count numbers.\n数を数える。\n\n📚 I know colors.\n色を知る。\n\n📚 I sing songs.\n歌を歌う。\n\n📚 I play games.\nゲームをする。\n\n📚 I am happy.\n私は幸せ。\n\n📚 I love English!\n英語が大好き！\n\n📚 Do you learn English?\n英語を学ぶ？\n\n📚 Is it fun?\nそれは楽しい？\n\n📚 Do you say hello?\nこんにちはと言う？\n\n📚 Do you say thank you?\nありがとうと言う？\n\n📚 Do you count numbers?\n数を数える？\n\n📚 Do you know colors?\n色を知る？\n\n📚 Do you sing songs?\n歌を歌う？\n\n📚 Do you play games?\nゲームをする？\n\n📚 Are you happy?\n幸せ？\n\n📚 Do you love English?\n英語は好き？\n`
+}
 ];
