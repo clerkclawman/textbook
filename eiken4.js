@@ -1,194 +1,1977 @@
-var eiken4 = [
-  {
-    "title": "1. New Year Celebrations (Mixed Grammar)",
-    "content": "🎉 Last year, I celebrated New Year with my family.\n昨年、私は家族と一緒にお正月を祝いました。\n\n🌅 We ate traditional food together on New Year's Day.\n元日の朝、私たちは一緒に伝統的な食べ物を食べました。\n\n⛩ I visited a shrine with my parents on January 1st.\n1月1日に、私は両親と一緒に神社に行きました。\n\n🎌 This year, I will make New Year's resolutions soon.\n今年、私はすぐに新年の抱負を立てます。\n\n🎁 I will study harder this year than last year.\n私は昨年よりも今年、もっと勉強します。\n\n❄️ Winter is colder than spring, but I like it.\n冬は春より寒いですが、私は冬が好きです。\n\n🏮 I played cards with my cousins last holiday.\n休日に、私はいとこと一緒にカードゲームをしました。\n\n📚 Next month, I will visit my grandmother's house.\n来月、私は祖母の家に行きます。\n\n🌸 Spring will be warmer and more beautiful than winter.\n春は冬よりも暖かくて、もっと美しくなるでしょう。\n\n✨ I hope this year will be better than last year.\n今年は昨年よりも良くなることを願っています。\n\n🎊 How did you celebrate New Year last year?\n去年、あなたはどうやってお正月を祝いましたか？\n\n❄️ Do you like winter or spring better?\n冬と春のどちらが好きですか？\n\n🎯 What will you do this year?\n今年、あなたは何をしますか？\n\n🏮 Did you visit a shrine on New Year's Day?\n元日に神社に行きましたか？\n\n🎁 What did you eat with your family?\n家族と一緒に何を食べましたか？\n\n📚 Where will you go next month?\n来月、どこに行きますか？\n\n🌸 Which season do you prefer?\nどの季節が好きですか？\n\n🎲 What games did you play during the holiday?\n休みの間に、どんなゲームをしましたか？\n\n🎯 What is your New Year's resolution this year?\n今年の新年の抱負は何ですか？\n\n❄️ What is your favorite winter activity?\nあなたのお気に入りの冬の活動は何ですか？"
-  },
-  {
-    "title": "2. Last Winter Holiday (Focus: Past Simple)",
-    "content": "❄️ Last winter, I went to a ski resort with my family.\n昨年の冬、私は家族とスキー場に行きました。\n\n🏂 I skied down the mountain for the first time.\n私は初めて山の下をスキーしました。\n\n🌨 It snowed heavily during our holiday.\n私たちの休みの間、雪がたくさん降りました。\n\n☕ We drank hot chocolate every morning at the lodge.\n私たちはロッジで毎朝ホットチョコレートを飲みました。\n\n🎿 My father taught me how to stop safely.\n父が私に安全に止まり方を教えてくれました。\n\n🤕 I fell down on the snow many times.\n私は雪の上でたくさん転びました。\n\n😊 But I stood up and tried again.\nでも、私は立ち上がってまた挑戦しました。\n\n📸 We took many photos together in the snow.\n私たちは雪の中で一緒にたくさんの写真を撮りました。\n\n🎁 I will never forget that wonderful holiday.\n私はその素晴らしい休みを決して忘れません。\n\n😄 Next year, I will go skiing again.\n来年、私はまたスキーに行きます。\n\n🎿 Where did you go during winter last year?\n去年の冬にどこに行きましたか？\n\n❄️ What did you do in the snow?\n雪の中で何をしましたか？\n\n🏂 Did you ski, snowboard, or play in the snow?\nスキー、スノーボード、それとも雪の中で遊びましたか？\n\n🤕 Did you fall down when you played sports?\nスポーツをした時に転びましたか？\n\n☕ What warm drink do you like in winter?\n冬にはどんな温かい飲み物が好きですか？\n\n📸 Did you take photos during your holidays?\n休みの間に写真を撮りましたか？\n\n👨‍👩‍👧 did you go with your family or friends?\n家族と一緒に行きましたか、それとも友達ですか？\n\n😊 What was your best memory from last winter?\n去年の冬で一番の思い出は何ですか？\n\n🎉 Did you enjoy your winter holiday?\n冬休みを楽しみましたか？\n\n🌨 What was the weather like last winter?\n去年の冬の天気はどうでしたか？"
-  },
-  {
-    "title": "3. Winter Activities (Mixed Grammar)",
-    "content": "❄️ Yesterday, I made a big snowman in my garden.\n昨日、私の庭で大きな雪だるまを作りました。\n\n⛄ It was taller than my little brother.\nそれは弟よりも背が高かったです。\n\n😊 I threw snowballs with my friends after school.\n放課後、私は友達と雪合戦をしました。\n\n🧤 We wore warm gloves and hats outside.\n私たちは外で暖かい手袋と帽子を着用しました。\n\n☕ Later, we drank warm tea at my house.\nその後、私の家で温かいお茶を飲みました。\n\n📖 I read a book about polar bears last week.\n先週、私はホッキョクグマの本を読みました。\n\n🐻 They live in colder places than Japan.\n彼らは日本よりも寒い場所に住んでいます。\n\n🎿 Next weekend, I will go ice skating.\n来週末、私はスケートに行きます。\n\n⛸ I will practice skating with my friends.\n私は友達と一緒にスケートの練習をします。\n\n🌟 Winter is the best season for fun activities!\n冬は楽しい活動に最適な季節です！\n\n❄️ What winter sports do you like?\nどんな冬のスポーツが好きですか？\n\n⛄ Did you make a snowman before?\n雪だるまを作ったことがありますか？\n\n🧤 Do you like wearing warm winter clothes?\n暖かい冬服を着るのは好きですか？\n\n📖 What is your favorite winter book?\nお気に入りの冬の本は何ですか？\n\n☕ What warm drink do you prefer?\nどの温かい飲み物が好きですか？\n\n🎿 What will you do next weekend?\n来週末は何をしますか？\n\n😊 Do you like winter more than autumn?\n冬は秋よりも好きですか？\n\n🐻 Which animal do you like in winter stories?\n冬の物語の中でどの動物が好きですか？\n\n⛸ Did you go ice skating last year?\n去年、スケートに行きましたか？\n\n🌟 What is your favorite winter activity?\nお気に入りの冬の活動は何ですか？"
-  },
-  {
-    "title": "4. My Plans for Spring (Focus: Future with Will)",
-    "content": "🌸 Spring will come soon, and it will be warm.\nすぐに春が来て、暖かくなるでしょう。\n\n🌷 I will see beautiful cherry blossoms in the park.\n公園で美しい桜が見えるでしょう。\n\n📸 I will take many photos of the flowers.\n私は花の写真をたくさん撮るでしょう。\n\n🍱 I will go to cherry blossom viewing with family.\n家族と一緒に花見に行くでしょう。\n\n🎵 I will listen to birds singing in the morning.\n朝、鳥のさえずりを聞くでしょう。\n\n🏃 I will run and play in the warm sun.\n暖かい太陽の下で走ったり遊んだりするでしょう。\n\n📚 I will study harder at school this term.\n今学期は学校でもっと勉強するでしょう。\n\n👕 I will wear lighter clothes than winter clothes.\n冬服より軽い服を着るでしょう。\n\n🌿 I will help my mother in the garden.\n庭で母を手伝うでしょう。\n\n😄 Spring will be a wonderful and happy season.\n春は素晴しくて幸せな季節になるでしょう。\n\n🌸 What will you do in spring this year?\n今年の春に何をしますか？\n\n📸 Will you take photos of cherry blossoms?\n桜の写真を撮りますか？\n\n🍱 Who will you go to cherry blossom viewing with?\n花見には誰と行きますか？\n\n🎵 What will you do on warm spring days?\n暖かい春の日には何をしますか？\n\n🏃 Will you play outside more often?\nもっと頻繁に外で遊びますか？\n\n📚 What will you study at school this term?\n今学期は学校で何を勉強しますか？\n\n🌿 Will you help your family in spring?\n春に家族を手伝いますか？\n\n👕 Which do you like more, winter or spring clothes?\n冬服と春服のどちらが好きですか？\n\n😄 How do you feel about spring coming?\n春が来ることをどう思いますか？\n\n🌷 What is your favorite thing about spring?\n春で一番好きなことは何ですか？"
-  },
-  {
-    "title": "5. Setsubun Bean Throwing (Mixed Grammar)",
-    "content": "🎌 Ken celebrated Setsubun at school yesterday with classmates.\n健は昨日、クラスメートと一緒に学校で節分を祝いました.\n\n🫘 The teacher brought roasted beans for the traditional bean throwing.\n先生が伝統的な豆まきのために炒り豆を持ってきました.\n\n😊 Ken threw beans at imaginary demons and shouted loudly.\n健は想像上の鬼に豆を投げて、大声で叫びました.\n\n👾 His friends threw beans with great energy too as well.\n友達も大きなエネルギーで豆も投げました.\n\n🎌 Next year, Ken will celebrate Setsubun at home with family.\n来年、健は家族と家で節分を祝うでしょう.\n\n😊 He will buy more roasted beans for his little brother then.\n来年、弟のために、もっと炒り豆を買うでしょう.\n\n🛒 The beans are cheaper than chocolate treats at Setsubun.\n節分では、チョコレート菓子より豆のほうが安いです.\n\n🎌 Ken likes eating roasted beans more than eating sushi on that day.\n健はその日に寿司を食べるよりも、炒り豆を食べるほうが好きです.\n\n😊 Everyone enjoyed the traditional Setsubun celebration happily.\nみんな伝統的な節分の行事を楽しく楽しみました.\n\n🎌 Do you celebrate Setsubun in Japan sometimes?\n時々日本で節分を祝いますか？\n\n🫘 What is yourfavorite Japanese traditional festival generally?\n一般的にあなたのお気に入りの日本の伝統的な祭りは何ですか？\n\n😊 Did you throw beans at Setsubun when you were young?\n若かったとき、節分に豆を投げましたか？\n\n👾 What traditional foods do you eat at festivals often?\n祭りの時にはどのような伝統的な食べ物をよく食べますか？\n\n🎌 Which Japanese festival is the most exciting for you?\nあなたにとってどの日本の祭りが一番エキサイティングですか？\n\n🛒 Do you like traditional Japanese food mostly?\n主に伝統的な日本の食べ物は好きですか？\n\n😊 What will you do at the next Setsubun soon?\n次の節分には何をしますか？\n\n🎌 Are traditional festivals important in your country?\nあなたの国では伝統的な祭りは大切ですか？\n\n🎯 How do you celebrate special events with friends happily?\n友達と楽しく特別なイベントをどのように祝いますか？"
-  },
-  {
-    "title": "6. Comparing Winter Foods (Focus: Comparatives)",
-    "content": "🍱 Yuki loves eating special winter foods during this cold season.\nユキはこの寒い季節に特別な冬の食べ物を食べるのが大好きです.\n\n🍚 The Setsubun ehomaki sushi is more delicious than normal sushi.\n節分の恵方巻き寿司は、普通の寿司よりもおいしいです.\n\n🍱 However, the traditional roasted beans are tastier than chocolate.\nでも、伝統的な炒り豆はチョコレートよりもおいしいです.\n\n🥢 The thick ehomaki roll is bigger than ordinary sushi rolls properly.\n太い恵方巻きは、普通の巻き寿司よりも適切に大きいです.\n\n🍱 Eating ehomaki is more difficult than eating regular food carefully.\n恵方巻きを食べるのは、普通の食べ物を適切に食べるよりも難しいです.\n\n😊 Last month, Yuki ate ehomaki with her family happily.\n先月、ユキは家族と楽しく恵方巻きを食べました.\n\n🍚 Next month, she will try making ehomaki at home hopefully.\n来月、彼女は家で恵方巻きを作ってみるでしょう.\n\n🍱 Hot chocolate is sweeter than roasted beans for most children.\n多くの子どもにとって、ホットチョコレートは炒り豆よりも甘いです.\n\n🥢 Ehomaki is as famous as Setsubun bean throwing nowadays nowadays.\n最近では、恵方巻きは節分の豆まきと同じくらい有名です.\n\n🍱 Both foods are popular in winter in Japan together.\n両方の食べ物は日本の冬で一緒に人気があります.\n\n🍚 What is yourfavorite winter food really?\n本当にあなたのお気に入りの冬の食べ物は何ですか？\n\n🍱 Do you like traditional Japanese foods much?\n伝統的な日本の食べ物は好きですか？.\n\n🥢 Which is better: sushi or beans properly?\n適切に寿司と豆、どちらが良いですか？\n\n😊 What did you eat last winter happily?\n去年の冬に何を幸せに食べましたか？\n\n🍚 Is hot chocolate popular in Japan really?\n日本ではホットチョコレートは本当に人気がありますか？\n\n🍱 What foods are popular in your country in winter often?\nあなたの国では冬にどのような食べ物が頻繁に人気がありますか？\n\n🥢 Do you enjoy trying new foods bravely?\n新しい食べ物に勇敢に挑戦するのは好きですか？\n\n😊 What will you eat at the next winter festival eventually?\n来年の冬の祭りには最終的に何を食べますか？"
-  },
-  {
-    "title": "7. Valentine's Day Friendship (Mixed Grammar)",
-    "content": "💝 Aiko gave chocolate gifts to her friends at school nicely.\n愛子は学校で友達にチョコレートのプレゼントを素敵にあげました.\n\n🍫 She bought heart-shaped chocolates at the shop yesterday afternoon.\n昨日の午後、彼女はお店でハート型のチョコレートを買いました.\n\n😊 Her friends were happy when they received the sweet gifts.\n友達は甘いプレゼントを受け取ったとき、幸せでした.\n\n💝 Aiko also gave chocolate to herfavorite teacher kindly.\n愛子はまた、お気に入りの先生にチョコレートを優しくあげました.\n\n👩‍🏫 The teacher smiled and thanked Aiko for the kind gift.\n先生は親切なプレゼントをありがとうと言って、微笑みました.\n\n🍫 Next year, Aiko will make homemade chocolate herself probably.\n来年、愛子は自分で手作りのチョコレートを作るでしょう.\n\n😊 She will buy better ingredients for the chocolate soon.\nすぐにチョコレートにするために、より良い材料を買うでしょう.\n\n💝 Homemade chocolate is sweeter than shop chocolate usually.\n手作りのチョコレートは通常お店のチョコレートよりも甘いです.\n\n🍫 Aiko likes Valentine's Day more than Halloween probably.\n愛子はハロウィンよりもバレンタインデーのほうが好きでしょう.\n\n😊 Giving gifts is as important as receiving gifts on this day.\nこの日には、プレゼントを受け取ることはあげることと同じくらい大切です.\n\n💝 Do you celebrate Valentine's Day in Japan usually?\n通常日本でバレンタインデーを祝いますか？\n\n🍫 What is yourfavorite type of chocolate properly?\n適切にあなたのお気に入りのチョコレートの種類は何ですか？\n\n😊 Did you give gifts to your friends yesterday?\n昨日、友達にプレゼントをあげましたか？\n\n💝 What did you do last Valentine's Day happily?\n昨年のバレンタインデーに何を幸せにしましたか？\n\n🍫 Which is better: giving gifts or receiving gifts actually?\n実際にプレゼントをあげることともらうこと、どちらが良いですか？\n\n😊 Who is your best friend at school really?\n本当に学校での一番の親友は誰ですか？\n\n💝 Will you give chocolate next year probably?\n来年チョコレートをあげるでしょうか？\n\n🍫 What is yourfavorite season for giving gifts enthusiastically?\n熱情的にプレゼントをあげるのに一番好きな季節はいつですか？\n\n😊 What makes a good friend truly?\n本物の良い友達とはどんな人ですか？"
-  },
-  {
-    "title": "8. Last February's Memories (Focus: Past Simple)",
-    "content": "❄️ Tom remembered his cold February memories from last year fondly.\nトムは去年の寒い二月の思い出を愛情を持って思い出しました.\n\n⛄ He visited his grandparents in Hokkaido last winter.\n去年の冬、彼は北海道の祖父母を訪ねました.\n\n❄️ The snow was deeper there than the snow in Tokyo significantly.\n北海道の雪は東京の雪よりも著しく深かったです.\n\n🏂 Tom went skiing with his father every day during the holiday.\n休暇の間、トムは毎日お父さんとスキーに行きました.\n\n😊 He enjoyed the fresh mountain air and beautiful white snow.\n彼は新鮮な山の空気と美しい雪を楽しみました.\n\n❄️ Unfortunately, he fell down several times on the ski slopes sadly.\n残念ながら、彼はスキー場で何度か悲しく転びました.\n\n🏂 However, his father helped him stand up again immediately.\nでも、お父さんが彼をすぐに再び立たせてくれました.\n\n❄️ Last February was colder than this February feels now surprisingly.\n驚くことに、去年の二月は今の二月が感じているよりも寒かったです.\n\n😊 Tom will visit Hokkaido again next winter hopefully.\nトムは来年の冬には北海道をまた訪ねるでしょう.\n\n❄️ What did you do last winter actually?\n去年の冬に実際に何をしましたか？\n\n⛄ Did you see snow last year anywhere?\n去年どこかで雪を見ましたか？\n\n🏂 Do you like winter sports very much?\n冬のスポーツはとても好きですか？\n\n😊 Where did you go during your last winter holiday?\n最後の冬休みの間にどこに行きましたか？\n\n❄️ What do you remember about last February really？\n二月について何を本当に覚えていますか？\n\n⛄ Which season do you like better: winter or summer and why?\n冬と夏、どちらの季節が好きで、それはなぜですか？\n\n😊 What did you eat last winter deliciously?\n去年の冬に何を美味しく食べましたか？\n\n❄️ Was last winter warmer or colder than this winter really?\n本当に去年の冬はこの冬よりも暖かかったですか、それとも寒かったですか？\n\n⛄ What is yourfavorite winter memory truly?\n本当にあなたのお気に入りの冬の思い出は何ですか？"
-  },
-  {
-    "title": "9. Cherry Blossom Adventure",
-    "content": "My family and I went to see cherry blossoms last weekend.\n私と家族は先週末桜を見に行きました.\n\nWe travelled to Osaka by train and the journey was exciting.\n私たちは電車で大阪へ旅行し、その旅はエキサイティングでした.\n\nThe cherry blossoms were beautiful and pink in the park.\n公園では桜は美しくてピンク色でした.\n\nMy dad took many photos of our family under the trees.\n父は木の下での私たちの家族の多くの写真を撮りました.\n\nWe ate delicious bento lunches that my mum made earlier.\n私たちは母が早めに作った美味しいお弁当を食べました.\n\nMy little brother played games with friends on the grass.\n弟は芝生で友達とゲームをして遊びました.\n\nThe weather was warm and sunny all afternoon long.\n午後中ずっと天気は暖かく晴れていました.\n\nWe will remember this wonderful day for a long time.\n私たちは長い間この素晴らしい日を覚えています.\n\nI want to go back there again next year with everyone.\n来年また全員でそこに戻りたいです.\n\nThe cherry blossoms made me feel happy and peaceful inside.\n桜が私を幸せで平和な気持ちにさせました.\n\nDo you like going to see flowers in spring？\n春に花を見に行くのが好きですか？\n\nWhat is yourfavorite spring season activity？\nあなたの一番好きな春のアクティビティは何ですか？\n\nShould people travel far to see cherry blossoms？\n人々は桜を見るために遠くへ旅行すべきですか？\n\nWhat food do you like to eat on outdoor picnics？\n屋外ピクニックで食べる食べ物は何が好きですか？\n\nHow do you feel when you see beautiful nature？\n美しい自然を見るとき、どう感じますか？\n\nWhat is the best season to travel in Japan？\n日本で旅行するのに一番良い季節はいつですか？\n\nWho do you like spending outdoor time with？\n屋外の時間を誰と過ごすのが好きですか？\n\nDo you prefer taking photos or just viewing scenery？\n写真を撮るのと風景をただ見るの、どちらを好みますか？\n\nWhat makes a day trip special and memorable？\n日帰り旅行を特別で覚えやすいものにするのは何ですか？\n\nWill you go anywhere interesting next weekend？\n来週どこか面白い場所に行きますか？\n"
-  },
-  {
-    "title": "10. School Museum Visit",
-    "content": "My class visited the history museum last Thursday.\n私のクラスは先週の木曜日に歴史博物館を訪れました.\n\nWe learned about ancient Japan and old samurai warriors.\n私たちは古代日本と昔の侍について学びました.\n\nThe museum guide showed us interesting old swords and armour.\n博物館のガイドが私たちに面白い古い刀と鎧を見せてくれました.\n\nI drew pictures of samurai in my notebook carefully.\n私はノートに侍の絵を注意深く描きました.\n\nMy friends asked many questions about Japanese history.\n友達は日本の歴史について多くの質問をしました.\n\nThe guide answered all our questions very politely.\nガイドは私たちのすべての質問に非常に丁寧に答えました.\n\nWe saw beautiful old kimonos and traditional clothes.\n私たちは美しい古い着物と伝統的な服を見ました.\n\nAfter the visit, we bought souvenirs at the museum shop.\n訪問の後、私たちはミュージアムショップでお土産を買いました.\n\nMyfavorite thing was the old samurai helmet exhibit.\n私のお気に入りは昔の Samurai 兜の展示でした.\n\nI want to learn more about Japan's interesting history.\n日本の面白い歴史についてもっと学びたいです.\n\nHave you ever visited a history museum before？\n歴史博物館を訪れたことがありますか？\n\nWhat is the most interesting historical period in Japan？\n日本で最も面白い歴史的時代はいつですか？\n\nDo you like looking at old things and art exhibits？\n古いものや芸術展示を観るのは好きですか？\n\nWhat questions would you ask a museum guide？\n博物館のガイドにどのような質問をしますか？\n\nShould schools take students on more educational trips？\n学校は学生をより多くの教育的旅行に連れて行くべきですか？\n\nWhat did you learn from your last museum visit？\n最後の博物館訪問から何を学びましたか？\n\nDo you prefer history museums or science museums？\n歴史博物館と科学博物館、どちらを好みますか？\n\nWhat makes a museum visit interesting for you？\n博物館訪問をあなたにとって面白いものにするのは何ですか？\n\nWho do you like visiting museums with？\n誰と博物館を訪れるのが好きですか？\n\nWould you like to work in a museum one day？\nある日博物館で働きたいですか？\n"
-  },
-  {
-    "title": "11. Cooking with Family",
-    "content": "My mum taught me how to cook okonomiyaki last Sunday.\n母は先週の日曜日にお好み焼きの作り方を教えてくれました.\n\nWe went to the supermarket to buy ingredients together.\n私たちは一緒に材料を買うためにスーパーに行きました.\n\nI chose vegetables and my mum bought the special sauce.\n私は野菜を選び、母は特製ソースを買いました.\n\nFirst we cut the vegetables into small pieces carefully.\nまず、私たちは野菜を小片に注意深く切りました.\n\nThen we mixed the batter and vegetables in a big bowl.\nそれから、私たちは大きなボウルで生地と野菜を混ぜました.\n\nMy dad helped us cook the okonomiyaki on the hot plate.\n父がホットプレートでお好み焼きを料理するのを助けてくれました.\n\nThe okonomiyaki smelled delicious while it was cooking.\nお好み焼きは料理されている間、美味しそうな匂いがしました.\n\nWe ate the okonomiyaki together with my family soon.\n私たちはすぐに家族と一緒にお好み焼きを食べました.\n\nMy little brother ate two pieces because he loved it.\n弟は気に入ったので二枚食べました.\n\nI want to cook dinner for my family again soon.\nすぐにまた家族のために夕食を料理したいです.\n\nCan you cook any Japanese food by yourself？\n一人で日本料理を料理できますか？\n\nWhat did you learn to cook from your parents？\n両親から料理することを何を学びましたか？\n\nShould children learn to cook when they are young？\n子供たちは若いうちから料理を学ぶべきですか？\n\nWhat is yourfavorite Japanese dish to eat？\n食べる一番好きな日本料理は何ですか？\n\nDo you like helping with cooking at home？\n家で料理を手伝うのは好きですか？\n\nHow often does your family cook together？\n家族はどのくらい頻繁に一緒に料理しますか？\n\nWhat food do you want to learn to cook next？\n次に料理を学びたい食べ物は何ですか？\n\nIs cooking easy or difficult for you？\n料理はあなたにとって簡単ですか、それとも難しいですか？\n\nWho is the best cook in your family？\n家族で一番料理が得意な人は誰ですか？\n\nWhat would you cook for your friends at a party？\nパーティーで友達に何を料理しますか？\n"
-  },
-  {
-    "title": "12. Sports Day Practice",
-    "content": "My school will hold the spring sports day next month.\n私の学校は来月春の運動会を開催予定です.\n\nOur class is practicing the relay race every day.\n私のクラスは毎日リレーレースを練習しています.\n\nMy teacher chose me for the running team this time.\n今回は先生が走るチームに私を選びました.\n\nI practice running in the park after school every day.\n私は毎日放課後に公園で走る練習をしています.\n\nMy friends come to run with me sometimes.\n友達たちは時々一緒に走りに来てくれます.\n\nWe run around the park twice to build stamina.\n私たちはスタミナを構築するために公園を2周走ります.\n\nThe relay race will be exciting to watch with everyone.\nリレーレースはみんなで観るのがエキサイティングでしょう.\n\nMy classmates cheer for me when I am tired.\n私が疲れたとき、同級生が私の応援をしてくれます.\n\nI want to run fast and make my class proud.\n速く走り、クラスを誇りに思いたいです.\n\nThe sports day will be a fun day for everyone.\n運動会はみんなにとって楽しい日になるでしょう.\n\nDo you like running races or walking more？\nレースと歩く、どちらが好きですか？\n\nHow often do you exercise or play sports？\n運動やスポーツをどのくらい頻繁にしますか？\n\nShould students participate in school sports activities？\n学生は学校スポーツ活動に参加すべきですか？\n\nWhat is yourfavorite sport to watch？\n観戦する一番好きなスポーツは何ですか？\n\nHow do you feel when you exercise with friends？\n友達と運動するときどう感じますか？\n\nWhat sports day events do you like the best？\n運動会のイベントで何が一番好きですか？\n\nIs winning important or is participating more important？\n勝つこと重要ですか、それとも参加することがより重要ですか？\n\nWho encourages you when you feel tired？\n疲れたとき誰があなたを励ましてくれますか？\n\nWould you like to try a new sport this year？\n今年新しいスポーツに挑戦したいですか？\n\nWhat makes a sports day special for students？\n運動会を学生にとって特別にするものは何ですか？\n"
-  },
-  {
-    "title": "13. First Day at New School",
-    "content": "🏫 I went to my new school for the first day last week.\n私は先週初めて新しい学校に行きました。\n\n🏢 My new classroom was bigger than my old one.\n新しい教室は前より大きかったです。\n\n👥 I met many new friends who were very kind.\nとても優しい新しい友達にたくさん会いました。\n\n👨‍🏫 The teacher was stricter than my previous teacher.\n先生は前の先生より厳しかったです。\n\n🚶‍♀️ I walked to school with my neighbour who lives nearby.\n近くに済んでいる隣人と一緒に学校まで歩きました。\n\n🎉 We will have a school festival next month.\n来月学園祭があります.\n\n⚽️ I will join the soccer team after school.\n放課後サッカーチームに入ります.\n\n🏫 My new school has more students than my old school.\n新しい学校は前の学校より生徒が多いです.\n\n📖 The library was quieter than I expected.\n図書館は思っていたより静かかったです.\n\n📝 I will study harder this year than last year.\n今年は去年よりもっと勉強します.\n\nHow did you feel on your first day of school?\n入学初日はどんな気持ちでしたか？\n\nWhat was your classroom like?\n教室はどんな感じでしたか？\n\nDid you make new friends quickly?\nすぐに新しい友達を作りましたか？\n\nIs your school bigger now than before?\n学校は前より大きくなりましたか？\n\nWill you join any clubs this year?\n今年何か部活動に入りますか？\n\nWhat subject will you study more?\nどの科目をもっと勉強しますか？\n\nWho was the kindest person you met?\n会った中で一番優しかった人は誰ですか？\n\nWhere did you sit in your new classroom?\n新しい教室のどこに座りましたか？\n\nHow will you get to school every day?\n毎日どうやって学校に通いますか？\n\nWhat will you do after school today?\n今日放課後何をしますか？\n"
-  },
-  {
-    "title": "14. Memories of Last Year",
-    "content": "📅 Last year I was in a different class.\n去年は違うクラスにいました.\n\n👫 My best friend sat next to me every day.\n親友が毎日隣に座っていました.\n\n⚽️ We played soccer during recess every afternoon.\n毎日午後休み時間にサッカーをしていました.\n\n🚌 The school trip was the most exciting event.\n学校の遠足が最も楽しい行事でした。\n\n📖 I learned many new things in science class.\n理科の授業でたくさんの新しいことを学びました.\n\n👨‍🏫 My teacher helped me with my homework.\n先生は宿題を手伝ってくれました.\n\n🏃‍♂️ We had a sports day in autumn last year.\n去年の秋に運動会がありました.\n\n📏 I was shorter than most of my classmates.\n私はクラスメートのほとんどより背が低かったです。\n\n🍛 The school lunch was delicious every day.\n学校給食は毎日美味しかったです.\n\n👨‍🏫 I will never forget myfavorite teacher.\n大好きな先生を絶対に忘れません。\n\nWhat was yourfavorite subject last year?\n去年の一番好きな科目は何でしたか？\n\nWho was your best friend last year?\n去年の一番の友達 は誰でしたか？\n\nDid you enjoy your school trip?\n学校の遠足は楽しかったですか？\n\nWhat did you learn in science class?\n理科で何を学びましたか？\n\nHow was your school lunch?\n学校の給食はどうでしたか？\n\nWhere did you go on your school trip?\n学校の遠足でどこに行きましたか？\n\nWill you see your old friends this year?\n今年も昔の友達に会いますか？\n\nWhat was the most fun thing you did?\n一番楽しかったことは何でしたか？\n\nHow did you feel on the last day of school?\n学校の最終日はどんな気持ちでしたか？\n\nWhat will you remember most about last year?\n去年のことで一番覚えていることは何ですか？\n"
-  },
-  {
-    "title": "15. Spring Club Activities",
-    "content": "🎨 I joined the art club this spring.\n今春アートクラブに入りました。\n\n🎨 The club room is cleaner than last year.\nクラブの部屋は去年よりきれいです。\n\n🌸 We will paint pictures of cherry blossoms.\n桜の絵を描きます。\n\n🎵 My friend will join the music club instead.\n私の友達は代わりに音楽クラブに入ります。\n\n👨‍🎨 The art teacher is more experienced than before.\n美術の先生は前よりもっと経験があります。\n\n🖼️ We will have an exhibition next month.\n来月展示会があります.\n\n🖍️ I bought new paints which are better than my old ones.\n前より良い新しい絵の具を買いました.\n\n🎨 The club meets three times a week.\nクラブは週に3回集まります.\n\n📚 Everyone works harder this year.\n今年は皆もっと一生懸命頑張っています.\n\n🖼️ I will practise drawing every day.\n毎日絵の練習をします。\n\nWhat club did you join this year?\n今年どのクラブに入りましたか？\n\nWhy did you choose that club?\nなぜそのクラブを選びましたか？\n\nWhen does your club meet?\nクラブはいつ集まりますか？\n\nWho is your club teacher?\nクラブの先生は誰ですか？\n\nWhat will you make in the club?\nクラブで何を作りますか？\n\nHow often do you practise?\nどのくらい練習しますか？\n\nIs your club popular this year?\n今年あなたのクラブは人気がありますか？\n\nWhere will you show your work?\nどこで作品を発表しますか？\n\nWill you invite your parents to the exhibition?\n保護者の方を展示会に招待しますか？\n\nWhat is more difficult, drawing or painting?\n絵を描くことと絵の具を塗ること、どちらが難しいですか？\n"
-  },
-  {
-    "title": "16. Goals for This Year",
-    "content": "📖 I will study English harder this year.\n今年はもっと英語を勉強します。\n\n🎯 My goal is to get better grades than last year.\n目標は去年より良い成績を取ることです。\n\n📚 I will read one English book every month.\n毎月1冊英語の本を読みます。\n\n👫 My friend will help me with my studies.\n友達が勉強を手伝ってくれます.\n\n⏰ I will wake up earlier every morning.\n毎朝もっと早く起きます。\n\n📘 The new textbook will be more challenging.\n新しい教科書はもっと難しいでしょう.\n\n📖 I will join a study group after school.\n放課後勉強グループに入ります。\n\n👨‍🏫 My teacher will give us more homework.\n先生はもっと宿題を出すでしょう。\n\n🗣️ I will practise speaking English every day.\n毎日英語を話す練習をします。\n\n📊 At the end of the year, I will be more confident.\n年末にはもっと自信がついているでしょう。\n\nWhat is your goal for this year?\n今年のあなたの目標は何ですか？\n\nHow will you achieve your goal?\nどうやって目標を達成しますか？\n\nWho will help you with your studies?\n誰が勉強を手伝ってくれますか？\n\nWhen will you start studying?\nいつ勉強を始めますか？\n\nWhere will you study every day?\n毎日どこで勉強しますか？\n\nWhy is this goal important to you?\nなぜこの目標はあなたにとって重要ですか？\n\nWill you study with friends or alone?\n友達と勉強しますか、それとも一人で勉強しますか？\n\nWhat subject will you focus on most?\nどの科目に一番力を入れますか？\n\nHow will you know if you succeed?\nどうやって成功したかわかりますか？\n\nWhat will you do if you reach your goal?\n目標を達成したら何をしますか？\n"
-  },
-  {
-    "title": "17. Golden Week Travels",
-    "content": "🚅 I travelled to Kyoto during Golden Week holiday last week.\n先週のゴールデンウィーク休暇中に京都へ旅行しました。\n\n🏯 We visited many ancient temples in the historic city center.\n歴史的な市街中心で多くの古代の寺社を訪れました。\n\n🏨 The hotel where we stayed was more comfortable than I expected.\n私たちが宿泊したホテルは私が期待したより快適でした。\n\n📸 I took many photos of beautiful cherry blossoms everywhere.\nどこにでもある美しい桜の写真をたくさん撮りました。\n\n🍜 We ate delicious Japanese food at a famous local restaurant.\n有名な地元のレストランで美味しい日本の食べ物を食べました。\n\n🌟 The weather was Better than I hoped for outdoor activities.\n屋外活動のために私はより天気が良いことを望みました。\n\n🎁 I bought some traditional souvenirs for my family members.\n私の家族のためにいくつかの伝統的なお土産を買いました。\n\n✈️ Next year I will visit another beautiful place in Japan.\n来年私は日本のもう一つの美しい場所を訪れるつもりです。\n\n💰 The trip was cheaper than similar tours I researched before.\n以前研究した類似のツアーより旅行は安かったです。\n\n😄 I will remember this wonderful trip for many years to come.\nこの素晴らしい旅行を何年も覚えています。\n\n❓ Where did you travel during the most recent Golden Week？\n最も最近のゴールデンウィーク中にどこへ旅行しましたか？\n\n🏯 Why did you choose that particular destination for your holiday？\nなぜあなたの休暇のためにその特定の目的地を選びましたか？\n\n📸 How many photos did you take during your spring travels？\n春の旅行中にどのくらいの多くの写真を撮りましたか？\n\n🍜 Which was the most delicious food you ate during your trip？\n旅行中に食べた最も美味しい食べ物はどれでしたか？\n\n🌟 How did the weather compare with your expectations？\n天気はあなたの期待とどのように比較しましたか？\n\n🎁 What souvenirs did you buy for your friends and family？\n友達と家族のためにどのようなお土産を買いましたか？\n\n✈️ Where will you travel for your next holiday adventure？\n次の休暇の冒険のためにどこへ旅行しますか？\n\n💰 Was your recent trip more expensive or cheaper than you planned？\n最近の旅行はあなたが計画したより高価でしたか、それとも安かったですか？\n\n😄 What made your holiday experience memorable and special？\nあなたの休暇体験を記憶に残る特別なものにしたのは何でしたか？\n\n🏨 What do you look for when choosing accommodation for trips？\n旅行のために宿泊施設を選ぶ際に何を探しますか？"
-  },
-  {
-    "title": "18. Spring Sports Day",
-    "content": "🏃 I participated in my university sports festival last Saturday.\n先週の土曜日に私の大学のスポーツ祭に参加しました。\n\n🏆 My team won first place in the relay race competition.\n私のチームはリレー競技で一位を獲得しました。\n\n👫 We practiced hard for three weeks before the big event.\n大きなイベントの前に3週間一生懸命練習しました。\n\n🎉 The atmosphere became more exciting as the competition progressed.\n競技が進むにつれて雰囲気はよりエキサイティングになりました。\n\n☀️ The sun was hotter than I expected during the afternoon event.\n午後のイベント中の太陽は私が期待したより暑かったです。\n\n💧 I drank more water than usual because of the warm weather.\n暖かい天気のために普段より多くの水を飲みました。\n\n🎵 The music played loudly and added energy to the event.\n音楽は大きく演奏され、イベントにエネルギーを加えました。\n\n🏅 My best friend ran faster than anyone else in the marathon.\n親友はマラソンで誰よりも速く走りました。\n\n😊 I will join more sports clubs next semester to stay fit.\nフィットネスを保つために来学期はもっと多くのスポーツクラブに参加します。\n\n🌟 Many students cheered more enthusiastically than previous years.\n多くの学生は以前の年より熱心に応援しました。\n\n❓ What sports did you participate in during the school sports day？\n学校のスポーツの日にどのようなスポーツに参加しましたか？\n\n🏆 How did your team perform in the various competitions？\nあなたのチームは様々な競技でどのようにパフォーマンスしましたか？\n\n🎉 What made the sports festival atmosphere special and exciting？\nスポーツ祭の雰囲気を特別でエキサイティングにしたのは何でしたか？\n\n☀️ How did the weather affect the outdoor sports activities？\n天気は屋外スポーツ活動にどのように影響しましたか？\n\n🎵 What role did music play in the sports event celebration？\n音楽はスポーツイベントの祝賀にどのような役割を果たしましたか？\n\n👫 How did team practice improve your performance on the day？\nチーム練習は当日のパフォーマンスをどのように改善しましたか？\n\n🏅 Who was the most impressive athlete you watched compete？\n競技を見た最も印象的なアスリートは誰でしたか？\n\n😊 Will you participate in more physical activities in the future？\n将来はもっと多くの肉体的活動に参加しますか？\n\n🌟 How can schools encourage more students to join sports events？\n学校はどのようにもっと多くの学生にスポーツイベントに参加するよう励ますことができますか？\n\n💧 Why is staying hydrated important during outdoor activities？\nなぜ水分補給は屋外活動中に重要ですか？"
-  },
-  {
-    "title": "19. Spring Graduation",
-    "content": "🎓 My older sister graduated from university last month.\n姉は先月大学を卒業しました。\n\n👩‍🎓 She studied harder than most students in her class.\n彼女はクラスのほとりの学生より一生懸命勉強しました。\n\n📚 Her final exam results were better than she expected.\n彼女の期末試験の結果は彼女が期待したより良かったです。\n\n✨ The graduation ceremony was more touching than I imagined.\n卒業式は私が想像したより感動的でした。\n\n📸 We took more family photos than we usually do.\n私たちは普段するより多くの家族写真を撮りました。\n\n🎂 The celebration party was bigger and more joyful than usual.\n祝賀パーティーは普段より大きくより楽しかったです。\n\n👏 Many people congratulated her loudly and enthusiastically.\n多くの人は彼女を大声で熱心にお祝いしました。\n\n🙏 She thanked everyone who helped her during her studies.\n彼女は勉強中に彼女を助けてくれた全員に感員に感謝しました。\n\n💼 She will start working at a famous company next month.\n彼女は来月有名な会社で働き始めます。\n\n🌟 This month was busier than any other month this year.\n今月は今年のどの他の月より忙しかったです。\n\n❓ When did you or someone close to you graduate recently？\n最近あなたまたはあなたの近い人たちはいつ卒業しましたか？\n\n📚 How did the graduate prepare for final exams successfully？\n卒業生はどのように期末試験に成功するよう準備しましたか？\n\n📸 Why are photos important graduation day keepsakes？\nなぜ写真は卒業日の記念品として重要ですか？\n\n🎂 How do families celebrate graduation differently in various cultures？\n家族は様々な文化で卒業をどのように異なって祝いますか？\n\n👏 What makes a graduation ceremony memorable for attendees？\n出席者のために卒業式を記憶に残るものにするのは何ですか？\n\n🙏 Who helped you most during your important study period？\n重要な勉強期間中に誰があなたを最も助けましたか？\n\n💼 What are your plans after finishing your current studies？\n現在の勉強を終えた後のあなたの計画は何ですか？\n\n🌟 How do graduation traditions vary between different countries？\n卒業の伝統は異なる国間でどのように変化しますか？\n\n🎓 What emotions do people usually feel on graduation day？\n人々は卒業の日に通常どのような感情を感じますか？\n\n✨ What advice would you give to students about to graduate？\n卒業しようとしている学生にどのようなアドバイスを与えますか？"
-  },
-  {
-    "title": "20. May School Club Activities",
-    "content": "🎭 I joined the drama club at school this spring season.\nこの春学期に学校の演劇部に参加しました。\n\n🗣️ The teacher spoke more clearly than any other teacher I met.\n会ったどの他の先生より先生はより明瞭に話しました。\n\n🎬 We practised our performance more than four hours every day.\n私たちは毎日4時間以上パフォーマンスの練習をしました。\n\n👥 The group dynamics became better as we worked together.\n一緒に働くにつれてグループ力学はより良くなりました。\n\n🌟 Our final performance was more successful than our first practice.\n私たちの最後のパフォーマンスは最初の練習より成功しました。\n\n🎭 The audience enjoyed our play more than we expected.\n観客は私たちが期待したより演劇を楽しみました。\n\n📖 I learned more about acting than I ever did before.\n以前より演劇について多くを学びました。\n\n🤝 Members supported each other more than in previous projects.\n以前のプロジェクトよりメンバーは互いをより支援しました.\n\n🎵 The background music sounded more beautiful than in rehearsals.\nバックグラウンドミュージックはリハーサルより美しく聞こえました.\n\n🎉 We will perform again at the summer school festival.\n夏の学校祭で再びパフォーマンスします.\n\n❓ What school clubs or activities did you join this spring？\nこの春にどのような学校のクラブまたは活動に参加しましたか？\n\n🗣️ How did the club leader or teacher help members improve？\nクラブリーダーまたは先生はメンバーを改善するのをどのように助けましたか？\n\n🎬 How often did your group practice for the final performance？\n最後のパフォーマンスのためにあなたのグループはどのくらい頻繁に練習しましたか？\n\n🌟 What made your final performance successful and memorable？\nあなたの最後のパフォーマンスを成功し記憶に残るものにしたのは何でしたか？\n\n🎭 How did the audience react to your school club performance？\n観客はあなたの学校クラブのパフォーマンスにどのように反応しましたか？\n\n🤝 Why is teamwork important in school club activities？\nなぜチームワークは学校クラブ活動で重要ですか？\n\n📖 What new skills did you develop through your club activities？\nクラブ活動を通じてどのような新しいスキルを開発しましたか？\n\n🎶 How does music enhance school performances and presentations？\n音楽は学校のパフォーマンスとプレゼンテーションをどのように向上させますか？\n\n🎉 What events are you looking forward to in the coming semester？\n来学期にどのようなイベントを楽しみにしていますか？\n\n👥 How can students balance club activities with academic studies？\n学生はクラブ活動と学業をどのようにバランスさせることができますか？"
-  },
-  {
-    "title": "21. Rainy Days at Home",
-    "content": "🌧️ It rained heavily all day yesterday during the rainy season.\n昨日は梅雨中に一日中激しく雨が降りました。\n\n🏠 I stayed inside my house because of the bad weather.\n悪い天気のために私の家の中にいました。\n\n📺 I watched more films than I usually watch on weekends.\n週末に普段見るより多くの映画を見ました。\n\n♫ I listened to myfavorite music playlist for several hours.\nお気に入りの音楽プレイリストを数時間聴きました。\n\n☕ I drank more hot tea than coffee during the afternoon.\n午後にコーヒーより多くの熱いお茶を飲みました.\n\n📚 I finished reading a novel that was better than I expected.\n私が期待したより良かった小説を読み終えました.\n\n🍳 I cooked more meals at home than I ate at restaurants.\nレストランで食べるより家で多くの食事を料理しました.\n\n🌙 The rainy night was quieter than normal days in my neighborhood.\n雨の夜は近所の普通の日より静かでした.\n\n😌 I felt more relaxed than I felt during busy weekdays.\n忙しい平日に感じるよりリラックスしました.\n\n☀️ Tomorrow will be sunny according to the weather forecast.\n天気予報によると明日は晴れるでしょう.\n\n❓ What indoor activities do you enjoy most on rainy days？\n雨の日にどのような屋内活動を最も楽しみますか？\n\n📺 How many hours did you spend watching television yesterday？\n昨日どのくらいの時間テレビを見ましたか？\n\n📚 What book did you read recently that you really enjoyed？\n最近本当に楽しんだ本はどれでしたか？\n\n🍳 Why do people prefer home-cooked food in wet weather？\nなぜ人々は湿った天気でホームクッキングされた食べ物を好みますか？\n\n♫ How does music affect your mood during gloomy weather？\n音楽は陰鬱な天気中にあなたの気分にどのように影響を与えますか？\n\n🌙 What makes rainy nights feel different from other nights？\nなぜ雨の夜は他の夜とは異なって感じられますか？\n\n🌦️ How does the weather forecast help your daily planning？\n天気予報はどのようにあなたの日々の計画を助けますか？\n\n☀️ What activities will you do when the weather becomes sunny？\n天気が晴れたときにどのような活動をしますか？\n\n😌 Why do some people feel more relaxed during rainy weather？\nなぜ一部の人々は雨の天気中にリラックスを感じますか？\n\n🏠 What makes a home feel cosy during wet and cold weather？\n湿った寒い天気中に家を居心地よくするのは何ですか？"
-  },
-  {
-    "title": "22. Indoor Sports and Exercise",
-    "content": "🏋️ I exercised at the gym more frequently this rainy season.\nこの梅雨はジムでより頻繁に運動しました.\n\n🏊 I swam more laps than I normally swim in the outdoor pool.\n屋外プールで通常泳ぐより多くのラップを泳ぎました.\n\n🧘 The yoga instructor taught us more poses than last month.\nヨガのインストラクターは先月より多くのポーズを教えてくれました.\n\n🥊 I bought new sports equipment that was better than my old ones.\n古いものより良かった新しいスポーツ装備を買いました.\n\n💪 I became stronger than I was before I started training.\nトレーニングを開始する前に比べてより強くなりました.\n\n🏓 The indoor tennis court was busier than the outdoor courts.\n屋内テニスコートは屋外のコートより混雑していました.\n\n🏃 I ran fewer kilometres than I usually run in the park.\n公園で通常走るより少ない距離を走りました.\n\n💧 I drank more water during my indoor workout sessions.\n屋内ワークアウトセッション中に多くの水を飲みました.\n\n🎵 The music in the gym was louder than in my home gym.\nジムの音楽は私の家庭のジムより大きかったです.\n\n⏰ I will continue my indoor exercise routine next week.\n来週も屋内運動ルーチンを継続します.\n\n❓ How often do you exercise indoors during the rainy season？\n梅雨の期間中にどのくらい頻繁に屋内で運動しますか？\n\n🏊 What indoor sports facilities do you have in your local area？\nあなたの地域にはどのような屋内スポーツ施設がありますか？\n\n🧘 What are the health benefits of practising yoga regularly？\n定期的にヨガを練習することの健康上の利点は何ですか？\n\n🏓 Why have indoor sports become more popular in recent years？\nなぜ屋内スポーツは近年ますます人気になってきましたか？\n\n💪 How does regular exercise improve your daily energy levels？\n定期的な運動はどのようにあなたの日々のエネルギーレベルを向上させますか？\n\n💧 Why is staying hydrated important during exercise sessions？\nなぜ運動セッション中に水分補給は重要ですか？\n\n🏋️ How can people maintain fitness when outdoor activities are limited？\n屋外活動が制限されたときどのようにフィットネスを維持できますか？\n\n🎶 What type of music motivates you during your workouts？\nあなたのワークアウト中にどのようなタイプの音楽があなたを動機付けますか？\n\n⏰ How does consistent exercise routine benefit long-term health？\n一貫した運動ルーチンは長期的な健康をどのように有益にしますか？\n\n🥊 What sports equipment do you think is useful for home workouts？\n家庭のワークアウトに役立つと考えるスポーツ装備は何ですか？"
-  },
-  {
-    "title": "23. Museums and Galleries",
-    "content": "🖼️ I visited the art museum last Sunday afternoon with friends.\n先週の日曜日の午後に友達と美術館を訪れました.\n\n🎨 The paintings were more beautiful than I saw in photographs.\n写真で見たより絵画はより美しかったです.\n\n📖 I learned more about art history than I knew before.\n以前知っていたより美術史について多くを学びました.\n\n👀 The exhibition hall was larger than the previous art gallery.\n以前の美術館より展示ホールは大きかったです.\n\n🎭 The theater performance was longer than I expected it to be.\n劇場のパフォーマンスは私が予期したより長かったです.\n\n🎫 The tickets were cheaper than museum tickets in the city.\n市内の美術館のチケットよりチケットは安かったです.\n\n📱 I downloaded an audio guide that explained the exhibits more clearly.\n展示をより明確に説明したオーディオガイドをダウンロードしました.\n\n👥 More visitors came to the museum than I thought would visit.\n訪れると思ったより多くの観光客が美術館に来ました.\n\n✨ The special exhibition was more impressive than the permanent collection.\n常設コレクションより特別な展示はより印象的でした.\n\n📚 I will read more books about artists I discovered today.\n今日発見したアーティストについての本をもっと読みます.\n\n❓ What was the last museum or art gallery you visited？\n最後に訪れた博物館または美術館は何でしたか？\n\n🎨 Which artist's work impressed you the most recently？\n最近どの芸術家の作品があなたに最も印象を与えましたか？\n\n📖 How do audio guides enhance museum visitor experiences？\nオーディオガイドは博物館の訪問者の体験をどのように向上させますか？\n\n🎭 How does live theater compare with film for entertainment？\nエンターテイメントのために生の劇場は映画とどのように比較されますか？\n\n📱 How has technology changed the way we experience museums？\nテクノロジーは博物館を体験する方法をどのように変えましたか？\n\n👥 Why do museums attract visitors from different age groups？\nなぜ博物館は異なる年齢層からの訪問者を惹きつけますか？\n\n✨ What makes special exhibitions more attractive than regular displays？\nなぜ特別な展示は定期的なディスプレイより魅力的ですか？\n\n📚 How can reading about art enhance your appreciation of artworks？\n芸術について読むことは芸術作品のあなたの感謝をどのように高めることができますか？\n\n🎫 Why is free admission to museums important for the public？\nなぜ博物館の無料入場は公衆にとって重要ですか？\n\n🖼️ What role do museums play in preserving cultural heritage？\n博物館は文化遺産を保存するのにどのような役割を果たしますか？"
-  },
-  {
-    "title": "24. Summer Preparation",
-    "content": "☀️ I will buy more sun protection products for the coming summer.\n来る夏のために多くの日焼け止め製品を購入します.\n\n🍉 Watermelon tasted sweeter this year than last summer's watermelons.\n今年のスイカは昨夏のスイカより甘く味わいました.\n\n🏖️ I will visit a beach that has clearer water than my local beach.\n私の地元のビーチよりより透明な水があるビーチを訪れます.\n\n🎫 I booked tickets earlier than my friends for summer attractions.\n夏のアトラクションのために友達より早くチケットを予約しました.\n\n🏊 I will swim more frequently than I did last summer season.\n昨夏シーズンより頻繁に泳ぎます.\n\n🍦 Ice cream shops sold more flavours than usual this early summer.\n今年の初夏にアイスクリーム店は通常より多くのフレーバーを販売しました.\n\n🌴 I researched tropical holidays that are more exciting than city breaks.\n都市の休暇よりエキサイティングな熱帯の休暇を研究しました.\n\n⛺ My friends planned a longer camping trip than our previous trips.\n以前の旅行より友人はより長いキャンプ旅行を計画しました.\n\n🎆 I will watch more fireworks displays than I did last year.\n去年より多くの花火大会を見ます.\n\n🌞 The summer weather will probably be hotter than last summer's weather.\n夏の天気は昨夏の天気よりおそらく暑くなるでしょう.\n\n❓ How do you prepare your skin for summer sun exposure？\nあなたは夏の太陽の露出に皮膚をどのように準備しますか？\n\n🍉 What summer fruits are you most excited to eat this season？\nこのシーズンに食べるのが最も楽しみな夏果物は何ですか？\n\n🏖️ What factors are important when choosing a beach destination？\nビーチの目的地を選ぶ際にどのような要因が重要ですか？\n\n🎫 Why is advance booking important for popular summer attractions？\nなぜ人気のある夏のアトラクションの事前予約は重要ですか？\n\n⛺ What camping equipment is essential for a safe outdoor trip？\n安全な屋外旅行のためにどのキャンプ装備が不可欠ですか？\n\n🌴 How do you decide between beach holidays and city breaks for summer？\n夏のためにビーチの休暇と都市の休暇の間でどのように決定しますか？\n\n🎶 What music do you enjoy listening to during summer time？\n夏の時間中に聴くのが好きな音楽は何ですか？\n\n🎆 How do fireworks events bring families and friends together？\n花火イベントはどのように家族と友達を一緒にしますか？\n\n🏊 Why do many people choose swimming as their main summer activity？\nなぜ多くの人々は主要な夏の活動として水泳を選びますか？\n\n🌞 How has climate affected how people spend their summer holidays recently？\n気候は人々が最近夏の休暇を過ごす方法にどのように影響しましたか？"
-  },
-  {
-    "title": "25. Summer Holiday (Past Simple / Future / Comparatives)",
-    "content": "🌅 Last summer, we visited a beautiful beach in southern Japan.\n昨夏、私たちは南日本で美しいビーチを訪れました.\n✈️ We flew from Osaka and the journey took about two hours.\n私たちは大阪から飛び、旅は約2時間かかりました.\n🏨 The hotel was bigger and more comfortable than our hotel last year.\nホテルは昨年のホテルより大きく、より快適でした.\n🌴 The weather was hotter than we expected but we enjoyed it.\n天気は私たちが予想したよりも暑かったですが、楽しみました.\n📸 I took many photos of the beautiful blue ocean.\n美しい青い海の多くの写真を撮りました.\n🍦 If it rains tomorrow, we will stay in the hotel room.\n明日雨が降ったら、私たちはホテルの部屋にとどまります.\n🎫 We bought tickets for a boat trip around the islands.\n島々一周のボートツアーのチケットを買いました.\n🥾 The mountain trek was more difficult than I thought.\n山岳トレッキングは私が思ったよりも難しかった.\n🗺️ We used a map to find our way around the town.\n町の周りの道を見つけるために地図を使いました.\n😊 It was the most relaxing holiday we ever had.\nそれは私たちがかつて持った中最もリラックスしたホリデーでした.\n🌅 Do you prefer summers at the beach or in the mountains？\n夏はビーチと山のどちらを好みますか？\n✈️ Is travelling by plane more exciting than travelling by train？\n飛行機での旅行は電車での旅行より刺激的ですか？\n🏨 Is a hotel stay more expensive than staying with relatives？\nホテル滞在は親戚と泊まるより高価ですか？\n🌴 Was last summer hotter or cooler than this summer？\n昨夏は今日の夏より暑かったですか、それとも涼しかったですか？\n📸 Do you take better photos with your phone or a camera？\n電話とカメラのどちらでより良い写真を撮りますか？\n🍦 Will you travel abroad or stay in your country next year？\n来年、あなたは海外へ旅行しますか、それとも自分の国にとどまりますか？\n🎫 Are guided tours better than exploring a place alone？\nガイド付きツアーは一人で場所を探索するより良いですか？\n🥾 Is hiking more tiring than swimming？\nハイキングは水泳より疲れますか？\n🗺️ Do you prefer using a paper map or a GPS app？\n紙の地図とGPSアプリのどちらを好みますか？\n😊 What was your best holiday and why？\nあなたの最高のホリデーは何でしたか、そしてなぜですか？"
-  },
-  {
-    "title": "26. Beach Day (Past Simple / Future / Comparatives)",
-    "content": "🌊 Yesterday, we went to a popular beach near our city.\n昨日、私たちは私たちの都市の近くの人気のあるビーチに行きました.\n🏖️ Many families arrived early to find a good place.\n良い場所を見つけるために多くの家族が早く到着しました.\n☀️ The sun was brighter than last Saturday but the wind was stronger.\n太陽は先週の土曜日より明るかったですが、風はより強かった.\n🏊 My brother swam farther than me in the sea.\n私の兄は海の中で私より遠く泳ぎました.\n🍦 My sister bought an ice cream which was cold and sweet.\n私の妹は冷たくて甘いアイスクリームを買いました.\n🚗 We parked the car in a large car park near the beach.\n私たちはビーチの近くの大きな駐車場に車を駐車しました.\n⛱️ We found a spot under a big umbrella with good shade.\n良い日陰のある大きな傘の下の場所を見つけました.\n🥪 My mother made delicious sandwiches for our lunch.\n私たちは昼食のために美味しいサンドイッチを作りました.\n🌅 We left the beach at sunset after a wonderful day.\n素晴らしい一日の後、私たちは日没時にビーチを去りました.\n😊 It was the happiest day of my summer vacation.\nそれは私の夏休みの中で最も幸せな一日でした.\n🌊 Do you prefer quiet beaches or crowded beaches with many people？\n静かなビーチと多くの人がいる混雑したビーチのどちらを好みますか？\n🏖️ Is swimming in the salt water better than swimming in a pool？\n塩水での水泳はプールでの水泳より良いですか？\n☀️ Do you sunbathe more or less than your friends？\nあなたは友人より多く日光浴をしますか、それともより少なくしますか？\n🏊 Is it safer to swim near a lifeguard or far away？\nライフガードの近くと遠くのどちらで泳ぐのがより安全ですか？\n🍦 Do you like chocolate ice cream or vanilla more？\nチョコレートアイスクリーム and バニラのどちらが好きですか？\n🚗 Is driving to the beach faster than taking a bus？\nビーチに車で行くのはバスに乗るより速いですか？\n⛱️ Do you prefer sunny weather or cloudy weather at the beach？\nビーチで晴れた天候と曇りの天候のどちらを好みますか？\n🥪 Is eating at the beach cheaper than eating at a restaurant？\nビーチで食べることはレストランで食べるより安いですか？\n🌅 Are sunrises or sunsets more beautiful at the beach？\nビーチでの日の出と日没のどちらがより美しいですか？\n😊 Was yesterday more fun or boring than today？\n昨日は今日より楽しかったですか、それとも退屈でしたか？"
-  },
-  {
-    "title": "27. Mountain Hiking (Past Simple / Future / Comparatives)",
-    "content": "🏔️ Last weekend, we climbed a small mountain in our area.\n先週末、私たちは私たちのエリアの小さな山を登りました.\n🥾 We wore strong shoes which were more comfortable than sneakers.\n私たちはスニーカーよりも快適な強い靴を履きました.\n🗺️ The path to the top was longer than I expected.\n山頂への道は私が予想したよりも長かった.\n⛈️ We checked the weather forecast and it was sunny.\n天気予報を確認しましたが、晴れでした.\n🏕️ Some people camped higher than we wanted to stay.\nある人々は私たちが泊まりたいと思ったより高い場所にキャンプしました.\n🌲 We saw beautiful trees which were taller than buildings.\n建物より背が高い美しい木を見ました.\n🎒 My bag was lighter than my friend's bag.\n私のバッグは友達のバッグより軽かった.\n🥶 At the top, the air was cooler and fresher than in the city.\n山頂では、空気は都市より涼しくて新鮮だった.\n🦅 We saw an eagle which flew higher than any bird I saw before.\n以前私が見たどの鳥より高く飛んだ鷲を見ました.\n🌟 The view from the top was the most beautiful picture I ever saw.\n山頂からの景色は私がこれまで見た最も美しい絵でした.\n🏔️ Do you prefer easy walks or difficult mountain climbs？\n簡単な散歩と困難な山登り、どちらを好みますか？\n🥾 Are good hiking shoes more important than a good map？\n良いハイキング靴は良い地図よりも重要ですか？\n🗺️ Is it easier to hike with a group or alone？\nグループ and 一人のどちらでハイキングする方が簡単ですか？\n⛈️ Is it safer to hike in summer or winter？\n夏 and 冬のどちらでハイキングするのがより安全ですか？\n🏕️ Do you prefer camping or staying in a hotel？\nキャンプ and ホテルに泊まるのどちらを好みますか？\n🌲 Are you more interested in plants or animals in nature？\n自然の中で植物 and 動物のどちらに興味がありますか？\n🎒 Is carrying a heavy bag tiring for you or not？\n重いバッグを運ぶことはあなたにとって疲れますか、それとも疲れませんか？\n🥶 Is winter hiking colder or more dangerous than summer hiking？\n冬のハイキングは夏のハイキングより寒いですか、それとも危険ですか？\n🦅 Have you ever seen wild animals during a hike？\nあなたはハイキング中に野生動物を見たことがありますか？\n🌟 What was the most impressive view you ever saw？\nあなたがこれまで見た最も印象的な景色は何でしたか？"
-  },
-  {
-    "title": "28. Summer Festival (Past Simple / Future / Comparatives)",
-    "content": "🎏 Last week, my town held a summer festival in the park.\n先週、私の町は公園で夏祭りを開催しました.\n🍜 Many people ate delicious food which was cheaper than restaurant food.\n多くの人々はレストランの食事より安い美味しい食べ物を食べました.\n🎶 The band played music which was louder and more exciting than usual.\n楽団はいつもより大きくてより刺激的な音楽を演奏しました.\n🎎 My friend danced in the main show and she was great.\n私の友人はメインショーで踊り、彼女は素晴らしかった.\n🏮 The lanterns looked prettier than last year's lanterns.\n灯籠は昨年の灯篭よりきれいに見えた.\n🚮 Everyone cleaned their rubbish before they left.\n去る前に全員が自分のゴミを掃除しました.\n🎫 The tickets for the main event sold out faster than last year.\nメインイベントのチケットは昨年より早く売り切れました.\n🎉 At the end, the fireworks were more beautiful than I imagined.\n最後に、花火は私が想像したよりも美しかった.\n📸 I took many pictures which were clearer than my old photos.\n私の古い写真よりもきれいな多くの写真を撮りました.\n😊 The festival was more popular than the spring festival.\n祭りは春の祭りより人気がありました.\n🎏 Do you prefer traditional festivals or modern music events？\n伝統的な祭りと現代的な音楽イベント、どちらを好みますか？\n🍜 Is festival food tastier than food at home？\n祭りの食べ物は家の食べ物より美味しいですか？\n🎶 Do you like loud music or soft music more？\n大きな音楽 and ソフトな音楽のどちらが好きですか？\n🎎 Is it more fun to watch dance performances or to dance yourself？\nダンスパフォーマンスを見るのが楽しいですか、それとも踊るのが楽しいですか？\n🏮 Do traditional decorations look better than modern ones？\n伝統的な装飾は現代的なものより良く見えますか？\n🚮 Should there be more rubbish bins at large festivals？\n大きな祭りにはもっとゴミ箱があるべきですか？\n🎫 Should festivals be free or should we pay to enter？\n祭りは無料であるべきですか、それとも入場料を払うべきですか？\n🎉 Do you prefer small local festivals or big city events？\n小さな地元の祭りと大きな都市のイベント、どちらを好みますか？\n📸 Are you happy with the photos you took at the festival？\n祭りで撮った写真は満足ですか？\n😊 Was this year's festival better than last year's festival？\n今年の祭りは昨年の祭りより良かったですか？"
-  },
-  {
-    "title": "29. Obon Holiday (Past Simple / Future / Comparatives)",
-    "content": "👻 Last Obon holiday, I visited my grandparents in the countryside.\n昨年の盆の休暇中、私は田舎の祖父母を訪ねました.\n🕯️ My family visited the family grave and cleaned it carefully.\n私の家族は家族のお墓を訪問し、慎重に掃除しました.\n🎶 We went to a temple which was larger than our local temple.\n私たちは地元のお寺より大きいお寺に行きました.\n🍚 My grandmother cooked special food which tasted better than usual.\n私の祖母はいつもより美味しかった特別な食べ物を料理しました.\n🚢 We watched the lanterns which floated on the river.\n私たちは川で浮かぶ灯籠を見ました.\n🎭 I watched the traditional dance and I learned some steps.\n私は伝統的なダンスを見て、いくつかのステップを学びました.\n🏮 The lanterns in our garden were brighter than street lights.\n私たちの庭の灯籠は街灯より明るかった.\n🌙 Many people stayed awake later than usual.\n多くの人々がいつもより遅く起きていました.\n✨ The fireworks were more colorful than last year's fireworks.\n花火は昨年の花火よりもっとカラフルだった.\n💖 I felt more connected to my family than before.\n私は以前よりも家族とよりつながりを感じました.\n👻 Do you enjoy visiting family members during holidays？\n休暇中に家族を訪問することを楽しんでいますか？\n🕯️ Is traditional food more special than everyday food？\n伝統的な食べ物は日常の食べ物より特別ですか？\n🎶 Do you like traditional Japanese music or modern pop？\n伝統的な日本音楽 and 現代のポップのどちらが好きですか？\n🍚 Was the food your grandmother prepared tastier than restaurant food？\nあなたの祖母が準備した食べ物はレストランの食べ物より美味しかったですか？\n🚢 Is the lantern floating ceremony beautiful or wasteful？\n灯籠流し儀式は美しいですか、それとも無駄ですか？\n🎭 Have you ever tried traditional Japanese dancing？\nあなたは伝統的な日本のダンスを試したことがありますか？\n🏮 Do you think lanterns are more beautiful than electric lights？\nあなたは灯籠は電気の灯りより美しいと思いますか？\n🌙 Do you stay awake later during holidays than normal days？\n休日は普通の日より遅く起きていますか？\n✨ Are traditional festivals more boring than modern festivals？\n伝統的な祭りは現代的な祭りより退屈ですか？\n💖 Was last Obon longer or shorter than this Obon？\n昨年の盆は今年の盆より長かったですか、それとも短かったですか？"
-  },
-  {
-    "title": "30. Summer Fireworks (Past Simple / Future / Comparatives)",
-    "content": "🎆 Last Saturday, there was a big fireworks display in our city.\n先週の土曜日、私たちの都市で大きな花火大会がありました.\n💥 The noise was louder than thunder during the storm.\n騒音は嵐の最中の雷より大きかった.\n👶 Many children were more excited than their parents.\n多くの子供たちは親たちより興奮していた.\n🌃 We arrived earlier than other families to find a good spot.\n良い場所を見つけるために他の家族より早く到着しました.\n💔 My dog hid under the table because the sound was scary.\n音が怖かったので私の犬はテーブルの下に隠れました.\n🎇 The fireworks exploded higher than I have ever seen before.\n花火は以前私が見たことのない高さで爆発した.\n🎉 The music was louder and faster than the music at school.\n音楽は学校の音楽より大きく速かった.\n🏙️ We took a photo which was clearer than the photo last year.\n昨年の写真よりきれいな写真を撮りました.\n✨ Everyone felt happier after the beautiful display.\n美しいディスプレイの後、全員がより幸せに感じました.\n🎆 I think next year's fireworks will be even better.\n来年の花火はさらに良くなると思います.\n🎆 Do fireworks displays scare you or excite you？\n花火大会は怖いですか、それとも興奮させますか？\n💥 Is loud music better or worse than quiet music？\n大きな音楽 and 静かな音楽のどちらが良いですか？\n👶 Do you think children enjoy fireworks more than adults？\nあなたは子供は大人よりも花火を楽しむと思いますか？\n🌃 Is it better to arrive early or late to get good seats？\n良い席を得るために早く到着するのが良いですか、それとも遅くですか？\n💔 Are dogs more afraid of fireworks than cats？\n犬は猫よりも花火を恐れていますか？\n🎇 Do you prefer watching fireworks from close or far away？\n近く and 遠くからのどちらで花火を見るのを好みますか？\n🎉 Do you like fireworks with music or without music？\n音楽のある花火 and 音楽のない花火のどちらが好きですか？\n🏙️ Were you happy with the fireworks last year？\n昨年の花火に満足していましたか？\n✨ What was the most beautiful fireworks display you ever saw？\nあなたがこれまで見た最も美しい花火大会は何でしたか？\n🎆 Will you watch the fireworks display next year？\n来年の花火大会を見ますか？"
-  },
-  {
-    "title": "31. Late Summer Heat (Past Simple / Future / Comparatives)",
-    "content": "🌡️ Yesterday was hotter than any day last week.\n昨日は先週のどの日よりも暑かった.\n☀️ The temperature rose higher than I expected.\n温度は私が予想したよりも高くなった.\n🏙️ The city was more crowded than usual during the heatwave.\n猛暑の間、都市は通常より混雑していた.\n💧 I drank more water than my friends.\n私は友人よりも多くの水を飲んだ.\n🌲 The park was busier than the shopping center.\n公園はショッピングセンターより賑やかだった.\n💷 The electric bill was more expensive than last month's bill.\n電気代は先月の請求書より高かった.\n🚿 I took more showers than normal.\n私は普通よりも多くのシャワーを浴びた.\n🌅 The sun stayed in the sky longer than in winter.\n太陽は冬よりも空に長くとどまった.\n🍶 My sister bought more ice cream than me.\n私の妹は私よりも多くのアイスクリームを買った.\n🌡️ Do you prefer hot summer weather or cold winter weather？\n暑い夏の天候 and 寒い冬の天候のどちらを好みますか？\n☀️ Is getting up earlier easier in summer or winter？\n夏 and 冬のどちらで早起きするのが簡単ですか？\n🏙️ Is it more comfortable to live in a city or countryside during summer？\n夏の間に都市 and 田舎のどちらで住むのがより快適ですか？\n💧 Do you drink more when it is hot or when it is cold？\n暑い時 and 寒い時のどちらでより多く飲みますか？\n🌲 Do trees make the summer heat better or worse？\n木々は夏の暑さを良くしますか、それとも悪くしますか？\n💷 Is air conditioning worth the high electric cost in summer？\n夏の高い電気代はエアコンの価値がありますか？\n🚿 Do you prefer hot showers or cold showers in summer？\n夏に熱いシャワー and 冷たいシャワーのどちらを好みますか？\n🌅 Are summer days longer in your country or in other countries？\nあなたの国 and 他の国のどちらで夏の日がより長いですか？\n🍶 Do you eat more ice cream in summer or in winter？\n夏と冬のどちらでより多くのアイスクリームを食べますか？\n🌡️ What does the weather forecast say about tomorrow？\n天気予報は明日について何と言っていますか？"
-  },
-  {
-    "title": "32. Back to School (Past Simple / Future / Comparatives)",
-    "content": "📚 Last month was more relaxing than this month.\n先月は今月よりリラックスしていました.\n🎒 I bought new school clothes which looked better than my old clothes.\n旧服より良いように見える新しい学校の服を買いました.\n📏 My teacher was younger than last year's teacher.\n私の先生は昨年の先生より若かった.\n🚌 The school bus arrived later than usual today.\n今日、スクールバスはいつもより遅く到着しました.\n📖 I read more books over the vacation than last year.\n昨年より休暇中にもっと多くの本を読みました.\n🌟 My new classroom is bigger and brighter than my old classroom.\n私の新しい教室は旧教室より大きくて明るい.\n📝 My homework was easier today than yesterday.\n今日の宿題は昨日の宿題より簡単だった.\n🏫 The school looks newer after the summer painting.\n夏のペイントの後、学校はより新しいように見える.\n😊 I met more new friends than I expected.\n私が予想したよりも多くの新しい友人に会いました.\n🎨 I am more excited about art class this year than last year.\n今年は昨年よりもアートのクラスに興奮しています.\n📚 Do you feel happy or sad when summer ends？\n夏が終わるとき幸せですか、それとも悲しいですか？\n🎒 Is your new school bag bigger or smaller than last year's？\nあなたの新しいスクールバッグは昨年のものより大きいですか、それとも小さいですか？\n📏 Do you think your new teacher will be stricter or kinder？\nあなたは新しい先生はより厳しいと思いますか、それともより親切だと思いますか？\n🚌 Is walking to school faster than taking the bus？\n学校に歩くのはバスに乗るより速いですか？\n📖 Do you prefer reading story books or learning books？\n物語の本と学習の本のどちらを好みますか？\n🌟 Are you more excited or nervous about the new school year？\n新しい学年についてより興奮していますか、それともより緊張していますか？\n📝 Do you like homework or do you hate it？\nあなたは宿題が好きですか、それとも嫌いですか？\n🏫 Does your school need more facilities or is it perfect enough？\nあなたの学校はより多くの施設を必要としますか、それとも十分に完璧ですか？\n😊 Is it easier to make new friends this year or harder？\n今年新しい友達を作るのは簡単ですか、それとも難しいですか？\n🎨 What subject will be more interesting for you this year？\n今年何の教科がより興味深いでしょうか？"
-  },
-  {
-    "title": "33. Autumn Begins (Past simple, future will, comparatives)",
-    "content": "📸 The weather changed last week.\\n先週天気が変わりました。\\n🎮 I visited the beautiful park yesterday.\\n昨日美しい公園を訪れました。\\n🍕 This autumn is warmer than last year.\\n今年の秋は去年より暖かいです。\\n🏃 I will wear a warm coat tomorrow.\\n明日は暖かいコートを着ます。\\n🎵 The leaves fell from the trees.\\n葉は木から落ちました。\\n📸 Where did you go last weekend?\\n先週末はどこへ行きましたか？\\n🎮 Was the weather nice yesterday?\\n昨日の天気は良かったですか？\\n🍕 Is this autumn warmer than last year?\\n今年の秋は去年より暖かいですか？\\n🏃 What will you wear tomorrow?\\n明日は何を着ますか？\\n🎵 When did the leaves fall?\\n葉はいつ落ちましたか？"
-  },
-  {
-    "title": "34. Typhoon Season (Past simple, future will, comparatives)",
-    "content": "📸 The typhoon hit the coast last Tuesday.\\n台風は先週火曜日に海岸を襲いました。\\n🎮 Strong winds blew and rain fell heavily.\\n強風が吹いて激しく雨が降りました。\\n🍕 We stayed inside our safe house.\\n安全な家の中にいました。\\n🏃 I will prepare emergency supplies in future.\\n将来は緊急物資を準備します。\\n🎵 This typhoon was stronger than last year.\\nこの台風は去年のより強かったです。\\n📸 When did the typhoon hit?\\n台風はいつ襲いましたか？\\n🎮 Did you stay at home?\\n家にいましたか？\\n🍕 Was it very dangerous?\\nとても危険でしたか？\\n🏃 What will you do next time?\\n次回はどうしますか？\\n🎵 Was it stronger than usual?\\nいつもより強かったですか？"
-  },
-  {
-    "title": "35. Back to School (Past simple, future will, comparatives)",
-    "content": "📸 I started school last Monday.\\n先週月曜日に学校を始めました。\\n🎮 My new teacher was very kind.\\n新しい先生はとても親切でした。\\n🍕 My classroom is bigger than last year.\\n私の教室は去年より大きいです。\\n🏃 I will study hard this year.\\n今年は一生懸命勉強します。\\n🎵 All my friends are happy.\\nすべての友達は幸せです。\\n📸 When did school start?\\n学校はいつ始まりましたか？\\n🎮 Who is your new teacher?\\n新しい先生は誰ですか？\\n🍕 Is your classroom bigger now?\\n教室は大きくなりましたか？\\n🏃 What will you study this year?\\n今年は何を勉強しますか？\\n🎵 Are your friends happy?\\n友達は幸せですか？"
-  },
-  {
-    "title": "36. Harvest Festivals (Past simple, future will, comparatives)",
-    "content": "📸 We visited a harvest festival last weekend.\\n先週末に収穫祭を訪れました。\\n🎮 The festival was more exciting than I expected.\\n祭りは私が期待したよりもエキサイティングでした。\\n🍕 Farmers harvested crops very successfully.\\n農家は作物を非常に成功裏に収穫しました。\\n🏃 I will celebrate again next year.\\n来年もまた祝います。\\n🎵 People danced and sang together.\\n人々は一緒に踊って歌いました。\\n📸 When did you visit the festival?\\n祭りはいつ訪れましたか？\\n🎮 Was the festival exciting?\\n祭りはエキサイティングでしたか？\\n🍕 What did the farmers do?\\n農家は何をしましたか？\\n🏃 Will you celebrate next year?\\n来年も祝いますか？\\n🎵 Did people enjoy themselves?\\n人々は楽しんでいましたか？"
-  },
-  {
-    "title": "37. Halloween (Past simple, future will, comparatives)",
-    "content": "📸 I wore a Halloween costume last Saturday.\\n先週土曜日にハロウィンの衣装を着ました。\\n🎮 My friend dressed as a ghost.\\n友達は幽霊として仮装しました。\\n🍕 The candy was sweeter than normal candy.\\nお菓子は普通のお菓子より甘かったです。\\n🏃 I will help my next year.\\n来年は手伝います。\\n🎵 We visited many houses in theneighborhood.\\n近所の多くの家を訪問しました。\\n📸 What did you wear last year?\\n去年何を着ていましたか？\\n🎮 Was the party fun?\\nパーティーは楽しかったですか？\\n🍕 Did you eat sweet candy?\\n甘いお菓子を食べましたか？\\n🏃 What will you do next Halloween?\\n次のハロウィンは何をしますか？\\n🎵 How many houses did you visit?\\nどれくらいの家を訪問しましたか？"
-  },
-  {
-    "title": "38. Autumn Leaves (Koyo) (Past simple, future will, comparatives)",
-    "content": "📸 We went to the mountains last Sunday.\\n先週日曜日に山に行きました。\\n🎮 The colors were red, yellow and orange.\\n色は赤、黄色、オレンジでした。\\n🍕 The scenery was more beautiful than photos.\\n景色は写真よりも美しかったです。\\n🏃 I will take many pictures there again.\\nまたそこで多くの写真を撮るつもりです。\\n🎵 I took beautiful autumn photos.\\n美しい秋の写真を撮りました。\\n📸 Where did you go last week?\\n先週どこへ行きましたか？\\n🎮 What colors did you see?\\nどんな色が見えましたか？\\n🍕 Was it beautiful?\\n美しかったですか？\\n🏃 Will you go there again?\\nそこにもう一度行きますか？\\n🎵 Did you take good photos?\\n良い写真を撮りましたか？"
-  },
-  {
-    "title": "39. Moon Viewing (Past simple, future will, comparatives)",
-    "content": "📸 We watched the full moon last night.\\n昨夜満月を見ました。\\n🎮 The moon was brighter than usual.\\n月はいつもより明るかったです。\\n🏮 My mother made special sweet rice cakes.\\n母は特別な甘い餅を作りました。\\n🏃 I will enjoy this tradition every year.\\n毎年この伝統を楽しむつもりです。\\n🎵 The night was beautiful and very peaceful.\\n夜は美しくとても平和でした。\\n📸 When did you watch the moon?\\nいつ月を見ましたか？\\n🎮 Was the moon bright?\\n月は明るかったですか？\\n🏮 What did you eat?\\n何を食べましたか？\\n🏃 Will you watch it next month?\\n来月見ますか？\\n🎵 Was it peaceful?\\n平和でしたか？"
-  },
-  {
-    "title": "40. Cooler Temperatures (Past simple, future will, comparatives)",
-    "content": "📸 It became colder last week.\\n先週寒くなりました。\\n🎮 The wind was stronger than yesterday.\\n風は昨日より強かったです。\\n🌡️ I wore my winter coat this morning.\\n今朝冬のコートを着ました。\\n🏃 The temperature will be lower tomorrow.\\n明日の気温はもっと低くなるでしょう。\\n🎵 I drank hot tea in the evening.\\n夕方に熱いお茶を飲みました。\\n📸 When did it become cold?\\nいつ寒くなりましたか？\\n🎮 Was the wind strong?\\n風は強かったですか？\\n🌡️ What did you wear this morning?\\n今朝何を着ましたか？\\n🏃 What will the temperature be?\\n気温はどうなるでしょうか？\\n🎵 Will you drink tea today?\\n今日お茶を飲みますか？"
-  },
-  {
-    "title": "41. Fall Activities (Past + Future)",
-    "content": "🍁 Last week, I walked in the park and saw many colorful leaves .\n先週、私は公園を歩いて色とりどりの葉を見ました.\n🧥 Yesterday, I bought a warm coat for the coming winter .\n昨日、私は来る冬のために暖かいコートを買いました.\n☕ Tomorrow, I will drink hot chocolate at home with my family .\n明日、私は家で家族とホットチョコレートを飲みます.\n🐿️ This morning, I watched a squirrel collecting nuts in the garden .\n今朝、私はリスが庭で木の実を集めるのを見ました.\n🏫 Yesterday, we studied autumn vocabulary in English class .\n昨日、私たちは英語の授業で秋のボキャブラリーを勉強しました.\n📚 Tomorrow, I will read a book about nature in the evening .\n明日、私は夜に自然についての本を読みます.\n🍎 Last weekend, my family picked apples at a nearby farm .\n先週末、私の家族は近くの農場でリンゴを摘みました.\n🎵 Tonight, I will listen to calm music before I go to sleep .\n今夜、私は寝る前に穏やかな音楽を聴きます.\n🌳 Yesterday, I raked the fallen leaves in our yard .\n昨日、私は庭の落ち葉をかき集めました.\n🎨 Next week, I will paint a picture of autumn leaves .\n来週、私は秋の葉の絵を描きます.\n🍁 Did you enjoy autumn colors more last year or this year？\n去年の秋の色と今年の秋の色、どちらがもっと楽しめましたか？\n🧥 What did you buy for winter clothes this year？\n今年は冬の服のために何を買いましたか？\n☕ Will you drink hot drinks more often this winter？\n今年の冬は熱いドリンクをもっと頻繁に飲みますか？\n🐿️ Do you see more or fewer animals in the autumn？\n秋に動物をより多く見ますか、それともより少なく見ますか？\n🏫 Do you prefer studying indoors or outdoors in fall？\n秋に屋内で勉強するのと屋外で勉強するのとどちらを好みますか？\n📚 What kind of books do you like reading in the evening？\n夜にどんな種類の本を読むのが好きですか？\n🍎 Did you pick fruit or vegetables this fall？\n今年の秋に果物や野菜を摘みましたか？\n🎵 Will you listen to music or podcasts this evening？\n今夜に音楽を聴きますか、それともポッドキャストを聴きますか？\n🌳 Do you like raking leaves or consider it hard work？\n落ち葉をかき集めるのが好きですか、それとも大変な仕事だと思いますか？\n🎨 Will you create any art or crafts this month？\n今月に何か芸術や工芸を作りますか？"
-  },
-  {
-    "title": "42. Fall Food (Past + Future + Comparatives)",
-    "content": "🥧 Last Sunday, my grandmother baked a delicious apple pie.\n先週の日曜日、祖母は美味しいアップルパイを焼きました.\n🍲 Yesterday evening, we ate warm pumpkin soup for dinner.\n昨日の晩、夕食に温かいカボチャスープを食べました.\n🍎 This morning, I sliced an apple for my breakfast.\n今朝、私は朝食のためにリンゴを切り分けました.\n🥕 The carrot soup was tastier than the tomato soup last week .\n先週、ニンジンスープはトマスープより美味しかった.\n🥔 Yesterday, I cooked mashed potatoes more carefully than usual .\n昨日、私はいつもより注意深くマッシュポテトを料理した.\n🍰 Tomorrow, my mother will make a chocolate cake.\n明日、母はチョコレートケーキを作ります.\n🧈 The butter made the bread softer than without it.\nバターはパンをバターなしよりも柔らかくした.\n🍵 Next Friday, we will drink warm herbal tea after dinner .\n来週の金曜日、私たちは夕食の後に温かいハーブティーを飲みます.\n🍠 Last month, I ate more sweet potatoes than rice .\n先月、私は米よりもより多くのサツマイモを食べた.\n🥣 Tomorrow morning, I will eat hot oatmeal with honey.\n明日の朝、私は蜂蜜で温かいオートミールを食べます.\n🥧 Do you prefer pies or cakes in the autumn season？\n秋のシーズンにパイとケーキのどちらを好みますか？\n🍲 What warm foods will you eat this winter？\n今年の冬はどんな温かい食べ物を食べますか？\n🍎 Which is sweeter: apples or pears in your opinion？\nあなたの意見では、リンゴと梨のどちらがより甘いですか？\n🥕 Did you eat healthier last year or this winter？\n去年の冬と今年の冬、どちらがより健康的に食べましたか？\n🥔 Is cooking at home easier or harder than eating out？\n家で料理することは外食するのと比べて簡単ですか、それとも難しいですか？\n🍰 Will your family help cook during the holidays？\n祝季の間、家族は料理を手伝いますか？\n🧈 Is real butter or margarine tastier for you？\nあなたにとって本物のバターとマーガリンのどちらが美味しいですか？\n🍵 Do you drink coffee or tea more in cold weather？\n寒い天候でコーヒーとお茶のどちらをより多く飲みますか？\n🍠 Are root vegetables better or worse than summer vegetables？\n根菜は夏野菜より良いですか、それとも悪いですか？\n🥣 What will you have for breakfast tomorrow morning？\n明日の朝の朝食に何を食べますか？"
-  },
-  {
-    "title": "43. November Weather (Past + Future + Comparatives)",
-    "content": "☔ Last Tuesday, it rained all day in our city .\n先週の火曜日、私たちの都市では一日中雨が降った.\n🌡️ Yesterday afternoon, the temperature dropped to ten degrees .\n昨日の午後、気温は10度に低下した.\n🌫️ This morning, the fog was thicker than yesterday .\n今朝の霧は昨日より濃かった.\n❄️ Tomorrow morning, it will snow in the northern areas.\n明日の朝、北部では雪が降るでしょう.\n💨 The wind was stronger today than last week .\n今日の風は先週より強かった.\n🌨️ Next Monday, it will be colder than today .\n来週の月曜日は今日より寒くなるでしょう.\n☀️ Three days ago, the sun shone brightly most of the day .\n3日前、太陽は一日中明るく輝いていた.\n🌧️ Tomorrow evening, it will probably rain again .\n明日の夕方、おそらくまた雨が降るでしょう.\n🌡️ Today is colder than yesterday but warmer than tomorrow .\n今日は昨日より寒いが、明日より暖かい.\n🌨️ Last winter, we had more snow than this year .\n去年の冬、私たちは今年より多くの雪があった.\n☔ Do you like rainy days or sunny days better？\n雨の日と晴れの日、どちらが好きですか？\n🌡️ Will the temperature drop more this coming week？\n来週は気温がさらに下がりますか？\n🌫️ Is walking in fog more or less dangerous than in snow？\n霧の中を歩くことは雪の中を歩くことより危険ですか、それとも危険ではありませんか？\n❄️ Do you prefer snow or rain in the winter？\n冬に雪と雨のどちらを好みますか？\n💨 Is strong wind or heavy rain worse for travel？\n強い風と激しい雨、どちらが旅行にとって悪いですか？\n🌨️ Will your city have snow this winter？\nあなたの都市は今年の冬に雪が降りますか？\n☀️ Did you go outside more last summer or last winter？\n去年の夏と去年の冬、どちらにより外に出ましたか？\n🌧️ Is the weather in your country more predictable or unpredictable？\nあなたの国の天気は予測可能ですか、それとも予測不可能ですか？\n🌡️ What is the coldest temperature that you remember？\nあなたが覚えている最も寒い気温は何ですか？\n🌨️ Is this winter colder, warmer, or the same as last year？\n今年の冬は去年より寒いですか、暖かいですか、それとも同じですか？"
-  },
-  {
-    "title": "44. Fall Shopping (Past + Future + Comparatives)",
-    "content": "🛍️ Last Saturday, I shopped for winter clothes at the mall .\n先週土曜日、私はモールで冬の服を買い物した.\n🧤 Last week, I bought gloves that were cheaper than last year.\n先週、私は去年より安い手袋を買いました.\n💳 Yesterday, I paid with my credit card for the first time.\n昨日、私は初めてクレジットカードで支払いました.\n🏪 This morning, I visited the new store that opened downtown .\n今朝、私はダウンタウンにオープンした新しい店を訪ねました.\n👟 The sneakers were more expensive than I expected .\nスニーカーは私が予想したより高かった.\n🛒 Tomorrow, I will go grocery shopping for the week .\n明日、私は一週間のために食料品の買い物に行きます.\n💵 Yesterday, I saved more money than last week.\n昨日、私は先週より多くのお金を節約した.\n📊 Next month, I will receive my salary and pay bills.\n来月、私は給料を受け取り、請求書を支払います.\n🎁 The gift shop had more variety than the department store.\nギフトショップはデパートよりより多くの品揃えがあった.\n📦 Tomorrow afternoon, the delivery will arrive at my house .\n明日の午後、配送が私の家に到着します.\n🛍️ Do you prefer shopping online or in physical stores？\nオンラインショッピングと実店舗での買い物、どちらを好みますか？\n🧤 Is shopping alone more enjoyable than with friends？\n一人で買い物は友達と買い物するのと比較してより楽しいですか？\n💳 Do you use cash or credit cards more often for shopping？\n買い物により多く現金を使いますか、それともクレジットカードを使いますか？\n🏪 Are big stores or small local shops better for your community？\n大きい店と小さな地元の店、どちらがあなたの地域社会にとって良いですか？\n👟 Are quality clothes worth paying more for？\n品質の良い服はもっと払う価値がありますか？\n🛒 Will you buy more or fewer things next week？\n来週はより多くのものを買いますか、それともより少ないものを買いますか？\n💵 Do you save enough money, or do you spend too much？\n十分にお金を節約していますか、それとも使いすぎていますか？\n📊 What did you spend the most money on last month？\n先月、何に一番多くのお金を使いましたか？\n🎁 Is online shopping becoming more popular or staying the same？\nオンラインショッピングはより人気になっていますか、それとも同じままですか？\n📦 Do you prefer having things delivered or picking them up yourself？\n配達を好みますか、それとも自分でピックアップすることを好みますか？"
-  },
-  {
-    "title": "45. Winter Plans (Past + Future + Comparatives)",
-    "content": "❄️ Last winter, we visited a ski resort in the mountains .\n去年の冬、私たちは山にあるスキー場を訪ねた.\n☕ Yesterday evening, my family planned our holiday trip .\n昨日の晩、私の家族は祝日の旅行を計画した.\n🎫 Yesterday, I bought tickets for the winter festival train ride.\n昨日、私は冬の祭りの列車の切符を買った.\n🏂Tomorrow morning, I will go skiing with my friends.\n明日の朝、私は友達とスキーに行きます.\n🎬 Last Saturday, we watched a holiday movie at the cinema .\n先週土曜日、私たちは映画館で祝日の映画を見た.\n📸 Tomorrow, I will take photos of the snowy landscape .\n明日、私は雪景色の写真を撮ります.\n🌨️ Last week was colder than this week .\n先週は今週より寒かった.\n❄️ Tomorrow will be warmer than yesterday.\n明日は昨日より暖かいだろう.\n🎇 The fireworks last year were brighter than this year will be .\n去年の花火は今年のより明るかった.\n🎁 Next week, I will buy some holiday gifts for my family .\n来週、私は家族のためにいくつかのギフトを買います.\n❄️ Which winter sport do you like: skiing or snowboarding？\nウィンタースポーツでスキーとスノーボードのどちらが好きですか？\n☕ Do you prefer planning trips in advance or spontaneously旅行？\n旅行を事前に計画するのが好きですか、それとも自発的に楽しのが好きですか？\n🎫 Do you like train travel more or airplane travel more？\n列車旅行と航空旅行のどちらがより好きですか？\n🏂 Will you try a new winter sport this season？\n今シーズンに新しいウィンタースポーツを試しますか？\n🎬 Do you prefer watching movies at home or at the cinema？\n家で映画を見るのが好きですか、それとも映画館で見るのが好きですか？\n📸 Are digital photos better or worse than printed photos？\nデジタル写真とプリントされた写真、どちらが良いですか、それとも悪いですか？\n🌨️ Is this winter colder or warmer than last winter？\n今年の冬は去年の冬より寒いですか、それとも暖かいですか？\n❄️ Will you stay home more this winter or go out more？\n今年の冬はもっと家に留まりますか、それとももっと外に出ますか？\n🎇 Which do you like better: small fireworks or big fireworks？\n小さな花火と大きな花火のどちらが好きですか？\n🎁 Will you make handmade gifts or buy gifts this year？\n今年は手作りのギフトを作りますか、それともギフトを買いますか？"
-  },
-  {
-    "title": "46. Winter Holiday Fun (Past + Future + Comparatives)",
-    "content": "🎄 Last week, my family decorated our Christmas tree .\n先週、私の家族はクリスマスツリーを飾りました.\n🎵 Tomorrow, I will sing holiday songs with my classmates .\n明日、私は同級生と祝日の歌を歌います.\n🛷 Yesterday afternoon, the children played in the snow .\n昨日の午後、子供たちは雪の中で遊んだ.\n🧣 My scarf is longer than yours .\n私のマフラーはあなたのより長い.\n🎅 Last night, we hung stockings by the fireplace .\n昨夜、私たちは暖炉の下に靴下をかけた.\n🎆 Next week, we will watch fireworks at midnight .\n来週、私たちは真夜中に花火を見ます.\n🍪 The cookies we baked yesterday were sweeter than today's .\n私たちが昨日焼いたクッキーは今日のより甘かった.\n🥶 Tomorrow will be colder than today was.\n明日は今日より寒いでしょう.\n🎁 Next Saturday, I will wrap all my holiday gifts .\n次の土曜日、私はすべての祝日のプレゼントを包みます.\n❄️ The snow made everything prettier than before.\n雪はすべてを以前よりも美しくした.\n🎄 Do you like decorating trees or baking holiday treats more？\nツリーを飾るのと祝日のお菓子を焼くのと、どちらが好きですか？\n🎵 Will you sing songs or listen to music during holidays？\n祝日の間、歌を歌いますか、それとも音楽を聴きますか？\n🛷 Do you prefer outdoor winter activities or indoor ones？\n屋外の冬の活動と屋内の活動、どちらを好みますか？\n🧣 Which is warmer: wool or cotton？\nウールとコットンのどちらがより暖かいですか？\n🎅 Did you write letters to Santa when you were younger？\n若いとき、サンタクロースに手紙を書きましたか？\n🎆 Do you prefer big celebrations or quiet family time？\n大きな祝いと静かな家族の時間、どちらを好みますか？\n🍪 Is homemade food better than store-bought food？\n手作りの食べ物と店で買った食べ物、どっちが良いですか？\n🥶 Do you hate winter cold or enjoy it？\n冬の寒さを嫌いますか、それとも楽しみますか？\n🎁 Is wrapping gifts fun or stressful to you？\nギフトを包むことはあなたにとって楽しいですか、それともストレスフルですか？\n❄️ What do you like most about the winter holiday season？\n冬の祝季について最も好きなことは何ですか？"
-  },
-  {
-    "title": "47. December Family Time (Past + Future + Comparatives)",
-    "content": "👨‍👩‍👧‍👦 Yesterday, my whole family gathered at my grandmother's house .\n昨日、私の全家族が祖母の家に集まった.\n🎁 Last week, my brother received more gifts than me .\n先週、兄は私より多くのプレゼントを受け取った.\n👩‍🍳 Tomorrow, my mother will cook a big dinner for everyone .\n明日、母はみんなのために大きな夕食を作る.\n🥂 Yesterday evening, we toasted to the coming year .\n昨夜、私たちは来る年に乾杯した.\n🦃 The turkey was bigger and more delicious than last year .\nターキーは去年より大きくて美味しかった.\n👴 My grandfather told stories that were longer than before .\n祖父は以前よりも長い話をした.\n🍽️ Tomorrow, we will eat more food than today .\n明日、私たちは今日より多くの食べ物を食べるだろう.\n😊 Everyone was happier this year than last year .\nみんなは去年より今年、より幸せだった.\n🎵 Yesterday, my cousin played the guitar louder than usual .\n昨日、従兄弟はいつもより大きなギターを演奏した.\n💃 Next week, my sister will dance more beautifully than ever .\n来週、姉はいつもよりも美しく踊るだろう.\n👨‍👩‍👧‍👦 Do you prefer large family gatherings or small ones？\n大きな家族の集まりと小さな集まり、どちらを好みますか？\n🎁 Do you like giving gifts better or receiving gifts better？\nギフトを与えるのと受け取るのと、どちらが好きですか？\n👩‍🍳 Who in your family cooks the best holiday meals？\n家族の中で誰が最も美味しい祝日の食事を作りますか？\n🥂 Is celebrating with extended family more fun or more stressful？\n大家族と祝うことはより楽しいですか、それともよりストレスが多いですか？\n🦃 Which holiday food is your favorite: turkey or ham？\nお気に入りの祝日の食べ物はターキーとハムのどちらですか？\n👴 Do older family members tell better stories than younger people？\n年上の家族のメンバーは若い人々より良い話をしますか？\n🍽️ Will your family eat more together this December？\n今年の12月は家族はもっと一緒に食べますか？\n😊 Is your family closer this year or the same as always？\n今年の家族はより近いですか、それといつもの通りですか？\n🎵 Do you play music at family gatherings？\n家族の集まりで音楽を演奏しますか？\n💃 What makes holiday family time special for you？\n祝日の家族の時間をあなたにとって特別にするものは何ですか？"
-  },
-  {
-    "title": "48. New Year Celebration (Past + Future + Comparatives)",
-    "content": "⏰ Last year, we celebrated New Year's Eve at home .\n去年、私たちは大晦日に家で新年を祝った.\n🎉 Tomorrow night, we will count down to midnight together .\n明日の夜、私たちは一緒に真夜中のカウントダウンをする.\n🎇 The fireworks last year were longer and brighter than I expected .\n昨年の花火は私が予想したより長くて明るかった.\n🥂 Tomorrow, I will drink champagne at midnight .\n明日、私は真夜中にシャンパンを飲む.\n🎵 Last night, the party music was louder than usual .\n昨夜、パーティーの音楽はいつもより大きかった.\n🎊 Next year, we will invite more friends to our party.\n来年、私たちはより多くの友人をパーティーに招待する.\n📸 Next year, I will take better photos than this year .\n来年、私は今年より良い写真を撮るだろう.\n🕛 Tomorrow will be more exciting than tonight .\n明日は今夜より興奮するだろう.\n🎅 Yesterday, Santa Claus brought more gifts than last year .\n昨日、サンタクロースは去年より多くのプレゼントを持ってきた.\n🎆 The celebration this year will be better than last year's .\n今年の祝いは去年より良いだろう.\n⏰ Which do you prefer: staying home or going out on New Year's Eve？\n大晦日に家に留まるのと出かけるのと、どちらを好みますか？\n🎉 Will you make any New Year resolutions this year？\n今年、新年の決意を作りますか？\n🎇 Do you like watching fireworks or lighting them yourself？\n花火を見るのが好きですか、それとも自分で点けるのが好きですか？\n🥂 Do you drink more alcohol on special occasions or less？\n特別な機会に alcohol はより多く飲みますか、それともより少なく飲みますか？\n🎵 Is soft background music better than loud party music？\n穏やかなBGMは大音量のパーティー音楽より良いですか？\n🎊 Do you prefer big New Year parties or small ones？\n大きな新年パーティーと小さなパーティー、どちらを好みますか？\n📸 Will you take photos or videos of the celebration？\n祝いの写真を撮りますか、それともビデオを撮りますか？\n🕛 Is New Year's Eve more special to you than New Year's Day？\n大晦日は大晦日の日よりあなたにとって特別ですか、それともその逆ですか？\n🎅 What did Santa bring you when you were younger？\n若いとき、サンタはあなたに何を持ってきましたか？\n🎆 What makes this New Year celebration different from others？\nこの新年の祝いを他の祝いから異ならせるものは何ですか？"
-  }
+// EIKEN 4 - Complete Set (48 Stories)
+// Target: 6-7 word sentences (step up from Eiken 5's 5-6 words)
+// Grammar: Past Simple, Future with Will, Comparatives
+// Status: COMPLETE - All 48 stories merged and ready for use
+
+var eiken4story = [
+  { title: "1. New Year Celebration (MIXED)", content: `⛩️ I visited a shrine yesterday.
+昨日、私は神社に行きました。
+🎎 I wore a kimono last week.
+先週、私は着物を着ました。
+🍱 We ate special food on New Year.
+お正月に特別な食べ物を食べました。
+🎓 I will study harder this year.
+今年はもっと勉強します。
+📚 I will read more books too.
+もっと本も読みます。
+⛳ This year will be better than last.
+今年は去年より良くなります。
+💰 I got more money than before.
+前より多くのお年玉をもらいました。
+🎂 My cousin is taller than me.
+いとこは私より背が高いです。
+🎊 We celebrated together happily.
+みんなで幸せに祝いました。
+🎌 New Year is my favorite holiday.
+お正月は一番好きな休日です。
+
+⛩️ Do you visit a shrine on New Year?
+お正月に神社に行きますか？
+🎎 Did you wear a kimono last year?
+去年、着物を着ましたか？
+🍱 What food do you eat on New Year?
+お正月に何を食べますか？
+📚 Will you study harder this year?
+今年はもっと勉強しますか？
+🎂 Are you taller than last year?
+去年より背が高くなりましたか？
+💰 Did you get money for New Year?
+お年玉をもらいましたか？
+🎊 Do you celebrate with your family?
+家族と一緒に祝いますか？
+🎌 Is New Year your favorite holiday?
+お正月は一番好きな休日ですか？
+🎓 What will you study this year?
+今年は何を勉強しますか？
+⛳ Do you make New Year resolutions?
+新年の抱負を立てますか？` },
+  { title: "2. Winter Holiday Fun (PAST FOCUS)", content: `❄️ I played in the snow yesterday.
+昨日、私は雪の中で遊びました。
+⛄ I made a big snowman last week.
+先週、大きな雪だるまを作りました。
+🎿 We went skiing last month.
+先月、スキーに行きました。
+☕ I drank hot chocolate after.
+その後、ホットチョコレートを飲みました。
+🧤 I wore warm gloves outside.
+外で暖かい手袋をしました。
+📸 We took many photos together.
+一緒にたくさんの写真を撮りました。
+🚶 My friends walked with me.
+友達が私と一緒に歩きました。
+🌨️ It snowed a lot last night.
+昨夜はたくさん雪が降りました。
+😊 I had so much fun!
+私はとても楽しかったです！
+❄️ Winter was very cold but fun.
+冬はとても寒かったけど楽しかったです。
+
+❄️ Did you play in the snow?
+雪の中で遊びましたか？
+⛄ Have you made a snowman before?
+雪だるまを作ったことがありますか？
+🎿 Did you go skiing last winter?
+去年の冬、スキーに行きましたか？
+☕ Do you like hot chocolate?
+ホットチョコレートは好きですか？
+🧤 Do you wear gloves in winter?
+冬は手袋をしますか？
+📸 Do you take photos with friends?
+友達と写真を撮りますか？
+🚶 Who did you walk with last week?
+先週、誰と歩きましたか？
+🌨️ Did it snow in your town?
+あなたの町で雪が降りましたか？
+😊 Did you have fun this winter?
+この冬は楽しかったですか？
+❄️ Is winter your favorite season?
+冬は一番好きな季節ですか？` },
+  { title: "3. Winter Activities (MIXED)", content: `⛸️ I went ice skating yesterday.
+昨日、スケートに行きました。
+🧣 I wore a warm scarf.
+私は暖かいマフラーをしました。
+🏃 I will run faster next time.
+次はもっと速く走ります。
+⛸️ Skating is harder than walking.
+スケートは歩くより難しいです。
+☕ I drank warm tea after.
+その後、温かいお茶を飲みました。
+📚 I read a book last night.
+昨夜、本を読みました。
+📖 This book is longer than that.
+この本はあれより長いです。
+🎬 I will watch a movie tomorrow.
+明日、映画を見ます。
+❄️ Winter is colder than autumn.
+冬は秋より寒いです。
+😊 I like winter activities!
+私は冬の活動が大好きです！
+
+⛸️ Have you gone ice skating?
+スケートに行ったことがありますか？
+🧣 Do you wear a scarf in winter?
+冬はマフラーをしますか？
+🏃 Can you run fast?
+速く走れますか？
+☕ Do you drink warm tea in winter?
+冬は温かいお茶を飲みますか？
+📚 Do you read books at night?
+夜に本を読みますか？
+🎬 Will you watch a movie soon?
+すぐに映画を見ますか？
+❄️ Is winter colder than autumn where you live?
+あなたの住んでいる場所は冬が秋より寒いですか？
+😊 Do you like winter activities?
+冬の活動は好きですか？
+📖 What is your favorite book?
+一番好きな本は何ですか？
+🏃 What will you do tomorrow?
+明日は何をしますか？` },
+  { title: "4. Spring Plans (FUTURE FOCUS)", content: `🌸 I will see cherry blossoms soon.
+すぐに桜を見に行きます。
+📸 I will take many photos.
+たくさんの写真を撮ります。
+🍱 We will have a picnic.
+私たちはピクニックをします。
+🎵 I will listen to birds singing.
+鳥のさえずりを聞きます。
+🏃 I will run in the park.
+公園で走ります。
+📚 I will study more this spring.
+今春はもっと勉強します。
+👕 I will wear new clothes.
+新しい服を着ます。
+🌿 I will help in the garden.
+庭で手伝います。
+😊 Spring will be very beautiful.
+春はとても美しくなるでしょう。
+🌸 I love spring weather!
+私は春の天気が大好きです！
+
+🌸 Will you see cherry blossoms?
+桜を見に行きますか？
+📸 Do you take photos in spring?
+春に写真を撮りますか？
+🍱 Do you have picnics with family?
+家族とピクニックをしますか？
+🎵 Do you like birds singing?
+鳥のさえずりは好きですか？
+🏃 Do you run in the park?
+公園で走りますか？
+📚 Will you study more this spring?
+今春はもっと勉強しますか？
+👕 Do you wear new clothes in spring?
+春に新しい服を着ますか？
+🌿 Do you help in the garden?
+庭で手伝いますか？
+🌸 Is spring your favorite season?
+春は一番好きな季節ですか？
+😊 What will you do this spring?
+今春は何をしますか？` },
+  { title: "5. Setsubun Festival (MIXED)", content: `🎌 We celebrated Setsubun yesterday.
+昨日、節分を祝いました。
+🫘 I threw beans at demons.
+私は鬼に豆を投げました。
+👹 The demon was very scary!
+鬼はとても怖かったです！
+🍱 We ate special sushi rolls.
+特別な巻き寿司を食べました。
+🎌 I will celebrate again next year.
+来年もまた祝います。
+🫘 I will buy more beans.
+もっと豆を買います。
+👹 The beans are cheaper than candy.
+豆はキャンディより安いです。
+🍱 Sushi is tastier than last year.
+寿司は去年より美味しいです。
+😊 Everyone enjoyed the festival.
+みんなは祭りを楽しみました。
+🎌 Setsubun is a fun tradition.
+節分は楽しい伝統です。
+
+🎌 Did you celebrate Setsubun?
+節分を祝いましたか？
+🫘 Did you throw beans?
+豆を投げましたか？
+👹 Are you scared of demons?
+鬼を怖がりますか？
+🍱 Did you eat sushi rolls?
+巻き寿司を食べましたか？
+🫘 Do you like roasted beans?
+炒り豆は好きですか？
+👹 What is your favorite festival?
+一番好きな祭りは何ですか？
+🍱 Is sushi your favorite food?
+寿司は一番好きな食べ物ですか？
+🎌 Will you celebrate Setsubun next year?
+来年は節分を祝いますか？
+😊 Do you enjoy Japanese festivals?
+日本の祭りを楽しみますか？
+🎌 What Japanese traditions do you like?
+どんな日本の伝統が好きですか？` },
+  { title: "6. Comparing Seasons (COMPARATIVES FOCUS)", content: `🌸 Spring is warmer than winter.
+春は冬より暖かいです。
+☀️ Summer is hotter than spring.
+夏は春より暑いです。
+🍂 Autumn is cooler than summer.
+秋は夏より涼しいです。
+❄️ Winter is colder than autumn.
+冬は秋より寒いです。
+🌸 Cherry blossoms are prettier than roses.
+桜はバラよりきれいです。
+🏊 Swimming is more fun than running.
+水泳は走るより楽しいです。
+🍦 Ice cream is sweeter than cake.
+アイスクリームはケーキより甘いです。
+📚 Math is harder than English.
+数学は英語より難しいです。
+🎬 Movies are more exciting than books.
+映画は本よりエキサイティングです。
+😊 Spring is the best season!
+春は一番良い季節です！
+
+🌸 Which is warmer, spring or winter?
+春と冬、どちらが暖かいですか？
+☀️ Is summer hotter than spring?
+夏は春より暑いですか？
+🍂 Do you like autumn or summer?
+秋と夏、どちらが好きですか？
+❄️ Is winter colder than autumn?
+冬は秋より寒いですか？
+🌸 Are cherry blossoms pretty?
+桜はきれいですか？
+🏊 Is swimming fun for you?
+水泳は楽しいですか？
+🍦 Is ice cream your favorite?
+アイスクリームは一番好きですか？
+📚 Is math harder than English for you?
+数学は英語より難しいですか？
+🎬 Do you like movies or books?
+映画と本、どちらが好きですか？
+🌸 What is your favorite season?
+一番好きな季節は何ですか？` },
+  { title: "7. Valentine's Day (MIXED)", content: `💝 I gave chocolate yesterday.
+昨日、チョコレートをあげました。
+🍫 I bought heart-shaped chocolate.
+ハート型のチョコレートを買いました。
+😊 My friend was very happy.
+友達はとても嬉しかったです。
+💝 I will make chocolate next year.
+来年はチョコレートを作ります。
+🍫 It will be tastier than store chocolate.
+お店のチョコより美味しくなります。
+💕 Homemade is better than bought.
+手作りは買うより良いです。
+🎁 I received chocolate too.
+私もチョコレートをもらいました。
+💌 Giving is happier than receiving.
+あげることはもらうより幸せです。
+😊 Valentine's Day is very special.
+バレンタインデーはとても特別です。
+💝 I love this holiday!
+私はこの休日が大好きです！
+
+💝 Did you give chocolate?
+チョコレートをあげましたか？
+🍫 Do you like chocolate?
+チョコレートは好きですか？
+😊 Who did you give chocolate to?
+誰にチョコレートをあげましたか？
+💝 Will you give chocolate next year?
+来年はチョコレートをあげますか？
+💕 Is homemade chocolate better?
+手作りチョコレートは良いですか？
+🎁 Did you receive chocolate?
+チョコレートをもらいましたか？
+💌 Is giving happier than receiving?
+あげることはもらうより幸せですか？
+😊 Do you like Valentine's Day?
+バレンタインデーは好きですか？
+💝 What is your favorite holiday?
+一番好きな休日は何ですか？
+🍫 What chocolate do you like?
+どんなチョコレートが好きですか？` },
+  { title: "8. Last February (PAST FOCUS)", content: `📅 Last February was very cold.
+去年の二月はとても寒かったです。
+❄️ It snowed many times.
+何度も雪が降りました。
+🏂 I went snowboarding with friends.
+友達とスノーボードに行きました。
+☕ We drank hot cocoa.
+私たちはホットココアを飲みました。
+📸 I took many photos.
+たくさんの写真を撮りました。
+🚶 We walked in the snow.
+雪の中を歩きました。
+🧣 I wore a thick scarf.
+私は厚いマフラーをしました。
+🌡️ The weather was freezing!
+天気は凍えるほど寒かったです！
+😊 But I had fun.
+でも楽しかったです。
+📅 Last winter was memorable.
+去年の冬は思い出深いです。
+
+📅 Was last February cold?
+去年の二月は寒かったですか？
+❄️ Did it snow a lot?
+たくさん雪が降りましたか？
+🏂 Did you go snowboarding?
+スノーボードに行きましたか？
+☕ Do you like hot cocoa?
+ホットココアは好きですか？
+📸 Did you take photos?
+写真を撮りましたか？
+🚶 Did you walk in snow?
+雪の中を歩きましたか？
+🧣 Did you wear a scarf?
+マフラーをしましたか？
+🌡️ Was the weather cold?
+天気は寒かったですか？
+😊 Did you have fun?
+楽しかったですか？
+📅 What did you do last February?
+去年の二月に何をしましたか？` },
+  { title: "9. Spring Flowers (MIXED)", content: `🌸 I saw cherry blossoms yesterday.
+昨日、桜を見ました。
+📸 They were very beautiful!
+とても美しかったです！
+🌷 I took many photos.
+たくさんの写真を撮りました。
+🌸 I will go again tomorrow.
+明日また行きます。
+🌼 The flowers will be prettier.
+花はもっときれいになるでしょう。
+🌺 This park is nicer than that.
+この公園はあれより良いです。
+🌷 Tulips are taller than daisies.
+チューリップはデイジーより背が高いです。
+🌸 I love spring flowers!
+私は春の花が大好きです！
+🦋 Butterflies visited the flowers.
+蝶が花に来ました。
+🌸 Spring is the best season!
+春は一番良い季節です！
+
+🌸 Did you see cherry blossoms?
+桜を見ましたか？
+📸 Do you take flower photos?
+花の写真を撮りますか？
+🌷 Which flower is your favorite?
+どの花が一番好きですか？
+🌸 Will you go see flowers?
+花を見に行きますか？
+🌺 Do you like parks?
+公園は好きですか？
+🌷 Are tulips pretty?
+チューリップはきれいですか？
+🌸 What is your favorite season?
+一番好きな季節は何ですか？
+🦋 Do you like butterflies?
+蝶は好きですか？
+🌼 Do you have a garden?
+庭はありますか？
+🌸 What flowers do you like?
+どんな花が好きですか？` },
+  { title: "10. Cherry Blossom Plans (FUTURE FOCUS)", content: `🌸 I will visit the park soon.
+すぐに公園に行きます。
+📸 I will bring my camera.
+カメラを持っていきます。
+🍱 We will have a picnic.
+ピクニックをします。
+🎵 I will sing songs.
+歌を歌います。
+🏃 We will play games.
+ゲームをします。
+🌸 The blossoms will be beautiful.
+桜は美しいでしょう。
+👨‍👩‍👧‍👦 My family will come too.
+家族も来ます。
+📸 I will take many photos.
+たくさんの写真を撮ります。
+🌸 I will see all the flowers.
+すべての花を見ます。
+😊 It will be a great day!
+素晴らしい日になるでしょう！
+
+🌸 Will you visit the park?
+公園に行きますか？
+📸 Do you bring a camera?
+カメラを持っていきますか？
+🍱 Do you have picnics?
+ピクニックをしますか？
+🎵 Do you like singing?
+歌うのは好きですか？
+🏃 Do you play games outside?
+外でゲームをしますか？
+🌸 Do you like cherry blossoms?
+桜は好きですか？
+👨‍👩‍👧‍👦 Does your family come with you?
+家族も一緒に来ますか？
+📸 Do you take many photos?
+たくさんの写真を撮りますか？
+🌸 What will you do this spring?
+今春は何をしますか？
+😊 What makes you happy?
+何があなたを幸せにしますか？` },
+  { title: "11. School Events (MIXED)", content: `🏫 We had a school event.
+学校行事がありました。
+🏃 Sports day was fun!
+運動会は楽しかったです！
+🏆 Our team won first place.
+私たちのチームが一位でした。
+🎉 Everyone cheered loudly.
+みんなが大きな声で応援しました。
+🏫 We will have another event soon.
+すぐにまた行事があります。
+🎨 It will be a festival.
+祭りになるでしょう。
+🎭 Our class will perform.
+私たちのクラスが発表します。
+🏆 This event is bigger than before.
+この行事は前より大きいです。
+😊 I love school events!
+私は学校行事が大好きです！
+🏫 School is very exciting!
+学校はとても楽しいです！
+
+🏫 Did you have school events?
+学校行事はありましたか？
+🏃 Did you enjoy sports day?
+運動会を楽しみましたか？
+🏆 Did your team win?
+あなたのチームは勝ちましたか？
+🎉 Do you cheer for friends?
+友達を応援しますか？
+🏫 Will you have another event?
+また行事がありますか？
+🎨 Do you like festivals?
+祭りは好きですか？
+🎭 Will you perform on stage?
+ステージで発表しますか？
+🏆 Is winning important to you?
+勝つことは大切ですか？
+😊 What school events do you like?
+どんな学校行事が好きですか？
+🏫 What is your favorite school activity?
+一番好きな学校活動は何ですか？` },
+  { title: "12. Comparing Activities (COMPARATIVES FOCUS)", content: `⚽ Soccer is more exciting than tennis.
+サッカーはテニスよりエキサイティングです。
+🏀 Basketball is faster than baseball.
+バスケットボールは野球より速いです。
+🏊 Swimming is cooler than running.
+水泳は走るより涼しいです。
+📚 Reading is quieter than gaming.
+読書はゲームより静かです。
+🎨 Drawing is easier than painting.
+スケッチは絵画より簡単です。
+🎵 Music is more fun than math.
+音楽は数学より楽しいです。
+🍰 Cake is sweeter than cookies.
+ケーキはクッキーより甘いです。
+🍦 Ice cream is colder than juice.
+アイスクリームはジュースより冷たいです。
+😊 Friends are more important than games.
+友達はゲームより大切です。
+🏆 Trying is better than winning.
+挑戦することは勝つより良いです。
+
+⚽ Is soccer more exciting than tennis?
+サッカーはテニスよりエキサイティングですか？
+🏀 Is basketball faster than baseball?
+バスケットボールは野球より速いですか？
+🏊 Is swimming cooler in summer?
+夏は水泳の方が涼しいですか？
+📚 Is reading quieter than gaming?
+読書はゲームより静かですか？
+🎨 Is drawing easier than painting?
+スケッチは絵画より簡単ですか？
+🎵 Do you like music or math?
+音楽と数学、どちらが好きですか？
+🍰 Is cake sweeter than cookies?
+ケーキはクッキーより甘いですか？
+🍦 Is ice cream your favorite?
+アイスクリームは一番好きですか？
+😊 Are friends important to you?
+友達は大切ですか？
+🏆 What activity do you like best?
+一番好きな活動は何ですか？` },
+  { title: "13. New School Year (MIXED)", content: `🏫 School started last week.
+先週、学校が始まりました。
+📦 I got new textbooks.
+新しい教科書をもらいました。
+✏️ My bag is heavier than before.
+私のバッグは前より重いです。
+👨‍🏫 I will meet my new teacher.
+新しい先生に会います。
+📚 I will study harder this year.
+今年はもっと勉強します。
+🎯 My goal is better grades.
+私の目標は良い成績です。
+👫 I made new friends already.
+もう新しい友達ができました。
+🏫 This school is bigger than my old school.
+この学校は前の学校より大きいです。
+😊 I like my new class!
+私は新しいクラスが好きです！
+🎓 The new year will be great!
+新しい年は素晴らしいでしょう！
+
+🏫 Did your school start?
+学校は始まりましたか？
+📦 Did you get new textbooks?
+新しい教科書をもらいましたか？
+✏️ Is your bag heavy?
+バッグは重いですか？
+👨‍🏫 Do you like your teacher?
+先生は好きですか？
+📚 Will you study harder?
+もっと勉強しますか？
+🎯 What is your goal?
+あなたの目標は何ですか？
+👫 Did you make new friends?
+新しい友達ができましたか？
+🏫 Is your school big?
+あなたの学校は大きいですか？
+😊 Do you like your class?
+クラスは好きですか？
+🎓 What will you do this year?
+今年は何をしますか？` },
+  { title: "14. Last Year Memories (PAST FOCUS)", content: `📅 Last year was wonderful.
+去年は素晴らしかったです。
+📚 I learned many things.
+たくさんのことを学びました。
+🏆 I won a prize once.
+一度賞をもらいました。
+👥 I made many friends.
+たくさんの友達ができました。
+🎵 I joined the music club.
+音楽部に入りました。
+⚽ We played soccer often.
+よくサッカーをしました。
+📖 I read many books.
+たくさんの本を読みました。
+😊 I had great memories.
+素晴らしい思い出がありました。
+📅 The year went fast!
+一年は早く過ぎました！
+🎓 I will remember everything.
+すべてを覚えています。
+
+📅 Was last year good for you?
+去年は良い年でしたか？
+📚 What did you learn last year?
+去年は何を学びましたか？
+🏆 Did you win a prize?
+賞をもらいましたか？
+👥 Did you make new friends?
+新しい友達ができましたか？
+🎵 Did you join a club?
+部活に入りましたか？
+⚽ What sports did you play?
+どんなスポーツをしましたか？
+📖 Did you read many books?
+たくさんの本を読みましたか？
+😊 What is your best memory?
+一番良い思い出は何ですか？
+📅 Did the year go fast?
+一年は早く過ぎましたか？
+🎓 What will you remember?
+何を覚えていますか？` },
+  { title: "15. Club Activities (MIXED)", content: `🎨 I joined the art club.
+美術部に入りました。
+🖌️ We painted pictures yesterday.
+昨日、絵を描きました。
+🎨 My painting is colorful!
+私の絵はカラフルです！
+🎵 I will try music club too.
+音楽部も試してみます。
+🎸 Guitar is harder than piano.
+ギターはピアノより難しいです。
+🎤 Singing is more fun than listening.
+歌うことは聞くことより楽しいです。
+🏃 I joined sports club before.
+前にスポーツ部に入りました。
+⚽ Soccer was my favorite.
+サッカーが一番好きでした。
+😊 I love club activities!
+部活が大好きです！
+🎭 I will try drama next.
+次は演劇を試します。
+
+🎨 Did you join a club?
+部活に入りましたか？
+🖌️ Do you like painting?
+絵を描くのは好きですか？
+🎵 Will you try music?
+音楽を試してみますか？
+🎸 Is guitar hard to play?
+ギターは弾くのが難しいですか？
+🎤 Do you like singing?
+歌うのは好きですか？
+🏃 What sports do you play?
+どんなスポーツをしますか？
+⚽ Is soccer your favorite?
+サッカーは一番好きですか？
+😊 What club will you join?
+どんな部活に入りますか？
+🎭 Have you tried drama?
+演劇を試したことがありますか？
+🎨 What is your favorite activity?
+一番好きな活動は何ですか？` },
+  { title: "16. Study Goals (FUTURE FOCUS)", content: `📚 I will study every day.
+毎日勉強します。
+✏️ I will finish my homework.
+宿題を終わらせます。
+📖 I will read more books.
+もっと本を読みます。
+🎯 I will get better grades.
+良い成績を取ります。
+👨‍🏫 I will ask my teacher.
+先生に聞きます。
+📝 I will practice writing.
+書く練習をします。
+🗣️ I will speak more English.
+もっと英語を話します。
+⏰ I will wake up early.
+早く起きます。
+📚 My grades will improve.
+成績が上がるでしょう。
+😊 I will do my best!
+ベストを尽くします！
+
+📚 Will you study every day?
+毎日勉強しますか？
+✏️ Will you finish homework?
+宿題を終わらせますか？
+📖 Do you read books?
+本を読みますか？
+🎯 What grades do you want?
+どんな成績が欲しいですか？
+👨‍🏫 Will you ask your teacher?
+先生に聞きますか？
+📝 Do you practice writing?
+書く練習をしますか？
+🗣️ Do you speak English?
+英語を話しますか？
+⏰ Do you wake up early?
+早く起きますか？
+📚 What is your study goal?
+勉強の目標は何ですか？
+😊 Will you do your best?
+ベストを尽くしますか？` },
+  { title: "17. Golden Week (MIXED)", content: `🎌 Golden Week was fun!
+ゴールデンウィークは楽しかったです！
+🏯 We visited a castle.
+私たちはお城に行きました。
+📸 I took many photos.
+たくさんの写真を撮りました。
+🚗 We traveled by car.
+車で旅行しました。
+🎌 I will go again next year.
+来年また行きます。
+🏖️ We will go to the beach.
+ビーチに行きます。
+☀️ Summer is hotter than spring.
+夏は春より暑いです。
+🏨 The hotel was comfortable.
+ホテルは快適でした。
+😊 I loved the trip!
+その旅行が大好きでした！
+🎌 Golden Week is the best!
+ゴールデンウィークは最高です！
+
+🎌 Did you enjoy Golden Week?
+ゴールデンウィークを楽しみましたか？
+🏯 Did you visit any places?
+どこかに行きましたか？
+📸 Do you take travel photos?
+旅行の写真を撮りますか？
+🚗 Do you travel by car?
+車で旅行しますか？
+🎌 Will you go next year?
+来年は行きますか？
+🏖️ Do you like the beach?
+ビーチは好きですか？
+☀️ Is summer hotter where you live?
+あなたの住んでいる場所は夏が暑いですか？
+🏨 Did you stay at a hotel?
+ホテルに泊まりましたか？
+😊 What did you love most?
+何が一番好きでしたか？
+🎌 What is your favorite holiday?
+一番好きな休日は何ですか？` },
+  { title: "18. Comparing Holidays (COMPARATIVES FOCUS)", content: `🎌 Golden Week is longer than weekends.
+ゴールデンウィークは週末より長いです。
+🌸 Cherry blossom season is prettier than summer.
+桜の季節は夏よりきれいです。
+❄️ Winter break is colder than spring break.
+冬休みは春休みより寒いです。
+☀️ Summer vacation is the longest.
+夏休みが一番長いです。
+🎄 Christmas is more exciting than Halloween.
+クリスマスはハロウィンよりエキサイティングです。
+🎌 New Year is more important than Valentine's.
+お正月はバレンタインより大切です。
+🏖️ Beach trips are better than mountain trips.
+ビーチ旅行は山旅行より良いです。
+🏨 Hotels are more comfortable than camping.
+ホテルはキャンプより快適です。
+📸 Taking photos is easier than drawing.
+写真を撮ることは描くことより簡単です。
+😊 Family time is the best!
+家族との時間は最高です！
+
+🎌 Is Golden Week long for you?
+ゴールデンウィークは長いですか？
+🌸 Do you like cherry blossoms?
+桜は好きですか？
+❄️ Is winter break cold?
+冬休みは寒いですか？
+☀️ Is summer vacation the longest?
+夏休みが一番長いですか？
+🎄 Is Christmas exciting for you?
+クリスマスはエキサイティングですか？
+🎌 Is New Year important?
+お正月は大切ですか？
+🏖️ Do you like beach trips?
+ビーチ旅行は好きですか？
+🏨 Do you stay at hotels?
+ホテルに泊まりますか？
+📸 Do you take photos?
+写真を撮りますか？
+😊 What holiday do you like best?
+一番好きな休日は何ですか？` },
+  { title: "19. Rainy Season (MIXED)", content: `🌧️ Rainy season started yesterday.
+昨日、梅雨が始まりました。
+☔ I used my umbrella.
+傘を使いました。
+🧥 I wore my raincoat.
+レインコートを着ました。
+🌧️ It rained all day.
+一日中雨が降りました。
+📚 I will read books inside.
+中で本を読みます。
+🎨 I will draw pictures too.
+絵も描きます。
+☔ Rain is wetter than snow.
+雨は雪より濡れます。
+🌧️ This month is rainier than last.
+今月は先月より雨が多いです。
+😊 I like rainy days too!
+雨の日も好きです！
+🌿 Plants grow in the rain.
+雨で植物が育ちます。
+
+🌧️ Did rainy season start?
+梅雨は始まりましたか？
+☔ Do you use an umbrella?
+傘を使いますか？
+🧥 Do you have a raincoat?
+レインコートはありますか？
+🌧️ Do you like rainy days?
+雨の日は好きですか？
+📚 What do you do inside?
+中で何をしますか？
+🎨 Do you like drawing?
+絵を描くのは好きですか？
+☔ Is rain wetter than snow?
+雨は雪より濡れますか？
+🌧️ Is this month rainy?
+今月は雨が多いですか？
+😊 What do you like about rain?
+雨について何が好きですか？
+🌿 Do plants grow near you?
+近くに植物は育ちますか？` },
+  { title: "20. Last Rainy Day (PAST FOCUS)", content: `🌧️ It rained heavily yesterday.
+昨日は激しく雨が降りました。
+🏠 I stayed inside all day.
+一日中家にいました。
+📚 I read three books.
+3冊の本を読みました。
+🎮 I played video games.
+ビデオゲームをしました。
+☕ I drank hot cocoa.
+ホットココアを飲みました。
+📺 I watched movies too.
+映画も見ました。
+🧩 I did puzzles alone.
+一人でパズルをしました。
+🌧️ The rain sounds were relaxing.
+雨の音はリラックスしました。
+😊 I enjoyed the day.
+その日を楽しみました。
+🏠 Staying inside was cozy!
+家の中は居心地が良かったです！
+
+🌧️ Did it rain yesterday?
+昨日は雨が降りましたか？
+🏠 Do you stay inside on rainy days?
+雨の日は家にいますか？
+📚 Do you read books inside?
+中で本を読みますか？
+🎮 Do you play video games?
+ビデオゲームをしますか？
+☕ Do you like hot cocoa?
+ホットココアは好きですか？
+📺 Do you watch movies?
+映画を見ますか？
+🧩 Do you like puzzles?
+パズルは好きですか？
+🌧️ Are rain sounds relaxing?
+雨の音はリラックスしますか？
+😊 Did you enjoy yesterday?
+昨日は楽しかったですか？
+🏠 What do you do inside?
+中で何をしますか？` },
+  { title: "21. Summer Plans (MIXED)", content: `☀️ Summer is coming soon!
+すぐに夏が来ます！
+🏖️ I will go to the beach.
+ビーチに行きます。
+🏊 I will swim every day.
+毎日泳ぎます。
+🍦 I ate ice cream yesterday.
+昨日、アイスクリームを食べました。
+🍉 Watermelon is tastier than melon.
+スイカはメロンより美味しいです。
+🌞 Summer is hotter than spring.
+夏は春より暑いです。
+📚 I will read books too.
+本も読みます。
+🏊 Swimming is more fun than running.
+泳ぐことは走ることより楽しいです。
+😊 I love summer plans!
+夏の計画が大好きです！
+☀️ Summer will be wonderful!
+夏は素晴らしいでしょう！
+
+☀️ Is summer coming soon?
+すぐに夏が来ますか？
+🏖️ Will you go to the beach?
+ビーチに行きますか？
+🏊 Do you swim in summer?
+夏は泳ぎますか？
+🍦 Do you like ice cream?
+アイスクリームは好きですか？
+🍉 Is watermelon your favorite?
+スイカは一番好きですか？
+🌞 Is summer hot where you live?
+あなたの住んでいる場所は夏が暑いですか？
+📚 Will you read books?
+本を読みますか？
+🏊 Is swimming fun for you?
+水泳は楽しいですか？
+😊 What are your summer plans?
+夏の計画は何ですか？
+☀️ Do you like summer?
+夏は好きですか？` },
+  { title: "22. Festival Plans (FUTURE FOCUS)", content: `🎏 I will go to a festival.
+祭りに行きます。
+👘 I will wear a yukata.
+浴衣を着ます。
+🎯 I will play games there.
+そこでゲームをします。
+🍗 We will eat festival food.
+祭りの食べ物を食べます。
+🎆 I will watch fireworks too.
+花火も見ます。
+📸 I will take many photos.
+たくさんの写真を撮ります。
+🎪 The festival will be exciting.
+祭りはエキサイティングでしょう。
+🎵 We will hear music.
+音楽が聞こえます。
+😊 I will have so much fun!
+とても楽しむでしょう！
+🎏 Festivals are the best!
+祭りは最高です！
+
+🎏 Will you go to a festival?
+祭りに行きますか？
+👘 Will you wear a yukata?
+浴衣を着ますか？
+🎯 Do you play festival games?
+祭りのゲームをしますか？
+🍗 Do you like festival food?
+祭りの食べ物は好きですか？
+🎆 Do you watch fireworks?
+花火を見ますか？
+📸 Do you take photos?
+写真を撮りますか？
+🎪 Are festivals exciting?
+祭りはエキサイティングですか？
+🎵 Do you like festival music?
+祭りの音楽は好きですか？
+😊 What festival do you like?
+どんな祭りが好きですか？
+🎏 What will you do there?
+そこで何をしますか？` },
+  { title: "23. Tanabata Festival (MIXED)", content: `🎋 We celebrated Tanabata yesterday.
+昨日、七夕を祝いました。
+✍️ I wrote a wish on paper.
+紙に願い事を書きました。
+🌟 My wish will come true!
+私の願いは叶うでしょう！
+🎋 I wished for good grades.
+良い成績を願いました。
+✍️ I will write more wishes.
+もっと願い事を書きます。
+🎋 This year is better than last.
+今年は去年より良いです。
+🌟 Tanabata is more magical than other festivals.
+七夕は他の祭りより魔法のようです。
+🎋 The stars were beautiful.
+星は美しかったです。
+😊 I love Tanabata wishes!
+七夕の願い事が大好きです！
+✍️ Wishing is very fun!
+願うことはとても楽しいです！
+
+🎋 Did you celebrate Tanabata?
+七夕を祝いましたか？
+✍️ What did you wish for?
+何を願いましたか？
+🌟 Do wishes come true?
+願い事は叶いますか？
+🎋 Do you write wishes?
+願い事を書きますか？
+✍️ What will you wish next?
+次は何を願いますか？
+🎋 Is this year better?
+今年は良いですか？
+🌟 Is Tanabata magical?
+七夕は魔法のようですか？
+🎋 Did you see the stars?
+星を見ましたか？
+😊 Do you like Tanabata?
+七夕は好きですか？
+✍️ What is your biggest wish?
+一番大きな願いは何ですか？` },
+  { title: "24. Festival Comparison (COMPARATIVES FOCUS)", content: `🎋 Tanabata is quieter than summer festivals.
+七夕は夏祭りより静かです。
+🎆 Summer festivals are louder than Tanabata.
+夏祭りは七夕よりにぎやかです。
+👹 Setsubun is scarier than Christmas.
+節分はクリスマスより怖いです。
+🎌 New Year is more important than Halloween.
+お正月はハロウィンより大切です。
+🎄 Christmas is more colorful than Easter.
+クリスマスはイースターよりカラフルです。
+🎉 Festivals are more exciting than regular days.
+祭りは普通の日よりエキサイティングです。
+👘 Yukatas are prettier than regular clothes.
+浴衣は普通の服よりきれいです。
+🎆 Fireworks are the brightest!
+花火は一番明るいです！
+🍗 Festival food is tastier than home food.
+祭りの食べ物は家の食べ物より美味しいです。
+😊 All festivals are wonderful!
+すべての祭りは素晴らしいです！
+
+🎋 Is Tanabata quiet?
+七夕は静かですか？
+🎆 Are summer festivals loud?
+夏祭りはにぎやかですか？
+👹 Is Setsubun scary?
+節分は怖いですか？
+🎌 Is New Year important?
+お正月は大切ですか？
+🎄 Is Christmas colorful?
+クリスマスはカラフルですか？
+🎉 Are festivals exciting?
+祭りはエキサイティングですか？
+👘 Are yukatas pretty?
+浴衣はきれいですか？
+🎆 Are fireworks bright?
+花火は明るいですか？
+🍗 Is festival food tasty?
+祭りの食べ物は美味しいですか？
+😊 What is your favorite festival?
+一番好きな祭りは何ですか？` },
+  { title: "25. Summer Vacation (MIXED)", content: `☀️ Summer vacation started yesterday!
+昨日、夏休みが始まりました！
+🏖️ We went to the beach.
+ビーチに行きました。
+🏊 I swam in the ocean.
+海で泳ぎました。
+☀️ I will go again soon.
+すぐにまた行きます。
+📚 I will read ten books.
+10冊の本を読みます。
+🎮 I will play games too.
+ゲームもします。
+🌊 The ocean is bigger than the pool.
+海はプールより大きいです。
+🍦 Ice cream is colder than juice.
+アイスクリームはジュースより冷たいです。
+😊 Summer is the best season!
+夏は最高の季節です！
+☀️ I love summer vacation!
+夏休みが大好きです！
+
+☀️ Did summer vacation start?
+夏休みは始まりましたか？
+🏖️ Did you go to the beach?
+ビーチに行きましたか？
+🏊 Do you swim in summer?
+夏は泳ぎますか？
+☀️ Will you go again?
+また行きますか？
+📚 Will you read books?
+本を読みますか？
+🎮 Do you play games?
+ゲームをしますか？
+🌊 Is the ocean big?
+海は大きいですか？
+🍦 Do you like ice cream?
+アイスクリームは好きですか？
+😊 What do you do in summer?
+夏に何をしますか？
+☀️ Do you love summer vacation?
+夏休みは大好きですか？` },
+  { title: "26. Last Summer (PAST FOCUS)", content: `☀️ Last summer was very hot.
+去年の夏はとても暑かったです。
+🏖️ We visited many beaches.
+たくさんのビーチに行きました。
+🏊 I swam every day.
+毎日泳ぎました。
+🍦 I ate ice cream often.
+よくアイスクリームを食べました。
+🍉 We ate watermelon too.
+スイカも食べました。
+⛺ We camped near the ocean.
+海の近くでキャンプをしました。
+🎆 We watched fireworks at night.
+夜に花火を見ました。
+📸 I took many photos.
+たくさんの写真を撮りました。
+😊 I made great memories.
+素晴らしい思い出ができました。
+☀️ Last summer was wonderful!
+去年の夏は素晴らしかったです！
+
+☀️ Was last summer hot?
+去年の夏は暑かったですか？
+🏖️ Did you visit beaches?
+ビーチに行きましたか？
+🏊 Did you swim often?
+よく泳ぎましたか？
+🍦 Did you eat ice cream?
+アイスクリームを食べましたか？
+🍉 Do you like watermelon?
+スイカは好きですか？
+⛺ Did you go camping?
+キャンプに行きましたか？
+🎆 Did you watch fireworks?
+花火を見ましたか？
+📸 Did you take photos?
+写真を撮りましたか？
+😊 What memories did you make?
+どんな思い出ができましたか？
+☀️ How was your summer?
+夏はどうでしたか？` },
+  { title: "27. Beach Day (MIXED)", content: `🏖️ We went to the beach yesterday.
+昨日、ビーチに行きました。
+🌊 The waves were big!
+波は大きかったです！
+🏊 I swam with friends.
+友達と泳ぎました。
+🏖️ I will build a sandcastle.
+砂の城を作ります。
+🐚 I will find shells too.
+貝殻も探します。
+☀️ Today is hotter than yesterday.
+今日は昨日より暑いです。
+🌊 The water is cooler than the air.
+水は空気より涼しいです。
+🦀 I found a small crab.
+小さなカニを見つけました。
+😊 I love beach days!
+ビーチの日が大好きです！
+🏖️ The beach is wonderful!
+ビーチは素晴らしいです！
+
+🏖️ Did you go to the beach?
+ビーチに行きましたか？
+🌊 Were the waves big?
+波は大きかったですか？
+🏊 Do you swim with friends?
+友達と泳ぎますか？
+🏖️ Will you build sandcastles?
+砂の城を作りますか？
+🐚 Do you find shells?
+貝殻を見つけますか？
+☀️ Is today hot?
+今日は暑いですか？
+🌊 Is the water cool?
+水は涼しいですか？
+🦀 Have you found crabs?
+カニを見つけたことがありますか？
+😊 Do you love beach days?
+ビーチの日は大好きですか？
+🏖️ What do you do at the beach?
+ビーチで何をしますか？` },
+  { title: "28. Trip Plans (FUTURE FOCUS)", content: `🚗 We will go on a trip.
+旅行に行きます。
+🏔️ We will visit the mountains.
+山に行きます。
+⛺ We will stay in a cabin.
+キャビンに泊まります。
+🥾 I will go hiking.
+ハイキングに行きます。
+📸 I will take many photos.
+たくさんの写真を撮ります。
+🌰 I will find acorns.
+どんぐりを探します。
+🍁 The leaves will be beautiful.
+葉っぱは美しいでしょう。
+🧗 Hiking is more fun than walking.
+ハイキングは歩くことより楽しいです。
+😊 We will have fun!
+楽しむでしょう！
+🏔️ Mountain trips are the best!
+山の旅行は最高です！
+
+🚗 Will you go on a trip?
+旅行に行きますか？
+🏔️ Do you like mountains?
+山は好きですか？
+⛺ Have you stayed in a cabin?
+キャビンに泊まったことがありますか？
+🥾 Do you go hiking?
+ハイキングに行きますか？
+📸 Do you take trip photos?
+旅行の写真を撮りますか？
+🌰 Do you find acorns?
+どんぐりを見つけますか？
+🍁 Do you like autumn leaves?
+紅葉は好きですか？
+🧗 Is hiking fun for you?
+ハイキングは楽しいですか？
+😊 What trips do you like?
+どんな旅行が好きですか？
+🏔️ Where will you go?
+どこに行きますか？` },
+  { title: "29. Obon Festival (MIXED)", content: `🏮 We celebrated Obon last week.
+先週、お盆を祝いました。
+👨‍👩‍👧‍👦 My family came together.
+家族が集まりました。
+💃 We danced the Bon dance.
+盆踊りを踊りました。
+🏮 I will dance again next year.
+来年また踊ります。
+👘 I will wear traditional clothes.
+伝統的な服を着ます。
+🎵 The music was lively.
+音楽は活発でした。
+🏮 Obon is more traditional than other festivals.
+お盆は他の祭りより伝統的です。
+💫 We remembered our ancestors.
+祖先を思い出しました。
+😊 Obon is very special.
+お盆はとても特別です。
+🏮 I love Obon traditions!
+お盆の伝統が大好きです！
+
+🏮 Did you celebrate Obon?
+お盆を祝いましたか？
+👨‍👩‍👧‍👦 Does your family come together?
+家族は集まりますか？
+💃 Did you dance?
+踊りましたか？
+🏮 Will you dance next year?
+来年は踊りますか？
+👘 Do you wear traditional clothes?
+伝統的な服を着ますか？
+🎵 Do you like festival music?
+祭りの音楽は好きですか？
+🏮 Is Obon traditional for you?
+お盆は伝統的ですか？
+💫 Do you remember ancestors?
+祖先を思い出しますか？
+😊 What is special about Obon?
+お盆について何が特別ですか？
+🏮 What traditions do you love?
+どんな伝統が好きですか？` },
+  { title: "30. Summer Comparison (COMPARATIVES FOCUS)", content: `☀️ Summer is hotter than spring.
+夏は春より暑いです。
+🌊 The ocean is bigger than lakes.
+海は湖より大きいです。
+🍦 Ice cream is sweeter than popsicles.
+アイスクリームはアイスキャンディより甘いです。
+🍉 Watermelon is juicier than apples.
+スイカはリンゴよりジューシーです。
+🏊 Swimming is cooler than running.
+泳ぐことは走ることより涼しいです。
+🏖️ Beaches are more crowded than pools.
+ビーチはプールより混んでいます。
+🎆 Summer fireworks are the brightest!
+夏の花火は一番明るいです！
+☀️ August is the hottest month.
+8月は一番暑い月です。
+🧴 Sunscreen is more important than ever.
+日焼け止めは今までより大切です。
+😊 Summer fun is the best!
+夏の楽しみは最高です！
+
+☀️ Is summer hotter than spring?
+夏は春より暑いですか？
+🌊 Is the ocean big?
+海は大きいですか？
+🍦 Is ice cream sweet?
+アイスクリームは甘いですか？
+🍉 Is watermelon juicy?
+スイカはジューシーですか？
+🏊 Is swimming cool?
+泳ぐことは涼しいですか？
+🏖️ Are beaches crowded?
+ビーチは混んでいますか？
+🎆 Are fireworks bright?
+花火は明るいですか？
+☀️ What is the hottest month?
+一番暑い月は何ですか？
+🧴 Do you use sunscreen?
+日焼け止めを使いますか？
+😊 What summer fun do you like?
+どんな夏の楽しみが好きですか？` },
+  { title: "31. Back to School (MIXED)", content: `🏫 School started last week.
+先週、学校が始まりました。
+📚 I got new textbooks.
+新しい教科書をもらいました。
+✏️ They are heavier than last year.
+それらは去年より重いです。
+👨‍🏫 I will meet my teacher.
+先生に会います。
+🎯 I will study harder.
+もっと勉強します。
+📝 I will do all homework.
+すべての宿題をします。
+🏫 This semester is longer than last.
+今学期は前より長いです。
+👫 I saw my friends again.
+また友達に会えました。
+😊 I like school!
+学校が好きです！
+📚 Learning is exciting!
+学ぶことは楽しいです！
+
+🏫 Did school start?
+学校は始まりましたか？
+📚 Did you get new books?
+新しい本をもらいましたか？
+✏️ Is your bag heavy?
+バッグは重いですか？
+👨‍🏫 Do you like your teacher?
+先生は好きですか？
+🎯 Will you study harder?
+もっと勉強しますか？
+📝 Do you do homework?
+宿題をしますか？
+🏫 Is this semester long?
+今学期は長いですか？
+👫 Did you see friends?
+友達に会えましたか？
+😊 Do you like school?
+学校は好きですか？
+📚 What do you like learning?
+何を学ぶのが好きですか？` },
+  { title: "32. Summer Memories (PAST FOCUS)", content: `☀️ I have summer memories.
+夏の思い出があります。
+🏊 I swam in the pool.
+プールで泳ぎました。
+🏖️ We built a big sandcastle.
+大きな砂の城を作りました。
+🍦 I ate ice cream daily.
+毎日アイスクリームを食べました。
+🎆 We watched big fireworks.
+大きな花火を見ました。
+🦀 I found many crabs.
+たくさんのカニを見つけました。
+📸 I took hundreds of photos.
+何百枚もの写真を撮りました。
+⛺ We camped under stars.
+星の下でキャンプをしました。
+😊 These memories are precious.
+これらの思い出は大切です。
+☀️ Summer was amazing!
+夏は素晴らしかったです！
+
+☀️ Do you have summer memories?
+夏の思い出はありますか？
+🏊 Did you swim much?
+たくさん泳ぎましたか？
+🏖️ Did you build sandcastles?
+砂の城を作りましたか？
+🍦 Did you eat ice cream?
+アイスクリームを食べましたか？
+🎆 Did you watch fireworks?
+花火を見ましたか？
+🦀 Did you find crabs?
+カニを見つけましたか？
+📸 Did you take photos?
+写真を撮りましたか？
+⛺ Did you camp?
+キャンプをしましたか？
+😊 What memories are precious?
+どんな思い出が大切ですか？
+☀️ How was your summer?
+夏はどうでしたか？` },
+  { title: "33. Autumn Plans (MIXED)", content: `🍂 Autumn is coming soon.
+すぐに秋が来ます。
+🍁 Leaves will turn red.
+葉っぱは赤くなります。
+🥾 I will go hiking.
+ハイキングに行きます。
+📸 I took photos last autumn.
+去年の秋に写真を撮りました。
+🍂 This autumn will be prettier.
+今秋はもっときれいになるでしょう。
+🍁 Red leaves are more beautiful than green.
+紅葉は緑より美しいです。
+🧥 I will wear warmer clothes.
+もっと暖かい服を着ます。
+☕ Hot tea is better than cold.
+温かいお茶は冷たいものより良いです。
+😊 I love autumn colors!
+秋の色が大好きです！
+🍂 Autumn is wonderful!
+秋は素晴らしいです！
+
+🍂 Is autumn coming soon?
+すぐに秋が来ますか？
+🍁 Do you like red leaves?
+紅葉は好きですか？
+🥾 Will you go hiking?
+ハイキングに行きますか？
+📸 Do you take autumn photos?
+秋の写真を撮りますか？
+🍂 Is autumn pretty?
+秋はきれいですか？
+🍁 Do you like autumn colors?
+秋の色は好きですか？
+🧥 Do you wear warm clothes?
+暖かい服を着ますか？
+☕ Do you like hot tea?
+温かいお茶は好きですか？
+😊 What do you love about autumn?
+秋について何が好きですか？
+🍂 What will you do?
+何をしますか？` },
+  { title: "34. Sports Day Plans (FUTURE FOCUS)", content: `🏃 We will have sports day.
+運動会があります。
+🏆 I will run in the race.
+レースで走ります。
+🎽 I will wear my gym clothes.
+体操服を着ます。
+🤝 My team will practice hard.
+私たちのチームは一生懸命練習します。
+🏆 We will try to win.
+勝つために頑張ります。
+📣 Everyone will cheer loudly.
+みんなが大きな声で応援します。
+🏃 Running is more exciting than watching.
+走ることは見ることよりエキサイティングです。
+🏅 Winning is better than losing.
+勝つことは負けることより良いです。
+😊 We will have fun!
+楽しむでしょう！
+🏃 Sports day is the best!
+運動会は最高です！
+
+🏃 Will you have sports day?
+運動会はありますか？
+🏆 Will you run in a race?
+レースで走りますか？
+🎽 Do you wear gym clothes?
+体操服を着ますか？
+🤝 Does your team practice?
+チームは練習しますか？
+🏆 Do you want to win?
+勝ちたいですか？
+📣 Do you cheer for friends?
+友達を応援しますか？
+🏃 Is running exciting?
+走ることはエキサイティングですか？
+🏅 Is winning important?
+勝つことは大切ですか？
+😊 What will you do?
+何をしますか？
+🏃 What sports do you like?
+どんなスポーツが好きですか？` },
+  { title: "35. School Festival (MIXED)", content: `🎪 We had a festival.
+学園祭がありました。
+🎭 Our class performed a play.
+私たちのクラスは劇をしました。
+🎵 I sang on stage.
+ステージで歌いました。
+🎪 I will perform again next year.
+来年また発表します。
+🎨 Our display was colorful.
+私たちの展示はカラフルでした。
+📸 Parents took many photos.
+保護者がたくさんの写真を撮りました。
+🎭 Acting is harder than singing.
+演技は歌うことより難しいです。
+🎪 This festival was better than last.
+この祭りは前より良かったです。
+😊 I loved performing!
+発表が大好きでした！
+🎪 Festivals are so fun!
+祭りはとても楽しいです！
+
+🎪 Did you have a festival?
+学園祭はありましたか？
+🎭 Did you perform?
+発表しましたか？
+🎵 Do you like singing?
+歌うのは好きですか？
+🎪 Will you perform again?
+また発表しますか？
+🎨 Was your display colorful?
+展示はカラフルでしたか？
+📸 Did parents take photos?
+保護者は写真を撮りましたか？
+🎭 Is acting hard?
+演技は難しいですか？
+🎪 Was this festival good?
+この祭りは良かったですか？
+😊 What did you love?
+何が好きでしたか？
+🎪 What festivals do you have?
+どんな祭りがありますか？` },
+  { title: "36. Subject Comparison (COMPARATIVES FOCUS)", content: `📚 Math is harder than art.
+数学は美術より難しいです。
+🔬 Science is more interesting than history.
+理科は歴史より面白いです。
+🌍 English is easier than Chinese.
+英語は中国語より簡単です。
+🎵 Music is more fun than PE.
+音楽は体育より楽しいです。
+📝 Writing is slower than reading.
+書くことは読むことより遅いです。
+🎨 Drawing is more relaxing than testing.
+絵を描くことはテストよりリラックスします。
+🧮 Math problems are the hardest!
+数学の問題は一番難しいです！
+📖 Reading is the most enjoyable.
+読書は一番楽しめることです。
+🏃 PE is more tiring than sitting.
+体育は座ることより疲れます。
+😊 All subjects are useful!
+すべての科目は役立ちます！
+
+📚 Is math hard for you?
+数学は難しいですか？
+🔬 Do you like science?
+理科は好きですか？
+🌍 Is English easy?
+英語は簡単ですか？
+🎵 Do you like music?
+音楽は好きですか？
+📝 Do you like writing?
+書くことは好きですか？
+🎨 Is drawing relaxing?
+絵を描くことはリラックスしますか？
+🧮 What is the hardest subject?
+一番難しい科目は何ですか？
+📖 What is most enjoyable?
+一番楽しめることは何ですか？
+🏃 Is PE tiring?
+体育は疲れますか？
+😊 What subjects do you like?
+どんな科目が好きですか？` },
+  { title: "37. Autumn Leaves (MIXED)", content: `🍂 I saw autumn leaves yesterday.
+昨日、紅葉を見ました。
+🍁 They were red and gold.
+それらは赤と金色でした。
+📸 I took many photos.
+たくさんの写真を撮りました。
+🍂 I will see more next week.
+来週もっと見に行きます。
+🍁 Leaves are prettier than before.
+葉っぱは前よりきれいです。
+🌳 Trees are taller than flowers.
+木は花より背が高いです。
+🍂 Autumn colors are beautiful!
+秋の色はきれいです！
+🦋 Butterflies were everywhere.
+蝶があちこちにいました。
+😊 I love autumn!
+秋が大好きです！
+🍂 Fall is so colorful!
+秋はとてもカラフルです！
+
+🍂 Did you see autumn leaves?
+紅葉を見ましたか？
+🍁 Are they red and gold?
+赤と金色ですか？
+📸 Do you take photos?
+写真を撮りますか？
+🍂 Will you see more?
+もっと見に行きますか？
+🌳 Are trees taller than flowers?
+木は花より高いですか？
+🍂 Do you love autumn?
+秋は好きですか？
+🦋 Do you see butterflies?
+蝶を見ますか？
+😊 What do you love about fall?
+秋について何が好きですか？
+🍂 What colors do you see?
+どんな色を見ますか？
+🍁 What is your favorite leaf?
+一番好きな葉っぱは何ですか？` },
+  { title: "38. Halloween Memories (PAST FOCUS)", content: `🎃 We celebrated Halloween last week.
+先週、ハロウィンを祝いました。
+👻 I wore a ghost costume.
+おばけの服を着ました。
+🍬 I got lots of candy.
+たくさんキャンディをもらいました。
+🎃 My friends came too.
+友達も来ました。
+👻 The house was very scary!
+家はとても怖かったです！
+🏠 We went trick or treating.
+「お菓子をくれなきゃ、いたずらするぞ」をしました。
+🎃 I ate candy after.
+その後、キャンディを食べました。
+📸 We took costume photos.
+コスプレ写真を撮りました。
+😊 It was so much fun!
+とても楽しかったです！
+🎃 Halloween was awesome!
+ハロウィンは最高でした！
+
+🎃 Did you celebrate Halloween?
+ハロウィンを祝いましたか？
+👻 What costume did you wear?
+どんなコスプレを着ましたか？
+🍬 Did you get candy?
+キャンディをもらいましたか？
+🎃 Did friends come?
+友達は来ましたか？
+👻 Was your house scary?
+家は怖かったですか？
+🏠 Did you go trick or treating?
+「お菓子をくれ」をしましたか？
+🎃 Did you eat candy?
+キャンディを食べましたか？
+📸 Did you take photos?
+写真を撮りましたか？
+😊 Was it fun?
+楽しかったですか？
+🎃 What was the best part?
+一番良かった部分は何ですか？` },
+  { title: "39. Costume Ideas (MIXED)", content: `🎃 I will dress up next year.
+来年、コスプレをします。
+👻 I want to be a ghost.
+おばけになりたいです。
+🦇 I will make wings too.
+翼も作ります。
+🎭 My friend will be a vampire.
+友達はバンパイアになります。
+🎃 Costumes are more fun than regular clothes.
+コスプレは普通の服より楽しいです。
+👗 I will wear a dress.
+ワンピースを着ます。
+🎃 My costume will be scary!
+私のコスプレは怖いです！
+🎉 Everyone will have fun!
+みんなが楽しむでしょう！
+😊 I love dressing up!
+コスプレが大好きです！
+🎃 Halloween is so fun!
+ハロウィンはとても楽しいです！
+
+🎃 Will you dress up?
+コスプレをしますか？
+👻 What will you be?
+何になりたいですか？
+🦇 Will you make wings?
+翼を作りますか？
+🎭 What will your friend be?
+友達は何になりますか？
+🎃 Are costumes fun?
+コスプレは楽しいですか？
+👗 Will you wear a dress?
+ワンピースを着ますか？
+🎃 Will your costume be scary?
+コスプレは怖くなりますか？
+🎉 Will everyone have fun?
+みんなが楽しむでしょう？
+😊 Do you love dressing up?
+コスプレは好きですか？
+🎃 What do you like most?
+何が一番好きですか？` },
+  { title: "40. Party Plans (FUTURE FOCUS)", content: `🎉 We will have a party.
+パーティーをします。
+🎂 I will bake a cake.
+ケーキを焼きます。
+🎈 I will blow up balloons.
+風船を膨らませます。
+🎵 We will play music.
+音楽を再生します。
+🎉 The party will be fun!
+パーティーは楽しいでしょう！
+🍕 We will eat pizza too.
+ピザも食べます。
+👫 I will invite my friends.
+友達を招待します。
+🎂 The cake will be delicious!
+ケーキは美味しいでしょう！
+😊 Everyone will enjoy it!
+みんなが楽しむでしょう！
+🎉 Parties are the best!
+パーティーは最高です！
+
+🎉 Will you have a party?
+パーティーをしますか？
+🎂 Will you bake a cake?
+ケーキを焼きますか？
+🎈 Will you blow balloons?
+風船を膨らませますか？
+🎵 Will you play music?
+音楽を再生しますか？
+🍕 Do you like pizza?
+ピザは好きですか？
+👫 Will you invite friends?
+友達を招待しますか？
+🎂 Is cake delicious?
+ケーキは美味しいですか？
+😊 What will you enjoy?
+何を楽しみますか？
+🎉 What parties do you like?
+どんなパーティーが好きですか？
+🎉 What will you do at the party?
+パーティーで何をしますか？` },
+  { title: "41. Thanksgiving (MIXED)", content: `🦃 We celebrate Thanksgiving in November.
+11 月に感謝祭を祝います。
+👨‍👩‍👧‍👦 My family gathers together.
+家族が集まります。
+🍗 We eat turkey and pumpkin pie.
+七面鳥とかぼちゃパイを食べます。
+🦃 I will help cook this year.
+今年、料理を手伝います。
+👨‍👩‍👧‍👦 We will say thanks for family.
+家族に感謝します。
+🍂 Autumn food is the tastiest!
+秋の食べ物一番美味しい！
+🦃 Turkey is bigger than chicken.
+七面鳥は鶏より大きいです。
+😊 I am thankful for friends.
+友達に感謝しています。
+💕 Being thankful makes us happy.
+感謝すると幸せになります。
+🦃 Gratitude is very important!
+感謝はとても大切です！
+
+🦃 Do you celebrate Thanksgiving?
+感謝祭を祝いますか？
+👨‍👩‍👧‍👦 Does your family gather?
+家族は集まりますか？
+🍗 Do you eat turkey?
+七面鳥を食べますか？
+🦃 Will you help cook?
+料理を手伝いますか？
+👨‍👩‍👧‍👦 What are you thankful for?
+何に感謝していますか？
+🍂 Is autumn food tasty?
+秋の食べ物は美味しいですか？
+🦃 Is turkey big?
+七面鳥は大きいですか？
+😊 Are you thankful?
+感謝していますか？
+💕 What makes you happy?
+何があなたを幸せにしますか？
+🦃 What do you celebrate?
+何を祝いますか？` },
+  { title: "42. Autumn Comparison (COMPARATIVES FOCUS)", content: `🍂 Autumn is cooler than summer.
+秋は夏より涼しいです。
+🍎 Apples are sweeter than bananas.
+リンゴはバナナより甘いです。
+🧥 Sweaters are warmer than T-shirts.
+セーターは T シャツより暖かいです。
+🍂 Leaves are more colorful than flowers.
+葉は花よりカラフルです。
+☕ Hot drinks are better than cold.
+温かい飲み物は冷たいより良いです。
+🎃 Halloween is more fun than regular days.
+ハロウィンは普通の日より楽しいです。
+📚 Reading is better in autumn.
+読書は秋が良いです。
+🍂 Autumn nights are cozier.
+秋の夜はもっと居心地良いです。
+🌙 The moon is brighter in autumn.
+秋の月はもっと明るいです。
+😊 Autumn is the most comfortable!
+秋が最も居心地良いです！
+
+🍂 Is autumn cooler than summer?
+秋は夏より涼しいですか？
+🍎 Are apples sweet?
+リンゴは甘いですか？
+🧥 Are sweaters warm?
+セーターは暖かいですか？
+🍂 Are leaves colorful?
+葉はカラフルですか？
+☕ Are hot drinks better?
+温かい飲み物は良いですか？
+🎃 Is Halloween fun?
+ハロウィンは楽しいですか？
+📚 Do you like reading in autumn?
+秋の読書は好きですか？
+🍂 Is autumn cozy?
+秋は居心地良いですか？
+🌙 Is the moon bright?
+月は明るいですか？
+😊 Is autumn comfortable?
+秋は居心地良いですか？` },
+  { title: "43. Winter Coming (MIXED)", content: `❄️ Winter is coming soon.
+すぐに冬が来ます。
+🌨️ It will snow this week.
+今週、雪が降ります。
+🧥 I will wear my heavy coat.
+厚いコートを着ます。
+❄️ I will make snowmen.
+雪だるまを作ります。
+🌨️ The days are getting shorter.
+日が短くなっています。
+🔥 Heating is more important than cooling.
+暖房は冷房より大切です。
+❄️ Winter is colder than autumn.
+冬は秋より寒いです。
+☕ Hot chocolate is the best!
+ホットチョコレートが最高！
+😊 I love winter!
+冬が大好きです！
+❄️ Snow days are magical!
+雪の日は魔法のよう！
+
+❄️ Is winter coming soon?
+すぐに冬が来ますか？
+🌨️ Will it snow this week?
+今週、雪が降りますか？
+🧥 Will you wear a coat?
+コートを着ますか？
+❄️ Will you make snowmen?
+雪だるまを作りますか？
+🌨️ Are days getting shorter?
+日が短くなっていますか？
+🔥 Do you use heating?
+暖房を使いますか？
+❄️ Is winter cold?
+冬は寒いですか？
+☕ Do you like hot chocolate?
+ホットチョコレートは好きですか？
+😊 Do you love winter?
+冬は好きですか？
+❄️ What do you like about snow?
+雪について何が好きですか？` },
+  { title: "44. Last Winter (PAST FOCUS)", content: `❄️ Last winter was very cold.
+去年の冬は寒かったです。
+🏔️ I visited snowy mountains.
+雪山に行きました。
+⛷️ I went skiing every day.
+毎日スキーをしました。
+☕ I drank hot cocoa.
+ホットココアを飲みました。
+❄️ The snow was soft and white.
+雪は白くて柔らかかった。
+🏔️ The view was amazing!
+景色は素晴らしかった！
+📸 I took photos of snow.
+雪の写真を撮りました。
+🧣 I wore warm scarves.
+暖かいマフラーをしました。
+😊 I had so much fun!
+とても楽しかった！
+❄️ Winter was magical!
+冬は魔法のようでした！
+
+❄️ Was last winter cold?
+去年の冬は寒かったですか？
+🏔️ Did you visit mountains?
+雪山に行きましたか？
+⛷️ Did you go skiing?
+スキーをしましたか？
+☕ Did you drink hot cocoa?
+ホットココアを飲みましたか？
+❄️ Was the snow white?
+雪は白かったですか？
+🏔️ Was the view amazing?
+景色は素晴らしかったですか？
+📸 Did you take photos?
+写真を撮りましたか？
+🧣 Did you wear scarves?
+マフラーをしましたか？
+😊 Did you have fun?
+楽しかったですか？
+❄️ What did you do last winter?
+去年の冬、何しましたか？` },
+  { title: "45. Christmas Plans (MIXED)", content: `🎄 Christmas is coming soon!
+すぐクリスマスが来ます！
+🎁 I will give presents.
+プレゼントをあげます。
+🎅 I will meet Santa.
+サンタさんに会います。
+🎄 I will decorate the tree.
+木を飾ります。
+🎁 Presents are more exciting than regular days.
+プレゼントは普通の日より楽しいです。
+🍪 I will bake cookies too.
+クッキーも焼きます。
+🎅 Santa is nicer than regular visitors.
+サンタさんは普通の人より優しいです。
+🎄 Christmas is the most wonderful!
+クリスマスが一番素晴らしい！
+😊 I love this holiday!
+この祝日が大好き！
+🎄 December is magical!
+12 月は魔法のよう！
+
+🎄 Is Christmas coming soon?
+すぐクリスマスが来ますか？
+🎁 Will you give presents?
+プレゼントをあげますか？
+🎅 Will you meet Santa?
+サンタさんに会いますか？
+🎄 Will you decorate the tree?
+木を飾りますか？
+🎁 Are presents exciting?
+プレゼントは楽しいですか？
+🍪 Do you like cookies?
+クッキーは好きですか？
+🎅 Is Santa nice?
+サンタさんは優しいですか？
+🎄 Is Christmas wonderful?
+クリスマスは素晴らしいですか？
+😊 Do you love this holiday?
+この祝日は好きですか？
+🎄 What will you do on Christmas?
+クリスマスに何をしますか？` },
+  { title: "46. New Year Plans (FUTURE FOCUS)", content: `🎊 I will celebrate New Year.
+新年を祝います。
+🧧 I will get otoshidama.
+お年玉をもらいます。
+🎌 I will visit a shrine.
+神社に行きます。
+🎊 The year will be great!
+今年は素晴らしいでしょう！
+🧧 I will save my money.
+お金を貯めます。
+🎌 I will make wishes too.
+願い事もします。
+🎊 I will eat special food.
+特別な食べ物を食べます。
+🥢 New Year food is the tastiest!
+おせちが一番美味しい！
+😊 I will start fresh!
+新しく始めます！
+🎊 Next year will be amazing!
+来年は素晴らしいでしょう！
+
+🎊 Will you celebrate New Year?
+新年を祝いますか？
+🧧 Will you get otoshidama?
+お年玉をもらいますか？
+🎌 Will you visit a shrine?
+神社に行きますか？
+🎊 Will the year be great?
+年は素晴らしいですか？
+🧧 Will you save money?
+お金を貯めますか？
+🎌 Will you make wishes?
+願い事をしますか？
+🎊 Will you eat special food?
+特別な食べ物を食べますか？
+🥢 Is New Year food tasty?
+おせちは美味しいですか？
+😊 Will you start fresh?
+新しく始めますか？
+🎊 What will you do next year?
+来年、何をしますか？` },
+  { title: "47. Year End (MIXED)", content: `📅 The year is ending.
+一年が終わります。
+📊 I learned many things.
+たくさんのことを学びました。
+🏆 I achieved my goals.
+目標を達成しました。
+📅 I will start new goals.
+新しい目標を始めます。
+📖 I will read more books.
+もっと本を読みます。
+💪 I will work harder.
+もっと頑張ります。
+🏆 This year was better than last.
+今年は去年より良かったです。
+😊 I grew as a person.
+成長しました。
+🌟 Next year will be better!
+来年はもっと良い！
+📅 Every year is a new start!
+毎年新たなスタート！
+
+📅 Is the year ending?
+一年が終わりますか？
+📊 What did you learn?
+何を学びましたか？
+🏆 Did you achieve goals?
+目標を達成しましたか？
+📖 Will you read more?
+もっと読みますか？
+💪 Will you work harder?
+もっと頑張りますか？
+🏆 Was this year better?
+今年は良かったですか？
+😊 Did you grow this year?
+今年、成長しましたか？
+🌟 Will next year be better?
+来年はもっと良いですか？
+📅 What is your new start?
+新たなスタートは何ですか？
+🌟 What will you do next year?
+来年、何をしますか？` },
+  { title: "48. Year Comparison (COMPARATIVES FOCUS)", content: `📅 This year is better than last.
+今年は去年より良いです。
+📚 I learned more than before.
+前より多くを学びました。
+🏆 I achieved more goals.
+前より多くの目標達成。
+😊 I am happier than before.
+前より幸せです。
+🌟 Next year will be the best!
+来年が最高でしょう！
+📚 Reading is more fun than gaming.
+読むことはゲームより楽しい。
+🏆 Success is sweeter than failure.
+成功は失敗より甘い。
+💪 Trying is better than giving up.
+諦めるより挑戦が良い。
+🌈 Every year gets better!
+毎年、良くなります！
+😊 Growth is the best thing!
+成長が最高のこと！
+
+📅 Is this year better?
+今年はより良いですか？
+📚 Did you learn more?
+もっと学びましたか？
+🏆 Did you achieve goals?
+目標を達成しましたか？
+😊 Are you happier?
+もっと幸せですか？
+🌟 Will next year be best?
+来年は最高ですか？
+📚 Is reading more fun?
+読むことは楽しいですか？
+🏆 Is success sweeter?
+成功はより甘いですか？
+💪 Is trying better?
+挑戦は良いですか？
+🌈 Does every year get better?
+毎年、良くなりますか？
+😊 What is the best thing?
+一番の良いことは何？` },
 ];
+
+module.exports = eiken4story;
