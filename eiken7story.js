@@ -3,7 +3,7 @@
 // Format: ALL lines = Emoji + English + Japanese (matching EIKEN 5 style)
 // Status: COMPLETE - All 48 stories merged and ready for use
 
-var eiken7complete = [
+var eiken7story = [
 {
   "title": "1. My Cat",
   "content": `🐱 I have a cat.
