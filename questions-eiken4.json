@@ -1,0 +1,247 @@
+[
+  {
+    "question": "📅 What did you do yesterday?",
+    "japanese": "昨日何をしましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🍽️ What did you have for dinner last night?",
+    "japanese": "昨晩夕食に何を食べましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎮 Did you play any games yesterday?",
+    "japanese": "昨日何かゲームをしましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🌤️ How was the weather yesterday?",
+    "japanese": "昨日の天気はどうでしたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📺 What TV program did you watch last night?",
+    "japanese": "昨晩どんなテレビ番組を見ましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📚 Did you study English yesterday?",
+    "japanese": "昨日英語を勉強しましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🏫 Were you at school yesterday?",
+    "japanese": "昨日学校にいましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "👕 What clothes did you wear yesterday?",
+    "japanese": "昨日どんな服を着ましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🐶 Did you walk your dog yesterday?",
+    "japanese": "昨日犬を散歩させましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📞 Who did you talk to on the phone yesterday?",
+    "japanese": "昨日誰と電話で話しましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🚗 Where did you go last weekend?",
+    "japanese": "先週末どこへ行きましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎁 Did you get any presents last month?",
+    "japanese": "先月プレゼントをもらいましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🍕 What did you eat for lunch yesterday?",
+    "japanese": "昨日昼食に何を食べましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🏃 Did you exercise yesterday?",
+    "japanese": "昨日運動しましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🛌 What time did you go to bed last night?",
+    "japanese": "昨晩何時に寝ましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "⏰ What time did you get up this morning?",
+    "japanese": "今朝何時に起きましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🚲 Did you ride your bicycle yesterday?",
+    "japanese": "昨日自転車に乗りましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🛒 What did you buy last week?",
+    "japanese": "先週何を買いましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📖 What book did you read last month?",
+    "japanese": "先月どんな本を読みましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎵 What music did you listen to yesterday?",
+    "japanese": "昨日どんな音楽を聴きましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🧹 Did you clean your room yesterday?",
+    "japanese": "昨日部屋を掃除しましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "👨‍👩‍👧‍👦 Did you see your family yesterday?",
+    "japanese": "昨日家族に会いましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🌧️ Was it rainy last week?",
+    "japanese": "先週雨が降りましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🍎 Did you eat any fruit yesterday?",
+    "japanese": "昨日果物を食べましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🛁 Did you take a bath last night?",
+    "japanese": "昨晩風呂に入りましたか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "✈️ Where will you go next summer?",
+    "japanese": "来年夏どこへ行きますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎂 What will you do for your birthday?",
+    "japanese": "誕生日に何をしますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎓 Will you go to university after school?",
+    "japanese": "学校の後大学へ行きますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📚 Will you study English tomorrow?",
+    "japanese": "明日英語を勉強しますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🛒 What will you buy next weekend?",
+    "japanese": "来週末何を買いますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "👕 What will you wear tomorrow?",
+    "japanese": "明日どんな服を着ますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🍽️ What will you eat for dinner tonight?",
+    "japanese": "今晩夕食に何を食べますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📺 What TV program will you watch tonight?",
+    "japanese": "今晩どんなテレビ番組を見ますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎮 Will you play games this weekend?",
+    "japanese": "今週末ゲームをしますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🐶 Will you walk your dog tomorrow?",
+    "japanese": "明日犬を散歩させますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🏃 Will you exercise tomorrow?",
+    "japanese": "明日運動しますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📞 Who will you call on the phone tonight?",
+    "japanese": "今晩誰に電話をしますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📖 What book will you read next?",
+    "japanese": "次にどんな本を読みますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎵 What music will you listen to tomorrow?",
+    "japanese": "明日どんな音楽を聴きますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "👫 Will you meet friends this weekend?",
+    "japanese": "今週末友達に会いますか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🍎 Which is bigger, an apple or an orange?",
+    "japanese": "りんごとオレンジ、どちらが大きいですか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🏫 Which is closer, your home or your school?",
+    "japanese": "家と学校、どちらが近いですか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🍚 Which do you like better, rice or bread?",
+    "japanese": "ご飯とパン、どちらが好きですか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🐱 Which is faster, a cat or a dog?",
+    "japanese": "猫と犬、どちらが速いですか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎵 Which is louder, rock music or classical?",
+    "japanese": "ロック音楽とクラシック、どちらがうるさいですか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🌡️ Which season is warmer, spring or autumn?",
+    "japanese": "春と秋、どちらが暖かいですか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🎮 Which is more fun, video games or sports?",
+    "japanese": "ビデオゲームとスポーツ、どちらが楽しいですか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "📺 Which is more interesting, TV or books?",
+    "japanese": "テレビと本、どちらが面白いですか？",
+    "level": "Eiken 4"
+  },
+  {
+    "question": "🏠 Which is bigger, your house or your school?",
+    "japanese": "家と学校、どちらが大きいですか？",
+    "level": "Eiken 4"
+  }
+]

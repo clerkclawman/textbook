@@ -1,0 +1,247 @@
+[
+  {
+    "question": "🌍 It appears that climate change may accelerate; however, evidence remains contested.",
+    "japanese": "気候変動は加速する可能性があるようだ；しかし、証拠は議論の余地があります。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📱 One could argue that smartphones potentially enhance productivity; conversely, they might distract.",
+    "japanese": "スマートフォンは生産性を向上させる可能性があると主張できる；逆に、気を散らすかもしれません。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🏫 It seems plausible that education systems could evolve; nevertheless, resistance to change exists.",
+    "japanese": "教育システムは進化する可能性があるように思われる；それにもかかわらず、変化への抵抗が存在します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌳 There is a possibility that deforestation might accelerate; yet, conservation efforts continue.",
+    "japanese": "森林伐採が加速する可能性がある；しかし、保全の取り組みは続いています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🍎 Some research suggests that diet could influence health; however, individual variation matters.",
+    "japanese": "いくつかの研究は食事が健康に影響する可能性があると示唆している；しかし、個人差が重要です。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🚗 It is conceivable that autonomous vehicles might transform transport; nonetheless, regulatory hurdles remain.",
+    "japanese": "自律走行車が交通を変革する可能性があると考えられる；それでも、規制上の障壁が残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📚 One might contend that digital learning could supplement traditional education; yet, challenges persist.",
+    "japanese": "デジタル学習が伝統的教育を補完する可能性があると主張できるかもしれない；しかし、課題は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌍 It is arguable that global cooperation may be essential; however, national interests often prevail.",
+    "japanese": "世界的な協力が不可欠である可能性があると論じられる；しかし、国家的利益がしばしば優先されます。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📱 There is a chance that artificial intelligence could revolutionize industries; yet, ethical concerns arise.",
+    "japanese": "人工知能が産業に革命をもたらす可能性がある；しかし、倫理的懸念が生じます。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🏫 It is likely that pedagogical approaches might shift; nevertheless, traditional methods endure.",
+    "japanese": "教育学的手法が変化する可能性が高い；それにもかかわらず、伝統的な方法は存続します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌳 Some experts believe that biodiversity loss could accelerate; however, conservation initiatives expand.",
+    "japanese": "一部の専門家は生物多様性の損失が加速する可能性があると信じている；しかし、保全イニシアチブが拡大しています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🍎 It appears possible that nutritional science may advance; yet, dietary guidelines evolve slowly.",
+    "japanese": "栄養科学が進歩する可能性があるように思われる；しかし、食事ガイドラインはゆっくり進化します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🚗 One could speculate that transportation systems might become sustainable; nonetheless, infrastructure challenges exist.",
+    "japanese": "交通システムが持続可能になる可能性があると推測できる；それでも、インフラの課題が存在します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📚 It seems feasible that lifelong learning could become mainstream; however, systemic barriers remain.",
+    "japanese": "生涯学習が主流になる可能性があるように思われる；しかし、制度的障壁が残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌍 There is a view that climate adaptation may be necessary; yet, mitigation efforts continue.",
+    "japanese": "気候適応が必要である可能性があるという見方がある；しかし、緩和の取り組みは続いています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📱 It is plausible that digital connectivity might increase; nevertheless, digital divides persist.",
+    "japanese": "デジタル接続性が増加する可能性があると思われる；それでも、デジタル格差は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🏫 Some argue that educational equity could improve; however, disparities often continue.",
+    "japanese": "教育の公平性が改善する可能性があると主張する人もいる；しかし、格差はしばしば続いています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌳 It appears likely that ecosystem restoration might progress; yet, degradation continues elsewhere.",
+    "japanese": "生態系修復が進む可能性が高いように思われる；しかし、他の場所では劣化が続いています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🍎 One might suggest that food security could be enhanced; however, distribution challenges remain.",
+    "japanese": "食料安全保障が向上する可能性があると示唆できるかもしれない；しかし、流通の課題は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🚗 It is conceivable that urban mobility might transform; nonetheless, congestion problems persist.",
+    "japanese": "都市モビリティが変革する可能性があると考えられる；それでも、渋滞問題は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📚 There is a perspective that knowledge economies may expand; yet, access disparities exist.",
+    "japanese": "知識経済が拡大する可能性があるという見方がある；しかし、アクセスの格差が存在します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌍 It seems possible that international collaboration could strengthen; however, geopolitical tensions interfere.",
+    "japanese": "国際協力が強化される可能性があるように思われる；しかし、地政学的緊張が干渉します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📱 Some researchers posit that technology ethics might evolve; nevertheless, implementation lags.",
+    "japanese": "一部の研究者は技術倫理が進化する可能性があると仮定する；それでも、実施は遅れています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🏫 It is arguable that assessment methods could reform; yet, traditional testing persists.",
+    "japanese": "評価方法が改革される可能性があると論じられる；しかし、伝統的なテストは残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌳 There is a chance that conservation policies may become effective; however, enforcement challenges remain.",
+    "japanese": "保全政策が効果的になる可能性がある；しかし、執行の課題は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🍎 One could argue that dietary guidelines might improve; conversely, conflicting advice persists.",
+    "japanese": "食事ガイドラインが改善する可能性があると主張できる；逆に、矛盾したアドバイスが残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🚗 It appears plausible that transportation innovation may accelerate; nevertheless, regulatory adaptation slows.",
+    "japanese": "交通イノベーションが加速する可能性があるように思われる；それでも、規制適応が遅くなります。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📚 Some suggest that interdisciplinary learning could expand; yet, disciplinary boundaries endure.",
+    "japanese": "一部は学際的学習が拡大する可能性があると示唆する；しかし、学問分野の境界は存続します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌍 It is likely that climate resilience might become prioritized; however, immediate costs concern stakeholders.",
+    "japanese": "気候レジリエンスが優先される可能性が高い；しかし、即時コストが関係者を懸念させます。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📱 There is a view that digital literacy may be essential; yet, access gaps continue.",
+    "japanese": "デジタルリテラシーが不可欠である可能性があるという見方がある；しかし、アクセスの格差は続いています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🏫 It seems feasible that inclusive education could progress; nevertheless, implementation challenges exist.",
+    "japanese": "包括的教育が進む可能性があるように思われる；それでも、実施の課題が存在します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌳 Some believe that environmental awareness might increase; however, action often lags.",
+    "japanese": "環境意識が増加する可能性があると信じる人もいる；しかし、行動はしばしば遅れます。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🍎 It is conceivable that food systems may transform; nonetheless, traditional practices persist.",
+    "japanese": "食料システムが変革する可能性があると考えられる；それでも、伝統的な慣行は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🚗 One might speculate that mobility solutions could emerge; yet, infrastructure limitations remain.",
+    "japanese": "モビリティソリューションが出現する可能性があると推測できるかもしれない；しかし、インフラの制限は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📚 There is a perspective that critical thinking skills may be crucial; however, assessment difficulties persist.",
+    "japanese": "批判的思考スキルが重要である可能性があるという見方がある；しかし、評価の困難さは残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌍 It appears possible that sustainable development could advance; yet, economic pressures interfere.",
+    "japanese": "持続可能な開発が進む可能性があるように思われる；しかし、経済的圧力が干渉します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📱 Some argue that data privacy might become protected; nevertheless, breaches continue to occur.",
+    "japanese": "データプライバシーが保護される可能性があると主張する人もいる；それでも、侵害は起こり続けています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🏫 It is plausible that pedagogical innovation may spread; however, institutional inertia slows adoption.",
+    "japanese": "教育学イノベーションが広がる可能性があると思われる；しかし、制度的慣性が採用を遅らせます。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌳 There is a chance that habitat restoration might succeed; yet, ongoing threats continue.",
+    "japanese": "生息地修復が成功する可能性がある；しかし、進行中の脅威は続いています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🍎 One could contend that nutritional education could improve; conversely, misinformation spreads.",
+    "japanese": "栄養教育が改善する可能性があると主張できる；逆に、誤情報が広がります。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🚗 It seems likely that electric vehicles may proliferate; nevertheless, charging infrastructure lags.",
+    "japanese": "電気自動車が普及する可能性が高いように思われる；それでも、充電インフラは遅れています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📚 Some researchers posit that lifelong learning might become normative; however, structural barriers persist.",
+    "japanese": "一部の研究者は生涯学習が規範的になる可能性があると仮定する；しかし、構造的障壁は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌍 It is arguable that climate justice may gain attention; yet, implementation challenges remain.",
+    "japanese": "気候正義が注目を集める可能性があると論じられる；しかし、実施の課題は残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📱 There is a view that algorithmic transparency could improve; however, corporate resistance exists.",
+    "japanese": "アルゴリズムの透明性が向上する可能性があるという見方がある；しかし、企業の抵抗が存在します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🏫 It appears plausible that student agency might increase; nevertheless, curricular constraints limit.",
+    "japanese": "学生の主体性が増加する可能性があるように思われる；それでも、カリキュラムの制約が制限します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🌳 Some suggest that conservation funding may expand; yet, competing priorities divert resources.",
+    "japanese": "保全資金が拡大する可能性があると示唆する人もいる；しかし、競合する優先順位が資源をそらします。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🍎 It is conceivable that food sustainability could advance; nonetheless, consumption patterns persist.",
+    "japanese": "食料持続可能性が進む可能性があると考えられる；それでも、消費パターンは残っています。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "🚗 One might speculate that urban planning may evolve; however, existing infrastructure constrains.",
+    "japanese": "都市計画が進化する可能性があると推測できるかもしれない；しかし、既存のインフラが制約します。",
+    "level": "Eiken 1"
+  },
+  {
+    "question": "📚 There is a perspective that digital archives could preserve knowledge; yet, technological obsolescence threatens.",
+    "japanese": "デジタルアーカイブが知識を保存する可能性があるという見方がある；しかし、技術的陳腐化が脅かします。",
+    "level": "Eiken 1"
+  }
+]

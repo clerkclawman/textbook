@@ -1,0 +1,272 @@
+[
+  {
+    "question": "👋 What are you doing now?",
+    "japanese": "今何をしていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🏠 Are you at home right now?",
+    "japanese": "今家にいますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🍎 What are you eating for breakfast?",
+    "japanese": "朝食に何を食べていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "📺 Are you watching TV now?",
+    "japanese": "今テレビを見ていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "📚 Are you studying English now?",
+    "japanese": "今英語を勉強していますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎮 What game are you playing now?",
+    "japanese": "今どんなゲームをしていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🏫 Is your teacher in the classroom now?",
+    "japanese": "先生は今教室にいますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "👨‍👩‍👧‍👦 Is your family at home now?",
+    "japanese": "家族は今家にいますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "📱 What are you holding in your hand now?",
+    "japanese": "今手に何を持っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "💧 Are you drinking water now?",
+    "japanese": "今水を飲んでいますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🌧️ Is it raining outside now?",
+    "japanese": "外は今雨が降っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🚶 Are you walking to school now?",
+    "japanese": "今学校へ歩いていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🐶 Is your dog sleeping now?",
+    "japanese": "あなたの犬は今寝ていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎶 What music are you listening to now?",
+    "japanese": "今どんな音楽を聴いていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "☀️ Is the sun shining now?",
+    "japanese": "今太陽が輝いていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "👫 Are your friends playing outside now?",
+    "japanese": "友達は今外で遊んでいますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🖊️ Are you writing something now?",
+    "japanese": "今何か書いていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🍴 Are you eating lunch now?",
+    "japanese": "今昼食を食べていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "📖 What book are you reading now?",
+    "japanese": "今どんな本を読んでいますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎨 Are you drawing a picture now?",
+    "japanese": "今絵を描いていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "⚽ What sport are you playing now?",
+    "japanese": "今どんなスポーツをしていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🚗 Is your father driving now?",
+    "japanese": "お父さんは今運転していますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🍪 Are you making cookies now?",
+    "japanese": "今クッキーを作っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🛏️ Are you sleeping in your bed now?",
+    "japanese": "今ベッドで寝ていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "💻 Are you using a computer now?",
+    "japanese": "今コンピューターを使っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🛒 Are you shopping now?",
+    "japanese": "今買い物をしていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🚿 Are you taking a bath now?",
+    "japanese": "今風呂に入っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🧹 Are you cleaning your room now?",
+    "japanese": "今部屋を掃除していますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "📞 Are you talking on the phone now?",
+    "japanese": "今電話で話していますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🍌 Are you eating a banana now?",
+    "japanese": "今バナナを食べていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎮 Are you playing a video game now?",
+    "japanese": "今ビデオゲームをしていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🚲 Are you riding a bicycle now?",
+    "japanese": "今自転車に乗っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "📝 Are you doing homework now?",
+    "japanese": "今宿題をしていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🐱 Is your cat eating now?",
+    "japanese": "あなたの猫は今食べていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "👕 Are you wearing a red shirt now?",
+    "japanese": "今赤いシャツを着ていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🏃 Are you running now?",
+    "japanese": "今走っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎤 Are you singing a song now?",
+    "japanese": "今歌を歌っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🚪 Are you opening the door now?",
+    "japanese": "今ドアを開けていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🍽️ Are you setting the table now?",
+    "japanese": "今テーブルをセットしていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎨 What color are you using now?",
+    "japanese": "今どんな色を使っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "👨‍🏫 Is your teacher talking now?",
+    "japanese": "先生は今話していますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "📅 What day is it today?",
+    "japanese": "今日は何曜日ですか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🕐 What time is it now?",
+    "japanese": "今何時ですか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🌡️ Is it hot outside now?",
+    "japanese": "外は今暑いですか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🥶 Is it cold in the room now?",
+    "japanese": "部屋の中は今寒いですか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎁 Are you opening a present now?",
+    "japanese": "今プレゼントを開けていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🚂 Is the train arriving now?",
+    "japanese": "電車は今到着していますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🛋️ Are you sitting on the sofa now?",
+    "japanese": "今ソファに座っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🧽 Are you washing dishes now?",
+    "japanese": "今皿を洗っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "📱 Are you looking at your phone now?",
+    "japanese": "今携帯電話を見ていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "💡 Is the light on now?",
+    "japanese": "今電気がついていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🚗 Are you getting in the car now?",
+    "japanese": "今車に乗っていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎯 Are you playing darts now?",
+    "japanese": "今ダーツをしていますか？",
+    "level": "Eiken 5"
+  },
+  {
+    "question": "🎳 Are you bowling now?",
+    "japanese": "今ボーリングをしていますか？",
+    "level": "Eiken 5"
+  }
+]
