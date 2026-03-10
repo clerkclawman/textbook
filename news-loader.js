@@ -3,7 +3,6 @@
  * Loads current and recent news files based on date
  * Auto-hides news older than 48 hours
  */
-
 const NEWS_MAX_AGE_HOURS = 48;
 
 // Cache for loaded news
@@ -35,13 +34,11 @@ async function loadNewsFile(filename) {
     if (newsCache.has(filename)) {
         return newsCache.get(filename);
     }
-
     try {
         const response = await fetch(filename);
         if (!response.ok) return null;
         const javascript = await response.text();
         const newsData = parseJavaScriptNews(javascript);
-
         if (newsData) {
             newsCache.set(filename, newsData);
         }
@@ -54,45 +51,49 @@ async function loadNewsFile(filename) {
 
 /**
  * Parse JavaScript news file to extract data
- * Handles arrays of news items with multiple sections
+ * Handles the template literal format like adult.js:
+ * var news20260310 = [
+ *   { title: "...", content: `...` }
+ * ];
  */
 function parseJavaScriptNews(javascript) {
     try {
         console.log("parseJavaScriptNews: Received", javascript.length, "chars");
-
-        // Match the array structure: var newsYYYYMMDD = [ { title: "...", content: "..." }, { title: "...", content: "..." } ]
+        
+        // Match: var newsYYYYMMDD = [ ... ];
         const arrayMatch = javascript.match(/var\s+news\d{8}\s*=\s*\[([\s\S]+)\]\s*;/);
-
         if (!arrayMatch) {
             console.log("parseJavaScriptNews: No array structure found");
             return null;
         }
-
+        
         const arrayContent = arrayMatch[1];
         console.log("parseJavaScriptNews: Found array content, length =", arrayContent.length);
-
-        // Try to match template literal format (like adult.js): { title: "...", content: `...` }
-        const templateLiteralPattern = /\{\s*title:\s*"([^"]+)"\s*,\s*content:\s*`([\s\S]*?)`\s*\}/g;
-
+        
+        // Match: { title: "...", content: `...` }
+        // Using template literal (backtick) for content
+        const itemPattern = /\{\s*title:\s*"([^"]+)"\s*,\s*content:\s*`([\s\S]*?)`\s*\}/g;
+        
         const newsItems = [];
         let match;
-        let itemCount = 0;
-
-        while ((match = templateLiteralPattern.exec(arrayContent)) !== null) {
-            itemCount++;
+        
+        while ((match = itemPattern.exec(arrayContent)) !== null) {
             newsItems.push({
                 title: match[1],
                 content: match[2]
             });
         }
-
-        console.log(`parseJavaScriptNews: Extracted ${itemCount} news items from template literal format`);
-
+        
+        console.log(`parseJavaScriptNews: Extracted ${newsItems.length} news items`);
+        
         if (newsItems.length === 0) {
-            console.log("parseJavaScriptNews: No items extracted, trying fallback...");
-
+            console.log("parseJavaScriptNews: No items extracted");
+            return null;
+        }
+        
         console.log("parseJavaScriptNews: Success! Returning", newsItems.length, "items");
         return newsItems;
+        
     } catch (e) {
         console.warn('Failed to parse news data:', e);
         return null;
@@ -105,8 +106,9 @@ function parseJavaScriptNews(javascript) {
 async function getRecentNews() {
     const availableNews = [];
     const now = new Date();
-
+    
     console.log('Checking for recent news files...');
+    
     // Check today and yesterday
     for (let i = 0; i < 2; i++) {
         const date = new Date(now);
@@ -114,8 +116,9 @@ async function getRecentNews() {
         const filename = formatDateNews(date);
         const newsDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
         const ageHours = (now - newsDate) / (1000 * 60 * 60);
-
+        
         console.log(`Checking ${filename} (age: ${ageHours.toFixed(1)}h)`);
+        
         if (isNewsFresh(newsDate)) {
             const news = await loadNewsFile(filename);
             if (news && news.length > 0) {
@@ -128,10 +131,10 @@ async function getRecentNews() {
             console.log(`✗ ${filename} is older than 48 hours`);
         }
     }
-
+    
     // Sort by date (newest first)
     availableNews.sort((a, b) => b.date - a.date);
-
+    
     return availableNews;
 }
 
@@ -140,14 +143,14 @@ async function getRecentNews() {
  */
 async function getCombinedNews() {
     const recentNews = await getRecentNews();
-
+    
     if (recentNews.length === 0) {
         return [{
             title: "📰 No Recent News",
             content: "News articles are published daily and automatically removed after 48 hours. Check back tomorrow!\n\nニュース記事は毎日更新され、48時間後に自動的に削除されます。明日またチェックしてください。"
         }];
     }
-
+    
     // Combine all recent news
     const combined = [];
     for (const { date, news } of recentNews) {
@@ -155,9 +158,10 @@ async function getCombinedNews() {
         combined.push({ title: dateHeader, content: '' });
         combined.push(...news);
     }
-
+    
     return combined;
 }
+
 // Export functions for use by main script
 if (typeof window !== 'undefined') {
     window.getCombinedNews = getCombinedNews;
