@@ -71,13 +71,14 @@ function parseJavaScriptNews(javascript) {
         const arrayContent = arrayMatch[1];
         console.log("parseJavaScriptNews: Found array content, length =", arrayContent.length);
 
-        // Extract all news items using regex to match multiple { title, content } objects
-        const newsItems = [];
-        const itemPattern = /\{\s*title:\s*"([^"]+)",\s*content:\s*`([\s\S]*?)`\s*\}/g;
+        // Try to match template literal format (like adult.js): { title: "...", content: `...` }
+        const templateLiteralPattern = /\{\s*title:\s*"([^"]+)"\s*,\s*content:\s*`([\s\S]*?)`\s*\}/g;
 
+        const newsItems = [];
         let match;
         let itemCount = 0;
-        while ((match = itemPattern.exec(arrayContent)) !== null) {
+
+        while ((match = templateLiteralPattern.exec(arrayContent)) !== null) {
             itemCount++;
             newsItems.push({
                 title: match[1],
@@ -85,22 +86,10 @@ function parseJavaScriptNews(javascript) {
             });
         }
 
-        console.log(`parseJavaScriptNews: Extracted ${itemCount} news items`);
+        console.log(`parseJavaScriptNews: Extracted ${itemCount} news items from template literal format`);
 
         if (newsItems.length === 0) {
             console.log("parseJavaScriptNews: No items extracted, trying fallback...");
-            // Fallback: single item extraction
-            const titleMatch = javascript.match(/title:\s*"([^"]+)"/);
-            const contentMatch = javascript.match(/content:\s*`([\s\S]*?)`/);
-
-            if (titleMatch && contentMatch) {
-                return [{
-                    title: titleMatch[1],
-                    content: contentMatch[1]
-                }];
-            }
-            return null;
-        }
 
         console.log("parseJavaScriptNews: Success! Returning", newsItems.length, "items");
         return newsItems;
