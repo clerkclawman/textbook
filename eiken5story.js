@@ -46,6 +46,52 @@ var eiken5story = [
 `
   },
   {
+    title: '2. The Hungry Cat (Present Continuous Focus)',
+    content: `
+🐱 Momo is a small cat.
+モモは小さな猫です。
+😿 She is very hungry today.
+彼女は今日とてもお腹が空いています。
+🐟 Cat food is empty now!
+キャットフードが空っぽです！
+😿 Momo cries for food.
+モモは食べ物を求めて鳴いています。
+👩 Mom is at work now.
+お母さんは今仕事中です。
+👨 Dad is sleeping on the sofa.
+お父さんはソファで寝ています。
+🐟 Momo jumps on Dad\'s lap.
+モモはお父さんの膝の上に飛び乗ります。
+😱 Dad wakes up very fast!
+お父さんは素早く起きました！
+😊 He loves Momo very much.
+彼はモモが大好きです。
+🐟 Dad gives Momo fish food.
+お父さんはモモに魚の食べ物をあげます。
+
+🐱 Do you like cats or dogs better?
+猫と犬、どっちが好きですか？
+😿 Do you feel hungry often?
+よくお腹が空きますか？
+🐟 Do you like fish to eat?
+魚を食べるのは好きですか？
+👩 Is your mom working today?
+お母さんは今日働いていますか？
+👨 Does your dad sleep on the sofa?
+お父さんはソファで寝ますか？
+🐟 Do you feed animals at home?
+家で動物に餌をあげますか？
+😱 Do you wake up fast in the morning?
+朝はすぐに起きますか？
+💕 Do you love animals?
+動物は好きですか？
+🍛 What is your favorite food?
+一番好きな食べ物は何ですか？
+🐱 Do you want a pet cat or dog?
+猫や犬を飼いたいですか？
+`
+  },
+  {
     title: '3. The Sick Friend',
     content: `
 👩 Yuki is not at school.
@@ -274,6 +320,52 @@ var eiken5story = [
 `
   },
   {
+    title: '8. The Lost Dog (Be-Verb Questions Focus)',
+    content: `
+🐕 Ken has a dog named Pochi.
+ケンはポチという犬を飼っています。
+🎾 Pochi loves to play outside.
+ポチは外で遊ぶのが大好きです。
+🚶 Ken and Pochi walk in the park.
+ケンとポチは公園を散歩します。
+😱 Suddenly Pochi runs away!
+😮 突然ポチが走って逃げてしまいました！
+😲 Pochi is nowhere to be found.
+ポチはどこにも見つかりません。
+📢 Ken calls Pochi\'s name loudly.
+ケンはポチの名前を大声で呼びます。
+👫 Friends are helping Ken look.
+友達がケンの手伝いをしています。
+🐶 Pochi is behind a big tree.
+ポチは大きな木の後ろにいました。
+😊 Ken runs to Pochi quickly.
+ケンは急いでポチのところへ走ります。
+❤️ Pochi is happy to see Ken!
+😮 ポチはケンに会えて嬉しいです！
+
+🐕 Are dogs friendly animals?
+犬は友好的な動物ですか？
+🎾 Is your dog playful or quiet?
+あなたの犬は遊び好きですか、それとも静かですか？
+🚶 Is the park near your home?
+公園はあなたの家の近くですか？
+📢 Is your voice loud or quiet?
+あなたの声は大きいですか、それとも小さいですか？
+👫 Are your friends helpful?
+友達は助けてくれますか？
+🐶 Are animals happy when they see you?
+動物はあなたに会えると嬉しいですか？
+😊 Are you happy when you find lost things?
+なくしたものが見つかると嬉しいですか？
+🐕 Do you like dogs or cats better?
+犬と猫、どっちが好きですか？
+😱 Are you scared when pets run away?
+ペットが逃げると怖いですか？
+❤️ Are you happy with your pets?
+ペットと一緒にいて幸せですか？
+`
+  },
+  {
     title: '9. The Soccer Match',
     content: `
 ⚽ Aiko loves playing soccer.
@@ -363,6 +455,52 @@ var eiken5story = [
 お母さんとおやつを食べるのは好きですか？
 😊 Are you happy when you eat ice cream?
 アイスクリームを食べると幸せですか？
+`
+  },
+  {
+    title: '11. The Piano Lesson',
+    content: `
+🎹 Sakura wants to learn piano.
+サクラはピアノを習いたいです。
+🎵 She is starting lessons today.
+😮 彼女は今日レッスンを始めています。
+👨‍🏫 The teacher is very nice.
+😮 先生はとても優しいです。
+🎹 Sakura sits at the piano.
+😮 サクラはピアノを前に座ります。
+👂 She watches the teacher\'s hands.
+😮 彼女は先生の手を見ています。
+🎵 She plays the first note now!
+😮 彼女は今最初の音符を弾いています！
+🎶 The music sounds sweet.
+😮 音楽は甘い音がします。
+😌 Sakura feels very happy.
+😮 サクラはとても幸せな気分です。
+✏️ The teacher gives her homework.
+😮 先生が宿題をあげました。
+🎹 Sakura practices every day.
+😮 サクラは毎日練習します。
+
+🎹 Do you play the piano or any instrument?
+ピアノか他の楽器を演奏しますか？
+🎵 Do you like music lessons?
+音楽のレッスンは好きですか？
+👨‍🏫 Is your teacher kind or strict?
+先生は優しいですか、それとも厳しいですか？
+👂 Do you watch carefully when learning?
+勉強する時は注意深く見ますか？
+🎵 Is sweet music your favorite?
+甘い音楽が一番好きですか？
+✏️ Do you have homework today?
+今日は宿題がありますか？
+😌 Do you feel happy when you learn new things?
+新しいことを学ぶと幸せな気分ですか？
+🎹 Do you like to practice every day?
+毎日練習するのは好きですか？
+😊 Are you good at learning music?
+音楽を学ぶのは得意ですか？
+🎵 What is your favorite music style?
+一番好きな音楽のスタイルは何ですか？
 `
   },
   {
@@ -1102,6 +1240,98 @@ var eiken5story = [
 `
   },
   {
+    title: '29. The Proud Achievement',
+    content: `
+📚 Aira worked very hard.
+アイラは一生懸命勉強しました。
+✏️ She wrote a long story.
+彼女は長い物語を書きました。
+📝 The story was so good!
+その物語はとても良かった！
+😊 Her teacher said wonderful job.
+先生は素晴らしいと言いました。
+👨‍🏫 She showed it to the class.
+彼女はクラスに見せました。
+📖 Everyone read her story.
+全員が彼女の物語を読みました。
+🎉 Everyone said it\'s great!
+全員が「素晴らしい！」と言いました。
+😊 Aira feels very proud now.
+アイラは今とても誇らしい気分です。
+❤️ She shares her happiness.
+彼女は幸せを分かち合います。
+🌟 Working hard brings success!
+努力は成功をもたらします！
+
+📚 Do you work hard at school?
+学校では一生懸命勉強しますか？
+✏️ Do you like writing stories?
+物語を書くのは好きですか？
+📝 Do you think your work is good?
+あなたの作品は良いと思いますか？
+😊 Does your teacher say wonderful job to you?
+先生はあなたに素晴らしいと言ってくれますか？
+👨‍🏫 Do you show your work to the class?
+クラスに作品を見せますか？
+📖 Do classmates read your work?
+クラスメイトはあなたの作品を読みますか？
+🎉 Do people say great things about you?
+人はあなたについて素晴らしいと言ってくれますか？
+😊 Do you feel proud of yourself?
+自分に誇りを持っていますか？
+❤️ Do you share happiness with others?
+幸せを他人と分かち合いますか？
+🌟 Do you believe working hard brings success?
+努力は成功をもたらすと信じていますか？
+`
+  },
+  {
+    title: '30. Learning to Swim (Be-Verb Questions Focus)',
+    content: `
+🏊 Ren wants to swim today.
+レンは今日泳ぎたいです。
+😟 But the pool looks big and deep.
+でもプールは大きくて深そうです。
+😰 Ren is scared of the water.
+レンは水を怖がっています。
+😊 The teacher is very kind.
+先生はとても優しいです。
+🤝 She holds Ren\'s hand.
+先生はレンの手を握っています。
+🏊 Ren puts his feet in the water.
+レンは足を水に入れました。
+😊 The water feels nice now.
+水は今良い感じです。
+🏊 Ren starts to swim slowly.
+レンはゆっくり泳ぎ始めました。
+😮 He is floating on the water!
+彼は水の上に浮いています！
+😊 Ren is so brave today!
+レンは今日とても勇敢です！
+
+😟 Are you scared of deep water?
+深い水は怖いですか？
+🏊 Do you want to learn to swim?
+泳ぎを習いたいですか？
+😰 Is the swimming pool big or small?
+水泳プールは大きいですか、それとも小さいですか？
+😊 Is the swimming teacher kind?
+水泳の先生は優しいですか？
+🤝 Does someone hold your hand when you are scared?
+怖い時は誰かがあなたの手を握ってくれますか？
+😊 Does the water feel nice when you swim?
+泳ぐ時は水が良い感じですか？
+😮 Is floating on water easy or hard?
+水の上に浮くのは簡単ですか、それとも難しいですか？
+😊 Are you brave when you try new things?
+新しいことに挑戦する時は勇敢ですか？
+🏊 Do you like swimming or running better?
+水泳と走ること、どっちが好きですか？
+😊 Do you feel proud when you learn new things?
+新しいことを学ぶと誇らしい気分ですか？
+`
+  },
+  {
     title: '31. Teaching a Friend',
     content: `
 🎸 Hana wants to help her friend.
@@ -1145,6 +1375,70 @@ var eiken5story = [
 人を助けると嬉しい気分ですか？
 🎸 Do you like music or sports better?
 音楽とスポーツ、どっちが好きですか？
+`
+  },
+  {
+    title: '32. The Snowy Winter Fun (Present Continuous Focus)',
+    content: `
+⛄ It is snowing this morning.
+今朝は雪が降っています。
+😊 Mei is looking outside.
+メイは外を見ています。
+☃️ The world is all white.
+世界はすべて白くなっています。
+😊 Mei is putting on warm clothes.
+メイは暖かい服を着ています。
+🔴 She is wearing her red coat.
+彼女は赤いコートを着ています。
+🧤 She is putting on gloves too.
+彼女は手袋も着ています。
+🏂 Mei is going outside now.
+メイは今外へ行っています。
+😲 She is seeing white snowflakes.
+彼女は白い雪を見ています。
+😊 She is catching snowflakes!
+彼女は雪をキャッチしています！
+⛄ Snow days are so much fun!
+雪の日はとても楽しい！
+
+⛄ Do you like snowy days?
+雪の日は好きですか？
+☃️ Do you think snow makes the world beautiful?
+雪は世界を美しくすると思いますか？
+😊 Do you look outside when it snows?
+雪が降ると外を見ますか？
+😊 Do you wear warm clothes in winter?
+冬は暖かい服を着ますか？
+🔴 Is your coat red or another color?
+あなたのコートは赤色ですか、それとも他の色ですか？
+🧤 Do you wear gloves when it snows?
+雪が降ると手袋をはめますか？
+🏂 Do you go outside when it\'s snowing?
+雪が降っていると外に行きますか？
+😲 Have you ever seen white snowflakes?
+白い雪を見たことがありますか？
+😊 Do you like catching snow in your hands?
+手で雪をキャッチするのは好きですか？
+🎃 Do you like autumn festivals?
+秋祭りは好きですか？
+🌽 Do farmers work hard in summer?
+農家は夏に一生懸命働きますか？
+🍚 Do you like eating fresh vegetables?
+新鮮な野菜を食べるのは好きですか？
+🤝 Do you help with food at festivals?
+祭りで食べ物の手伝いをしますか？
+🍎 Do apples taste sweet or sour?
+リンゴは甘いですか、それとも酸っぱいですか？
+🍊 Do you like oranges or apples better?
+オレンジとリンゴ、どっちが好きですか？
+😊 Do you like eating with friends?
+友達と一緒に食べるのは好きですか？
+🌟 Are festivals joyful for you?
+祭りは楽しいですか？
+🎃 Do pumpkins grow in autumn?
+カボチャは秋に育ちますか？
+🤝 Is eating together fun?
+一緒に食べるのは楽しいですか？
 `
   },
   {
@@ -1873,44 +2167,6 @@ var eiken5story = [
 まもなく新しい学校に進学しますか？
 🌟 What are your hopes for the future?
 将来の希望は何ですか？
-`
-  },
-  {
-    title: '48. The Summer Garden',
-    content: `
-🌻 Summer is here.
-夏です。
-🌻 The plants grow tall.
-植物が高く育ちます。
-💦 Dad waters the flowers.
-お父さんは花に水をやります。
-🌸 Flowers bloom everywhere.
-花が至る所で咲きます。
-😊 Ken watches them grow.
-ケンはそれらが育つのを見守ります。
-
-🌻 Do you like summer?
-夏は好きですか？
-🌻 Do you have a garden?
-庭はありますか？
-💦 Do you water plants?
-植物に水をやりますか？
-🌸 Do flowers smell good?
-花はいい匂いがしますか？
-😊 Do you watch things grow?
-成長を見ますか？
-🌻 Is summer your favorite season?
-夏は一番好きな季節ですか？
-💦 Does your dad garden?
-お父さんは庭をしますか？
-🌸 Do you like flowers?
-花は好きですか？
-😊 Do you like gardening?
-園芸は好きですか？
-🌸 Are plants beautiful?
-植物は美しいですか？
-😊 Is growing plants fun?
-植物を育てるのは楽しいですか？
 `
   }
 ];
