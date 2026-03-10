@@ -22,7 +22,6 @@ var eiken5story = [
 お母さんは今ドアを開けます。
 😊 Ken is home at last!
 ケンはついに家に帰りました！
-
 🔑 Do you have a key for your house?
 家の鍵を持っていますか？
 😱 Do you lose things often?
@@ -68,7 +67,6 @@ var eiken5story = [
 彼はモモが大好きです。
 🐟 Dad gives Momo fish food.
 お父さんはモモに魚の食べ物をあげます。
-
 🐱 Do you like cats or dogs better?
 猫と犬、どっちが好きですか？
 😿 Do you feel hungry often?
@@ -114,7 +112,6 @@ var eiken5story = [
 ユキは学校に戻りました。
 👫 Everyone is happy to see her!
 みんなは彼女に会えて嬉しい！
-
 😢 Do you get sick often?
 よく病気になりますか？
 🤒 Do you have a fever now?
@@ -158,7 +155,6 @@ var eiken5story = [
 ケンは今親友ができた！
 🎉 They eat lunch every day.
 彼らは毎日一緒に昼食を食べます。
-
 👦 What is your name?
 あなたの名前は何ですか？
 👋 Who sits next to you at school?
@@ -195,16 +191,15 @@ var eiken5story = [
 😔 He watches TV alone too.
 彼も一人でテレビを見ます。
 🚪 Suddenly the door opens!
-😮 突然ドアが開きました！
+突然ドアが開きました！
 🎈 Many friends jump out!
-🎈 たくさんの友達が飛び出してきました！
+たくさんの友達が飛び出してきました！
 🎁 They all say Happy Birthday!
-🎉 みんなで誕生日おめでとうと言います！
+みんなで誕生日おめでとうと言います！
 😊 Mom and Dad are there too!
-🎂 お母さんとお父さんもそこにいました！
+お母さんとお父さんもそこにいました！
 🎉 Ken is so surprised and happy!
-🎂 ケンはとても驚いて幸せです！
-
+ケンはとても驚いて幸せです！
 🎂 When is your birthday?
 誕生日はいつですか？
 🎂 Do you like birthday parties?
@@ -239,18 +234,17 @@ var eiken5story = [
 😰 Yuki is scared of thunder.
 ユキは雷を怖がっています。
 💡 Suddenly the lights go out!
-⚡ 突然電気が消えました！
+突然電気が消えました！
 😱 Now it is very dark!
-⚡ 今はとても暗いです！
+今はとても暗いです！
 🔦 Dad lights a candle.
-🔦 お父さんはロウソクに火をつけます。
+お父さんはロウソクに火をつけます。
 👨‍👩‍👧‍👦 The family sits together.
 家族は一緒に座ります。
 😊 They tell fun stories.
 彼らは楽しい話をします。
 💡 Soon the lights come back on!
-💡 すぐに電気が戻りました！
-
+すぐに電気が戻りました！
 🌧️ Do you like rainy weather?
 雨の天気は好きですか？
 ☀️ Do you like sunny days better?
@@ -283,11 +277,11 @@ var eiken5story = [
 🏃 A friend runs into Tom.
 友達がトムにぶつかります。
 😱 Oh no! Tom falls down!
-😮 まあ！トムが転びました！
+まあ！トムが転びました！
 💔 His glasses fall on the ground.
-😮 彼の眼鏡が地面に落ちました。
+彼の眼鏡が地面に落ちました。
 😭 The glasses are broken now!
-😮 眼鏡が壊れてしまいました！
+眼鏡が壊れてしまいました！
 😫 Tom cannot see anything.
 トムは何も見えません。
 🚑 Mom is taking him to the doctor.
@@ -295,8 +289,7 @@ var eiken5story = [
 👨‍⚕️ The doctor is checking the glasses.
 医者は眼鏡をチェックしています。
 😊 Soon Tom gets new glasses!
-😮 トムはすぐに新しい眼鏡をもらいます！
-
+トムはすぐに新しい眼鏡をもらいます！
 👓 Do you wear glasses?
 眼鏡をかけていますか？
 ⚽ Do you play soccer at school?
@@ -329,7 +322,7 @@ var eiken5story = [
 🚶 Ken and Pochi walk in the park.
 ケンとポチは公園を散歩します。
 😱 Suddenly Pochi runs away!
-😮 突然ポチが走って逃げてしまいました！
+突然ポチが走って逃げてしまいました！
 😲 Pochi is nowhere to be found.
 ポチはどこにも見つかりません。
 📢 Ken calls Pochi\'s name loudly.
@@ -341,8 +334,7 @@ var eiken5story = [
 😊 Ken runs to Pochi quickly.
 ケンは急いでポチのところへ走ります。
 ❤️ Pochi is happy to see Ken!
-😮 ポチはケンに会えて嬉しいです！
-
+ポチはケンに会えて嬉しいです！
 🐕 Are dogs friendly animals?
 犬は友好的な動物ですか？
 🎾 Is your dog playful or quiet?
@@ -375,20 +367,19 @@ var eiken5story = [
 🏃 She runs very fast now.
 彼女は今とても速く走っています。
 🥅 The goal is open now!
-😮 ゴールが開いています！
+ゴールが開いています！
 🦶 Aiko kicks the ball hard.
 ミサコはボールを強く蹴っています。
 ⚽ The ball goes into the goal!
-😮 ボールがゴールに入りました！
+ボールがゴールに入りました！
 🎉 Her team shouts with joy!
-😮 彼女のチームは歓声を上げました！
+彼女のチームは歓声を上げました！
 😊 Aiko feels so proud today.
 ミサコは今日とても誇らしい気分です。
 👫 Her team wins the match!
-😮 彼女のチームが試合に勝ちました！
+彼女のチームが試合に勝ちました！
 🏆 Everyone celebrates together now.
-😓 みんなは今一緒にお祝いしています。
-
+みんなは今一緒にお祝いしています。
 ⚽ Do you like playing soccer?
 サッカーをするのは好きですか？
 😊 Do you practice sports every day?
@@ -417,24 +408,23 @@ var eiken5story = [
 🍦 Haruto wants ice cream today.
 ハルトは今日アイスクリームが欲しいです。
 🏪 He is walking to the shop.
-😮 彼はお店へ歩いていっています。
+彼はお店へ歩いていっています。
 🍓 Mom is waiting for him.
-😮 お母さんは彼を待っています。
+お母さんは彼を待っています。
 🍦 He sees many flavors now.
-😮 彼は今たくさんのフレーバーを見ています。
+彼は今たくさんのフレーバーを見ています。
 🍫 Chocolate is calling his name!
-😮 チョコレートが彼を呼んでいるようです！
+チョコレートが彼を呼んでいるようです！
 🍋 He chooses lemon ice cream.
-😮 彼はレモンのアイスクリームを選びました。
+彼はレモンのアイスクリームを選びました。
 🍦 The man is scooping ice cream.
-😮 お兄さんはアイスクリームをすくっています。
+お兄さんはアイスクリームをすくっています。
 😊 Haruto is eating it now.
-😮 ハルトは今それを食べています。
+ハルトは今それを食べています。
 🍨 Mom is taking photos of him.
-😮 お母さんは彼の写真を撮っています。
+お母さんは彼の写真を撮っています。
 🍂 The ice cream is yummy and cold.
-😮 アイスクリームは美味しくて冷たいです。
-
+アイスクリームは美味しくて冷たいです。
 🍦 Do you like ice cream?
 アイスクリームは好きですか？
 🏪 Do you walk to the shop sometimes?
@@ -463,24 +453,23 @@ var eiken5story = [
 🎹 Sakura wants to learn piano.
 サクラはピアノを習いたいです。
 🎵 She is starting lessons today.
-😮 彼女は今日レッスンを始めています。
+彼女は今日レッスンを始めています。
 👨‍🏫 The teacher is very nice.
-😮 先生はとても優しいです。
+先生はとても優しいです。
 🎹 Sakura sits at the piano.
-😮 サクラはピアノを前に座ります。
+サクラはピアノを前に座ります。
 👂 She watches the teacher\'s hands.
-😮 彼女は先生の手を見ています。
+彼女は先生の手を見ています。
 🎵 She plays the first note now!
-😮 彼女は今最初の音符を弾いています！
+彼女は今最初の音符を弾いています！
 🎶 The music sounds sweet.
-😮 音楽は甘い音がします。
+音楽は甘い音がします。
 😌 Sakura feels very happy.
-😮 サクラはとても幸せな気分です。
+サクラはとても幸せな気分です。
 ✏️ The teacher gives her homework.
-😮 先生が宿題をあげました。
+先生が宿題をあげました。
 🎹 Sakura practices every day.
-😮 サクラは毎日練習します。
-
+サクラは毎日練習します。
 🎹 Do you play the piano or any instrument?
 ピアノか他の楽器を演奏しますか？
 🎵 Do you like music lessons?
@@ -507,26 +496,25 @@ var eiken5story = [
     title: '12. The Cooking Class (Be-Verb Questions Focus)',
     content: `
 👩 Ryota wants to cook today.
-😮 リョータは今日料理をしたいです。
+リョータは今日料理をしたいです。
 🍝 He is making pasta now.
-😮 彼は今パスタを作っています。
+彼は今パスタを作っています。
 🥕 Mom is helping him too.
-😮 お母さんも彼を手伝っています。
+お母さんも彼を手伝っています。
 👨‍🍳 Dad is watching them cook.
-😮 お父さんは料理を見ています。
+お父さんは料理を見ています。
 🥄 Ryota is stirring the sauce.
-😮 リョータはソースを混ぜています。
+リョータはソースを混ぜています。
 🍝 The sauce is smelling good!
-😮 ソースはいい匂いがします！
+ソースはいい匂いがします！
 😊 Everyone is waiting to eat.
-😮 みんなは食べるのを待っています。
+みんなは食べるのを待っています。
 🍽️ The pasta is ready now!
-😮 パスタが出来上がりました！
+パスタが出来上がりました！
 😋 Ryota eats the yummy food.
-😮 リョータは美味しい食べ物を食べます。
+リョータは美味しい食べ物を食べます。
 😊 Everyone loves the pasta!
 みんなはパスタが大好きです！
-
 👩 Is cooking fun or hard?
 料理は楽しいですか、それとも難しいですか？
 🍝 Is pasta your favorite food?
@@ -555,24 +543,23 @@ var eiken5story = [
 📚 Emma loves reading very much.
 エマは読書が大好きです。
 🏢 She is going to the library.
-😮 彼女は図書館へ行っています。
+彼女は図書館へ行っています。
 📖 She wants to find new books.
-😮 彼女は新しい本を見つけたいです。
+彼女は新しい本を見つけたいです。
 📚 The library is very big.
-😮 図書館はとても大きいです。
+図書館はとても大きいです。
 🔍 Emma is looking for adventures.
 エマは冒険を探しています。
 📖 She finds a book about space.
-😮 彼女は宇宙に関する本を見つけました。
+彼女は宇宙に関する本を見つけました。
 🌟 The book looks very interesting!
-😮 その本はとても面白そうです！
+その本はとても面白そうです！
 😊 Emma sits down to read.
-😮 エマは座って読み始めました。
+エマは座って読み始めました。
 📖 She reads for one hour.
-😮 彼女は一時間本を読みました。
+彼女は一時間本を読みました。
 🌟 Emma learns so much today!
-😮 エマは今日たくさん学びました！
-
+エマは今日たくさん学びました！
 📚 Do you like reading books?
 本を読むのは好きですか？
 🏢 Is the library near your school?
@@ -599,26 +586,25 @@ var eiken5story = [
     title: '14. The Rainy Camping Trip',
     content: `
 🌲 Hiro wants to go camping.
-😮 ヒロはキャンプに行きたいです。
+ヒロはキャンプに行きたいです。
 ⛺ Dad is packing the car now.
-😮 お父さんは今車に荷物を詰めています。
+お父さんは今車に荷物を詰めています。
 🚴 They drive to the mountains.
-😮 彼らは山へ車で行きます。
+彼らは山へ車で行きます。
 🏕️ They set up the big tent.
-😮 彼らは大きなテントを設営しました。
+彼らは大きなテントを設営しました。
 😊 Everyone is having fun now.
-😮 みんなは今楽しんでいます。
+みんなは今楽しんでいます。
 🌧️ Suddenly it starts to rain!
-😮 突然雨が降り始めました！
+突然雨が降り始めました！
 😱 Everyone runs into the tent.
-😮 みんなはテントの中に走りました。
+みんなはテントの中に走りました。
 ⚡ Thunder and lightning are loud!
-😮 雷と稲妻がうるさいです！
+雷と稲妻がうるさいです！
 😔 The rain does not stop now.
-😮 雨がまだ止みません。
+雨がまだ止みません。
 😰 They stay inside all night.
-😮 彼らは一晩中ずっと中にいました。
-
+彼らは一晩中ずっと中にいました。
 🌲 Do you like camping?
 キャンプは好きですか？
 ⛺ Do you sleep in a tent?
@@ -645,26 +631,25 @@ var eiken5story = [
     title: '15. The Shopping Day',
     content: `
 🛒 Nana wants to go shopping today.
-😮 ナナは今日買い物に行きたいです。
+ナナは今日買い物に行きたいです。
 👩 Mom is taking her to the store.
-😮 お母さんは彼女を店に連れて行っています。
+お母さんは彼女を店に連れて行っています。
 👗 Nana wants a new dress.
-😮 ナナは新しいワンピースが欲しいです。
+ナナは新しいワンピースが欲しいです。
 👠 She tries on many dresses.
-😮 彼女はたくさんのワンピースを試着します。
+彼女はたくさんのワンピースを試着します。
 👗 One dress fits perfectly!
-😮 一着のワンピースがぴったりです！
+一着のワンピースがぴったりです！
 💰 Mom buys the dress for Nana.
-😮 お母さんはナナにワンピースを買いました。
+お母さんはナナにワンピースを買いました。
 😊 Nana feels so happy now.
-😮 ナナは今とても幸せです。
+ナナは今とても幸せです。
 🍩 They eat ice cream after shopping.
-😮 買い物の後、彼らはアイスクリームを食べました。
+買い物の後、彼らはアイスクリームを食べました。
 🚶 They walk home together.
-😮 彼らは一緒に家に歩いて帰りました。
+彼らは一緒に家に歩いて帰りました。
 🌟 Today was a very good day!
-😮 今日はとても良い日でした！
-
+今日はとても良い日でした！
 🛒 Do you like shopping?
 買い物は好きですか？
 👗 Do you wear dresses or pants?
@@ -691,26 +676,25 @@ var eiken5story = [
     title: '16. The Bike Race (Present Continuous Focus)',
     content: `
 🚲 Lisa has a new red bike.
-😮 リサは新しい赤い自転車を持っています。
+リサは新しい赤い自転車を持っています。
 🏆 She is practicing for the race.
-😮 彼女はレースのために練習しています。
+彼女はレースのために練習しています。
 🚴 Lisa is riding very fast.
-😮 リサはとても速く走っています。
+リサはとても速く走っています。
 😫 She is getting tired now.
-😮 彼女は今疲れてきました。
+彼女は今疲れてきました。
 💧 She drinks some cold water.
-😮 彼女は冷たい水を少し飲みました。
+彼女は冷たい水を少し飲みました。
 😊 Now she is ready to race!
-😮 今、彼女はレースの準備ができました！
+今、彼女はレースの準備ができました！
 🏁 The race begins today!
-😮 レースが今日始まります！
+レースが今日始まります！
 🚴 Lisa is pedaling very hard.
-😮 リサは一生懸命ペダルを漕いでいます。
+リサは一生懸命ペダルを漕いでいます。
 🥇 She comes in first place!
-😮 彼女は第一位になりました！
+彼女は第一位になりました！
 😊 Lisa is so tired but happy!
-😮 リサは疲れていますが幸せです！
-
+リサは疲れていますが幸せです！
 🚲 Do you have a bike?
 自転車を持っていますか？
 🏆 Do you like racing?
@@ -737,26 +721,25 @@ var eiken5story = [
     title: '17. The Cherry Blossoms',
     content: `
 🌸 Spring has come to Japan.
-😮 日本に春が来ました。
+日本に春が来ました。
 🌸 The cherry blossoms are beautiful.
-😮 桜は美しいです。
+桜は美しいです。
 👨‍👩‍👧‍👦 The family is walking there.
-😮 家族はそこを歩いています。
+家族はそこを歩いています。
 📸 Yuto is taking many photos.
-😮 ユウトはたくさんの写真を撮っています。
+ユウトはたくさんの写真を撮っています。
 🌸 Pink flowers fall gently down.
-😮 ピンクの花が優しく落ちています。
+ピンクの花が優しく落ちています。
 😊 Everyone feels so happy today.
-😮 全員、今日とても幸せです。
+全員、今日とても幸せです。
 🌸 The air smells sweet and nice.
-😮 空気は甘くていい匂いがします。
+空気は甘くていい匂いがします。
 👩 Mom takes a selfie photo.
-😮 お母さんは自撮り写真を撮りました。
+お母さんは自撮り写真を撮りました。
 📸 They are making fun memories.
-😮 彼らは楽しい思い出を作っています。
+彼らは楽しい思い出を作っています。
 🌸 Spring is the best season!
-😮 春は最高の季節です！
-
+春は最高の季節です！
 🌸 Do you like cherry blossoms?
 桜は好きですか？
 😊 Do you like spring weather?
@@ -783,26 +766,25 @@ var eiken5story = [
     title: '18. The Beach Day (Wh-Questions Focus)',
     content: `
 🌊 Kota wants to go to the beach.
-😮 コタは海へ行きたいです。
+コタは海へ行きたいです。
 ☀️ The sun is shining very bright.
-😮 太陽はとても明るく輝いています。
+太陽はとても明るく輝いています。
 🏖️ The sand is warm and yellow.
-😮 砂は暖かくて黄色です。
+砂は暖かくて黄色です。
 🏊 Kota is swimming in the sea.
-😮 コタは海で泳いでいます。
+コタは海で泳いでいます。
 🌊 The water feels cool and nice.
-😮 海水は涼しくて良い感じです。
+海水は涼しくて良い感じです。
 ⛱️ Mom and Dad are sitting under an umbrella.
-😮 お父さんとお母さんは傘の下に座っています。
+お父さんとお母さんは傘の下に座っています。
 🦀 Kota finds a small crab.
-😮 コタは小さなカニを見つけました。
+コタは小さなカニを見つけました。
 😊 The crab is moving sideways.
-😮 カニは横に動いています。
+カニは横に動いています。
 🏖️ Everyone is relaxing today.
-😮 全員は今日リラックスしています。
+全員は今日リラックスしています。
 🌊 The beach day is perfect!
-😮 海の日は完璧です！
-
+海の日は完璧です！
 🌊 Where do you like to swim in summer?
 夏はどこで泳ぐのが好きですか？
 ☀️ Is the sun bright or cloudy today?
@@ -829,26 +811,25 @@ var eiken5story = [
     title: '19. The Angry Moment',
     content: `
 😠 Hana is angry today.
-😮 ハナは今日怒っています。
+ハナは今日怒っています。
 😡 Her friend takes her pencil.
-😮 友達が彼女の鉛筆を取りました。
+友達が彼女の鉛筆を取りました。
 😠 Hana shouts very loudly.
-😮 ハナは大きな声で叫びました。
+ハナは大きな声で叫びました。
 😔 Her friend looks very sorry.
-😮 友達はとても申し訳ない様子です。
+友達はとても申し訳ない様子です。
 😢 Hana feels sad and upset.
-😮 ハナは悲しくて怒っています。
+ハナは悲しくて怒っています。
 👩 Mom comes to her room.
-😮 お母さんが彼女の部屋に来ました。
+お母さんが彼女の部屋に来ました。
 🤗 Mom gives Hana a big hug.
-😮 お母さんはハナに大きなハグをしました。
+お母さんはハナに大きなハグをしました。
 😊 Hana calms down slowly.
-😮 ハナはゆっくり落ち着きました。
+ハナはゆっくり落ち着きました。
 😌 She forgives her friend.
-😮 彼女は友達を許しました。
+彼女は友達を許しました。
 ❤️ Now they are friends again!
-😮 今彼女たちはまた友達です！
-
+今彼女たちはまた友達です！
 😠 Do you get angry often?
 よく怒りますか？
 😡 Do your friends take your things?
@@ -875,26 +856,25 @@ var eiken5story = [
     title: '21. The Basketball Game',
     content: `
 🏀 Airi loves basketball very much.
-😮 アイリはバスケットボールが大好きです。
+アイリはバスケットボールが大好きです。
 ⛹️ She is practicing every day.
-😮 彼女は毎日練習しています。
+彼女は毎日練習しています。
 🏀 The ball is orange and round.
-😮 ボールはオレンジ色で丸いです。
+ボールはオレンジ色で丸いです。
 ⛹️ She throws the ball high.
-😮 彼女はボールを高く投げています。
+彼女はボールを高く投げています。
 🎯 The ball goes into the hoop!
-😮 ボールがゴールに入りました！
+ボールがゴールに入りました！
 😊 Airi feels so strong today.
-😮 アイリは今日とても強い気分です。
+アイリは今日とても強い気分です。
 🤝 Her team is playing a game.
-😮 彼女のチームは試合をしています。
+彼女のチームは試合をしています。
 🏀 They are running very fast.
-😮 彼らはとても速く走っています。
+彼らはとても速く走っています。
 🏆 Her team wins by three points!
-😮 彼女のチームは3点差で勝ちました！
+彼女のチームは3点差で勝ちました！
 😊 Everyone celebrates together now.
-😮 全員は今一緒にお祝いしています。
-
+全員は今一緒にお祝いしています。
 🏀 Do you like basketball?
 バスケットボールは好きですか？
 ⛹️ Do you practice sports every day?
@@ -921,26 +901,25 @@ var eiken5story = [
     title: '22. The Bus Ride (Present Continuous Focus)',
     content: `
 🚌 Sora is taking the bus.
-😮 ソラはバスに乗っています。
+ソラはバスに乗っています。
 🎒 She is carrying a big bag.
-😮 彼女は大きなバッグを持っています。
+彼女は大きなバッグを持っています。
 👵 An old woman gets on.
-😮 おばあちゃんが乗ってきました。
+おばあちゃんが乗ってきました。
 😊 Sora gives her the seat.
-😮 ソラは彼女に席を譲りました。
+ソラは彼女に席を譲りました。
 👴 The old woman thanks Sora.
-😮 おばあちゃんはソラに感謝しました。
+おばあちゃんはソラに感謝しました。
 😊 Sora feels very kind today.
-😮 ソラは今日とても優しい気分です。
+ソラは今日とても優しい気分です。
 🚌 The bus is going to school.
-😮 バスは学校へ向かっています。
+バスは学校へ向かっています。
 👨‍🏫 The bus driver is driving safely.
-😮 バスの運転手は安全に運転しています。
+バスの運転手は安全に運転しています。
 🏫 Now Sora is at school.
-😮 ソラは今学校に着きました。
+ソラは今学校に着きました。
 😊 Being kind feels very good.
-😮 親切にするのはとても良い気分。
-
+親切にするのはとても良い気分。
 🚌 Do you take the bus to school?
 バスで学校へ行きますか？
 🎒 Is your school bag heavy or light?
@@ -967,26 +946,25 @@ var eiken5story = [
     title: '23. The Embarrassing Mistake',
     content: `
 😳 Ren is at school today.
-😮 レンは今日学校にいます。
+レンは今日学校にいます。
 📖 He is reading a book.
-😮 彼は本を読んでいます。
+彼は本を読んでいます。
 😱 Suddenly he drops the book!
-😮 突然本を落としました！
+突然本を落としました！
 😲 The book falls on the floor.
-😮 本は床に落ちました。
+本は床に落ちました。
 😳 Everyone looks at Ren now.
-😮 全員が今レンを見ています。
+全員が今レンを見ています。
 😔 Ren feels so embarrassed.
-😮 レンはとても恥ずかしい気分です。
+レンはとても恥ずかしい気分です。
 😊 His friend helps him pick it up.
-😮 友達が彼が拾うのを手伝ってくれました。
+友達が彼が拾うのを手伝ってくれました。
 😸 Everyone starts laughing gently.
-😮 全員は優しく笑い始めました。
+全員は優しく笑い始めました。
 😌 Ren calms down slowly.
-😮 レンはゆっくり落ち着きました。
+レンはゆっくり落ち着きました。
 😊 Now Ren is laughing too!
-😮 今レンも笑っています！
-
+今レンも笑っています！
 😳 Do you feel embarrassed often?
 よく恥ずかしい思いをしますか？
 📖 Do you read books at school?
@@ -1013,26 +991,25 @@ var eiken5story = [
     title: '24. The Helping Hand (Wh-Questions Focus)',
     content: `
 👩 Mei is walking in the hallway.
-😮 メイは廊下を歩いています。
+メイは廊下を歩いています。
 😢 A new girl is crying.
-😮 新しい女の子が泣いています。
+新しい女の子が泣いています。
 🧒 She dropped her books.
-😮 彼女は本を落としてしまいました。
+彼女は本を落としてしまいました。
 🤗 Mei stops to help her.
-😮 メイは助けるために止まりました。
+メイは助けるために止まりました。
 📚 They pick up the books together.
-😮 彼女たちは一緒に本を拾いました。
+彼女たちは一緒に本を拾いました。
 😊 The new girl smiles now.
-😮 新しい女の子は今笑っています。
+新しい女の子は今笑っています。
 👫 They become good friends.
-😮 彼女たちは良い友達になりました。
+彼女たちは良い友達になりました。
 💕 Kindness brings happiness.
-😮 優しさは幸せを運びます。
+優しさは幸せを運びます。
 💭 Mei feels warm inside.
-😮 メイは心が暖かいです。
+メイは心が暖かいです。
 🌟 Helping is the best feeling!
-😮 手助けするのは最高の気分！
-
+手助けするのは最高の気分！
 👩 Where do you walk at school?
 学校ではどこを歩きますか？
 😢 Do you cry at school sometimes?
@@ -1078,7 +1055,6 @@ var eiken5story = [
 ミナはとても誇らしい気分です。
 🏅 Sports day was so fun!
 運動会はとても楽しかった！
-
 🏃‍♂️ Do you like sports day at school?
 学校の運動会は好きですか？
 😊 Do you practice running often?
@@ -1124,7 +1100,6 @@ var eiken5story = [
 カイトは朝食を食べています。
 😌 He feels ready for school.
 彼は学校の準備ができています。
-
 😮 What time do you wake up in the morning?
 朝は何時に起きますか？
 🛏️ Do you like sleeping in your bed?
@@ -1170,7 +1145,6 @@ var eiken5story = [
 彼女はそれをバッグに入れました。
 🍂 Autumn is so beautiful!
 秋はとても美しい！
-
 🍂 Do you like autumn weather?
 秋の天気は好きですか？
 🌳 Do trees look beautiful in autumn?
@@ -1216,7 +1190,6 @@ var eiken5story = [
 彼は飛行機で遊んでいます。
 🌟 Dreams can come true someday!
 夢はいつか叶います！
-
 ✈️ What do you want to be when you grow up?
 大きくなったら何になりたいですか？
 🚀 Do you like flying in the sky?
@@ -1262,7 +1235,6 @@ var eiken5story = [
 彼女は幸せを分かち合います。
 🌟 Working hard brings success!
 努力は成功をもたらします！
-
 📚 Do you work hard at school?
 学校では一生懸命勉強しますか？
 ✏️ Do you like writing stories?
@@ -1308,7 +1280,6 @@ var eiken5story = [
 彼は水の上に浮いています！
 😊 Ren is so brave today!
 レンは今日とても勇敢です！
-
 😟 Are you scared of deep water?
 深い水は怖いですか？
 🏊 Do you want to learn to swim?
@@ -1354,7 +1325,6 @@ var eiken5story = [
 友達はとても幸せな気分です。
 ❤️ Hana is glad to help.
 ハナは助けることができて嬉しいです。
-
 🎸 Do you like playing guitar?
 ギターを弾くのは好きですか？
 😔 Is it hard when you cannot do something?
@@ -1400,7 +1370,6 @@ var eiken5story = [
 彼女は雪をキャッチしています！
 ⛄ Snow days are so much fun!
 雪の日はとても楽しい！
-
 ⛄ Do you like snowy days?
 雪の日は好きですか？
 ☃️ Do you think snow makes the world beautiful?
@@ -1464,7 +1433,6 @@ var eiken5story = [
 雪が優しく降っています。
 🌟 Winter festivals are amazing!
 冬の祭りは素晴らしい！
-
 ❄️ Do you like winter festivals?
 冬の祭りは好きですか？
 🎪 Do you go with friends?
@@ -1510,7 +1478,6 @@ var eiken5story = [
 レンはすぐに眠りに落ちました。
 🌙 Night night everyone!
 おやすみなさい！
-
 🌙 What time do you go to bed at night?
 夜は何時にベッドに行きますか？
 🚶 Are bears your favorite animal?
@@ -1556,7 +1523,6 @@ var eiken5story = [
 彼らは一緒に昼食を食べます。
 😊 The field trip was amazing!
 遠足は素晴らしかった！
-
 🚌 Do you go on school field trips?
 学校の遠足に行きますか？
 🏛️ Do you like visiting museums?
@@ -1602,7 +1568,6 @@ var eiken5story = [
 彼らは楽しく散歩します。
 😌 Now Sora feels happy.
 ソラは今幸せな気分です。
-
 😮 Do you like Saturday and Sunday?
 土曜日と日曜日、好きですか？
 😊 Are you happy when there is no school?
@@ -1648,7 +1613,6 @@ var eiken5story = [
 みなはお茶を飲んで話をします。
 😊 Rainy days can be cozy!
 雨の日は心地よいです！
-
 🌧️ Do you like rainy weekends?
 雨の週末は好きですか？
 ☔ Does the gray sky make you feel sad?
@@ -1692,7 +1656,6 @@ var eiken5story = [
 チームは3つのアウトを取りました。
 😊 Baseball is so much fun!
 野球はとても楽しい！
-
 🧢 Do you wear a baseball cap?
 野球帽を被りますか？
 ⚾ Do you like playing baseball?
@@ -1738,7 +1701,6 @@ var eiken5story = [
 家族は一緒に夕食を食べます。
 🌙 Everyone is tired but happy.
 全員は疲れていますが幸せです。
-
 ✏️ Do you have homework today?
 今日は宿題がありますか？
 📖 Do you study English at home?
@@ -1782,7 +1744,6 @@ var eiken5story = [
 レン、ありがとうございます！
 💕 Friendship is very important.
 友情はとても大切です。
-
 😰 What are you scared of most?
 一番何が怖いですか？
 🐕 Are dogs your favorite animal?
@@ -1826,7 +1787,6 @@ var eiken5story = [
 彼女はすぐに新しい友達ができました。
 🌟 New classes are exciting!
 新しいクラスはエキサイティング！
-
 🏫 Do you like your classroom?
 あなたの教室は好きですか？
 😊 Do you feel nervous on the first day?
@@ -1872,7 +1832,6 @@ var eiken5story = [
 ハルは今日とても誇らしい気分です。
 🎶 Practice makes you better!
 練習はあなたを良くします！
-
 🎵 Do you play an instrument?
 楽器を演奏しますか？
 😊 Do you practice every day?
@@ -1918,7 +1877,6 @@ var eiken5story = [
 親切な人たちは世界を良くします。
 😊 Aki walks home smiling.
 アキは笑顔で家に歩いて帰りました。
-
 🌳 Do you walk in parks often?
 よく公園を歩きますか？
 😢 Have you ever lost a favorite toy?
@@ -1962,7 +1920,6 @@ var eiken5story = [
 クラスメイトは幸せな気分です。
 ❤️ Hana is glad to help.
 ハナは助けることができて嬉しいです。
-
 😢 Do you ever cry at school?
 学校で泣いたことがありますか？
 😔 What subject is hard for you?
@@ -2008,7 +1965,6 @@ var eiken5story = [
 祭りは幸せを運びます。
 🌟 School days are so special!
 学校の日はとても特別！
-
 🎉 Is there a school festival at your school?
 あなたの学校には文化祭がありますか？
 🎨 What do you like to show at festivals?
@@ -2054,7 +2010,6 @@ var eiken5story = [
 もうすぐ目的地に着きます。
 😊 Trips are so exciting!
 旅行はとてもエキサイティング！
-
 🚄 Do you take trains often?
 よく新幹線に乗りますか？
 🚆 Are trains fast or slow?
@@ -2100,7 +2055,6 @@ var eiken5story = [
 全員が彼女の芸術を見ました。
 🌟 Yumi feels so proud!
 ユミはとても誇らしい気分です！
-
 🎨 Do you like making art?
 芸術を作るのは好きですか？
 🖌️ Do you like painting or drawing?
@@ -2146,7 +2100,6 @@ var eiken5story = [
 彼は今進学します。
 😊 He remembers happy days.
 彼は幸せな日を覚えています。
-
 🎓 Do you have a graduation ceremony?
 卒業式はありますか？
 🏫 What school are you in now?
