@@ -59,6 +59,21 @@ Live NationとTicketmasterが独占禁止法訴訟で和解しました。コン
 カナダと日本が外交関係樹立100周年を迎えました。日本はカナダとの関係をより強化すべきですか、それとも伝統的な同盟国に集中すべきですか？
 
 20. 📱 Indonesia will ban social media for children under 16. Is this a good way to protect kids, or will it just push them to secret accounts?
-インドネシアは16歳未満のソーシャルメディア利用を禁止します。これは子供を守る良い方法ですか、それとも秘密のアカウントを作るだけですか？`
+インドネシアは16歳未満のソーシャルメディア利用を禁止します。これは子供を守る良い方法ですか、それとも秘密のアカウントを作るだけですか？
+
+21. 📰 A major newspaper announced it will become a podcast-only service in 5 years. Will you still read news websites in 10 years, or will most news be audio-first?
+新聞社が5年後にポッドキャストのみのサービスになると発表しました。10年後もニュースサイトを読みますか、それともオーディオ優先になると思いますか？
+
+22. 🌱 Lab-grown meat went on sale this month for the first time in Japan. Would you eat meat grown in a laboratory, or does that feel too artificial?
+培養肉が今月、日本で初めて販売されました。培養肉を食べますか、それともあまり人工的で食べる気がしませんか？
+
+23. 💡 Your boss found a magic lamp and wishes for every employee to never sleep again. Would you take the genie up on the offer, or is sleep too precious even for a promotion?
+上司が魔法のランプを見つけ、全従業員が眠らなくなることを願い出ました。ジニーのオファーを受け入れますか、それとも昇進のために眠るのはあまり貴重すぎますか？
+
+24. 👔 A company banned business class travel for everyone except executives. Is this fair if executives generate 80% of revenue, or should all employees be treated equally?
+幹部以外全員のビジネスクラス旅行を禁止する会社。幹部が収入の80%を生み出しているなら公平でしょうか、それとも全従業員が平等に扱われるべきですか？
+
+25. 🤯 AI can now write articles that are indistinguishable from human journalism. Will you trust AI-written news, or will human journalists always be more reliable?
+人間のジャーナリズムと区別できない記事を書けるAIになりました。AIが書いたニュースを信じますか、それとも人間のジャーナリストの方が信頼性が高いですか？`
     }
 ];
