@@ -1,50 +1,1878 @@
 var eiken5story = [
-  {title: '1. The Missing Key', content: '🔑 Ken wants to go home.\nケンは家に帰りたいです。\n😱 But he loses his key!\nでも鍵をなくしました！\n🏫 He looks in the classroom.\n彼は教室で探します。\n🔍 The key is not there.\n鍵はそこにありません。\n😕 He looks in his bag too.\n彼はバッグの中でも探します。\n🎒 Yuki sees the key there!\nユキはバッグの中で鍵を見つけました！\n😊 Thank you, Yuki!\nユキ、ありがとう！\n🚶 Ken runs home quickly.\nケンは急いで家へ走ります。\n🏠 Mom opens the door now.\nお母さんは今ドアを開けます。\n😊 Ken is home at last!\nケンはついに家に帰りました！\n\n🔑 Do you have a key for your house?\n家の鍵を持っていますか？\n😱 Do you lose things often?\nよく物をなくしますか？\n🏫 Do you have a classroom at school?\n学校では教室がありますか？\n🎒 What is in your school bag?\n学校のバッグには何が入っていますか？\n🚶 Do you walk home from school?\n学校から歩いて帰りますか？\n🏠 Is your home big or small?\nあなたの家は大きいですか、それとも小さいですか？\n👩 Does your mom open the door for you?\nお母さんがドアを開けてくれますか？\n😊 Are you happy when you find lost things?\nなくしたものが見つかると嬉しいですか？\n🏃 Do you run fast or walk slowly?\n速く走りますか、それともゆっくり歩きますか？\n😊 Are you happy today?\n今日は幸せですか？'},
-  {title: '2. The Hungry Cat (Present Continuous Focus)', content: '🐱 Momo is a small cat.\nモモは小さな猫です。\n😿 She is very hungry today.\n彼女は今日とてもお腹が空いています。\n🐟 Cat food is empty now!\nキャットフードが空っぽです！\n😿 Momo cries for food.\nモモは食べ物を求めて鳴いています。\n👩 Mom is at work now.\nお母さんは今仕事中です。\n👨 Dad is sleeping on the sofa.\nお父さんはソファで寝ています。\n🐟 Momo jumps on Dad\'s lap.\nモモはお父さんの膝の上に飛び乗ります。\n😱 Dad wakes up very fast!\nお父さんは素早く起きました！\n😊 He loves Momo very much.\n彼はモモが大好きです。\n🐟 Dad gives Momo fish food.\nお父さんはモモに魚の食べ物をあげます。\n\n🐱 Do you like cats or dogs better?\n猫と犬、どっちが好きですか？\n😿 Do you feel hungry often?\nよくお腹が空きますか？\n🐟 Do you like fish to eat?\n魚を食べるのは好きですか？\n👩 Is your mom working today?\nお母さんは今日働いていますか？\n👨 Does your dad sleep on the sofa?\nお父さんはソファで寝ますか？\n🐟 Do you feed animals at home?\n家で動物に餌をあげますか？\n😱 Do you wake up fast in the morning?\n朝はすぐに起きますか？\n💕 Do you love animals?\n動物は好きですか？\n🍛 What is your favorite food?\n一番好きな食べ物は何ですか？\n🐱 Do you want a pet cat or dog?\n猫や犬を飼いたいですか？'},
-  {title: '3. The Sick Friend', content: '👩 Yuki is not at school.\nユキは学校に来ていません。\n😢 She feels sick today.\n彼女は今日具合が悪いです。\n🤒 She has a bad fever.\n彼女は高い熱があります。\n🏠 She stays in bed today.\n彼女は今日ベッドで寝ています。\n😊 Mom makes hot soup.\nお母さんは温かいスープを作ります。\n🍲 Yuki eats the soup slowly.\nユキはゆっくりスープを食べます。\n🛌 She sleeps in her bed.\n彼女はベッドで寝ます。\n🎉 Tomorrow she feels better!\n明日は気分が良くなりました！\n😊 Yuki goes back to school.\nユキは学校に戻りました。\n👫 Everyone is happy to see her!\nみんなは彼女に会えて嬉しい！\n\n😢 Do you get sick often?\nよく病気になりますか？\n🤒 Do you have a fever now?\n今は熱がありますか？\n🏠 Do you like staying in bed when sick?\n病気の時はベッドで寝るのは好きですか？\n🍲 Do you like eating soup when you are sick?\n病気の時はスープを食べるのは好きですか？\n🛌 Do you sleep a lot when you are sick?\n病気の時はたくさん寝ますか？\n🎉 Do you feel happy when you are healthy?\n健康な時は幸せですか？\n🏫 Do you miss school when you are sick?\n病気の時は学校を恋しく思いますか？\n👫 Do your friends visit you when you are sick?\n病気の時は友達が見舞いに来てくれますか？\n🌡️ Do you know your body temperature today?\n今日の体温はわかりますか？\n😊 Do you feel healthy today?\n今日は健康な気分ですか？'},
-  {title: '4. The New Friend (Wh-Questions Focus)', content: '🏫 A new student comes today.\n新しい生徒が今日来ました。\n👦 His name is Takeshi.\n彼の名前はタケシです。\n👋 He sits next to Ken.\n彼はケンの隣に座ります。\n😊 Ken says hello to Takeshi.\nケンはタケシにこんにちはと言います。\n⚽ They play soccer together.\n彼らは一緒にサッカーをします。\n🎿 They also play video games.\nビデオゲームも一緒にします。\n😊 Takeshi is a kind boy.\nタケシは優しい少年です。\n👫 Now Ken has a best friend!\nケンは今親友ができた！\n🎉 They eat lunch every day.\n彼らは毎日一緒に昼食を食べます。\n\n👦 What is your name?\nあなたの名前は何ですか？\n👋 Who sits next to you at school?\n学校では誰があなたの隣に座っていますか？\n⚽ What game do you play with friends?\n友達とどんなゲームをしますか？\n😊 Is your best friend kind?\n親友は優しいですか？\n🎉 What do you do at lunch time?\n昼休みには何をしますか？\n👫 Do you have a best friend at school?\n学校には親友がいますか？\n🏫 What is your classroom number?\nあなたの教室の番号は何ですか？\n🎮 Do you play video games?\nビデオゲームをしますか？\n😊 Are you happy when you make new friends?\n新しい友達ができると嬉しいですか？\n😊 What makes you happy at school?\n学校では何があなたを幸せにしますか？'},
-  {title: '5. The Surprise Birthday', content: '🎂 Dad says he is busy.\nお父さんは忙しいと言います。\n😒 Mom says she works today.\nお母さんは今日は仕事だと言います。\n😢 Ken feels very sad.\nケンはとても悲しい気分です。\n🎉 Ken eats lunch alone.\nケンは一人で昼食を食べます。\n😔 He watches TV alone too.\n彼も一人でテレビを見ます。\n🚪 Suddenly the door opens!\n😮 突然ドアが開きました！\n🎈 Many friends jump out!\n🎈 たくさんの友達が飛び出してきました！\n🎁 They all say Happy Birthday!\n🎉 みんなで誕生日おめでとうと言います！\n😊 Mom and Dad are there too!\n🎂 お母さんとお父さんもそこにいました！\n🎉 Ken is so surprised and happy!\n🎂 ケンはとても驚いて幸せです！\n\n🎂 When is your birthday?\n誕生日はいつですか？\n🎂 Do you like birthday parties?\n誕生日パーティーは好きですか？\n😢 Do you feel sad when you eat alone?\n一人で食べる時は悲しい気分ですか？\n🎉 Do your friends come to your parties?\n友達はあなたのパーティーに来てくれますか？\n🎁 Do you get birthday presents?\n誕生日にプレゼントをもらいますか？\n😊 Are you surprised easily?\nびっくりしやすいですか？\n🎂 Do you like birthdays?\n誕生日は好きですか？\n💕 Is your family big or small?\nあなたの家族は大きいですか、それとも小さいですか？\n👨 Does your dad work on your birthday?\nお父さんは誕生日に仕事をしますか？\n😊 What makes you happy on your birthday?\n誕生日には何があなたを幸せにしますか？'},
-  {title: '6. The Big Storm', content: '🌧️ The sky is very dark today.\n今日空はとても暗いです。\n💨 The wind blows very hard.\n風が激しく吹いています。\n⚡ Thunder makes big noise!\n雷が大きな音を立てています！\n😰 Yuki is scared of thunder.\nユキは雷を怖がっています。\n💡 Suddenly the lights go out!\n⚡ 突然電気が消えました！\n😱 Now it is very dark!\n⚡ 今はとても暗いです！\n🔦 Dad lights a candle.\n🔦 お父さんはロウソクに火をつけます。\n👨‍👩‍👧‍👦 The family sits together.\n家族は一緒に座ります。\n😊 They tell fun stories.\n彼らは楽しい話をします。\n💡 Soon the lights come back on!\n💡 すぐに電気が戻りました！\n\n🌧️ Do you like rainy weather?\n雨の天気は好きですか？\n☀️ Do you like sunny days better?\n晴れの日のほうが好きですか？\n⚡ Are you scared of thunder?\n雷は怖いですか？\n💡 Do you have candles at home?\n家にはロウソクがありますか？\n😱 Do you like the dark or light?\n暗いところと明るいところ、どっちが好きですか？\n👨‍👩‍👧‍👦 Does your family sit together often?\n家族はよく一緒に座りますか？\n😊 Do you like telling stories?\n話をするのは好きですか？\n🌡️ Is the weather cold or hot today?\n今日の天気は寒いですか、それとも暑いですか？\n😰 What are you scared of?\n何を怖がっていますか？\n💡 Do you feel safe during storms?\n嵐の時は安全を感じますか？'},
-  {title: '7. The Broken Glasses (Present Continuous Focus)', content: '👓 Tom wears glasses every day.\nトムは毎日眼鏡をかけています。\n⚽ He is playing soccer now.\n彼は今サッカーをしています。\n🏃 A friend runs into Tom.\n友達がトムにぶつかります。\n😱 Oh no! Tom falls down!\n😮 まあ！トムが転びました！\n💔 His glasses fall on the ground.\n😮 彼の眼鏡が地面に落ちました。\n😭 The glasses are broken now!\n😮 眼鏡が壊れてしまいました！\n😫 Tom cannot see anything.\nトムは何も見えません。\n🚑 Mom is taking him to the doctor.\nお母さんはトムを医者に連れて行っています。\n👨‍⚕️ The doctor is checking the glasses.\n医者は眼鏡をチェックしています。\n😊 Soon Tom gets new glasses!\n😮 トムはすぐに新しい眼鏡をもらいます！\n\n👓 Do you wear glasses?\n眼鏡をかけていますか？\n⚽ Do you play soccer at school?\n学校ではサッカーをしますか？\n🏃 Do you run fast?\n速く走れますか？\n😱 Are you scared of falling down?\n転ぶのは怖いですか？\n👨‍⚕️ Do you go to the doctor often?\nよく医者に行きますか？\n😊 Are you happy when you get new things?\n新しいものをもらうと嬉しいですか？\n👓 Do you see well or do you need glasses?\nよく見えますか、それとも眼鏡が必要ですか？\n⚽ Do you like team sports?\nチームスポーツは好きですか？\n😫 Do you feel sad when you break something?\n物を壊すと悲しい気分ですか？\n👨‍⚕️ What does your doctor do for you?\n医者はあなたに何をしてくれますか？'},
-  {title: '8. The Lost Dog (Be-Verb Questions Focus)', content: '🐕 Ken has a dog named Pochi.\nケンはポチという犬を飼っています。\n🎾 Pochi loves to play outside.\nポチは外で遊ぶのが大好きです。\n🚶 Ken and Pochi walk in the park.\nケンとポチは公園を散歩します。\n😱 Suddenly Pochi runs away!\n😮 突然ポチが走って逃げてしまいました！\n😲 Pochi is nowhere to be found.\nポチはどこにも見つかりません。\n📢 Ken calls Pochi\'s name loudly.\nケンはポチの名前を大声で呼びます。\n👫 Friends are helping Ken look.\n友達がケンの手伝いをしています。\n🐶 Pochi is behind a big tree.\nポチは大きな木の後ろにいました。\n😊 Ken runs to Pochi quickly.\nケンは急いでポチのところへ走ります。\n❤️ Pochi is happy to see Ken!\n😮 ポチはケンに会えて嬉しいです！\n\n🐕 Are dogs friendly animals?\n犬は友好的な動物ですか？\n🎾 Is your dog playful or quiet?\nあなたの犬は遊び好きですか、それとも静かですか？\n🚶 Is the park near your home?\n公園はあなたの家の近くですか？\n📢 Is your voice loud or quiet?\nあなたの声は大きいですか、それとも小さいですか？\n👫 Are your friends helpful?\n友達は助けてくれますか？\n🐶 Are animals happy when they see you?\n動物はあなたに会えると嬉しいですか？\n😊 Are you happy when you find lost things?\nなくしたものが見つかると嬉しいですか？\n🐕 Do you like dogs or cats better?\n犬と猫、どっちが好きですか？\n😱 Are you scared when pets run away?\nペットが逃げると怖いですか？\n❤️ Are you happy with your pets?\nペットと一緒にいて幸せですか？'},
-  {title: '9. The Soccer Match', content: '⚽ Aiko loves playing soccer.\nミサコはサッカーをするのが大好きです。\n😊 She practices every day.\n彼女は毎日練習します。\n🏃 She runs very fast now.\n彼女は今とても速く走っています。\n🥅 The goal is open now!\n😮 ゴールが開いています！\n🦶 Aiko kicks the ball hard.\nミサコはボールを強く蹴っています。\n⚽ The ball goes into the goal!\n😮 ボールがゴールに入りました！\n🎉 Her team shouts with joy!\n😮 彼女のチームは歓声を上げました！\n😊 Aiko feels so proud today.\nミサコは今日とても誇らしい気分です。\n👫 Her team wins the match!\n😮 彼女のチームが試合に勝ちました！\n🏆 Everyone celebrates together now.\n😓 みんなは今一緒にお祝いしています。\n\n⚽ Do you like playing soccer?\nサッカーをするのは好きですか？\n😊 Do you practice sports every day?\n毎日スポーツの練習をしますか？\n🏃 Can you run very fast?\nとても速く走れますか？\n🥅 Are goals hard to score?\nゴールを決めるのは難しいですか？\n🦶 Do you kick the ball hard?\nボールを強く蹴れますか？\n🎉 Do you shout when you are happy?\n幸せな時は叫びますか？\n😊 Do you feel proud when you win?\n勝つと誇らしい気分になりますか？\n🏆 Is winning important to you?\n勝つことはあなたにとって大切ですか？\n👫 Do you play on a team?\nチームに入っていますか？\n😊 Are you proud of your sports skills?\nスポーツの技能に誇りを持っていますか？'},
-  {title: '10. The Ice Cream Shop (Present Continuous Focus)', content: '🍦 Haruto wants ice cream today.\nハルトは今日アイスクリームが欲しいです。\n🏪 He is walking to the shop.\n😮 彼はお店へ歩いていっています。\n🍓 Mom is waiting for him.\n😮 お母さんは彼を待っています。\n🍦 He sees many flavors now.\n😮 彼は今たくさんのフレーバーを見ています。\n🍫 Chocolate is calling his name!\n😮 チョコレートが彼を呼んでいるようです！\n🍋 He chooses lemon ice cream.\n😮 彼はレモンのアイスクリームを選びました。\n🍦 The man is scooping ice cream.\n😮 お兄さんはアイスクリームをすくっています。\n😊 Haruto is eating it now.\n😮 ハルトは今それを食べています。\n🍨 Mom is taking photos of him.\n😮 お母さんは彼の写真を撮っています。\n🍂 The ice cream is yummy and cold.\n😮 アイスクリームは美味しくて冷たいです。\n\n🍦 Do you like ice cream?\nアイスクリームは好きですか？\n🏪 Do you walk to the shop sometimes?\n時々お店へ歩いて行きますか？\n🍓 Is your mom waiting for you now?\nお母さんは今あなたを待っていますか？\n🍫 Do you like chocolate flavor?\nチョコレート味は好きですか？\n🍋 What is your favorite ice cream flavor?\n一番好きなアイスクリームのフレーバーは何ですか？\n😊 Do you eat slowly or fast?\nゆっくり食べますか、それとも速く食べますか？\n🍨 Does your mom take your photos?\nお母さんはあなたの写真を撮りますか？\n🍂 Do you like cold ice cream?\n冷たいアイスクリームは好きですか？\n💕 Do you like treats with your mom?\nお母さんとおやつを食べるのは好きですか？\n😊 Are you happy when you eat ice cream?\nアイスクリームを食べると幸せですか？'},
-  {title: '11. The Piano Lesson', content: '🎹 Sakura wants to learn piano.\nサクラはピアノを習いたいです。\n🎵 She is starting lessons today.\n😮 彼女は今日レッスンを始めています。\n👨‍🏫 The teacher is very nice.\n😮 先生はとても優しいです。\n🎹 Sakura sits at the piano.\n😮 サクラはピアノを前に座ります。\n👂 She watches the teacher\'s hands.\n😮 彼女は先生の手を見ています。\n🎵 She plays the first note now!\n😮 彼女は今最初の音符を弾いています！\n🎶 The music sounds sweet.\n😮 音楽は甘い音がします。\n😌 Sakura feels very happy.\n😮 サクラはとても幸せな気分です。\n✏️ The teacher gives her homework.\n😮 先生が宿題をあげました。\n🎹 Sakura practices every day.\n😮 サクラは毎日練習します。\n\n🎹 Do you play the piano or any instrument?\nピアノか他の楽器を演奏しますか？\n🎵 Do you like music lessons?\n音楽のレッスンは好きですか？\n👨‍🏫 Is your teacher kind or strict?\n先生は優しいですか、それとも厳しいですか？\n👂 Do you watch carefully when learning?\n勉強する時は注意深く見ますか？\n🎵 Is sweet music your favorite?\n甘い音楽が一番好きですか？\n✏️ Do you have homework today?\n今日は宿題がありますか？\n😌 Do you feel happy when you learn new things?\n新しいことを学ぶと幸せな気分ですか？\n🎹 Do you like to practice every day?\n毎日練習するのは好きですか？\n😊 Are you good at learning music?\n音楽を学ぶのは得意ですか？\n🎵 What is your favorite music style?\n一番好きな音楽のスタイルは何ですか？'},
-  {title: '12. The Cooking Class (Be-Verb Questions Focus)', content: '👩 Ryota wants to cook today.\n😮 リョータは今日料理をしたいです。\n🍝 He is making pasta now.\n😮 彼は今パスタを作っています。\n🥕 Mom is helping him too.\n😮 お母さんも彼を手伝っています。\n👨‍🍳 Dad is watching them cook.\n😮 お父さんは料理を見ています。\n🥄 Ryota is stirring the sauce.\n😮 リョータはソースを混ぜています。\n🍝 The sauce is smelling good!\n😮 ソースはいい匂いがします！\n😊 Everyone is waiting to eat.\n😮 みんなは食べるのを待っています。\n🍽️ The pasta is ready now!\n😮 パスタが出来上がりました！\n😋 Ryota eats the yummy food.\n😮 リョータは美味しい食べ物を食べます。\n😊 Everyone loves the pasta!\nみんなはパスタが大好きです！\n\n👩 Is cooking fun or hard?\n料理は楽しいですか、それとも難しいですか？\n🍝 Is pasta your favorite food?\nパスタは一番好きな食べ物ですか？\n🥕 Are vegetables healthy for you?\n野菜はあなたにとって健康的ですか？\n👨‍🍳 Is your dad good at cooking?\nお父さんは料理が上手ですか？\n🥄 Is it easy to stir sauce?\nソースを混ぜるのは簡単ですか？\n😊 Are you hungry when you cook?\n料理する時はお腹が空きますか？\n😋 Do you like eating yummy food?\n美味しい食べ物を食べるのは好きですか？\n💕 Is your family happy when you cook?\nあなたが料理すると家族は幸せですか？\n🍝 Do you like Italian food or Japanese food?\nイタリア料理と日本料理、どっちが好きですか？\n😊 Are you proud of your cooking?\n自分の料理に誇りを持っていますか？'},
-  {title: '13. The Library Books', content: '📚 Emma loves reading very much.\nエマは読書が大好きです。\n🏢 She is going to the library.\n😮 彼女は図書館へ行っています。\n📖 She wants to find new books.\n😮 彼女は新しい本を見つけたいです。\n📚 The library is very big.\n😮 図書館はとても大きいです。\n🔍 Emma is looking for adventures.\nエマは冒険を探しています。\n📖 She finds a book about space.\n😮 彼女は宇宙に関する本を見つけました。\n🌟 The book looks very interesting!\n😮 その本はとても面白そうです！\n😊 Emma sits down to read.\n😮 エマは座って読み始めました。\n📖 She reads for one hour.\n😮 彼女は一時間本を読みました。\n🌟 Emma learns so much today!\n😮 エマは今日たくさん学びました！\n\n📚 Do you like reading books?\n本を読むのは好きですか？\n🏢 Is the library near your school?\n図書館は学校の近くですか？\n📖 Do you like story books or information books?\n物語の本と情報の本、どっちが好きですか？\n🔍 Do you look for interesting books?\n面白い本を探しますか？\n🌟 Is space interesting to you?\n宇宙は面白いですか？\n😊 Do you sit comfortably when you read?\n読む時は心地よく座りますか？\n📖 Do you read for a long time?\n長い時間本を読みますか？\n🌟 Do you learn new things from books?\n本から新しいことを学びますか？\n📚 Are books your favorite thing?\n本は一番好きなものですか？\n😊 Are you happy when you read good books?\n良い本を読むと幸せですか？'},
-  {title: '14. The Rainy Camping Trip', content: '🌲 Hiro wants to go camping.\n😮 ヒロはキャンプに行きたいです。\n⛺ Dad is packing the car now.\n😮 お父さんは今車に荷物を詰めています。\n🚴 They drive to the mountains.\n😮 彼らは山へ車で行きます。\n🏕️ They set up the big tent.\n😮 彼らは大きなテントを設営しました。\n😊 Everyone is having fun now.\n😮 みんなは今楽しんでいます。\n🌧️ Suddenly it starts to rain!\n😮 突然雨が降り始めました！\n😱 Everyone runs into the tent.\n😮 みんなはテントの中に走りました。\n⚡ Thunder and lightning are loud!\n😮 雷と稲妻がうるさいです！\n😔 The rain does not stop now.\n😮 雨がまだ止みません。\n😰 They stay inside all night.\n😮 彼らは一晩中ずっと中にいました。\n\n🌲 Do you like camping?\nキャンプは好きですか？\n⛺ Do you sleep in a tent?\nテントで寝ますか？\n🚴 Do your family go on car trips together?\n家族で車の旅行に行きますか？\n🏕️ Is setting up a tent hard or easy?\nテントを設営するのは難しいですか、それとも簡単ですか？\n😊 Do you have fun with your family?\n家族と一緒にいると楽しいですか？\n🌧️ Does rain stop your fun?\n雨は楽しみを止めますか？\n😱 Do you run when it rains?\n雨が降ると走りますか？\n⚡ Is thunder loud or quiet?\n雷は大きいですか、それとも静かですか？\n😰 Do you feel sad when rain stops your plans?\n雨で計画が中止になると悲しいですか？\n🏕️ Is camping better in sunny weather or rainy weather?\nキャンプは晴れの日と雨の日、どっちがいいですか？'},
-  {title: '15. The Shopping Day', content: '🛒 Nana wants to go shopping today.\n😮 ナナは今日買い物に行きたいです。\n👩 Mom is taking her to the store.\n😮 お母さんは彼女を店に連れて行っています。\n👗 Nana wants a new dress.\n😮 ナナは新しいワンピースが欲しいです。\n👠 She tries on many dresses.\n😮 彼女はたくさんのワンピースを試着します。\n👗 One dress fits perfectly!\n😮 一着のワンピースがぴったりです！\n💰 Mom buys the dress for Nana.\n😮 お母さんはナナにワンピースを買いました。\n😊 Nana feels so happy now.\n😮 ナナは今とても幸せです。\n🍩 They eat ice cream after shopping.\n😮 買い物の後、彼らはアイスクリームを食べました。\n🚶 They walk home together.\n😮 彼らは一緒に家に歩いて帰りました。\n🌟 Today was a very good day!\n😮 今日はとても良い日でした！\n\n🛒 Do you like shopping?\n買い物は好きですか？\n👗 Do you wear dresses or pants?\nワンピースを着ますか、それともズボンですか？\n👠 Do you try on clothes before buying?\n買う前に服を試着しますか？\n💰 Does your mom buy clothes for you?\nお母さんはあなたの服を買ってくれますか？\n😊 Do you feel happy when you get new clothes?\n新しい服をもらうと嬉しい気分ですか？\n🍩 Do you like to eat after shopping?\n買い物の後に食べるのは好きですか？\n🚶 Do you walk home with your mom?\nお母さんと一緒に歩いて帰りますか？\n🌟 Was today a good day for you?\n今日はあなたにとって良い日でしたか？\n👩 Do you like going out with your mom?\nお母さんと出かけるのは好きですか？\n😊 Are you happy today?\n今日は幸せですか？'},
-  {title: '16. The Bike Race (Present Continuous Focus)', content: '🚲 Lisa has a new red bike.\n😮 リサは新しい赤い自転車を持っています。\n🏆 She is practicing for the race.\n😮 彼女はレースのために練習しています。\n🚴 Lisa is riding very fast.\n😮 リサはとても速く走っています。\n😫 She is getting tired now.\n😮 彼女は今疲れてきました。\n💧 She drinks some cold water.\n😮 彼女は冷たい水を少し飲みました。\n😊 Now she is ready to race!\n😮 今、彼女はレースの準備ができました！\n🏁 The race begins today!\n😮 レースが今日始まります！\n🚴 Lisa is pedaling very hard.\n😮 リサは一生懸命ペダルを漕いでいます。\n🥇 She comes in first place!\n😮 彼女は第一位になりました！\n😊 Lisa is so tired but happy!\n😮 リサは疲れていますが幸せです！\n\n🚲 Do you have a bike?\n自転車を持っていますか？\n🏆 Do you like racing?\nレースは好きですか？\n🚴 Can you ride a bike fast?\n速く自転車に乗れますか？\n😫 Do you get tired when you exercise?\n運動すると疲れますか？\n💧 Do you drink cold water when you are tired?\n疲れた時は冷たい水を飲みますか？\n🏁 Are races exciting or scary?\nレースはエキサイティングですか、それとも怖いですか？\n🥇 Do you like coming in first place?\n第一位になるのは好きですか？\n😊 Are you happy when you win?\n勝つと幸せですか？\n🚲 Is your bike red or another color?\nあなたの自転車は赤色ですか、それとも他の色ですか？\n😊 Are you proud of your bike riding?\n自転車乗りに誇りを持っていますか？'},
-  {title: '17. The Cherry Blossoms', content: '🌸 Spring has come to Japan.\n😮 日本に春が来ました。\n🌸 The cherry blossoms are beautiful.\n😮 桜は美しいです。\n👨‍👩‍👧‍👦 The family is walking there.\n😮 家族はそこを歩いています。\n📸 Yuto is taking many photos.\n😮 ユウトはたくさんの写真を撮っています。\n🌸 Pink flowers fall gently down.\n😮 ピンクの花が優しく落ちています。\n😊 Everyone feels so happy today.\n😮 全員、今日とても幸せです。\n🌸 The air smells sweet and nice.\n😮 空気は甘くていい匂いがします。\n👩 Mom takes a selfie photo.\n😮 お母さんは自撮り写真を撮りました。\n📸 They are making fun memories.\n😮 彼らは楽しい思い出を作っています。\n🌸 Spring is the best season!\n😮 春は最高の季節です！\n\n🌸 Do you like cherry blossoms?\n桜は好きですか？\n😊 Do you like spring weather?\n春の天気は好きですか？\n📸 Do you take photos often?\nよく写真を撮りますか？\n🌸 Are pink flowers pretty?\nピンクの花はきれいですか？\n😊 Do you feel happy in spring?\n春は幸せな気分ですか？\n👩 Does your mom take photos?\nお母さんは写真を撮りますか？\n📸 Do you like making memories with family?\n家族と思い出を作るのは好きですか？\n🌸 Is spring your favorite season?\n春は一番好きな季節ですか？\n🌸 Do flowers smell good to you?\n花はいい匂いがしますか？\n😊 Are you happy when you see beautiful flowers?\n美しい花を見ると幸せですか？'},
-  {title: '18. The Beach Day (Wh-Questions Focus)', content: '🌊 Kota wants to go to the beach.\n😮 コタは海へ行きたいです。\n☀️ The sun is shining very bright.\n😮 太陽はとても明るく輝いています。\n🏖️ The sand is warm and yellow.\n😮 砂は暖かくて黄色です。\n🏊 Kota is swimming in the sea.\n😮 コタは海で泳いでいます。\n🌊 The water feels cool and nice.\n😮 海水は涼しくて良い感じです。\n⛱️ Mom and Dad are sitting under an umbrella.\n😮 お父さんとお母さんは傘の下に座っています。\n🦀 Kota finds a small crab.\n😮 コタは小さなカニを見つけました。\n😊 The crab is moving sideways.\n😮 カニは横に動いています。\n🏖️ Everyone is relaxing today.\n😮 全員は今日リラックスしています。\n🌊 The beach day is perfect!\n😮 海の日は完璧です！\n\n🌊 Where do you like to swim in summer?\n夏はどこで泳ぐのが好きですか？\n☀️ Is the sun bright or cloudy today?\n今日の太陽は明るいですか、それとも曇りですか？\n🏖️ Do you like walking on the sand?\n砂の上を歩くのは好きですか？\n🏊 Can you swim in the sea?\n海で泳げますか？\n🌊 Is sea water warm or cool in summer?\n夏の海水は暖かいですか、それとも涼しいですか？\n⛱️ Do you sit under an umbrella at the beach?\n海では傘の下に座りますか？\n🦀 Have you ever seen a crab at the beach?\n海でカニを見たことがありますか？\n😊 Do you crabs move sideways or forward?\nカニは横に動きますか、それとも前に動きますか？\n🏖️ Are beach days relaxing for you?\n海の日はリラックスできますか？\n🌊 Do you like beach days or park days better?\n海の日と公園の日、どっちが好きですか？'},
-  {title: '19. The Angry Moment', content: '😠 Hana is angry today.\n😮 ハナは今日怒っています。\n😡 Her friend takes her pencil.\n😮 友達が彼女の鉛筆を取りました。\n😠 Hana shouts very loudly.\n😮 ハナは大きな声で叫びました。\n😔 Her friend looks very sorry.\n😮 友達はとても申し訳ない様子です。\n😢 Hana feels sad and upset.\n😮 ハナは悲しくて怒っています。\n👩 Mom comes to her room.\n😮 お母さんが彼女の部屋に来ました。\n🤗 Mom gives Hana a big hug.\n😮 お母さんはハナに大きなハグをしました。\n😊 Hana calms down slowly.\n😮 ハナはゆっくり落ち着きました。\n😌 She forgives her friend.\n😮 彼女は友達を許しました。\n❤️ Now they are friends again!\n😮 今彼女たちはまた友達です！\n\n😠 Do you get angry often?\nよく怒りますか？\n😡 Do your friends take your things?\n友達はあなたの物を取りますか？\n😠 Do you shout when you are angry?\n怒ると叫びますか？\n😔 Do you feel sorry when you make mistakes?\nミスをすると申し訳ない気分になりますか？\n😢 Do you feel sad when you are angry?\n怒っている時は悲しい気分ですか？\n🤗 Does your mom give you hugs?\nお母さんはあなたをハグしてくれますか？\n😊 Do you calm down quickly or slowly?\nすぐに落ち着きますか、それともゆっくりですか？\n😌 Do you forgive your friends?\n友達を許しますか？\n❤️ Are you still friends after fights?\n喧嘩の後も友達ですか？\n😊 Do you feel happy when you make up?\n仲直りすると幸せですか？'},
-  {title: '20. The Grandmother\'s Stories (Be-Verb Questions Focus)', content: '👵 Grandma comes to visit today.\n😮 おばあちゃんが今日遊びに来ました。\n🍪 She brings yummy cookies too.\n😮 おばあちゃんが美味しいクッキーも持ってきました。\n🍎 Yuma is eating the cookies.\n😮 ユマはクッキーを食べています。\n😊 The cookies taste very sweet.\n😮 クッキーはとても甘くて美味しい。\n📖 Grandma tells old stories.\n😮 おばあちゃんは古い話をします。\n👂 Yuma listens very carefully.\n😮 ユマは注意深く聞いています。\n📚 Grandma shows old photos.\n😮 おばあちゃんは古い写真を見せます。\n👨 Mom was a cute baby!\n😮 お母さんは可愛い赤ちゃんでした！\n😊 Everyone smiles together now.\n😮 全員は今一緒に笑っています。\n❤️ Family visits are so special!\n😮 家族の訪問はとても特別！\n\n👵 Do you have a grandmother?\nおばあちゃんはいますか？\n🍪 Are cookies your favorite snack?\nクッキーは一番好きなおやつですか？\n🍎 Do you like eating sweet cookies?\n甘いクッキーを食べるのは好きですか？\n📖 Do you like stories about the old days?\n昔の話は好きですか？\n👂 Do you listen carefully when people talk?\n人が話す時は注意深く聞きますか？\n📚 Are old black and white photos interesting?\n古い白黒の写真は面白いですか？\n👨 Was your mom cute when she was a baby?\nお母さんは赤ちゃんの時は可愛かったですか？\n😊 Do you smile when you are happy?\n幸せな時は笑いますか？\n❤️ Are family visits special to you?\n家族の訪問は特別ですか？\n👵 Do you love your grandmother?\nおばあちゃんが好きですか？'},
-  {title: '21. The Basketball Game', content: '🏀 Airi loves basketball very much.\n😮 アイリはバスケットボールが大好きです。\n⛹️ She is practicing every day.\n😮 彼女は毎日練習しています。\n🏀 The ball is orange and round.\n😮 ボールはオレンジ色で丸いです。\n⛹️ She throws the ball high.\n😮 彼女はボールを高く投げています。\n🎯 The ball goes into the hoop!\n😮 ボールがゴールに入りました！\n😊 Airi feels so strong today.\n😮 アイリは今日とても強い気分です。\n🤝 Her team is playing a game.\n😮 彼女のチームは試合をしています。\n🏀 They are running very fast.\n😮 彼らはとても速く走っています。\n🏆 Her team wins by three points!\n😮 彼女のチームは3点差で勝ちました！\n😊 Everyone celebrates together now.\n😮 全員は今一緒にお祝いしています。\n\n🏀 Do you like basketball?\nバスケットボールは好きですか？\n⛹️ Do you practice sports every day?\n毎日スポーツを練習しますか？\n🏀 Is the basketball orange or another color?\nバスケットボールはオレンジ色ですか、それとも他の色ですか？\n🎯 Is it hard to get the ball in the hoop?\nボールをゴールに入れるのは難しいですか？\n😊 Do you feel strong when you exercise?\n運動すると強い気分になりますか？\n🤝 Do you play on a basketball team?\nバスケットボールチームに入っていますか？\n🏃 Can you run very fast on the court?\nコートでとても速く走れますか？\n🏆 Is winning by three points exciting?\n3点差で勝つのはエキサイティングですか？\n😊 Do you celebrate when you win?\n勝つとお祝いしますか？\n😊 Are you proud when your team wins?\nチームが勝つと誇らしい気分ですか？'},
-  {title: '22. The Bus Ride (Present Continuous Focus)', content: '🚌 Sora is taking the bus.\n😮 ソラはバスに乗っています。\n🎒 She is carrying a big bag.\n😮 彼女は大きなバッグを持っています。\n👵 An old woman gets on.\n😮 おばあちゃんが乗ってきました。\n😊 Sora gives her the seat.\n😮 ソラは彼女に席を譲りました。\n👴 The old woman thanks Sora.\n😮 おばあちゃんはソラに感謝しました。\n😊 Sora feels very kind today.\n😮 ソラは今日とても優しい気分です。\n🚌 The bus is going to school.\n😮 バスは学校へ向かっています。\n👨‍🏫 The bus driver is driving safely.\n😮 バスの運転手は安全に運転しています。\n🏫 Now Sora is at school.\n😮 ソラは今学校に着きました。\n😊 Being kind feels very good.\n😮 親切にするのはとても良い気分。\n\n🚌 Do you take the bus to school?\nバスで学校へ行きますか？\n🎒 Is your school bag heavy or light?\nあなたの学校のバッグは重いですか、それとも軽いですか？\n👵 Do you help old people?\nお年寄りを助けますか？\n😊 Do you give your seat to others?\n他人に席を譲りますか？\n👴 Do old people thank you for helping?\nお年寄りは助けてくれたことに感謝していますか？\n😊 Do you feel kind when you help people?\n人を助けると優しい気分になりますか？\n🚌 Is the bus ride long or short?\nバスの乗車時間は長いですか、それとも短いですか？\n👨‍🏫 Is your bus driver a kind person?\nバスの運転手は優しい人ですか？\n🏫 Are you happy when you arrive at school?\n学校に着くと幸せですか？\n😊 Does being kind feel good to you?\n親切にするのは良い気分ですか？'},
-  {title: '23. The Embarrassing Mistake', content: '😳 Ren is at school today.\n😮 レンは今日学校にいます。\n📖 He is reading a book.\n😮 彼は本を読んでいます。\n😱 Suddenly he drops the book!\n😮 突然本を落としました！\n😲 The book falls on the floor.\n😮 本は床に落ちました。\n😳 Everyone looks at Ren now.\n😮 全員が今レンを見ています。\n😔 Ren feels so embarrassed.\n😮 レンはとても恥ずかしい気分です。\n😊 His friend helps him pick it up.\n😮 友達が彼が拾うのを手伝ってくれました。\n😸 Everyone starts laughing gently.\n😮 全員は優しく笑い始めました。\n😌 Ren calms down slowly.\n😮 レンはゆっくり落ち着きました。\n😊 Now Ren is laughing too!\n😮 今レンも笑っています！\n\n😳 Do you feel embarrassed often?\nよく恥ずかしい思いをしますか？\n📖 Do you read books at school?\n学校では本を読みますか？\n😱 Do you drop things often?\nよく物を落としますか？\n😲 Do people look at you when you make mistakes?\nミスをすると人はあなたを見ますか？\n😔 Do you feel sad when you are embarrassed?\n恥ずかしい時は悲しい気分ですか？\n😊 Do your friends help you when you make mistakes?\nミスをすると友達は助けてくれますか？\n😸 Is gentle laughing kind or mean?\n優しく笑うのは親切ですか、それとも意地悪ですか？\n😌 Do you calm down quickly or slowly?\nすぐに落ち着きますか、それともゆっくりですか？\n😊 Do you laugh at your own mistakes?\n自分のミスを笑いますか？\n😳 Do embarrassing moments make you stronger?\n恥ずかしい時は強くなりますか？'},
-  {title: '24. The Helping Hand (Wh-Questions Focus)', content: '👩 Mei is walking in the hallway.\n😮 メイは廊下を歩いています。\n😢 A new girl is crying.\n😮 新しい女の子が泣いています。\n🧒 She dropped her books.\n😮 彼女は本を落としてしまいました。\n🤗 Mei stops to help her.\n😮 メイは助けるために止まりました。\n📚 They pick up the books together.\n😮 彼女たちは一緒に本を拾いました。\n😊 The new girl smiles now.\n😮 新しい女の子は今笑っています。\n👫 They become good friends.\n😮 彼女たちは良い友達になりました。\n💕 Kindness brings happiness.\n😮 優しさは幸せを運びます。\n💭 Mei feels warm inside.\n😮 メイは心が暖かいです。\n🌟 Helping is the best feeling!\n😮 手助けするのは最高の気分！\n\n👩 Where do you walk at school?\n学校ではどこを歩きますか？\n😢 Do you cry at school sometimes?\n時々学校で泣きますか？\n🧒 Have you ever dropped your books?\n本を落としたことがありますか？\n🤗 Do you help people when they need you?\n人が必要としている時は助けますか？\n📚 Do you pick things up for others?\n他人のために物を拾いますか？\n😊 Do you smile when you are happy?\n幸せな時は笑いますか？\n👫 Do you make new friends easily?\n簡単に新しい友達ができますか？\n💕 Does kindness make you feel happy?\n優しさはあなたを幸せにしますか？\n💭 Do you feel warm when you help?\n助けると心が暖かくなりますか？\n😊 Do you like helping others?\n他人を助けるのは好きですか？'},
-  {title: '25. The School Sports Day', content: '🏃‍♂️ Mina loves sports day.\nミナは運動会が大好きです。\n😊 She is practicing running fast.\n彼女は速く走る練習をしています。\n🎖️ Her team is working hard.\n彼女のチームは一生懸命練習しています。\n🏆 They want to win today.\n彼らは今日勝ちたいです。\n🤝 Everyone helps each other.\n全員がお互いを助け合っています。\n🏃‍♂️ Mina runs very very fast.\nミナはとっても速く走っています。\n🥇 Her team comes in first!\n彼女のチームが第一位です！\n😊 Everyone shouts with joy.\n全員は喜んで叫んでいます。\n🎖️ Mina feels very proud.\nミナはとても誇らしい気分です。\n🏅 Sports day was so fun!\n運動会はとても楽しかった！\n\n🏃‍♂️ Do you like sports day at school?\n学校の運動会は好きですか？\n😊 Do you practice running often?\nよく走る練習をしますか？\n🎖️ Do you work hard for your team?\nチームのために一生懸命働きますか？\n🏆 Do you want to win when you play?\n遊ぶ時は勝ちたいですか？\n🤝 Do you help your teammates?\nチームメイトを助けますか？\n🏃‍♂️ Can you run very fast?\nとても速く走れますか？\n🥇 Is coming in first exciting?\n第一位になるのはエキサイティングですか？\n😊 Do you shout when you are excited?\n興奮すると叫びますか？\n🎖️ Do you feel proud of yourself?\n自分に誇りを持っていますか？\n😊 Are sports days fun for you?\n運動会は楽しいですか？'},
-  {title: '26. The Morning Routine (Present Continuous Focus)', content: '😮 Kaito wakes up at seven.\nカイトは7時に起きます。\n🛏️ He is sleeping in his bed.\n彼はベッドで寝ています。\n☀️ The sun is shining bright.\n太陽は明るく輝いています。\n🌤️ The sky looks very blue.\n空はとても青く見えます。\n😊 Kaito is stretching his arms.\nカイトは腕を伸ばしています。\n🪟 He is opening his eyes.\n彼は目を開けています。\n🍞 Mom is making breakfast now.\nお母さんは今朝食を作っています。\n🥛 Mom is pouring milk too.\nお母さんは今ミルクを注いでいます。\n😊 Kaito is eating breakfast.\nカイトは朝食を食べています。\n😌 He feels ready for school.\n彼は学校の準備ができています。\n\n😮 What time do you wake up in the morning?\n朝は何時に起きますか？\n🛏️ Do you like sleeping in your bed?\nベッドで寝るのは好きですか？\n☀️ Is the sun bright when you wake up?\n起きる時の太陽は明るいですか？\n🌤️ Is the sky blue or gray today?\n今日の空は青いですか、それとも灰色ですか？\n😊 Do you stretch your arms when you wake up?\n起きた時に腕を伸ばしますか？\n🪟 Do you open your eyes quickly or slowly?\n目をすばやく開けますか、それともゆっくりですか？\n🍞 Does your mom make breakfast for you?\nお母さんはあなたに朝食を作ってくれますか？\n🥛 Do you drink milk with breakfast?\n朝食にミルクを飲みますか？\n😊 Do you eat breakfast every day?\n毎日朝食を食べますか？\n😌 Do you feel ready for school in the morning?\n朝は学校の準備ができていますか？'},
-  {title: '27. The Autumn Leaves', content: '🍂 Autumn has come to the park.\n秋が公園に来ました。\n🌳 The leaves turn red and gold.\n葉は赤と金色に変わります。\n😊 Rin loves autumn very much.\nリンは秋が大好きです。\n🍂 She is walking in the park.\n彼女は公園を歩いています。\n😮 Look at all the colorful leaves!\n見て！すべての色とりどりの葉！\n😲 They are falling down slowly.\n彼らはゆっくり落ちています。\n🍂 The air is cool and fresh.\n空気は涼しくて爽快です。\n🌲 Rin picks up a red leaf.\nリンは赤い葉を拾いました。\n😊 She puts it in her bag.\n彼女はそれをバッグに入れました。\n🍂 Autumn is so beautiful!\n秋はとても美しい！\n\n🍂 Do you like autumn weather?\n秋の天気は好きですか？\n🌳 Do trees look beautiful in autumn?\n秋は木が美しいですか？\n😊 Do you like red and gold colors?\n赤と金色の色は好きですか？\n😊 Do you walk in the park often?\nよく公園を歩きますか？\n😲 Do leaves fall slowly or quickly?\n葉はゆっくり落ちますか、それとも速く落ちますか？\n🍂 Is the air cool or hot in autumn?\n秋の空気は涼しいですか、それとも暑いですか？\n🌲 Do you pick up leaves outside?\n外で葉を拾いますか？\n😊 Is autumn your favorite season?\n秋は一番好きな季節ですか？\n🍂 Are autumn days beautiful?\n秋の日は美しいですか？\n😊 Do you feel happy in autumn?\n秋は幸せな気分ですか？'},
-  {title: '28. The Dream Job (Wh-Questions Focus)', content: '✈️ Shota wants to be a pilot.\nショウタはパイロットになりたいです。\n🚀 He loves flying in the sky.\n彼は空を飛ぶのが大好きです。\n💭 He is dreaming about planes.\n彼は飛行機の夢を見ています。\n😊 Shota studies very hard.\nショウタは一生懸命勉強します。\n📖 He reads books about flying.\n彼は飛行に関する本を読みます。\n✈️ Someday he will fly people.\nいつか人を飛ばせるでしょう。\n😮 Mom gives him a toy plane.\nお母さんは彼に玩具の飛行機をあげました。\n🎉 Shota is so happy now!\nショウタは今とても幸せです！\n😛 He plays with the plane.\n彼は飛行機で遊んでいます。\n🌟 Dreams can come true someday!\n夢はいつか叶います！\n\n✈️ What do you want to be when you grow up?\n大きくなったら何になりたいですか？\n🚀 Do you like flying in the sky?\n空を飛ぶのは好きですか？\n💭 What do you dream about often?\nよく何を夢見ていますか？\n😊 Do you study hard at school?\n学校では一生懸命勉強しますか？\n📖 Do you read books about your dreams?\n夢についての本を読みますか？\n✈️ Do you want to fly people or animals someday?\nいつか人か動物を飛ばせたいですか？\n😮 Does your mom give you toys?\nお母さんはおもちゃをくれますか？\n🎉 Are you happy when you get toys?\nおもちゃをもらうと幸せですか？\n😛 Do you play with toys every day?\n毎日おもちゃで遊びますか？\n🌟 Do you believe your dreams can come true?\n夢は叶うと信じていますか？'},
-  {title: '29. The Proud Achievement', content: '📚 Aira worked very hard.\nアイラは一生懸命勉強しました。\n✏️ She wrote a long story.\n彼女は長い物語を書きました。\n📝 The story was so good!\nその物語はとても良かった！\n😊 Her teacher said wonderful job.\n先生は素晴らしいと言いました。\n👨‍🏫 She showed it to the class.\n彼女はクラスに見せました。\n📖 Everyone read her story.\n全員が彼女の物語を読みました。\n🎉 Everyone said it\'s great!\n全員が「素晴らしい！」と言いました。\n😊 Aira feels very proud now.\nアイラは今とても誇らしい気分です。\n❤️ She shares her happiness.\n彼女は幸せを分かち合います。\n🌟 Working hard brings success!\n努力は成功をもたらします！\n\n📚 Do you work hard at school?\n学校では一生懸命勉強しますか？\n✏️ Do you like writing stories?\n物語を書くのは好きですか？\n📝 Do you think your work is good?\nあなたの作品は良いと思いますか？\n😊 Does your teacher say wonderful job to you?\n先生はあなたに素晴らしいと言ってくれますか？\n👨‍🏫 Do you show your work to the class?\nクラスに作品を見せますか？\n📖 Do classmates read your work?\nクラスメイトはあなたの作品を読みますか？\n🎉 Do people say great things about you?\n人はあなたについて素晴らしいと言ってくれますか？\n😊 Do you feel proud of yourself?\n自分に誇りを持っていますか？\n❤️ Do you share happiness with others?\n幸せを他人と分かち合いますか？\n🌟 Do you believe working hard brings success?\n努力は成功をもたらすと信じていますか？'},
-  {title: '30. Learning to Swim (Be-Verb Questions Focus)', content: '🏊 Ren wants to swim today.\nレンは今日泳ぎたいです。\n😟 But the pool looks big and deep.\nでもプールは大きくて深そうです。\n😰 Ren is scared of the water.\nレンは水を怖がっています。\n😊 The teacher is very kind.\n先生はとても優しいです。\n🤝 She holds Ren\'s hand.\n先生はレンの手を握っています。\n🏊 Ren puts his feet in the water.\nレンは足を水に入れました。\n😊 The water feels nice now.\n水は今良い感じです。\n🏊 Ren starts to swim slowly.\nレンはゆっくり泳ぎ始めました。\n😮 He is floating on the water!\n彼は水の上に浮いています！\n😊 Ren is so brave today!\nレンは今日とても勇敢です！\n\n😟 Are you scared of deep water?\n深い水は怖いですか？\n🏊 Do you want to learn to swim?\n泳ぎを習いたいですか？\n😰 Is the swimming pool big or small?\n水泳プールは大きいですか、それとも小さいですか？\n😊 Is the swimming teacher kind?\n水泳の先生は優しいですか？\n🤝 Does someone hold your hand when you are scared?\n怖い時は誰かがあなたの手を握ってくれますか？\n😊 Does the water feel nice when you swim?\n泳ぐ時は水が良い感じですか？\n😮 Is floating on water easy or hard?\n水の上に浮くのは簡単ですか、それとも難しいですか？\n😊 Are you brave when you try new things?\n新しいことに挑戦する時は勇敢ですか？\n🏊 Do you like swimming or running better?\n水泳と走ること、どっちが好きですか？\n😊 Do you feel proud when you learn new things?\n新しいことを学ぶと誇らしい気分ですか？'},
-  {title: '31. Teaching a Friend', content: '🎸 Hana wants to help her friend.\nハナは友達を助けたいです。\n😔 Her friend cannot play guitar.\n友達はギターを弾けません。\n👩 Hana is very good at guitar.\nハナはギターがとても上手です。\n😊 She wants to teach her friend.\n彼女は友達に教えることができます。\n🎵 They are practicing together now.\n彼女たちは今一緒に練習しています。\n🙌 Hana shows her friend how.\nハナは友達にやり方を見せます。\n👂 Her friend listens very well.\n友達はよく聞いています。\n🎸 Soon the friend can play!\nすぐに友達は弾けるようになりました！\n😊 Her friend feels so happy.\n友達はとても幸せな気分です。\n❤️ Hana is glad to help.\nハナは助けることができて嬉しいです。\n\n🎸 Do you like playing guitar?\nギターを弾くのは好きですか？\n😔 Is it hard when you cannot do something?\n何かができない時は難しいですか？\n👩 Are you good at any instruments?\n何か楽器が得意ですか？\n😊 Do you like teaching your friends?\n友達に教えるのは好きですか？\n🎵 Do you practice music together with friends?\n友達と一緒に音楽を練習しますか？\n🙌 Do you show people how to do things?\n人にやり方を見せますか？\n👂 Do you listen well when people teach you?\n人に教えてもらう時はよく聞きますか？\n😊 Are you happy when your friend succeeds?\n友達が成功すると幸せですか？\n❤️ Do you feel glad when you help people?\n人を助けると嬉しい気分ですか？\n🎸 Do you like music or sports better?\n音楽とスポーツ、どっちが好きですか？'},
-  {title: '32. The Snowy Winter Fun (Present Continuous Focus)', content: '⛄ It is snowing this morning.\n今朝は雪が降っています。\n😊 Mei is looking outside.\nメイは外を見ています。\n☃️ The world is all white.\n世界はすべて白くなっています。\n😊 Mei is putting on warm clothes.\nメイは暖かい服を着ています。\n🔴 She is wearing her red coat.\n彼女は赤いコートを着ています。\n🧤 She is putting on gloves too.\n彼女は手袋も着ています。\n🏂 Mei is going outside now.\nメイは今外へ行っています。\n😲 She is seeing white snowflakes.\n彼女は白い雪を見ています。\n😊 She is catching snowflakes!\n彼女は雪をキャッチしています！\n⛄ Snow days are so much fun!\n雪の日はとても楽しい！\n\n⛄ Do you like snowy days?\n雪の日は好きですか？\n☃️ Do you think snow makes the world beautiful?\n雪は世界を美しくすると思いますか？\n😊 Do you look outside when it snows?\n雪が降ると外を見ますか？\n😊 Do you wear warm clothes in winter?\n冬は暖かい服を着ますか？\n🔴 Is your coat red or another color?\nあなたのコートは赤色ですか、それとも他の色ですか？\n🧤 Do you wear gloves when it snows?\n雪が降ると手袋をはめますか？\n🏂 Do you go outside when it\'s snowing?\n雪が降っていると外に行きますか？\n😲 Have you ever seen white snowflakes?\n白い雪を見たことがありますか？\n😊 Do you like catching snow in your hands?\n手で雪をキャッチするのは好きですか？\n🎃 Do you like autumn festivals?\n秋祭りは好きですか？\n🌽 Do farmers work hard in summer?\n農家は夏に一生懸命働きますか？\n🍚 Do you like eating fresh vegetables?\n新鮮な野菜を食べるのは好きですか？\n🤝 Do you help with food at festivals?\n祭りで食べ物の手伝いをしますか？\n🍎 Do apples taste sweet or sour?\nリンゴは甘いですか、それとも酸っぱいですか？\n🍊 Do you like oranges or apples better?\nオレンジとリンゴ、どっちが好きですか？\n😊 Do you like eating with friends?\n友達と一緒に食べるのは好きですか？\n🌟 Are festivals joyful for you?\n祭りは楽しいですか？\n🎃 Do pumpkins grow in autumn?\nカボチャは秋に育ちますか？\n🤝 Is eating together fun?\n一緒に食べるのは楽しいですか？'},
-  {title: '33. The Winter Festival', content: '❄️ The town has a winter festival.\n町には冬の祭りがあります。\n😊 Ren and friends go together.\nレンと友達が一緒に行きます。\n🎪 There are many fun stalls.\nたくさんの楽しい屋台があります。\n🍡 Ren eats dango skewers.\nレンはお団子を食べます。\n🎨 They watch ice sculptures.\n彼らは氷の彫刻を見ます。\n✨ The ice glows beautifully.\n氷が美しく光ります。\n🎵 Music is playing loudly.\n音楽が大きく鳴っています。\n😊 Everyone is dancing together.\n全員が一緒に踊っています。\n❄️ Snow is falling gently.\n雪が優しく降っています。\n🌟 Winter festivals are amazing!\n冬の祭りは素晴らしい！\n\n❄️ Do you like winter festivals?\n冬の祭りは好きですか？\n🎪 Do you go with friends?\n友達と一緒に行きますか？\n🍡 What food do you eat at festivals?\n祭りで何を食べますか？\n🎨 Have you seen ice sculptures?\n氷の彫刻を見たことがありますか？\n✨ Do ice sculptures glow at night?\n氷の彫刻は夜に光りますか？\n🎵 Do you like festival music?\n祭りの音楽は好きですか？\n😊 Do you dance at festivals?\n祭りで踊りますか？\n❄️ Does snow fall at winter festivals?\n冬の祭りに雪は降りますか？\n🌟 Are festivals amazing or boring?\n祭りは素晴らしいですか、それとも退屈ですか？\n😊 Do you feel happy at festivals?\n祭りで幸せな気分になりますか？'}, {title: '34. The Bedtime Story', content: '🌙 It is night time now.\n今は夜の時間です。\n🌑 The sky is dark and quiet.\n空は暗くて静かです。\n😊 Mom is reading a story.\nお母さんは物語を読んでいます。\n😴 Ren is listening so carefully.\nレンはとても注意深く聞いています。\n📖 The story is about a brave bear.\n物語は勇敢なクマについてです。\n😊 Mom reads slowly and nicely.\nお母さんはゆっくり素敵く読みます。\n🛏️ Ren feels very sleepy now.\nレンは今とても眠いです。\n😴 He closes his heavy eyes.\n彼は重くなった目を閉じます。\n💤 Ren is falling asleep fast.\nレンはすぐに眠りに落ちました。\n🌙 Night night everyone!\nおやすみなさい！\n\n🌙 What time do you go to bed at night?\n夜は何時にベッドに行きますか？\n🚶 Are bears your favorite animal?\nクマは一番好きな動物ですか？\n📖 Do you like stories about animals?\n動物の物語は好きですか？\n😴 Do you feel sleepy at night?\n夜は眠い気分ですか？\n🛏️ Is your bed comfortable?\nあなたのベッドは快適ですか？\n😊 Do you like it when mom or dad reads to you?\nお母さんやお父さんが読んでくれるのは好きですか？\n💤 Do you fall asleep fast or slowly?\nすぐに眠りに落ちますか、それともゆっくりですか？\n🌙 Do you sleep well at night?\n夜はよく眠れますか？\n😊 Do you have good dreams?\n良い夢を見ますか？\n🌙 What do you say before sleeping?\n寝る前に何と言いますか？'},
-  {title: '35. The School Field Trip', content: '🚌 Asuka is going on a trip.\nアスカは旅行に行きます。\n🏛️ The class is visiting the museum.\nクラスは博物館を訪問します。\n👩 The teacher leads the way.\n先生が案内します。\n😊 Students are following quietly.\n生徒たちは静かについていきます。\n🏛️ Everyone looks at old art.\n全員は古い芸術を見ています。\n😲 Asuka sees a big painting.\nアスカは大きな絵を見ました。\n😊 The art is so beautiful.\nその芸術はとても美しい。\n📸 Asuka takes photos today.\nアスカは今日写真を撮ります。\n👫 They eat lunch together.\n彼らは一緒に昼食を食べます。\n😊 The field trip was amazing!\n遠足は素晴らしかった！\n\n🚌 Do you go on school field trips?\n学校の遠足に行きますか？\n🏛️ Do you like visiting museums?\n博物館を訪問するのは好きですか？\n👩 Does your teacher lead the class well?\n先生はクラスをよく案内してくれますか？\n😊 Do you follow the teacher quietly?\n先生の後を静かについていきますか？\n🏛️ Is old art beautiful or boring?\n古い芸術は美しいですか、それとも退屈ですか？\n😲 What do you like to see most in museums?\n博物館では何が一番好きですか？\n📸 Do you take photos on trips?\n旅行で写真を撮りますか？\n👫 Do you eat lunch with your class?\nクラスと一緒に昼食を食べますか？\n😊 Are field trips fun or tiring?\n遠足は楽しいですか、それとも疲れますか？\n🚌 Do you like riding the school bus?\nスクールバスに乗るのは好きですか？'},
-  {title: '36. The Weekend Fun (Be-Verb Questions Focus)', content: '😮 It is Saturday morning.\n土曜日の朝です。\n😊 Sora has no school today.\nソラは今日学校がありません。\n😓 He has nothing to do.\n彼はすることが何もありません。\n😦 Sora feels very bored.\nソラはとても退屈です。\n🎮 He plays video games.\n彼はビデオゲームをします。\n😊 But games are not fun alone.\nでもゲームは一人では楽しくありません。\n👨 Dad suggests going for a walk.\nお父さんは散歩に行こうと言います。\n😊 Sora thinks it is a good idea.\nソラはそれは良い考えだと思っています。\n🚶 They walk together happily.\n彼らは楽しく散歩します。\n😌 Now Sora feels happy.\nソラは今幸せな気分です。\n\n😮 Do you like Saturday and Sunday?\n土曜日と日曜日、好きですか？\n😊 Are you happy when there is no school?\n学校がない時は幸せですか？\n😓 Do you ever feel bored at home?\n家で退屈な気分になりますか？\n🎮 Do you like playing video games?\nビデオゲームをしますか？\n😊 Is playing alone fun or boring?\n一人で遊ぶのは楽しいですか、それとも退屈ですか？\n👨 Does your dad suggest fun things to do?\nお父さんは楽しいことを提案してくれますか？\n😊 Is going for a walk a good idea?\n散歩に行くのは良い考えですか？\n🚶 Do you walk with your dad often?\nよくお父さんと散歩しますか？\n😌 Do you feel happy after a walk?\n散歩の後は幸せな気分ですか？\n🎮 Do you like games or outdoor activities better?\nゲームと屋外のアクティビティ、どっちが好きですか？'},
-  {title: '37. The Rainy Weekend', content: '🌧️ It is raining this weekend.\n週末は雨が降っています。\n☔ The sky is gray and cloudy.\n空は灰色で曇っています。\n😔 Yuki cannot play outside.\nユキは外で遊べません。\n😕 She stays inside the house.\n彼女は家の中にいます。\n📖 She decides to read books.\n彼女は本を読むことにしました。\n😊 Yuki reads three whole books.\nユキは3冊の本を読みました。\n😌 She feels calm and happy.\n彼女は静かで幸せな気分です。\n🍵 Mom makes warm tea for everyone.\nお母さんは温かいお茶を作ってくれました。\n☕ Everyone drinks tea and talks.\nみなはお茶を飲んで話をします。\n😊 Rainy days can be cozy!\n雨の日は心地よいです！\n\n🌧️ Do you like rainy weekends?\n雨の週末は好きですか？\n☔ Does the gray sky make you feel sad?\n灰色の空は悲しい気分にさせますか？\n😔 Can you play outside when it rains?\n雨が降っていると外で遊べますか？\n✏️ Do you do homework on rainy days?\n雨の日は宿題をしますか？\n📖 Do you like reading books at home?\n家で本を読むのは好きですか？\n😌 Do you feel calm when you read?\n読むと静かな気分になりますか？\n🍵 Do you like drinking hot tea?\n温かいお茶を飲むのは好きですか？\n☕ Do you talk with your family at home?\n家で家族と話しますか？\n😊 Are rainy days cozy or boring?\n雨の日は心地よいですか、それとも退屈ですか？\n🌧️ Would you rather stay inside or go out in the rain?\n雨の日は家の中にいたいですか、それとも外に行きたいですか？'},
-  {title: '38. Learning Baseball (Present Continuous Focus)', content: '⚾ Ren wants to play baseball.\nレンは野球をしたいです。\n🧢 He is wearing a baseball cap.\n彼は野球帽を被っています。\n⚾ Ren is practicing throwing the ball.\nレンはボールを投げる練習をしています。\n🎯 He throws it very well.\n彼はとても良く投げています。\n😊 His friends are catching the ball.\n彼の友達はボールをキャッチしています。\n⚾ They are playing a game now.\n彼らは今ゲームをしています。\n🏃 Ren is running fast to bases.\nレンはベースへ速く走っています。\n✌ The team gets three outs.\nチームは3つのアウトを取りました。\n😊 Baseball is so much fun!\n野球はとても楽しい！\n\n🧢 Do you wear a baseball cap?\n野球帽を被りますか？\n⚾ Do you like playing baseball?\n野球をするのは好きですか？\n🎯 Are you good at throwing balls?\nボールを投げるのは得意ですか？\n😊 Do your friends like sports too?\n友達もスポーツが好きですか？\n🏃 Can you run very fast?\nとても速く走れますか？\n✌ Do you understand the rules of baseball?\n野球のルールは理解していますか？\n😊 Is baseball fun or hard?\n野球は楽しいですか、それとも難しいですか？\n⚾ Do you have a baseball team at school?\n学校には野球チームがありますか？\n🏃 Are you fast or slow at running?\n走るのは速いですか、それとも遅いですか？\n😊 Do you like outdoor sports?\n屋外スポーツは好きですか？'},
-  {title: '39. The Evening Routine', content: '🌙 Mei is finishing her day.\nメイは一日を終えようとしています。\n✏️ She is doing her homework.\n彼女は宿題をしています。\n📖 She is studying English words.\n彼女は英単語を勉強しています。\n😊 Mei finishes her homework now.\nメイは今宿題を終えました。\n🧹 She is putting her books away.\n彼女は本を片付けています。\n🌝 Mom is making dinner now.\nお母さんは今夕食を作っています。\n😊 Mei is helping mom set the table.\nメイはお母さんがテーブルをセットするのを助けています。\n😔 Dad is coming home from work.\nお父さんは仕事から帰ってきました。\n😊 The family eats dinner together.\n家族は一緒に夕食を食べます。\n🌙 Everyone is tired but happy.\n全員は疲れていますが幸せです。\n\n✏️ Do you have homework today?\n今日は宿題がありますか？\n📖 Do you study English at home?\n家で英語を勉強しますか？\n😊 Do you finish homework quickly or slowly?\n宿題は速く終わりますか、それともゆっくりですか？\n🧹 Do you put your books away after studying?\n勉強の後、本を片付けますか？\n🌝 What time does your mom cook dinner?\nお母さんはいつ夕食を作りますか？\n😊 Do you help in the kitchen?\nキッチンで手伝いますか？\n😔 Does your dad come home from work late?\nお父さんは仕事から遅く帰ってきますか？\n🌙 Do you eat dinner with your family?\n家族と一緒に夕食を食べますか？\n😊 Are you tired at the end of the day?\n一日の終わりは疲れていますか？\n🌝 Is evening time relaxing?\n夕方の時間はリラックスできますか？'},
-  {title: '40. The Brave Friend (Wh-Questions Focus)', content: '😰 A scary dog is barking.\n怖い犬が吠えています。\n😓 A little boy is scared.\n小さな男の子は怖がっています。\n😔 The boy does not know what to do.\nその少年はどうしたら良いかわかりません。\n🦺 Ren knows what to do.\nレンは何をすべきか知っています。\n😊 Ren walks to the dog calmly.\nレンは冷静に犬に近づきます。\n🐕 The dog calms down now.\n犬は今落ち着きました。\n😔 The boy runs to Ren safely.\n少年は安全にレンのもとへ走りました。\n😊 Thank you very much Ren!\nレン、ありがとうございます！\n💕 Friendship is very important.\n友情はとても大切です。\n\n😰 What are you scared of most?\n一番何が怖いですか？\n🐕 Are dogs your favorite animal?\n犬は一番好きな動物ですか？\n😦 What do you do when you are scared?\n怖い時は何をしますか？\n🦺 Who helps you when you are in trouble?\n困っている時は誰が助けてくれますか？\n😊 Do you stay calm in scary situations?\n怖い状況では落ち着いていますか？\n🐕 Do dogs calm down when you are nice to them?\n犬に親切にすると落ち着きますか？\n😔 Do you feel safe when friends are near?\n友達が近くにいると安全を感じますか？\n😊 Do you thank people who help you?\n助けてくれた人に感謝しますか？\n💕 Is friendship important to you?\n友情はあなたにとって大切ですか？\n😰 Do you help your friends when they are scared?\n友達が怖い時は助けてあげますか？'},
-  {title: '41. The New Classroom', content: '🏫 Yumi is moving to a new class.\nユミは新しいクラスに移ります。\n😊 She is feeling a little nervous.\n彼女は少し緊張しています。\n👋 The teacher says welcome.\n先生はようこそと言います。\n😊 All the students smile at Yumi.\nみんな生徒がユミに微笑みます。\n🪑 She sits in her new seat.\n彼女は自分の新しい席に座ります。\n📚 The classroom looks bright.\n教室は明るいです。\n✏️ Yumi has new books now.\nユミは今新しい本を持っています。\n😊 She makes new friends quickly.\n彼女はすぐに新しい友達ができました。\n🌟 New classes are exciting!\n新しいクラスはエキサイティング！\n\n🏫 Do you like your classroom?\nあなたの教室は好きですか？\n😊 Do you feel nervous on the first day?\n初日は緊張しますか？\n👋 Does your teacher say welcome to new students?\n先生は新しい生徒にようこそと言いますか？\n😊 Do you smile at new classmates?\n新しいクラスメイトに微笑みますか？\n🪑 Is your seat comfortable?\nあなたの席は快適ですか？\n📚 Do you like using new books?\n新しい本を使うのは好きですか？\n😊 Do you make new friends quickly?\nすぐに新しい友達ができますか？\n🌟 Are new things exciting or scary?\n新しいことはエキサイティングですか、それとも怖いですか？\n🏫 Is moving to a new class hard?\n新しいクラスに移るのは難しいですか？\n😊 Are you happy when you make new friends?\n新しい友達ができると幸せですか？'},
-  {title: '42. The Music Practice (Mixed)', content: '🎵 Haru wants to practice the flute.\nハルはフルートを練習したいです。\n😊 She practices every afternoon.\n彼女は毎日午後練習します。\n🎶 The music sounds very beautiful.\n音楽はとても美しい音がします。\n😊 Haru plays a song now.\nハルは今一曲演奏します。\n👂 Her family listens happily.\n彼女の家族は幸せそうに聞いています。\n🎵 Haru makes a small mistake.\nハルは小さなミスをしました。\n😊 But she keeps on playing!\nでも彼女は演奏し続けました！\n🎉 The song finishes beautifully.\n曲は美しく終わりました。\n😊 Haru feels so proud today.\nハルは今日とても誇らしい気分です。\n🎶 Practice makes you better!\n練習はあなたを良くします！\n\n🎵 Do you play an instrument?\n楽器を演奏しますか？\n😊 Do you practice every day?\n毎日練習しますか？\n🎶 Is beautiful music your favorite?\n美しい音楽が一番好きですか？\n👂 Does your family like listening to music?\n家族は音楽を聴くのが好きですか？\n😊 Do you make mistakes when you practice?\n練習する時はミスをしますか？\n🎉 Do you feel good when you finish a song?\n曲を終えると良い気分ですか？\n😊 Do you feel proud of your music?\n自分の音楽に誇りを持っていますか？\n🎶 Does practice make you better?\n練習すると良くなりますか？\n🎵 Are you good at music?\n音楽は得意ですか？\n🎉 Do you like music for fun or for learning?\n音楽は楽しみのためにするのも好きですか、それとも学ぶためにするのも好きですか？'},
-  {title: '43. The Kind Stranger', content: '🌳 Aki is walking in the park.\nアキは公園を歩いています。\n😢 She drops her favorite toy.\n彼女は一番好きなおもちゃを落としました。\n🔍 She looks everywhere for it.\n彼女はどこでも探しました。\n😔 But she cannot find it.\nでも見つかりませんでした。\n🤝 A kind stranger helps look.\n親切な見知らぬ人が手伝ってくれました。\n🧸 The stranger finds the toy!\n見知らぬ人がおもちゃを見つけました！\n😊 Aki is so happy now.\nアキは今とても幸せです。\n🙏 Thank you so much!\nどうもありがとうございます！\n💕 Kind people make the world nice.\n親切な人たちは世界を良くします。\n😊 Aki walks home smiling.\nアキは笑顔で家に歩いて帰りました。\n\n🌳 Do you walk in parks often?\nよく公園を歩きますか？\n😢 Have you ever lost a favorite toy?\n一番好きなおもちゃをなくしたことがありますか？\n🔍 Do you look everywhere when you lose things?\n物をなくしするとどこでも探しますか？\n😔 Is it hard to find lost things?\nなくしたものを見つけるのは難しいですか？\n🤝 Do strangers ever help you?\n見知らぬ人が手伝ってくれたことがありますか？\n🧸 Do you have a favorite toy?\n一番好きなおもちゃがありますか？\n😊 Are you happy when you find lost things?\nなくしたものが見つかるとい気分ですか？\n🙏 Do you say thank you to people who help you?\n助けてくれた人にありがとうと言いますか？\n💕 Are kind people important?\n親切な人は大切ですか？\n😊 Do you smile when you are happy?\n幸せな時は笑顔になりますか？'},
-  {title: '44. Helping Classmate', content: '👩 Hana is at school today.\nハナは今日学校にいます。\n😢 A classmate is crying.\nクラスメイトが泣いています。\n😔 She cannot do her math.\n彼女は算数ができません。\n🤗 Hana goes to help her.\nハナは助けに行きました。\n📖 She shows her how to solve.\n彼女は解き方を見せます。\n😊 The classmate understands now.\nクラスメイトは今理解しました。\n😸 They practice many problems.\n彼女たちはたくさんの問題を練習しました。\n😊 The classmate feels happy.\nクラスメイトは幸せな気分です。\n❤️ Hana is glad to help.\nハナは助けることができて嬉しいです。\n\n😢 Do you ever cry at school?\n学校で泣いたことがありますか？\n😔 What subject is hard for you?\nどんな科目が難しいですか？\n📖 Do you know how to solve math problems?\n算数の問題の解き方は知っていますか？\n🤗 Do you like helping classmates who are struggling?\n苦戦しているクラスメイトを助けるのは好きですか？\n😊 Do you understand things easily?\nすぐに理解できますか？\n😸 Do you like practicing problems?\n問題を練習するのは好きですか？\n😊 Do you feel happy when you understand?\n理解できたら幸せな気分ですか？\n❤️ Does helping make you feel glad?\n助けると嬉しい気分になりますか？\n👩 Do you have kind classmates?\n親切なクラスメイトがいますか？\n😊 Are you happy when you can help?\n助けられる時は幸せですか？'},
-  {title: '45. The School Festival', content: '🎉 The school festival is today.\n今日は学校の文化祭です。\n🎨 Students are showing their art.\n生徒たちは自分の芸術を見せています。\n🎭 There are many fun shows.\nたくさんの楽しいショーがあります。\n🎵 A band is playing music.\nバンドが音楽を演奏しています。\n👨‍👩‍👧 Parents are visiting today.\n保護者たちが今日来ています。\n😊 Everyone is having fun.\n全員が楽しんでいます。\n🍿 There is yummy food too.\n美味しい食べ物もあります。\n📸 Students are taking photos.\n生徒たちは写真を撮っています。\n😊 The festivals brings happiness.\n祭りは幸せを運びます。\n🌟 School days are so special!\n学校の日はとても特別！\n\n🎉 Is there a school festival at your school?\nあなたの学校には文化祭がありますか？\n🎨 What do you like to show at festivals?\n祭りでは何を見せるのが好きですか？\n🎭 Do you watch shows at festivals?\n祭りでショーを見ますか？\n🎵 Do you like live music?\nライブ音楽は好きですか？\n👨‍👩‍👧 Do your parents come to school events?\nあなたの両親は学校のイベントに来てくれますか？\n😊 Do festivals make you happy?\n祭りはあなたを幸せにしますか？\n🍿 Do you like festival food?\n祭りの食べ物は好きですか？\n📸 Do you take photos at festivals?\n祭りで写真を撮りますか？\n😊 Are school days special to you?\n学校の日はあなたにとって特別ですか？\n🌟 Do you like school events?\n学校のイベントは好きですか？'},
-  {title: '46. The Train Trip', content: '🚄 Ren is going on a trip.\nレンは旅行に行きます。\n🚆 He is taking the train.\n彼は新幹線に乗ります。\n😊 The train is very fast.\n新幹線はとても速いです。\n🖼️ Ren looks out the window.\nレンは窓の外を見ています。\n🌄 He sees beautiful mountains.\n彼は美しい山を見ました。\n🌊 He sees the ocean too.\n海も見ました。\n😊 The views are amazing.\n景色は素晴らしいです。\n🍞 Ren eats a bento box.\nレンはお弁当を食べました。\n🏁 Soon he arrives now.\nもうすぐ目的地に着きます。\n😊 Trips are so exciting!\n旅行はとてもエキサイティング！\n\n🚄 Do you take trains often?\nよく新幹線に乗りますか？\n🚆 Are trains fast or slow?\n電車は速いですか、それとも遅いですか？\n🖼️ Do you look out the window on trains?\n電車では窓の外を見ますか？\n🌄 Do you like seeing mountains?\n山を見るのは好きですか？\n🌊 Do you like seeing the sea?\n海を見るのは好きですか？\n😊 Are beautiful views amazing?\n美しい景色は素晴らしいですか？\n🍞 Do you like bento boxes for lunch?\nランチにお弁当は好きですか？\n🏁 Do you like arriving at destinations?\n目的地に着くのは好きですか？\n😊 Are trips exciting for you?\n旅行はエキサイティングですか？\n🌄 What do you like to see outside?\n外では何を見るのが好きですか？'},
-  {title: '47. The Art Project (Present Continuous Focus)', content: '🎨 Yumi wants to make art.\nユミは芸術を作りたいです。\n🖌️ She is painting a picture.\n彼女は絵を描いています。\n🎨 She is using many colors.\n彼女はたくさんの色を使っています。\n😊 Her art looks very beautiful.\n彼女の芸術はとても美しいです。\n👨‍🏫 The teacher sees her art.\n先生が彼女の芸術を見ました。\n😮 The teacher is surprised!\n先生は驚きました！\n👏 The teacher claps for Yumi.\n先生はユミのために拍手しました。\n🎨 Yumi puts her art on display.\nユミは自分の芸術を展示しました。\n😊 Everyone looks at her art.\n全員が彼女の芸術を見ました。\n🌟 Yumi feels so proud!\nユミはとても誇らしい気分です！\n\n🎨 Do you like making art?\n芸術を作るのは好きですか？\n🖌️ Do you like painting or drawing?\n絵を描くのと素描、どっちが好きですか？\n🎨 What colors do you like?\nどんな色が好きですか？\n😊 Is your art beautiful or simple?\nあなたの芸術は美しいですか、それともシンプルですか？\n👨‍🏫 Does your teacher encourage you?\n先生はあなたを励ましてくれますか？\n😮 Are you surprised when people like your art?\n人があなたの芸術を好きだと驚きますか？\n👏 Do you like when people clap for you?\n人があなたのために拍手してくれるのは好きですか？\n🌟 Do you feel proud when you do something well?\n何かを良くできると誇らしい気分ですか？\n🎨 What kind of art do you like best?\nどんな種類の芸術が一番好きですか？\n😊 Are you happy about your art?\n自分の芸術について幸せですか？'},
-  {title: '48. The Graduation (Mixed)', content: '🎓 Tom is graduating today.\nトムは今日卒業します。\n🏫 He is leaving elementary school.\n彼は小学校を卒業します。\n😊 He remembers his classmates.\n彼はクラスメイトを覚えています。\n👫 They have many fun memories.\n彼らにはたくさんの楽しい思い出があります。\n📸 They are taking photos now.\n彼らは今写真を撮っています。\n🎉 The ceremony is starting.\n卒業式が始まります。\n👨‍🏫 The teacher gives a speech.\n先生はスピーチをしました。\n😊 Tom feels so emotional.\nトムは感情的な気分です。\n🚸 Now he is moving up.\n彼は今進学します。\n😊 He remembers happy days.\n彼は幸せな日を覚えています。\n\n🎓 Do you have a graduation ceremony?\n卒業式はありますか？\n🏫 What school are you in now?\n今はどこの学校にいますか？\n😊 Do you have fun school memories?\n楽しい学校の思い出はありますか？\n👫 Do you have many classmates?\nたくさんのクラスメイトがいますか？\n📸 Do you like taking photos with friends?\n友達と写真を撮るのは好きですか？\n🎉 Do you like school ceremonies?\n式典は好きですか？\n👨‍🏫 Does your teacher give speeches?\n先生はスピーチをしますか？\n😊 Do you feel emotional at important events?\n重要なイベントでは感動しますか？\n🚸 Are you moving up to a new school soon?\nまもなく新しい学校に進学しますか？\n🌟 What are your hopes for the future?\n将来の希望は何ですか？'}
+  {
+    title: '1. The Missing Key',
+    content: `
+🔑 Ken wants to go home.
+ケンは家に帰りたいです。
+😱 But he loses his key!
+でも鍵をなくしました！
+🏫 He looks in the classroom.
+彼は教室で探します。
+🔍 The key is not there.
+鍵はそこにありません。
+😕 He looks in his bag too.
+彼はバッグの中でも探します。
+🎒 Yuki sees the key there!
+ユキはバッグの中で鍵を見つけました！
+😊 Thank you, Yuki!
+ユキ、ありがとう！
+🚶 Ken runs home quickly.
+ケンは急いで家へ走ります。
+🏠 Mom opens the door now.
+お母さんは今ドアを開けます。
+😊 Ken is home at last!
+ケンはついに家に帰りました！
+
+🔑 Do you have a key for your house?
+家の鍵を持っていますか？
+😱 Do you lose things often?
+よく物をなくしますか？
+🏫 Do you have a classroom at school?
+学校では教室がありますか？
+🎒 What is in your school bag?
+学校のバッグには何が入っていますか？
+🚶 Do you walk home from school?
+学校から歩いて帰りますか？
+🏠 Is your home big or small?
+あなたの家は大きいですか、それとも小さいですか？
+👩 Does your mom open the door for you?
+お母さんがドアを開けてくれますか？
+😊 Are you happy when you find lost things?
+なくしたものが見つかると嬉しいですか？
+🏃 Do you run fast or walk slowly?
+速く走りますか、それともゆっくり歩きますか？
+😊 Are you happy today?
+今日は幸せですか？
+`
+  },
+  {
+    title: '3. The Sick Friend',
+    content: `
+👩 Yuki is not at school.
+ユキは学校に来ていません。
+😢 She feels sick today.
+彼女は今日具合が悪いです。
+🤒 She has a bad fever.
+彼女は高い熱があります。
+🏠 She stays in bed today.
+彼女は今日ベッドで寝ています。
+😊 Mom makes hot soup.
+お母さんは温かいスープを作ります。
+🍲 Yuki eats the soup slowly.
+ユキはゆっくりスープを食べます。
+🛌 She sleeps in her bed.
+彼女はベッドで寝ます。
+🎉 Tomorrow she feels better!
+明日は気分が良くなりました！
+😊 Yuki goes back to school.
+ユキは学校に戻りました。
+👫 Everyone is happy to see her!
+みんなは彼女に会えて嬉しい！
+
+😢 Do you get sick often?
+よく病気になりますか？
+🤒 Do you have a fever now?
+今は熱がありますか？
+🏠 Do you like staying in bed when sick?
+病気の時はベッドで寝るのは好きですか？
+🍲 Do you like eating soup when you are sick?
+病気の時はスープを食べるのは好きですか？
+🛌 Do you sleep a lot when you are sick?
+病気の時はたくさん寝ますか？
+🎉 Do you feel happy when you are healthy?
+健康な時は幸せですか？
+🏫 Do you miss school when you are sick?
+病気の時は学校を恋しく思いますか？
+👫 Do your friends visit you when you are sick?
+病気の時は友達が見舞いに来てくれますか？
+🌡️ Do you know your body temperature today?
+今日の体温はわかりますか？
+😊 Do you feel healthy today?
+今日は健康な気分ですか？
+`
+  },
+  {
+    title: '4. The New Friend (Wh-Questions Focus)',
+    content: `
+🏫 A new student comes today.
+新しい生徒が今日来ました。
+👦 His name is Takeshi.
+彼の名前はタケシです。
+👋 He sits next to Ken.
+彼はケンの隣に座ります。
+😊 Ken says hello to Takeshi.
+ケンはタケシにこんにちはと言います。
+⚽ They play soccer together.
+彼らは一緒にサッカーをします。
+🎿 They also play video games.
+ビデオゲームも一緒にします。
+😊 Takeshi is a kind boy.
+タケシは優しい少年です。
+👫 Now Ken has a best friend!
+ケンは今親友ができた！
+🎉 They eat lunch every day.
+彼らは毎日一緒に昼食を食べます。
+
+👦 What is your name?
+あなたの名前は何ですか？
+👋 Who sits next to you at school?
+学校では誰があなたの隣に座っていますか？
+⚽ What game do you play with friends?
+友達とどんなゲームをしますか？
+😊 Is your best friend kind?
+親友は優しいですか？
+🎉 What do you do at lunch time?
+昼休みには何をしますか？
+👫 Do you have a best friend at school?
+学校には親友がいますか？
+🏫 What is your classroom number?
+あなたの教室の番号は何ですか？
+🎮 Do you play video games?
+ビデオゲームをしますか？
+😊 Are you happy when you make new friends?
+新しい友達ができると嬉しいですか？
+😊 What makes you happy at school?
+学校では何があなたを幸せにしますか？
+`
+  },
+  {
+    title: '5. The Surprise Birthday',
+    content: `
+🎂 Dad says he is busy.
+お父さんは忙しいと言います。
+😒 Mom says she works today.
+お母さんは今日は仕事だと言います。
+😢 Ken feels very sad.
+ケンはとても悲しい気分です。
+🎉 Ken eats lunch alone.
+ケンは一人で昼食を食べます。
+😔 He watches TV alone too.
+彼も一人でテレビを見ます。
+🚪 Suddenly the door opens!
+😮 突然ドアが開きました！
+🎈 Many friends jump out!
+🎈 たくさんの友達が飛び出してきました！
+🎁 They all say Happy Birthday!
+🎉 みんなで誕生日おめでとうと言います！
+😊 Mom and Dad are there too!
+🎂 お母さんとお父さんもそこにいました！
+🎉 Ken is so surprised and happy!
+🎂 ケンはとても驚いて幸せです！
+
+🎂 When is your birthday?
+誕生日はいつですか？
+🎂 Do you like birthday parties?
+誕生日パーティーは好きですか？
+😢 Do you feel sad when you eat alone?
+一人で食べる時は悲しい気分ですか？
+🎉 Do your friends come to your parties?
+友達はあなたのパーティーに来てくれますか？
+🎁 Do you get birthday presents?
+誕生日にプレゼントをもらいますか？
+😊 Are you surprised easily?
+びっくりしやすいですか？
+🎂 Do you like birthdays?
+誕生日は好きですか？
+💕 Is your family big or small?
+あなたの家族は大きいですか、それとも小さいですか？
+👨 Does your dad work on your birthday?
+お父さんは誕生日に仕事をしますか？
+😊 What makes you happy on your birthday?
+誕生日には何があなたを幸せにしますか？
+`
+  },
+  {
+    title: '6. The Big Storm',
+    content: `
+🌧️ The sky is very dark today.
+今日空はとても暗いです。
+💨 The wind blows very hard.
+風が激しく吹いています。
+⚡ Thunder makes big noise!
+雷が大きな音を立てています！
+😰 Yuki is scared of thunder.
+ユキは雷を怖がっています。
+💡 Suddenly the lights go out!
+⚡ 突然電気が消えました！
+😱 Now it is very dark!
+⚡ 今はとても暗いです！
+🔦 Dad lights a candle.
+🔦 お父さんはロウソクに火をつけます。
+👨‍👩‍👧‍👦 The family sits together.
+家族は一緒に座ります。
+😊 They tell fun stories.
+彼らは楽しい話をします。
+💡 Soon the lights come back on!
+💡 すぐに電気が戻りました！
+
+🌧️ Do you like rainy weather?
+雨の天気は好きですか？
+☀️ Do you like sunny days better?
+晴れの日のほうが好きですか？
+⚡ Are you scared of thunder?
+雷は怖いですか？
+💡 Do you have candles at home?
+家にはロウソクがありますか？
+😱 Do you like the dark or light?
+暗いところと明るいところ、どっちが好きですか？
+👨‍👩‍👧‍👦 Does your family sit together often?
+家族はよく一緒に座りますか？
+😊 Do you like telling stories?
+話をするのは好きですか？
+🌡️ Is the weather cold or hot today?
+今日の天気は寒いですか、それとも暑いですか？
+😰 What are you scared of?
+何を怖がっていますか？
+💡 Do you feel safe during storms?
+嵐の時は安全を感じますか？
+`
+  },
+  {
+    title: '7. The Broken Glasses (Present Continuous Focus)',
+    content: `
+👓 Tom wears glasses every day.
+トムは毎日眼鏡をかけています。
+⚽ He is playing soccer now.
+彼は今サッカーをしています。
+🏃 A friend runs into Tom.
+友達がトムにぶつかります。
+😱 Oh no! Tom falls down!
+😮 まあ！トムが転びました！
+💔 His glasses fall on the ground.
+😮 彼の眼鏡が地面に落ちました。
+😭 The glasses are broken now!
+😮 眼鏡が壊れてしまいました！
+😫 Tom cannot see anything.
+トムは何も見えません。
+🚑 Mom is taking him to the doctor.
+お母さんはトムを医者に連れて行っています。
+👨‍⚕️ The doctor is checking the glasses.
+医者は眼鏡をチェックしています。
+😊 Soon Tom gets new glasses!
+😮 トムはすぐに新しい眼鏡をもらいます！
+
+👓 Do you wear glasses?
+眼鏡をかけていますか？
+⚽ Do you play soccer at school?
+学校ではサッカーをしますか？
+🏃 Do you run fast?
+速く走れますか？
+😱 Are you scared of falling down?
+転ぶのは怖いですか？
+👨‍⚕️ Do you go to the doctor often?
+よく医者に行きますか？
+😊 Are you happy when you get new things?
+新しいものをもらうと嬉しいですか？
+👓 Do you see well or do you need glasses?
+よく見えますか、それとも眼鏡が必要ですか？
+⚽ Do you like team sports?
+チームスポーツは好きですか？
+😫 Do you feel sad when you break something?
+物を壊すと悲しい気分ですか？
+👨‍⚕️ What does your doctor do for you?
+医者はあなたに何をしてくれますか？
+`
+  },
+  {
+    title: '9. The Soccer Match',
+    content: `
+⚽ Aiko loves playing soccer.
+ミサコはサッカーをするのが大好きです。
+😊 She practices every day.
+彼女は毎日練習します。
+🏃 She runs very fast now.
+彼女は今とても速く走っています。
+🥅 The goal is open now!
+😮 ゴールが開いています！
+🦶 Aiko kicks the ball hard.
+ミサコはボールを強く蹴っています。
+⚽ The ball goes into the goal!
+😮 ボールがゴールに入りました！
+🎉 Her team shouts with joy!
+😮 彼女のチームは歓声を上げました！
+😊 Aiko feels so proud today.
+ミサコは今日とても誇らしい気分です。
+👫 Her team wins the match!
+😮 彼女のチームが試合に勝ちました！
+🏆 Everyone celebrates together now.
+😓 みんなは今一緒にお祝いしています。
+
+⚽ Do you like playing soccer?
+サッカーをするのは好きですか？
+😊 Do you practice sports every day?
+毎日スポーツの練習をしますか？
+🏃 Can you run very fast?
+とても速く走れますか？
+🥅 Are goals hard to score?
+ゴールを決めるのは難しいですか？
+🦶 Do you kick the ball hard?
+ボールを強く蹴れますか？
+🎉 Do you shout when you are happy?
+幸せな時は叫びますか？
+😊 Do you feel proud when you win?
+勝つと誇らしい気分になりますか？
+🏆 Is winning important to you?
+勝つことはあなたにとって大切ですか？
+👫 Do you play on a team?
+チームに入っていますか？
+😊 Are you proud of your sports skills?
+スポーツの技能に誇りを持っていますか？
+`
+  },
+  {
+    title: '10. The Ice Cream Shop (Present Continuous Focus)',
+    content: `
+🍦 Haruto wants ice cream today.
+ハルトは今日アイスクリームが欲しいです。
+🏪 He is walking to the shop.
+😮 彼はお店へ歩いていっています。
+🍓 Mom is waiting for him.
+😮 お母さんは彼を待っています。
+🍦 He sees many flavors now.
+😮 彼は今たくさんのフレーバーを見ています。
+🍫 Chocolate is calling his name!
+😮 チョコレートが彼を呼んでいるようです！
+🍋 He chooses lemon ice cream.
+😮 彼はレモンのアイスクリームを選びました。
+🍦 The man is scooping ice cream.
+😮 お兄さんはアイスクリームをすくっています。
+😊 Haruto is eating it now.
+😮 ハルトは今それを食べています。
+🍨 Mom is taking photos of him.
+😮 お母さんは彼の写真を撮っています。
+🍂 The ice cream is yummy and cold.
+😮 アイスクリームは美味しくて冷たいです。
+
+🍦 Do you like ice cream?
+アイスクリームは好きですか？
+🏪 Do you walk to the shop sometimes?
+時々お店へ歩いて行きますか？
+🍓 Is your mom waiting for you now?
+お母さんは今あなたを待っていますか？
+🍫 Do you like chocolate flavor?
+チョコレート味は好きですか？
+🍋 What is your favorite ice cream flavor?
+一番好きなアイスクリームのフレーバーは何ですか？
+😊 Do you eat slowly or fast?
+ゆっくり食べますか、それとも速く食べますか？
+🍨 Does your mom take your photos?
+お母さんはあなたの写真を撮りますか？
+🍂 Do you like cold ice cream?
+冷たいアイスクリームは好きですか？
+💕 Do you like treats with your mom?
+お母さんとおやつを食べるのは好きですか？
+😊 Are you happy when you eat ice cream?
+アイスクリームを食べると幸せですか？
+`
+  },
+  {
+    title: '12. The Cooking Class (Be-Verb Questions Focus)',
+    content: `
+👩 Ryota wants to cook today.
+😮 リョータは今日料理をしたいです。
+🍝 He is making pasta now.
+😮 彼は今パスタを作っています。
+🥕 Mom is helping him too.
+😮 お母さんも彼を手伝っています。
+👨‍🍳 Dad is watching them cook.
+😮 お父さんは料理を見ています。
+🥄 Ryota is stirring the sauce.
+😮 リョータはソースを混ぜています。
+🍝 The sauce is smelling good!
+😮 ソースはいい匂いがします！
+😊 Everyone is waiting to eat.
+😮 みんなは食べるのを待っています。
+🍽️ The pasta is ready now!
+😮 パスタが出来上がりました！
+😋 Ryota eats the yummy food.
+😮 リョータは美味しい食べ物を食べます。
+😊 Everyone loves the pasta!
+みんなはパスタが大好きです！
+
+👩 Is cooking fun or hard?
+料理は楽しいですか、それとも難しいですか？
+🍝 Is pasta your favorite food?
+パスタは一番好きな食べ物ですか？
+🥕 Are vegetables healthy for you?
+野菜はあなたにとって健康的ですか？
+👨‍🍳 Is your dad good at cooking?
+お父さんは料理が上手ですか？
+🥄 Is it easy to stir sauce?
+ソースを混ぜるのは簡単ですか？
+😊 Are you hungry when you cook?
+料理する時はお腹が空きますか？
+😋 Do you like eating yummy food?
+美味しい食べ物を食べるのは好きですか？
+💕 Is your family happy when you cook?
+あなたが料理すると家族は幸せですか？
+🍝 Do you like Italian food or Japanese food?
+イタリア料理と日本料理、どっちが好きですか？
+😊 Are you proud of your cooking?
+自分の料理に誇りを持っていますか？
+`
+  },
+  {
+    title: '13. The Library Books',
+    content: `
+📚 Emma loves reading very much.
+エマは読書が大好きです。
+🏢 She is going to the library.
+😮 彼女は図書館へ行っています。
+📖 She wants to find new books.
+😮 彼女は新しい本を見つけたいです。
+📚 The library is very big.
+😮 図書館はとても大きいです。
+🔍 Emma is looking for adventures.
+エマは冒険を探しています。
+📖 She finds a book about space.
+😮 彼女は宇宙に関する本を見つけました。
+🌟 The book looks very interesting!
+😮 その本はとても面白そうです！
+😊 Emma sits down to read.
+😮 エマは座って読み始めました。
+📖 She reads for one hour.
+😮 彼女は一時間本を読みました。
+🌟 Emma learns so much today!
+😮 エマは今日たくさん学びました！
+
+📚 Do you like reading books?
+本を読むのは好きですか？
+🏢 Is the library near your school?
+図書館は学校の近くですか？
+📖 Do you like story books or information books?
+物語の本と情報の本、どっちが好きですか？
+🔍 Do you look for interesting books?
+面白い本を探しますか？
+🌟 Is space interesting to you?
+宇宙は面白いですか？
+😊 Do you sit comfortably when you read?
+読む時は心地よく座りますか？
+📖 Do you read for a long time?
+長い時間本を読みますか？
+🌟 Do you learn new things from books?
+本から新しいことを学びますか？
+📚 Are books your favorite thing?
+本は一番好きなものですか？
+😊 Are you happy when you read good books?
+良い本を読むと幸せですか？
+`
+  },
+  {
+    title: '14. The Rainy Camping Trip',
+    content: `
+🌲 Hiro wants to go camping.
+😮 ヒロはキャンプに行きたいです。
+⛺ Dad is packing the car now.
+😮 お父さんは今車に荷物を詰めています。
+🚴 They drive to the mountains.
+😮 彼らは山へ車で行きます。
+🏕️ They set up the big tent.
+😮 彼らは大きなテントを設営しました。
+😊 Everyone is having fun now.
+😮 みんなは今楽しんでいます。
+🌧️ Suddenly it starts to rain!
+😮 突然雨が降り始めました！
+😱 Everyone runs into the tent.
+😮 みんなはテントの中に走りました。
+⚡ Thunder and lightning are loud!
+😮 雷と稲妻がうるさいです！
+😔 The rain does not stop now.
+😮 雨がまだ止みません。
+😰 They stay inside all night.
+😮 彼らは一晩中ずっと中にいました。
+
+🌲 Do you like camping?
+キャンプは好きですか？
+⛺ Do you sleep in a tent?
+テントで寝ますか？
+🚴 Do your family go on car trips together?
+家族で車の旅行に行きますか？
+🏕️ Is setting up a tent hard or easy?
+テントを設営するのは難しいですか、それとも簡単ですか？
+😊 Do you have fun with your family?
+家族と一緒にいると楽しいですか？
+🌧️ Does rain stop your fun?
+雨は楽しみを止めますか？
+😱 Do you run when it rains?
+雨が降ると走りますか？
+⚡ Is thunder loud or quiet?
+雷は大きいですか、それとも静かですか？
+😰 Do you feel sad when rain stops your plans?
+雨で計画が中止になると悲しいですか？
+🏕️ Is camping better in sunny weather or rainy weather?
+キャンプは晴れの日と雨の日、どっちがいいですか？
+`
+  },
+  {
+    title: '15. The Shopping Day',
+    content: `
+🛒 Nana wants to go shopping today.
+😮 ナナは今日買い物に行きたいです。
+👩 Mom is taking her to the store.
+😮 お母さんは彼女を店に連れて行っています。
+👗 Nana wants a new dress.
+😮 ナナは新しいワンピースが欲しいです。
+👠 She tries on many dresses.
+😮 彼女はたくさんのワンピースを試着します。
+👗 One dress fits perfectly!
+😮 一着のワンピースがぴったりです！
+💰 Mom buys the dress for Nana.
+😮 お母さんはナナにワンピースを買いました。
+😊 Nana feels so happy now.
+😮 ナナは今とても幸せです。
+🍩 They eat ice cream after shopping.
+😮 買い物の後、彼らはアイスクリームを食べました。
+🚶 They walk home together.
+😮 彼らは一緒に家に歩いて帰りました。
+🌟 Today was a very good day!
+😮 今日はとても良い日でした！
+
+🛒 Do you like shopping?
+買い物は好きですか？
+👗 Do you wear dresses or pants?
+ワンピースを着ますか、それともズボンですか？
+👠 Do you try on clothes before buying?
+買う前に服を試着しますか？
+💰 Does your mom buy clothes for you?
+お母さんはあなたの服を買ってくれますか？
+😊 Do you feel happy when you get new clothes?
+新しい服をもらうと嬉しい気分ですか？
+🍩 Do you like to eat after shopping?
+買い物の後に食べるのは好きですか？
+🚶 Do you walk home with your mom?
+お母さんと一緒に歩いて帰りますか？
+🌟 Was today a good day for you?
+今日はあなたにとって良い日でしたか？
+👩 Do you like going out with your mom?
+お母さんと出かけるのは好きですか？
+😊 Are you happy today?
+今日は幸せですか？
+`
+  },
+  {
+    title: '16. The Bike Race (Present Continuous Focus)',
+    content: `
+🚲 Lisa has a new red bike.
+😮 リサは新しい赤い自転車を持っています。
+🏆 She is practicing for the race.
+😮 彼女はレースのために練習しています。
+🚴 Lisa is riding very fast.
+😮 リサはとても速く走っています。
+😫 She is getting tired now.
+😮 彼女は今疲れてきました。
+💧 She drinks some cold water.
+😮 彼女は冷たい水を少し飲みました。
+😊 Now she is ready to race!
+😮 今、彼女はレースの準備ができました！
+🏁 The race begins today!
+😮 レースが今日始まります！
+🚴 Lisa is pedaling very hard.
+😮 リサは一生懸命ペダルを漕いでいます。
+🥇 She comes in first place!
+😮 彼女は第一位になりました！
+😊 Lisa is so tired but happy!
+😮 リサは疲れていますが幸せです！
+
+🚲 Do you have a bike?
+自転車を持っていますか？
+🏆 Do you like racing?
+レースは好きですか？
+🚴 Can you ride a bike fast?
+速く自転車に乗れますか？
+😫 Do you get tired when you exercise?
+運動すると疲れますか？
+💧 Do you drink cold water when you are tired?
+疲れた時は冷たい水を飲みますか？
+🏁 Are races exciting or scary?
+レースはエキサイティングですか、それとも怖いですか？
+🥇 Do you like coming in first place?
+第一位になるのは好きですか？
+😊 Are you happy when you win?
+勝つと幸せですか？
+🚲 Is your bike red or another color?
+あなたの自転車は赤色ですか、それとも他の色ですか？
+😊 Are you proud of your bike riding?
+自転車乗りに誇りを持っていますか？
+`
+  },
+  {
+    title: '17. The Cherry Blossoms',
+    content: `
+🌸 Spring has come to Japan.
+😮 日本に春が来ました。
+🌸 The cherry blossoms are beautiful.
+😮 桜は美しいです。
+👨‍👩‍👧‍👦 The family is walking there.
+😮 家族はそこを歩いています。
+📸 Yuto is taking many photos.
+😮 ユウトはたくさんの写真を撮っています。
+🌸 Pink flowers fall gently down.
+😮 ピンクの花が優しく落ちています。
+😊 Everyone feels so happy today.
+😮 全員、今日とても幸せです。
+🌸 The air smells sweet and nice.
+😮 空気は甘くていい匂いがします。
+👩 Mom takes a selfie photo.
+😮 お母さんは自撮り写真を撮りました。
+📸 They are making fun memories.
+😮 彼らは楽しい思い出を作っています。
+🌸 Spring is the best season!
+😮 春は最高の季節です！
+
+🌸 Do you like cherry blossoms?
+桜は好きですか？
+😊 Do you like spring weather?
+春の天気は好きですか？
+📸 Do you take photos often?
+よく写真を撮りますか？
+🌸 Are pink flowers pretty?
+ピンクの花はきれいですか？
+😊 Do you feel happy in spring?
+春は幸せな気分ですか？
+👩 Does your mom take photos?
+お母さんは写真を撮りますか？
+📸 Do you like making memories with family?
+家族と思い出を作るのは好きですか？
+🌸 Is spring your favorite season?
+春は一番好きな季節ですか？
+🌸 Do flowers smell good to you?
+花はいい匂いがしますか？
+😊 Are you happy when you see beautiful flowers?
+美しい花を見ると幸せですか？
+`
+  },
+  {
+    title: '18. The Beach Day (Wh-Questions Focus)',
+    content: `
+🌊 Kota wants to go to the beach.
+😮 コタは海へ行きたいです。
+☀️ The sun is shining very bright.
+😮 太陽はとても明るく輝いています。
+🏖️ The sand is warm and yellow.
+😮 砂は暖かくて黄色です。
+🏊 Kota is swimming in the sea.
+😮 コタは海で泳いでいます。
+🌊 The water feels cool and nice.
+😮 海水は涼しくて良い感じです。
+⛱️ Mom and Dad are sitting under an umbrella.
+😮 お父さんとお母さんは傘の下に座っています。
+🦀 Kota finds a small crab.
+😮 コタは小さなカニを見つけました。
+😊 The crab is moving sideways.
+😮 カニは横に動いています。
+🏖️ Everyone is relaxing today.
+😮 全員は今日リラックスしています。
+🌊 The beach day is perfect!
+😮 海の日は完璧です！
+
+🌊 Where do you like to swim in summer?
+夏はどこで泳ぐのが好きですか？
+☀️ Is the sun bright or cloudy today?
+今日の太陽は明るいですか、それとも曇りですか？
+🏖️ Do you like walking on the sand?
+砂の上を歩くのは好きですか？
+🏊 Can you swim in the sea?
+海で泳げますか？
+🌊 Is sea water warm or cool in summer?
+夏の海水は暖かいですか、それとも涼しいですか？
+⛱️ Do you sit under an umbrella at the beach?
+海では傘の下に座りますか？
+🦀 Have you ever seen a crab at the beach?
+海でカニを見たことがありますか？
+😊 Do you crabs move sideways or forward?
+カニは横に動きますか、それとも前に動きますか？
+🏖️ Are beach days relaxing for you?
+海の日はリラックスできますか？
+🌊 Do you like beach days or park days better?
+海の日と公園の日、どっちが好きですか？
+`
+  },
+  {
+    title: '19. The Angry Moment',
+    content: `
+😠 Hana is angry today.
+😮 ハナは今日怒っています。
+😡 Her friend takes her pencil.
+😮 友達が彼女の鉛筆を取りました。
+😠 Hana shouts very loudly.
+😮 ハナは大きな声で叫びました。
+😔 Her friend looks very sorry.
+😮 友達はとても申し訳ない様子です。
+😢 Hana feels sad and upset.
+😮 ハナは悲しくて怒っています。
+👩 Mom comes to her room.
+😮 お母さんが彼女の部屋に来ました。
+🤗 Mom gives Hana a big hug.
+😮 お母さんはハナに大きなハグをしました。
+😊 Hana calms down slowly.
+😮 ハナはゆっくり落ち着きました。
+😌 She forgives her friend.
+😮 彼女は友達を許しました。
+❤️ Now they are friends again!
+😮 今彼女たちはまた友達です！
+
+😠 Do you get angry often?
+よく怒りますか？
+😡 Do your friends take your things?
+友達はあなたの物を取りますか？
+😠 Do you shout when you are angry?
+怒ると叫びますか？
+😔 Do you feel sorry when you make mistakes?
+ミスをすると申し訳ない気分になりますか？
+😢 Do you feel sad when you are angry?
+怒っている時は悲しい気分ですか？
+🤗 Does your mom give you hugs?
+お母さんはあなたをハグしてくれますか？
+😊 Do you calm down quickly or slowly?
+すぐに落ち着きますか、それともゆっくりですか？
+😌 Do you forgive your friends?
+友達を許しますか？
+❤️ Are you still friends after fights?
+喧嘩の後も友達ですか？
+😊 Do you feel happy when you make up?
+仲直りすると幸せですか？
+`
+  },
+  {
+    title: '21. The Basketball Game',
+    content: `
+🏀 Airi loves basketball very much.
+😮 アイリはバスケットボールが大好きです。
+⛹️ She is practicing every day.
+😮 彼女は毎日練習しています。
+🏀 The ball is orange and round.
+😮 ボールはオレンジ色で丸いです。
+⛹️ She throws the ball high.
+😮 彼女はボールを高く投げています。
+🎯 The ball goes into the hoop!
+😮 ボールがゴールに入りました！
+😊 Airi feels so strong today.
+😮 アイリは今日とても強い気分です。
+🤝 Her team is playing a game.
+😮 彼女のチームは試合をしています。
+🏀 They are running very fast.
+😮 彼らはとても速く走っています。
+🏆 Her team wins by three points!
+😮 彼女のチームは3点差で勝ちました！
+😊 Everyone celebrates together now.
+😮 全員は今一緒にお祝いしています。
+
+🏀 Do you like basketball?
+バスケットボールは好きですか？
+⛹️ Do you practice sports every day?
+毎日スポーツを練習しますか？
+🏀 Is the basketball orange or another color?
+バスケットボールはオレンジ色ですか、それとも他の色ですか？
+🎯 Is it hard to get the ball in the hoop?
+ボールをゴールに入れるのは難しいですか？
+😊 Do you feel strong when you exercise?
+運動すると強い気分になりますか？
+🤝 Do you play on a basketball team?
+バスケットボールチームに入っていますか？
+🏃 Can you run very fast on the court?
+コートでとても速く走れますか？
+🏆 Is winning by three points exciting?
+3点差で勝つのはエキサイティングですか？
+😊 Do you celebrate when you win?
+勝つとお祝いしますか？
+😊 Are you proud when your team wins?
+チームが勝つと誇らしい気分ですか？
+`
+  },
+  {
+    title: '22. The Bus Ride (Present Continuous Focus)',
+    content: `
+🚌 Sora is taking the bus.
+😮 ソラはバスに乗っています。
+🎒 She is carrying a big bag.
+😮 彼女は大きなバッグを持っています。
+👵 An old woman gets on.
+😮 おばあちゃんが乗ってきました。
+😊 Sora gives her the seat.
+😮 ソラは彼女に席を譲りました。
+👴 The old woman thanks Sora.
+😮 おばあちゃんはソラに感謝しました。
+😊 Sora feels very kind today.
+😮 ソラは今日とても優しい気分です。
+🚌 The bus is going to school.
+😮 バスは学校へ向かっています。
+👨‍🏫 The bus driver is driving safely.
+😮 バスの運転手は安全に運転しています。
+🏫 Now Sora is at school.
+😮 ソラは今学校に着きました。
+😊 Being kind feels very good.
+😮 親切にするのはとても良い気分。
+
+🚌 Do you take the bus to school?
+バスで学校へ行きますか？
+🎒 Is your school bag heavy or light?
+あなたの学校のバッグは重いですか、それとも軽いですか？
+👵 Do you help old people?
+お年寄りを助けますか？
+😊 Do you give your seat to others?
+他人に席を譲りますか？
+👴 Do old people thank you for helping?
+お年寄りは助けてくれたことに感謝していますか？
+😊 Do you feel kind when you help people?
+人を助けると優しい気分になりますか？
+🚌 Is the bus ride long or short?
+バスの乗車時間は長いですか、それとも短いですか？
+👨‍🏫 Is your bus driver a kind person?
+バスの運転手は優しい人ですか？
+🏫 Are you happy when you arrive at school?
+学校に着くと幸せですか？
+😊 Does being kind feel good to you?
+親切にするのは良い気分ですか？
+`
+  },
+  {
+    title: '23. The Embarrassing Mistake',
+    content: `
+😳 Ren is at school today.
+😮 レンは今日学校にいます。
+📖 He is reading a book.
+😮 彼は本を読んでいます。
+😱 Suddenly he drops the book!
+😮 突然本を落としました！
+😲 The book falls on the floor.
+😮 本は床に落ちました。
+😳 Everyone looks at Ren now.
+😮 全員が今レンを見ています。
+😔 Ren feels so embarrassed.
+😮 レンはとても恥ずかしい気分です。
+😊 His friend helps him pick it up.
+😮 友達が彼が拾うのを手伝ってくれました。
+😸 Everyone starts laughing gently.
+😮 全員は優しく笑い始めました。
+😌 Ren calms down slowly.
+😮 レンはゆっくり落ち着きました。
+😊 Now Ren is laughing too!
+😮 今レンも笑っています！
+
+😳 Do you feel embarrassed often?
+よく恥ずかしい思いをしますか？
+📖 Do you read books at school?
+学校では本を読みますか？
+😱 Do you drop things often?
+よく物を落としますか？
+😲 Do people look at you when you make mistakes?
+ミスをすると人はあなたを見ますか？
+😔 Do you feel sad when you are embarrassed?
+恥ずかしい時は悲しい気分ですか？
+😊 Do your friends help you when you make mistakes?
+ミスをすると友達は助けてくれますか？
+😸 Is gentle laughing kind or mean?
+優しく笑うのは親切ですか、それとも意地悪ですか？
+😌 Do you calm down quickly or slowly?
+すぐに落ち着きますか、それともゆっくりですか？
+😊 Do you laugh at your own mistakes?
+自分のミスを笑いますか？
+😳 Do embarrassing moments make you stronger?
+恥ずかしい時は強くなりますか？
+`
+  },
+  {
+    title: '24. The Helping Hand (Wh-Questions Focus)',
+    content: `
+👩 Mei is walking in the hallway.
+😮 メイは廊下を歩いています。
+😢 A new girl is crying.
+😮 新しい女の子が泣いています。
+🧒 She dropped her books.
+😮 彼女は本を落としてしまいました。
+🤗 Mei stops to help her.
+😮 メイは助けるために止まりました。
+📚 They pick up the books together.
+😮 彼女たちは一緒に本を拾いました。
+😊 The new girl smiles now.
+😮 新しい女の子は今笑っています。
+👫 They become good friends.
+😮 彼女たちは良い友達になりました。
+💕 Kindness brings happiness.
+😮 優しさは幸せを運びます。
+💭 Mei feels warm inside.
+😮 メイは心が暖かいです。
+🌟 Helping is the best feeling!
+😮 手助けするのは最高の気分！
+
+👩 Where do you walk at school?
+学校ではどこを歩きますか？
+😢 Do you cry at school sometimes?
+時々学校で泣きますか？
+🧒 Have you ever dropped your books?
+本を落としたことがありますか？
+🤗 Do you help people when they need you?
+人が必要としている時は助けますか？
+📚 Do you pick things up for others?
+他人のために物を拾いますか？
+😊 Do you smile when you are happy?
+幸せな時は笑いますか？
+👫 Do you make new friends easily?
+簡単に新しい友達ができますか？
+💕 Does kindness make you feel happy?
+優しさはあなたを幸せにしますか？
+💭 Do you feel warm when you help?
+助けると心が暖かくなりますか？
+😊 Do you like helping others?
+他人を助けるのは好きですか？
+`
+  },
+  {
+    title: '25. The School Sports Day',
+    content: `
+🏃‍♂️ Mina loves sports day.
+ミナは運動会が大好きです。
+😊 She is practicing running fast.
+彼女は速く走る練習をしています。
+🎖️ Her team is working hard.
+彼女のチームは一生懸命練習しています。
+🏆 They want to win today.
+彼らは今日勝ちたいです。
+🤝 Everyone helps each other.
+全員がお互いを助け合っています。
+🏃‍♂️ Mina runs very very fast.
+ミナはとっても速く走っています。
+🥇 Her team comes in first!
+彼女のチームが第一位です！
+😊 Everyone shouts with joy.
+全員は喜んで叫んでいます。
+🎖️ Mina feels very proud.
+ミナはとても誇らしい気分です。
+🏅 Sports day was so fun!
+運動会はとても楽しかった！
+
+🏃‍♂️ Do you like sports day at school?
+学校の運動会は好きですか？
+😊 Do you practice running often?
+よく走る練習をしますか？
+🎖️ Do you work hard for your team?
+チームのために一生懸命働きますか？
+🏆 Do you want to win when you play?
+遊ぶ時は勝ちたいですか？
+🤝 Do you help your teammates?
+チームメイトを助けますか？
+🏃‍♂️ Can you run very fast?
+とても速く走れますか？
+🥇 Is coming in first exciting?
+第一位になるのはエキサイティングですか？
+😊 Do you shout when you are excited?
+興奮すると叫びますか？
+🎖️ Do you feel proud of yourself?
+自分に誇りを持っていますか？
+😊 Are sports days fun for you?
+運動会は楽しいですか？
+`
+  },
+  {
+    title: '26. The Morning Routine (Present Continuous Focus)',
+    content: `
+😮 Kaito wakes up at seven.
+カイトは7時に起きます。
+🛏️ He is sleeping in his bed.
+彼はベッドで寝ています。
+☀️ The sun is shining bright.
+太陽は明るく輝いています。
+🌤️ The sky looks very blue.
+空はとても青く見えます。
+😊 Kaito is stretching his arms.
+カイトは腕を伸ばしています。
+🪟 He is opening his eyes.
+彼は目を開けています。
+🍞 Mom is making breakfast now.
+お母さんは今朝食を作っています。
+🥛 Mom is pouring milk too.
+お母さんは今ミルクを注いでいます。
+😊 Kaito is eating breakfast.
+カイトは朝食を食べています。
+😌 He feels ready for school.
+彼は学校の準備ができています。
+
+😮 What time do you wake up in the morning?
+朝は何時に起きますか？
+🛏️ Do you like sleeping in your bed?
+ベッドで寝るのは好きですか？
+☀️ Is the sun bright when you wake up?
+起きる時の太陽は明るいですか？
+🌤️ Is the sky blue or gray today?
+今日の空は青いですか、それとも灰色ですか？
+😊 Do you stretch your arms when you wake up?
+起きた時に腕を伸ばしますか？
+🪟 Do you open your eyes quickly or slowly?
+目をすばやく開けますか、それともゆっくりですか？
+🍞 Does your mom make breakfast for you?
+お母さんはあなたに朝食を作ってくれますか？
+🥛 Do you drink milk with breakfast?
+朝食にミルクを飲みますか？
+😊 Do you eat breakfast every day?
+毎日朝食を食べますか？
+😌 Do you feel ready for school in the morning?
+朝は学校の準備ができていますか？
+`
+  },
+  {
+    title: '27. The Autumn Leaves',
+    content: `
+🍂 Autumn has come to the park.
+秋が公園に来ました。
+🌳 The leaves turn red and gold.
+葉は赤と金色に変わります。
+😊 Rin loves autumn very much.
+リンは秋が大好きです。
+🍂 She is walking in the park.
+彼女は公園を歩いています。
+😮 Look at all the colorful leaves!
+見て！すべての色とりどりの葉！
+😲 They are falling down slowly.
+彼らはゆっくり落ちています。
+🍂 The air is cool and fresh.
+空気は涼しくて爽快です。
+🌲 Rin picks up a red leaf.
+リンは赤い葉を拾いました。
+😊 She puts it in her bag.
+彼女はそれをバッグに入れました。
+🍂 Autumn is so beautiful!
+秋はとても美しい！
+
+🍂 Do you like autumn weather?
+秋の天気は好きですか？
+🌳 Do trees look beautiful in autumn?
+秋は木が美しいですか？
+😊 Do you like red and gold colors?
+赤と金色の色は好きですか？
+😊 Do you walk in the park often?
+よく公園を歩きますか？
+😲 Do leaves fall slowly or quickly?
+葉はゆっくり落ちますか、それとも速く落ちますか？
+🍂 Is the air cool or hot in autumn?
+秋の空気は涼しいですか、それとも暑いですか？
+🌲 Do you pick up leaves outside?
+外で葉を拾いますか？
+😊 Is autumn your favorite season?
+秋は一番好きな季節ですか？
+🍂 Are autumn days beautiful?
+秋の日は美しいですか？
+😊 Do you feel happy in autumn?
+秋は幸せな気分ですか？
+`
+  },
+  {
+    title: '28. The Dream Job (Wh-Questions Focus)',
+    content: `
+✈️ Shota wants to be a pilot.
+ショウタはパイロットになりたいです。
+🚀 He loves flying in the sky.
+彼は空を飛ぶのが大好きです。
+💭 He is dreaming about planes.
+彼は飛行機の夢を見ています。
+😊 Shota studies very hard.
+ショウタは一生懸命勉強します。
+📖 He reads books about flying.
+彼は飛行に関する本を読みます。
+✈️ Someday he will fly people.
+いつか人を飛ばせるでしょう。
+😮 Mom gives him a toy plane.
+お母さんは彼に玩具の飛行機をあげました。
+🎉 Shota is so happy now!
+ショウタは今とても幸せです！
+😛 He plays with the plane.
+彼は飛行機で遊んでいます。
+🌟 Dreams can come true someday!
+夢はいつか叶います！
+
+✈️ What do you want to be when you grow up?
+大きくなったら何になりたいですか？
+🚀 Do you like flying in the sky?
+空を飛ぶのは好きですか？
+💭 What do you dream about often?
+よく何を夢見ていますか？
+😊 Do you study hard at school?
+学校では一生懸命勉強しますか？
+📖 Do you read books about your dreams?
+夢についての本を読みますか？
+✈️ Do you want to fly people or animals someday?
+いつか人か動物を飛ばせたいですか？
+😮 Does your mom give you toys?
+お母さんはおもちゃをくれますか？
+🎉 Are you happy when you get toys?
+おもちゃをもらうと幸せですか？
+😛 Do you play with toys every day?
+毎日おもちゃで遊びますか？
+🌟 Do you believe your dreams can come true?
+夢は叶うと信じていますか？
+`
+  },
+  {
+    title: '31. Teaching a Friend',
+    content: `
+🎸 Hana wants to help her friend.
+ハナは友達を助けたいです。
+😔 Her friend cannot play guitar.
+友達はギターを弾けません。
+👩 Hana is very good at guitar.
+ハナはギターがとても上手です。
+😊 She wants to teach her friend.
+彼女は友達に教えることができます。
+🎵 They are practicing together now.
+彼女たちは今一緒に練習しています。
+🙌 Hana shows her friend how.
+ハナは友達にやり方を見せます。
+👂 Her friend listens very well.
+友達はよく聞いています。
+🎸 Soon the friend can play!
+すぐに友達は弾けるようになりました！
+😊 Her friend feels so happy.
+友達はとても幸せな気分です。
+❤️ Hana is glad to help.
+ハナは助けることができて嬉しいです。
+
+🎸 Do you like playing guitar?
+ギターを弾くのは好きですか？
+😔 Is it hard when you cannot do something?
+何かができない時は難しいですか？
+👩 Are you good at any instruments?
+何か楽器が得意ですか？
+😊 Do you like teaching your friends?
+友達に教えるのは好きですか？
+🎵 Do you practice music together with friends?
+友達と一緒に音楽を練習しますか？
+🙌 Do you show people how to do things?
+人にやり方を見せますか？
+👂 Do you listen well when people teach you?
+人に教えてもらう時はよく聞きますか？
+😊 Are you happy when your friend succeeds?
+友達が成功すると幸せですか？
+❤️ Do you feel glad when you help people?
+人を助けると嬉しい気分ですか？
+🎸 Do you like music or sports better?
+音楽とスポーツ、どっちが好きですか？
+`
+  },
+  {
+    title: '33. The Winter Festival',
+    content: `
+❄️ The town has a winter festival.
+町には冬の祭りがあります。
+😊 Ren and friends go together.
+レンと友達が一緒に行きます。
+🎪 There are many fun stalls.
+たくさんの楽しい屋台があります。
+🍡 Ren eats dango skewers.
+レンはお団子を食べます。
+🎨 They watch ice sculptures.
+彼らは氷の彫刻を見ます。
+✨ The ice glows beautifully.
+氷が美しく光ります。
+🎵 Music is playing loudly.
+音楽が大きく鳴っています。
+😊 Everyone is dancing together.
+全員が一緒に踊っています。
+❄️ Snow is falling gently.
+雪が優しく降っています。
+🌟 Winter festivals are amazing!
+冬の祭りは素晴らしい！
+
+❄️ Do you like winter festivals?
+冬の祭りは好きですか？
+🎪 Do you go with friends?
+友達と一緒に行きますか？
+🍡 What food do you eat at festivals?
+祭りで何を食べますか？
+🎨 Have you seen ice sculptures?
+氷の彫刻を見たことがありますか？
+✨ Do ice sculptures glow at night?
+氷の彫刻は夜に光りますか？
+🎵 Do you like festival music?
+祭りの音楽は好きですか？
+😊 Do you dance at festivals?
+祭りで踊りますか？
+❄️ Does snow fall at winter festivals?
+冬の祭りに雪は降りますか？
+🌟 Are festivals amazing or boring?
+祭りは素晴らしいですか、それとも退屈ですか？
+😊 Do you feel happy at festivals?
+祭りで幸せな気分になりますか？
+`
+  },
+  {
+    title: '34. The Bedtime Story',
+    content: `
+🌙 It is night time now.
+今は夜の時間です。
+🌑 The sky is dark and quiet.
+空は暗くて静かです。
+😊 Mom is reading a story.
+お母さんは物語を読んでいます。
+😴 Ren is listening so carefully.
+レンはとても注意深く聞いています。
+📖 The story is about a brave bear.
+物語は勇敢なクマについてです。
+😊 Mom reads slowly and nicely.
+お母さんはゆっくり素敵く読みます。
+🛏️ Ren feels very sleepy now.
+レンは今とても眠いです。
+😴 He closes his heavy eyes.
+彼は重くなった目を閉じます。
+💤 Ren is falling asleep fast.
+レンはすぐに眠りに落ちました。
+🌙 Night night everyone!
+おやすみなさい！
+
+🌙 What time do you go to bed at night?
+夜は何時にベッドに行きますか？
+🚶 Are bears your favorite animal?
+クマは一番好きな動物ですか？
+📖 Do you like stories about animals?
+動物の物語は好きですか？
+😴 Do you feel sleepy at night?
+夜は眠い気分ですか？
+🛏️ Is your bed comfortable?
+あなたのベッドは快適ですか？
+😊 Do you like it when mom or dad reads to you?
+お母さんやお父さんが読んでくれるのは好きですか？
+💤 Do you fall asleep fast or slowly?
+すぐに眠りに落ちますか、それともゆっくりですか？
+🌙 Do you sleep well at night?
+夜はよく眠れますか？
+😊 Do you have good dreams?
+良い夢を見ますか？
+🌙 What do you say before sleeping?
+寝る前に何と言いますか？
+`
+  },
+  {
+    title: '35. The School Field Trip',
+    content: `
+🚌 Asuka is going on a trip.
+アスカは旅行に行きます。
+🏛️ The class is visiting the museum.
+クラスは博物館を訪問します。
+👩 The teacher leads the way.
+先生が案内します。
+😊 Students are following quietly.
+生徒たちは静かについていきます。
+🏛️ Everyone looks at old art.
+全員は古い芸術を見ています。
+😲 Asuka sees a big painting.
+アスカは大きな絵を見ました。
+😊 The art is so beautiful.
+その芸術はとても美しい。
+📸 Asuka takes photos today.
+アスカは今日写真を撮ります。
+👫 They eat lunch together.
+彼らは一緒に昼食を食べます。
+😊 The field trip was amazing!
+遠足は素晴らしかった！
+
+🚌 Do you go on school field trips?
+学校の遠足に行きますか？
+🏛️ Do you like visiting museums?
+博物館を訪問するのは好きですか？
+👩 Does your teacher lead the class well?
+先生はクラスをよく案内してくれますか？
+😊 Do you follow the teacher quietly?
+先生の後を静かについていきますか？
+🏛️ Is old art beautiful or boring?
+古い芸術は美しいですか、それとも退屈ですか？
+😲 What do you like to see most in museums?
+博物館では何が一番好きですか？
+📸 Do you take photos on trips?
+旅行で写真を撮りますか？
+👫 Do you eat lunch with your class?
+クラスと一緒に昼食を食べますか？
+😊 Are field trips fun or tiring?
+遠足は楽しいですか、それとも疲れますか？
+🚌 Do you like riding the school bus?
+スクールバスに乗るのは好きですか？
+`
+  },
+  {
+    title: '36. The Weekend Fun (Be-Verb Questions Focus)',
+    content: `
+😮 It is Saturday morning.
+土曜日の朝です。
+😊 Sora has no school today.
+ソラは今日学校がありません。
+😓 He has nothing to do.
+彼はすることが何もありません。
+😦 Sora feels very bored.
+ソラはとても退屈です。
+🎮 He plays video games.
+彼はビデオゲームをします。
+😊 But games are not fun alone.
+でもゲームは一人では楽しくありません。
+👨 Dad suggests going for a walk.
+お父さんは散歩に行こうと言います。
+😊 Sora thinks it is a good idea.
+ソラはそれは良い考えだと思っています。
+🚶 They walk together happily.
+彼らは楽しく散歩します。
+😌 Now Sora feels happy.
+ソラは今幸せな気分です。
+
+😮 Do you like Saturday and Sunday?
+土曜日と日曜日、好きですか？
+😊 Are you happy when there is no school?
+学校がない時は幸せですか？
+😓 Do you ever feel bored at home?
+家で退屈な気分になりますか？
+🎮 Do you like playing video games?
+ビデオゲームをしますか？
+😊 Is playing alone fun or boring?
+一人で遊ぶのは楽しいですか、それとも退屈ですか？
+👨 Does your dad suggest fun things to do?
+お父さんは楽しいことを提案してくれますか？
+😊 Is going for a walk a good idea?
+散歩に行くのは良い考えですか？
+🚶 Do you walk with your dad often?
+よくお父さんと散歩しますか？
+😌 Do you feel happy after a walk?
+散歩の後は幸せな気分ですか？
+🎮 Do you like games or outdoor activities better?
+ゲームと屋外のアクティビティ、どっちが好きですか？
+`
+  },
+  {
+    title: '37. The Rainy Weekend',
+    content: `
+🌧️ It is raining this weekend.
+週末は雨が降っています。
+☔ The sky is gray and cloudy.
+空は灰色で曇っています。
+😔 Yuki cannot play outside.
+ユキは外で遊べません。
+😕 She stays inside the house.
+彼女は家の中にいます。
+📖 She decides to read books.
+彼女は本を読むことにしました。
+😊 Yuki reads three whole books.
+ユキは3冊の本を読みました。
+😌 She feels calm and happy.
+彼女は静かで幸せな気分です。
+🍵 Mom makes warm tea for everyone.
+お母さんは温かいお茶を作ってくれました。
+☕ Everyone drinks tea and talks.
+みなはお茶を飲んで話をします。
+😊 Rainy days can be cozy!
+雨の日は心地よいです！
+
+🌧️ Do you like rainy weekends?
+雨の週末は好きですか？
+☔ Does the gray sky make you feel sad?
+灰色の空は悲しい気分にさせますか？
+😔 Can you play outside when it rains?
+雨が降っていると外で遊べますか？
+✏️ Do you do homework on rainy days?
+雨の日は宿題をしますか？
+📖 Do you like reading books at home?
+家で本を読むのは好きですか？
+😌 Do you feel calm when you read?
+読むと静かな気分になりますか？
+🍵 Do you like drinking hot tea?
+温かいお茶を飲むのは好きですか？
+☕ Do you talk with your family at home?
+家で家族と話しますか？
+😊 Are rainy days cozy or boring?
+雨の日は心地よいですか、それとも退屈ですか？
+🌧️ Would you rather stay inside or go out in the rain?
+雨の日は家の中にいたいですか、それとも外に行きたいですか？
+`
+  },
+  {
+    title: '38. Learning Baseball (Present Continuous Focus)',
+    content: `
+⚾ Ren wants to play baseball.
+レンは野球をしたいです。
+🧢 He is wearing a baseball cap.
+彼は野球帽を被っています。
+⚾ Ren is practicing throwing the ball.
+レンはボールを投げる練習をしています。
+🎯 He throws it very well.
+彼はとても良く投げています。
+😊 His friends are catching the ball.
+彼の友達はボールをキャッチしています。
+⚾ They are playing a game now.
+彼らは今ゲームをしています。
+🏃 Ren is running fast to bases.
+レンはベースへ速く走っています。
+✌ The team gets three outs.
+チームは3つのアウトを取りました。
+😊 Baseball is so much fun!
+野球はとても楽しい！
+
+🧢 Do you wear a baseball cap?
+野球帽を被りますか？
+⚾ Do you like playing baseball?
+野球をするのは好きですか？
+🎯 Are you good at throwing balls?
+ボールを投げるのは得意ですか？
+😊 Do your friends like sports too?
+友達もスポーツが好きですか？
+🏃 Can you run very fast?
+とても速く走れますか？
+✌ Do you understand the rules of baseball?
+野球のルールは理解していますか？
+😊 Is baseball fun or hard?
+野球は楽しいですか、それとも難しいですか？
+⚾ Do you have a baseball team at school?
+学校には野球チームがありますか？
+🏃 Are you fast or slow at running?
+走るのは速いですか、それとも遅いですか？
+😊 Do you like outdoor sports?
+屋外スポーツは好きですか？
+`
+  },
+  {
+    title: '39. The Evening Routine',
+    content: `
+🌙 Mei is finishing her day.
+メイは一日を終えようとしています。
+✏️ She is doing her homework.
+彼女は宿題をしています。
+📖 She is studying English words.
+彼女は英単語を勉強しています。
+😊 Mei finishes her homework now.
+メイは今宿題を終えました。
+🧹 She is putting her books away.
+彼女は本を片付けています。
+🌝 Mom is making dinner now.
+お母さんは今夕食を作っています。
+😊 Mei is helping mom set the table.
+メイはお母さんがテーブルをセットするのを助けています。
+😔 Dad is coming home from work.
+お父さんは仕事から帰ってきました。
+😊 The family eats dinner together.
+家族は一緒に夕食を食べます。
+🌙 Everyone is tired but happy.
+全員は疲れていますが幸せです。
+
+✏️ Do you have homework today?
+今日は宿題がありますか？
+📖 Do you study English at home?
+家で英語を勉強しますか？
+😊 Do you finish homework quickly or slowly?
+宿題は速く終わりますか、それともゆっくりですか？
+🧹 Do you put your books away after studying?
+勉強の後、本を片付けますか？
+🌝 What time does your mom cook dinner?
+お母さんはいつ夕食を作りますか？
+😊 Do you help in the kitchen?
+キッチンで手伝いますか？
+😔 Does your dad come home from work late?
+お父さんは仕事から遅く帰ってきますか？
+🌙 Do you eat dinner with your family?
+家族と一緒に夕食を食べますか？
+😊 Are you tired at the end of the day?
+一日の終わりは疲れていますか？
+🌝 Is evening time relaxing?
+夕方の時間はリラックスできますか？
+`
+  },
+  {
+    title: '40. The Brave Friend (Wh-Questions Focus)',
+    content: `
+😰 A scary dog is barking.
+怖い犬が吠えています。
+😓 A little boy is scared.
+小さな男の子は怖がっています。
+😔 The boy does not know what to do.
+その少年はどうしたら良いかわかりません。
+🦺 Ren knows what to do.
+レンは何をすべきか知っています。
+😊 Ren walks to the dog calmly.
+レンは冷静に犬に近づきます。
+🐕 The dog calms down now.
+犬は今落ち着きました。
+😔 The boy runs to Ren safely.
+少年は安全にレンのもとへ走りました。
+😊 Thank you very much Ren!
+レン、ありがとうございます！
+💕 Friendship is very important.
+友情はとても大切です。
+
+😰 What are you scared of most?
+一番何が怖いですか？
+🐕 Are dogs your favorite animal?
+犬は一番好きな動物ですか？
+😦 What do you do when you are scared?
+怖い時は何をしますか？
+🦺 Who helps you when you are in trouble?
+困っている時は誰が助けてくれますか？
+😊 Do you stay calm in scary situations?
+怖い状況では落ち着いていますか？
+🐕 Do dogs calm down when you are nice to them?
+犬に親切にすると落ち着きますか？
+😔 Do you feel safe when friends are near?
+友達が近くにいると安全を感じますか？
+😊 Do you thank people who help you?
+助けてくれた人に感謝しますか？
+💕 Is friendship important to you?
+友情はあなたにとって大切ですか？
+😰 Do you help your friends when they are scared?
+友達が怖い時は助けてあげますか？
+`
+  },
+  {
+    title: '41. The New Classroom',
+    content: `
+🏫 Yumi is moving to a new class.
+ユミは新しいクラスに移ります。
+😊 She is feeling a little nervous.
+彼女は少し緊張しています。
+👋 The teacher says welcome.
+先生はようこそと言います。
+😊 All the students smile at Yumi.
+みんな生徒がユミに微笑みます。
+🪑 She sits in her new seat.
+彼女は自分の新しい席に座ります。
+📚 The classroom looks bright.
+教室は明るいです。
+✏️ Yumi has new books now.
+ユミは今新しい本を持っています。
+😊 She makes new friends quickly.
+彼女はすぐに新しい友達ができました。
+🌟 New classes are exciting!
+新しいクラスはエキサイティング！
+
+🏫 Do you like your classroom?
+あなたの教室は好きですか？
+😊 Do you feel nervous on the first day?
+初日は緊張しますか？
+👋 Does your teacher say welcome to new students?
+先生は新しい生徒にようこそと言いますか？
+😊 Do you smile at new classmates?
+新しいクラスメイトに微笑みますか？
+🪑 Is your seat comfortable?
+あなたの席は快適ですか？
+📚 Do you like using new books?
+新しい本を使うのは好きですか？
+😊 Do you make new friends quickly?
+すぐに新しい友達ができますか？
+🌟 Are new things exciting or scary?
+新しいことはエキサイティングですか、それとも怖いですか？
+🏫 Is moving to a new class hard?
+新しいクラスに移るのは難しいですか？
+😊 Are you happy when you make new friends?
+新しい友達ができると幸せですか？
+`
+  },
+  {
+    title: '42. The Music Practice (Mixed)',
+    content: `
+🎵 Haru wants to practice the flute.
+ハルはフルートを練習したいです。
+😊 She practices every afternoon.
+彼女は毎日午後練習します。
+🎶 The music sounds very beautiful.
+音楽はとても美しい音がします。
+😊 Haru plays a song now.
+ハルは今一曲演奏します。
+👂 Her family listens happily.
+彼女の家族は幸せそうに聞いています。
+🎵 Haru makes a small mistake.
+ハルは小さなミスをしました。
+😊 But she keeps on playing!
+でも彼女は演奏し続けました！
+🎉 The song finishes beautifully.
+曲は美しく終わりました。
+😊 Haru feels so proud today.
+ハルは今日とても誇らしい気分です。
+🎶 Practice makes you better!
+練習はあなたを良くします！
+
+🎵 Do you play an instrument?
+楽器を演奏しますか？
+😊 Do you practice every day?
+毎日練習しますか？
+🎶 Is beautiful music your favorite?
+美しい音楽が一番好きですか？
+👂 Does your family like listening to music?
+家族は音楽を聴くのが好きですか？
+😊 Do you make mistakes when you practice?
+練習する時はミスをしますか？
+🎉 Do you feel good when you finish a song?
+曲を終えると良い気分ですか？
+😊 Do you feel proud of your music?
+自分の音楽に誇りを持っていますか？
+🎶 Does practice make you better?
+練習すると良くなりますか？
+🎵 Are you good at music?
+音楽は得意ですか？
+🎉 Do you like music for fun or for learning?
+音楽は楽しみのためにするのも好きですか、それとも学ぶためにするのも好きですか？
+`
+  },
+  {
+    title: '43. The Kind Stranger',
+    content: `
+🌳 Aki is walking in the park.
+アキは公園を歩いています。
+😢 She drops her favorite toy.
+彼女は一番好きなおもちゃを落としました。
+🔍 She looks everywhere for it.
+彼女はどこでも探しました。
+😔 But she cannot find it.
+でも見つかりませんでした。
+🤝 A kind stranger helps look.
+親切な見知らぬ人が手伝ってくれました。
+🧸 The stranger finds the toy!
+見知らぬ人がおもちゃを見つけました！
+😊 Aki is so happy now.
+アキは今とても幸せです。
+🙏 Thank you so much!
+どうもありがとうございます！
+💕 Kind people make the world nice.
+親切な人たちは世界を良くします。
+😊 Aki walks home smiling.
+アキは笑顔で家に歩いて帰りました。
+
+🌳 Do you walk in parks often?
+よく公園を歩きますか？
+😢 Have you ever lost a favorite toy?
+一番好きなおもちゃをなくしたことがありますか？
+🔍 Do you look everywhere when you lose things?
+物をなくしするとどこでも探しますか？
+😔 Is it hard to find lost things?
+なくしたものを見つけるのは難しいですか？
+🤝 Do strangers ever help you?
+見知らぬ人が手伝ってくれたことがありますか？
+🧸 Do you have a favorite toy?
+一番好きなおもちゃがありますか？
+😊 Are you happy when you find lost things?
+なくしたものが見つかるとい気分ですか？
+🙏 Do you say thank you to people who help you?
+助けてくれた人にありがとうと言いますか？
+💕 Are kind people important?
+親切な人は大切ですか？
+😊 Do you smile when you are happy?
+幸せな時は笑顔になりますか？
+`
+  },
+  {
+    title: '44. Helping Classmate',
+    content: `
+👩 Hana is at school today.
+ハナは今日学校にいます。
+😢 A classmate is crying.
+クラスメイトが泣いています。
+😔 She cannot do her math.
+彼女は算数ができません。
+🤗 Hana goes to help her.
+ハナは助けに行きました。
+📖 She shows her how to solve.
+彼女は解き方を見せます。
+😊 The classmate understands now.
+クラスメイトは今理解しました。
+😸 They practice many problems.
+彼女たちはたくさんの問題を練習しました。
+😊 The classmate feels happy.
+クラスメイトは幸せな気分です。
+❤️ Hana is glad to help.
+ハナは助けることができて嬉しいです。
+
+😢 Do you ever cry at school?
+学校で泣いたことがありますか？
+😔 What subject is hard for you?
+どんな科目が難しいですか？
+📖 Do you know how to solve math problems?
+算数の問題の解き方は知っていますか？
+🤗 Do you like helping classmates who are struggling?
+苦戦しているクラスメイトを助けるのは好きですか？
+😊 Do you understand things easily?
+すぐに理解できますか？
+😸 Do you like practicing problems?
+問題を練習するのは好きですか？
+😊 Do you feel happy when you understand?
+理解できたら幸せな気分ですか？
+❤️ Does helping make you feel glad?
+助けると嬉しい気分になりますか？
+👩 Do you have kind classmates?
+親切なクラスメイトがいますか？
+😊 Are you happy when you can help?
+助けられる時は幸せですか？
+`
+  },
+  {
+    title: '45. The School Festival',
+    content: `
+🎉 The school festival is today.
+今日は学校の文化祭です。
+🎨 Students are showing their art.
+生徒たちは自分の芸術を見せています。
+🎭 There are many fun shows.
+たくさんの楽しいショーがあります。
+🎵 A band is playing music.
+バンドが音楽を演奏しています。
+👨‍👩‍👧 Parents are visiting today.
+保護者たちが今日来ています。
+😊 Everyone is having fun.
+全員が楽しんでいます。
+🍿 There is yummy food too.
+美味しい食べ物もあります。
+📸 Students are taking photos.
+生徒たちは写真を撮っています。
+😊 The festivals brings happiness.
+祭りは幸せを運びます。
+🌟 School days are so special!
+学校の日はとても特別！
+
+🎉 Is there a school festival at your school?
+あなたの学校には文化祭がありますか？
+🎨 What do you like to show at festivals?
+祭りでは何を見せるのが好きですか？
+🎭 Do you watch shows at festivals?
+祭りでショーを見ますか？
+🎵 Do you like live music?
+ライブ音楽は好きですか？
+👨‍👩‍👧 Do your parents come to school events?
+あなたの両親は学校のイベントに来てくれますか？
+😊 Do festivals make you happy?
+祭りはあなたを幸せにしますか？
+🍿 Do you like festival food?
+祭りの食べ物は好きですか？
+📸 Do you take photos at festivals?
+祭りで写真を撮りますか？
+😊 Are school days special to you?
+学校の日はあなたにとって特別ですか？
+🌟 Do you like school events?
+学校のイベントは好きですか？
+`
+  },
+  {
+    title: '46. The Train Trip',
+    content: `
+🚄 Ren is going on a trip.
+レンは旅行に行きます。
+🚆 He is taking the train.
+彼は新幹線に乗ります。
+😊 The train is very fast.
+新幹線はとても速いです。
+🖼️ Ren looks out the window.
+レンは窓の外を見ています。
+🌄 He sees beautiful mountains.
+彼は美しい山を見ました。
+🌊 He sees the ocean too.
+海も見ました。
+😊 The views are amazing.
+景色は素晴らしいです。
+🍞 Ren eats a bento box.
+レンはお弁当を食べました。
+🏁 Soon he arrives now.
+もうすぐ目的地に着きます。
+😊 Trips are so exciting!
+旅行はとてもエキサイティング！
+
+🚄 Do you take trains often?
+よく新幹線に乗りますか？
+🚆 Are trains fast or slow?
+電車は速いですか、それとも遅いですか？
+🖼️ Do you look out the window on trains?
+電車では窓の外を見ますか？
+🌄 Do you like seeing mountains?
+山を見るのは好きですか？
+🌊 Do you like seeing the sea?
+海を見るのは好きですか？
+😊 Are beautiful views amazing?
+美しい景色は素晴らしいですか？
+🍞 Do you like bento boxes for lunch?
+ランチにお弁当は好きですか？
+🏁 Do you like arriving at destinations?
+目的地に着くのは好きですか？
+😊 Are trips exciting for you?
+旅行はエキサイティングですか？
+🌄 What do you like to see outside?
+外では何を見るのが好きですか？
+`
+  },
+  {
+    title: '47. The Art Project (Present Continuous Focus)',
+    content: `
+🎨 Yumi wants to make art.
+ユミは芸術を作りたいです。
+🖌️ She is painting a picture.
+彼女は絵を描いています。
+🎨 She is using many colors.
+彼女はたくさんの色を使っています。
+😊 Her art looks very beautiful.
+彼女の芸術はとても美しいです。
+👨‍🏫 The teacher sees her art.
+先生が彼女の芸術を見ました。
+😮 The teacher is surprised!
+先生は驚きました！
+👏 The teacher claps for Yumi.
+先生はユミのために拍手しました。
+🎨 Yumi puts her art on display.
+ユミは自分の芸術を展示しました。
+😊 Everyone looks at her art.
+全員が彼女の芸術を見ました。
+🌟 Yumi feels so proud!
+ユミはとても誇らしい気分です！
+
+🎨 Do you like making art?
+芸術を作るのは好きですか？
+🖌️ Do you like painting or drawing?
+絵を描くのと素描、どっちが好きですか？
+🎨 What colors do you like?
+どんな色が好きですか？
+😊 Is your art beautiful or simple?
+あなたの芸術は美しいですか、それともシンプルですか？
+👨‍🏫 Does your teacher encourage you?
+先生はあなたを励ましてくれますか？
+😮 Are you surprised when people like your art?
+人があなたの芸術を好きだと驚きますか？
+👏 Do you like when people clap for you?
+人があなたのために拍手してくれるのは好きですか？
+🌟 Do you feel proud when you do something well?
+何かを良くできると誇らしい気分ですか？
+🎨 What kind of art do you like best?
+どんな種類の芸術が一番好きですか？
+😊 Are you happy about your art?
+自分の芸術について幸せですか？
+`
+  },
+  {
+    title: '48. The Graduation (Mixed)',
+    content: `
+🎓 Tom is graduating today.
+トムは今日卒業します。
+🏫 He is leaving elementary school.
+彼は小学校を卒業します。
+😊 He remembers his classmates.
+彼はクラスメイトを覚えています。
+👫 They have many fun memories.
+彼らにはたくさんの楽しい思い出があります。
+📸 They are taking photos now.
+彼らは今写真を撮っています。
+🎉 The ceremony is starting.
+卒業式が始まります。
+👨‍🏫 The teacher gives a speech.
+先生はスピーチをしました。
+😊 Tom feels so emotional.
+トムは感情的な気分です。
+🚸 Now he is moving up.
+彼は今進学します。
+😊 He remembers happy days.
+彼は幸せな日を覚えています。
+
+🎓 Do you have a graduation ceremony?
+卒業式はありますか？
+🏫 What school are you in now?
+今はどこの学校にいますか？
+😊 Do you have fun school memories?
+楽しい学校の思い出はありますか？
+👫 Do you have many classmates?
+たくさんのクラスメイトがいますか？
+📸 Do you like taking photos with friends?
+友達と写真を撮るのは好きですか？
+🎉 Do you like school ceremonies?
+式典は好きですか？
+👨‍🏫 Does your teacher give speeches?
+先生はスピーチをしますか？
+😊 Do you feel emotional at important events?
+重要なイベントでは感動しますか？
+🚸 Are you moving up to a new school soon?
+まもなく新しい学校に進学しますか？
+🌟 What are your hopes for the future?
+将来の希望は何ですか？
+`
+  }
 ];
-module.exports = eiken5story;
