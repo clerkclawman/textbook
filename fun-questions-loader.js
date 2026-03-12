@@ -71,32 +71,15 @@ function parseJavaScriptFunQuestions(javascript) {
     const arrayContent = arrayMatch[1];
     console.log("parseJavaScriptFunQuestions: Found array content, length =", arrayContent.length);
     
-    // The content is a single string with all questions separated by newlines.
-    // Split the content by newlines and pair English + Japanese lines.
-    const arrayMatch2 = javascript.match(/content:\s*`([\s\S]*?)`/);
-    if (!arrayMatch2) {
-      console.log("parseJavaScriptFunQuestions: No content found");
-      return null;
-    }
+    // The content is a single string with all questions.
+    // We return one item with the full content, and the site will render it as a list.
+    const titleMatch = arrayMatch[1] ? arrayMatch[1].match(/title:\s*"([^"]+)"/) : null;
+    const title = titleMatch ? titleMatch[1] : "Fun Questions";
     
-    const contentString = arrayMatch2[1];
-    const lines = contentString.trim().split('\n');
-    const questionsItems = [];
-    
-    // Each question is 2 lines: English + Japanese
-    for (let i = 0; i < lines.length; i += 2) {
-      if (i + 1 < lines.length) {
-        const englishLine = lines[i].trim();
-        const japaneseLine = lines[i + 1].trim();
-        if (englishLine && japaneseLine) {
-          // Use a generic title or extract from the first line
-          questionsItems.push({
-            title: englishLine.substring(0, 50) + '...',
-            content: `${englishLine}\n${japaneseLine}`
-          });
-        }
-      }
-    }
+    questionsItems.push({
+      title: title,
+      content: arrayMatch2[1] // The entire content string
+    });
     
     console.log(`parseJavaScriptFunQuestions: Extracted ${questionsItems.length} questions items`);
     
