@@ -71,15 +71,26 @@ function parseJavaScriptFunQuestions(javascript) {
     const arrayContent = arrayMatch[1];
     console.log("parseJavaScriptFunQuestions: Found array content, length =", arrayContent.length);
     
-    // The content is a single string with all questions.
-    // We return one item with the full content, and the site will render it as a list.
-    const titleMatch = arrayMatch[1] ? arrayMatch[1].match(/title:\s*"([^"]+)"/) : null;
+    // Extract the content string from the single object
+    const contentMatch = arrayContent.match(/content:\s*`([\s\S]*?)`\s*\}/);
+    if (!contentMatch) {
+      console.log("parseJavaScriptFunQuestions: No content found");
+      return null;
+    }
+    
+    const contentString = contentMatch[1];
+    
+    // Extract the title
+    const titleMatch = arrayContent.match(/title:\s*"([^"]+)"/);
     const title = titleMatch ? titleMatch[1] : "Fun Questions";
     
-    questionsItems.push({
+    console.log(`parseJavaScriptFunQuestions: Extracted 1 item with ${contentString.split('\n').length/2} questions`);
+    
+    // Return one item with the full content (the site will render the newlines)
+    return [{
       title: title,
-      content: arrayMatch2[1] // The entire content string
-    });
+      content: contentString
+    }];
     
     console.log(`parseJavaScriptFunQuestions: Extracted ${questionsItems.length} questions items`);
     
