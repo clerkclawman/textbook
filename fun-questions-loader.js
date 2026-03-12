@@ -55,7 +55,7 @@ async function loadFunQuestionsFile(filename) {
  * var funQuestionsYYYYMMDD = [
  *   { title: "...", content: `...` }
  * ];
- * Updated to handle multi-line formatting and indentation.
+ * Updated to handle multi-line formatting and indentation robustly.
  */
 function parseJavaScriptFunQuestions(javascript) {
   try {
@@ -71,26 +71,41 @@ function parseJavaScriptFunQuestions(javascript) {
     const arrayContent = arrayMatch[1];
     console.log("parseJavaScriptFunQuestions: Found array content, length =", arrayContent.length);
     
-    // Match: { title: "...", content: `...` }
-    // Updated regex to be more flexible with whitespace and newlines
-    // Matches { ... title: "..." ... content: `...` ... }
-    const itemPattern = /\{\s*title:\s*"([^"]+)"[\s\S]*?content:\s*`([\s\S]*?)`\s*\}/g;
+    // Split by '}, {' to get individual items, then parse each
+    // This is more robust than a single complex regex for multi-line content
+    const items = arrayContent.split(/}\s*,\s*{/);
     const questionsItems = [];
-    let match;
     
-    while ((match = itemPattern.exec(arrayContent)) !== null) {
-      questionsItems.push({
-        title: match[1],
-        content: match[2]
-      });
+    for (let i = 0; i < items.length; i++) {
+      let item = items[i].trim();
+      
+      // Clean up the first and last items (they might have extra brackets)
+      if (i === 0) {
+        item = item.replace(/^\s*\{/, '').trim();
+      }
+      if (i === items.length - 1) {
+        item = item.replace(/\}\s*$/, '').trim();
+      }
+      
+      // Extract title: "..."
+      const titleMatch = item.match(/title:\s*"([^"]+)"/);
+      // Extract content: `...` (using backticks)
+      const contentMatch = item.match(/content:\s*`([\s\S]*?)`/);
+      
+      if (titleMatch && contentMatch) {
+        questionsItems.push({
+          title: titleMatch[1],
+          content: contentMatch[1]
+        });
+      } else {
+        console.warn(`Item ${i} failed to parse:`, item.substring(0, 100));
+      }
     }
     
     console.log(`parseJavaScriptFunQuestions: Extracted ${questionsItems.length} questions items`);
     
     if (questionsItems.length === 0) {
-      console.log("parseJavaScriptFunQuestions: No items extracted. Check regex pattern.");
-      // Debug: Log a snippet of the content to see what's there
-      console.log("Array content snippet:", arrayContent.substring(0, 500));
+      console.log("parseJavaScriptFunQuestions: No items extracted. Check format.");
       return null;
     }
     
