@@ -115,17 +115,16 @@ async function getRecentFunQuestions() {
   const now = new Date();
   console.log('Checking for recent fun questions files...');
   
-  // Check last 7 days
+  // Check today and the next 6 days (for cron jobs that generate future-dated files)
   for (let i = 0; i < 7; i++) {
     const date = new Date(now);
-    date.setDate(date.getDate() - i);
+    date.setDate(date.getDate() + i); // Add days (future dates)
     const filename = formatDateFunQuestions(date);
     const questionsDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-    const ageDays = (now - questionsDate) / (1000 * 60 * 60 * 24);
+    const diffDays = Math.abs((now - questionsDate) / (1000 * 60 * 60 * 24));
+    console.log(`Checking ${filename} (diff: ${diffDays.toFixed(1)}d)`);
     
-    console.log(`Checking ${filename} (age: ${ageDays.toFixed(1)}d)`);
-    
-    if (isFunQuestionsFresh(questionsDate)) {
+    if (diffDays <= FUN_QUESTIONS_MAX_AGE_DAYS) {
       const questions = await loadFunQuestionsFile(filename);
       if (questions && questions.length > 0) {
         availableQuestions.push({
