@@ -349,9 +349,6 @@ var eiken6story = [
 ✏️ Is it on your desk?
 それはあなたの机の上に？
 
-✏️ Where is your pencil now?
-あなたの鉛筆は今どこ？
-
 ✏️ Is it on the floor?
 それは床にありますか？
 
@@ -772,8 +769,6 @@ var eiken6story = [
 🎩 Is he making cards disappear?
 彼はカードを消していますか？
 
-🎩 Where are the cards going?
-カードはどこへ行っていますか？
 
 🎩 Is everyone laughing with joy?
 全員が喜んで笑っていますか？
@@ -1486,9 +1481,6 @@ var eiken6story = [
 🎁 Are your friends not answering?
 あなたの友達は出ていませんか？
 
-🎁 Where is everyone right now?
-今みんなはどこ？
-
 🎁 Are you going to your room?
 あなたの部屋に行っていますか？
 
@@ -2039,6 +2031,8 @@ var eiken6story = [
 お母さんは本を閉じていますか？
 
 🌙 Is she kissing your forehead?
+🌙 Do you like bedtime stories?
+寝る前の話は好き？
 彼女はあなたの額にキス？
 
 🌙 Goodnight, sweet dreams!
@@ -2806,8 +2800,6 @@ var eiken6story = [
 👓 Is your sister helping you?
 お姉さんが手伝います？
 
-👓 Where could they be hiding?
-どこに隠れている？
 
 👓 Were they on your head?
 それらはあなたの頭に？

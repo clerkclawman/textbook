@@ -22,19 +22,19 @@ var eiken5story = [
 お母さんは今ドアを開けます。
 😊 Ken is home at last!
 ケンはついに家に帰りました！
-🔑 Do you have a key for your house?
+🔑 Do you have a key for houses?
 家の鍵を持っていますか？
 😱 Do you lose things often?
 よく物をなくしますか？
 🏫 Do you have a classroom at school?
 学校では教室がありますか？
-🎒 What is in your school bag?
+🎒 What is in schools bag?
 学校のバッグには何が入っていますか？
 🚶 Do you walk home from school?
 学校から歩いて帰りますか？
-🏠 Is your home big or small?
+🏠 Is homes big or small?
 あなたの家は大きいですか、それとも小さいですか？
-👩 Does your mom open the door for you?
+👩 Does moms open the door for you?
 お母さんがドアを開けてくれますか？
 😊 Are you happy when you find lost things?
 なくしたものが見つかると嬉しいですか？
@@ -73,9 +73,9 @@ var eiken5story = [
 よくお腹が空きますか？
 🐟 Do you like fish to eat?
 魚を食べるのは好きですか？
-👩 Is your mom working today?
+👩 Is moms working today?
 お母さんは今日働いていますか？
-👨 Does your dad sleep on the sofa?
+👨 Does dads sleep on the sofa?
 お父さんはソファで寝ますか？
 🐟 Do you feed animals at home?
 家で動物に餌をあげますか？
@@ -126,9 +126,9 @@ var eiken5story = [
 健康な時は幸せですか？
 🏫 Do you miss school when you are sick?
 病気の時は学校を恋しく思いますか？
-👫 Do your friends visit you when you are sick?
+👫 Do friendss visit you when you are sick?
 病気の時は友達が見舞いに来てくれますか？
-🌡️ Do you know your body temperature today?
+🌡️ Do you know your body temperature?
 今日の体温はわかりますか？
 😊 Do you feel healthy today?
 今日は健康な気分ですか？
@@ -155,19 +155,19 @@ var eiken5story = [
 ケンは今親友ができた！
 🎉 They eat lunch every day.
 彼らは毎日一緒に昼食を食べます。
-👦 What is your name?
+👦 What is names?
 あなたの名前は何ですか？
 👋 Who sits next to you at school?
 学校では誰があなたの隣に座っていますか？
 ⚽ What game do you play with friends?
 友達とどんなゲームをしますか？
-😊 Is your best friend kind?
+😊 Is bests friend kind?
 親友は優しいですか？
 🎉 What do you do at lunch time?
 昼休みには何をしますか？
 👫 Do you have a best friend at school?
 学校には親友がいますか？
-🏫 What is your classroom number?
+🏫 What is classesroom number?
 あなたの教室の番号は何ですか？
 🎮 Do you play video games?
 ビデオゲームをしますか？
@@ -206,7 +206,7 @@ var eiken5story = [
 誕生日パーティーは好きですか？
 😢 Do you feel sad when you eat alone?
 一人で食べる時は悲しい気分ですか？
-🎉 Do your friends come to your parties?
+🎉 Do friends come to parties?
 友達はあなたのパーティーに来てくれますか？
 🎁 Do you get birthday presents?
 誕生日にプレゼントをもらいますか？
@@ -214,11 +214,11 @@ var eiken5story = [
 びっくりしやすいですか？
 🎂 Do you like birthdays?
 誕生日は好きですか？
-💕 Is your family big or small?
+💕 Is families big or small?
 あなたの家族は大きいですか、それとも小さいですか？
-👨 Does your dad work on your birthday?
+👨 Do dads work on birthdays?
 お父さんは誕生日に仕事をしますか？
-😊 What makes you happy on your birthday?
+😊 What makes you happy on birthdays?
 誕生日には何があなたを幸せにしますか？
 `
   },
@@ -255,7 +255,7 @@ var eiken5story = [
 家にはロウソクがありますか？
 😱 Do you like the dark or light?
 暗いところと明るいところ、どっちが好きですか？
-👨‍👩‍👧‍👦 Does your family sit together often?
+👨‍👩‍👧‍👦 Does families sit together often?
 家族はよく一緒に座りますか？
 😊 Do you like telling stories?
 話をするのは好きですか？
@@ -308,7 +308,7 @@ var eiken5story = [
 チームスポーツは好きですか？
 😫 Do you feel sad when you break something?
 物を壊すと悲しい気分ですか？
-👨‍⚕️ What does your doctor do for you?
+👨‍⚕️ What do doctors do?
 医者はあなたに何をしてくれますか？
 `
   },
@@ -337,13 +337,13 @@ var eiken5story = [
 ポチはケンに会えて嬉しいです！
 🐕 Are dogs friendly animals?
 犬は友好的な動物ですか？
-🎾 Is your dog playful or quiet?
+🎾 Is dogs playful or quiet?
 あなたの犬は遊び好きですか、それとも静かですか？
-🚶 Is the park near your home?
+🚶 Is the park near homes?
 公園はあなたの家の近くですか？
-📢 Is your voice loud or quiet?
+📢 Is voices loud or quiet?
 あなたの声は大きいですか、それとも小さいですか？
-👫 Are your friends helpful?
+👫 Are friendss helpful?
 友達は助けてくれますか？
 🐶 Are animals happy when they see you?
 動物はあなたに会えると嬉しいですか？
@@ -353,7 +353,7 @@ var eiken5story = [
 犬と猫、どっちが好きですか？
 😱 Are you scared when pets run away?
 ペットが逃げると怖いですか？
-❤️ Are you happy with your pets?
+❤️ Are you happy with petss?
 ペットと一緒にいて幸せですか？
 `
   },
@@ -398,7 +398,7 @@ var eiken5story = [
 勝つことはあなたにとって大切ですか？
 👫 Do you play on a team?
 チームに入っていますか？
-😊 Are you proud of your sports skills?
+😊 Are you proud of your skills?
 スポーツの技能に誇りを持っていますか？
 `
   },
@@ -429,7 +429,7 @@ var eiken5story = [
 アイスクリームは好きですか？
 🏪 Do you walk to the shop sometimes?
 時々お店へ歩いて行きますか？
-🍓 Is your mom waiting for you now?
+🍓 Is moms waiting for you now?
 お母さんは今あなたを待っていますか？
 🍫 Do you like chocolate flavor?
 チョコレート味は好きですか？
@@ -437,11 +437,11 @@ var eiken5story = [
 一番好きなアイスクリームのフレーバーは何ですか？
 😊 Do you eat slowly or fast?
 ゆっくり食べますか、それとも速く食べますか？
-🍨 Does your mom take your photos?
+🍨 Do moms take photos?
 お母さんはあなたの写真を撮りますか？
 🍂 Do you like cold ice cream?
 冷たいアイスクリームは好きですか？
-💕 Do you like treats with your mom?
+💕 Do you like treats with moms?
 お母さんとおやつを食べるのは好きですか？
 😊 Are you happy when you eat ice cream?
 アイスクリームを食べると幸せですか？
@@ -474,7 +474,7 @@ var eiken5story = [
 ピアノか他の楽器を演奏しますか？
 🎵 Do you like music lessons?
 音楽のレッスンは好きですか？
-👨‍🏫 Is your teacher kind or strict?
+👨‍🏫 Is teachers kind or strict?
 先生は優しいですか、それとも厳しいですか？
 👂 Do you watch carefully when learning?
 勉強する時は注意深く見ますか？
@@ -521,7 +521,7 @@ var eiken5story = [
 パスタは一番好きな食べ物ですか？
 🥕 Are vegetables healthy for you?
 野菜はあなたにとって健康的ですか？
-👨‍🍳 Is your dad good at cooking?
+👨‍🍳 Is dads good at cooking?
 お父さんは料理が上手ですか？
 🥄 Is it easy to stir sauce?
 ソースを混ぜるのは簡単ですか？
@@ -529,7 +529,7 @@ var eiken5story = [
 料理する時はお腹が空きますか？
 😋 Do you like eating yummy food?
 美味しい食べ物を食べるのは好きですか？
-💕 Is your family happy when you cook?
+💕 Is families happy when you cook?
 あなたが料理すると家族は幸せですか？
 🍝 Do you like Italian food or Japanese food?
 イタリア料理と日本料理、どっちが好きですか？
@@ -562,7 +562,7 @@ var eiken5story = [
 エマは今日たくさん学びました！
 📚 Do you like reading books?
 本を読むのは好きですか？
-🏢 Is the library near your school?
+🏢 Is the library near schools?
 図書館は学校の近くですか？
 📖 Do you like story books or information books?
 物語の本と情報の本、どっちが好きですか？
@@ -609,19 +609,19 @@ var eiken5story = [
 キャンプは好きですか？
 ⛺ Do you sleep in a tent?
 テントで寝ますか？
-🚴 Do your family go on car trips together?
+🚴 Do families go on car trips together?
 家族で車の旅行に行きますか？
 🏕️ Is setting up a tent hard or easy?
 テントを設営するのは難しいですか、それとも簡単ですか？
-😊 Do you have fun with your family?
+😊 Do you have fun with families?
 家族と一緒にいると楽しいですか？
-🌧️ Does rain stop your fun?
+🌧️ Does rain stop fun?
 雨は楽しみを止めますか？
 😱 Do you run when it rains?
 雨が降ると走りますか？
 ⚡ Is thunder loud or quiet?
 雷は大きいですか、それとも静かですか？
-😰 Do you feel sad when rain stops your plans?
+😰 Do you feel sad when rain stops plans?
 雨で計画が中止になると悲しいですか？
 🏕️ Is camping better in sunny weather or rainy weather?
 キャンプは晴れの日と雨の日、どっちがいいですか？
@@ -656,17 +656,17 @@ var eiken5story = [
 ワンピースを着ますか、それともズボンですか？
 👠 Do you try on clothes before buying?
 買う前に服を試着しますか？
-💰 Does your mom buy clothes for you?
+💰 Does moms buy clothes for you?
 お母さんはあなたの服を買ってくれますか？
 😊 Do you feel happy when you get new clothes?
 新しい服をもらうと嬉しい気分ですか？
 🍩 Do you like to eat after shopping?
 買い物の後に食べるのは好きですか？
-🚶 Do you walk home with your mom?
+🚶 Do you walk home with moms?
 お母さんと一緒に歩いて帰りますか？
 🌟 Was today a good day for you?
 今日はあなたにとって良い日でしたか？
-👩 Do you like going out with your mom?
+👩 Do you like going out with moms?
 お母さんと出かけるのは好きですか？
 😊 Are you happy today?
 今日は幸せですか？
@@ -711,9 +711,9 @@ var eiken5story = [
 第一位になるのは好きですか？
 😊 Are you happy when you win?
 勝つと幸せですか？
-🚲 Is your bike red or another color?
+🚲 Is bikes red or another color?
 あなたの自転車は赤色ですか、それとも他の色ですか？
-😊 Are you proud of your bike riding?
+😊 Are you proud of bikes riding?
 自転車乗りに誇りを持っていますか？
 `
   },
@@ -750,7 +750,7 @@ var eiken5story = [
 ピンクの花はきれいですか？
 😊 Do you feel happy in spring?
 春は幸せな気分ですか？
-👩 Does your mom take photos?
+👩 Does moms take photos?
 お母さんは写真を撮りますか？
 📸 Do you like making memories with family?
 家族と思い出を作るのは好きですか？
@@ -832,7 +832,7 @@ var eiken5story = [
 今彼女たちはまた友達です！
 😠 Do you get angry often?
 よく怒りますか？
-😡 Do your friends take your things?
+😡 Do friends take things?
 友達はあなたの物を取りますか？
 😠 Do you shout when you are angry?
 怒ると叫びますか？
@@ -840,16 +840,56 @@ var eiken5story = [
 ミスをすると申し訳ない気分になりますか？
 😢 Do you feel sad when you are angry?
 怒っている時は悲しい気分ですか？
-🤗 Does your mom give you hugs?
+🤗 Does moms give you hugs?
 お母さんはあなたをハグしてくれますか？
 😊 Do you calm down quickly or slowly?
 すぐに落ち着きますか、それともゆっくりですか？
-😌 Do you forgive your friends?
+😌 Do you forgive friendss?
 友達を許しますか？
 ❤️ Are you still friends after fights?
 喧嘩の後も友達ですか？
 😊 Do you feel happy when you make up?
 仲直りすると幸せですか？
+`
+  {
+    title: '20. The Lost Wallet (Wh-Questions Focus)',
+    content: `
+💼 Yuki looks for her wallet.
+ユキは財布を探しています。
+🏫 She cannot find it at school.
+学校で見つけることができません。
+💼 She checks her bag carefully.
+彼女が注意深く鞄を確認します。
+🏫 She asks her teacher for help.
+彼女は先生に手伝いを頼みます。
+💼 Her friend found it outside.
+彼女の友達が外で見つけました。
+🏫 They go to the lost and found.
+彼らは紛失物係に行きます。
+💼 Yuki feels very relieved now.
+ユキは今とても安心しています。
+🏫 She thanks her kind friend.
+彼女は親切な友達に感謝します。
+💼 Do you have a wallet?
+財布はありますか？
+🏫 Where do you keep important things?
+大切な物をどこに置きますか？
+💼 Have you ever lost something important?
+大切な物を失くしたことがありますか？
+🏫 What do you do when you lose things?
+物を失くした時どうしますか？
+💼 Do you have a special place for things?
+物のための特別な場所がありますか？
+🏫 How do you feel when you lose something?
+物を失くした時どんな気分ですか？
+💼 Do you check bags every day?
+毎日鞄を確認しますか？
+🏫 Where is your favorite place at school?
+学校での好きな場所はどこですか？
+💼 Who helps you when you have problems?
+問題がある時誰が助けてくれますか？
+🏫 Do you thank people who help you?
+助けてくれた人に感謝しますか？
 `
   },
   {
@@ -893,7 +933,7 @@ var eiken5story = [
 3点差で勝つのはエキサイティングですか？
 😊 Do you celebrate when you win?
 勝つとお祝いしますか？
-😊 Are you proud when your team wins?
+😊 Are you proud when teams wins?
 チームが勝つと誇らしい気分ですか？
 `
   },
@@ -922,7 +962,7 @@ var eiken5story = [
 親切にするのはとても良い気分。
 🚌 Do you take the bus to school?
 バスで学校へ行きますか？
-🎒 Is your school bag heavy or light?
+🎒 Is schools bag heavy or light?
 あなたの学校のバッグは重いですか、それとも軽いですか？
 👵 Do you help old people?
 お年寄りを助けますか？
@@ -934,7 +974,7 @@ var eiken5story = [
 人を助けると優しい気分になりますか？
 🚌 Is the bus ride long or short?
 バスの乗車時間は長いですか、それとも短いですか？
-👨‍🏫 Is your bus driver a kind person?
+👨‍🏫 Are bus driver a kind person?
 バスの運転手は優しい人ですか？
 🏫 Are you happy when you arrive at school?
 学校に着くと幸せですか？
@@ -975,7 +1015,7 @@ var eiken5story = [
 ミスをすると人はあなたを見ますか？
 😔 Do you feel sad when you are embarrassed?
 恥ずかしい時は悲しい気分ですか？
-😊 Do your friends help you when you make mistakes?
+😊 Do friendss help you when you make mistakes?
 ミスをすると友達は助けてくれますか？
 😸 Is gentle laughing kind or mean?
 優しく笑うのは親切ですか、それとも意地悪ですか？
@@ -1014,7 +1054,7 @@ var eiken5story = [
 学校ではどこを歩きますか？
 😢 Do you cry at school sometimes?
 時々学校で泣きますか？
-🧒 Have you ever dropped your books?
+🧒 Have you ever dropped bookss?
 本を落としたことがありますか？
 🤗 Do you help people when they need you?
 人が必要としている時は助けますか？
@@ -1059,11 +1099,11 @@ var eiken5story = [
 学校の運動会は好きですか？
 😊 Do you practice running often?
 よく走る練習をしますか？
-🎖️ Do you work hard for your team?
+🎖️ Do you work hard for teams?
 チームのために一生懸命働きますか？
 🏆 Do you want to win when you play?
 遊ぶ時は勝ちたいですか？
-🤝 Do you help your teammates?
+🤝 Do you help teamsmates?
 チームメイトを助けますか？
 🏃‍♂️ Can you run very fast?
 とても速く走れますか？
@@ -1102,7 +1142,7 @@ var eiken5story = [
 彼は学校の準備ができています。
 😮 What time do you wake up in the morning?
 朝は何時に起きますか？
-🛏️ Do you like sleeping in your bed?
+🛏️ Do you like sleeping in beds?
 ベッドで寝るのは好きですか？
 ☀️ Is the sun bright when you wake up?
 起きる時の太陽は明るいですか？
@@ -1110,9 +1150,9 @@ var eiken5story = [
 今日の空は青いですか、それとも灰色ですか？
 😊 Do you stretch your arms when you wake up?
 起きた時に腕を伸ばしますか？
-🪟 Do you open your eyes quickly or slowly?
+🪟 Do you open eyes quickly or slowly?
 目をすばやく開けますか、それともゆっくりですか？
-🍞 Does your mom make breakfast for you?
+🍞 Does moms make breakfast for you?
 お母さんはあなたに朝食を作ってくれますか？
 🥛 Do you drink milk with breakfast?
 朝食にミルクを飲みますか？
@@ -1202,7 +1242,7 @@ var eiken5story = [
 夢についての本を読みますか？
 ✈️ Do you want to fly people or animals someday?
 いつか人か動物を飛ばせたいですか？
-😮 Does your mom give you toys?
+😮 Does moms give you toys?
 お母さんはおもちゃをくれますか？
 🎉 Are you happy when you get toys?
 おもちゃをもらうと幸せですか？
@@ -1241,7 +1281,7 @@ var eiken5story = [
 物語を書くのは好きですか？
 📝 Do you think your work is good?
 あなたの作品は良いと思いますか？
-😊 Does your teacher say wonderful job to you?
+😊 Does teachers say wonderful job to you?
 先生はあなたに素晴らしいと言ってくれますか？
 👨‍🏫 Do you show your work to the class?
 クラスに作品を見せますか？
@@ -1331,7 +1371,7 @@ var eiken5story = [
 何かができない時は難しいですか？
 👩 Are you good at any instruments?
 何か楽器が得意ですか？
-😊 Do you like teaching your friends?
+😊 Do you like teaching friendss?
 友達に教えるのは好きですか？
 🎵 Do you practice music together with friends?
 友達と一緒に音楽を練習しますか？
@@ -1339,7 +1379,7 @@ var eiken5story = [
 人にやり方を見せますか？
 👂 Do you listen well when people teach you?
 人に教えてもらう時はよく聞きますか？
-😊 Are you happy when your friend succeeds?
+😊 Are you happy when friends succeeds?
 友達が成功すると幸せですか？
 ❤️ Do you feel glad when you help people?
 人を助けると嬉しい気分ですか？
@@ -1378,7 +1418,7 @@ var eiken5story = [
 雪が降ると外を見ますか？
 😊 Do you wear warm clothes in winter?
 冬は暖かい服を着ますか？
-🔴 Is your coat red or another color?
+🔴 Is coats red or another color?
 あなたのコートは赤色ですか、それとも他の色ですか？
 🧤 Do you wear gloves when it snows?
 雪が降ると手袋をはめますか？
@@ -1386,28 +1426,10 @@ var eiken5story = [
 雪が降っていると外に行きますか？
 😲 Have you ever seen white snowflakes?
 白い雪を見たことがありますか？
-😊 Do you like catching snow in your hands?
+😊 Do you like catching snow in hands?
 手で雪をキャッチするのは好きですか？
-🎃 Do you like autumn festivals?
-秋祭りは好きですか？
-🌽 Do farmers work hard in summer?
-農家は夏に一生懸命働きますか？
-🍚 Do you like eating fresh vegetables?
-新鮮な野菜を食べるのは好きですか？
-🤝 Do you help with food at festivals?
-祭りで食べ物の手伝いをしますか？
-🍎 Do apples taste sweet or sour?
-リンゴは甘いですか、それとも酸っぱいですか？
-🍊 Do you like oranges or apples better?
-オレンジとリンゴ、どっちが好きですか？
-😊 Do you like eating with friends?
-友達と一緒に食べるのは好きですか？
-🌟 Are festivals joyful for you?
-祭りは楽しいですか？
-🎃 Do pumpkins grow in autumn?
-カボチャは秋に育ちますか？
-🤝 Is eating together fun?
-一緒に食べるのは楽しいですか？
+😊 Do you like winter best?
+冬が一番好き？
 `
   },
   {
@@ -1486,7 +1508,7 @@ var eiken5story = [
 動物の物語は好きですか？
 😴 Do you feel sleepy at night?
 夜は眠い気分ですか？
-🛏️ Is your bed comfortable?
+🛏️ Is beds comfortable?
 あなたのベッドは快適ですか？
 😊 Do you like it when mom or dad reads to you?
 お母さんやお父さんが読んでくれるのは好きですか？
@@ -1527,7 +1549,7 @@ var eiken5story = [
 学校の遠足に行きますか？
 🏛️ Do you like visiting museums?
 博物館を訪問するのは好きですか？
-👩 Does your teacher lead the class well?
+👩 Does teachers lead the class well?
 先生はクラスをよく案内してくれますか？
 😊 Do you follow the teacher quietly?
 先生の後を静かについていきますか？
@@ -1537,7 +1559,7 @@ var eiken5story = [
 博物館では何が一番好きですか？
 📸 Do you take photos on trips?
 旅行で写真を撮りますか？
-👫 Do you eat lunch with your class?
+👫 Do you eat lunch with classes?
 クラスと一緒に昼食を食べますか？
 😊 Are field trips fun or tiring?
 遠足は楽しいですか、それとも疲れますか？
@@ -1578,11 +1600,11 @@ var eiken5story = [
 ビデオゲームをしますか？
 😊 Is playing alone fun or boring?
 一人で遊ぶのは楽しいですか、それとも退屈ですか？
-👨 Does your dad suggest fun things to do?
+👨 Does dads suggest fun things to do?
 お父さんは楽しいことを提案してくれますか？
 😊 Is going for a walk a good idea?
 散歩に行くのは良い考えですか？
-🚶 Do you walk with your dad often?
+🚶 Do you walk with dads often?
 よくお父さんと散歩しますか？
 😌 Do you feel happy after a walk?
 散歩の後は幸せな気分ですか？
@@ -1627,7 +1649,7 @@ var eiken5story = [
 読むと静かな気分になりますか？
 🍵 Do you like drinking hot tea?
 温かいお茶を飲むのは好きですか？
-☕ Do you talk with your family at home?
+☕ Do you talk with families at home?
 家で家族と話しますか？
 😊 Are rainy days cozy or boring?
 雨の日は心地よいですか、それとも退屈ですか？
@@ -1662,7 +1684,7 @@ var eiken5story = [
 野球をするのは好きですか？
 🎯 Are you good at throwing balls?
 ボールを投げるのは得意ですか？
-😊 Do your friends like sports too?
+😊 Do friendss like sports too?
 友達もスポーツが好きですか？
 🏃 Can you run very fast?
 とても速く走れますか？
@@ -1707,15 +1729,15 @@ var eiken5story = [
 家で英語を勉強しますか？
 😊 Do you finish homework quickly or slowly?
 宿題は速く終わりますか、それともゆっくりですか？
-🧹 Do you put your books away after studying?
+🧹 Do you put bookss away after studying?
 勉強の後、本を片付けますか？
-🌝 What time does your mom cook dinner?
+🌝 What time does moms cook dinner?
 お母さんはいつ夕食を作りますか？
 😊 Do you help in the kitchen?
 キッチンで手伝いますか？
-😔 Does your dad come home from work late?
+😔 Does dads come home from work late?
 お父さんは仕事から遅く帰ってきますか？
-🌙 Do you eat dinner with your family?
+🌙 Do you eat dinner with families?
 家族と一緒に夕食を食べますか？
 😊 Are you tired at the end of the day?
 一日の終わりは疲れていますか？
@@ -1762,7 +1784,7 @@ var eiken5story = [
 助けてくれた人に感謝しますか？
 💕 Is friendship important to you?
 友情はあなたにとって大切ですか？
-😰 Do you help your friends when they are scared?
+😰 Do you help friendss when they are scared?
 友達が怖い時は助けてあげますか？
 `
   },
@@ -1787,15 +1809,15 @@ var eiken5story = [
 彼女はすぐに新しい友達ができました。
 🌟 New classes are exciting!
 新しいクラスはエキサイティング！
-🏫 Do you like your classroom?
+🏫 Do you like classesroom?
 あなたの教室は好きですか？
 😊 Do you feel nervous on the first day?
 初日は緊張しますか？
-👋 Does your teacher say welcome to new students?
+👋 Does teachers say welcome to new students?
 先生は新しい生徒にようこそと言いますか？
 😊 Do you smile at new classmates?
 新しいクラスメイトに微笑みますか？
-🪑 Is your seat comfortable?
+🪑 Is seats comfortable?
 あなたの席は快適ですか？
 📚 Do you like using new books?
 新しい本を使うのは好きですか？
@@ -1838,7 +1860,7 @@ var eiken5story = [
 毎日練習しますか？
 🎶 Is beautiful music your favorite?
 美しい音楽が一番好きですか？
-👂 Does your family like listening to music?
+👂 Does families like listening to music?
 家族は音楽を聴くのが好きですか？
 😊 Do you make mistakes when you practice?
 練習する時はミスをしますか？
@@ -1965,7 +1987,7 @@ var eiken5story = [
 祭りは幸せを運びます。
 🌟 School days are so special!
 学校の日はとても特別！
-🎉 Is there a school festival at your school?
+🎉 Is there a school festival at schools?
 あなたの学校には文化祭がありますか？
 🎨 What do you like to show at festivals?
 祭りでは何を見せるのが好きですか？
@@ -2061,9 +2083,9 @@ var eiken5story = [
 絵を描くのと素描、どっちが好きですか？
 🎨 What colors do you like?
 どんな色が好きですか？
-😊 Is your art beautiful or simple?
+😊 Is arts beautiful or simple?
 あなたの芸術は美しいですか、それともシンプルですか？
-👨‍🏫 Does your teacher encourage you?
+👨‍🏫 Does teachers encourage you?
 先生はあなたを励ましてくれますか？
 😮 Are you surprised when people like your art?
 人があなたの芸術を好きだと驚きますか？
@@ -2112,7 +2134,7 @@ var eiken5story = [
 友達と写真を撮るのは好きですか？
 🎉 Do you like school ceremonies?
 式典は好きですか？
-👨‍🏫 Does your teacher give speeches?
+👨‍🏫 Does teachers give speeches?
 先生はスピーチをしますか？
 😊 Do you feel emotional at important events?
 重要なイベントでは感動しますか？

@@ -36,34 +36,34 @@ var eiken7story = [
 😺 Mochi is happy.
 モチは幸せ。
 
-🐱 Do you have a pet?
+🐱 Do you like pets?
 ペットはいますか？
 
-🐱 What is your pet's name?
+🐱 What are some pet names?
 ペットの名前は何？
 
 😺 Do you like cats?
 猫は好きですか？
 
-😺 Is your cat small?
+😺 Are cats small?
 あなたの猫は小さい？
 
-🎨 What color is your cat?
+🎨 What color are cats?
 猫は何色ですか？
 
-🎾 Do you play with pets?
+🎾 Do you like to play with pets?
 ペットと遊びますか？
 
-👫 Are you friends with your pet?
+👫 Are pets good friends?
 ペットと友達ですか？
 
-😺 Is your pet cute?
+😺 Are pets cute?
 ペットはかわいい？
 
-💕 Do you love your pet?
+💕 Do you like pets?
 ペットを愛していますか？
 
-😊 Is your pet happy?
+😊 Are pets happy?
 ペットは幸せですか？
 `
 },
@@ -99,16 +99,16 @@ var eiken7story = [
 👨 Family is important.
 家族は大切。
 
-👨 Do you have family?
+👨 Is family important?
 家族はいますか？
 
-👩 Is your mom kind?
+👩 Are moms kind?
 お母さんは優しい？
 
-👨 Is your dad funny?
+👨 Are dads funny?
 お父さんは面白い？
 
-👫 Do you have sisters?
+👫 Are siblings nice?
 姉妹はいますか？
 
 🍽️ Do you eat together?
@@ -288,13 +288,13 @@ var eiken7story = [
 👫 We are friends.
 私たちは友達。
 
-👫 Do you have friends?
+👫 Are friends nice?
 友達はいますか？
 
 👫 What is their name?
 名前は？
 
-👫 Is your friend nice?
+👫 Are friends nice?
 友達は優しい？
 
 ⚽ Do you play ball?
@@ -309,7 +309,7 @@ var eiken7story = [
 😊 Are you happy?
 幸せですか？
 
-👫 Is your friend fun?
+👫 Are friends fun?
 友達は楽しい？
 
 👫 Do you like friends?
@@ -417,10 +417,10 @@ var eiken7story = [
 🏫 Are you at school?
 学校にいますか？
 
-🏫 Is this your classroom?
+🏫 Is this a classroom?
 あなたの教室？
 
-👨‍🏫 Is your teacher here?
+👨‍🏫 Are teachers nice?
 先生はいますか？
 
 📚 Do you read books?
@@ -438,7 +438,7 @@ var eiken7story = [
 🏫 Do you like school?
 学校は好き？
 
-👫 Are your friends here?
+👫 Are friends nice?
 友達はいますか？
 
 😊 Are you happy?
@@ -495,7 +495,7 @@ var eiken7story = [
 🥕 Do you eat vegetables?
 野菜を食べる？
 
-👫 Does your friend sit near?
+👫 Do friends sit near you?
 友達も隣？
 
 🗣️ Do you talk?
@@ -546,7 +546,7 @@ var eiken7story = [
 🏠 Do you go home?
 家に帰る？
 
-🐕 Does your dog wait?
+🐕 Can dogs wait?
 犬が待ってる？
 
 🐕 Is he happy?
@@ -675,7 +675,7 @@ var eiken7story = [
 🛏️ Do you go to bed?
 ベッドに行く？
 
-🛏️ Is your bed soft?
+🛏️ Are beds soft?
 ベッドは柔らかい？
 
 👁️ Do you close your eyes?
@@ -741,7 +741,7 @@ var eiken7story = [
 📺 Do you watch TV?
 テレビを見る？
 
-👫 Does your friend come?
+👫 Do friends come to play?
 友達が来る？
 
 🎮 Do you play games?
@@ -794,31 +794,31 @@ var eiken7story = [
 🐕 Do you have a dog?
 犬はいますか？
 
-🐕 What is your dog's name?
+🐕 What are some dog names?
 犬の名前は何？
 
-🐕 Is your dog big?
+🐕 Are dogs big?
 犬は大きい？
 
-🐕 What color is your dog?
+🐕 What color are dogs?
 犬は何色？
 
-🐕 Does your dog run fast?
+🐕 Can dogs run fast?
 犬は速く走る？
 
-🐕 Do you play with your dog?
+🐕 Do you like dogs?
 犬と遊びますか？
 
-🐕 Is your dog your friend?
+🐕 Can dogs be friends?
 犬は友達？
 
-🐕 Is your dog cute?
+🐕 Are dogs cute?
 犬はかわいい？
 
-🐕 Do you love your dog?
+🐕 Do you like dogs?
 犬を愛していますか？
 
-🐕 Is your dog happy?
+🐕 Are dogs happy?
 犬は幸せ？
 `
 },
@@ -857,22 +857,22 @@ var eiken7story = [
 🏠 Do you have a house?
 家はありますか？
 
-🏠 Is your house big?
+🏠 Are houses big?
 家は大きい？
 
-🏠 What color is your house?
+🏠 What color are houses?
 家は何色？
 
 🏠 Do you live here?
 ここに住んでいますか？
 
-🏠 Does your family live here?
+🏠 Do you live with family?
 家族はここに住んでいますか？
 
 🏠 Are you happy at home?
 家で幸せ？
 
-🏠 Do you love your house?
+🏠 Do you like your home?
 家を愛していますか？
 
 🏠 Is home good?
@@ -983,10 +983,10 @@ splash! 泳ぐ。
 🚲 Do you have a bike?
 自転車はありますか？
 
-🚲 What color is your bike?
+🚲 What color are bikes?
 自転車は何色？
 
-🚲 Is your bike fast?
+🚲 Are bikes fast?
 自転車は速い？
 
 🚲 Do you ride every day?
@@ -1001,7 +1001,7 @@ splash! 泳ぐ。
 🚲 Are you safe?
 安全？
 
-🚲 Do you like your bike?
+🚲 Do you like bikes?
 自転車は好き？
 
 🚲 Is biking fun?
@@ -1109,7 +1109,7 @@ Bear はかわいい。
 🧸 Do you have toys?
 おもちゃはありますか？
 
-🧸 What is your toy?
+🧸 What toys do you like?
 あなたのおもちゃは何？
 
 🧸 What is its name?
@@ -1127,7 +1127,7 @@ Bear はかわいい。
 🧸 Do you sleep with it?
 一緒に寝ますか？
 
-🧸 Is it your friend?
+🧸 Is it a friend?
 友達？
 
 🧸 Do you love it?
@@ -1181,7 +1181,7 @@ Bear はかわいい。
 🍦 Do you eat fast?
 速く食べる？
 
-🍦 Does your head hurt?
+🍦 Do heads hurt sometimes?
 頭が痛い？
 
 🍦 Is it yummy?
@@ -1301,10 +1301,10 @@ Bear はかわいい。
 👩 What is their name?
 名前は？
 
-👩 Is your teacher nice?
+👩 Are teachers nice?
 先生は優しい？
 
-👩 Is your teacher kind?
+👩 Are teachers kind?
 先生は親切？
 
 👩 Does she teach you?
@@ -1316,7 +1316,7 @@ Bear はかわいい。
 👩 Does she smile?
 微笑む？
 
-👩 Do you like your teacher?
+👩 Do you like teachers?
 先生は好き？
 
 👩 Is she good?
@@ -1364,7 +1364,7 @@ Bear はかわいい。
 🛁 Is the water warm?
 お湯は暖かい？
 
-🛁 Do you wash your body?
+🛁 Do you wash your hands?
 体を洗う？
 
 🛁 Do you wash your hair?
@@ -1552,10 +1552,10 @@ Bear はかわいい。
 👩 What is her name?
 お母さんの名前は？
 
-👩 Is your mom kind?
+👩 Are moms kind?
 お母さんは優しい？
 
-👩 Is your mom nice?
+👩 Are moms nice?
 お母さんは親切？
 
 👩 Does she cook?
@@ -1615,10 +1615,10 @@ Bear はかわいい。
 👨 What is his name?
 お父さんの名前は？
 
-👨 Is your dad strong?
+👨 Are dads strong?
 お父さんは強い？
 
-👨 Is your dad tall?
+👨 Are dads tall?
 お父さんは背が高い？
 
 👨 Does he work hard?
@@ -2054,7 +2054,7 @@ Bear はかわいい。
 👧 We are happy.
 私たちは幸せ。
 
-👧 Do you have a sister?
+👧 Are sisters nice?
 姉はいますか？
 
 👧 What is her name?
@@ -2117,7 +2117,7 @@ Bear はかわいい。
 👦 We are happy.
 私たちは幸せ。
 
-👦 Do you have a brother?
+👦 Are brothers nice?
 兄はいますか？
 
 👦 What is his name?
