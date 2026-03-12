@@ -37,7 +37,7 @@ var eiken4story = [
 去年より背が高くなりましたか？
 💰 Did you get money for New Year?
 お年玉をもらいましたか？
-🎊 Do you celebrate with your family?
+🎊 Do you celebrate with family?
 家族と一緒に祝いますか？
 🎌 Is New Year your favorite holiday?
 お正月は一番好きな休日ですか？
@@ -80,7 +80,7 @@ var eiken4story = [
 友達と写真を撮りますか？
 🚶 Who did you walk with last week?
 先週、誰と歩きましたか？
-🌨️ Did it snow in your town?
+🌨️ Did it snow in town?
 あなたの町で雪が降りましたか？
 😊 Did you have fun this winter?
 この冬は楽しかったですか？
@@ -406,7 +406,7 @@ var eiken4story = [
 外でゲームをしますか？
 🌸 Do you like cherry blossoms?
 桜は好きですか？
-👨‍👩‍👧‍👦 Does your family come with you?
+👨‍👩‍👧‍👦 Do families come with you?
 家族も一緒に来ますか？
 📸 Do you take many photos?
 たくさんの写真を撮りますか？
@@ -439,7 +439,7 @@ var eiken4story = [
 学校行事はありましたか？
 🏃 Did you enjoy sports day?
 運動会を楽しみましたか？
-🏆 Did your team win?
+🏆 Did the team win?
 あなたのチームは勝ちましたか？
 🎉 Do you cheer for friends?
 友達を応援しますか？
@@ -531,7 +531,7 @@ var eiken4story = [
 あなたの目標は何ですか？
 👫 Did you make new friends?
 新しい友達ができましたか？
-🏫 Is your school big?
+🏫 Are schools big?
 あなたの学校は大きいですか？
 😊 Do you like your class?
 クラスは好きですか？
