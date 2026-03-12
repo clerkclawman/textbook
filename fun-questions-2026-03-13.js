@@ -1,106 +1,105 @@
 var funQuestions20260313 = [
   {
-    title: "Fun Questions of the Day - 2026-03-13",
-    content: `N7. 🍎 What is your favorite color? Why?
-好きな色は何ですか？なぜですか？
-N7. 🐶 If your dog could talk, what would it say?
-もし犬が話せたら、何と言いますか？
-N7. 🌞 Do you like sunny days or rainy days?
-晴れた日が好きですか、雨の日が好きですか？
-N7. 🍦 If ice cream was hot, would you eat it?
-アイスクリームが熱かったら、食べますか？
-N7. 🏫 What is your favorite subject at school?
-学校で好きな教科は何ですか？
-N7. 🦖 If a dinosaur came to school, would you run?
-恐竜が学校に来たら、走って逃げますか？
-N7. 🎨 Do you like to draw pictures?
-絵を描くのは好きですか？
-N7. 🚗 If your toy car could fly, where would it go?
-おもちゃの車が空を飛べたら、どこへいきますか？
-N7. 🐱 Do you have a cat or a dog?
-猫か犬を飼っていますか？
-N7. 🍕 If you ate pizza for breakfast, would you be happy?
-朝食にピザを食べたら、幸せになりますか？
-N6. 🌧️ What do you do when it rains?
-雨が降ったら、何をするのが好きですか？
-N6. 🦸 If you had a superpower, what would it be?
+    title: "Fun Questions of the Day - March 13, 2026",
+    content: `N7. 🍌 What is your favorite fruit? Why?
+あなたの好きな果物は何ですか？なぜですか？
+N7. 🐱 If your cat could talk, what would it say?
+もし猫が話せたら、何と言いますか？
+N7. 🌧️ Do you like rainy days or sunny days?
+雨の日が好きですか、晴れた日が好きですか？
+N7. 🍫 If chocolate was hot, would you eat it?
+チョコレートが熱かったら、食べますか？
+N7. 🏪 What is your favorite store?
+一番好きなお店はどこですか？
+N7. 🦕 If a T-Rex came to your house, would you hide?
+ティラノサウルスが家に来たら、隠れますか？
+N7. 🎸 Do you like to play music?
+音楽を弾くのは好きですか？
+N7. 🚲 If your bike could fly, where would it go?
+自転車が空を飛べたら、どこへいきますか？
+N7. 🐰 Do you have a rabbit?
+ウサギを飼っていますか？
+N7. 🍔 If you ate burgers for dinner, would you be full?
+夕食にハンバーガーを食べたら、お腹いっぱいになりますか？
+N6. 🌈 What do you see after rain?
+雨の後に何が見えますか？
+N6. 🦸‍♀️ If you had a superpower, what would it be?
 スーパーパワーを持てたら、何にしますか？
-N6. 🎵 Do you like to sing songs?
-歌を歌うのは好きですか？
-N6. 🍔 If you could only eat burgers, would you be sad?
-ハンバーガーしか食べられなかったら、悲しくなりますか？
-N6. 🏠 What is your favorite room in your house?
-家の中で一番好きな部屋はどこですか？
-N6. 🚀 If you went to space, what would you bring?
-宇宙に行ったら、何を持っていきますか？
-N6. 📚 What is a book you like to read?
-読んで好きな本は何ですか？
-N6. 🐸 If you were a frog, where would you jump?
-カエルになったら、どこへ飛びますか？
-N6. 🎬 Do you like movies or cartoons?
-映画が好きですか、それともアニメが好きですか？
-N6. 🤖 If your robot friend cooked dinner, what would it make?
-ロボットのお友達が夕食を作ったら、何を作りますか？
-N5. 🌍 Where do you want to travel? Why?
-どこへ旅行に行きたいですか？なぜですか？
-N5. 🐉 If dragons were real, would you be scared?
-ドラゴンが本当いたら、怖がりますか？
-N5. 🎨 What are you good at?
-得意なことは何ですか？
-N5. 🍩 If you found a magic donut, what would you do?
-魔法のドーナツを見つけたら、何しますか？
-N5. 🏆 What is your goal for this year?
-今年の目標は何ですか？
-N5. 🦁 If you were a lion, what would you eat?
-ライオンになったら、何を食べますか？
-N5. 🌟 Who is your hero?
-あなたのヒーローは誰ですか？
-N5. 🍜 If you made a new ramen flavor, what is in it?
-新しいラーメンの味を作ったら、何を入れますか？
-N5. 🏫 What is the best thing about your school?
-あなたの学校の一番良いところはどこですか？
-N5. 👻 If you saw a ghost, would you say hello?
-おばけを見たら、こんにちはと言いますか？
-N4. 🌱 Why is nature important?
-なぜ自然は重要だと思いますか？
-N4. 🦄 Where do unicorns hide?
-ユニコーンはどこに隠れていると思いますか？
-N4. 📱 Do kids need smartphones?
-子供はスマートフォンが必要だと思いますか？
-N4. 🍕 If you ate pizza for a month, what would you miss?
-一ヶ月ピザを食べたら、何が恋しくなりますか？
-N4. 🏥 How do doctors help people?
-医師は人々をどう助けていますか？
-N4. 🦖 How would dinosaurs change our life?
-恐竜は私たちの生活をどう変えますか？
-N4. 🎭 Why do people like movies?
-なぜ人々は映画が好きなんですか？
-N4. 🍦 If ice cream smelled like cheese, would you eat it?
-アイスクリームがチーズの匂いがしたら、食べますか？
-N4. 🌏 What can we do to help the world?
-私たちは世界を助けるために何ができますか？
-N4. 🤖 If robots did all the work, what would we do?
-ロボットがすべての仕事をしたら、私たちは何をするのですか？
-N3. 🌍 Should children help with housework? Why?
-子供は家事を手伝うべきですか？なぜですか？
-N3. 🚀 If you could invent a machine to do your homework, what would it do?
-宿題をしてくれる機械を作れたら、どんなことをしますか？
-N3. 🎓 What is the best way to learn English?
-英語を学ぶ一番良い方法は何だと思いますか？
-N3. 🦸 If you had a superpower to make people laugh, what would it be?
-人を笑わせるスーパーパワーを持てたら、何にしますか？
-N3. 🌐 Is it better to play outside or play video games? Why?
-外で遊ぶのとゲームをするのと、どっちがいいですか？なぜですか？
-N3. 🍜 If you could only eat one food for a week, what would you choose?
-一週間一つの食べ物しか食べられないとしたら、何を選びますか？
-N3. 🏛️ Why is it good to learn about other countries?
-他の国のことを学ぶのはなぜ良いですか？
-N3. 🐱 If cats could talk, what would they complain about?
-猫が話せたら、何について文句を言うと思いますか？
-N3. 🌱 How can we keep our school clean?
-学校をきれいに保つには、どうすればいいですか？
-N3. 🤖 If a robot was your best friend, what would you do together?
-ロボットが親友だったら、一緒に何をしますか？
-`
+N6. 🎹 Do you like to play an instrument?
+楽器を弾くのは好きですか？
+N6. 🍜 If you could only eat ramen, would you be happy?
+ラーメンしか食べられなかったら、幸せになりますか？
+N6. 🏡 What is your favorite place in your town?
+町の中で一番好きな場所はどこですか？
+N6. 🚁 If you went to the moon, what would you take?
+月に行ったら、何を持っていきますか？
+N6. 📖 What is a movie you like to watch?
+見て好きな映画は何ですか？
+N6. 🐢 If you were a turtle, where would you sleep?
+カメになったら、どこで寝ますか？
+N6. 🎨 Do you like to paint pictures?
+絵を描くのは好きですか？
+N6. 🤖 If your robot made breakfast, what would it make?
+ロボットが朝食を作ったら、何を作りますか？
+N5. 🏖️ Where do you want to go on vacation?
+どこへ旅行に行きたいですか？
+N5. 🐲 If dragons existed, would you ride one?
+ドラゴンがいたら、乗りますか？
+N5. 🏅 What are you best at in school?
+学校で一番得意なことは何ですか？
+N5. 🍩 If you found a magic cookie, what would you do?
+魔法のクッキーを見つけたら、何しますか？
+N5. 🏆 What is your goal for this month?
+今月の目標は何ですか？
+N5. 🐯 If you were a tiger, what would you eat?
+トラになったら、何を食べますか？
+N5. 🌟 Who is your favorite singer?
+一番好きな歌手は誰ですか？
+N5. 🍣 If you made a new sushi, what would be in it?
+新しい寿司を作ったら、何を入れますか？
+N5. 🎒 What is the best thing about your bag?
+カバンで一番良いところはどこですか？
+N5. 👽 If you saw an alien, would you say hello?
+宇宙人を見たら、こんにちはと言いますか？
+N4. 🌳 Why do trees need water?
+木はなぜ水が必要ですか？
+N4. 🦉 Where do owls sleep at night?
+フクロウは夜どこで寝ていますか？
+N4. 📱 Do kids need tablets for school?
+子供は学校でタブレットが必要ですか？
+N4. 🍟 If you ate fries for a week, what would you miss?
+一週間フライドポテトを食べたら、何が恋しくなりますか？
+N4. 🏥 How do nurses help people?
+看護師は人々をどう助けていますか？
+N4. 🐘 How would elephants change our roads?
+ゾウは私たちの道をどう変えますか？
+N4. 🎭 Why do people like to dance?
+なぜ人々は踊るのが好きなんですか？
+N4. 🍦 If ice cream smelled like fish, would you eat it?
+アイスクリームが魚の匂いがしたら、食べますか？
+N4. 🌏 What can we do to save the ocean?
+私たちは海を救うために何ができますか？
+N4. 🤖 If robots did your homework, would you learn?
+ロボットが宿題をしたら、あなたは学びますか？
+N3. 🧹 Should kids clean their rooms?
+子供は部屋を掃除するべきですか？
+N3. 🛸 If you invented a time machine, where would you go?
+タイムマシンを作れたら、いつに行きますか？
+N3. 📚 What is the best way to study English?
+英語を勉強する一番良い方法は何ですか？
+N3. 🦄 If you had a magic wand, what would it do?
+魔法の杖を持てたら、何ができますか？
+N3. 🏀 Is it better to play soccer or basketball?
+サッカーとバスケットボール、どっちがいいですか？
+N3. 🍜 If you could only eat one food for a month, what?
+一ヶ月一つの食べ物しか食べられないとしたら、何ですか？
+N3. 🌍 Why is it good to learn other languages?
+他の言語を学ぶのはなぜ良いですか？
+N3. 🐶 If dogs could vote, what would they choose?
+犬が投票できたら、何を選びますか？
+N3. 🏫 How can we make school more fun?
+学校をもっと楽しくするにはどうすればいいですか？
+N3. 🤖 If a robot was your teacher, what would they teach?
+ロボットが先生だったら、何を教えますか？`
   }
 ];
