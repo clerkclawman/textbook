@@ -2748,9 +2748,12 @@
 
 // Load Fun Questions data
 var funQuestionsData = [];
+var funQuestionsLoaded = false;
 if (typeof getCombinedFunQuestions === "function") {
   getCombinedFunQuestions().then(data => {
     funQuestionsData = data;
+    funQuestionsLoaded = true;
+    lessonsData["FunQuestions"] = funQuestionsData;
     console.log("Fun Questions loaded:", funQuestionsData.length + " entries");
     if (currentClass === "FunQuestions") {
       populateStorySelector("FunQuestions");
@@ -2758,10 +2761,14 @@ if (typeof getCombinedFunQuestions === "function") {
   }).catch(err => {
     console.error("Failed to load Fun Questions:", err);
     funQuestionsData = [{ title: "🎉 No Fun Questions Available", content: "Fun Questions will be available soon!" }];
+    funQuestionsLoaded = true;
+    lessonsData["FunQuestions"] = funQuestionsData;
   });
 } else {
   console.warn("getCombinedFunQuestions not available");
   funQuestionsData = [{ title: "🎉 No Fun Questions Available", content: "Fun Questions will be available soon!" }];
+    funQuestionsLoaded = true;
+    lessonsData["FunQuestions"] = funQuestionsData;
 }
 
             lessonsData = {
@@ -2770,7 +2777,7 @@ if (typeof getCombinedFunQuestions === "function") {
                 'Gold': goldStories,
                 'Adult': adult,
                 'News': newsData,
-  'FunQuestions': funQuestionsData,
+  'FunQuestions': funQuestionsLoaded ? funQuestionsData : [],
                 'X': x,
                 'C': c,
                 'Eiken1': eiken1,
