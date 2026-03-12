@@ -19,12 +19,12 @@ function formatDateFunQuestions(date) {
 }
 
 /**
- * Check if questions are within 7 days
+ * Check if questions are within 7 days (past or future)
  */
 function isFunQuestionsFresh(questionsDate) {
   const now = new Date();
-  const ageDays = (now - questionsDate) / (1000 * 60 * 60 * 24);
-  return ageDays <= FUN_QUESTIONS_MAX_AGE_DAYS;
+  const diffDays = Math.abs(now - questionsDate) / (1000 * 60 * 60 * 24);
+  return diffDays <= FUN_QUESTIONS_MAX_AGE_DAYS;
 }
 
 /**
