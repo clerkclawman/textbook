@@ -2803,7 +2803,7 @@ if (typeof getCombinedFunQuestions === "function") {
 
             // Load Q&A questions from qa-loader (with fallback) - AWAIT it!
             try {
-                if (typeof loadAllQA === 'function') {
+                if (false) { // Disabled QA loader
                     lessonsData._questions = await loadAllQA();
                     console.log('Q&A loaded for levels:', Object.keys(lessonsData._questions));
                 } else {
