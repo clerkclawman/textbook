@@ -71,34 +71,30 @@ function parseJavaScriptFunQuestions(javascript) {
     const arrayContent = arrayMatch[1];
     console.log("parseJavaScriptFunQuestions: Found array content, length =", arrayContent.length);
     
-    // Split by '}, {' to get individual items, then parse each
-    // This is more robust than a single complex regex for multi-line content
-    const items = arrayContent.split(/}\s*,\s*{/);
+    // The content is a single string with all questions separated by newlines.
+    // Split the content by newlines and pair English + Japanese lines.
+    const arrayMatch2 = javascript.match(/content:\s*`([\s\S]*?)`/);
+    if (!arrayMatch2) {
+      console.log("parseJavaScriptFunQuestions: No content found");
+      return null;
+    }
+    
+    const contentString = arrayMatch2[1];
+    const lines = contentString.trim().split('\n');
     const questionsItems = [];
     
-    for (let i = 0; i < items.length; i++) {
-      let item = items[i].trim();
-      
-      // Clean up the first and last items (they might have extra brackets)
-      if (i === 0) {
-        item = item.replace(/^\s*\{/, '').trim();
-      }
-      if (i === items.length - 1) {
-        item = item.replace(/\}\s*$/, '').trim();
-      }
-      
-      // Extract title: "..."
-      const titleMatch = item.match(/title:\s*"([^"]+)"/);
-      // Extract content: `...` (using backticks)
-      const contentMatch = item.match(/content:\s*`([\s\S]*?)`/);
-      
-      if (titleMatch && contentMatch) {
-        questionsItems.push({
-          title: titleMatch[1],
-          content: contentMatch[1]
-        });
-      } else {
-        console.warn(`Item ${i} failed to parse:`, item.substring(0, 100));
+    // Each question is 2 lines: English + Japanese
+    for (let i = 0; i < lines.length; i += 2) {
+      if (i + 1 < lines.length) {
+        const englishLine = lines[i].trim();
+        const japaneseLine = lines[i + 1].trim();
+        if (englishLine && japaneseLine) {
+          // Use a generic title or extract from the first line
+          questionsItems.push({
+            title: englishLine.substring(0, 50) + '...',
+            content: `${englishLine}\n${japaneseLine}`
+          });
+        }
       }
     }
     
