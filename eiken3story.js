@@ -30,7 +30,7 @@ var eiken3story = [
 
 🎉 Do you make New Year resolutions?
 新年の抱負を立てますか？
-✍️ What is your most important goal?
+✍️ What is an important goal?
 一番重要な目標は何ですか？
 🎯 Have you studied English before?
 前に英語を勉強したことがありますか？
@@ -40,7 +40,7 @@ var eiken3story = [
 何回運動しましたか？
 🎁 What do you write in notebooks?
 ノートに何を書きますか？
-👨‍👩‍👧 Does your family support your goals?
+👨‍👩‍👧 Does families support goals?
 家族は目標を応援しますか？
 💪 What have you done today?
 今日何をしましたか？
@@ -132,7 +132,7 @@ var eiken3story = [
 放課後にゲームをしますか？
 📖 Who helps you with homework?
 宿題を手伝う人は誰ですか？
-💕 Who is your most important friend?
+💕 Who is an important friend?
 一番大切な友達 は誰ですか？
 🌟 Will you be friends forever?
 ずっと友達でいますか？`
@@ -178,7 +178,7 @@ var eiken3story = [
 写真を撮るのは好きですか？
 🍱 What food will you eat?
 何を食べますか？
-🎊 What is your best school day?
+🎊 What is the best school day?
 一番の良い学校の日 は何ですか？`
   },
   {
@@ -218,7 +218,7 @@ var eiken3story = [
 よく外で遊びますか？
 🎒 When does school start?
 学校はいつ始まりますか？
-👫 Who are your new friends?
+👫 Who are new friends?
 新しい友達は誰ですか？
 📚 What do you study daily?
 毎日何を勉強しますか？
@@ -292,23 +292,23 @@ var eiken3story = [
 🌟 It is the best place ever!
 今までで一番良い場所です！
 
-🏠 Where is your hometown?
+🏠 Where is hometowns?
 あなたの故郷はどこですか？
 🏞️ What is the most beautiful place?
 一番美しい場所はどこですか？
-🏫 Is your school famous here?
+🏫 Is schools famous here?
 学校はここで有名ですか？
 🍜 Where is the best restaurant?
 一番良いレストランはどこですか？
 🚶 Do you walk there daily?
 そこへ毎日歩きますか？
-👫 Do your friends live nearby?
+👫 Do friends live nearby?
 友達はその近くに住んでいますか？
 🎪 Do you have yearly festivals?
 毎年祭がありますか？
 🎆 Are fireworks beautiful there?
 花火はそこで美しいですか？
-💕 Do you love your hometown?
+💕 Do you love hometowns?
 故郷は好きですか？
 🌟 What is the best place?
 一番良い場所はどこですか？`
@@ -390,7 +390,7 @@ var eiken3story = [
 今一生懸命勉強すべきですか？
 🎯 If you work hard, will you succeed?
 頑張れば成功しますか？
-💪 Have you decided your career?
+💪 Have you decided careers?
 進路を決めましたか？
 👨‍🏫 What do teachers say?
 先生は何と言いますか？
@@ -398,7 +398,7 @@ var eiken3story = [
 大学に行きますか？
 🌟 Do you believe dreams come true?
 夢は叶うと信じていますか？
-✨ What is your future plan?
+✨ What is the future plan?
 将来の計画は何ですか？`
   },
   {
@@ -434,7 +434,7 @@ var eiken3story = [
 それは高かったですか？
 👜 Have you bought a bag?
 バッグを買いましたか？
-👟 Did your mother buy shoes?
+👟 Did mothers buy shoes?
 お母さんは靴を買いましたか？
 🍦 Have you eaten ice cream?
 アイスクリームを食べましたか？
@@ -562,19 +562,19 @@ var eiken3story = [
 次はどこへ行きますか？
 📸 Have you bought a new camera?
 新しいカメラを買いましたか？
-🍱 Who has made your lunch today?
+🍱 Who has made lunch today?
 今日の弁当は誰が作りましたか？
-👫 Will you go with your friends?
+👫 Will you go with friends?
 友達と行きますか？
 🏫 Who will guide you there?
 誰が案内しますか？
 🚄 How will you go there?
 どうやって行きますか？
-📸 Have you charged your battery?
+📸 Have you charged batteries?
 電池を充電しましたか？
 🎒 What will you carry today?
 今日は何を持ちますか？
-😊 Will it be your best memory?
+😊 Will it be the best memory?
 それは最高の思い出になりますか？`
   },
   {
@@ -656,13 +656,13 @@ var eiken3story = [
 美味しい食べ物を食べますか？
 🎁 Will you give gifts to friends?
 友達にプレゼントをあげますか？
-👨‍👩‍👧 Will your family be happy?
+👨‍👩‍👧 Will families be happy?
 家族は幸せになりますか？
 🏫 Will you donate to schools?
 学校に寄付をしますか？
 💕 Will you help poor people?
 貧しい人を助けますか？
-🌟 Will your life change if win?
+🌟 Will life change if win?
 当たれば人生は変わりますか？`
   },
   {
@@ -736,7 +736,7 @@ var eiken3story = [
 一番難しい科目は何ですか？
 🔢 Have you studied math daily?
 毎日数学を勉強しましたか？
-👨‍🏫 Does your teacher explain clearly?
+👨‍🏫 Do teachers explain clearly?
 先生は明確に説明しますか？
 📚 Have you done many problems?
 たくさんの問題を解きましたか？
@@ -748,7 +748,7 @@ var eiken3story = [
 良い成績を取りたいですか？
 📖 Have you asked questions often?
 よく質問をしましたか？
-😊 Have your grades improved?
+😊 Have grades improved?
 成績は良くなりましたか？
 🌟 Is math difficult but fun?
 数学は難しいけど楽しいですか？`
@@ -782,7 +782,7 @@ var eiken3story = [
 歯を磨きましたか？
 🍞 Have you eaten breakfast?
 朝食を食べましたか？
-🎒 Have you packed your bag?
+🎒 Have you packed bags?
 鞄を詰ましたか？
 🚶 Do you walk to school?
 学校まで歩きますか？
@@ -822,7 +822,7 @@ var eiken3story = [
 
 🌧️ What if it rains tomorrow?
 明日雨ならどうしますか？
-☔ Will you take your umbrella?
+☔ Will you take an umbrella?
 傘を持ちますか？
 🧥 Will you wear raincoat?
 レインコートを着ますか？
@@ -868,7 +868,7 @@ var eiken3story = [
 誕生日はいつですか？
 🎁 Have you received presents?
 プレゼントをもらいましたか？
-👨‍👩‍👧 Has your family celebrated?
+👨‍👩‍👧 Has families celebrated?
 家族が祝いましたか？
 🍰 Have you eaten cake?
 ケーキを食べましたか？
@@ -920,9 +920,9 @@ var eiken3story = [
 味噌汁を作りましたか？
 🍱 Have you prepared lunch boxes?
 弁当を準備しましたか？
-👨 Has your father praised you?
+👨 Has fathers praised you?
 父は褒めてくれましたか？
-😊 Has your family eaten happily?
+😊 Has families eaten happily?
 家族は幸せに食べましたか？
 💪 Will you cook more often?
 もっと頻繁に料理しますか？
@@ -968,7 +968,7 @@ var eiken3story = [
 彼はとても一生懸命トレーニングしましたか？
 🎯 Will he win next competition?
 彼は次の競争に勝ちますか？
-🌟 Is he your class hero?
+🌟 Is he classes hero?
 彼はあなたのクラスの英雄ですか？
 👏 Are you proud of him?
 あなたは彼を誇りに思いますか？`
@@ -1090,7 +1090,7 @@ var eiken3story = [
 海に行きますか？
 🏨 Have you booked a hotel?
 ホテルを予約しましたか？
-👨‍👩‍👧 Will your family travel together?
+👨‍👩‍👧 Will families travel together?
 家族は一緒に旅行しますか？
 🍉 Will you eat fresh seafood?
 新鮮な海鮮を食べますか？
@@ -1128,7 +1128,7 @@ var eiken3story = [
 🌟 I will never forget this day!
 この日を絶対に忘れません！
 
-📅 What is your most memorable day?
+📅 What is a memorable day?
 一番思い出深い日はいつですか？
 🎉 Who came to visit you?
 誰が訪ねてきましたか？
@@ -1186,9 +1186,9 @@ var eiken3story = [
 彼らはあなたを鼓舞しますか？
 🎯 Will you work harder after?
 その後もっと頑張りますか？
-📺 Will you tell your family?
+📺 Will you tell families?
 家族に話しますか？
-🎉 Will it be your best memory?
+🎉 Will it be the best memory?
 それが最高の思い出になりますか？
 🌟 Will you smile if you meet?
 会ったら笑顔になりますか？`
@@ -1228,11 +1228,11 @@ var eiken3story = [
 珍しいポスターを見つけましたか？
 💰 Have you spent much money?
 たくさんお金を使いましたか？
-😊 Does your family support you?
+😊 Does families support you?
 家族は応援しますか？
 🏠 Have you displayed them?
 飾りましたか？
-🌟 Is your collection the largest?
+🌟 Is collections the largest?
 あなたのコレクションが最大ですか？
 💕 Will you collect more happily?
 もっと幸せに集めますか？`
@@ -1268,7 +1268,7 @@ var eiken3story = [
 シェフは何年も料理していますか？
 🍚 Have you eaten there many times?
 何度もそこで食べましたか？
-👨‍👩‍👧 Does your family love it?
+👨‍👩‍👧 Does families love it?
 家族はそれを愛していますか？
 💰 Are the prices reasonable?
 値段は手頃ですか？
@@ -1312,13 +1312,13 @@ var eiken3story = [
 毎日練習しましたか？
 🎤 Can you sing and play now?
 今歌って弾けますか？
-🎸 Did your fingers hurt first?
+🎸 Did fingers hurt first?
 最初は指が痛かったですか？
 💪 Have you given up yet?
 もう諦めましたか？
 🎯 Do you want to perform?
 発表したいですか？
-👨‍👩‍👧 Will your family come to watch?
+👨‍👩‍👧 Will families come to watch?
 家族は見に来ますか？
 🌟 Is playing music the most fun?
 音楽を演奏するのが一番楽しい？
@@ -1366,7 +1366,7 @@ var eiken3story = [
 雲に触りますか？
 🌟 Will you smile if you fly?
 飛べたら笑顔になりますか？
-💕 Is flying your biggest dream?
+💕 Is flying the biggest dream?
 飛ぶのが最大の夢ですか？`
   },
   {
@@ -1488,7 +1488,7 @@ var eiken3story = [
 何年もサッカーをしていますか？
 🎯 Have you scored some goals?
 いくつかゴールを決めましたか？
-👨‍👩‍👧 Does your family watch you?
+👨‍👩‍👧 Does families watch you?
 家族はあなたのプレーを見ますか？
 🏃 Do you run fastest in games?
 試合中一番速く走りますか？
@@ -1574,7 +1574,7 @@ var eiken3story = [
 彼女の名前は何ですか？
 🐟 Has she caught many mice?
 彼女は何匹もネズミを捕りましたか？
-😺 Does she sleep on your bed?
+😺 Does she sleep on beds?
 彼女はあなたのベッドで寝ますか？
 🧶 Has she played with toys?
 彼女はおもちゃで遊びましたか？
@@ -1582,7 +1582,7 @@ var eiken3story = [
 毎日彼女に餌をあげましたか？
 🛁 Have you brushed her fur?
 彼女の毛をブラシましたか？
-💕 Is she your best friend?
+💕 Is she the best friend?
 彼女は一番の友達ですか？
 🌟 Is having a pet wonderful?
 ペットを飼うのは素晴らしい？
@@ -1672,9 +1672,9 @@ var eiken3story = [
 どこでパーティーをしますか？
 😊 Will you have fun at parties?
 パーティーで楽しいですか？
-🌟 Is this your best party plan?
+🌟 Is this the best party plan?
 これが最高のパーティー計画ですか？
-💕 Who will come to your party?
+💕 Who comes to parties?
 誰があなたのパーティーに来ますか？`
   },
   {
@@ -1700,7 +1700,7 @@ var eiken3story = [
 🌟 Halloween is the most fun holiday!
 ハロウィンが一番楽しい休日です！
 
-🎃 What is your best Halloween memory?
+🎃 What is the best Halloween memory?
 一番の良いハロウィンの思い出は何ですか？
 👻 Have you worn a costume before?
 前に衣装を着ましたか？
@@ -1748,11 +1748,11 @@ var eiken3story = [
 冬の準備はできましたか？
 🧥 Did you buy a warm coat?
 暖かいコートを買いましたか？
-🧤 Where are your winter gloves?
+🧤 Where are winter gloves?
 冬の手套はどこですか？
-🧣 Who knitted your scarf?
+🧣 Who knits scarves?
 誰がマフラーを編みましたか？
-🏠 Does your heater work well?
+🏠 Does heaters work well?
 暖房はよく動きますか？
 🍲 Do you eat hot food?
 熱い食べ物を食べますか？
@@ -1790,7 +1790,7 @@ var eiken3story = [
 
 🦃 What are you thankful for?
 何に感謝していますか？
-👨‍👩‍👧 Has your family supported you?
+👨‍👩‍👧 Has families supported you?
 家族はあなたを支えましたか？
 👨‍🏫 Have teachers helped you learn?
 先生は学ぶのを助けてくれましたか？
@@ -1836,13 +1836,13 @@ var eiken3story = [
 クリスマスの買い物をしましたか？
 🎁 What gifts have you bought?
 どんなプレゼントを買いましたか？
-👨 What did your father get?
+👨 What did fathers get?
 父は何をもらいましたか？
-👩 What did your mother get?
+👩 What did mothers get?
 母は何をもらいましたか？
 👫 Have you found gifts for friends?
 友達へのプレゼントは？
-🛍️ Did you spend all your money?
+🛍️ Did you spend all the money?
 お金をすべて使いましたか？
 😊 Will everyone be happy?
 みんな幸せになりますか？
@@ -1878,7 +1878,7 @@ var eiken3story = [
 
 🎄 Have you decorated a tree?
 ツリーを飾りましたか？
-⭐ Does your star shine brightly?
+⭐ Do stars shine brightly?
 星は明るく光りますか？
 🎁 Are there gifts under tree?
 木の下にプレゼントはありますか？
@@ -1886,7 +1886,7 @@ var eiken3story = [
 クッキーを焼きましたか？
 🎵 Have you sung Christmas songs?
 クリスマスの歌を歌いましたか？
-👨‍👩‍👧 Has your family gathered?
+👨‍👩‍👧 Has families gathered?
 家族は集まりましたか？
 🕯️ Do candles glow warmly?
 キャンドルは暖かく光りますか？
@@ -1894,7 +1894,7 @@ var eiken3story = [
 素晴らしい時を過ごしましたか？
 🌟 Is Christmas Eve magical?
 クリスマスイブは魔法ですか？
-💕 Do you love your family?
+💕 Do you love families?
 家族は好きですか？`
   },
   {
@@ -1920,13 +1920,13 @@ var eiken3story = [
 🌟 New Year brings new happiness!
 新年が新しい幸せを運びます！
 
-🎍 Have you cleaned your house?
+🎍 Have you cleaned houses?
 家を掃除しましたか？
 🧹 Did you sweep all rooms?
 すべての部屋を掃きましたか？
-🪣 Has your father washed car?
+🪣 Has fathers washed car?
 父は車を洗いましたか？
-👩 Has your mother washed clothes?
+👩 Has mothers washed clothes?
 母は洗濯をしましたか？
 🍚 Have you bought rice cakes?
 餅を買いましたか？
@@ -1966,7 +1966,7 @@ var eiken3story = [
 
 📅 Has this year passed quickly?
 今年は早く過ぎましたか？
-🎯 Have you achieved your goals?
+🎯 Have you achieved goals?
 目標を達成しましたか？
 📚 Have you studied English hard?
 英語を一生懸命勉強しましたか？
@@ -2008,7 +2008,7 @@ var eiken3story = [
 🌟 Winter break will be wonderful!
 冬休みは素晴らしいでしょう！
 
-❄️ When does your break start?
+❄️ When does breaks start?
 休みはいつ始まりますか？
 🏠 Will you stay home first?
 最初に家にいますか？
@@ -2018,7 +2018,7 @@ var eiken3story = [
 後で友達に会いますか？
 🎿 Will you try skiing this year?
 今年スキーに挑戦しますか？
-🏠 Will your family visit grandparents?
+🏠 Will families visit grandparents?
 家族は祖父母に会いますか？
 🍲 Will you eat hot pot?
 鍋を食べますか？
