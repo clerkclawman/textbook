@@ -3,10 +3,10 @@
 ## Level Overview
 
 - **Target:** High School Intermediate (高校中級程度)
-- **CEFR:** B1 (intermediate)
+- **CEFR:** A2 (elementary)
 - **Vocabulary:** 3,000-4,000 words
 - **Story Count:** 48
-- **Primary Focus:** Transition from A2 → B2 - complex sentences, expanded vocabulary
+- **Primary Focus:** Transition from A1 → A2 - complex sentences, expanded vocabulary
 - **Bridge Level:** Critical transition from Eiken 3 to Eiken 2
 
 ---
@@ -66,7 +66,7 @@
 
 ### Vocabulary Complexity
 - **2 syllables average:** Most words are 1-2 syllables
-- **Transition from A2 → B1:** Introducing B1 words gradually
+- **Transition from Below A1 → A2:** Introducing A2 words gradually
 - **Abstract concepts beginning:** simple abstract words
 - **Still mostly concrete:** Most vocabulary is visualizable
 
@@ -131,7 +131,7 @@
 - ❌ Still using only simple sentences — challenge students with complex structures
 
 ### Vocabulary
-- ❌ Too difficult vocabulary — keep B1 level (3,000-4,000 words)
+- ❌ Too difficult vocabulary — keep A2 level (3,000-4,000 words)
 - ❌ Slang/colloquialisms — maintain standard academic register
 - ❌ Too many new words per story — introduce vocabulary gradually
 
@@ -261,7 +261,7 @@ Before creating content, verify:
 - [ ] Complex sentences with dependent clauses
 - [ ] Modal perfects used where appropriate (should have, must have)
 - [ ] Tag questions match main verb correctly
-- [ ] Vocabulary is from B1 level (3,000-4,000 words)
+- [ ] Vocabulary is from A2 level (3,000-4,000 words)
 - [ ] Sentences are 10-12 words average
 - [ ] Questions require 2-3 sentence answers
 - [ ] Topics are age-appropriate for high school students (16-17 years)

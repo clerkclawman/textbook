@@ -9,7 +9,7 @@
 - `SPECS-EIKEN5.md` - A1 level (Junior High Beginner)
 - `SPECS-EIKEN4.md` - A1-A2 level (Junior High Intermediate)
 - `SPECS-EIKEN3.md` - A2 level (Junior High Graduate) - **Benchmark excellence**
-- `SPECS-PRE2.md` - B1 level (High School Intermediate)
+- `SPECS-PRE2.md` - A2 level (High School)
 - `SPECS-EIKEN2.md` - B2 level (High School Graduate)
 
 ---

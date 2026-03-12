@@ -3,7 +3,7 @@
 ## Level Overview
 
 - **Target:** Junior High Beginner (中学初級程度)
-- **CEFR:** A1 (absolute beginner)
+- **CEFR:** Below A1 (basic)
 - **Vocabulary:** 300-600 words
 - **Story Count:** 48
 - **Primary Focus:** Building confidence in absolute basics

@@ -3,7 +3,7 @@
 ## Level Overview
 
 - **Target:** Junior High Graduate (中学卒業程度)
-- **CEFR:** A2 (elementary to pre-intermediate)
+- **CEFR:** A1 (basic)
 - **Vocabulary:** 1,500-2,500 words
 - **Story Count:** 48
 - **Primary Focus:** Complex sentences, present perfect, conditionals

@@ -3,7 +3,7 @@
 ## Level Overview
 
 - **Target:** High School Graduate (高校卒業程度)
-- **CEFR:** B2 (upper-intermediate)
+- **CEFR:** B1 (intermediate)
 - **Vocabulary:** 5,000-7,500 words
 - **Story Count:** 48
 - **Primary Focus:** Complex sentences, formal register, academic vocabulary
