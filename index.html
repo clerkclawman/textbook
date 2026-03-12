@@ -2803,11 +2803,11 @@ if (typeof getCombinedFunQuestions === "function") {
 
             // Load Q&A questions from qa-loader (with fallback) - AWAIT it!
             try {
-//                 if (typeof loadAllQA === 'function') {
-//                     lessonsData._questions = await loadAllQA();
-//                     console.log('Q&A loaded for levels:', Object.keys(lessonsData._questions));
-//                 } else {
-//                     console.warn('Using fallback for Q&A');
+                if (typeof loadAllQA === 'function') {
+                    lessonsData._questions = await loadAllQA();
+                    console.log('Q&A loaded for levels:', Object.keys(lessonsData._questions));
+                } else {
+                    console.warn('Using fallback for Q&A');
                     lessonsData._questions = {
                         'Eiken3': eiken3questions,
                         'Eiken5': qa5
