@@ -1254,7 +1254,25 @@
     const minFontSize = 2;
     const maxFontSize = 8;
     let displayMode = 'both';
-    let lessonsData = {};
+    let // Load Fun Questions data
+let funQuestionsData = [];
+if (typeof getCombinedFunQuestions === 'function') {
+  getCombinedFunQuestions().then(data => {
+    funQuestionsData = data;
+    console.log('Fun Questions loaded:', funQuestionsData.length + ' entries');
+    if (currentClass === 'FunQuestions') {
+      populateStorySelector('FunQuestions');
+    }
+  }).catch(err => {
+    console.error('Failed to load Fun Questions:', err);
+    funQuestionsData = [{ title: '🎉 No Fun Questions Available', content: 'Fun Questions will be available soon!' }];
+  });
+} else {
+  console.warn('getCombinedFunQuestions not available');
+  funQuestionsData = [{ title: '🎉 No Fun Questions Available', content: 'Fun Questions will be available soon!' }];
+}
+
+lessonsData = {};
     let selectedText = '';
     let translationLang = '';
 
@@ -2746,12 +2764,31 @@
                 console.warn('loadAllQA not available, checking later');
             }
 
-            lessonsData = {
+            // Load Fun Questions data
+let funQuestionsData = [];
+if (typeof getCombinedFunQuestions === 'function') {
+  getCombinedFunQuestions().then(data => {
+    funQuestionsData = data;
+    console.log('Fun Questions loaded:', funQuestionsData.length + ' entries');
+    if (currentClass === 'FunQuestions') {
+      populateStorySelector('FunQuestions');
+    }
+  }).catch(err => {
+    console.error('Failed to load Fun Questions:', err);
+    funQuestionsData = [{ title: '🎉 No Fun Questions Available', content: 'Fun Questions will be available soon!' }];
+  });
+} else {
+  console.warn('getCombinedFunQuestions not available');
+  funQuestionsData = [{ title: '🎉 No Fun Questions Available', content: 'Fun Questions will be available soon!' }];
+}
+
+lessonsData = {
                 'Bronze': bronzeStories,
                 'Silver': silverStories,
                 'Gold': goldStories,
                 'Adult': adult,
                 'News': newsData,
+  'FunQuestions': funQuestionsData,
                 'X': x,
                 'C': c,
                 'Eiken1': eiken1,
