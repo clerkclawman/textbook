@@ -2119,4 +2119,3 @@ var eiken3story = [
   }
 ];
 
-module.exports = eiken3story;

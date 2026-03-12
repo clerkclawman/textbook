@@ -198,4 +198,3 @@ var eikenpre2 = [
     "content": "❄️ Winter vacation is almost over.\n冬休みすぐ終わる。\n😊 Kenji enjoyed his winter break.\nケンジは冬休みを楽しんだ。\n📸 He took many photos with his family.\n家族写真を撮った。\n🎮 He played games and read books.\nゲームして読書した。\n🌟 He feels ready for school again.\n学校に戻る準備できた感じる。\n🏫 Kenji starts the new term happily.\nケンジは新しい学期を幸せ始める。\n\n❄️ What did you do during winter break?\n冬休みにしたことは何？\n😊 Did you enjoy your break?\n休みを楽しんだ？\n📸 Did you take many photos?\n写真を撮った？\n🎮 What games did you play?\nどんなゲームした？\n🌟 Do you feel ready for school?\n学校準備できた？\n🏫 Are you happy to start school?\n学校が始まる幸せ？"
   }
 ];
-module.exports = eikenpre2;

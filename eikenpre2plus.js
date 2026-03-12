@@ -193,4 +193,3 @@ var eikenpre2plus = [
   }
 ];
 
-module.exports = eikenpre2plus;

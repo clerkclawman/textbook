@@ -1974,4 +1974,3 @@ var eiken4story = [
 一番の良いことは何？` },
 ];
 
-module.exports = eiken4story;
