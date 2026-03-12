@@ -55,6 +55,7 @@ async function loadFunQuestionsFile(filename) {
  * var funQuestionsYYYYMMDD = [
  *   { title: "...", content: `...` }
  * ];
+ * Updated to handle multi-line formatting and indentation.
  */
 function parseJavaScriptFunQuestions(javascript) {
   try {
@@ -71,7 +72,9 @@ function parseJavaScriptFunQuestions(javascript) {
     console.log("parseJavaScriptFunQuestions: Found array content, length =", arrayContent.length);
     
     // Match: { title: "...", content: `...` }
-    const itemPattern = /\{\s*title:\s*"([^"]+)"\s*,\s*content:\s*`([\s\S]*?)`\s*\}/g;
+    // Updated regex to be more flexible with whitespace and newlines
+    // Matches { ... title: "..." ... content: `...` ... }
+    const itemPattern = /\{\s*title:\s*"([^"]+)"[\s\S]*?content:\s*`([\s\S]*?)`\s*\}/g;
     const questionsItems = [];
     let match;
     
@@ -85,7 +88,9 @@ function parseJavaScriptFunQuestions(javascript) {
     console.log(`parseJavaScriptFunQuestions: Extracted ${questionsItems.length} questions items`);
     
     if (questionsItems.length === 0) {
-      console.log("parseJavaScriptFunQuestions: No items extracted");
+      console.log("parseJavaScriptFunQuestions: No items extracted. Check regex pattern.");
+      // Debug: Log a snippet of the content to see what's there
+      console.log("Array content snippet:", arrayContent.substring(0, 500));
       return null;
     }
     
