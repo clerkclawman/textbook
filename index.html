@@ -1116,7 +1116,8 @@
         <div class='dropdown'>
             <select id='classSelector'>
                 <option value=''>Select Class</option>
-                <option value='News'>News (Daily)</option>
+                <option value='FunQuestions'>Fun Questions (Daily)</option>
+  <option value='News'>News (Daily)</option>
                 <option value='Adult'>Adult</option>
                 <option value='Eiken7'>Eiken 7</option>
                 <option value='Eiken6'>Eiken 6</option>
@@ -1211,6 +1212,7 @@
     <!-- Load external scripts -->
 <script src='adult.js'></script>
 <script src='news-loader.js'></script>
+<script src='fun-questions-loader.js'></script>
 <!-- Static news loaded dynamically via news-loader.js -->
 <!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
@@ -2744,12 +2746,31 @@
                 console.warn('loadAllQA not available, checking later');
             }
 
+// Load Fun Questions data
+var funQuestionsData = [];
+if (typeof getCombinedFunQuestions === "function") {
+  getCombinedFunQuestions().then(data => {
+    funQuestionsData = data;
+    console.log("Fun Questions loaded:", funQuestionsData.length + " entries");
+    if (currentClass === "FunQuestions") {
+      populateStorySelector("FunQuestions");
+    }
+  }).catch(err => {
+    console.error("Failed to load Fun Questions:", err);
+    funQuestionsData = [{ title: "🎉 No Fun Questions Available", content: "Fun Questions will be available soon!" }];
+  });
+} else {
+  console.warn("getCombinedFunQuestions not available");
+  funQuestionsData = [{ title: "🎉 No Fun Questions Available", content: "Fun Questions will be available soon!" }];
+}
+
             lessonsData = {
                 'Bronze': bronzeStories,
                 'Silver': silverStories,
                 'Gold': goldStories,
                 'Adult': adult,
                 'News': newsData,
+  'FunQuestions': funQuestionsData,
                 'X': x,
                 'C': c,
                 'Eiken1': eiken1,
