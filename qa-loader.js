@@ -47,7 +47,7 @@ async function loadQAFile(filename) {
         }
         return qaData;
     } catch (error) {
-        console.warn(`Failed to load ${filename}:`, error);
+  if (!error.message || !error.message.includes("404")) { console.warn(`Failed to load ${filename}:`, error); }
         return null;
     }
 }
