@@ -1,200 +1,2290 @@
-// Eiken Pre-2 - Complete (48 Stories)
-// TPRS Narrative Style
-// Sentence length: 10-12 words
-// Grammar: All Pre-2 patterns covered
-// Status: Production Ready with all fixes
-
+// eikenpre2_remastered.js - Eiken Pre-2 Stories
 var eikenpre2 = [
-  {
-    "title": "1. Emma's New Routine (Present Perfect / Comparatives)",
-    "content": "🏡 Emma wants to become healthier this year.\nエマは今年、より健康になりたいです。\n🏃‍♀️ She decides to start jogging every morning.\n彼女は毎朝ジョギングを始めることにします。\n⏰ But waking up at 6 AM is very hard.\nしかし、朝6時に起きるのはとても大変です。\n😴 For three days, she feels too tired to continue.\n3日間、彼女は疲れすぎて続けられません。\n💪 However, Emma remembers her goal to be healthy.\nしかし、エマは健康になるという目標を思い出します。\n🌳 She starts jogging slowly in the park nearby.\n彼女は近くの公園でゆっくりジョギングを始めます。\n🥤 After running, she drinks water and feels better.\n走った後、彼女は水を飲んで元気になります。\n😊 Now Emma is stronger than she was last month.\n今、エマは先月よりも強くなりました。\n🌟 She has become a morning person finally!\nついに彼女は朝型人間になりました！\n\n🏡 Do you want to become healthier this year?\n今年はもっと健康になりたいですか？\n🏃‍♀️ Have you ever tried jogging in the morning?\n朝ジョギングをしたことがありますか？\n⏰ Is it difficult for you to wake up early?\n早起きすることは難しいですか？\n😴 What do you do when you feel tired?\n疲れた時何をしますか？\n💪 Do you have a goal this year?\n今年目標がありますか？\n🌳 Do you like exercising in parks?\n公園で運動するのは好きですか？\n🥤 How much water do you drink daily?\n毎日水をどれくらい飲みますか？\n😊 Do you feel happy when you achieve goals?\n目標を達成すると幸せですか？\n🌟 Are you a morning person or night person?\n朝型ですか夜型ですか？\n🏡 What healthy habit do you want to start?\nどんな健康習慣を始めたいですか？"
-  },
-  {
-    "title": "2. Kenta's Helpful Weekend (Passive Voice / Adverbs)",
-    "content": "🧹 Kenta wants to help his busy parents this weekend.\nケンタは今週末、忙しい両親を手伝いたいです。\n🍽️ He decides to wash the dishes after dinner.\n彼は夕食後に皿を洗うことにします。\n😱 But he drops his mother's favorite plate!\nしかし、彼は母のお気に入りの皿を落としてしまいます！\n💔 The plate is broken into many pieces.\n皿は多くの破片に割れてしまいました。\n😰 Kenta feels terrible and thinks his mom will be angry.\nケンタは最悪な気分になり、母が怒ると思います。\n🙏 However, his mother says, \"Thank you for trying to help.\"\nしかし、母は「手伝ってくれてありがとう」と言います。\n😊 She teaches him how to wash dishes carefully.\n彼女は彼に丁寧に皿を洗う方法を教えます。\n🧺 Now Kenta helps with laundry every weekend.\n今、ケンタは毎週末洗濯を手伝います。\n❤️ He feels proud when his parents thank him.\n両親がありがとうと言ってくれると彼は誇らしく思います。\n\n🧹 Do you help your parents at home?\n家で両親を手伝いますか？\n🍽️ Have you ever broken a dish?\n皿を割ったことがありますか？\n😱 How did you feel when you made a mistake?\nミスをした時どう感じましたか？\n🙏 Do your parents get angry easily?\nあなたの両親は簡単に怒りますか？\n😊 Who teaches you new things at home?\n家で新しいことを誰が教えてくれますか？\n🧺 What chores do you like doing?\nどんな家事が好きですか？\n❤️ How do you feel when someone thanks you?\n誰かにありがとうと言われるとどう感じますか？\n💪 What can you do to help your family?\n家族を助けるために何ができますか？\n🏠 Is your room usually clean or messy?\nあなたの部屋はいつもきれいですか、それとも散らかっていますか？\n🌟 What chore do you want to learn?\nどんな家事を学びたいですか？"
-  },
-  {
-    "title": "3. Yui's Music Challenge (Gerunds / Infinitive)",
-    "content": "🎵 Yui wants to join the school music club.\nユイは学校の音楽部に入りたいです。\n🎸 She is interested in playing the guitar.\n彼女はギターを弾くことに興味があります。\n😰 But learning guitar is harder than she expected.\nしかし、ギターを学ぶことは思っていたより難しいです。\n🖐️ Her fingers hurt from pressing the strings.\n弦を押さえるので彼女の指が痛くなります。\n😔 After one week, Yui thinks about quitting.\n1週間後、ユイは辞めることを考えます。\n👩‍🏫 However, her teacher says, \"Keep trying. You will improve.\"\nしかし、先生は「続けなさい。上手になるよ」と言います。\n📚 Yui practices the same song every day.\nユイは毎日同じ曲を練習します。\n🎶 After one month, she can play the song perfectly!\n1ヶ月後、彼女はその曲を完璧に弾けるようになります！\n🎉 Yui performs at the school festival with her club.\nユイはクラブの仲間と学校祭で演奏します。\n🌟 She is happy she didn't give up.\n彼女は諦めなかったことを嬉しく思います。\n\n🎵 Do you play any musical instruments?\n何か楽器を演奏しますか？\n🎸 Have you ever wanted to learn guitar?\nギターを習いたいと思ったことがありますか？\n😰 What is something difficult you have learned?\nあなたが学んだ難しいことは何ですか？\n🖐️ Have you ever wanted to quit something?\n何かを辞めたいと思ったことがありますか？\n👩‍🏫 Does a teacher encourage you sometimes?\n先生は時々あなたを励ましてくれますか？\n📚 Do you practice something every day?\n毎日何かを練習しますか？\n🎶 What song do you like listening to?\nどんな曲を聴くのが好きですか？\n🎉 Have you ever performed in front of people?\n人の前で演奏したことがありますか？\n🌟 What do you want to learn this year?\n今年何を学びたいですか？\n🎵 Which instrument do you think is hardest?\nどの楽器が一番難しいと思いますか？"
-  },
-  {
-    "title": "4. Daiki's Speech Challenge (Superlative / Adjectives)",
-    "content": "🗣️ Daiki has to give a speech tomorrow in English class.\nダイキは明日の英語クラスでスピーチをします。\n📝 He wants to give the best speech in his class.\n彼はクラスでいちばん良いスピーチをしたいです。\n😰 But he is very nervous about speaking in public.\nしかし、人前で話すことがとても緊張します。\n📖 He practices his speech in front of the mirror every night.\n毎晩、彼は鏡の前で練習します。\n⏰ The speech must be exactly three minutes long.\nスピーチはちょうど3分である必要があります。\n💪 His teacher tells him to speak slowly and clearly.\n先生はゆっくりとはっきり話すように言います。\n🎤 On the big day, Daiki takes a deep breath.\n当日、ダイキは深呼吸をします。\n🗣️ He speaks clearly and finishes his speech perfectly!\n彼ははっきり話して完璧に終わります！\n🎉 Everyone claps and says, \"That was the best speech!\"\n全員が拍手して「いちばん良いスピーチでした」と言います！\n🌟 Daiki feels proud and learns to face his fears.\nダイキは誇らしく感じ、恐怖に立ち向かうことを学びます。\n\n🗣️ Do you like speaking in front of people?\n人前で話すのは好きですか？\n📝 Have you ever given a speech?\nスピーチをしたことがありますか？\n😰 What makes you feel nervous?\n何があなたを緊張させますか？\n📖 Do you practice in front of a mirror?\n鏡の前で練習しますか？\n⏰ Can you speak for one minute without stopping?\n1分間止まらずに話せますか？\n💪 Has a teacher given you good advice?\n先生は良いアドバイスをくれたことがありますか？\n🎤 Do you take deep breaths when you are nervous?\n緊張する時、深呼吸をしますか？\n🗣️ What topic would you choose for a speech?\nスピーチのトピックに何を選びますか？\n🎉 Have you ever received applause for something?\n何かで拍手されたことがありますか？\n🌟 What fear do you want to overcome?\nどんな恐怖を乗り越えたいですか？"
-  },
-  {
-    "title": "5. Haruka's Part-Time Job (Relative Clause / SVOO)",
-    "content": "☕ Haruka needs money to buy a new smartphone.\nハルカは新しいスマホを買うためにお金が必要です。\n📅 She finds a part-time job at a cafe near the station.\n彼女は駅の近くのカフェでアルバイトを見つけます。\n😰 But working on weekends is very tiring.\nしかし、週末に働くことはとても疲れます。\n👔 She must be polite to every customer.\n彼女はお客様全員に親切でなければなりません。\n💪 However, she works hard and saves money.\nしかし、彼女は一生懸命働いてお金を貯めます。\n😊 The manager gives her free coffee after work.\n店長は仕事の後に無料のコーヒーをくれます。\n🤝 Haruka makes friends with her co-workers.\nハルカは同僚と友達になります。\n🌟 She learns the value of hard work.\n彼女は一生懸命働くことの価値を学びます。\n\n☕ Do you want a part-time job?\nアルバイトをしたいですか？\n📅 How do you spend your weekends?\n週末をどう過ごしますか？\n😰 What is the most tiring thing for you?\nあなたにとって一番疲れることは何ですか？\n👔 Do you think being polite is important?\n親切であることは重要だと思いますか？\n💪 Do you save money for something special?\n何か特別なもののためにお金を貯めていますか？\n😊 Who gives you free things sometimes?\n誰が時々無料のことをくれますか？\n🤝 Is it easy to make new friends?\n新しい友達を作るのは簡単ですか？\n🌟 What have you learned from working?\n働いて何を学びましたか？\n☕ Do you prefer coffee or tea?\nコーヒーと紅茶、どちらが好きですか？\n💰 What do you want to buy with your own money?\n自分のお金で何を買いたいですか？"
-  },
-  {
-    "title": "6. Satoshi's Grandparents Visit (Be going to / When clause)",
-    "content": "🚅 Satoshi is going to visit his grandparents next week.\nサトシは来週、祖父母を訪ねる予定です。\n🏡 They live in a small village in the mountains.\n彼らは山の小さな村に住んでいます。\n👴 His grandfather grows vegetables in the garden.\n彼の祖父は庭で野菜を育てています。\n😰 But Satoshi has not seen them for one year.\nしかし、サトシは1年間会っていません。\n🍅 When Satoshi arrives, his grandmother will cook dinner.\nサトシが到着すると、祖母が夕食を作ります。\n🌟 The family eats together and talks about old times.\n家族が一緒に食べて昔話をします。\n😊 Satoshi feels happy to see his grandparents again.\nサトシは祖父母にまた会えて嬉しくなります。\n📸 He takes many photos to remember the day.\n彼はたくさんの写真を撮ります。\n\n🚅 How often do you visit your relatives?\nどのくらいの頻度で親戚を訪ねますか？\n🏡 Do your grandparents live near you?\n祖父母は近くに住んでいますか？\n👴 What does your grandfather do?\nお祖父さんは何をしますか？\n😰 Have you not seen someone for a long time?\n久しぶりに誰かに会っていませんか？\n🍅 What is your favorite vegetable?\n一番好きな野菜は何ですか？\n🌟 Do you like eating with your family?\n家族と一緒に食べるのは好きですか？\n😊 Who are you happy to see?\n会えて嬉しい人は誰ですか？\n📸 Do you like taking photos?\n写真を撮るのは好きですか？\n🏞️ Do you prefer the city or the countryside?\n都会と田舎、どちらが好きですか？\n🌙 What did you do on your last visit?\n前の訪問で何をしたか教えてください。"
-  },
-  {
-    "title": "7. Mei's Study Abroad Dream (If clause / Auxiliaries)",
-    "content": "✈️ Mei dreams of studying in Canada one day.\nメイはいずれカナダで勉強する夢があります。\n📚 To achieve her dream, she must study English hard.\n夢を達成するために、彼は英語を勉強する必要があります。\n😰 But English is very difficult for her.\nしかし、英語は彼女にとってとても難しいです。\n📺 She watches English movies to improve her listening.\n彼女はリスニング向上のため英語映画を見ます。\n💰 However, studying abroad costs a lot of money.\nしかし、留学はお金がとてもかかります。\n🗣️ If she studies hard, she will get a scholarship.\n一所懸命勉強したら、奨学金をもらえるでしょう。\n🤝 She wants to make friends from different countries.\n彼女はさまざまな国の友達を作りたいです。\n🌟 Mei believes her dream will come true.\nメイは夢が叶うと信じています。\n\n✈️ Do you want to study abroad?\n留学をしたいですか？\n📚 Why do you study English?\nなぜ英語を勉強しますか？\n😰 What is difficult for you in English?\n英語の中で難しいことは何ですか？\n📺 What English movies have you watched?\nどんな英語映画を見ましたか？\n💰 Is it important to save money for the future?\n将来のためにお金を貯めることは重要ですか？\n🗣️ Would you like to stay with a host family?\nホストファミリーと一緒に泊まりたいですか？\n🤝 Do you have friends from other countries?\n他の国の友達がいますか？\n🌟 What is your biggest dream?\n一番大きな夢は何ですか？\n🗺️ What country do you want to visit?\nどの国を訪れたいですか？\n📖 Do you read books in English?\n英語をんで本を読みますか？"
-  },
-  {
-    "title": "8. Ryo's New Blog (Present Perfect Continuous / Adjectives)",
-    "content": "💻 Ryo has been writing a blog for three months.\nリョウは3ヶ月間ブログを書いています。\n📝 He writes about his daily life and hobbies.\n彼は日常生活と趣味について書きます。\n😰 But nobody reads his blog at first.\nしかし最初は誰もブログを読みません。\n🌐 He feels sad and thinks about stopping.\n彼は悲しく、止めるを考えます。\n📈 After one month, people start leaving comments.\n1ヶ月後、人々はコメントを残すようになります。\n😊 Ryo is happy when people say his blog is funny.\n人々がブログ面白いというとリョウは嬉しいです。\n🚀 He wants to become a famous blogger someday.\nいつか有名なブロガーになりたいです。\n\n💻 Do you read blogs or websites often?\nよくブログやウェブサイトを読みますか？\n📝 Do you keep a diary?\n日記をつけていますか？\n😰 What do you do when nobody notices your work?\n誰も気づいてくれなかった時どうしますか？\n🌐 Have you ever written a comment on a video?\n動画にコメントを書いたことがありますか？\n📈 How do you feel when people like your work?\n人々があなたの作品を好きだとどう感じますか？\n😊 What makes you feel excited?\n何興奮させますか？\n🚀 Do you want to be famous?\n有名になりたいですか？\n📱 What kind of things do you post online?\nオンラインでどんなことを投稿しますか？\n👀 How much time do you spend on the internet?\nインターネットに费等時間を過ごしますか？"
-  },
-  {
-    "title": "9. Koki's Sports Day Training (Because / Comparative)",
-    "content": "🏃‍♂️ Koki trains hard because Sports Day is coming.\n運動会が近づいたので、コウキはハードにトレーニングします。\n🥇 He wants to win the 100-meter race.\n彼は100メートル走で勝ちたいです。\n😰 But he is not the fastest runner in his class.\nしかし、彼はクラスでいちばん速くないです。\n💪 He practices running every morning instead of sleeping.\n彼は寝る代わり每天朝練習します。\n👟 He buys new running shoes to run faster.\n彼は速く走るために新しい靴を買います。\n🎉 On Sports Day, Koki runs very fast!\n運動会当日、コウキはとても速く走ります！\n🏅 He wins second place and feels proud!\n彼は2位になって自豪感を持ちます！\n\n🏃‍♂️ Do you like Sports Day?\n運動会が好きですか？\n🥇 Have you ever won a prize or medal?\n賞やメダルを取得したことがありますか？\n😰 What do you do when you are not good at something?\n何かすることに詳しくない時どうしますか？\n💪 Do you practice something every day?\n毎日何かを練習しますか？\n👟 What sports do you like?\nどんなスポーツが好きですか？\n🎉 Do your friends cheer for you?\n友達が応援してくれますか？\n🏅 Do you feel proud when you win?\n勝つと自豪感を持ちますか？\n💪 Do you do any muscle training?\n筋力トレーニングをしますか？\n🌟 Do you think winning is the most important thing?\n勝つのが一番大事だと思いますか？\n👟 What brand of shoes do you like?\nどのブランドの靴が好きですか？"
-  },
-  {
-    "title": "10. Hana's Group Project (Make + Object + Adjective)",
-    "content": "🧪 Hana works on a science project with her group.\nハナはグループで科学プロジェクトに取り組みます。\n🎨 They decide to make a poster about space.\n彼らは宇宙についてのポスターを作ることにします。\n✂️ Hana is good at drawing, so she draws the pictures.\nハナは絵が得意なので、彼女が絵を描きます。\n😠 However, one boy does not do his work.\nしかし、男子一人が仕事をしません。\n🤔 The other group members get angry and frustrated.\n他のメンバーが怒って困ります。\n🗣️ They talk to the boy and ask for help.\n彼らは男子に話して助けてもらいます。\n📄 Together, they finish the poster in time.\n一緒に、時間通りにポスターを仕上げます。\n👩‍🏫 The teacher praises their teamwork.\n先生は彼らのチームワークを褒めます。\n🌟 Hana learns that communication solves problems.\nハナはコミュニケーションが問題を解決することを知ります。\n\n🧪 Do you like science class?\n理科の授業は好きですか？\n🎨 Are you good at drawing?\n絵を描くのは得意ですか？\n✂️ Have you ever made a poster?\nポスターを作ったことがありますか？\n😠 What makes you angry?\n何怒させますか？\n🤔 How do you solve problems with friends?\n友達とどう問題を解決しますか？\n🗣️ Do you talk to people when you have problems?\n問題がある時、人と話しますか？\n📄 Do you finish your work on time?\n時間通りに仕上げられますか？\n👩‍🏫 Do you like working in groups?\nグループで作業するのは好きですか？\n🌟 What have you learned from group work?\nグループ作業から何を学びましたか？\n🤝 Is teamwork important?\nチームワークは重要ですか？"
-  },
-  {
-    "title": "11. Yuna's School Festival Preparation (Passive Voice / Be covered with)",
-    "content": "🎪 Yuna helps prepare for the school festival.\nユナは学園祭の準備を手伝います。\n🎨 Her class decides to make an art gallery.\n彼女のクラスはアートギャラリーを作ることにします。\n🖼️ They cover the walls with colorful papers.\n彼らは壁をカラフルな紙で覆います。\n😰 But they only have two hours to finish.\nしかし、仕上げるのに2時間しかないので大変です。\n🧹 Everyone works together to clean and decorate.\nみんなが一緒に掃除して飾ります。\n😊 Yuna paints beautiful pictures with her friends.\nユナは友達と、美しい絵を描きます。\n📸 Many photos are taken during the festival.\n学園祭の間、多くの写真が撮られます。\n🌟 Everyone enjoys the art gallery and compliments Yuna.\nみんながアートギャラリーを楽しんでユナを褒めます。\n\n🎪 Do you like school festivals?\n学園祭が好きですか？\n🎨 What did your class do for the festival?\nあなたのクラスは学園祭で何をしましたか？\n🖼️ Are you good at decorating?\n飾るのが得意ですか？\n😰 Do you work well under pressure?\n压力下で仕事ができますか？\n🧹 Do you help clean your classroom?\n教室の掃除を手伝いますか？\n😊 What do you paint?\n何を描きますか？\n📸 Do you take photos at school events?\n学校のイベントで写真を撮りますか？\n🌟 Do you feel proud of your work?\n自分の作业に自豪感を持ちますか？\n🎭 Do you prefer watching shows or doing them?\nを見ると好むか、するの好む？\n🏫 What is your favorite school event?\n一番好きな学校イベントは何ですか？"
-  },
-  {
-    "title": "12. Takumi's Aquarium Trip (Look + Adjective / Interested in)",
-    "content": "🐟 Takumi visits an aquarium with his family.\nタクミは家族と水族館を訪れます。\n🦈 He is surprised to see huge sharks swimming.\n彼は巨大なサメが泳ぐのを見て驚きます。\n🐬 The dolphin show is the most exciting part.\nイルカショー刺激的です。\n😰 But Takumi cannot see the dolphins clearly.\nしかしタクミはイルカ見えづらい。\n📷 He takes photos but they are blurry.\n彼は写真を撮りますがぼやけます。\n😊 After the show, he gets to touch the dolphins!\nショーの後、イルカに触れます！\n🐠 Takumi learns about many different sea animals.\nタクミは多くの異なる海の動物について学びます。\n🌟 He wants to become a marine biologist.\n彼は海洋生物学者になりたいです。\n\n🐟 Do you like aquariums?\n水族館が好きですか？\n🦈 Which sea animal do you like best?\n一番好きな海の動物は何ですか？\n🐬 Have you ever seen a dolphin show?\nイルカショーを見たことがありますか？\n😰 What do you do when you cannot see well?\n見えらい時どうしますか？\n📷 Do you like taking photos?\n写真を撮るのは好きですか？\n😊 Have you ever touched an animal?\n動物を触ったことがありますか？\n🐠 What have you learned from visiting aquariums?\n水族館訪問から何を学びましたか？\n🌟 What do you want to be in the future?\n将来何になりたいですか？\n🏊 Can you swim?\n泳げますか？\n🌊 Do you like the ocean or mountains more?\n海と山どちらが好きですか？"
-  },
-  {
-    "title": "13. Miki's Cooking Challenge (How to... / Give + Person + Thing)",
-    "content": "🍳 Miki wants to learn how to cook.\nミキは料理を習いたいです。\n👩‍🍳 Her mother teaches her how to make miso soup.\n母は彼女に味噌汁の作り方を教えます。\n🔪 But cutting vegetables is harder than she thought.\nでも、野菜を切ることは思ったより難しいです。\n😰 She cuts her finger and feels scared.\n彼女は指を切って怖くなります。\n🩹 Her mother gives her a bandage and says it is okay.\n母は絆創膏をくれて、大丈夫だと言います。\n💪 Miki tries again and cooks curry for her family.\nミキはもう一度挑戦して、家族のためにカレーを作ります。\n😊 Her father says it is delicious!\n父は美味しいと言います！\n🌟 Miki feels proud of her first dish.\nミキは初めての料理を誇らしく思います。\n\n🍳 Do you cook at home?\n家で料理をしますか？\n👩‍🍳 Who teaches you how to cook?\n誰が料理を教えてくれますか？\n🔪 Have you ever cut your finger?\n指を切ったことがありますか？\n😰 What do you do when you feel scared?\n怖い時何をしますか？\n🩹 Do you have a bandage at home?\n家に絆創膏はありますか？\n💪 Do you try again when you fail?\n失敗した時、もう一度挑戦しますか？\n😊 What is your favorite dish?\n一番好きな料理は何ですか？\n🌟 Do you feel proud when you cook?\n料理をすると誇らしく感じますか？\n🍛 Can you make curry?\nカレーを作れますか？\n👨‍👩‍👧 Who cooks dinner in your family?\n家族では誰が夕食を作りますか？"
-  },
-  {
-    "title": "14. Ayaka's Rainy Day (Present Perfect Continuous / Stop -ing)",
-    "content": "🌧️ It has been raining since this morning.\n今朝から雨が降り続いています。\n🏠 Ayaka wanted to go shopping.\nアヤカは買い物に行きたかったです。\n😔 But she stopped thinking about going out.\nでも、外出することを諦めました。\n📚 She started reading a new book instead.\nその代わり、新しい本を読み始めました。\n☕ Drinking hot tea makes her feel warm.\n温かいお茶を飲むと、温かい気分になります。\n🎧 She enjoys listening to quiet music.\n静かな音楽を聴くのを楽しんでいます。\n😴 The sound of rain makes her sleepy.\n雨の音で眠くなります。\n📞 She talked with her friend for an hour.\n友達と1時間電話をしました。\n🌈 Tomorrow, the weather will be sunny.\n明日は晴れるでしょう。\n\n🌧️ Do you like rainy days?\n雨の日は好きですか？\n🏠 What do you do on rainy days?\n雨の日は何をしますか？\n📚 Do you read books at home?\n家で本を読みますか？\n☕ What is your favorite hot drink?\n一番好きな温かい飲み物は何ですか？\n🎧 Do you listen to music when you study?\n勉強する時、音楽を聴きますか？\n😴 Do you take naps on weekends?\n週末に昼寝をしますか？\n📞 Who do you talk to on the phone?\n誰と電話で話しますか？\n🌈 Which season do you like best?\nどの季節が一番好きですか？\n☔ Do you carry an umbrella?\n傘を持ち歩きますか？\n😊 Do you feel happy when you stay home?\n家にいると幸せですか？"
-  },
-  {
-    "title": "15. Shun's Violin Challenge (Comparative / Want to be)",
-    "content": "🎻 Shun practices violin every day after school.\nシュンは放課後毎日バイオリンを練習します。\n🏠 He practices in his room for two hours daily.\n彼は毎日自分の部屋で2時間練習します。\n😰 Playing violin is harder than playing the piano.\nバイオリンを弾くのはピアノより難しい。\n🌈 However, he loves the beautiful violin sound.\nでも、バイオリンの美しい音が大好き。\n👨‍👩‍👦 His parents always encourage him.\n両親はいつも彼を励ましてくれます。\n🏆 Shun wants to be a professional musician.\nシュンはプロの音楽家になりたい。\n📅 Next month, he has an important concert.\n来月、大事なコンサートがあります。\n🎵 He has memorized all the notes for the song.\nその曲の音符を全部暗記しました。\n😊 After the concert, Shun feels very happy.\nコンサート後、シュンはとても幸せです。\n\n🎻 Have you ever played violin?\nバイオリンを弾いたことは？\n🎶 Is it difficult to read music?\n楽譜を読むのは難しいか？\n🎼 Do you prefer classical or pop music?\nクラシックとポップ、どちら？\n👨‍👩‍👦 Do your parents support you?\n両親は後押ししてくれるか？\n🏆 What do you want to be in the future?\n将来何になりたいですか？\n📅 Do you get nervous before concerts?\nコンサート前緊張するか？\n🎵 Can you sing a song in English?\n英語で歌えますか？\n🏠 Where do you study or practice?\nどこで練習しますか？\n😊 What makes you feel proud?\n誇らしく思うのは何か？\n🌟 What is your favorite musician?\n好きな音楽家は？"
-  },
-  {
-    "title": "16. Riku's Park Cleanup (Passive Voice / Be glad to)",
-    "content": "🌳 Riku joined a volunteer group last Saturday.\nリクは先週土曜にボランティアに参加した。\n🧤 They went to the local park to clean up trash.\n近くの公園をゴミ拾いに行った。\n😱 Many plastic bottles were found under benches.\nベンチの下にペットボトルが大量発見。\n😰 Riku thought it would take too much time.\n時間がかかるとリクは思った。\n💪 However, everyone worked together efficiently.\nでも、みんなが効率的に作業した。\n👴 An old man said, 'Thank you for your hard work.'\nお年寄りが「ありがとう」と言ってくれた。\n😊 Riku was glad to hear kind words.\n親切な言葉を聞けて嬉しかった。\n🌿 Now the park looks very clean.\n今、公園はとてもきれいに見える。\n🌟 Riku decided to join again next month.\nリクは来月も参加することに決めた。\n\n🌳 Have you done volunteer work?\nボランティア活動したことある？\n😱 Have you ever seen too much trash?\nゴミが多すぎる場面を見たことが？\n💪 Do you like working with a team?\nチームで働くのは好きか？\n👴 Did someone thank you recently?\n最近誰かに「ありがとう」と言われた？\n🧤 Do you mind getting dirty?\n汚れるのを気にする？\n🌿 Do you like clean environments?\nきれいな環境は好きですか？\n🗑️ Do you separate trash correctly?\nゴミを正しく分別する？\n😊 When did someone help you?\n誰かに助けられたのはいつ？\n🌟 Would you volunteer again?\nまたボランティア活動に興味ある？"
-  },
-  {
-    "title": "17. Saki's Long Phone Call (Enjoy -ing / Adverbial clauses)",
-    "content": "📱 Saki called her cousin in Tokyo last night.\n昨夜、Sakiは東京のいとこに電話した。\n🏙️ She talked about her new high school life.\n新しい高校生活について話した。\n😱 Saki was surprised Tokyo is so crowded.\n東京がこんなに混んでると驚いた。\n⌛ They talked for more than two hours!\n2時間以上も話した！\n😢 It was already midnight when they finished.\n終わった時は真夜中になっていた。\n😌 Saki felt time flies when enjoying conversation.\n楽しく話すと時間経つのが早いと感じた。\n📧 They promised to message each other often.\n頻繁にメッセージを送り合うことにした。\n😴 The next morning, Saki was a little sleepy.\n翌朝、Sakiは少し眠かった。\n🌟 Keeping in touch with family is important to her.\n家族と連絡を取り合うことは彼女にとって大事。\n\n📱 Who do you like talking to most?\n誰と一番話すのが好き？\n🏙️ Do you want to live in a big city?\n大都市に住みたいですか？\n⌛ What's your longest phone call?\n一番長い電話はどれくらい？\n😱 Have you been surprised by something?\n何かに驚いたことがある？\n😌 Does time fly when you study?\n勉強する時、早く経つか？\n😴 Do you usually wake up early?\n普段は早起きする？\n😢 Are you sleepy right now?\n今眠いですか？\n📧 Do you use messaging apps daily?\n毎日メッセージアプリを使う？\n😌 Do you enjoy long conversations?\n長い話を楽しむか？\n😴 How do you feel when you don't sleep enough?\n眠り不足の時どう感じる？"
-  },
-  {
-    "title": "18. Haru's Museum Visit (Be interested in / Passive)",
-    "content": "🏛️ Haru visited the history museum with his class.\nハルはクラスで歴史博物館を訪問した。\n📖 He is interested in Japanese culture.\n彼は日本文化に興味がある。\n🏺 But the museum was built 100 years ago.\nでも、博物館は100年前に建てられた。\n👀 They looked at old tools and clothes.\n古い道具と服を見た。\n😰 Haru wondered how people lived long ago.\n昔の人々がどう暮らしていたか不思議に思った。\n📸 Taking photos was allowed in some rooms.\nいくつかの部屋では写真が許可されていた。\n😊 Haru learned many new things about his city.\n彼は自分の街について新しいことを学んだ。\n🌟 Haru wants to visit again with his family.\nハルは家族とまた訪れたいと思った。\n\n🏛️ Do you like history?\n歴史は好きですか？\n🏺 Do you like visiting museums?\n博物館を訪問するのは好き？\n📖 What old things do you have at home?\n家に古いものはある？\n👀 What do you like looking at most?\n何を一番見るのが好き？\n😰 What do you wonder about?\n何について不思議に思う？\n📸 Do you follow rules in public places?\n公共の場でルールを守る？\n😊 Have you been surprised by something lately?\n最近何かに驚いたことはある？\n🌟 What museums have you visited before?\n前に訪問した博物館はどこ？\n🏯 Do you like visiting old temples or shrines?\n古い寺や神社を訪問するのは好き？\n📚 What do you learn from school trips?\n学校訪問から何を学ぶか？"
-  },
-  {
-    "title": "19. Aya's New Writing Club (Relative pronoun / Try to)",
-    "content": "📝 Aya loves writing stories and poems.\nアヤは物語や詩を書くのが大好き。\n🏫 She decided to start a Creative Writing Club.\n創作ライティング部を始めることにした。\n😰 She needed five members to start the club.\n部を始めるには5人必要だった。\n🗣️ She talked to friends who like reading.\n本を読むのが好きな友達に話した。\n📄 They made posters to advertise their club.\n彼らは部を宣伝するポスターを作った。\n😊 Luckily, six students joined the club!\n運良く、6人生徒が入部した！\n✍️ Now they try to write a short story weekly.\n今、彼らは毎週短い物語を書いている。\n📚 They read each other's stories and share comments.\n互いの物語を読んでコメントを共有する。\n🌟 Aya is happy she has friends with same hobby.\nアヤは同じ趣味の友達がいて幸せ。\n\n📝 Do you like writing?\n書くのは好き？\n🏫 Does your school have many clubs?\n学校にクラブはいくつある？\n👥 If you started a club, what kind?\nクラブを作るならどんなの？\n🗣️ Are you good at asking for help?\n助けを求めるのは得意？\n📄 Do you know how to make posters?\nポスターの作り方知ってる？\n✍️ Have you ever written a story?\n物語を書いたことある？\n📚 What is your favorite book genre?\n好きな本のジャンルは？\n🌟 Do you share hobbies with friends?\n友達と趣味を共有してる？\n🚀 What is your dream job?\n夢の仕事は何？\n😊 Are you a leader or follower?\nリーダーとフォロワーどっち？"
-  },
-  {
-    "title": "20. Ken's Busy Morning (Too... to... / Be late for)",
-    "content": "⏰ Ken overslept this morning because alarm didn't ring.\n今朝、ケンが目覚ましが鳴らず寝坊した。\n😱 He was too shocked to move for a moment.\nショックで少しの間動けなかった。\n🍞 He didn't have time to eat breakfast.\n朝食を食べる時間がなかった。\n🏃‍♂️ He ran to station as fast as he could.\nできるだけ速く駅まで走った。\n🚋 However, he missed the train he usually takes.\nでも、いつもの電車を逃した。\n😰 He was worried about being late for school.\n学校に遅刻するか心配だった。\n📱 He sent a message saying he might be late.\n遅れるかもしれないとメッセージした。\n🏫 Luckily, he arrived at school gate just in time.\n運良く、学校の門にギリギリ着いた。\n💨 He was very tired and out of breath.\n彼はとても疲れて息切れしていた。\n🌟 Ken decided to go to bed earlier tonight.\nケンは今夜もっと早く寝ると決めた。\n\n⏰ Do you use an alarm clock?\n目覚まし時計を使う？\n😱 Have you ever overslept on important day?\n大事な日に寝坊したことは？\n🍞 Do you eat breakfast every day?\n毎日朝食を食べる？\n🏃‍♂️ Are you a fast runner?\n速く走れる？\n🚋 How do you go to school?\n学校にどうやって行く？\n😰 What do you do when late?\n遅刻した時どうする？\n📱 Do you text friends often?\nよく友達にメッセージする？\n🏫 What time does first class start?\n最初の授業は何時から？\n💨 Do you get tired easily?\n疲れやすい？\n🌟 What time do you usually sleep?\n普段何時に寝る？"
-  },
-  {
-    "title": "21. Haruka's Library Visit (Present Perfect / Recommend)",
-    "content": "📚 Haruka has visited school library many times this month.\nハルカは今月何度も学校図書館を訪問した。\n📖 She likes reading mystery novels very much.\n彼女はミステリー小説がとても好き。\n👩‍🏫 The librarian recommended a famous book to her.\n司書が彼女に有名な本を勧めてくれた。\n🔍 The story is about a detective solving cases.\nその話は事件を解決する探偵の話。\n🤔 Reading books makes her think deeply.\n本を読むことは彼女に深く考えさせる。\n📝 She has written a book report for Japanese class.\n彼女は国語のために読書感想文を書いた。\n🤫 You must be quiet when in the library.\n図書館にいる時は静かにしなければならない。\n🤝 Haruka often borrows books friends like.\nハルカはよく友達が好きな本を借りる。\n🌟 She thinks libraries are wonderful places.\n彼女は図書館は素晴らしい場所だと思う。\n📅 She plans to read ten books during summer vacation.\n夏休みに10冊読む計画。\n\n📚 Do you go to library often?\n図書館によく行く？\n📖 What was last book you read?\n最後に読んだ本は？\n👩‍🏫 Do you ask teachers for advice?\n先生にアドバイスを求める？\n🔍 Do you like mystery movies or books?\nミステリー映画か本は好き？\n🤔 Do you like thinking about puzzles?\nパズルを考えるのは好き？\n📝 Have you written book report recently?\n最近読書感想文を書いた？\n🤫 Can you stay quiet for long time?\n長い間静かにしていられる？\n🤝 Do you lend books to friends?\n友達に本を貸す？\n🌟 What is favorite place in school?\n学校でお気に入りの場所は？\n📅 How many books do you read in a year?\n1年に何冊本を読む？"
-  },
-  {
-    "title": "22. Yui's New Pet (Take care of / Adjective)",
-    "content": "🐱 Yui's family got a new kitten yesterday.\nユイの家族は昨日新しい子猫を飼った。\n😊 The kitten is very cute and playful.\nその子猫はとても可愛くて遊び好き。\n😰 But taking care of it is hard work.\nでも、世話をするのは大変。\n🍚 Yui must feed it every morning and night.\nユイは毎朝と夜に餌をあげなければならない。\n🧹 She must clean the litter box daily.\n彼女は毎日猫砂を掃除しなければならない。\n😴 Sometimes the kitten wakes her up early.\n時々、子猫が彼女を早くに起こす。\n💪 However, Yui loves her new pet very much.\nでも、ユイは新しいペットが大好き。\n🐾 The kitten follows her everywhere she goes.\n子猫は彼女の行く所どこでもついてくる。\n🌟 Yui learned responsibility from this experience.\nユイはこの経験から責任を学んだ。\n\n🐱 Do you have a pet at home?\n家にペットはいる？\n😊 What pet do you like best?\nどのペットが一番好き？\n😰 Is it hard to take care of pets?\nペットの世話は大変？\n🍚 What do pets need every day?\nペットは毎日何が必要？\n🧹 Do you clean up after your pet?\nペットの後片付けをする？\n😴 Does your pet wake you up early?\nペットは早くに起こす？\n💪 Do you like animals?\n動物は好き？\n🐾 Do you want to have a pet?\nペットを飼いたい？\n🌟 What have you learned from pets?\nペットから何を学んだ？\n🏠 Is your house good for pets?\n家はペットに向いてる？"
-  },
-  {
-    "title": "23. Kenji's Class Debate (Agree/Disagree with / Opinion)",
-    "content": "🗣️ Kenji's class had a debate today.\n今日のケンジのクラスで討論があった。\n📚 The topic was about school uniforms.\nトピックは学校の制服について。\n😰 Kenji was nervous to speak in front.\nケンジは前で話すのが緊張した。\n💭 He disagreed with wearing uniforms daily.\n彼は毎日制服を着るのに反対した。\n🗣️ However, his friend agreed with uniforms.\nでも、彼の友達は制服に賛成した。\n🤝 They listened to each other's opinions carefully.\n彼らは互いの意見に注意深く耳を傾けた。\n😊 The teacher said both sides had good points.\n先生は両方の意見に良い点があると言った。\n🌟 Kenji learned it's okay to disagree politely.\nケンジは礼儀正しく反対しても良いと学んだ。\n\n🗣️ Do you like speaking in front of class?\nクラスの前で話すの好き？\n📚 What topic would you debate?\nどんなトピックを討論する？\n😰 What makes you nervous?\n何が緊張させる？\n💭 Do you agree with school uniforms?\n学校の制服に賛成？\n🤝 Do you listen to others' opinions?\n他人の意見に耳を傾ける？\n😊 Is it okay to disagree?\n反対してもいい？\n📚 What is your opinion on homework?\n宿題についての意見は？\n🌟 Have you ever changed your opinion?\n意見を変えたことは？\n🗣️ Do you like debates?\n討論は好き？\n💭 What is your strongest opinion?\n一番強い意見は？"
-  },
-  {
-    "title": "24. Rina's Snowy Day (So... that... / It is [adjective] to...)",
-    "content": "❄️ It snowed heavily last night.\n昨夜大雪が降った。\n🌨️ The garden was covered with white snow.\n庭は白い雪に覆われた。\n😰 It was so cold that Rina stayed inside.\nとても寒かったのでリナは中にいた。\n☕ She drank hot chocolate to feel warm.\n温かく感じるためホットチョコを飲んだ。\n🧤 Her mother made her wear thick clothes.\n母は彼女に厚着をさせた。\n⛄ Rina wanted to make a snowman outside.\nリナは外で雪だるまを作りたかった。\n😊 After an hour, the sun came out.\n1時間後、太陽が出てきた。\n🌟 It is fun to play in the snow.\n雪の中で遊ぶのは楽しい。\n⭐ Rina went outside and made a big snowman!\nリナは外に出て大きな雪だるまを作った！\n\n❄️ Do you like snowy days?\n雪の日は好き？\n🌨️ Have you ever made a snowman?\n雪だるまを作ったことは？\n😰 Are you afraid of cold weather?\n寒い天気は怖い？\n☕ What is your favorite hot drink?\n好きな温かい飲み物は？\n🧤 Do you wear gloves in winter?\n冬は手袋をする？\n⛄ Do you like winter sports?\n冬のスポーツは好き？\n😊 Do you play in the snow?\n雪で遊ぶ？\n🌟 What is your favorite season?\n好きな季節は？\n❄️ Is it fun to play outside in snow?\n雪で外で遊ぶのは楽しい？\n☕ Do you prefer hot or cold drinks?\n温かいか冷たい飲み物どっちが好き？"
-  },
-  {
-    "title": "25. Toms Test Challenge (Help + Person + Verb)",
-    "content": "📝 Tom's big math test is next week.\nトムの大きな数学のテストは来週。\n😰 But Tom struggles with algebra problems.\nでも、トムは代数問題に苦戦しています。\n👨 His older sister helps him understand.\n彼の姉が理解できるよう助けてくれます。\n📚 Tom studies as hard as he can.\nトムはできる限り一生懸命勉強します。\n🎯 On the test day Tom feels nervous.\nテストの当日、トムは緊張します。\n😊 However he remembers what his sister taught.\nでも、姉が教えてくれたことを思い出します。\n📊 Tom solves the problems correctly.\nトムは問題を正しく解きます。\n🏆 He gets a good score on his test!\nテストで良い点数を取ります！\n\n📝 Do you have big tests at school?\n学校で大きなテストはありますか？\n😰 What subject is hardest for you?\n一番難しい科目は何ですか？\n👨 Does anyone help you study?\n誰かが勉強を手伝ってくれますか？\n📚 Do you study hard every night?\n毎晩一生懸命勉強しますか？\n🎯 Do you feel nervous before tests?\nテストの前に緊張しますか？\n😊 Who encourages you?\n誰が励ましてくれますか？\n📊 Are you good at solving problems?\n問題を解くのは得意ですか？\n🏆 Have you gotten a good score recently?\n最近良い点数を取りましたか？\n🌟 What helps you study?\n何が勉強の助けになりますか？"
-  },
-  {
-    "title": "26. Ryos Beach Day (Look/Sound/Feel + Adjective)",
-    "content": "🏖️ Ryo visits the beach on a sunny day.\nリョウは晴れた日に海を訪れます。\n🌊 The water looks very blue and beautiful.\n海水はとても青くて美しいです。\n🎵 Ryo loves the sound of ocean waves.\nリョウは波の音が大好きです。\n😰 But the sun is very hot today.\nでも、今日は太陽がとても暑いです。\n🧢 Ryo wears a hat to protect himself.\nリョウは身を守るために帽子をかぶります。\n😊 He feels much better in the shade.\n彼は日陰でもっと気分が良くなります。\n🏖️ Ryo plays in the sand all day.\nリョウは一日中砂で遊びます。\n🌟 The day at the beach is wonderful!\n海での日は素晴らしいです！\n\n🏖️ Do you like going to the beach?\n海に行くのは好きですか？\n🌊 What does the ocean look like near you?\n近くの海はどんな様子ですか？\n🎵 Do you like the sound of waves?\n波の音は好きですか？\n😰 What do you do when it is hot?\n暑い時何をしますか？\n🧢 Do you wear a hat outside?\n外で帽子をかぶりますか？\n😊 What makes you feel better?\n何が気分を良くしてくれますか？\n🏖️ Do you play in the sand?\n砂で遊びますか？\n🌟 What is your favorite beach activity?\n好きな海での活動は何ですか？"
-  },
-  {
-    "title": "27. Mios Birthday Gift (Give + Person + Thing)",
-    "content": "🎁 Mios grandmothers birthday is soon.\nミオの祖母の誕生日がすぐです。\n🧥 Mio chooses a red scarf for her.\nミオは赤いマフラーを選びました。\n😊 Grandmother looks happy when she opens it.\n祖母は受け取ると嬉しそうです。\n🌟 Mio feels proud to give a gift.\nミオは贈り物をあげられて誇らしく思います。\n\n🎁 When is your grandmothers birthday?\n祖母の誕生日はいつですか？\n😢 What gifts do you give to grandmothers?\n祖母にどんな贈り物をあげますか？\n👨 Does your grandmother live near you?\n祖母は近くに住んでいますか？\n🧥 Does your grandmother like warm clothes?\n祖母は暖かい服が好きですか？\n😊 Does your grandmother smile easily?\n祖母はよく笑いますか？\n❤️ Do you feel happy when you give gifts?\n贈り物をあげると幸せですか？"
-  },
-  {
-    "title": "28. Takumis Basketball Challenge (Be good at)",
-    "content": "⛹️ Takumi wants to try basketball.\nタクミはバスケボールを試したいです。\n🏀 But he is not good at shooting.\nでもシュートが得意ではありません。\n😰 He misses many shots at first.\n最初は多くのシュートを外します。\n💪 His coach says to practice.\nコーチは練習しなさいと言います。\n📅 Takumi practices every weekend.\nタクミは毎週末練習します。\n😊 After two months he improves.\n2ヶ月後に上達しました。\n🌟 Takumi learns practice is important.\nタクミは練習が大切だと学びました。\n\n⛹️ Do you like basketball?\nバスケボールは好きですか？\n🏀 What sport do you want to try?\nどんなスポーツを試してみたいですか？\n😰 Are you good at shooting?\nシュートは得意ですか？\n💪 Does your coach help you?\nコーチは手伝ってくれますか？\n📅 Do you practice every weekend?\n毎週末練習しますか？\n😊 Have you improved lately?\n最近上達しましたか？\n🌟 What did you learn from practice?\n練習から何を学びましたか？"
-  },
-  {
-    "title": "29. Emi Helps Neighbor (Ask + Person + To)",
-    "content": "🤝 Emi wants to help her neighbor.\nエミは隣人を助けたいです。\n😰 Her neighbor is elderly.\n隣人は年配です。\n📦 Emi carries heavy shopping bags.\nエミは重い買い物袋を運びます。\n😊 The neighbor says thank you.\n隣人はありがとうと言います。\n😢 However the neighbors garden needs care.\nでも隣人の庭に手入れが必要です。\n😊 Emi and friends clean the leaves.\nエミは友達と落ち葉を片付ける。\n🌟 Emi feels happy to help.\nエミは手伝えて幸せです。\n\n🤝 Do you help your neighbors?\n隣人を助けますか？\n😰 Do you have elderly neighbors?\n年配の隣人はいますか？\n📦 Do you carry heavy things?\n重いものを運びますか？\n😲 Do you say thank you often?\nありがとうはよく言いますか？\n😢 Does your garden need care?\n庭の手入れは必要ですか？\n🍂 Do you like autumn?\n秋は好きですか？\n😊 Does helping make you happy?\n手伝うと幸せですか？"
-  },
-  {
-    "title": "30. Hanas Cultural Experience (Passive Voice)",
-    "content": "🎎 Hanas class visits a crafts festival.\nハナのクラスは工芸祭を訪問します。\n😰 Hana does not know about crafts much.\nハナは工芸について詳しくありません。\n🖌️ She watches traditional paper folding.\n彼女は伝統的な折り紙を見ます。\n😲 She is surprised the paper makes shapes.\n紙が形を作ることに驚きます。\n🙋 A craftsman teaches her how to fold.\n職人が折り方を教えてくれます。\n😊 Hana makes a nice origami.\nハナはきれいな折り紙を作ります。\n🌟 Hana becomes interested in culture.\nハナは文化に興味を持ちます。\n\n🎎 Have you visited crafts festivals?\n工芸祭を訪問したことはありますか？\n🖌️ Have you tried origami?\n折り紙を試したことはありますか？\n😲 What surprised you recently?\n最近何かに驚きましたか？\n😊 Are you good at making things?\n物を作るのは得意ですか？\n🌟 Are you interested in your culture?\nあなたの文化に興味がありますか？\n📚 What Japanese art do you know?\nどんな日本芸術を知っていますか？"
-  },
-  {
-    "title": "31. Kenjis Camping Trip (Past Continuous)",
-    "content": "?? Kenji goes camping in mountains.\nケンジは山でキャンプします。\n?? But it starts raining at night.\nでも夜に雨が降りました。\n?? Everyone feels very tired.\nみんなとても疲れています。\n?? However water leaks into tent.\nしかしテントに水が入ります。\n?? They fix the tent quickly.\n彼らはテントをすぐに直します。\n?? The sun comes out next morning.\n翌朝太陽が出ます。\n?? The trip is still fun with friends.\n友達との旅行は楽しいです。\n\n?? Have you been camping?\nキャンプの経験がありますか？\n?? Have you experienced raining while camping?\nキャンプ中の雨の経験はありますか？\n?? Did your tent ever leak?\nテントが漏ったことはありますか？\n?? Did you fix the problem quickly?\n問題を早く治しましたか？\n?? Did the sun come out?\n太陽が出ましたか？\n?? Do friends make trips better?\n友達が旅行をより良くしますか？"
-  },
-  {
-    "title": "32. Yumes Online Lessons (Present Perfect Cont)",
-    "content": "?? Yume takes online English lessons.\nユメはオンライン英語レッスンを受けています。\n?? But her internet is sometimes slow.\nでもインターネットが時々遅いです。\n?? Her webcam freezes during lessons.\nレッスン中ウェブカメラがフリーズします。\n?? Yume feels frustrated.\nユメはイライラします。\n?? But her teacher is very patient.\nでも先生はとても忍耐強いです。\n?? Yume looks forward to learning.\nユメは学ぶのを楽しみにしています。\n?? After one month she improves.\n1ヶ月後に上達しました。\n\n?? Do you have online classes?\nオンラインクラスはありますか？\n?? Is your internet fast or slow?\nインターネットは速いですか、遅いですか？\n?? Does your webcam work well?\nウェブカメラは良く働きますか？\n?? Do you feel frustrated sometimes?\n時々イライラしますか？\n?? Is your teacher patient?\n先生は忍耐強いですか？\n?? Have you improved recently?\n最近上達しましたか？"
-  },
-  {
-    "title": "33. Rens Recycling Project (Passive Voice)",
-    "content": "?? Rens class decides to recycle.\nレンのクラスはリサイクルすることにしました。\n?? But not all students participate.\nでも全員ではありません。\n?? However Ren and friends are enthusiastic.\nでもレンと友達は熱心です。\n?? They collect bottles from classrooms.\n教室からボトルを集めます。\n?? The trash is sorted for recycling.\nゴミはリサイクルのために分別されます。\n?? The teacher praises Rens group.\n先生はレンのグループを褒めます。\n?? Ren feels proud to help.\nレンは役立って誇らしく思います。\n\n?? Do you recycle at school?\n学校でリサイクルをしていますか？\n?? Does your class collect bottles?\nクラスでボトルを集めますか？\n?? Do you sort trash into different bags?\nゴミを別々の袋に分別しますか？\n?? Does your teacher praise you?\n先生は褒めてくれますか？\n?? Do you feel proud when you help?\n助けると誇らしく思いますか？\n?? Is recycling important for everyone?\n全員にとってリサイクルは重要ですか？"
-  },
-  {
-    "title": "34. Kais Bike Ride Plan (Conditionals)",
-    "content": "?? Kai wants to ride his bike to park.\nカイは自転車で公園に行きたいです。\n?? But the weather is very hot.\nでも天気はとても暑いです。\n?? Kai feels tired after riding.\n自転車に乗って疲れます。\n?? He decides to rest under a tree.\n彼は木の下で休むことにします。\n?? He sees ice cream being sold.\nアイスを売っているのを見ます。\n?? Kai buys vanilla ice cream.\nカイはバニラアイスを買います。\n?? It tastes sweet and cold.\n甘くて冷たくて美味しいです。\n\n?? Do you have a bike?\n自転車はありますか？\n?? What do you do when tired?\n疲れたら何をしますか？\n?? Do you like ice cream?\nアイスは好きですか？\n?? How do you feel when you eat?\n食べるとどんな気分になりますか？\n?? Do you rest under trees?\n木の下で休みますか？"
-  },
-  {
-    "title": "35. Ayas Science Fair Experiment (Passive)",
-    "content": "?? Aya does a volcano experiment.\nアヤは火山実験をします。\n?? She mixes baking soda and vinegar.\n彼女は重曹とお酢を混ぜます。\n?? The mixture bubbles up immediately.\n混合物はすぐに泡立ちます。\n?? Aya shouts Its erupting!\n「噴火だ！」と叫びます。\n?? Her parents take photos.\n両親は写真を撮ります。\n?? She explains how it erupted.\nどうして噴火したかを説明します。\n?? Her project wins first prize.\nプロジェクトが1位になります。\n\n?? Have you done science experiments?\n科学実験をしたことはありますか？\n?? Have you seen something bubble up?\n泡立つものを見たことはありますか？\n?? Did your parents watch you work?\n両親は作業を見てくれましたか？\n?? Can you explain to others?\n他人に説明できますか？\n?? Have you won a prize?\n賞を取ったことはありますか？\n?? Do you want to become a scientist?\n科学者になりたいですか？"
-  },
-  {
-    "title": "36. Harukas Class Election (Relative Pronoun)",
-    "content": "?? Harukas class needs a representative.\nハルカのクラスは代表が必要です。\n?? Students give speeches to become rep.\n代表になるためにスピーチします。\n?? Haruka is nervous but wants to help.\nハルカは緊張しますが手伝いたいです。\n?? She speaks about making the class better.\nクラスを良くすることについて話します。\n?? Classmates listen with respect.\nクラスメートは尊敬して聞きます。\n?? They vote for Haruka.\n彼女に投票します。\n?? Haruka will help everyone in class.\nハルカはクラスのみんなを助けます。\n\n?? Does your class have a representative?\nクラスに代表はいますか？\n?? Have you given a speech to class?\nクラスでスピーチをしたことはありますか？\n?? Are you nervous when you speak?\n話す時緊張しますか？\n?? Can you express your ideas clearly?\nアイデアを明確に伝えられますか？\n?? Do others respect your ideas?\n他人はあなたのアイデアを尊重しますか？\n?? Did you get voted for something?\n投票されたことはありますか？\n?? Do you want to help your class?\nクラスを助けたいですか？\n🌟 What ideas do you have?\nどんなアイデアがありますか？"
-  },
-  {
-    "title": "37. Autumn Preparation",
-    "content": "🍂 Yuki prepares for autumn weather.\nユキは秋の天気に備えます。\n😰 But she has many things to organize.\nでも整理很多东西。\n🧥 She packs summer clothes in boxes.\n彼女は夏の服を箱にしまいます。\n🍂 She cleans the garden of fallen leaves.\n彼女は庭の落ち葉を掃きます。\n😊 Her mother helps organize the house.\n母が家の整理を手伝います。\n🍵 They drink hot tea after finishing.\n仕事の後、温かいお茶を飲む。\n🌟 Yuki feels ready for the cold season.\nユキは寒い季節の準備ができたと感じます。\n\n🍂 Do you prepare for autumn?\n秋の準備をしますか？\n🧥 Do you pack summer clothes?\n夏の服をしまいますか？\n😰 What do you organize at home?\n家で何を整理しますか？\n🍂 Do you like autumn?\n秋は好きですか？\n🍵 What hot drink do you like?\nどんな温かい飲み物がか好きですか？\n😊 Does your mother help you?\n母は手伝いしてくれますか？\n🌟 Do you feel ready for winter?\n冬の準備はできましたか？"
-  },
-  {
-    "title": "38. Autumn Health Habits",
-    "content": "🍎 Ken starts eating healthier food.\nケンはもっと健康的な吃的开始。\n🥗 He eats more fruits and vegetables.\n彼は更多的果物を食べます蔬菜。\n😰 But he misses junk food.\nでもジャンクフードが恋しい。\n🏃 Ken exercises to stay healthy.\nケンは健康のために運動します。\n😊 He feels more energetic.\n彼はもっと元气感觉。\n🍂 The autumn weather is perfect for exercise.\n秋の天气は運動に最適。\n🌟 Ken learns healthy habits take time.\nケンは健康的习惯需要时间。\n\n🍎 Do you eat healthy food?\n健康的食物を食べますか？\n🥗 What fruits do you like?\nどんな果物が好きですか？\n😰 What food do you miss most?\n一番恋しい食べ物は何ですか？\n🏃 Do you exercise outdoors?\n外で運動しますか？\n😊 Do you feel energetic after exercise?\n運動後元气になりますか？\n🌟 What healthy habit do you want?\nどんな健康的习惯を始めたいですか？"
-  },
-  {
-    "title": "39. November Family Budget",
-    "content": "💰 The family decides to make a budget for November.\n家族は11月の予算を作ることにします。\n😰 But they always spend too much money.\nでもお金の使いすぎ。\n📝 They write down all their expenses.\nすべての出費を書き出します。\n🎁 They plan Christmas gift buying early.\nクリスマスギフトの-buyingをの计划提前。\n😊 They find ways to save money.\n節約法を見つけます。\n💳 They decide to use cash instead of cards.\nカード 대신現金を決める。\n🌟 The family works together to save.\n家族は一緒に節約の努力します。\n\n💰 Do you have a budget?\n予算はある？\n😰 Do you spend too much money?\nお金の使いすぎ？\n📝 Do you track your spending?\n出費を記録？\n🎁 When do you buy Christmas gifts?\nクリスマスギフトいつ買う？\n😊 Do you save money for gifts?\nギフトのため貯金？\n💳 Do you use cash or cards more?\n現金とカードどちらを 많이 使？\n🌟 Does your family work on budgets together?\n家族が一緒に予算に取り組む？"
-  },
-  {
-    "title": "40. Autumn Community Events",
-    "content": "🎪 The town holds an autumn festival.\n町は秋祭りを開催します。\n😊 Yuki and her family attend the festival.\nユキと家族は祭りに出席します。\n🎭 There are many traditional performances.\n多くの伝統のなパフォーマンスがあります。\n😰 The festival is very crowded.\n人どちらも是とても多。\n🍡 They eat festival food like takoyaki.\nたこ焼きなどの祭りFoodを食べます。\n😊 They watch a beautiful fireworks show.\n好看の花火を見る。\n🌟 Yuki feels connected to her community.\nユキは地域に_CONNECTEDの感觉。\n\n🎪 Do you go to autumn festivals?\n秋祭りに行く？\n😊 What do you do at festivals?\n祭りですることは何？\n🎭 What traditional performances do you like?\nどんな伝統のなパフォーマンスが好き？\n😰 Is it crowded at events?\nイベントで込みます？\n🍡 What festival food do you like?\nどんな祭りFoodが好き？\n😊 Do you watch fireworks?\n花火見る？\n🌟 Do you feel connected to your community?\n地域に 연결되어 있다고 느끼？"
-  },
-  {
-    "title": "41. Preparing for Winter",
-    "content": "❄️ The first cold day arrives in December.\n12月に最初の寒い日が訪れます。\n😰 Haruka is not ready for the cold.\nハルカはまだ寒さに備えていない。\n🧥 She buys a warm winter coat.\n彼女は暖かい冬コートを買う。\n🧤 She also buys gloves and a scarf.\n手套とマフラーも買う。\n😊 Now she is ready for winter.\n今、冬の準備ができた。\n🌟 Haruka feels confident about the cold.\nハルカは寒さに自信を持っている。\n\n❄️ Do you like winter?\n冬が好き？\n😰 Are you ready for cold weather?\n寒さに備えてる？\n🧥 What coat do you wear in winter?\n冬どんなコート着る？\n🧤 Do you have gloves and scarf?\n手套マフラーある？\n😊 Do you like warm clothes?\n暖かい服好き？\n🌟 Do you feel confident in winter?\n冬に自信持てる？"
-  },
-  {
-    "title": "42. Winter Holiday Travel",
-    "content": "✈️ Kenji plans to travel during winter vacation.\nケンジは冬休みに旅行を計画します。\n😰 But plane tickets are very expensive.\nでもチケットとても高い。\n💰 He decides to take a bus instead.\n 대신バスで行くことに。\n😊 He saves a lot of money.\nお金を節約。\n🗺️ He visits his grandparents in the countryside.\n祖父母のるところ行く。\n🌟 Kenji feels happy to see his family.\n家族にできるえて幸せ。\n\n✈️ Do you travel during winter break?\n冬休みに旅行する？\n😰 Are tickets expensive in winter?\n冬のチケット高い？\n💰 Do you save money for trips?\n旅行のため貯金？\n🗺️ Where do you want to travel?\nどこに行きたい？\n😊 Do you like visiting family?\n家族にできるうのは好き？\n🌟 What makes you happy during holidays?\n休みに何を幸せにする？"
-  },
-  {
-    "title": "43. New Years Celebration",
-    "content": "🎉 The new year is coming soon.\n新年すぐ来る。\n😰 Emi doesn't know how to celebrate.\nエミはどう祝うか知らない。\n🍜 She cooks traditional New Year food.\n伝統の新年料理作る。\n😊 Her family eats together at midnight.\n家族は一緒に年夜飯食べる。\n🎊 They watch the sunrise on January first.\n元旦日の出を見る。\n🌟 Emi starts the year with her family.\n家族と新年始める。\n\n🎉 How do you celebrate New Year?\n新年どう祝う？\n😰 What is difficult about New Year?\n新年難しいことは何？\n🍜 What traditional food do you eat?\nどんな伝統の食物食べる？\n😊 Do you eat with family on New Year?\n新年に家族と食べる？\n🎊 Do you watch the sunrise?\n日の出見る？\n🌟 How do you start your new year?\n新年どう始める？"
-  },
-  {
-    "title": "44. Winter Indoor Activities",
-    "content": "❄️ It is too cold to go outside today.\n今日外出る、寒すぎて。\n😊 Hana decides to stay home.\nハナは家にいればの决定。\n📚 She reads books all afternoon.\n午後も読書。\n🎮 She plays video games with her brother.\n弟とビデオゲーム。\n☕ They drink hot chocolate together.\n一緒に温かいチョコレ飲み。\n🌟 Hana enjoys her cozy winter day.\nハナは冬の可爱のの一日を享受。\n\n❄️ Do you stay home in cold weather?\n寒い日 家にいる？\n😊 What do you do at home?\n家で何する？\n📚 What books do you like reading?\nどんな読書好き？\n🎮 Do you play video games?\nゲームする？\n☕ What hot drink do you like?\nどんな温かい飲み物好き？\n🌟 Do you enjoy cozy winter days?\n冬の可爱のの日 Enjoy?"
-  },
-  {
-    "title": "45. Holiday Shopping",
-    "content": "🛍️ The holiday season is here.\nHolidayシーズン来到これ里。\n😰 Maya doesn't know what gifts to buy.\nマヤどのGift買えばいいかわからない。\n💡 She makes a list of people and ideas.\n人とアイデアのリスト作る。\n😊 She finds perfect gifts for everyone.\nみんなに完美のGift見つける。\n🎁 She wraps all the gifts beautifully.\nきれいに包む。\n🌟 Maya feels ready for Christmas.\nクリスマス準備できた感じる。\n\n🛍️ Do you go holiday shopping?\nHoliday買い物行く？\n😰 What gifts do you buy?\nどんなGift買う？\n💡 Do you make a gift list?\nGiftリスト作る？\n😊 Do you enjoy finding gifts?\nGift見つける의乐趣?\n🎁 Do you wrap gifts yourself?\nGift自分で包む？\n🌟 Do you feel ready for holidays?\nHoliday 준비 됐어?"
-  },
-  {
-    "title": "46. New Years Eve",
-    "content": "🥂 December 31st is New Year's Eve.\n大晦日。\n😊 Ryo celebrates with his family.\nリョウは家族と祝う。\n🕐 They stay up until midnight.\n午夜まで起きてる。\n🎆 They watch fireworks at midnight.\n午夜、花火見る。\n🌟 Ryo makes a New Year's resolution.\nリョウは新年决意作る。\n💪 He promises to study harder this year.\n今年もっと勉强发誓。\n\n🥂 Do you celebrate New Year's Eve?\n大晦日祝う？\n😊 Who do you celebrate with?\n誰と祝う？\n🕐 Do you stay up until midnight?\n午夜まで起きてる？\n🎆 Do you watch fireworks?\n花火見る？\n🌟 Do you make New Year's resolutions?\n新年决意作る？\n💪 What is your resolution?\nあなたの决意は？"
-  },
-  {
-    "title": "47. January Goals",
-    "content": "📅 January is the start of a new year.\n1月は新しい年の始まり。\n🎯 Yuki makes goals for the new year.\nユキは今年の目標作る。\n📚 She wants to improve her English.\n英語を向上させたい。\n🏃 She wants to exercise more.\nもっと運動したい。\n😊 She writes her goals on paper.\n紙に目标書く。\n🌟 Yuki feels motivated for the new year.\nユキは新しい年に Motivation 感じる。\n\n📅 What do you want to do in January?\n1月に何をしたい？\n🎯 What are your goals this year?\n今年の目標は？\n📚 Do you want to improve English?\n英語を向上させたい？\n🏃 Do you want to exercise more?\nもっと運動したい？\n😊 Do you write your goals?\n目标を書く？\n🌟 Do you feel motivated in January?\n1月に動機 느끼?"
-  },
-  {
-    "title": "48. Winter Memories",
-    "content": "❄️ Winter vacation is almost over.\n冬休みすぐ終わる。\n😊 Kenji enjoyed his winter break.\nケンジは冬休みを楽しんだ。\n📸 He took many photos with his family.\n家族写真を撮った。\n🎮 He played games and read books.\nゲームして読書した。\n🌟 He feels ready for school again.\n学校に戻る準備できた感じる。\n🏫 Kenji starts the new term happily.\nケンジは新しい学期を幸せ始める。\n\n❄️ What did you do during winter break?\n冬休みにしたことは何？\n😊 Did you enjoy your break?\n休みを楽しんだ？\n📸 Did you take many photos?\n写真を撮った？\n🎮 What games did you play?\nどんなゲームした？\n🌟 Do you feel ready for school?\n学校準備できた？\n🏫 Are you happy to start school?\n学校が始まる幸せ？"
-  }
+    // Story 1 - A New Routine
+    // Target Grammar: Present Perfect / Comparatives
+    {
+        title: "1. A New Routine (Present Perfect / Comparatives)",
+        content: `🏡 Emma has decided to change her lifestyle this month.
+エマは今月、生活様式を変えることに決めました。
+🏃‍♀️ She has started jogging in the park every morning.
+彼女は毎朝公園でジョギングを始めました。
+🌳 The fresh air makes her feel very energetic.
+新鮮な空気は彼女をとても活発な気分にさせます。
+⏰ Waking up early was difficult for her at first.
+早起きすることは、最初彼女にとって困難でした。
+💪 However, she is stronger now than she was last month.
+しかし、彼女は先月よりも今のほうが丈夫です。
+🥤 She also tries to drink a lot of water after running.
+彼女は走った後、たくさんの水を飲むようにもしています。
+🥗 It is important for her to eat a healthy breakfast, too.
+健康的な朝食を食べることも、彼女にとって重要です。
+😊 Her mother is happy to see Emma's effort.
+彼女の母はエマの努力を見て喜んでいます。
+📉 Emma has already lost a little weight since last week.
+エマは先週からすでに少し体重が減りました。
+🌟 She hopes to continue this good habit for a long time.
+彼女はこの良い習慣を長く続けたいと願っています。
+
+🏃‍♀️ Have you ever tried jogging in the morning?
+あなたは朝にジョギングをしてみたことがありますか？
+⏰ Is it difficult for you to wake up early?
+あなたにとって早起きすることは難しいですか？
+🥗 What do you usually eat for breakfast?
+あなたは普段朝食に何を食べますか？
+💪 Do you think you are healthier now than last year?
+あなたは去年より今のほうが健康的だと思いますか？
+🥤 How much water do you drink every day?
+あなたは毎日どれくらいの水を飲みますか？
+🌳 Do you like going to parks? Why or why not?
+あなたは公園に行くのが好きですか？なぜですか？
+🏃‍♀️ Do you like playing sports?
+あなたはどんなスポーツをするのが好きですか？
+😊 What makes you feel happy in the morning?
+朝、何があなたを幸せな気分にさせますか？
+📅 Do you have a daily routine?
+あなたは毎日の決まった習慣を持っていますか？
+🌟 What is one good habit you want to start?
+あなたが始めたい良い習慣はなんですか？`
+    },
+
+    // Story 2 - Helping at Home
+    // Target Grammar: Passive Voice / Adverbs
+    {
+        title: "2. Helping at Home (Passive Voice / Adverbs)",
+        content: `🧹 Kenta is busy because he helps his parents every day.
+ケンタは毎日両親を手伝っているので忙しいです。
+🍽️ The dishes are usually washed by Kenta after dinner.
+夕食後、皿はたいていケンタによって洗われます。
+🧺 He also likes to fold the laundry while watching TV.
+彼はテレビを見ながら洗濯物をたたむのも好きです。
+✨ The living room is kept clean thanks to his work.
+彼のア仕事のおかげで、居間はきれいに保たれています。
+🙏 His mother always says, "Thank you for helping me."
+彼の母はいつも「手伝ってくれてありがとう」と言います。
+⏳ It takes him about thirty minutes to finish his chores.
+彼が雑用を終えるのに約30分かかります。
+👦 Kenta is more helpful than his younger brother.
+ケンタは弟よりも役に立ちます。
+🚮 He has just taken out the garbage this morning.
+彼は今朝、ちょうどゴミを出したところです。
+👪 Helping the family is a natural thing for him.
+家族を助けることは、彼にとって当たり前のことです。
+😊 He feels proud when the house looks tidy.
+家が整頓されていると、彼は誇らしく感じます。
+
+🧹 Do you help with housework at home?
+あなたは家で家事を手伝いますか？
+🍽️ Who washes dishes at home?
+あなたの家族では誰が普段お皿を洗いますか？
+🧺 Do you know how to use a washing machine?
+あなたは洗濯機の使い方を知っていますか？
+⏳ How long does cleaning take?
+部屋を掃除するのにどれくらい時間がかかりますか？
+🚮 What is the easiest chore for you?
+あなたにとって一番簡単な家事は何ですか？
+😫 What housework do you dislike the most?
+あなたが一番嫌いな家事は何ですか？
+🙏 Do you think children should help their parents?
+子どもは両親を手伝うべきだと思いますか？
+🏠 Are rooms usually clean or messy?
+あなたの部屋は普段きれいですか、それとも散らかっていますか？
+📺 Do you do other things while watching TV?
+あなたはテレビを見ながら他のことをしますか？
+✨ How do you feel when rooms are clean?
+部屋がきれいだとどんな気分になりますか？`
+    },
+
+    // Story 3 - Joining a Music Club
+    // Target Grammar: Gerunds / Infinitive
+    {
+        title: "3. Joining a Music Club (Gerunds / Infinitive)",
+        content: `🎵 Yui joined the school music club in April.
+ユイは4月に学校の音楽部に入りました。
+🎸 She is interested in playing the guitar.
+彼女はギターを弾くことに興味があります。
+🎼 Learning a new instrument is not easy for her.
+新しい楽器を学ぶことは、彼女にとって簡単ではありません。
+👩‍🏫 However, the teacher teaches her very kindly.
+しかし、先生はとても親切に彼女に教えてくれます。
+📅 The club members practice together three times a week.
+部員たちは週に3回一緒に練習します。
+👂 Yui enjoys listening to the other students play.
+ユイは他の生徒が演奏するのを聞くのが好きです。
+🎉 They are planning to perform at the school festival.
+彼らは学園祭で演奏することを計画しています。
+🎹 Yui wants to be able to play a famous pop song.
+ユイは有名なポップソングを弾けるようになりたいです。
+🤝 Making music with friends is a lot of fun.
+友達と音楽を作ることはとても楽しいです。
+🌟 She has improved a lot since she started.
+彼女は始めてからずいぶん上達しました。
+
+🎵 Are you a member of any school club?
+あなたは学校のクラブのメンバーですか？
+🎸 Do you play any musical instruments?
+あなたは何か楽器を演奏しますか？
+🎤 Do you like singing songs?
+あなたは歌を歌うのが好きですか？
+🎼 What kind of music do you usually listen to?
+普段どんな種類の音楽を聴きますか？
+👩‍🏫 Are there strict teachers at schools?
+あなたの学校に厳しい先生はいますか？
+🎉 Have you ever performed on a stage?
+あなたはステージで演奏（演技）したことがありますか？
+📅 How often do you practice sports or music?
+あなたはどのくらいの頻度でスポーツや音楽を練習しますか？
+🎹 What instrument do you want to try in the future?
+将来どんな楽器に挑戦してみたいですか？
+🤝 Do you prefer doing things alone or with a group?
+一人で何かをするのとグループでするのと、どちらが好きですか？
+🌟 What is your favorite school event?
+あなたの一番好きな学校行事は何ですか？`
+    },
+
+    // Story 4 - Preparing for a Speech
+    // Target Grammar: Superlative / Adjectives
+    {
+        title: "4. Preparing for a Speech (Superlative / Adjectives)",
+        content: `🗣️ Daiki has to give a speech in English class tomorrow.
+ダイキは明日、英語の授業でスピーチをしなければなりません。
+📝 He has been writing his draft for two days.
+彼は2日間ずっと下書きを書いています。
+🌍 The topic of his speech is "Global Warming."
+彼のスピーチのテーマは「地球温暖化」です。
+😰 He feels nervous about speaking in front of people.
+彼は人前で話すことに緊張しています。
+⏱️ It is difficult to finish the speech in three minutes.
+スピーチを3分で終えるのは難しいです。
+👨‍🏫 His teacher advised him to speak slowly and clearly.
+先生は彼に、ゆっくりとはっきり話すよう助言しました。
+💪 Practicing in front of a mirror is helpful.
+鏡の前で練習することは役に立ちます。
+🏆 He wants to give the best speech in the class.
+彼はクラスで一番良いスピーチをしたいと思っています。
+🧠 Memorizing English sentences takes a lot of time.
+英語の文章を暗記するのは時間がかかります。
+🌟 Daiki hopes that everyone enjoys his ideas.
+ダイキはみんなが彼のアイデアを楽しんでくれることを願っています。
+
+🗣️ Do you like speaking in front of other people?
+あなたは人前で話すのが好きですか？
+📝 Have you ever written a speech in English?
+英語でスピーチを書いたことがありますか？
+🌍 Are you interested in environmental problems?
+あなたは環境問題に興味がありますか？
+😰 What makes you feel nervous?
+何があなたを緊張させますか？
+⏱️ Can you speak English for one minute without stopping?
+あなたは立ち止まらずに1分間英語を話せますか？
+👨‍🏫 Has a teacher ever given you good advice?
+先生があなたに良いアドバイスをくれたことはありますか？
+💪 How do you practice for a test or speech?
+あなたはテストやスピーチのためにどうやって練習しますか？
+🧠 Are you good at memorizing things?
+あなたは物事を暗記するのが得意ですか？
+🗣️ Which language do you want to speak fluently?
+どの言語を流暢に話せるようになりたいですか？
+🌟 What topic would you choose for a speech?
+スピーチのためにどんなトピックを選びますか？`
+    },
+
+    // Story 5 - Weekend Part-Time Job
+    // Target Grammar: Relative Clause / SVOO
+    {
+        title: "5. Weekend Part-Time Job (Relative Clause / SVOO)",
+        content: `☕ Haruka works at a cafe that is near the station.
+ハルカは駅の近くにあるカフェで働いています。
+📅 She usually works on Saturday and Sunday.
+彼女はたいてい土曜日と日曜日に働きます。
+🍰 There are many customers who love the cakes there.
+そこには、そこのケーキが大好きな多くのお客さんがいます。
+💴 She is saving money to buy a new smartphone.
+彼女は新しいスマホを買うためにお金を貯めています。
+😊 The manager gives her a free coffee after work.
+店長は仕事の後に彼女に無料のコーヒーをくれます。
+👔 It is important to be polite to the customers.
+お客さんに対して礼儀正しくすることは重要です。
+🗣️ She has learned how to speak to strangers.
+彼女は見知らぬ人への話し方を学びました。
+💪 Standing all day is tiring, but she enjoys it.
+一日中立っているのは疲れますが、彼女はそれを楽しんでいます。
+🤝 She has made friends with the other staff members.
+彼女は他のスタッフのメンバーと友達になりました。
+🌟 Working has taught her the value of money.
+働くことは彼女にお金の価値を教えました。
+
+☕ Do you want to have a part-time job?
+あなたはアルバイトをしたいですか？
+🍰 What kind of shop would you like to work at?
+どんな種類のお店で働きたいですか？
+💴 Are you saving money for anything special?
+何か特別なもののために貯金をしていますか？
+👔 Do you think being polite is important?
+礼儀正しくすることは大切だと思いますか？
+🗣️ Do you enjoy talking to new people?
+新しい人と話すのは楽しいですか？
+💪 What is the most tiring thing for you?
+あなたにとって一番疲れることは何ですか？
+🤝 Is it easy for you to make new friends?
+新しい友達を作るのはあなたにとって簡単ですか？
+☕ Do you prefer coffee or tea?
+コーヒーと紅茶、どちらが好きですか？
+🌟 What do people buy with their own money?
+最近自分のお金で何を買いましたか？
+📅 How do you spend weekends?
+週末はどのように過ごしますか？`
+    },
+
+    // Story 6 - Visiting Grandparents
+    // Target Grammar: Be going to / When clause
+    {
+        title: "6. Visiting Grandparents (Be going to / When clause)",
+        content: `🚅 Satoshi is going to visit his grandparents next week.
+サトシは来週、祖父母を訪ねる予定です。
+🏡 They live in a small village in the mountains.
+彼らは山の中の小さな村に住んでいます。
+👴 His grandfather grows vegetables in the garden.
+彼の祖父は庭で野菜を育てています。
+👵 When Satoshi arrives, his grandmother will cook dinner.
+サトシが到着すると、祖母が夕食を作ってくれます。
+🍅 Fresh vegetables taste much better than store-bought ones.
+新鮮な野菜は店で買ったものよりずっと美味しい味がします。
+🌌 The stars in the village are very beautiful at night.
+夜、村の星はとても美しいです。
+🚶‍♂️ Satoshi plans to go hiking with his grandfather.
+サトシは祖父とハイキングに行くことを計画しています。
+🎁 He has bought some Japanese sweets as a souvenir.
+彼はお土産として和菓子を買いました。
+😊 He is looking forward to seeing them again.
+彼はまた彼らに会うことを楽しみにしています。
+📸 He will take many photos during his stay.
+彼は滞在中にたくさんの写真を撮るでしょう。
+
+🏡 Do grandparents usually live nearby?
+あなたの祖父母は家の近くに住んでいますか？
+🚅 How often do people visit relatives?
+どのくらいの頻度で親戚を訪ねますか？
+🍅 Do you like eating vegetables?
+野菜を食べるのは好きですか？
+🌌 Have you ever seen a shooting star?
+流れ星を見たことがありますか？
+🚶‍♂️ Do you like hiking or walking in nature?
+ハイキングや自然の中を歩くのは好きですか？
+🎁 What souvenir would you buy for a foreign friend?
+外国の友達にどんなお土産を買いますか？
+👵 Is there a special food families cook?
+あなたの家族が作る特別な料理はありますか？
+📸 Do you like taking photos?
+スマホで写真を撮るのは好きですか？
+😊 Who are you looking forward to seeing?
+誰に会うのを楽しみにしていますか？
+🏞️ Do you prefer the city or the countryside?
+都会と田舎、どちらが好きですか？`
+    },
+
+    // Story 7 - A Study Abroad Dream
+    // Target Grammar: If clause / Auxiliaries
+    {
+        title: "7. A Study Abroad Dream (If clause / Auxiliaries)",
+        content: `✈️ Mei has a dream of studying in Canada.
+メイにはカナダに留学するという夢があります。
+🇨🇦 She thinks Canada is a beautiful and safe country.
+彼女はカナダが美しく安全な国だと思っています。
+📚 To achieve her dream, she must study English hard.
+夢を叶えるために、彼女は英語を一生懸命勉強しなければなりません。
+📺 She watches movies in English every weekend.
+彼女は毎週末、英語で映画を見ます。
+💰 Studying abroad costs a lot of money.
+留学には多額のお金がかかります。
+🗣️ If she goes to Canada, she will stay with a host family.
+もしカナダに行ったら、彼女はホストファミリーと滞在するつもりです。
+🤝 She wants to make friends from different countries.
+彼女はさまざまな国の友達を作りたいと思っています。
+📄 Her teacher told her to read more English books.
+先生は彼女にもっと英語の本を読むように言いました。
+🌟 She believes that this experience will change her life.
+彼女はこの経験が人生を変えると信じています。
+🗺️ Mei is excited to see the world.
+メイは世界を見ることにワクワクしています。
+
+✈️ Do you want to study abroad?
+あなたは留学したいですか？
+🇨🇦 Which country do you want to visit the most?
+一番訪れてみたい国はどこですか？
+📚 Why do you study English?
+なぜあなたは英語を勉強しますか？
+📺 What is favorite movies?
+あなたの一番好きな映画は何ですか？
+🗣️ Would you like to stay with a host family?
+ホストファミリーと一緒に滞在してみたいですか？
+🤝 Do you have any friends who live in other countries?
+他の国に住んでいる友達はいますか？
+💰 Is it important to save money for the future?
+将来のためにお金を貯めることは大切ですか？
+📄 Do you enjoy reading books in English?
+英語で本を読むのは楽しいですか？
+🌟 What is biggest dreams?
+あなたの最大の夢は何ですか？
+🗺️ Do you think traveling is important?
+旅行は大切だと思いますか？`
+    },
+
+    // Story 8 - Starting a Blog
+    // Target Grammar: Present Perfect Continuous / Adjectives
+    {
+        title: "8. Starting a Blog (Present Perfect Continuous / Adjectives)",
+        content: `💻 Ryo has been writing a blog for three months.
+リョウは3ヶ月間ブログを書いています。
+📝 He writes about his daily life and hobbies.
+彼は日常生活や趣味について書きます。
+📷 Sometimes, he uploads photos of his lunch.
+時々、彼は昼食の写真をアップロードします。
+🌐 It is exciting to get comments from strangers.
+見知らぬ人からコメントをもらうのはワクワクします。
+🖊️ Writing articles is a good way to practice writing.
+記事を書くことは、ライティングを練習する良い方法です。
+👀 He checks his blog every day to see the views.
+彼は閲覧数を見るために毎日ブログをチェックします。
+📉 At first, not many people read his blog.
+最初、あまり多くの人は彼のブログを読みませんでした。
+📈 But now, the number of readers is increasing.
+しかし今、読者の数は増えています。
+😊 Ryo is happy when people say his blog is funny.
+人々が彼のブログを面白いと言ってくれると、リョウは嬉しいです。
+🚀 He wants to become a famous blogger someday.
+彼はいつか有名なブロガーになりたいと思っています。
+
+💻 Do you read any blogs or websites often?
+あなたはよくブログやウェブサイトを読みますか？
+📝 Do you keep a diary?
+あなたは日記をつけていますか？
+📷 Do you like posting photos on social media?
+SNSに写真を投稿するのは好きですか？
+🌐 Have you ever written a comment on a video?
+動画にコメントを書いたことはありますか？
+🖊️ Do you prefer writing by hand or typing?
+手書きとタイピング、どちらが好きですか？
+👀 How much time do you spend on the internet?
+インターネットにどれくらいの時間を費やしますか？
+😊 What makes you feel excited?
+何があなたをワクワクさせますか？
+📉 Have you ever started something and stopped?
+何かを始めてやめてしまったことはありますか？
+🚀 Do you want to be famous? Why?
+有名になりたいですか？なぜですか？
+📈 What kind of videos do you watch online?
+オンラインでどんな種類の動画を見ますか？`
+    },
+
+    // Story 9 - Training for Sports Day
+    // Target Grammar: Because / Comparative
+    {
+        title: "9. Training for Sports Day (Because / Comparative)",
+        content: `🏃‍♂️ Koki is training hard because Sports Day is coming.
+運動会が近づいているので、コウキは一生懸命トレーニングしています。
+👟 He runs faster than any other student in his class.
+彼はクラスの他のどの生徒よりも速く走ります。
+🥇 He wants to win the 100-meter race.
+彼は100メートル走で勝ちたいと思っています。
+💦 Practice is very tough, but he never gives up.
+練習はとてもきついですが、彼は決してあきらめません。
+🥤 Drinking sports drinks helps him feel better.
+スポーツドリンクを飲むことは、彼の気分を良くするのに役立ちます。
+👥 His friends cheer for him during practice.
+練習中、友達が彼を応援してくれます。
+👟 He bought a new pair of running shoes yesterday.
+彼は昨日、新しいランニングシューズを１足買いました。
+💪 He feels that his legs are getting stronger.
+彼は足が強くなっていると感じています。
+🎉 Koki is excited to run in front of his parents.
+コウキは両親の前で走ることにワクワクしています。
+🌟 He hopes his team will win the relay.
+彼は自分のチームがリレーで勝つことを願っています。
+
+🏃‍♂️ Do you like Sports Day?
+あなたは運動会が好きですか？
+👟 Can you run fast?
+あなたは速く走れますか？
+🥇 Have you ever won a prize or a medal?
+賞やメダルを取ったことはありますか？
+💦 What do you do when you feel tired?
+疲れたとき、あなたは何をしますか？
+🥤 What is your favorite drink?
+スポーツの後の好きな飲み物は何ですか？
+👥 Do you like team sports or individual sports?
+チームスポーツと個人スポーツ、どちらが好きですか？
+💪 Do you do any muscle training?
+筋力トレーニングをしていますか？
+🎉 Do families come to school events?
+家族はあなたの学校行事を見に来ますか？
+🌟 Do you think winning is the most important thing?
+勝つことが一番大事なことだと思いますか？
+👟 What brand of shoes do you like?
+どのブランドの靴が好きですか？`
+    },
+
+    // Story 10 - Working on a Group Project
+    // Target Grammar: Make + Object + Adjective
+    {
+        title: "10. Working on a Group Project (Make + Object + Adjective)",
+        content: `🧪 Hana is working on a science project with her group.
+ハナはグループで科学のプロジェクトに取り組んでいます。
+🎨 They decided to make a big poster about space.
+彼らは宇宙についての大きなポスターを作ることに決めました。
+✂️ Hana is good at drawing, so she draws the pictures.
+ハナは絵を描くのが得意なので、彼女が絵を描きます。
+🗣️ The members talk to each other to share ideas.
+メンバーはアイデアを共有するために互いに話し合います。
+🕰️ Sometimes it is hard to finish the work on time.
+時々、時間通りに作業を終えるのは難しいです。
+😠 One boy didn't do his work, which made Hana angry.
+ある男の子が自分の仕事をせず、それはハナを怒らせました。
+🤝 However, they learned to cooperate in the end.
+しかし、最後には彼らは協力することを学びました。
+📄 The poster looks very colorful and interesting.
+ポスターはとてもカラフルで面白そうに見えます。
+👩‍🏫 The teacher praised their good teamwork.
+先生は彼らの良いチームワークを褒めました。
+🌟 Hana felt happy to complete the project.
+ハナはプロジェクトを完了して嬉しく感じました。
+
+🧪 Do you like science class?
+理科の授業は好きですか？
+🎨 Are you good at drawing or painting?
+絵を描くのは得意ですか？
+🗣️ Do you like working in a group?
+グループで作業するのは好きですか？
+🕰️ Are you usually on time for appointments?
+普段、約束の時間に間に合いますか？
+😠 What makes you feel angry?
+何があなたを怒らせますか？
+🤝 Is teamwork important in society?
+社会においてチームワークは大切ですか？
+📄 Have you ever made a poster?
+ポスターを作ったことがありますか？
+👩‍🏫 Do you like presenting in front of the class?
+クラスの前で発表するのは好きですか？
+🌟 How do you feel when you finish a difficult task?
+難しい課題を終えたとき、どんな気分になりますか？
+🗣️ What creates a good group leader?
+何が良いグループリーダーを作りますか？`
+    },
+
+    // Story 11 - A School Festival Day
+    // Target Grammar: Passive Voice / Be covered with
+    {
+        title: "11. A School Festival Day (Passive Voice / Be covered with)",
+        content: `🎪 Yuna is very busy preparing for the school festival.
+ユナは学園祭の準備でとても忙しいです。
+🎨 Her classroom is decorated with colorful papers.
+彼女の教室はカラフルな紙で飾られています。
+🖼️ The students decided to make an art gallery.
+生徒たちはアートギャラリーを作ることに決めました。
+🖌️ Yuna enjoys painting pictures with her friends.
+ユナは友達と絵を描くのを楽しんでいます。
+👩‍🏫 Her teacher said, "Let's do our best together."
+彼女の先生は「一緒に全力を尽くしましょう」と言いました。
+🕒 They have been working since early this morning.
+彼らは今朝早くからずっと作業しています。
+🧹 The floor must be cleaned before the guests arrive.
+お客さんが到着する前に、床を掃除しなければなりません。
+😊 Yuna is excited to show her art to her parents.
+ユナは両親に自分のアートを見せることにワクワクしています。
+📸 Many photos will be taken during the festival.
+お祭りの間、たくさんの写真が撮られるでしょう。
+🌟 She thinks that school events are important memories.
+彼女は学校行事は大切な思い出だと考えています。
+
+🎪 Do you like school festivals?
+あなたは学園祭が好きですか？
+🎨 What do classes do at festivals?
+あなたのクラスは前の学園祭で何をしましたか？
+🖌️ Are you good at painting or drawing?
+あなたは絵を描くのが得意ですか？
+🖼️ Do you like going to art museums?
+美術館に行くのは好きですか？
+🧹 Do you help clean classrooms?
+あなたは教室の掃除を手伝いますか？
+📸 Do you like taking photos of friends?
+友達の写真を撮るのは好きですか？
+😊 Who would you invite to a school festival?
+学園祭に誰を招待したいですか？
+🕒 Have you ever stayed at school late?
+学校に遅くまで残ったことはありますか？
+🌟 What is a good school memory?
+中学校での一番の思い出は何ですか？
+🎭 Do you prefer watching shows or doing them?
+ショーを見るのとやるのとでは、どちらが好きですか？`
+    },
+
+    // Story 12 - A Trip to the Aquarium
+    // Target Grammar: Look + Adjective / Interested in
+    {
+        title: "12. A Trip to the Aquarium (Look + Adjective / Interested in)",
+        content: `🐟 Takumi visited a large aquarium last Sunday.
+タクミは先週の日曜日に大きな水族館を訪れました。
+🦈 He was surprised to see the big sharks.
+彼は大きなサメを見て驚きました。
+🌊 The water in the tank looked very clean and blue.
+水槽の水はとてもきれいで青く見えました。
+📷 Taking photos of fish is difficult because they move fast.
+魚は速く動くので、写真を撮るのは難しいです。
+🐬 The dolphin show was the most exciting part.
+イルカショーは最もワクワクする部分でした。
+🐧 He saw penguins that were walking on the ice.
+彼は氷の上を歩いているペンギンを見ました。
+🧠 Takumi is interested in sea animals.
+タクミは海の生き物に興味を持っています。
+🎁 He bought a dolphin strap for his sister.
+彼は妹のためにイルカのストラップを買いました。
+😊 It is fun to learn about life under the sea.
+海中の生物について学ぶのは楽しいです。
+🌟 He wants to go there again next summer.
+彼は来年の夏にまたそこへ行きたいと思っています。
+
+🐟 Do you like going to aquariums?
+あなたは水族館に行くのが好きですか？
+🦈 Which do you like better, sharks or dolphins?
+サメとイルカ、どちらが好きですか？
+📷 Is it difficult to take photos of animals?
+動物の写真を撮るのは難しいですか？
+🌊 Do you know how to swim?
+あなたは泳ぎ方を知っていますか？
+🐧 What is your favorite sea animal?
+一番好きな海の生き物は何ですか？
+🎁 Do you usually buy souvenirs when you travel?
+旅行するとき普段お土産を買いますか？
+🧠 Are you interested in biology or science?
+あなたは生物学や科学に興味がありますか？
+😊 Who do you go with on trips?
+この前の旅行は誰と行きましたか？
+🌟 Where do you want to go next summer?
+次の夏はどこへ行きたいですか？
+🐠 Have you ever had a fish as a pet?
+魚をペットとして飼ったことはありますか？`
+    },
+
+    // Story 13 - Learning to Cook
+    // Target Grammar: How to... / Give + Person + Thing
+    {
+        title: "13. Learning to Cook (How to... / Give + Person + Thing)",
+        content: `🍳 Miki has started learning how to cook.
+ミキは料理の仕方を学び始めました。
+👩‍🍳 Her mother teaches her how to make miso soup.
+彼女の母は彼女に味噌汁の作り方を教えます。
+🔪 Cutting vegetables carefully is very important.
+野菜を注意深く切ることはとても重要です。
+🍛 Last weekend, she made curry for her family.
+先週末、彼女は家族のためにカレーを作りました。
+😋 Her father said, "This is delicious!"
+彼女の父は「これはおいしい！」と言いました。
+🔥 Miki must be careful when she uses fire.
+ミキは火を使うとき気をつけなければなりません。
+📖 She often reads recipes on the internet.
+彼女はよくインターネットでレシピを読みます。
+🍱 She wants to make her own bento for school.
+彼女は学校用に自分のお弁当を作りたいと思っています。
+😊 Cooking makes her feel happy and relaxed.
+料理は彼女を幸せでリラックスした気分にさせます。
+🌟 One day, she wants to cook a meal for her friends.
+いつか、彼女は友達のために食事を作りたいと思っています。
+
+🍳 Do you cook at home?
+あなたは家で料理をしますか？
+🍛 What is your favorite food?
+食べるのが一番好きな食べ物は何ですか？
+🔪 Can you use a knife well?
+あなたは包丁を上手に使えますか？
+👩‍🍳 Who usually cooks dinner at home?
+あなたの家族では誰が普段夕食を作りますか？
+🍱 Do you bring a bento to school or buy lunch?
+学校にお弁当を持っていきますか、それとも昼食を買いますか？
+📖 Do you watch cooking videos on YouTube?
+YouTubeで料理の動画を見ますか？
+🔥 Have you ever burned food?
+食べ物を焦がしたことはありますか？
+😋 What food do you dislike?
+嫌いな食べ物は何ですか？
+🌟 If you could cook anything, what would you make?
+もし何でも作れるなら、何を作りますか？
+😊 Do you think cooking is a useful skill?
+料理は役に立つスキルだと思いますか？`
+    },
+
+    // Story 14 - A Rainy Day at Home
+    // Target Grammar: Present Perfect Continuous / Stop -ing
+    {
+        title: "14. A Rainy Day at Home (Present Perfect Continuous / Stop -ing)",
+        content: `🌧️ It has been raining since this morning.
+今朝からずっと雨が降っています。
+🏠 Ayaka decided to stay at home today.
+アヤカは今日、家にいることに決めました。
+🛍️ She wanted to go shopping, but she stopped thinking about it.
+彼女は買い物に行きたかったですが、それについて考えるのをやめました。
+📚 Instead, she started reading a new book.
+その代わりに、彼女は新しい本を読み始めました。
+☕ Drinking hot tea makes her feel warm.
+温かいお茶を飲むことは彼女を温かい気分にさせます。
+🎧 She enjoys listening to quiet music in her room.
+彼女は部屋で静かな音楽を聴くのを楽しみます。
+💤 Sometimes, rainy days make her sleepy.
+時々、雨の日は彼女を眠くさせます。
+📞 She talked with her friend on the phone for an hour.
+彼女は友達と電話で1時間話しました。
+🌈 She hopes the weather will be nice tomorrow.
+彼女は明日天気が良くなることを願っています。
+😊 Spending time alone is not bad.
+一人で時間を過ごすのも悪くありません。
+
+🌧️ What do you do on rainy days?
+雨の日には何をしますか？
+🏠 Do you like staying home or going out?
+家にいるのと外出するのと、どちらが好きですか？
+📚 Do you read books often? What kind?
+よく本を読みますか？どんな種類ですか？
+☕ What is your favorite hot drink?
+一番好きな温かい飲み物は何ですか？
+🎧 Do you listen to music while studying?
+勉強中に音楽を聴きますか？
+💤 Do you take naps on weekends?
+週末に昼寝をしますか？
+📞 How long do you usually talk on the phone?
+普段どれくらい電話で話しますか？
+🌈 Which season do you like the best?
+どの季節が一番好きですか？
+☔ Do you carry an umbrella every day?
+毎日傘を持ち歩きますか？
+😊 Do you feel lonely when you are alone?
+一人でいるとき寂しく感じますか？`
+    },
+
+    // Story 15 - Practicing an Instrument
+    // Target Grammar: Comparative / Want to be
+    {
+        title: "15. Practicing an Instrument (Comparative / Want to be)",
+        content: `🎻 Shun practices the violin every day after school.
+シュンは放課後毎日バイオリンを練習します。
+🏠 He usually practices in his room for two hours.
+彼はたいてい自分の部屋で2時間練習します。
+🎶 Playing the violin is more difficult than playing the piano.
+バイオリンを弾くことはピアノを弾くことより難しいです。
+🎼 However, he loves the beautiful sound of the violin.
+しかし、彼はバイオリンの美しい音が大好きです。
+👨‍👩‍👦 His parents always encourage him to keep trying.
+彼の両親はいつも、挑戦し続けるよう彼を励まします。
+🏆 He wants to be a professional musician in the future.
+彼は将来プロの音楽家になりたいと思っています。
+📅 Next month, he has an important concert.
+来月、彼には重要なコンサートがあります。
+🎵 He has memorized all the notes for the song.
+彼はその曲のすべての音符を暗記しました。
+😊 Shun feels happy when he plays well.
+シュンは上手に弾けたとき、嬉しく感じます。
+🌟 Music is the most important thing in his life.
+音楽は彼の人生で最も重要なものです。
+
+🎻 Have you ever played the violin?
+バイオリンを弾いたことはありますか？
+🎶 Is it difficult for you to read music?
+楽譜を読むのはあなたにとって難しいですか？
+🎼 Do you prefer classical music or pop music?
+クラシック音楽とポップス、どちらが好きですか？
+👨‍👩‍👦 Do parents support hobbies?
+ご両親はあなたの趣味を応援してくれますか？
+🏆 What do you want to be in the future?
+将来何になりたいですか？
+📅 Do you get nervous before a test or concert?
+テストやコンサートの前に緊張しますか？
+🎵 Can you sing a song in English?
+英語で歌を歌えますか？
+🏠 Where do you usually study or practice?
+普段どこで勉強や練習をしますか？
+😊 What makes you feel proud?
+何があなたに自分を誇らしく感じさせますか？
+🌟 Do you have a favorite musician?
+好きな音楽家はいますか？`
+    },
+
+    // Story 16 - Cleaning the Local Park
+    // Target Grammar: Passive Voice / Be glad to
+    {
+        title: "16. Cleaning the Local Park (Passive Voice / Be glad to)",
+        content: `🌳 Riku joined a volunteer group last Saturday.
+リクは先週の土曜日にボランティアグループに参加しました。
+🧤 They went to the local park to pick up trash.
+彼らはゴミを拾うために地元の公園へ行きました。
+🗑️ Many plastic bottles were found under the benches.
+多くのペットボトルがベンチの下で見つかりました。
+♻️ The trash must be separated into different bags.
+ゴミは別々の袋に分別されなければなりません。
+👴 An old man said to Riku, "Thank you for your hard work."
+あるお年寄りがリクに「頑張ってくれてありがとう」と言いました。
+😊 Riku was glad to hear those kind words.
+リクはその優しい言葉を聞いて嬉しかったです。
+🌿 Now, the park looks much cleaner than before.
+今、公園は以前よりずっときれいに見えます。
+🤝 Working together with neighbors is a good experience.
+近所の人たちと協力することは良い経験です。
+🌍 Riku thinks we should protect our environment.
+リクは私たちが環境を守るべきだと考えています。
+🌟 He decided to join the activity again next month.
+彼は来月もまたその活動に参加することに決めました。
+
+🌳 Have you ever done volunteer work?
+ボランティア活動をしたことがありますか？
+🗑️ Do you separate trash at home?
+家でゴミを分別していますか？
+♻️ Why is recycling important?
+なぜリサイクルは重要だと思いますか？
+🧤 Do you mind getting dirty?
+手が汚れるのは気になりますか？
+👴 Do you talk to neighbors?
+近所の人とよく話しますか？
+😊 When did someone say "thank you" to you recently?
+最近いつ誰かに「ありがとう」と言われましたか？
+🌿 Do you like clean places?
+きれいな場所は好きですか？
+🌍 What can we do to help the earth?
+地球を助けるために何ができますか？
+🤝 Is it easy to work with new people?
+新しい人と一緒に働くのは簡単ですか？
+🌟 Do you want to join a community group?
+地域のグループに参加したいですか？`
+    },
+
+    // Story 17 - A Long Phone Call
+    // Target Grammar: Enjoy -ing / Adverbial clauses
+    {
+        title: "17. A Long Phone Call (Enjoy -ing / Adverbial clauses)",
+        content: `📱 Saki called her cousin who lives in Tokyo.
+サキは東京に住んでいるいとこに電話しました。
+🏙️ Her cousin has just started high school life there.
+彼女のいとこはそこで高校生活を始めたばかりです。
+🗣️ They enjoyed talking about their schools and friends.
+二人は学校や友達について話すのを楽しみました。
+😲 Saki was surprised to hear that Tokyo is very crowded.
+サキは東京がとても混雑していると聞いて驚きました。
+⌛ They talked for more than two hours.
+彼らは2時間以上話しました。
+🌙 It was already midnight when they finished talking.
+話し終えたとき、すでに真夜中でした。
+😊 Saki felt that time flies when she is having fun.
+サキは、楽しんでいるときは時間が経つのが早いと感じました。
+📧 They promised to send messages to each other.
+彼らはお互いにメッセージを送ることを約束しました。
+😴 The next morning, Saki was a little sleepy.
+翌朝、サキは少し眠かったです。
+🌟 Keeping in touch with family is important for her.
+家族と連絡を取り合うことは彼女にとって大切です。
+
+📱 Do you prefer phone calls or text messages?
+電話とテキストメッセージ、どちらが好きですか？
+🏙️ Do you want to live in a big city like Tokyo?
+東京のような大都市に住みたいですか？
+🗣️ Who do you talk to the most?
+誰と一番よく話しますか？
+⌛ What is the longest time you have talked on the phone?
+電話で話した最長時間はどれくらいですか？
+🌙 What time do you usually go to bed?
+普段何時に寝ますか？
+😲 Have you ever been to Tokyo?
+東京に行ったことがありますか？
+😊 Does time fly when you play video games?
+テレビゲームをしていると時間は早く過ぎますか？
+📧 How many messages do you send a day?
+1日に何通メッセージを送りますか？
+😴 Is it hard for you to wake up in the morning?
+朝起きるのはつらいですか？
+🌟 Do you have cousins? Are you close to them?
+いとこはいますか？彼らと仲が良いですか？`
+    },
+
+    // Story 18 - Visiting a Museum
+    // Target Grammar: Be interested in / Passive
+    {
+        title: "18. Visiting a Museum (Be interested in / Passive)",
+        content: `🏛️ Haru went to the history museum with his class.
+ハルはクラスと一緒に歴史博物館へ行きました。
+🚌 They went there by bus from their school.
+彼らは学校からバスでそこへ行きました。
+🏺 Haru is interested in old Japanese culture.
+ハルは日本の古い文化に興味があります。
+🏯 The museum building was built one hundred years ago.
+その博物館の建物は100年前に建てられました。
+👀 They looked at many old tools and clothes.
+彼らはたくさんの古い道具や服を見ました。
+📝 The students had to take notes for their report.
+生徒たちはレポートのためにメモを取らなければなりませんでした。
+🤔 Haru wondered how people lived without electricity.
+ハルは電気がなしで人々がどう暮らしていたのか不思議に思いました。
+📸 Taking photos was allowed in some rooms.
+いくつかの部屋では写真を撮ることが許可されていました。
+😊 He learned many new things about his city.
+彼は自分の街について多くの新しいことを学びました。
+🌟 Haru wants to visit the museum again with his family.
+ハルは家族と一緒にもう一度その博物館を訪れたいと思っています。
+
+🏛️ Do you like history?
+あなたは歴史が好きですか？
+🚌 Do you take a bus to school?
+学校へはバスで行きますか？
+🏺 What old things do you have in houses?
+あなたの家にどんな古いものがありますか？
+👀 Do you prefer looking at things or reading about them?
+物を見るのと読むのとでは、どちらが好きですか？
+📝 Do you like writing reports?
+レポートを書くのは好きですか？
+🤔 Can you live without a smartphone for a day?
+1日スマホなしで生活できますか？
+📸 Do you follow the rules in public places?
+公共の場所でルールを守りますか？
+😊 What is the most interesting subject for you?
+あなたにとって一番面白い教科は何ですか？
+🌟 What museums have you visited?
+どんな博物館を訪れたことがありますか？
+🏯 Do you like visiting old temples?
+古いお寺を訪れるのは好きですか？`
+    },
+
+    // Story 19 - Starting a New Club
+    // Target Grammar: Relative pronoun / Try to
+    {
+        title: "19. Starting a New Club (Relative pronoun / Try to)",
+        content: `📝 Aya loves writing stories and poems.
+アヤは物語や詩を書くのが大好きです。
+🏫 She decided to start a Creative Writing Club at school.
+彼女は学校で創作ライティング部を始めることに決めました。
+👥 She needed five members to start the new club.
+新しい部を始めるには5人のメンバーが必要でした。
+🗣️ She talked to her friends who like reading books.
+彼女は本を読むのが好きな友達に話しました。
+📄 They made posters to advertise their club.
+彼らは部を宣伝するためにポスターを作りました。
+😊 Luckily, six students joined the club.
+幸運なことに、6人の生徒が入部しました。
+✍️ Now, they try to write a short story every week.
+今、彼らは毎週短い物語を書こうとしています。
+📚 They read each other's stories and share comments.
+彼らはお互いの物語を読み、コメントを共有します。
+🌟 Aya is happy that she has friends with the same hobby.
+アヤは同じ趣味を持つ友達がいて幸せです。
+🚀 Her dream is to publish a book in the future.
+彼女の夢は将来本を出版することです。
+
+📝 Do you like writing?
+書くことは好きですか？
+🏫 Do schools have many clubs?
+あなたの学校にはたくさんのクラブがありますか？
+👥 If you started a club, what kind would it be?
+もしクラブを作るなら、どんな種類にしますか？
+🗣️ Are you good at asking people for help?
+人に助けを求めるのは得意ですか？
+📄 Do you know how to make a poster?
+ポスターの作り方を知っていますか？
+✍️ Have you ever written a story?
+物語を書いたことがありますか？
+📚 What is your favorite book genre?
+好きな本のジャンルは何ですか？
+🌟 Do you share the same hobbies with friends?
+友達と同じ趣味を共有していますか？
+🚀 What is a dream job?
+あなたの夢の仕事は何ですか？
+😊 Are you a leader or a follower?
+あなたはリーダータイプですか、フォロワータイプですか？`
+    },
+
+    // Story 20 - A Busy Morning
+    // Target Grammar: Too... to... / Be late for
+    {
+        title: "20. A Busy Morning (Too... to... / Be late for)",
+        content: `⏰ Ken overslept this morning because his alarm didn't ring.
+今朝、目覚ましが鳴らなかったのでケンは寝坊しました。
+😱 He was too shocked to move for a moment.
+彼はショックのあまり一瞬動けませんでした。
+🍞 He didn't have time to eat breakfast.
+彼には朝食を食べる時間がありませんでした。
+🏃‍♂️ He ran to the station as fast as he could.
+彼はできるだけ速く駅まで走りました。
+🚋 However, he missed the train that he usually takes.
+しかし、彼はいつも乗る電車を逃してしまいました。
+😰 He was worried about being late for school.
+彼は学校に遅刻することを心配しました。
+📱 He sent a message to his friend saying, "I might be late."
+彼は友達に「遅れるかもしれない」とメッセージを送りました。
+🏫 Luckily, he arrived at the school gate just in time.
+幸運なことに、彼は学校の門にギリギリ間に合って到着しました。
+💨 He was very tired and out of breath.
+彼はとても疲れて息切れしていました。
+🌟 Ken decided to go to bed earlier tonight.
+ケンは今夜もっと早く寝ることに決めました。
+
+⏰ Do you use an alarm clock to wake up?
+起きるために目覚まし時計を使いますか？
+😱 Have you ever overslept on an important day?
+大事な日に寝坊したことがありますか？
+🍞 Do you eat breakfast every day?
+毎日朝食を食べますか？
+🏃‍♂️ Are you a fast runner?
+走るのは速いですか？
+🚋 How do you go to school?
+どうやって学校に行きますか？
+😰 What do you do when you are late?
+遅刻したときどうしますか？
+📱 Do you text friends often?
+よく友達にメッセージを送りますか？
+🏫 What time does the first class start?
+最初の授業は何時に始まりますか？
+💨 Do you get tired easily?
+疲れやすいですか？
+🌟 What time do you usually sleep?
+普段何時に寝ますか？`
+    },
+
+    // Story 21 - A Visit to the Library
+    // Target Grammar: Present Perfect / Recommend
+    {
+        title: "21. A Visit to the Library (Present Perfect / Recommend)",
+        content: `📚 Haruka has visited the school library many times this month.
+ハルカは今月、何度も学校の図書室を訪れています。
+📖 She likes reading mystery novels very much.
+彼女はミステリー小説を読むのがとても好きです。
+👩‍🏫 The librarian recommended a famous book to her.
+司書の先生が彼女に有名な本を勧めました。
+🔍 The story is about a detective who solves difficult cases.
+その物語は、難事件を解決する探偵についてのものです。
+🤔 Reading books makes her think deeply.
+本を読むことは彼女に深く考えさせます。
+📝 She has written a book report for her Japanese class.
+彼女は国語の授業のために読書感想文を書きました。
+🤫 You must be quiet when you are in the library.
+図書室にいるときは静かにしなければなりません。
+🤝 Haruka often borrows books that her friends like.
+ハルカはよく友達が好きな本を借ります。
+🌟 She thinks that libraries are wonderful places.
+彼女は図書室は素晴らしい場所だと思っています。
+📅 She plans to read ten books during the summer vacation.
+彼女は夏休みの間に10冊の本を読む予定です。
+
+📚 Do you go to the library often?
+よく図書館に行きますか？
+📖 What was the last book you read?
+最後に読んだ本は何ですか？
+👩‍🏫 Do you ask teachers for advice?
+先生にアドバイスを求めますか？
+🔍 Do you like mystery movies or books?
+ミステリー映画や本は好きですか？
+🤔 Do you like thinking about puzzles?
+パズルについて考えるのは好きですか？
+📝 Have you written a book report recently?
+最近読書感想文を書きましたか？
+🤫 Can you stay quiet for a long time?
+長い間静かにしていられますか？
+🤝 Do you lend books to friends?
+友達に本を貸しますか？
+🌟 What is your favorite place in school?
+学校で一番好きな場所はどこですか？
+📅 How many books do you read in a year?
+1年に何冊本を読みますか？`
+    },
+
+    // Story 22 - A New Pet
+    // Target Grammar: Take care of / Adjective
+    {
+        title: "22. A New Pet (Take care of / Adjective)",
+        content: `🐹 Nao got a hamster for her birthday last week.
+ナオは先週の誕生日にハムスターをもらいました。
+🏠 She bought a small cage and put it in her room.
+彼女は小さなケージを買って部屋に置きました。
+📛 She named the hamster "Chibi" because it is very small.
+とても小さいので、彼女はハムスターを「チビ」と名付けました。
+🌻 Taking care of a pet is not easy work.
+ペットの世話をするのは簡単な仕事ではありません。
+💧 She changes the water and gives it food every day.
+彼女は毎日水を替え、エサを与えます。
+🏃‍♂️ Chibi likes running on the wheel at night.
+チビは夜に回し車で走るのが好きです。
+👀 Watching the hamster makes Nao smile.
+ハムスターを見ているとナオは笑顔になります。
+🧹 She has to clean the cage once a week.
+彼女は週に一度ケージを掃除しなければなりません。
+😊 Chibi is becoming more friendly to her.
+チビは彼女に対してより人懐っこくなってきています。
+🌟 Nao loves her new small family member.
+ナオは新しい小さな家族のメンバーを愛しています。
+
+🐹 Do you have any pets?
+ペットを飼っていますか？
+🏠 Do you want to keep an animal in rooms?
+部屋で動物を飼いたいですか？
+📛 Do you have a nickname?
+あだ名はありますか？
+🌻 Is it difficult to take care of animals?
+動物の世話をするのは難しいですか？
+💧 What chores do you do every day?
+毎日どんな雑用をしますか？
+🏃‍♂️ Are you active at night or in the morning?
+あなたは夜型ですか、朝型ですか？
+👀 What makes you smile?
+何があなたを笑顔にしますか？
+🧹 Do you like cleaning?
+掃除は好きですか？
+😊 Are you shy or friendly?
+あなたはシャイですか、それともフレンドリーですか？
+🌟 What animal do you want to have?
+どんな動物を飼いたいですか？`
+    },
+
+    // Story 23 - A Class Debate
+    // Target Grammar: Agree/Disagree with / Opinion
+    {
+        title: "23. A Class Debate (Agree/Disagree with / Opinion)",
+        content: `🗣️ Yuto's class had a debate yesterday.
+ユウトのクラスは昨日討論会をしました。
+📱 The topic was "Students should not use smartphones at school."
+テーマは「生徒は学校でスマホを使うべきではない」でした。
+🤔 Yuto thought about this topic very seriously.
+ユウトはこのテーマについてとても真剣に考えました。
+👍 He agreed with the idea because smartphones can be distracting.
+スマホは気が散る原因になるので、彼はその考えに賛成しました。
+📚 Students should focus on studying during class.
+生徒は授業中、勉強に集中すべきです。
+✋ However, some students disagreed with him.
+しかし、何人かの生徒は彼に反対しました。
+🔍 They said smartphones are useful for searching for information.
+彼らは、スマホは情報を探すのに便利だと言いました。
+👂 Listening to other opinions is very important.
+他の意見を聞くことはとても重要です。
+🎤 Yuto stood up and spoke his opinion clearly.
+ユウトは立ち上がり、自分の意見をはっきりと述べました。
+🌟 It was a good chance to think about school rules.
+それは校則について考える良い機会でした。
+
+🗣️ Do you like debating?
+討論するのは好きですか？
+📱 Do you bring smartphones to school?
+学校にスマホを持っていきますか？
+🤔 Do you think school rules are strict?
+校則は厳しいと思いますか？
+👍 Do you agree that students need smartphones?
+生徒にスマホが必要だということに賛成ですか？
+📚 Can you focus on studying at home?
+家で勉強に集中できますか？
+✋ Is it hard to say "no" to friends?
+友達に「いいえ」と言うのは難しいですか？
+🔍 Do you use the internet for homework?
+宿題にインターネットを使いますか？
+👂 Are you a good listener?
+あなたは聞き上手ですか？
+🎤 Can you speak your opinion clearly?
+自分の意見をはっきりと話せますか？
+🌟 What rule do you want to change at school?
+学校でどんなルールを変えたいですか？`
+    },
+
+    // Story 24 - A Snowy Morning
+    // Target Grammar: So... that... / It is [adjective] to...
+    {
+        title: "24. A Snowy Morning (So... that... / It is [adjective] to...)",
+        content: `❄️ It snowed heavily last night.
+昨夜、雪が激しく降りました。
+⛄ The garden was covered with white snow this morning.
+今朝、庭は白い雪で覆われていました。
+🥶 It was so cold that Kenji didn't want to get out of bed.
+あまりに寒かったので、ケンジはベッドから出たくありませんでした。
+🚌 The bus was late because of the icy roads.
+凍った道路のせいでバスが遅れました。
+🚶‍♂️ Walking on the snow is slippery and dangerous.
+雪の上を歩くのは滑りやすくて危険です。
+🧤 He wore gloves and a thick coat to stay warm.
+彼は暖かくするために手袋と厚いコートを着ました。
+🏫 When he arrived at school, his friends were making a snowman.
+学校に着くと、友達が雪だるまを作っていました。
+😊 It is fun to play in the snow with friends.
+友達と雪の中で遊ぶのは楽しいです。
+☕ Drinking hot cocoa is the best thing on a cold day.
+寒い日にはホットココアを飲むのが最高です。
+🌟 Kenji likes winter because the scenery is beautiful.
+景色が美しいので、ケンジは冬が好きです。
+
+❄️ Does it snow in your town?
+あなたの町では雪が降りますか？
+⛄ Have you ever made a snowman?
+雪だるまを作ったことがありますか？
+🥶 Do you like cold weather?
+寒い天気は好きですか？
+🚌 Have you ever been late because of the weather?
+天気のせいで遅刻したことがありますか？
+🚶‍♂️ Have you ever slipped on ice?
+氷の上で滑ったことがありますか？
+🧤 Do you wear gloves in winter?
+冬に手袋をしますか？
+🏫 What do you do during recess at school?
+学校の休み時間は何をしますか？
+😊 What is your favorite winter activity?
+一番好きな冬のアクティビティは何ですか？
+☕ Do you prefer coffee, tea, or cocoa?
+コーヒー、紅茶、ココアのどれが好きですか？
+🌟 Which scenery do you like, mountains or the ocean?
+山と海、どちらの景色が好きですか？`
+    },
+
+    // Story 25 - Preparing for a Test
+    // Target Grammar: Help + Person + Verb / As... as possible
+    {
+        title: "25. Preparing for a Test (Help + Person + Verb / As... as possible)",
+        content: `📝 Mei has a big math test next week.
+メイは来週、大きな数学のテストがあります。
+📚 She is studying as hard as possible.
+彼女はできるだけ一生懸命勉強しています。
+🔢 Math is a little difficult for her.
+数学は彼女にとって少し難しいです。
+👨‍🏫 She asked her teacher to help her understand the problems.
+彼女は先生に、問題を理解するのを手伝ってくれるよう頼みました。
+🏠 She studies in the living room after dinner.
+彼女は夕食後、リビングで勉強します。
+🚫 She stopped watching TV to focus on her studies.
+彼女は勉強に集中するためにテレビを見るのをやめました。
+🤝 Her friend, Saki, is good at math.
+友達のサキは数学が得意です。
+🗣️ They teach each other during the lunch break.
+彼らは昼休みに教え合います。
+📈 Mei feels that her skills are improving.
+メイは自分のスキルが向上していると感じています。
+🌟 She wants to get a good score to make her parents happy.
+彼女は両親を喜ばせるために良い点数を取りたいと思っています。
+
+📝 Do you like taking tests?
+テストを受けるのは好きですか？
+📚 How many hours do you study a day?
+1日に何時間勉強しますか？
+🔢 What is a difficult subject?
+一番難しい教科は何ですか？
+👨‍🏫 Do you ask questions in class?
+授業中に質問をしますか？
+🏠 Where is the best place for you to study?
+あなたにとって一番勉強しやすい場所はどこですか？
+🚫 What distracts you from studying?
+何があなたの勉強の邪魔をしますか？
+🤝 Do you study with friends?
+友達と一緒に勉強しますか？
+🗣️ Are you good at teaching others?
+人に教えるのは得意ですか？
+📈 Do you worry about grades?
+成績について心配しますか？
+🌟 How do you feel when you get a good score?
+良い点数を取ったとき、どんな気分になりますか？`
+    },
+
+    // Story 26 - A Day at the Beach
+    // Target Grammar: Sound/Look/Feel + Adjective / Comparison
+    {
+        title: "26. A Day at the Beach (Sound/Look/Feel + Adjective / Comparison)",
+        content: `🏖️ Sora went to the beach with his family last August.
+ソラは去年の8月、家族と海に行きました。
+🚗 It took two hours to get there by car.
+車でそこに着くのに2時間かかりました。
+🌊 The sea looked very blue and beautiful.
+海はとても青くて美しく見えました。
+👂 The sound of the waves made him feel relaxed.
+波の音は彼をリラックスした気分にさせました。
+🏊‍♂️ He swam in the ocean with his father.
+彼は父と一緒に海で泳ぎました。
+🐚 Sora found many pretty shells on the sand.
+ソラは砂の上でたくさんのきれいな貝殻を見つけました。
+🍦 Eating ice cream on the beach was delicious.
+ビーチで食べるアイスクリームはおいしかったです。
+🌞 His skin became darker than before.
+彼の肌は以前より黒くなりました。
+📸 He took a picture of the sunset.
+彼は夕日の写真を撮りました。
+🌟 Summer is the best season for outdoor activities.
+夏はアウトドア活動に最高の季節です。
+
+🏖️ Do you like the beach?
+海は好きですか？
+🚗 Do you like long car drives?
+長い車のドライブは好きですか？
+🌊 Can you swim well?
+上手に泳げますか？
+👂 What sounds make you relax?
+どんな音があなたをリラックスさせますか？
+🏊‍♂️ Do you prefer the pool or the sea?
+プールと海、どちらが好きですか？
+🐚 Have you ever collected shells?
+貝殻を集めたことがありますか？
+🍦 What is your favorite ice cream flavor?
+好きなアイスクリームの味は何ですか？
+🌞 Do you get sunburned easily?
+日焼けしやすいですか？
+📸 Do you like taking pictures of scenery?
+景色の写真を撮るのは好きですか？
+🌟 What is your favorite summer memory?
+一番好きな夏の思い出は何ですか？`
+    },
+
+    // Story 27 - Choosing a Birthday Gift
+    // Target Grammar: Give + Person + Thing / Something + Adjective
+    {
+        title: "27. Choosing a Birthday Gift (Give + Person + Thing / Something + Adjective)",
+        content: `🎁 Emi is looking for a birthday gift for her best friend.
+エミは親友への誕生日プレゼントを探しています。
+📅 Her friend's birthday is next Saturday.
+友達の誕生日は次の土曜日です。
+🛍️ She went to the shopping mall to find something cute.
+彼女は何かかわいいものを見つけるためにショッピングモールへ行きました。
+🎀 There were many kinds of accessories in the shop.
+店にはたくさんの種類のアクセサリーがありました。
+🤔 It is difficult to choose the perfect gift.
+完璧なプレゼントを選ぶのは難しいです。
+💍 She decided to buy a silver necklace.
+彼女は銀のネックレスを買うことに決めました。
+📝 She also wrote a message card to her friend.
+彼女は友達にメッセージカードも書きました。
+🍰 They are going to have a party at Emi's house.
+彼らはエミの家でパーティーをする予定です。
+😊 Emi hopes her friend will like the present.
+エミは友達がプレゼントを気に入ってくれることを願っています。
+🌟 Giving gifts makes both people happy.
+プレゼントを贈ることは両方の人を幸せにします。
+
+🎁 Do you like giving gifts?
+プレゼントを贈るのは好きですか？
+📅 When is birthdays?
+あなたの誕生日はいつですか？
+🛍️ Where do you usually go shopping?
+普段どこへ買い物に行きますか？
+🎀 Do you like wearing accessories?
+アクセサリーを身につけるのは好きですか？
+🤔 Are you good at choosing gifts?
+プレゼントを選ぶのは得意ですか？
+💍 What is the most expensive thing you bought?
+あなたが買った一番高いものは何ですか？
+📝 Do you write letters to friends?
+友達に手紙を書きますか？
+🍰 What kind of cake do you like?
+どんなケーキが好きですか？
+😊 What was the best gift you received?
+あなたがもらった最高のプレゼントは何でしたか？
+🌟 Do you prefer giving or receiving gifts?
+プレゼントをあげるのと受け取るの、どちらが好きですか？`
+    },
+
+    // Story 28 - Trying a New Sport
+    // Target Grammar: Be good at / Practice -ing
+    {
+        title: "28. Trying a New Sport (Be good at / Practice -ing)",
+        content: `🏸 Rina started playing badminton in high school.
+リナは高校でバドミントンを始めました。
+🏃‍♀️ She wanted to try something new and exciting.
+彼女は何か新しくてワクワクすることを試したかったのです。
+👟 At first, she was not good at hitting the shuttle.
+最初、彼女はシャトルを打つのが得意ではありませんでした。
+😓 Moving quickly around the court is tiring.
+コートを素早く動き回るのは疲れます。
+💪 However, she practices playing every day.
+しかし、彼女は毎日プレーするのを練習しています。
+👥 Her teammates are very kind and helpful.
+彼女のチームメイトはとても親切で役に立ちます。
+👏 Last week, she won her first practice match.
+先週、彼女は初めての練習試合に勝ちました。
+😊 She was very happy and proud.
+彼女はとても嬉しく、誇らしかったです。
+💦 Playing sports is good for her health.
+スポーツをすることは彼女の健康に良いです。
+🌟 She wants to become a regular player soon.
+彼女はすぐにレギュラー選手になりたいと思っています。
+
+🏸 What sports have you played?
+どんなスポーツをしたことがありますか？
+🏃‍♀️ Do you like trying new things?
+新しいことに挑戦するのは好きですか？
+👟 Are you good at sports?
+スポーツは得意ですか？
+😓 What makes you feel tired?
+何があなたを疲れさせますか？
+💪 How often do you exercise?
+どのくらいの頻度で運動しますか？
+👥 Do you have good teammates or friends?
+良いチームメイトや友達がいますか？
+👏 Are you competitive?
+あなたは負けず嫌いですか？
+😊 When was the last time you felt proud?
+最後に誇らしいと感じたのはいつですか？
+💦 Do you think health is important?
+健康は大切だと思いますか？
+🌟 What is your goal for this year?
+今年の目標は何ですか？`
+    },
+
+    // Story 29 - Helping a Neighbor
+    // Target Grammar: Ask + Person + To / Passive
+    {
+        title: "29. Helping a Neighbor (Ask + Person + To / Passive)",
+        content: `🏡 Aoi lives next to an elderly woman named Mrs. Tanaka.
+アオイは田中さんという年配の女性の隣に住んでいます。
+👵 Mrs. Tanaka lives alone and sometimes needs help.
+田中さんは一人暮らしで、時々助けを必要としています。
+📦 Yesterday, she asked Aoi to carry a heavy box.
+昨日、彼女はアオイに重い箱を運んでくれるよう頼みました。
+💪 Aoi is young and strong, so she could do it easily.
+アオイは若くて力持ちなので、簡単にそれができました。
+🍵 Mrs. Tanaka gave her some tea and sweets.
+田中さんは彼女にお茶とお菓子をくれました。
+🗣️ They enjoyed talking for a while on the porch.
+二人は縁側でしばらく話すのを楽しみました。
+😊 It is nice to be kind to neighbors.
+近所の人に親切にするのは良いことです。
+🤝 Aoi thinks that people should help each other.
+アオイは人々は助け合うべきだと考えています。
+🏘️ Her town is a friendly place to live.
+彼女の町は住むのにフレンドリーな場所です。
+🌟 Small kindness makes the world better.
+小さな親切が世界を良くします。
+
+🏡 Do you know your neighbors?
+近所の人を知っていますか？
+👵 Do you like talking to older people?
+年配の人と話すのは好きですか？
+📦 Can you carry heavy things?
+重いものを運べますか？
+💪 Do you think you are strong?
+自分は力持ちだと思いますか？
+🍵 Do you like Japanese sweets?
+和菓子は好きですか？
+🗣️ What do you talk about with adults?
+大人と何について話しますか？
+😊 Do you think you are a kind person?
+自分は親切な人だと思いますか？
+🤝 Have you ever helped a stranger?
+見知らぬ人を助けたことがありますか？
+🏘️ Do you like your town?
+自分の町が好きですか？
+🌟 Why is kindness important?
+なぜ親切は大切なのですか？`
+    },
+
+    // Story 30 - A New Hobby: Photography
+    // Target Grammar: Enjoy -ing / Pictures of
+    {
+        title: "30. A New Hobby: Photography (Enjoy -ing / Pictures of)",
+        content: `📸 Yuki bought a new camera last month.
+ユキは先月新しいカメラを買いました。
+🏞️ He enjoys taking pictures of nature.
+彼は自然の写真を撮るのを楽しんでいます。
+🌅 The sunset in his town is very beautiful.
+彼の町の夕日はとても美しいです。
+📱 Smartphone cameras are good, but he prefers his new camera.
+スマホのカメラも良いですが、彼は新しいカメラのほうが好きです。
+🐦 He often goes to the park to find birds.
+彼はよく鳥を見つけるために公園に行きます。
+🚶‍♂️ Walking around with a camera is fun.
+カメラを持って歩き回るのは楽しいです。
+💻 He uploads his best photos to his computer.
+彼は一番良い写真をコンピュータにアップロードします。
+🖼️ He wants to make a photo album for his family.
+彼は家族のためにフォトアルバムを作りたいと思っています。
+👀 Through the camera, the world looks different.
+カメラを通すと、世界は違って見えます。
+🌟 Yuki wants to be a photographer in the future.
+ユキは将来カメラマンになりたいと思っています。
+
+📸 Do you have a camera?
+カメラを持っていますか？
+🏞️ What do you like to take pictures of?
+何を写真に撮るのが好きですか？
+🌅 Do you like watching sunsets?
+夕日を見るのは好きですか？
+📱 Do you use phones to take photos?
+写真を撮るのにスマホを使いますか？
+🐦 Do you like animals or birds?
+動物や鳥は好きですか？
+🚶‍♂️ Do you like walking outside?
+外を歩くのは好きですか？
+💻 Do you have a computer?
+コンピュータを持っていますか？
+🖼️ Do you print your photos?
+写真を印刷しますか？
+👀 Do you notice small changes in your town?
+町の小さな変化に気づきますか？
+🌟 Do you have a hobby you want to start?
+始めたい趣味はありますか？`
+    },
+
+    // Story 31 - Experiencing a Cultural Event
+    // Target Grammar: Passive Voice / Be interested in
+    {
+        title: "31. Experiencing a Cultural Event (Passive Voice / Be interested in)",
+        content: `🎎 Kana attended a traditional tea ceremony yesterday.
+カナは昨日、伝統的な茶道に参加しました。
+🍵 The ceremony was held in a quiet Japanese room.
+その儀式は静かな和室で行われました。
+👘 The teacher was dressed in a beautiful kimono.
+先生は美しい着物を着ていました。
+🌿 Kana is interested in traditional Japanese culture.
+カナは日本の伝統文化に興味があります。
+🍵 The tea tasted a little bitter, but it was delicious.
+お茶は少し苦い味がしましたが、おいしかったです。
+🤫 Everyone kept silent during the ceremony.
+儀式の間、みんな黙っていました。
+🍰 They ate sweet cakes before drinking the tea.
+彼らはお茶を飲む前に甘いお菓子を食べました。
+🧘‍♀️ Sitting on the floor for a long time was difficult.
+長い間床に座っているのは大変でした。
+😊 However, Kana enjoyed the peaceful atmosphere.
+しかし、カナはその平和な雰囲気を楽しみました。
+🌟 She wants to learn more about her country's traditions.
+彼女は自国の伝統についてもっと学びたいと思っています。
+
+🎎 Have you ever attended a tea ceremony?
+茶道に参加したことがありますか？
+👘 Do you like kimono or yukata?
+着物や浴衣を持っていますか？
+🍵 Do you like green tea?
+緑茶は好きですか？
+🌿 Are you interested in history?
+歴史に興味がありますか？
+🍰 Do you like Japanese sweets or Western sweets?
+和菓子と洋菓子、どちらが好きですか？
+🤫 Can you stay quiet in a library?
+図書館で静かにしていられますか？
+🧘‍♀️ Is it hard for you to sit seiza style?
+正座をするのはあなたにとって大変ですか？
+😊 What makes you feel peaceful?
+何があなたを穏やかな気持ちにさせますか？
+🌟 What is a famous tradition in Japan?
+日本の有名な伝統は何ですか？
+🌏 Do you want to introduce Japanese culture to foreigners?
+外国人に日本文化を紹介したいですか？`
+    },
+
+    // Story 32 - Babysitting a Little Cousin
+    // Target Grammar: Ask + Person + To / Give + Person + Thing
+    {
+        title: "32. Babysitting a Little Cousin (Ask + Person + To / Give + Person + Thing)",
+        content: `👶 Hiro looked after his little cousin last weekend.
+ヒロは先週末、小さないとこの世話をしました。
+🏠 His aunt asked him to watch the boy for three hours.
+彼のおばは彼に、3時間その男の子を見ていてくれるよう頼みました。
+🧸 They played with toy cars in the living room.
+彼らはリビングでおもちゃの車で遊びました。
+🍼 Hiro gave his cousin some milk and cookies.
+ヒロはいとこにミルクとクッキーをあげました。
+😭 Suddenly, the baby started crying loudly.
+突然、赤ちゃんが大声で泣き始めました。
+😰 Hiro didn't know what to do at first.
+ヒロは最初どうすればいいかわかりませんでした。
+🎶 He tried singing a song to make him stop crying.
+彼は泣き止ませるために歌を歌ってみました。
+😴 Finally, the cousin fell asleep on the sofa.
+ついに、いとこはソファで眠りに落ちました。
+😓 Taking care of children is harder than studying.
+子供の世話をするのは勉強するより大変です。
+🌟 Hiro respects his parents more now.
+ヒロは今、両親をもっと尊敬しています。
+
+👶 Do you like babies or small children?
+赤ちゃんや小さい子供は好きですか？
+🏠 Have you ever babysat anyone?
+誰かの世話をしたことはありますか？
+🧸 What was your favorite toy when you were little?
+小さい頃、一番好きだったおもちゃは何ですか？
+🍼 Do you know how to make milk for a baby?
+赤ちゃんのためにミルクの作り方を知っていますか？
+😭 What do you do when a child cries?
+子供が泣いているとき、どうしますか？
+😰 Do you panic easily?
+すぐにパニックになりますか？
+🎶 Can you sing children's songs?
+童謡を歌えますか？
+😴 Do you take naps?
+昼寝をしますか？
+😓 What is the hardest thing you have done?
+あなたがした中で一番大変だったことは何ですか？
+🌟 Do you respect your parents? Why?
+両親を尊敬していますか？なぜですか？`
+    },
+
+    // Story 33 - A School Recycling Project
+    // Target Grammar: Passive Voice / It is important to...
+    {
+        title: "33. A School Recycling Project (Passive Voice / It is important to...)",
+        content: `♻️ The student council started a recycling project.
+生徒会はリサイクルプロジェクトを始めました。
+🗑️ Plastic bottles are collected in a special box.
+ペットボトルは特別な箱に集められます。
+🧼 Students must wash the bottles before throwing them away.
+生徒たちは捨てる前にボトルを洗わなければなりません。
+🧴 The caps are also recycled to make new things.
+キャップも新しいものを作るためにリサイクルされます。
+🌍 It is important to reduce waste for the earth.
+地球のためにゴミを減らすことは重要です。
+✅ If students recycle more, they will reduce waste faster.
+生徒たちがもっとリサイクルすれば、ゴミはもっと早く減ります。
+✅ If everyone cooperates, the project will be successful.
+みんなが協力すれば、プロジェクトは成功するでしょう。
+📄 They made posters to explain the rules.
+彼らはルールを説明するためにポスターを作りました。
+🤝 Everyone is cooperating with the project.
+みんながプロジェクトに協力しています。
+📉 The amount of garbage has decreased this month.
+今月、ゴミの量が減りました。
+😊 The teachers are happy with the result.
+先生たちは結果に満足しています。
+🌟 Small actions can change the world.
+小さな行動が世界を変えることができます。
+
+♻️ Do you recycle at home?
+家でリサイクルしていますか？
+🗑️ How many plastic bottles do you use a week?
+1週間に何本ペットボトルを使いますか？
+🧼 Do you wash bottles before recycling?
+リサイクルする前にボトルを洗いますか？
+🌍 Do you worry about environmental problems?
+環境問題について心配していますか？
+📄 Have you ever made a poster for school?
+学校のためにポスターを作ったことはありますか？
+🤝 Is your class cooperative?
+あなたのクラスは協力的ですか？
+📉 Do you try to reduce plastic waste?
+プラスチックゴミを減らそうとしていますか？
+😊 What makes you feel satisfied?
+何があなたを満足させますか？
+🌟 What can you do to save the earth?
+地球を救うために何ができますか？
+🚮 Do you pick up trash when you see it?
+ゴミを見たら拾いますか？`
+    },
+
+    // Story 34 - Camping in the Mountains
+    // Target Grammar: Past Continuous / Comparative
+    {
+        title: "34. Camping in the Mountains (Past Continuous / Comparative)",
+        content: `⛺ Daigo went camping with his friends in August.
+ダイゴは8月に友達とキャンプに行きました。
+🌲 They set up a tent near a beautiful river.
+彼らは美しい川の近くにテントを張りました。
+🔥 Making a fire was more difficult than they thought.
+火を起こすのは彼らが思っていたより難しかったです。
+🍛 They cooked curry and rice for dinner.
+彼らは夕食にカレーライスを作りました。
+🌌 While they were eating, they looked at the stars.
+食べている間、彼らは星を見ました。
+✨ The stars were much brighter than in the city.
+星は街よりもずっと明るかったです。
+🐻 They were a little afraid of wild animals.
+彼らは野生動物を少し怖がっていました。
+✅ If it rains heavily, they will move the tent to a shelter.
+雨が激しく降れば、彼らはテントを避難所に移動するでしょう。
+✅ If they see wild animals, they will be very careful.
+野生動物を見れば、彼らはとても注意深くなるでしょう。
+💤 Sleeping in a sleeping bag was a new experience.
+寝袋で寝るのは新しい経験でした。
+🌅 The sunrise the next morning was amazing.
+翌朝の日の出は素晴らしかったです。
+🌟 Daigo loves spending time in nature.
+ダイゴは自然の中で過ごすのが大好きです。
+
+⛺ Do you like camping?
+キャンプは好きですか？
+🌲 Have you ever slept in a tent?
+テントで寝たことがありますか？
+🔥 Can you make a fire?
+火を起こせますか？
+🍛 What is the best food to eat outside?
+外で食べるのに一番良い食べ物は何ですか？
+🌌 Do you like watching the night sky?
+夜空を見るのは好きですか？
+✨ Where can you see beautiful stars?
+どこできれいな星が見られますか？
+🐻 Are you afraid of bears or snakes?
+クマやヘビが怖いですか？
+💤 Can you sleep anywhere?
+どこでも眠れますか？
+🌅 Do you usually see the sunrise?
+普段日の出を見ますか？
+🌟 Do you prefer the mountains or the beach?
+山と海、どちらが好きですか？`
+    },
+
+    // Story 35 - Taking Online Lessons
+    // Target Grammar: Present Perfect Continuous / Look forward to
+    {
+        title: "35. Taking Online Lessons (Present Perfect Continuous / Look forward to)",
+        content: `💻 Mina has been taking English lessons online for a year.
+ミナは1年間オンラインで英語のレッスンを受けています。
+🇵🇭 Her teacher lives in the Philippines.
+彼女の先生はフィリピンに住んでいます。
+🗣️ They talk through a video call once a week.
+彼らは週に一度、ビデオ通話で話します。
+🏠 Mina can take the lesson in her own room.
+ミナは自分の部屋でレッスンを受けることができます。
+💰 Online lessons are usually cheaper than regular schools.
+オンラインレッスンはたいてい普通の学校より安いです。
+📝 She prepares for the lesson by reading news articles.
+彼女はニュース記事を読んでレッスンの予習をします。
+😊 Her speaking skills are getting better.
+彼女のスピーキングスキルは良くなってきています。
+✅ If she practices every day, she will improve quickly.
+毎日練習すれば、彼女はすぐに上達するでしょう。
+✅ If she continues taking lessons, her English will become excellent.
+レッスンを続ければ、彼女の英語は素晴らしくなるでしょう。
+✈️ She looks forward to visiting her teacher someday.
+彼女はいつか先生を訪ねるのを楽しみにしています。
+🌏 Technology helps us connect with the world.
+テクノロジーは私たちが世界とつながるのを助けてくれます。
+🌟 Mina wants to work for an international company.
+ミナは国際的な企業で働きたいと思っています。
+
+💻 Have you ever taken an online lesson?
+オンラインレッスンを受けたことがありますか？
+🗣️ Do you like talking in English?
+英語で話すのは好きですか？
+🏠 Do you prefer studying at home or at school?
+家で勉強するのと学校でするのと、どちらが好きですか？
+💰 Do you think English lessons are expensive?
+英語のレッスンは高いと思いますか？
+📝 Do you prepare for your classes?
+授業の予習をしますか？
+😊 Do you think your English is improving?
+あなたの英語は上達していると思いますか？
+✈️ Which country do you want to visit?
+どの国に行きたいですか？
+🌏 Is the internet important for studying?
+勉強にインターネットは重要ですか？
+🌟 What kind of job do you want in the future?
+将来どんな仕事につきたいですか？
+🇵🇭 Do you know anyone who lives abroad?
+海外に住んでいる人を知っていますか？`
+    },
+
+    // Story 36 - Visiting Someone in Hospital
+    // Target Grammar: Relative Pronoun / Hope that
+    {
+        title: "36. Visiting Someone in Hospital (Relative Pronoun / Hope that)",
+        content: `🏥 Taku went to the hospital to visit his grandfather.
+タクは祖父を見舞うために病院へ行きました。
+🛏️ His grandfather, who broke his leg, was in bed.
+足を骨折した祖父はベッドにいました。
+💐 Taku brought some flowers to cheer him up.
+タクは彼を元気づけるために花を持って行きました。
+🍎 He also cut some apples for his grandfather.
+彼はまた、祖父のためにリンゴを切りました。
+😊 His grandfather looked happy to see Taku.
+祖父はタクに会えて嬉しそうでした。
+🚶‍♂️ The doctor said he needs to practice walking.
+医者は、彼には歩く練習が必要だと言いました。
+💪 Taku hopes that his grandfather gets well soon.
+タクは祖父が早く良くなることを願っています。
+✅ If the family supports him, he will recover faster.
+家族が彼を支えれば、彼はもっと早く回復するでしょう。
+✅ If he practices walking every day, he will get stronger.
+毎日歩く練習をすれば、彼はもっと強くなるでしょう。
+🏠 He wants to go back home as soon as possible.
+彼はできるだけ早く家に帰りたがっています。
+👨‍👩‍👦 Family support is very important when someone is sick.
+誰かが病気のとき、家族の支えはとても重要です。
+🌟 Taku promised to visit him again next Sunday.
+タクは次の日曜日にまた彼を訪ねると約束しました。
+
+🏥 Do you like hospitals?
+病院は好きですか？
+🛏️ Have you ever stayed in a hospital?
+入院したことがありますか？
+💐 What do you bring when you visit a sick person?
+病気の人を見舞うとき、何を持っていきますか？
+🍎 Can you peel an apple?
+リンゴの皮をむけますか？
+😊 Who makes you happy when you are sad?
+悲しいとき、誰があなたを幸せにしますか？
+🚶‍♂️ Do you exercise to stay healthy?
+健康を保つために運動しますか？
+💪 Do you hope for anything special now?
+今、何か特別なことを願っていますか？
+🏠 Do you think home is the best place?
+家が一番良い場所だと思いますか？
+👨‍👩‍👦 Do you help your family when they are sick?
+家族が病気のとき手伝いますか？
+🌟 Do you keep your promises?
+約束を守りますか？`
+    },
+
+    // Story 37 - Playing Music at the Station
+    // Target Grammar: Participle / Stop to...
+    {
+        title: "37. Playing Music at the Station (Participle / Stop to...)",
+        content: `🎷 A group of students was playing jazz at the station.
+学生のグループが駅でジャズを演奏していました。
+🚉 Many people stopped to listen to their music.
+多くの人々が彼らの音楽を聴くために立ち止まりました。
+🎹 The boy playing the piano looked very cool.
+ピアノを弾いている男の子はとてもかっこよく見えました。
+🥁 The sound of the drums was loud and exciting.
+ドラムの音は大きくて刺激的でした。
+👏 When they finished a song, everyone clapped.
+彼らが曲を終えると、みんなが拍手しました。
+😊 The students looked happy to see the audience.
+学生たちは聴衆を見て嬉しそうでした。
+🎩 Some people put money in a hat.
+帽子にお金を入れる人もいました。
+🎵 Music has the power to change people's mood.
+音楽には人々の気分を変える力があります。
+✅ If they practice more, they will become professional musicians.
+もっと練習すれば、彼らはプロの音楽家になれるでしょう。
+✅ If people enjoy the music, they will come again tomorrow.
+人々が音楽を楽しめば、明日また来るでしょう。
+📸 I took a video of their performance.
+私は彼らの演奏の動画を撮りました。
+🌟 I want to learn how to play the saxophone.
+私はサックスの吹き方を習いたいと思いました。
+
+🎷 Do you like jazz music?
+ジャズ音楽は好きですか？
+🚉 Do you often see musicians on the street?
+通りで音楽家をよく見かけますか？
+🎹 Do you think playing the piano is cool?
+ピアノを弾くのはかっこいいと思いますか？
+🥁 Do you like loud music?
+大きな音の音楽は好きですか？
+👏 Do you clap after a performance?
+演奏の後に拍手しますか？
+😊 Do you get nervous in front of people?
+人前で緊張しますか？
+🎩 Have you ever given money to a street performer?
+大道芸人にお金をあげたことがありますか？
+🎵 Does music change your mood?
+音楽はあなたの気分を変えますか？
+📸 Do you take videos with your smartphone?
+スマホで動画を撮りますか？
+🌟 What instrument do you want to play?
+どの楽器を演奏したいですか？`
+    },
+
+    // Story 38 - Learning Calligraphy
+    // Target Grammar: Gerund / As... as
+    {
+        title: "38. Learning Calligraphy (Gerund / As... as)",
+        content: `🖌️ Rika goes to a calligraphy class every Tuesday.
+リカは毎週火曜日に書道教室に行きます。
+⚫ She uses a brush and black ink to write kanji.
+彼女は漢字を書くために筆と黒い墨を使います。
+📝 Writing with a brush is more difficult than using a pen.
+筆で書くことはペンを使うことより難しいです。
+🧘‍♀️ She must sit straight and concentrate.
+彼女はまっすぐ座って集中しなければなりません。
+👩‍🏫 Her teacher writes characters as beautifully as art.
+彼女の先生は芸術と同じくらい美しく文字を書きます。
+📄 Rika practices the same character many times.
+リカは同じ文字を何度も練習します。
+😊 When she writes well, she feels satisfied.
+上手に書けると、彼女は満足感を感じます。
+✅ If she practices hard, she will win another prize.
+一生懸命練習すれば、彼女はまた賞を取れるでしょう。
+✅ If she continues taking lessons, her calligraphy will be as beautiful as art.
+レッスンを続ければ、彼女の書道は芸術のように美しくなるでしょう。
+🏆 She won a prize in a contest last year.
+彼女は昨年、コンクールで賞を取りました。
+🏠 She displays her best work in her room.
+彼女は一番良い作品を部屋に飾っています。
+🌟 Calligraphy teaches her to be patient.
+書道は彼女に忍耐強くなることを教えてくれます。
+
+🖌️ Have you ever tried calligraphy (Shodo)?
+書道をしたことがありますか？
+⚫ Do you like the smell of ink?
+墨の匂いは好きですか？
+📝 Is your handwriting good or bad?
+あなたの字は上手ですか、下手ですか？
+🧘‍♀️ Can you concentrate for a long time?
+長い間集中できますか？
+👩‍🏫 Do you respect your teachers?
+先生を尊敬していますか？
+📄 Do you mind doing the same thing many times?
+同じことを何度もするのは気になりますか？
+😊 What makes you feel satisfied?
+何があなたを満足させますか？
+🏆 Have you ever won a contest?
+コンクールで勝ったことはありますか？
+🏠 Do you put posters or pictures in rooms?
+部屋にポスターや写真を貼っていますか？
+🌟 Do you think you are a patient person?
+自分は忍耐強い人だと思いますか？`
+    },
+
+    // Story 39 - Helping with Homework
+    // Target Grammar: Help + Person + Verb / Show + Person + Thing
+    {
+        title: "39. Helping with Homework (Help + Person + Verb / Show + Person + Thing)",
+        content: `📚 Yuna helps her younger brother with his homework.
+ユナは弟の宿題を手伝います。
+🔢 He is not good at math, so he needs help.
+彼は数学が得意ではないので、助けが必要です。
+👩‍🏫 Yuna shows him how to solve the problems.
+ユナは彼に問題の解き方を教えます。
+✅ If Yuna explains clearly, her brother will understand better.
+ユナがはっきり説明すれば、弟はよりよく理解するでしょう。
+✅ If he studies hard, his math skills will improve.
+一生懸命勉強すれば、彼の数学能力は向上するでしょう。
+🤔 Sometimes, the questions are difficult for Yuna too.
+時々、その質問はユナにとっても難しいです。
+📝 She tells him to write the answers clearly.
+彼女は彼に答えをはっきりと書くように言います。
+😊 When he understands, he looks happy.
+彼が理解すると、彼は嬉しそうに見えます。
+🍪 Their mother brings them snacks while they study.
+勉強中、母が彼らにおやつを持ってきてくれます。
+🤝 Teaching someone is a good way to learn.
+誰かに教えることは学ぶための良い方法です。
+🕒 They study together for an hour after dinner.
+彼らは夕食後、1時間一緒に勉強します。
+🌟 Yuna wants her brother to like studying.
+ユナは弟に勉強を好きになってほしいと思っています。
+
+📚 Do you help your siblings or friends with homework?
+兄弟や友達の宿題を手伝いますか？
+🔢 Do you like math?
+数学は好きですか？
+👩‍🏫 Are you good at explaining things?
+物事を説明するのは得意ですか？
+🤔 What subject is difficult for you?
+あなたにとって難しい教科は何ですか？
+📝 Are notebooks usually neat?
+あなたのノートはきれいで読みやすいですか？
+😊 Do you feel happy when you help others?
+人を助けると幸せな気分になりますか？
+🍪 Do you eat snacks while studying?
+勉強中におやつを食べますか？
+🤝 Do you prefer studying alone or with others?
+一人で勉強するのと他の人と勉強するのと、どちらが好きですか？
+🕒 When do you do homework?
+いつ宿題をしますか？
+🌟 Do you like studying? Why or why not?
+勉強は好きですか？なぜですか、なぜ違いますか？`
+    },
+
+    // Story 40 - A Trip to the Planetarium
+    // Target Grammar: Be covered with / Look like
+    {
+        title: "40. A Trip to the Planetarium (Be covered with / Look like)",
+        content: `🌌 Tomoki visited the city planetarium yesterday.
+トモキは昨日、市のプラネタリウムを訪れました。
+🏛️ The room was dark and cool inside.
+部屋の中は暗くて涼しかったです。
+⭐ The ceiling was covered with thousands of stars.
+天井は何千もの星で覆われていました。
+😲 It looked like the real night sky.
+それは本当の夜空のように見えました。
+👨‍🏫 The guide explained the names of the constellations.
+ガイドが星座の名前を説明しました。
+🪐 Tomoki learned about planets like Mars and Jupiter.
+トモキは火星や木星のような惑星について学びました。
+🚀 He imagined traveling through space in a rocket.
+彼はロケットで宇宙を旅することを想像しました。
+😴 The chair was so comfortable that he almost slept.
+椅子がとても快適だったので、彼はもう少しで眠るところでした。
+😊 He bought a postcard of the galaxy.
+彼は銀河のポストカードを買いました。
+🌟 He wants to buy a telescope to see real stars.
+彼は本物の星を見るために望遠鏡を買いたいと思っています。
+✅ If he buys a telescope, he will see real stars every night.
+望遠鏡を買えば、彼は毎晩本物の星を見ることができるでしょう。
+✅ If he learns more about space, he will become an astronomer.
+宇宙についてもっと学べば、彼は天文学者になるでしょう。
+
+🌌 Have you ever been to a planetarium?
+プラネタリウムに行ったことがありますか？
+⭐ Do you like looking at stars?
+星を見るのは好きですか？
+😲 Can you find the North Star?
+北極星を見つけられますか？
+👨‍🏫 Do you know your zodiac sign?
+自分の星座を知っていますか？
+🪐 Which planet is your favorite?
+どの惑星が一番好きですか？
+🚀 Do you want to go to space?
+宇宙に行きたいですか？
+😴 Do you fall asleep in movies or class?
+映画や授業中に寝てしまいますか？
+😊 Do you collect postcards or stamps?
+ポストカードや切手を集めていますか？
+🌟 Do you have a telescope?
+望遠鏡を持っていますか？
+👽 Do you believe in aliens?
+宇宙人を信じますか？`
+    },
+
+    // Story 41 - Moving to a New House
+    // Target Grammar: Present Perfect / Comparative
+    {
+        title: "41. Moving to a New House (Present Perfect / Comparative)",
+        content: `📦 Yoshi has just moved to a new house.
+ヨシはちょうど新しい家に引っ越したところです。
+🚚 His new house is bigger than his old one.
+彼の新しい家は前の家より大きいです。
+📦 He has already unpacked most of his boxes.
+彼はすでに箱のほとんどを開けました。
+🛏️ He has his own room now, which makes him happy.
+彼は今自分の部屋を持っていて、それは彼を幸せにします。
+🧹 Cleaning the new room took a long time.
+新しい部屋を掃除するのは時間がかかりました。
+👋 He hasn't met his new neighbors yet.
+彼はまだ新しい近所の人に会っていません。
+🏫 His new school is close to his house.
+新しい学校は家の近くです。
+😊 He is looking forward to making new friends.
+彼は新しい友達を作るのを楽しみにしています。
+🖼️ He wants to buy new curtains for his window.
+彼は窓のために新しいカーテンを買いたいと思っています。
+🌟 A new life is starting for Yoshi.
+ヨシにとって新しい生活が始まっています。
+
+📦 Have you ever moved house?
+引っ越しをしたことがありますか？
+🚚 Do you like big houses?
+大きな家に住みたいですか？
+🛏️ Do you have your own room?
+自分の部屋を持っていますか？
+🧹 Do you keep your room clean?
+部屋をきれいにしていますか？
+👋 Is it easy for you to talk to new people?
+新しい人と話すのはあなたにとって簡単ですか？
+🏫 Is your school far from houses?
+学校は家から遠いですか？
+😊 How do you make new friends?
+どうやって新しい友達を作りますか？
+🖼️ What color are your curtains?
+カーテンは何色ですか？
+🌟 Do you like changes in your life?
+人生の変化は好きですか？
+📦 Do you have many things in rooms?
+部屋にたくさんのものがありますか？`
+    },
+
+    // Story 42 - Shopping Online
+    // Target Grammar: It is [adjective] to... / Too... to...
+    {
+        title: "42. Shopping Online (It is [adjective] to... / Too... to...)",
+        content: `🛒 Ryo likes buying clothes online.
+リョウはオンラインで服を買うのが好きです。
+📱 It is easy to find the size and color he wants.
+彼が欲しいサイズと色を見つけるのは簡単です。
+💰 Sometimes, things are cheaper online than in stores.
+時々、店よりもオンラインのほうが安いです。
+📦 He ordered a new T-shirt two days ago.
+彼は2日前に新しいTシャツを注文しました。
+🚚 It usually takes three days to arrive.
+届くのにたいてい3日かかります。
+🤔 Sometimes he worries that the size won't fit.
+時々、彼はサイズが合わないことを心配します。
+💳 He asked his mother to pay with her credit card.
+彼は母にクレジットカードで払ってもらうよう頼みました。
+😲 Once, he bought a bag that was too small to use.
+一度、彼は使うには小さすぎるバッグを買ってしまいました。
+😊 However, opening the package is exciting.
+しかし、荷物を開けるのはワクワクします。
+🌟 Online shopping is very convenient for busy people.
+オンラインショッピングは忙しい人にとってとても便利です。
+
+🛒 Do you shop online?
+オンラインで買い物をしますか？
+📱 Do you use Amazon or Rakuten?
+Amazonや楽天を使いますか？
+💰 Do you compare prices before buying?
+買う前に値段を比較しますか？
+📦 What was the last thing you bought online?
+最後にオンラインで買ったものは何ですか？
+🚚 Do you mind waiting for delivery?
+配達を待つのは気になりますか？
+🤔 Have you ever bought something by mistake?
+間違って何かを買ったことはありますか？
+💳 Do you have your own money to spend?
+使うための自分のお金を持っていますか？
+😲 Have you ever returned a product?
+商品を返品したことはありますか？
+😊 What do you want to buy next?
+次は何か買いたいですか？
+🌟 Is convenience important to you?
+便利さはあなたにとって重要ですか？`
+    },
+
+    // Story 43 - Raising Money for Charity
+    // Target Grammar: Want + Person + To / Passive Voice
+    {
+        title: "43. Raising Money for Charity (Want + Person + To / Passive Voice)",
+        content: `🍪 The students decided to have a charity sale.
+生徒たちはチャリティーセールをすることに決めました。
+🍪 They baked cookies and cakes at home.
+彼らは家でクッキーとケーキを焼きました。
+🏫 They sold them at the school entrance.
+彼らは学校の入り口でそれらを売りました。
+📢 They wanted many people to buy their sweets.
+彼らは多くの人に自分たちのお菓子を買ってほしいと思いました。
+💰 The cookies were sold for 100 yen each.
+クッキーは1つ100円で売られました。
+💵 They collected more than 10,000 yen.
+彼らは1万円以上を集めました。
+🏥 The money will be donated to a hospital.
+そのお金は病院に寄付されます。
+😊 Everyone felt happy to help people in need.
+みんな、困っている人々を助けることができて幸せに感じました。
+🤝 Working together for a good cause is important.
+良い目的のために協力することは大切です。
+🌟 They plan to do this again next year.
+彼らは来年もまたこれをする予定です。
+
+🍪 Do you like baking cookies?
+クッキーを焼くのは好きですか？
+🏫 Have you ever sold something?
+何かを売ったことはありますか？
+📢 Are you good at advertising?
+宣伝は得意ですか？
+💰 Do you donate money to charity?
+チャリティーにお金を寄付しますか？
+💵 How much money do you need a month?
+1ヶ月にいくらお金が必要ですか？
+🏥 Do you want to help sick children?
+病気の子供たちを助けたいですか？
+😊 What makes you feel proud?
+何があなたを誇らしくさせますか？
+🤝 Is it easy to work as a team?
+チームとして働くのは簡単ですか？
+🌟 What kind of volunteer work interests you?
+どんなボランティア活動に興味がありますか？
+🍪 What is your favorite sweet treat?
+一番好きなお菓子は何ですか？`
+    },
+
+    // Story 44 - Practicing a Foreign Language
+    // Target Grammar: Present Perfect Continuous / Look forward to
+    {
+        title: "44. Practicing a Foreign Language (Present Perfect Continuous / Look forward to)",
+        content: `🗣️ Erika has been studying French for six months.
+エリカは6ヶ月間フランス語を勉強しています。
+📱 She uses a smartphone app to practice every day.
+彼女は毎日練習するためにスマホアプリを使います。
+🇫🇷 She wants to travel to Paris in the future.
+彼女は将来パリに旅行したいと思っています。
+🥐 She loves French food, especially croissants.
+彼女はフランス料理、特にクロワッサンが大好きです。
+👂 Listening to French radio is difficult but fun.
+フランス語のラジオを聴くのは難しいですが楽しいです。
+🤔 French pronunciation is different from English.
+フランス語の発音は英語とは違います。
+😊 She can say "Hello" and "Thank you" in French.
+彼女はフランス語で「こんにちは」と「ありがとう」が言えます。
+✈️ She looks forward to speaking with local people.
+彼女は地元の人々と話すことを楽しみにしています。
+🌍 Learning a new language opens up the world.
+新しい言語を学ぶことは世界を広げます。
+🌟 Erika studies hard to make her dream come true.
+エリカは夢を叶えるために一生懸命勉強しています。
+
+🗣️ What languages do you speak?
+何語を話しますか？
+📱 Do you use apps to study?
+勉強にアプリを使いますか？
+🇫🇷 Do you want to go to France?
+フランスに行きたいですか？
+🥐 Do you like bread?
+パンは好きですか？
+👂 Do you listen to foreign music?
+外国の音楽を聴きますか？
+🤔 Is English pronunciation difficult?
+英語の発音は難しいですか？
+😊 Can you say "Thank you" in three languages?
+3つの言語で「ありがとう」と言えますか？
+✈️ Do you like traveling abroad?
+海外旅行は好きですか？
+🌍 Why is learning English important?
+なぜ英語を学ぶことは重要なのでしょうか？
+🌟 What is your dream for the future?
+将来の夢は何ですか？`
+    },
+
+    // Story 45 - Joining a Drama Club
+    // Target Grammar: Relative Pronoun / Try to
+    {
+        title: "45. Joining a Drama Club (Relative Pronoun / Try to)",
+        content: `🎭 Kenta joined the drama club this semester.
+ケンタは今学期、演劇部に入りました。
+📜 They are practicing a play that is very funny.
+彼らはとても面白い劇を練習しています。
+🤴 Kenta plays the role of a prince.
+ケンタは王子の役を演じます。
+🗣️ He tries to speak loudly so everyone can hear him.
+彼はみんなに聞こえるように大きな声で話そうとしています。
+😓 Remembering all the lines is difficult work.
+すべてのセリフを覚えるのは大変な作業です。
+👯‍♂️ He enjoys acting with his club members.
+彼は部員たちと演技をするのを楽しんでいます。
+💄 He has to wear makeup and a costume on stage.
+彼はステージでメイクと衣装を身につけなければなりません。
+😰 He feels nervous before the show starts.
+彼はショーが始まる前、緊張します。
+👏 The audience clapped their hands loudly.
+観客は大きな拍手を送りました。
+🌟 Kenta felt that acting is his passion.
+ケンタは演技が自分の情熱だと感じました。
+
+🎭 Do you like acting?
+演技は好きですか？
+📜 Do you prefer comedy or tragedy?
+コメディと悲劇、どちらが好きですか？
+🤴 What role would you like to play?
+どんな役を演じてみたいですか？
+🗣️ Can you speak loudly in front of people?
+人前で大きな声で話せますか？
+😓 Are you good at memorizing things?
+暗記は得意ですか？
+👯‍♂️ Do you like working with others?
+他の人と作業するのは好きですか？
+💄 Have you ever worn a costume?
+衣装を着たことがありますか？
+😰 How do you relax when you are nervous?
+緊張しているとき、どうやってリラックスしますか？
+👏 Do you go to see plays or musicals?
+劇やミュージカルを見に行きますか？
+🌟 What is your passion?
+あなたの情熱は何ですか？`
+    },
+
+    // Story 46 - Volunteering at an Animal Shelter
+    // Target Grammar: Stop -ing / Make + Person + Adjective
+    {
+        title: "46. Volunteering at an Animal Shelter (Stop -ing / Make + Person + Adjective)",
+        content: `🐕 Haru volunteers at an animal shelter on weekends.
+ハルは週末に動物保護施設でボランティアをしています。
+🏠 There are many dogs and cats that have no home.
+そこには家のない犬や猫がたくさんいます。
+🍖 Haru feeds them and cleans their cages.
+ハルは彼らにエサをやり、ケージを掃除します。
+🚶‍♂️ He also takes the dogs for a walk in the park.
+彼はまた、犬を公園へ散歩に連れて行きます。
+😢 Seeing abandoned animals makes him feel sad.
+捨てられた動物を見ると、彼は悲しくなります。
+🚫 He thinks people should stop buying pets easily.
+彼は、人々は安易にペットを買うのをやめるべきだと考えています。
+😊 When a dog finds a new family, Haru is happy.
+犬が新しい家族を見つけると、ハルは嬉しいです。
+🤝 He wants to help as many animals as possible.
+彼はできるだけ多くの動物を助けたいと思っています。
+📢 He tells his friends about the shelter.
+彼は友達に施設について話します。
+🌟 Animals are our friends, not just toys.
+動物はただのおもちゃではなく、私たちの友達です。
+
+🐕 Do you like dogs or cats?
+犬と猫、どちらが好きですか？
+🏠 Have you ever been to an animal shelter?
+動物保護施設に行ったことがありますか？
+🍖 Do you feed your pet?
+ペットにエサをあげますか？
+🚶‍♂️ Do you like walking dogs?
+犬の散歩は好きですか？
+😢 What makes you feel sad?
+何があなたを悲しくさせますか？
+🚫 What should people stop doing?
+人々は何をするのをやめるべきですか？
+😊 Does helping others make you happy?
+人を助けることはあなたを幸せにしますか？
+🤝 Do you want to do volunteer work?
+ボランティア活動をしたいですか？
+📢 Do you share news on social media?
+SNSでニュースを共有しますか？
+🌟 Do you think animals have feelings?
+動物には感情があると思いますか？`
+    },
+
+    // Story 47 - Taking Care of Houseplants
+    // Target Grammar: Remember to / Be interested in
+    {
+        title: "47. Taking Care of Houseplants (Remember to / Be interested in)",
+        content: `🌿 Maki bought a small plant for her room.
+マキは部屋のために小さな植物を買いました。
+🪴 It is a green plant that is easy to grow.
+それは育てるのが簡単な緑の植物です。
+💧 She must remember to water it twice a week.
+彼女は週に2回水をやるのを覚えておかなければなりません。
+☀️ Plants need sunlight to grow well.
+植物がよく育つには日光が必要です。
+📏 The plant is getting bigger day by day.
+その植物は日に日に大きくなっています。
+🗣️ Some people say talking to plants is good.
+植物に話しかけるのは良いと言う人もいます。
+👀 Maki enjoys watching new leaves come out.
+マキは新しい葉が出てくるのを見るのが好きです。
+🧘‍♀️ The green color makes her feel relaxed.
+緑色は彼女をリラックスさせます。
+🌸 She is interested in growing flowers next time.
+彼女は次は花を育てることに興味があります。
+🌟 Nature brings energy to our life.
+自然は私たちの生活にエネルギーをもたらします。
+
+🌿 Do you have plants in houses?
+家に植物がありますか？
+🪴 Do you want to grow vegetables?
+野菜を育てたいですか？
+💧 Do you often forget to do things?
+よく物事を忘れますか？
+☀️ Do you like sunny days?
+晴れた日は好きですか？
+📏 Are you getting taller?
+背は伸びていますか？
+🗣️ Do you talk to yourself?
+独り言を言いますか？
+👀 Do you observe nature?
+自然を観察しますか？
+🧘‍♀️ What color relaxes you?
+何色があなたをリラックスさせますか？
+🌸 What is your favorite flower?
+一番好きな花は何ですか？
+🌟 Do you like walking in the forest?
+森の中を歩くのは好きですか？`
+    },
+
+    // Story 48 - Looking Back on the Year
+    // Target Grammar: Present Perfect / Be going to
+    {
+        title: "48. Looking Back on the Year (Present Perfect / Be going to)",
+        content: `📅 It is December, and the year is ending soon.
+12月になり、もうすぐ一年が終わります。
+🤔 Saki is thinking about what she did this year.
+サキは今年自分が何をしたかについて考えています。
+🎾 She started playing tennis and made new friends.
+彼女はテニスを始め、新しい友達を作りました。
+📚 She studied hard and passed the Eiken test.
+彼女は一生懸命勉強し、英検に合格しました。
+✈️ She went on a school trip to Kyoto.
+彼女は修学旅行で京都に行きました。
+😊 She has many good memories from this year.
+彼女には今年の良い思い出がたくさんあります。
+🎯 However, there are things she wants to improve.
+しかし、改善したいこともあります。
+💪 Next year, she is going to read more books.
+来年、彼女はもっと本を読むつもりです。
+📝 She wrote her new goals in her diary.
+彼女は日記に新しい目標を書きました。
+🌟 Saki hopes next year will be a great year.
+サキは来年が素晴らしい年になることを願っています。
+
+📅 What month is it now?
+今は何月ですか？
+🤔 Do you remember what you did this year?
+今年何をしたか覚えていますか？
+🎾 Did you start anything new this year?
+今年何か新しいことを始めましたか？
+📚 Did you pass any tests this year?
+今年何かテストに合格しましたか？
+✈️ Did you go on a trip this year?
+今年旅行に行きましたか？
+😊 What is your best memory of this year?
+今年の最高思い出は何ですか？
+🎯 Do you have a goal for next year?
+来年の目標はありますか？
+💪 What do you want to improve?
+何を改善したいですか？
+📝 Do you write a diary?
+日記を書いていますか？
+🌟 Are you happy with your school life?
+学校生活に満足していますか？`
+    }
 ];
