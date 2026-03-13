@@ -1,0 +1,374 @@
+{
+  "fetchedAt": "2026-03-12T21:00:00Z",
+  "fetchedAtJST": "2026-03-13T06:00:00+09:00",
+  "date": "2026-03-13",
+  "sources": {
+    "bbc_world": {
+      "name": "BBC World",
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        {
+          "title": "Iran's new supreme leader vows to block Strait of Hormuz in first statement",
+          "summary": "A message attributed to Mojtaba Khamenei also says Iran will continue targeting US bases in the region.",
+          "category": "World",
+          "time": "27 mins ago"
+        },
+        {
+          "title": "Israel launches Tehran strikes, hours after first statement from new Iran supreme leader released",
+          "summary": "The message attributed to Mojtaba Khamenei was read by a presenter on Iranian state TV.",
+          "category": "World",
+          "time": "LIVE"
+        },
+        {
+          "title": "France's ghost car scandal that allowed one million illegal vehicles onto the roads",
+          "summary": "Fake dealerships were manipulating the state vehicle licensing agency's official records, France's auditor has found.",
+          "category": "Europe",
+          "time": "3 hrs ago"
+        },
+        {
+          "title": "Parents accused of hiding daughter's HIV infection and neglect",
+          "summary": "The child did not see a doctor until she was six and had not had any vaccinations.",
+          "category": "Europe",
+          "time": "4 hrs ago"
+        },
+        {
+          "title": "Emirati minister tells BBC Iran must end strikes on Gulf",
+          "summary": "The UAE says more than 1,800 drones and missiles have been projected at the country since the war began.",
+          "category": "Middle East",
+          "time": "39 mins ago"
+        },
+        {
+          "title": "Rapper-politician Balendra Shah's party wins Nepal election",
+          "summary": "The Rastriya Swatatantra Party has won a large majority in an election dominated by issues including corruption.",
+          "category": "Asia",
+          "time": "6 hrs ago"
+        },
+        {
+          "title": "Israeli military drops charges against soldiers accused of abusing Palestinian detainee",
+          "summary": "The Israeli military's top lawyer cites exceptional circumstances for dropping the case involving a Palestinian man held at Sde Teiman military prison.",
+          "category": "Middle East",
+          "time": "24 mins ago"
+        },
+        {
+          "title": "China approves 'ethnic unity' law requiring minorities to learn Mandarin",
+          "summary": "The law states that children should be taught Mandarin before kindergarten, until the end of high school.",
+          "category": "Asia"
+        },
+        {
+          "title": "Nineteen jailed over deadly Moscow concert attack",
+          "summary": "Gunmen opened fire at Crocus City Concert hall near Moscow in 2024, killing 149 and injuring more than 500.",
+          "category": "Europe"
+        },
+        {
+          "title": "US missile hit military base near Iran school, video analysis shows",
+          "summary": "A US Tomahawk missile hit a military base near a primary school in southern Iran where Iranian authorities said 168 people were killed.",
+          "category": "World"
+        },
+        {
+          "title": "Suspect dead after ramming vehicle into Jewish temple in Michigan",
+          "summary": "Police have not named the suspect or identified a motive for driving a vehicle into the synagogue, where it caught fire.",
+          "category": "World",
+          "time": "11 mins ago"
+        },
+        {
+          "title": "UK troops at Iraq base shot down Iranian drones, Healey says",
+          "summary": "British forces based in Iraq shot down two drones overnight, Defence Secretary John Healey has confirmed.",
+          "category": "Middle East",
+          "time": "47 mins ago"
+        },
+        {
+          "title": "King expresses 'concern' over Alberta separatists in meeting with First Nations chiefs",
+          "summary": "One First Nation has sued the province of Alberta, arguing that allowing a possible referendum on separating from Canada is a violation of indigenous rights.",
+          "category": "World",
+          "time": "55 mins ago"
+        },
+        {
+          "title": "'What if we're left with ruins?': Doubts creep in for Iranians who supported war",
+          "summary": "Teachers, engineers and shopkeepers tell the BBC they fear Iran falling into chaos.",
+          "category": "World",
+          "time": "Feature"
+        },
+        {
+          "title": "How Iran war laid bare the world's reliance on Gulf oil and gas",
+          "summary": "Countries around the world are feeling the impact of the conflict and the resulting energy price shock.",
+          "category": "World",
+          "time": "Feature"
+        },
+        {
+          "title": "War in Ukraine spills into Hungarian election campaign",
+          "summary": "Hungary is going to the polls soon and Prime Minister Viktor Orbán has one public enemy in his sights — Ukraine's president.",
+          "category": "Europe",
+          "time": "Feature"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "name": "BBC Asia",
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        {
+          "title": "Rapper-politician Balendra Shah's party wins Nepal election",
+          "summary": "The Rastriya Swatatantra Party has won a large majority in an election dominated by issues including corruption.",
+          "time": "5 hrs ago"
+        },
+        {
+          "title": "Video shows moment point-blank gunshot misses Indian politician",
+          "summary": "Senior Kashmir leader Farooq Abdullah escaped unhurt after the incident and the suspect is in custody.",
+          "time": "14 hrs ago"
+        },
+        {
+          "title": "Bodies of two Chinese backpackers found in Australian floodwaters",
+          "summary": "The pair had been reported missing on Tuesday after failing to reach their destination.",
+          "time": "17 hrs ago"
+        },
+        {
+          "title": "China approves 'ethnic unity' law requiring minorities to learn Mandarin",
+          "summary": "The law states that children should be taught Mandarin before kindergarten, until the end of high school.",
+          "time": "12 hrs ago"
+        },
+        {
+          "title": "What did we learn from China's biggest political meeting?",
+          "summary": "BBC correspondents give their biggest takeaways from China's National People's Congress.",
+          "time": "13 hrs ago"
+        },
+        {
+          "title": "'The situation is dire': War on Iran squeezes India's cooking-gas supplies",
+          "summary": "The shockwaves of the US-Israeli strikes on Iran are being felt in India's kitchens.",
+          "time": "13 hrs ago"
+        },
+        {
+          "title": "India's top court allows removal of life support of man in vegetative state",
+          "summary": "Harish Rana has been in a vegetative state since 2013, when he fell from a balcony and suffered head injuries."
+        },
+        {
+          "title": "India's IndiGo airline CEO resigns months after mass cancellation crisis",
+          "summary": "The airline said Peiter Elbers stepped down for personal reasons, without sharing further details."
+        },
+        {
+          "title": "China and North Korea to reopen passenger train service after pandemic halt",
+          "summary": "Tickets for the first train departing on Thursday have reportedly sold out."
+        },
+        {
+          "title": "Inside the Australian hotel where Iranian footballers escaped to claim asylum",
+          "summary": "Activists played a key role in making contact with the women as they tried to dodge their minders.",
+          "time": "Feature"
+        },
+        {
+          "title": "The final voyage of the Iranian warship sunk by the US",
+          "summary": "The sinking of an Iranian ship by the US near Sri Lanka brings the conflict uncomfortably close to India.",
+          "time": "Feature"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "name": "BBC UK",
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        {
+          "title": "UK troops at Iraq base shot down Iranian drones, Healey says",
+          "summary": "British forces based in Iraq shot down two drones overnight, Defence Secretary John Healey has confirmed.",
+          "time": "36 mins ago"
+        },
+        {
+          "title": "Mother is jailed for enslaving woman for 25 years",
+          "summary": "Mandy Wixon, 56, forced the victim to clean her squalid home and subjected her to a miserable life.",
+          "time": "6 hrs ago"
+        },
+        {
+          "title": "Jo Malone sued for using her own name in collaboration with Zara",
+          "summary": "The perfumier sold the rights to her name in 1999 but has previously said she regretted the move.",
+          "time": "4 hrs ago"
+        },
+        {
+          "title": "British man charged in Dubai for alleged filming of Iranian missiles",
+          "summary": "Foreign Office officials are understood to be supporting his family.",
+          "time": "3 hrs ago"
+        },
+        {
+          "title": "PM says Mandelson appointment was mistake as No 10 denies cover-up",
+          "summary": "Documents show Sir Keir Starmer was warned the peer's relationship with Jeffrey Epstein posed a reputational risk.",
+          "time": "17 mins ago"
+        },
+        {
+          "title": "Lloyds, Bank of Scotland and Halifax apps showed customers other users' transactions",
+          "summary": "Lloyds Banking Group customers reported being able to view payments and charges from other sources.",
+          "time": "4 hrs ago"
+        },
+        {
+          "title": "UK asylum appeal backlog at record high of 80,000",
+          "summary": "Home Office statistics show more than 80,333 people were waiting for appeals to be heard at the end of 2025.",
+          "time": "12 mins ago"
+        },
+        {
+          "title": "Wuthering Heights uni module given content warning for students",
+          "summary": "A Cardiff University module featuring Wuthering Heights carries 'distressing content' warning."
+        },
+        {
+          "title": "Sly fox sneaks on to cargo ship in Southampton and arrives in New York",
+          "summary": "The animal that stowed away on the vessel is now in the care of the Bronx Zoo with veterinary staff."
+        },
+        {
+          "title": "Student loans inquiry to look at whether system is 'unfair to graduates'",
+          "summary": "The Treasury Committee will look at whether the goalposts have been moved in a way which is unfair."
+        },
+        {
+          "title": "UK does not 'agree with Trump on every issue' - Cooper",
+          "summary": "Foreign Secretary Yvette Cooper has hit back at President Trump's criticism of the UK response to the conflict in Iran.",
+          "time": "Video"
+        },
+        {
+          "title": "My identity was stolen and someone is using it to catfish men - it's terrifying",
+          "summary": "For four years, Sasha-Jay's photos have been stolen from social media to impersonate her online.",
+          "time": "Feature"
+        }
+      ]
+    },
+    "nhk": {
+      "name": "NHK WORLD-JAPAN",
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/",
+      "note": "NHK's English site is heavily JS-rendered; headline extraction returned minimal text. Previous fetches suggest current top story relates to incarceration camp survivors' stories.",
+      "headlines": [
+        {
+          "title": "Incarceration camp survivors' stories remain relevant",
+          "date": "Feb. 27, 2026",
+          "duration": "6m 57s"
+        }
+      ]
+    },
+    "cnn": {
+      "name": "CNN",
+      "url": "https://lite.cnn.com",
+      "headlines": [
+        {
+          "title": "The Iran war threatens to undermine Trump's favorite bragging point",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Fatal shooting at Virginia university is being investigated as an act of terrorism, FBI says",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Stocks fall and global oil reclaims $100 as Iran's new supreme leader vows to keep Strait of Hormuz closed",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Homeland Security pushes for access to restricted federal database on child support, employment information for millions",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "Mortgage rates climb to 6.11% as Iran war roils markets",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Gov. Gavin Newsom says no 'imminent threat' to California after FBI memo on possible Iran drone attacks",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "How Iran's use of cluster munitions is challenging Israel's air defenses",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Trump may be unable to end the war he started with Iran, even if he wanted to",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Reports of active shooter at Detroit-area synagogue containing school",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "With the Strait of Hormuz choked by war, the Panama Canal reaps the benefits",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Largest housing affordability package in a generation passes in the Senate",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "The biggest Iran polling takeaway: Americans don't see the point of this war",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "What we know on the 13th day of the US and Israel's war with Iran",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Iran supreme leader's first purported message leaves a major question unanswered",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Michelin-starred Noma head chef resigns following abuse allegations",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Oil soars above $100 after Iran says Strait of Hormuz will remain shut",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Iranian filmmakers head to the Oscars as war engulfs their country",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "For nearly two weeks, Chinese fighter jets stopped buzzing Taiwan. No one seems to know why.",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Why Trump's Gulf allies are resisting pressure to join the Iran war",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Pro-Iran hackers claim cyberattack on major US medical device maker",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "Tornado kills 2 in Indiana as dangerous storms make their final push",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "Tornado kills 2 in Indiana — tracking in maps and charts",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "Pritzker Prize 2026: Chile's Smiljan Radić wins 'Nobel' of architecture",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "How Trump's Iran exposure could hand Putin a lottery win",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Katie Perry vs Katy Perry: Australian designer wins trademark over popstar",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "FBI agents to train with UFC fighters at Quantico",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "West Virginia can ban Medicaid coverage for gender-affirming surgery, US court rules",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "NASA spacecraft makes an uncontrolled plunge back to Earth",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "How the World Baseball Classic revealed Team USA's hubris",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "Longtime Epstein accountant testifies behind closed doors for roughly 7 hours in House Oversight probe",
+          "date": "2026-03-11"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "fetchQuality": {
+      "bbc_world": "good",
+      "bbc_asia": "good",
+      "bbc_uk": "good",
+      "nhk": "poor - JS-rendered, minimal text extracted",
+      "cnn": "good (via lite.cnn.com)"
+    }
+  }
+}

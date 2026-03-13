@@ -42,7 +42,7 @@ var eiken5story = [
 速く走りますか、それともゆっくり歩きますか？
 😊 Are you happy today?
 今日は幸せですか？
-`
+`,
   },
   {
     title: '2. The Hungry Cat (Present Continuous Focus)',
@@ -87,7 +87,7 @@ var eiken5story = [
 一番好きな食べ物は何ですか？
 🐱 Do you want a pet cat or dog?
 猫や犬を飼いたいですか？
-`
+`,
   },
   {
     title: '3. The Sick Friend',
@@ -132,7 +132,7 @@ var eiken5story = [
 今日の体温はわかりますか？
 😊 Do you feel healthy today?
 今日は健康な気分ですか？
-`
+`,
   },
   {
     title: '4. The New Friend (Wh-Questions Focus)',
@@ -175,7 +175,7 @@ var eiken5story = [
 新しい友達ができると嬉しいですか？
 😊 What makes you happy at school?
 学校では何があなたを幸せにしますか？
-`
+`,
   },
   {
     title: '5. The Surprise Birthday',
@@ -220,7 +220,7 @@ var eiken5story = [
 お父さんは誕生日に仕事をしますか？
 😊 What makes you happy on birthdays?
 誕生日には何があなたを幸せにしますか？
-`
+`,
   },
   {
     title: '6. The Big Storm',
@@ -265,7 +265,7 @@ var eiken5story = [
 何を怖がっていますか？
 💡 Do you feel safe during storms?
 嵐の時は安全を感じますか？
-`
+`,
   },
   {
     title: '7. The Broken Glasses (Present Continuous Focus)',
@@ -310,7 +310,7 @@ var eiken5story = [
 物を壊すと悲しい気分ですか？
 👨‍⚕️ What do doctors do?
 医者はあなたに何をしてくれますか？
-`
+`,
   },
   {
     title: '8. The Lost Dog (Be-Verb Questions Focus)',
@@ -355,7 +355,7 @@ var eiken5story = [
 ペットが逃げると怖いですか？
 ❤️ Are you happy with petss?
 ペットと一緒にいて幸せですか？
-`
+`,
   },
   {
     title: '9. The Soccer Match',
@@ -400,7 +400,7 @@ var eiken5story = [
 チームに入っていますか？
 😊 Are you proud of your skills?
 スポーツの技能に誇りを持っていますか？
-`
+`,
   },
   {
     title: '10. The Ice Cream Shop (Present Continuous Focus)',
@@ -445,7 +445,7 @@ var eiken5story = [
 お母さんとおやつを食べるのは好きですか？
 😊 Are you happy when you eat ice cream?
 アイスクリームを食べると幸せですか？
-`
+`,
   },
   {
     title: '11. The Piano Lesson',
@@ -490,7 +490,7 @@ var eiken5story = [
 音楽を学ぶのは得意ですか？
 🎵 What is your favorite music style?
 一番好きな音楽のスタイルは何ですか？
-`
+`,
   },
   {
     title: '12. The Cooking Class (Be-Verb Questions Focus)',
@@ -535,7 +535,7 @@ var eiken5story = [
 イタリア料理と日本料理、どっちが好きですか？
 😊 Are you proud of your cooking?
 自分の料理に誇りを持っていますか？
-`
+`,
   },
   {
     title: '13. The Library Books',
@@ -580,7 +580,7 @@ var eiken5story = [
 本は一番好きなものですか？
 😊 Are you happy when you read good books?
 良い本を読むと幸せですか？
-`
+`,
   },
   {
     title: '14. The Rainy Camping Trip',
@@ -625,7 +625,7 @@ var eiken5story = [
 雨で計画が中止になると悲しいですか？
 🏕️ Is camping better in sunny weather or rainy weather?
 キャンプは晴れの日と雨の日、どっちがいいですか？
-`
+`,
   },
   {
     title: '15. The Shopping Day',
@@ -670,7 +670,7 @@ var eiken5story = [
 お母さんと出かけるのは好きですか？
 😊 Are you happy today?
 今日は幸せですか？
-`
+`,
   },
   {
     title: '16. The Bike Race (Present Continuous Focus)',
@@ -715,7 +715,7 @@ var eiken5story = [
 あなたの自転車は赤色ですか、それとも他の色ですか？
 😊 Are you proud of bikes riding?
 自転車乗りに誇りを持っていますか？
-`
+`,
   },
   {
     title: '17. The Cherry Blossoms',
@@ -760,7 +760,7 @@ var eiken5story = [
 花はいい匂いがしますか？
 😊 Are you happy when you see beautiful flowers?
 美しい花を見ると幸せですか？
-`
+`,
   },
   {
     title: '18. The Beach Day (Wh-Questions Focus)',
@@ -805,7 +805,7 @@ var eiken5story = [
 海の日はリラックスできますか？
 🌊 Do you like beach days or park days better?
 海の日と公園の日、どっちが好きですか？
-`
+`,
   },
   {
     title: '19. The Angry Moment',
@@ -850,7 +850,8 @@ var eiken5story = [
 喧嘩の後も友達ですか？
 😊 Do you feel happy when you make up?
 仲直りすると幸せですか？
-`
+`,
+  },
   {
     title: '20. The Lost Wallet (Wh-Questions Focus)',
     content: `
@@ -890,7 +891,7 @@ var eiken5story = [
 問題がある時誰が助けてくれますか？
 🏫 Do you thank people who help you?
 助けてくれた人に感謝しますか？
-`
+`,
   },
   {
     title: '21. The Basketball Game',
@@ -935,7 +936,7 @@ var eiken5story = [
 勝つとお祝いしますか？
 😊 Are you proud when teams wins?
 チームが勝つと誇らしい気分ですか？
-`
+`,
   },
   {
     title: '22. The Bus Ride (Present Continuous Focus)',
@@ -980,7 +981,7 @@ var eiken5story = [
 学校に着くと幸せですか？
 😊 Does being kind feel good to you?
 親切にするのは良い気分ですか？
-`
+`,
   },
   {
     title: '23. The Embarrassing Mistake',
@@ -1025,7 +1026,7 @@ var eiken5story = [
 自分のミスを笑いますか？
 😳 Do embarrassing moments make you stronger?
 恥ずかしい時は強くなりますか？
-`
+`,
   },
   {
     title: '24. The Helping Hand (Wh-Questions Focus)',
@@ -1070,7 +1071,7 @@ var eiken5story = [
 助けると心が暖かくなりますか？
 😊 Do you like helping others?
 他人を助けるのは好きですか？
-`
+`,
   },
   {
     title: '25. The School Sports Day',
@@ -1115,7 +1116,7 @@ var eiken5story = [
 自分に誇りを持っていますか？
 😊 Are sports days fun for you?
 運動会は楽しいですか？
-`
+`,
   },
   {
     title: '26. The Morning Routine (Present Continuous Focus)',
@@ -1160,7 +1161,7 @@ var eiken5story = [
 毎日朝食を食べますか？
 😌 Do you feel ready for school in the morning?
 朝は学校の準備ができていますか？
-`
+`,
   },
   {
     title: '27. The Autumn Leaves',
@@ -1205,7 +1206,7 @@ var eiken5story = [
 秋の日は美しいですか？
 😊 Do you feel happy in autumn?
 秋は幸せな気分ですか？
-`
+`,
   },
   {
     title: '28. The Dream Job (Wh-Questions Focus)',
@@ -1250,7 +1251,7 @@ var eiken5story = [
 毎日おもちゃで遊びますか？
 🌟 Do you believe your dreams can come true?
 夢は叶うと信じていますか？
-`
+`,
   },
   {
     title: '29. The Proud Achievement',
@@ -1295,7 +1296,7 @@ var eiken5story = [
 幸せを他人と分かち合いますか？
 🌟 Do you believe working hard brings success?
 努力は成功をもたらすと信じていますか？
-`
+`,
   },
   {
     title: '30. Learning to Swim (Be-Verb Questions Focus)',
@@ -1340,7 +1341,7 @@ var eiken5story = [
 水泳と走ること、どっちが好きですか？
 😊 Do you feel proud when you learn new things?
 新しいことを学ぶと誇らしい気分ですか？
-`
+`,
   },
   {
     title: '31. Teaching a Friend',
@@ -1385,7 +1386,7 @@ var eiken5story = [
 人を助けると嬉しい気分ですか？
 🎸 Do you like music or sports better?
 音楽とスポーツ、どっちが好きですか？
-`
+`,
   },
   {
     title: '32. The Snowy Winter Fun (Present Continuous Focus)',
@@ -1430,7 +1431,7 @@ var eiken5story = [
 手で雪をキャッチするのは好きですか？
 😊 Do you like winter best?
 冬が一番好き？
-`
+`,
   },
   {
     title: '33. The Winter Festival',
@@ -1475,7 +1476,7 @@ var eiken5story = [
 祭りは素晴らしいですか、それとも退屈ですか？
 😊 Do you feel happy at festivals?
 祭りで幸せな気分になりますか？
-`
+`,
   },
   {
     title: '34. The Bedtime Story',
@@ -1520,7 +1521,7 @@ var eiken5story = [
 良い夢を見ますか？
 🌙 What do you say before sleeping?
 寝る前に何と言いますか？
-`
+`,
   },
   {
     title: '35. The School Field Trip',
@@ -1565,7 +1566,7 @@ var eiken5story = [
 遠足は楽しいですか、それとも疲れますか？
 🚌 Do you like riding the school bus?
 スクールバスに乗るのは好きですか？
-`
+`,
   },
   {
     title: '36. The Weekend Fun (Be-Verb Questions Focus)',
@@ -1610,7 +1611,7 @@ var eiken5story = [
 散歩の後は幸せな気分ですか？
 🎮 Do you like games or outdoor activities better?
 ゲームと屋外のアクティビティ、どっちが好きですか？
-`
+`,
   },
   {
     title: '37. The Rainy Weekend',
@@ -1655,7 +1656,7 @@ var eiken5story = [
 雨の日は心地よいですか、それとも退屈ですか？
 🌧️ Would you rather stay inside or go out in the rain?
 雨の日は家の中にいたいですか、それとも外に行きたいですか？
-`
+`,
   },
   {
     title: '38. Learning Baseball (Present Continuous Focus)',
@@ -1698,7 +1699,7 @@ var eiken5story = [
 走るのは速いですか、それとも遅いですか？
 😊 Do you like outdoor sports?
 屋外スポーツは好きですか？
-`
+`,
   },
   {
     title: '39. The Evening Routine',
@@ -1743,7 +1744,7 @@ var eiken5story = [
 一日の終わりは疲れていますか？
 🌝 Is evening time relaxing?
 夕方の時間はリラックスできますか？
-`
+`,
   },
   {
     title: '40. The Brave Friend (Wh-Questions Focus)',
@@ -1786,7 +1787,7 @@ var eiken5story = [
 友情はあなたにとって大切ですか？
 😰 Do you help friendss when they are scared?
 友達が怖い時は助けてあげますか？
-`
+`,
   },
   {
     title: '41. The New Classroom',
@@ -1829,7 +1830,7 @@ var eiken5story = [
 新しいクラスに移るのは難しいですか？
 😊 Are you happy when you make new friends?
 新しい友達ができると幸せですか？
-`
+`,
   },
   {
     title: '42. The Music Practice (Mixed)',
@@ -1874,7 +1875,7 @@ var eiken5story = [
 音楽は得意ですか？
 🎉 Do you like music for fun or for learning?
 音楽は楽しみのためにするのも好きですか、それとも学ぶためにするのも好きですか？
-`
+`,
   },
   {
     title: '43. The Kind Stranger',
@@ -1919,7 +1920,7 @@ var eiken5story = [
 親切な人は大切ですか？
 😊 Do you smile when you are happy?
 幸せな時は笑顔になりますか？
-`
+`,
   },
   {
     title: '44. Helping Classmate',
@@ -1962,7 +1963,7 @@ var eiken5story = [
 親切なクラスメイトがいますか？
 😊 Are you happy when you can help?
 助けられる時は幸せですか？
-`
+`,
   },
   {
     title: '45. The School Festival',
@@ -2007,7 +2008,7 @@ var eiken5story = [
 学校の日はあなたにとって特別ですか？
 🌟 Do you like school events?
 学校のイベントは好きですか？
-`
+`,
   },
   {
     title: '46. The Train Trip',
@@ -2052,7 +2053,7 @@ var eiken5story = [
 旅行はエキサイティングですか？
 🌄 What do you like to see outside?
 外では何を見るのが好きですか？
-`
+`,
   },
   {
     title: '47. The Art Project (Present Continuous Focus)',
@@ -2097,7 +2098,7 @@ var eiken5story = [
 どんな種類の芸術が一番好きですか？
 😊 Are you happy about your art?
 自分の芸術について幸せですか？
-`
+`,
   },
   {
     title: '48. The Graduation (Mixed)',
@@ -2142,6 +2143,6 @@ var eiken5story = [
 まもなく新しい学校に進学しますか？
 🌟 What are your hopes for the future?
 将来の希望は何ですか？
-`
+`,
   }
 ];
