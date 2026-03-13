@@ -115,10 +115,10 @@ async function getRecentFunQuestions() {
   const now = new Date();
   console.log('Checking for recent fun questions files...');
   
-  // Check today and the next 6 days (for cron jobs that generate future-dated files)
-  for (let i = 0; i < 7; i++) {
+  // Check past 6 days and today (covers the 7-day window)
+  for (let i = -6; i <= 0; i++) {
     const date = new Date(now);
-    date.setDate(date.getDate() + i); // Add days (future dates)
+    date.setDate(date.getDate() + i); // Negative = past, 0 = today
     const filename = formatDateFunQuestions(date);
     const questionsDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
     const diffDays = Math.abs((now - questionsDate) / (1000 * 60 * 60 * 24));
