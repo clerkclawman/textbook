@@ -3,108 +3,108 @@ var funQuestions20260314 = [
     title: "Fun Questions of the Day - March 14, 2026",
     content: `N7. 🍎 What is your favorite fruit to eat?
 あなたの一番好きな果物は何ですか？
-N7. 🐸 If a frog could sing, what song would it sound like?
-カエルが歌えるなら、どんな歌みたいに聞こえますか？
+N7. 🐸 Can you catch a bug with your hands?
+虫を手で捕まえられますか？
 N7. 🌞 What do you like to do on sunny days?
 晴れた日には何をするのが好きですか？
-N7. 🍕 If you could put any topping on pizza, what would you try?
-ピザにトッピングを自由に選べたら、何を試したいですか？
-N7. 🏠 What is the coziest room in your house?
-あなたの家の一番居心地の良い部屋はどこですか？
-N7. 🐱 If your pet had a job, what would it be?
-もしペットに仕事があったら、何をしますか？
-N7. 🚗 Where would you go if you could drive a car today?
-もし今日車が運転できるなら、どこに行きますか？
-N7. 🌈 What makes you smile when you feel sad?
-悲しいときに笑顔になることは何ですか？
-N7. 🎨 If you could paint your room any color, what would you choose?
-自分の部屋をどんな色に塗れたら、何色を選びますか？
-N7. 🦁 If you could be any animal for a day, which would you pick?
-一日だけ動物になれるとしたら、どの動物を選びますか？
+N7. 🍕 How many slices of pizza can you eat in one day?
+一日に何枚ピザを食べられますか？
+N7. 🏠 Do you share a room with anyone?
+誰かと部屋を共有していますか？
+N7. 🐱 Do you like cats or dogs more? Why?
+猫と犬、どちらが好きですか？なぜですか？
+N7. 🚗 What color is your family car? Do you like it?
+あなたの家の車は何色ですか？それが好きですか？
+N7. 🌈 What color socks are you wearing today?
+今日、何色の靴下を履いていますか？
+N7. 🎨 What is the ugliest color?
+一番ダサい色は何ですか？
+N7. 🦁 Can you roar like a lion? Show someone!
+ライオンのように吠えられますか？誰かに見せて！
 
-N6. 🍳 What food makes you feel happy when you eat it?
-食べると幸せな気持ちになる食べ物は何ですか？
-N6. 🐘 If an elephant came to your school, what would happen?
-象が学校に来たら、何が起こりますか？
-N6. 🌊 What is the best thing about going to the beach?
-ビーチに行く一番良いところは何ですか？
-N6. 👻 If you could talk to any fictional character, who would you choose?
-作り話のキャラクターと話せるなら、誰を選びますか？
-N6. 🎵 What song do you like to sing or listen to right now?
-今、歌ったり聞いたりするのが好きな歌は何ですか？
-N6. 🍌 If you invented a new fruit, what would it look like and taste like?
-新しい果物を発明するなら、見た目と味はどうしますか？
-N6. 🏃 What sport would be funniest if everyone had to wear silly hats?
-みんなが変な帽子をかぶるとしたら、どのスポーツが一番面白いですか？
-N6. 🦋 If you could have any insect as a pet, which would be interesting?
-昆虫をペットにできるとしたら、どの昆虫が面白そうですか？
-N6. 👕 If your clothes could change color, what would you want them to do?
-服の色が変わるとしたら、どうしてほしいですか？
-N6. 🌋 If you discovered a new island, what would you name it?
-新しい島を発見したら、何と名前をつけますか？
+N6. 🍳 Do you like broccoli? Be honest!
+ブロッコリーは好きですか？正直に！
+N6. 🐘 Can you make an elephant sound?
+象の声真似できますか？
+N6. 🌊 Have you ever swallowed seawater by mistake?
+間違えて海水を飲んだことがありますか？
+N6. 👻 What is the scariest animal?
+一番怖い動物は何ですか？
+N6. 🎵 Can you sing the ABC song backwards?
+ABCの歌を逆から歌えますか？
+N6. 🍌 Have you ever slipped on a banana peel?
+バナナの皮で滑ったことがありますか？
+N6. 🏃 How many steps can you jump down from?
+何段からジャンプできますか？
+N6. 🦋 What is the weirdest bug you have ever seen?
+今まで見た中で一番ヘンな虫は何ですか？
+N6. 👕 What color of pants do you hate?
+嫌いな色のズボンは何色ですか？
+N6. 🌋 If you could name a volcano, what would you call it?
+火山に名前をつけるなら、何と名づけますか？
 
-N5. 📚 What book or story would you recommend to a friend?
-友達におすすめする本や物語は何ですか？
-N5. 🎮 If you could design a video game, what would it be about?
-ゲームをデザインできるとしたら、どんな内容にしますか？
-N5. 🌍 If you could visit any country, where would you go and why?
-どの国でも訪れられるとしたら、どこに行って、なぜですか？
-N5. 🏫 What is the most interesting thing you learned this week?
-今週学んだ中で一番興味深かったことは何ですか？
-N5. 🍜 If you could eat dinner with anyone, who would you choose?
-誰とでも夕食を食べられるとしたら、誰を選びますか？
-N5. ⚡ If you could have any superpower that only works at home, what would it be?
-家の中だけで使えるスーパーパワーがあるとしたら、何が欲しいですか？
-N5. 🏔️ What would you pack for a mountain adventure?
-山の冒険には何を持って行きますか？
-N5. 🎬 If your day was a movie, what would the title be today?
-もしあなたの一日が映画なら、今日のタイトルは何ですか？
-N5. 🦜 If animals could talk, which would be the most interesting to talk to?
-動物が話せるなら、どの動物と話すのが一番面白そうですか？
-N5. 🌟 What is something you want to learn how to do this year?
-今年、何かできるようになりたいことは何ですか？
+N5. 📚 What is the most boring book you ever read?
+今まで読んだ中で一番つまらなかった本は何ですか？
+N5. 🎮 How many video games do you own?
+ゲームを何持っていますか？
+N5. 🌍 Have you ever been to another country?
+外国に行ったことがありますか？
+N5. 🏫 Which is worse: homework or cleaning?
+宿題と掃除、どっちがもっと大変ですか？
+N5. 🍜 Can you eat spicy food without crying?
+泣かないで辛い食べ物を食べられますか？
+N5. ⚡ Have you ever been stung by a bee?
+蜂に刺されたことがありますか？
+N5. 🏔️ What food would you never eat again?
+もう二度と食べない食べ物は何ですか？
+N5. 🎬 What is the worst movie you ever saw?
+今まで見た中で一番ダメな映画は何ですか？
+N5. 🦜 Can you whistle? How loud?
+口笛吹けますか？どのくらい大きい音が出ますか？
+N5. 🌟 Which is worse, Tokyo or Kyoto?
+東京と京都、どっちがマシですか？
 
-N4. 🗓️ If you could add one holiday to the calendar, what would it be?
-カレンダーに一つ祝日を追加できるとしたら、何にしますか？
-N4. 🛁 If you could build your dream house, what unusual room would it have?
-理想の家を建てるとしたら、どんな変わった部屋を作りますか？
-N4. 🎭 What talent do you wish you had, and how would you use it?
-持っていたい才能は何ですか？それをどう使いますか？
-N4. 🧹 If you were principal for a day, what rule would you change?
-一日だけ校長先生になれたら、どのルールを変えますか？
-N4. 🔬 What invention do you think the world still needs?
-世界がまだ必要だと思う発明は何ですか？
-N4. 🏰 If you could live inside any story, which would you choose?
-どの物語の中にも住めるとしたら、どの物語を選びますか？
-N4. 🧗 What is something scary you would like to try someday?
-いつか挑戦してみたい怖いことは何ですか？
-N4. 🎸 If you started a band, what would you name it?
-バンドを始めたら、何と名前をつけますか？
-N4. 🌱 If you could grow any plant instantly, what would you grow?
-どんな植物でもすぐに育てられるとしたら、何を育てますか？
-N4. 🪐 If you could ask an alien one question, what would you ask?
-エイリアンに一つ質問できたら、何を聞きますか？
+N4. 🗓️ How many lollipops can you fit in your mouth at once?
+一度に何本の棒あめを口に入れられますか？
+N4. 🛁 How long is your longest bath ever?
+今までで一番長いお風呂は何分でしたか？
+N4. 🎭 Can you do a funny face? Show someone!
+面白い顔できますか？誰かに見せて！
+N4. 🧹 Do you think your room is clean right now?
+自分の部屋は今きれいだと思いますか？
+N4. 🔬 Have you ever broken something and not told anyone?
+誰にも言わずに何かを壊したことがありますか？
+N4. 🏰 Does your dad have a giant belly?
+お父さんのお腹は大きいですか？
+N4. 🧗 What is the highest place you have ever climbed?
+今まで登った中で一番高い場所はどこですか？
+N4. 🎸 Have you ever found money on the ground?
+地面でお金を拾ったことがありますか？
+N4. 🌱 Is your grandad 100 yet?
+おじいちゃんはもう100歳ですか？
+N4. 🪐 Would you rather have no eyes or no ears?
+目がなくなるのと耳がなくなるの、どっちがマシですか？
 
-N3. 🧠 What is the hardest decision you have had to make recently?
-最近、あなたが下した最も難しい決断は何ですか？
-N3. 🚀 If you could solve one world problem, which would you choose and why?
-世界の問題を一つ解決できるとしたら、どの問題を、なぜ選びますか？
-N3. 🌍 How do you think schools will be different in 50 years?
-50年後、学校はどのように違うと思いますか？
-N3. 🦷 If you could give advice to your younger self, what would you say?
-若い自分にアドバイスを送れたら、何と言いますか？
-N3. 🎨 What do you think makes a person truly successful?
-人を本当に成功させるものは何だと思いますか？
-N3. 🧊 If you could change one thing about the world, what would it be?
-世界の一つのことを変えられるとしたら、何を変えますか？
-N3. 🌱 What is a mistake that taught you an important lesson?
-重要な教訓を教えてくれた間違いは何ですか？
-N3. 🤖 Do you think robots will make life better or worse in the future?
-ロボットは将来の生活を良くすると思いますか、それとも悪くすると思いますか？
-N3. ⚡ What personal quality is most important for achieving your dreams?
-夢を実現するために最も重要な個人的な資質は何ですか？
-N3. 🪐 If you could leave one message for future generations, what would it say?
-将来の世代に一つメッセージを残せるとしたら、何と言いますか？
+N3. 🧠 How many things can you remember from yesterday?
+昨日のことをいくつ覚えていますか？
+N3. 🚀 Do you wish you had more legs? How many?
+もっと足があったらいいと思いますか？何本？
+N3. 🌍 What is the weirdest dream you ever had?
+今まで見た中で一番ヘンな夢は何ですか？
+N3. 🦷 Have you ever lost a tooth somewhere strange?
+変な場所で歯を失ったことがありますか？
+N3. 🎨 What is the most embarrassing thing that happened to you?
+あなたに起きた一番恥ずかしいことは何ですか？
+N3. 🧊 Have you ever laughed when you shouldn't have?
+笑ってはいけないときに笑ったことがありますか？
+N3. 🌱 What is a lie you told that everyone believed?
+みんなが信じた嘘をついたことがありますか？
+N3. 🤖 If you could skip one subject at school, which would it be?
+学校で一つ科目を飛ばせるなら、何を飛ばしますか？
+N3. ⚡ What is the longest you stayed awake?
+今まで一番長く起きていたのはどのくらいですか？
+N3. 🪐 What rule do you wish didn't exist?
+存在しないでほしいルールは何ですか？
 `
   }
 ];
