@@ -1,105 +1,154 @@
 var news20260313 = [
   {
     title: "March 13, 2026: World News & Headlines",
-    content: `1. 🚨 Iran's new supreme leader vows to blockade the Strait of Hormuz in his inaugural declaration - Should a nation resort to economic warfare through maritime obstruction?
-イランの新最高指導者が就任初の声明でホルムズ海峡の封鎖を宣言 - 海上封鎖による経済戦争に訴えるべきか？
-2. 🚀 Israel conducts strikes on Tehran hours after Iran's supreme leader issues his first statement - Does preemptive military action ever serve diplomatic purposes?
-イラン最高指導者の声明から数時間後にイスラエルがテヘランを攻撃 - 先制攻撃が外交的目的に資することはあり得るか？
-3. 🚗 France's auditors uncover a ghost car scandal that permitted one million illicit vehicles on public roads - How vulnerable are governmental record-keeping systems to corruption?
-フランスで100万台の不正車両を許した幽霊車検スキャンダルが発覚 - 政府の記録管理システムは汚職にどれほど脆弱か？
-4. 🏥 Parents stand accused of concealing their daughter's HIV diagnosis and medical neglect - At what juncture should state intervention supersede parental authority?
-両親が娘のHIV感染を隠し医療を怠ったとして起訴 - どの時点で国家の介入が親権に優先すべきか？
-5. 🇦🇪 Emirati minister demands Iran cease strikes on Gulf states as drones and missiles exceed 1,800 - Is collective regional defence more efficacious than individual state measures?
-UAE大臣が1800機以上のドローンとミサイルに対しイランに攻撃停止を要求 - 集体的地域防衛は個別の国家措置より効果的か？
-6. 🎤 Rapper-turned-politician Balendra Shah's party secures a sweeping victory in Nepal's election - Can celebrity figures effectuate meaningful political transformation?
-ラッパーから政治家に転身したバレンドラ・シャハ氏の政党がネパール選挙で圧勝 - 有名人が実質的な政治的変革を成し遂げられるか？
-7. ⚖️ Israeli military dismisses charges against soldiers implicated in the abuse of a Palestinian detainee - Should military tribunals operate under the same standards as civilian courts?
-イスラエル軍がパレスチナ人被拘束者虐待に関与した兵士の訴追を取り下げ - 軍事法廷は民間裁判所と同一基準で運営されるべきか？
-8. 🇨🇳 China ratifies an ethnic unity statute compelling minority populations to acquire Mandarin proficiency - Do language mandates strengthen or erode cultural diversity?
-中国が少数民族に中国語習得を義務付ける民族統一法を批准 - 言語義務は文化多様性を強化するか、それとも損なうか？
-9. ⚖️ Nineteen individuals receive prison sentences for the devastating 2024 Moscow concert hall atrocity - Does judicial punishment adequately address the trauma of mass violence?
-2024年のモスクワコンサート会場の残虐事件で19人に実刑判決 - 司法処罰は大量暴力のトラウマに十分対十分対処しうるか？
-10. 💥 Analysis reveals a US Tomahawk missile struck a military installation adjacent to a school in southern Iran - How should nations reconcile military objectives with civilian safety?
-米国のトマホークミサイルがイラン南部の学校に隣接する軍事施設に命中したことが分析で判明 - 国家は軍事目標と民間人の安全を如何に調和すべきか？
-11. 🕍 A suspect perishes after ramming a vehicle into a Michigan synagogue, igniting a fire - What societal factors contribute to the escalation of hate-driven violence?
-ミシガン州のシナゴーグに車を突っ込み火災を発生させた容疑者が死亡 - 仇恨に駆動された暴力の激化に寄与する社会的要因は何か？
-12. 🇬🇧 British troops stationed at an Iraqi base intercept and neutralise Iranian drones overnight - Should allied nations share the burden of regional air defence equally?
-イラク駐留の英国軍が一晩でイランのドローンを撃墜 - 同盟国は地域防空の負担を均等に分担すべきか？
-13. 👑 The King voices concern over Alberta separatist movements during consultations with First Nations chiefs - Do indigenous rights take precedence over provincial autonomy?
-国王がファーストネーションの首長との協議でアルバータ分離運動に懸念を表明 - 先住民の権利は州の自治に優先するか？
-14. 💭 Iranians who initially supported the war begin to question whether they will inherit only ruins - When does patriotic fervour transform into existential disillusionment?
-当初戦争を支持したイラン人が廃墟だけが残るのではないかと疑念を抱く - 愛国的熱意はいつ存亡の幻滅に変わるか？
-15. 🛢️ The Iran conflict exposes the world's profound dependence on Gulf oil and gas supplies - Should nations accelerate the transition to renewable energy as a security imperative?
-イラン紛争が世界の湾岸石油・ガスへの依存度を露呈 - 国家は安全保障上の要請として再生可能エネルギーへの移行を加速すべきか？
-16. 🇭🇺 The war in Ukraine permeates Hungary's parliamentary election campaign as Orbán targets Zelenskyy - To what extent should foreign conflicts influence domestic electoral discourse?
-ウクライナ戦争がオルバン首相がゼレンスキーを標的とするハンガリー議会選挙に波及 - 外国紛争はどの程度まで国内選挙の議論に影響すべきか？
-17. 🎬 Indian politician Farooq Abdullah narrowly escapes a point-blank assassination attempt in Kashmir - How can democratic societies protect public figures whilst preserving civil liberties?
-カシミールでインドの政治家ファルーク・アブドゥラーが至近距離からの暗殺未遂を辛くも回避 - 民主社会は市民的自由を守りつつ公人を如何に保護できるか？
-18. 💀 Two Chinese backpackers discovered deceased in Australian floodwaters - Should adventure travellers be legally required to obtain survival training?
-豪州の洪水で中国人バックパッカー2人が遺体で発見 - アドベンチャー旅行者に法的にサバイバル訓練の受講を義務付けるべきか？
-19. 🗳️ China's National People's Congress yields significant policy revelations - How transparent are single-party governance structures in communicating legislative intent?
-中国の全国人民代表大会で重要な政策が明らかに - 一党支配の立法意図の伝達はどの程度透明か？
-20. 🔥 The US-Israeli campaign against Iran severely disrupts India's liquefied petroleum gas supplies - How should developing nations insulate themselves from geopolitical energy shocks?
-米国とイスラエルのイラン作戦がインドの液化石油ガス供給を深刻に混乱 - 発展途上国は地政学的エネルギー衝撃から如何に身を守るべきか？
-21. 🏥 India's Supreme Court permits the withdrawal of life-sustaining treatment for a patient in a prolonged vegetative state - Should the right to die be universally enshrined in law?
-インド最高裁が長期間植物状態の患者の生命維持治療の中止を許可 - 死ぬ権利は法に普遍的に明記されるべきか？
-22. ✈️ The chief executive of IndiGo Airlines resigns months after a catastrophic mass cancellation event - What accountability mechanisms should govern aviation industry leadership?
-インディゴ航空の最高経営責任者が大規模欠航騒動の数ヶ月後に辞任 - 航空業界のリーダーシップにはどのような説明責任メカニズムが求められるか？
-23. 🚂 China and North Korea prepare to recommence passenger rail services suspended since the pandemic - Does infrastructure connectivity foster political reconciliation?
-中国と北朝鮮がパンデミック以来中断されていた旅客列車サービスを再開準備中 - インフラの接続は政治的和解を促進するか？
-24. ⚽ Iranian female footballers escape their handlers at an Australian hotel to claim asylum - Should international sporting bodies protect athletes from political persecution?
-イラン人女子サッカー選手が豪州ホテルで監督を逃れ亡命を申請 - 国際スポーツ団体は選手を政治的迫害から保護すべきか？
-25. 🚢 The final voyage of an Iranian warship sunk by the United States near Sri Lanka brings the conflict uncomfortably close to India - How does regional proximity shape a nation's foreign policy posture?
-スリランカ近海で米国が撃沈したイラン軍艦の最後の航海が紛争をインドに不快なほど近づける - 地域的近接性は国家の外交政策を如何に形作るか？
-26. 🇬🇧 The UK Defence Secretary confirms British forces downed two Iranian drones over Iraq - Should parliamentary approval be mandatory before deploying troops to active conflict zones?
-英国国防相がイラク上空で英軍がイランのドローン2機を撃墜したことを確認 - 活動中の紛争地帯への軍隊派遣前に議会の承認を義務付けるべきか？
-27. 👩 A mother receives imprisonment for enslaving a woman in her home for twenty-five years - How does modern slavery persist undetected in ostensibly civilised societies?
-母親が女性を25年間自宅で奴隷状態にしていたとして実刑判決 - 現代の奴隷制は如何にして表面上文明的な社会で発見されずに存続するか？
-28. 🧴 Perfumer Jo Malone faces litigation for employing her own name in a collaboration with Zara - Should intellectual property laws permit individuals to reclaim their personal identities?
-香水師ジョー・マローンがザラとのコラボレーションで自身の名前を使用したとして訴訟に直面 - 知的財産法は個人が自分の身元を再取得することを許すべきか？
-29. 🇦🇪 A British citizen faces criminal charges in Dubai for allegedly filming Iranian missile strikes - Do wartime photography restrictions constitute legitimate national security measures or censorship?
-英国人がドバイでイランのミサイル攻撃を撮影したとして起訴 - 戦時中の撮影制限は正当な国家安全保障措置か、それとも検閲か？
-30. 🏛️ The Prime Minister acknowledges the Mandelson appointment as an error whilst Downing Street denies any concealment - Should political leaders be held liable for appointments that prove deleterious?
-首相がマンデルソンの任命を過ちと認めるも首相府は隠蔽を否定 - 政治的リーダーは有害と判明した任命の責任を負うべきか？
-31. 💳 Lloyds Banking Group's applications inadvertently exposed other customers' transaction histories - How should financial institutions compensate clients for privacy violations?
-ロイズ・バンキング・グループのアプリが誤って他顧客の取引履歴を公開 - 金融機関はプライバシー侵害に対して如何に顧客に補償すべきか？
-32. 📋 The UK asylum appeal backlog surpasses eighty thousand, reaching unprecedented levels - Is the current immigration infrastructure fundamentally inadequate for contemporary demands?
-英国の亡命控訴の未処理件数が8万件を超え前例のない水準に - 現在の移民インフラは現代の需要に根本的に不十分か？
-33. 📖 Cardiff University issues content warnings for a module featuring Wuthering Heights - Should academic institutions shield students from classical literature's more disturbing elements?
-カーディフ大学が嵐が丘を扱うモジュールにコンテンツ警告を発行 - 学術機関は古典文学のより不穏な要素から学生を保護すべきか？
-34. 🦊 A fox stows away on a cargo vessel from Southampton and arrives in New York - What ethical obligations do humans bear toward wildlife inadvertently displaced by commerce?
-キツネがサウサンプトンから貨物船に密航してニューヨークに到着 - 商業活動により意図せず移動した野生動物に対し人間はどのような倫理的義務を負うか？
-35. 🎓 A parliamentary inquiry examines whether the student loan system is fundamentally inequitable toward graduates - Should higher education be universally funded through progressive taxation?
-議会の調査が学生ローン制度が卒業生に根本的に不公平かを審査 - 高等教育は累進課税により普遍的に資金提供されるべきか？
-36. 🇬🇧 Foreign Secretary Cooper asserts that Britain does not concur with Trump on every matter - How should sovereign nations navigate diplomatic friction with indispensable allies?
-クーパー外相が英国はトランプと全ての問題で一致しないと主張 - 主権国家は不可欠な同盟国との外交的摩擦を如何に乗り越えるべきか？
-37. 🔐 A woman discovers her identity has been stolen and weaponised for catfishing over four years - What legal recourse should exist for victims of digital identity theft?
-女性が自身のなりすましに4年間アイデンティティが盗用されていることを発見 - デジタル身元窃盗の被害者にはどのような法的救済が存在すべきか？
-38. 💰 Global stock markets tumble whilst oil prices surge past one hundred dollars per barrel - How can ordinary citizens protect their financial wellbeing during geopolitical crises?
-世界の株式市場が下落し石油価格が1バレル100ドルを突破 - 地政学的危機時に一般市民は如何に財政的な健全性を守るべきか？
-39. 🏠 The Senate passes the most substantial housing affordability legislation in a generation - Should housing be constitutionally recognised as a fundamental human right?
-上院が一世代で最も大規模な住宅手頃価格法案を可決 - 住居は憲法上で基本的人権として認識されるべきか？
-40. 🏛️ Governor Newsom reassures Californians of no imminent threat following FBI warnings of potential Iranian drone attacks - How should officials communicate uncertainty to prevent both panic and complacency?
-ニューサム知事がFBIのイランのドローン攻撃の可能性に関する警告後に差し迫った脅威はないと市民を安心させる - 官僚はパニックと油断の両方を防ぐため不確実性を如何に伝えるべきか？
-41. 💣 Iran's deployment of cluster munitions challenges Israel's sophisticated air defence networks - Should the international community impose stricter prohibitions on indiscriminate weaponry?
-イランのクラスター弾の使用がイスラエルの高度な防空網に挑戦 - 国際社会は無差別兵器にさらに厳しい禁止を課すべきか？
-42. 🤔 American polling reveals widespread scepticism regarding the strategic rationale for the Iran war - Should public opinion constrain a government's military decision-making?
-アメリカの世論調査がイラン戦争の戦略的根拠に対する広範な懸念を示す - 世論は政府の軍事的意思決定を制約すべきか？
-43. 🌐 With the Strait of Hormuz obstructed by conflict, the Panama Canal experiences a surge in commercial traffic - How do geopolitical disruptions reshape global trade architecture?
-ホルムズ海峡が紛争で封鎖される中、パナマ運河が商業交通の急増を経験 - 地政学的混乱は世界貿易の枠組みを如何に再構築するか？
-44. 🇮🇷 Iran's supreme leader's initial purported message conspicuously omits a definitive resolution to the conflict - Can diplomatic ambiguity serve as a legitimate negotiating tactic?
-イラン最高指導者の最初の伝言が紛争の決定的な解決を顕著に省略 - 外交的曖昧さは正当な交渉戦術として機能しうるか？
-45. 👨‍🍳 The head chef of Michelin-starred Noma steps down amid allegations of professional misconduct - Should the culinary industry implement stricter codes of conduct?
-ミシュラン星付きノーマの料理長が職業的不正行為の申し立てを受け辞任 - 料理業界はより厳格な行動規範を導入すべきか？
-46. 🎥 Iranian filmmakers travel to the Academy Awards whilst their nation remains engulfed in armed conflict - Can artistic expression transcend the boundaries of geopolitical hostility?
-イランの映画製作者が祖国が武力紛争に巻き込まれる中アカデミー賞に出席 - 芸術的表現は地政学的敵意の境界を超越しうるか？
-47. 🇹🇼 Chinese fighter jets cease provocative incursions near Taiwan for nearly two weeks without explanation - What mechanisms exist to de-escalate military tensions without formal diplomatic channels?
-中国の戦闘機が説明なく台湾近海での挑発的侵入を約2週間停止 - 正式な外交ルートなしに軍事的緊張を緩和するメカニズムは存在するか？
-48. 🤝 Trump's Gulf allies resist American pressure to participate in the Iran campaign - Should allied nations retain sovereign discretion over their military engagements?
-トランプの湾岸同盟国がイラン作戦参加の米国の圧力に抵抗 - 同盟国は軍事的関与において主権的裁量を保持すべきか？
-49. 🖥️ Pro-Iranian hackers claim responsibility for a cyberattack targeting a major American medical device manufacturer - Should cyber warfare be governed by the same international conventions as conventional armed conflict?
-親イランハッカーが大手米国医療機器メーカーへのサイバー攻撃を主張 - サイバー戦争は従来の武力紛争と同じ国際条約で規制されるべきか？
-50. 🏗️ Chilean architect Smiljan Radić receives the prestigious Pritzker Prize for 2026 - How does architectural innovation reflect and shape a nation's cultural identity?
-チリの建築家スミルヤン・ラディッチが2026年の権威あるプリツカー賞を受賞 - 建築の革新は国家の文化的アイデンティティを如何に反映し形成するか？`
+    content: `1. 🚨 Iran's new supreme leader vows to block the Strait of Hormuz in his first statement — What strategic implications does this declaration carry?
+イランの新しい最高指導者が初めての声明でホルムズ海峡の封鎖を宣言 — この宣言はどのような戦略的意味を持つか？
+
+2. 🎤 Israel launches Tehran strikes shortly after the new supreme leader's statement — How might this escalation reshape regional geopolitics?
+イスラエルが新しい最高指導者の声明直後にテヘランへの攻撃を開始 — このエスカレーションは地域の地政学をどのように変えるか？
+
+3. 🚂 China and North Korea resume passenger rail service after years of pandemic suspension — Does this signal a broader diplomatic thaw?
+中国と北朝鮮がパンデミック以降の旅客列車サービスを再開 — これはより広範な外交的融和の兆しか？
+
+4. 🎵 Rapper-politician Balendra Shah's party wins Nepal's election — Can unconventional political figures truly transform governance?
+ラッパー兼政治家のバレンドラ・シャハ氏の政党がネパール選挙で勝利 — 従来にない政治家は本当に統治を変えられるか？
+
+5. 📜 China approves 'ethnic unity' law requiring minorities to learn Mandarin — Are such policies instruments of cohesion or cultural erasure?
+中国が少数民族にマンダリン学習を義務付ける「民族統一」法を承認 — こうした政策は結束の道具か、それとも文化消滅か？
+
+6. 🏛️ Nineteen individuals jailed over deadly Moscow concert attack — Does severe sentencing effectively deter future acts of terror?
+モスクワのコンサート襲撃事件で19人が実刑判決 — 厳しい量刑は将来のテロ行為を効果的に抑止するか？
+
+7. 🎓 US missile struck a military base near an Iranian school, video analysis reveals — How should international law address civilian proximity in warfare?
+映像分析で米軍ミサイルがイランの学校近くの軍事基地を攻撃したことが判明 — 国際法は戦争における民間人近接をどう対処すべきか？
+
+8. 🏛️ Suspect dies after ramming vehicle into Jewish temple in Michigan — What measures can communities adopt to prevent hate-driven violence?
+ミシガン州のユダヤ教寺院に車を衝突させた容疑者が死亡 — 地域社会は憎悪に基づく暴力を防ぐためにどのような措置を講じられるか？
+
+9. ⚔️ UK troops at Iraq base intercepted Iranian drones, Defence Secretary confirms — How should NATO allies coordinate their defensive responses?
+イラク駐留の英軍がイランのドローンを迎撃したと国防大臣が確認 — NATO同盟国は防衛対応をどう調整すべきか？
+
+10. 🏠 What if we are left with ruins? Doubts emerge among Iranians who initially supported the war — How does public sentiment shift during prolonged conflict?
+廃墟だけが残ったら？戦争を最初に支持したイラン人の間に疑念が浮上 — 長期的な紛争中、世論はどのように変化するか？
+
+11. 🛢️ Iran war exposes the world's profound dependence on Gulf oil and gas — What alternatives exist to reduce this vulnerability?
+イラン戦争が世界の湾岸石油・ガスへの深刻な依存を露呈 — この脆弱性を軽減するための代替手段はあるか？
+
+12. 🎭 War in Ukraine spills into Hungarian election campaign — To what extent should foreign conflicts influence domestic elections?
+ウクライナ戦争がハンガリーの選挙キャンペーンに波及 — 外国の紛争は国内選挙にどの程度影響すべきか？
+
+13. 📹 Video captures point-blank gunshot narrowly missing Indian politician — How has technology altered the landscape of political security?
+インド人政治家の至近距離での銃撃がわずかに外れる瞬間を映像が捉える — テクノロジーは政治の安全保障環境をどう変えたか？
+
+14. 🎒 Bodies of two Chinese backpackers discovered in Australian floodwaters — Should governments impose stricter regulations on adventure tourism?
+オーストラリアの洪水で中国人バックパッカー2人の遺体が発見 — 政府はアドベンチャーツーリズムに厳しい規制を課すべきか？
+
+15. 🔥 Situation is dire as war on Iran squeezes India's cooking gas supplies — How do distant geopolitical conflicts affect everyday household necessities?
+イラン戦争がインドの調理用ガス供給を圧迫し「状況は極めて深刻」 — 遠くの地政学的紛争は日常の家庭必需品にどう影響するか？
+
+16. ⚖️ India's top court permits removal of life support for man in vegetative state — What ethical frameworks should govern end-of-life decisions?
+インド最高裁が植物状態の男性の生命維持装置の取り外しを許可 — 終末期の決定にはどのような倫理的枠組みが適用されるべきか？
+
+17. ✈️ India's IndiGo airline CEO resigns months after mass cancellation crisis — How vulnerable is the aviation industry to leadership instability?
+インドのインディゴ航空CEOが大量欠航危機の数ヶ月後に辞任 — 航空業界はリーダーシップの不安定性にどれほど脆弱か？
+
+18. 🏨 Inside the Australian hotel where Iranian footballers escaped to claim asylum — Should athletes receive special consideration in refugee proceedings?
+イラン人サッカー選手が亡命を求めたオーストラリアのホテルの内部 — 難民手続きにおいてアスリートは特別な配慮を受けるべきか？
+
+19. 🚢 The final voyage of the Iranian warship sunk by the US — How do naval engagements shape the trajectory of modern conflicts?
+米軍が沈没させたイラン軍艦の最後の航海 — 海軍の交戦は現代紛争の軌道をどのように形作るか？
+
+20. 🔗 Mother sentenced to prison for enslaving woman for twenty-five years — How can modern slavery persist undetected in developed nations?
+25年間女性を奴隷化した母親に実刑判決 — 先進国で現代の奴隷制がどのように検出されずに続くことができるか？
+
+21. 💄 Jo Malone faces lawsuit for using her own name in collaboration with Zara — Where should the line be drawn between personal identity and trademark ownership?
+Jo MaloneがZaraとのコラボレーションで自身の名前を使用したことにより訴訟に直面 — 個人のアイデンティティと商標所有権の境界線はどこに引くべきか？
+
+22. 📱 British man charged in Dubai for allegedly filming Iranian missiles — Should citizens face prosecution for documenting military activities?
+イランのミサイルを撮影したとしてドバイで英国人が起訴 — 市民は軍事活動の記録で訴追されるべきか？
+
+23. 🏛️ PM acknowledges Mandelson appointment was a mistake as Downing Street denies cover-up — How does accountability function within parliamentary systems?
+首相がマンデルソンの任命は間違いだったと認めるも官邸は隠蔽を否定 — 議会制において説明責任はどのように機能するか？
+
+24. 📱 Lloyds, Bank of Scotland and Halifax apps displayed other customers' transactions — What systemic vulnerabilities plague modern banking technology?
+ロイズ銀行、スコットランド銀行、ハリファックスのアプリが他の顧客の取引を表示 — 現代の銀行技術にはどのような体系的脆弱性があるか？
+
+25. 🛂 UK asylum appeal backlog reaches record high of eighty thousand cases — How can immigration systems balance efficiency with fairness?
+英国の亡命控訴の未処理件数が記録的な8万件に到達 — 移民制度は効率性と公平性をどのように両立できるか？
+
+26. 📚 Wuthering Heights university module issued content warning for students — Do content warnings enhance or diminish academic intellectual engagement?
+嵐が丘の大学モジュールに学生向けコンテンツ警告が発行 — コンテンツ警告は学術的な知的関与を高めるか、それとも損なうか？
+
+27. 🦊 Sly fox boards cargo ship in Southampton and arrives in New York — What unexpected ecological consequences arise from animal stowaways?
+狡猾なキツネがサウサンプトンの貨物船に乗り込みニューヨークに到着 — 動物の密航者から予期せぬ生態学的結果はどのように生じるか？
+
+28. 📊 Student loans inquiry examines whether system is inherently unfair to graduates — Should higher education financing be fundamentally restructured?
+学生ローン調査が制度が卒業生に本質的に不公平かどうかを検証 — 高等教育の財源は根本的に再構築されるべきか？
+
+29. 🌐 UK declares it does not agree with Trump on every issue — How do allied nations navigate diplomatic disagreements with powerful partners?
+英国はトランプとはあらゆる問題で意見が一致しないと宣言 — 同盟国は強力なパートナーとの外交的不一致をどう乗り越えるか？
+
+30. 🔍 Identity stolen and used to catfish men online — What legal protections exist for victims of digital identity theft?
+身元が盗まれオンラインで男性を騙すために使用された — デジタル身元盗難の被害者にはどのような法的保護があるか？
+
+31. 📖 Incarceration camp survivors' stories remain profoundly relevant — How should societies preserve traumatic historical memories?
+収容所生存者の物語は今なお極めて重要 — 社会はトラウマ的な歴史的記憶をどのように保存すべきか？
+
+32. 🎖️ Iran war threatens to undermine Trump's primary campaign talking point — How significantly do foreign policy failures sway domestic electoral outcomes?
+イラン戦争がトランプの主要キャンペーン論点を損なう恐れ — 外交政策の失敗は国内の選挙結果にどれほど大きく影響するか？
+
+33. 🎓 Fatal shooting at Virginia university investigated as act of terrorism — Should educational institutions implement enhanced security protocols?
+バージニア大学での致死的な銃撃がテロ行為として調査中 — 教育機関は強化されたセキュリティプロトコルを導入すべきか？
+
+34. 📈 Stocks decline and global oil surpasses $100 per barrel as Iran tensions escalate — How vulnerable is the global economy to geopolitical shocks?
+イラン情勢の緊迫で株価下落、原油が1バレル100ドルを突破 — 世界経済は地政学的ショックにどれほど脆弱か？
+
+35. 🏠 Largest housing affordability package in a generation passes in the Senate — Can government intervention meaningfully resolve housing crises?
+一代で最大の住宅手頃価格パッケージが上院を通過 — 政府の介入は住宅危機を有意義に解決できるか？
+
+36. 📊 Americans do not perceive the point of the Iran war, polling reveals — How should democracies weigh public opinion in military decision-making?
+世論調査でアメリカ人はイラン戦争の意義を感じていないことが判明 — 民主主義は軍事決定において世論をどのように考慮すべきか？
+
+37. 🎬 Iranian filmmakers travel to the Oscars while war engulfs their country — What role does cultural expression play during times of conflict?
+戦争が自国を蹂躙する中、イランの映画製作者たちがオスカーに向かう — 衝突の時期に文化的表現はどのような役割を果たすか？
+
+38. ✈️ Chinese fighter jets ceased approaching Taiwan for nearly two weeks without explanation — What strategic calculations drive such military pauses?
+中国の戦闘機が説明なく約2週間台湾への接近を停止 — こうした軍事的休止をどのような戦略的計算が動かすか？
+
+39. 🤝 Trump's Gulf allies resist pressure to join the Iran war — How do smaller nations balance alliance obligations with self-interest?
+トランプの湾岸同盟国がイラン戦争参入への圧力に抵抗 — 小国は同盟の義務と自国利益をどのように両立するか？
+
+40. 💻 Pro-Iran hackers claim cyberattack on major US medical device manufacturer — How exposed is healthcare infrastructure to state-sponsored cyber warfare?
+親イランハッカーが米大手医療機器メーカーへのサイバー攻撃を主張 — 医療インフラは国家支援のサイバー戦争にどれほど露出しているか？
+
+41. 🌪️ Tornado kills two in Indiana as dangerous storms make their final push — How should emergency management systems adapt to intensifying weather patterns?
+危険な暴風雨が最終段階に入る中、インディアナで竜巻が2人の命を奪う — 緊急管理システムは激化する気象パターンにどう適応すべきか？
+
+42. 🏗️ Chile's Smiljan Radić wins the Pritzker Prize, architecture's highest honour — How does architectural recognition influence urban development trajectories?
+チリのスミルジャン・ラディッチが建築最高賞プリツカー賞を受賞 — 建築的認知は都市開発の軌道にどのように影響するか？
+
+43. 🎵 Katie Perry versus Katy Perry: Australian designer wins trademark dispute over popstar — How should trademark law handle disputes between personal and commercial identities?
+ケイティ・ペリー対ケイティ・ペリー：オーストラリアのデザイナーがポップスターとの商標紛争に勝利 — 商標法は個人的アイデンティティと商業的アイデンティティの紛争をどう処理すべきか？
+
+44. 🥊 FBI agents to train with UFC fighters at Quantico — What role should physical combat training play in modern law enforcement?
+FBI捜査官がクアンティコでUFCファイターと訓練 — 現代の法執行機関において体力戦闘訓練はどのような役割を果たすべきか？
+
+45. 🏥 West Virginia can ban Medicaid coverage for gender-affirming surgery, court rules — How should healthcare policy balance individual rights with state authority?
+ウェストバージニア州がメディケイドの性別適合手術の適用を禁止できると裁判所が判断 — 医療政策は個人の権利と州の権限をどう両立すべきか？
+
+46. 🚀 NASA spacecraft makes uncontrolled plunge back to Earth — What protocols govern the re-entry of unmanaged space debris?
+NASAの宇宙船が制御されないまま地球に突入 — 管理されていない宇宙デブリの再突入にはどのような規約が適用されるか？
+
+47. ⚾ World Baseball Classic reveals Team USA's hubris — How do international sporting competitions challenge national athletic assumptions?
+ワールド・ベースボール・クラシックがアメリカチームの傲慢を露呈 — 国際スポーツ競技は国家のアスリートに対する前提にどう挑戦するか？
+
+48. ⚖️ Longtime Epstein accountant testifies behind closed doors for approximately seven hours — How effectively can judicial systems prosecute complex financial crimes?
+長年のエプスタイン会計士が約7時間非公開で証言 — 司法制度は複雑な金融犯罪をどれほど効果的に訴追できるか？
+
+49. 🏛️ US missile defense systems struggle against Iran's cluster munitions — How is modern warfare being reshaped by advanced munitions technology?
+米ミサイル防衛システムがイランのクラスター弾に対し苦戦 — 先進的な弾薬技術により現代戦争はどのように再構築されているか？
+
+50. 🌐 With the Strait of Hormuz choked by conflict, the Panama Canal reaps economic benefits — How do global shipping disruptions redistribute economic power?
+ホルムズ海峡が紛争で閉鎖される中、パナマ運河が経済的利益を享受 — 海上輸送の混乱は経済力をどのように再分配するか？`
   }
 ];
