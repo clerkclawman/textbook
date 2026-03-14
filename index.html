@@ -1118,6 +1118,16 @@
             <select id='classSelector'>
                 <option value=''>Select Class</option>
                 <option value='FunQuestions'>Fun Questions (Daily)</option>
+                <option value='Grammar7'>Grammar: Eiken 7</option>
+                <option value='Grammar6'>Grammar: Eiken 6</option>
+                <option value='Grammar5'>Grammar: Eiken 5</option>
+                <option value='Grammar4'>Grammar: Eiken 4</option>
+                <option value='Grammar3'>Grammar: Eiken 3</option>
+                <option value='GrammarPre2'>Grammar: Pre-2</option>
+                <option value='GrammarPre2Plus'>Grammar: Pre-2 Plus</option>
+                <option value='Grammar2'>Grammar: Eiken 2</option>
+                <option value='GrammarPre1'>Grammar: Pre-1</option>
+                <option value='Grammar1'>Grammar: Eiken 1</option>
   <option value='News'>News (Daily)</option>
                 <option value='Adult'>Adult</option>
                 <option value='Eiken7'>Eiken 7</option>
@@ -1238,6 +1248,7 @@
 <script src='eiken2.js'></script>
 <script src='eikenpre1.js'></script>
 <script src='eiken1.js'></script>
+<script src='grammar-site.js'></script>
 
 <script>
     // ====================
@@ -2794,7 +2805,17 @@ if (typeof getCombinedFunQuestions === "function") {
                 'GettingToKnow': gettingtoknow,
                 'EasyQuestions': easyquestions,
                 'WouldYouRather': wouldyourather,
-                'Vocab': vocab
+                'Vocab': vocab,
+                'Grammar7': eiken7grammar,
+                'Grammar6': eiken6grammar,
+                'Grammar5': eiken5grammar,
+                'Grammar4': eiken4grammar,
+                'Grammar3': eiken3grammar,
+                'GrammarPre2': eikenpre2grammar,
+                'GrammarPre2Plus': eikenpre2plusgrammar,
+                'Grammar2': eiken2grammar,
+                'GrammarPre1': eikenpre1grammar,
+                'Grammar1': eiken1grammar
             };
 
             console.log('Lesson data loaded:', Object.keys(lessonsData));
