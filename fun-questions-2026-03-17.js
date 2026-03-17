@@ -1,1 +1,100 @@
-var funQuestions20260317 = [ { title: "Fun Questions of the Day - 2026-03-17", content: ` N7. 🍎 Which is worse: smelly feet or smelly natto? N7. 🍎 どちらが嫌：臭い足、それとも臭い納豆？ N7. 🐶 Can your dog catch his own tail? N7. 🐶 あなたの犬は自分の尻尾を捕まえられる？ N7. 🌟 What color underwear are you wearing today? N7. 🌟 今日、何色の下着を履いてる？ N7. 🍕 Would you rather eat pizza with your toes or your nose? N7. 🍕 ピザ、足の指で食べる？それとも鼻で食べる？ N7. 🎒 Is your backpack heavier than your little brother? N7. 🎒 あなたのリュックは弟より重い？ N7. 👕 Have you ever worn your shirt backwards all day? N7. 👕 服を前後逆にしたまま一日中過ごしたことある？ N7. 🍚 What's the weirdest food your mom makes? N7. 🍚 お母さんの作る変な料理は何？ N7. 🏫 Does your teacher have a funny laugh? N7. 🏫 先生の笑い方はおかしい？ N7. 🧸 If your teddy bear could talk, what would he say? N7. 🧸 あなたのぬいぐるみが話せたら、何て言う？ N7. 📚 What subject makes you sleepiest? N7. 📚 一番眠くなる教科は何？ N6. 🌞 Do you sleep with your mouth open? N6. 🌞 口開けて寝てる？ N6. 🚲 Can you ride your bike with no hands? N6. 🚲 自転車、手なしで乗れる？ N6. 🍱 Would you eat natto ice cream if someone paid you? N6. 🍱 お金もらったら納豆アイス食べる？ N6. ⚽ Have you ever farted in gym class? N6. ⚽ 体育の授業でおならしたことある？ N6. 🎵 What song makes you dance like a crazy person? N6. 🎵 変な踊りしちゃう曲は何？ N6. 👨‍👩‍👧 Does your dad snore like a monster? N6. 👨‍👩‍👧 お父さんのいびきはモンスターみたい？ N6. 🍦 How many ice creams before your brain freezes? N6. 🍦 何個アイス食べたら頭がキーンとなる？ N6. 🛏️ Do you sleep with a night light or in total darkness? N6. 🛏️ 夜中に明かりつけてる？それとも真っ暗？ N6. 😴 What's the weirdest place you've fallen asleep? N6. 😴 変な場所で寝ちゃったことある？ N6. 🎮 Can you beat your mom at video games? N6. 🎮 ビデオゲームでお母さんに勝てる？ N5. 🌧️ Would you go to school in a thunderstorm with no umbrella? N5. 🌧️ 雷の中外で傘なしで学校行く？ N5. 🎁 What's the worst gift you ever got? N5. 🎁 一番ひどいプレゼントは何？ N5. 🏖️ Would you swim in a pool full of jellyfish? N5. 🏖️ クラゲいっぱいのプールで泳ぐ？ N5. 📺 What cartoon character is the silliest? N5. 📺 一番バカなアニメキャラは誰？ N5. 🍔 Have you ever eaten something off the floor? N5. 🍔 床に落ちた食べ物、食べたことある？ N5. 🐛 Would you hold a snake for 100 yen? N5. 🐛 ヘビ、100 円でもらって持つ？ N5. 💰 If you found 1000 yen, what would you buy? N5. 💰 1000 円拾ったら何買う？ N5. 🌊 Have you ever peed in a pool? N5. 🌊 プールでおしっこしたことある？ N5. 🍜 What's the grossest food you've ever eaten? N5. 🍜 食べた中で一番気持ち悪い食べ物は何？ N5. 📖 What book is so boring you fell asleep? N5. 📖 つまらなくて寝ちゃった本は何？ N4. 🎢 How many times can you ride a rollercoaster before vomiting? N4. 🎢 ジェットコースター、何回乗ったら吐く？ N4. 👟 Do your feet smell after PE class? N4. 👟 体育の後、足くさい？ N4. 🎂 Would you eat a cake made by your little sister? N4. 🎂 妹が作ったケーキ食べる？ N4. 🪜 Can you jump from the 5th step of the stairs? N4. 🪜 階段の5段目から飛び降りられる？ N4. 🌶️ What food is too spicy for you? N4. 🌶️ 辛すぎて食べられない食べ物は何？ N4. 🧹 Would you rather clean the toilet or take out the trash? N4. 🧹 トイレ掃除とゴミ出し、どっちがいい？ N4. 🐦 Have you ever been pooped on by a bird? N4. 🐦 鳥にフンを落とされたことある？ N4. 😂 What makes you laugh until you cry? N4. 😂 泣くほど笑うことは何？ N4. 😤 What makes you so angry you want to scream? N4. 😤 叫びたくなるほど怒ることは何？ N4. 🎭 Would you rather live in Tokyo or a tiny village? N4. 🎭 東京と小さな村、どっちに住みたい？ N3. 🎯 If you were a vegetable, which one would you be? N3. 🎯 野菜になったら何になりたい？ N3. 👀 Would you rather have three eyes or no eyebrows? N3. 👀 目が三つと眉毛がないの、どっちがいい？ N3. 🍭 What's the most candy you've ever eaten in one day? N3. 🍭 一日で一番食べたアメはいくつ？ N3. 🦵 Can you touch your toes without bending your knees? N3. 🦵 膝曲げずに爪先に触れる？ N3. 🎨 What color is the ugliest? N3. 🎨 一番汚い色は何？ N3. 👖 Do you wear your pants high or low? N3. 👖 ズボンはハイライズ？それともローライズ？ N3. 👴 Is your grandpa cooler than your dad? N3. 👴 おじいちゃんってお父さんよりカッコいい？ N3. 🍌 Have you ever slipped on something embarrassing? N3. 🍌 恥ずかしいもので滑ったことある？ N3. 🏠 What would your house say if it could talk? N3. 🏠 あなたの家が話せたら何て言う？ N3. 🎪 What's the weirdest dream you remember? N3. 🎪 覚えてる中で一番変な夢は何？` } ];
+var funQuestions20260317 = [ { title: "Fun Questions of the Day - 2026-03-17", content: `N7. 🍎 Which is worse: smelly feet or smelly natto?
+N7. 🍎 どちらが嫌：臭い足、それとも臭い納豆？
+N7. 🐶 Can your dog catch his own tail?
+N7. 🐶 あなたの犬は自分の尻尾を捕まえられる？
+N7. 🌟 What color underwear are you wearing today?
+N7. 🌟 今日、何色の下着を履いてる？
+N7. 🍕 Would you rather eat pizza with your toes or your nose?
+N7. 🍕 ピザ、足の指で食べる？それとも鼻で食べる？
+N7. 🎒 Is your backpack heavier than your little brother?
+N7. 🎒 あなたのリュックは弟より重い？
+N7. 👕 Have you ever worn your shirt backwards all day?
+N7. 👕 服を前後逆にしたまま一日中過ごしたことある？
+N7. 🍚 What's the weirdest food your mom makes?
+N7. 🍚 お母さんの作る変な料理は何？
+N7. 🏫 Does your teacher have a funny laugh?
+N7. 🏫 先生の笑い方はおかしい？
+N7. 🧸 If your teddy bear could talk, what would he say?
+N7. 🧸 あなたのぬいぐるみが話せたら、何て言う？
+N7. 📚 What subject makes you sleepiest?
+N7. 📚 一番眠くなる教科は何？
+N6. 🌞 Do you sleep with your mouth open?
+N6. 🌞 口開けて寝てる？
+N6. 🚲 Can you ride your bike with no hands?
+N6. 🚲 自転車、手なしで乗れる？
+N6. 🍱 Would you eat natto ice cream if someone paid you?
+N6. 🍱 お金もらったら納豆アイス食べる？
+N6. ⚽ Have you ever farted in gym class?
+N6. ⚽ 体育の授業でおならしたことある？
+N6. 🎵 What song makes you dance like a crazy person?
+N6. 🎵 変な踊りしちゃう曲は何？
+N6. 👨‍👩‍👧 Does your dad snore like a monster?
+N6. 👨‍👩‍👧 お父さんのいびきはモンスターみたい？
+N6. 🍦 How many ice creams before your brain freezes?
+N6. 🍦 何個アイス食べたら頭がキーンとなる？
+N6. 🛏️ Do you sleep with a night light or in total darkness?
+N6. 🛏️ 夜中に明かりつけてる？それとも真っ暗？
+N6. 😴 What's the weirdest place you've fallen asleep?
+N6. 😴 変な場所で寝ちゃったことある？
+N6. 🎮 Can you beat your mom at video games?
+N6. 🎮 ビデオゲームでお母さんに勝てる？
+N5. 🌧️ Would you go to school in a thunderstorm with no umbrella?
+N5. 🌧️ 雷の中外で傘なしで学校行く？
+N5. 🎁 What's the worst gift you ever got?
+N5. 🎁 一番ひどいプレゼントは何？
+N5. 🏖️ Would you swim in a pool full of jellyfish?
+N5. 🏖️ クラゲいっぱいのプールで泳ぐ？
+N5. 📺 What cartoon character is the silliest?
+N5. 📺 一番バカなアニメキャラは誰？
+N5. 🍔 Have you ever eaten something off the floor?
+N5. 🍔 床に落ちた食べ物、食べたことある？
+N5. 🐛 Would you hold a snake for 100 yen?
+N5. 🐛 ヘビ、100 円でもらって持つ？
+N5. 💰 If you found 1000 yen, what would you buy?
+N5. 💰 1000 円拾ったら何買う？
+N5. 🌊 Have you ever peed in a pool?
+N5. 🌊 プールでおしっこしたことある？
+N5. 🍜 What's the grossest food you've ever eaten?
+N5. 🍜 食べた中で一番気持ち悪い食べ物は何？
+N5. 📖 What book is so boring you fell asleep?
+N5. 📖 つまらなくて寝ちゃった本は何？
+N4. 🎢 How many times can you ride a rollercoaster before vomiting?
+N4. 🎢 ジェットコースター、何回乗ったら吐く？
+N4. 👟 Do your feet smell after PE class?
+N4. 👟 体育の後、足くさい？
+N4. 🎂 Would you eat a cake made by your little sister?
+N4. 🎂 妹が作ったケーキ食べる？
+N4. 🪜 Can you jump from the 5th step of the stairs?
+N4. 🪜 階段の 5 段目から飛び降りられる？
+N4. 🌶️ What food is too spicy for you?
+N4. 🌶️ 辛すぎて食べられない食べ物は何？
+N4. 🧹 Would you rather clean the toilet or take out the trash?
+N4. 🧹 トイレ掃除とゴミ出し、どっちがいい？
+N4. 🐦 Have you ever been pooped on by a bird?
+N4. 🐦 鳥にフンを落とされたことある？
+N4. 😂 What makes you laugh until you cry?
+N4. 😂 泣くほど笑うことは何？
+N4. 😤 What makes you so angry you want to scream?
+N4. 😤 叫びたくなるほど怒ることは何？
+N4. 🎭 Would you rather live in Tokyo or a tiny village?
+N4. 🎭 東京と小さな村、どっちに住みたい？
+N3. 🎯 If you were a vegetable, which one would you be?
+N3. 🎯 野菜になったら何になりたい？
+N3. 👀 Would you rather have three eyes or no eyebrows?
+N3. 👀 目が三つと眉毛がないの、どっちがいい？
+N3. 🍭 What's the most candy you've ever eaten in one day?
+N3. 🍭 一日で一番食べたアメはいくつ？
+N3. 🦵 Can you touch your toes without bending your knees?
+N3. 🦵 膝曲げずに爪先に触れる？
+N3. 🎨 What color is the ugliest?
+N3. 🎨 一番汚い色は何？
+N3. 👖 Do you wear your pants high or low?
+N3. 👖 ズボンはハイライズ？それともローライズ？
+N3. 👴 Is your grandpa cooler than your dad?
+N3. 👴 おじいちゃんってお父さんよりカッコいい？
+N3. 🍌 Have you ever slipped on something embarrassing?
+N3. 🍌 恥ずかしいもので滑ったことある？
+N3. 🏠 What would your house say if it could talk?
+N3. 🏠 あなたの家が話せたら何て言う？
+N3. 🎪 What's the weirdest dream you remember?
+N3. 🎪 覚えてる中で一番変な夢は何？` } ];
