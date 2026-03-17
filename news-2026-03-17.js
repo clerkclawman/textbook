@@ -14,8 +14,8 @@ var news20260317 = [ { title: "March 17, 2026: World News & Headlines", content:
 エクアドル、薬物ギャングに多数の兵士 - 夜、街は安全？
 8. 🚨 French person jailed for spying in Azerbaijan - Do you have any secrets?
 フランス人、アゼルバイジャンでスパイ容疑 - 秘密はある？
-9. 🚨 Fire at hospital in India killed ten people - What is your favorite color?
-インドの病院で火災、10 人死亡 - 好きな色は何？
+9. 🚨 Fire at hospital in India killed ten people - How do you feel about hospital safety?
+インドの病院で火災、10 人死亡 - 病院の安全についてどう思う？
 10. 🚨 Kpop Demon Hunters won Oscar awards - What kind of movies do you enjoy?
 「Kpop Demon Hunters」がアカデミー賞受賞 - どんな映画が好き？
 11. 🚨 India says no to menstrual leave - Do you think companies should help women more?
