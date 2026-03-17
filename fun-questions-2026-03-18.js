@@ -1,68 +1,61 @@
-// Fun Questions for EIKEN Learners - 2026-03-18
-// 50 questions: N7, N6, N5, N4, N3 (10 each)
-// Odd = Serious, Even = Silly/Fun
-// A1 English level (ages 6-12)
-
 var funQuestions20260318 = [
   {
     title: "Fun Questions of the Day - 2026-03-18",
     content: `
-N7. 🍎 What is your name?
-N7. 🐶 Does your dog sleep on your bed?
-N7. 🌞 What is your favorite color?
-N7. 👨‍👩‍👧‍👦 How many people are in your family?
-N7. 🍚 What did you eat for breakfast?
-N7. 🧦 What color socks are you wearing today?
-N7. 📚 What is your favorite subject at school?
-N7. 🤪 Can you touch your nose with your tongue?
-N7. 🎵 What song do you sing in the shower?
-N7. 😴 What time do you go to bed?
+L7. 🍎 What color is your shirt? 何色？
+L7. 🐶 Is your dog big? 大きい？
+L7. 🖐️ How many fingers do you have? いくつ？
+L7. 😂 Can you make a funny face? できる？
+L7. 👀 What color are your eyes? 何色？
+L7. 🍌 Do you like bananas? 好き？
+L7. 👨‍👩‍👧 Does your mom have long hair? 長い？
+L7. 🐱 Is your cat fat? 太ってる？
+L7. 🎨 What is your favorite color? 何色？
+L7. 👂 Can you wiggle your ears? できる？
 
-N6. 🌤️ How is the weather today?
-N6. 👃 Does your dad have a giant belly?
-N6. 🏫 How do you go to school?
-N6. 🍌 How many bananas can you eat in one day?
-N6. 🐱 Do you have a pet?
-N6. 🦶 How many steps can you jump down from?
-N6. 📖 What book are you reading now?
-N6. 🤥 Have you ever lied to your teacher?
-N6. 🎮 What game do you play after school?
-N6. 💩 Did you poop today?
+L6. 🌞 What time do you wake up? 何時？
+L6. 🍚 Do you eat rice every day? 毎日？
+L6. ☔ Is it raining today? 降ってる？
+L6. 🏫 What subject do you hate? 何の科目？
+L6. 🍦 How many ice creams can you eat? いくつ？
+L6. 🛏️ Do you make your bed? してる？
+L6. 🌧️ Do you like rainy days? 好き？
+L6. 🍕 What food do you hate? 何？
+L6. ⏰ Are you late for school? 遅れる？
+L6. 🥛 Do you drink milk every day? 毎日？
 
-N5. 🗓️ What day is it today?
-N5. 🦟 Have you ever been stung by a bee?
-N5. 🎂 When is your birthday?
-N5. 🤢 What is the worst food you ever ate?
-N5. 🏠 Where do you live?
-N5. 🧼 Is your room clean right now?
-N5. 🎁 What do you want for your birthday?
-N5. 🤪 What is the ugliest color?
-N5. 🌸 What is your favorite season?
-N5. 🍕 How many slices of pizza can you eat in one day?
+L5. 🏪 Where do you buy snacks? どこ？
+L5. ❄️ What is your favorite season? 何の季節？
+L5. 🎸 What hobby do you like? 何の趣味？
+L5. 🗓️ What month is your birthday? 何月？
+L5. 🎮 Do you play games every day? 毎日？
+L5. 🏞️ Where do you go on Sunday? どこ？
+L5. 🌸 What do you do in spring? 何する？
+L5. 📚 What book are you reading? 何の本？
+L5. 🎵 What song do you like? どの歌？
+L5. 🏊‍♂️ Can your dad swim fast? 速い？
 
-N4. 🕐 What time do you wake up?
-N4. 🙈 Have you ever swallowed seawater?
-N4. 🎒 What is in your school bag?
-N4. 🤮 What makes you vomit?
-N4. 🍎 What fruit do you like?
-N4. 🤔 Which is worse: homework or cleaning?
-N4. 🐕 Do you like dogs or cats?
-N4. 👖 What color of pants do you hate?
-N4. 🌧️ Do you like rainy days?
-N4. 🤡 Who is the funniest person in your class?
+L4. 🎢 Where did you go last Sunday? どこ？
+L4. 🍔 What did you eat yesterday? 何食べた？
+L4. 🎁 What do you want for your birthday? 何欲しい？
+L4. 🐕 Could you walk 10 kilometers? できる？
+L4. 📺 What TV show did you watch? 何見た？
+L4. 🎸 Can you play any instrument? できる？
+L4. 🌊 Did you swim last summer? 泳いだ？
+L4. 🍦 Do you want more ice cream? もっと欲しい？
+L4. 🎮 How many hours did you play games? 何時間？
+L4. 🎂 Did you make a cake before? 作ったことある？
 
-N3. 🎯 What do you want to be in the future?
-N3. 🌍 Would you rather have no eyes or no ears?
-N3. 💪 What are you good at?
-N3. 😱 What are you afraid of?
-N3. 🎵 Can you play an instrument?
-N3. 🦵 Do you wish you had more legs? How many?
-N3. 🍦 What is your favorite ice cream flavor?
-N3. 🤬 What word do you say when you hit your toe?
-N3. 🌟 What makes you happy?
-N3. 🙉 Which is worse: Tokyo or Kyoto?
+L3. 🏙️ Which is better, Tokyo or Kyoto? どっち？
+L3. 📖 What is the most boring book? つまらない本？
+L3. 🍜 Have you ever eaten really spicy food? 食べたことある？
+L3. 💰 Have you ever found money on the ground? 拾ったことある？
+L3. 🐝 Have you ever been stung by a bee? 刺されたことある？
+L3. 🌊 Have you ever swallowed seawater? 飲んだことある？
+L3. 🍕 How many slices can you eat in one day? 何枚？
+L3. 🧹 Which is worse, homework or cleaning? どっち？
+L3. 👖 What color pants do you hate? 何色？
+L3. 🏠 Is your room clean right now? 綺麗？
 `
   }
 ];
-
-module.exports = funQuestions20260318;
