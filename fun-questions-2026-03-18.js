@@ -1,61 +1,162 @@
-var funQuestions20260318 = [
-  {
-    title: "Fun Questions of the Day - 2026-03-18",
-    content: `
-L7. 🍎 What color is your shirt? 何色？
-L7. 🐶 Is your dog big? 大きい？
-L7. 🖐️ How many fingers do you have? いくつ？
-L7. 😂 Can you make a funny face? できる？
-L7. 👀 What color are your eyes? 何色？
-L7. 🍌 Do you like bananas? 好き？
-L7. 👨‍👩‍👧 Does your mom have long hair? 長い？
-L7. 🐱 Is your cat fat? 太ってる？
-L7. 🎨 What is your favorite color? 何色？
-L7. 👂 Can you wiggle your ears? できる？
+// Fun English Questions for EIKEN Learners (A1 Level, Ages 6-12)
+// Generated: 2026-03-18
+// Format: English on line 1, Japanese translation on line 2
 
-L6. 🌞 What time do you wake up? 何時？
-L6. 🍚 Do you eat rice every day? 毎日？
-L6. ☔ Is it raining today? 降ってる？
-L6. 🏫 What subject do you hate? 何の科目？
-L6. 🍦 How many ice creams can you eat? いくつ？
-L6. 🛏️ Do you make your bed? してる？
-L6. 🌧️ Do you like rainy days? 好き？
-L6. 🍕 What food do you hate? 何？
-L6. ⏰ Are you late for school? 遅れる？
-L6. 🥛 Do you drink milk every day? 毎日？
+const funQuestions = [
+  // L7 (Eiken 7) - Basic vocabulary, 2-4 words, be-verbs, "What is...?"
+  `L7. 🎨 What is your favorite color?
+  好きな色は何？`,
 
-L5. 🏪 Where do you buy snacks? どこ？
-L5. ❄️ What is your favorite season? 何の季節？
-L5. 🎸 What hobby do you like? 何の趣味？
-L5. 🗓️ What month is your birthday? 何月？
-L5. 🎮 Do you play games every day? 毎日？
-L5. 🏞️ Where do you go on Sunday? どこ？
-L5. 🌸 What do you do in spring? 何する？
-L5. 📚 What book are you reading? 何の本？
-L5. 🎵 What song do you like? どの歌？
-L5. 🏊‍♂️ Can your dad swim fast? 速い？
+  `L7. 🐱 Do you have a pet?
+  ペットを飼ってる？`,
 
-L4. 🎢 Where did you go last Sunday? どこ？
-L4. 🍔 What did you eat yesterday? 何食べた？
-L4. 🎁 What do you want for your birthday? 何欲しい？
-L4. 🐕 Could you walk 10 kilometers? できる？
-L4. 📺 What TV show did you watch? 何見た？
-L4. 🎸 Can you play any instrument? できる？
-L4. 🌊 Did you swim last summer? 泳いだ？
-L4. 🍦 Do you want more ice cream? もっと欲しい？
-L4. 🎮 How many hours did you play games? 何時間？
-L4. 🎂 Did you make a cake before? 作ったことある？
+  `L7. 🍎 What fruit is red?
+  何の果物が赤い？`,
 
-L3. 🏙️ Which is better, Tokyo or Kyoto? どっち？
-L3. 📖 What is the most boring book? つまらない本？
-L3. 🍜 Have you ever eaten really spicy food? 食べたことある？
-L3. 💰 Have you ever found money on the ground? 拾ったことある？
-L3. 🐝 Have you ever been stung by a bee? 刺されたことある？
-L3. 🌊 Have you ever swallowed seawater? 飲んだことある？
-L3. 🍕 How many slices can you eat in one day? 何枚？
-L3. 🧹 Which is worse, homework or cleaning? どっち？
-L3. 👖 What color pants do you hate? 何色？
-L3. 🏠 Is your room clean right now? 綺麗？
-`
-  }
+  `L7. 👃 Can you touch your nose?
+  鼻を触れる？`,
+
+  `L7. 🌞 Is the sun hot?
+  太陽は熱い？`,
+
+  `L7. 🐶 Do dogs say "meow"?
+  犬は「ニャー」って鳴く？`,
+
+  `L7. 🖐️ How many fingers do you have?
+  指はい本ある？`,
+
+  `L7. 🌧️ Is rain wet?
+  雨は濡れてる？`,
+
+  `L7. 🍦 Do you like ice cream?
+  アイスクリームは好き？`,
+
+  `L7. 👀 What color are your eyes?
+  目の色は何？`,
+
+  // L6 (Eiken 6) - Daily routines, time, weather, food, 3-5 words, present simple
+  `L6. ⏰ What time do you wake up?
+  何時に起きる？`,
+
+  `L6. 🍚 Do you eat rice every day?
+  ご飯を毎日食べる？`,
+
+  `L6. ☀️ Is it sunny today?
+  今日は晴れてる？`,
+
+  `L6. 🏫 Do you go to school?
+  学校に行く？`,
+
+  `L6. 🍕 What food do you hate?
+  何が嫌い？`,
+
+  `L6. 🛌 Do you sleep early?
+  早く寝る？`,
+
+  `L6. 🌧️ Do you like rainy days?
+  雨の日は好き？`,
+
+  `L6. 🥛 Do you drink milk?
+  牛乳を飲む？`,
+
+  `L6. 📚 What subject is fun?
+  何の科目が楽しい？`,
+
+  `L6. 🍳 Can you cook eggs?
+  卵を料理できる？`,
+
+  // L5 (Eiken 5) - Places, seasons, months, hobbies, 4-6 words, Wh- questions
+  `L5. 🏪 Where do you buy food?
+  どこで食べ物を買う？`,
+
+  `L5. 🎸 What is your hobby?
+  趣味は何？`,
+
+  `L5. 🌸 What season is spring?
+  春は何月？`,
+
+  `L5. ⚽ Can you play soccer?
+  サッカーができる？`,
+
+  `L5. 🎂 What month is your birthday?
+  誕生日は何月？`,
+
+  `L5. 🏞️ Do you like the mountains?
+  山は好き？`,
+
+  `L5. 📖 When do you read books?
+  いつ本を読む？`,
+
+  `L5. 🎵 Do you listen to music?
+  音楽を聴く？`,
+
+  `L5. 🌊 Have you seen the ocean?
+  海を見たことある？`,
+
+  `L5. 🚲 Where do you ride a bike?
+  どこで自転車に乗る？`,
+
+  // L4 (Eiken 4) - Past experiences, future plans, abilities, 5-7 words, past simple, can, want to
+  `L4. 🎬 What movie did you watch?
+  何の映画を観た？`,
+
+  `L4. 🍜 Did you eat ramen yesterday?
+  昨日ラーメンを食べた？`,
+
+  `L4. 🏊 Can you swim fast?
+  速く泳げる？`,
+
+  `L4. 🎮 What game do you want to play?
+  何のゲームをしたい？`,
+
+  `L4. 📸 Did you take a photo today?
+  今日写真を撮った？`,
+
+  `L4. 🎤 Can you sing a song?
+  歌を歌える？`,
+
+  `L4. 🍔 Where did you eat lunch?
+  昼食をどこで食べた？`,
+
+  `L4. 📝 Did you do your homework?
+  宿題をやった？`,
+
+  `L4. 🎁 What do you want for生日？
+  何のプレゼントが欲しい？`,
+
+  `L4. 🚶 Did you walk to school?
+  学校まで歩いた？`,
+
+  // L3 (Eiken 3) - Opinions, reasons, comparisons, 6-8 words, present perfect, comparatives, if-clauses
+  `L3. 🎓 What subject is easier for you?
+  どの科目があなたにとって簡単？`,
+
+  `L3. 🍔 Is pizza better than sushi?
+  ピザは寿司より美味しい？`,
+
+  `L3. 🌧️ What do you do if it rains?
+  雨が降ったら何をする？`,
+
+  `L3. 📚 Have you ever forgotten homework?
+  宿題を忘れたことある？`,
+
+  `L3. 🎮 Which game is more fun?
+  どのゲームがもっと楽しい？`,
+
+  `L3. 🏃 Are you faster than your friend?
+  友達より速い？`,
+
+  `L3. 🍦 What food is the most delicious?
+  何の食べ物がいちばん美味しい？`,
+
+  `L3. 📖 Have you read this book before?
+  この本を前読んだことある？`,
+
+  `L3. 🎵 If you could sing, what song?
+  歌えたら何を歌う？`,
+
+  `L3. 🌟 What is the best day ever?
+  いちばん良かった日は何の日？`
 ];
+
+module.exports = funQuestions;
