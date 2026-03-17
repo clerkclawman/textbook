@@ -22,8 +22,8 @@ Kpop Demon Huntersがアカデミー賞受賞 - どんな映画が好き？
 インド、生理休暇を拒否 - 会社は女性をもっと助けるべき？
 12. 🚨 Australian man helped Chinese spies - Who do you trust the most?
 オーストラリア人、中国スパイを支援 - 誰を一番信じてる？
-13. 🚨 China checks many officials for corruption - Is honesty important in your job?
-中国、多くの官僚の腐敗をチェック - 仕事で正直さは大事？
+13. 🚨 China checks many officials for corruption - Have you ever been dishonest at work?
+中国、多くの官僚の腐敗をチェック - 仕事で嘘をついたことある？
 14. 🚨 South Korea checks transport ministry after crash - Do you prefer trains or planes?
 韓国、事故後運輸省をチェック - 電車と飛行機どっちが好き？
 15. 🚨 Rapper becomes politician in Nepal - Can artists change the world?
