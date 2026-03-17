@@ -1,100 +1,100 @@
-var news20260317 = [ { title: "March 17, 2026: World News & Headlines", content: `1. 🚨 US embassy in Iraq hit by drone strikes - Have you ever been in a dangerous situation?
-イラクのアメリカ大使館がドローン攻撃 - 危険な状況になったことある？
-2. 🚨 Iran war: Trump seeks to delay meeting with Xi - Do you think leaders should meet face to face?
-イラン戦争：トランプ氏、習近平氏との会談延期 - 指導者は直接会うべき？
-3. 🚨 Wary allies show no quick fix to Iran crisis - What would you do if your friends disagreed?
-警戒する同盟国、イラン危機に即効薬なし - 友人が意見が違ったらどうする？
-4. 🚨 Palestinian boy, 12, describes Israeli forces killing his family - How do you cope with sadness?
-12 歳のパレスチナ人少年、イスラエル軍による家族殺害を説明 - 悲しみをどう乗り越える？
-5. 🚨 Afghanistan accuses Pakistan of killing hundreds in hospital strike - Have you ever been in a hospital?
+var news20260317 = [ { title: "March 17, 2026: BBC World News", content: `1. 🚨 US embassy in Iraq hit by drone strike - Have you ever been in a dangerous situation?
+イラクの米大使館がドローン攻撃 - 危険な状況になったことある？
+2. 🚨 Trump seeks to delay meeting with Xi in China - Do you think leaders should meet face to face?
+トランプ氏、中国の習近平氏との会談延期を検討 - 指導者は直接会うべき？
+3. 🚨 'My mother cried out one last time': Palestinian boy, 12, describes Israeli forces killing his family - How do you cope with sadness?
+「母が最後に叫んだ」パレスチナ人 12 歳少年、イスラエル軍による家族殺害を説明 - 悲しみをどう乗り越える？
+4. 🚨 Afghanistan accuses Pakistan of killing hundreds in hospital strike - Have you ever been in a hospital?
 アフガニスタン、パキスタンが病院攻撃で数百人死亡と非難 - 病院に行ったことある？
-6. 🚨 Sri Lanka declares Wednesdays off to conserve fuel - What would you do with an extra day off?
+5. 🚨 Sri Lanka declares Wednesdays off to conserve fuel - What would you do with an extra day off?
 スリランカ、燃料節約で水曜日を休みに - 休日が一日増えたら何する？
-7. 🚨 Millions without electricity as Cuba's power grid collapses - What would you do without power?
-キューバの送電網崩壊、数百万人が停電 - 電気がなかったらどうする？
-8. 🚨 Indian IT stocks plunge as AI fears grow - Are you worried about AI taking jobs?
-インドの IT 株、AI 懸念で急落 - AI に仕事を奪われるか心配？
-9. 🚨 Chinese retailer Joybuy launches in UK, rivals Amazon - Do you prefer online or in-store shopping?
-中国小売大手 Joybuy が英国上陸、Amazon と競合 - オンラインと店舗どちらが好き？
-10. 🚨 Iranian footballer says 'everything will be fine' training in Australia - Have you ever been away from home?
+6. 🚨 India's outsourcing industry worth $300bn - Can it survive AI? - Are you worried about AI taking jobs?
+インドのアウトソーシング産業、3000 億ドル規模 - AI で生き残れる？ - AI に仕事を奪われるか心配？
+7. 🚨 Iranian footballer says 'everything will be fine' training in Australia - Have you ever been away from home?
 イラン人サッカー選手、オーストラリアで「大丈夫」と発言 - 故郷を離れたことある？
-11. 🚨 AI firm Anthropic seeks weapons expert to stop misuse - Should AI have limits?
-AI 企業 Anthropic、悪用防止のため兵器専門家を募集 - AI に制限は必要？
-12. 🚨 'Fire came from the sky' - life on brink of civil war in South Sudan - Have you seen war on TV?
+8. 🚨 Chinese retailer Joybuy launches in UK, rivals Amazon - Do you prefer online or in-store shopping?
+中国小売大手 Joybuy が英国上陸、Amazon と競合 - オンラインと店舗どちらが好き？
+9. 🚨 'Fire came from the sky' - life on brink of civil war in South Sudan - Have you seen war on TV?
 「空から火が降ってきた」南スーダン内戦の瀬戸際 - 戦争をテレビで見たことある？
-13. 🚨 China checks many officials for corruption - Have you ever been dishonest at work?
-中国、多くの官僚の腐敗をチェック - 仕事で嘘をついたことある？
-14. 🚨 South Korea transport ministry under investigation after crash - Do you feel safe on public transport?
-韓国、事故後運輸省を調査 - 公共交通は安全？
-15. 🚨 Rapper becomes politician in Nepal - Can musicians change politics?
-ラッパーがネパールで政治家に - 音楽家は政治を変えられる？
-16. 🚨 Netflix making more Kpop Demon Hunters after Oscar success - Do you watch Korean content?
-「Kpop Demon Hunters」アカデミー賞受賞後、ネットフリックスが续編作成 - 韓国のコンテンツ見る？
-17. 🚨 Student died from meningitis in UK - Have you ever been seriously ill?
-英国で学生が髄膜炎で死亡 - 重病にかかったことある？
-18. 🚨 Trump wants UK to help secure Strait of Hormuz - Have you ever been on a ship?
-トランプ氏、英国にホルムズ海峡警備を要請 - 船に乗ったことある？
-19. 🚨 Hotel chain changes rules after security breach - What's the worst hotel you've stayed at?
-ホテルチェーン、セキュリティ侵害後ルール変更 - 最悪のホテルはどこ？
-20. 🚨 King tries DJ equipment at arts venue - What music do you listen to?
-国王、芸術施設で DJ 機器を体験 - どんな音楽を聴く？
-21. 🚨 UK gives £3,000 for hiring young people - Was your first job difficult?
-英国、若者雇用に 3000 ポンド支給 - 初仕事は大変だった？
-22. 🚨 Girl had bad experience at NHS hospital - Do you trust doctors?
-少女、NHS 病院で悪い経験 - 医者さんを信じてる？
-23. 🚨 Parking company NCP collapses, 700 jobs at risk - Do you drive to work?
-駐車大手 NCP が破綻、700 人雇用危機 - 車で通勤してる？
-24. 🚨 Mother found guilty of poisoning her husband - Have you ever trusted the wrong person?
-母親、夫の毒殺で有罪 - 間違った人を信じたことある？
-25. 🚨 Europe hesitant to help US secure Hormuz - Is it hard to say no to friends?
-欧州、米国のホルムズ警備に消極的 - 友達にノーは言いにくい？
-26. 🚨 Trump criticizes allies reluctant to help - How do you handle disagreements?
-トランプ氏、協力を拒む同盟国を批判 - 意見の違いをどう処理する？
-27. 🚨 Iran war continues, no end in sight - What does peace mean to you?
-イラン戦争続く、終結の気配なし - あなたにとって平和って何？
-28. 🚨 Cuba power crisis worsens - What would you do without your phone?
-キューバ電力危機が悪化 - スマホがなかったらどうする？
-29. 🚨 Peter Thiel gives 'Antichrist' lectures in Rome - Do you believe in fate?
-ピーター・ティール氏、ローマで「反キリスト」講義 - 運命を信じる？
-30. 🚨 Russian tanker drifts near Italian islands - Have you ever been on the ocean?
-ロシアタンカー、イタリア領島付近を漂流 - 海に出たことある？
-31. 🚨 Ukraine fears being forgotten amid Iran war - Do you ever feel ignored?
-ウクライナ、イラン戦争で忘れられることを懸念 - 無視された気分になったことある？
-32. 🚨 Jewish school in Amsterdam attacked - Do you feel safe in your area?
-アムステルダムのユダヤ人学校が攻撃 - 住んでる地域は安全？
-33. 🚨 Iran attacks more ships in Gulf - Do you like seafood?
-イラン、湾岸でさらに船を攻撃 - 魚介類は好き？
-34. 🚨 US Air Force refueler crashes in Iraq - Are you afraid of flying?
-米空軍空中給油機イラクで墜落 - 飛行機は怖い？
-35. 🚨 Oil prices surge amid war fears - How do you save money?
-戦争懸念で石油価格急騰 - どうやってお金を貯めてる？
-36. 🚨 Refugees flee South Sudan violence - Have you ever helped a stranger?
-南スーダン暴力から难民が逃げる - 見知らぬ人を助けたことある？
-37. 🚨 World leaders call for Iran ceasefire - Do countries argue like families?
-世界各国の指導者、イラン停戦を要請 - 国は家族のように喧嘩する？
-38. 🚨 Tech companies restrict services in war zones - Can you live without technology?
-テック企業、戦時中でサービス制限 - テクノロジーなしで生きられる？
-39. 🚨 Students evacuate from conflict universities - What did you study at school?
-学生、紛争大学から避難 - 学校で何を勉強した？
-40. 🚨 Historic buildings at risk in conflict - Do you prefer old or new buildings?
-歴史的建物、紛争で危機に - 古い建物と新しいのどっちが好き？
-41. 🚨 Young people wait for peace - What are you looking forward to?
-若者、平和を待つ - 何を楽しみにしてる？
-42. 🚨 Global supply chains disrupted by war - Do you buy imported products?
-戦争で世界供給鎖が混乱 - 輸入製品は買う？
-43. 🚨 Lawyers debate war crimes - Do you know international law?
-弁護士、戦争犯罪を議論 - 国際法を知ってる？
-44. 🚨 Hospitals need medicine amid conflict - Are you healthy?
-紛争で病院に薬が必要 - 元気？
-45. 🚨 Journalists face danger covering war - Where do you get your news?
-記者、戦争取材で危険に - ニュースはどこで見てる？
-46. 🚨 Religious leaders pray for peace - Do you have any traditions?
-宗教指導者、平和を祈る - 何か伝統はある？
-47. 🚨 Cyber attacks accompany physical warfare - How much time online daily?
-サイバー攻撃、物理的戦争に並行 - 1 日どのくらいオンライン？
-48. 🚨 Cultural heritage sites threatened - What's your favorite place?
-文化遺産が脅威に - 好きな場所はどこ？
-49. 🚨 Climate activists postpone protests - Should protests continue during war?
-気候活動家、抗議活動を延期 - 戦争中も抗議すべき？
-50. 🚨 International law experts debate proportionality - Is war ever justified?
-国際法専門家、均衡性を議論 - 戦争は正当化される？` } ];
+10. 🚨 Utah bereavement author found guilty of poisoning her husband - Have you ever trusted the wrong person?
+ユタ州の悲嘆の著者、夫の毒殺で有罪 - 間違った人を信じたことある？
+11. 🚨 Trump says presidents 'should not have learning disabilities' - Is it okay to mock people's disabilities?
+トランプ氏「大統領に学習障害を持つべきではない」と発言 - 人の障害をからかうのはいい？
+12. 🚨 Michael B Jordan marks Oscars win at In-N-Out - What's your favorite restaurant?
+マイケル・B・ジョーダン、アカデミー賞受賞を In-N-Out で祝う - 好きなレストランはどこ？
+13. 🚨 Meta and TikTok let harmful content rise after evidence outrage drove engagement - How much time do you spend online?
+Meta と TikTok、怒りがエンゲージメントを促進後有害コンテンツを増加 - 1 日どのくらいオンライン？
+14. 🚨 How passenger planes keep flying during a war - Are you afraid of flying?
+戦時中も旅客機が飛び続ける方法 - 飛行機は怖い？
+15. 🚨 India hopeful Iran talks will ease Hormuz route for ships - Have you ever been on a ship?
+インド、イラン協議でホルムズ海峡通過を緩和へ - 船に乗ったことある？
+16. 🚨 Kpop Demon Hunters wins Oscar - Do you watch Korean content?
+Kpop Demon Hunters がアカデミー賞受賞 - 韓国のコンテンツ見る？
+17. 🚨 European leaders call for de-escalation in Lebanon - Do countries argue like families?
+欧州指導者、レバノンでのエスカレーション阻止を要請 - 国は家族のように喧嘩する？
+18. 🚨 Trump's confidence undimmed despite Iran war risks - How do you handle pressure?
+イラン戦争のリスクにもかかわらずトランプ氏の自信は衰えず - プレッシャーをどう処理する？
+19. 🚨 50,000 flee homes in South Sudan military offensive - Have you ever had to leave home suddenly?
+南スーダン軍事作戦で 5 万人が避難 - 急に家を離れたことある？
+20. 🚨 Kouri Richins poisoned husband with fentanyl-laced drink - Do you trust people easily?
+コウリ・リチンズ、フェンタニル入り飲料で夫を毒殺 - 人を簡単に信じる？
+21. 🚨 Islamabad denies targeting health facility - Have you ever been accused of something you didn't do?
+イスラマード、医療施設標的を否定 - 身に覚えのない容疑をかけられたことある？
+22. 🚨 Asian countries rely on oil from Gulf - What would you do without electricity?
+アジア諸国、湾岸の石油に依存 - 電気がなかったらどうする？
+23. 🚨 Indian IT stocks plunge on AI fears - Is your job safe from AI?
+インド IT 株、AI 懸念で急落 - あなたの職種は AI から安全？
+24. 🚨 Australian team supports Iranian footballer - Have you ever helped a stranger?
+オーストラリアチームがイラン人選手を支援 - 見知らぬ人を助けたことある？
+25. 🚨 Chinese retailer enters six European markets - Do you buy imported products?
+中国小売業者、6 つの欧州市場に参入 - 輸入製品は買う？
+26. 🚨 Oscar winner's journey to success - What's your biggest achievement?
+アカデミー賞受賞者の成功への道 - 最大の功績は？
+27. 🚨 President mocks Newsom's dyslexia - Have you ever been bullied?
+大統領、ニューサム知事の失読症をからかう - いじめられたことある？
+28. 🚨 War in Iran overshadows US foreign policy - What does peace mean to you?
+イラン戦争、米国の外交政策を圧迫 - あなたにとって平和って何？
+29. 🚨 Algorithms run on outrage, say whistleblowers - Where do you get your news?
+内部告発者、アルゴリズムは怒りで動くと証言 - ニュースはどこで見てる？
+30. 🚨 Airspace over Iran severely restricted - Have you ever had travel plans cancelled?
+イラン上空、飛行制限厳しく - 旅行計画がキャンセルされたことある？
+31. 🚨 Reunion resident gets close to erupting volcano - Have you seen a volcano?
+レユニオン島民、噴火する火山に接近 - 火山を見たことある？
+32. 🚨 EU leaders condemn escalating conflict - Do you think war is ever justified?
+EU 指導者、エスカレートする紛争を非難 - 戦争は正当化されると思う？
+33. 🚨 Political stakes growing for Trump - Have you ever had to make a difficult decision?
+トランプ氏の政治的代償が増大 - 難しい決断を迫られたことある？
+34. 🚨 Jury finds Kouri Richins guilty - Do you believe in justice?
+陪審員、コウリ・リチンズに有罪評決 - 正義を信じる？
+35. 🚨 Foreign Minister says no blanket arrangement for ships - Have you ever been refused service?
+外務大臣、船舶に包括的措置なしと発言 - サービス提供を拒否されたことある？
+36. 🚨 Companies allowed harmful content on feeds - Should social media be regulated?
+企業、フィードに有害コンテンツを許可 - SNS は規制されるべき？
+37. 🚨 Airlines under pressure from restricted airspace - Do you prefer trains or planes?
+航空会社、制限空域で圧力 - 電車と飛行機どっちが好き？
+38. 🚨 Demon-busting crooners cast spell worldwide - What music do you like?
+悪霊払いの歌手が世界に魔法をかける - どんな音楽が好き？
+39. 🚨 War in Middle East continues - How do you stay informed about world events?
+中東で戦争継続 - 世界の出来事をどう把握してる？
+40. 🚨 European markets react to Asian retail expansion - Do you follow business news?
+欧州市場、アジア小売拡大に反応 - ビジネスニュースを追う？
+41. 🚨 Technology companies face scrutiny over content - Can technology be trusted?
+テック企業、コンテンツで精査 - 技術は信用できる？
+42. 🚨 Military offensive in Jonglei state - Have you ever been in a war zone?
+ジョンレイイ州で軍事作戦 - 戦場に行ったことある？
+43. 🚨 Fentanyl-laced drink kills husband - Do you watch out for what you eat?
+フェンタニル入り飲料で夫死亡 - 食べ物に気をつけてる？
+44. 🚨 Piton de la Fournaise volcano erupts - Have you ever seen lava?
+ピトン・ド・ラ・フルネーズ山噴火 - 溶岩を見たことある？
+45. 🚨 US foreign policy objectives overshadowed - Do you follow politics?
+米国の外交政策目標が圧迫 - 政治を追ってる？
+46. 🚨 Whistleblowers reveal company practices - Have you ever reported wrongdoing?
+内部告発者、企業慣行を暴露 - 不正を報告したことある？
+47. 🚨 Gulf oil supplies affect global markets - Do you worry about energy prices?
+湾岸石油供給、世界市場に影響 - エネルギー価格を心配？
+48. 🚨 International team supports athlete - Have you ever been part of a team?
+国際チームが選手を支援 - チームの一員だったことある？
+49. 🚨 Oscar ceremony celebrates film excellence - What's your favorite movie?
+アカデミー賞、映画の優秀性を祝福 - 好きな映画は何？
+50. 🚨 World leaders respond to crisis - Who do you look up to?
+世界各国の指導者、危機に対応 - 誰を手本にしてる？` } ];
