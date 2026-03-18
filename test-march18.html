@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test March 18 Questions</title>
+</head>
+<body>
+  <h1>March 18, 2026 Fun Questions Test</h1>
+  <div id="output"></div>
+  <script src="fun-questions-2026-03-18.js"></script>
+  <script>
+    const output = document.getElementById('output');
+    if (typeof funQuestions20260318 !== 'undefined') {
+      const content = funQuestions20260318[0].content;
+      const lines = content.split('\n');
+      output.innerHTML = '<p><strong>File loaded successfully!</strong></p>';
+      output.innerHTML += '<p>Total lines: ' + lines.length + '</p>';
+      output.innerHTML += '<h3>First 10 lines:</h3><ol>';
+      lines.slice(0, 10).forEach(line => {
+        output.innerHTML += '<li>' + line + '</li>';
+      });
+      output.innerHTML += '</ol>';
+    } else {
+      output.innerHTML = '<p style="color:red">ERROR: File did not load!</p>';
+    }
+  </script>
+</body>
+</html>
