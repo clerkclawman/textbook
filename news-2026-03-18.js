@@ -2,7 +2,7 @@
 // Date: 2026-03-18
 // Topics: Work, family, travel, food, hobbies, daily life, opinions
 
-const newsQuestions = [
+var news20260318 = [
   `🍽️ Air strike hit Kabul rehab centre as patients ate dinner, survivor tells BBC - What do you think about helping people with problems? カブールのリハビリセンターで夕食を食べている間に空爆に襲われたと生存者がBBCに語る - 困っている人を助けることについてどう思う？`,
   `🏥 'Explosive' meningitis outbreak unprecedented – officials - Have you ever been worried about getting sick? 当局者、前例のない「爆発的な」髄膜炎の流行を確認 - 病気にかかることを心配したことがありますか？`,
   `🚴 Prince William joins Greg James on Comic Relief bike ride - Do you like riding bicycles for fun or exercise? プリンス・ウィリアムがコメディック・リレーフの自転車走行でグレッグ・ジェームズに参加 - 趣味や運動のために自転車に乗るのは好きですか？`,
@@ -55,4 +55,4 @@ const newsQuestions = [
   `🎉 What do you do to celebrate good news? - 良いニュースを祝う時、何をしますか？`
 ];
 
-module.exports = newsQuestions;
+module.exports = news20260318;
