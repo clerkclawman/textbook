@@ -1,102 +1,58 @@
-var news20260318 = [ { title: "March 18, 2026: News for Japanese Learners", content: `1. 🚨 Top US counterterrorism official resigns over Iran war, urgi - Have you experienced this?
-1. ニュース - どう思う？
-2. 🚨 Air strike hit Kabul rehab centre as patients ate dinner, su - How do you feel?
-2. ニュース - どう思う？
-3. 🚨 Chile's president begins building border barrier less than w - Do you agree?
-3. ニュース - どう思う？
-4. 🚨 Utah mother who wrote book about grief found guilty of poiso - Is this important?
-4. ニュース - どう思う？
-5. 🚨 Iranian security chief Ali Larijani killed in air strike - What do you think?
-5. ニュース - どう思う？
-6. 🚨 LIVE: Trump lashes out at Nato allies saying US 'no longer n - Have you experienced this?
-6. ニュース - どう思う？
-7. 🚨 Pakistan air strike kills at least 100 at Kabul drug rehab c - How do you feel?
-7. ニュース - どう思う？
-8. 🚨 Water supply cut in Moldova after oil spill blamed on Russia - Do you agree?
-8. ニュース - どう思う？
-9. 🚨 Aspiring female Zambian politicians were asked for sexual fa - Is this important?
-9. ニュース - どう思う？
-10. 🚨 Trump says presidents 'should not have learning disabilities - What do you think?
-10. ニュース - どう思う？
-11. 🇬🇧 LIVE: Scotland's assisted dying bill fails to pass in final  - Have you experienced this?
-11. ニュース - どう思う？
-12. 🇬🇧 'Explosive' meningitis outbreak unprecedented – officials - How do you feel?
-12. ニュース - どう思う？
-13. 🇬🇧 Inquiry shown CCTV of triple killer kicking officer - Do you agree?
-13. ニュース - どう思う？
-14. 🇬🇧 Prince William joins Greg James on Comic Relief bike ride - Is this important?
-14. ニュース - どう思う？
-15. 🇬🇧 Was response to 'unprecedented' outbreak too slow? - What do you think?
-15. ニュース - どう思う？
-16. 🇬🇧 Iran and Russia are 'brothers in hatred', Zelensky tells MPs - Have you experienced this?
-16. ニュース - どう思う？
-17. 🇬🇧 Man dead in wheelie bin was a 'pillar of strength' - How do you feel?
-17. ニュース - どう思う？
-18. 🇬🇧 Greyhound racing to be banned in Wales after Senedd vote - Do you agree?
-18. ニュース - どう思う？
-19. 🇬🇧 Mayors to gain more spending power under Reeves tax plans - Is this important?
-19. ニュース - どう思う？
-20. 🇬🇧 Dates confirmed for new driving test booking rules - What do you think?
-20. ニュース - どう思う？
-21. 🌏 Air strike hit Kabul rehab centre as patients ate dinner, su - Have you experienced this?
-21. ニュース - どう思う？
-22. 🌏 Pakistan air strike kills at least 100 at Kabul drug rehab c - How do you feel?
-22. ニュース - どう思う？
-23. 🌏 Sri Lanka declares Wednesdays off as Asian countries try to  - Do you agree?
-23. ニュース - どう思う？
-24. 🌏 Aspiring female Zambian politicians were asked for sexual fa - Is this important?
-24. ニュース - どう思う？
-25. 📰 News story - What do you think?
-25. ニュース - どう思う？
-26. 📰 News story - Have you experienced this?
-26. ニュース - どう思う？
-27. 📰 News story - How do you feel?
-27. ニュース - どう思う？
-28. 📰 News story - Do you agree?
-28. ニュース - どう思う？
-29. 📰 News story - Is this important?
-29. ニュース - どう思う？
-30. 📰 News story - What do you think?
-30. ニュース - どう思う？
-31. 📰 News story - Have you experienced this?
-31. ニュース - どう思う？
-32. 📰 News story - How do you feel?
-32. ニュース - どう思う？
-33. 📰 News story - Do you agree?
-33. ニュース - どう思う？
-34. 📰 News story - Is this important?
-34. ニュース - どう思う？
-35. 📰 News story - What do you think?
-35. ニュース - どう思う？
-36. 📰 News story - Have you experienced this?
-36. ニュース - どう思う？
-37. 📰 News story - How do you feel?
-37. ニュース - どう思う？
-38. 📰 News story - Do you agree?
-38. ニュース - どう思う？
-39. 📰 News story - Is this important?
-39. ニュース - どう思う？
-40. 📰 News story - What do you think?
-40. ニュース - どう思う？
-41. 📰 News story - Have you experienced this?
-41. ニュース - どう思う？
-42. 📰 News story - How do you feel?
-42. ニュース - どう思う？
-43. 📰 News story - Do you agree?
-43. ニュース - どう思う？
-44. 📰 News story - Is this important?
-44. ニュース - どう思う？
-45. 📰 News story - What do you think?
-45. ニュース - どう思う？
-46. 📰 News story - Have you experienced this?
-46. ニュース - どう思う？
-47. 📰 News story - How do you feel?
-47. ニュース - どう思う？
-48. 📰 News story - Do you agree?
-48. ニュース - どう思う？
-49. 📰 News story - Is this important?
-49. ニュース - どう思う？
-50. 📰 News story - What do you think?
-50. ニュース - どう思う？` } ];
+// News Discussion Questions for EIKEN Pre-2 (A2) Learners
+// Date: 2026-03-18
+// Topics: Work, family, travel, food, hobbies, daily life, opinions
 
-module.exports = news20260318;
+const newsQuestions = [
+  `🍽️ Air strike hit Kabul rehab centre as patients ate dinner, survivor tells BBC - What do you think about helping people with problems? カブールのリハビリセンターで夕食を食べている間に空爆に襲われたと生存者がBBCに語る - 困っている人を助けることについてどう思う？`,
+  `🏥 'Explosive' meningitis outbreak unprecedented – officials - Have you ever been worried about getting sick? 当局者、前例のない「爆発的な」髄膜炎の流行を確認 - 病気にかかることを心配したことがありますか？`,
+  `🚴 Prince William joins Greg James on Comic Relief bike ride - Do you like riding bicycles for fun or exercise? プリンス・ウィリアムがコメディック・リレーフの自転車走行でグレッグ・ジェームズに参加 - 趣味や運動のために自転車に乗るのは好きですか？`,
+  `🐕 Greyhound racing to be banned in Wales after Senedd vote - How do you feel about animals in sports? ウェールズでグレーハウンドのレースが禁止される見込み - スポーツでの動物についてどう思いますか？`,
+  `📅 Dates confirmed for new driving test booking rules - What would you do if you couldn't book a test when you want? 新しい運転免許試験の予約規則の日付が決定 - 好きな時に試験を予約できなかったらどうしますか？`,
+  `🏝️ Sri Lanka declares Wednesdays off as Asian countries try to conserve fuel - Do you prefer a four-day work week or five-day work week? スリランカが水曜日を休みにすると発表、アジア諸国が燃料節約を模倣 - 週4日勤務と週5日勤務、どちらが良いですか？`,
+  `🌊 Water supply cut in Moldova after oil spill blamed on Russian strike in Ukraine - How do you feel when you can't use water at home? モルドバで石油流出により水道供給が停止、ウクライナでのロシアの攻撃が原因 - 家で水が使えない時、どう感じますか？`,
+  `👨‍👩‍👧 Utah mother who wrote book about grief found guilty of poisoning husband - What do you think about secrets in families? 悲しみについて本を書いたユタ州の母親が夫を毒殺した容疑で有罪判決 - 家族の秘密についてどう思いますか？`,
+  `🏛️ Scotland's assisted dying bill fails to pass in final vote - How do you feel about making difficult family decisions? スコットランドの安楽死法案が最終投票で否決 - 難しい家族の決断についてどう感じますか？`,
+  `🚗 Man dead in wheelie bin was a 'pillar of strength' - What makes someone strong in your community? 廃棄物入れで発見された男性は「強さの柱」だった - あなたのコミュニティで誰かを強くするのは何ですか？`,
+  `🌍 Chile's president begins building border barrier less than week into term - Have you ever moved to a new place? What was difficult? チリの大統領が就任から1週間以内に国境の壁の建設を開始 - 引っ越しをしたことはありますか？何が難しかったですか？`,
+  `👔 Aspiring female Zambian politicians were asked for sexual favours, official says - What would you do if someone asked you for something unfair? 志すザンビアの女性政治家たちが性的見返りを求められたと当局者 - 誰かに不当なことを求められたらどうしますか？`,
+  `📚 Trump says presidents 'should not have learning disabilities' as he mocks Newsom's dyslexia - How do you feel about people who learn differently? トランプ氏、ニューサム知事の失読症をからかい大統領は「学習障害を持つべきでない」と発言 - 学び方が違う人についてどう感じますか？`,
+  `🎭 Inquiry shown CCTV of triple killer kicking officer - What do you think about watching crime shows on TV? 3 人を殺害した男が警官を蹴る監視カメラ映像が審問で公開 - テレビで犯罪番組を見ることについてどう思いますか？`,
+  `🇺🇦 Ukraine worries about 'losing the Americans' as global attention shifts to the war in the Middle East - Do you worry when your friends forget about you? 世界の注目が中東戦争に移る中、ウクライナは「アメリカを失う」ことを懸念 - 友達に忘れられたら心配しますか？`,
+  `⛽ 'Ticking time bomb': Stricken Russian fuel tanker drifts near to Italian islands - Have you ever seen something dangerous near your home? 「時限爆弾」故障したロシアの燃料タンカーがイタリアの島近辺を漂流 - 家の近くで危険なものを見たことはありますか？`,
+  `🇨🇺 With the US pressuring Cuba, a Castro known as 'the Crab' is making appearances - What do you think about famous political families? アメリカがキューバに圧力をかける中、「カニ」と呼ばれるカストロ氏が姿を現す - 有名な政治一族についてどう思いますか？`,
+  `🌐 Trump asked Latin America to use military force against drug trafficking - What would you do to stop a problem in your neighborhood? トランプ氏、ラテンアメリカに麻薬密売への軍事力使用を要請 - ご近所の問題を止めるために何をしますか？`,
+  `⚓ US allies balk at Trump's appeal to help secure Strait of Hormuz - Have you ever said no to helping a friend? アメリカの同盟国、ホルムズ海峡の安全確保支援要請を拒否 - 友達を助けるのを断ったことはありますか？`,
+  `🏝️ What to know about Kharg Island, the tiny coral outcrop at the heart of Iran's oil industry - Do you like learning about small islands? イラン石油産業の中心にある小さな珊瑚の島、ハルク島について知っておくべきこと - 小さな島について学ぶのは好きですか？`,
+  `🛢️ Trump needs China's help fixing the global oil crisis - When do you ask others for help? トランプ氏、世界的石油危機解決で中国の支援を必要 - 他人に助けを求めるのはどんな時ですか？`,
+  `🏳️‍🌈 A harsh climate for many LGBTQ people in Africa is getting worse - How do you feel about people who are different from you? アフリカの多くの LGBTQ の人々にとって過酷な環境が悪化 - あなたと違う人についてどう感じますか？`,
+  `🚗 Israeli forces shoot and kill 4 members of Palestinian family - What do you think about families losing loved ones? イスラエル軍がパレスチナ人家族 4 人を射殺 - 家族を失うことについてどう思いますか？`,
+  `🕌 Iran's new supreme leader has yet to appear, and the system may not need him to - Have you ever been late for something important? イランの新しい最高指導者がまだ姿を現さない、体制は彼の登場を必要としない可能性 - 大切なことに遅れたことはありますか？`,
+  `🇮🇱 Iran confirms top security leader killed after Israel says he was 'eliminated' in strike - What do you do when you hear bad news? イラン、最高級安全保障指導者の殺害を確認、イスラエルが空爆で「排除」と発表 - 悲しい知らせを聞いた時どうしますか？`,
+  `⚔️ What we know on the 18th day of the US and Israel's war with Iran - Do you follow news stories for many days? 米国とイスラエルの対イラン戦争 18 日目で分かっていること - ニュースの物語を何日も追いかけますか？`,
+  `💼 Ali Larijani was a 'true insider' of Iran's regime and its public face - What makes someone a good leader? アリ・ラリジャニ氏はイラン体制の「真の内部関係者」で公の顔 - 何を以て良い指導者と言えますか？`,
+  `🚢 US warship believed to be carrying additional Marines to Middle East tracked off Singapore - Have you ever traveled on a big ship? 追加の海兵隊を中東に運ぶとみられる米軍艦船がシンガポール沖で確認 - 大きな船で旅したことはありますか？`,
+  `🔍 Peter Thiel's secret lectures on Antichrist in Rome spark debate - Do you like talking about religion with friends? ピーター・ティール氏のローマでの反キリストに関する秘密講義が議論を呼ぶ - 友達と宗教について話すのは好きですか？`,
+  `🎯 Pakistan air strike kills at least 100 at Kabul drug rehab centre - What do you think about helping people with addiction? パキスタンの空爆でカブールの薬物リハビリセンターで少なくとも 100 人死亡 - 依存症の人を助けることについてどう思いますか？`,
+  `🏖️ Top US counterterrorism official resigns over Iran war, urging Trump to 'reverse course' - Have you ever quit a job because of your beliefs? 米国の対テロトップがイラン戦争で辞任、トランプ氏に「進路変更」を促す - 信念のために仕事を辞めたことはありますか？`,
+  `🌊 LIVE: Trump lashes out at Nato allies saying US 'no longer needs' help with Iran war - What do you think about countries helping each other? 生中継：トランプ氏、NATO 同盟国を非難、イラン戦争で「もはや支援は不要」と発言 - 国同士が助け合うことについてどう思いますか？`,
+  `👨‍👩‍👧‍👦 What do you think about disagreements between friends? - 友達との意見の違いをどう思う？`,
+  `🍜 Have you ever tried food from another country? - 他の国の料理を試したことはありますか？`,
+  `✈️ What is your favorite place to travel? - 一番好きな旅行先はどこですか？`,
+  `📺 Do you prefer watching movies at home or at the cinema? - 映画は家で見ますか、それとも映画館で見ますか？`,
+  `🎵 What music do you listen to when you are sad? - 悲しい時、どんな音楽を聞きますか？`,
+  `🏠 Would you rather live in a big city or a small town? - 大きい都市と小さい町、どちらに住みたいですか？`,
+  `📱 How many hours do you spend on your phone every day? - 1 日に何時間くらい電話を使いますか？`,
+  `🎂 What do you usually do on your birthday? - 誕生日には普段何をしますか？`,
+  `☕ What is your favorite way to relax after work? - 仕事の後にリラックスする一番好きな方法は何ですか？`,
+  `🌧️ What do you do on rainy days? - 雨の日は何をしますか？`,
+  `🎁 Do you prefer giving gifts or receiving gifts? - プレゼントをあげるのともらうの、どちらが好きですか？`,
+  `👨‍🍳 Can you cook? What is your specialty? - 料理はできますか？得意料理は何ですか？`,
+  `🏃 Do you like doing exercise in the morning or evening? - 運動は朝と夜、どちらが好きですか？`,
+  `📚 What was your favorite subject in school? - 学校の時、一番好きな科目は何でしたか？`,
+  `🎮 Do you play video games? Which ones? - ビデオゲームはしますか？どれをしますか？`,
+  `🌸 What is your favorite season in Japan? - 日本で一番好きな季節は何ですか？`,
+  `🚇 How do you usually go to work or school? - 普段、仕事や学校にどうやって行きますか？`,
+  `🎉 What do you do to celebrate good news? - 良いニュースを祝う時、何をしますか？`
+];
+
+module.exports = newsQuestions;
