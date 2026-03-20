@@ -1,7 +1,4 @@
-var funQuestions20260320 = [
-  {
-    title: "Fun Questions of the Day - 2026-03-20",
-    content: `
+var funQuestions20260320 = [ { title: "Fun Questions of the Day - 2026-03-20", content: `
 L7. 🌟 What is your favorite color?
 L7. 🌟 あなたの好きな色は何ですか？
 L7. 🍎 Do you like apples?
@@ -102,6 +99,4 @@ L3. 🌟 What is something you are good at?
 L3. 🌟 得意なことは何ですか？
 L3. 💭 What did you do yesterday?
 L3. 💭 昨日何をしたか教えてくれますか？
-    `
-  }
-];
+` } ];
