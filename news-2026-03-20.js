@@ -1,100 +1,101 @@
-var news20260320 = [ { title: "March 20, 2026: World News & Headlines", content: `1. 🌏 Israel didn't drag US into war with Iran, Netanyahu says - What do you think about leaders making independent decisions?
-  イスラエル didn't drag 米国 into 戦争 with イラン, ネタニヤフ says - What do you think about leaders making independent decisions?についてどう思いますか？
-2. 🤔 Are US and Israel aligned on Iran war? Deciphering Trump's post after gas field attacks - Do you trust when leaders say they are working together?
-  Are 米国 and イスラエル aligned on イラン 戦争? Deciphering トランプ's post after ガス field 攻撃s - Do you trust when leaders say they are working together?についてどう思いますか？
-3. 🌍 DR Congo and Rwanda agree to ease tensions after talks in US - What makes countries agree to peace?
-  コンゴ民主共和国 and ルワンダ agree to ease tensions after talks in 米国 - What makes countries agree to peace?についてどう思いますか？
-4. 🔍 Former counter-terrorism head investigated by FBI over alleged leaks - Have you ever heard news about government investigations?
-  Former co国連ter-terrorism head 投資igated by FBI over alleged 漏洩s - Have you ever heard news about government investigations?についてどう思いますか？
+var news20260320 = [ { title: "March 20, 2026: World News & Headlines", content: `1. 🇮🇱 Israel didn't drag US into war with Iran, Netanyahu says - What do you think about leaders making independent decisions?
+   ネタニヤフがイスラエルは米国をイラン戦争に巻き込まなかったと言う - 指導者が独立して決断することについてどう思いますか？
+2. 🇺🇸 Are US and Israel aligned on Iran war? - Do you trust when leaders say they are working together?
+   米国とイスラエルはイラン戦争で連携しているか？ - 指導者が協力していると言うのを信頼しますか？
+3. 🇨🇩 DR Congo and Rwanda agree to ease tensions after talks in US - Is peace possible after long conflicts?
+   DRコンゴとルワンダが米国での会談後に緊張緩和で合意 - 長い紛争後に平和は可能ですか？
+4. 🕵️ Former counter-terrorism head investigated by FBI over alleged leaks - Should whistleblowers be protected?
+   元テロ対策担当が漏洩容疑でFBIに調査 - 内部告発者は守られるべきですか？
 5. ⚡ How Europe sleepwalked into yet another energy crisis - How do energy problems affect your life?
-  How ヨーロッパ sleepwalked into yet another エネルギー 危機 - How do energy problems affect your life?についてどう思いますか？
-6. 👑 Spain's king welcomes Mexico's World Cup invite after 'abuse' comments - What do you say to apologize for past mistakes?
-  スペイン's 国王 welcomes メキシコ's 世界 Cup invite after 'aバスe' comments - What do you say to apologize for past mistakes?についてどう思いますか？
-7. 🎤 Norway crown princess to address Epstein links as son's rape trial closes - How do royal families handle scandals?
-  ノルウェー 王太子 to address Epstein links as son's rape 裁判 c敗北s - How do royal families handle scandals?についてどう思いますか？
-8. 🎬 Kevin Spacey and accusers settle before civil trial - Is it better to settle or go to court?
-  Kevin Spacey and acc米国ers 和解 before civil 裁判 - Is it better to settle or go to court?についてどう思いますか？
-9. 💥 Chad warns Sudan it will retaliate after drone strike on mourners kills 17 - What would your country do if attacked?
-  チャド 戦争ns スーダン it will retaliate after drone ストライキ on mourners kills 17 - What would your country do if attacked?についてどう思いますか？
-10. 🇯🇵 Iran conflict looms large over Trump's meeting with Japan PM - How do international conflicts affect diplomacy?
-  イラン conflict looms large over トランプ's 会談 with 日本 PM - How do international conflicts affect diplomacy?についてどう思いますか？
-11. 💔 Three Palestinian women killed in beauty salon during Iranian missile attack - How do civilians suffer in wars?
-  Three パレスチナ women 死亡 in beauty salon during イランian missile 攻撃 - How do civilians suffer in wars?についてどう思いますか？
-12. 🏛️ Cyprus leader calls for frank discussion on 'colonial' UK bases - Do you think foreign military bases are necessary?
-  キプロス 指導者 calls for frank disc米国sion on 'colonial' 英国 bases - Do you think foreign military bases are necessary?についてどう思いますか？
-13. 💧 South Africans say criminal gangs are exploiting the water crisis - What would you do if there was no clean water?
-  South Africans say criminal gangs are exploiting the 水 危機 - What would you do if there was no clean water?についてどう思いますか？
-14. 🛢️ The Iran war is causing a global energy crisis - can China withstand it? - How does an energy crisis affect the world?
-  The イラン 戦争 is ca米国ing a 世界的な エネルギー 危機 - can 中国 withstand it? - How does an energy crisis affect the world?についてどう思いますか？
-15. 🏃 Afghan evacuees in limbo in Qatar camp accuse US of betrayal - Have you ever felt betrayed by someone?
-  アフガン evacuees in limbo in カタール camp acc米国e 米国 of betrayal - Have you ever felt betrayed by someone?についてどう思いますか？
-16. 💣 'Very difficult to stop': BBC visits scene of Iran cluster bomb strike on Israel - What do you think about weapons used in war?
-  'Very difficult to stop': BBC visits scene of イラン cl米国ter bomb ストライキ on イスラエル - What do you think about weapons used in war?についてどう思いますか？
-17. 📚 India's young are more educated than ever. So why are so many jobless? - Why do you think young people struggle to find jobs?
-  インド's yo国連g are more educated than ever. So why are so many 仕事less? - Why do you think young people struggle to find jobs?についてどう思いますか？
-18. ⚔️ Indonesia detains four soldiers over acid attack on activist - What punishment should soldiers get for attacks?
-  インドネシア detains four soldiers over acid 攻撃 on activist - What punishment should soldiers get for attacks?についてどう思いますか？
-19. 💉 Huge queues for jabs as meningitis vaccination scheme expanded - Would you wait in line for a vaccine?
-  Huge queues for jabs as meningitis vacci国家 scheme expanded - Would you wait in line for a vaccine?についてどう思いますか？
-20. 👶 Reports of children as young as 11 abused in West Midlands mini-marts, BBC reveals - How can we protect children from abuse?
-  Re港s of children as yo国連g as 11 aバスed in West Mid土地s mini-marts, BBC reveals - How can we protect children from abuse?についてどう思いますか？
-21. 🗳️ Tories only party with a plan, says Badenoch as she launches election campaign - Do you trust political parties plans?
-  Tories only 党 with a plan, says Badenoch as she la国連ches 選挙 キャンペーン - Do you trust political parties plans?についてどう思いますか？
-22. 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Reform vows to cut Scottish income tax below UK rate - Would you support lower taxes?
-  Reform vows to cut Scottish 収入 税金 below 英国 rate - Would you support lower taxes?についてどう思いますか？
-23. 🚶 King opens world's longest coastal path around England - What is your favorite place to walk?
-  国王 opens 世界's longest coastal path aro国連d Eng土地 - What is your favorite place to walk?についてどう思いますか？
-24. 📈 Bank ready to raise interest rates if Iran war price 'shock' persists - How do interest rates affect you?
-  銀行 ready to raise interest rates if イラン 戦争 価格 'shock' persists - How do interest rates affect you?についてどう思いますか？
-25. 🏥 Patients harmed as Covid pandemic brought NHS close to collapse, inquiry finds - What lessons did we learn from the pandemic?
-  患者s harmed as Covid パンデミック brought NHS c敗北 to collapse, inquiry finds - What lessons did we learn from the pandemic?についてどう思いますか？
-26. 🎤 Hospital order for man who stalked Myleene Klass - What should happen to stalkers?
-  病院 order for man who stalked Myleene Klass - What should happen to stalkers?についてどう思いますか？
-27. 🕌 Badenoch backs Tory MP in row over Muslim prayer event - Should politicians support religious events?
-  Badenoch backs Tory MP in row over M米国lim prayer event - Should politicians support religious events?についてどう思いますか？
-28. 👁️ UK reveals aid priorities after major cuts to budget - Should rich countries help poor ones?
-  英国 reveals aid priorities after major cuts to 予算 - Should rich countries help poor ones?についてどう思いますか？
-29. 🐕 Two men in court accused of spying on London Jewish community for Iran - How do communities protect themselves?
-  Two men in 裁判 容疑者 of spying on London Jewish コミュニティ for イラン - How do communities protect themselves?についてどう思いますか？
-30. 🇬🇧 'Designer' dog owners report more problem behaviours, vets warn - Do you prefer purebred or mixed dogs?
-  'Designer' dog owners re港 more problem behaviours, vets 戦争n - Do you prefer purebred or mixed dogs?についてどう思いますか？
-31. 🇮🇱 UK does not 'agree with Trump on every issue' - Cooper - What would you do if you disagreed with your leader?
-  英国 does not 'agree with トランプ on every issue' - Cooper - What would you do if you disagreed with your leader?についてどう思いますか？
-32. 🚠 India's young are more educated than ever. So why are so many jobless? - What should be done about settler violence?
-  インド's yo国連g are more educated than ever. So why are so many 仕事less? - What should be done about settler violence?についてどう思いますか？
-33. 🍛 Indonesia detains four soldiers over acid attack on activist - Have you ever been in an accident?
-  インドネシア detains four soldiers over acid 攻撃 on activist - Have you ever been in an accident?についてどう思いますか？
-34. 🎵 Iran conflict looms large over Trump's meeting with Japan PM - How does food connect to politics?
-  イラン conflict looms large over トランプ's 会談 with 日本 PM - How does food connect to politics?についてどう思いますか？
-35. 🎤 India's ceramic hub grinds to a halt as Iran war chokes gas supply - What music from other countries do you like?
-  インド's ceramic hub grinds to a halt as イラン 戦争 chokes ガス 供給 - What music from other countries do you like?についてどう思いますか？
-36. 🇨🇺 Under Israeli bombardment, Lebanon urges Trump to intervene, calls for 'immediate' talks with Israel - What would you do if your country was threatened?
-  国連der イスラエルi bomバーdment, レバノン urges トランプ to intervene, calls for 'imメディアte' talks with イスラエル - What would you do if your country was threatened?についてどう思いますか？
-37. 🚢 Netanyahu claims Israel 'acted alone' in Iran gas field strike - What do you think about military ships?
-  ネタニヤフ claims イスラエル 'acted alone' in イラン ガス field ストライキ - What do you think about military ships?についてどう思いますか？
-38. 🤝 As the war — and gas prices — escalate, Trump uses Israel to deflect domestic and allied pressure - Would your country help secure trade routes?
-  As the 戦争 — and ガス 価格s — escalate, トランプ 米国es イスラエル to deflect domestic and allied pressure - Would your country help secure trade routes?についてどう思いますか？
-39. ⚓ What is the South Pars gas field and why is Israel's attack an escalation? - What do you think about disasters at sea?
-  What is the South Pars ガス field and why is イスラエル's 攻撃 an escalation? - What do you think about disasters at sea?についてどう思いますか？
-40. 🎓 What we know on the 20th day of the US and Israel's war with Iran - How do you stay safe when traveling alone?
-  What we know on the 20th day of the 米国 and イスラエル's 戦争 with イラン - How do you stay safe when traveling alone?についてどう思いますか？
-41. 🌑 Palestinian man in the West Bank says he was sexually assaulted by Israeli settlers - Is it okay to make jokes about war?
-  パレスチナ man in the West 銀行 says he was sexually assaulted by イスラエルi 和解rs - Is it okay to make jokes about war?についてどう思いますか？
-42. 🇱🇧 King Charles visit in question as Trump berates UK over Iran war position - Would you leave your country for a better life?
-  国王 Charles visit in question as トランプ berates 英国 over イラン 戦争 position - Would you leave your country for a better life?についてどう思いますか？
-43. 🇺🇦 One person dead after cable car gondola crashes down mountain at Swiss ski resort - Can one leader end a war?
-  One person dead after cable 車 gondola crashes down 山 at Swiss スキーリゾート - Can one leader end a war?についてどう思いますか？
-44. 🏰 Iran's chokehold on Hormuz threatens India's beloved samosas and chai - Where does attention go in times of crisis?
-  イラン's chokehold on Hormuz 脅威ens インド's beloved samosas and chai - Where does attention go in times of crisis?についてどう思いますか？
-45. 💣 Rick Ross: Africa's music moment is now - What makes someone a hero or villain?
-  Rick Ross: Africa's 音楽 moment is now - What makes someone a hero or villain?についてどう思いますか？
-46. 📖 Ali Larijani was a 'true insider' and the Iranian regime's public face. His killing could prolong the war - How do you protect schools from attacks?
-  Ali Larijani was a 'true insider' and the イランian regime's 公 face. His killing could prolong the 戦争 - How do you protect schools from attacks?についてどう思いますか？
-47. 📂 Cuban president promises 'impregnable resistance' to any US attempt to control island - Do you believe conspiracy theories?
-  キューバn 大統領 promises 'impregnable resistance' to any 米国 attempt to control 島 - Do you believe conspiracy theories?についてどう思いますか？
-48. 🇺🇸 US warship believed to be carrying additional Marines to Middle East tracked off Singapore - How do you handle reputation risks?
-  米国 戦争船 believed to be 車rying additional Marines to Middle East tracked off Singapore - How do you handle reputation risks?についてどう思いますか？
-49. 🎯 US allies balk at Trump's appeal to help secure Strait of Hormuz - Why do countries continue fighting?
-  米国 allies balk at トランプ's アプリeal to help secure Strait of Hormuz - Why do countries continue fighting?についてどう思いますか？
-50. 🏠 'Ticking time bomb': Stricken Russian fuel tanker drifts near to Italian islands - What is your opinion on this news?
-  'Tic国王 time bomb': Stricken ロシアn fuel tanker drifts near to Italian 島s - What is your opinion on this news?についてどう思いますか？` } ];
+   ヨーロッパが再びエネルギー危機に突入 - エネルギー問題はあなたの生活にどう影響しますか？
+6. 👑 Spain's king welcomes Mexico's World Cup invite after 'abuse' comments - Should history be apologized for?
+   スペイン国王が「虐待」発言後にメキシコのワールドカップ招待を歓迎 - 歴史について謝罪すべきですか？
+7. 👸 Norway crown princess to address Epstein links as son's rape trial closes - How do royal families handle scandals?
+   ノルウェー王太子が息子の強姦裁判終了時にエプスタイン関連に言及 - 王族はスキャンダルをどう扱いますか？
+8. 🎭 Kevin Spacey and accusers settle before civil trial - Is out-of-court settlement fair?
+   ケビン・スペイシーと告発者が民事裁判前で和解 - 裁判外和解は公平ですか？
+9. 💥 Chad warns Sudan it will retaliate after drone strike on mourners kills 17 - What should countries do after attacks?
+   チャドが葬式へのドローン攻撃で17人死亡後スーダンに報復を警告 - 攻撃の後国は何をすべきですか？
+10. 🇮🇷 Iran conflict looms large over Trump's meeting with Japan PM - How do wars affect diplomacy?
+    イラン紛争がトランプと日本首相の会談に影を落とす - 戦争は外交にどう影響しますか？
+11. 🍜 Iran's conflict is causing global energy prices to rise - How do rising prices affect your daily life?
+    イラン紛争が世界的なエネルギー価格の上昇を引き起こしている - 価格上昇があなたの日常生活にどう影響しますか？
+12. 🇯🇵 Japan's prime minister meets with President Trump - What do you think about when leaders from different countries meet?
+    日本の首相がトランプ大統領と会談 - 異なる国の指導者が会う時何を考えますか？
+13. 🇮🇳 India has more educated young people, but many can't find jobs - Have you ever studied hard but couldn't get the job you wanted?
+    インドは教育を受けた若者が増えているが、仕事が見つからない人が多い - 一生懸命勉強したが望んだ仕事が見つからなかったことはありますか？
+14. 🇮🇩 Indonesian soldiers arrested for attacking an activist with acid - What would you do if you saw someone being treated unfairly?
+    インドネシア人活動家が酸をかけられ、兵士4人が逮捕された - 誰かが不当に扱われているのを見たらどうしますか？
+15. 🏥 Huge queues for vaccines as meningitis shots become available - Do you prefer to wait in line or come back later?
+    髄膜炎ワクチンが利用可能になり、接種に長い行列が - 並ぶのが好きですか、後で戻ってきますか？
+16. 🇬🇧 UK energy bills to rise £332 this July - How do you save money on bills?
+    英国のエネルギー料金が7月に332ポンド上昇 - 光熱費をどう節約しますか？
+17. 🔬 Scientists grow lab food pipes for patients - What medical advances excite you?
+    科学者が患者のための培養食道を開発 - どの医療進歩があなたを興奮させますか？
+18. 🕌 Thousands celebrate Eid in Birmingham park - How do you celebrate festivals?
+    数千人がバーミンガム公園でイードを祝う - 祭りはどう祝いますか？
+19. ⚖️ UK delays Hillsborough Law again - Why do laws take so long to pass?
+    英国がヒルズボロ法を再び延期 - なぜ法律の成立にそんなに時間がかかりますか？
+20. 💻 Three charged for smuggling Nvidia chips to China - Is technology export control necessary?
+    ナビディアチップの中国への密輸で3人が起訴 - テクノロジーの輸出規制は必要ですか？
+21. 👑 Norway's princess says Epstein manipulated her - Have you ever been deceived by someone famous?
+    ノルウェー王女がエプスタインに操られたと言う - 有名人に騙されたことはありますか？
+22. 🏠 UK delays Hillsborough Law again - Should justice be delayed?
+    英国がヒルズボロ法を再び延期 - 正義は遅れるべきですか？
+23. 🌋 Japan considers railway plans for Mount Fuji ash fall - How do you prepare for natural disasters?
+    日本が富士山の降灰に備え鉄道の計画を検討 - 自然災害にどう備えますか？
+24. ⚾ High school baseball Spring Tournament continues - Do you enjoy watching sports?
+    高校野球センバツが続行 - スポーツを見るのは好きですか？
+25. 🚛 Truck driver work conditions investigated after accident - Should companies check work hours?
+    6人死亡事故後トラック運転手の勤務状況調査 - 会社は勤務時間をチェックすべきですか？
+26. 🛣️ IEA suggests 10 km/h speed limit to save oil - Would you drive slower to save fuel?
+    IEAが石油節約のため10km/h速度制限を提言 - 燃料節約のためにゆっくり運転しますか？
+27. 🏦 Kansai banks set up consultation desks amid Iran crisis - What would you do in a financial crisis?
+    イラン情勢緊迫化で関西の地方銀行が相談窓口設置 - 金融危機の時どうしますか？
+28. 🌸 Prime Minister Takaichi visits Arlington Cemetery - Is visiting memorials important?
+    高市首相がアーリントン墓地を訪問 - 墓地を訪れることは大切ですか？
+29. 🇮🇷🇯🇵 China tests oil reserves during Iran energy crisis - How does oil affect your country?
+    イランエネルギー危機中中国が石油備蓄をテスト - オイルがあなたの国にどう影響しますか？
+30. 🎓 India's educated youth face job shortage problem - What can young people do about unemployment?
+    インドの教育を受けた若者が仕事不足に直面 - 若者は失業について何ができますか？
+31. 🍖 Australia PM heckled at Sydney Ramadan mosque event - How do you feel about religious events?
+    オーストラリア首相がシドニーのモスクでラマダンイベント中に妨害された - 宗教的なイベントについてどう思いますか？
+32. 🎭 UK's Comic Relief brings laughter with Idris Elba - What makes you laugh during hard times?
+    英国のComic Reliefがイドリス・エルバと共に笑いを届ける - 辛い時に何で笑いますか？
+33. 💰 UK energy bills to rise £332 this July - How do bills affect your budget?
+    英国のエネルギー料金が7月に332ポンド上昇 - 料金があなたの予算にどう影響しますか？
+34. 🥗 UK scientists grow lab food pipes for patients - Would you accept lab-grown food?
+    英国の科学者が患者のための培養食道を開発 - 培養された食物を受けますか？
+35. 🕌 Thousands celebrate Eid in Birmingham park - What is your favorite festival?
+    数千人がバーミンガム公園でイードを祝う - 好きな祭りは何ですか？
+36. 🦅 Indonesia detains soldiers over activist acid attack - What punishment fits the crime?
+    インドネシアが活動家への酸攻撃で兵士を拘束 - 犯罪にどんな罰が適していますか？
+37. 💻 Three charged for smuggling Nvidia chips to China - What do you think about technology exports?
+    ナビディアチップの中国への密輸で3人が起訴 - テクノロジーの輸出についてどう思いますか？
+38. 🎤 Norway's princess says Epstein manipulated her - How do royal families handle scandals?
+    ノルウェー王女がエプスタインに操られたと言う - 王族はスキャンダルをどう扱いますか？
+39. 🏠 UK delays Hillsborough Law again - Is justice delayed justice denied?
+    英国がヒルズボロ法を再び延期 - 遅れた正義は正義の拒否ですか？
+40. ⚔️ Pakistan air strike kills at least 100 at Kabul drug rehab centre - Is war ever the answer?
+    パキスタンの空襲でカブールの薬物リハビリセンターで少なくとも100人死亡 - 戦争はいつ答えになりますか？
+41. 🚢 US warship carrying Marines to Middle East - Do you support military presence abroad?
+    中東へ海兵隊を運ぶ米軍艦船 - 海外の軍事展開を支持しますか？
+42. 🤬 Trump calls NATO allies 'cowards' - How do you handle disagreements with friends?
+    トランプがNATO同盟国を「臆病者」と呼ぶ - 友達との意見の相違をどう扱いますか？
+43. 🌊 Tehran executes young wrestler - Is execution ever justified?
+    テヘランが若いレスラーを処刑 - 処刑はいつ正当化されますか？
+44. 💣 Middle East conflict continues - How long should conflicts last?
+    中東紛争が続行 - 紛争はどのくらい続くべきですか？
+45. 📰 War coverage increases - How do you stay informed about news?
+    戦争報道が増加 - ニュースをどう知っていますか？
+46. 🇳🇴 Norway's princess reveals Epstein manipulation - What would you do if betrayed?
+    ノルウェー王女がエプスタインに操られたと明かす - 裏切られたらどうしますか？
+47. 🇬🇧 King Charles visit questioned - Should politics affect royal visits?
+    チャールズ国王の訪問が疑問視 - 政治は王族の訪問に影響すべきですか？
+48. 🌍 US allies hesitate on Hormuz - Do countries always work together?
+    米国同盟国がホルムズでためらう - 国はいつも協力しますか？
+49. 💉 Iranian man arrested at nuclear base - Are nuclear bases safe?
+    イラン人が核基地で逮捕 - 核基地は安全ですか？
+50. 🚫 IRA bombing case withdrawn - When should crimes be forgotten?
+    IRA爆弾事件が取り下げ - 犯罪はいつ忘れるべきですか？
+` } ];
