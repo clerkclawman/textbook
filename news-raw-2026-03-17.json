@@ -1,0 +1,229 @@
+{
+  "fetchDate": "2026-03-17",
+  "fetchTime": "06:00:00",
+  "timezone": "Asia/Tokyo",
+  "sources": {
+    "bbc": {
+      "world": {
+        "headlines": [
+          {
+            "title": "Trump says he's 'not happy' with UK after Starmer says it won't be drawn into wider Iran war",
+            "category": "World",
+            "timestamp": "LIVE"
+          },
+          {
+            "title": "Wary allies show there's no quick fix to Trump's Iran crisis",
+            "category": "World",
+            "timestamp": "3 hrs ago"
+          },
+          {
+            "title": "UN receives reports alleging torture of detainees in Venezuela continues",
+            "category": "Latin America",
+            "timestamp": "1 hr ago"
+          },
+          {
+            "title": "Iran hits key UAE oil port and Dubai airport",
+            "category": "Middle East",
+            "timestamp": "8 hrs ago"
+          },
+          {
+            "title": "'My mother cried out one last time': Palestinian boy, 12, describes how Israeli forces killed his family in car",
+            "category": "Middle East",
+            "timestamp": "3 hrs ago"
+          },
+          {
+            "title": "Russia agrees to stop using Kenyan recruits in Ukraine conflict, Kenya says",
+            "category": "Africa",
+            "timestamp": "6 hrs ago"
+          },
+          {
+            "title": "Ecuador deploys 75,000 soldiers and police to combat drug gangs",
+            "category": "World",
+            "timestamp": "9 hrs ago"
+          },
+          {
+            "title": "French national jailed for 10 years in Azerbaijan for spying",
+            "category": "World",
+            "timestamp": null
+          },
+          {
+            "title": "Ten killed in fire at India hospital intensive care unit",
+            "category": "Asia",
+            "timestamp": "15 hrs ago"
+          }
+        ]
+      },
+      "asia": {
+        "headlines": [
+          {
+            "title": "Ten killed in fire at India hospital intensive care unit",
+            "category": "Asia",
+            "timestamp": "15 hrs ago"
+          },
+          {
+            "title": "Kpop Demon Hunters wins Oscars for best animated film and best original song",
+            "category": "Asia",
+            "timestamp": "11 hrs ago"
+          },
+          {
+            "title": "'No-one will hire women' - India's top court rejects menstrual leave petition",
+            "category": "Asia",
+            "timestamp": "3 days ago"
+          },
+          {
+            "title": "Australian businessman found guilty of working for suspected Chinese spies",
+            "category": "World",
+            "timestamp": "4 days ago"
+          },
+          {
+            "title": "'Tigers and flies': Millions of officials later, why is Xi's corruption purge still going?",
+            "category": "Asia",
+            "timestamp": "3 days ago"
+          },
+          {
+            "title": "South Korea police raid transport ministry over Jeju Air crash",
+            "category": "World",
+            "timestamp": "4 days ago"
+          },
+          {
+            "title": "Rapper-politician Balendra Shah's party wins Nepal election",
+            "category": "World",
+            "timestamp": null
+          },
+          {
+            "title": "KPop Demon Hunters to return as Netflix announces sequel",
+            "category": "World",
+            "timestamp": "4 days ago"
+          }
+        ]
+      },
+      "uk": {
+        "headlines": [
+          {
+            "title": "Family of A-level student who died in Kent meningitis outbreak tell BBC they are 'beyond devastated'",
+            "category": "UK",
+            "timestamp": "LIVE"
+          },
+          {
+            "title": "Trump says UK should 'enthusiastically' join efforts to reopen Strait of Hormuz",
+            "category": "Politics",
+            "timestamp": "2 hrs ago"
+          },
+          {
+            "title": "Travelodge changes policy after attacker given room key",
+            "category": "England",
+            "timestamp": "1 hr ago"
+          },
+          {
+            "title": "King hits the DJ decks on city arts venue visit",
+            "category": "Manchester",
+            "timestamp": "5 hrs ago"
+          },
+          {
+            "title": "Starmer announces £53m support to help with heating oil costs",
+            "category": "Business",
+            "timestamp": "5 hrs ago"
+          },
+          {
+            "title": "Schoolgirl 'traumatised' after being wrongly sent to England for abortion",
+            "category": "Northern Ireland",
+            "timestamp": "11 hrs ago"
+          },
+          {
+            "title": "Car park firm NCP collapses with nearly 700 jobs at risk",
+            "category": "Business",
+            "timestamp": "3 hrs ago"
+          },
+          {
+            "title": "Father guilty of murdering baby daughter",
+            "category": "UK",
+            "timestamp": null
+          },
+          {
+            "title": "Companies offered £3,000 to hire jobless under-24s",
+            "category": "UK",
+            "timestamp": null
+          }
+        ]
+      }
+    },
+    "nhk": {
+      "headlines": [
+        {
+          "title": "Today's Top Japan and World News",
+          "category": "General",
+          "timestamp": "Current",
+          "note": "NHK WORLD-JAPAN News - detailed headlines require JavaScript rendering"
+        }
+      ],
+      "note": "NHK WORLD website requires JavaScript for full headline extraction"
+    },
+    "cnn": {
+      "world": {
+        "headlines": [
+          {
+            "title": "Trump criticizes allies who rebuffed his calls to help secure Strait of Hormuz",
+            "category": "World",
+            "timestamp": "Live Updates"
+          },
+          {
+            "title": "What we know on the 17th day of the US and Israel's war with Iran",
+            "category": "World",
+            "timestamp": "Current"
+          },
+          {
+            "title": "Cuba's power grid collapses after weeks of US oil blockade",
+            "category": "Americas",
+            "timestamp": null
+          },
+          {
+            "title": "Peter Thiel's secret lectures on Antichrist in Rome spark debate",
+            "category": "Europe",
+            "timestamp": null
+          },
+          {
+            "title": "US allies balk at Trump's appeal to help secure Strait of Hormuz",
+            "category": "Europe",
+            "timestamp": null
+          },
+          {
+            "title": "'Ticking time bomb': Stricken Russian fuel tanker drifts near to Italian islands",
+            "category": "Europe",
+            "timestamp": null
+          },
+          {
+            "title": "Ukraine worries about 'losing the Americans' as global attention shifts to the war in the Middle East",
+            "category": "Europe",
+            "timestamp": null
+          },
+          {
+            "title": "Explosion rocks Amsterdam Jewish school in what mayor says is 'targeted attack' against Jewish community",
+            "category": "Europe",
+            "timestamp": null
+          },
+          {
+            "title": "Iran is escalating the war by attacking ships along a key oil route",
+            "category": "Middle East",
+            "timestamp": null
+          },
+          {
+            "title": "US Air Force refueling plane crashes in Iraq, killing all six on board",
+            "category": "Middle East",
+            "timestamp": null
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "fetchMethod": "web_fetch",
+    "totalHeadlines": 33,
+    "sourcesAttempted": ["BBC World", "BBC Asia", "BBC UK", "NHK WORLD", "CNN World"],
+    "notes": [
+      "BBC Asia page returned 404, used main BBC News page for Asia headlines",
+      "NHK WORLD requires JavaScript for full headline extraction",
+      "CNN content was truncated due to size limits",
+      "All timestamps are relative to fetch time"
+    ]
+  }
+}

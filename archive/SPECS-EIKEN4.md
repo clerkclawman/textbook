@@ -3,7 +3,7 @@
 ## Level Overview
 
 - **Target:** Junior High Intermediate (中学中級程度)
-- **CEFR:** A1-A2 (early beginner to beginner)
+- **CEFR:** Below A1 / A1 early (Present simple, basic will, simple past introduction)
 - **Vocabulary:** 600-1,200 words
 - **Story Count:** 48 stories (or 20+ for current format)
 - **Primary Focus:** Building on basics with past tense and basic future

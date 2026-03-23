@@ -1,0 +1,6 @@
+news-ready
+date: 2026-03-15
+fetched_at: 2026-03-14T21:00:00Z
+sources: bbc_world, bbc_uk, bbc_asia, nhk, cnn_world, cnn_asia
+total_headlines: 68
+json_file: /home/tony/textbook/news-raw-2026-03-15.json

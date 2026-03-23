@@ -3,7 +3,7 @@
 ## Level Overview
 
 - **Target:** High School Intermediate (高校中級程度)
-- **CEFR:** A2 (elementary)
+- **CEFR:** A2 (mid-high) ✅ A2 starts at Eiken 3, Pre-2 is mid-to-high A2
 - **Vocabulary:** 3,000-4,000 words
 - **Story Count:** 48
 - **Primary Focus:** Transition from A1 → A2 - complex sentences, expanded vocabulary

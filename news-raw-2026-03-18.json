@@ -1,0 +1,259 @@
+{
+  "fetchDate": "2026-03-18T07:36:00+09:00",
+  "fetchDateUTC": "2026-03-17T22:36:00Z",
+  "sources": {
+    "bbc": {
+      "world": {
+        "url": "https://www.bbc.com/news/world",
+        "fetchedAt": "2026-03-17T22:36:27.591Z",
+        "headlines": [
+          {
+            "title": "Top US counterterrorism official resigns over Iran war, urging Trump to 'reverse course'",
+            "summary": "National Counterterrorism Center Director Joe Kent says Trump \"started this war due to pressure from Israel and its powerful American lobby\".",
+            "timestamp": "45 mins ago"
+          },
+          {
+            "title": "Air strike hit Kabul rehab centre as patients ate dinner, survivor tells BBC",
+            "summary": "The exact number killed in Monday night's strike by Pakistan is still not known, but is feared to be in the hundreds.",
+            "timestamp": "4 hrs ago"
+          },
+          {
+            "title": "Chile's president begins building border barrier less than week into term",
+            "summary": "José Antonio Kast visited the ditch - a few feet wide and deep - on Monday, calling it a \"milestone\".",
+            "timestamp": "7 hrs ago"
+          },
+          {
+            "title": "Utah mother who wrote book about grief found guilty of poisoning husband",
+            "summary": "A jury found that Kouri Richins killed her husband in March 2022 by poisoning him with a fentanyl-laced drink.",
+            "timestamp": "21 hrs ago"
+          },
+          {
+            "title": "Iranian security chief Ali Larijani killed in air strike",
+            "summary": "His death is confirmed on state TV, alongside that of another senior figure, Gholamreza Soleimani.",
+            "timestamp": "1 hr ago"
+          },
+          {
+            "title": "LIVE: Trump lashes out at Nato allies saying US 'no longer needs' help with Iran war",
+            "summary": "The US president's comments come after a growing list of nations, including many European powers, turned down his request to help protect the Strait of Hormuz.",
+            "timestamp": "recent"
+          },
+          {
+            "title": "Pakistan air strike kills at least 100 at Kabul drug rehab centre",
+            "summary": "Some of the bodies were injured beyond recognition, forensic laboratory sources told the BBC.",
+            "timestamp": "10 hrs ago"
+          },
+          {
+            "title": "Water supply cut in Moldova after oil spill blamed on Russian strike in Ukraine",
+            "summary": "Moldova has imposed a 15-day state of alert in the Dniester river basin as a precaution.",
+            "timestamp": "recent"
+          },
+          {
+            "title": "Aspiring female Zambian politicians were asked for sexual favours, official says",
+            "summary": "These reports harm attempts to close the wide gender representation gap in Zambia, activists say.",
+            "timestamp": "recent"
+          },
+          {
+            "title": "Trump says presidents 'should not have learning disabilities' as he mocks Newsom's dyslexia",
+            "summary": "The National Center for Learning Disabilities said it was \"disturbed\" by the president's remarks.",
+            "timestamp": "recent"
+          }
+        ]
+      },
+      "uk": {
+        "url": "https://www.bbc.com/news/uk",
+        "fetchedAt": "2026-03-17T22:36:27.183Z",
+        "headlines": [
+          {
+            "title": "LIVE: Scotland's assisted dying bill fails to pass in final vote",
+            "summary": "Members of the Scottish Parliament vote 69 to 57 against the proposed legislation after hours of emotional debate.",
+            "timestamp": "recent"
+          },
+          {
+            "title": "'Explosive' meningitis outbreak unprecedented – officials",
+            "summary": "Officials confirm 15 cases of meningitis following an outbreak in Kent, in which two people died.",
+            "timestamp": "40 mins ago"
+          },
+          {
+            "title": "Inquiry shown CCTV of triple killer kicking officer",
+            "summary": "Footage of Valdo Calocane attacking officers is played at the public inquiry into his killings.",
+            "timestamp": "4 hrs ago"
+          },
+          {
+            "title": "Prince William joins Greg James on Comic Relief bike ride",
+            "summary": "The Radio 1 Breakfast host was joined by a special guest on the latest leg of his charity challenge.",
+            "timestamp": "8 hrs ago"
+          },
+          {
+            "title": "Was response to 'unprecedented' outbreak too slow?",
+            "summary": "Questions are being asked about whether the NHS and authorities should have raised the alarm sooner.",
+            "timestamp": "4 hrs ago"
+          },
+          {
+            "title": "Iran and Russia are 'brothers in hatred', Zelensky tells MPs",
+            "summary": "The president highlights how Tehran is selling drones to Moscow that have been used against Ukraine.",
+            "timestamp": "4 hrs ago"
+          },
+          {
+            "title": "Man dead in wheelie bin was a 'pillar of strength'",
+            "summary": "The body found at Cash's Park in Coventry is that of 37-year-old Thomas Niven, police have confirmed.",
+            "timestamp": "4 hrs ago"
+          },
+          {
+            "title": "Greyhound racing to be banned in Wales after Senedd vote",
+            "summary": "But the legislation faces a legal challenge and accusations ministers did not consult properly.",
+            "timestamp": "recent"
+          },
+          {
+            "title": "Mayors to gain more spending power under Reeves tax plans",
+            "summary": "The chancellor sets out the government's plan for economic growth, which also includes closer ties to the EU.",
+            "timestamp": "recent"
+          },
+          {
+            "title": "Dates confirmed for new driving test booking rules",
+            "summary": "Only learners will be able to book a car driving test under new rules to make the system fairer.",
+            "timestamp": "5 hrs ago"
+          }
+        ]
+      },
+      "asia": {
+        "url": "https://www.bbc.com/news/asia",
+        "fetchedAt": "2026-03-17T22:36:27Z",
+        "status": "404 - Page not found, using world headlines with Asia tag",
+        "headlines": [
+          {
+            "title": "Air strike hit Kabul rehab centre as patients ate dinner, survivor tells BBC",
+            "region": "Asia",
+            "timestamp": "4 hrs ago"
+          },
+          {
+            "title": "Pakistan air strike kills at least 100 at Kabul drug rehab centre",
+            "region": "Asia",
+            "timestamp": "10 hrs ago"
+          },
+          {
+            "title": "Sri Lanka declares Wednesdays off as Asian countries try to conserve fuel",
+            "region": "Asia",
+            "timestamp": "recent"
+          },
+          {
+            "title": "Aspiring female Zambian politicians were asked for sexual favours, official says",
+            "region": "Africa",
+            "timestamp": "recent"
+          }
+        ]
+      }
+    },
+    "nhk": {
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/",
+      "fetchedAt": "2026-03-17T22:36:27.222Z",
+      "status": "200 - OK",
+      "note": "NHK WORLD-JAPAN News - Today's Top Japan and World News",
+      "headlines": []
+    },
+    "cnn": {
+      "url": "https://www.cnn.com/world",
+      "fetchedAt": "2026-03-17T22:36:27.874Z",
+      "headlines": [
+        {
+          "title": "Iran confirms top security leader killed after Israel says he was 'eliminated' in strike",
+          "category": "Live Updates",
+          "timestamp": "recent"
+        },
+        {
+          "title": "Trump asked Latin America to use military force against drug trafficking. Here are the risks",
+          "category": "World",
+          "timestamp": "recent"
+        },
+        {
+          "title": "What we know on the 18th day of the US and Israel's war with Iran",
+          "category": "Live Updates",
+          "timestamp": "recent"
+        },
+        {
+          "title": "Ali Larijani was a 'true insider' of Iran's regime and its public face. His killing could prolong the war",
+          "category": "Analysis",
+          "timestamp": "recent"
+        },
+        {
+          "title": "Afghanistan says Pakistan hit Kabul rehab center killing 408, Islamabad rejects claim",
+          "category": "World",
+          "timestamp": "recent"
+        },
+        {
+          "title": "US warship believed to be carrying additional Marines to Middle East tracked off Singapore",
+          "category": "World",
+          "timestamp": "recent"
+        },
+        {
+          "title": "With the US pressuring Cuba, a Castro known as 'the Crab' is making appearances. Here's why it matters",
+          "category": "Americas",
+          "timestamp": "recent"
+        },
+        {
+          "title": "The US is considering Hormuz naval escorts. There are risks and it could go disastrously wrong",
+          "category": "Analysis",
+          "timestamp": "recent"
+        },
+        {
+          "title": "Trump needs China's help fixing the global oil crisis. It's unlikely to play along",
+          "category": "Analysis",
+          "timestamp": "recent"
+        },
+        {
+          "title": "A harsh climate for many LGBTQ people in Africa is getting worse. Some blame the US",
+          "category": "Africa",
+          "timestamp": "recent"
+        },
+        {
+          "title": "Israeli forces shoot and kill 4 members of Palestinian family, officials say, after opening fire on car in West Bank",
+          "category": "Middle East",
+          "timestamp": "recent"
+        },
+        {
+          "title": "Iran's new supreme leader has yet to appear, and the system may not need him to",
+          "category": "Middle East",
+          "timestamp": "recent"
+        },
+        {
+          "title": "What to know about Kharg Island, the tiny coral outcrop at the heart of Iran's oil industry",
+          "category": "Middle East",
+          "timestamp": "recent"
+        },
+        {
+          "title": "US allies balk at Trump's appeal to help secure Strait of Hormuz",
+          "category": "Europe",
+          "timestamp": "recent"
+        },
+        {
+          "title": "Peter Thiel's secret lectures on Antichrist in Rome spark debate",
+          "category": "Europe",
+          "timestamp": "recent"
+        },
+        {
+          "title": "'Ticking time bomb': Stricken Russian fuel tanker drifts near to Italian islands",
+          "category": "Europe",
+          "timestamp": "recent"
+        },
+        {
+          "title": "Ukraine worries about 'losing the Americans' as global attention shifts to the war in the Middle East",
+          "category": "Europe",
+          "timestamp": "recent"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "fetchJob": "cron:9345d5fc-e450-491b-90bf-deeb5cf4db1a",
+    "jobName": "news-fetch",
+    "outputPath": "/home/tony/textbook/news-raw-2026-03-18.json",
+    "flagFile": "/home/tony/textbook/news-ready-2026-03-18",
+    "timezone": "Asia/Tokyo",
+    "notes": [
+      "BBC Asia section returned 404; Asia headlines extracted from BBC World coverage",
+      "NHK page loaded but minimal text content extracted; may require JavaScript rendering",
+      "CNN World section successfully fetched with live updates on Iran-Israel conflict",
+      "Major ongoing story: US-Israel war with Iran (Day 18), Strait of Hormuz tensions",
+      "Breaking: Iranian security chief Ali Larijani killed in air strike"
+    ]
+  }
+}

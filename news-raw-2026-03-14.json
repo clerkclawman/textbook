@@ -1,0 +1,263 @@
+{
+  "fetch_date": "2026-03-14",
+  "fetch_time_utc": "2026-03-13T21:00:00Z",
+  "fetch_time_jst": "2026-03-14T06:00:00+09:00",
+  "sources": {
+    "bbc_world": {
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        {
+          "title": "Trump warns US will hit Iran 'very hard' in coming days as Tehran's leaders join thousands at rallies",
+          "description": "Meanwhile, Iran says it has launched missile attacks on Israel jointly with Hezbollah, after Israel earlier carried out strikes on Tehran.",
+          "time": "LIVE"
+        },
+        {
+          "title": "All six crew members killed after US refuelling plane crashes in Iraq",
+          "description": "The US Central Command says all six crew members died after a refuelling aircraft went down over western Iraq.",
+          "time": "6 hrs ago"
+        },
+        {
+          "title": "Cuba says it will release 51 prisoners in the coming days",
+          "description": "Havana says it is in talks with Washington as no fuel has entered the island in three months.",
+          "time": "6 hrs ago"
+        },
+        {
+          "title": "'No-one will hire women' - India's top court rejects menstrual leave petition",
+          "description": "The subject has polarised India for long, though some states and private companies offer menstrual leaves.",
+          "time": "9 hrs ago"
+        },
+        {
+          "title": "Ukraine and allies fear easing Russian sanctions will prolong war",
+          "description": "Ukraine's president says the US decision 'certainly does not help achieve peace'.",
+          "time": "5 hrs ago"
+        },
+        {
+          "title": "Sheriff in Nancy Guthrie case believes they know kidnapper's motive",
+          "description": "The 84-year-old mother of US TV presenter Savannah Guthrie was kidnapped 41 days ago.",
+          "time": "4 hrs ago"
+        },
+        {
+          "title": "Michigan synagogue attack was 'hate, plain and simple', says governor",
+          "description": "The FBI says it is investigating the incident as a 'targeted act of violence against the Jewish community', but a motive remains unclear.",
+          "time": "4 hrs ago"
+        },
+        {
+          "title": "Bodies of 84 Iranian sailors killed in US torpedo strike to be repatriated",
+          "description": "The seamen died when Iranian warship the Iris Dena was sunk on 4 March by a US submarine near Sri Lanka.",
+          "time": null
+        },
+        {
+          "title": "King expressed 'concern' over Alberta separatists, say First Nations chiefs",
+          "description": "Indigenous leaders made Charles aware of the 'threat' posed by the movement during a meeting in London.",
+          "time": null
+        },
+        {
+          "title": "KPop Demon Hunters to return as Netflix announces sequel",
+          "description": "The sequel brings back the co-directors of the first film, which was a smash-hit for the streaming service.",
+          "time": null
+        },
+        {
+          "title": "French vote tests polarised electorate with right hoping to win control of Paris",
+          "description": "The highest-profile contest is for the mayorship of Paris - which has been under left-wing control for 25 years.",
+          "time": null
+        },
+        {
+          "title": "France returns sacred 'talking drum' looted during colonial rule to Ivory Coast",
+          "description": "The move forms part of a broader process of returning cultural artefacts to African countries that started in 2017.",
+          "time": null
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        {
+          "title": "The US may move some of its anti-missile system - and it's sparking unease in South Korea",
+          "description": "Reports say the US may be moving parts of its Thaad system to the Middle East, despite Seoul's opposition.",
+          "time": "16 hrs ago"
+        },
+        {
+          "title": "'No-one will hire women' - India's top court rejects menstrual leave petition",
+          "description": "The subject has polarised India for long, though some states and private companies offer menstrual leaves.",
+          "time": "9 hrs ago"
+        },
+        {
+          "title": "How Iran war laid bare the world's reliance on Gulf oil and gas",
+          "description": "Countries around the world are feeling the impact of the conflict and the resulting energy price shock.",
+          "time": "1 day ago"
+        },
+        {
+          "title": "KPop Demon Hunters to return as Netflix announces sequel",
+          "description": "The sequel brings back the co-directors of the first film, which was a smash-hit for the streaming service.",
+          "time": "18 hrs ago"
+        },
+        {
+          "title": "Australian businessman found guilty of working for suspected Chinese spies",
+          "description": "Csergo argued his reports did not contain any secrets but only information available on the internet.",
+          "time": "14 hrs ago"
+        },
+        {
+          "title": "South Korea police raid transport ministry over Jeju Air crash",
+          "description": "More inquiries into the incident have been launched, as investigators discover more body parts and victims' belongings.",
+          "time": "16 hrs ago"
+        },
+        {
+          "title": "Rapper-politician Balendra Shah's party wins Nepal election",
+          "description": "The Rastriya Swatatantra Party has won a large majority in an election dominated by issues including corruption.",
+          "time": "1 day ago"
+        },
+        {
+          "title": "Qantas agrees to pay $74m over Covid-19 travel voucher refunds",
+          "description": "The case relates to cancelled flights during the pandemic, for which customers were given credits instead of cash.",
+          "time": null
+        },
+        {
+          "title": "Chinese national arrested over attempt to smuggle 2,000 queen ants from Kenya",
+          "description": "The suspect had packed some ants in test tubes while others were concealed in tissue paper rolls, prosecutor says.",
+          "time": null
+        },
+        {
+          "title": "China approves 'ethnic unity' law requiring minorities to learn Mandarin",
+          "description": "The law states that children should be taught Mandarin before kindergarten, until the end of high school.",
+          "time": null
+        },
+        {
+          "title": "'The situation is dire': War on Iran squeezes India's cooking-gas supplies",
+          "description": "The shockwaves of the US-Israeli strikes on Iran are being felt in India's kitchens.",
+          "time": null
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        {
+          "title": "UK economy flatlines in January as people cut back on eating out",
+          "description": "Analysts had been expecting 0.2% growth for the UK economy at the beginning of the year.",
+          "time": "2 hrs ago"
+        },
+        {
+          "title": "Britons should not take photos of strikes in UAE, embassy warns",
+          "description": "It comes after a British man was charged in Dubai for allegedly filming Iranian missiles.",
+          "time": "8 hrs ago"
+        },
+        {
+          "title": "Games with loot boxes to get minimum 16 age rating across Europe",
+          "description": "The new changes by the Pan-European Game Information age-ratings body (PEGI) will start from June.",
+          "time": "6 hrs ago"
+        },
+        {
+          "title": "Man's blue skin A&E panic was just bed sheet dye",
+          "description": "Tommy Lynch rushed to hospital when he woke with blue skin but it turned out to be from his sheets.",
+          "time": "13 hrs ago"
+        },
+        {
+          "title": "First image emerges of Andrew, Mandelson and Epstein together",
+          "description": "The image shows Lord Mandelson and the former prince in bathrobes sitting on wooden decking with Epstein.",
+          "time": "1 hr ago"
+        },
+        {
+          "title": "AI toys for children misread emotions and respond inappropriately, researchers warn",
+          "description": "In first study of its kind, Cambridge researchers found AI toys could misread some children's emotions.",
+          "time": "10 hrs ago"
+        },
+        {
+          "title": "Petrol retailers in row with government over 'rip off' accusations",
+          "description": "They briefly threatened to pull out of a government meeting, accusing ministers of using 'inflammatory language' over rising fuel prices.",
+          "time": "1 hr ago"
+        },
+        {
+          "title": "Son urges global leaders to help Iran detainees",
+          "description": "Lindsay and Craig Foreman were detained in January 2025 and later sentenced to 10 years in prison.",
+          "time": null
+        },
+        {
+          "title": "Husband who killed wife and buried her in the garden jailed for life",
+          "description": "Alireza Askari did everything in his power to cover up the 'cold-blooded murder' of Paria Veisi.",
+          "time": null
+        },
+        {
+          "title": "Lost Doctor Who episodes found in 'eclectic' collection",
+          "description": "The Doctor's assistant Peter Purves was invited to a screening of the episodes in Leicester.",
+          "time": null
+        }
+      ]
+    },
+    "nhk_world": {
+      "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+      "note": "Japanese NHK RSS feed; titles/descriptions translated below",
+      "headlines": [
+        {
+          "title_ja": "新年度予算案 衆院本会議で可決 自民・維新両党など賛成多数で",
+          "title_en": "FY2026 budget passes House of Representatives with LDP and Nippon Ishin majority",
+          "description_ja": "一般会計の総額が過去最大の122兆円余りとなる新年度予算案は、衆議院本会議で採決が行われ、自民・維新・維新両党などの賛成多数で可決され、参議院に送られました。",
+          "description_en": "The new fiscal year budget, totaling over 122 trillion yen (the largest ever for the general account), was passed by a majority including LDP and Nippon Ishin parties and sent to the House of Councillors.",
+          "time": "2026-03-14T00:42:17+09:00"
+        },
+        {
+          "title_ja": "JR東日本 きょうから運賃値上げ 消費税対応除き会社発足以来初",
+          "title_en": "JR East raises fares starting today — first time since company founding excluding tax adjustments",
+          "description_ja": "1日あたりの利用者が1600万人に上る日本最大の鉄道会社、JR東日本は、14日、運賃を平均7.1％、値上げしました。値上げは消費税への対応を除いて1987年の会社発足以来、初めてです。",
+          "description_en": "JR East, Japan's largest railway company with 16 million daily passengers, raised fares by an average of 7.1% on March 14. This is the first fare increase since the company was founded in 1987, excluding tax-related adjustments.",
+          "time": "2026-03-14T05:30:47+09:00"
+        },
+        {
+          "title_ja": "キューバ「米代表と協議」圧力受けるなか歩み寄りの姿勢",
+          "title_en": "Cuba says it is 'discussing with US representatives' — conciliatory stance amid pressure",
+          "description_ja": "アメリカのトランプ政権から圧力を受ける、キューバのディアスカネル大統領は、両国の代表が協議していることを明らかにしました。トランプ政権がベネズエラに加え、イランにも強硬な姿勢をとるなか、歩み寄りの姿勢を見せた形です。",
+          "description_en": "Under pressure from the Trump administration, Cuban President Díaz-Canel revealed that representatives of both countries are in discussions. This shows a conciliatory stance as the Trump administration takes a hard line on both Venezuela and Iran.",
+          "time": "2026-03-14T05:33:38+09:00"
+        },
+        {
+          "title_ja": "「トランプ大統領 訪中後 台湾への武器売却承認の可能性」報道",
+          "title_en": "Report: Trump may approve major arms sales to Taiwan after China visit",
+          "description_ja": "ロイター通信は、アメリカのトランプ大統領が今月末から予定している中国への訪問のあと、台湾への大規模な武器の売却を承認する可能性があると伝えました。台湾への武器売却をめぐっては中国の習近平国家主席が慎重に扱うべきだとしてアメリカ側をけん制していました。",
+          "description_en": "Reuters reports that President Trump may approve major arms sales to Taiwan after his planned visit to China at the end of this month. Xi Jinping had warned the US side to handle the matter carefully.",
+          "time": "2026-03-14T05:35:37+09:00"
+        },
+        {
+          "title_ja": "モジタバ師 徹底抗戦の構え トランプ大統領 さらなる攻撃示唆",
+          "title_en": "Mojtaba (Khamenei's son) vows total resistance; Trump signals further attacks",
+          "description_ja": "イランでは新しい最高指導者、モジタバ・ハメネイ師のものとする初めての声明が12日に発表され、アメリカやイスラエルに対する徹底抗戦の構えを強調しました。一方、アメリカのトランプ大統領はSNSへの投稿でイランの指導者層を激しく非難したうえで「きょう、何が起こるか見ていてほしい」と述べ、さらなる攻撃を示唆しました。",
+          "description_en": "Iran's new Supreme Leader Mojtaba Khamenei issued his first statement on March 12, emphasizing total resistance against the US and Israel. Meanwhile, President Trump heavily criticized Iran's leadership on social media and said 'Watch what happens today,' signaling further attacks.",
+          "time": "2026-03-14T01:42:44+09:00"
+        },
+        {
+          "title_ja": "原油高でアメリカがロシア産原油の制裁緩和 ウクライナは反発",
+          "title_en": "US eases Russian oil sanctions amid crude price surge; Ukraine pushes back",
+          "description_ja": "イラン情勢の影響による原油高を背景に、アメリカがロシア産原油などに対する制裁を緩和したことについて、ロシア側は評価した一方、ウクライナのゼレンスキー大統領は、ロシアにウクライナ侵攻を継続する資金をもたらす可能性があると反発しています。",
+          "description_en": "Amid rising crude prices caused by the Iran situation, the US eased sanctions on Russian oil. Russia welcomed the move, but Ukraine's President Zelenskyy pushed back, saying it could provide Russia with funds to continue its invasion of Ukraine.",
+          "time": "2026-03-14T05:39:56+09:00"
+        },
+        {
+          "title_ja": "日銀 18日から金融政策決定会合 イラン情勢などの議論が焦点",
+          "title_en": "Bank of Japan policy meeting starts March 18 — Iran situation in focus",
+          "description_ja": "日銀は来週18日から金融政策決定会合を開きます。悪化するイラン情勢や国内の経済、物価への影響をめぐってどのような議論が行われるかが焦点で、市場では情勢を見極めるため、政策は維持されるという見方が多くなっています。",
+          "description_en": "The Bank of Japan will hold its monetary policy meeting starting March 18. The focus is on how the deteriorating Iran situation and its impact on Japan's economy and prices will be discussed. Markets widely expect the policy to be maintained as the situation is assessed.",
+          "time": "2026-03-14T05:19:31+09:00"
+        }
+      ]
+    },
+    "cnn_world": {
+      "url": "https://www.cnn.com/world",
+      "note": "CNN RSS feed was stale; no current headlines available via fetch",
+      "headlines": []
+    },
+    "nyt_world": {
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "note": "Supplemental source used when CNN unavailable",
+      "headlines": [
+        {
+          "title": "Israel-Iran Conflict: Iran War Live Updates: Trump Says Iranians Face 'Big Hurdle' to Overthrowing Regime",
+          "description": "After earlier calling for Iranians to rise up, the president on Friday expressed skepticism about a popular uprising against the government. U.S. officials said another 2,500 Marines and as many as more three warships were heading to the Middle East.",
+          "time": "2026-03-13T20:55:36+00:00"
+        },
+        {
+          "title": "How the War in Iran Could Help China and Change Asia",
+          "description": "American officials have said for years that they would prioritize the Indo-Pacific. Now they're moving warships, missiles and air defenses out for a war in the Middle East.",
+          "time": "2026-03-13T04:00:37+00:00"
+        }
+      ]
+    }
+  }
+}

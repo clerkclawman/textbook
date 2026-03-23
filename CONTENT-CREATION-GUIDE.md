@@ -14,7 +14,7 @@ Official source: https://www.eiken.or.jp/eiken/en/grades/
 | Eiken 6 | - (grade 5-6) | 4-5 words | Present simple + be verbs | "She is playing now." |
 | Eiken 5 | - | 4-5 words | Present simple/continuous | "They play soccer every day." |
 | Eiken 4 | - | 5-6 words | Past simple, will, comparatives | "He went to the park yesterday." |
-| Eiken 3 | A1 | 6-7 words | Present perfect, longer sentences | "I have never been to Osaka." |
+| Eiken 3 | **A2 (Early)** | 6-7 words | Present perfect, longer sentences | "I have never been to Osaka." |
 | **Pre-2** | **A2** | **7-9 words** | **Modals, conditionals, passive** | "She decided to wash the dishes after dinner." |
 | **Pre-2 Plus** | **A2** | **8-10 words** | **More complex A2: perfect tenses, reported speech** | "Yuki had been working on her scholarship essays since last month." |
 | Eiken 2 | B1 | 10-12 words | Complex clauses, all passives | "The report had been completed before the meeting started." |
@@ -22,11 +22,11 @@ Official source: https://www.eiken.or.jp/eiken/en/grades/
 | Eiken 1 | C1 | 15+ words | Sophisticated argumentation | "Moreover, the implications of this finding extend beyond the immediate scope..." |
 
 ### Key CEFR Boundaries (OFFICIAL)
-- **Below A1:** Eiken 5, 4 (not on official CEFR chart)
-- **A1:** Eiken 3
-- **A2:** Pre-2 and Pre-2 Plus (same CEFR, Pre-2 Plus is slightly harder)
+- **Below A1:** Eiken 7, 6, 5, 4 (not on official CEFR chart)
+- **A2 (Early):** Eiken 3
+- **A2 (Standard):** Pre-2 and Pre-2 Plus (same CEFR, Pre-2 Plus is slightly harder)
 - **B1:** Eiken 2
-- **Big jumps:** Eiken 3→Pre-2 (A1→A2), Pre-2+→2 (A2→B1)
+- **Big jumps:** Eiken 4→3 (Below A2→A2 Early), Pre-2+→2 (A2→B1)
 
 **DO NOT exceed these limits.** Longer sentences = wrong level.
 

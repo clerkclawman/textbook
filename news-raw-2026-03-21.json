@@ -1,0 +1,206 @@
+{
+  "fetchedAt": "2026-03-20T21:00:00Z",
+  "date": "2026-03-21",
+  "sources": {
+    "bbc_world": {
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        {
+          "title": "BTS is back: Anti-drone systems and 260,000 fans as world's biggest band returns",
+          "summary": "RM, Jin, Suga, J-Hope, Jimin, V and Jung Kook will perform together for the first time since October 2022.",
+          "time": "22 hrs ago"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        {
+          "title": "Trump makes Pearl Harbor remark in meeting with Japan's PM",
+          "summary": "President Trump compared US strikes on Iran to the deadly 1941 Japanese attack and declaration of war as part of World War Two.",
+          "time": "11 hrs ago"
+        },
+        {
+          "title": "The Iran war is causing a global energy crisis - can China withstand it?",
+          "summary": "With oil supply disrupted, Beijing's oil reserves and renewable energy push are being put to the test.",
+          "time": "2 days ago"
+        },
+        {
+          "title": "Australia PM heckled at Sydney mosque Ramadan event",
+          "summary": "The government's response to the Israel-Gaza war and rising Islamophobia has angered many Muslim Australians.",
+          "time": "18 hrs ago"
+        },
+        {
+          "title": "India's young are more educated than ever. So why are so many jobless?",
+          "summary": "India's educational enrolment has surged but jobs, especially good ones, are not keeping pace, a new report finds.",
+          "time": "2 days ago"
+        },
+        {
+          "title": "Trump compares attack on Iran to Pearl Harbor in meeting with Japanese PM",
+          "summary": "In a meeting with Japanese Prime Minister, US President Donald Trump was asked why he didn't inform allies about his plan to attack Iran.",
+          "time": "recent"
+        },
+        {
+          "title": "Indonesia detains four soldiers over acid attack on activist",
+          "summary": "Andrie Yunus, who criticised the army's role in government, suffered burns to 20% of his body.",
+          "time": "2 days ago"
+        },
+        {
+          "title": "Pakistan air strike kills at least 100 at Kabul drug rehab centre",
+          "summary": "Some of the bodies were injured beyond recognition, forensic laboratory sources told the BBC.",
+          "time": "3 days ago"
+        },
+        {
+          "title": "Trio charged over alleged plot to smuggle Nvidia chips from US to China",
+          "summary": "They allegedly used fake papers and dummy gear as part of a plan to sell billions in tech to China.",
+          "time": "16 hrs ago"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        {
+          "title": "Iranian man arrested trying to enter Faslane nuclear base",
+          "summary": "An Iranian man has been arrested with a woman after trying to enter the Faslane naval base, home to the UK's nuclear-armed submarines.",
+          "time": "5 hrs ago"
+        },
+        {
+          "title": "Civil case against Gerry Adams over IRA bombings withdrawn",
+          "summary": "A lawyer for the claimants said on Friday that proceedings would be \"discontinued\".",
+          "time": "6 hrs ago"
+        },
+        {
+          "title": "The Traitors and Idris Elba bring the laughs on Comic Relief",
+          "summary": "The charity telethon takes place on Friday night and will be hosted by Davina McCall.",
+          "time": "2 hrs ago"
+        },
+        {
+          "title": "Typical energy bill forecast to rise by £332 a year in July",
+          "summary": "Cornwall Insight says the recent surge in energy prices due to the Iran war is set to push up household bills.",
+          "time": "8 hrs ago"
+        },
+        {
+          "title": "MI5 contractor who gave intelligence to foreign power 'was insane'",
+          "summary": "Juan Joseph, a former MI5 IT contractor, shared information with a foreign state but was found \"not guilty by reason of insanity\" by a jury.",
+          "time": "5 hrs ago"
+        },
+        {
+          "title": "Thousands attend Europe's biggest Eid celebration",
+          "summary": "Birmingham's Small Heath Park attracts huge crowds as Muslims mark the end of Ramadan.",
+          "time": "recent"
+        },
+        {
+          "title": "Hillsborough Law to be further delayed",
+          "summary": "The prime minister had promised to pass the legislation by 15 April 2025, to mark the 36th anniversary of the disaster.",
+          "time": "recent"
+        },
+        {
+          "title": "Lab-grown food pipe offers new hope for young patients",
+          "summary": "UK scientists have grown fully functioning food pipes and successfully transplanted them into mini pigs, paving the way for human trials.",
+          "time": "recent"
+        }
+      ]
+    },
+    "nhk": {
+      "url": "https://www3.nhk.or.jp/news/",
+      "headlines": [
+        {
+          "title": "高市首相 日米首脳会談など一連の日程終え 帰国の途に",
+          "summary": "Prime Minister Takaichi returns to Japan after completing a series of meetings including the Japan-US summit.",
+          "time": "3月21日午前5時35分"
+        },
+        {
+          "title": "“高速制限速度10キロ引き下げ” 石油消費抑える対策提言 IEA",
+          "summary": "IEA proposes reducing highway speed limits by 10 km/h as a measure to curb oil consumption.",
+          "time": "3月21日午前5時37分"
+        },
+        {
+          "title": "イラン情勢緊迫化 関西の地方銀行で相談窓口設置の動き",
+          "summary": "Regional banks in Kansai are setting up consultation desks amid the escalating Iran situation.",
+          "time": "3月21日午前5時32分"
+        },
+        {
+          "title": "高市首相 アーリントン国立墓地を訪れ献花",
+          "summary": "Prime Minister Takaichi visits Arlington National Cemetery to lay flowers.",
+          "time": "3月21日午前5時29分"
+        },
+        {
+          "title": "三重 新名神6人死亡事故 トラック運転手の勤務状況など調べる",
+          "summary": "Investigating the truck driver's work conditions in the 6-death accident on Shin-Meishin Expressway.",
+          "time": "3月21日午前5時09分"
+        },
+        {
+          "title": "富士山の大量降灰想定 鉄道の計画運休など具体策検討へ",
+          "summary": "Considering concrete measures including planned railway suspensions for expected heavy ash fall from Mount Fuji.",
+          "time": "3月21日午前5時04分"
+        },
+        {
+          "title": "高校野球 センバツ【大会3日目の見どころ】1回戦3試合",
+          "summary": "High school baseball Spring Tournament - Highlights of Day 3, 3 first-round matches.",
+          "time": "3月21日午前5時33分"
+        },
+        {
+          "title": "ゼレンスキー大統領 “和平案21日に米で協議” も進展見込めず",
+          "summary": "President Zelensky: \"Peace plan to be discussed in US on 21st\" but no progress expected.",
+          "time": "3月20日午後9時43分"
+        }
+      ]
+    },
+    "cnn": {
+      "url": "https://www.cnn.com/world",
+      "headlines": [
+        {
+          "title": "Trump calls NATO allies 'cowards' for failing to help open Strait of Hormuz",
+          "summary": "President Trump criticizes NATO allies for not helping to secure the strategic waterway.",
+          "time": "recent"
+        },
+        {
+          "title": "Tehran sends a message with execution of young wrestler and others, say experts",
+          "summary": "Iran's execution of a young wrestler and others sends a message amid tensions.",
+          "time": "recent"
+        },
+        {
+          "title": "Day 20 of Middle East conflict — Israel attack on key Iran gas site prompts retaliatory strikes",
+          "summary": "Israel's attack on a key Iran gas site has prompted retaliatory strikes.",
+          "time": "recent"
+        },
+        {
+          "title": "What we know on the 21st day of the US and Israel's war with Iran",
+          "summary": "Update on the ongoing conflict between US/Israel and Iran.",
+          "time": "recent"
+        },
+        {
+          "title": "Norway's crown princess says she was 'manipulated and deceived' by Epstein",
+          "summary": "Norway's crown princess reveals she was manipulated and deceived by Jeffrey Epstein.",
+          "time": "recent"
+        },
+        {
+          "title": "US warship believed to be carrying additional Marines to Middle East tracked off Singapore",
+          "summary": "A US warship carrying additional Marines to the Middle East has been tracked off Singapore.",
+          "time": "recent"
+        },
+        {
+          "title": "King Charles visit in question as Trump berates UK over Iran war position",
+          "summary": "King Charles's visit is in question as Trump criticizes UK's position on the Iran war.",
+          "time": "recent"
+        },
+        {
+          "title": "US allies balk at Trump's appeal to help secure Strait of Hormuz",
+          "summary": "US allies are hesitant to respond to Trump's call to help secure the Strait of Hormuz.",
+          "time": "recent"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_headlines": 35,
+    "top_stories": [
+      "Iran-US-Israel conflict continues to escalate",
+      "Trump's diplomatic tensions with allies over Iran war",
+      "BTS reunion concert draws massive crowd",
+      "Japan-US summit concludes with Prime Minister Takaichi returning home",
+      "Energy crisis impacts global markets"
+    ]
+  }
+}

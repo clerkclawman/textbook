@@ -1,0 +1,405 @@
+{
+  "date": "2026-03-15",
+  "fetched_at": "2026-03-14T21:00:00Z",
+  "sources": {
+    "bbc_world": {
+      "name": "BBC World",
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        {
+          "title": "Trump urges UK and other nations to send ships to help secure Strait of Hormuz after Iranian attacks",
+          "summary": "Meanwhile, Israel says Iran has launched a sixth wave of strikes on Saturday and in Kuwait, an air base has been hit by two drones.",
+          "time": "Live",
+          "url": "https://www.bbc.com/news/live/ckg1w1jp8kjt"
+        },
+        {
+          "title": "Three more Iran football team members change minds over asylum",
+          "summary": "Four of seven members of the women's football delegation who originally sought to stay in Australia have now chosen to return home.",
+          "time": "5 mins ago",
+          "url": "https://www.bbc.com/news/articles/c98gz372683o"
+        },
+        {
+          "title": "Cuban protesters ransack Communist office as energy crisis deepens",
+          "summary": "Discontent is mounting over rolling blackouts and shortages of food, fuel and medicine, exacerbated by a US blockade.",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c875zd7de5xo"
+        },
+        {
+          "title": "Rescuers blame weather and 'underprepared skiers' for rise in Alps avalanche deaths",
+          "summary": "The BBC joins a French Alps rescue team as the number of skiers killed this season passes 100.",
+          "time": "4 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cev7111kx9wo"
+        },
+        {
+          "title": "Hamas urges key ally Iran to halt attacks on Gulf states",
+          "summary": "The Palestinian group also affirms Tehran's right to defend itself from aggression by the US and Israel.",
+          "time": "7 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cvg3xk6xgyzo"
+        },
+        {
+          "title": "More US Marines and warships being moved to Middle East, reports say",
+          "summary": "The reinforcements will come from an amphibious ready group that is usually based in Japan.",
+          "time": "7 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cq8gj9n12g8o"
+        },
+        {
+          "title": "Explosion at Amsterdam Jewish school 'a deliberate attack' says mayor",
+          "summary": "Security had been increased at Jewish public institutions following an earlier incident in Rotterdam.",
+          "time": "8 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cwyg4j58gdyo"
+        },
+        {
+          "title": "Treasure hunter freed from prison after refusing to turn over shipwreck gold",
+          "summary": "Tommy Thompson spent more than a decade in prison after refusing to disclose the whereabouts of 500 missing gold coins.",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cg4g7kn99q3o"
+        },
+        {
+          "title": "Kennedy Center head steps down after tumultuous year",
+          "summary": "The Trump ally's departure comes as the centre prepares to shut down for a two-year renovation.",
+          "time": "5 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cy7jlgez0ljo"
+        },
+        {
+          "title": "German philosopher and social critic Jurgen Habermas dies at 96",
+          "summary": "One the most influential thinkers in post-war Germany, he linked philosophy and political action throughout his life.",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/crk8yxd2g0no"
+        },
+        {
+          "title": "LA asks for investigation into 2028 Olympics chief over Epstein ties",
+          "summary": "The city council votes unanimously for an investigation into Casey Wasserman after he appeared in the Epstein files.",
+          "time": "Recent",
+          "url": "https://www.bbc.com/news/articles/cn9ewxq98e5o"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "name": "BBC UK",
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        {
+          "title": "Murder investigation launched after baby's death",
+          "summary": "A 43-year-old woman was arrested at the scene on suspicion of murder and remains in police custody.",
+          "time": "2 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c70npeg4lj9o"
+        },
+        {
+          "title": "'The pain of being falsely accused of rape will last a lifetime'",
+          "summary": "Men have told of the effect on their lives after a woman was jailed for making the bogus claims.",
+          "time": "5 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c5y5np10j9zo"
+        },
+        {
+          "title": "We expect government help in a crisis. Will Reeves intervene on energy bills this time?",
+          "summary": "After Covid furlough and Truss's bailout, can the UK expect another government crisis rescue.",
+          "time": "6 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cvgky84z6lro"
+        },
+        {
+          "title": "Body of man found in wheelie bin 'after being hit by car'",
+          "summary": "An urgent appeal has been issued by police to find out who the man is and how and where he died.",
+          "time": "9 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cn4gexxyzevo"
+        },
+        {
+          "title": "Motörhead guitarist Phil Campbell dies aged 64",
+          "summary": "Phil Campbell's family said he died peacefully following a courageous battle in intensive care.",
+          "time": "Recent",
+          "url": "https://www.bbc.com/news/articles/c0q3k04wxylo"
+        },
+        {
+          "title": "Former Labour minister dies after cancer diagnosis",
+          "summary": "The ex-Oldham MP Phil Woolas battled brain cancer for more than a year, his family says.",
+          "time": "Recent",
+          "url": "https://www.bbc.com/news/articles/cwy9qvz3g15o"
+        },
+        {
+          "title": "Drivers could get licence points for fly-tipping",
+          "summary": "Councils will also be encouraged to seize and crush the vehicles of people caught fly-tipping.",
+          "time": "11 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c75e0gdrvpvo"
+        },
+        {
+          "title": "Swinney promises £500m childcare boost and more GP walk-in clinics",
+          "summary": "The first minister told his party's spring conference he will extend childcare if re-elected in May.",
+          "time": "Recent",
+          "url": "https://www.bbc.com/news/articles/cx2rwjr4y59o"
+        },
+        {
+          "title": "Trump urges UK and other nations to send ships to Strait of Hormuz",
+          "summary": "Trump says he hopes China, France, Japan and South Korea will also send ships to defend the key oil shipping route.",
+          "time": "19 mins ago",
+          "url": "https://www.bbc.com/news/articles/cd039n9vj3vo"
+        },
+        {
+          "title": "Harry and Meghan accuse royal author of 'deranged conspiracy'",
+          "summary": "Extracts from a new book about the Royals claim the Queen said Meghan had brainwashed Prince Harry.",
+          "time": "5 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c3v7qpnx73yo"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "name": "BBC Asia",
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        {
+          "title": "'Tigers and flies': Millions of officials later, why is Xi's corruption purge still going?",
+          "summary": "Critics say Xi's purges reveal a ruthless drive for absolute loyalty and total control of the military.",
+          "time": "21 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c78xxyyqwe7o"
+        },
+        {
+          "title": "The US may move some of its anti-missile system - and it's sparking unease in South Korea",
+          "summary": "Reports say the US may be moving parts of its Thaad system to the Middle East, despite Seoul's opposition.",
+          "time": "2 days ago",
+          "url": "https://www.bbc.com/news/articles/cgmlk8dlekgo"
+        },
+        {
+          "title": "Rapper-politician Balendra Shah's party wins Nepal election",
+          "summary": "The Rastriya Swatantra Party has won a large majority in an election dominated by issues including corruption.",
+          "time": "2 days ago",
+          "url": "https://www.bbc.com/news/articles/c8jxnjvjkg7o"
+        },
+        {
+          "title": "How Iran war laid bare the world's reliance on Gulf oil and gas",
+          "summary": "Countries around the world are feeling the impact of the conflict and the resulting energy price shock.",
+          "time": "2 days ago",
+          "url": "https://www.bbc.com/news/articles/c15x1y8d37vo"
+        },
+        {
+          "title": "'No-one will hire women' - India's top court rejects menstrual leave petition",
+          "summary": "The subject has polarised India for long, though some states and private companies offer menstrual leaves.",
+          "time": "1 day ago",
+          "url": "https://www.bbc.com/news/articles/c0436qkegdqo"
+        },
+        {
+          "title": "Australian businessman found guilty of working for suspected Chinese spies",
+          "summary": "Csergo argued his reports did not contain any secrets but only information available on the internet.",
+          "time": "2 days ago",
+          "url": "https://www.bbc.com/news/articles/cx28zl37x9po"
+        },
+        {
+          "title": "South Korea police raid transport ministry over Jeju Air crash",
+          "summary": "More inquiries into the incident have been launched, as investigators discover more body parts and victims' belongings.",
+          "time": "2 days ago",
+          "url": "https://www.bbc.com/news/articles/cz0gzd0dx1do"
+        },
+        {
+          "title": "China approves 'ethnic unity' law requiring minorities to learn Mandarin",
+          "summary": "The law states that children should be taught Mandarin before kindergarten, until the end of high school.",
+          "time": "Recent",
+          "url": "https://www.bbc.com/news/articles/cp9meeek051o"
+        },
+        {
+          "title": "Chinese national arrested over attempt to smuggle 2,000 queen ants from Kenya",
+          "summary": "The suspect had packed some ants in test tubes while others were concealed in tissue paper rolls.",
+          "time": "Recent",
+          "url": "https://www.bbc.com/news/articles/cz7gd57z33zo"
+        },
+        {
+          "title": "Video shows moment point-blank gunshot misses Indian politician",
+          "summary": "Senior Kashmir leader Farooq Abdullah escaped unhurt after the incident and the suspect is in custody.",
+          "time": "Recent",
+          "url": "https://www.bbc.com/news/videos/cj0d3357vqjo"
+        }
+      ]
+    },
+    "nhk": {
+      "name": "NHK (日本放送協会)",
+      "url": "https://www3.nhk.or.jp/news/",
+      "language": "Japanese",
+      "headlines": [
+        {
+          "title": "トランプ氏 ホルムズ海峡安全確保へ日本などの艦船派遣に期待",
+          "title_en": "Trump hopes Japan and other nations will send ships to secure Strait of Hormuz",
+          "summary": "ホルムズ海峡が事実上封鎖され、原油価格の高騰への懸念が高まる中、アメリカのトランプ大統領は、海峡の安全を確保するため日本を含む各国がこの海域に艦船を派遣することに期待を示しました。",
+          "summary_en": "As the Strait of Hormuz is effectively blocked and concerns over rising crude oil prices grow, President Trump expressed hope that countries including Japan will send ships to the area to ensure the safety of the strait.",
+          "time": "2026-03-15T05:57:07+09:00",
+          "url": "http://www3.nhk.or.jp/news/html/20260315/k10015076011000.html"
+        },
+        {
+          "title": "旧優生保護法の被害補償 東京 広島など1都3県が個別通知",
+          "title_en": "Former Eugenic Protection Law compensation: Tokyo, Hiroshima and 3 prefectures send individual notices",
+          "summary": "旧優生保護法のもとで不妊手術などを強制された被害者への補償が進まない中、ことしから東京都や広島県など1都3県が、被害者に補償の対象となることを直接伝える、個別通知を始めたことが分かりました。",
+          "summary_en": "As compensation for victims forcibly sterilized under the old Eugenic Protection Law has stalled, Tokyo, Hiroshima and other prefectures began sending individual notices directly to victims informing them they are eligible for compensation.",
+          "time": "2026-03-15T05:08:16+09:00",
+          "url": "http://www3.nhk.or.jp/news/html/20260315/k10015075911000.html"
+        },
+        {
+          "title": "4億円強奪事件 容疑者関係先で現金約1000万円見つかる 報酬か",
+          "title_en": "¥400 million robbery: About ¥10 million found at suspect's related location, possibly reward money",
+          "summary": "ことし1月、東京台東区の路上で、中国籍や日本人のグループが4億円余りを奪われた事件で、逮捕された7人のうち、実行役とみられる暴力団員の関係先から、現金およそ1000万円が見つかったことが捜査関係者への取材でわかりました。",
+          "summary_en": "In the January robbery in Taito, Tokyo where groups of Chinese nationals and Japanese were robbed of over ¥400 million, about ¥10 million was found at locations connected to a yakuza member believed to be one of the perpetrators.",
+          "time": "2026-03-15T05:11:07+09:00",
+          "url": "http://www3.nhk.or.jp/news/html/20260315/k10015075971000.html"
+        },
+        {
+          "title": "WBCきょう準々決勝 ベネズエラ戦 山本由伸など投手陣がかぎか",
+          "title_en": "WBC quarterfinal today: Japan vs Venezuela, pitching led by Yamamoto Yoshinobu key",
+          "summary": "WBC＝ワールド・ベースボール・クラシック、日本代表は日本時間の15日、ベネズエラ代表との準々決勝を迎えます。先発の山本由伸投手をはじめとする日本の投手陣がベネズエラの強力打線を抑えられるかが勝負のかぎを握ります。",
+          "summary_en": "Team Japan faces Venezuela in the WBC quarterfinals on March 15. Whether Japan's pitchers led by starter Yamamoto Yoshinobu can suppress Venezuela's powerful batting lineup will be key.",
+          "time": "2026-03-15T00:11:57+09:00",
+          "url": "http://www3.nhk.or.jp/news/html/20260315/k10015075901000.html"
+        },
+        {
+          "title": "中東からチャーター機で1100人余退避 政府追加運航なし",
+          "title_en": "Over 1,100 evacuated from Middle East by charter flights; government says no additional flights",
+          "summary": "イラン情勢の緊迫化を受け、政府が手配したチャーター機で日本に退避したのは、これまでに1100人余りとなりました。政府は、現時点で帰国を希望する日本人の退避は終えたとして、当面チャーター機の追加運航は行わない方針で、モルディブに待機している自衛隊機を撤収させる方向で検討しています。",
+          "summary_en": "Over 1,100 people have been evacuated to Japan on government-arranged charter flights due to the Iran situation. The government says evacuation of Japanese wishing to return is complete and will not add more charter flights, considering withdrawing SDF aircraft stationed in the Maldives.",
+          "time": "2026-03-15T05:43:40+09:00",
+          "url": "http://www3.nhk.or.jp/news/html/20260315/k10015075981000.html"
+        },
+        {
+          "title": "日韓財務対話 イラン情勢受けエネルギーの安定供給など連携へ",
+          "title_en": "Japan-ROK finance dialogue agrees to cooperate on energy supply amid Iran situation",
+          "summary": "日本と韓国の財務当局者が、経済や財政の課題について意見を交わす「日韓財務対話」が開かれ、イラン情勢を受けて、エネルギーの安定供給や金融市場の安定に向けて緊密に連携することで一致しました。",
+          "summary_en": "At the Japan-ROK Finance Dialogue, officials agreed to cooperate closely on stable energy supply and financial market stability in response to the Iran situation.",
+          "time": "2026-03-14T20:34:59+09:00",
+          "url": "http://www3.nhk.or.jp/news/html/20260314/k10015075841000.html"
+        },
+        {
+          "title": "オランダやベルギーでユダヤ系施設狙ったとみられる事件相次ぐ",
+          "title_en": "Incidents targeting Jewish facilities reported in Netherlands and Belgium",
+          "summary": "アメリカとイスラエルによるイランへの軍事作戦が続くなか、オランダやベルギーではユダヤ系の施設を狙ったとみられる事件が相次いでいて、警戒感が広がっています。",
+          "summary_en": "As the US-Israel military operations against Iran continue, incidents believed to target Jewish facilities are occurring one after another in the Netherlands and Belgium, spreading alarm.",
+          "time": "2026-03-15T05:45:31+09:00",
+          "url": "http://www3.nhk.or.jp/news/html/20260315/k10015076021000.html"
+        }
+      ]
+    },
+    "cnn_world": {
+      "name": "CNN World",
+      "url": "https://edition.cnn.com/world",
+      "headlines": [
+        {
+          "title": "Trump presses for help securing Strait of Hormuz as Iran threatens more retaliatory strikes",
+          "summary": "Live updates on the US-Israel war with Iran, day 15.",
+          "url": "https://edition.cnn.com/world/live-news/iran-war-us-israel-trump-03-14-26"
+        },
+        {
+          "title": "What we know on day 15 of the US-Israel war with Iran",
+          "summary": "Comprehensive summary of the latest developments in the conflict.",
+          "url": "https://edition.cnn.com/us-israel-iran-middle-east-war-what-we-know-intl-hnk"
+        },
+        {
+          "title": "Punch the monkey is finally making friends and fitting in",
+          "summary": "A viral monkey in Japan has gained acceptance among its peers.",
+          "url": "https://edition.cnn.com/2026/03/14/asia/japan-punch-monkey-makes-friends-intl-hnk"
+        },
+        {
+          "title": "Explosion rocks Amsterdam Jewish school in what mayor says is 'targeted attack' against Jewish community",
+          "summary": "An explosion at a Jewish school in Amsterdam is being investigated as a deliberate attack.",
+          "url": "https://edition.cnn.com/2026/03/14/europe/amsterdam-jewish-school-explosion-netherlands-hnk-intl"
+        },
+        {
+          "title": "A tiny Mid East nation at the center of decades-old war finds itself caught in another",
+          "summary": "Kuwait finds itself caught in the US-Israel-Iran conflict.",
+          "url": "https://edition.cnn.com/2026/03/14/middleeast/kuwait-caught-decades-war-analysis-intl"
+        },
+        {
+          "title": "New Prince Harry book a 'deranged conspiracy,' his spokesperson says",
+          "summary": "Harry and Meghan push back against claims in a new royal biography.",
+          "url": "https://edition.cnn.com/2026/03/14/uk/prince-harry-book-intl"
+        },
+        {
+          "title": "Visualizing the US-Israeli war with Iran and retaliation in maps and charts",
+          "summary": "Interactive maps showing the conflict's progression.",
+          "url": "https://edition.cnn.com/2026/02/28/middleeast/maps-iran-tehran-attack-vis-intl"
+        },
+        {
+          "title": "Iran is escalating the war by attacking ships along a key oil route",
+          "summary": "What we know about Iran's attacks on shipping in the Strait of Hormuz.",
+          "url": "https://edition.cnn.com/2026/03/11/middleeast/iran-mine-strait-of-hormuz-intl"
+        },
+        {
+          "title": "US Air Force refueling plane crashes in Iraq, killing all six on board",
+          "summary": "A KC-135 refueling aircraft crashed in Iraq during operations.",
+          "url": "https://edition.cnn.com/2026/03/12/middleeast/us-air-force-refueling-aircraft-kc135-lost-intl-hnk-ml"
+        },
+        {
+          "title": "Chinese embassy mocks 'Shield of the Americas' in AI video",
+          "summary": "China uses AI-generated video to mock Trump's defense initiative.",
+          "url": "https://edition.cnn.com/2026/03/12/world/china-mocks-trump-shield-of-americas-ai-video-latam-intl"
+        },
+        {
+          "title": "The war that never ended: Israel seizes moment to finish fight against Hezbollah",
+          "summary": "Israel strikes Hezbollah in Lebanon amid the Iran conflict.",
+          "url": "https://edition.cnn.com/2026/03/13/middleeast/israel-strikes-hezbollah-lebanon-intl-cmd"
+        },
+        {
+          "title": "A war waged by the world's wealthiest nation is hitting the wallets of those who can least afford it",
+          "summary": "Energy disruptions from the Middle East war are affecting Asia's poorest.",
+          "url": "https://edition.cnn.com/2026/03/12/asia/asia-energy-disruptions-middle-east-war-intl-hnk"
+        },
+        {
+          "title": "Why Trump's Gulf allies are resisting pressure to join the Iran war",
+          "summary": "Analysis of Gulf states' reluctance to participate in the conflict.",
+          "url": "https://edition.cnn.com/2026/03/12/middleeast/trump-gulf-allies-resisting-iran-war-intl"
+        },
+        {
+          "title": "Lebanese minister discusses government efforts to counter Hezbollah",
+          "summary": "Video: Lebanese government discusses its approach to Hezbollah.",
+          "url": "https://edition.cnn.com/2026/03/14/world/video/lebanese-minister-discusses-government-efforts-to-counter-hezbollah-digvid"
+        },
+        {
+          "title": "Trump says US has 'totally obliterated' Iran's Kharg Island without striking key oil facilities",
+          "summary": "Trump claims Kharg Island has been destroyed while claiming oil facilities were spared.",
+          "url": "https://edition.cnn.com/2026/03/14/world/video/kharg-island-jeremy-diamond-trump-hnk-digvid"
+        }
+      ]
+    },
+    "cnn_asia": {
+      "name": "CNN Asia",
+      "url": "https://edition.cnn.com/world/asia",
+      "headlines": [
+        {
+          "title": "Punch the monkey is finally making friends and fitting in",
+          "summary": "Japan's famous aggressive monkey has made friends.",
+          "url": "https://edition.cnn.com/2026/03/14/asia/japan-punch-monkey-makes-friends-intl-hnk"
+        },
+        {
+          "title": "The rapper who railed against corruption now set to be Nepal's new leader",
+          "summary": "Balendra Shah's party wins Nepal elections in landslide.",
+          "url": "https://edition.cnn.com/2026/03/13/asia/nepal-balendra-shah-prime-minister-rapper-intl-hnk"
+        },
+        {
+          "title": "A war waged by the world's wealthiest nation is hitting the wallets of those who can least afford it",
+          "summary": "Asia faces energy disruptions from the Middle East war.",
+          "url": "https://edition.cnn.com/2026/03/12/asia/asia-energy-disruptions-middle-east-war-intl-hnk"
+        },
+        {
+          "title": "For nearly two weeks, Chinese fighter jets stopped buzzing Taiwan. No one seems to know why.",
+          "summary": "China's unusual pause in military provocations toward Taiwan.",
+          "url": "https://edition.cnn.com/2026/03/12/asia/china-taiwan-buzzing-mystery-intl-hnk"
+        },
+        {
+          "title": "Trump wanted India off Russian oil. His war with Iran is now undermining that goal",
+          "summary": "India's energy strategy complicated by the Iran conflict.",
+          "url": "https://edition.cnn.com/2026/03/10/india/india-russia-oil-middle-east-war-intl-hnk"
+        },
+        {
+          "title": "Bag containing weed and cash accidentally donated to New Zealand charity shop",
+          "summary": "An unusual donation at a New Zealand charity store.",
+          "url": "https://edition.cnn.com/2026/03/09/asia/weed-cash-new-zealand-charity-shop-intl-scli"
+        },
+        {
+          "title": "China warns 'flames of war' spreading, but signals its welcome for Xi-Trump meeting",
+          "summary": "China's Wang Yi comments on the Iran conflict and US relations.",
+          "url": "https://edition.cnn.com/2026/03/07/china/china-us-iran-wang-yi-intl-hnk"
+        },
+        {
+          "title": "After Iran and Venezuela, Kim Jong Un must decide how to handle Trump",
+          "summary": "North Korea's strategic calculus amid US military operations.",
+          "url": "https://edition.cnn.com/2026/03/07/asia/us-north-korea-iran-analysis-intl-hnk"
+        }
+      ]
+    }
+  },
+  "notes": {
+    "nhk_source": "NHK Japanese RSS feed (Japanese language headlines with English translations added)",
+    "nhk_world": "NHK World English site returned only feature videos, not breaking news headlines",
+    "bbc_asia_404": "BBC /news/asia returned 404; used /news/world/asia instead"
+  }
+}

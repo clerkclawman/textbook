@@ -1,0 +1,6 @@
+Generated: 2026-03-17 06:05 JST
+Source: /home/tony/textbook/news-raw-2026-03-17.json
+Headlines processed: 37 (all available from BBC World/Asia/UK, CNN World)
+Note: Requested 50 headlines but only 37 were available in source data
+Output: /home/tony/textbook/news-2026-03-17.js
+Format: JavaScript array with English questions and Japanese translations

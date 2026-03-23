@@ -1,0 +1,14 @@
+News data fetched and ready for processing.
+Fetch date: 2026-03-20
+Fetch time UTC: 2026-03-19T21:00:00Z
+Fetch time JST: 2026-03-20T06:00:00+09:00
+
+Sources:
+- BBC World: SUCCESS
+- BBC UK: SUCCESS
+- BBC Asia: PARTIAL (extracted from main page)
+- NHK: LIMITED (JavaScript-rendered content)
+- CNN World: SUCCESS
+
+Raw data file: news-raw-2026-03-20.json
+Ready for: Question generation and analysis

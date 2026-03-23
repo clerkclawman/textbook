@@ -3,7 +3,7 @@
 ## Level Overview
 
 - **Target:** Junior High Graduate (中学卒業程度)
-- **CEFR:** A1 (basic)
+- **CEFR:** A2 (early) ✅ CORRECTED 2026-03-23 (based on 2025 test analysis: present perfect, past simple, conditionals)
 - **Vocabulary:** 1,500-2,500 words
 - **Story Count:** 48
 - **Primary Focus:** Complex sentences, present perfect, conditionals

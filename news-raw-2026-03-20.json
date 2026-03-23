@@ -1,0 +1,324 @@
+{
+  "fetchDate": "2026-03-20",
+  "fetchTimeUTC": "2026-03-19T21:00:00Z",
+  "fetchTimeJST": "2026-03-20T06:00:00+09:00",
+  "sources": {
+    "bbc_world": {
+      "url": "https://www.bbc.com/news/world",
+      "status": "success",
+      "fetchedAt": "2026-03-19T21:00:25.004Z",
+      "headlines": [
+        {
+          "title": "Israel didn't drag US into war with Iran, Netanyahu says",
+          "summary": "Israel's prime minister says the war with Iran will \"take as long as necessary\", as Tehran vows to act with \"zero restraint\" if attacks on its infrastructure continue."
+        },
+        {
+          "title": "Are US and Israel aligned on Iran war? Deciphering Trump's post after gas field attacks",
+          "summary": "What does Trump's Truth Social post after gas field attacks tell us about US-Israeli alignment?",
+          "timestamp": "1 hr ago"
+        },
+        {
+          "title": "DR Congo and Rwanda agree to ease tensions after talks in US",
+          "summary": "The conflict has persisted despite a peace deal signed by DR Congo and Rwanda in December.",
+          "timestamp": "10 hrs ago",
+          "category": "Africa"
+        },
+        {
+          "title": "Former counter-terrorism head investigated by FBI over alleged leaks",
+          "summary": "The former counter-terrorism head resigned on Tuesday over the war with Iran, saying the country posed \"no imminent threat\" to the US.",
+          "timestamp": "4 hrs ago",
+          "category": "US & Canada"
+        },
+        {
+          "title": "How Europe sleepwalked into yet another energy crisis",
+          "summary": "It is not the first time that there has been deep energy-linked frustration in the heart of Europe.",
+          "timestamp": "15 hrs ago",
+          "category": "BBC InDepth"
+        },
+        {
+          "title": "Spain's king welcomes Mexico's World Cup invite after 'abuse' comments",
+          "summary": "News of the invitation emerges after the monarch acknowledged \"a lot of abuse\" during the Spanish conquest of Mexico.",
+          "timestamp": "7 hrs ago",
+          "category": "World"
+        },
+        {
+          "title": "Norway crown princess to address Epstein links as son's rape trial closes",
+          "summary": "Mette-Marit gives a much-anticipated interview, due to be broadcast on Friday.",
+          "timestamp": "46 mins ago",
+          "category": "Europe"
+        },
+        {
+          "title": "Kevin Spacey and accusers settle before civil trial",
+          "summary": "The actor agrees an out-of-court settlement with three men who accused him of sexual assault."
+        },
+        {
+          "title": "Chad warns Sudan it will retaliate after drone strike on mourners kills 17",
+          "summary": "President Idris Mahamat Déby orders the military to be on high alert and a \"total closure\" of the border."
+        },
+        {
+          "title": "Iran conflict looms large over Trump's meeting with Japan PM",
+          "summary": "The meeting with Sanae Takaichi comes days after Trump criticised Japan for not answering his demands for help in the Strait of Hormuz."
+        },
+        {
+          "title": "Three Palestinian women killed in beauty salon during Iranian missile attack",
+          "summary": "Others were injured when the salon in the southern West Bank was hit, while a Thai worker was killed by falling shrapnel in Israel."
+        },
+        {
+          "title": "Cyprus leader calls for frank discussion on 'colonial' UK bases",
+          "summary": "The UK's two military bases on Cyprus are a \"colonial consequence\" on the island, says President Nikos Christodoulides."
+        },
+        {
+          "title": "South Africans say criminal gangs are exploiting the water crisis",
+          "summary": "Residents of some areas have been without mains water for weeks."
+        },
+        {
+          "title": "The Iran war is causing a global energy crisis - can China withstand it?",
+          "summary": "With oil supply disrupted, Beijing's oil reserves and renewable energy push are being put to the test."
+        },
+        {
+          "title": "Afghan evacuees in limbo in Qatar camp accuse US of betrayal",
+          "summary": "More than 1,100 Afghans evacuated by the US fear their route to promised resettlement is closed for good."
+        },
+        {
+          "title": "'Very difficult to stop': BBC visits scene of Iran cluster bomb strike on Israel",
+          "summary": "An elderly couple was killed after a bomb flew into their apartment in central Israel and exploded."
+        },
+        {
+          "title": "India's young are more educated than ever. So why are so many jobless?",
+          "summary": "India's educational enrolment has surged but jobs, especially good ones, are not keeping pace, a new report finds.",
+          "category": "Asia"
+        },
+        {
+          "title": "Indonesia detains four soldiers over acid attack on activist",
+          "summary": "Andrie Yunus, who criticised the army's role in government, suffered burns to 20% of his body.",
+          "timestamp": "15 hrs ago",
+          "category": "Asia"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://www.bbc.com/news/uk",
+      "status": "success",
+      "fetchedAt": "2026-03-19T21:00:24.676Z",
+      "headlines": [
+        {
+          "title": "Huge queues for jabs as meningitis vaccination scheme expanded",
+          "summary": "Some queueing for vaccines at the University of Kent were turned away on Thursday.",
+          "timestamp": "2 hrs ago",
+          "category": "Kent"
+        },
+        {
+          "title": "Reports of children as young as 11 abused in West Midlands mini-marts, BBC reveals",
+          "summary": "Child sexual abuse reports go back 10 years and were seen by safeguarding group which included police",
+          "timestamp": "3 hrs ago",
+          "category": "Business"
+        },
+        {
+          "title": "Tories only party with a plan, says Badenoch as she launches election campaign",
+          "summary": "Speaking ahead of the 7 May poll, the Tory leader says her party is the only one \"that can actually fix things\".",
+          "timestamp": "6 hrs ago",
+          "category": "Politics"
+        },
+        {
+          "title": "Reform vows to cut Scottish income tax below UK rate",
+          "summary": "Nigel Farage's party has launched a manifesto and unveiled its candidates for the Holyrood election.",
+          "timestamp": "21 mins ago",
+          "category": "Scotland"
+        },
+        {
+          "title": "King opens world's longest coastal path around England",
+          "summary": "The King Charles coastal path will allow walkers right of access to the entire coast for the first time.",
+          "timestamp": "6 hrs ago",
+          "category": "Climate"
+        },
+        {
+          "title": "Bank ready to raise interest rates if Iran war price 'shock' persists",
+          "summary": "Policymakers vote unanimously to hold rates at 3.75% after the Iran war prompts a reversal in the debate over borrowing costs.",
+          "timestamp": "5 hrs ago",
+          "category": "Business"
+        },
+        {
+          "title": "Patients harmed as Covid pandemic brought NHS close to collapse, inquiry finds",
+          "summary": "Third report into the pandemic says patients and staff were failed as health service only just coped.",
+          "timestamp": "6 hrs ago",
+          "category": "Health"
+        },
+        {
+          "title": "Hospital order for man who stalked Myleene Klass",
+          "summary": "Peter Windsor is sentenced after sending items including an air pistol to Klass and another presenter."
+        },
+        {
+          "title": "Badenoch backs Tory MP in row over Muslim prayer event",
+          "summary": "The Tory leader has faced calls to sack a colleague who called public prayers an \"act of domination\"."
+        },
+        {
+          "title": "UK reveals aid priorities after major cuts to budget",
+          "summary": "Aid groups and MPs have raised concerns over the move to prioritise defence spending over aid."
+        },
+        {
+          "title": "Two men in court accused of spying on London Jewish community for Iran",
+          "summary": "The prosecution alleges they carried out reconnaissance of targets including Britain's oldest synagogue."
+        },
+        {
+          "title": "'Designer' dog owners report more problem behaviours, vets warn",
+          "summary": "The Royal Veterinary College says popular \"doodle\" dogs do not always behave as expected."
+        },
+        {
+          "title": "UK does not 'agree with Trump on every issue' - Cooper",
+          "summary": "Foreign Secretary Yvette Cooper has hit back at President Trump's criticism of the UK response to the conflict in Iran."
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://www.bbc.com/news/asia",
+      "status": "partial",
+      "fetchedAt": "2026-03-19T21:00:59.155Z",
+      "note": "Asia news extracted from BBC main news page",
+      "headlines": [
+        {
+          "title": "India's young are more educated than ever. So why are so many jobless?",
+          "summary": "India's educational enrolment has surged but jobs, especially good ones, are not keeping pace, a new report finds.",
+          "timestamp": "21 hrs ago"
+        },
+        {
+          "title": "Indonesia detains four soldiers over acid attack on activist",
+          "summary": "Andrie Yunus, who criticised the army's role in government, suffered burns to 20% of his body.",
+          "timestamp": "15 hrs ago"
+        },
+        {
+          "title": "Iran conflict looms large over Trump's meeting with Japan PM",
+          "summary": "The meeting with Sanae Takaichi comes days after Trump criticised Japan for not answering his demands for help in the Strait of Hormuz.",
+          "timestamp": "3 hrs ago"
+        },
+        {
+          "title": "India's ceramic hub grinds to a halt as Iran war chokes gas supply",
+          "summary": "Manufacturers stopped operations after supplies of propane and natural gas reduced sharply in recent days.",
+          "timestamp": "12 hrs ago"
+        }
+      ]
+    },
+    "nhk": {
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/",
+      "status": "limited",
+      "fetchedAt": "2026-03-19T21:00:59.168Z",
+      "note": "NHK WORLD page loads but content is JavaScript-rendered; minimal text extracted",
+      "headlines": []
+    },
+    "cnn_world": {
+      "url": "https://www.cnn.com/world",
+      "status": "success",
+      "fetchedAt": "2026-03-19T21:00:25.271Z",
+      "headlines": [
+        {
+          "title": "Under Israeli bombardment, Lebanon urges Trump to intervene, calls for 'immediate' talks with Israel",
+          "category": "Live Updates"
+        },
+        {
+          "title": "Netanyahu claims Israel 'acted alone' in Iran gas field strike",
+          "category": "Live Updates"
+        },
+        {
+          "title": "As the war — and gas prices — escalate, Trump uses Israel to deflect domestic and allied pressure",
+          "category": "Live Updates"
+        },
+        {
+          "title": "What is the South Pars gas field and why is Israel's attack an escalation?",
+          "category": "Live Updates"
+        },
+        {
+          "title": "What we know on the 20th day of the US and Israel's war with Iran",
+          "category": "Live Updates"
+        },
+        {
+          "title": "Palestinian man in the West Bank says he was sexually assaulted by Israeli settlers",
+          "summary": "Dozens of masked Israeli settlers grabbed Qusai Abu al-Kebash in the middle of the night, bound him by his hands and legs and stripped him. He says they then zip-tied his genitals and paraded him through his community while beating him."
+        },
+        {
+          "title": "King Charles visit in question as Trump berates UK over Iran war position",
+          "category": "Europe"
+        },
+        {
+          "title": "One person dead after cable car gondola crashes down mountain at Swiss ski resort"
+        },
+        {
+          "title": "Iran's chokehold on Hormuz threatens India's beloved samosas and chai"
+        },
+        {
+          "title": "Rick Ross: Africa's music moment is now"
+        },
+        {
+          "title": "Ali Larijani was a 'true insider' and the Iranian regime's public face. His killing could prolong the war"
+        },
+        {
+          "title": "Cuban president promises 'impregnable resistance' to any US attempt to control island"
+        },
+        {
+          "title": "US warship believed to be carrying additional Marines to Middle East tracked off Singapore"
+        },
+        {
+          "title": "US allies balk at Trump's appeal to help secure Strait of Hormuz"
+        },
+        {
+          "title": "'Ticking time bomb': Stricken Russian fuel tanker drifts near to Italian islands"
+        },
+        {
+          "title": "Body found in Barcelona amid search for American college student, police say"
+        },
+        {
+          "title": "Trump makes Pearl Harbor joke in front of Japan's prime minister"
+        },
+        {
+          "title": "Cubans facing no food, water or electricity flee to other countries for a better life"
+        },
+        {
+          "title": "Lebanese prime minister says President Trump 'more than anyone else' can end war in Middle East"
+        },
+        {
+          "title": "Ukraine worries about 'losing the Americans' as global attention shifts to the war in the Middle East"
+        },
+        {
+          "title": "He returned home as a war hero. Behind closed doors, he became a tyrant"
+        },
+        {
+          "title": "Explosion rocks Amsterdam Jewish school in what mayor says is 'targeted attack' against Jewish community"
+        },
+        {
+          "title": "New Prince Harry book a 'deranged conspiracy,' his spokesperson says"
+        },
+        {
+          "title": "British PM was warned of 'reputational risk' over Mandelson's ties to Epstein, files show"
+        },
+        {
+          "title": "Why a weakened Iran is insisting on prolonging the war"
+        },
+        {
+          "title": "Cuba is going dark under US pressure. How the crisis unfolded and why its troubles are far from over"
+        },
+        {
+          "title": "Trump asked Latin America to use military force against drug trafficking. Here are the risks"
+        },
+        {
+          "title": "Trump muses over 'taking Cuba' as island's power grid collapses after weeks of US oil blockade"
+        },
+        {
+          "title": "Flailing Cuba invites exiles to return, but hurdles remain"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "totalSources": 5,
+    "successfulFetches": 3,
+    "partialFetches": 1,
+    "limitedFetches": 1,
+    "topStories": [
+      "Israel-Iran war escalation and US alignment questions",
+      "Iran gas field strikes and Strait of Hormuz tensions",
+      "Global energy crisis triggered by Middle East conflict",
+      "UK politics: Election campaign launches, meningitis vaccination rollout",
+      "Palestinian man alleges sexual assault by Israeli settlers",
+      "Cuba power crisis under US pressure",
+      "Norway crown princess to address Epstein links"
+    ]
+  }
+}

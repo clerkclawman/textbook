@@ -1,0 +1,139 @@
+{
+  "date": "2026-03-16",
+  "fetched_at": "2026-03-16T06:00:00+09:00",
+  "sources": {
+    "bbc_world": {
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        "Israel says it still has thousands of targets in Iran, as Trump and Starmer discuss Strait of Hormuz",
+        "BBC visits aftermath of Israeli strike on Lebanon that killed family as IDF targets Hezbollah",
+        "Israeli forces kill Palestinian couple and two of their children in occupied West Bank",
+        "US names six crew killed in refuelling plane crash in Iraq",
+        "Zelensky accuses EU allies of 'blackmail' in oil pipeline row",
+        "Severe flooding kills 66 in Kenya, as heavy rains continue",
+        "Sweden detains captain of Russian shadow fleet ship",
+        "Iran captain latest footballer to drop asylum bid, Iranian state media says",
+        "French police detain brothers over 'lethal and antisemitic' plot",
+        "Treasure hunter freed from prison after refusing to turn over shipwreck gold",
+        "Ugandan opposition leader goes abroad after two months in hiding",
+        "Cuban protesters ransack Communist office as energy crisis deepens",
+        "Starmer speaks to Trump about importance of reopening Strait of Hormuz",
+        "Oscars 2026: Winners list in full (updating live)"
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        "'Tigers and flies': Millions of officials later, why is Xi's corruption purge still going?",
+        "The US may move some of its anti-missile system - and it's sparking unease in South Korea",
+        "Rapper-politician Balendra Shah's party wins Nepal election",
+        "How Iran war laid bare the world's reliance on Gulf oil and gas",
+        "'No-one will hire women' - India's top court rejects menstrual leave petition",
+        "Australian businessman found guilty of working for suspected Chinese spies",
+        "South Korea police raid transport ministry over Jeju Air crash",
+        "KPop Demon Hunters to return as Netflix announces sequel",
+        "Qantas agrees to pay $74m over Covid-19 travel voucher refunds",
+        "Chinese national arrested over attempt to smuggle 2,000 queen ants from Kenya",
+        "Video shows moment point-blank gunshot misses Indian politician",
+        "China approves 'ethnic unity' law requiring minorities to learn Mandarin"
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        "UK looking at 'all options' to secure key oil route through Strait of Hormuz",
+        "We will intervene on energy bills if necessary, says Miliband",
+        "Police-style powers to tackle fly-tippers being considered",
+        "UK must build own nuclear missiles to end reliance on US, say Lib Dems",
+        "Police investigate 'death to the IDF' chants led by Bobby Vylan at rally",
+        "William shares unseen photo of Princess Diana for Mother's Day",
+        "Reform council seeks to declare migration emergency",
+        "London's Burning actor John Alford dies in prison",
+        "Fire crews fight blaze near Glasgow Central Station",
+        "Two die in university meningitis outbreak",
+        "Trump urges UK and other nations to send warships to Strait of Hormuz",
+        "Harry and Meghan accuse royal author of 'deranged conspiracy'"
+      ]
+    },
+    "nhk_japan": {
+      "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+      "language": "ja",
+      "headlines": [
+        {
+          "title_ja": "【地震速報】愛媛県伊方町で震度3 津波の心配なし",
+          "title_en": "Earthquake: Intensity 3 observed in Ehime Prefecture's Ikata Town, no tsunami risk",
+          "published": "2026-03-16T05:54:34+09:00"
+        },
+        {
+          "title_ja": "ホルムズ海峡の航行めぐり 米 イランの駆け引き続く",
+          "title_en": "US-Iran negotiations continue over navigation through Strait of Hormuz",
+          "published": "2026-03-16T05:46:28+09:00"
+        },
+        {
+          "title_ja": "【速報中】ミラノ・コルティナ パラリンピック閉会式",
+          "title_en": "Milano-Cortina Paralympics closing ceremony underway",
+          "published": "2026-03-16T05:54:58+09:00"
+        },
+        {
+          "title_ja": "パラ 日本勢は金メダル獲得できず 冬季では2002年大会以来",
+          "title_en": "Japan fails to win gold at Winter Paralympics for first time since 2002",
+          "published": "2026-03-16T05:47:38+09:00"
+        },
+        {
+          "title_ja": "大相撲 元大関・若嶋津 日高六男さん死去 69歳",
+          "title_en": "Former ozeki sumo wrestler Wakashimazu (Hidaka Mutsuo) dies at 69",
+          "published": "2026-03-15T20:35:50+09:00"
+        },
+        {
+          "title_ja": "前回 世界一からの早すぎる幕切れに WBC 日本代表【解説】",
+          "title_en": "WBC: Japan's premature exit after defending world title — Commentary",
+          "published": "2026-03-15T21:46:10+09:00"
+        },
+        {
+          "title_ja": "\"優勝以外は失敗\" 大谷翔平 不完全燃焼も次の戦いへ【解説】",
+          "title_en": "Shohei Ohtani: 'Anything but victory is a failure' — heading to next battle",
+          "published": "2026-03-15T22:12:43+09:00"
+        }
+      ]
+    },
+    "cnn_world": {
+      "url": "https://lite.cnn.com",
+      "headlines": [
+        "A powerhouse cross-country storm is raising the threat of a severe thunderstorm outbreak while also dumping feet of snow",
+        "Pro-Iran hackers claim cyberattack on major US medical device maker",
+        "A truck rammed a Michigan synagogue with more than a hundred children inside",
+        "What we know on the 16th day of the US and Israel's war with Iran",
+        "Gen Z's fan edits are a staple of internet culture. Movie studios are finally buying in",
+        "FCC chair threatens TV networks amid Iran war coverage — but his warning rings hollow",
+        "Israeli forces shoot and kill 4 members of Palestinian family in West Bank",
+        "Pentagon identifies six airmen killed in plane crash in Iraq",
+        "Israel says brother of Michigan synagogue assailant was Hezbollah commander killed in strike",
+        "Ukraine worries about 'losing the Americans' as global attention shifts to the war in the Middle East",
+        "What we know about the Old Dominion University gunman, a veteran and convicted ISIS supporter",
+        "As the politics around Israel shift, many Democrats are seeking distance from AIPAC",
+        "Will the price of plane tickets go up due to the war with Iran?",
+        "The Fed is no stranger to oil crises. But this time could be different",
+        "Formula 1 calls off April races in Bahrain and Saudi Arabia due to Iran war",
+        "Explosion rocks Amsterdam Jewish school in what mayor says is 'targeted attack'",
+        "Iran's new supreme leader has yet to appear, and the system may not need him to",
+        "Italy ruling tells millions with Italian roots they have lost the right to citizenship",
+        "Cuban president says talks held with the United States amid intense pressure from Trump",
+        "AI is exhausting workers so much, researchers have dubbed the condition 'AI brain fry'"
+      ]
+    }
+  },
+  "metadata": {
+    "total_headlines": 65,
+    "sources_count": 5,
+    "dominant_themes": [
+      "US-Israel war with Iran / Strait of Hormuz",
+      "Middle East conflict and civilian casualties",
+      "Energy prices and economic impact",
+      "Milano-Cortina Paralympics closing",
+      "WBC 2026 Japan elimination",
+      "Oscars 2026",
+      "Nepal election",
+      "UK domestic politics"
+    ]
+  }
+}
