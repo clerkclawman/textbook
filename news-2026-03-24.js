@@ -1,105 +1,156 @@
 var news20260324 = [
   {
-    title: "News Discussion: 03/24, 2026",
-    content: `1. 🌏 US power plant threats 'show desperation', says Iran president as strikes con... - What do you think about this?
-最新のニュース速報です - これについてどう思いますか？
-2. 🤔 Israeli settlers target Palestinian villages in occupied West Bank, attacking... - How do you feel about this news?
-イスラエルとパレスチナの対立が継続 - このニュースについてどう感じますか？
-3. 🌍 Iranian missiles injure 180 in towns near Israeli nuclear site - What would you do in this situation?
-ミサイル攻撃で多数の負傷者 - もしあなたの立場ならどうしますか？
-4. 🔍 Trump says ICE agents will assist airport security as DHS shutdown continues - Why do you think this happened?
-トランプ氏の新たな政策発表 - なぜこれが起きたと思いますか？
-5. ⚡ Israel to expand ground and air attacks against Hezbollah in Lebanon - What impact does this have on people?
-ミサイル攻撃で多数の負傷者 - これは人々にどんな影響を与えるでしょうか？
-6. 👑 Kenyans fighting illegally for Russia in Ukraine to be granted amnesty - How does this affect your daily life?
-新技術が社会を変える - これはあなたの日常生活にどう影響しますか？
-7. 🎤 National blackout hits Cuba for second time in a week - What do you think will happen next?
-最新のニュース速報です - 次に何が起きると思いますか？
-8. 🎬 Hawaii storms have caused $1bn in damage, governor says - Is this a good or bad development?
-大雪で交通に影響 - これは良いこと还是悪いことでしょうか？
-9. 💥 'We cannot be in peace', say Guthrie family as they renew appeal over missing... - What lessons can we learn from this?
-最新のニュース速報です - これから何を学べるでしょうか？
-10. 🇯🇵 Sudan drone attack on key hospital killed 64 people during Eid, WHO says - How should countries respond to this?
-ミサイル攻撃で多数の負傷者 - 国々はこれにどう対応すべきですか？
-11. 💔 Socialists battle to hold Paris as France holds mayoral elections - What would you say to people involved?
-選挙の結果が注目される - 関係者に何と言いますか？
-12. 🏛️ Russian attacks kill six in Ukraine, officials say - Why is this important to know about?
-ミサイル攻撃で多数の負傷者 - なぜこれを知ることが重要ですか？
-13. 💧 Pop megastars BTS electrify historic centre of Seoul with comeback concert - How does this compare to past events?
-エネルギー価格の上昇が続く - 過去の出来事と比較してどうですか？
-14. 🛢️ BTS make live return in front of huge crowd - What solutions do you see for this problem?
-最新のニュース速報です - この問題に対する解決策は何だと思いますか？
-15. 🏃 Trump makes Pearl Harbor remark in meeting with Japan's PM - Who should be responsible for fixing this?
-トランプ氏の新たな政策発表 - これを直す責任は誰にあるべきですか？
-16. 💣 US deports Singaporean vlogger convicted of child sex offences - What do you think about the leadership here?
-最新のニュース速報です - ここでの指導力についてどう思いますか？
-17. 📚 How a medieval English abbey became a Chinese wedding destination - How can people protect themselves from this?
-最新のニュース速報です - 人々はこれから自分自身をどう守れますか？
-18. ⚔️ The fight to control the narrative in the Afghan-Pakistan conflict - What changes do you expect to see?
-最新のニュース速報です - どのような変化を期待していますか？
-19. 💉 Watch: Thick smoke billows from South Korea car parts plant in deadly fire - Why do you think people react this way?
-最新のニュース速報です - なぜ人々はこう反応すると思いますか？
-20. 👶 Australia PM heckled at Sydney mosque Ramadan event - What would make this situation better?
-最新のニュース速報です - 状況をより良くするにはどうすればいいですか？
-21. 🗳️ The Iran war is causing a global energy crisis - can China withstand it? - What do you think about this?
-イランと米国の緊張が高まる - これについてどう思いますか？
-22. 🚶 Killer refused family plea before death - inquest - How do you feel about this news?
-最新のニュース速報です - このニュースについてどう感じますか？
-23. 📈 India's ceramic hub grinds to a halt as Iran war chokes gas supply - What would you do in this situation?
-エネルギー価格の上昇が続く - もしあなたの立場ならどうしますか？
-24. 🏥 Olympic cyclist who ran over wife under fire over Porsche post - Why do you think this happened?
-最新のニュース速報です - なぜこれが起きたと思いますか？
-25. 🕌 No assessment Iran could strike London, UK minister says - What impact does this have on people?
-最新のニュース速報です - これは人々にどんな影響を与えるでしょうか？
-26. 👁️ Police officer dies in crash and colleague critically ill - How does this affect your daily life?
-最新のニュース速報です - これはあなたの日常生活にどう影響しますか？
-27. 🐕 Newcastle-Sunderland paused after reported racism towards Geertruida - What do you think will happen next?
-最新のニュース速報です - 次に何が起きると思いますか？
-28. 🇬🇧 Army joins search for remains of mother and son killed 50 years ago - Is this a good or bad development?
-新技術が社会を変える - これは良いこと还是悪いことでしょうか？
-29. 🚢 Energy bills rise 'inescapable' if oil prices stay high, says British Gas boss - What lessons can we learn from this?
-エネルギー価格の上昇が続く - これから何を学べるでしょうか？
-30. 🤝 Streeting praises response to meningitis outbreak - How should countries respond to this?
-感染症の拡大が懸念される - 国々はこれにどう対応すべきですか？
-31. ⚓ Killed by the same abuser: Families demand answers - What would you say to people involved?
-最新のニュース速報です - 関係者に何と言いますか？
-32. 🎓 Anyone who goes through IVF 'should be so proud', says Sara Pascoe - Why is this important to know about?
-最新のニュース速報です - なぜこれを知ることが重要ですか？
-33. 🌑 Woman charged with murder after man dies in park - How does this compare to past events?
-最新のニュース速報です - 過去の出来事と比較してどうですか？
-34. 🏰 O'Reilly the hero as Man City beat Arsenal to win EFL Cup - What solutions do you see for this problem?
-スポーツ大会で快挙達成 - この問題に対する解決策は何だと思いますか？
-35. 📖 Outgoing MSPs leave Holyrood with relief, regret and unfinished business - Who should be responsible for fixing this?
-最新のニュース速報です - これを直す責任は誰にあるべきですか？
-36. 📂 Food prices likely to rise due to Iran war, farmers' union says - What do you think about the leadership here?
-最新のニュース速報です - ここでの指導力についてどう思いますか？
-37. 🇺🇸 NHK World news content not fully extracted - limited data available - How can people protect themselves from this?
-新技術が社会を変える - 人々はこれから自分自身をどう守れますか？
-38. 🎯 Iran's military says Strait of Hormuz will be 'completely closed' if US bombs... - What changes do you expect to see?
-新技術が社会を変える - どのような変化を期待していますか？
-39. 🏠 Cuba plunged into second nationwide blackout in less than a week - Why do you think people react this way?
-最新のニュース速報です - なぜ人々はこう反応すると思いますか？
-40. 🗑️ Trump aims to end the revolution that Fidel Castro started. Can the US and Cu... - What would make this situation better?
-トランプ氏の新たな政策発表 - 状況をより良くするにはどうすればいいですか？
-41. 👮 Russian forces begin offensive in Ukraine as Zelensky worries about impact of... - What do you think about this?
-新技術が社会を変える - これについてどう思いますか？
-42. 🌊 Parisians vote in mayoral election in last big test before 2027 presidential ... - How do you feel about this news?
-選挙の結果が注目される - このニュースについてどう感じますか？
-43. 🍎 Israeli police attack journalists in Jerusalem, fracturing wrist of CNN producer - What would you do in this situation?
-ミサイル攻撃で多数の負傷者 - もしあなたの立場ならどうしますか？
-44. 🐶 They built success in the US. Now Havana wants them back - Why do you think this happened?
-最新のニュース速報です - なぜこれが起きたと思いますか？
-45. 🌞 Why a delayed Xi-Trump summit could give China a stronger hand - What impact does this have on people?
-トランプ氏の新たな政策発表 - これは人々にどんな影響を与えるでしょうか？
-46. 🍦 Japan's people are aging as its snow worsens. That's a lethal combination - How does this affect your daily life?
-大雪で交通に影響 - これはあなたの日常生活にどう影響しますか？
-47. 🏫 Tehran sends a message with execution of young wrestler and others, say experts - What do you think will happen next?
-最新のニュース速報です - 次に何が起きると思いますか？
-48. 🦖 As the war — and gas prices — escalate, Trump uses Israel to deflect domestic... - Is this a good or bad development?
-トランプ氏の新たな政策発表 - これは良いこと还是悪いことでしょうか？
-49. 🎨 What is the South Pars gas field and why is Israel's attack an escalation? - What lessons can we learn from this?
-ミサイル攻撃で多数の負傷者 - これから何を学べるでしょうか？
-50. 🚗 News item 50 - How should countries respond to this?
-最新のニュース速報です - 国々はこれにどう対応すべきですか？`
+    title: "News Discussion - March 24, 2026 (EIKEN 2)",
+    content: `
+1. 🇯🇵 Japan wins Women's Asia Cup - How do you feel about this victory?
+日本が女子アジアカップで優勝 - この勝利についてどう思いますか？
+
+2. 🎤 BTS returns with concert in Seoul - Have you ever attended a K-pop concert?
+ソウルでBTSの復帰コンサート - K-POPのコンサートに行ったことがありますか？
+
+3. 📱 Hong Kong police can demand phone passwords - Is this a good security measure?
+香港警察はパスワード要求可能 - これは良いセキュリティ対策ですか？
+
+4. ✈️ Colombian plane crash kills many - What safety measures do you think are needed?
+コロンビアの飛行機事故で多数死亡 - 必要な安全対策は何だと思いますか？
+
+5. 🌍 UN warns about climate limits - What can individuals do to help the environment?
+国連が気候限界を警告 - 個人ができる環境対策は何ですか？
+
+6. 🇺🇸 Trump says Iran has one more chance - Do you think peace talks will work?
+トランプ氏、イランに最後の機会 - 和平交渉は成功すると思いますか？
+
+7. 💰 Oil prices fall after peace talks - How does this affect your daily life?
+和平交渉で石油価格下落 - これはあなたの日常生活にどう影響しますか？
+
+8. 🏥 Jewish ambulances attacked in London - How can we prevent hate crimes?
+ロンドンでユダヤ救急車襲撃 - 憎悪犯罪をどう防ぎますか？
+
+9. ⚽ Australia's ABC staff will strike - Do you support workers going on strike?
+オーストラリアABCスタッフがストライキ - ストライキを支持しますか？
+
+10. 🎭 Slovenia introduces fuel rationing - Would you accept fuel limits in your country?
+スロベニアで燃料割り当て開始 - あなたの国でも燃料制限を受け入れますか？
+
+11. 🇯🇵 Trump meets Japan's Prime Minister - What topics do you think they discussed?
+トランプ氏と日本の首相が会談 - 何について話したと思いますか？
+
+12. 📉 BTS agency stock drops after concert - Why do you think the turnout was low?
+BTS代理店の株価がコンサート後に下落 - 集客が少ない理由は何だと思いますか？
+
+13. 🌏 El Niño may affect weather this year - How does weather change affect you?
+エルニーニョが今年の気候に影響 - 気候の変化はあなたにどう影響しますか？
+
+14. 🔒 Ukrainian blast called terrorist attack - How can cities protect citizens?
+ウクライナの爆発テロと宣言 - 都市は市民をどう守れますか？
+
+15. 🇺🇸 Flight attendant survives plane crash - What do you think saved her life?
+フライトアテンダントが墜落から生存 - 彼女を救ったのは何だと思いますか？
+
+16. 🏛️ Italy's Prime Minister faces referendum defeat - What does this mean for Italy?
+イタリア首相が国民投票で敗北 - これはイタリアにとって何を意味しますか？
+
+17. 🌙 Australia PM heckled at Ramadan event - How should politicians handle criticism?
+オーストラリア首相がラマダン会で野次 - 政治家は批判にどう対応すべきですか？
+
+18. 🛡️ British couple in Iran prison - What should governments do to help citizens abroad?
+イランの刑務所にイギリス人カップル - 政府は海外の市民をどう助けるべきですか？
+
+19. 🎵 Pop stars electrify Seoul city center - What makes a concert memorable?
+ポップスターがソウル市中心部を沸かす - 忘れられないコンサートの特徴は何ですか？
+
+20. 🚨 Russia begins new offensive in Ukraine - How can the world help end the conflict?
+ロシアがウクライナで新攻勢 - 世界はどう紛争を終結させられますか？
+
+21. 📺 Internet outages in Russia - What would you do without internet for a week?
+ロシアでインターネット停止 - 1週間インターネットなしで何しますか？
+
+22. 🛢️ Tanker war concerns in Persian Gulf - Why is this region so important?
+ペルシャ湾でタンカー戦争の懸念 - なぜこの地域が重要ですか？
+
+23. 🎉 Nowruz celebrated during conflict - How do holidays change during war?
+紛争中のノウルーズ祝賀 - 戦争中に祝日はどう変わりますか？
+
+24. 🇯🇵 Japan's women's football team wins - What makes a team successful?
+日本の女子サッカーチームが優勝 - チームを成功させるものは何ですか？
+
+25. 🚨 Antisemitic attack in UK - How can communities fight discrimination?
+イギリスで反ユダヤ攻撃 - 地域社会はどう差別と戦えますか？
+
+26. 💼 Huel bought by Danone in billion deal - What does this mean for the brand?
+Huelがダノンの10億ユーロ買収 - これはブランドにとって何を意味しますか？
+
+27. 🍽️ Families cut back on expensive lunches - How has inflation affected you?
+家族が高価なランチを削減 - インフレはあなたにどう影響しましたか？
+
+28. 🎬 Content creator killer seeks YouTube alibi - Why do criminals use social media?
+コンテンツクリエーター殺人犯がYouTubeでアリバイ - 犯罪者はなぜSNSを使うのですか？
+
+29. 🇸🇬 Singaporean vlogger deported from US - What responsibilities do influencers have?
+シンガポール人Vloggerが米国から送還 - インフルエンサーにはどんな責任がありますか？
+
+30. ⚠️ Middle-income families struggle with costs - What can governments do to help?
+中間所得層が費用に苦しむ - 政府は何ができますか？
+
+31. 🏥 Iranian man released from nuclear base - How should security be balanced?
+イラン人男性が原子力基地から解放 - 安全保障はどうバランスさせるべきですか？
+
+32. 🌍 Climate being pushed beyond limits - What changes do you see in your area?
+気候が限界を超えて - あなたの地域でどんな変化が見られますか？
+
+33. 🛫 Plane floor collapse in New York - What safety improvements are needed?
+ニューヨークで飛行機床崩壊 - 必要な安全改善は何ですか？
+
+34. 🎯 Slovenia's fuel rationing begins - How would you adjust your travel if fuel was limited?
+スロベニアで燃料割り当て開始 - 燃料が制限されたら旅行をどう調整しますか？
+
+35. 🇯🇵 Pearl Harbor remark by Trump - Why is historical memory important?
+トランプ氏の真珠湾発言 - 歴史的記憶が重要な理由は何ですか？
+
+36. 🎭 Ukraine blast injures two people - How can public spaces be made safer?
+ウクライナで爆発2人負傷 - 公共空間をどう安全にできますか？
+
+37. 📊 Oil and shares rebound after talks - How do global events affect stock markets?
+交渉後石油と株価が回復 - グローバル出来事は株式市場にどう影響しますか？
+
+38. 🌏 Australian staff strike for first time in 20 years - What issues might cause this?
+オーストラリアで20年ぶりスタッフストライキ - この原因は何だと思いますか？
+
+39. 🎤 K-pop comeback draws huge crowds - Why is music so popular in Asia?
+K-POP復帰で大勢のファン - なぜ音楽がアジアで人気ですか？
+
+40. 🔐 Phone security vs privacy debate - Where should we draw the line?
+電話セキュリティ対プライバシー論争 - どこで線引きすべきですか？
+
+41. 🚑 Ambulance attacks raise safety concerns - How can emergency services be protected?
+救急車襲撃で安全懸念 - 緊急サービスをどう守れますか？
+
+42. 🌧️ Weather patterns changing globally - What extreme weather have you experienced?
+世界的に気象パターン変化 - 経験した異常気象は何ですか？
+
+43. 🏛️ Political tensions in Europe rise - How can diplomacy solve conflicts?
+ヨーロッパで政治的緊張高まる - 外交はどう紛争を解決できますか？
+
+44. 💸 Economic impact of global conflicts - How does war affect ordinary people?
+グローバル紛争の経済的影響 - 戦争は一般市民にどう影響しますか？
+
+45. 🎮 Social media's role in modern news - Do you trust news from social media?
+現代ニュースでのSNSの役割 - SNSのニュースを信頼しますか？
+
+46. 🌐 International cooperation on climate - Why is global teamwork needed?
+気候での国際協力 - なぜ世界的チームワークが必要ですか？
+
+47. 🏆 Sports unite people across nations - What is your favorite international sport?
+スポーツが国境を越えて人々を結ぶ - あなたの好きな国際スポーツは何ですか？
+
+48. 📱 Technology and privacy balance - How much privacy are you willing to give up for security?
+技術とプライバシーのバランス - 安全のためにどの程度のプライバシーを犠牲にしますか？
+
+49. 🎭 Cultural events during difficult times - Why do people still celebrate during crises?
+困難な時代の文化イベント - なぜ人々は危機中でも祝うのですか？
+
+50. 🌅 Hope for peace in conflict zones - What gives you hope about the future?
+紛争地域での平和への希望 - 未来について何があなたに希望を与えますか？
+`
   }
 ];
