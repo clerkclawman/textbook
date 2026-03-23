@@ -1,0 +1,264 @@
+{
+  "fetchedAt": "2026-03-23T21:00:00Z",
+  "date": "2026-03-24",
+  "sources": {
+    "bbc_world": {
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        {
+          "title": "Trump says Iran has 'one more chance at peace' as Tehran calls reports of US talks 'fake news'",
+          "url": "https://www.bbc.com/news/live/ce35wke27ynt",
+          "time": "Latest",
+          "category": "Middle East"
+        },
+        {
+          "title": "A pharmacist and a homesick lifestyle blogger: The 'alarming' civilian cost of war in Iran",
+          "url": "https://www.bbc.com/news/articles/c3v6ld7lv9no",
+          "time": "2 hrs ago",
+          "category": "Middle East"
+        },
+        {
+          "title": "Slovenia becomes first EU country to introduce fuel rationing",
+          "url": "https://www.bbc.com/news/articles/c77m4zx6zvmo",
+          "time": "3 hrs ago",
+          "category": "Europe"
+        },
+        {
+          "title": "Referendum defeat leaves Italy's Meloni looking more vulnerable",
+          "url": "https://www.bbc.com/news/articles/crl1ne8dj1eo",
+          "time": "33 mins ago",
+          "category": "Europe"
+        },
+        {
+          "title": "Flight attendant found alive strapped to seat that fell through plane floor in deadly New York crash",
+          "url": "https://www.bbc.com/news/live/c620w12y59nt",
+          "time": "Latest",
+          "category": "US & Canada"
+        },
+        {
+          "title": "Colombian Air Force plane crashes with 125 people on board",
+          "url": "https://www.bbc.com/news/articles/c8dlmrjn1l2o",
+          "time": "2 hrs ago",
+          "category": "Latin America"
+        },
+        {
+          "title": "Oil falls and shares rebound after Trump says talks have been held to end war",
+          "url": "https://www.bbc.com/news/articles/czex56kwxxzo",
+          "time": "37 mins ago",
+          "category": "Business"
+        },
+        {
+          "title": "Blast that injured two was 'terrorist attack', Ukrainian authorities say",
+          "url": "https://www.bbc.com/news/articles/crl1n0pn3e9o",
+          "time": "Latest",
+          "category": "Europe"
+        },
+        {
+          "title": "UN warns Earth's climate being 'pushed beyond its limits' as El Niño looms",
+          "url": "https://www.bbc.com/news/articles/c203rdxkezwo",
+          "time": "Latest",
+          "category": "Earth"
+        },
+        {
+          "title": "HK police can now demand phone passwords under new national security rules",
+          "url": "https://www.bbc.com/news/articles/ce8j9yj52lro",
+          "time": "Latest",
+          "category": "Asia"
+        },
+        {
+          "title": "Nigerian police arrest 15 after viral videos of alleged sexual assault at festival",
+          "url": "https://www.bbc.com/news/articles/cd9vn71vjq1o",
+          "time": "Latest",
+          "category": "Africa"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        {
+          "title": "HK police can now demand phone passwords under new national security rules",
+          "url": "https://www.bbc.com/news/articles/ce8j9yj52lro",
+          "time": "12 hrs ago",
+          "category": "Asia"
+        },
+        {
+          "title": "Pop megastars BTS electrify historic centre of Seoul with comeback concert",
+          "url": "https://www.bbc.com/news/articles/cj371jr203ko",
+          "time": "2 days ago",
+          "category": "Asia"
+        },
+        {
+          "title": "Japan break Australian hearts to win third Women's Asia Cup title",
+          "url": "https://www.bbc.com/sport/football/live/c75e5gn1zn7t",
+          "time": "Latest",
+          "category": "Asia"
+        },
+        {
+          "title": "Australia's ABC staff to go on strike for first time in 20 years",
+          "url": "https://www.bbc.com/news/articles/c248597nqn8o",
+          "time": "11 hrs ago",
+          "category": "Australia"
+        },
+        {
+          "title": "BTS agency shares drop after comeback show turnout falls short",
+          "url": "https://www.bbc.com/news/articles/c9d4l5pq73yo",
+          "time": "16 hrs ago",
+          "category": "Asia"
+        },
+        {
+          "title": "Trump makes Pearl Harbor remark in meeting with Japan's PM",
+          "url": "https://www.bbc.com/news/articles/c8dlpr074q3o",
+          "time": "Latest",
+          "category": "Asia"
+        },
+        {
+          "title": "US deports Singaporean vlogger convicted of child sex offences",
+          "url": "https://www.bbc.com/news/articles/cj40xekver1o",
+          "time": "4 days ago",
+          "category": "Asia"
+        },
+        {
+          "title": "Australia PM heckled at Sydney mosque Ramadan event",
+          "url": "https://www.bbc.com/news/articles/cz90wy2190go",
+          "time": "Latest",
+          "category": "Australia"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        {
+          "title": "Arson attack on Jewish charity ambulances investigated by counter-terror police",
+          "url": "https://www.bbc.com/news/articles/cwyj1p49gdpo",
+          "time": "1 hr ago",
+          "category": "London"
+        },
+        {
+          "title": "PM warns against 'false comfort' of thinking Iran war will end quickly",
+          "url": "https://www.bbc.com/news/articles/cy01l49kkgdo",
+          "time": "2 hrs ago",
+          "category": "Politics"
+        },
+        {
+          "title": "Huel bought by Danone in €1bn deal",
+          "url": "https://www.bbc.com/news/articles/czre7pl600go",
+          "time": "5 hrs ago",
+          "category": "Business"
+        },
+        {
+          "title": "'We can't justify a £52 lunch': Middle-income families cut back on days out",
+          "url": "https://www.bbc.com/news/articles/ckg3g11z6d8o",
+          "time": "6 hrs ago",
+          "category": "Business"
+        },
+        {
+          "title": "Iranian man who allegedly tried to enter nuclear base released",
+          "url": "https://www.bbc.com/news/articles/cvg04mg13ljo",
+          "time": "3 hrs ago",
+          "category": "Glasgow & West Scotland"
+        },
+        {
+          "title": "How content creator killer hoped a YouTube alibi would help him avoid justice",
+          "url": "https://www.bbc.com/news/articles/c4g8d8pz0xyo",
+          "time": "5 hrs ago",
+          "category": "Northern Ireland"
+        },
+        {
+          "title": "Body of father was at attacks scene for 15 hours",
+          "url": "https://www.bbc.com/news/articles/c4gvpmn97x4o",
+          "time": "3 hrs ago",
+          "category": "Nottinghamshire"
+        },
+        {
+          "title": "British couple in Iran prison say situation is 'life-threatening'",
+          "url": "https://www.bbc.com/news/articles/cew72ll8245o",
+          "time": "Latest",
+          "category": "UK"
+        }
+      ]
+    },
+    "nhk_world": {
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/",
+      "headlines": [],
+      "note": "NHK World page content was minimal - no headlines extracted"
+    },
+    "cnn_world": {
+      "url": "https://www.cnn.com/world",
+      "headlines": [
+        {
+          "title": "Trump says US and Iran in talks after he postpones strikes on power plants",
+          "url": "https://edition.cnn.com/world/live-news/iran-war-us-israel-trump-03-23-26",
+          "time": "Latest",
+          "category": "Live Updates"
+        },
+        {
+          "title": "At least 1 dead, 77 injured as Colombian military plane carrying more than 100 personnel crashes on takeoff",
+          "url": "https://edition.cnn.com/2026/03/23/americas/colombia-military-plane-crash-takeoff-latam-intl",
+          "time": "Latest",
+          "category": "Americas"
+        },
+        {
+          "title": "What we know on Day 24 of the US and Israel's war with Iran",
+          "url": "https://edition.cnn.com/2026/03/22/middleeast/us-israel-iran-middle-east-war-day-24-what-we-know-intl-hnk",
+          "time": "Latest",
+          "category": "Middle East"
+        },
+        {
+          "title": "Jewish volunteer ambulances set on fire outside London synagogue in antisemitic attack",
+          "url": "https://edition.cnn.com/2026/03/22/uk/attack-ambulances-london-golders-green-intl-hnk",
+          "time": "Latest",
+          "category": "UK"
+        },
+        {
+          "title": "In the Persian Gulf, Trump risks opening a Pandora's box",
+          "url": "https://edition.cnn.com/2026/03/23/middleeast/trump-pandoras-box-persian-gulf-latam-intl",
+          "time": "Latest",
+          "category": "Middle East"
+        },
+        {
+          "title": "Russian forces begin offensive in Ukraine as Zelensky worries about impact of Iran conflict",
+          "url": "https://edition.cnn.com/2026/03/22/europe/russia-ukraine-conflict-iran-intl",
+          "time": "Latest",
+          "category": "Europe"
+        },
+        {
+          "title": "The Tanker War: How history is repeating itself on the Strait of Hormuz",
+          "url": "https://edition.cnn.com/2026/03/22/middleeast/iran-war-history-tanker-wars-intl-hnk-ml",
+          "time": "Latest",
+          "category": "Middle East"
+        },
+        {
+          "title": "Internet outages disrupt daily life in Russia, fueling fears of a digital crackdown",
+          "url": "https://edition.cnn.com/2026/03/21/europe/internet-outages-russia-digital-crackdown-intl-cmd",
+          "time": "Latest",
+          "category": "Europe"
+        },
+        {
+          "title": "Israeli police attack journalists in Jerusalem, fracturing wrist of CNN producer",
+          "url": "https://edition.cnn.com/2026/03/21/middleeast/israel-police-attack-journalists-cnn-producer-latam-intl",
+          "time": "Latest",
+          "category": "Middle East"
+        },
+        {
+          "title": "Nowruz has taken on a different meaning for Iranians this year, amid conflict and fear",
+          "url": "https://edition.cnn.com/2026/03/20/world/nowruz-iran-conflict-fear-new-year-intl",
+          "time": "Latest",
+          "category": "Middle East"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_headlines": 39,
+    "sources_fetched": 5,
+    "top_topics": [
+      "US-Iran conflict and talks",
+      "Colombian plane crash",
+      "London antisemitic attack on ambulances",
+      "BTS comeback concert in Seoul",
+      "UK politics and economy"
+    ]
+  }
+}
