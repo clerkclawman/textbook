@@ -48,25 +48,25 @@ var eiken5new12 = [
 10. 🎒 Do you have a bag?
 カバンを持っていますか？
 
-1. 🏫 1. It ___ Monday today. • is • are • am • be •
+1. 🏫 1. It ___ Monday today. • is • cat • run • blue •
 今日は月曜日です。
-2. 🎒 2. I ___ to school. • go • goes • going • went •
+2. 🎒 2. I ___ to school. • go • dog • eat • big •
 私は学校へ行きます。
-3. 📚 3. I ___ a book. • read • reads • reading • red •
+3. 📚 3. I ___ a book. • read • apple • sleep • red •
 私は本を読みます。
-4. ✏️ 4. I write ___ a pen. • with • in • on • at •
+4. ✏️ 4. I write ___ a pen. • with • car • jump • loud •
 私はペンで書きます。
-5. 👂 5. I ___ to music. • listen • listens • listening • lost •
+5. 👂 5. I ___ to music. • listen • book • table • green •
 私は音楽を聞きます。
-6. ⚽ 6. I ___ play soccer. • can • can't • could • will •
+6. ⚽ 6. I ___ play soccer. • can • dog • is • red •
 私はサッカーができます。
-7. 🎨 7. My friend ___ a picture. • draws • draw • drawing • drew •
+7. 🎨 7. My friend ___ a picture. • draws • cat • run • blue •
 私の友達は絵を描きます。
-8. 🤔 8. She ___ draw well. • can • can't • could • will •
+8. 🤔 8. She ___ draw well. • can • book • sleep • happy •
 彼女は上手に描けます。
-9. 😊 9. We ___ happy now. • are • is • am • be •
+9. 😊 9. We ___ happy now. • are • car • big • table •
 私たちは今幸せです。
-10. 🏫 10. School ___ fun today. • is • are • am • be •
+10. 🏫 10. School ___ fun today. • is • dog • jump • loud •
 学校は今日楽しいです。
 `
   }
