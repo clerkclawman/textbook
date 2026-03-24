@@ -52,19 +52,19 @@ var eiken6new12 = [
 今日は晴れています。
 2. 🌳 2. Tony ___ at the park. • is • dog • eat • big •
 トニーは公園にいます。
-3. 🏃 3. He ___ running now. • is • apple • sleep • red •
+3. 🏃 3. He ___ running now. • is • apple • blue • run •
 彼は今走っています。
 4. 🐶 4. He sees two ___. • dogs • car • jump • loud •
 彼は二匹の犬を見ます。
 5. 🐕 5. They ___ playing together. • are • book • table • green •
 彼らは一緒に遊んでいます。
-6. 📚 6. Jay is ___ a book. • reading • dog • is • red •
+6. 📚 6. Jay is ___ a book. • reading • dog • blue • run •
 ジェイは本を読んでいます。
-7. ☕ 7. He ___ drinking coffee. • is • cat • run • blue •
+7. ☕ 7. He ___ drinking coffee. • is • cat • blue • run •
 彼はコーヒーを飲んでいます。
-8. 😂 8. He ___ laughing loudly. • is • book • sleep • happy •
+8. 😂 8. He ___ laughing loudly. • is • book • red • run •
 彼は大声で笑っています。
-9. 👩 9. Minako is ___ photos. • taking • car • big • table •
+9. 👩 9. Minako is ___ photos. • taking • car • big • blue •
 美奈子は写真を撮っています。
 10. 🥰 10. They ___ having fun. • are • dog • jump • loud •
 彼らは楽しんでいます。
