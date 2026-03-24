@@ -2,6 +2,14 @@
 **Last Updated:** March 24, 2026
 **Purpose:** A strict, step-by-step guide to creating EIKEN-level stories, questions, and quizzes that are funny, pedagogically sound, and technically correct.
 
+## ⚠️ SCOPE & LIMITATIONS
+**This guide applies ONLY to EIKEN Story files** (e.g., `eiken7-new-12.js`, `eiken5story.js`).
+- **DO NOT** use this 3-section structure (Story + Questions + Cloze) for:
+  - **News Files:** (`news-YYYY-MM-DD.js`) → Use existing headline/question format.
+  - **Pure Question Files:** (`fun-questions-*.js`, `easyquestions.js`) → Use existing level-prefixed question format.
+  - **Adult/C/X Classes:** → Use existing formats specific to those classes.
+- **Why?** The 3-section structure is designed for **narrative-based learning** (TPRS). News and pure question files serve different pedagogical purposes and have different existing parsers.
+
 ---
 
 ## 1️⃣ Universal Format Rules (Non-Negotiable)
