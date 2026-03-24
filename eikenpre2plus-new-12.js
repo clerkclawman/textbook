@@ -1,7 +1,7 @@
 // EIKEN Pre-2 Plus - New Section: Week 12 (The Mystery of the Missing Keys)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
-// Story: Past Continuous, Passive, Reported Speech, Light Second Conditional (Funny mystery).
+// Story: Past Continuous, Passive, Reported Speech, Type 2 Conditional (Funny mystery).
 var eikenpre2plusnew12 = [
   {
     "title": "Week 12: The Mystery of the Missing Keys",
@@ -12,18 +12,18 @@ var eikenpre2plusnew12 = [
 トニーはまた失くしたと言いました。
 3. 🧐 Jay claimed that Tony was always careless.
 ジェイはトニーはいつも不注意だと主張しました。
-4. 🗝️ The keys were found in the fridge.
-鍵は冷蔵庫で見つかりました。
-5. 😱 Tony was shocked when he saw them.
-トニーはそれを見て驚きました。
+4. 🗝️ The keys were found in the fridge by accident.
+鍵は偶然冷蔵庫で見つかりました。
+5. 😱 Tony was shocked when he saw them there.
+トニーはそこにあるのを見て驚きました。
 6. 🤦 He said that he had never put them there.
 彼はそこに入れたことがないと言いました。
-7. 🧠 If he had looked better, he would have found them.
-もっとよく探していれば、見つけたでしょう。
-8. 😂 Jay was still laughing at the mistake.
-ジェイは間違いでまだ笑っていました。
-9. 🏠 The house was a mess that morning.
-その朝、家は散らかっていました。
+7. 🧠 If he looked more carefully, he would find them sooner.
+もっと注意深く探せば、もっと早く見つけるでしょう。
+8. 😂 Jay was still laughing at the silly mistake.
+ジェイはばかげた間違いでまだ笑っていました。
+9. 🏠 The house was a complete mess that morning.
+その朝、家は完全に散らかっていました。
 10. 🤷 Tony promised that he would be more careful next time.
 トニーは次はもっと注意すると約束しました。
 
@@ -39,8 +39,8 @@ var eikenpre2plusnew12 = [
 それを見て驚きましたか？
 6. 🤦 Did you say you never put them there?
 入れたことがないと言いましたか？
-7. 🧠 If you had looked better, would you have found them?
-もっとよく探していれば、見つけましたか？
+7. 🧠 If you looked carefully, would you find them?
+注意深く探せば、見つけますか？
 8. 😂 Was someone laughing at your mistake?
 誰かがあなたの間違いで笑っていましたか？
 9. 🏠 Was your house a mess that morning?
@@ -60,8 +60,8 @@ var eikenpre2plusnew12 = [
 トニーはそれを見て驚きました。
 6. 🤦 6. He said that he ___ never put them there. • had • dog • is • red •
 彼はそこに入れたことがないと言いました。
-7. 🧠 7. If he ___ looked better, he would have found them. • had • cat • run • blue •
-もっとよく探していれば、見つけたでしょう。
+7. 🧠 7. If he ___ more carefully, he would find them. • looked • cat • run • blue •
+もっと注意深く探せば、見つけるでしょう。
 8. 😂 8. Jay ___ still laughing at the mistake. • was • book • sleep • happy •
 ジェイは間違いでまだ笑っていました。
 9. 🏠 9. The house ___ a mess that morning. • was • car • big • table •
