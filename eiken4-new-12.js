@@ -1,73 +1,73 @@
-// EIKEN 4 - New Section: Week 12 (A Party Last Weekend)
+// EIKEN 4 - New Section: Week 12 (Tony's Burnt Cake at the Party)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
-// Story: Past Simple + Future focus (Party and Plans).
+// Story: Past Simple + Future focus (Cooking disaster).
 var eiken4new12 = [
   {
-    "title": "Week 12: A Party Last Weekend",
+    "title": "Week 12: Tony's Burnt Cake at the Party",
     "content": `
 1. 🎉 Last weekend, I went to a party.
 先週末、パーティーに行きました。
-2. 🍰 It was very fun.
-とても楽しかったです。
-3. 🍕 I ate pizza and cake.
-ピザとケーキを食べました。
-4. 🎵 We listened to music.
-音楽を聞きました。
-5. 💃 My friend danced well.
-私の友達は上手に踊りました。
-6. 📸 I took many photos.
-たくさん写真を撮りました。
-7. 😊 Everyone was happy.
-みんな幸せでした。
-8. 🗓️ Next week, I will go to a festival.
-来週、祭りに行きます。
-9. 🎏 I will bring some cakes.
-いくつかケーキを持っていきます。
-10. 🎊 It will be wonderful.
-とても素晴らしいでしょう。
+2. 🍰 I wanted to cook a cake.
+ケーキを焼きたいと思いました。
+3. 🥚 I put eggs and flour in.
+卵と小麦粉を入れました。
+4. 🔥 The cake was burning.
+ケーキが焦げていました。
+5. 😱 Oh no! It was black!
+ああ、黒いです！
+6. 🍽️ I ate the burnt cake.
+焦げたケーキを食べました。
+7. 🤢 It was very bad.
+とてもまずかったです。
+8. 😂 Everyone laughed loudly.
+みんな大声で笑いました。
+9. 🗓️ Next week, I will try again.
+来週、もう一度挑戦します。
+10. 🍰 I will make a good cake.
+いいケーキを作ります。
 
 1. 🎉 Did you go to a party?
 パーティーに行きましたか？
-2. 🍰 Was it fun?
-楽しかったですか？
-3. 🍕 Did you eat pizza?
-ピザを食べましたか？
-4. 🎵 Did you listen to music?
-音楽を聞きましたか？
-5. 💃 Did your friend dance well?
-あなたの友達は上手に踊りましたか？
-6. 📸 Did you take photos?
-写真を撮りましたか？
-7. 😊 Were you happy?
-幸せでしたか？
-8. 🗓️ Will you go to a festival?
-祭りに行きますか？
-9. 🎏 What will you bring?
-何を持っていきますか？
-10. 🎊 Will it be wonderful?
-素晴らしいでしょう？
+2. 🍰 Did you want to cook?
+料理したかったですか？
+3. 🥚 Did you put eggs in?
+卵を入れましたか？
+4. 🔥 Was the cake burning?
+ケーキは焦げていましたか？
+5. 😱 Was it black?
+黒かったですか？
+6. 🍽️ Did you eat the cake?
+ケーキを食べましたか？
+7. 🤢 Was it bad?
+まずかったですか？
+8. 😂 Did everyone laugh?
+みんなは笑いましたか？
+9. 🗓️ Will you try again?
+もう一度挑戦しますか？
+10. 🍰 Will you make a good cake?
+いいケーキを作りますか？
 
 1. 🎉 1. Last weekend, I ___ to a party. • went • cat • run • blue •
 先週末、パーティーに行きました。
-2. 🍰 2. It ___ very fun. • was • dog • eat • big •
-とても楽しかったです。
-3. 🍕 3. I ___ pizza and cake. • ate • apple • sleep • red •
-ピザとケーキを食べました。
-4. 🎵 4. We ___ to music. • listened • car • jump • loud •
-音楽を聞きました。
-5. 💃 5. My friend ___ well. • danced • book • table • green •
-私の友達は上手に踊りました。
-6. 📸 6. I ___ many photos. • took • dog • is • red •
-たくさん写真を撮りました。
-7. 😊 7. Everyone ___ happy. • was • cat • run • blue •
-みんな幸せでした。
-8. 🗓️ 8. Next week, I ___ go to a festival. • will • book • sleep • happy •
-来週、祭りに行きます。
-9. 🎏 9. I ___ bring some cakes. • will • car • big • table •
-いくつかケーキを持っていきます。
-10. 🎊 10. It ___ be wonderful. • will • dog • jump • loud •
-とても素晴らしいでしょう。
+2. 🍰 2. I ___ to cook a cake. • wanted • dog • eat • big •
+ケーキを焼きたいと思いました。
+3. 🥚 3. I ___ eggs and flour in. • put • apple • sleep • red •
+卵と小麦粉を入れました。
+4. 🔥 4. The cake ___ burning. • was • car • jump • loud •
+ケーキは焦げていました。
+5. 😱 5. It ___ black! • was • book • table • green •
+黒かったです！
+6. 🍽️ 6. I ___ the burnt cake. • ate • dog • is • red •
+焦げたケーキを食べました。
+7. 🤢 7. It ___ very bad. • was • cat • run • blue •
+とてもまずかったです。
+8. 😂 8. Everyone ___ loudly. • laughed • book • sleep • happy •
+みんな大声で笑いました。
+9. 🗓️ 9. Next week, I ___ try again. • will • car • big • table •
+来週、もう一度挑戦します。
+10. 🍰 10. I ___ make a good cake. • will • dog • jump • loud •
+いいケーキを作ります。
 `
   }
 ];
