@@ -24,8 +24,8 @@ var eikenpre2new12 = [
 食べ物は今捨てられなければなりません。
 9. 🤦 Tony was embarrassed when he saw the mess.
 トニーは散らかりを見て恥ずかしがりました。
-10. 😂 Jay said that it was a wonderful success.
-ジェイはそれが素晴らしい成功だと言いました。
+10. 😂 Jay said that it was a new recipe.
+ジェイはそれが新しいレシピだと言いました。
 
 1. 🎪 Have you ever burned food?
 食べ物を焦がしたことがありますか？
@@ -45,8 +45,8 @@ var eikenpre2new12 = [
 食べ物は捨てられなければなりませんか？
 9. 🤦 Were you embarrassed by a mistake?
 間違いで恥ずかしかったことがありますか？
-10. 😂 Do you think Jay was funny?
-ジェイは面白かったと思いますか？
+10. 😂 Did Jay say it was a new recipe?
+ジェイは新しいレシピだと言いましたか？
 
 1. 🎪 1. While Tony ___ cooking, he burned. • was • cat • run • blue •
 トニーが調理している間、彼は焦がしました。
@@ -66,8 +66,8 @@ var eikenpre2new12 = [
 食べ物は捨てられなければなりません。
 9. 🤦 9. Tony ___ embarrassed when he saw. • was • car • big • table •
 トニーは散らかりを見て恥ずかしがりました。
-10. 😂 10. Jay said that it ___ a success. • was • dog • jump • loud •
-ジェイは成功だと言いました。
+10. 😂 10. Jay said that it ___ a new recipe. • was • dog • jump • loud •
+ジェイは新しいレシピだと言いました。
 `
   }
 ];
