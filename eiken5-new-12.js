@@ -1,73 +1,73 @@
-// EIKEN 5 - New Section: Week 12 (At School Today)
+// EIKEN 5 - New Section: Week 12 (Tony's Pen and Pencil Mix-up)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
-// Story: Present Simple/Continuous + "can" focus (School context).
+// Story: Present Simple + "can" focus (School mishap).
 var eiken5new12 = [
   {
-    "title": "Week 12: At School Today",
+    "title": "Week 12: Tony's Pen and Pencil Mix-up",
     "content": `
-1. 🏫 It is Monday today.
-今日は月曜日です。
-2. 🎒 I go to school.
-私は学校へ行きます。
-3. 📚 I read a book.
-私は本を読みます。
-4. ✏️ I write with a pen.
-私はペンで書きます。
-5. 👂 I listen to music.
-私は音楽を聞きます。
-6. ⚽ I can play soccer.
-私はサッカーができます。
-7. 🎨 My friend draws a picture.
-私の友達は絵を描きます。
-8. 🤔 She can draw well.
-彼女は上手に描けます。
-9. 😊 We are happy now.
-私たちは今幸せです。
-10. 🏫 School is fun today.
-学校は今日楽しいです。
+1. 🏫 Tony goes to school.
+トニーは学校へ行きます。
+2. 🎒 He has a bag.
+彼はカバンを持っています。
+3. ✏️ He wants to write.
+彼は書きたいです。
+4. 🖊️ He picks a pen.
+彼はペンを選びます。
+5. 🤔 It is a pencil.
+それは鉛筆です。
+6. ✍️ He writes with it.
+彼はそれを書きます。
+7. 😲 The teacher is surprised.
+先生は驚いています。
+8. 🗣️ "That is a pencil!" she says.
+「それは鉛筆だ！」と言う。
+9. 😅 Tony is red.
+トニーは赤い。
+10. 😂 He can laugh.
+彼は笑えます。
 
 1. 🏫 Do you go to school?
 学校へ行きますか？
-2. 📚 Do you read books?
-本を読みますか？
-3. ✏️ Do you write with a pen?
-ペンで書きますか？
-4. 👂 Do you listen to music?
-音楽を聞きますか？
-5. ⚽ Can you play soccer?
-サッカーができますか？
-6. 🎨 Do you draw pictures?
-絵を描きますか？
-7. 🤔 Can you draw well?
-上手に描けますか？
-8. 😊 Are you happy today?
-今日は幸せですか？
-9. 🏫 Is school fun?
-学校は楽しいですか？
-10. 🎒 Do you have a bag?
+2. 🎒 Do you have a bag?
 カバンを持っていますか？
+3. ✏️ Do you want to write?
+書きたいですか？
+4. 🖊️ Do you use a pen?
+ペンを使いますか？
+5. ✍️ Can you write well?
+上手に書けますか？
+6. 😲 Is the teacher surprised?
+先生は驚いていますか？
+7. 🗣️ Do you say "pencil"?
+「鉛筆」と言いますか？
+8. 😅 Are you red when you are shy?
+恥ずかしいとき赤くなりますか？
+9. 😂 Can you laugh at mistakes?
+間違いで笑えますか？
+10. 🏫 Is school fun?
+学校は楽しいですか？
 
-1. 🏫 1. It ___ Monday today. • is • cat • run • blue •
-今日は月曜日です。
-2. 🎒 2. I ___ to school. • go • dog • eat • big •
-私は学校へ行きます。
-3. 📚 3. I ___ a book. • read • apple • sleep • red •
-私は本を読みます。
-4. ✏️ 4. I write ___ a pen. • with • car • jump • loud •
-私はペンで書きます。
-5. 👂 5. I ___ to music. • listen • book • table • green •
-私は音楽を聞きます。
-6. ⚽ 6. I ___ play soccer. • can • dog • is • red •
-私はサッカーができます。
-7. 🎨 7. My friend ___ a picture. • draws • cat • run • blue •
-私の友達は絵を描きます。
-8. 🤔 8. She ___ draw well. • can • book • sleep • happy •
-彼女は上手に描けます。
-9. 😊 9. We ___ happy now. • are • car • big • table •
-私たちは今幸せです。
-10. 🏫 10. School ___ fun today. • is • dog • jump • loud •
-学校は今日楽しいです。
+1. 🏫 1. Tony ___ to school. • goes • cat • run • blue •
+トニーは学校へ行きます。
+2. 🎒 2. He ___ a bag. • has • dog • eat • big •
+彼はカバンを持っています。
+3. ✏️ 3. He ___ to write. • wants • apple • sleep • red •
+彼は書きたいです。
+4. 🖊️ 4. He ___ a pen. • picks • car • jump • loud •
+彼はペンを選びます。
+5. ✍️ 5. It ___ a pencil. • is • book • table • green •
+それは鉛筆です。
+6. 😲 6. The teacher ___ surprised. • is • dog • is • red •
+先生は驚いています。
+7. 🗣️ 7. "That ___ a pencil!" • is • cat • run • blue •
+「それは鉛筆だ！」
+8. 😅 8. Tony ___ red. • is • book • sleep • happy •
+トニーは赤い。
+9. 😂 9. He ___ laugh. • can • car • big • table •
+彼は笑えます。
+10. 🏫 10. School ___ fun. • is • dog • jump • loud •
+学校は楽しいです。
 `
   }
 ];
