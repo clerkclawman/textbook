@@ -53,17 +53,25 @@
 
 ## 3️⃣ Section 1: The Story (TPRS Style)
 **Goal:** A funny, relatable, 10-sentence narrative with a clear problem and resolution.
+**Critical Rule:** **Every story must be unique.** No repetitive plots (e.g., "Tony mixes up salt/sugar" cannot be used twice). If characters are used, vary their scenarios (e.g., Tony cooking, Jay hiking, a student playing a prank). **Characters are optional:** Stories can feature generic "He/She/They" if it makes the plot more unique.
 
-### A. Structure (The TPRS Arc)
+### A. Character Guidelines (Optional but Recommended for Humor)
+- **Tony:** From England, lives in Neyagawa, wife Minako, 4 kids. Loves potatoes/milk. **Quirk:** Often mixes things up (salt/sugar, tea/coffee) or gets confused by Japanese.
+- **Jay:** From England, lives in Osaka, wife Emiko. Loves beer/hiking/big food. **Quirk:** Talks too loudly (like an earthquake), often startles people/animals.
+- **Usage:** Use characters to add flavor, but **do not force them** into every story. If a better funny plot exists without them, use the plot.
+- **Avoid:** Repetitive "Tony mixes up X and Y" plots. Vary the scenarios (e.g., Tony lost in a store, Jay scares a bird, a student pranks a teacher).
+
+### B. Structure (The TPRS Arc)
 1.  **Lines 1–3:** Introduction (Who? What? Where?).
-2.  **Lines 4–7:** Problem/Complication (The funny mistake or twist).
-3.  **Lines 8–10:** Resolution (Reaction, laughter, lesson).
+2.  **Lines 4–7:** Problem/Complication (The funny mistake, twist, or surprise).
+3.  **Lines 8–10:** Resolution (Reaction, laughter, lesson, or happy ending).
 
-### B. Writing Rules
+### C. Writing Rules
 - **Keep it Simple:** Use only words allowed in the Level Profile.
-- **Be Funny:** Use character quirks (Tony mixes things up, Jay is loud).
+- **Be Funny:** Use unexpected twists, exaggerations, or relatable mistakes.
 - **No Random Elements:** Every sentence must advance the plot. (e.g., No "The dog is small" if the dog wasn't introduced).
-- **Example (EIKEN 7):**
+- **Uniqueness Check:** Before writing, ask: "Has this exact plot been used before?" If yes, **change the scenario**.
+- **Example (EIKEN 7 - Unique Plot):**
   ```text
   1. 🍵 Tony wants tea.
   2. 🧂 He sees a shaker.
