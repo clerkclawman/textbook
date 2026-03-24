@@ -27,26 +27,26 @@ var eiken6new13 = [
 10. 😅 He is very tired.
 彼はとても疲れています。
 
-1. 🍳 Do you cook breakfast?
-朝食を作りますか？
-2. 🥚 Are you eating eggs?
-卵を食べていますか？
+1. 🍳 Do you like cooking?
+料理が好きですか？
+2. 🥚 Do you eat eggs?
+卵を食べますか？
 3. 🥛 Do you drink milk?
 牛乳を飲みますか？
-4. 🥣 Are you mixing food?
-食べ物を混ぜていますか？
-5. 🔥 Is the stove hot?
-ストーブは熱いですか？
-6. 🏃 Do you run fast?
-速く走りますか？
-7. 💨 Is the air smoky?
-空気は煙っていますか？
-8. 🚨 Do you hear alarms?
-アラームを聞きますか？
-9. 👩 Do you call friends?
+4. 🥣 Do you mix things?
+物を混ぜますか？
+5. 🔥 Is it hot today?
+今日は暑いですか？
+6. 🏃 Do you run in the park?
+公園で走りますか？
+7. 💨 Is the wind blowing?
+風が吹いていますか？
+8. 🚨 Do you hear loud noises?
+大きな音を聞きますか？
+9. 👩 Do you call your friends?
 友達に電話しますか？
-10. 😅 Are you tired now?
-今は疲れていますか？
+10. 😅 Are you tired today?
+今日は疲れていますか？
 
 1. 🍳 1. Tony is ___ breakfast. • cooking • cat • run • blue •
 トニーは朝食を作っています。
