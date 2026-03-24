@@ -48,14 +48,14 @@ var eiken7new12 = [
 10. 🍌 Do you like bananas?
 バナナは好きですか？
 
-1. 🍵 1. Tony wants ___ tea. • a • cat • run • blue •
-トニーはお茶が欲しい。
+1. 🍵 1. Tony wants ___ drink. • a • cat • run • blue •
+トニーは飲み物が欲しい。
 2. 🧂 2. He sees ___ shaker. • a • dog • eat • big •
 彼は振る器を見る。
 3. 🤔 3. He puts salt ___ the cup. • in • apple • is • red •
 彼は塩を入れる。
-4. ☕ 4. He drinks ___ tea. • the • milk • sleep • happy •
-彼は茶を飲む。
+4. ☕ 4. He drinks ___ water. • the • milk • sleep • happy •
+彼は水を飲む。
 5. 😱 5. It ___ salty! • is • book • table • green •
 ああ、塩辛い！
 6. 🤢 6. He spits ___ out. • it • cat • run • loud •
