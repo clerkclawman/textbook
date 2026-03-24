@@ -1,73 +1,73 @@
-// EIKEN Pre-2 - New Section: Week 12 (The Environment and Our Future)
+// EIKEN Pre-2 - New Section: Week 12 (The Great Festival Disaster)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
-// Story: Past Continuous + Passive + Reported Speech + Complex Conjunctions.
+// Story: Tony and Jay as clowns (Past Continuous, Passive, Reported Speech).
 var eikenpre2new12 = [
   {
-    "title": "Week 12: The Environment and Our Future",
+    "title": "Week 12: The Great Festival Disaster",
     "content": `
-1. 🌍 While people were discussing the problem, the government announced a new plan.
-人々が問題を議論している間、政府は新しい計画を発表しました。
-2. 🚫 The roads have been closed to reduce traffic.
-交通を減らすために道路は閉鎖されています。
-3. 🏭 Factories must stop polluting the air.
-工場は空気を汚染することを止めなければなりません。
-4. 🌱 Although it was difficult, many people started recycling.
-難しいでしたが、多くの人々がリサイクルを始めた。
-5. 📢 The report said that the situation would improve.
-報告書は状況が改善すると述べていました。
-6. 💡 We should care more about the environment.
-私たちは環境のことをもっと気にすべきです。
-7. 🚗 Cars will be controlled properly in the future.
-車は将来適切に管理されるでしょう。
-8. 🌳 Since the park has been protected, birds are returning.
-公園が保護されて以来、鳥が戻ってきています。
-9. 🤔 Experts believe that the change is necessary.
-専門家は変化が必要だと信じています。
-10. 🌏 We need to work together for a better future.
-私たちはより良い未来のために一緒に働く必要があります。
+1. 🎪 While Tony was cooking, he burned the food.
+トニーが調理している間、彼は食べ物を焦がしました。
+2. 🔥 The food was burned completely.
+食べ物は完全に焦げてしまいました。
+3. 📢 Jay was shouting loudly at the crowd.
+ジェイは群衆に大声で叫んでいました。
+4. 🐶 The dogs were scared by his voice.
+犬たちは彼の声に怖がられました。
+5. 🏃 People were running away from the noise.
+人々は騒音から逃げ出していました。
+6. 😱 The mayor said that they were not helpful.
+市長は彼らは役に立たないと言いました。
+7. 🍜 Although they tried, the festival was ruined.
+彼らは頑張りましたが、祭りは台無しになりました。
+8. 🚑 The food must be thrown away now.
+食べ物は今捨てられなければなりません。
+9. 🤦 Tony was embarrassed when he saw the mess.
+トニーは散らかりを見て恥ずかしがりました。
+10. 😂 Jay said that it was a wonderful success.
+ジェイはそれが素晴らしい成功だと言いました。
 
-1. 🌍 What do you think about the environment?
-環境についてどう思いますか？
-2. 🚫 Should the roads be closed?
-道路は閉鎖されるべきですか？
-3. 🏭 Must factories stop polluting?
-工場は汚染を止めなければなりませんか？
-4. 🌱 Did you start recycling recently?
-最近リサイクルを始めたことがありますか？
-5. 📢 What did the report say?
-報告書は何と言っていましたか？
-6. 💡 Should we care more about nature?
-私たちは自然のことをもっと気にすべきですか？
-7. 🚗 Will cars be controlled in your city?
-あなたの街で車は管理されるでしょうか？
-8. 🌳 Has your local park been protected?
-あなたの地元の公園は保護されていますか？
-9. 🤔 Do experts believe the change is necessary?
-専門家は変化が必要だと信じていますか？
-10. 🌏 How can we work together for the future?
-私たちは未来のためにどう一緒に働けますか？
+1. 🎪 Have you ever burned food?
+食べ物を焦がしたことがありますか？
+2. 🔥 Was the food burned in your kitchen?
+あなたの台所で食べ物は焦げましたか？
+3. 📢 Do people shout at festivals?
+祭りで人々は叫びますか？
+4. 🐶 Were animals scared by loud noises?
+動物は大きな音に怖がられましたか？
+5. 🏃 Did people run away from noise?
+人々は騒音から逃げましたか？
+6. 😱 What did the mayor say?
+市長は何と言いましたか？
+7. 🍜 Although you tried, did it fail?
+頑張りましたが、失敗しましたか？
+8. 🚑 Must the food be thrown away?
+食べ物は捨てられなければなりませんか？
+9. 🤦 Were you embarrassed by a mistake?
+間違いで恥ずかしかったことがありますか？
+10. 😂 Do you think Jay was funny?
+ジェイは面白かったと思いますか？
 
-1. 🌍 1. While people ___ discussing, the government announced. • were • cat • run • blue •
-人々が議論している間、政府は発表しました。
-2. 🚫 2. The roads ___ closed to reduce traffic. • have been • dog • eat • big •
-道路は閉鎖されています。
-3. 🏭 3. Factories ___ stop polluting. • must • apple • sleep • red •
-工場は止めなければなりません。
-4. 🌱 4. ___ it was difficult, many people started. • Although • car • jump • loud •
-難しいでしたが、多くの人々が始めた。
-5. 📢 5. The report said that the situation ___ improve. • would • book • table • green •
-状況は改善すると述べていました。
-6. 💡 6. We ___ care more about the environment. • should • dog • is • red •
-私たちはもっと気にすべきです。
-7. 🚗 7. Cars ___ be controlled properly. • will • cat • run • blue •
-車は管理されるでしょう。
-8. 🌳 8. ___ the park has been protected, birds are returning. • Since • book • sleep • happy •
-公園が保護されて以来、鳥が戻ってきています。
-9. 🤔 9. Experts ___ that the change is necessary. • believe • car • big • table •
-専門家は変化が必要だと信じています。
-10. 🌏 10. We ___ to work together. • need • dog • jump • loud •
-私たちは一緒に働く必要があります。
+1. 🎪 1. While Tony ___ cooking, he burned. • was • cat • run • blue •
+トニーが調理している間、彼は焦がしました。
+2. 🔥 2. The food ___ burned completely. • was • dog • eat • big •
+食べ物は完全に焦げました。
+3. 📢 3. Jay ___ shouting loudly. • was • apple • sleep • red •
+ジェイは大声で叫んでいました。
+4. 🐶 4. The dogs ___ scared by his voice. • were • car • jump • loud •
+犬たちは彼の声に怖がられました。
+5. 🏃 5. People ___ running away. • were • book • table • green •
+人々は逃げ出していました。
+6. 😱 6. The mayor said that they ___ not helpful. • were • dog • is • red •
+彼らは役に立たないと市長は言いました。
+7. 🍜 7. ___ they tried, the festival was ruined. • Although • cat • run • blue •
+彼らは頑張りましたが、祭りは台無しになりました。
+8. 🚑 8. The food ___ be thrown away. • must • book • sleep • happy •
+食べ物は捨てられなければなりません。
+9. 🤦 9. Tony ___ embarrassed when he saw. • was • car • big • table •
+トニーは散らかりを見て恥ずかしがりました。
+10. 😂 10. Jay said that it ___ a success. • was • dog • jump • loud •
+ジェイは成功だと言いました。
 `
   }
 ];
