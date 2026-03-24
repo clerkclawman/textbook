@@ -18,9 +18,11 @@ var c = [
 なぜそれが好きですか？
 🔢 How many fruits do you eat every day?
 毎日、果物をいくつ食べますか？
-🗣️ Can you say "りんご" in English?
+🗣️ Can you say "
+りんご" in English?
 "りんご" を英語で言えますか？
-🗣️ Can you say "バナナ" in English?
+🗣️ Can you say "
+バナナ" in English?
 "バナナ" を英語で言えますか？
 😊 How do you feel when you eat fruit?
 果物を食べるとどんな気持ちになりますか？

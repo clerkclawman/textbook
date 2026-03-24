@@ -107,7 +107,8 @@ var easyquestions = [
 🚆 What's your train commute like?
 電車通勤・通学の様子は？
 📺 Do you watch YouTube or TV more?
-YouTubeとテレビ、どちらをよく見る？
+YouTube
+とテレビ、どちらをよく見る？
 🍫 What chocolate do you love?
 好きなチョコレートは？
 📦 Do you reuse delivery boxes?
