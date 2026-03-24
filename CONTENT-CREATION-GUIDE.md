@@ -88,53 +88,69 @@
 ---
 
 ## 4️⃣ Section 2: Personal Questions (Universal & Concrete)
-**Goal:** 10 standalone questions about the student's life that **anyone** can answer.
+**Goal:** 10 standalone questions about the student's life that **anyone** can answer, regardless of their specific situation.
 
-### A. Rules
-- **NO Story Assumptions:** Do not ask "Do you have a fridge?" if the student might not. Ask "Do you like milk?" instead.
-- **NO Abstract Concepts:** Avoid "Is breakfast important?" or "Do you laugh at mistakes?"
-- **Concrete Topics:** Food, Family, Pets, Colors, Simple Habits.
-- **Grammar:** Match the Level Profile (e.g., EIKEN 7 = Present Simple).
-- **Example (EIKEN 7):**
+### A. The "No Assumption" Rule (Critical)
+- **NEVER** assume a specific object, location, or current action unless it is universal (e.g., "sun," "air," "time").
+  - ❌ **WRONG:** "Are you eating eggs?" (Assumes they are eating eggs *right now*).
+  - ❌ **WRONG:** "Is the stove hot?" (Assumes they have a stove).
+  - ❌ **WRONG:** "Do you run fast?" (Assumes they run).
+- **ALWAYS** ask about **general habits**, **preferences**, or **universal states**.
+  - ✅ **CORRECT:** "Do you eat eggs?" (General habit).
+  - ✅ **CORRECT:** "Is it hot today?" (Universal weather).
+  - ✅ **CORRECT:** "Do you run in the park?" (General habit, optional location).
+- **Strategy:** If a question requires a specific object from the story (e.g., "shaker," "salt"), **replace it** with a generic equivalent (e.g., "food," "drink") or a different universal topic.
+
+### B. Grammar & Topics
+- **Grammar:** Match the Level Profile (e.g., EIKEN 7 = Present Simple; EIKEN 6 = Mix of Simple/Continuous).
+- **Topics:** Food, Family, Pets, Hobbies, Weather, Daily Routines, Feelings.
+- **Example (EIKEN 6 - Corrected):**
   ```text
-  1. 🍵 Do you like tea?
-  2. ☕ Do you drink coffee?
-  3. 🧂 Do you like salt?
-  4. 🍬 Do you like sugar?
-  5. 😂 Do you laugh loudly?
-  6. 😅 Are you red when you are shy?
-  7. 👩 Do you have a sister?
-  8. 👨 Do you have a brother?
-  9. 🍎 Do you like apples?
-  10. 🍌 Do you like bananas?
+  1. 🍳 Do you like cooking? (General preference)
+  2. 🥚 Do you eat eggs? (General habit)
+  3. 🥛 Do you drink milk? (General habit)
+  4. 🥣 Do you mix things? (General action)
+  5. 🔥 Is it hot today? (Universal weather)
+  6. 🏃 Do you run in the park? (General habit)
+  7. 💨 Is the wind blowing? (Universal weather)
+  8. 🚨 Do you hear loud noises? (General experience)
+  9. 👩 Do you call your friends? (General habit)
+  10. 😅 Are you tired today? (General state)
   ```
 
 ---
 
 ## 5️⃣ Section 3: Cloze Test (Fun Grammar Review)
-**Goal:** Review **function words** (Articles, Prepositions, Pronouns, Auxiliaries) in a fun, obvious way.
+**Goal:** Review **grammar mechanics** (Articles, Prepositions, Pronouns, Verb Endings) in a fun, obvious way.
+**Critical Rule:** **Cloze items are INDEPENDENT of the story.** Do **NOT** try to force the story's vocabulary into the quiz. Create **fresh, simple sentences** that target the specific grammar point for the level.
 
-### A. Strategy
-- **Target:** **Grammar words** (a/an/the, in/on/at, I/He/She/It, is/are/do).
-- **Distractors:** 3 words that are **grammatically impossible** in that slot.
-  - **Correct:** The grammar word.
-  - **Distractor 1:** A Noun (if correct is not a noun).
-  - **Distractor 2:** A Verb (if correct is not a verb).
-  - **Distractor 3:** An Adjective.
-- **No Grammar Traps:** The correct answer should be the **only one that makes sense** structurally.
-- **Example (EIKEN 7):**
-  ```text
-  1. 🍵 1. Tony wants ___ tea. • a • cat • run • blue •
-  2. 🧂 2. He sees ___ shaker. • a • dog • eat • big •
-  3. 🤔 3. He puts salt ___ the cup. • in • apple • is • red •
-  4. ☕ 4. He drinks ___ tea. • the • milk • sleep • happy •
-  5. 😱 5. It ___ salty! • is • book • table • green •
-  6. 🤢 6. He spits ___ out. • it • cat • run • loud •
-  7. 👩 7. Minako ___ him. • sees • car • blue • table •
-  8. 😂 8. She ___ loudly. • laughs • dog • car • red •
-  9. 👉 9. "That ___ salt!" • is • apple • table • big •
-  10. 😅 10. Tony ___ red. • is • dog • cat • blue •
-  ```
+### A. Strategy (The "Independent Sentence" Method)
+1.  **Identify the Target Grammar:** (e.g., Present Continuous `-ing`, Plurals `-s`, Articles `a/an`).
+2.  **Create 10 Simple Sentences:** Use **generic subjects** (I, He, She, It, They) and **common verbs/nouns**.
+    - *Do not reuse story characters or plot points unless it's a natural fit.*
+    - *Example Target (Present Continuous):* "She is ___ a book." (reading), "They are ___ soccer." (playing).
+3.  **Select the Correct Word:** The grammar word that fits the slot.
+4.  **Create 3 Distractors:** Choose words that are **completely different parts of speech** or **nonsense** in that context.
+    - **Distractor 1:** A Noun (if correct is a verb/preposition).
+    - **Distractor 2:** A Verb (if correct is a noun/preposition).
+    - **Distractor 3:** An Adjective (if correct is a noun/verb).
+    - *Goal:* The student sees the sentence structure and picks the word that fits the **slot**, not the meaning.
+
+### B. Example (EIKEN 6 - Present Continuous Focus)
+*Target: `-ing` verbs and `is/are`.*
+```text
+1. 🍳 1. She is ___ a book. • reading • cat • run • blue • (Verb vs Noun/Verb/Adj)
+2. 🏃 2. They are ___ soccer. • playing • dog • eat • big • (Verb vs Noun/Verb/Adj)
+3. ☀️ 3. It is ___ sunny. • very • apple • sleep • red • (Adverb vs Noun/Verb/Adj)
+4. 🐕 4. He is ___ fast. • running • car • jump • loud • (Verb vs Noun/Verb/Adj)
+5. 📚 5. We are ___ homework. • doing • book • table • green • (Verb vs Noun/Noun/Adj)
+6. 🎵 6. She is ___ music. • listening • dog • is • red • (Verb vs Noun/Verb/Adj)
+7. 🍎 7. They are ___ apples. • eating • cat • run • blue • (Verb vs Noun/Verb/Adj)
+8. 🌧️ 8. It is ___ rain. • raining • book • sleep • happy • (Verb vs Noun/Verb/Adj)
+9. 🏠 9. He is ___ home. • at • car • big • table • (Preposition vs Noun/Adj/Noun)
+10. 😴 10. They are ___ now. • sleeping • dog • jump • loud • (Verb vs Noun/Verb/Adj)
+```
+*Note: The sentences are simple, generic, and focus purely on the grammar structure, not the story plot.*
 
 ---
 
