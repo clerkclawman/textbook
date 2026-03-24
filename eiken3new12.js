@@ -1,7 +1,8 @@
-// EIKEN 3 - Week 12: Tony's Dream Lion (Rewritten for Clarity)
+// EIKEN 3 - Week 12: Tony's Dream Lion (Final Fix: Universal Questions)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
 // Story: Coherent TPRS narrative (Present Perfect + First Conditional + Superlatives).
+// Questions: Fun, universal, vaguely inspired by the story.
 var eiken3new12 = [
   {
     "title": "Week 12: Tony's Dream Lion",
@@ -33,8 +34,8 @@ var eiken3new12 = [
 本物のライオンを見たことがありますか？
 3. 🌙 Do you remember your dreams?
 夢を覚えていますか？
-4. 🍜 Do you ever have strange dreams?
-奇妙な夢を見たことがありますか？
+4. 🍜 Do you ever have funny dreams?
+面白い夢を見たことがありますか？
 5. 😱 Were you ever surprised in a dream?
 夢の中で驚いたことがありますか？
 6. 🤔 What is the most interesting dream you have had?

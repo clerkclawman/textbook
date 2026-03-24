@@ -1,7 +1,8 @@
-// EIKEN 2 - Week 12: The Great Debate: Cats vs. Dogs (Rewritten for Clarity)
+// EIKEN 2 - Week 12: The Great Debate: Cats vs. Dogs (Final Fix: Universal Questions)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
 // Story: Coherent TPRS narrative (Opinion/Argument, Reported Speech, Passive).
+// Questions: Fun, universal, vaguely inspired by the story.
 var eiken2new12 = [
   {
     "title": "Week 12: The Great Debate: Cats vs. Dogs",
@@ -39,8 +40,8 @@ var eiken2new12 = [
 意見がありますが、反対側も見えますか？
 6. 📢 Do people shout their opinions loudly?
 人々は自分の意見を大声で叫びますか？
-7. 🧠 What did the report say about cats?
-報告書は猫について何と言っていましたか？
+7. 🧠 Do you think cats are popular?
+猫は人気だと思いますか？
 8. 🐕 Have you owned a dog for many years?
 何年も犬を飼ったことがありますか？
 9. 🌟 What is the most interesting argument?

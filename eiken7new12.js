@@ -1,73 +1,74 @@
-// EIKEN 7 - New Section: Week 12 (Tony's Wrong Salt)
+// EIKEN 7 - Week 12: Tony's Tiny Umbrella (Final Fix: Universal Questions)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
-// Story: Tony puts salt in his tea (TPRS humor, EIKEN 7 compliant).
+// Story: Coherent TPRS narrative (Present Simple).
+// Questions: Fun, universal, vaguely inspired by the story.
 var eiken7new12 = [
   {
-    "title": "Week 12: Tony's Wrong Salt",
+    "title": "Week 12: Tony's Tiny Umbrella",
     "content": `
-1. 🍵 Tony wants tea.
-トニーはお茶が欲しい。
-2. 🧂 He sees a shaker.
-彼は振る器を見る。
-3. 🤔 He puts salt in.
-彼は塩を入れる。
-4. ☕ He drinks the tea.
-彼は茶を飲む。
-5. 😱 Oh no! It is salty!
-ああ、塩辛い！
-6. 🤢 He spits it out.
-彼は吐き出す。
-7. 👩 Minako sees him.
-美奈子が見る。
-8. 😂 She laughs loudly.
-彼女は大声で笑う。
-9. 👉 "That is salt!" she says.
-「あれは塩だ！」と言う。
+1. ☀️ It is a sunny morning.
+朝は晴れています。
+2. 🌧️ But it rains later.
+でも後で雨が降ります。
+3. 🏃 Tony goes to the store.
+トニーは店へ行きます。
+4. ☔ He takes an umbrella.
+彼は傘を持っています。
+5. 🤔 It is very small.
+それはとても小さいです。
+6. 💦 The rain is heavy.
+雨は激しいです。
+7. 😱 Tony gets very wet.
+トニーはびしょ濡れになります。
+8. 🗣️ Jay sees him.
+ジェイは彼を見ます。
+9. 😂 Jay laughs loudly.
+ジェイは大声で笑います。
 10. 😅 Tony is red.
-トニーは赤い。
+トニーは赤いです。
 
-1. 🍵 Do you like tea?
-お茶は好きですか？
-2. ☕ Do you drink coffee?
-コーヒーを飲みますか？
-3. 🧂 Do you like salt?
-塩は好きですか？
-4. 🍬 Do you like sugar?
-砂糖は好きですか？
-5. 😂 Do you laugh loudly?
+1. ☀️ Do you like sunny days?
+晴れた日は好きですか？
+2. 🌧️ Do you like rain?
+雨は好きですか？
+3. 🏃 Do you go to the store often?
+よく店へ行きますか？
+4. ☔ Do you have an umbrella?
+傘を持っていますか？
+5. 🤔 Is your umbrella big?
+あなたの傘は大きいですか？
+6. 💦 Does it rain often in your city?
+あなたの街ではよく雨が降りますか？
+7. 😱 Do you get wet in the rain?
+雨で濡れますか？
+8. 🗣️ Do you laugh with your friends?
+友達と笑いますか？
+9. 😂 Do you laugh loudly?
 大声で笑いますか？
-6. 😅 Are you red when you are shy?
+10. 😅 Are you red when you are shy?
 恥ずかしいとき赤くなりますか？
-7. 👩 Do you have a sister?
-姉妹がいますか？
-8. 👨 Do you have a brother?
-兄弟がいますか？
-9. 🍎 Do you like apples?
-りんごは好きですか？
-10. 🍌 Do you like bananas?
-バナナは好きですか？
 
-1. 🍵 1. Tony wants ___ drink. • a • cat • run • blue •
-トニーは飲み物が欲しい。
-2. 🧂 2. He sees ___ shaker. • a • dog • eat • big •
-彼は振る器を見る。
-3. 🤔 3. He puts salt ___ the cup. • in • apple • is • red •
-彼は塩を入れる。
-4. ☕ 4. He drinks ___ water. • the • milk • sleep • happy •
-彼は水を飲む。
-5. 😱 5. It ___ salty! • is • book • table • green •
-ああ、塩辛い！
-6. 🤢 6. He spits ___ out. • it • cat • run • loud •
-彼は吐き出す。
-7. 👩 7. Minako ___ him. • sees • car • blue • table •
-美奈子が見る。
-8. 😂 8. She ___ loudly. • laughs • dog • car • red •
-彼女は大声で笑う。
-9. 👉 9. "That ___ salt!" • is • apple • table • big •
-「あれは塩だ！」
-10. 😅 10. Tony ___ red. • is • dog • cat • blue •
-トニーは赤い。
+1. ☀️ 1. It ___ a sunny morning. • is • cat • blue • book •
+朝は晴れています。
+2. 🌧️ 2. But it ___ later. • rains • dog • eat • big •
+でも後で雨が降ります。
+3. 🏃 3. Tony ___ to the store. • goes • apple • sleep • red •
+トニーは店へ行きます。
+4. ☔ 4. He ___ an umbrella. • takes • car • jump • loud •
+彼は傘を持っています。
+5. 🤔 5. It ___ very small. • is • book • table • green •
+それはとても小さいです。
+6. 💦 6. The rain ___ heavy. • is • dog • is • red •
+雨は激しいです。
+7. 😱 7. Tony ___ very wet. • gets • cat • run • blue •
+トニーはびしょ濡れになります。
+8. 🗣️ 8. Jay ___ him. • sees • book • sleep • happy •
+ジェイは彼を見ます。
+9. 😂 9. Jay ___ loudly. • laughs • car • big • table •
+ジェイは大声で笑います。
+10. 😅 10. Tony ___ red. • is • dog • jump • loud •
+トニーは赤いです。
 `
   }
 ];

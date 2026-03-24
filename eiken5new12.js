@@ -1,10 +1,11 @@
-// EIKEN 5 - New Section: Week 12 (Tony's Pen and Pencil Mix-up)
+// EIKEN 5 - Week 12: Tony's Pen/Pencil Mix-up (Final Fix: Universal Questions)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
-// Story: Present Simple + "can" focus (School mishap).
+// Story: Coherent TPRS narrative (Present Simple + can).
+// Questions: Fun, universal, vaguely inspired by the story.
 var eiken5new12 = [
   {
-    "title": "Week 12: Tony's Pen and Pencil Mix-up",
+    "title": "Week 12: Tony's Pen/Pencil Mix-up",
     "content": `
 1. 🏫 Tony goes to school.
 トニーは学校へ行きます。
@@ -23,7 +24,7 @@ var eiken5new12 = [
 8. 🗣️ "That is a pencil!" she says.
 「それは鉛筆だ！」と言う。
 9. 😅 Tony is red.
-トニーは赤い。
+トニーは赤いです。
 10. 😂 He can laugh.
 彼は笑えます。
 
@@ -31,20 +32,20 @@ var eiken5new12 = [
 学校へ行きますか？
 2. 🎒 Do you have a bag?
 カバンを持っていますか？
-3. ✏️ Do you want to write?
-書きたいですか？
-4. 🖊️ Do you use a pen?
+3. ✏️ Do you like to write?
+書くことは好きですか？
+4. 🖊️ Do you use pens?
 ペンを使いますか？
 5. ✍️ Can you write well?
 上手に書けますか？
 6. 😲 Are you ever surprised in class?
 授業で驚いたことがありますか？
-7. 🗣️ Do you say "pencil"?
-「鉛筆」と言いますか？
+7. 🗣️ Do you say, "Oh no!"?
+「ああ、だめだ！」と言いますか？
 8. 😅 Are you red when you are shy?
 恥ずかしいとき赤くなりますか？
-9. 😂 Can you laugh at mistakes?
-間違いで笑えますか？
+9. 😂 Do you laugh at funny mistakes?
+面白い間違いで笑いますか？
 10. 🏫 Is school fun?
 学校は楽しいですか？
 
@@ -63,7 +64,7 @@ var eiken5new12 = [
 7. 🗣️ 7. "That ___ a pencil!" • is • cat • run • blue •
 「それは鉛筆だ！」
 8. 😅 8. Tony ___ red. • is • book • sleep • happy •
-トニーは赤い。
+トニーは赤いです。
 9. 😂 9. He ___ laugh. • can • car • big • table •
 彼は笑えます。
 10. 🏫 10. School ___ fun. • is • dog • jump • loud •

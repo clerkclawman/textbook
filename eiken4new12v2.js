@@ -1,7 +1,8 @@
-// EIKEN 4 - Week 12: Tony's Burnt Cake (Rewritten for Clarity)
+// EIKEN 4 - Week 12: Tony's Burnt Cake (Final Fix: Universal Questions)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
 // Story: Coherent TPRS narrative (Past Simple + Future).
+// Questions: Fun, universal, vaguely inspired by the story.
 var eiken4new12v2 = [
   {
     "title": "Week 12: Tony's Burnt Cake",
@@ -37,12 +38,12 @@ var eiken4new12v2 = [
 オーブンで食べ物を焦がしたことがありますか？
 5. 😱 Was the food ever black?
 食べ物が黒くなったことはありますか？
-6. 🍽️ Have you ever eaten something you didn't like?
-食べたくないものを食べたことがありますか？
+6. 🍽️ Have you ever eaten something strange?
+奇妙なものを食べたことがありますか？
 7. 🤢 Have you ever made a mistake in the kitchen?
 台所で失敗をしたことがありますか？
-8. 😂 Did everyone laugh at your mistake?
-みんながあなたの間違いで笑いましたか？
+8. 😂 Do you laugh when things go wrong?
+何かうまくいかないとき笑いますか？
 9. 🗓️ Will you try again if you fail?
 失敗したらもう一度挑戦しますか？
 10. 🍰 Do you want to learn to bake well?

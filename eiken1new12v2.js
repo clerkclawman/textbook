@@ -1,7 +1,8 @@
-// EIKEN 1 - Week 12 (Revised v2): The Ethics of Artificial Intelligence
+// EIKEN 1 - Week 12: The Ethics of Artificial Intelligence (Final Fix: Universal Questions)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
 // Story: Coherent TPRS narrative (Advanced Passive, Reported Speech, Complex Conditionals).
+// Questions: Fun, universal, vaguely inspired by the story.
 var eiken1new12v2 = [
   {
     "title": "Week 12: The Ethics of Artificial Intelligence",
@@ -35,8 +36,8 @@ AIは厳しく規制されるべきだと思いますか？
 イノベーションは規則によって妨げられるべきですか？
 4. 🤔 Although you have an opinion, can you see the other side?
 意見がありますが、反対側も見えますか？
-5. 📊 What did the report say about socio-economic impacts?
-報告書は社会経済的影響について何と言っていましたか？
+5. 📊 Do you think AI will change our lives?
+AIは私たちの生活を変えると思いますか？
 6. 🌐 If AI were not regulated, what could happen?
 AIが規制されなければ、何が起こるでしょうか？
 7. 🧠 How has technology altered your daily life fundamentally?
