@@ -31,14 +31,14 @@ var eiken6new12 = [
 今日は晴れていますか？
 2. 🌳 Do you like parks?
 公園は好きですか？
-3. 🏃 Are you running now?
-あなたは今走っていますか？
-4. 🐶 Do you have two dogs?
-犬を二匹持っていますか？
+3. 🏃 Do you run in the park?
+公園で走りますか？
+4. 🐶 Do you have a dog?
+犬を持っていますか？
 5. 🐕 Do you play with dogs?
 犬と遊びますか？
-6. 📚 Are you reading a book?
-あなたは本を読んでいますか？
+6. 📚 Do you read books?
+本を読みますか？
 7. ☕ Do you drink coffee?
 コーヒーを飲みますか？
 8. 😂 Do you laugh loudly?
@@ -48,25 +48,25 @@ var eiken6new12 = [
 10. 🥰 Do you have fun?
 楽しんでいますか？
 
-1. ☀️ 1. It ___ sunny today. • is • are • am • be •
+1. ☀️ 1. It ___ sunny today. • is • cat • run • blue •
 今日は晴れています。
-2. 🌳 2. Tony ___ at the park. • is • are • am • be •
+2. 🌳 2. Tony ___ at the park. • is • dog • eat • big •
 トニーは公園にいます。
-3. 🏃 3. He ___ running now. • is • are • am • be •
+3. 🏃 3. He ___ running now. • is • apple • sleep • red •
 彼は今走っています。
-4. 🐶 4. He sees two ___. • dogs • dog • dog-s • doges •
+4. 🐶 4. He sees two ___. • dogs • car • jump • loud •
 彼は二匹の犬を見ます。
-5. 🐕 5. They ___ playing together. • are • is • am • be •
+5. 🐕 5. They ___ playing together. • are • book • table • green •
 彼らは一緒に遊んでいます。
-6. 📚 6. Jay is ___ a book. • reading • read • reads • readed •
+6. 📚 6. Jay is ___ a book. • reading • dog • is • red •
 ジェイは本を読んでいます。
-7. ☕ 7. He ___ drinking coffee. • is • are • am • be •
+7. ☕ 7. He ___ drinking coffee. • is • cat • run • blue •
 彼はコーヒーを飲んでいます。
-8. 😂 8. He ___ laughing loudly. • is • are • am • be •
+8. 😂 8. He ___ laughing loudly. • is • book • sleep • happy •
 彼は大声で笑っています。
-9. 👩 9. Minako is ___ photos. • taking • take • takes • took •
+9. 👩 9. Minako is ___ photos. • taking • car • big • table •
 美奈子は写真を撮っています。
-10. 🥰 10. They ___ having fun. • are • is • am • be •
+10. 🥰 10. They ___ having fun. • are • dog • jump • loud •
 彼らは楽しんでいます。
 `
   }
