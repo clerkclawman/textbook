@@ -1,7 +1,8 @@
-// EIKEN Pre-2 - Week 12: The Great Festival Disaster (Rewritten for Clarity)
+// EIKEN Pre-2 - Week 12: The Great Festival Disaster (Final Fix: Universal Questions)
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
 // Story: Coherent TPRS narrative (Past Continuous, Passive, Reported Speech).
+// Questions: Fun, universal, vaguely inspired by the story.
 var eikenpre2new12 = [
   {
     "title": "Week 12: The Great Festival Disaster",
@@ -27,26 +28,26 @@ var eikenpre2new12 = [
 10. 😂 Jay said that it was a wonderful new recipe.
 ジェイはそれが素晴らしい新しいレシピだと言いました。
 
-1. 🎪 Have you ever cooked for a festival?
-祭りのために調理したことがありますか？
-2. 🔥 Have you ever burned dinner?
-夕食を焦がしたことがありますか？
-3. 📢 Do people shout at festivals sometimes?
-祭りで人々は時々叫びますか？
-4. 🐶 Were animals scared by loud noises there?
-動物はその場所で大きな音に怖がられましたか？
-5. 🏃 Did people run away from the noise?
-人々は騒音から逃げましたか？
-6. 😱 What did the mayor say about them?
-市長は彼らについて何と言いましたか？
-7. 🍜 Although you tried, did it fail anyway?
-頑張りましたが、それでも失敗しましたか？
-8. 🚑 Must the food be thrown away now?
-食べ物は今捨てられなければなりませんか？
-9. 🤦 Were you embarrassed by a big mistake?
-大きな間違いで恥ずかしかったことがありますか？
-10. 😂 Did Jay say it was a new recipe?
-ジェイは新しいレシピだと言いましたか？
+1. 🎪 Do you like festivals?
+祭りは好きですか？
+2. 🔥 Have you ever burned food?
+食べ物を焦がしたことがありますか？
+3. 📢 Do you like loud voices?
+大きな声は好きですか？
+4. 🐶 Are dogs scared of loud noises?
+犬は大きな音に怖がりますか？
+5. 🏃 Do you run when you hear a loud noise?
+大きな音を聞いたら走りますか？
+6. 😱 Have you ever said something embarrassing?
+恥ずかしいことを言ったことがありますか？
+7. 🍜 Have you ever tried your best but failed?
+最善を尽くしたのに失敗したことがありますか？
+8. 🚑 Do you hate throwing away food?
+食べ物を捨てるのは嫌ですか？
+9. 🤦 Have you ever felt embarrassed?
+恥ずかしいと思ったことがありますか？
+10. 😂 Do you think mistakes can be funny?
+間違いは面白いと思いますか？
 
 1. 🎪 1. Tony was cooking ___ for a festival. • dinner • cat • blue • book •
 トニーは祭りのために夕食を調理していました。
