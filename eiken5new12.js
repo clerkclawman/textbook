@@ -37,8 +37,8 @@ var eiken5new12 = [
 ペンを使いますか？
 5. ✍️ Can you write well?
 上手に書けますか？
-6. 😲 Is the teacher surprised?
-先生は驚いていますか？
+6. 😲 Are you ever surprised in class?
+授業で驚いたことがありますか？
 7. 🗣️ Do you say "pencil"?
 「鉛筆」と言いますか？
 8. 😅 Are you red when you are shy?

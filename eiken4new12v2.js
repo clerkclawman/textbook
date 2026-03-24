@@ -33,10 +33,10 @@ var eiken4new12v2 = [
 料理したかったですか？
 3. 🥚 Did you put eggs in?
 卵を入れましたか？
-4. 🔥 Was the cake burning?
-ケーキは焦げていましたか？
-5. 😱 Was it black?
-黒かったですか？
+4. 🔥 Have you ever burned food?
+食べ物を焦がしたことがありますか？
+5. 😱 Have you ever made something that looked bad?
+見た目が悪いものを作ったことがありますか？
 6. 🍽️ Did you eat the cake?
 ケーキを食べましたか？
 7. 🤢 Was it bad?
