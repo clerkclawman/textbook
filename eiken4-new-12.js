@@ -1,31 +1,31 @@
-// EIKEN 4 - New Section: Week 12 (Tony's Burnt Cake at the Party)
+// EIKEN 4 - Week 12 (Revised v2): Tony's Burnt Cake
 // Format: 3 Sections (Story, Personal Questions, Cloze Test)
 // Bilingual with unique emojis, English and Japanese on SEPARATE lines.
-// Story: Past Simple + Future focus (Cooking disaster).
-var eiken4new12 = [
+// Story: Coherent TPRS narrative (Past Simple + Future).
+var eiken4new12v2 = [
   {
-    "title": "Week 12: Tony's Burnt Cake at the Party",
+    "title": "Week 12: Tony's Burnt Cake",
     "content": `
-1. 🎉 Last weekend, I went to a party.
-先週末、パーティーに行きました。
-2. 🍰 I wanted to cook a cake.
-ケーキを焼きたいと思いました。
-3. 🥚 I put eggs and flour in.
-卵と小麦粉を入れました。
+1. 🎉 Last weekend, Tony went to a party.
+先週末、トニーはパーティーに行きました。
+2. 🍰 He wanted to bake a cake.
+彼はケーキを焼きたかったです。
+3. 🥚 He put eggs and flour in.
+彼は卵と小麦粉を入れました。
 4. 🔥 The cake was burning.
-ケーキが焦げていました。
+ケーキは焦げていました。
 5. 😱 Oh no! It was black!
-ああ、黒いです！
-6. 🍽️ I ate the burnt cake.
-焦げたケーキを食べました。
+ああ、黒かったです！
+6. 🍽️ He ate the burnt cake.
+彼は焦げたケーキを食べました。
 7. 🤢 It was very bad.
 とてもまずかったです。
 8. 😂 Everyone laughed loudly.
 みんな大声で笑いました。
-9. 🗓️ Next week, I will try again.
-来週、もう一度挑戦します。
-10. 🍰 I will make a good cake.
-いいケーキを作ります。
+9. 🗓️ Next week, he will try again.
+来週、彼はもう一度挑戦します。
+10. 🍰 He will make a good cake.
+彼はいいケーキを作ります。
 
 1. 🎉 Did you go to a party?
 パーティーに行きましたか？
@@ -48,26 +48,26 @@ var eiken4new12 = [
 10. 🍰 Will you make a good cake?
 いいケーキを作りますか？
 
-1. 🎉 1. Last weekend, I ___ to a party. • went • cat • run • blue •
-先週末、パーティーに行きました。
-2. 🍰 2. I ___ to cook a cake. • wanted • dog • eat • big •
-ケーキを焼きたいと思いました。
-3. 🥚 3. I ___ eggs and flour in. • put • apple • sleep • red •
-卵と小麦粉を入れました。
-4. 🔥 4. The cake ___ burning. • was • car • jump • loud •
+1. 🎉 1. Last weekend, Tony ___ to a party. • went • cat • blue • book •
+先週末、トニーはパーティーに行きました。
+2. 🍰 2. He ___ to cook a cake. • wanted • dog • big • apple •
+彼はケーキを焼きたかったです。
+3. 🥚 3. He ___ eggs and flour in. • put • car • red • table •
+彼は卵と小麦粉を入れました。
+4. 🔥 4. The cake ___ burning. • was • dog • loud • cat •
 ケーキは焦げていました。
-5. 😱 5. It ___ black! • was • book • table • green •
+5. 😱 5. It ___ black! • was • book • green • table •
 黒かったです！
-6. 🍽️ 6. I ___ the burnt cake. • ate • dog • is • red •
-焦げたケーキを食べました。
-7. 🤢 7. It ___ very bad. • was • cat • run • blue •
+6. 🍽️ 6. He ___ the burnt cake. • ate • dog • red • apple •
+彼は焦げたケーキを食べました。
+7. 🤢 7. It ___ very bad. • was • cat • blue • book •
 とてもまずかったです。
-8. 😂 8. Everyone ___ loudly. • laughed • book • sleep • happy •
+8. 😂 8. Everyone ___ loudly. • laughed • dog • big • apple •
 みんな大声で笑いました。
-9. 🗓️ 9. Next week, I ___ try again. • will • car • big • table •
-来週、もう一度挑戦します。
-10. 🍰 10. I ___ make a good cake. • will • dog • jump • loud •
-いいケーキを作ります。
+9. 🗓️ 9. Next week, he ___ try again. • will • car • loud • table •
+来週、彼はもう一度挑戦します。
+10. 🍰 10. He ___ make a good cake. • will • dog • red • cat •
+彼はいいケーキを作ります。
 `
   }
 ];
