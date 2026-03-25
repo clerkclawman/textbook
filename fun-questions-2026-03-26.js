@@ -1,107 +1,107 @@
 var funQuestions20260326 = [
   {
-    title: "Fun Questions - March 26 (Late March/Spring Break)",
+    title: "Fun Questions - March 26 (Late March/Osaka/Spring Break)",
     content: `
 L7. 🌸 Is the sky blue today?
-今日の空は青いですか。
-L7. 🍓 Do you like strawberries?
-あなたはイチゴが好きですか。
-L7. 🎒 Is your bag heavy?
-あなたのカバンは重いですか。
-L7. 🐦 Do you see birds outside?
-あなたは外で鳥を見ますか。
-L7. 🌤️ Is it warm today?
-今日はお天気ですか。
-L7. 🏫 Do you go to school today?
-あなたは今日学校に行きますか。
-L7. 🌸 Are the flowers pink?
-花はピンクですか。
-L7. 🍙 Do you eat rice balls?
-あなたはおにぎりを食べますか。
+今日は空は青いですか。
+L7. 🐦 Do you see birds in the park?
+公園で鳥を見ますか。
+L7. 🍓 Are strawberries red?
+イチゴは赤いですか。
+L7. 🎒 Is your school bag heavy?
+あなたのランドセルは重いですか。
+L7. 🌤️ Is it warm outside now?
+今、外は暖かいですか。
+L7. 🏫 Do you walk to school?
+学校まで歩きますか。
+L7. 🌳 Are the trees green?
+木々は緑ですか。
+L7. 🍱 Do you like your lunch?
+お弁当は好きですか。
+L7. 🌸 Do you see pink flowers?
+ピンクの花を見ますか。
 L7. 😊 Are you happy today?
-あなたは今日幸せですか。
-L7. 🎨 Do you like colors?
-あなたは色が好きですか。
+今日あなたは幸せですか。
 L6. 🌸 Can you see cherry blossoms?
-あなたは桜を見ることができますか。
-L6. 🎉 Are you happy school ends?
-あなたは学校が終わって幸せですか。
-L6. 🏃 Can you run in the park?
-あなたは公園で走ることができますか。
+桜を見ることができますか。
+L6. 🎓 Is your friend graduating?
+あなたの友達は卒業しますか。
+L6. 🏯 Do you like Osaka Castle?
+大阪城は好きですか。
+L6. 🍡 Are you eating sweets now?
+今、お菓子を食べていますか。
+L6. 🌤️ Is the weather nice today?
+今日はお天気はいいですか。
+L6. 🎮 Do you play games at home?
+家でゲームをしますか。
+L6. 🌳 Are the flowers blooming?
+花は咲いていますか。
+L6. 🚶 Do you walk in the park?
+公園を歩きますか。
 L6. 🍓 Are strawberries sweet now?
 イチゴは今甘いですか。
-L6. 🌤️ Is the weather nice today?
-今日のお天気はいいですか。
-L6. 🎮 Can you play games today?
-あなたは今日ゲームをすることができますか。
-L6. 🌸 Are the flowers beautiful?
-花はきれいですか。
-L6. 😴 Can you sleep late tomorrow?
-あなたは明日遅くまで寝ることができますか。
-L6. 🏯 Can you visit Osaka Castle?
-あなたは大阪城を訪れることができますか。
-L6. 🍡 Do you like sweet foods?
-あなたは甘い食べ物が好きですか。
-L5. 🌸 What do you see in the park?
-あなたは公園で何を見ますか。
-L5. 🎒 Where is your school bag?
-あなたのランドセルはどこですか。
+L6. 🏫 Do you feel happy at school?
+学校で幸せを感じますか。
+L5. 🌸 What do you see in spring?
+春に何を見ますか。
+L5. 🎓 Where did you go today?
+今日どこに行きましたか。
+L5. 🍡 What is your favorite snack?
+お気に入りのスナックは何ですか。
 L5. 🌤️ How is the weather today?
 今日のお天気はどうですか。
-L5. 🍓 What is your favorite fruit?
-あなたの好きな果物は何ですか。
-L5. 🏫 Who is your best friend?
-あなたの一番の友達だれですか。
-L5. 🌸 When do you see pink flowers?
-あなたはいつピンクの花を見ますか。
-L5. 🎮 What games do you play now?
-あなたは今どんなゲームをしますか。
-L5. 🏯 Where can you see castle views?
-あなたはどこでお城の景色を見ることができますか。
-L5. 🍡 What do you eat in spring?
-あなたは春に何を食べますか。
-L5. 😊 Why are you happy today?
-あなたは今日なぜ幸せですか。
-L4. 🌸 Did you see cherry blossoms today?
-あなたは今日桜を見ましたか。
-L4. 🎉 Where did you go yesterday?
-あなたは昨日どこに行きましたか。
+L5. 🏯 Do you like Osaka Castle park?
+大阪城公園は好きですか。
+L5. 🌸 When do you see cherry blossoms?
+いつ桜を見ますか。
+L5. 🎒 What is in your school bag?
+ランドセルの中身は何ですか。
+L5. 🍓 Do you eat strawberries now?
+今イチゴを食べますか。
+L5. 🌳 Where do you play outside?
+外でどこで遊びますか。
+L5. 🎉 What will you do this week?
+今週何をしますか。
+L4. 🌸 Did you see cherry blossoms yesterday?
+昨日桜を見ましたか。
+L4. 🎓 Where will you go on break?
+休暇はどこに行きますか。
+L4. 🍡 What did you eat for lunch?
+昼食に何を食べましたか。
 L4. 🏯 Did you visit Osaka Castle?
-あなたは大阪城を訪れましたか。
-L4. 🍓 What did you eat for lunch?
-あなたは昼食に何を食べましたか。
-L4. 🌤️ Will it be warm tomorrow?
-明日は暖かくなりますか。
-L4. 🎮 What will you do this week?
-あなたは今週何をしますか。
+大阪城を訪れましたか。
+L4. 🌤️ How was the weather today?
+今日のお天気はどうでしたか。
+L4. 🎮 What games will you play?
+どんなゲームをしますか。
 L4. 🌸 Did you take photos of flowers?
-あなたは花の写真を撮りましたか。
-L4. 🏃 Are you going to play outside?
-あなたは外で遊ぶつもりですか。
-L4. 🍡 Did you try takoyaki last week?
-あなたは先週たこ焼きを食べましたか。
-L4. 😴 Will you sleep late tomorrow?
-あなたは明日遅くまで寝るつもりですか。
+花の写真を撮りましたか。
+L4. 🍓 Will you buy strawberries tomorrow?
+明日イチゴを買いますか。
+L4. 🌳 Where did you walk today?
+今日どこを歩きましたか。
+L4. 🎉 What will you do this weekend?
+今週末何をしますか。
 L3. 🌸 Have you ever seen pink sakura?
-あなたは一度でもピンクの桜を見たことがありますか。
-L3. 🏯 If you visit Osaka, what do you see?
-大阪を訪れるなら、あなたは何を見ますか。
-L3. 🎉 Which is better, spring or winter?
-どちらがいいですか、春か冬か。
-L3. 🍓 Have you eaten fresh strawberries?
-あなたは新鮮なイチゴを食べたことがありますか。
-L3. 🌤️ If it is sunny, what will you do?
-晴れなら、あなたは何をしますか。
-L3. 🏫 Have you said goodbye to friends?
-あなたは友達にさようなら言ったことがありますか。
-L3. 🎮 What is the most fun game now?
-今、一番楽しいゲームは何ですか。
-L3. 🌸 Which place has the best cherry blossoms?
-どこが一番いい桜がありますか。
-L3. 🍡 If you go to Dotonbori, what do you eat?
-道頓堀に行くなら、あなたは何を食べますか。
-L3. 😊 Have you been to the park today?
-あなたは今日公園に行きましたか。
+ピンクの桜を見たことがありますか。
+L3. 🎓 If you graduate, what will you do?
+卒業したら何をしますか。
+L3. 🏯 Which is better: Dotonbori or Umeda?
+道頓堀と梅田、どちらがいいですか。
+L3. 🍡 Have you tried takoyaki before?
+たこ焼きを食べたことがありますか。
+L3. 🌤️ If it is warm, where will you go?
+暖かかったらどこに行きますか。
+L3. 🌸 What is the best place for flowers?
+花を見るのに最高の場所はどこですか。
+L3. 🎓 Have you said goodbye to friends?
+友達に別れを言いましたか。
+L3. 🍓 Which is more delicious: strawberry or apple?
+イチゴとりんご、どちらがもっと美味しいですか。
+L3. 🏯 If you visit Osaka, what will you see?
+大阪を訪れたら何を見ますか。
+L3. 🌳 Have you been to the park today?
+今日公園に行きましたか。
 `
   }
 ];
