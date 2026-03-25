@@ -93,7 +93,7 @@ L3. 🍓 Have you eaten fresh strawberries?
 L3. 🌤️ If it is sunny, what will you do?
 晴れなら、あなたは何をしますか。
 L3. 🏫 Have you said goodbye to friends?
-あなたは友達にさようなら说了ことがありますか。
+あなたは友達にさようなら言ったことがありますか。
 L3. 🎮 What is the most fun game now?
 今、一番楽しいゲームは何ですか。
 L3. 🌸 Which place has the best cherry blossoms?
