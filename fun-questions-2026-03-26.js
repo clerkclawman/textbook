@@ -1,102 +1,85 @@
 var funQuestions20260326 = [
-  "L7. 🐼 Do you like pandas?",
-  "パンダが好きですか？",
-  "L7. 🌸 Is sakura pretty?",
-  "桜はきれいですか？",
-  "L7. 🍢 Do you eat takoyaki?",
-  "たこ焼きを食べますか？",
-  "L7. 🎵 Can you dance to BTS?",
-  "BTSのダンスができますか？",
-  "L7. 🌞 Is spring warm?",
-  "春は暖かいですか？",
-  "L6. 🎤 Are you watching BTS now?",
-  "あなたは今BTSを見ていますか？",
-  "L6. 🌸 Do you want to see sakura?",
-  "桜を見たいですか？",
-  "L6. 🍜 Are you eating ramen in Osaka?",
-  "あなたは大阪でラーメンを食べていますか？",
-  "L6. 🎵 Do you like K-pop or J-pop?",
-  "あなたはK-POPが好きですか、それともJ-POPが好きですか？",
-  "L6. 🌏 Is the robot dancing?",
-  "ロボットはダンスをしていますか？",
-  "L5. 🎓 What do you do on spring break?",
-  "春休みに何をしますか？",
-  "L5. 🌸 Where do you go to see cherry blossoms?",
-  "桜を見に行きますか？",
-  "L5. 🎤 Do you listen to BTS music?",
-  "あなたはBTSの音楽を聞きますか？",
-  "L5. 🍜 What do you eat in Osaka?",
-  "あなたは大阪で何を食べますか？",
-  "L5. 🌞 Do you like warm spring weather?",
-  "あなたは暖かい春の天気が好きですか？",
-  "L4. 🎓 Did you graduate this month?",
-  "今月卒業しましたか？",
-  "L4. 🌸 Did you see sakura yesterday?",
-  "昨日桜を見ましたか？",
-  "L4. 🎤 Will you watch the BTS concert on Netflix?",
-  "あなたはNetflixでBTSのコンサートを見るつもりですか？",
-  "L4. 🍜 What did you eat at Dotonbori?",
-  "道頓堀で何を食べましたか？",
-  "L4. 🌏 Will you travel during spring break?",
-  "春休みに旅行しますか？",
-  "L3. 🎓 Have you ever been to Dotonbori?",
-  "道頓堀に行ったことがありますか？",
-  "L3. 🌸 If it is sunny, will you see sakura?",
-  "晴れていたら、桜を見に行きますか？",
-  "L3. 🎤 Which is more popular: BTS or local singers?",
-  "どちらがもっと人気ですか：BTS还是当地的歌手？",
-  "L3. 🌏 Have you ever seen news about energy crises?",
-  "エネルギー危機についてのニュースを見たことがありますか？",
-  "L3. 🍜 Is Osaka food better than Tokyo food?",
-  "大阪の食べ物は東京の食べ物より美味しいですか？",
-  "LPre2. 🎓 What were you doing when you graduated?",
-  "卒業していたとき、何をしていたのですか？",
-  "LPre2. 🌸 Was the sakura festival cancelled last year?",
-  "去年の桜祭りはキャンセルされましたか？",
-  "LPre2. 🎤 Did the news say BTS concert was successful?",
-  "ニュースはBTSコンサートが成功したと言いましたか？",
-  "LPre2. 🌏 What were people doing during the energy crisis?",
-  "エネルギー危機の間に人々は何をしていたのですか？",
-  "LPre2. 🍜 Was kushikatsu invented in Osaka?",
-  "串カツは大阪で発明されましたか？",
-  "LPre2+. 🎓 What had you done before you graduated?",
-  "卒業する前に何をしていたのですか？",
-  "LPre2+. 🌸 If you were a cherry blossom, where would you fall?",
-  "もし桜の花だったら、どこに落ちますか？",
-  "LPre2+. 🎤 Who is the singer who performed at the BTS concert?",
-  "BTSコンサートで演奏した歌手は誰ですか？",
-  "LPre2+. 🌏 If oil prices rise, what would happen to bus fares?",
-  "石油価格が上がったら、バス料金はどうなりますか？",
-  "LPre2+. 🍜 What had you eaten before you visited Dotonbori?",
-  "道頓堀に行く前に何を食べましたか？",
-  "L2. 🎓 Why do you think graduation is important?",
-  "なぜ卒業が重要だと思いますか？",
-  "L2. 🌸 How would you explain sakura culture to a foreigner?",
-  "外国人に桜の文化をどう説明しますか？",
-  "L2. 🎤 What is the evidence that K-pop is global?",
-  "K-POPが世界的であるという証拠は何ですか？",
-  "L2. 🌏 Why do you think energy crises affect Japan?",
-  "エネルギー危機が日本に影響を与えると思いますか？",
-  "L2. 🍜 If you were an Osaka chef, what would you cook?",
-  "もし大阪のシェフだったら、何を作りますか？",
-  "LPre1. 🎓 Critique the idea that graduation marks the end of learning.",
-  "卒業が学びの終わりを示すというアイデアを批判してください。",
-  "LPre1. 🌸 What would have happened if cherry blossoms never bloomed?",
-  "もし桜が一度も咲かなかったら、どうなっていたでしょうか？",
-  "LPre1. 🎤 How does BTS influence youth culture in Asia?",
-  "BTSはアジアの若者文化にどのように影響していますか？",
-  "LPre1. 🌏 Critique the government's response to the energy crisis.",
-  "政府のエネルギー危機への対応を批判してください。",
-  "LPre1. 🍜 In what way does Osaka food culture influence tourism?",
-  "大阪の食文化は観光にどのように影響していますか？",
-  "L1. 🎓 Discuss the implications of digital graduation ceremonies.",
-  "デジタル卒業式の含意について論じてください。",
-  "L1. 🌸 To what extent does sakura symbolize Japanese identity?",
-  "桜は日本のアイデンティティをどの程度象徴していますか？",
-  "L1. 🎤 Analyze the economic impact of K-pop on streaming platforms.",
-  "K-POPがストリーミングプラットフォームに与える経済的影響を分析してください。",
-  "L1. 🌏 Discuss the global implications of energy crises on developing nations.",
-  "エネルギー危機が発展途上国に与える世界的な含意について論じてください。",
-  "L1. 🍜 In what way does regional cuisine shape cultural diplomacy?",
-  "地域の料理は文化的外交にどのように影響していますか？"
+  {
+    title: "Fun Questions - March 26th, 2026",
+    content: `L7. 🌸 Do you like sakura?
+桜が好きですか。
+L7. 🍡 Is takoyaki yummy?
+たこ焼きはおいしいですか。
+L7. 🐱 Do you have a pet?
+ペットはいますか。
+L7. 🎮 Do you play games?
+ゲームはしますか。
+L7. 🌞 Is today sunny?
+今日は晴れですか。
+L6. 🎨 Are you drawing now?
+あなたは今絵を描いていますか。
+L6. 🏃 Are they running fast?
+彼らは速く走っていますか。
+L6. 📚 Is she reading a book?
+彼女は本を読んでいますか。
+L6. 🌧️ Is it raining now?
+今は雨が降っていますか。
+L6. 🍕 Do you have two cats?
+あなたは二匹の猫を飼っていますか。
+L5. 🎵 Do you like music?
+あなたは音楽が好きですか。
+L5. ⚽ Do you play soccer?
+あなたはサッカーをしますか。
+L5. 📺 Do you watch TV?
+あなたはテレビを見ますか。
+L5. 🍎 Do you eat apples?
+あなたはリンゴを食べますか。
+L5. 🏠 Where is your house?
+あなたの家はどこですか。
+L4. 🎉 Did you go to a party?
+あなたはパーティーに行きましたか。
+L4. 🏖️ Did you visit Canada?
+あなたはカナダを訪れましたか。
+L4. 🎬 Will you watch a movie?
+あなたは映画を見るつもりですか。
+L4. 🎂 Will it be fun?
+それは楽しいでしょうか。
+L4. 🎈 What did you eat?
+あなたは 무엇을 먹었습니까。
+L3. 🌍 Have you been to Tokyo?
+あなたは東京に行ったことがありますか。
+L3. 🎭 If you have time, come.
+時間があったら、来てください。
+L3. 🏆 Which is more interesting?
+どちらがもっと面白いですか。
+L3. 🚧 Was the road closed?
+道路は閉鎖されていましたか。
+L3. 📖 She said that...
+彼女は...と言いました。
+L2. 🌐 While I was walking, I saw...
+私が歩いている間に、私は...を見ました。
+L2. 🏛️ The ways have been limited.
+方法は長く制限されていました。
+L2. 💬 He said that he wanted...
+彼は...と言いたかったと述べました。
+L2. 🎓 Although it was hot, we swam.
+暑かったですが、私たちは泳ぎました。
+L2. 🌱 You should care more.
+あなたはもっと気にするべきです。
+L2. 🌟 It would be great if...
+もし...であれば素晴らしいでしょう。
+L2. 🏢 A company that developed...
+開発した会社が...
+L2. 🌊 The water that comes out...
+出てくる水は...
+L2. 🏘️ The economy has changed.
+経済は変化しました。
+L2. 🌡️ Climate change is a challenge.
+気候変動は課題です。
+L1. 🎭 The question of why...
+なぜ...かという質問は...
+L1. 🌫️ Nevertheless, critics have concerns.
+それでも、批判者たちは懸念を持っています。
+L1. 📊 How the children were taught...
+子供たちがどのように教えられたかが...
+L1. 🏛️ The fact that our brains...
+私たちが脳を持っているという事実...
+L1. 🧠 Had it not been for...
+...でなかったならば。`
+  }
 ];
