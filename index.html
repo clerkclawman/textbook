@@ -1427,90 +1427,12 @@
         }
     }
 
-function displayClozeQuestions() {
-  // Get the questions from window.currentQuizQuestions
-  const questions = window.currentQuizQuestions || [];
-  if (questions.length === 0) {
-    console.error('No quiz questions available');
-    return;
-  }
-  
-  // Find or create a container for the quiz
-  let quizContainer = document.getElementById('quizContainer');
-  if (!quizContainer) {
-    quizContainer = document.createElement('div');
-    quizContainer.id = 'quizContainer';
-    quizContainer.style.cssText = 'padding: 20px; font-size: 1.1em;';
-    const main = document.querySelector('main') || document.body;
-    main.appendChild(quizContainer);
-  }
-  
-  // Clear previous questions
-  quizContainer.innerHTML = '';
-  
-  // Display each question
-  questions.forEach((q, index) => {
-    const questionDiv = document.createElement('div');
-    questionDiv.style.cssText = 'margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;';
-    
-    // Question sentence with blank
-    const sentence = document.createElement('p');
-    sentence.style.cssText = 'font-size: 1.2em; margin-bottom: 10px;';
-    sentence.textContent = `${index + 1}. ${q.sentence}`;
-    questionDiv.appendChild(sentence);
-    
-    // Options as radio buttons
-    const optionsDiv = document.createElement('div');
-    optionsDiv.style.cssText = 'margin-left: 20px;';
-    
-    q.options.forEach((opt, optIndex) => {
-      const label = document.createElement('label');
-      label.style.cssText = 'display: block; margin: 5px 0; cursor: pointer;';
-      
-      const radio = document.createElement('input');
-      radio.type = 'radio';
-      radio.name = `question-${index}`;
-      radio.value = optIndex;
-      radio.style.cssText = 'margin-right: 8px;';
-      
-      label.appendChild(radio);
-      label.appendChild(document.createTextNode(opt));
-      optionsDiv.appendChild(label);
-    });
-    
-    questionDiv.appendChild(optionsDiv);
-    quizContainer.appendChild(questionDiv);
-  });
-  
-  // Add a submit button
-  const submitBtn = document.createElement('button');
-  submitBtn.textContent = 'Submit Answers';
-  submitBtn.style.cssText = 'margin-top: 20px; padding: 10px 20px; background: #4361ee; color: white; border: none; border-radius: 5px; cursor: pointer;';
-  submitBtn.onclick = function() {
-    let score = 0;
-    questions.forEach((q, index) => {
-      const selected = document.querySelector(`input[name="question-${index}"]:checked`);
-      if (selected && parseInt(selected.value) === q.answer) {
-        score++;
-      }
-    });
-    alert(`Your score: ${score}/${questions.length}`);
-  };
-  quizContainer.appendChild(submitBtn);
-}
-
-
-function handleStorySelect() {
-  currentStory = this.value;
-  if (currentStory) {
-    if (currentClass === 'ClozeQuiz') {
-      // For Cloze Quiz, display the questions instead of entering reading mode
-      displayClozeQuestions();
-    } else {
-      enterReadingMode(currentClass);
+    function handleStorySelect() {
+        currentStory = this.value;
+        if (currentStory) {
+            enterReadingMode(currentClass);
+        }
     }
-  }
-}
 
     function populateStorySelector(cls) {
         storySelector.innerHTML = '<option value="">Select Story</option>';
@@ -1554,41 +1476,20 @@ function handleStorySelect() {
         }
 
         // lessonsData[cls] is now directly an array of story objects
-      classData.forEach((item, index) => {
         console.log('Processing', classData.length, 'stories');
-      let optionText = '';
-      // Handle ClozeQuiz items (have 'level' and 'sentence' but no 'title')
-      if (cls === 'ClozeQuiz') {
-        // For Cloze Quiz, show the date (e.g., 'Today's Quiz' or specific date)
-        const today = new Date();
-        const dateStr = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-        
-        const option = document.createElement('option');
-        option.value = 'today';
-        option.textContent = dateStr;
-        storySelector.appendChild(option);
-        optionIndex++;
-        
-        // Store the questions globally for display when selected
-        window.currentQuizQuestions = classData;
-      } else {
-        // Standard story logic for other classes
         classData.forEach((item, index) => {
-          let optionText = '';
-          if (item && item.title) {
-            optionText = item.title;
-          } else {
-            console.warn('Invalid item at index', index, ':', item);
-            return;
-          }
-          
-          const option = document.createElement('option');
-          option.value = optionIndex;
-          option.textContent = optionText;
-          storySelector.appendChild(option);
-          optionIndex++;
+            if (cls === 'ClozeQuiz' && item.level && item.sentence) {
+        optionText = `${item.level}: ${item.sentence}`;
+      } else if (item && item.title) {
+                const option = document.createElement("option");
+                option.value = optionIndex;
+                option.textContent = story.title;
+                storySelector.appendChild(option);
+                optionIndex++;
+            } else {
+                console.warn('Invalid item at index', index, ':', item);
+            }
         });
-      }
 
         console.log('Added', optionIndex, 'options to story selector');
         storySelector.disabled = false;
