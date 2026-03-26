@@ -54,12 +54,24 @@ async function loadQuizFile(filename) {
  */
 function parseJavaScriptQuiz(javascript) {
   try {
+    // Remove single-line comments (// ...) and multi-line comments (/* ... */)
+    let cleanCode = javascript.replace(/\/\/.*$/gm, '').replace(/\/\*[\s\S]*?\*\//g, '');
+    
     // Extract the array from "var quizYYYYMMDD = [...]"
-    const match = javascript.match(/var\s+quiz\d+\s*=\s*(\[.*?\]);?$/s);
+    // Use a more flexible regex that allows whitespace and newlines
+    const match = cleanCode.match(/var\s+quiz\d+\s*=\s*(\[[\s\S]*?\])\s*;?\s*$/);
+    
     if (match && match[1]) {
-      return JSON.parse(match[1]);
+      // Try to parse the array
+      try {
+        return JSON.parse(match[1]);
+      } catch (parseError) {
+        console.error('JSON parse error for quiz data:', parseError);
+        console.log('Extracted array string:', match[1].substring(0, 200));
+        return null;
+      }
     }
-    console.error('Could not parse quiz data from:', javascript.substring(0, 100));
+    console.error('Could not match quiz array pattern in:', cleanCode.substring(0, 100));
     return null;
   } catch (error) {
     console.error('Error parsing quiz JavaScript:', error);
