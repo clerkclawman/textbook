@@ -1480,7 +1480,7 @@
         classData.forEach((story, index) => {
             if (cls === 'ClozeQuiz' && item.level && item.sentence) {
         optionText = `${item.level}: ${item.sentence}`;
-      } else if (story && story.title) {
+      } else if (item && item.title) {
                 const option = document.createElement("option");
                 option.value = optionIndex;
                 option.textContent = story.title;
