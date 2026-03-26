@@ -1476,20 +1476,27 @@
         }
 
         // lessonsData[cls] is now directly an array of story objects
+      classData.forEach((item, index) => {
         console.log('Processing', classData.length, 'stories');
-        classData.forEach((item, index) => {
-            if (cls === 'ClozeQuiz' && item.level && item.sentence) {
+      let optionText = '';
+      // Handle ClozeQuiz items (have 'level' and 'sentence' but no 'title')
+      if (cls === 'ClozeQuiz' && item.level && item.sentence) {
         optionText = `${item.level}: ${item.sentence}`;
       } else if (item && item.title) {
-                const option = document.createElement("option");
-                option.value = optionIndex;
-                option.textContent = story.title;
-                storySelector.appendChild(option);
-                optionIndex++;
-            } else {
-                console.warn('Invalid item at index', index, ':', item);
-            }
-        });
+        // Standard story items
+        optionText = item.title;
+      } else {
+        console.warn('Invalid item at index', index, ':', item);
+        return; // Skip invalid items
+      }
+      
+      // Create option for both ClozeQuiz and standard stories
+      const option = document.createElement("option");
+      option.value = optionIndex;
+      option.textContent = optionText;
+      storySelector.appendChild(option);
+      optionIndex++;
+    });
 
         console.log('Added', optionIndex, 'options to story selector');
         storySelector.disabled = false;
