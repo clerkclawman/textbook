@@ -1477,7 +1477,7 @@
 
         // lessonsData[cls] is now directly an array of story objects
         console.log('Processing', classData.length, 'stories');
-        classData.forEach((story, index) => {
+        classData.forEach((item, index) => {
             if (cls === 'ClozeQuiz' && item.level && item.sentence) {
         optionText = `${item.level}: ${item.sentence}`;
       } else if (item && item.title) {
@@ -1487,7 +1487,7 @@
                 storySelector.appendChild(option);
                 optionIndex++;
             } else {
-                console.warn('Invalid story at index', index, ':', story);
+                console.warn('Invalid item at index', index, ':', item);
             }
         });
 
