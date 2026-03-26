@@ -2,7 +2,7 @@
  * Tony & Jay Stories Loader
  * Loads today's Tony & Jay stories file
  */
-const TONY_JAY_MAX_AGE_DAYS = 1; // Only show today's story
+const TONY_JAY_MAX_AGE_DAYS = 1;
 
 // Cache for loaded stories
 const tonyJayStoriesCache = new Map();
@@ -18,34 +18,33 @@ function formatDateTonyJay(date) {
 }
 
 /**
- * Check if story is from today
- */
-function isTonyJayFresh(storyDate) {
-  const now = new Date();
-  const diffDays = Math.abs(now - storyDate) / (1000 * 60 * 60 * 24);
-  return diffDays <= TONY_JAY_MAX_AGE_DAYS;
-}
-
-/**
  * Load Tony & Jay stories file dynamically
  */
 async function loadTonyJayStoriesFile(filename) {
+  console.log('Tony & Jay Loader: Attempting to fetch', filename);
   if (tonyJayStoriesCache.has(filename)) {
+    console.log('Tony & Jay Loader: Cache hit');
     return tonyJayStoriesCache.get(filename);
   }
   try {
     const response = await fetch(filename);
-    if (!response.ok) return null;
+    console.log('Tony & Jay Loader: Fetch response status', response.status);
+    if (!response.ok) {
+      console.error('Tony & Jay Loader: Fetch failed with status', response.status);
+      return null;
+    }
     const javascript = await response.text();
+    console.log('Tony & Jay Loader: Fetched', javascript.length, 'characters');
     const storiesData = parseJavaScriptTonyJay(javascript);
     if (storiesData) {
       tonyJayStoriesCache.set(filename, storiesData);
+      console.log('Tony & Jay Loader: Parsed', storiesData.length, 'stories');
+    } else {
+      console.error('Tony & Jay Loader: Parsing returned null');
     }
     return storiesData;
   } catch (error) {
-    if (!error.message || !error.message.includes("404")) {
-      console.warn(`Failed to load ${filename}:`, error);
-    }
+    console.error('Tony & Jay Loader: Fetch error:', error.message);
     return null;
   }
 }
@@ -55,29 +54,40 @@ async function loadTonyJayStoriesFile(filename) {
  */
 function parseJavaScriptTonyJay(javascript) {
   try {
+    console.log('Tony & Jay Loader: Starting parse');
     // Remove single-line comments (// ...) and multi-line comments (/* ... */)
     let cleanCode = javascript.replace(/\/\/.*$/gm, '').replace(/\/\*[\s\S]*?\*\//g, '');
     
     // Extract the array from "var storiesTonyJayYYYYMMDD = [...]"
     const match = cleanCode.match(/var\s+storiesTonyJay\d+\s*=\s*(\[[\s\S]*\])\s*;?\s*$/);
     
-    if (match && match[1]) {
-      const arrayString = match[1];
-      // Safely evaluate the array literal using a Function constructor
-      const extractor = new Function('return ' + arrayString);
-      const result = extractor();
-      if (Array.isArray(result) && result.length > 0) {
-        console.log('SUCCESS: Parsed', result.length, 'Tony & Jay stories');
-        return result;
-      } else {
-        console.error('Evaluated result is not a non-empty array:', result);
-        return null;
-      }
+    if (!match) {
+      console.error('Tony & Jay Loader: Regex did not match. First 200 chars:', cleanCode.substring(0, 200));
+      return null;
     }
-    console.error('Could not match Tony & Jay stories array pattern in:', cleanCode.substring(0, 100));
-    return null;
+    
+    const arrayString = match[1];
+    console.log('Tony & Jay Loader: Extracted array string, length:', arrayString.length);
+    
+    // Safely evaluate the array literal using a Function constructor
+    const extractor = new Function('return ' + arrayString);
+    const result = extractor();
+    
+    if (!Array.isArray(result)) {
+      console.error('Tony & Jay Loader: Result is not an array. Type:', typeof result);
+      return null;
+    }
+    
+    if (result.length === 0) {
+      console.error('Tony & Jay Loader: Result is an empty array');
+      return null;
+    }
+    
+    console.log('Tony & Jay Loader: SUCCESS: Parsed', result.length, 'Tony & Jay stories');
+    return result;
   } catch (error) {
-    console.error('Error parsing Tony & Jay stories JavaScript:', error.message);
+    console.error('Tony & Jay Loader: Parse error:', error.message);
+    console.error('Tony & Jay Loader: Error stack:', error.stack);
     return null;
   }
 }
@@ -89,20 +99,30 @@ async function initTonyJayStoriesLoader() {
   console.log('=== INITIALIZING TONY & JAY STORIES LOADER ===');
   const today = new Date();
   const filename = formatDateTonyJay(today);
-  console.log('Loading stories file:', filename);
+  console.log('Tony & Jay Loader: Loading stories file:', filename);
   
   const storiesData = await loadTonyJayStoriesFile(filename);
+  
   if (storiesData && Array.isArray(storiesData)) {
-    console.log('Loaded', storiesData.length, 'Tony & Jay stories');
+    console.log('Tony & Jay Loader: Loaded', storiesData.length, 'Tony & Jay stories');
     // Add to lessonsData if it exists
     if (typeof lessonsData !== 'undefined') {
       lessonsData['TonyJayStories'] = storiesData;
-      console.log('Stories data added to lessonsData[\'TonyJayStories\']');
+      console.log('Tony & Jay Loader: Stories data added to lessonsData[\'TonyJayStories\']');
     } else {
-      console.error('lessonsData is not defined yet!');
+      console.error('Tony & Jay Loader: lessonsData is not defined yet!');
+      // Retry after a short delay
+      setTimeout(() => {
+        if (typeof lessonsData !== 'undefined') {
+          lessonsData['TonyJayStories'] = storiesData;
+          console.log('Tony & Jay Loader: Retried and added to lessonsData');
+        } else {
+          console.error('Tony & Jay Loader: lessonsData still not defined after retry');
+        }
+      }, 500);
     }
   } else {
-    console.warn('No Tony & Jay stories loaded for today');
+    console.warn('Tony & Jay Loader: No Tony & Jay stories loaded for today');
   }
 }
 
