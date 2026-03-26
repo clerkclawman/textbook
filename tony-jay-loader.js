@@ -107,8 +107,22 @@ async function initTonyJayStoriesLoader() {
 }
 
 // Auto-initialize when script loads
+console.log('Tony & Jay Loader: Script loaded');
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initTonyJayStoriesLoader);
+  console.log('Tony & Jay Loader: Waiting for DOMContentLoaded');
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('Tony & Jay Loader: DOMContentLoaded fired, calling init');
+    initTonyJayStoriesLoader();
+  });
 } else {
+  console.log('Tony & Jay Loader: DOM already loaded, calling init immediately');
   initTonyJayStoriesLoader();
 }
+
+// Fallback: Try again after 1 second if lessonsData is not ready
+setTimeout(() => {
+  if (typeof lessonsData !== 'undefined' && !lessonsData['TonyJayStories']) {
+    console.log('Tony & Jay Loader: Fallback trigger, calling init again');
+    initTonyJayStoriesLoader();
+  }
+}, 1000);
