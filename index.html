@@ -1227,6 +1227,7 @@
 <script src='adult.js'></script>
 <script src='news-loader.js'></script>
 <script src='fun-questions-loader.js'></script>
+ <script src='quiz-loader.js'></script>
 <!-- Static news loaded dynamically via news-loader.js -->
 <!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
@@ -1287,6 +1288,11 @@
     let lessonsData = {};
     let selectedText = '';
     let translationLang = '';
+    // Cloze Quiz specific variables
+    let isQuizMode = false;
+    let quizQuestions = [];
+    let shuffledOptions = [];
+    let currentQuizAnswerMapping = [];
 
     // DOM elements
     let mainContainer, readingModeContainer, englishSentence, japaneseSentence;
@@ -1507,6 +1513,29 @@
     function loadTextContent(cls) {
         console.log('Loading content for:', cls, 'Story:', currentStory);
 
+        // Handle Cloze Quiz mode
+        if (cls === 'ClozeQuiz') {
+            isQuizMode = true;
+            // ClozeQuiz data is an array of quiz objects directly in lessonsData['ClozeQuiz']
+            if (!lessonsData['ClozeQuiz'] || !Array.isArray(lessonsData['ClozeQuiz']) || lessonsData['ClozeQuiz'].length === 0) {
+                console.error('No quiz data found for ClozeQuiz');
+                alert('No quiz questions available');
+                exitReadingMode();
+                return;
+            }
+            quizQuestions = lessonsData['ClozeQuiz'];
+            currentSentenceIndex = 0;
+            displayQuizQuestion(currentSentenceIndex);
+            setTimeout(() => {
+                applyDisplayMode();
+                ensureTextVisibility();
+            }, 100);
+            return;
+        }
+
+        // Non-quiz mode - reset quiz flag
+        isQuizMode = false;
+
         if (!lessonsData[cls]) {
             console.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
             alert(`Data not found for class ${cls}`);
@@ -1635,7 +1664,78 @@
         return matches ? matches.length : 0;
     }
 
+    // ====================
+    // CLOZE QUIZ FUNCTIONS
+    // ====================
+    function displayQuizQuestion(index) {
+        if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
+            return;
+        }
+
+        englishSentence = document.getElementById('englishSentence');
+        japaneseSentence = document.getElementById('japaneseSentence');
+        if (!englishSentence || !japaneseSentence) {
+            console.error('Sentence display elements not found');
+            return;
+        }
+
+        if (!quizQuestions || quizQuestions.length === 0) {
+            englishSentence.textContent = "No quiz questions loaded";
+            japaneseSentence.textContent = "";
+            return;
+        }
+
+        const question = quizQuestions[index];
+
+        if (!question || !question.sentence || !question.options || !Array.isArray(question.options)) {
+            console.error('Invalid quiz question at index', index);
+            return;
+        }
+
+        // Shuffle the options
+        shuffledOptions = shuffleArray([...question.options]);
+
+        // Track which shuffled position contains the correct answer
+        // question.answer is the index in the ORIGINAL options array
+        const originalCorrectAnswer = question.options[question.answer];
+        currentQuizAnswerMapping = shuffledOptions.map((opt, idx) => ({
+            position: idx,
+            originalIndex: question.answer,
+            isCorrect: opt === originalCorrectAnswer
+        }));
+
+        // Top Panel: Display the sentence with blank
+        const sentenceWithNumber = `${index + 1}. ${question.sentence}`;
+        englishSentence.textContent = sentenceWithNumber;
+
+        // Bottom Panel: Display shuffled options as "A. opt1 B. opt2 C. opt3 D. opt4"
+        const optionLabels = ['A', 'B', 'C', 'D'];
+        const optionsText = shuffledOptions.map((opt, idx) => `${optionLabels[idx]}. ${opt}`).join('  ');
+        japaneseSentence.textContent = optionsText;
+
+        englishSentence.style.fontSize = '';
+        japaneseSentence.style.fontSize = '';
+
+        prevSentenceBtn.disabled = false;
+        nextSentenceBtn.disabled = false;
+
+        ensureTextVisibility();
+        applyFontSize();
+        applyDisplayMode();
+        updatePageCounter();
+
+        console.log(`Quiz question ${index + 1}: ${question.sentence}`);
+        console.log(`Correct answer (stored internally): ${originalCorrectAnswer}`);
+        console.log(`Shuffled options:`, shuffledOptions);
+    }
+
     function displayCurrentSentence() {
+        // If in quiz mode, use quiz display function
+        if (isQuizMode) {
+            displayQuizQuestion(currentSentenceIndex);
+            return;
+        }
+
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
         }
@@ -1671,6 +1771,19 @@
     }
 
     function updatePageCounter() {
+        if (isQuizMode) {
+            // Quiz mode counter
+            if (!quizQuestions || quizQuestions.length === 0) return;
+
+            const currentPageEl = document.getElementById('currentPage');
+            const totalPagesEl = document.getElementById('totalPages');
+
+            if (currentPageEl) currentPageEl.textContent = currentSentenceIndex + 1;
+            if (totalPagesEl) totalPagesEl.textContent = quizQuestions.length;
+            return;
+        }
+
+        // Regular mode counter
         if (!sentences || sentences.length === 0) return;
 
         const currentPageEl = document.getElementById('currentPage');
