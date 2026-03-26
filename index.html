@@ -3156,5 +3156,23 @@ if (typeof getCombinedFunQuestions === "function") {
         // Track page view
         Analytics.trackPageView('index.html');
     </script>
+
+<script>
+// Override the storySelector event listener for Tony & Jay Stories
+document.addEventListener('DOMContentLoaded', function() {
+  const storySelector = document.getElementById('storySelector');
+  if (storySelector) {
+    storySelector.addEventListener('change', function() {
+      currentStory = this.value;
+      console.log('Tony & Jay Override: Dropdown changed to', currentStory, 'Class:', currentClass);
+      loadTextContent(currentClass);
+    });
+    console.log('Tony & Jay Override: Event listener attached to storySelector');
+  } else {
+    console.error('Tony & Jay Override: storySelector not found!');
+  }
+});
+</script>
 </body>
+
 </html>
