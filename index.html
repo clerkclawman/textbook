@@ -1564,14 +1564,22 @@ if (cls === 'TonyJayStories') {
     selectedStory = stories[0];
   }
   if (!selectedStory) {
-    console.error('No story found for selection:', currentStory);
+    console.error('No story found for selection:', currentStory, 'Available stories:', stories.map(s => s.level));
     alert('Story not found');
+    exitReadingMode();
+    return;
+  }
+  console.log('Tony & Jay: Selected story level:', selectedStory.level, 'Title:', selectedStory.title, 'Content length:', selectedStory.content ? selectedStory.content.length : 0);
+  if (!selectedStory.content) {
+    console.error('Tony & Jay: Story has no content!');
+    alert('Story content is missing');
     exitReadingMode();
     return;
   }
   currentStoryContent = selectedStory.content;
   currentStoryTitle = selectedStory.title;
   currentStoryLevel = selectedStory.level;
+  console.log('Tony & Jay: Setting content, length:', currentStoryContent.length);
   displayCurrentSentence();
   setTimeout(() => {
     applyDisplayMode();
