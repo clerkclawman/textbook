@@ -1,5 +1,5 @@
 var storiesTonyJay20260326 = [
-  // Level 7 (Present Simple only - 3-5 words per sentence)
+  // Level 7 (Present Simple only - 3-5 words)
   {
     level: 7,
     title: "The Mystery Meat",
@@ -44,52 +44,54 @@ var storiesTonyJay20260326 = [
 ❓ Do you cook for your pet?
 あなたはペットのために料理をしますか？`
   },
+
+  // Level 6 (Present Simple + Continuous, No Past/Future)
   {
-    level: 7,
-    title: "The Cat TV Star",
-    content: `📺 Tony watches TV.
-トニーはテレビを見ます。
-🐱 Jay watches TV too.
-ジェイもテレビを見ます。
-🌟 A cat is on TV.
-猫がテレビに出ています。
-😻 Jay likes the cat.
-ジェイはその猫が好きです。
-🎬 The cat does funny things.
-その猫は面白いことをします。
-😂 Jay laughs.
-ジェイは笑います。
-🤳 Tony takes a photo.
-トニーは写真を撮ります。
-📱 The photo is on the internet.
-写真がインターネットにあります。
-👍 Many people like the photo.
-多くの人がその写真が好きです。
-🎉 Jay becomes famous!
-ジェイが有名になります！
-❓ Do you watch TV every day?
-あなたは毎日テレビを見ますか？
-❓ Do you like cats?
-あなたは猫が好きですか？
-❓ Do you take photos?
-あなたは写真を撮りますか？
-❓ Do you put photos on the internet?
-あなたは写真をインターネットに投稿しますか？
-❓ Do you like funny videos?
-あなたは面白い動画が好きですか？
-❓ Do you have many friends online?
-あなたはオンラインで多くの友達がいますか？
-❓ Does your cat watch TV?
-あなたの猫はテレビを見ますか？
-❓ Do you want to be famous?
-あなたは有名になりたいですか？
-❓ Do you laugh at funny things?
-あなたは面白いことに笑いますか？
-❓ Do you like internet cats?
-あなたはインターネットの猫が好きですか？`
+    level: 6,
+    title: "The Singing Toaster",
+    content: `🍞 Tony puts bread in.
+トニーはパンを入れます。
+🔌 The toaster is on.
+トースターはオンです。
+🎤 The toaster sings now.
+トースターは今歌っています。
+🐱 Jay listens to music.
+ジェイは音楽を聞いています。
+😲 The bread jumps out.
+パンが飛び出しています。
+🤔 Tony stops the song.
+トニーは歌を止めています。
+🙀 Jay wants the bread.
+ジェイはパンを欲しがっています。
+🍞 The bread is hot.
+パンは熱いです。
+🔥 Tony cools the bread.
+トニーはパンを冷ましています。
+🐱 Jay eats the bread.
+ジェイはパンを食べています。
+❓ Do you eat toast?
+あなたはトーストを食べますか？
+❓ Do you use toasters?
+あなたはトースターを使いますか？
+❓ Do you sing songs?
+あなたは歌を歌いますか？
+❓ Do you listen to cats?
+あなたは猫の話を聞いていますか？
+❓ Do you see jumping bread?
+あなたは跳ねるパンを見ていますか？
+❓ Do you stop music?
+あなたは音楽を止めますか？
+❓ Do you want bread?
+あなたはパンが欲しいですか？
+❓ Do you like hot bread?
+あなたは熱いパンが好きですか？
+❓ Do you cool food?
+あなたは食べ物を冷ましますか？
+❓ Do you eat toast?
+あなたはトーストを食べますか？`
   },
 
-  // Level 5 (Present Simple/Continuous only - 4-6 words, NO past/future)
+  // Level 5 (Present Simple/Continuous, No Past/Future)
   {
     level: 5,
     title: "The Sock Thief",
@@ -134,52 +136,8 @@ var storiesTonyJay20260326 = [
 ❓ Are you having a good day?
 あなたは良い一日を過ごしていますか？`
   },
-  {
-    level: 5,
-    title: "The Window Warrior",
-    content: `🪟 Jay sees a bird.
-ジェイは鳥を見ます。
-🐦 The bird is outside.
-鳥は外にいます。
-😾 Jay is very excited.
-ジェイはとても興奮しています。
-🙀 Jay jumps at the window.
-ジェイは窓に飛びかかります。
-💨 The bird flies away.
-鳥は飛んで行きます。
-😿 Jay is sad.
-ジェイは悲しいです。
-🏠 Tony is in the room.
-トニーは部屋の中にいます。
-📺 Tony is watching a movie.
-トニーは映画を見ています。
-😴 Jay falls asleep.
-ジェイは眠ってしまいます。
-🐟 Tony gives Jay dinner.
-トニーはジェイに夕食をあげます。
-❓ Are you looking at something now?
-あなたは今何かを見ていますか？
-❓ Is a bird outside your window?
-あなたの窓の外に鳥はいますか？
-❓ Are you excited about something?
-あなたは何かについて興奮していますか？
-❓ Are you watching a movie?
-あなたは映画を見ていますか？
-❓ Is your cat sleeping now?
-あなたの猫は今眠っていますか？
-❓ Are you eating dinner?
-あなたは夕食を食べていますか？
-❓ Is your cat hungry?
-あなたの猫は空腹ですか？
-❓ Are you in your room?
-あなたは自分の部屋にいますか？
-❓ Is your cat looking at something?
-あなたの猫は何かを見ていますか？
-❓ Are you having a rest?
-あなたは休憩していますか？`
-  },
 
-  // Level 4 (Past Simple + Future allowed - 5-8 words)
+  // Level 4 (Past Simple + Future allowed)
   {
     level: 4,
     title: "The Lost Cat Adventure",
@@ -224,52 +182,8 @@ var storiesTonyJay20260326 = [
 ❓ Are you going to watch your pet?
 あなたはあなたのペットを見守りますか？`
   },
-  {
-    level: 4,
-    title: "The Rainy Day Plan",
-    content: `🌧️ It rained all morning.
-朝中雨が降りました。
-😞 Tony was sad inside.
-トニーは中で悲しかったです。
-🐱 Jay played with a ball.
-ジェイはボールで遊びました。
-🎨 Tony decided to paint.
-トニーは絵を描くことにしました。
-🖌️ Jay knocked over the paint.
-ジェイは絵の具をこぼしました。
-😱 The floor was very messy.
-床はとても汚くなりました。
-🧽 Tony cleaned the mess quickly.
-トニーは汚れを急いで掃除しました。
-🌈 The rain stopped later.
-後で雨が止みました。
-🚶 Tony and Jay went out.
-トニーとジェイは外へ出ました。
-🍦 They bought ice cream.
-彼らはアイスクリームを買いました。
-❓ Did it rain today?
-今日雨は降りましたか？
-❓ Were you sad when it rained?
-雨が降ったときあなたは悲しかったですか？
-❓ Did you play inside?
-あなたは中で遊びましたか？
-❓ Did you decide to do something?
-あなたは何かをすることにしましたか？
-❓ Did you make a mess?
-あなたは汚れを作りましたか？
-❓ Did you clean up?
-あなたは掃除をしましたか？
-❓ Did the rain stop?
-雨は止みましたか？
-❓ Did you go outside?
-あなたは外へ出ましたか？
-❓ Will you go out tomorrow?
-あなたは明日外へ出ますか？
-❓ Are you going to buy ice cream?
-あなたはアイスクリームを買いますか？`
-  },
 
-  // Level 3 (Present Perfect + First Conditional, 6-10 words)
+  // Level 3 (Present Perfect, First Conditional, Superlatives)
   {
     level: 3,
     title: "The Great Takoyaki Contest",
@@ -314,52 +228,100 @@ var storiesTonyJay20260326 = [
 ❓ Will you take photos if you win?
 もしあなたが勝ったら、写真を撮りますか？`
   },
+
+  // Pre-2 (Past Continuous, Passive Voice)
   {
-    level: 3,
-    title: "The Mystery of the Missing Fish",
-    content: `🐟 Tony has bought fresh fish.
-トニーは新鮮な魚を買いました。
-🔒 Tony has locked the fridge.
-トニーは冷蔵庫を施錠しました。
-😺 Jay has opened the fridge.
-ジェイは冷蔵庫を開けました。
-🤔 Tony has looked everywhere.
-トニーは至る所探しました。
-🙀 Jay has hidden the fish.
-ジェイは魚を隠しました。
-🕵️ Tony has found the fish!
-トニーは魚を見つけました！
-😾 Jay has looked guilty.
-ジェイは罪悪そうに見えました。
-🤷 Tony has laughed at Jay.
-トニーはジェイに笑いました。
-🍽️ They have shared the fish.
-彼らは魚を分け合いました。
-🌟 It has been a good day.
-それは良い一日でした。
-❓ Have you bought fresh food?
-あなたは新鮮な食べ物を買いましたか？
-❓ Have you locked your fridge?
-あなたは冷蔵庫を施錠しましたか？
-❓ Has your pet opened something?
-あなたのペットは何かを開けましたか？
-❓ Have you looked for something?
-あなたは何かを探しましたか？
-❓ Has your pet hidden something?
-あなたのペットは何かを隠しましたか？
-❓ Have you found your pet's secret?
-あなたはあなたのペットの秘密を見つけましたか？
-❓ Has your pet looked guilty?
-あなたのペットは罪悪そうに見えましたか？
-❓ Have you laughed at your pet?
-あなたはあなたのペットに笑いましたか？
-❓ If you find it, will you share?
-もしあなたがそれを見つけたら、分け合いますか？
-❓ Will you be happy if it is good?
-もしそれが良ければ、あなたは幸せになりますか？`
+    level: "Pre-2",
+    title: "The Rainy Day Rescue",
+    content: `🌧️ It was raining heavily.
+激しく雨が降っていました。
+🐱 Jay was hiding under the car.
+ジェイは車の下に隠れていました。
+😲 Tony was looking for Jay.
+トニーはジェイを探していました。
+🚗 A car was starting the engine.
+車がエンジンを始動していました。
+😱 Jay was trapped inside!
+ジェイは中に閉じ込められていました！
+🏃 Tony was running to the car.
+トニーは車に向かって走っていました。
+🔔 Tony was honking the horn.
+トニーはクラクションを鳴らしていました。
+🐱 Jay was meowing loudly.
+ジェイは大きく鳴いていました。
+👮 A man was helping Tony.
+一人の男がトニーを助けていました。
+🎉 Jay was saved safely.
+ジェイは無事に救われました。
+❓ Were you hiding from rain?
+あなたは雨から隠れていましたか？
+❓ Was your cat hiding somewhere?
+あなたの猫はどこかに隠れていましたか？
+❓ Were you looking for something?
+あなたは何かを探していましたか？
+❓ Was a car starting nearby?
+近くに車が始動していましたか？
+❓ Were you trapped somewhere?
+あなたはどこかに閉じ込められていましたか？
+❓ Were you running fast?
+あなたは速く走っていましたか？
+❓ Were you helping someone?
+あなたは誰かを助けていましたか？
+❓ Was your pet saved?
+あなたのペットは救われましたか？
+❓ If you saw a cat, would you help?
+もしあなたが猫を見たら、助けますか？
+❓ Will you check your car next time?
+次回あなたは車を確認しますか？`
   },
 
-  // Level 2 (Type 2 Conditionals, Complex Passive, 14-20 words)
+  // Pre-2 Plus (Past Perfect, Type 2 Conditionals)
+  {
+    level: "Pre-2+",
+    title: "The Forgotten Birthday",
+    content: `🎂 Tony had forgotten Jay's birthday.
+トニーはジェイの誕生日を忘れていました。
+😿 Jay had been very sad.
+ジェイはとても悲しかったです。
+🎁 Tony had bought a gift secretly.
+トニーは密かに贈り物を買っていました。
+🏠 Tony had hidden the gift.
+トニーは贈り物を隠していました。
+😺 Jay had found the gift!
+ジェイは贈り物を見つけました！
+🎉 Jay had been happy again.
+ジェイは再び幸せでした。
+🍰 They had eaten cake together.
+彼らは一緒にケーキを食べました。
+🎈 Tony had apologized sincerely.
+トニーは心から謝りました。
+🐱 Jay had forgiven Tony quickly.
+ジェイはすぐにトニーを許しました。
+🌟 It had been a great day.
+それは素晴らしい一日でした。
+❓ Had you forgotten a birthday?
+あなたは誕生日を忘れましたか？
+❓ Had your cat been sad?
+あなたの猫は悲しかったですか？
+❓ Had you bought a gift?
+あなたは贈り物を買いましたか？
+❓ Had you hidden something?
+あなたは何かを隠しましたか？
+❓ Had your pet found it?
+あなたのペットはそれを見つけましたか？
+❓ Had you been happy?
+あなたは幸せでしたか？
+❓ Had you eaten cake?
+あなたはケーキを食べましたか？
+❓ Had you apologized?
+あなたは謝りましたか？
+❓ If you forgot, would you buy a gift?
+もしあなたが忘れたら、贈り物を買いますか？
+❓ Would your cat forgive you quickly?
+あなたの猫はすぐにあなたを許しますか？`
+  },
+
+  // Level 2 (Type 2 Conditionals, Complex Passive, Abstract)
   {
     level: 2,
     title: "The Robot Teacher Incident",
@@ -404,8 +366,10 @@ var storiesTonyJay20260326 = [
 ❓ Will robots be used in schools in the future?
 将来、ロボットが学校で使われるでしょうか？`
   },
+
+  // Pre-1 (Type 3 Conditionals, Nominal Clauses, Advanced Passive)
   {
-    level: 2,
+    level: "Pre-1",
     title: "The Haunted Takoyaki Shop",
     content: `👻 A strange story was told about an old takoyaki shop.
 古いたこ焼き店についての奇妙な話がありました。
@@ -419,33 +383,79 @@ var storiesTonyJay20260326 = [
 店はジェイとトニーによって徹底的に捜索されました。
 🌙 A shadow was seen moving behind the counter.
 影がカウンターの後ろを動くのが見られました。
-🤔 If the shop were haunted, would you still eat there?
-もしその店が幽霊が出たら、あなたはそこでまだ食べますか？
+🤔 If the shop had been haunted, would you still eat there?
+もしその店が幽霊が出ていたら、あなたはそこでまだ食べますか？
 👻 The lights were turned on by a hidden switch.
 電灯は隠されたスイッチによって点けられました。
 😂 It was revealed that a cat was playing tricks.
-猫いたずらをしていることが明らかになりました。
+猫がいたずらをしていることが明らかになりました。
 🎉 The story was laughed at by everyone in town.
 その話は町中のみんなに笑われました。
-❓ If you heard a strange sound, would you investigate?
-もしあなたが奇妙な音を聞いたら、あなたは調査しますか？
-❓ Would you eat food made by ghosts?
-あなたは幽霊によって作られた食べ物を食べますか？
+❓ If you had heard a strange sound, would you investigate?
+もしあなたが奇妙な音を聞いていたら、あなたは調査しますか？
+❓ Would you have eaten food made by ghosts?
+あなたは幽霊によって作られた食べ物を食べましたか？
 ❓ Was the shop really haunted or just a trick?
 その店は本当に幽霊が出ていたのか、それとも単なるいたずらでしたか？
-❓ If something mysterious happened, would you be scared?
-もし何か神秘的なことが起きたら、あなたは怖がりますか？
-❓ Would your cat play tricks on people?
-あなたの猫は人々にいたずらをするでしょうか？
+❓ If something mysterious had happened, would you have been scared?
+もし何か神秘的なことが起きていたら、あなたは怖がりましたか？
+❓ Would your cat have played tricks on people?
+あなたの猫は人々にいたずらをしたでしょうか？
 ❓ Was the truth discovered by the investigators?
 真実は調査者によって発見されましたか？
-❓ If you were the cat, what would you do?
-もしあなたが猫だったら、何をしますか？
-❓ Would you tell this story to your friends?
-あなたは友達にこの話をしますか？
-❓ If the lights went out, would you run?
-もし電気が消えたら、あなたは走りますか？
+❓ If you had been the cat, what would you have done?
+もしあなたが猫だったら、何をしましたか？
+❓ Would you have told this story to your friends?
+あなたは友達にこの話をしましたか？
+❓ If the lights had gone out, would you have run?
+もし電気が消えていたら、あなたは走りましたか？
 ❓ Will people believe the story in the future?
 将来、人々はその話を信じるでしょうか？`
+  },
+
+  // Level 1 (Subjunctive, Inversion, Academic Vocabulary, Complex Hypotheses)
+  {
+    level: 1,
+    title: "The Philosophical Cat",
+    content: `🤔 Jay has pondered the meaning of life.
+ジェイは人生の意味について熟考しています。
+📚 Tony has read many philosophy books.
+トニーは多くの哲学書を読んでいます。
+🌌 The universe is vast and mysterious.
+宇宙は広大で神秘的です。
+🐱 Jay questions the nature of existence.
+ジェイは存在の本質について疑問を抱きます。
+🧠 Tony suggests that consciousness is key.
+トニーは意識が鍵であると提案します。
+🤖 If a robot were conscious, would it have rights?
+もしロボットが意識を持っていたら、権利を持つでしょうか？
+🌍 Humans have shaped the world significantly.
+人間は世界を大きく形作ってきました。
+🐾 Cats have observed us silently for centuries.
+猫は何世紀もの間、静かに私たちを観察してきました。
+🔬 Science has not yet explained everything.
+科学はまだすべてを説明していません。
+🎭 Life is a complex and beautiful mystery.
+人生は複雑で美しい謎です。
+❓ If you were immortal, what would you do?
+もしあなたが不死だったら、何をしますか？
+❓ Has humanity progressed too rapidly?
+人類は速すぎますか？
+❓ Do cats understand the universe better?
+猫は宇宙をよりよく理解していますか？
+❓ Is consciousness a gift or a curse?
+意識は贈り物ですか、それとも呪いですか？
+❓ Should robots have human rights?
+ロボットは人権を持つべきですか？
+❓ Had you ever questioned existence before?
+あなたは以前に存在について疑問を抱きましたか？
+❓ Were you aware of the universe's vastness?
+あなたは宇宙の広大さに気づいていましたか？
+❓ If knowledge were infinite, would we be happy?
+もし知識が無限だったら、私たちは幸せになるでしょうか？
+❓ Would you have chosen a different path?
+あなたは異なる道を選んだでしょうか？
+❓ Can the meaning of life be defined?
+人生の意味は定義できますか？`
   }
 ];
