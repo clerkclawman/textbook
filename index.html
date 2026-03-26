@@ -1478,7 +1478,9 @@
         // lessonsData[cls] is now directly an array of story objects
         console.log('Processing', classData.length, 'stories');
         classData.forEach((story, index) => {
-            if (story && story.title) {
+            if (cls === 'ClozeQuiz' && item.level && item.sentence) {
+        optionText = `${item.level}: ${item.sentence}`;
+      } else if (story && story.title) {
                 const option = document.createElement("option");
                 option.value = optionIndex;
                 option.textContent = story.title;
