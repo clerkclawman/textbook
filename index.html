@@ -3188,11 +3188,13 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('DOMContentLoaded', function() {
     // Retry loop if data isn't ready yet
     function initOverride() {
+      if (window.tonyJayOverrideInitialized) return; // Guard: prevent re-initialization
       if (!window.lessonsData || !window.lessonsData['TonyJayStories']) {
         console.warn('TonyJayStories data not found. Retrying in 500ms...');
         setTimeout(initOverride, 500);
         return;
       }
+      window.tonyJayOverrideInitialized = true; // Mark as initialized
 
       const dropdown = document.getElementById('storySelector');
       if (!dropdown) {
@@ -3284,11 +3286,13 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
   document.addEventListener('DOMContentLoaded', function() {
     function initOverride() {
+      if (window.tonyJayOverrideInitialized) return; // Guard: prevent re-initialization
       if (!window.lessonsData || !window.lessonsData['TonyJayStories']) {
         console.warn('TonyJayStories data not found. Retrying in 500ms...');
         setTimeout(initOverride, 500);
         return;
       }
+      window.tonyJayOverrideInitialized = true; // Mark as initialized
 
       const dropdown = document.getElementById('storySelector');
       if (!dropdown) {
@@ -3400,11 +3404,13 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
   document.addEventListener('DOMContentLoaded', function() {
     function initOverride() {
+      if (window.tonyJayOverrideInitialized) return; // Guard: prevent re-initialization
       if (!window.lessonsData || !window.lessonsData['TonyJayStories']) {
         console.warn('TonyJayStories data not found. Retrying in 500ms...');
         setTimeout(initOverride, 500);
         return;
       }
+      window.tonyJayOverrideInitialized = true; // Mark as initialized
 
       const dropdown = document.getElementById('storySelector');
       if (!dropdown) {
