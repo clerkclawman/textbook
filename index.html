@@ -1479,7 +1479,7 @@
             if (story && story.title) {
                 const option = document.createElement("option");
                 option.value = optionIndex;
-                option.textContent = story.title;
+                option.textContent = story.level ? `Level ${story.level}: ${story.title}` : story.title;
                 storySelector.appendChild(option);
                 optionIndex++;
             } else {
