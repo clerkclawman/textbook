@@ -56,36 +56,45 @@ async function loadQuizFile(filename) {
  */
 function parseJavaScriptQuiz(javascript) {
   try {
+    console.log('=== PARSING QUIZ FILE ===');
+    console.log('Input length:', javascript.length);
+    
     // Remove single-line comments (// ...) and multi-line comments (/* ... */)
     let cleanCode = javascript.replace(/\/\/.*$/gm, '').replace(/\/\*[\s\S]*?\*\//g, '');
+    console.log('Cleaned length:', cleanCode.length);
     
     // Extract the array from "var quizYYYYMMDD = [...]"
     // Use a more flexible regex that allows whitespace and newlines
-    const match = cleanCode.match(/var\s+quiz\d+\s*=\s*(\[[\s\S]*?\])\s*;?\s*$/);
+    // Match from "var quiz" to the last "]"
+    const match = cleanCode.match(/var\s+quiz\d+\s*=\s*(\[[\s\S]*\])\s*;?\s*$/);
     
     if (match && match[1]) {
       const arrayString = match[1];
+      console.log('Extracted array (first 100 chars):', arrayString.substring(0, 100));
+      
       // Safely evaluate the array literal using a Function constructor
-      // This avoids executing arbitrary code while allowing JS object syntax
       try {
         const extractor = new Function('return ' + arrayString);
         const result = extractor();
-        if (Array.isArray(result)) {
+        console.log('Evaluation result type:', typeof result, 'isArray:', Array.isArray(result), 'length:', result ? result.length : 0);
+        
+        if (Array.isArray(result) && result.length > 0) {
+          console.log('SUCCESS: Parsed', result.length, 'quiz questions');
           return result;
         } else {
-          console.error('Evaluated result is not an array:', result);
+          console.error('Evaluated result is not a non-empty array:', result);
           return null;
         }
       } catch (evalError) {
-        console.error('Evaluation error for quiz data:', evalError);
-        console.log('Extracted array string (first 200 chars):', arrayString.substring(0, 200));
+        console.error('Evaluation error for quiz data:', evalError.message);
+        console.log('Extracted array string (first 300 chars):', arrayString.substring(0, 300));
         return null;
       }
     }
-    console.error('Could not match quiz array pattern in:', cleanCode.substring(0, 100));
+    console.error('Could not match quiz array pattern. First 200 chars of clean code:', cleanCode.substring(0, 200));
     return null;
   } catch (error) {
-    console.error('Error parsing quiz JavaScript:', error);
+    console.error('Error parsing quiz JavaScript:', error.message);
     return null;
   }
 }
