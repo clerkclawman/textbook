@@ -1411,17 +1411,22 @@
     // ====================
     // CLASS & STORY MANAGEMENT
     // ====================
-    function handleClassSelect() {
-        currentClass = this.value;
-        storySelector.disabled = !currentClass;
-
-        if (currentClass) {
-            populateStorySelector(currentClass);
-        } else {
-            storySelector.innerHTML = '<option value="">Select Story</option>';
-            storySelector.disabled = true;
-        }
+function handleClassSelect() {
+  currentClass = this.value;
+  if (currentClass === 'ClozeQuiz') {
+    storySelector.disabled = true;
+    storySelector.innerHTML = '<option value="">Quiz Mode</option>';
+    enterReadingMode(currentClass);
+  } else {
+    storySelector.disabled = !currentClass;
+    if (currentClass) {
+      populateStorySelector(currentClass);
+    } else {
+      storySelector.innerHTML = '<option value="">Select Story</option>';
+      storySelector.disabled = true;
     }
+  }
+}
 
     function handleStorySelect() {
         currentStory = this.value;
