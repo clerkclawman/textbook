@@ -1,107 +1,102 @@
 var funQuestions20260326 = [
-  {
-    title: "Fun Questions - March 26 (Late March/Osaka/Spring Break)",
-    content: `
-L7. 🌸 Is the sky blue today?
-今日は空は青いですか。
-L7. 🐦 Do you see birds in the park?
-公園で鳥を見ますか。
-L7. 🍓 Are strawberries red?
-イチゴは赤いですか。
-L7. 🎒 Is your school bag heavy?
-あなたのランドセルは重いですか。
-L7. 🌤️ Is it warm outside now?
-今、外は暖かいですか。
-L7. 🏫 Do you walk to school?
-学校まで歩きますか。
-L7. 🌳 Are the trees green?
-木々は緑ですか。
-L7. 🍱 Do you like your lunch?
-お弁当は好きですか。
-L7. 🌸 Do you see pink flowers?
-ピンクの花を見ますか。
-L7. 😊 Are you happy today?
-今日あなたは幸せですか。
-L6. 🌸 Can you see cherry blossoms?
-桜を見ることができますか。
-L6. 🎓 Is your friend graduating?
-あなたの友達は卒業しますか。
-L6. 🏯 Do you like Osaka Castle?
-大阪城は好きですか。
-L6. 🍡 Are you eating sweets now?
-今、お菓子を食べていますか。
-L6. 🌤️ Is the weather nice today?
-今日はお天気はいいですか。
-L6. 🎮 Do you play games at home?
-家でゲームをしますか。
-L6. 🌳 Are the flowers blooming?
-花は咲いていますか。
-L6. 🚶 Do you walk in the park?
-公園を歩きますか。
-L6. 🍓 Are strawberries sweet now?
-イチゴは今甘いですか。
-L6. 🏫 Do you feel happy at school?
-学校で幸せを感じますか。
-L5. 🌸 What do you see in spring?
-春に何を見ますか。
-L5. 🎓 Where did you go today?
-今日どこに行きましたか。
-L5. 🍡 What is your favorite snack?
-お気に入りのスナックは何ですか。
-L5. 🌤️ How is the weather today?
-今日のお天気はどうですか。
-L5. 🏯 Do you like Osaka Castle park?
-大阪城公園は好きですか。
-L5. 🌸 When do you see cherry blossoms?
-いつ桜を見ますか。
-L5. 🎒 What is in your school bag?
-ランドセルの中身は何ですか。
-L5. 🍓 Do you eat strawberries now?
-今イチゴを食べますか。
-L5. 🌳 Where do you play outside?
-外でどこで遊びますか。
-L5. 🎉 What will you do this week?
-今週何をしますか。
-L4. 🌸 Did you see cherry blossoms yesterday?
-昨日桜を見ましたか。
-L4. 🎓 Where will you go on break?
-休暇はどこに行きますか。
-L4. 🍡 What did you eat for lunch?
-昼食に何を食べましたか。
-L4. 🏯 Did you visit Osaka Castle?
-大阪城を訪れましたか。
-L4. 🌤️ How was the weather today?
-今日のお天気はどうでしたか。
-L4. 🎮 What games will you play?
-どんなゲームをしますか。
-L4. 🌸 Did you take photos of flowers?
-花の写真を撮りましたか。
-L4. 🍓 Will you buy strawberries tomorrow?
-明日イチゴを買いますか。
-L4. 🌳 Where did you walk today?
-今日どこを歩きましたか。
-L4. 🎉 What will you do this weekend?
-今週末何をしますか。
-L3. 🌸 Have you ever seen pink sakura?
-ピンクの桜を見たことがありますか。
-L3. 🎓 If you graduate, what will you do?
-卒業したら何をしますか。
-L3. 🏯 Which is better: Dotonbori or Umeda?
-道頓堀と梅田、どちらがいいですか。
-L3. 🍡 Have you tried takoyaki before?
-たこ焼きを食べたことがありますか。
-L3. 🌤️ If it is warm, where will you go?
-暖かかったらどこに行きますか。
-L3. 🌸 What is the best place for flowers?
-花を見るのに最高の場所はどこですか。
-L3. 🎓 Have you said goodbye to friends?
-友達に別れを言いましたか。
-L3. 🍓 Which is more delicious: strawberry or apple?
-イチゴとりんご、どちらがもっと美味しいですか。
-L3. 🏯 If you visit Osaka, what will you see?
-大阪を訪れたら何を見ますか。
-L3. 🌳 Have you been to the park today?
-今日公園に行きましたか。
-`
-  }
+"L7. 🐱 Is a cat funnier than a dog?",
+"猫は犬より面白い？",
+"L7. 🍓 Is strawberry ice cream better?",
+"イチゴのアイスはいい？",
+"L7. 🎮 Is Mario better than Kuromi?",
+"マリオはクロミよりいい？",
+"L7. 🌸 Are cherry blossoms pretty?",
+"桜はきれい？",
+"L7. 🍜 Is ramen better than udon?",
+"ラーメンはうどんよりいい？",
+"L7. 🐉 Is a dragon funnier?",
+"ドラゴンは面白い？",
+"L7. 🎒 Is a red bag better?",
+"赤いカバンはいい？",
+"L7. 🏰 Is Osaka Castle big?",
+"大阪城は大きい？",
+"L7. 🍡 Is dango sweet?",
+"団子は甘い？",
+"L7. 🐸 Is a frog funny?",
+"カエルは面白い？",
+"L6. 🦕 Can a dinosaur fly?",
+"恐竜は空を飛べる？",
+"L6. 🍕 Is pizza better than takoyaki?",
+"ピザはたこ焼きよりいい？",
+"L6. 🐲 Can you ride a dragon?",
+"ドラゴンに乗れる？",
+"L6. 🌸 Are sakura flowers pink?",
+"桜の花はピンク？",
+"L6. 🍜 Is kushikatsu delicious?",
+"串カツは美味しい？",
+"L6. 🐱 Can a cat talk?",
+"猫は話せる？",
+"L6. 🏯 Is Namba fun?",
+"ナンバは楽しい？",
+"L6. 🍦 Is ice cream cold?",
+"アイスは冷たい？",
+"L6. 🐉 Is a pet dragon cool?",
+"ペットのドラゴンはかっこいい？",
+"L6. 🍡 Is strawberry dango sweet?",
+"イチゴの団子は甘い？",
+"L5. 🐉 What if you have a dragon?",
+"ドラゴンがいたらどうする？",
+"L5. 🌸 Where is the prettiest sakura?",
+"一番きれいな桜はどこ？",
+"L5. 🍜 Who eats more takoyaki?",
+"たこ焼きを誰がもっと食べる？",
+"L5. 🏰 What did you see at Dotonbori?",
+"道頓堀で何を見た？",
+"L5. 🐱 Which is funnier: cats or dogs?",
+"猫と犬、どっちが面白い？",
+"L5. 🍦 Would you eat only ice cream?",
+"アイスしか食べない？",
+"L5. 🎮 What if Mario is your friend?",
+"マリオが友達になったら？",
+"L5. 🌸 Where do you see sakura?",
+"桜をどこで見る？",
+"L5. 🍡 What is your favorite dango?",
+"好きな団子は何？",
+"L5. 🐉 What if a dragon visits Osaka?",
+"ドラゴンが大阪に来たら？",
+"L4. 🌸 Did you see sakura yesterday?",
+"昨日桜を見た？",
+"L4. 🍜 Will you eat takoyaki tomorrow?",
+"明日たこ焼きを食べる？",
+"L4. 🏯 What did you do at the castle?",
+"城で何をした？",
+"L4. 🐉 Would you ride a dragon?",
+"ドラゴンに乗る？",
+"L4. 🍦 Did you eat strawberry ice cream?",
+"イチゴのアイスを食べた？",
+"L4. 🎮 What will you do on break?",
+"休みに何をする？",
+"L4. 🍡 Did you like kushikatsu?",
+"串カツは好きだった？",
+"L4. 🌸 Will you see sakura this week?",
+"今週桜を見る？",
+"L4. 🐱 What if you met a talking cat?",
+"話す猫に会ったら？",
+"L4. 🏰 Did you visit Umeda last week?",
+"先週梅田に行った？",
+"L3. 🌸 Have you ever seen pink sakura?",
+"ピンクの桜を見たことある？",
+"L3. 🍜 If you eat takoyaki, will you be happy?",
+"たこ焼きを食べたら幸せ？",
+"L3. 🏯 Which is more fun: Dotonbori or Umeda?",
+"道頓堀と梅田、どっちが楽しい？",
+"L3. 🐉 If you had a dragon, what would you do?",
+"ドラゴンがいたら何する？",
+"L3. 🍡 Have you tried kushikatsu before?",
+"串カツ食べたことある？",
+"L3. 🍦 Which is better: ice cream or dango?",
+"アイスと団子、どっちがいい？",
+"L3. 🎮 If you meet Mario, what will you say?",
+"マリオに会ったら何と言う？",
+"L3. 🌸 Has spring been fun this year?",
+"今年の春は楽しかった？",
+"L3. 🏰 Which is bigger: Osaka Castle or Umeda Sky?",
+"大阪城と梅田スカイ、どっちが大きい？",
+"L3. 🐱 If cats ruled Osaka, what would happen?",
+"猫が大阪を支配したらどうなる？"
 ];
