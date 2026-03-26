@@ -1118,7 +1118,6 @@
             <select id='classSelector'>
                 <option value=''>Select Class</option>
                 <option value='FunQuestions'>Fun Questions (Daily)</option>
- <option value='TonyJayStories'>Tony & Jay Stories (Daily)</option>
  <option value='ClozeQuiz'>Cloze Quiz (Daily)</option>
                 <option value='Grammar'>Grammar</option>
                 <option value='Sentences'>Sentences</option>
@@ -1229,7 +1228,6 @@
 <script src='news-loader.js'></script>
 <script src='fun-questions-loader.js'></script>
  <script src='quiz-loader.js'></script>
-<script src='tony-jay-loader.js'></script>
 <!-- Static news loaded dynamically via news-loader.js -->
 <!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
@@ -1479,7 +1477,7 @@
             if (story && story.title) {
                 const option = document.createElement("option");
                 option.value = optionIndex;
-                option.textContent = story.level ? `Level ${story.level}: ${story.title}` : story.title;
+                option.textContent = story.title;
                 storySelector.appendChild(option);
                 optionIndex++;
             } else {
@@ -2916,7 +2914,7 @@ if (typeof getCombinedFunQuestions === "function") {
     lessonsData["FunQuestions"] = funQuestionsData;
 }
 
-            lessonsData = {
+            Object.assign(lessonsData, {
                 'Bronze': bronzeStories,
                 'Silver': silverStories,
                 'Gold': goldStories,
