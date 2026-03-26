@@ -1,107 +1,106 @@
 var funQuestions20260326 = [
-  {
-    title: "Fun Questions - March 26, 2026",
-    content: `
-N7. 🍎 What is your favorite color?
-好きな色は何ですか？
-N7. 🐶 Do you have a pet?
-ペットはいますか？
-N7. 🍦 What is your favorite ice cream flavor?
-好きなアイスクリームの味は何ですか？
-N7. 🎨 Can you draw a cat?
-猫を描けますか？
-N7. 🌞 Do you like sunny days?
-晴れた日は好きですか？
-N7. 🚗 What color is your bike?
-あなたの自転車の色は何ですか？
-N7. 🎵 Do you like to sing?
-歌うのが好きですか？
-N7. 🍌 What fruit do you eat every day?
-毎日食べる果物は何ですか？
-N7. 🏠 How many rooms are in your house?
-あなたの家には何部屋ありますか？
-N7. 🌙 Do you sleep with the light on?
-明かりをつけて寝ますか？
-N6. 🌧️ What do you do when it rains?
-雨が降ったら何をするのが好きですか？
-N6. 🎂 How old are you?
-何歳ですか？
-N6. 📚 What is your favorite book?
-好きな本は何ですか？
-N6. 🏫 What is your favorite subject at school?
-学校で好きな教科は何ですか？
-N6. 🦋 Have you seen a butterfly?
-蝶を見たことがありますか？
-N6. 🍕 What do you eat for dinner?
-夕食に何を食べますか？
-N6. 🎮 Do you play video games?
-ビデオゲームをしますか？
-N6. 🐱 Can you make a cat sound?
-猫の音を真似できますか？
-N6. 🌈 Do you like rainbow colors?
-虹の色が好きですか？
-N6. 🎈 What is your favorite party game?
-好きなパーティーゲームは何ですか？
-N5. 🏖️ What do you do at the beach?
-海で何をするのが好きですか？
-N5. 🍳 Can you cook an egg?
-卵を焼けますか？
-N5. 🎬 What is your favorite movie?
-好きな映画は何ですか？
-N5. 🐘 Have you ever seen an elephant?
-象を見たことがありますか？
-N5. 🎸 Do you play a musical instrument?
-楽器を弾きますか？
-N5. 🍔 What is your favorite fast food?
-好きなファストフードは何ですか？
-N5. 🏀 Can you play basketball?
-バスケットボールをできますか？
-N5. 🦉 Do you know what an owl says?
-フクロウの鳴き声を知っていますか？
-N5. 🎭 Do you like to wear costumes?
-衣装を着るのが好きですか？
-N5. 🌟 What do you wish for?
-何をお願いしたいですか？
-N4. 🏕️ Have you ever gone camping?
-キャンプに行ったことがありますか？
-N4. 🍜 What is your favorite noodle?
-好きな麺類は何ですか？
-N4. 🎪 Do you like circuses?
-サーカスが好きですか？
-N4. 🦖 What dinosaur do you like best?
-好きな恐竜は何ですか？
-N4. 🎯 Can you throw a ball well?
-ボールを上手に投げられますか？
-N4. 🍣 What Japanese food do you like?
-好きな日本料理は何ですか？
-N4. 🎪 Have you been to a festival?
-お祭りに行ったことがありますか？
-N4. 🦉 Do you think owls are smart?
-フクロウは賢いと思いますか？
-N4. 🎨 What color is the sky at sunset?
-夕暮れの空の色は何色ですか？
-N4. 🏆 What would you like to win?
-何を勝ち取りたいですか？
-N3. 🎭 What is your favorite story?
-好きな物語は何ですか？
-N3. 🌍 If you could travel anywhere, where would you go?
-どこかに行けるとしたら、どこに行きますか？
-N3. 🎭 Do you prefer to watch or to perform?
-見るのが好きですか、それとも演じるのが好きですか？
-N3. 🌸 What is the best season in Japan?
-日本で一番いい季節は何ですか？
-N3. 🎨 How do you feel when you create art?
-芸術を作る時はどう感じますか？
-N3. 🏃‍♂️ What sport makes you feel happiest?
-どのスポーツをすると一番幸せな気分になりますか？
-N3. 🌙 What do you think about before sleep?
-寝る前に何について考えますか？
-N3. 🎵 How does music make you feel?
-音楽はあなたをどう感じさせますか？
-N3. 🐉 If you had a magic power, what would it be?
-魔法の力を持てるとしたら、どんな力にしますか？
-N3. 🌟 What makes you proud of yourself?
-自分が誇らしく思うことは何ですか？
-`
-  }
+  "L7. 🌸 Are you happy?",
+  "あなたは幸せですか。",
+  "L7. 🎓 Is it graduation?",
+  "卒業式ですか。",
+  "L7. 🌷 Do you like spring?",
+  "春が好きですか。",
+  "L7. 🌧️ Is it rainy today?",
+  "今日は雨ですか。",
+  "L7. 🏫 Do you go school?",
+  "学校に行きますか。",
+  "L7. 🍡 Do you eat takoyaki?",
+  "たこ焼きを食べますか。",
+  "L7. 🌳 Are the sakura pink?",
+  "桜はピンクですか。",
+  "L7. 🎒 Is your bag heavy?",
+  "カバンは重いですか。",
+  "L7. 🌤️ Is the weather warm?",
+  "天気は暖かいですか。",
+  "L7. 👋 Are your friends here?",
+  "友達はここですか。",
+
+  "L6. 🌸 Can you see sakura?",
+  "桜が見えますか。",
+  "L6. 🎓 Are you a graduate?",
+  "あなたは卒業生ですか。",
+  "L6. 🌷 Is spring very nice?",
+  "春はとても素敵ですか。",
+  "L6. 🏯 Can you visit Osaka?",
+  "大阪に行けますか。",
+  "L6. 🍢 Do you like street food?",
+  "屋台の食べ物が好きですか。",
+  "L6. 🌧️ Is it cloudy now?",
+  "今は曇りですか。",
+  "L6. 🌳 Are the parks green?",
+  "公園は緑ですか。",
+  "L6. 🎒 Can you carry it?",
+  "それを持てますか。",
+  "L6. 🌤️ Is the sky blue?",
+  "空は青いですか。",
+  "L6. 👋 Are you saying goodbye?",
+  "さよならを言っていますか。",
+
+  "L5. 🌸 What do you see?",
+  "何を見ますか。",
+  "L5. 🎓 Where is graduation?",
+  "卒業式はどこですか。",
+  "L5. 🌷 When is spring break?",
+  "春休みはいつですか。",
+  "L5. 🏯 Who goes to Dotonbori?",
+  "道頓堀に行くのは誰ですか。",
+  "L5. 🍡 What do you eat?",
+  "何を食べますか。",
+  "L5. 🌧️ Why is it rainy?",
+  "なぜ雨ですか。",
+  "L5. 🌳 Where are the sakura?",
+  "桜はどこですか。",
+  "L5. 🎒 What is in your bag?",
+  "カバンの中身は何ですか。",
+  "L5. 🌤️ How is the weather?",
+  "天気はどうですか。",
+  "L5. 👋 Who do you miss?",
+  "誰が恋しいですか。",
+
+  "L4. 🌸 Did you see sakura?",
+  "桜を見ましたか。",
+  "L4. 🎓 Where did you graduate?",
+  "どこを卒業しましたか。",
+  "L4. 🌷 Will you go spring break?",
+  "春休みに出かけますか。",
+  "L4. 🏯 Did you visit Osaka?",
+  "大阪に行きましたか。",
+  "L4. 🍡 What did you eat?",
+  "何を食べましたか。",
+  "L4. 🌧️ Will it rain tomorrow?",
+  "明日は雨が降りますか。",
+  "L4. 🌳 Are you going park?",
+  "公園に行きますか。",
+  "L4. 🎒 Did you pack your bag?",
+  "カバンを詰めましたか。",
+  "L4. 🌤️ Is it going warm?",
+  "暖かくなりますか。",
+  "L4. 👋 Will you say goodbye?",
+  "さよならを言いますか。",
+
+  "L3. 🌸 Have you seen sakura?",
+  "桜を見たことがありますか。",
+  "L3. 🎓 If you graduate, what?",
+  "卒業したらどうしますか。",
+  "L3. 🌷 Which is more beautiful?",
+  "どちらが美しいですか。",
+  "L3. 🏯 Have you been Namba?",
+  "難波に行ったことがありますか。",
+  "L3. 🍡 If it rains, what?",
+  "雨が降ったらどうしますか。",
+  "L3. 🌧️ Has it been rainy?",
+  "ずっと雨でしたか。",
+  "L3. 🌳 Is Umeda busier now?",
+  "梅田は今混んでいますか。",
+  "L3. 🎒 Have you packed yet?",
+  "もう荷物を詰めましたか。",
+  "L3. 🌤️ If spring comes, happy?",
+  "春が来たら幸せですか。",
+  "L3. 👋 Who has left school?",
+  "学校を去ったのは誰ですか。"
 ];
