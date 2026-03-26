@@ -1531,6 +1531,55 @@ function handleClassSelect() {
         }
 
         // Non-quiz mode - reset quiz flag
+// Handle Tony & Jay Stories mode
+if (cls === 'TonyJayStories') {
+  isQuizMode = false;
+  if (!lessonsData['TonyJayStories'] || !Array.isArray(lessonsData['TonyJayStories']) || lessonsData['TonyJayStories'].length === 0) {
+    console.error('No Tony & Jay stories found');
+    alert('No stories available for today');
+    exitReadingMode();
+    return;
+  }
+  const stories = lessonsData['TonyJayStories'];
+  let selectedStory = null;
+  if (currentStory && currentStory !== 'questions') {
+    const levelMatch = currentStory.match(/Eiken(\\d+|Pre-2|Pre-2\\+|Pre-1|1)/i);
+    if (levelMatch) {
+      const levelStr = levelMatch[1];
+      let targetLevel;
+      if (levelStr === 'Pre-2') targetLevel = 'Pre-2';
+      else if (levelStr === 'Pre-2+') targetLevel = 'Pre-2+';
+      else if (levelStr === 'Pre-1') targetLevel = 'Pre-1';
+      else targetLevel = parseInt(levelStr);
+      selectedStory = stories.find(s => s.level === targetLevel || s.level === levelStr);
+    }
+    if (!selectedStory) {
+      const index = parseInt(currentStory);
+      if (!isNaN(index) && index >= 0 && index < stories.length) {
+        selectedStory = stories[index];
+      }
+    }
+  }
+  if (!selectedStory) {
+    selectedStory = stories[0];
+  }
+  if (!selectedStory) {
+    console.error('No story found for selection:', currentStory);
+    alert('Story not found');
+    exitReadingMode();
+    return;
+  }
+  currentStoryContent = selectedStory.content;
+  currentStoryTitle = selectedStory.title;
+  currentStoryLevel = selectedStory.level;
+  displayCurrentSentence();
+  setTimeout(() => {
+    applyDisplayMode();
+    ensureTextVisibility();
+  }, 100);
+  return;
+}
+
         isQuizMode = false;
 
         if (!lessonsData[cls]) {
