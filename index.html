@@ -1241,34 +1241,34 @@
 <script src='bronze.js'></script>
 <script src='silver.js'></script>
 <script src='gold.js'></script>
-        <script defer src='eiken7story.js'></script>
-<script defer src='eiken7new12.js'></script>
-<script defer src='eiken6new12.js'></script>
-<script defer src='eiken5new12.js'></script>
+        <script src='eiken7story.js'></script>
+<script src='eiken7new12.js'></script>
+<script src='eiken6new12.js'></script>
+<script src='eiken5new12.js'></script>
 <script src='eiken4new12v2.js'></script>
-<script defer src='eiken3new12.js'></script>
+<script src='eiken3new12.js'></script>
 <script src='eikenpre2new12.js'></script>
 <script src='eikenpre2plusnew12.js'></script>
-<script defer src='eiken2new12.js'></script>
+<script src='eiken2new12.js'></script>
 <script src='eikenpre1new12.js'></script>
 <script src='eiken1new12v2.js'></script>
-        <script defer src='eiken6story.js'></script>
+        <script src='eiken6story.js'></script>
 <!-- <script src='qa-loader.js'></script> -->
-<script defer src='eiken5story.js'></script>
-<script defer src='eiken3story.js'></script>
-<script defer src='eiken3questions.js'></script>
-<script defer src='eiken4story.js'></script>
-<script defer src='easyquestions.js'></script>
-<script defer src='gettingtoknow.js'></script>
-<script defer src='wouldyourather.js'></script>
-<script defer src='eikenpre2.js'></script>
-<script defer src='eikenpre2plus.js'></script>
-<script defer src='eikenpre2plussentences.js'></script>
-<script defer src='eiken2sentences.js'></script>
+<script src='eiken5story.js'></script>
+<script src='eiken3story.js'></script>
+<script src='eiken3questions.js'></script>
+<script src='eiken4story.js'></script>
+<script src='easyquestions.js'></script>
+<script src='gettingtoknow.js'></script>
+<script src='wouldyourather.js'></script>
+<script src='eikenpre2.js'></script>
+<script src='eikenpre2plus.js'></script>
+<script src='eikenpre2plussentences.js'></script>
+<script src='eiken2sentences.js'></script>
 <script src='eikenpre1sentences.js'></script>
-<script defer src='eiken1sentences.js'></script>
+<script src='eiken1sentences.js'></script>
 <script src='eiken2.js'></script>
-<script defer src='eikenpre1.js'></script>
+<script src='eikenpre1.js'></script>
 <script src='eiken1.js'></script>
 <script src='grammar-site.js'></script>
 <script src='sentences-site.js'></script>
@@ -2920,43 +2920,43 @@ if (typeof getCombinedFunQuestions === "function") {
     lessonsData["FunQuestions"] = funQuestionsData;
 }
 
-            Object.assign(lessonsData, {
-                'Bronze': bronzeStories,
-                'Silver': silverStories,
-                'Gold': goldStories,
-                'Adult': adult,
-                'News': newsData,
-  'FunQuestions': funQuestionsLoaded ? funQuestionsData : [],
-                'X': x,
-                'C': c,
-                'Eiken1': eiken1,
-                'Eiken2': eiken2,
-                'Eiken3': eiken3story,
-                'Eiken4': eiken4story,
-                'Eiken5': eiken5story,
-                'Eiken6': eiken6story,
-                'Eiken7': eiken7story,
-'New7': eiken7new12,
-'New6': eiken6new12,
-
-'New5': eiken5new12,
-'New4': eiken4new12v2,
-'New3': eiken3new12,
-'NewPre2': eikenpre2new12,
-'NewPre2Plus': eikenpre2plusnew12,
-'New2': eiken2new12,
-'NewPre1': eikenpre1new12,
-'New1': eiken1new12v2,
-                'EikenPre1': eikenpre1,
-                'EikenPre2': eikenpre2,
-                'EikenPre2Plus': eikenpre2plus,
-                'GettingToKnow': gettingtoknow,
-                'EasyQuestions': easyquestions,
-                'WouldYouRather': wouldyourather,
-                'Vocab': vocab,
-                'Grammar': [].concat(eiken7grammar, eiken6grammar, eiken5grammar, eiken4grammar, eiken3grammar, eikenpre2grammar, eikenpre2plusgrammar, eiken2grammar, eikenpre1grammar, eiken1grammar),
-                'Sentences': [].concat(eiken7sentences, eiken6sentences, eiken5sentences, eiken4sentences, eiken3sentences, eikenpre2sentences, eikenpre2plussentences, eiken2sentences, eikenpre1sentences, eiken1sentences)
- });
+      document.addEventListener('DOMContentLoaded', function() {
+        Object.assign(lessonsData, {
+        'Bronze': bronzeStories,
+        'Silver': silverStories,
+        'Gold': goldStories,
+        'Adult': adult,
+        'News': newsData,
+        'FunQuestions': funQuestionsLoaded ? funQuestionsData : [],
+        'X': x,
+        'C': c,
+        'Eiken1': eiken1,
+        'Eiken2': eiken2,
+        'Eiken3': eiken3story,
+        'Eiken4': eiken4story,
+        'Eiken5': eiken5story,
+        'Eiken6': eiken6story,
+        'Eiken7': eiken7story,
+        'New7': eiken7new12,
+        'New6': eiken6new12,
+                'New5': eiken5new12,
+        'New4': eiken4new12v2,
+        'New3': eiken3new12,
+        'NewPre2': eikenpre2new12,
+        'NewPre2Plus': eikenpre2plusnew12,
+        'New2': eiken2new12,
+        'NewPre1': eikenpre1new12,
+        'New1': eiken1new12v2,
+        'EikenPre1': eikenpre1,
+        'EikenPre2': eikenpre2,
+        'EikenPre2Plus': eikenpre2plus,
+        'GettingToKnow': gettingtoknow,
+        'EasyQuestions': easyquestions,
+        'WouldYouRather': wouldyourather,
+        'Vocab': vocab,
+        'Grammar': [].concat(eiken7grammar, eiken6grammar, eiken5grammar, eiken4grammar, eiken3grammar, eikenpre2grammar, eikenpre2plusgrammar, eiken2grammar, eikenpre1grammar, eiken1grammar),
+        'Sentences': [].concat(eiken7sentences, eiken6sentences, eiken5sentences, eiken4sentences, eiken3sentences, eikenpre2sentences, eikenpre2plussentences, eiken2sentences, eikenpre1sentences, eiken1sentences)
+      });
 
             console.log('Lesson data loaded:', Object.keys(lessonsData));
             console.log('News articles:', newsData.length + ' entries');
