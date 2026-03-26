@@ -1119,12 +1119,21 @@
                 <option value=''>Select Class</option>
                 <option value='FunQuestions'>Fun Questions (Daily)</option>
  <option value='ClozeQuiz'>Cloze Quiz (Daily)</option>
- <option value='TonyJayStories'>Tony & Jay Stories (Daily)</option>
                 <option value='Grammar'>Grammar</option>
                 <option value='Sentences'>Sentences</option>
   <option value='News'>News (Daily)</option>
                 <option value='Adult'>Adult</option>
                 <option value='Eiken7'>Eiken 7</option>
+<option value='New7'>New 7!</option>
+<option value='New6'>New 6!</option>
+<option value='New5'>New 5!</option>
+<option value='New4'>New 4!</option>
+<option value='New3'>New 3!</option>
+<option value='NewPre2'>New Pre-2!</option>
+<option value='NewPre2Plus'>New Pre-2 Plus!</option>
+<option value='New2'>New 2!</option>
+<option value='NewPre1'>New Pre-1!</option>
+<option value='New1'>New 1!</option>
                 <option value='Eiken6'>Eiken 6</option>
                 <option value='Eiken5'>Eiken 5</option>
                 <option value='Eiken4'>Eiken 4</option>
@@ -1219,7 +1228,6 @@
 <script src='news-loader.js'></script>
 <script src='fun-questions-loader.js'></script>
  <script src='quiz-loader.js'></script>
- <script src='tony-jay-loader.js'></script>
 <!-- Static news loaded dynamically via news-loader.js -->
 <!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
@@ -1403,22 +1411,17 @@
     // ====================
     // CLASS & STORY MANAGEMENT
     // ====================
-function handleClassSelect() {
-  currentClass = this.value;
-  if (currentClass === 'ClozeQuiz') {
-    storySelector.disabled = true;
-    storySelector.innerHTML = '<option value="">Quiz Mode</option>';
-    enterReadingMode(currentClass);
-  } else {
-    storySelector.disabled = !currentClass;
-    if (currentClass) {
-      populateStorySelector(currentClass);
-    } else {
-      storySelector.innerHTML = '<option value="">Select Story</option>';
-      storySelector.disabled = true;
+    function handleClassSelect() {
+        currentClass = this.value;
+        storySelector.disabled = !currentClass;
+
+        if (currentClass) {
+            populateStorySelector(currentClass);
+        } else {
+            storySelector.innerHTML = '<option value="">Select Story</option>';
+            storySelector.disabled = true;
+        }
     }
-  }
-}
 
     function handleStorySelect() {
         currentStory = this.value;
@@ -1531,63 +1534,6 @@ function handleClassSelect() {
         }
 
         // Non-quiz mode - reset quiz flag
-// Handle Tony & Jay Stories mode
-if (cls === 'TonyJayStories') {
-      isQuizMode = false;
-      if (!lessonsData['TonyJayStories'] || !Array.isArray(lessonsData['TonyJayStories']) || lessonsData['TonyJayStories'].length === 0) {
-        console.error('No Tony & Jay stories found');
-        alert('No stories available for today');
-        exitReadingMode();
-        return;
-      }
-      const stories = lessonsData['TonyJayStories'];
-      let selectedStory = null;
-      if (currentStory && currentStory !== 'questions') {
-        const levelMatch = currentStory.match(/Eiken(\d+|Pre-2|Pre-2\+|Pre-1|1)/i);
-        if (levelMatch) {
-          const levelStr = levelMatch[1];
-          let targetLevel;
-          if (levelStr === 'Pre-2') targetLevel = 'Pre-2';
-          else if (levelStr === 'Pre-2+') targetLevel = 'Pre-2+';
-          else if (levelStr === 'Pre-1') targetLevel = 'Pre-1';
-          else targetLevel = parseInt(levelStr);
-          selectedStory = stories.find(s => s.level === targetLevel || s.level === levelStr);
-        }
-        if (!selectedStory) {
-          const index = parseInt(currentStory);
-          if (!isNaN(index) && index >= 0 && index < stories.length) {
-            selectedStory = stories[index];
-          }
-        }
-      }
-      if (!selectedStory) {
-        selectedStory = stories[0];
-      }
-      if (!selectedStory) {
-        console.error('No story found for selection:', currentStory);
-        alert('Story not found');
-        exitReadingMode();
-        return;
-      }
-      console.log('Tony & Jay: Selected story level:', selectedStory.level, 'Title:', selectedStory.title, 'Content length:', selectedStory.content ? selectedStory.content.length : 0);
-      if (!selectedStory.content) {
-        console.error('Tony & Jay: Story has no content!');
-        alert('Story content is missing');
-        exitReadingMode();
-        return;
-      }
-      currentStoryContent = selectedStory.content;
-      currentStoryTitle = selectedStory.title;
-      currentStoryLevel = selectedStory.level;
-      console.log('Tony & Jay: Setting content, length:', currentStoryContent.length);
-      displayCurrentSentence();
-      setTimeout(() => {
-        applyDisplayMode();
-        ensureTextVisibility();
-      }, 100);
-      return;
-    }
-
         isQuizMode = false;
 
         if (!lessonsData[cls]) {
@@ -2023,31 +1969,6 @@ if (cls === 'TonyJayStories') {
         stopSpeech();
         closeTranslationPopupHandler();
 
-        // Check if in quiz mode
-        if (isQuizMode) {
-            if (quizQuestions.length === 0 || fruitGameActive) return;
-
-            const isLastPage = currentSentenceIndex >= quizQuestions.length - 1;
-
-            if (fruitGameEnabled) {
-                shouldAdvanceAfterGame = true;
-                showFruitGame();
-                return;
-            }
-
-            if (isLastPage) {
-                currentSentenceIndex = 0;
-                displayQuizQuestion(currentSentenceIndex);
-                return;
-            }
-
-            currentSentenceIndex++;
-            displayQuizQuestion(currentSentenceIndex);
-            updatePageCounter();
-            return;
-        }
-
-        // Regular mode
         if (sentences.length === 0 || fruitGameActive) return;
 
         const isLastPage = currentSentenceIndex >= sentences.length - 1;
@@ -2068,14 +1989,12 @@ if (cls === 'TonyJayStories') {
     }
 
     function advanceToNextSentence() {
-        const maxLength = isQuizMode ? quizQuestions.length : sentences.length;
-        
-        if (currentSentenceIndex < maxLength - 1) {
+        if (currentSentenceIndex < sentences.length - 1) {
             currentSentenceIndex++;
         } else {
             currentSentenceIndex = 0;
         }
-        
+
         displayCurrentSentence();
         updatePageCounter();
     }
@@ -2084,21 +2003,6 @@ if (cls === 'TonyJayStories') {
         stopSpeech();
         closeTranslationPopupHandler();
 
-        // Check if in quiz mode
-        if (isQuizMode) {
-            if (quizQuestions.length === 0) return;
-
-            if (currentSentenceIndex > 0) {
-                currentSentenceIndex--;
-            } else {
-                currentSentenceIndex = quizQuestions.length - 1;
-            }
-            displayQuizQuestion(currentSentenceIndex);
-            updatePageCounter();
-            return;
-        }
-
-        // Regular mode
         if (sentences.length === 0) return;
 
         if (currentSentenceIndex > 0) {
@@ -2940,7 +2844,7 @@ if (cls === 'TonyJayStories') {
     function loadExternalData() {
         return Promise.all([
             loadVocabData(),
-            loadLessonsData(), initQuizLoader(), initTonyJayStoriesLoader()
+            loadLessonsData()
         ]);
     }
 
@@ -3046,8 +2950,7 @@ if (typeof getCombinedFunQuestions === "function") {
                 'Vocab': vocab,
                 'Grammar': [].concat(eiken7grammar, eiken6grammar, eiken5grammar, eiken4grammar, eiken3grammar, eikenpre2grammar, eikenpre2plusgrammar, eiken2grammar, eikenpre1grammar, eiken1grammar),
                 'Sentences': [].concat(eiken7sentences, eiken6sentences, eiken5sentences, eiken4sentences, eiken3sentences, eikenpre2sentences, eikenpre2plussentences, eiken2sentences, eikenpre1sentences, eiken1sentences)
-            ,
-  'ClozeQuiz': typeof window.quizQuestions !== 'undefined' ? window.quizQuestions : []};
+            };
 
             console.log('Lesson data loaded:', Object.keys(lessonsData));
             console.log('News articles:', newsData.length + ' entries');
@@ -3164,542 +3067,5 @@ if (typeof getCombinedFunQuestions === "function") {
         // Track page view
         Analytics.trackPageView('index.html');
     </script>
-
-<script>
-// Override the storySelector event listener for Tony & Jay Stories
-document.addEventListener('DOMContentLoaded', function() {
-  const storySelector = document.getElementById('storySelector');
-  if (storySelector) {
-    storySelector.addEventListener('change', function() {
-      currentStory = this.value;
-      console.log('Tony & Jay Override: Dropdown changed to', currentStory, 'Class:', currentClass);
-      loadTextContent(currentClass);
-    });
-    console.log('Tony & Jay Override: Event listener attached to storySelector');
-  } else {
-    console.error('Tony & Jay Override: storySelector not found!');
-  }
-});
-</script>
-
-<script>
-(function() {
-  // Wait for the DOM to be fully loaded
-  document.addEventListener('DOMContentLoaded', function() {
-    // Retry loop if data isn't ready yet
-    function initOverride() {
-      if (window.tonyJayOverrideInitialized) return; // Guard: prevent re-initialization
-      if (!window.lessonsData || !window.lessonsData['TonyJayStories']) {
-        console.warn('TonyJayStories data not found. Retrying in 500ms...');
-        setTimeout(initOverride, 500);
-        return;
-      }
-      window.tonyJayOverrideInitialized = true; // Mark as initialized
-
-      const dropdown = document.getElementById('storySelector');
-      if (!dropdown) {
-        console.error('Story selector dropdown not found.');
-        return;
-      }
-
-      // Global variables to track current story and sentence index
-      let currentStoryContent = '';
-      let currentSentenceIndex = 0;
-      let currentStoryTitle = '';
-
-      // Helper: split content into sentences (English & Japanese pairs)
-      function parseSentences(content) {
-        const lines = content.split('\n');
-        const sentences = [];
-        // Assume lines alternate: English, Japanese, English, Japanese...
-        for (let i = 0; i < lines.length; i += 2) {
-          if (lines[i] && lines[i+1]) {
-            sentences.push({ english: lines[i].trim(), japanese: lines[i+1].trim() });
-          } else if (lines[i]) {
-            sentences.push({ english: lines[i].trim(), japanese: '' });
-          }
-        }
-        return sentences;
-      }
-
-      // Display the current sentence pair
-      function displayCurrentSentence() {
-        const sentences = parseSentences(currentStoryContent);
-        if (sentences.length === 0) return;
-        
-        // Ensure index is within bounds
-        if (currentSentenceIndex >= sentences.length) currentSentenceIndex = 0;
-        
-        const currentPair = sentences[currentSentenceIndex];
-        const englishElem = document.getElementById('englishSentence');
-        const japaneseElem = document.getElementById('japaneseSentence');
-        
-        if (englishElem && japaneseElem) {
-          // Use the existing sentence display elements
-          englishElem.textContent = currentPair.english;
-          japaneseElem.textContent = currentPair.japanese;
-        } else {
-          // Fallback: show full text in a container
-          let container = document.getElementById('storyContent');
-          if (!container) {
-            container = document.createElement('div');
-            container.id = 'storyContent';
-            container.style.cssText = "padding: 20px; font-size: 1.2em;";
-            const main = document.querySelector('main') || document.body;
-            main.appendChild(container);
-          }
-          container.innerHTML = `<h3>${currentStoryTitle}</h3><pre>${currentPair.english}\n\n${currentPair.japanese}</pre>`;
-        }
-      }
-
-      // Attach the new event listener by cloning the dropdown to remove old listeners
-      const newDropdown = dropdown.cloneNode(true);
-      dropdown.parentNode.replaceChild(newDropdown, dropdown);
-      
-      newDropdown.addEventListener('change', function() {
-        const storyIndex = parseInt(this.value);
-        const stories = window.lessonsData['TonyJayStories'];
-        
-        if (isNaN(storyIndex) || !stories[storyIndex]) {
-          console.error('Invalid story index:', storyIndex);
-          return;
-        }
-
-        const selectedStory = stories[storyIndex];
-        currentStoryContent = selectedStory.content;
-        currentStoryTitle = selectedStory.title;
-        currentSentenceIndex = 0;
-
-        console.log('Tony & Jay Override: Loading story', selectedStory.level, selectedStory.title);
-        displayCurrentSentence();
-      });
-
-      console.log('Tony & Jay Override: Event listener attached successfully.');
-    }
-
-    initOverride();
-  });
-})();
-</script>
-
-<script>
-(function() {
-  document.addEventListener('DOMContentLoaded', function() {
-    function initOverride() {
-      if (window.tonyJayOverrideInitialized) return; // Guard: prevent re-initialization
-      if (!window.lessonsData || !window.lessonsData['TonyJayStories']) {
-        console.warn('TonyJayStories data not found. Retrying in 500ms...');
-        setTimeout(initOverride, 500);
-        return;
-      }
-      window.tonyJayOverrideInitialized = true; // Mark as initialized
-
-      const dropdown = document.getElementById('storySelector');
-      if (!dropdown) {
-        console.error('Story selector dropdown not found.');
-        return;
-      }
-
-      let currentStoryContent = '';
-      let currentSentenceIndex = 0;
-
-      function parseSentences(content) {
-        const lines = content.split('\n');
-        const sentences = [];
-        for (let i = 0; i < lines.length; i += 2) {
-          if (lines[i] && lines[i+1]) {
-            sentences.push({ english: lines[i].trim(), japanese: lines[i+1].trim() });
-          } else if (lines[i]) {
-            sentences.push({ english: lines[i].trim(), japanese: '' });
-          }
-        }
-        return sentences;
-      }
-
-      function displayCurrentSentence() {
-        const sentences = parseSentences(currentStoryContent);
-        if (sentences.length === 0) return;
-        if (currentSentenceIndex >= sentences.length) currentSentenceIndex = 0;
-        const currentPair = sentences[currentSentenceIndex];
-        
-        const englishElem = document.getElementById('englishSentence');
-        const japaneseElem = document.getElementById('japaneseSentence');
-        
-        if (englishElem && japaneseElem) {
-          englishElem.textContent = currentPair.english;
-          japaneseElem.textContent = currentPair.japanese;
-        } else {
-          let container = document.getElementById('storyContent');
-          if (!container) {
-            container = document.createElement('div');
-            container.id = 'storyContent';
-            container.style.cssText = "padding: 20px; font-size: 1.2em;";
-            const main = document.querySelector('main') || document.body;
-            main.appendChild(container);
-          }
-          container.innerHTML = `<pre>${currentPair.english}\n\n${currentPair.japanese}</pre>`;
-        }
-      }
-
-      function loadTonyJayStory(index) {
-        const stories = window.lessonsData['TonyJayStories'];
-        if (!stories || index < 0 || index >= stories.length) {
-          console.error('Invalid story index:', index);
-          return;
-        }
-        currentStoryContent = stories[index].content;
-        currentSentenceIndex = 0;
-        console.log('Tony & Jay: Loading story', index);
-        displayCurrentSentence();
-      }
-
-      // Override the dropdown change event
-      dropdown.onchange = function() {
-        const selectedIndex = parseInt(this.value, 10);
-        if (!isNaN(selectedIndex)) {
-          loadTonyJayStory(selectedIndex);
-        }
-      };
-
-      // Handle Next/Previous buttons
-      const nextBtn = document.getElementById('nextBtn');
-      const prevBtn = document.getElementById('prevBtn');
-      
-      if (nextBtn) {
-        nextBtn.onclick = function() {
-          if (!currentStoryContent) return;
-          const sentences = parseSentences(currentStoryContent);
-          if (currentSentenceIndex < sentences.length - 1) {
-            currentSentenceIndex++;
-            displayCurrentSentence();
-          }
-        };
-      }
-      
-      if (prevBtn) {
-        prevBtn.onclick = function() {
-          if (!currentStoryContent) return;
-          if (currentSentenceIndex > 0) {
-            currentSentenceIndex--;
-            displayCurrentSentence();
-          }
-        };
-      }
-
-      // Load initial value if present
-      const initialValue = dropdown.value;
-      if (initialValue !== undefined && initialValue !== '' && !isNaN(parseInt(initialValue))) {
-        loadTonyJayStory(parseInt(initialValue, 10));
-      }
-
-      console.log('Tony & Jay Override: Script initialized successfully.');
-    }
-
-    initOverride();
-  });
-})();
-</script>
-
-<script>
-(function() {
-  document.addEventListener('DOMContentLoaded', function() {
-    function initOverride() {
-      if (window.tonyJayOverrideInitialized) return; // Guard: prevent re-initialization
-      if (!window.lessonsData || !window.lessonsData['TonyJayStories']) {
-        console.warn('TonyJayStories data not found. Retrying in 500ms...');
-        setTimeout(initOverride, 500);
-        return;
-      }
-      window.tonyJayOverrideInitialized = true; // Mark as initialized
-
-      const dropdown = document.getElementById('storySelector');
-      if (!dropdown) {
-        console.error('Story selector dropdown not found.');
-        return;
-      }
-
-      let currentStoryContent = '';
-      let currentSentenceIndex = 0;
-
-      function parseSentences(content) {
-        const lines = content.split('\n');
-        const sentences = [];
-        for (let i = 0; i < lines.length; i += 2) {
-          if (lines[i] && lines[i+1]) {
-            sentences.push({ english: lines[i].trim(), japanese: lines[i+1].trim() });
-          } else if (lines[i]) {
-            sentences.push({ english: lines[i].trim(), japanese: '' });
-          }
-        }
-        return sentences;
-      }
-
-      function displayCurrentSentence() {
-        const sentences = parseSentences(currentStoryContent);
-        if (sentences.length === 0) return;
-        if (currentSentenceIndex >= sentences.length) currentSentenceIndex = 0;
-        const currentPair = sentences[currentSentenceIndex];
-        
-        const englishElem = document.getElementById('englishSentence');
-        const japaneseElem = document.getElementById('japaneseSentence');
-        
-        if (englishElem && japaneseElem) {
-          englishElem.textContent = currentPair.english;
-          japaneseElem.textContent = currentPair.japanese;
-        } else {
-          let container = document.getElementById('storyContent');
-          if (!container) {
-            container = document.createElement('div');
-            container.id = 'storyContent';
-            container.style.cssText = "padding: 20px; font-size: 1.2em;";
-            const main = document.querySelector('main') || document.body;
-            main.appendChild(container);
-          }
-          container.innerHTML = `<pre>${currentPair.english}\n\n${currentPair.japanese}</pre>`;
-        }
-      }
-
-      function loadTonyJayStory(index) {
-        const stories = window.lessonsData['TonyJayStories'];
-        if (!stories) {
-          console.error('Tony & Jay: Stories data missing.');
-          return;
-        }
-        
-        // Ensure index is valid
-        if (index < 0 || index >= stories.length) {
-          console.warn('Tony & Jay: Invalid index', index, '. Defaulting to first story.');
-          index = 0;
-        }
-        
-        currentStoryContent = stories[index].content;
-        currentSentenceIndex = 0;
-        console.log('Tony & Jay: Loading story', index, '-', stories[index].title);
-        displayCurrentSentence();
-      }
-
-      // Helper to parse dropdown value robustly
-      function parseDropdownValue(value) {
-        // Try direct integer parsing
-        let idx = parseInt(value, 10);
-        if (!isNaN(idx)) return idx;
-        
-        // Try extracting numbers from string (e.g., "level7" -> 7)
-        const match = value.match(/\d+/);
-        if (match) {
-          idx = parseInt(match[0], 10);
-          if (!isNaN(idx)) return idx;
-        }
-        
-        // Fallback: return 0 (first story)
-        console.warn('Tony & Jay: Could not parse value "' + value + '", defaulting to 0.');
-        return 0;
-      }
-
-      // Override the dropdown change event
-      dropdown.onchange = function() {
-        const rawValue = this.value;
-        const selectedIndex = parseDropdownValue(rawValue);
-        loadTonyJayStory(selectedIndex);
-      };
-
-      // Handle Next/Previous buttons
-      const nextBtn = document.getElementById('nextBtn');
-      const prevBtn = document.getElementById('prevBtn');
-      
-      if (nextBtn) {
-        nextBtn.onclick = function() {
-          if (!currentStoryContent) return;
-          const sentences = parseSentences(currentStoryContent);
-          if (currentSentenceIndex < sentences.length - 1) {
-            currentSentenceIndex++;
-            displayCurrentSentence();
-          }
-        };
-      }
-      
-      if (prevBtn) {
-        prevBtn.onclick = function() {
-          if (!currentStoryContent) return;
-          if (currentSentenceIndex > 0) {
-            currentSentenceIndex--;
-            displayCurrentSentence();
-          }
-        };
-      }
-
-      // Load initial value if present
-      const initialValue = dropdown.value;
-      if (initialValue !== undefined && initialValue !== '') {
-        const idx = parseDropdownValue(initialValue);
-        loadTonyJayStory(idx);
-      }
-
-      console.log('Tony & Jay Override: Script initialized with robust parsing.');
-    }
-
-    initOverride();
-  });
-})();
-</script>
-
-<script>
-(function() {
-  // Polling setup
-  let checkInterval = null;
-  
-  function initOverride() {
-    // Check if data is ready
-    if (window.lessonsData && window.lessonsData['TonyJayStories']) {
-      console.log('Tony & Jay Override: Data found! Initializing...');
-      if (checkInterval) clearInterval(checkInterval);
-      runInitializer();
-      return;
-    }
-    
-    // If not ready, set up polling if not already running
-    if (!checkInterval) {
-      console.log('Tony & Jay Override: Waiting for data...');
-      checkInterval = setInterval(function() {
-        if (window.lessonsData && window.lessonsData['TonyJayStories']) {
-          console.log('Tony & Jay Override: Data arrived! Initializing...');
-          clearInterval(checkInterval);
-          checkInterval = null;
-          runInitializer();
-        }
-      }, 200); // Check every 200ms
-    }
-  }
-
-  function runInitializer() {
-    const dropdown = document.getElementById('storySelector');
-    if (!dropdown) {
-      console.error('Tony & Jay Override: Dropdown not found.');
-      return;
-    }
-
-    let currentStoryContent = '';
-    let currentSentenceIndex = 0;
-
-    function parseSentences(content) {
-      const lines = content.split('\n');
-      const sentences = [];
-      for (let i = 0; i < lines.length; i += 2) {
-        if (lines[i] && lines[i+1]) {
-          sentences.push({ english: lines[i].trim(), japanese: lines[i+1].trim() });
-        } else if (lines[i]) {
-          sentences.push({ english: lines[i].trim(), japanese: '' });
-        }
-      }
-      return sentences;
-    }
-
-    function displayCurrentSentence() {
-      const sentences = parseSentences(currentStoryContent);
-      if (sentences.length === 0) return;
-      if (currentSentenceIndex >= sentences.length) currentSentenceIndex = 0;
-      const currentPair = sentences[currentSentenceIndex];
-      
-      const englishElem = document.getElementById('englishSentence');
-      const japaneseElem = document.getElementById('japaneseSentence');
-      
-      if (englishElem && japaneseElem) {
-        englishElem.textContent = currentPair.english;
-        japaneseElem.textContent = currentPair.japanese;
-      } else {
-        let container = document.getElementById('storyContent');
-        if (!container) {
-          container = document.createElement('div');
-          container.id = 'storyContent';
-          container.style.cssText = "padding: 20px; font-size: 1.2em;";
-          const main = document.querySelector('main') || document.body;
-          main.appendChild(container);
-        }
-        container.innerHTML = `<h3>${currentStoryTitle}</h3><pre>${currentPair.english}\n\n${currentPair.japanese}</pre>`;
-      }
-    }
-
-    function loadTonyJayStory(index) {
-      const stories = window.lessonsData['TonyJayStories'];
-      if (!stories) {
-        console.error('Tony & Jay: Stories data missing.');
-        return;
-      }
-      
-      if (index < 0 || index >= stories.length) {
-        console.warn('Tony & Jay: Invalid index', index, '. Defaulting to 0.');
-        index = 0;
-      }
-      
-      currentStoryContent = stories[index].content;
-      currentSentenceIndex = 0;
-      currentStoryTitle = stories[index].title;
-      console.log('Tony & Jay: Loading story', index, '-', currentStoryTitle);
-      displayCurrentSentence();
-    }
-
-    function parseDropdownValue(value) {
-      let idx = parseInt(value, 10);
-      if (!isNaN(idx)) return idx;
-      const match = value.match(/\d+/);
-      if (match) {
-        idx = parseInt(match[0], 10);
-        if (!isNaN(idx)) return idx;
-      }
-      console.warn('Tony & Jay: Could not parse value "' + value + '", defaulting to 0.');
-      return 0;
-    }
-
-    // Attach listener
-    dropdown.onchange = function() {
-      const rawValue = this.value;
-      const selectedIndex = parseDropdownValue(rawValue);
-      loadTonyJayStory(selectedIndex);
-    };
-
-    // Handle Next/Previous buttons
-    const nextBtn = document.getElementById('nextBtn');
-    const prevBtn = document.getElementById('prevBtn');
-    
-    if (nextBtn) {
-      nextBtn.onclick = function() {
-        if (!currentStoryContent) return;
-        const sentences = parseSentences(currentStoryContent);
-        if (currentSentenceIndex < sentences.length - 1) {
-          currentSentenceIndex++;
-          displayCurrentSentence();
-        }
-      };
-    }
-    
-    if (prevBtn) {
-      prevBtn.onclick = function() {
-        if (!currentStoryContent) return;
-        if (currentSentenceIndex > 0) {
-          currentSentenceIndex--;
-          displayCurrentSentence();
-        }
-      };
-    }
-
-    // Load initial value
-    const initialValue = dropdown.value;
-    if (initialValue !== undefined && initialValue !== '') {
-      const idx = parseDropdownValue(initialValue);
-      loadTonyJayStory(idx);
-    }
-
-    console.log('Tony & Jay Override: Script initialized successfully.');
-  }
-
-  // Start checking immediately
-  initOverride();
-})();
-</script>
 </body>
-
-
-
-
-
 </html>
