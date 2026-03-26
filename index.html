@@ -3173,6 +3173,105 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+
+<script>
+(function() {
+  // Wait for the DOM to be fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Retry loop if data isn't ready yet
+    function initOverride() {
+      if (!window.lessonsData || !window.lessonsData['TonyJayStories']) {
+        console.warn('TonyJayStories data not found. Retrying in 500ms...');
+        setTimeout(initOverride, 500);
+        return;
+      }
+
+      const dropdown = document.getElementById('storySelector');
+      if (!dropdown) {
+        console.error('Story selector dropdown not found.');
+        return;
+      }
+
+      // Global variables to track current story and sentence index
+      let currentStoryContent = '';
+      let currentSentenceIndex = 0;
+      let currentStoryTitle = '';
+
+      // Helper: split content into sentences (English & Japanese pairs)
+      function parseSentences(content) {
+        const lines = content.split('\n');
+        const sentences = [];
+        // Assume lines alternate: English, Japanese, English, Japanese...
+        for (let i = 0; i < lines.length; i += 2) {
+          if (lines[i] && lines[i+1]) {
+            sentences.push({ english: lines[i].trim(), japanese: lines[i+1].trim() });
+          } else if (lines[i]) {
+            sentences.push({ english: lines[i].trim(), japanese: '' });
+          }
+        }
+        return sentences;
+      }
+
+      // Display the current sentence pair
+      function displayCurrentSentence() {
+        const sentences = parseSentences(currentStoryContent);
+        if (sentences.length === 0) return;
+        
+        // Ensure index is within bounds
+        if (currentSentenceIndex >= sentences.length) currentSentenceIndex = 0;
+        
+        const currentPair = sentences[currentSentenceIndex];
+        const englishElem = document.getElementById('englishSentence');
+        const japaneseElem = document.getElementById('japaneseSentence');
+        
+        if (englishElem && japaneseElem) {
+          // Use the existing sentence display elements
+          englishElem.textContent = currentPair.english;
+          japaneseElem.textContent = currentPair.japanese;
+        } else {
+          // Fallback: show full text in a container
+          let container = document.getElementById('storyContent');
+          if (!container) {
+            container = document.createElement('div');
+            container.id = 'storyContent';
+            container.style.cssText = "padding: 20px; font-size: 1.2em;";
+            const main = document.querySelector('main') || document.body;
+            main.appendChild(container);
+          }
+          container.innerHTML = `<h3>${currentStoryTitle}</h3><pre>${currentPair.english}\n\n${currentPair.japanese}</pre>`;
+        }
+      }
+
+      // Attach the new event listener by cloning the dropdown to remove old listeners
+      const newDropdown = dropdown.cloneNode(true);
+      dropdown.parentNode.replaceChild(newDropdown, dropdown);
+      
+      newDropdown.addEventListener('change', function() {
+        const storyIndex = parseInt(this.value);
+        const stories = window.lessonsData['TonyJayStories'];
+        
+        if (isNaN(storyIndex) || !stories[storyIndex]) {
+          console.error('Invalid story index:', storyIndex);
+          return;
+        }
+
+        const selectedStory = stories[storyIndex];
+        currentStoryContent = selectedStory.content;
+        currentStoryTitle = selectedStory.title;
+        currentSentenceIndex = 0;
+
+        console.log('Tony & Jay Override: Loading story', selectedStory.level, selectedStory.title);
+        displayCurrentSentence();
+      });
+
+      console.log('Tony & Jay Override: Event listener attached successfully.');
+    }
+
+    initOverride();
+  });
+})();
+</script>
 </body>
+
 
 </html>
