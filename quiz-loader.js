@@ -118,7 +118,15 @@ async function initQuizLoader() {
       lessonsData['ClozeQuiz'] = quizData;
       console.log('Quiz data added to lessonsData[\'ClozeQuiz\']');
     } else {
-      console.error('lessonsData is not defined yet!');
+      console.error('lessonsData is not defined yet! Retrying in 500ms...');
+        setTimeout(() => {
+          if (typeof lessonsData !== 'undefined') {
+            lessonsData['ClozeQuiz'] = quizData;
+            console.log('Quiz data added to lessonsData[\'ClozeQuiz\'] (retry)');
+          } else {
+            console.error('lessonsData still not defined after retry!');
+          }
+        }, 500);
     }
   } else {
     console.warn('No quiz data loaded for today');
