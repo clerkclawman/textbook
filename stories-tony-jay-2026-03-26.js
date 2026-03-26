@@ -1,442 +1,282 @@
 var storiesTonyJay20260326 = [
   {
     level: 7,
-    title: "Tony's Sakura Cat",
+    title: "Tony and Jay See Sakura",
     content: `1. 🌸 Tony is happy today.
 1. トニーは今日幸せです。
-2. 🐱 Jay has a cat.
-2. ジェイは猫を飼っています。
-3. 🌸 The cat is white.
-3. 猫は白いです。
-4. 🌸 They see sakura trees.
-4. 彼らは桜の木を見ます。
-5. 🌸 The flowers are pink.
-5. 花はピンクです。
-6. 🌸 Tony likes spring.
-6. トニーは春が好きです。
-7. 🐱 The cat plays outside.
-7. 猫は外で遊びます。
-8. 🌸 Jay smiles at the cat.
-8. ジェイは猫に笑います。
-9. 🌸 It is a good day.
-9. 良い一日です。
-10. 🌸 They go to school.
-10. 彼らは学校に行きます。
-11. 🐱 The cat follows them.
-11. 猫は彼らに従います。
-12. 🌸 The children laugh loud.
-12. 子供たちは大声で笑います。
-13. 🌸 Tony teaches English words.
-13. トニーは英語の単語を教えます。
-14. 🐱 Jay shows pictures too.
-14. ジェイも絵を見せます。
-15. 🌸 The class is fun.
-15. 授業は楽しいです。
-16. 🌸 Spring is here now.
-16. 春は今ここにいます。
-17. 🐱 The cat sleeps softly.
-17. 猫は静かに眠ります。
-18. 🌸 Tony and Jay smile.
-18. トニーとジェイは笑います。
-19. 🌸 Everyone is happy today.
-19. みんな今日幸せです。
-20. 🐱 What a nice day!
-20. なんて良い日でしょう！`
+2. 🐱 Jay is happy too.
+2. ジェイも幸せです。
+3. 🌸 They see pink sakura.
+3. トニーとジェイはピンクの桜を見ます。
+4. 🐱 The sakura is beautiful.
+4. 桜は美しいです。
+5. 🌸 Tony has a camera.
+5. トニーはカメラを持っています。
+6. 🐱 Jay has a phone.
+6. ジェイはスマートフォンを持っています。
+7. 🌸 They take many pictures.
+7. トニーとジェイはたくさん写真を撮ります。
+8. 🐱 A cat eats sakura.
+8. 猫が桜を食べます。
+9. 🌸 The cat is silly.
+9. 猫はバカです。
+10. 🐱 Tony laughs loudly.
+10. トニーは大きく笑います。
+11. 🌸 Jay smiles happily.
+11. ジェイは幸せそうに笑います。
+12. 🐱 Spring is fun here.
+12. ここでの春は楽しいです。`
   },
   {
     level: 6,
-    title: "The Flying Bus Adventure",
-    content: `1. 🚌 Tony is waiting now.
-1. トニーは今待っています。
-2. 🌸 Jay is walking fast.
-2. ジェイは速く歩いています。
-3. 🚌 A bus is coming!
-3. バスが来ています！
-4. 🌸 The bus is blue.
-4. バスは青いです。
-5. 🚌 It is flying high!
-5. それは高く飛んでいます！
-6. 🌸 Tony is surprised much.
-6. トニーは非常に驚いています。
-7. 🚌 Jay is laughing loud.
-7. ジェイは大声で笑っています。
-8. 🌸 The driver is a cat!
-8. 運転手は猫です！
-9. 🚌 They are getting on.
-9. 彼らは乗っています。
-10. 🌸 The bus is going up.
-10. バスは上に行っています。
-11. 🚌 Sakura flowers are floating.
-11. 桜の花が浮いています。
-12. 🌸 Children are waving hands.
-12. 子供たちは手を振っています。
-13. 🚌 The cat is smiling big.
-13. 猫は大きく笑っています。
-14. 🌸 They are seeing clouds.
-14. 彼らは雲を見ています。
-15. 🚌 The sky is very blue.
-15. 空は非常に青いです。
-16. 🌸 Jay is taking photos.
-16. ジェイは写真を撮っています。
-17. 🚌 Tony is eating snacks.
-17. トニーはお菓子を食べています。
-18. 🌸 The bus is landing now.
-18. バスは今着陸しています。
-19. 🚌 Everyone is clapping hands.
-19. みんなが拍手しています。
-20. 🌸 What an amazing ride!
-20. なんて素晴らしい乗り物でしょう！`
+    title: "The Magical Takoyaki Stand",
+    content: `1. 🌸 Tony is walking now.
+1. トニーは今は歩いています。
+2. 🐱 Jay is running fast.
+2. ジェイは速く走っています。
+3. 🌸 They are seeing a stand.
+3. トニーとジェイは屋台を見ています。
+4. 🐱 The stand is selling takoyaki.
+4. 屋台はたこ焼きを売っています。
+5. 🌸 The takoyaki is talking!
+5. たこ焼きは話しています！
+6. 🐱 It is saying hello.
+6. たこ焼きはこんにちはと言っています。
+7. 🌸 Tony is eating one.
+7. トニーは一つ食べています。
+8. 🐱 Jay is buying two.
+8. ジェイは二つ買っています。
+9. 🌸 The cats are dancing now.
+9. 猫たちは今は踊っています。
+10. 🐱 They are having fun.
+10. 猫たちは楽しんでいます。
+11. 🌸 Spring is very warm today.
+11. 今日の春はとても暖かいです。
+12. 🐱 The students are laughing.
+12. 学生たちは笑っています。`
   },
   {
     level: 5,
-    title: "Magical Takoyaki Shop",
-    content: `1. 🐙 Tony is hungry now.
-1. トニーは今お腹が空いています。
-2. 🌸 Jay is walking slowly.
-2. ジェイはゆっくり歩いています。
-3. 🐙 They see a shop.
-3. 彼らは店を見ます。
-4. 🌸 The shop is small.
-4. 店は小さいです。
-5. 🐙 Takoyaki are cooking inside.
-5. たこ焼きが中で調理されています。
-6. 🌸 The chef is magical!
-6. シェフは魔法使いです！
-7. 🐙 Tony is ordering food.
-7. トニーは注文しています。
-8. 🌸 Jay is watching closely.
-8. ジェイは近くで見ています。
-9. 🐙 The takoyaki are dancing!
-9. たこ焼きが踊っています！
-10. 🌸 Tony is very surprised.
-10. トニーは非常に驚いています。
-11. 🐙 They are eating quickly.
-11. 彼らは急いで食べています。
-12. 🌸 The taste is wonderful.
-12. 味は素晴らしいです。
-13. 🐙 Jay is asking questions.
-13. ジェイは質問をしています。
-14. 🌸 The chef is laughing.
-14. シェフは笑っています。
-15. 🐙 More takoyaki appear now.
-15. もっとたこ焼きが今現れます。
-16. 🌸 Tony is eating again.
-16. トニーは再び食べています。
-17. 🐙 The shop is magical.
-17. 店は魔法です。
-18. 🌸 They are full now.
-18. 彼らは今満腹です。
-19. 🐙 Jay is paying money.
-19. ジェイはお金を払っています。
-20. 🐙 What delicious magic!
-20. なんて美味しい魔法でしょう！`
+    title: "School Ends for Spring",
+    content: `1. 🌸 Tony is a teacher.
+1. トニーは先生です。
+2. 🐱 Jay is a teacher too.
+2. ジェイも先生です。
+3. 🌸 School is ending today.
+3. 今日で学校が終わります。
+4. 🐱 The children are happy.
+4. 子供たちは幸せです。
+5. 🌸 They can go home now.
+5. 子供たちは今家に帰れます。
+6. 🐱 Tony likes spring break.
+6. トニーは春休みが好きです。
+7. 🌸 Jay wants to sleep.
+7. ジェイは寝たいです。
+8. 🐱 The sakura is falling.
+8. 桜が落ちています。
+9. 🌸 Children are playing outside.
+9. 子供たちは外で遊んでいます。
+10. 🐱 They are throwing petals.
+10. 子供たちは花びらを投げています。
+11. 🌸 Tony can drink tea.
+11. トニーはお茶を飲めます。
+12. 🐱 Jay can read books.
+12. ジェイは本を読めます。`
   },
   {
     level: 4,
-    title: "The Graduation Day Mystery",
-    content: `1. 🎓 Tony went to school yesterday.
-1. トニーは昨日学校に行きました。
-2. 🌸 Jay was very nervous.
-2. ジェイはとても緊張していました。
-3. 🎓 They saw many students.
-3. 彼らは多くの学生を見ました。
-4. 🌸 The graduation was today.
-4. 卒業は今日でした。
-5. 🎓 Tony gave a speech.
-5. トニーはスピーチをしました。
-6. 🌸 Jay took many photos.
-6. ジェイは多くの写真を撮りました。
-7. 🎓 The children cried happy tears.
-7. 子供たちは幸せな涙を流しました。
-8. 🌸 Parents clapped very loudly.
-8. 親たちは非常に大きく拍手しました。
-9. 🎓 Tony will miss them.
-9. トニーは彼らを恋しく思うでしょう。
-10. 🌸 Jay will remember always.
-10. ジェイはいつも覚えているでしょう。
-11. 🎓 They ate cake together.
-11. 彼らは一緒にケーキを食べました。
-12. 🌸 The party was wonderful.
-12. パーティーは素晴らしかったでした。
-13. 🎓 A cat appeared suddenly!
-13. 猫が突然現れました！
-14. 🌸 The cat wore a hat.
-14. 猫は帽子をかぶっていました。
-15. 🎓 Everyone laughed very hard.
-15. みんな非常に強く笑いました。
-16. 🌸 Jay will teach again.
-16. ジェイは再び教えるでしょう。
-17. 🎓 Tony will write letters.
-17. トニーは手紙を書くでしょう。
-18. 🌸 Spring break started now.
-18. 春休みが今始まりました。
-19. 🎓 They went home happy.
-19. 彼らは幸せに家に行きました。
-20. 🎓 What a great day!
-20. なんて素晴らしい日でしょう！`
+    title: "Jay Flew to Dotonbori",
+    content: `1. 🌸 Tony went to Dotonbori yesterday.
+1. トニーは昨日道頓堀に行きました。
+2. 🐱 Jay flew there by bus.
+2. ジェイはバスで飛んで行きました。
+3. 🌸 The bus was magical.
+3. そのバスは魔法でした。
+4. 🐱 They ate amazing takoyaki.
+4. トニーとジェイは素晴らしいたこ焼きを食べました。
+5. 🌸 Tony bought a hat.
+5. トニーは帽子を買いました。
+6. 🐱 Jay got a souvenir.
+6. ジェイは土産をもらいました。
+7. 🌸 The neon lights were bright.
+7. ネオンライトは明るかったです。
+8. 🐱 They saw a giant crab.
+8. トニーとジェイは巨大なカニを見ました。
+9. 🌸 Jay danced with the crab.
+9. ジェイはカニと踊りました。
+10. 🌸 Tony laughed very hard.
+10. トニーはとても大笑いしました。
+11. 🐱 They will come back soon.
+11. トニーとジェイはすぐに戻ってきます。
+12. 🌸 Spring break will be fun.
+12. 春休みは楽しいでしょう。`
   },
   {
     level: 3,
-    title: "The Sakura Tree Spirit",
+    title: "The Talking Sakura Tree",
     content: `1. 🌸 Tony has been to Osaka.
-1. トニーは大阪に行っています。
-2. 🌸 Jay has seen many trees.
-2. ジェイは多くの木を見ています。
-3. 🌳 They found a special tree.
-3. 彼らは特別な木を見つけました。
-4. 🌸 A spirit has appeared!
-4. 精霊が現れました！
-5. 🌳 The spirit is friendly.
-5. 精霊は友好的です。
-6. 🌸 Tony has asked questions.
-6. トニーは質問をしています。
-7. 🌳 The spirit speaks English!
-7. 精霊は英語を話します！
-8. 🌸 Jay has listened carefully.
-8. ジェイは注意深く聞いています。
-9. 🌳 The tree has magic powers.
-9. その木は魔法の力を持っています。
-10. 🌸 Sakura petals have fallen.
-10. 桜の花びらが落ちています。
-11. 🌳 They have made friends.
-11. 彼らは友達になりました。
-12. 🌸 If they return, the spirit waits.
-12. もし彼らが戻れば、精霊は待ちます。
-13. 🌳 Tony will come back soon.
-13. トニーはすぐに戻ってくるでしょう。
-14. 🌸 Jay has taken a promise.
-14. ジェイは約束をしています。
-15. 🌳 The tree is beautiful now.
-15. その木は今美しいです。
-16. 🌸 They have learned much.
-16. 彼らは多くを学びました。
-17. 🌳 Spring has come early.
-17. 春は早く来ました。
-18. 🌸 If it rains, they stay.
-18. もし雨が降れば、彼らは留まります。
-19. 🌳 The spirit has smiled.
-19. 精霊は笑っています。
-20. 🌳 What a magical meeting!
-20. なんて魔法的な出会いでしょう！`
+1. トニーは大阪に行ったことがあります。
+2. 🐱 Jay has visited many times.
+2. ジェイは何度も訪れました。
+3. 🌸 They have seen a magic tree.
+3. トニーとジェイは魔法の木を見ました。
+4. 🐱 The tree has spoken to them.
+4. その木は彼らに話しました。
+5. 🌸 It said spring is here.
+5. 木は春が来たと言いました。
+6. 🐱 Tony has never seen this.
+6. トニーはこれを今まで見たことがありません。
+7. 🌸 If the tree sings, students will listen.
+7. 木が歌えば、学生たちは聞きます。
+8. 🐱 Jay has taken many photos.
+8. ジェイはたくさんの写真を撮りました。
+9. 🌸 The petals are falling now.
+9. 花びらが今落ちています。
+10. 🐱 It is the best season.
+10. それは最高の季節です。
+11. 🌸 Tony prefers spring to winter.
+11. トニーは冬より春が好きです。
+12. 🐱 Jay thinks the same way.
+12. ジェイも同じように思います。`
   },
   {
     level: "Pre-2",
-    title: "The Talking Dotonbori Sign",
-    content: `1. 🌃 Tony was walking through Dotonbori.
-1. トニーは道頓堀を歩いています。
-2. 🌸 Jay was looking at signs.
-2. ジェイは看板を見ていました。
-3. 🌃 A giant crab sign was moving!
-3. 巨大なカニの看板が動いていました！
-4. 🌸 The sign was speaking English!
-4. その看板は英語を話していました！
-5. 🌃 Tony was shocked completely.
-5. トニーは完全にショックを受けました。
-6. 🌸 Jay was recording video.
-6. ジェイは動画を録画していました。
-7. 🌃 The crab was telling jokes.
-7. カニは冗談を話していました。
-8. 🌸 People were watching closely.
-8. 人々は近くで見守っていました。
-9. 🌃 The sign had been broken.
-9. その看板は壊れていました。
-10. 🌸 But it was fixed magically.
-10. しかしそれは魔法で修理されました。
-11. 🌃 Tony was asking many questions.
-11. トニーは多くの質問をしていました。
-12. 🌸 Jay was laughing loudly.
-12. ジェイは大声で笑っていました。
-13. 🌃 The crab said it was tired.
-13. カニは疲れていると言いました。
-14. 🌸 Everyone was enjoying the show.
-14. みんなショーを楽しんでいました。
-15. 🌃 Although it was strange, they loved it.
-15. 奇妙でしたが、彼らはそれを愛しました。
-16. 🌸 The sign should rest now.
-16. その看板は今休むべきです。
-17. 🌃 Jay has been telling friends.
-17. ジェイは友達に話しています。
-18. 🌃 While they were leaving, it waved.
-18. 彼らが去っている間、それは手を振りました。
-19. 🌸 The night was unforgettable.
-19. その夜は忘れられません。
-20. 🌃 What a crazy Osaka night!
-20. なんてクレイジーな大阪の夜でしょう！`
+    title: "While Graduation Happened",
+    content: `1. 🌸 While Tony was teaching, the bell rang.
+1. トニーが教えている間に、ベルが鳴りました。
+2. 🐱 Jay was writing on the board.
+2. ジェイは黒板に書いていました。
+3. 🌸 The students were packing their bags.
+3. 学生たちはバッグを片付けていました。
+4. 🐱 It was graduation day today.
+4. 今日は卒業式の日でした。
+5. 🌸 Tony felt very emotional.
+5. トニーはとても感動しました。
+6. 🐱 Jay said that he was proud.
+6. ジェイは誇らしいと言いました。
+7. 🌸 The parents were watching quietly.
+7. 保護者たちは静かに見ていました。
+8. 🐱 Flowers were being given to teachers.
+8. 先生たちに花が贈られていました。
+9. 🌸 Although it was sad, everyone smiled.
+9. 悲しかったですけど、みんなが笑いました。
+10. 🌸 Since spring break starts, we should rest.
+10. 春休みが始まるので、休むべきです。
+11. 🐱 Students must come back in April.
+11. 学生たちは四月に戻らなければなりません。
+12. 🌸 While the ceremony was ending, sakura fell.
+12. 式が終わっている間に、桜が落ちました。`
   },
   {
     level: "Pre-2+",
-    title: "The Time-Traveling Takoyaki Machine",
-    content: `1. ⏰ Tony had seen strange machines.
-1. トニーは奇妙な機械を見ていました。
-2. 🌸 Jay had heard many stories.
-2. ジェイは多くの話を聞いていました。
-3. ⏰ They had found a shop.
-3. 彼らは店を見つけました。
-4. 🌸 The machine had been old.
-4. その機械は古かったでした。
-5. ⏰ Tony had pressed a button.
-5. トニーはボタンを押しました。
-6. 🌸 Suddenly, time had stopped!
-6. 突然、時間が止まりました！
-7. ⏰ Jay had been amazed greatly.
-7. ジェイは非常に驚いていました。
-8. 🌸 The takoyaki had flown up.
-8. たこ焼きは上に飛んでいました。
-9. ⏰ They had traveled to yesterday.
-9. 彼らは昨日に旅行しました。
-10. 🌸 It would be great if they could return.
-10. 彼らが戻ることができれば素晴らしいでしょう。
-11. ⏰ The machine had been broken before.
-11. その機械は以前壊れていました。
-12. 🌸 A cat had been watching them.
-12. 猫が彼らを見ていました。
-13. ⏰ If they had known, they would prepare.
-13. もし彼らが知っていれば、準備したでしょう。
-14. 🌸 The shop owner had smiled.
-14. 店主は笑っていました。
-15. ⏰ He had explained everything clearly.
-15. 彼はすべてを明確に説明しました。
-16. 🌸 The machine could travel time.
-16. その機械は時間を旅行できました。
-17. ⏰ They had returned to now.
-17. 彼らは今に戻りました。
-18. 🌸 What an incredible experience!
-18. なんて信じられない経験でしょう！
-19. ⏰ If they could share, others would believe.
-19. もし彼らが共有できれば、他の人は信じるでしょう。
-20. ⏰ The takoyaki tasted even better!
-20. たこ焼きはさらに美味しく味わえました！`
+    title: "The Bus That Had Flown",
+    content: `1. 🌸 Tony had checked the schedule carefully.
+1. トニーは時刻表を注意深く確認していました。
+2. 🐱 Jay had forgotten his umbrella.
+2. ジェイは傘を忘れていました。
+3. 🌸 The bus had already left when they arrived.
+3. 彼らが着いたとき、バスはもう出ていました。
+4. 🐱 It would be great if the bus returned.
+4. バスが戻ってくれたら素晴らしいでしょう。
+5. 🌸 A company that makes magic buses appeared.
+5. 魔法のバスを作る会社が登場しました。
+6. 🐱 The driver had been a cat before.
+6. 運転手は以前猫でした。
+7. 🌸 If they could fly, they would be happy.
+7. 飛べたら、彼らは幸せでしょう。
+8. 🌸 The water that comes from the sky is sakura.
+8. 空から降ってくる水は桜です。
+9. 🐱 Tony had never experienced this before.
+9. トニーはこれを以前経験したことがありませんでした。
+10. 🌸 Society has changed because of magic.
+10. 魔法のおかげで社会が変わりました。
+11. 🐱 Jay wondered if it was real.
+11. ジェイはそれが本当か疑問に思いました。
+12. 🌸 After they had ridden, they understood.
+12. 乗った後、彼らは理解しました。`
   },
   {
     level: 2,
-    title: "The Philosophy of Spring Break",
-    content: `1. 📚 Tony would be happy if he could rest.
-1. トニーは休めれば幸せになるでしょう。
-2. 🌸 Jay has argued about education.
-2. ジェイは教育について議論しています。
-3. 📚 The meaning of spring has changed.
-3. 春の意味は変わりました。
-4. 🌸 Democracy in schools should improve.
-4. 学校での民主主義は改善されるべきです。
-5. 📚 Tony believes that teachers need support.
-5. トニーは教師が支援を必要すると信じています。
-6. 🌸 Jay would have explained if asked.
-6. ジェイは聞かれれば説明したでしょう。
-7. 📚 The policy has been controversial.
-7. その政策は議論の的でした。
-8. 🌸 Students could have been more involved.
-8. 学生はもっと関与できたでしょう。
-9. 📚 What if freedom meant more play?
-9. もし自由がもっと遊ぶことを意味したら？
-10. 🌸 The government has announced changes.
-10. 政府は変更を発表しました。
-11. 📚 Tony thinks that balance is important.
-11. トニーはバランスが重要だと思います。
-12. 🌸 Jay has written many articles.
-12. ジェイは多くの記事を書いています。
-13. 📚 The argument has continued long.
-13. その議論は長く続いています。
-14. 🌸 If we listen, we learn better.
-14. もし私たちが聞けば、より良く学びます。
-15. 📚 The duty of education is complex.
-15. 教育の義務は複雑です。
-16. 🌸 Jay would suggest more holidays.
-16. ジェイはもっと休暇を提案するでしょう。
-17. 📚 The philosophy has influenced many.
-17. その哲学は多くに影響しました。
-18. 🌸 Spring break could be different.
-18. 春休みは異なるかもしれません。
-19. 📚 Tony has been thinking deeply.
-19. トニーは深く考えています。
-20. 📚 What is the purpose of school?
-20. 学校の目的は何ですか？`
+    title: "The Philosophy of Takoyaki",
+    content: `1. 🌸 Tony would be delighted if Jay agreed.
+1. ジェイが同意すれば、トニーは喜びます。
+2. 🐱 The meaning of takoyaki is deep.
+2. たこ焼きの意味は深いです。
+3. 🌸 If I were a takoyaki, I would dance.
+3. もし私がたこ焼きなら、踊ります。
+4. 🐱 Democracy allows people to choose flavors.
+4. 民主主義は人々が味を選べるようにします。
+5. 🌸 An organization that helps takoyaki exists.
+5. たこ焼きを助ける組織が存在します。
+6. 🐱 The time at which we eat matters.
+6. 私たちが食べる時間が重要です。
+7. 🌸 He never changed his opinion that teachers should eat takoyaki.
+7. 先生はたこ焼きを食べるべきだという意見を決して変えませんでした。
+8. 🐱 Advertising has been controlled in schools.
+8. 学校では広告が規制されています。
+9. 🌸 The people could have been hungry yesterday.
+9. 人々は昨日お腹が空いていたかもしれません。
+10. 🌸 Philosophy helps us understand food ethics.
+10. 哲学は食の倫理を理解するのを助けます。
+11. 🐱 Duty and responsibility are important for chefs.
+11. 義務と責任はシェフにとって重要です。
+12. 🌸 Arguments often result from different tastes.
+12. 議論はしばしば異なる味から生まれます。`
   },
   {
     level: "Pre-1",
-    title: "The Autonomy of Takoyaki",
-    content: `1. 🐙 The question of why takoyaki dance remains unanswered.
-1. たこ焼きが踊る理由の問題は答えられていません。
-2. 🌸 Nevertheless, critics have concerns about food rights.
-2. それにもかかわらず、批評家は食品の権利について懸念しています。
-3. 🐙 The fact that they move autonomously is remarkable.
-3. 彼らが自律的に動くという事実は顕著です。
-4. 🌸 How the batter achieves consciousness matters deeply.
-4. 生地が意識を達成する方法は深く重要です。
-5. 🐙 The mystery of what happened during cooking continues.
-5. 調理中に何が起こったかの謎は続いています。
-6. 🌸 Not only did they jump, but they also sang.
-6. 彼らは跳ぶだけでなく、歌いました。
-7. 🐙 The perspective of the chef is crucial here.
-7. シェフの視点ここ重要です。
-8. 🌸 Despite government regulations, autonomy persists.
-8. 政府の規制にもかかわらず、自律性は持続します。
-9. 🐙 The framework for understanding food consciousness is new.
-9. 食品意識を理解するための枠組みは新しいです。
-10. 🌸 Whether takoyaki have rights is uncertain.
-10. たこ焼きに権利があるかどうかは不確かです。
-11. 🐙 The evidence suggests that they feel emotions.
-11. 証拠は彼らが感情を感じると示しています。
-12. 🌸 Tony argued that liberation is necessary.
-12. トニーは解放が必要だと議論しました。
-13. 🐙 Jay questioned whether cooking is ethical.
-13. ジェイは調理が倫理的かどうか疑問に思いました。
-14. 🌸 The systemic discrimination against seafood continues.
-14. 海産物に対する体系的な差別は続いています。
-15. 🐙 Rarely do we see such resistance from food.
-15. 食品からのそのような抵抗をほとんど見ません。
-16. 🌸 The implications for society are profound.
-16. 社会への含意は深遠です。
-17. 🐙 What differentiates this from previous incidents?
-17. これを以前の出来事と区別するのは何ですか？
-18. 🌸 The resolution requires careful deliberation.
-18. 解決には慎重な審議が必要です。
-19. 🐙 Little attention has been given to takoyaki rights.
-19. たこ焼きの権利にはほとんど注意が払われていません。
-20. 🐙 The paradigm shift in food ethics begins now.
-20. 食品倫理のパラダイムシフトが今始まります。`
+    title: "The Question of Why Sakura Falls",
+    content: `1. 🌸 The question of why sakura falls remains.
+1. なぜ桜が落ちるのかという問いが残っています。
+2. 🐱 Nevertheless, critics have concerns about spring.
+2. それでも、批評家は春について懸念を持っています。
+3. 🌸 How the brain processes beauty matters.
+3. 脳が美しさを処理する方法が重要です。
+4. 🐱 Whether students understand is uncertain.
+4. 学生が理解するかどうかは不確かです。
+5. 🌸 The fact that petals fall is natural.
+5. 花びらが落ちることは自然です。
+6. 🐱 Not only did the tree bloom, but it also inspired.
+6. 木が咲いただけでなく、インスピレーションを与えました。
+7. 🌸 The perspective of children is crucial.
+7. 子供たちの視点が重要です。
+8. 🐱 Despite the beauty, autumn will come.
+8. 美しさにもかかわらず、秋が来ます。
+9. 🌸 The reason why we teach English is clear.
+9. 私たちが英語を教える理由は明確です。
+10. 🌸 Critics argue that tradition needs adaptation.
+10. 批評家は伝統が適応を必要すると主張します。
+11. 🐱 The issue of cultural identity persists.
+11. 文化的アイデンティティの問題は続いています。
+12. 🌸 How we interpret spring affects education.
+12. 私たちが春を解釈する方法が教育に影響します。`
   },
   {
     level: 1,
-    title: "The Neural Mechanism of Sakura Appreciation",
-    content: `1. 🌸 Had it not been for neuroscience, we would not understand beauty.
-1. 神経科学がなければ、私たちは美しさを理解しなかったでしょう。
-2. 🧠 The brain processes incoming sensory data and reacts based on calculations.
-2. 脳は入力される感覚データを処理し、計算に基づいて反応します。
-3. 🌸 Interpretations reflect what is happening in neural networks.
-3. 解釈は神経ネットワークで起こっていることを反映します。
-4. 🧠 Not only did the study fail, but it also caused methodological concerns.
-4. その研究は失敗しただけでなく、方法論的な懸念も引き起こしました。
-5. 🌸 The fact that our brains interpret sensory data is remarkable.
-5. 私たちの脳が感覚データを解釈するという事実は顕著です。
-6. 🧠 Recommend that the policy be changed immediately.
-6. 政策が直ちに変更されることを推奨します。
-7. 🌸 What differentiates human appreciation from machine analysis?
-7. 人間の鑑賞と機械的分析を区別するのは何ですか？
-8. 🧠 The mechanism of aesthetic judgment remains partially understood.
-8. 審美的判断のメカニズムは部分的に理解されています。
-9. 🌸 Had it not been for the Mongols, trade with the West never developed.
-9. モンゴルがなければ、西との貿易は発展しなかったでしょう。
-10. 🧠 Developments in neural interpretation have been impressive.
-10. 神経解釈の発展は印象的でした。
-11. 🌸 The notion that beauty is subjective requires reconsideration.
-11. 美は主観的であるという概念は再考を必要とします。
-12. 🧠 Neither did the data support nor the hypothesis validate.
-12. データは支持せず、仮説も検証されませんでした。
-13. 🌸 Anticipations lead to symptoms of emotional resonance.
-13. 予期は感情的共鳴の症状につながります。
-14. 🧠 Suggest that he come tomorrow for further deliberation.
-14. 彼が明日来てさらに審議することを提案します。
-15. 🌸 The implications for international collaboration are significant.
-15. 国際協力への含意は重要です。
-16. 🧠 Resilience and adaptation characterize neural plasticity.
-16. 回復力と適応は神経可塑性を特徴づけます。
-17. 🌸 How the brain constructs reality remains a profound mystery.
-17. 脳が現実を構築する方法は深遠な謎のままです。
-18. 🧠 The framework for understanding consciousness requires innovation.
-18. 意識を理解するための枠組みは革新を必要とします。
-19. 🌸 Greatness lies not in the flower, but in perception itself.
-19. 偉大さは花ではなく、知覚そのものにあります。
-20. 🧠 Had it not been for curiosity, science would have stagnated.
-20. 好奇心がなければ、科学は停滞したでしょう。`
+    title: "Had It Not Been for Sakura",
+    content: `1. 🌸 Had it not been for sakura, spring would be dull.
+1. 桜がなければ、春は退屈だったでしょう。
+2. 🐱 The brain processes incoming sensory data rapidly.
+2. 脳は incoming 感覚データを素早く処理します。
+3. 🌸 Not only did the petals fall, but they also danced.
+3. 花びらが落ちただけでなく、踊りました。
+4. 🐱 Interpretations reflect what happens in the mind.
+4. 解釈は心の中で何が起こっているかを反映します。
+5. 🌸 Recommend that the policy be changed immediately.
+5. 方針がすぐに変更されるよう推奨します。
+6. 🐱 The mechanism of adaptation is complex.
+6. 適応のメカニズムは複雑です。
+7. 🌸 What differentiates Osaka from other cities?
+7. 大阪を他の都市と区別するのは何ですか？
+8. 🐱 Resilience and adaptation are key to survival.
+8. 回復力と適応は生存の鍵です。
+9. 🌸 The notion that time is linear is false.
+9. 時間が直線的であるという考えは誤りです。
+10. 🌸 Deliberation processes require international cooperation.
+10. 審議プロセスには国際協力が必要です。
+11. 🐱 Neither did Tony nor Jay understand fully.
+11. トニーもジェイも完全に理解しませんでした。
+12. 🌸 Implications of neural networks remain unclear.
+12. ニューラルネットワークの影響は不明のままです。`
   }
 ];
