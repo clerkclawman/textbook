@@ -1969,6 +1969,31 @@
         stopSpeech();
         closeTranslationPopupHandler();
 
+        // Check if in quiz mode
+        if (isQuizMode) {
+            if (quizQuestions.length === 0 || fruitGameActive) return;
+
+            const isLastPage = currentSentenceIndex >= quizQuestions.length - 1;
+
+            if (fruitGameEnabled) {
+                shouldAdvanceAfterGame = true;
+                showFruitGame();
+                return;
+            }
+
+            if (isLastPage) {
+                currentSentenceIndex = 0;
+                displayQuizQuestion(currentSentenceIndex);
+                return;
+            }
+
+            currentSentenceIndex++;
+            displayQuizQuestion(currentSentenceIndex);
+            updatePageCounter();
+            return;
+        }
+
+        // Regular mode
         if (sentences.length === 0 || fruitGameActive) return;
 
         const isLastPage = currentSentenceIndex >= sentences.length - 1;
@@ -1989,12 +2014,14 @@
     }
 
     function advanceToNextSentence() {
-        if (currentSentenceIndex < sentences.length - 1) {
+        const maxLength = isQuizMode ? quizQuestions.length : sentences.length;
+        
+        if (currentSentenceIndex < maxLength - 1) {
             currentSentenceIndex++;
         } else {
             currentSentenceIndex = 0;
         }
-
+        
         displayCurrentSentence();
         updatePageCounter();
     }
@@ -2003,6 +2030,21 @@
         stopSpeech();
         closeTranslationPopupHandler();
 
+        // Check if in quiz mode
+        if (isQuizMode) {
+            if (quizQuestions.length === 0) return;
+
+            if (currentSentenceIndex > 0) {
+                currentSentenceIndex--;
+            } else {
+                currentSentenceIndex = quizQuestions.length - 1;
+            }
+            displayQuizQuestion(currentSentenceIndex);
+            updatePageCounter();
+            return;
+        }
+
+        // Regular mode
         if (sentences.length === 0) return;
 
         if (currentSentenceIndex > 0) {

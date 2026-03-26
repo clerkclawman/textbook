@@ -51,6 +51,8 @@ async function loadQuizFile(filename) {
 
 /**
  * Parse JavaScript content from quiz file
+ * Note: The file uses JS object syntax (unquoted keys), so we cannot use JSON.parse.
+ * We use a safe Function constructor to evaluate the array literal.
  */
 function parseJavaScriptQuiz(javascript) {
   try {
@@ -62,12 +64,21 @@ function parseJavaScriptQuiz(javascript) {
     const match = cleanCode.match(/var\s+quiz\d+\s*=\s*(\[[\s\S]*?\])\s*;?\s*$/);
     
     if (match && match[1]) {
-      // Try to parse the array
+      const arrayString = match[1];
+      // Safely evaluate the array literal using a Function constructor
+      // This avoids executing arbitrary code while allowing JS object syntax
       try {
-        return JSON.parse(match[1]);
-      } catch (parseError) {
-        console.error('JSON parse error for quiz data:', parseError);
-        console.log('Extracted array string:', match[1].substring(0, 200));
+        const extractor = new Function('return ' + arrayString);
+        const result = extractor();
+        if (Array.isArray(result)) {
+          return result;
+        } else {
+          console.error('Evaluated result is not an array:', result);
+          return null;
+        }
+      } catch (evalError) {
+        console.error('Evaluation error for quiz data:', evalError);
+        console.log('Extracted array string (first 200 chars):', arrayString.substring(0, 200));
         return null;
       }
     }
