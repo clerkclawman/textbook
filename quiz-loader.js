@@ -111,6 +111,8 @@ async function initQuizLoader() {
   const quizData = await loadQuizFile(filename);
   if (quizData && Array.isArray(quizData)) {
     console.log('Loaded', quizData.length, 'quiz questions');
+    // Store in global variable for later use
+    window.quizQuestions = quizData;
     // Add to lessonsData if it exists
     if (typeof lessonsData !== 'undefined') {
       lessonsData['ClozeQuiz'] = quizData;
