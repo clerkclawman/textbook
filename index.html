@@ -3041,8 +3041,12 @@ if (typeof getCombinedFunQuestions === "function") {
         Analytics.trackPageView('index.html');
     </script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-Object.assign(lessonsData, {
+
+
+
+<script>
+window.onload = function() {
+  Object.assign(lessonsData, {
         'Bronze': bronzeStories,
         'Silver': silverStories,
         'Gold': goldStories,
@@ -3078,8 +3082,7 @@ Object.assign(lessonsData, {
         'Grammar': [].concat(eiken7grammar, eiken6grammar, eiken5grammar, eiken4grammar, eiken3grammar, eikenpre2grammar, eikenpre2plusgrammar, eiken2grammar, eikenpre1grammar, eiken1grammar),
         'Sentences': [].concat(eiken7sentences, eiken6sentences, eiken5sentences, eiken4sentences, eiken3sentences, eikenpre2sentences, eikenpre2plussentences, eiken2sentences, eikenpre1sentences, eiken1sentences)
       });
-});
+};
 </script>
-
 </body>
 </html>
