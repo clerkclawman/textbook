@@ -6,109 +6,100 @@ var funQuestions20260326 = [
 L7. 🍡 Is takoyaki yummy?
 たこ焼きはおいしいですか。
 L7. 🎵 Do you like BTS?
-BTS は好きですか。
+BTSは好きですか。
 L7. 🏯 Is Osaka Castle big?
 大阪城は大きいですか。
 L7. 🌸 Are the flowers pink?
 花はピンクですか。
-
 L6. 🌸 Are you watching sakura now?
 今、桜を見ていますか。
 L6. 🍜 Are you eating ramen in Osaka?
 今、大阪でラーメンを食べていますか。
 L6. 🎵 Is BTS singing a new song?
-BTS が新しい歌を歌っていますか。
+BTSが新しい歌を歌っていますか。
 L6. 🚶 Are you walking in Dotonbori now?
 今、道頓堀を歩いていますか。
 L6. 🌸 Is the weather nice today?
 今日はお天気ですか。
-
 L5. 🌸 Sakura season is fun.
 桜の季節は楽しいです。
 L5. 🍡 Takoyaki is delicious food.
 たこ焼きはおいしい食べ物です。
 L5. 🎵 BTS sings many songs.
-BTS はたくさんの歌を歌います。
+BTSはたくさんの歌を歌います。
 L5. 🏯 Osaka Castle is famous.
 大阪城は有名です。
 L5. 🌸 I like spring weather.
 私は春の天気が好きです。
-
 L4. 🌸 I saw sakura yesterday.
 昨日、桜を見ました。
 L4. 🍡 We ate takoyaki last week.
 先週、たこ焼きを食べました。
 L4. 🎵 BTS will come to Osaka.
-BTS は大阪に来ます。
+BTSは大阪に来ます。
 L4. 🏯 I visited Osaka Castle.
 大阪城を訪れました。
 L4. 🌸 The flowers were beautiful.
 花はきれいでした。
-
 L3. 🌸 Have you ever seen sakura?
 桜を見たことがありますか。
 L3. 🍡 If you go to Osaka, try takoyaki.
-大阪に行ったら、たこ焼きを試してください。
-L3. 🎵 BTS has many fans in Japan.
-BTS は日本に多くのファンがいます。
-L3. 🏯 Osaka Castle is the most famous place.
-大阪城は最も有名な場所です。
-L3. 🌸 I have never been to Dotonbori.
-道頓堀に行ったことがありません。
-
-L3-Pre2. 🌸 The sakura festival was held last month.
-桜の祭りは先月開催されました。
-L3-Pre2. 🍡 Takoyaki is made by street vendors.
-たこ焼きは屋台の vendors が作ります。
-L3-Pre2. 🎵 BTS is known for their dance.
-BTS はダンスで知られています。
-L3-Pre2. 🏯 The castle was built in the 16th century.
-城は 16 世紀に建てられました。
-L3-Pre2. 🌸 People enjoy hanami with friends.
-人々は友達と花見を楽しみます。
-
-L3-Pre2+. 🌸 If I had more time, I would visit all sakura spots.
-もっと時間があったら、すべての桜スポットを訪れます。
-L3-Pre2+. 🍡 The food in Osaka is more famous than in Tokyo.
-大阪の食べ物は東京よりも有名です。
-L3-Pre2+. 🎵 BTS became popular after they released their first album.
-BTS は最初のアルバムをリリースした後、人気になりました。
-L3-Pre2+. 🏯 The view from the castle was amazing.
-城からの眺めは素晴らしかったです。
-L3-Pre2+. 🌸 Not only the flowers, but also the weather is nice.
-花だけでなく、天気も良いです。
-
-L2. 🌸 The sakura season attracts many tourists to Osaka.
-桜の季節は多くの観光客を大阪に引き寄せます。
-L2. 🍡 Takoyaki represents Osaka's food culture.
-たこ焼きは大阪の食文化を代表しています。
-L2. 🎵 BTS's music has influenced Japanese pop culture.
-BTS の音楽は日本のポップカルチャーに影響を与えました。
-L2. 🏯 The historical significance of Osaka Castle cannot be ignored.
-大阪城の歴史的意義は無視できません。
-L2. 🌸 If I were a tourist, I would visit Dotonbori first.
-観光客なら、まず道頓堀を訪れます。
-
-L2-Pre1. 🌸 The question of why sakura is so beloved remains a mystery.
-なぜ桜がこれほど愛されているのかという疑問は謎のままです。
-L2-Pre1. 🍡 Despite the popularity of takoyaki, some critics have concerns about hygiene.
-たこ焼きの人気にもかかわらず、一部の批評家は衛生面について懸念を持っています。
-L2-Pre1. 🎵 Whether BTS will continue their success is uncertain.
-BTS が成功を続けるかどうかは不確かです。
-L2-Pre1. 🏯 The fact that the castle survived wars is remarkable.
-城が戦争を生き延びた事実は驚くべきことです。
-L2-Pre1. 🌸 How the culture of hanami evolved is interesting.
-花見の文化がどのように進化してきたかは興味深いです。
-
-L1. 🌸 The phenomenon of sakura appreciation reflects Japanese aesthetic values.
-桜鑑賞という現象は日本の美的価値観を反映しています。
-L1. 🍡 The mechanism behind takoyaki's global popularity warrants further analysis.
-たこ焼きの世界的な人気の背後にあるメカニズムはさらなる分析に値します。
-L1. 🎵 The impact of BTS on cross-cultural communication cannot be overstated.
-BTS の異文化コミュニケーションへの影響は過大評価できません。
-L1. 🏯 The preservation of historical sites like Osaka Castle is crucial for cultural identity.
-大阪城のような歴史的遺跡の保存は文化的アイデンティティにとって不可欠です。
-L1. 🌸 Had it not been for the Meiji Restoration, the castle might have been destroyed.
-明治維新がなかったら、城は破壊されていたかもしれません。`
+大阪に行ったら、たこ焼きを食べてください。
+L3. 🎵 Which is better: K-pop or J-pop?
+K-POPとJ-POP、どちらがいいですか。
+L3. 🏯 Is Osaka Castle more famous than Tokyo Tower?
+大阪城は東京タワーより有名ですか。
+L3. 🌸 Will you watch sakura this weekend?
+今週末、桜を見ますか。
+Pre-2. 🌸 What were you doing when the bell rang?
+ベルが鳴ったとき、何をしていましたか。
+Pre-2. 🍡 Was the takoyaki shop crowded yesterday?
+昨日、たこ焼き屋は混んでいましたか。
+Pre-2. 🎵 Did the teacher say BTS is popular?
+先生はBTSが人気だと言いましたか。
+Pre-2. 🏯 The castle was built a long time ago.
+お城は昔建てられました。
+Pre-2. 🌸 While we were walking, it started to rain.
+歩いているとき、雨が降り出しました。
+Pre-2+. 🌸 If you were a sakura tree, where would you grow?
+もし桜の木だったら、どこに生えますか。
+Pre-2+. 🍡 What had you eaten before you came here?
+ここに来る前に何を食べていましたか。
+Pre-2+. 🎵 Who is the singer that you like most?
+あなたが一番好きな歌手は誰ですか。
+Pre-2+. 🏯 If you had visited Osaka earlier, what would you have done?
+もしもっと早く大阪を訪れていたら、何をしましたか。
+Pre-2+. 🌸 The flowers that are blooming now are beautiful.
+今咲いている花はきれいです。
+L2. 🌸 Why do you think sakura is special in Japan?
+なぜ桜が日本で特別だと思いますか。
+L2. 🍡 How would you explain takoyaki to a foreigner?
+外国人にたこ焼きをどう説明しますか。
+L2. 🎵 What is the evidence that music influences mood?
+音楽が気分に影響を与えるという証拠は何ですか。
+L2. 🏯 In what way does tourism affect local culture?
+観光は地元文化にどのように影響しますか。
+L2. 🌸 To what extent is spring the best season?
+春が最高の季節だとどの程度思いますか。
+Pre-1. 🌸 Critique the idea that sakura represents transience.
+桜が移ろいを表すという考えを批判してください。
+Pre-1. 🍡 What would have happened if takoyaki was never invented?
+たこ焼きが発明されていなかったらどうなっていたでしょうか。
+Pre-1. 🎵 How does social media influence the popularity of K-pop?
+ソーシャルメディアはK-POPの流行にどのように影響しますか。
+Pre-1. 🏯 Discuss the implications of tourism on historic sites.
+歴史的遺跡への観光の意義について論じてください。
+Pre-1. 🌸 In what way does the changing of seasons reflect cultural values?
+季節の変化が文化的価値観をどのように反映していますか。
+L1. 🌸 Discuss the philosophical implications of cherry blossom viewing.
+花見の哲学的意義について論じてください。
+L1. 🍡 To what extent does food culture define national identity?
+食文化が国民性をどの程度定義するか論じてください。
+L1. 🎵 Analyze the global impact of the K-pop phenomenon.
+K-POP現象の世界的影響を分析してください。
+L1. 🏯 In what way does the preservation of historic sites balance modernization?
+歴史的遺跡の保存と近代化のバランスをどのように取っていますか。
+L1. 🌸 Evaluate the role of nature in Japanese aesthetic traditions.
+日本の美的伝統における自然の役割を評価してください。`
   }
 ];
