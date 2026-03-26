@@ -2886,7 +2886,7 @@
     function loadExternalData() {
         return Promise.all([
             loadVocabData(),
-            loadLessonsData()
+            loadLessonsData(), initQuizLoader()
         ]);
     }
 
