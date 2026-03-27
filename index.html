@@ -1585,24 +1585,36 @@ function handleClassSelect() {
         console.log('Loading content for:', cls, 'Story:', currentStory);
 
         // Handle Cloze Quiz mode
-        if (cls === 'ClozeQuiz') {
-            isQuizMode = true;
-            // ClozeQuiz data is an array of quiz objects directly in lessonsData['ClozeQuiz']
-            if (!lessonsData['ClozeQuiz'] || !Array.isArray(lessonsData['ClozeQuiz']) || lessonsData['ClozeQuiz'].length === 0) {
-                console.error('No quiz data found for ClozeQuiz');
-                alert('No quiz questions available');
-                exitReadingMode();
-                return;
-            }
-            quizQuestions = lessonsData['ClozeQuiz'];
-            currentSentenceIndex = 0;
-            displayQuizQuestion(currentSentenceIndex);
-            setTimeout(() => {
-                applyDisplayMode();
-                ensureTextVisibility();
-            }, 100);
+    if (cls === 'ClozeQuiz') {
+        isQuizMode = true;
+        // ClozeQuiz data is now organized by date: { 'YYYY-MM-DD': [...] }
+        const quizData = window.lessonsData['ClozeQuiz'];
+        if (!quizData || typeof quizData !== 'object') {
+            console.error('No quiz data found for ClozeQuiz');
+            alert('No quiz questions available');
+            exitReadingMode();
             return;
         }
+        
+        // currentStory should be a date string (YYYY-MM-DD)
+        const dateStr = currentStory;
+        if (!dateStr || !quizData[dateStr]) {
+            console.error('No quiz data found for date:', dateStr);
+            alert('No quiz questions available for this date');
+            exitReadingMode();
+            return;
+        }
+        
+        quizQuestions = quizData[dateStr];
+        currentSentenceIndex = 0;
+        console.log('Loading quiz for', dateStr, ':', quizQuestions.length, 'questions');
+        displayQuizQuestion(currentSentenceIndex);
+        setTimeout(() => {
+            applyDisplayMode();
+            ensureTextVisibility();
+        }, 100);
+        return;
+    }
 
         // Non-quiz mode - reset quiz flag
         isQuizMode = false;
