@@ -117,13 +117,49 @@ async function initQuizLoader() {
     if (typeof lessonsData !== 'undefined') {
       lessonsData['ClozeQuiz'] = quizData;
       console.log('Quiz data added to lessonsData[\'ClozeQuiz\']');
+
+// Refresh the dropdown to include Cloze Quiz (with retry logic)
+let quizRetries = 0;
+const quizMaxRetries = 20;
+const checkQuizFunction = () => {
+  if (typeof populateStorySelector === 'function') {
+    populateStorySelector('ClozeQuiz');
+    console.log('Quiz Loader: Dropdown refreshed for ClozeQuiz (after ' + quizRetries + ' retries)');
+  } else {
+    quizRetries++;
+    if (quizRetries < quizMaxRetries) {
+      console.log('Quiz Loader: Waiting for populateStorySelector (retry ' + quizRetries + '/' + quizMaxRetries + ')');
+      setTimeout(checkQuizFunction, 100);
     } else {
+      console.error('Quiz Loader: populateStorySelector function still not found after ' + quizMaxRetries + ' retries!');
+    }
+  }
+};
+checkQuizFunction();
       console.error('lessonsData is not defined yet! Retrying in 500ms...');
         setTimeout(() => {
           if (typeof lessonsData !== 'undefined') {
             lessonsData['ClozeQuiz'] = quizData;
             console.log('Quiz data added to lessonsData[\'ClozeQuiz\'] (retry)');
-          } else {
+
+// Refresh the dropdown to include Cloze Quiz (with retry logic)
+let quizRetries = 0;
+const quizMaxRetries = 20;
+const checkQuizFunction = () => {
+  if (typeof populateStorySelector === 'function') {
+    populateStorySelector('ClozeQuiz');
+    console.log('Quiz Loader: Dropdown refreshed for ClozeQuiz (after ' + quizRetries + ' retries)');
+  } else {
+    quizRetries++;
+    if (quizRetries < quizMaxRetries) {
+      console.log('Quiz Loader: Waiting for populateStorySelector (retry ' + quizRetries + '/' + quizMaxRetries + ')');
+      setTimeout(checkQuizFunction, 100);
+    } else {
+      console.error('Quiz Loader: populateStorySelector function still not found after ' + quizMaxRetries + ' retries!');
+    }
+  }
+};
+checkQuizFunction();
             console.error('lessonsData still not defined after retry!');
           }
         }, 500);
