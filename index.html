@@ -1495,11 +1495,15 @@ function handleClassSelect() {
         console.log('Processing', classData.length, 'stories');
         classData.forEach((item, index) => {
             if (cls === 'ClozeQuiz' && item.level && item.sentence) {
-        optionText = `${item.level}: ${item.sentence}`;
+            const option = document.createElement("option");
+            option.value = optionIndex;
+            option.textContent = `${item.level}: ${item.sentence}`;
+            storySelector.appendChild(option);
+            optionIndex++;
       } else if (item && item.title) {
                 const option = document.createElement("option");
                 option.value = optionIndex;
-                option.textContent = story.title;
+                option.textContent = item.title;
                 storySelector.appendChild(option);
                 optionIndex++;
             } else {
