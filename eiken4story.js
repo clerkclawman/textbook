@@ -1971,6 +1971,5 @@ var eiken4story = [
 🌈 Does every year get better?
 毎年、良くなりますか？
 😊 What is the best thing?
-一番の良いことは何？` },
-];
+一番の良いことは何？` }];
 
