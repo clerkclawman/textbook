@@ -2048,11 +2048,22 @@ function handleClassSelect() {
     // ====================
     // NAVIGATION
     // ====================
-    function showNextSentence() {
-        stopSpeech();
-        closeTranslationPopupHandler();
-
-        if (sentences.length === 0 || fruitGameActive) return;
+function showNextSentence() {
+ stopSpeech();
+ closeTranslationPopupHandler();
+ 
+ // Handle quiz mode
+ if (isQuizMode && quizQuestions && quizQuestions.length > 0) {
+  if (currentSentenceIndex >= quizQuestions.length - 1) {
+   currentSentenceIndex = 0;
+  } else {
+   currentSentenceIndex++;
+  }
+  displayQuizQuestion(currentSentenceIndex);
+  return;
+ }
+ 
+ // Regular story mode
 
         const isLastPage = currentSentenceIndex >= sentences.length - 1;
 
@@ -2082,11 +2093,22 @@ function handleClassSelect() {
         updatePageCounter();
     }
 
-    function showPreviousSentence() {
-        stopSpeech();
-        closeTranslationPopupHandler();
-
-        if (sentences.length === 0) return;
+function showPreviousSentence() {
+ stopSpeech();
+ closeTranslationPopupHandler();
+ 
+ // Handle quiz mode
+ if (isQuizMode && quizQuestions && quizQuestions.length > 0) {
+  if (currentSentenceIndex > 0) {
+   currentSentenceIndex--;
+  } else {
+   currentSentenceIndex = quizQuestions.length - 1;
+  }
+  displayQuizQuestion(currentSentenceIndex);
+  return;
+ }
+ 
+ // Regular story mode
 
         if (currentSentenceIndex > 0) {
             currentSentenceIndex--;
