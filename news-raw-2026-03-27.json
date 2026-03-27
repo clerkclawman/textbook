@@ -1,0 +1,283 @@
+{
+  "fetchedAt": "2026-03-26T21:00:00Z",
+  "sources": {
+    "bbc_world": {
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        {
+          "title": "Trump extends pause on striking Iranian energy plants by 10 days and says 'talks are ongoing'",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/live/cre0vl84qy9t"
+        },
+        {
+          "title": "Zelensky visits Saudi Arabia after offering Ukraine's drone expertise",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cx2r4wxdw3no"
+        },
+        {
+          "title": "Olympic women's sport limited to biological females",
+          "time": "7 hrs ago",
+          "url": "https://www.bbc.com/news/sport/olympics/articles/cdj7dgvlj0no"
+        },
+        {
+          "title": "Spanish woman dies by euthanasia after long legal battle with father",
+          "time": "26 mins ago",
+          "url": "https://www.bbc.com/news/articles/c7vqdd23y0vo"
+        },
+        {
+          "title": "Rationing power and diluting petrol - how African countries are coping with effects of Iran war",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cq8wkq1n9epo"
+        },
+        {
+          "title": "US prosecutors argue Maduro 'plundered' Venezuelan wealth in court battle over legal fees",
+          "time": "2 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c4g8wxyq7v5o"
+        },
+        {
+          "title": "Orban's Hungarian government accused of mass voter intimidation ahead of election",
+          "time": "4 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c36r0068xp2o"
+        },
+        {
+          "title": "Air Canada CEO 'deeply saddened' his English-only message distracted from victims of crash",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cgrlnw70xyko"
+        },
+        {
+          "title": "French court hands Islam scholar Tariq Ramadan 18-year jail term for rape",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/cj408984v2xo"
+        },
+        {
+          "title": "Senegal to parade Afcon trophy despite title being stripped",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/sport/football/articles/c070kg5rn0ko"
+        },
+        {
+          "title": "Zimbabwe says 15 nationals killed after being lured to fight for Russia",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/clyxevz45x9o"
+        },
+        {
+          "title": "Russia bans Oscar-winning film 'Mr Nobody Against Putin'",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/cly97ddwgeko"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        {
+          "title": "Trump confirms May meeting with Xi Jinping as Iran war forces postponement",
+          "time": "13 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c05dpr1m71go"
+        },
+        {
+          "title": "Ex-Taiwan presidential hopeful sentenced to 17 years for corruption",
+          "time": "10 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cn9q3dw3qj7o"
+        },
+        {
+          "title": "Marcos promises 'flow of oil' as Philippines declares energy emergency",
+          "time": "1 day ago",
+          "url": "https://www.bbc.com/news/articles/c3ex8ez3717o"
+        },
+        {
+          "title": "Indian singer's drowning was accidental - Singapore coroner",
+          "time": "1 day ago",
+          "url": "https://www.bbc.com/news/articles/c747x091n79o"
+        },
+        {
+          "title": "'We are being choked': Philippines transport workers strike over fuel costs",
+          "time": "11 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c4glxn24gd6o"
+        },
+        {
+          "title": "A right-wing populist party made big poll gains - and it's shaking up Australian politics",
+          "time": "22 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cx2j4q60wlgo"
+        },
+        {
+          "title": "Australia bans Iranian tourists with valid visas for six months",
+          "time": "15 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cdrm0rlv102o"
+        },
+        {
+          "title": "Former AFL player becomes first to come out as gay",
+          "time": "21 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c3w3e0d6ql5o"
+        },
+        {
+          "title": "'Major player' in alleged mistaken identity kidnap of Sydney grandfather charged",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/cqxl825z839o"
+        },
+        {
+          "title": "BTS comeback concert on Netflix draws 18.4m global viewers",
+          "time": "2 days ago",
+          "url": "https://www.bbc.com/news/articles/cy513rvg91ro"
+        },
+        {
+          "title": "Sara Duterte impeachment hearings start as political death match heats up",
+          "time": "2 days ago",
+          "url": "https://www.bbc.com/news/articles/cpwjrd1z5y0o"
+        },
+        {
+          "title": "Journalists at Australia's national broadcaster strike for first time in 20 years",
+          "time": "2 days ago",
+          "url": "https://www.bbc.com/news/articles/c208ngv1mz7o"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        {
+          "title": "UK forecast to see biggest hit to growth from Iran war out of major economies",
+          "time": "7 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cgk0j71g417o"
+        },
+        {
+          "title": "NS&I boss replaced as savers left waiting for millions of pounds",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c3w3eg4n9zwo"
+        },
+        {
+          "title": "Church attendance report pulled after YouGov finds 'fraudulent' responses",
+          "time": "4 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cpwjxx5eyn1o"
+        },
+        {
+          "title": "UK now 'ready' to seize Russian shadow fleet ships, Healey says",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/cvg0n9z3jlvo"
+        },
+        {
+          "title": "Nottingham victims' families 'tortured' by authorities, inquiry told",
+          "time": "2 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c9d45y66g78o"
+        },
+        {
+          "title": "More than 13 million living in poverty, new figures show",
+          "time": "3 hrs ago",
+          "url": "https://www.bbc.com/news/articles/c3w38qvz195o"
+        },
+        {
+          "title": "Sarah Ferguson stripped of Freedom of City of York title",
+          "time": "28 mins ago",
+          "url": "https://www.bbc.com/news/articles/c3w3ez3xp92o"
+        },
+        {
+          "title": "Co-op boss quits after 'toxic culture' claims reported by BBC",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/crm172nkeplo"
+        },
+        {
+          "title": "Ex-BBC presenter recalled to prison",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/cgrln2yrge9o"
+        },
+        {
+          "title": "Rape accused 'does not know' how his DNA got on victim",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/c4gx33xr3zpo"
+        },
+        {
+          "title": "King's Speech to take place days after key May elections",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/cdj7ddlz4ypo"
+        },
+        {
+          "title": "Reform stands by election candidate appearing to do Nazi salute in picture",
+          "time": "Latest",
+          "url": "https://www.bbc.com/news/articles/c75kz7vgwzgo"
+        }
+      ]
+    },
+    "nhk_world": {
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/",
+      "headlines": [
+        {
+          "title": "NHK World - Today's Top Japan and World News",
+          "time": "Latest",
+          "url": "https://www3.nhk.or.jp/nhkworld/en/news/"
+        }
+      ],
+      "note": "Limited content extracted - NHK World page structure may require different parsing"
+    },
+    "cnn_world": {
+      "url": "https://edition.cnn.com/world",
+      "headlines": [
+        {
+          "title": "What we know on Day 27 of the US and Israel's war with Iran: Trump frustrated with Tehran and IRGC navy chief dead",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/26/middleeast/us-israel-iran-middle-east-war-day-27-what-we-know-intl-hnk"
+        },
+        {
+          "title": "Trump says US won't strike Iranian energy sites for 10 days",
+          "time": "3 mins ago",
+          "url": "https://edition.cnn.com/2026/03/26/world/live-news/iran-war-us-israel-trump"
+        },
+        {
+          "title": "Judge says he won't dismiss charges against Maduro over legal fees dispute",
+          "time": "3 mins ago",
+          "url": "https://edition.cnn.com/2026/03/26/world/live-news/nicolas-maduro-new-york-court"
+        },
+        {
+          "title": "She spent 20 months battling to die under a euthanasia law. On Thursday, Spain let her",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/26/europe/euthanasia-spain-noelia-castillo-latam-intl"
+        },
+        {
+          "title": "German rescuers race to save humpback whale stranded off Baltic Sea beach",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/26/world/german-rescuers-race-to-save-humpback-whale-stranded-off-baltic-sea-beach"
+        },
+        {
+          "title": "How risky would a US assault on Iran's Kharg Island be — and why might Trump consider it",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/26/middleeast/kharg-island-us-assault-risk-trump-intl"
+        },
+        {
+          "title": "Denmark's Frederiksen bruised in election, as voters put Trump's Greenland ambitions to the side",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/24/europe/demark-election-results-latam-intl"
+        },
+        {
+          "title": "A victory 'for decades'? Netanyahu's promise after June strikes proved hollow, but Israelis still support Iran war",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/25/middleeast/netanyahu-victory-iran-israel-support-intl"
+        },
+        {
+          "title": "Asia embraces energy austerity as dire fuel shortages force Philippines to declare national emergency",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/25/asia/asia-hormuz-energy-austerity-fuel-intl-hnk"
+        },
+        {
+          "title": "Kim Jong Un uses Iran war to justify North Korea's decision to keep its nuclear weapons",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/25/asia/north-korea-nuclear-weapons-justified-iran-war-intl-hnk"
+        },
+        {
+          "title": "What we know on Day 25 of the US and Israel's war with Iran",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/23/middleeast/us-israel-iran-middle-east-war-day-25-what-we-know-intl-hnk"
+        },
+        {
+          "title": "Scores killed as Colombian military plane crashes on takeoff",
+          "time": "Latest",
+          "url": "https://edition.cnn.com/2026/03/23/americas/colombia-military-plane-crash-takeoff-latam-intl"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "fetchDate": "2026-03-26",
+    "fetchTime": "21:00:00 UTC",
+    "timezone": "Asia/Tokyo (GMT+9)",
+    "localDate": "2026-03-27",
+    "localTime": "06:00:00 JST"
+  }
+}

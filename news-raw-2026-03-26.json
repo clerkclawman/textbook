@@ -1,0 +1,196 @@
+{
+  "fetchDate": "2026-03-26",
+  "fetchedAt": "2026-03-25T21:00:00Z",
+  "sources": {
+    "bbc_world": {
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "status": "success",
+      "articles": [
+        {
+          "title": "Philippines declares energy emergency as oil prices surge",
+          "description": "President Marcos announces procurement of one million barrels of oil to address shortage concerns amid regional fuel crisis.",
+          "link": "https://www.bbc.com/news/articles/c3ex8ez3717o",
+          "pubDate": "2026-03-25T08:59:46Z"
+        },
+        {
+          "title": "India's energy crisis deepens as Iran conflict impacts Asia",
+          "description": "Asian nations rely heavily on Gulf oil and gas, with shortages and higher prices starting to affect everyday life.",
+          "link": "https://www.bbc.com/news/articles/c1450zj6n48o",
+          "pubDate": "2026-03-24T17:12:50Z"
+        },
+        {
+          "title": "BTS comeback concert on Netflix draws 18.4 million global viewers",
+          "description": "The livestreamed show saw the band perform together for the first time since October 2022.",
+          "link": "https://www.bbc.com/news/articles/cy513rvg91ro",
+          "pubDate": "2026-03-25T02:55:12Z"
+        },
+        {
+          "title": "Sara Duterte impeachment hearings start in Philippines",
+          "description": "The Philippines' Vice President faces another impeachment round with her 2028 presidential run on the line.",
+          "link": "https://www.bbc.com/news/articles/cpwjrd1z5y0o",
+          "pubDate": "2026-03-25T03:17:58Z"
+        },
+        {
+          "title": "US detainee Dennis Coyle released by Taliban after more than a year",
+          "description": "Coyle, who was working as a language researcher, according to his family, was arrested in January 2025.",
+          "link": "https://www.bbc.com/news/articles/c79j1wj4495o",
+          "pubDate": "2026-03-24T15:50:42Z"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+      "status": "success",
+      "articles": [
+        {
+          "title": "Marcos promises 'flow of oil' as Philippines declares energy emergency",
+          "description": "The President says the country will procure one million barrels of oil to add to the current stock.",
+          "link": "https://www.bbc.com/news/articles/c3ex8ez3717o",
+          "pubDate": "2026-03-25T08:59:46Z"
+        },
+        {
+          "title": "Indian singer's drowning was accidental - Singapore coroner",
+          "description": "The coroner ruled that there was no evidence of foul play in the death of iconic singer Zubeen Garg.",
+          "link": "https://www.bbc.com/news/articles/c747x091n79o",
+          "pubDate": "2026-03-25T12:40:21Z"
+        },
+        {
+          "title": "Everyday life in Asia is being upended by Iran war fuel crisis",
+          "description": "Asia relies heavily on oil and gas from the Gulf, and shortages and higher prices are starting to bite.",
+          "link": "https://www.bbc.com/news/articles/c1450zj6n48o",
+          "pubDate": "2026-03-24T17:12:50Z"
+        },
+        {
+          "title": "BTS comeback concert on Netflix draws 18.4m global viewers",
+          "description": "The livestreamed show saw the band perform together for the first time since October 2022.",
+          "link": "https://www.bbc.com/news/articles/cy513rvg91ro",
+          "pubDate": "2026-03-25T02:55:12Z"
+        },
+        {
+          "title": "Journalists at Australia's national broadcaster strike for first time in 20 years",
+          "description": "Staff have walked out for 24 hours over a pay rise offer that was below inflation.",
+          "link": "https://www.bbc.com/news/articles/c208ngv1mz7o",
+          "pubDate": "2026-03-25T06:28:34Z"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://feeds.bbci.co.uk/news/uk/rss.xml",
+      "status": "success",
+      "articles": [
+        {
+          "title": "Dead students were tested for drugs and alcohol - but their killer was not, Nottingham inquiry hears",
+          "description": "A public inquiry into the attacks heard killer Valdo Calocane refused toxicology samples in custody.",
+          "link": "https://www.bbc.com/news/articles/c5ywd4gdzk1o",
+          "pubDate": "2026-03-25T19:20:32Z"
+        },
+        {
+          "title": "Doctors announce six-day strike in England as talks break down",
+          "description": "The walkout over jobs and pay is one of the longest yet in the dispute, and will begin on 7 April in England.",
+          "link": "https://www.bbc.com/news/articles/c62j7jx910go",
+          "pubDate": "2026-03-25T17:15:05Z"
+        },
+        {
+          "title": "Ex-Google boss confirmed as new BBC director general",
+          "description": "Matt Brittin says he's taking the top job at 'a moment of real risk, yet also real opportunity'.",
+          "link": "https://www.bbc.com/news/articles/cjd97evn2gko",
+          "pubDate": "2026-03-25T20:40:07Z"
+        },
+        {
+          "title": "UK inflation rate stays at 3% before Iran war hits oil prices",
+          "description": "The speed of price rises in the UK has stayed the same, according to data which was collected before the US-Israel war with Iran began.",
+          "link": "https://www.bbc.com/news/articles/cx2w47e9v2vo",
+          "pubDate": "2026-03-25T13:27:50Z"
+        },
+        {
+          "title": "Harry Potter TV show trailer: Everything we know so far",
+          "description": "The HBO reboot, which is due in 2027, is a spin-off from the original books and the film franchise.",
+          "link": "https://www.bbc.com/news/articles/cq6j20zp9n6o",
+          "pubDate": "2026-03-25T20:46:11Z"
+        }
+      ]
+    },
+    "nhk": {
+      "url": "https://www3.nhk.or.jp/news/news100/rss/",
+      "status": "success",
+      "articles": [
+        {
+          "title": "President Trump to visit China on May 14-15, meet with President Xi",
+          "description": "Top news: Trump administration announces high-level diplomatic visit to Beijing.",
+          "link": "https://news.web.nhk/newsweb/na/na-k10015084331000",
+          "pubDate": "2026-03-26T03:12:00+09:00"
+        },
+        {
+          "title": "Number of foreign children increases in over half of Japanese municipalities compared to 10 years ago",
+          "description": "New demographic data shows growing international community in Japan.",
+          "link": "https://news.web.nhk/newsweb/na/na-k10015084131000",
+          "pubDate": "2026-03-26T05:53:00+09:00"
+        },
+        {
+          "title": "Kyoto city buses to purchase diesel fuel at double March price for April",
+          "description": "Rising fuel costs impact public transportation budgets amid energy crisis.",
+          "link": "https://news.web.nhk/newsweb/na/na-k10015084241000",
+          "pubDate": "2026-03-26T05:54:00+09:00"
+        },
+        {
+          "title": "Japan begins releasing national oil reserves from 11 facilities nationwide",
+          "description": "Government action aims to stabilize fuel supply amid regional energy shortage.",
+          "link": "https://news.web.nhk/newsweb/na/na-k10015084111000",
+          "pubDate": "2026-03-26T04:59:00+09:00"
+        },
+        {
+          "title": "Wakayama revises Nankai Trough earthquake expectations, tsunami arrival as short as 1 minute",
+          "description": "Updated disaster preparedness guidelines released for coastal regions.",
+          "link": "https://news.web.nhk/newsweb/na/na-k10015084311000",
+          "pubDate": "2026-03-26T01:25:00+09:00"
+        }
+      ]
+    },
+    "cnn": {
+      "url": "https://www.cnn.com/world",
+      "status": "success",
+      "articles": [
+        {
+          "title": "White House says Iran talks proceeding as foreign minister denies negotiations",
+          "description": "Live updates on the ongoing Iran conflict and diplomatic efforts.",
+          "link": "https://edition.cnn.com/2026/03/25/world/live-news/iran-war-us-israel-trump-03-25-26",
+          "pubDate": "2026-03-25T21:00:00Z"
+        },
+        {
+          "title": "Venezuela's Maduro has been in a notorious Brooklyn jail for over 80 days",
+          "description": "Inside life at the detention facility where the Venezuelan leader is being held.",
+          "link": "https://edition.cnn.com/2026/03/25/americas/venezuela-maduro-jail-conditions-mdc-latam-intl",
+          "pubDate": "2026-03-25T20:30:00Z"
+        },
+        {
+          "title": "What to know on Day 26 of the Iran war: Tehran taunts Trump, US troop deployment",
+          "description": "Analysis of the ongoing conflict and international response.",
+          "link": "https://edition.cnn.com/2026/03/24/middleeast/us-israel-iran-middle-east-war-day-26-what-we-know-intl-hnk",
+          "pubDate": "2026-03-24T18:00:00Z"
+        },
+        {
+          "title": "London police arrest 2 men in connection with suspected antisemitic arson attack",
+          "description": "Jewish volunteer ambulances were set on fire in Golders Green neighborhood.",
+          "link": "https://edition.cnn.com/2026/03/25/uk/jewish-volunteer-ambulances-arson-attack-intl",
+          "pubDate": "2026-03-25T19:45:00Z"
+        },
+        {
+          "title": "Russia fires more than 1,000 drones against Ukraine as spring offensive ramps up",
+          "description": "Major escalation in the ongoing conflict with daytime drone attacks.",
+          "link": "https://edition.cnn.com/2026/03/24/europe/russia-ukraine-rare-daytime-drone-attack-intl",
+          "pubDate": "2026-03-24T16:30:00Z"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "totalArticles": 25,
+    "topStories": [
+      "Iran war continues into Day 26 with ongoing diplomatic tensions",
+      "Philippines declares energy emergency amid regional fuel crisis",
+      "Japan releases national oil reserves to stabilize supply",
+      "Trump announces China visit for May 14-15",
+      "UK doctors announce six-day strike starting April 7"
+    ]
+  }
+}

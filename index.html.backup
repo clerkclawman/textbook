@@ -1119,7 +1119,6 @@
                 <option value=''>Select Class</option>
                 <option value='FunQuestions'>Fun Questions (Daily)</option>
  <option value='ClozeQuiz'>Cloze Quiz (Daily)</option>
-        <option value='TonyJayStories'>Tony & Jay Stories (Daily)</option>
                 <option value='Grammar'>Grammar</option>
                 <option value='Sentences'>Sentences</option>
   <option value='News'>News (Daily)</option>
@@ -1225,13 +1224,10 @@
 </div>
 
     <!-- Load external scripts -->
-<script>
-  // Initialize lessonsData BEFORE any loaders run
-  window.lessonsData = {};
-</script>
 <script src='adult.js'></script>
 <script src='news-loader.js'></script>
 <script src='fun-questions-loader.js'></script>
+ <script src='quiz-loader.js'></script>
 <!-- Static news loaded dynamically via news-loader.js -->
 <!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
@@ -1273,7 +1269,6 @@
 <script src='grammar-site.js'></script>
 <script src='sentences-site.js'></script>
 
-
 <script>
     // ====================
     // GLOBAL VARIABLES
@@ -1296,8 +1291,8 @@
     // Cloze Quiz specific variables
     let isQuizMode = false;
     let quizQuestions = [];
- let currentQuizAnswerMapping = []; // Cloze Quiz specific variables
-</script>
+    let shuffledOptions = [];
+    let currentQuizAnswerMapping = [];
 
     // DOM elements
     let mainContainer, readingModeContainer, englishSentence, japaneseSentence;
@@ -1416,31 +1411,17 @@
     // ====================
     // CLASS & STORY MANAGEMENT
     // ====================
-function handleClassSelect() {
-  currentClass = this.value;
-  storySelector.disabled = !currentClass;
-  if (!currentClass) {
-    storySelector.innerHTML = '<option value="">Select Story</option>';
-    storySelector.disabled = true;
-    return;
-  }
-  
-  // Check if lessonsData is populated
-  if (!lessonsData || !lessonsData[currentClass]) {
-    console.warn('Data not ready yet for', currentClass, '. Retrying in 100ms...');
-    setTimeout(() => {
-      if (lessonsData && lessonsData[currentClass]) {
-        handleClassSelect(); // Retry
-      } else {
-        console.error('Data still not ready for', currentClass, 'after retry!');
-      }
-    }, 100);
-    return;
-  }
-  
-  // Data is ready, proceed
-  populateStorySelector(currentClass);
-}
+    function handleClassSelect() {
+        currentClass = this.value;
+        storySelector.disabled = !currentClass;
+
+        if (currentClass) {
+            populateStorySelector(currentClass);
+        } else {
+            storySelector.innerHTML = '<option value="">Select Story</option>';
+            storySelector.disabled = true;
+        }
+    }
 
     function handleStorySelect() {
         currentStory = this.value;
@@ -1449,7 +1430,7 @@ function handleClassSelect() {
         }
     }
 
-    window.populateStorySelector = function(cls) {
+    function populateStorySelector(cls) {
         storySelector.innerHTML = '<option value="">Select Story</option>';
 
         console.log('=== POPULATE STORY SELECTOR ===');
@@ -1492,17 +1473,15 @@ function handleClassSelect() {
 
         // lessonsData[cls] is now directly an array of story objects
         console.log('Processing', classData.length, 'stories');
-        classData.forEach((item, index) => {
-            if (cls === 'ClozeQuiz' && item.level && item.sentence) {
-        optionText = `${item.level}: ${item.sentence}`;
-      } else if (item && item.title) {
+        classData.forEach((story, index) => {
+            if (story && story.title) {
                 const option = document.createElement("option");
                 option.value = optionIndex;
                 option.textContent = story.title;
                 storySelector.appendChild(option);
                 optionIndex++;
             } else {
-                console.warn('Invalid item at index', index, ':', item);
+                console.warn('Invalid story at index', index, ':', story);
             }
         });
 
@@ -2935,7 +2914,43 @@ if (typeof getCombinedFunQuestions === "function") {
     lessonsData["FunQuestions"] = funQuestionsData;
 }
 
-      
+            lessonsData = {
+                'Bronze': bronzeStories,
+                'Silver': silverStories,
+                'Gold': goldStories,
+                'Adult': adult,
+                'News': newsData,
+  'FunQuestions': funQuestionsLoaded ? funQuestionsData : [],
+                'X': x,
+                'C': c,
+                'Eiken1': eiken1,
+                'Eiken2': eiken2,
+                'Eiken3': eiken3story,
+                'Eiken4': eiken4story,
+                'Eiken5': eiken5story,
+                'Eiken6': eiken6story,
+                'Eiken7': eiken7story,
+'New7': eiken7new12,
+'New6': eiken6new12,
+
+'New5': eiken5new12,
+'New4': eiken4new12v2,
+'New3': eiken3new12,
+'NewPre2': eikenpre2new12,
+'NewPre2Plus': eikenpre2plusnew12,
+'New2': eiken2new12,
+'NewPre1': eikenpre1new12,
+'New1': eiken1new12v2,
+                'EikenPre1': eikenpre1,
+                'EikenPre2': eikenpre2,
+                'EikenPre2Plus': eikenpre2plus,
+                'GettingToKnow': gettingtoknow,
+                'EasyQuestions': easyquestions,
+                'WouldYouRather': wouldyourather,
+                'Vocab': vocab,
+                'Grammar': [].concat(eiken7grammar, eiken6grammar, eiken5grammar, eiken4grammar, eiken3grammar, eikenpre2grammar, eikenpre2plusgrammar, eiken2grammar, eikenpre1grammar, eiken1grammar),
+                'Sentences': [].concat(eiken7sentences, eiken6sentences, eiken5sentences, eiken4sentences, eiken3sentences, eikenpre2sentences, eikenpre2plussentences, eiken2sentences, eikenpre1sentences, eiken1sentences)
+            };
 
             console.log('Lesson data loaded:', Object.keys(lessonsData));
             console.log('News articles:', newsData.length + ' entries');
@@ -3046,102 +3061,11 @@ if (typeof getCombinedFunQuestions === "function") {
         init();
         setTimeout(listVoices, 1000);
     });
+</script>
     <script src="analytics.js"></script>
     <script>
         // Track page view
         Analytics.trackPageView('index.html');
     </script>
-<script>
-// Synchronously populate lessonsData immediately after all scripts load
-// This ensures data is ready BEFORE any user interaction
-if (typeof bronzeStories !== 'undefined') lessonsData['Bronze'] = bronzeStories;
-if (typeof silverStories !== 'undefined') lessonsData['Silver'] = silverStories;
-if (typeof goldStories !== 'undefined') lessonsData['Gold'] = goldStories;
-if (typeof adult !== 'undefined') lessonsData['Adult'] = adult;
-if (typeof newsData !== 'undefined') lessonsData['News'] = newsData;
-if (typeof funQuestionsData !== 'undefined') lessonsData['FunQuestions'] = funQuestionsData;
-if (typeof x !== 'undefined') lessonsData['X'] = x;
-if (typeof c !== 'undefined') lessonsData['C'] = c;
-if (typeof eiken1 !== 'undefined') lessonsData['Eiken1'] = eiken1;
-if (typeof eiken2 !== 'undefined') lessonsData['Eiken2'] = eiken2;
-if (typeof eiken3story !== 'undefined') lessonsData['Eiken3'] = eiken3story;
-if (typeof eiken4story !== 'undefined') lessonsData['Eiken4'] = eiken4story;
-if (typeof eiken5story !== 'undefined') lessonsData['Eiken5'] = eiken5story;
-if (typeof eiken6story !== 'undefined') lessonsData['Eiken6'] = eiken6story;
-if (typeof eiken7story !== 'undefined') lessonsData['Eiken7'] = eiken7story;
-if (typeof eiken7new12 !== 'undefined') lessonsData['New7'] = eiken7new12;
-if (typeof eiken6new12 !== 'undefined') lessonsData['New6'] = eiken6new12;
-if (typeof eiken5new12 !== 'undefined') lessonsData['New5'] = eiken5new12;
-if (typeof eiken4new12v2 !== 'undefined') lessonsData['New4'] = eiken4new12v2;
-if (typeof eiken3new12 !== 'undefined') lessonsData['New3'] = eiken3new12;
-if (typeof eikenpre2new12 !== 'undefined') lessonsData['NewPre2'] = eikenpre2new12;
-if (typeof eikenpre2plusnew12 !== 'undefined') lessonsData['NewPre2Plus'] = eikenpre2plusnew12;
-if (typeof eiken2new12 !== 'undefined') lessonsData['New2'] = eiken2new12;
-if (typeof eikenpre1new12v2 !== 'undefined') lessonsData['NewPre1'] = eikenpre1new12v2;
-if (typeof eiken1new12v2 !== 'undefined') lessonsData['New1'] = eiken1new12v2;
-if (typeof eikenpre1 !== 'undefined') lessonsData['EikenPre1'] = eikenpre1;
-if (typeof eikenpre2 !== 'undefined') lessonsData['EikenPre2'] = eikenpre2;
-if (typeof eikenpre2plus !== 'undefined') lessonsData['EikenPre2Plus'] = eikenpre2plus;
-if (typeof gettingtoknow !== 'undefined') lessonsData['GettingToKnow'] = gettingtoknow;
-if (typeof easyquestions !== 'undefined') lessonsData['EasyQuestions'] = easyquestions;
-if (typeof wouldyourather !== 'undefined') lessonsData['WouldYouRather'] = wouldyourather;
-if (typeof vocab !== 'undefined') lessonsData['Vocab'] = vocab;
-
-// Combine grammar and sentences arrays
-if (typeof eiken7grammar !== 'undefined' && typeof eiken6grammar !== 'undefined') {
-  lessonsData['Grammar'] = [].concat(
-    eiken7grammar, eiken6grammar, eiken5grammar, eiken4grammar, eiken3grammar,
-    eikenpre2grammar, eikenpre2plusgrammar, eiken2grammar, eikenpre1grammar, eiken1grammar
-  );
-}
-if (typeof eiken7sentences !== 'undefined' && typeof eiken6sentences !== 'undefined') {
-  lessonsData['Sentences'] = [].concat(
-    eiken7sentences, eiken6sentences, eiken5sentences, eiken4sentences, eiken3sentences,
-    eikenpre2sentences, eikenpre2plussentences, eiken2sentences, eikenpre1sentences, eiken1sentences
-  );
-}
-
-console.log('Lesson data loaded synchronously:', Object.keys(lessonsData));
-console.log('Eiken5 stories:', lessonsData['Eiken5'] ? lessonsData['Eiken5'].length + ' stories' : 'NOT FOUND');
-</script>
-
-
-
-
-
-<!-- Cloze Quiz and Tony & Jay Stories (Daily) -->
-<script src='tony-jay-loader.js'></script>
-<script src='quiz-loader.js'></script>
-
-
-<!-- DEBUG: Check if Tony & Jay and Quiz data are loaded -->
-<script>
-console.log('=== DEBUG: Checking lessonsData ===');
-console.log('lessonsData keys:', Object.keys(lessonsData));
-console.log('TonyJayStories loaded:', lessonsData['TonyJayStories'] ? 'YES (' + lessonsData['TonyJayStories'].length + ' stories)' : 'NO');
-console.log('ClozeQuiz loaded:', lessonsData['ClozeQuiz'] ? 'YES (' + lessonsData['ClozeQuiz'].length + ' questions)' : 'NO');
-
-// If TonyJayStories is not loaded, try to load it manually
-if (!lessonsData['TonyJayStories']) {
-  console.warn('DEBUG: TonyJayStories not loaded. Attempting manual load...');
-  if (typeof loadTonyJayStoriesFile === 'function') {
-    loadTonyJayStoriesFile('stories-tony-jay-2026-03-27.js');
-  } else {
-    console.error('DEBUG: loadTonyJayStoriesFile function not found!');
-  }
-}
-
-// If ClozeQuiz is not loaded, try to load it manually
-if (!lessonsData['ClozeQuiz']) {
-  console.warn('DEBUG: ClozeQuiz not loaded. Attempting manual load...');
-  if (typeof loadQuizFile === 'function') {
-    loadQuizFile('quiz-2026-03-27.js');
-  } else {
-    console.error('DEBUG: loadQuizFile function not found!');
-  }
-}
-</script>
 </body>
-</html><!-- Trigger rebuild -->
-<!-- Force rebuild v2 -->
-<!-- Trigger rebuild for quiz and tony-jay files -->
+</html>
