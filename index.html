@@ -2048,7 +2048,7 @@ function handleClassSelect() {
     // ====================
     // NAVIGATION
     // ====================
-function showNextSentence() {
+    function showNextSentence() {
     stopSpeech();
     closeTranslationPopupHandler();
     
@@ -2079,15 +2079,6 @@ function showNextSentence() {
     advanceToNextSentence();
 }
 
-        if (isLastPage) {
-            currentSentenceIndex = 0;
-            displayCurrentSentence();
-            return;
-        }
-
-        advanceToNextSentence();
-    }
-
     function advanceToNextSentence() {
         if (currentSentenceIndex < sentences.length - 1) {
             currentSentenceIndex++;
@@ -2099,7 +2090,7 @@ function showNextSentence() {
         updatePageCounter();
     }
 
-function showPreviousSentence() {
+    function showPreviousSentence() {
     stopSpeech();
     closeTranslationPopupHandler();
     
@@ -2124,10 +2115,6 @@ function showPreviousSentence() {
     displayCurrentSentence();
     updatePageCounter();
 }
-
-        displayCurrentSentence();
-        updatePageCounter();
-    }
 
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
