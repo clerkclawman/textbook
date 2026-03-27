@@ -110,7 +110,11 @@ async function initTonyJayStoriesLoader() {
       lessonsData['TonyJayStories'] = storiesData;
       console.log('Tony & Jay Loader: Stories data added to lessonsData[\'TonyJayStories\']');
         // Refresh the dropdown to include Tony & Jay stories
-        if (typeof populateStorySelector === 'function') {
+        // Retry logic for populateStorySelector
+  let retries = 0;
+  const maxRetries = 20;
+  const checkFunction = () => {
+    if (typeof populateStorySelector === 'function') {
           populateStorySelector('TonyJayStories');
           console.log('Tony & Jay Loader: Dropdown refreshed for TonyJayStories');
         } else {
