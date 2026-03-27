@@ -1495,6 +1495,25 @@ function handleClassSelect() {
             return;
         }
 
+    // Handle date-keyed data (ClozeQuiz, TonyJayStories)
+    if (typeof classData === 'object' && !Array.isArray(classData)) {
+        console.log('Date-keyed data detected for', cls);
+        let optionIndex = 0;
+        // Sort dates (newest first)
+        const dates = Object.keys(classData).sort((a, b) => b.localeCompare(a));
+        dates.forEach(dateStr => {
+            const option = document.createElement("option");
+            option.value = dateStr;
+            const displayDate = formatDisplayDate(dateStr);
+            option.textContent = displayDate;
+            storySelector.appendChild(option);
+            optionIndex++;
+        });
+        console.log('Added', optionIndex, 'date options to story selector');
+        storySelector.disabled = false;
+        storySelector.focus();
+        return;
+    }
         if (!Array.isArray(classData)) {
             console.error('lessonsData[' + cls + '] is not an array!', classData);
             storySelector.innerHTML = '<option value="">Error: data format incorrect</option>';
@@ -1524,7 +1543,12 @@ function handleClassSelect() {
       } else if (item && item.title) {
                 const option = document.createElement("option");
                 option.value = optionIndex;
-                option.textContent = item.title;
+                let title = item.title;
+            if (item.level !== undefined) {
+                const levelStr = formatLevel(item.level);
+                title = `[${levelStr}] ${title}`;
+            }
+            option.textContent = title;
                 storySelector.appendChild(option);
                 optionIndex++;
             } else {
