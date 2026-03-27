@@ -1418,17 +1418,31 @@
     // ====================
     // CLASS & STORY MANAGEMENT
     // ====================
-    function handleClassSelect() {
-        currentClass = this.value;
-        storySelector.disabled = !currentClass;
-
-        if (currentClass) {
-            populateStorySelector(currentClass);
-        } else {
-            storySelector.innerHTML = '<option value="">Select Story</option>';
-            storySelector.disabled = true;
-        }
-    }
+function handleClassSelect() {
+  currentClass = this.value;
+  storySelector.disabled = !currentClass;
+  if (!currentClass) {
+    storySelector.innerHTML = '<option value="">Select Story</option>';
+    storySelector.disabled = true;
+    return;
+  }
+  
+  // Check if lessonsData is populated
+  if (!lessonsData || !lessonsData[currentClass]) {
+    console.warn('Data not ready yet for', currentClass, '. Retrying in 100ms...');
+    setTimeout(() => {
+      if (lessonsData && lessonsData[currentClass]) {
+        handleClassSelect(); // Retry
+      } else {
+        console.error('Data still not ready for', currentClass, 'after retry!');
+      }
+    }, 100);
+    return;
+  }
+  
+  // Data is ready, proceed
+  populateStorySelector(currentClass);
+}
 
     function handleStorySelect() {
         currentStory = this.value;
