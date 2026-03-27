@@ -2143,4 +2143,4 @@ var eiken5story = [
 まもなく新しい学校に進学しますか？
 🌟 What are your hopes for the future?
 将来の希望は何ですか？
-`};
+` }];

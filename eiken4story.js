@@ -1972,4 +1972,3 @@ var eiken4story = [
 毎年、良くなりますか？
 😊 What is the best thing?
 一番の良いことは何？` }];
-
