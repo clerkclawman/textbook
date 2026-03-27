@@ -1,10 +1,11 @@
 /**
  * Tony & Jay Stories Loader
- * Loads today's Tony & Jay stories file
+ * Loads stories organized by date
+ * Shows dates in dropdown, then stories with their EIKEN levels
  */
-const TONY_JAY_MAX_AGE_DAYS = 1;
+const TONY_JAY_MAX_AGE_DAYS = 7;
 
-// Cache for loaded stories
+// Cache for loaded stories (keyed by date string 'YYYY-MM-DD')
 const tonyJayStoriesCache = new Map();
 
 /**
@@ -14,33 +15,51 @@ function formatDateTonyJay(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
-    return `stories-tony-jay-${year}-${month}-${day}.js`;
+    return `${year}-${month}-${day}`;
+}
+
+/**
+ * Get display date string (e.g., "March 27, 2026")
+ */
+function formatDisplayDate(dateStr) {
+    const date = new Date(dateStr + 'T00:00:00');
+    return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+/**
+ * Get EIKEN level display string
+ */
+function formatLevel(level) {
+    if (level === 7) return 'Grade 7';
+    if (level === 6) return 'Grade 6';
+    if (level === 5) return 'Grade 5';
+    if (level === 4) return 'Grade 4';
+    if (level === 3) return 'Grade 3';
+    if (level === 'Pre-2') return 'Pre-2';
+    if (level === 'Pre-2Plus' || level === 'Pre2Plus') return 'Pre-2 Plus';
+    if (level === 2) return 'Grade 2';
+    if (level === 'Pre-1') return 'Pre-1';
+    if (level === 1) return 'Grade 1';
+    return `Level ${level}`;
 }
 
 /**
  * Load Tony & Jay stories file dynamically
  */
-async function loadTonyJayStoriesFile(filename) {
-    console.log('Tony & Jay Loader: Attempting to fetch', filename);
-    if (tonyJayStoriesCache.has(filename)) {
-        console.log('Tony & Jay Loader: Cache hit');
-        return tonyJayStoriesCache.get(filename);
+async function loadTonyJayStoriesFile(dateStr) {
+    const filename = `stories-tony-jay-${dateStr}.js`;
+    
+    if (tonyJayStoriesCache.has(dateStr)) {
+        return tonyJayStoriesCache.get(dateStr);
     }
+    
     try {
         const response = await fetch(filename);
-        console.log('Tony & Jay Loader: Fetch response status', response.status);
-        if (!response.ok) {
-            console.error('Tony & Jay Loader: Fetch failed with status', response.status);
-            return null;
-        }
+        if (!response.ok) return null;
         const javascript = await response.text();
-        console.log('Tony & Jay Loader: Fetched', javascript.length, 'characters');
         const storiesData = parseJavaScriptTonyJay(javascript);
         if (storiesData) {
-            tonyJayStoriesCache.set(filename, storiesData);
-            console.log('Tony & Jay Loader: Parsed', storiesData.length, 'stories');
-        } else {
-            console.error('Tony & Jay Loader: Parsing returned null');
+            tonyJayStoriesCache.set(dateStr, storiesData);
         }
         return storiesData;
     } catch (error) {
@@ -54,42 +73,30 @@ async function loadTonyJayStoriesFile(filename) {
  */
 function parseJavaScriptTonyJay(javascript) {
     try {
-        console.log('Tony & Jay Loader: Starting parse');
-        // Remove single-line comments (// ...) and multi-line comments (/* ... */)
+        // Remove comments
         let cleanCode = javascript.replace(/\/\/.*$/gm, '').replace(/\/\*[\s\S]*?\*\//g, '');
-
+        
         // Extract the array from "var storiesTonyJayYYYYMMDD = [...]"
         const match = cleanCode.match(/var\s+storiesTonyJay\d+\s*=\s*(\[[\s\S]*\])\s*;?\s*$/);
         if (!match) {
-            console.error('Tony & Jay Loader: Regex did not match. First 200 chars:', cleanCode.substring(0, 200));
             return null;
         }
         const arrayString = match[1];
-        console.log('Tony & Jay Loader: Extracted array string, length:', arrayString.length);
-
-        // Safely evaluate the array literal using a Function constructor
         const extractor = new Function('return ' + arrayString);
         const result = extractor();
-        if (!Array.isArray(result)) {
-            console.error('Tony & Jay Loader: Result is not an array. Type:', typeof result);
+        if (!Array.isArray(result) || result.length === 0) {
             return null;
         }
-        if (result.length === 0) {
-            console.error('Tony & Jay Loader: Result is an empty array');
-            return null;
-        }
-        console.log('Tony & Jay Loader: SUCCESS: Parsed', result.length, 'Tony & Jay stories');
         return result;
     } catch (error) {
         console.error('Tony & Jay Loader: Parse error:', error.message);
-        console.error('Tony & Jay Loader: Error stack:', error.stack);
         return null;
     }
 }
 
 /**
- * Initialize Tony & Jay stories loader - load today's stories
- * Waits for both lessonsData AND populateStorySelector to be available
+ * Initialize Tony & Jay stories loader
+ * Loads all available story files and organizes by date
  */
 async function initTonyJayStoriesLoader() {
     console.log('=== INITIALIZING TONY & JAY STORIES LOADER ===');
@@ -98,7 +105,6 @@ async function initTonyJayStoriesLoader() {
     let initRetries = 0;
     const initMaxRetries = 30;
     while (typeof window.lessonsData === 'undefined' && initRetries < initMaxRetries) {
-        console.log('Tony & Jay Loader: Waiting for lessonsData (' + initRetries + '/' + initMaxRetries + ')');
         await new Promise(resolve => setTimeout(resolve, 100));
         initRetries++;
     }
@@ -108,56 +114,51 @@ async function initTonyJayStoriesLoader() {
         return;
     }
     
+    // Load stories for today and past 7 days
     const today = new Date();
-    const filename = formatDateTonyJay(today);
-    console.log('Tony & Jay Loader: Loading stories file:', filename);
-    const storiesData = await loadTonyJayStoriesFile(filename);
+    const storiesByDate = {};
     
-    if (storiesData && Array.isArray(storiesData)) {
-        console.log('Tony & Jay Loader: Loaded', storiesData.length, 'Tony & Jay stories');
-        // Add to lessonsData
-        window.lessonsData['TonyJayStories'] = storiesData;
-        console.log('Tony & Jay Loader: Stories data added to lessonsData[\'TonyJayStories\']');
+    for (let i = 0; i <= TONY_JAY_MAX_AGE_DAYS; i++) {
+        const date = new Date();
+        date.setDate(today.getDate() - i);
+        const dateStr = formatDateTonyJay(date);
         
-        // Wait for populateStorySelector to be available, then refresh dropdown
-        let dropdownRetries = 0;
-        const dropdownMaxRetries = 30;
-        const checkAndRefresh = () => {
-            if (typeof window.populateStorySelector === 'function') {
-                window.populateStorySelector('TonyJayStories');
-                console.log('Tony & Jay Loader: Dropdown refreshed for TonyJayStories');
-            } else {
-                dropdownRetries++;
-                if (dropdownRetries < dropdownMaxRetries) {
-                    setTimeout(checkAndRefresh, 100);
-                } else {
-                    console.error('Tony & Jay Loader: populateStorySelector not found after ' + dropdownMaxRetries + ' retries');
-                }
-            }
-        };
-        checkAndRefresh();
-    } else {
-        console.warn('Tony & Jay Loader: No Tony & Jay stories loaded for today');
+        const storiesData = await loadTonyJayStoriesFile(dateStr);
+        if (storiesData && Array.isArray(storiesData) && storiesData.length > 0) {
+            storiesByDate[dateStr] = storiesData;
+            console.log(`Tony & Jay Loader: Loaded ${storiesData.length} stories for ${dateStr}`);
+        }
     }
+    
+    if (Object.keys(storiesByDate).length === 0) {
+        console.warn('Tony & Jay Loader: No stories loaded');
+        return;
+    }
+    
+    // Store in lessonsData as date-keyed object
+    window.lessonsData['TonyJayStories'] = storiesByDate;
+    console.log('Tony & Jay Loader: Stories organized by date:', Object.keys(storiesByDate));
+    
+    // Wait for populateStorySelector to be available
+    let dropdownRetries = 0;
+    const dropdownMaxRetries = 30;
+    const checkAndRefresh = () => {
+        if (typeof window.populateStorySelector === 'function') {
+            window.populateStorySelector('TonyJayStories');
+            console.log('Tony & Jay Loader: Dropdown refreshed for TonyJayStories');
+        } else {
+            dropdownRetries++;
+            if (dropdownRetries < dropdownMaxRetries) {
+                setTimeout(checkAndRefresh, 100);
+            }
+        }
+    };
+    checkAndRefresh();
 }
 
 // Auto-initialize when script loads
-console.log('Tony & Jay Loader: Script loaded');
 if (document.readyState === 'loading') {
-    console.log('Tony & Jay Loader: Waiting for DOMContentLoaded');
-    document.addEventListener('DOMContentLoaded', () => {
-        console.log('Tony & Jay Loader: DOMContentLoaded fired, calling init');
-        initTonyJayStoriesLoader();
-    });
+    document.addEventListener('DOMContentLoaded', initTonyJayStoriesLoader);
 } else {
-    console.log('Tony & Jay Loader: DOM already loaded, calling init immediately');
     initTonyJayStoriesLoader();
 }
-
-// Fallback: Try again after 1.5 seconds if lessonsData is not ready
-setTimeout(() => {
-    if (typeof window.lessonsData !== 'undefined' && !window.lessonsData['TonyJayStories']) {
-        console.log('Tony & Jay Loader: Fallback trigger, calling init again');
-        initTonyJayStoriesLoader();
-    }
-}, 1500);

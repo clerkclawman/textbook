@@ -1332,7 +1332,28 @@
         return true;
     }
 
-    function init() {
+    
+// Helper functions for date and level formatting
+function formatDisplayDate(dateStr) {
+    const date = new Date(dateStr + 'T00:00:00');
+    return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+function formatLevel(level) {
+    if (level === 7) return 'Grade 7';
+    if (level === 6) return 'Grade 6';
+    if (level === 5) return 'Grade 5';
+    if (level === 4) return 'Grade 4';
+    if (level === 3) return 'Grade 3';
+    if (level === 'Pre-2') return 'Pre-2';
+    if (level === 'Pre-2Plus' || level === 'Pre2Plus') return 'Pre-2 Plus';
+    if (level === 2) return 'Grade 2';
+    if (level === 'Pre-1') return 'Pre-1';
+    if (level === 1) return 'Grade 1';
+    return `Level ${level}`;
+}
+
+function init() {
         if (!initElements()) {
             alert('Failed to initialize page elements');
             return;
