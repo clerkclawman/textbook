@@ -1638,46 +1638,13 @@ function handleClassSelect() {
             }
             content = questions[0].content; // Questions are in an array, get first item's content
         } else {
- // Handle TonyJayStories (date-keyed data)
- if (cls === "TonyJayStories") {
-  const dateStr = currentStory;
-  const storiesData = window.lessonsData["TonyJayStories"];
-  if (!storiesData || typeof storiesData !== "object" || !storiesData[dateStr]) {
-   console.error("No TonyJayStories data for date:", dateStr);
-   alert("No stories available for this date");
-   exitReadingMode();
-   return;
-  }
-  const storiesForDate = storiesData[dateStr];
-  if (storiesForDate.length > 0) {
-   content = storiesForDate[0].content;
-  } else {
-   console.error("No stories for date:", dateStr);
-   alert("No stories available");
-   exitReadingMode();
-   return;
-  }
- } else {
-  const selectorIndex = parseInt(currentStory);
-  if (isNaN(selectorIndex)) {
-   console.error('Invalid story index:', currentStory);
-   alert('Invalid story selection');
-   exitReadingMode();
-   return;
-  }
-  let storyIndex = selectorIndex;
-  if (window.lessonsData._questions && window.lessonsData._questions[cls]) {
-   storyIndex = selectorIndex - 1;
-  }
-  if (storyIndex < 0 || !Array.isArray(window.lessonsData[cls]) || !window.lessonsData[cls][storyIndex]) {
-   console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
-   alert('Invalid story selection');
-   exitReadingMode();
-   return;
-  }
-  content = window.lessonsData[cls][storyIndex].content;
- }
-}
+            const selectorIndex = parseInt(currentStory);
+            if (isNaN(selectorIndex)) {
+                console.error('Invalid story index:', currentStory);
+                alert('Invalid story selection');
+                exitReadingMode();
+                return;
+            }
 
             // Adjust index if questions exist for this class
             let storyIndex = selectorIndex;
