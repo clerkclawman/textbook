@@ -2048,19 +2048,36 @@ function handleClassSelect() {
     // ====================
     // NAVIGATION
     // ====================
-    function showNextSentence() {
-        stopSpeech();
-        closeTranslationPopupHandler();
-
-        if (sentences.length === 0 || fruitGameActive) return;
-
-        const isLastPage = currentSentenceIndex >= sentences.length - 1;
-
-        if (fruitGameEnabled) {
-            shouldAdvanceAfterGame = true;
-            showFruitGame();
-            return;
+function showNextSentence() {
+    stopSpeech();
+    closeTranslationPopupHandler();
+    
+    // Handle quiz mode
+    if (isQuizMode && quizQuestions && quizQuestions.length > 0) {
+        if (currentSentenceIndex >= quizQuestions.length - 1) {
+            currentSentenceIndex = 0;
+        } else {
+            currentSentenceIndex++;
         }
+        displayQuizQuestion(currentSentenceIndex);
+        return;
+    }
+    
+    // Regular story mode
+    if (sentences.length === 0 || fruitGameActive) return;
+    const isLastPage = currentSentenceIndex >= sentences.length - 1;
+    if (fruitGameEnabled) {
+        shouldAdvanceAfterGame = true;
+        showFruitGame();
+        return;
+    }
+    if (isLastPage) {
+        currentSentenceIndex = 0;
+        displayCurrentSentence();
+        return;
+    }
+    advanceToNextSentence();
+}
 
         if (isLastPage) {
             currentSentenceIndex = 0;
@@ -2082,17 +2099,31 @@ function handleClassSelect() {
         updatePageCounter();
     }
 
-    function showPreviousSentence() {
-        stopSpeech();
-        closeTranslationPopupHandler();
-
-        if (sentences.length === 0) return;
-
+function showPreviousSentence() {
+    stopSpeech();
+    closeTranslationPopupHandler();
+    
+    // Handle quiz mode
+    if (isQuizMode && quizQuestions && quizQuestions.length > 0) {
         if (currentSentenceIndex > 0) {
             currentSentenceIndex--;
         } else {
-            currentSentenceIndex = sentences.length - 1;
+            currentSentenceIndex = quizQuestions.length - 1;
         }
+        displayQuizQuestion(currentSentenceIndex);
+        return;
+    }
+    
+    // Regular story mode
+    if (sentences.length === 0) return;
+    if (currentSentenceIndex > 0) {
+        currentSentenceIndex--;
+    } else {
+        currentSentenceIndex = sentences.length - 1;
+    }
+    displayCurrentSentence();
+    updatePageCounter();
+}
 
         displayCurrentSentence();
         updatePageCounter();
