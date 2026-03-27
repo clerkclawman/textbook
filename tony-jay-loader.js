@@ -110,17 +110,24 @@ async function initTonyJayStoriesLoader() {
       lessonsData['TonyJayStories'] = storiesData;
       console.log('Tony & Jay Loader: Stories data added to lessonsData[\'TonyJayStories\']');
         // Refresh the dropdown to include Tony & Jay stories
-        // Retry logic for populateStorySelector
-  let retries = 0;
-  const maxRetries = 20;
-  const checkFunction = () => {
-    if (typeof populateStorySelector === 'function') {
-          populateStorySelector('TonyJayStories');
-          console.log('Tony & Jay Loader: Dropdown refreshed for TonyJayStories');
-        } else {
-          console.warn('Tony & Jay Loader: populateStorySelector function not found yet');
-        }
+// Retry logic for populateStorySelector
+let retries = 0;
+const maxRetries = 20;
+const checkFunction = () => {
+  if (typeof populateStorySelector === 'function') {
+    populateStorySelector('TonyJayStories');
+    console.log('Tony & Jay Loader: Dropdown refreshed for TonyJayStories (after ' + retries + ' retries)');
+  } else {
+    retries++;
+    if (retries < maxRetries) {
+      console.log('Tony & Jay Loader: Waiting for populateStorySelector (retry ' + retries + '/' + maxRetries + ')');
+      setTimeout(checkFunction, 100);
     } else {
+      console.error('Tony & Jay Loader: populateStorySelector function still not found after ' + maxRetries + ' retries!');
+    }
+  }
+};
+checkFunction();
       console.error('Tony & Jay Loader: lessonsData is not defined yet!');
       // Retry after a short delay
       setTimeout(() => {
