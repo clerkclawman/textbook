@@ -1834,7 +1834,19 @@ function handleClassSelect() {
         console.log(`Shuffled options:`, shuffledOptions);
     }
 
-function displayCurrentSentence() { // If in quiz mode, use quiz display function if (isQuizMode) { displayQuizQuestion(currentSentenceIndex); return; } // If in date-keyed mode (Tony & Jay Stories), use the stored array if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { const story = window.currentStoriesArray[window.currentStoryIndex]; if (story && story.content) { const sentences = parseStoryFile(story.content); if (sentences.length > 0) { currentSentenceIndex = 0; displayCurrentSentence(); // Recursively call to display the first sentence of the story return; } } }
+function displayCurrentSentence() { // If in quiz mode, use quiz display function if (isQuizMode) { displayQuizQuestion(currentSentenceIndex); return; }
+  // If in date-keyed mode (Tony & Jay Stories), use the stored array
+  if (window.currentStoriesArray && window.currentStoriesArray.length > 0) {
+    const story = window.currentStoriesArray[window.currentStoryIndex];
+    if (story && story.content) {
+      const tempSentences = parseStoryFile(story.content);
+      if (tempSentences.length > 0) {
+        currentSentenceIndex = 0;
+        sentences = tempSentences;
+        // Continue to normal display
+      }
+    }
+  } // If in date-keyed mode (Tony & Jay Stories), use the stored array if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { const story = window.currentStoriesArray[window.currentStoryIndex]; if (story && story.content) { const sentences = parseStoryFile(story.content); if (sentences.length > 0) { currentSentenceIndex = 0; displayCurrentSentence(); // Recursively call to display the first sentence of the story return; } } }
 
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
@@ -2065,7 +2077,18 @@ function displayCurrentSentence() { // If in quiz mode, use quiz display functio
     // ====================
     // NAVIGATION
     // ====================
-function showNextSentence() { stopSpeech(); closeTranslationPopupHandler(); if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { // Date-keyed data mode (Tony & Jay, Cloze Quiz) if (window.currentStoryIndex < window.currentStoriesArray.length - 1) { window.currentStoryIndex++; displayCurrentSentence(); } else { window.currentStoryIndex = 0; displayCurrentSentence(); } return; } if (sentences.length === 0 || fruitGameActive) return; const isLastPage = currentSentenceIndex >= sentences.length - 1; if (fruitGameEnabled) { shouldAdvanceAfterGame = true; showFruitGame(); return; } if (isLastPage) { currentSentenceIndex = 0; displayCurrentSentence(); return; } advanceToNextSentence(); }
+function showNextSentence() { stopSpeech(); closeTranslationPopupHandler();
+  if (window.currentStoriesArray && window.currentStoriesArray.length > 0) {
+    // Date-keyed data mode
+    if (window.currentStoryIndex < window.currentStoriesArray.length - 1) {
+      window.currentStoryIndex++;
+      displayCurrentSentence();
+    } else {
+      window.currentStoryIndex = 0;
+      displayCurrentSentence();
+    }
+    return;
+  } if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { // Date-keyed data mode (Tony & Jay, Cloze Quiz) if (window.currentStoryIndex < window.currentStoriesArray.length - 1) { window.currentStoryIndex++; displayCurrentSentence(); } else { window.currentStoryIndex = 0; displayCurrentSentence(); } return; } if (sentences.length === 0 || fruitGameActive) return; const isLastPage = currentSentenceIndex >= sentences.length - 1; if (fruitGameEnabled) { shouldAdvanceAfterGame = true; showFruitGame(); return; } if (isLastPage) { currentSentenceIndex = 0; displayCurrentSentence(); return; } advanceToNextSentence(); }
 
         if (isLastPage) {
             currentSentenceIndex = 0;
@@ -2087,7 +2110,18 @@ function showNextSentence() { stopSpeech(); closeTranslationPopupHandler(); if (
         updatePageCounter();
     }
 
-function showPreviousSentence() { stopSpeech(); closeTranslationPopupHandler(); if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { // Date-keyed data mode (Tony & Jay, Cloze Quiz) if (window.currentStoryIndex > 0) { window.currentStoryIndex--; displayCurrentSentence(); } else { window.currentStoryIndex = window.currentStoriesArray.length - 1; displayCurrentSentence(); } return; } if (sentences.length === 0) return; if (currentSentenceIndex > 0) { currentSentenceIndex--; } else { currentSentenceIndex = sentences.length - 1; } displayCurrentSentence(); updatePageCounter(); }
+function showPreviousSentence() { stopSpeech(); closeTranslationPopupHandler();
+  if (window.currentStoriesArray && window.currentStoriesArray.length > 0) {
+    // Date-keyed data mode
+    if (window.currentStoryIndex > 0) {
+      window.currentStoryIndex--;
+      displayCurrentSentence();
+    } else {
+      window.currentStoryIndex = window.currentStoriesArray.length - 1;
+      displayCurrentSentence();
+    }
+    return;
+  } if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { // Date-keyed data mode (Tony & Jay, Cloze Quiz) if (window.currentStoryIndex > 0) { window.currentStoryIndex--; displayCurrentSentence(); } else { window.currentStoryIndex = window.currentStoriesArray.length - 1; displayCurrentSentence(); } return; } if (sentences.length === 0) return; if (currentSentenceIndex > 0) { currentSentenceIndex--; } else { currentSentenceIndex = sentences.length - 1; } displayCurrentSentence(); updatePageCounter(); }
         }
 
         displayCurrentSentence();
