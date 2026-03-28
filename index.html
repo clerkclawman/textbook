@@ -1637,28 +1637,6 @@ function handleClassSelect() {
                 return;
             }
             content = questions[0].content; // Questions are in an array, get first item's content
-} else if (typeof lessonsData[cls] === 'object' && !Array.isArray(lessonsData[cls])) {
- // Date-keyed data (e.g., TonyJayStories, ClozeQuiz)
- const dateKey = currentStory;
- if (!lessonsData[cls][dateKey]) {
- console.error('No data found for date:', dateKey, 'in class:', cls);
- alert(`No stories available for date ${dateKey}`);
- exitReadingMode();
- return;
- }
- const storiesForDate = lessonsData[cls][dateKey];
- if (!Array.isArray(storiesForDate) || storiesForDate.length === 0) {
- console.error('No stories found for date:', dateKey, 'in class:', cls);
- alert(`No stories available for date ${dateKey}`);
- exitReadingMode();
- return;
- }
- // For Tony & Jay Stories, display the first story (Grade 7) by default
- content = storiesForDate[0].content;
- // Store the array for Next/Prev navigation
- window.currentStoriesArray = storiesForDate;
- window.currentStoryIndex = 0;
-
         } else {
             const selectorIndex = parseInt(currentStory);
             if (isNaN(selectorIndex)) {
@@ -1834,19 +1812,12 @@ function handleClassSelect() {
         console.log(`Shuffled options:`, shuffledOptions);
     }
 
-function displayCurrentSentence() { // If in quiz mode, use quiz display function if (isQuizMode) { displayQuizQuestion(currentSentenceIndex); return; }
-  // If in date-keyed mode (Tony & Jay Stories), use the stored array
-  if (window.currentStoriesArray && window.currentStoriesArray.length > 0) {
-    const story = window.currentStoriesArray[window.currentStoryIndex];
-    if (story && story.content) {
-      const tempSentences = parseStoryFile(story.content);
-      if (tempSentences.length > 0) {
-        currentSentenceIndex = 0;
-        sentences = tempSentences;
-        // Continue to normal display
-      }
-    }
-  } // If in date-keyed mode (Tony & Jay Stories), use the stored array if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { const story = window.currentStoriesArray[window.currentStoryIndex]; if (story && story.content) { const sentences = parseStoryFile(story.content); if (sentences.length > 0) { currentSentenceIndex = 0; displayCurrentSentence(); // Recursively call to display the first sentence of the story return; } } }
+    function displayCurrentSentence() {
+        // If in quiz mode, use quiz display function
+        if (isQuizMode) {
+            displayQuizQuestion(currentSentenceIndex);
+            return;
+        }
 
         if (!readingModeContainer || readingModeContainer.style.display !== 'flex') {
             return;
@@ -2077,18 +2048,19 @@ function displayCurrentSentence() { // If in quiz mode, use quiz display functio
     // ====================
     // NAVIGATION
     // ====================
-function showNextSentence() { stopSpeech(); closeTranslationPopupHandler();
-  if (window.currentStoriesArray && window.currentStoriesArray.length > 0) {
-    // Date-keyed data mode
-    if (window.currentStoryIndex < window.currentStoriesArray.length - 1) {
-      window.currentStoryIndex++;
-      displayCurrentSentence();
-    } else {
-      window.currentStoryIndex = 0;
-      displayCurrentSentence();
-    }
-    return;
-  } if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { // Date-keyed data mode (Tony & Jay, Cloze Quiz) if (window.currentStoryIndex < window.currentStoriesArray.length - 1) { window.currentStoryIndex++; displayCurrentSentence(); } else { window.currentStoryIndex = 0; displayCurrentSentence(); } return; } if (sentences.length === 0 || fruitGameActive) return; const isLastPage = currentSentenceIndex >= sentences.length - 1; if (fruitGameEnabled) { shouldAdvanceAfterGame = true; showFruitGame(); return; } if (isLastPage) { currentSentenceIndex = 0; displayCurrentSentence(); return; } advanceToNextSentence(); }
+    function showNextSentence() {
+        stopSpeech();
+        closeTranslationPopupHandler();
+
+        if (sentences.length === 0 || fruitGameActive) return;
+
+        const isLastPage = currentSentenceIndex >= sentences.length - 1;
+
+        if (fruitGameEnabled) {
+            shouldAdvanceAfterGame = true;
+            showFruitGame();
+            return;
+        }
 
         if (isLastPage) {
             currentSentenceIndex = 0;
@@ -2110,18 +2082,16 @@ function showNextSentence() { stopSpeech(); closeTranslationPopupHandler();
         updatePageCounter();
     }
 
-function showPreviousSentence() { stopSpeech(); closeTranslationPopupHandler();
-  if (window.currentStoriesArray && window.currentStoriesArray.length > 0) {
-    // Date-keyed data mode
-    if (window.currentStoryIndex > 0) {
-      window.currentStoryIndex--;
-      displayCurrentSentence();
-    } else {
-      window.currentStoryIndex = window.currentStoriesArray.length - 1;
-      displayCurrentSentence();
-    }
-    return;
-  } if (window.currentStoriesArray && window.currentStoriesArray.length > 0) { // Date-keyed data mode (Tony & Jay, Cloze Quiz) if (window.currentStoryIndex > 0) { window.currentStoryIndex--; displayCurrentSentence(); } else { window.currentStoryIndex = window.currentStoriesArray.length - 1; displayCurrentSentence(); } return; } if (sentences.length === 0) return; if (currentSentenceIndex > 0) { currentSentenceIndex--; } else { currentSentenceIndex = sentences.length - 1; } displayCurrentSentence(); updatePageCounter(); }
+    function showPreviousSentence() {
+        stopSpeech();
+        closeTranslationPopupHandler();
+
+        if (sentences.length === 0) return;
+
+        if (currentSentenceIndex > 0) {
+            currentSentenceIndex--;
+        } else {
+            currentSentenceIndex = sentences.length - 1;
         }
 
         displayCurrentSentence();
@@ -3214,6 +3184,25 @@ console.log('lessonsData keys:', Object.keys(window.lessonsData));
 console.log('TonyJayStories loaded:', lessonsData['TonyJayStories'] ? 'YES (' + lessonsData['TonyJayStories'].length + ' stories)' : 'NO');
 console.log('ClozeQuiz loaded:', lessonsData['ClozeQuiz'] ? 'YES (' + lessonsData['ClozeQuiz'].length + ' questions)' : 'NO');
 
+// If TonyJayStories is not loaded, try to load it manually
+if (!lessonsData['TonyJayStories']) {
+  console.warn('DEBUG: TonyJayStories not loaded. Attempting manual load...');
+  if (typeof loadTonyJayStoriesFile === 'function') {
+    loadTonyJayStoriesFile('stories-tony-jay-2026-03-27.js');
+  } else {
+    console.error('DEBUG: loadTonyJayStoriesFile function not found!');
+  }
+}
+
+// If ClozeQuiz is not loaded, try to load it manually
+if (!lessonsData['ClozeQuiz']) {
+  console.warn('DEBUG: ClozeQuiz not loaded. Attempting manual load...');
+  if (typeof loadQuizFile === 'function') {
+    loadQuizFile('quiz-2026-03-27.js');
+  } else {
+    console.error('DEBUG: loadQuizFile function not found!');
+  }
+}
 </script>
 </body>
 </html><!-- Trigger rebuild -->
