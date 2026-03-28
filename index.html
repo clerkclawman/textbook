@@ -3184,26 +3184,6 @@ console.log('lessonsData keys:', Object.keys(window.lessonsData));
 console.log('TonyJayStories loaded:', lessonsData['TonyJayStories'] ? 'YES (' + lessonsData['TonyJayStories'].length + ' stories)' : 'NO');
 console.log('ClozeQuiz loaded:', lessonsData['ClozeQuiz'] ? 'YES (' + lessonsData['ClozeQuiz'].length + ' questions)' : 'NO');
 
-// If TonyJayStories is not loaded, try to load it manually
-if (!lessonsData['TonyJayStories']) {
-  console.warn('DEBUG: TonyJayStories not loaded. Attempting manual load...');
-  if (typeof loadTonyJayStoriesFile === 'function') {
-    loadTonyJayStoriesFile('stories-tony-jay-2026-03-27.js');
-  } else {
-    console.error('DEBUG: loadTonyJayStoriesFile function not found!');
-  }
-}
-
-// If ClozeQuiz is not loaded, try to load it manually
-if (!lessonsData['ClozeQuiz']) {
-  console.warn('DEBUG: ClozeQuiz not loaded. Attempting manual load...');
-  if (typeof loadQuizFile === 'function') {
-    loadQuizFile('quiz-2026-03-27.js');
-  } else {
-    console.error('DEBUG: loadQuizFile function not found!');
-  }
-}
-</script>
 </body>
 </html><!-- Trigger rebuild -->
 <!-- Force rebuild v2 -->
