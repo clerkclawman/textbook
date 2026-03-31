@@ -1119,6 +1119,7 @@
                 <option value=''>Select Class</option>
                 <option value='FunQuestions'>Fun Questions (Daily)</option>
  <option value='ClozeQuiz'>Cloze Quiz (Daily)</option>
+        <option value='TonyJayStories'>Tony & Jay Stories (Daily)</option>
                 <option value='Grammar'>Grammar</option>
                 <option value='Sentences'>Sentences</option>
   <option value='News'>News (Daily)</option>
@@ -1224,10 +1225,13 @@
 </div>
 
     <!-- Load external scripts -->
+<script>
+  // Initialize lessonsData BEFORE any loaders run
+  window.lessonsData = {};
+</script>
 <script src='adult.js'></script>
 <script src='news-loader.js'></script>
 <script src='fun-questions-loader.js'></script>
- <script src='quiz-loader.js'></script>
 <!-- Static news loaded dynamically via news-loader.js -->
 <!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
@@ -1269,6 +1273,7 @@
 <script src='grammar-site.js'></script>
 <script src='sentences-site.js'></script>
 
+
 <script>
     // ====================
     // GLOBAL VARIABLES
@@ -1285,14 +1290,15 @@
     const minFontSize = 2;
     const maxFontSize = 8;
     let displayMode = 'both';
-    let lessonsData = {};
+// lessonsData is defined globally above (window.lessonsData)
     let selectedText = '';
     let translationLang = '';
     // Cloze Quiz specific variables
     let isQuizMode = false;
     let quizQuestions = [];
-    let shuffledOptions = [];
-    let currentQuizAnswerMapping = [];
+ let currentQuizAnswerMapping = []; // Cloze Quiz specific variables
+</script>
+<script>
 
     // DOM elements
     let mainContainer, readingModeContainer, englishSentence, japaneseSentence;
@@ -1326,7 +1332,28 @@
         return true;
     }
 
-    function init() {
+    
+// Helper functions for date and level formatting
+function formatDisplayDate(dateStr) {
+    const date = new Date(dateStr + 'T00:00:00');
+    return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+function formatLevel(level) {
+    if (level === 7) return 'Grade 7';
+    if (level === 6) return 'Grade 6';
+    if (level === 5) return 'Grade 5';
+    if (level === 4) return 'Grade 4';
+    if (level === 3) return 'Grade 3';
+    if (level === 'Pre-2') return 'Pre-2';
+    if (level === 'Pre-2Plus' || level === 'Pre2Plus') return 'Pre-2 Plus';
+    if (level === 2) return 'Grade 2';
+    if (level === 'Pre-1') return 'Pre-1';
+    if (level === 1) return 'Grade 1';
+    return `Level ${level}`;
+}
+
+function init() {
         if (!initElements()) {
             alert('Failed to initialize page elements');
             return;
@@ -1411,17 +1438,31 @@
     // ====================
     // CLASS & STORY MANAGEMENT
     // ====================
-    function handleClassSelect() {
-        currentClass = this.value;
-        storySelector.disabled = !currentClass;
-
-        if (currentClass) {
-            populateStorySelector(currentClass);
-        } else {
-            storySelector.innerHTML = '<option value="">Select Story</option>';
-            storySelector.disabled = true;
-        }
-    }
+function handleClassSelect() {
+  currentClass = this.value;
+  storySelector.disabled = !currentClass;
+  if (!currentClass) {
+    storySelector.innerHTML = '<option value="">Select Story</option>';
+    storySelector.disabled = true;
+    return;
+  }
+  
+  // Check if lessonsData is populated
+  if (!lessonsData || !lessonsData[currentClass]) {
+    console.warn('Data not ready yet for', currentClass, '. Retrying in 100ms...');
+    setTimeout(() => {
+      if (lessonsData && lessonsData[currentClass]) {
+        handleClassSelect(); // Retry
+      } else {
+        console.error('Data still not ready for', currentClass, 'after retry!');
+      }
+    }, 100);
+    return;
+  }
+  
+  // Data is ready, proceed
+  populateStorySelector(currentClass);
+}
 
     function handleStorySelect() {
         currentStory = this.value;
@@ -1430,19 +1471,19 @@
         }
     }
 
-    function populateStorySelector(cls) {
+    window.populateStorySelector = function(cls) {
         storySelector.innerHTML = '<option value="">Select Story</option>';
 
         console.log('=== POPULATE STORY SELECTOR ===');
         console.log('Class:', cls);
-        console.log('lessonsData keys:', Object.keys(lessonsData));
+        console.log('lessonsData keys:', Object.keys(window.lessonsData));
 
-        if (!lessonsData || !cls) {
+        if (!window.lessonsData || !cls) {
             console.error('lessonsData or class is missing');
             return;
         }
 
-        const classData = lessonsData[cls];
+        const classData = window.lessonsData[cls];
         console.log('classData:', classData);
         console.log('classData type:', typeof classData);
         console.log('classData is array?', Array.isArray(classData));
@@ -1454,6 +1495,25 @@
             return;
         }
 
+    // Handle date-keyed data (ClozeQuiz, TonyJayStories)
+    if (typeof classData === 'object' && !Array.isArray(classData)) {
+        console.log('Date-keyed data detected for', cls);
+        let optionIndex = 0;
+        // Sort dates (newest first)
+        const dates = Object.keys(classData).sort((a, b) => b.localeCompare(a));
+        dates.forEach(dateStr => {
+            const option = document.createElement("option");
+            option.value = dateStr;
+            const displayDate = formatDisplayDate(dateStr);
+            option.textContent = displayDate;
+            storySelector.appendChild(option);
+            optionIndex++;
+        });
+        console.log('Added', optionIndex, 'date options to story selector');
+        storySelector.disabled = false;
+        storySelector.focus();
+        return;
+    }
         if (!Array.isArray(classData)) {
             console.error('lessonsData[' + cls + '] is not an array!', classData);
             storySelector.innerHTML = '<option value="">Error: data format incorrect</option>';
@@ -1473,15 +1533,26 @@
 
         // lessonsData[cls] is now directly an array of story objects
         console.log('Processing', classData.length, 'stories');
-        classData.forEach((story, index) => {
-            if (story && story.title) {
+        classData.forEach((item, index) => {
+            if (cls === 'ClozeQuiz' && item.level && item.sentence) {
+            const option = document.createElement("option");
+            option.value = optionIndex;
+            option.textContent = `${item.level}: ${item.sentence}`;
+            storySelector.appendChild(option);
+            optionIndex++;
+      } else if (item && item.title) {
                 const option = document.createElement("option");
                 option.value = optionIndex;
-                option.textContent = story.title;
+                let title = item.title;
+            if (item.level !== undefined) {
+                const levelStr = formatLevel(item.level);
+                title = `[${levelStr}] ${title}`;
+            }
+            option.textContent = title;
                 storySelector.appendChild(option);
                 optionIndex++;
             } else {
-                console.warn('Invalid story at index', index, ':', story);
+                console.warn('Invalid item at index', index, ':', item);
             }
         });
 
@@ -1514,24 +1585,36 @@
         console.log('Loading content for:', cls, 'Story:', currentStory);
 
         // Handle Cloze Quiz mode
-        if (cls === 'ClozeQuiz') {
-            isQuizMode = true;
-            // ClozeQuiz data is an array of quiz objects directly in lessonsData['ClozeQuiz']
-            if (!lessonsData['ClozeQuiz'] || !Array.isArray(lessonsData['ClozeQuiz']) || lessonsData['ClozeQuiz'].length === 0) {
-                console.error('No quiz data found for ClozeQuiz');
-                alert('No quiz questions available');
-                exitReadingMode();
-                return;
-            }
-            quizQuestions = lessonsData['ClozeQuiz'];
-            currentSentenceIndex = 0;
-            displayQuizQuestion(currentSentenceIndex);
-            setTimeout(() => {
-                applyDisplayMode();
-                ensureTextVisibility();
-            }, 100);
+    if (cls === 'ClozeQuiz') {
+        isQuizMode = true;
+        // ClozeQuiz data is now organized by date: { 'YYYY-MM-DD': [...] }
+        const quizData = window.lessonsData['ClozeQuiz'];
+        if (!quizData || typeof quizData !== 'object') {
+            console.error('No quiz data found for ClozeQuiz');
+            alert('No quiz questions available');
+            exitReadingMode();
             return;
         }
+        
+        // currentStory should be a date string (YYYY-MM-DD)
+        const dateStr = currentStory;
+        if (!dateStr || !quizData[dateStr]) {
+            console.error('No quiz data found for date:', dateStr);
+            alert('No quiz questions available for this date');
+            exitReadingMode();
+            return;
+        }
+        
+        quizQuestions = quizData[dateStr];
+        currentSentenceIndex = 0;
+        console.log('Loading quiz for', dateStr, ':', quizQuestions.length, 'questions');
+        displayQuizQuestion(currentSentenceIndex);
+        setTimeout(() => {
+            applyDisplayMode();
+            ensureTextVisibility();
+        }, 100);
+        return;
+    }
 
         // Non-quiz mode - reset quiz flag
         isQuizMode = false;
@@ -2914,43 +2997,7 @@ if (typeof getCombinedFunQuestions === "function") {
     lessonsData["FunQuestions"] = funQuestionsData;
 }
 
-            lessonsData = {
-                'Bronze': bronzeStories,
-                'Silver': silverStories,
-                'Gold': goldStories,
-                'Adult': adult,
-                'News': newsData,
-  'FunQuestions': funQuestionsLoaded ? funQuestionsData : [],
-                'X': x,
-                'C': c,
-                'Eiken1': eiken1,
-                'Eiken2': eiken2,
-                'Eiken3': eiken3story,
-                'Eiken4': eiken4story,
-                'Eiken5': eiken5story,
-                'Eiken6': eiken6story,
-                'Eiken7': eiken7story,
-'New7': eiken7new12,
-'New6': eiken6new12,
-
-'New5': eiken5new12,
-'New4': eiken4new12v2,
-'New3': eiken3new12,
-'NewPre2': eikenpre2new12,
-'NewPre2Plus': eikenpre2plusnew12,
-'New2': eiken2new12,
-'NewPre1': eikenpre1new12,
-'New1': eiken1new12v2,
-                'EikenPre1': eikenpre1,
-                'EikenPre2': eikenpre2,
-                'EikenPre2Plus': eikenpre2plus,
-                'GettingToKnow': gettingtoknow,
-                'EasyQuestions': easyquestions,
-                'WouldYouRather': wouldyourather,
-                'Vocab': vocab,
-                'Grammar': [].concat(eiken7grammar, eiken6grammar, eiken5grammar, eiken4grammar, eiken3grammar, eikenpre2grammar, eikenpre2plusgrammar, eiken2grammar, eikenpre1grammar, eiken1grammar),
-                'Sentences': [].concat(eiken7sentences, eiken6sentences, eiken5sentences, eiken4sentences, eiken3sentences, eikenpre2sentences, eikenpre2plussentences, eiken2sentences, eikenpre1sentences, eiken1sentences)
-            };
+      
 
             console.log('Lesson data loaded:', Object.keys(lessonsData));
             console.log('News articles:', newsData.length + ' entries');
@@ -3067,5 +3114,77 @@ if (typeof getCombinedFunQuestions === "function") {
         // Track page view
         Analytics.trackPageView('index.html');
     </script>
+<script>
+// Synchronously populate lessonsData immediately after all scripts load
+// This ensures data is ready BEFORE any user interaction
+if (typeof bronzeStories !== 'undefined') lessonsData['Bronze'] = bronzeStories;
+if (typeof silverStories !== 'undefined') lessonsData['Silver'] = silverStories;
+if (typeof goldStories !== 'undefined') lessonsData['Gold'] = goldStories;
+if (typeof adult !== 'undefined') lessonsData['Adult'] = adult;
+// News assignment moved inside loadLessonsData() to happen after async load
+if (typeof funQuestionsData !== 'undefined') lessonsData['FunQuestions'] = funQuestionsData;
+if (typeof x !== 'undefined') lessonsData['X'] = x;
+if (typeof c !== 'undefined') lessonsData['C'] = c;
+if (typeof eiken1 !== 'undefined') lessonsData['Eiken1'] = eiken1;
+if (typeof eiken2 !== 'undefined') lessonsData['Eiken2'] = eiken2;
+if (typeof eiken3story !== 'undefined') lessonsData['Eiken3'] = eiken3story;
+if (typeof eiken4story !== 'undefined') lessonsData['Eiken4'] = eiken4story;
+if (typeof eiken5story !== 'undefined') lessonsData['Eiken5'] = eiken5story;
+if (typeof eiken6story !== 'undefined') lessonsData['Eiken6'] = eiken6story;
+if (typeof eiken7story !== 'undefined') lessonsData['Eiken7'] = eiken7story;
+if (typeof eiken7new12 !== 'undefined') lessonsData['New7'] = eiken7new12;
+if (typeof eiken6new12 !== 'undefined') lessonsData['New6'] = eiken6new12;
+if (typeof eiken5new12 !== 'undefined') lessonsData['New5'] = eiken5new12;
+if (typeof eiken4new12v2 !== 'undefined') lessonsData['New4'] = eiken4new12v2;
+if (typeof eiken3new12 !== 'undefined') lessonsData['New3'] = eiken3new12;
+if (typeof eikenpre2new12 !== 'undefined') lessonsData['NewPre2'] = eikenpre2new12;
+if (typeof eikenpre2plusnew12 !== 'undefined') lessonsData['NewPre2Plus'] = eikenpre2plusnew12;
+if (typeof eiken2new12 !== 'undefined') lessonsData['New2'] = eiken2new12;
+if (typeof eikenpre1new12v2 !== 'undefined') lessonsData['NewPre1'] = eikenpre1new12v2;
+if (typeof eiken1new12v2 !== 'undefined') lessonsData['New1'] = eiken1new12v2;
+if (typeof eikenpre1 !== 'undefined') lessonsData['EikenPre1'] = eikenpre1;
+if (typeof eikenpre2 !== 'undefined') lessonsData['EikenPre2'] = eikenpre2;
+if (typeof eikenpre2plus !== 'undefined') lessonsData['EikenPre2Plus'] = eikenpre2plus;
+if (typeof gettingtoknow !== 'undefined') lessonsData['GettingToKnow'] = gettingtoknow;
+if (typeof easyquestions !== 'undefined') lessonsData['EasyQuestions'] = easyquestions;
+if (typeof wouldyourather !== 'undefined') lessonsData['WouldYouRather'] = wouldyourather;
+if (typeof vocab !== 'undefined') lessonsData['Vocab'] = vocab;
+
+// Combine grammar and sentences arrays
+if (typeof eiken7grammar !== 'undefined' && typeof eiken6grammar !== 'undefined') {
+  lessonsData['Grammar'] = [].concat(
+    eiken7grammar, eiken6grammar, eiken5grammar, eiken4grammar, eiken3grammar,
+    eikenpre2grammar, eikenpre2plusgrammar, eiken2grammar, eikenpre1grammar, eiken1grammar
+  );
+}
+if (typeof eiken7sentences !== 'undefined' && typeof eiken6sentences !== 'undefined') {
+  lessonsData['Sentences'] = [].concat(
+    eiken7sentences, eiken6sentences, eiken5sentences, eiken4sentences, eiken3sentences,
+    eikenpre2sentences, eikenpre2plussentences, eiken2sentences, eikenpre1sentences, eiken1sentences
+  );
+}
+
+console.log('Lesson data loaded synchronously:', Object.keys(lessonsData));
+console.log('Eiken5 stories:', lessonsData['Eiken5'] ? lessonsData['Eiken5'].length + ' stories' : 'NOT FOUND');
+</script>
+
+
+
+
+
+<!-- Cloze Quiz and Tony & Jay Stories (Daily) -->
+<script src='tony-jay-loader.js'></script>
+<script src='quiz-loader.js'></script>
+
+
+<!-- DEBUG: Check if Tony & Jay and Quiz data are loaded -->
+<script>
+console.log('=== DEBUG: Checking lessonsData ===');
+console.log('lessonsData keys:', Object.keys(window.lessonsData));
+console.log('TonyJayStories loaded:', lessonsData['TonyJayStories'] ? 'YES (' + lessonsData['TonyJayStories'].length + ' stories)' : 'NO');
+console.log('ClozeQuiz loaded:', lessonsData['ClozeQuiz'] ? 'YES (' + lessonsData['ClozeQuiz'].length + ' questions)' : 'NO');
+
 </body>
-</html>
+</html><!-- Trigger rebuild -->
+<!-- Force rebuild v2 -->
+<!-- Trigger rebuild for quiz and tony-jay files -->

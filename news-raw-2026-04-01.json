@@ -1,0 +1,293 @@
+{
+  "fetchedAt": "2026-04-01T06:00:00+09:00",
+  "date": "2026-04-01",
+  "sources": {
+    "bbc_world": {
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        {
+          "title": "Trump tells the UK and other countries 'go get your own oil' from Strait of Hormuz",
+          "summary": "The US president tells nations who are now unable to get jet fuel 'the USA won't be there to help you anymore, just like you weren't there for us'",
+          "category": "Middle East",
+          "timeAgo": "LIVE"
+        },
+        {
+          "title": "Iran using children in security roles in war, reports and witnesses say",
+          "summary": "An 11-year-old is reported to have been killed in an air strike while manning a checkpoint in Tehran",
+          "category": "Middle East",
+          "timeAgo": "8 hrs ago"
+        },
+        {
+          "title": "Italian Christmas meal tragedy turns into murder inquiry",
+          "summary": "Tests results suggest the two women may have been killed with ricin, according to Italian media, but police still do not have a suspect",
+          "category": "Europe",
+          "timeAgo": "1 hr ago"
+        },
+        {
+          "title": "Wolf bites woman in shock German attack on busy Hamburg shopping street",
+          "summary": "It is believed to be the first wolf attack on a human since the animals began to reestablish themselves in Germany decades ago",
+          "category": "Europe",
+          "timeAgo": "8 hrs ago"
+        },
+        {
+          "title": "Israel says it will keep control over part of southern Lebanon after war with Hezbollah ends",
+          "summary": "Defence Minister Israel Katz also says houses in Lebanese villages near the Israeli border will be demolished",
+          "category": "Middle East",
+          "timeAgo": "2 hrs ago"
+        },
+        {
+          "title": "Judge temporarily halts construction of Trump's White House ballroom",
+          "summary": "The Republican-appointed judge ruled that Trump was the 'steward' of the White House, but not the 'owner'",
+          "category": "US & Canada",
+          "timeAgo": "38 mins ago"
+        },
+        {
+          "title": "China bans storing cremated remains in empty 'bone ash apartments'",
+          "summary": "China bans 'bone ash apartments' where mourners are storing cremated remains instead of cemeteries",
+          "category": "Asia",
+          "timeAgo": "10 hrs ago"
+        },
+        {
+          "title": "Eurovision Song Contest launches first-ever Asia edition",
+          "summary": "Broadcasters from 10 countries, including South Korea and the Philippines, will be taking part",
+          "category": "World",
+          "timeAgo": "11 hrs ago"
+        },
+        {
+          "title": "Russian oil tanker docks in Cuba ending near-total blockade",
+          "summary": "A Russian oil tanker has docked in Cuba, providing temporary relief after months of shortages",
+          "category": "World",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "King's state visit to US to go ahead in April, but no Harry meeting",
+          "summary": "Despite political tensions between the US and UK, the King will travel to Washington next month",
+          "category": "UK",
+          "timeAgo": "N/A"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        {
+          "title": "How Pakistan won over Trump to become an unlikely mediator in the Iran war",
+          "summary": "Pakistan's role as intermediary in this conflict took many by surprise. But perhaps it shouldn't have",
+          "category": "World",
+          "timeAgo": "18 hrs ago"
+        },
+        {
+          "title": "'Felt close to death': Indian seafarers detained in Iran return home",
+          "summary": "The crew members, whose ship was seized in December, got their release order a day before the war began",
+          "category": "World",
+          "timeAgo": "12 hrs ago"
+        },
+        {
+          "title": "China bans storing cremated remains in empty 'bone ash apartments'",
+          "summary": "China bans 'bone ash apartments' where mourners are storing cremated remains instead of cemeteries",
+          "category": "Asia",
+          "timeAgo": "10 hrs ago"
+        },
+        {
+          "title": "Long queues in Myanmar as Iran war fuel crisis deepens",
+          "summary": "Drivers are queuing for hours at petrol stations in Myanmar as the Iran war continues to send shockwaves across the globe",
+          "category": "Asia",
+          "timeAgo": "23 hrs ago"
+        },
+        {
+          "title": "Oil rises and Asia shares slide as Iran war enters fifth week",
+          "summary": "It comes after Iran-backed Houthi rebels in Yemen joined the conflict by striking Israel over the weekend",
+          "category": "Asia",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "Myanmar junta chief Min Aung Hlaing nominated as president",
+          "summary": "The military leader, who has been sanctioned by Western countries, is now certain to get the job",
+          "category": "Asia",
+          "timeAgo": "2 days ago"
+        },
+        {
+          "title": "Nepal's ex-PM arrested over fatal protest crackdown",
+          "summary": "More than 70 people were killed during an uprising last year which ousted Oli's government",
+          "category": "Asia",
+          "timeAgo": "4 days ago"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        {
+          "title": "More UK troops to be sent to Middle East, defence secretary announces",
+          "summary": "The UK government announces further air defence systems will be sent to countries in the region along with troops to operate them",
+          "category": "UK",
+          "timeAgo": "32 mins ago"
+        },
+        {
+          "title": "Teenage boy at centre of Scott Mills sexual offences investigation was under 16, police say",
+          "summary": "The case was dropped in 2019 after the CPS deemed there was insufficient evidence to bring charges, police say",
+          "category": "Culture",
+          "timeAgo": "1 hr ago"
+        },
+        {
+          "title": "New bin rules begin in England but not all councils are ready",
+          "summary": "Weekly food waste collections are required for all English homes as new legislation takes effect",
+          "category": "England",
+          "timeAgo": "6 hrs ago"
+        },
+        {
+          "title": "Labour suspends outspoken backbench MP Karl Turner",
+          "summary": "The Hull East MP says he was suspended because of his 'robust' criticism of the government's policy on jury trials",
+          "category": "Politics",
+          "timeAgo": "4 hrs ago"
+        },
+        {
+          "title": "UK and France extend talks over new small boats deal",
+          "summary": "A three-year deal to pay for more French patrols to intercept smuggling gangs was due to expire at midnight",
+          "category": "Politics",
+          "timeAgo": "12 mins ago"
+        },
+        {
+          "title": "British billionaire to donate £190m to Cambridge University",
+          "summary": "Hedge fund founder Chris Rokos said he wanted to 'give something back' to the UK with the donation",
+          "category": "Family & Education",
+          "timeAgo": "3 hrs ago"
+        },
+        {
+          "title": "King's state visit to US to go ahead in April, but no Harry meeting",
+          "summary": "Despite political tensions between the US and UK, the King will travel to Washington next month",
+          "category": "UK",
+          "timeAgo": "4 hrs ago"
+        },
+        {
+          "title": "Starmer gives doctors 48 hours to cancel strike or lose new jobs package",
+          "summary": "The prime minister says the NHS could lose 1,000 extra training places if resident doctors go ahead with a six-day strike next week",
+          "category": "UK",
+          "timeAgo": "N/A"
+        }
+      ]
+    },
+    "nhk": {
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/",
+      "headlines": [
+        {
+          "title": "Takaichi-Trump: Former Japan ambassador to US gives his view on upcoming summit",
+          "summary": "Japan-US diplomatic relations discussion",
+          "category": "Japan",
+          "timeAgo": "March 19, 2026"
+        },
+        {
+          "title": "Japanese winemakers look to exports",
+          "summary": "Japan's wine industry expansion efforts",
+          "category": "Japan",
+          "timeAgo": "March 19, 2026"
+        },
+        {
+          "title": "Paying it Forward: Young 3/11 survivor builds ties with today's children",
+          "summary": "15 years after the tsunami, a survivor connects with the next generation",
+          "category": "Japan",
+          "timeAgo": "March 18, 2026"
+        },
+        {
+          "title": "'Taylor Library' honors American teacher killed in 2011 tsunami",
+          "summary": "Memorial library commemorates an American educator's sacrifice",
+          "category": "Japan",
+          "timeAgo": "March 17, 2026"
+        },
+        {
+          "title": "March 2011 tsunami: NHK explores ocean floor 15 years on",
+          "summary": "Documentary explores the aftermath of the great tsunami",
+          "category": "Japan",
+          "timeAgo": "March 16, 2026"
+        },
+        {
+          "title": "Japan's trading card games spark global asset hunt",
+          "summary": "Trading card phenomenon goes global",
+          "category": "Japan",
+          "timeAgo": "March 13, 2026"
+        },
+        {
+          "title": "North Korean Workers' Party congress signals 'confidence' ahead",
+          "summary": "North Korea's political developments",
+          "category": "Asia",
+          "timeAgo": "March 13, 2026"
+        }
+      ]
+    },
+    "cnn": {
+      "url": "https://www.cnn.com/world",
+      "headlines": [
+        {
+          "title": "US gas hits $4 as Trump tells other nations to 'go get your own oil'",
+          "summary": "US President Trump's statement on Middle East oil access amid Strait of Hormuz tensions",
+          "category": "World",
+          "timeAgo": "20 mins ago"
+        },
+        {
+          "title": "Israeli settlers renew attacks on West Bank village where Israeli soldiers detained, assaulted CNN crew",
+          "summary": "Continuing violence in the West Bank following earlier incidents",
+          "category": "Middle East",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "Latin America's generational shift: What's causing record-low birth rates across the region?",
+          "summary": "Demographic changes reshape Latin American societies",
+          "category": "Americas",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "Dozens killed in multi-day gang attack in Haiti",
+          "summary": "Violence continues in Caribbean nation as gangs target civilians",
+          "category": "Americas",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "Israel's parliament votes to expand death penalty for Palestinians",
+          "summary": "Knesset passes controversial legislation",
+          "category": "Middle East",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "As Lebanon braces for expanded Israeli incursion, northern Israel residents see buffer zone as lifeline to normalcy",
+          "summary": "Regional tensions escalate along Israel-Lebanon border",
+          "category": "Middle East",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "Trump allowed a Russian oil tanker to reach Cuba, breaking the island's fuel blockade",
+          "summary": "Diplomatic development provides relief to Cuba's energy crisis",
+          "category": "Americas",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "What we know on Day 31 of the US and Israel's war with Iran: Trump threatens escalation if no deal reached",
+          "summary": "Middle East conflict continues with potential for further escalation",
+          "category": "Middle East",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "Thieves steal 12 tons of KitKat bars in Europe chocolate heist",
+          "summary": "Major theft targets confectionery shipment across Europe",
+          "category": "Europe",
+          "timeAgo": "N/A"
+        },
+        {
+          "title": "Monthslong manhunt for fugitive sovereign citizen ends in police shooting",
+          "summary": "Australian police end seven-month pursuit of Dezi Freeman",
+          "category": "Australia",
+          "timeAgo": "N/A"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "totalHeadlines": 42,
+    "topStories": [
+      "Iran war continues with regional implications - Day 31",
+      "Trump administration's Middle East oil policy sparks international reaction",
+      "UK prepares for King's state visit to US in April",
+      "China implements new regulations on cremated remains storage",
+      "Haiti gang violence leaves dozens dead"
+    ]
+  }
+}
