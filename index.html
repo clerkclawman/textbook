@@ -1295,6 +1295,7 @@
     let translationLang = '';
     // Cloze Quiz specific variables
     let isQuizMode = false;
+ let isTonyJayMode = false;
     let quizQuestions = [];
  let currentQuizAnswerMapping = []; // Cloze Quiz specific variables
 </script>
@@ -1618,6 +1619,7 @@ function handleClassSelect() {
 
         // Non-quiz mode - reset quiz flag
         isQuizMode = false;
+ isTonyJayMode = false;
 
         if (!window.lessonsData[cls]) {
             console.error('Class not found:', cls, 'Available classes:', Object.keys(window.lessonsData));
@@ -1650,8 +1652,17 @@ function handleClassSelect() {
  }
  const dateData = classData[currentStory];
  if (Array.isArray(dateData) && dateData.length > 0) {
- // For TonyJayStories: get content from first story
+ // For TonyJayStories: store all stories for navigation
+ if (cls === 'TonyJayStories') {
+ window.tonyJayStories = dateData;
+ window.currentTonyJayIndex = 0;
  content = dateData[0].content;
+ // Set up navigation for Tony & Jay stories
+ isTonyJayMode = true;
+ } else {
+ // For other date-keyed data, just use first item
+ content = dateData[0].content;
+ }
  } else {
  console.error('Invalid date data format');
  alert('Invalid story data');
@@ -2072,6 +2083,30 @@ const selectorIndex = parseInt(currentStory);
     // NAVIGATION
     // ====================
     function showNextSentence() { stopSpeech(); closeTranslationPopupHandler(); 
+ // Handle Tony & Jay Stories mode
+ if (isTonyJayMode && window.tonyJayStories && window.tonyJayStories.length > 0) {
+ if (window.currentTonyJayIndex < window.tonyJayStories.length - 1) {
+ window.currentTonyJayIndex++;
+ content = window.tonyJayStories[window.currentTonyJayIndex].content;
+ sentences = parseStoryFile(content);
+ if (sentences.length > 0) {
+ currentSentenceIndex = 0;
+ displayCurrentSentence();
+ updatePageCounter();
+ }
+ } else {
+ // Loop back to first story
+ window.currentTonyJayIndex = 0;
+ content = window.tonyJayStories[0].content;
+ sentences = parseStoryFile(content);
+ if (sentences.length > 0) {
+ currentSentenceIndex = 0;
+ displayCurrentSentence();
+ updatePageCounter();
+ }
+ }
+ return;
+ }
   // Handle ClozeQuiz mode
   if (isQuizMode && quizQuestions && quizQuestions.length > 0) {
     if (currentSentenceIndex < quizQuestions.length - 1) {
