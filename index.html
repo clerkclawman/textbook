@@ -1496,25 +1496,48 @@ function handleClassSelect() {
             return;
         }
 
-    // Handle date-keyed data (ClozeQuiz, TonyJayStories)
-    if (typeof classData === 'object' && !Array.isArray(classData)) {
-        console.log('Date-keyed data detected for', cls);
-        let optionIndex = 0;
-        // Sort dates (newest first)
-        const dates = Object.keys(classData).sort((a, b) => b.localeCompare(a));
-        dates.forEach(dateStr => {
-            const option = document.createElement("option");
-            option.value = dateStr;
-            const displayDate = formatDisplayDate(dateStr);
-            option.textContent = displayDate;
-            storySelector.appendChild(option);
-            optionIndex++;
-        });
-        console.log('Added', optionIndex, 'date options to story selector');
-        storySelector.disabled = false;
-        storySelector.focus();
-        return;
-    }
+ // Handle object-keyed data (ClozeQuiz by date, TonyJayStories by level)
+ if (typeof classData === 'object' && !Array.isArray(classData)) {
+ console.log('Object-keyed data detected for', cls);
+ let optionIndex = 0;
+ 
+ if (cls === 'TonyJayStories') {
+ // TonyJayStories: organize by level
+ const levels = Object.keys(classData).sort((a, b) => {
+ const levelOrder = [7, 6, 5, 4, 3, 'Pre-2', 'Pre-2Plus', 2, 'Pre-1', 1];
+ const idxA = levelOrder.indexOf(a);
+ const idxB = levelOrder.indexOf(b);
+ if (idxA === -1) return 1;
+ if (idxB === -1) return -1;
+ return idxA - idxB;
+ });
+ levels.forEach(level => {
+ const storyCount = classData[level].length;
+ const option = document.createElement("option");
+ option.value = level;
+ option.textContent = `${formatLevel(level)} (${storyCount} stories)`;
+ storySelector.appendChild(option);
+ optionIndex++;
+ });
+ console.log('Added', optionIndex, 'level options to TonyJayStories selector');
+ } else {
+ // ClozeQuiz: organize by date
+ const dates = Object.keys(classData).sort((a, b) => b.localeCompare(a));
+ dates.forEach(dateStr => {
+ const option = document.createElement("option");
+ option.value = dateStr;
+ const displayDate = formatDisplayDate(dateStr);
+ option.textContent = displayDate;
+ storySelector.appendChild(option);
+ optionIndex++;
+ });
+ console.log('Added', optionIndex, 'date options to story selector');
+ }
+ 
+ storySelector.disabled = false;
+ storySelector.focus();
+ return;
+ }
         if (!Array.isArray(classData)) {
             console.error('lessonsData[' + cls + '] is not an array!', classData);
             storySelector.innerHTML = '<option value="">Error: data format incorrect</option>';
@@ -1639,7 +1662,45 @@ function handleClassSelect() {
                 return;
             }
             content = questions[0].content; // Questions are in an array, get first item's content
-        } else {
+ // Check if this is object-keyed data (ClozeQuiz by date, TonyJayStories by level)
+ const classData = window.lessonsData[cls];
+ if (classData && typeof classData === 'object' && !Array.isArray(classData)) {
+ if (cls === 'TonyJayStories') {
+ // TonyJayStories: currentStory is a level (e.g., "7", "Pre-2")
+ if (!classData[currentStory]) {
+ console.error('Level not found:', currentStory);
+ alert('No stories for this level');
+ exitReadingMode();
+ return;
+ }
+ const levelStories = classData[currentStory];
+ if (Array.isArray(levelStories) && levelStories.length > 0) {
+ // Store all stories for navigation
+ window.tonyJayStories = levelStories;
+ window.currentTonyJayIndex = 0;
+ content = levelStories[0].content;
+ isTonyJayMode = true;
+ } else {
+ alert('No stories available for this level');
+ exitReadingMode();
+ return;
+ }
+ } else {
+ // ClozeQuiz: currentStory is a date
+ if (!classData[currentStory]) {
+ console.error('Date not found:', currentStory);
+ alert('Quiz not found for this date');
+ exitReadingMode();
+ return;
+ }
+ const dateData = classData[currentStory];
+ if (Array.isArray(dateData) && dateData.length > 0) {
+ content = dateData[0];
+ } else {
+ alert('No quiz questions for this date');
+ exitReadingMode();
+ return;
+ }
  // Check if this is date-keyed data (TonyJayStories, ClozeQuiz)
  const classData = window.lessonsData[cls];
  if (classData && typeof classData === 'object' && !Array.isArray(classData) && currentStory && currentStory.includes('-')) {
@@ -2083,6 +2144,30 @@ const selectorIndex = parseInt(currentStory);
     // NAVIGATION
     // ====================
     function showNextSentence() { stopSpeech(); closeTranslationPopupHandler(); 
+ // Handle Tony & Jay Stories mode
+ if (isTonyJayMode && window.tonyJayStories && window.tonyJayStories.length > 0) {
+ if (window.currentTonyJayIndex < window.tonyJayStories.length - 1) {
+ window.currentTonyJayIndex++;
+ content = window.tonyJayStories[window.currentTonyJayIndex].content;
+ sentences = parseStoryFile(content);
+ if (sentences.length > 0) {
+ currentSentenceIndex = 0;
+ displayCurrentSentence();
+ updatePageCounter();
+ }
+ } else {
+ // Loop back to first story
+ window.currentTonyJayIndex = 0;
+ content = window.tonyJayStories[0].content;
+ sentences = parseStoryFile(content);
+ if (sentences.length > 0) {
+ currentSentenceIndex = 0;
+ displayCurrentSentence();
+ updatePageCounter();
+ }
+ }
+ return;
+ }
  // Handle Tony & Jay Stories mode
  if (isTonyJayMode && window.tonyJayStories && window.tonyJayStories.length > 0) {
  if (window.currentTonyJayIndex < window.tonyJayStories.length - 1) {
