@@ -66,6 +66,7 @@ function parseJavaScriptTonyJay(javascript) {
 
 async function initTonyJayStoriesLoader() {
   console.log('=== INITIALIZING TONY & JAY STORIES LOADER ===');
+  console.log('Document ready state:', document.readyState);
   
   let initRetries = 0;
   const initMaxRetries = 30;
@@ -75,9 +76,11 @@ async function initTonyJayStoriesLoader() {
   }
   
   if (typeof window.lessonsData === 'undefined') {
-    console.error('Tony & Jay Loader: lessonsData never became available');
+    console.error('Tony & Jay Loader: lessonsData never became available after', initRetries, 'retries');
     return;
   }
+  
+  console.log('Tony & Jay Loader: lessonsData is available');
   
   // Load ONLY today's stories
   const today = new Date();
@@ -85,9 +88,11 @@ async function initTonyJayStoriesLoader() {
   const todayStories = await loadTonyJayStoriesFile(todayStr);
   
   if (!todayStories || !Array.isArray(todayStories) || todayStories.length === 0) {
-    console.warn('Tony & Jay Loader: No stories loaded for today');
+    console.error('Tony & Jay Loader: No stories loaded for today. todayStories:', todayStories);
     return;
   }
+  
+  console.log('Tony & Jay Loader: Successfully loaded', todayStories.length, 'stories for', todayStr);
   
   console.log(`Tony & Jay Loader: Loaded ${todayStories.length} stories for ${todayStr}`);
   
@@ -109,18 +114,24 @@ async function initTonyJayStoriesLoader() {
   // Store in lessonsData as level-keyed object
   window.lessonsData['TonyJayStories'] = storiesByLevel;
   console.log('Tony & Jay Loader: Stories organized by level:', Object.keys(storiesByLevel));
+  console.log('Tony & Jay Loader: lessonsData.TonyJayStories =', window.lessonsData['TonyJayStories']);
   
   // Wait for populateStorySelector to be available
   let dropdownRetries = 0;
   const dropdownMaxRetries = 30;
   const checkAndRefresh = () => {
+    console.log('Tony & Jay Loader: checkAndRefresh called, dropdownRetries:', dropdownRetries);
     if (typeof window.populateStorySelector === 'function') {
+      console.log('Tony & Jay Loader: Calling populateStorySelector for TonyJayStories');
       window.populateStorySelector('TonyJayStories');
       console.log('Tony & Jay Loader: Dropdown refreshed for TonyJayStories');
     } else {
+      console.log('Tony & Jay Loader: populateStorySelector not ready yet');
       dropdownRetries++;
       if (dropdownRetries < dropdownMaxRetries) {
         setTimeout(checkAndRefresh, 100);
+      } else {
+        console.error('Tony & Jay Loader: populateStorySelector never became available');
       }
     }
   };
