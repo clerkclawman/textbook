@@ -1638,7 +1638,28 @@ function handleClassSelect() {
             }
             content = questions[0].content; // Questions are in an array, get first item's content
         } else {
-            const selectorIndex = parseInt(currentStory);
+ // Check if this is date-keyed data (TonyJayStories, ClozeQuiz)
+ const classData = window.lessonsData[cls];
+ if (classData && typeof classData === 'object' && !Array.isArray(classData) && currentStory && currentStory.includes('-')) {
+ // Date-keyed: currentStory is a date string like "2026-03-31"
+ if (!classData[currentStory]) {
+ console.error('Date not found:', currentStory, 'for class:', cls);
+ alert('Story not found for selected date');
+ exitReadingMode();
+ return;
+ }
+ const dateData = classData[currentStory];
+ if (Array.isArray(dateData) && dateData.length > 0) {
+ // For TonyJayStories: get content from first story
+ content = dateData[0].content;
+ } else {
+ console.error('Invalid date data format');
+ alert('Invalid story data');
+ exitReadingMode();
+ return;
+ }
+ } else {
+const selectorIndex = parseInt(currentStory);
             if (isNaN(selectorIndex)) {
                 console.error('Invalid story index:', currentStory);
                 alert('Invalid story selection');
@@ -1660,6 +1681,8 @@ function handleClassSelect() {
                 return;
             }
             content = window.lessonsData[cls][storyIndex].content;
+ }
+ }
         }
 
         if (!content) {
