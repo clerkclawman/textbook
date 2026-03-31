@@ -1,129 +1,110 @@
 // EIKEN Fun Questions - March 31, 2026
 // 50 Questions Total (5 per level × 10 levels)
+// Format: Numbered questions with English and Japanese on separate lines
 
 var funQuestions20260331 = [
-  {
-    title: "All Levels - Fun Questions",
-    content: `
-Level 7 (7級) - 5 Questions
-Do you like apples?
-あなたはりんごが好きですか。
-Is this your cat?
-これはあなたのねこですか。
-What color is your bag?
-あなたのバッグは何色ですか。
-Can you swim?
-およぐことができますか。
-Where is your school?
-あなたの学校はどこですか。
-
-Level 6 (6級) - 5 Questions
-What are you eating now?
-今、何を食べていますか。
-Are you playing soccer today?
-今日、サッカーをしていますか。
-Do you have a dog or a cat?
-犬か猫を飼っていますか。
-Is it raining now?
-今、雨が降っていますか。
-What are your friends doing?
-あなたの友達は何をしていますか。
-
-Level 5 (5級) - 5 Questions
-Do you play soccer on weekends?
-週末にサッカーをしますか。
-What is your favorite food?
-あなたの好きな食べ物は何ですか。
-Can you help me today?
-今日、手伝ってくれますか。
-Where do you study English?
-どこで英語を勉強しますか。
-Do you like spring weather?
+{
+  title: "EIKEN Fun Questions - March 31, 2026",
+  content: `1. ❓ Do you like takoyaki?
+たこ焼きが好きですか。
+2. ❓ Is Dotonbori busy today?
+道頓堀は今日、忙しいですか。
+3. ❓ Are sakura flowers beautiful?
+桜の花はきれいですか。
+4. ❓ Can you eat kushikatsu?
+串カツを食べることができますか。
+5. ❓ What is your favorite color?
+あなたの好きな色は何ですか。
+6. ❓ Are you eating breakfast now?
+今、朝ご飯を食べていますか。
+7. ❓ What are the cats doing?
+猫あなたは何をしていますか。
+8. ❓ Is it raining outside?
+外は雨が降っていますか。
+9. ❓ Do you have a pet?
+ペットを飼っていますか。
+10. ❓ What time do you wake up?
+何時に起きますか。
+11. ❓ Do you go to school by train?
+電車で行きますか。
+12. ❓ Is your bag heavy?
+あなたのバッグは重いですか。
+13. ❓ Can you speak English?
+英語を話すことができますか。
+14. ❓ What do you eat for lunch?
+昼ご飯に何を食べますか。
+15. ❓ Do you like spring weather?
 春の天気は好きですか。
-
-Level 4 (4級) - 5 Questions
-Did you go to the park yesterday?
-昨日、公園に行きましたか。
-What did you eat for breakfast?
-朝ごはんに何を食べましたか。
-Will you come to my party?
-私のパーティーに来ますか。
-Did you watch TV last night?
+16. ❓ Are you studying English now?
+今、英語を勉強していますか。
+17. ❓ Where do you want to go?
+どこに行きたいですか。
+18. ❓ Do you watch TV every day?
+毎日テレビを見ますか。
+19. ❓ Can you cook pasta?
+パスタを料理することができますか。
+20. ❓ What is your favorite subject?
+好きな科目は何ですか。
+21. ❓ Did you eat breakfast today?
+今日、朝ご飯を食べましたか。
+22. ❓ Do you play soccer on weekends?
+週末にサッカーをしますか。
+23. ❓ Is there a park near your house?
+あなたの家の近くに公園がありますか。
+24. ❓ What did you do yesterday?
+昨日、何もしましたか。
+25. ❓ Do you want to travel abroad?
+海外に旅行したいですか。
+26. ❓ Have you ever been to Tokyo?
+東京に行ったことがありますか。
+27. ❓ Do you like Japanese food?
+日本食は好きですか。
+28. ❓ What will you do tomorrow?
+明日、何をしますか。
+29. ❓ Can you play the piano?
+ピアノを弾くことができますか。
+30. ❓ Is your school far from here?
+あなたの学校はここから遠いですか。
+31. ❓ Did you watch TV last night?
 昨夜、テレビを見ましたか。
-Where will you go tomorrow?
-明日、どこへ行きますか。
-
-Level 3 (3級) - 5 Questions
-Have you ever been to Osaka Castle?
-大阪城に行ったことがありますか。
-If it rains, will you stay home?
-雨が降ったら、家にいますか。
-What is the best restaurant in your town?
-あなたの町で一番のレストランはどこですか。
-Have you finished your homework yet?
-もう宿題を終わらせましたか。
-If you have time, will you help me?
-時間があったら、手伝ってくれますか。
-
-Level Pre-2 (準2級) - 5 Questions
-What were you doing when I called?
-私が電話したとき、何をしていましたか。
-Should students wear uniforms to school?
-学生は学校に制服を着るべきですか。
-How has technology changed our lives?
-テクノロジーは私たちの生活をどう変えましたか。
-While you were studying, what happened?
-勉強していた間、何が起こりましたか。
-Do you think recycling is important?
-リサイクルは重要だと思いますか。
-
-Level Pre-2+ (準2+) - 5 Questions
-If you could travel anywhere, where would you go?
-どこにでも旅行できるとしたら、どこに行きたいですか。
-What had you done before you came here?
-ここに来る前に、何をしていましたか。
-Have you read a book that changed your opinion?
-あなたの考えを変えた本を読んだことがありますか。
-If scientists found a dinosaur bone, what would you think?
-もし科学者が恐竜の骨を見つけたら、どう思いますか。
-Who is someone that you admire most?
-誰を最も尊敬していますか。
-
-Level 2 (2級) - 5 Questions
-What would you do if you were the leader of your country?
-もしあなたの国の指導者なら、何をしますか。
-How has social media influenced political opinions?
-ソーシャルメディアは政治的意見にどのような影響を与えましたか。
-If a new robot was built to help people, what should it do?
-新しいロボットが人々を助けるために作られたら、あなたは何をすべきだと思いますか。
-Do you believe that democracy is the best form of government?
-民主主義が最良の政府の形態だと信じていますか。
-What is the meaning of success in your life?
-あなたの人生における成功の意味は何ですか。
-
-Level Pre-1 (準1級) - 5 Questions
-How might the perspective of autonomy affect educational outcomes?
-自律性の視点は教育成果にどのような影響を与える可能性がありますか。
-Whether the policy will succeed depends on what factors?
-その政策が成功するかどうかは何の要因に依存しますか。
-If you had known the consequences, would you have made a different choice?
-結果を知っていたとしたら、別の選択をしましたか。
-What is the relationship between cultural framework and individual identity?
-文化的枠組みと個人のアイデンティティの関係は何ですか。
-How should society balance economic growth with environmental protection?
-社会は経済成長と環境保護をどのようにバランスさせるべきですか。
-
-Level 1 (1級) - 5 Questions
-What mechanisms underlie the brain's interpretation of sensory data?
-脳の感覚データ解釈の根底にあるメカニズムは何ですか。
-Had it not been for historical developments, how would society differ today?
-歴史的発展がなければ、社会はどのように異なっていたでしょうか。
-In what ways might neural networks adapt to ensure resilience in changing environments?
-ニューラルネットワークは変化する環境における回復力を確保するためにどのように適応する可能性がありますか。
-How does the deliberation process influence the outcomes of international negotiations?
-審議プロセスは国際交渉の結果にどのように影響しますか。
-What implications does the correlation between motivation and achievement have for educational frameworks?
-動機と達成の相関関係は教育枠組みにどのような含意を持っていますか。
+32. ❓ Do you read books every day?
+毎日、本を読みますか。
+33. ❓ What is your favorite season?
+好きな季節は何ですか。
+34. ❓ Are you tired today?
+今日、疲れていますか。
+35. ❓ Do you listen to music?
+音楽を聞きますか。
+36. ❓ Have you seen the new movie?
+新しい映画を見ましたか。
+37. ❓ What would you do with $1000?
+1000 ドルあったら何をしますか。
+38. ❓ If you were a teacher, what would you teach?
+もし先生なら、何を教えますか。
+39. ❓ Do you think robots will help people?
+ロボットは人々を助けると思いますか。
+40. ❓ What is your dream job?
+あなたの夢の仕事は何ですか。
+41. ❓ Have you ever met a famous person?
+有名人に会ったことがありますか。
+42. ❓ If you could fly, where would you go?
+もし空を飛べたら、どこに行きたいですか。
+43. ❓ Do you agree with school uniforms?
+制服に賛成ですか。
+44. ❓ What do you think about AI?
+AI についてどう思いますか。
+45. ❓ Is it important to learn English?
+英語を学ぶことは重要ですか。
+46. ❓ What would you do if you were rich?
+お金持ちだったら何をしますか。
+47. ❓ If you could change one thing, what would it be?
+1 つ変えられるとしたら何ですか。
+48. ❓ Do you think social media is good?
+SNS は良いと思いますか。
+49. ❓ What is your opinion on climate change?
+気候変動についてどう思いますか。
+50. ❓ If you had a time machine, where would you go?
+タイムマシンがあったらどこに行きますか。
 `
-  }
+}
 ];
