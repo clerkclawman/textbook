@@ -1,196 +1,129 @@
 // EIKEN Fun Questions - March 31, 2026
 // 50 Questions Total (5 per level × 10 levels)
-// L7-L3: Universal topics only (NO news)
-// Pre-2+: Light news allowed
 
 var funQuestions20260331 = [
-  // ========== EIKEN 7 (5 questions) - Present Simple, Be-verbs, SVO only ==========
   {
-    title: "Eiken 7 - Question 1",
-    content: `Do you like takoyaki?
-たこ焼きが好きですか？
+    title: "All Levels - Fun Questions",
+    content: `
+Level 7 (7級) - 5 Questions
+Do you like apples?
+あなたはりんごが好きですか。
+Is this your cat?
+これはあなたのねこですか。
+What color is your bag?
+あなたのバッグは何色ですか。
+Can you swim?
+およぐことができますか。
+Where is your school?
+あなたの学校はどこですか。
 
-Is Dotonbori busy today?
-道頓堀は今日、忙しいですか？
+Level 6 (6級) - 5 Questions
+What are you eating now?
+今、何を食べていますか。
+Are you playing soccer today?
+今日、サッカーをしていますか。
+Do you have a dog or a cat?
+犬か猫を飼っていますか。
+Is it raining now?
+今、雨が降っていますか。
+What are your friends doing?
+あなたの友達は何をしていますか。
 
-Are sakura flowers beautiful?
-桜の花はきれいですか？
-
-Can you eat kushikatsu?
-串カツを食べることができますか？
-
-What is your favorite color?
-あなたの好きな色は何ですか？`
-  },
-
-  // ========== EIKEN 6 (5 questions) - Present Continuous, Plurals, Articles ==========
-  {
-    title: "Eiken 6 - Question 1",
-    content: `Are you eating breakfast now?
-今、朝ご飯を食べていますか？
-
-What are the cats doing?
-猫達は何をしていますか？
-
-Is a dog running in the park?
-犬が公園を走っていますか？
-
-Are your friends playing soccer?
-あなたの友達は今、サッカーをしていますか？
-
-What color is your school bag?
-あなたの鞄は何色ですか？`
-  },
-
-  // ========== EIKEN 5 (5 questions) - Present Simple/Continuous, Can, Routines ==========
-  {
-    title: "Eiken 5 - Question 1",
-    content: `Do you go to school by train?
-電車で行きますか？
-
-What do you eat for breakfast?
-朝ご飯に何を食べますか？
-
-Can you swim in the pool?
-プールで泳ぐことができますか？
-
-Do you like spring weather?
-春の天気は好きですか？
-
+Level 5 (5級) - 5 Questions
+Do you play soccer on weekends?
+週末にサッカーをしますか。
+What is your favorite food?
+あなたの好きな食べ物は何ですか。
+Can you help me today?
+今日、手伝ってくれますか。
 Where do you study English?
-どこで英語を勉強しますか？`
-  },
+どこで英語を勉強しますか。
+Do you like spring weather?
+春の天気は好きですか。
 
-  // ========== EIKEN 4 (5 questions) - Past Simple, Future (will/going to) ==========
-  {
-    title: "Eiken 4 - Question 1",
-    content: `Did you eat takoyaki yesterday?
-昨日、たこ焼きを食べましたか？
+Level 4 (4級) - 5 Questions
+Did you go to the park yesterday?
+昨日、公園に行きましたか。
+What did you eat for breakfast?
+朝ごはんに何を食べましたか。
+Will you come to my party?
+私のパーティーに来ますか。
+Did you watch TV last night?
+昨夜、テレビを見ましたか。
+Where will you go tomorrow?
+明日、どこへ行きますか。
 
-What did you do last weekend?
-先週の週末、何をした？
-
-Will you go to the park tomorrow?
-明日、公園に行きますか？
-
-Where did you see sakura flowers?
-どこで桜を見ましたか？
-
-Are you going to study English tonight?
-今夜、英語を勉強しますか？`
-  },
-
-  // ========== EIKEN 3 (5 questions) - Present Perfect, Type 1 Conditional, Superlatives ==========
-  {
-    title: "Eiken 3 - Question 1",
-    content: `Have you ever been to Dotonbori?
-これまでに道頓堀に行ったことがありますか？
-
-What is the best food in Osaka?
-大阪で一番美味しい食べ物は何ですか？
-
+Level 3 (3級) - 5 Questions
+Have you ever been to Osaka Castle?
+大阪城に行ったことがありますか。
 If it rains, will you stay home?
-雨が降ったら、家にいますか？
+雨が降ったら、家にいますか。
+What is the best restaurant in your town?
+あなたの町で一番のレストランはどこですか。
+Have you finished your homework yet?
+もう宿題を終わらせましたか。
+If you have time, will you help me?
+時間があったら、手伝ってくれますか。
 
-Have you seen a real samurai?
-本物の侍に会ったことがありますか？
+Level Pre-2 (準2級) - 5 Questions
+What were you doing when I called?
+私が電話したとき、何をしていましたか。
+Should students wear uniforms to school?
+学生は学校に制服を着るべきですか。
+How has technology changed our lives?
+テクノロジーは私たちの生活をどう変えましたか。
+While you were studying, what happened?
+勉強していた間、何が起こりましたか。
+Do you think recycling is important?
+リサイクルは重要だと思いますか。
 
-Which is more interesting, soccer or baseball?
-どちらがもっと面白いですか、サッカーと野球のどちらですか？`
-  },
+Level Pre-2+ (準2+) - 5 Questions
+If you could travel anywhere, where would you go?
+どこにでも旅行できるとしたら、どこに行きたいですか。
+What had you done before you came here?
+ここに来る前に、何をしていましたか。
+Have you read a book that changed your opinion?
+あなたの考えを変えた本を読んだことがありますか。
+If scientists found a dinosaur bone, what would you think?
+もし科学者が恐竜の骨を見つけたら、どう思いますか。
+Who is someone that you admire most?
+誰を最も尊敬していますか。
 
-  // ========== EIKEN Pre-2 (5 questions) - Past Continuous, Passive, Reported Speech ==========
-  {
-    title: "Eiken Pre-2 - Question 1",
-    content: `What were you doing when the rain started?
-雨が降り始めた時、あなたは何をしていましたか？
+Level 2 (2級) - 5 Questions
+What would you do if you were the leader of your country?
+もしあなたの国の指導者なら、何をしますか。
+How has social media influenced political opinions?
+ソーシャルメディアは政治的意見にどのような影響を与えましたか。
+If a new robot was built to help people, what should it do?
+新しいロボットが人々を助けるために作られたら、あなたは何をすべきだと思いますか。
+Do you believe that democracy is the best form of government?
+民主主義が最良の政府の形態だと信じていますか。
+What is the meaning of success in your life?
+あなたの人生における成功の意味は何ですか。
 
-How is takoyaki made in Osaka?
-大阪でたこ焼きはどのように作られますか？
+Level Pre-1 (準1級) - 5 Questions
+How might the perspective of autonomy affect educational outcomes?
+自律性の視点は教育成果にどのような影響を与える可能性がありますか。
+Whether the policy will succeed depends on what factors?
+その政策が成功するかどうかは何の要因に依存しますか。
+If you had known the consequences, would you have made a different choice?
+結果を知っていたとしたら、別の選択をしましたか。
+What is the relationship between cultural framework and individual identity?
+文化的枠組みと個人のアイデンティティの関係は何ですか。
+How should society balance economic growth with environmental protection?
+社会は経済成長と環境保護をどのようにバランスさせるべきですか。
 
-What did your friend say about the movie?
-あなたの友達はその映画について何と言っていましたか？
-
-Were you studying when I called?
-私が電話した時、勉強していましたか？
-
-Why was the festival cancelled last year?
-なぜ去年、祭りは中止になりましたか？`
-  },
-
-  // ========== EIKEN Pre-2 Plus (5 questions) - Past Perfect, Type 2 Conditional, Relative Clauses ==========
-  {
-    title: "Eiken Pre-2 Plus - Question 1",
-    content: `What had you done before you came to Japan?
-日本に来る前に、あなたは何をしていましたか？
-
-If you could meet any famous person, who would you choose?
-もし有名人に会えるとしたら、誰に会いたいですか？
-
-What is something that makes you happy?
-あなたを幸せにするものは何ですか？
-
-Had you ever eaten kushikatsu before visiting Osaka?
-大阪を訪れる前に、串カツを食べたことはありましたか？
-
-If a new robot was built in Japan, what would it do?
-もし日本で新しいロボットが作られたら、それは何をしますか？`
-  },
-
-  // ========== EIKEN 2 (5 questions) - Complex Passive, Type 2 Conditional, Arguments ==========
-  {
-    title: "Eiken 2 - Question 1",
-    content: `How do you think social media affects young people's lives?
-あなたはソーシャルメディアが若者の生活にどのような影響を与えると思いますか？
-
-If you were the mayor of Osaka, what would you change?
-もしあなたが大阪市長なら、何を変えますか？
-
-Why are traditional festivals important for communities?
-なぜ伝統的な祭りはコミュニティにとって重要ですか？
-
-What would you do if you found a wallet on the street?
-もしあなたが道で財布を見つけたら、何をしますか？
-
-How can we protect cherry blossom trees for the future?
-将来のために桜の木をどうやって守ることができますか？`
-  },
-
-  // ========== EIKEN Pre-1 (5 questions) - Nominal Clauses, Advanced Connectors, Type 3 Conditional ==========
-  {
-    title: "Eiken Pre-1 - Question 1",
-    content: `What is your opinion on the fact that AI is changing our daily lives?
-AI が私たちの日常生活を変えているという事実について、あなたの意見は何ですか？
-
-If the government had invested more in education, how would society be different?
-もし政府が教育にもっと投資していたら、社会はどうなっていたでしょうか？
-
-How do you think climate change will affect Japan in the next decade?
-気候変動は今後 10 年間で日本にどのような影響を与えると思いますか？
-
-Why do you believe that learning English is important for Japanese students?
-なぜあなたは日本人学生にとって英語を学ぶことが重要だと信じていますか？
-
-What would have happened if the Olympics had not been held in Tokyo?
-もし東京でオリンピックが開催されていなかったら、何が起こっていたでしょうか？`
-  },
-
-  // ========== EIKEN 1 (5 questions) - Subjunctive, Inversion, Academic Vocabulary ==========
-  {
-    title: "Eiken 1 - Question 1",
-    content: `Had it not been for technological advancements, how would our society have developed differently?
-技術の進歩がなかったとしたら、私たちの社会はどのように異なって発展していたでしょうか？
-
-What is your perspective on the notion that artificial intelligence will replace human workers?
-人工知能が人間の労働者を置き換えるという考えについて、あなたの見解は何ですか？
-
-How would you argue that cultural preservation is essential in the face of globalization?
-グローバル化の進展の中で、なぜ文化の保存が不可欠だと主張しますか？
-
-Not only did the pandemic change our work habits, but how did it also transform our values?
-パンデミックは私たちの労働習慣を変えただけでなく、どのように私たちの価値観も変容させましたか？
-
-What recommendations would you make to ensure that future generations can appreciate traditional Japanese culture?
-将来の世代が日本の伝統文化を鑑賞できることを確実にするために、どのような提言をしますか？`
+Level 1 (1級) - 5 Questions
+What mechanisms underlie the brain's interpretation of sensory data?
+脳の感覚データ解釈の根底にあるメカニズムは何ですか。
+Had it not been for historical developments, how would society differ today?
+歴史的発展がなければ、社会はどのように異なっていたでしょうか。
+In what ways might neural networks adapt to ensure resilience in changing environments?
+ニューラルネットワークは変化する環境における回復力を確保するためにどのように適応する可能性がありますか。
+How does the deliberation process influence the outcomes of international negotiations?
+審議プロセスは国際交渉の結果にどのように影響しますか。
+What implications does the correlation between motivation and achievement have for educational frameworks?
+動機と達成の相関関係は教育枠組みにどのような含意を持っていますか。
+`
   }
 ];
