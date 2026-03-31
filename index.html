@@ -1514,7 +1514,8 @@
         console.log('Loading content for:', cls, 'Story:', currentStory);
 
         // Handle Cloze Quiz mode
-        if (cls === 'ClozeQuiz') {
+ if (cls === 'ClozeQuiz') {
+ isQuizMode = true;
  // ClozeQuiz data is organized by date: { 'YYYY-MM-DD': [...] }
  const quizData = window.lessonsData['ClozeQuiz'];
  if (!quizData || typeof quizData !== 'object') {
@@ -1532,18 +1533,15 @@
  return;
  }
  quizQuestions = quizData[dateStr];
-            }
-            quizQuestions = lessonsData['ClozeQuiz'];
-            currentSentenceIndex = 0;
-            displayQuizQuestion(currentSentenceIndex);
-            setTimeout(() => {
-                applyDisplayMode();
-                ensureTextVisibility();
-            }, 100);
-            return;
-        }
-
-        // Non-quiz mode - reset quiz flag
+ currentSentenceIndex = 0;
+ displayQuizQuestion(currentSentenceIndex);
+ setTimeout(() => {
+ applyDisplayMode();
+ ensureTextVisibility();
+ }, 100);
+ return;
+ }
+ // Non-quiz mode - reset quiz flag
         isQuizMode = false;
 
         if (!lessonsData[cls]) {
