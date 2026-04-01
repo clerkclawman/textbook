@@ -13,5 +13,5 @@ AIモデルはもはや人間よりも優れたコードを書けます。
 5. 🌱 Scientists develop a new type of plastic-eating bacteria. How important is recycling in your daily life?
 科学者がプラスチックを分解する新しい細菌を開発しました。
 `
-  }}
+  }
 ];
