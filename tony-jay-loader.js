@@ -58,8 +58,15 @@ async function initTonyJayStoriesLoader() {
      console.error(`Tony & Jay Loader: Failed to load ${filename}`, response.status);
      return;
    }
-   const data = await response.json();
-   todayStories = data;
+   const text = await response.text();
+   // Extract array from var storiesTonyJayYYYYMMDD = [ ... ];
+   const match = text.match(/var storiesTonyJay\d+ = (\[.*?\]);/s);
+   if (match) {
+     todayStories = eval(match[1]);
+   } else {
+     console.error('Tony & Jay Loader: Could not parse stories file');
+     return;
+   }
 
    // Organize by level
    window.lessonsData['TonyJayStories'] = {};
