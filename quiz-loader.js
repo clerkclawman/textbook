@@ -87,15 +87,23 @@ async function initQuizLoader() {
     
     // Wait for lessonsData to be available
     let initRetries = 0;
-    const initMaxRetries = 30;
+    const initMaxRetries = 100; // Increased from 30 to 100 (10 seconds)
     while (typeof window.lessonsData === 'undefined' && initRetries < initMaxRetries) {
         await new Promise(resolve => setTimeout(resolve, 100));
         initRetries++;
     }
     
     if (typeof window.lessonsData === 'undefined') {
+      // Fallback: Check if loadAllQA is available (signals data is loaded)
+      if (typeof window.loadAllQA === 'function') {
+        console.log('Quiz Loader: loadAllQA available, waiting for lessonsData...');
+        // Wait a bit more for lessonsData to populate
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      }
+      if (typeof window.lessonsData === 'undefined') {
         console.error('Quiz Loader: lessonsData never became available');
         return;
+      }
     }
     
     // Load quizzes for today and past 7 days
