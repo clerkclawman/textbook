@@ -1542,7 +1542,34 @@
  }, 100);
  return;
  }
- // Non-quiz mode - reset quiz flag
+ // Handle Tony & Jay Stories: load by level (currentStory is a level string like "7")
+        if (cls === 'TonyJayStories') {
+            const level = currentStory; // e.g., "7", "Pre-2"
+            console.log('Tony & Jay: Loading level', level);
+            if (!classData[level] || !Array.isArray(classData[level]) || classData[level].length === 0) {
+                console.error('No story found for level:', level);
+                alert('No story available for this level today');
+                exitReadingMode();
+                return;
+            }
+            const story = classData[level][0]; // Only one story per level per day
+            content = story.content;
+            sentences = parseStoryFile(content);
+            if (sentences.length > 0) {
+                currentSentenceIndex = 0;
+                displayCurrentSentence();
+                setTimeout(() => {
+                    applyDisplayMode();
+                    ensureTextVisibility();
+                }, 100);
+            } else {
+                alert('No valid sentences found in this story');
+                exitReadingMode();
+            }
+            return;
+        }
+
+// Non-quiz mode - reset quiz flag
         isQuizMode = false;
 
         if (!lessonsData[cls]) {
