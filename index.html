@@ -2166,7 +2166,7 @@
             if (!translationResult) {
                     throw new Error('No translation data received');
                 }
-            })
+            }
             .catch(error => {
                 console.error('Translation error:', error);
                 translationResult.textContent = "Unable to get translation";
