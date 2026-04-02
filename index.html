@@ -1463,22 +1463,20 @@
             optionIndex++;
         }
 
-        // lessonsData[cls] is now directly an array of story objects
-        console.log('Processing', classData.length, 'stories');
- {
-        classData.forEach((story, index) => {
-            if (story && story.title) {
-                const option = document.createElement("option");
-                option.value = optionIndex;
-                option.textContent = story.title;
-                storySelector.appendChild(option);
-                optionIndex++;
-            {
-                console.warn('Invalid story at index', index, ':', story);
-            }
-        });
-}
-        console.log('Added', optionIndex, 'options to story selector');
+// lessonsData[cls] is now directly an array of story objects
+    console.log('Processing', classData.length, 'stories');
+    classData.forEach((story, index) => {
+        if (story && story.title) {
+            const option = document.createElement("option");
+            option.value = optionIndex;
+            option.textContent = story.title;
+            storySelector.appendChild(option);
+            optionIndex++;
+        } else {
+            console.warn('Invalid story at index', index, ':', story);
+        }
+    });
+    console.log('Added', optionIndex, 'options to story selector');
         storySelector.disabled = false;
         storySelector.focus();
 }
