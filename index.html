@@ -1120,11 +1120,22 @@
                 <option value='FunQuestions'>Fun Questions (Daily)</option>
  <option value='ClozeQuiz'>Cloze Quiz (Daily)</option>
 <option value='TonyJayStories'>Tony & Jay Stories (Daily)</option>
+<option value='TonyJayStories'>Tony & Jay Stories (Daily)</option>
                 <option value='Grammar'>Grammar</option>
                 <option value='Sentences'>Sentences</option>
   <option value='News'>News (Daily)</option>
                 <option value='Adult'>Adult</option>
                 <option value='Eiken7'>Eiken 7</option>
+<option value='New7'>New 7!</option>
+<option value='New6'>New 6!</option>
+<option value='New5'>New 5!</option>
+<option value='New4'>New 4!</option>
+<option value='New3'>New 3!</option>
+<option value='NewPre2'>New Pre-2!</option>
+<option value='NewPre2Plus'>New Pre-2 Plus!</option>
+<option value='New2'>New 2!</option>
+<option value='NewPre1'>New Pre-1!</option>
+<option value='New1'>New 1!</option>
                 <option value='Eiken6'>Eiken 6</option>
                 <option value='Eiken5'>Eiken 5</option>
                 <option value='Eiken4'>Eiken 4</option>
@@ -1215,6 +1226,12 @@
 </div>
 
     <!-- Load external scripts -->
+<script src='adult.js'></script>
+<script src='news-loader.js'></script>
+<script src='fun-questions-loader.js'></script>
+<script src='tony-jay-loader.js'></script>
+ <script src='quiz-loader.js'></script>
+<script src='tony-jay-loader.js'></script>
 <!-- Static news loaded dynamically via news-loader.js -->
 <!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
@@ -1256,11 +1273,6 @@
 <script src='grammar-site.js'></script>
 <script src='sentences-site.js'></script>
 
-<script src='news-loader.js'></script>
-<script src='fun-questions-loader.js'></script>
-<script src='stories-tony-jay-2026-04-02.js'></script>
-<script src='quiz-loader.js'></script>
-
 <script>
     // ====================
     // GLOBAL VARIABLES
@@ -1277,7 +1289,7 @@
     const minFontSize = 2;
     const maxFontSize = 8;
     let displayMode = 'both';
-    window.lessonsData = {};
+    let lessonsData = {};
     let selectedText = '';
     let translationLang = '';
     // Cloze Quiz specific variables
@@ -1409,7 +1421,7 @@
 
         if (currentClass) {
             populateStorySelector(currentClass);
-        {
+        } else {
             storySelector.innerHTML = '<option value="">Select Story</option>';
             storySelector.disabled = true;
         }
@@ -1446,7 +1458,7 @@
             return;
         }
 
-        if (cls !== 'TonyJayStories' && !Array.isArray(classData)) {
+        if (!Array.isArray(classData)) {
             console.error('lessonsData[' + cls + '] is not an array!', classData);
             storySelector.innerHTML = '<option value="">Error: data format incorrect</option>';
             return;
@@ -1463,23 +1475,24 @@
             optionIndex++;
         }
 
-// lessonsData[cls] is now directly an array of story objects
-    console.log('Processing', classData.length, 'stories');
-    classData.forEach((story, index) => {
-        if (story && story.title) {
-            const option = document.createElement("option");
-            option.value = optionIndex;
-            option.textContent = story.title;
-            storySelector.appendChild(option);
-            optionIndex++;
-        } else {
-            console.warn('Invalid story at index', index, ':', story);
-        }
-    });
-    console.log('Added', optionIndex, 'options to story selector');
+        // lessonsData[cls] is now directly an array of story objects
+        console.log('Processing', classData.length, 'stories');
+        classData.forEach((story, index) => {
+            if (story && story.title) {
+                const option = document.createElement("option");
+                option.value = optionIndex;
+                option.textContent = story.title;
+                storySelector.appendChild(option);
+                optionIndex++;
+            } else {
+                console.warn('Invalid story at index', index, ':', story);
+            }
+        });
+
+        console.log('Added', optionIndex, 'options to story selector');
         storySelector.disabled = false;
         storySelector.focus();
-}
+    }
 
     // ==================== // READING MODE FUNCTIONS
     // ====================
@@ -1533,9 +1546,123 @@
  return;
  }
  // Handle Tony & Jay Stories: load by level (currentStory is a level string like "7")
+        if (cls === 'TonyJayStories') {
+            const level = currentStory; // e.g., "7", "Pre-2"
+            console.log('Tony & Jay: Loading level', level);
+            if (!classData[level] || !Array.isArray(classData[level]) || classData[level].length === 0) {
+                console.error('No story found for level:', level);
+                alert('No story available for this level today');
+                exitReadingMode();
+                return;
+            }
+            const story = classData[level][0]; // Only one story per level per day
+            content = story.content;
+            sentences = parseStoryFile(content);
+            if (sentences.length > 0) {
+                currentSentenceIndex = 0;
+                displayCurrentSentence();
+                setTimeout(() => {
+                    applyDisplayMode();
+                    ensureTextVisibility();
+                }, 100);
+            } else {
+                alert('No valid sentences found in this story');
+                exitReadingMode();
+            }
+            return;
+        }
+
+// Non-quiz mode - reset quiz flag
+        isQuizMode = false;
+
+        if (!lessonsData[cls]) {
+            console.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
+            alert(`Data not found for class ${cls}`);
+            exitReadingMode();
+            return;
+        }
+
+        let content;
+        if (currentStory === 'questions') {
+            // Questions are now in lessonsData._questions[cls]
+            const questions = lessonsData._questions && lessonsData._questions[cls];
+            if (!questions || !Array.isArray(questions) || questions.length === 0) {
+                console.error('Questions not found for class:', cls);
+                alert('Questions not available for this class');
+                exitReadingMode();
+                return;
+            }
+            content = questions[0].content; // Questions are in an array, get first item's content
+        } else {
+            const selectorIndex = parseInt(currentStory);
+            if (isNaN(selectorIndex)) {
+                console.error('Invalid story index:', currentStory);
+                alert('Invalid story selection');
+                exitReadingMode();
+                return;
+            }
+
+            // Adjust index if questions exist for this class
+            let storyIndex = selectorIndex;
+            if (lessonsData._questions && lessonsData._questions[cls]) {
+                storyIndex = selectorIndex - 1;
+            }
+
+            // lessonsData[cls] is now directly an array of story objects
+            if (storyIndex < 0 || !Array.isArray(lessonsData[cls]) || !lessonsData[cls][storyIndex]) {
+                console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
+                alert('Invalid story selection');
+                exitReadingMode();
+                return;
+            }
+            content = lessonsData[cls][storyIndex].content;
+        }
+
+        if (!content) {
+            console.error('Content not found for story:', currentStory, 'in class:', cls);
+            alert(`Content not found for selected story`);
+            exitReadingMode();
+            return;
+        }
+
+        sentences = parseStoryFile(content);
+        if (sentences.length > 0) {
+            currentSentenceIndex = 0;
+            displayCurrentSentence();
+            setTimeout(() => {
+                applyDisplayMode();
+                ensureTextVisibility();
+            }, 100);
+        } else {
+            alert('No valid sentences found in this story');
+            exitReadingMode();
+        }
+    }
+
+    function parseStoryFile(text) {
+        const content = text && typeof text === 'object' ? text.content : text || '';
+        const lines = content.split('\n')
+            .map(line => line.trim())
+            .filter(line => line.length > 0 && !line.startsWith('#'));
+
+        const result = [];
+        let currentEnglish = null;
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            const isEnglish = /^[→🕰️📉📊🛑🗣️🌊🗳️📊🛑🗣️🌊🗳️🆕🤝📉📛🔍💡⚖️🤷🏛️🔄💼💰⏳👵👴🚫🗺️🚫😔📉✌️🌟📈💵👵👴🚫🗺️🚫😔📉✌️🌟📈💵🇯🇵🌏🧑🤝🧑🌎🌎🇺🇸🏭🇪🇺🛂✋📱⚠️🛒💊📉👷❤️🧠✊🧩🌪️🌍🤲🚦🌟]/.test(line) ||
+                             (countJapaneseChars(line) < countEnglishChars(line));
+
+            if (isEnglish) {
+                if (currentEnglish) {
+                    result.push({
+                        english: currentEnglish,
+                        japanese: "",
+                        number: result.length + 1
+                    });
                 }
                 currentEnglish = line;
-            {
+            } else {
                 if (currentEnglish) {
                     result.push({
                         english: currentEnglish,
@@ -1543,7 +1670,7 @@
                         number: result.length + 1
                     });
                     currentEnglish = null;
-                {
+                } else {
                     result.push({
                         english: "",
                         japanese: line,
@@ -1826,7 +1953,7 @@
             const baseSize = 1.5;
             const scaleFactor = currentFontSize / 5;
             size = `${baseSize * scaleFactor}rem`;
-        {
+        } else {
             size = `${currentFontSize}vw`;
         }
 
@@ -1903,7 +2030,7 @@
     function advanceToNextSentence() {
         if (currentSentenceIndex < sentences.length - 1) {
             currentSentenceIndex++;
-        {
+        } else {
             currentSentenceIndex = 0;
         }
 
@@ -1919,7 +2046,7 @@
 
         if (currentSentenceIndex > 0) {
             currentSentenceIndex--;
-        {
+        } else {
             currentSentenceIndex = sentences.length - 1;
         }
 
@@ -1997,7 +2124,7 @@
             if (voice) {
                 utterance.voice = voice;
                 console.log('Using voice:', voice.name, 'for language:', lang);
-            {
+            } else {
                 console.warn('No specific voice found for', lang, 'using default');
             }
 
@@ -2007,6 +2134,15 @@
 
             window.speechSynthesis.speak(utterance);
         };
+
+        const voices = window.speechSynthesis.getVoices();
+        if (voices.length === 0) {
+            console.log('Waiting for voices to load...');
+            window.speechSynthesis.onvoiceschanged = speakWithVoice;
+        } else {
+            speakWithVoice();
+        }
+    }
 
     function listVoices() {
         const voices = window.speechSynthesis.getVoices();
@@ -2069,7 +2205,7 @@
         if (lang === 'en') {
             sourceLabel.textContent = 'English:';
             targetLabel.textContent = 'Japanese:';
-        {
+        } else {
             sourceLabel.textContent = 'Japanese:';
             targetLabel.textContent = 'English:';
         }
@@ -2163,10 +2299,10 @@
                     }
 
                     translationResult.textContent = translatedText;
-            if (!translationResult) {
+                } else {
                     throw new Error('No translation data received');
                 }
-            } })
+            })
             .catch(error => {
                 console.error('Translation error:', error);
                 translationResult.textContent = "Unable to get translation";
@@ -2429,7 +2565,7 @@
         if (fruitGameEnabled) {
             fruitToggleBtn.innerHTML = '🍏';
             fruitToggleBtn.style.color = 'var(--success)';
-        {
+        } else {
             fruitToggleBtn.innerHTML = '🍎';
             fruitToggleBtn.style.color = 'var(--warning)';
         }
@@ -2440,7 +2576,7 @@
         if (fruitGameEnabled) {
             fruitToggleBtn.style.boxShadow = '0 0 10px var(--success)';
             fruitToggleBtn.style.border = '2px solid var(--success)';
-        {
+        } else {
             fruitToggleBtn.style.boxShadow = 'none';
             fruitToggleBtn.style.border = '2px solid var(--warning)';
         }
@@ -2457,7 +2593,7 @@
         if (fruitGameEnabled) {
             playSound('activate');
             if (navigator.vibrate) navigator.vibrate(50);
-        {
+        } else {
             if (fruitGameActive) {
                 hideFruitGame();
             }
@@ -2756,7 +2892,7 @@
             if (typeof vocab !== 'undefined') {
                 console.log('Vocabulary data loaded');
                 resolve();
-            {
+            } else {
                 const error = 'Vocabulary data not found. Please ensure vocab.js is loaded.';
                 console.error(error);
                 reject(error);
@@ -2772,7 +2908,7 @@
             try {
                 if (typeof getCombinedNews === 'function') {
                     newsData = await getCombinedNews();
-                {
+                } else {
                     console.warn('getCombinedNews not available - using fallback news');
                     newsData = [{
                         title: "📰 News",
@@ -2810,7 +2946,7 @@ if (typeof getCombinedFunQuestions === "function") {
     funQuestionsLoaded = true;
     lessonsData["FunQuestions"] = funQuestionsData;
   });
-{
+} else {
   console.warn("getCombinedFunQuestions not available");
   funQuestionsData = [{ title: "🎉 No Fun Questions Available", content: "Fun Questions will be available soon!" }];
     funQuestionsLoaded = true;
@@ -2864,7 +3000,7 @@ if (typeof getCombinedFunQuestions === "function") {
                 if (false) { // Disabled QA loader
                     lessonsData._questions = await loadAllQA();
                     console.log('Q&A loaded for levels:', Object.keys(lessonsData._questions));
-                {
+                } else {
                     console.warn('Using fallback for Q&A');
                     lessonsData._questions = {
                         'Eiken3': eiken3questions,
@@ -2906,7 +3042,7 @@ if (typeof getCombinedFunQuestions === "function") {
             case 'ArrowLeft':
                 if (activeElement === prevSentenceBtn) {
                     showPreviousSentence();
-                {
+                } else {
                     navigateFocus('left');
                 }
                 e.preventDefault();
@@ -2914,7 +3050,7 @@ if (typeof getCombinedFunQuestions === "function") {
             case 'ArrowRight':
                 if (activeElement === nextSentenceBtn) {
                     showNextSentence();
-                {
+                } else {
                     navigateFocus('right');
                 }
                 e.preventDefault();
@@ -2943,7 +3079,7 @@ if (typeof getCombinedFunQuestions === "function") {
 
         if (direction === 'up' || direction === 'left') {
             nextIndex = Math.max(0, currentIndex - 1);
-        {
+        } else {
             nextIndex = Math.min(focusable.length - 1, currentIndex + 1);
         }
 
