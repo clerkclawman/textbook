@@ -1260,6 +1260,7 @@
 <script src='fun-questions-loader.js'></script>
 <script src='tony-jay-loader.js'></script>
 <script src='quiz-loader.js'></script>
+<script src='adult.js'></script>
 <script>
     // ====================
     // GLOBAL VARIABLES
@@ -1445,7 +1446,7 @@
             return;
         }
 
-        if (!Array.isArray(classData)) {
+        if (cls !== 'TonyJayStories' && !Array.isArray(classData)) {
             console.error('lessonsData[' + cls + '] is not an array!', classData);
             storySelector.innerHTML = '<option value="">Error: data format incorrect</option>';
             return;
@@ -1464,6 +1465,16 @@
 
         // lessonsData[cls] is now directly an array of story objects
         console.log('Processing', classData.length, 'stories');
+ // Handle TonyJayStories (object with levels) vs others (array)
+ if (cls === 'TonyJayStories') {
+ console.log('Processing levels:', Object.keys(classData));
+ Object.keys(classData).forEach((level, index) => {
+ const option = document.createElement("option");
+ option.value = index;
+ option.textContent = 'Level: ' + level;
+ storySelector.appendChild(option);
+ });
+ } else {
         classData.forEach((story, index) => {
             if (story && story.title) {
                 const option = document.createElement("option");
