@@ -2008,15 +2008,6 @@
             window.speechSynthesis.speak(utterance);
         };
 
-        const voices = window.speechSynthesis.getVoices();
-        if (voices.length === 0) {
-            console.log('Waiting for voices to load...');
-            window.speechSynthesis.onvoiceschanged = speakWithVoice;
-        {
-            speakWithVoice();
-        }
-    }
-
     function listVoices() {
         const voices = window.speechSynthesis.getVoices();
         console.log("Available voices:");
