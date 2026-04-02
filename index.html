@@ -2624,7 +2624,7 @@
                     let finalItem;
                     if (shouldMatch) {
                         finalItem = matchingItem;
-                    {
+                    } else {
                         finalItem = items[Math.floor(Math.random() * items.length)];
                     }
                     reel.textContent = finalItem.emoji;
