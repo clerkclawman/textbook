@@ -2163,7 +2163,7 @@
                     }
 
                     translationResult.textContent = translatedText;
-                {
+            if (!translationResult) {
                     throw new Error('No translation data received');
                 }
             })
