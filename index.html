@@ -2199,7 +2199,7 @@
         const dict = lang === 'en' ? enToJaDict : jaToEnDict;
         if (dict[word]) {
             translationResult.textContent = dict[word];
-        {
+        } else {
             for (const [key, value] of Object.entries(dict)) {
                 if (word.includes(key)) {
                     translationResult.textContent = value;
