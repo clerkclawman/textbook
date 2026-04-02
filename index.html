@@ -1258,9 +1258,9 @@
 
 <script src='news-loader.js'></script>
 <script src='fun-questions-loader.js'></script>
-<script src='tony-jay-loader.js'></script>
+<script src='stories-tony-jay-2026-04-02.js'></script>
 <script src='quiz-loader.js'></script>
-<script src='adult.js'></script>
+
 <script>
     // ====================
     // GLOBAL VARIABLES
@@ -1409,7 +1409,7 @@
 
         if (currentClass) {
             populateStorySelector(currentClass);
-        } else {
+        {
             storySelector.innerHTML = '<option value="">Select Story</option>';
             storySelector.disabled = true;
         }
@@ -1465,16 +1465,7 @@
 
         // lessonsData[cls] is now directly an array of story objects
         console.log('Processing', classData.length, 'stories');
- // Handle TonyJayStories (object with levels) vs others (array)
- if (cls === 'TonyJayStories') {
- console.log('Processing levels:', Object.keys(classData));
- Object.keys(classData).forEach((level, index) => {
- const option = document.createElement("option");
- option.value = index;
- option.textContent = 'Level: ' + level;
- storySelector.appendChild(option);
- });
- } else {
+ {
         classData.forEach((story, index) => {
             if (story && story.title) {
                 const option = document.createElement("option");
@@ -1482,7 +1473,7 @@
                 option.textContent = story.title;
                 storySelector.appendChild(option);
                 optionIndex++;
-            } else {
+            {
                 console.warn('Invalid story at index', index, ':', story);
             }
         });
@@ -1544,123 +1535,9 @@
  return;
  }
  // Handle Tony & Jay Stories: load by level (currentStory is a level string like "7")
-        if (cls === 'TonyJayStories') {
-            const level = currentStory; // e.g., "7", "Pre-2"
-            console.log('Tony & Jay: Loading level', level);
-            if (!classData[level] || !Array.isArray(classData[level]) || classData[level].length === 0) {
-                console.error('No story found for level:', level);
-                alert('No story available for this level today');
-                exitReadingMode();
-                return;
-            }
-            const story = classData[level][0]; // Only one story per level per day
-            content = story.content;
-            sentences = parseStoryFile(content);
-            if (sentences.length > 0) {
-                currentSentenceIndex = 0;
-                displayCurrentSentence();
-                setTimeout(() => {
-                    applyDisplayMode();
-                    ensureTextVisibility();
-                }, 100);
-            } else {
-                alert('No valid sentences found in this story');
-                exitReadingMode();
-            }
-            return;
-        }
-
-// Non-quiz mode - reset quiz flag
-        isQuizMode = false;
-
-        if (!lessonsData[cls]) {
-            console.error('Class not found:', cls, 'Available classes:', Object.keys(lessonsData));
-            alert(`Data not found for class ${cls}`);
-            exitReadingMode();
-            return;
-        }
-
-        let content;
-        if (currentStory === 'questions') {
-            // Questions are now in lessonsData._questions[cls]
-            const questions = lessonsData._questions && lessonsData._questions[cls];
-            if (!questions || !Array.isArray(questions) || questions.length === 0) {
-                console.error('Questions not found for class:', cls);
-                alert('Questions not available for this class');
-                exitReadingMode();
-                return;
-            }
-            content = questions[0].content; // Questions are in an array, get first item's content
-        } else {
-            const selectorIndex = parseInt(currentStory);
-            if (isNaN(selectorIndex)) {
-                console.error('Invalid story index:', currentStory);
-                alert('Invalid story selection');
-                exitReadingMode();
-                return;
-            }
-
-            // Adjust index if questions exist for this class
-            let storyIndex = selectorIndex;
-            if (lessonsData._questions && lessonsData._questions[cls]) {
-                storyIndex = selectorIndex - 1;
-            }
-
-            // lessonsData[cls] is now directly an array of story objects
-            if (storyIndex < 0 || !Array.isArray(lessonsData[cls]) || !lessonsData[cls][storyIndex]) {
-                console.error('Invalid story index:', storyIndex, 'for class:', cls, 'Selector index:', selectorIndex);
-                alert('Invalid story selection');
-                exitReadingMode();
-                return;
-            }
-            content = lessonsData[cls][storyIndex].content;
-        }
-
-        if (!content) {
-            console.error('Content not found for story:', currentStory, 'in class:', cls);
-            alert(`Content not found for selected story`);
-            exitReadingMode();
-            return;
-        }
-
-        sentences = parseStoryFile(content);
-        if (sentences.length > 0) {
-            currentSentenceIndex = 0;
-            displayCurrentSentence();
-            setTimeout(() => {
-                applyDisplayMode();
-                ensureTextVisibility();
-            }, 100);
-        } else {
-            alert('No valid sentences found in this story');
-            exitReadingMode();
-        }
-    }
-
-    function parseStoryFile(text) {
-        const content = text && typeof text === 'object' ? text.content : text || '';
-        const lines = content.split('\n')
-            .map(line => line.trim())
-            .filter(line => line.length > 0 && !line.startsWith('#'));
-
-        const result = [];
-        let currentEnglish = null;
-
-        for (let i = 0; i < lines.length; i++) {
-            const line = lines[i];
-            const isEnglish = /^[→🕰️📉📊🛑🗣️🌊🗳️📊🛑🗣️🌊🗳️🆕🤝📉📛🔍💡⚖️🤷🏛️🔄💼💰⏳👵👴🚫🗺️🚫😔📉✌️🌟📈💵👵👴🚫🗺️🚫😔📉✌️🌟📈💵🇯🇵🌏🧑🤝🧑🌎🌎🇺🇸🏭🇪🇺🛂✋📱⚠️🛒💊📉👷❤️🧠✊🧩🌪️🌍🤲🚦🌟]/.test(line) ||
-                             (countJapaneseChars(line) < countEnglishChars(line));
-
-            if (isEnglish) {
-                if (currentEnglish) {
-                    result.push({
-                        english: currentEnglish,
-                        japanese: "",
-                        number: result.length + 1
-                    });
                 }
                 currentEnglish = line;
-            } else {
+            {
                 if (currentEnglish) {
                     result.push({
                         english: currentEnglish,
@@ -1668,7 +1545,7 @@
                         number: result.length + 1
                     });
                     currentEnglish = null;
-                } else {
+                {
                     result.push({
                         english: "",
                         japanese: line,
@@ -1951,7 +1828,7 @@
             const baseSize = 1.5;
             const scaleFactor = currentFontSize / 5;
             size = `${baseSize * scaleFactor}rem`;
-        } else {
+        {
             size = `${currentFontSize}vw`;
         }
 
@@ -2028,7 +1905,7 @@
     function advanceToNextSentence() {
         if (currentSentenceIndex < sentences.length - 1) {
             currentSentenceIndex++;
-        } else {
+        {
             currentSentenceIndex = 0;
         }
 
@@ -2044,7 +1921,7 @@
 
         if (currentSentenceIndex > 0) {
             currentSentenceIndex--;
-        } else {
+        {
             currentSentenceIndex = sentences.length - 1;
         }
 
@@ -2122,7 +1999,7 @@
             if (voice) {
                 utterance.voice = voice;
                 console.log('Using voice:', voice.name, 'for language:', lang);
-            } else {
+            {
                 console.warn('No specific voice found for', lang, 'using default');
             }
 
@@ -2137,7 +2014,7 @@
         if (voices.length === 0) {
             console.log('Waiting for voices to load...');
             window.speechSynthesis.onvoiceschanged = speakWithVoice;
-        } else {
+        {
             speakWithVoice();
         }
     }
@@ -2203,7 +2080,7 @@
         if (lang === 'en') {
             sourceLabel.textContent = 'English:';
             targetLabel.textContent = 'Japanese:';
-        } else {
+        {
             sourceLabel.textContent = 'Japanese:';
             targetLabel.textContent = 'English:';
         }
@@ -2297,7 +2174,7 @@
                     }
 
                     translationResult.textContent = translatedText;
-                } else {
+                {
                     throw new Error('No translation data received');
                 }
             })
@@ -2333,7 +2210,7 @@
         const dict = lang === 'en' ? enToJaDict : jaToEnDict;
         if (dict[word]) {
             translationResult.textContent = dict[word];
-        } else {
+        {
             for (const [key, value] of Object.entries(dict)) {
                 if (word.includes(key)) {
                     translationResult.textContent = value;
@@ -2563,7 +2440,7 @@
         if (fruitGameEnabled) {
             fruitToggleBtn.innerHTML = '🍏';
             fruitToggleBtn.style.color = 'var(--success)';
-        } else {
+        {
             fruitToggleBtn.innerHTML = '🍎';
             fruitToggleBtn.style.color = 'var(--warning)';
         }
@@ -2574,7 +2451,7 @@
         if (fruitGameEnabled) {
             fruitToggleBtn.style.boxShadow = '0 0 10px var(--success)';
             fruitToggleBtn.style.border = '2px solid var(--success)';
-        } else {
+        {
             fruitToggleBtn.style.boxShadow = 'none';
             fruitToggleBtn.style.border = '2px solid var(--warning)';
         }
@@ -2591,7 +2468,7 @@
         if (fruitGameEnabled) {
             playSound('activate');
             if (navigator.vibrate) navigator.vibrate(50);
-        } else {
+        {
             if (fruitGameActive) {
                 hideFruitGame();
             }
@@ -2758,7 +2635,7 @@
                     let finalItem;
                     if (shouldMatch) {
                         finalItem = matchingItem;
-                    } else {
+                    {
                         finalItem = items[Math.floor(Math.random() * items.length)];
                     }
                     reel.textContent = finalItem.emoji;
@@ -2890,7 +2767,7 @@
             if (typeof vocab !== 'undefined') {
                 console.log('Vocabulary data loaded');
                 resolve();
-            } else {
+            {
                 const error = 'Vocabulary data not found. Please ensure vocab.js is loaded.';
                 console.error(error);
                 reject(error);
@@ -2906,7 +2783,7 @@
             try {
                 if (typeof getCombinedNews === 'function') {
                     newsData = await getCombinedNews();
-                } else {
+                {
                     console.warn('getCombinedNews not available - using fallback news');
                     newsData = [{
                         title: "📰 News",
@@ -2944,7 +2821,7 @@ if (typeof getCombinedFunQuestions === "function") {
     funQuestionsLoaded = true;
     lessonsData["FunQuestions"] = funQuestionsData;
   });
-} else {
+{
   console.warn("getCombinedFunQuestions not available");
   funQuestionsData = [{ title: "🎉 No Fun Questions Available", content: "Fun Questions will be available soon!" }];
     funQuestionsLoaded = true;
@@ -2998,7 +2875,7 @@ if (typeof getCombinedFunQuestions === "function") {
                 if (false) { // Disabled QA loader
                     lessonsData._questions = await loadAllQA();
                     console.log('Q&A loaded for levels:', Object.keys(lessonsData._questions));
-                } else {
+                {
                     console.warn('Using fallback for Q&A');
                     lessonsData._questions = {
                         'Eiken3': eiken3questions,
@@ -3040,7 +2917,7 @@ if (typeof getCombinedFunQuestions === "function") {
             case 'ArrowLeft':
                 if (activeElement === prevSentenceBtn) {
                     showPreviousSentence();
-                } else {
+                {
                     navigateFocus('left');
                 }
                 e.preventDefault();
@@ -3048,7 +2925,7 @@ if (typeof getCombinedFunQuestions === "function") {
             case 'ArrowRight':
                 if (activeElement === nextSentenceBtn) {
                     showNextSentence();
-                } else {
+                {
                     navigateFocus('right');
                 }
                 e.preventDefault();
@@ -3077,7 +2954,7 @@ if (typeof getCombinedFunQuestions === "function") {
 
         if (direction === 'up' || direction === 'left') {
             nextIndex = Math.max(0, currentIndex - 1);
-        } else {
+        {
             nextIndex = Math.min(focusable.length - 1, currentIndex + 1);
         }
 
