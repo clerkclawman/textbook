@@ -1,242 +1,232 @@
 var storiesTonyJay20260401 = [
   {
-    level: 7,
-    title: "Tony and the Talking Ramen",
-    content: `1. Tony sees a ramen bowl 🍜
-トニーはラーメンのボウルを見ます
-2. The ramen says "Hello!" 🗣️
-ラーメンは「こんにちは！」と言います
-3. Jay eats the ramen 🍜
-ジェイはラーメンを食べます
-4. The ramen is happy 😊
-ラーメンは幸せです
-5. Tony is surprised 😮
-トニーは驚いています
-6. Jay likes the ramen 🍜
-ジェイはラーメンが好きです
-7. The ramen dances 💃
-ラーメンは踊ります
-8. Tony claps his hands 👏
-トニーは手を叩きます
-9. Jay laughs loudly 😂
-ジェイは大きく笑います
-10. The ramen goes home 🏠
-ラーメンは家に帰ります`
+    title: "Grade 7: The Confused Cat",
+    content: `🐱 The cat is very confused today.
+猫は今日とても混乱しています。
+😲 It sees a bird on the TV screen.
+テレビ画面に鳥が見えます。
+🤔 The cat tries to catch the bird.
+猫は鳥を捕まえようとします。
+😿 But the bird is not real.
+でも鳥は本物ではありません。
+😸 The cat falls off the sofa.
+猫はソファから落ちます。
+😹 Now the cat is angry.
+今、猫は怒っています。
+🐾 It runs around the room.
+部屋の中を走り回ります。
+😴 Finally, the cat is tired.
+ついに、猫は疲れました。
+😺 It sleeps on the floor.
+床で寝ています。
+🎉 The cat is happy again.
+猫はまた幸せです。`
   },
   {
-    level: 6,
-    title: "Jay's Magical Sakura Tree",
-    content: `1. Jay is standing under a sakura tree 🌸
-ジェイは桜の木の下に立っています
-2. The tree is blooming now 🌸
-木は今咲いています
-3. Tony is walking nearby 🚶
-トニーは近くを歩いています
-4. The petals are falling down 🍃
-花びらが落ちています
-5. Jay is catching the petals 🤲
-ジェイは花びらをキャッチしています
-6. Tony is watching the tree 👀
-トニーは木を見ています
-7. The tree is talking now 🗣️
-木は今話しています
-8. Jay is listening carefully 👂
-ジェイは注意深く聞いています
-9. Tony is smiling happily 😊
-トニーは幸せに笑っています
-10. They are enjoying the spring 🌷
-彼らは春を楽しんでいます`
+    title: "Grade 6: The Pizza Robot",
+    content: `🤖 The robot loves pizza.
+ロボットはピザが大好きです。
+🍕 It eats pizza every day.
+毎日ピザを食べます。
+😋 The robot is very happy.
+ロボットはとても幸せです。
+🔧 But one day, the robot breaks.
+でもある日、ロボットが壊れます。
+😢 It cannot eat pizza anymore.
+もうピザを食べられません。
+👨‍🔧 A mechanic fixes the robot.
+整備士がロボットを直します。
+🎉 The robot works again!
+ロボットはまた動きます！
+🍕 Now it eats more pizza.
+今、もっとピザを食べます。
+😸 The robot is the happiest!
+ロボットは一番幸せです！`
   },
   {
-    level: 5,
-    title: "Tony's Lost Umbrella",
-    content: `1. Tony looks for his umbrella ☔
-トニーは傘を探しています
-2. He cannot find it anywhere 🤷
-彼はどこにも見つけられません
-3. Jay walks to the park 🚶
-ジェイは公園へ歩きます
-4. Jay sees a blue umbrella ☔
-ジェイは青い傘を見ます
-5. The umbrella is very big 📏
-傘はとても大きいです
-6. Tony comes to the park 🏃
-トニーは公園に来ます
-7. He is very happy now 😊
-彼は今とても幸せです
-8. Jay gives the umbrella back 🤝
-ジェイは傘を返します
-9. They walk home together 🚶
-彼らは一緒に家へ歩きます
-10. The rain stops now 🌤️
-雨は今止みます`
+    title: "Grade 5: The Dog with Sunglasses",
+    content: `🐶 The dog wears sunglasses.
+犬はサングラスをかけています。
+😎 It looks very cool.
+とてもクールに見えます。
+🌞 The dog walks in the park.
+公園を歩きます。
+👀 Everyone looks at the dog.
+みんなが犬を見ています。
+😂 The dog is very proud.
+犬はとても誇りに思っています。
+🎾 It plays with a ball.
+ボールで遊びます。
+🏃‍♂️ The dog runs very fast.
+犬はとても速く走ります。
+💦 It is tired but happy.
+疲れていますが幸せです。
+🏠 The dog goes home.
+家に帰ります。
+😴 It sleeps with sunglasses.
+サングラスをかけたまま寝ます。`
   },
   {
-    level: 4,
-    title: "The Great Dango Heist",
-    content: `1. Tony wanted three dango 🍡
-トニーは団子を3つ欲しがりました
-2. Jay ate all the dango 😋
-ジェイは団子をすべて食べました
-3. Tony was very angry 😠
-トニーはとても怒っていました
-4. Jay said "Sorry!" 🙏
-ジェイは「ごめん！」と言いました
-5. Tony will buy more dango 🍡
-トニーはもっと団子を買うでしょう
-6. They went to the shop 🏪
-彼らは店へ行きました
-7. The shop was closed 😢
-店は閉まっていました
-8. Jay felt very bad 😔
-ジェイはとても悲しく感じました
-9. Tony will forgive him soon 👍
-トニーはすぐに彼を許すでしょう
-10. They will eat dango tomorrow 🍡
-彼らは明日団子を食べるでしょう`
+    title: "Grade 4: The Hamster's Big Adventure",
+    content: `🐹 The hamster wants to explore.
+ハムスターは探検したいです。
+🏠 It escapes from its cage.
+ケージから逃げます。
+🌿 It runs in the garden.
+庭を走ります。
+🌸 The hamster sees flowers.
+花を見ます。
+🦋 A butterfly flies by.
+蝶が飛んできます。
+🐾 The hamster chases the butterfly.
+蝶を追いかけます。
+😰 But it gets lost.
+でも迷子になります。
+😢 The hamster is scared.
+怖がっています。
+👨‍👩‍👧 A child finds the hamster.
+子供がハムスターを見つけます。
+🏠 The hamster goes home safely.
+安全に家に帰ります。`
   },
   {
-    level: 3,
-    title: "The Mystery of Dotonbori",
-    content: `1. Tony has never been to Dotonbori 🤔
-トニーは道頓堀に行ったことがありません
-2. Jay has visited it many times 🎉
-ジェイはそれを何度も訪れています
-3. If Tony goes there, he will love it ❤️
-トニーがそこに行けば、彼は大好きになるでしょう
-4. The neon lights are very bright 💡
-ネオンライトはとても明るいです
-5. Jay has seen the Glico sign 🏃
-ジェイはグリコの看板を見ています
-6. Tony wants to try takoyaki 🐙
-トニーはたこ焼きを試したいと思っています
-7. The street has been busy today 🚶
-通りは今日混雑しています
-8. If it rains, they will go inside 🏠
-雨が降れば、彼らは中に入るでしょう
-9. Jay has eaten takoyaki before 🍴
-ジェイは以前たこ焼きを食べました
-10. Tony is excited about the trip 🎊
-トニーは旅行について興奮しています`
+    title: "Grade 3: The Parrot Who Loves Karaoke",
+    content: `🦜 The parrot loves singing.
+オウムは歌うのが大好きです。
+🎤 It sings karaoke every night.
+毎晩カラオケを歌います。
+🎶 The parrot has a beautiful voice.
+美しい声を持っています。
+👏 Everyone claps for the parrot.
+みんなが拍手します。
+😸 The parrot is very proud.
+とても誇りに思っています。
+🎵 It sings louder and louder.
+もっと大きな声で歌います。
+😰 But the neighbors are angry.
+でも近所の人は怒っています。
+🔇 They tell the parrot to stop.
+歌うのをやめるように言います。
+😢 The parrot is sad.
+悲しいです。
+🤫 Now it sings quietly.
+今は静かに歌います。`
   },
   {
-    level: "Pre-2",
-    title: "While Tony Was Sleeping",
-    content: `1. While Tony was sleeping, Jay ate his lunch 🍱
-トニーが寝ている間に、ジェイは彼の昼食を食べました
-2. Tony was dreaming about pizza 🍕
-トニーはピザについて夢を見ていました
-3. Although Jay was full, he took another bite 😋
-ジェイは満腹でしたが、もう一口取りました
-4. The food was being prepared for Tony 👨‍🍳
-食べ物はトニーのために作られていました
-5. While Jay was eating, Tony woke up 😮
-ジェイが食べている間に、トニーは目覚めました
-6. Tony was very surprised to see the empty plate 🍽️
-空の皿を見て、トニーはとても驚きました
-7. Jay said that he was hungry 🗣️
-ジェイは空腹だと言いました
-8. Although Tony was angry, he laughed 😂
-トニーは怒っていましたが、笑いました
-9. The restaurant has been closed since noon 🕛
-レストランは正午から閉まっています
-10. They should go to another restaurant soon 🏪
-彼らはすぐに別のレストランに行くべきです`
+    title: "Pre-2: The Turtle Who Wanted to Fly",
+    content: `🐢 The turtle watches birds fly.
+カメは鳥が飛ぶのを見ています。
+🌤️ It wishes it could fly too.
+自分も飛べたらいいなと思っています。
+🪂 The turtle makes a parachute.
+パラシュートを作ります。
+🌳 It climbs a tall tree.
+高い木に登ります。
+😰 The turtle is very scared.
+とても怖がっています。
+🪂 It jumps from the tree!
+木から飛び降ります！
+🌬️ The wind blows the turtle.
+風がカメを吹きます。
+😲 The turtle flies for a moment!
+一瞬、飛びます！
+💥 But it falls into a pond.
+でも池に落ちます。
+🐸 The turtle is happy to be alive.
+生きていて幸せです。`
   },
   {
-    level: "Pre-2+",
-    title: "The Bridge That Had Fallen",
-    content: `1. Tony had walked across the bridge many times 🌉
-トニーはその橋を何度も渡っていました
-2. Jay had heard that it was dangerous ⚠️
-ジェイはそれが危険だと聞いていました
-3. If they had known, they would have taken another route 🛣️
-彼らが知っていたなら、別のルートを取ったでしょう
-4. The bridge had been closed for repairs 🔧
-橋は修理のために閉鎖されていました
-5. A company that built the bridge was famous 🏗️
-橋を建設した会社は有名でした
-6. Tony had not seen the warning sign 🚧
-トニーは警告標識を見ていませんでした
-7. It would be better if they waited 🕐
-彼らが待った方が良いでしょう
-8. The water that flows under the bridge is clean 🌊
-橋の下を流れる水はきれいです
-9. Jay had checked the map before leaving 🗺️
-ジェイは出発前に地図を確認していました
-10. They could find another way around 🚶
-彼らは別の道を見つけることができました`
+    title: "Pre-2 Plus: The Squirrel Who Forgot Where It Hid Nuts",
+    content: `🐿️ The squirrel collects nuts.
+リスは木の実を集めます。
+🌰 It hides them in many places.
+いろいろな場所に隠します。
+🌳 Under the tree, in the grass, and in the hole.
+木の下、草の中、穴の中に。
+😴 The squirrel sleeps all winter.
+冬の間ずっと寝ます。
+🌸 Spring comes, and the squirrel wakes up.
+春が来て、リスは目覚めます。
+😰 It is very hungry.
+とてもお腹が空いています。
+🌰 The squirrel looks for its nuts.
+木の実を探します。
+🤔 But it cannot remember where they are!
+でもどこに隠したか思い出せません！
+😢 The squirrel is sad.
+悲しいです。
+🌱 But it finds new nuts in the spring.
+でも春に新しい木の実を見つけます。`
   },
   {
-    level: 2,
-    title: "The Debate About Coffee",
-    content: `1. Tony argued that coffee was better than tea ☕
-トニーはコーヒーがお茶よりも優れていると主張しました
-2. Jay claimed that tea was healthier for people 🍵
-ジェイはお茶が人々にとってより健康的だと主張しました
-3. If Tony were rich, he would buy expensive coffee beans 💰
-トニーがお金持ちなら、高価なコーヒー豆を買うでしょう
-4. The research has been controlled by coffee companies 📊
-研究はコーヒー会社によって管理されています
-5. An organization that supports tea farmers is important 🌱
-お茶農家を支援する組織は重要です
-6. Tony would have been happy if he had won the debate 🏆
-トニーは議論に勝っていれば幸せだっただろう
-7. The policy that promotes coffee has been criticized ⚠️
-コーヒーを推進する政策は批判されています
-8. Jay explained that tea had been popular for centuries 📜
-ジェイはお茶が何世紀もの間人気だったと説明しました
-9. The way that people drink coffee has changed 🔄
-人々がコーヒーを飲む方法は変わりました
-10. Both drinks could be enjoyed in different situations 🎉
-両方の飲み物は異なる状況で楽しむことができました`
+    title: "Grade 2: The Owl Who Was Afraid of the Dark",
+    content: `🦉 The owl is afraid of the dark.
+フクロウは暗闇が怖いです。
+🌙 But owls are supposed to be nocturnal!
+でもフクロウは夜行性のはずです！
+😰 The owl hides in its nest during the night.
+夜は巣に隠れています。
+🌞 It only comes out during the day.
+昼間だけ出てきます。
+🐿️ Other animals make fun of the owl.
+他の動物はフクロウを笑います。
+😢 The owl is very sad.
+とても悲しいです。
+🦉 One night, the owl sees a beautiful starry sky.
+ある夜、美しい星空を見ます。
+✨ It is amazed!
+感動します！
+🌙 The owl realizes the dark is beautiful.
+暗闇は美しいと気づきます。
+🦉 Now the owl loves the night!
+今、夜が大好きです！`
   },
   {
-    level: "Pre-1",
-    title: "The Question of Why",
-    content: `1. The question of why Tony loves Osaka remains unanswered 🤔
-トニーが大阪を愛する理由の問題は答えられていません
-2. Nevertheless, Jay has many theories about it 📚
-それにもかかわらず、ジェイにはそれについての多くの理論があります
-3. The fact that Tony moved here in 2020 is significant 📅
-トニーが2020年にここに移ったことは重要です
-4. How the city has changed since then is remarkable 🏙️
-それ以来都市がどのように変わったかは驚くべきことです
-5. Not only did Tony learn Japanese, but he also adopted the culture 🇯🇵
-トニーは日本語を学んだだけでなく、文化も受け入れました
-6. The reason why Jay stays is the community 👥
-ジェイが留まる理由はコミュニティです
-7. Whether they will leave Osaka is uncertain 🤷
-彼らが大阪を去るかどうかは不確かです
-8. Critics have concerns about the rapid development 🏗️
-評論家は急速な開発について懸念を持っています
-9. The perspective of the locals matters greatly 🗣️
-地元の人々の視点は非常に重要です
-10. What differentiates Osaka from other cities is its spirit 💪
-大阪を他の都市と区別するのはその精神です`
+    title: "Pre-1: The Cat Who Thought It Was a Dog",
+    content: `🐱 The cat grew up with dogs.
+猫は犬と一緒に育ちました。
+🐕 It learned to bark like a dog.
+犬のように吠えることを学びました。
+🦴 It loves to play fetch.
+ボール遊びが大好きです。
+🐾 The cat wags its tail when happy.
+幸せな時、尻尾を振ります。
+😸 Other cats are confused.
+他の猫は混乱しています。
+🤔 "Why does this cat bark?" they ask.
+「なぜこの猫は吠えるの？」と聞きます。
+😂 The cat doesn't understand.
+猫は理解していません。
+🐕 It thinks it is a dog!
+自分は犬だと思っています！
+🏠 One day, the cat sees a mirror.
+ある日、鏡を見ます。
+😲 "I am a cat!" it realizes.
+「私は猫だ！」と気づきます。
+😸 Now the cat is happy to be itself.
+今、自分自身で幸せです。`
   },
   {
-    level: 1,
-    title: "The Subjunctive Mystery",
-    content: `1. Had it not been for the sakura, Tony would not have come to Japan 🌸
-桜がなければ、トニーは日本に来なかったでしょう
-2. The mechanism by which flowers bloom is fascinating 🌺
-花が咲くメカニズムは魅力的です
-3. It is essential that the data be accurate 📊
-データが正確であることは不可欠です
-4. Not only did the cherry blossoms attract tourists, but they also inspired artists 🎨
-桜は観光客を惹きつけるだけでなく、芸術家も刺激しました
-5. The interpretation of the neural networks suggests that beauty is universal 🧠
-ニューラルネットワークの解釈は、美しさが普遍的であることを示唆しています
-6. Recommend that the policy be changed to protect the environment 🌍
-環境を保護するために政策の変更を推奨します
-7. The fact that resilience and adaptation are key to survival is evident 🌱
-回復力と適応が生存の鍵であることは明らかです
-8. What differentiates this moment from previous years is the global perspective 🌏
-この瞬間を以前の年と区別するのは世界的な視点です
-9. Neither Tony nor Jay had anticipated the sudden change in weather 🌦️
-トニーもジェイも天候の急激な変化を予期していませんでした
-10. Developments in the field of botany have been impressive 🌿
-植物学の分野での発展は印象的です`
-  }
+    title: "Grade 1: The Philosophical Goldfish",
+    content: `🐠 The goldfish lives in a small bowl.
+金魚は小さなボウルに住んでいます。
+🤔 It thinks about the meaning of life.
+人生の意味について考えています。
+🌊 "Is this all there is?" it wonders.
+「これだけなの？」と疑問に思います。
+🐠 The goldfish watches the world go by.
+世界が過ぎ去るのを見ています。
+👨‍👩‍👧 People feed it every day.
+毎日餌をくれます。
+😊 The goldfish is grateful.
+感謝しています。
+🌊 But it dreams of the ocean.
+でも海を夢見ています。
+🌊 "What lies beyond the glass?" it asks.
+「ガラスの向こうには何があるの？」と聞きます。
+🤔 The goldfish ponders existence.
+存在について考えます。
+🐠 It finds peace in its small world.
+小さな世界に平和を見つけます。`
+  },
 ];

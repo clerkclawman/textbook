@@ -1,60 +1,232 @@
-// Tony & Jay Stories for April 2, 2026
-// Generated as a flat array for direct loading (no complex loader needed)
 var storiesTonyJay20260402 = [
   {
-    title: "Level 1: The Lost Kitten",
-    content: "A little girl finds a tiny kitten in the park. It is cold and hungry. She takes it home and gives it milk. The kitten purrs loudly. They become best friends forever.",
-    level: "1"
+    title: "Grade 7: The Confused Cat",
+    content: `🐱 The cat is very confused today.
+猫は今日とても混乱しています。
+😲 It sees a bird on the TV screen.
+テレビ画面に鳥が見えます。
+🤔 The cat tries to catch the bird.
+猫は鳥を捕まえようとします。
+😿 But the bird is not real.
+でも鳥は本物ではありません。
+😸 The cat falls off the sofa.
+猫はソファから落ちます。
+😹 Now the cat is angry.
+今、猫は怒っています。
+🐾 It runs around the room.
+部屋の中を走り回ります。
+😴 Finally, the cat is tired.
+ついに、猫は疲れました。
+😺 It sleeps on the floor.
+床で寝ています。
+🎉 The cat is happy again.
+猫はまた幸せです。`
   },
   {
-    title: "Level 2: The Big Race",
-    "content": "Tom and Jerry decide to have a race. Tom runs fast, but Jerry stops to watch a butterfly. Tom wins the race, but he helps Jerry up at the end. They laugh and run together.",
-    level: "2"
+    title: "Grade 6: The Pizza Robot",
+    content: `🤖 The robot loves pizza.
+ロボットはピザが大好きです。
+🍕 It eats pizza every day.
+毎日ピザを食べます。
+😋 The robot is very happy.
+ロボットはとても幸せです。
+🔧 But one day, the robot breaks.
+でもある日、ロボットが壊れます。
+😢 It cannot eat pizza anymore.
+もうピザを食べられません。
+👨‍🔧 A mechanic fixes the robot.
+整備士がロボットを直します。
+🎉 The robot works again!
+ロボットはまた動きます！
+🍕 Now it eats more pizza.
+今、もっとピザを食べます。
+😸 The robot is the happiest!
+ロボットは一番幸せです！`
   },
   {
-    title: "Level 3: The Secret Garden",
-    "content": "Alice finds a hidden door in her grandmother's house. Behind it is a beautiful garden with flowers of all colors. She decides to plant more seeds and make it even bigger.",
-    level: "3"
+    title: "Grade 5: The Dog with Sunglasses",
+    content: `🐶 The dog wears sunglasses.
+犬はサングラスをかけています。
+😎 It looks very cool.
+とてもクールに見えます。
+🌞 The dog walks in the park.
+公園を歩きます。
+👀 Everyone looks at the dog.
+みんなが犬を見ています。
+😂 The dog is very proud.
+犬はとても誇りに思っています。
+🎾 It plays with a ball.
+ボールで遊びます。
+🏃‍♂️ The dog runs very fast.
+犬はとても速く走ります。
+💦 It is tired but happy.
+疲れていますが幸せです。
+🏠 The dog goes home.
+家に帰ります。
+😴 It sleeps with sunglasses.
+サングラスをかけたまま寝ます。`
   },
   {
-    title: "Level 4: The Rainy Day",
-    "content": "It is raining outside. Ben cannot go to the park. He decides to build a fort in the living room with blankets and pillows. His dog joins him, and they have a picnic inside.",
-    level: "4"
+    title: "Grade 4: The Hamster's Big Adventure",
+    content: `🐹 The hamster wants to explore.
+ハムスターは探検したいです。
+🏠 It escapes from its cage.
+ケージから逃げます。
+🌿 It runs in the garden.
+庭を走ります。
+🌸 The hamster sees flowers.
+花を見ます。
+🦋 A butterfly flies by.
+蝶が飛んできます。
+🐾 The hamster chases the butterfly.
+蝶を追いかけます。
+😰 But it gets lost.
+でも迷子になります。
+😢 The hamster is scared.
+怖がっています。
+👨‍👩‍👧 A child finds the hamster.
+子供がハムスターを見つけます。
+🏠 The hamster goes home safely.
+安全に家に帰ります。`
   },
   {
-    title: "Level 5: The Magic Paintbrush",
-    "content": "Lily finds a paintbrush that makes her drawings come to life. She draws a bird, and it flies out of the paper. She draws a cake, and it appears on the table. She has so much fun!",
-    level: "5"
+    title: "Grade 3: The Parrot Who Loves Karaoke",
+    content: `🦜 The parrot loves singing.
+オウムは歌うのが大好きです。
+🎤 It sings karaoke every night.
+毎晩カラオケを歌います。
+🎶 The parrot has a beautiful voice.
+美しい声を持っています。
+👏 Everyone claps for the parrot.
+みんなが拍手します。
+😸 The parrot is very proud.
+とても誇りに思っています。
+🎵 It sings louder and louder.
+もっと大きな声で歌います。
+😰 But the neighbors are angry.
+でも近所の人は怒っています。
+🔇 They tell the parrot to stop.
+歌うのをやめるように言います。
+😢 The parrot is sad.
+悲しいです。
+🤫 Now it sings quietly.
+今は静かに歌います。`
   },
   {
-    title: "Level 6: The Old Lighthouse",
-    "content": "The children explore an old lighthouse on the beach. Inside, they find a diary from 100 years ago. It tells the story of a ship that was saved by the light. They decide to clean the lighthouse.",
-    level: "6"
+    title: "Pre-2: The Turtle Who Wanted to Fly",
+    content: `🐢 The turtle watches birds fly.
+カメは鳥が飛ぶのを見ています。
+🌤️ It wishes it could fly too.
+自分も飛べたらいいなと思っています。
+🪂 The turtle makes a parachute.
+パラシュートを作ります。
+🌳 It climbs a tall tree.
+高い木に登ります。
+😰 The turtle is very scared.
+とても怖がっています。
+🪂 It jumps from the tree!
+木から飛び降ります！
+🌬️ The wind blows the turtle.
+風がカメを吹きます。
+😲 The turtle flies for a moment!
+一瞬、飛びます！
+💥 But it falls into a pond.
+でも池に落ちます。
+🐸 The turtle is happy to be alive.
+生きていて幸せです。`
   },
   {
-    title: "Level 7: The Space Adventure",
-    "content": "Max builds a cardboard rocket ship. He pretends to fly to Mars. He meets aliens who are friendly and share their space candy. He returns home just in time for dinner.",
-    level: "7"
+    title: "Pre-2 Plus: The Squirrel Who Forgot Where It Hid Nuts",
+    content: `🐿️ The squirrel collects nuts.
+リスは木の実を集めます。
+🌰 It hides them in many places.
+いろいろな場所に隠します。
+🌳 Under the tree, in the grass, and in the hole.
+木の下、草の中、穴の中に。
+😴 The squirrel sleeps all winter.
+冬の間ずっと寝ます。
+🌸 Spring comes, and the squirrel wakes up.
+春が来て、リスは目覚めます。
+😰 It is very hungry.
+とてもお腹が空いています。
+🌰 The squirrel looks for its nuts.
+木の実を探します。
+🤔 But it cannot remember where they are!
+でもどこに隠したか思い出せません！
+😢 The squirrel is sad.
+悲しいです。
+🌱 But it finds new nuts in the spring.
+でも春に新しい木の実を見つけます。`
   },
   {
-    title: "Level 8: The Mystery Box",
-    "content": "A mysterious box appears on the porch. No one knows who sent it. Inside, there is a map to a treasure in the backyard. They dig and find a box of old coins and a note: 'For the curious ones.'",
-    level: "8"
+    title: "Grade 2: The Owl Who Was Afraid of the Dark",
+    content: `🦉 The owl is afraid of the dark.
+フクロウは暗闇が怖いです。
+🌙 But owls are supposed to be nocturnal!
+でもフクロウは夜行性のはずです！
+😰 The owl hides in its nest during the night.
+夜は巣に隠れています。
+🌞 It only comes out during the day.
+昼間だけ出てきます。
+🐿️ Other animals make fun of the owl.
+他の動物はフクロウを笑います。
+😢 The owl is very sad.
+とても悲しいです。
+🦉 One night, the owl sees a beautiful starry sky.
+ある夜、美しい星空を見ます。
+✨ It is amazed!
+感動します！
+🌙 The owl realizes the dark is beautiful.
+暗闇は美しいと気づきます。
+🦉 Now the owl loves the night!
+今、夜が大好きです！`
   },
   {
-    title: "Level 9: The Winter Festival",
-    "content": "The town holds a winter festival. There is ice skating, hot chocolate, and a giant snowman contest. Sarah builds a snowman that looks like her dog. Everyone votes for it, and she wins first place.",
-    level: "9"
+    title: "Pre-1: The Cat Who Thought It Was a Dog",
+    content: `🐱 The cat grew up with dogs.
+猫は犬と一緒に育ちました。
+🐕 It learned to bark like a dog.
+犬のように吠えることを学びました。
+🦴 It loves to play fetch.
+ボール遊びが大好きです。
+🐾 The cat wags its tail when happy.
+幸せな時、尻尾を振ります。
+😸 Other cats are confused.
+他の猫は混乱しています。
+🤔 "Why does this cat bark?" they ask.
+「なぜこの猫は吠えるの？」と聞きます。
+😂 The cat doesn't understand.
+猫は理解していません。
+🐕 It thinks it is a dog!
+自分は犬だと思っています！
+🏠 One day, the cat sees a mirror.
+ある日、鏡を見ます。
+😲 "I am a cat!" it realizes.
+「私は猫だ！」と気づきます。
+😸 Now the cat is happy to be itself.
+今、自分自身で幸せです。`
   },
   {
-    title: "Level 10: The Time Traveler",
-    "content": "A boy finds a watch that lets him travel one hour into the past. He uses it to fix a mistake he made at school. He learns that it is better to be honest and face the consequences.",
-    level: "10"
-  }
+    title: "Grade 1: The Philosophical Goldfish",
+    content: `🐠 The goldfish lives in a small bowl.
+金魚は小さなボウルに住んでいます。
+🤔 It thinks about the meaning of life.
+人生の意味について考えています。
+🌊 "Is this all there is?" it wonders.
+「これだけなの？」と疑問に思います。
+🐠 The goldfish watches the world go by.
+世界が過ぎ去るのを見ています。
+👨‍👩‍👧 People feed it every day.
+毎日餌をくれます。
+😊 The goldfish is grateful.
+感謝しています。
+🌊 But it dreams of the ocean.
+でも海を夢見ています。
+🌊 "What lies beyond the glass?" it asks.
+「ガラスの向こうには何があるの？」と聞きます。
+🤔 The goldfish ponders existence.
+存在について考えます。
+🐠 It finds peace in its small world.
+小さな世界に平和を見つけます。`
+  },
 ];
-
-// Export for the main app
-if (typeof lessonsData !== 'undefined') {
-  lessonsData.TonyJayStories = storiesTonyJay20260402;
-  console.log('Tony & Jay stories loaded successfully:', storiesTonyJay20260402.length, 'stories');
-}
