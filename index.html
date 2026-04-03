@@ -1466,11 +1466,14 @@
             return;
         }
 
-        if (!Array.isArray(classData)) {
-            console.error('lessonsData[' + cls + '] is not an array!', classData);
-            storySelector.innerHTML = '<option value="">Error: data format incorrect</option>';
-            return;
-        }
+    // Handle object-based data (TonyJayStories by level, ClozeQuiz by date)
+    let flatStories = Array.isArray(classData) ? classData : [];
+    if (!Array.isArray(classData) && classData && typeof classData === 'object') {
+      Object.entries(classData).forEach(([k, v]) => {
+        if (Array.isArray(v)) v.forEach(s => { if (s && s.title) { s._groupKey = k; flatStories.push(s); } });
+      });
+    }
+    const classData = flatStories;
 
         let optionIndex = 0;
 
