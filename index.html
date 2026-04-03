@@ -1227,11 +1227,6 @@
 
     <!-- Load external scripts -->
 <script src='adult.js'></script>
-<script src='news-loader.js'></script>
-<script src='fun-questions-loader.js'></script>
-<script src='tony-jay-loader.js'></script>
- <script src='quiz-loader.js'></script>
-<!-- Static news loaded dynamically via news-loader.js -->
 <!-- <script src='news-2026-03-04.js'></script> -->
 <script src='vocab.js'></script>
 <script src='x.js'></script>
@@ -1289,6 +1284,20 @@
     const maxFontSize = 8;
     let displayMode = 'both';
     let lessonsData = {};
+  // Dynamically load content loaders AFTER lessonsData is initialized
+  setTimeout(() => {
+    const loaders = [
+      'news-loader.js',
+      'fun-questions-loader.js',
+      'tony-jay-loader.js',
+      'quiz-loader.js'
+    ];
+    loaders.forEach(src => {
+      const script = document.createElement('script');
+      script.src = src;
+      document.body.appendChild(script);
+    });
+  }, 100);
     let selectedText = '';
     let translationLang = '';
     // Cloze Quiz specific variables
