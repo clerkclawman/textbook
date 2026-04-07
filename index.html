@@ -1100,7 +1100,7 @@
     }
 </style>
 
-</head>
+<meta name="cache-buster" content="202604071300"></head>
 <body>
     <button class='night-mode-toggle' id='nightModeToggle'>🌙</button>
 
@@ -1454,7 +1454,7 @@
             return;
         }
 
-        const classData = lessonsData[cls];
+        let classData = lessonsData[cls];
         console.log('classData:', classData);
         console.log('classData type:', typeof classData);
         console.log('classData is array?', Array.isArray(classData));
@@ -1473,7 +1473,7 @@
         if (Array.isArray(v)) v.forEach(s => { if (s && s.title) { s._groupKey = k; flatStories.push(s); } });
       });
     }
-    const classData = flatStories;
+    classData = flatStories;
 
         let optionIndex = 0;
 
