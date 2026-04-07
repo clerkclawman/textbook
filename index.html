@@ -1285,7 +1285,15 @@ let classData = {};
     const maxFontSize = 8;
     let displayMode = 'both';
     window.lessonsData = {};
-      script.src = src;
+  setTimeout(() => {
+    const loaders = [
+      'qa-loader.js', 'news-loader.js',
+      'fun-questions-loader.js',
+      'tony-jay-loader.js',
+      'quiz-loader.js'
+    ];
+    loaders.forEach(src => {
+      const script = document.createElement('script');
       document.body.appendChild(script);
     });
   }, 100);
