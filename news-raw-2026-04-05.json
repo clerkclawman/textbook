@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-05",
+  "sources": {
+    "bbc_world": [
+      "Iran and US trade threats to unleash 'hell' as search continues for missing US airman",
+      "Fugitive mafia boss wanted for murder arrested in Amalfi Coast luxury villa",
+      "Trump seeks $152m to reopen notorious Alcatraz prison",
+      "UN watchdog voices 'deep concern' as Iran reports new attacks on nuclear plant",
+      "US says it has arrested relatives of late Iranian general Qasem Soleimani",
+      "Russian attack on Ukraine market kills five",
+      "Artemis II crew now halfway to Moon as they take 'spectacular' image of Earth",
+      "World's oldest leader to get a deputy for first time in 43-year rule",
+      "Australians told to continue Easter travel plans despite fuel shortages",
+      "Senegal bans ministers from foreign travel as oil price rise bites"
+    ],
+    "bbc_uk": [
+      "Fourth suspect arrested over Jewish charity ambulance arson attack",
+      "Storm Dave to 'deepen' as amber wind warning sets in for parts of UK",
+      "Two arrested after boy killed and two hurt in crash",
+      "World's only full-scale Jaws boat replica to open",
+      "Met officers taken off duty for misplacing weapons",
+      "Teachers' union warns of 'masculinity crisis brewing' in schools",
+      "State pension age starts rising to 67",
+      "Man completes record-breaking mountain challenge after climbing 742 times in one year",
+      "Nine officers and child injured in disorder before football match",
+      "Homes without water for third day after burst pipe"
+    ],
+    "bbc_asia": [],
+    "nhk": [
+      "Today’s Top Japan and World News | NHK WORLD-JAPAN News"
+    ],
+    "cnn_world": [
+      "War with Iran: Trump renews threats over Strait of Hormuz, US searches for F-15 crew member",
+      "Russia again claims to have taken an eastern Ukrainian region",
+      "UK police arrest fourth suspect at court over attack on Jewish ambulances",
+      "Retired matador killed by bull ahead of bullfight in southern Spain",
+      "Iran’s ‘new’ regime looks much the same, only harsher",
+      "Islamic State-linked rebels kill at least 43 in attack in eastern Congo",
+      "French president hits back after Trump mocks how his wife treats him",
+      "As arms agreements fray, China secretly expands its nuclear weapons infrastructure",
+      "Machete-wielding man attacks Ugandan nursery school, killing 4 children",
+      "Russian military transport plane crashes in Crimea, killing 29"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
-var quiz20260404 = [
+var quiz20260405 = [
   {
-    title: "Cloze Quiz - 2026-04-04",
+    title: "Cloze Quiz - 2026-04-05",
     questions: [
   {
     "question": "The cat ___ on the mat.",

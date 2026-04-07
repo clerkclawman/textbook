@@ -1,0 +1,223 @@
+{
+  "fetchedAt": "2026-04-05T21:01:00Z",
+  "date": "2026-04-06",
+  "sources": {
+    "bbc_world": {
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "fetchedAt": "2026-04-05T21:01:32Z",
+      "articles": [
+        {
+          "title": "How rescue of US airman in remote part of Iran unfolded",
+          "description": "The operation to extract him from the ground in hostile territory was hugely complex and involved multiple US government agencies.",
+          "link": "https://www.bbc.com/news/articles/cx2vpz1kwreo",
+          "pubDate": "Sun, 05 Apr 2026 20:00:20 GMT"
+        },
+        {
+          "title": "Analysis: Trump declares victory in Iran war after rescue, but threats to US operation still loom",
+          "description": "The rescue could impact how Trump views a ground operation to take Kharg Island or to seize enriched uranium sites.",
+          "link": "https://www.bbc.com/news/articles/cy01vg7x5ppo",
+          "pubDate": "Sun, 05 Apr 2026 20:02:01 GMT"
+        },
+        {
+          "title": "Hungary alleges plot to blow up gas pipeline ahead of election",
+          "description": "The incident comes a week before the polls, and follow warnings of a potential operations staged to influence voters.",
+          "link": "https://www.bbc.com/news/articles/cj60x206dx1o",
+          "pubDate": "Sun, 05 Apr 2026 19:17:42 GMT"
+        },
+        {
+          "title": "Pope Leo calls for global leaders to choose peace in his first Easter Mass",
+          "description": "Pope Leo XIV addressed thousands of worshippers gathered in St Peter's Square on Easter Sunday in his first address as pontiff.",
+          "link": "https://www.bbc.com/news/articles/crk1zgjj7y1o",
+          "pubDate": "Sun, 05 Apr 2026 12:35:36 GMT"
+        },
+        {
+          "title": "Cambodia unveils statue to honour famous landmine-sniffing rat",
+          "description": "The statue honours the late African giant pouched rat who sniffed out more than 100 landmines during his lifetime.",
+          "link": "https://www.bbc.com/news/articles/c0rx7xzd10xo",
+          "pubDate": "Sun, 05 Apr 2026 01:09:11 GMT"
+        },
+        {
+          "title": "Artemis's stunning Moon pictures - science or holiday photos?",
+          "description": "The story behind the beautiful pictures beamed back to Earth from the Artemis II astronauts.",
+          "link": "https://www.bbc.com/news/articles/clye6j0g840o",
+          "pubDate": "Sun, 05 Apr 2026 15:03:19 GMT"
+        },
+        {
+          "title": "AI videos fuel rhetoric as Orbán bids for four more years in Hungary",
+          "description": "Videos have targeted Viktor Orbán's election rival, who could unseat him after 16 years in office.",
+          "link": "https://www.bbc.com/news/articles/c5yj97yd6v5o",
+          "pubDate": "Sat, 04 Apr 2026 23:15:48 GMT"
+        },
+        {
+          "title": "Man charged over fatal shooting of baby in pram in New York",
+          "description": "Two men have been arrested over the shooting of a seven-month-old baby in Williamsburg.",
+          "link": "https://www.bbc.com/news/articles/cx267dnex7ko",
+          "pubDate": "Sat, 04 Apr 2026 23:28:09 GMT"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+      "fetchedAt": "2026-04-05T21:01:34Z",
+      "articles": [
+        {
+          "title": "Unanswered questions remain after Australia's most wanted fugitive killed in standoff",
+          "description": "Double-murderer Dezi Freeman evaded capture for seven months in the bush but police believe he had help.",
+          "link": "https://www.bbc.com/news/articles/cg7358zzz0no",
+          "pubDate": "Fri, 03 Apr 2026 19:19:02 GMT"
+        },
+        {
+          "title": "How Bombay went from a fort city to a bustling metropolis",
+          "description": "A new exhibition charts Bombay's passage through the centuries via paintings, photographs and prints.",
+          "link": "https://www.bbc.com/news/articles/cj60k3x879ro",
+          "pubDate": "Sat, 04 Apr 2026 00:09:54 GMT"
+        },
+        {
+          "title": "Myanmar's coup leader who set off a brutal civil war becomes president",
+          "description": "General Min Aung Hlaing has been chosen as the next president by the newly-elected parliament.",
+          "link": "https://www.bbc.com/news/articles/c1782nk0018o",
+          "pubDate": "Fri, 03 Apr 2026 06:49:37 GMT"
+        },
+        {
+          "title": "Fears cost of water and beer to soar as India's scorching summer hits",
+          "description": "Makers of plastic and glass bottles are struggling to access raw materials as the war squeezes supplies.",
+          "link": "https://www.bbc.com/news/articles/c5ywqky5dd7o",
+          "pubDate": "Thu, 02 Apr 2026 23:16:37 GMT"
+        },
+        {
+          "title": "Iconic 19th Century painting sets Indian art record with $17.9m sale",
+          "description": "Yashoda and Krishna, painted by Raja Ravi Varma, beat a record set by an MF Husain work last year.",
+          "link": "https://www.bbc.com/news/articles/cje4l98wjzwo",
+          "pubDate": "Thu, 02 Apr 2026 12:30:04 GMT"
+        },
+        {
+          "title": "Magnitude 7.4 earthquake hits off Indonesia, killing one",
+          "description": "The quake struck between the islands of Manado and Ternate. Tsunami warnings have now been lifted.",
+          "link": "https://www.bbc.com/news/articles/cn53krrrr24o",
+          "pubDate": "Thu, 02 Apr 2026 04:00:48 GMT"
+        },
+        {
+          "title": "China is trying to play peacemaker in the Iran war - will it work?",
+          "description": "It's a turnaround for Beijing, whose official response has been muted so far. Why is China stepping in now?",
+          "link": "https://www.bbc.com/news/articles/cze0kz7gr84o",
+          "pubDate": "Wed, 01 Apr 2026 07:16:15 GMT"
+        },
+        {
+          "title": "Divorced couples in Japan can now share custody of their children",
+          "description": "Japan was, until recently, the only G7 country to not recognise the legal concept of joint custody.",
+          "link": "https://www.bbc.com/news/articles/c77m16n6dm0o",
+          "pubDate": "Wed, 01 Apr 2026 04:11:30 GMT"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://feeds.bbci.co.uk/news/uk/rss.xml",
+      "fetchedAt": "2026-04-05T21:01:33Z",
+      "articles": [
+        {
+          "title": "Pepsi withdraws as UK festival sponsor after Kanye West backlash",
+          "description": "Sir Keir Starmer says it is \"deeply concerning\" the rapper is set to headline a festival after recent antisemitic comments.",
+          "link": "https://www.bbc.com/news/articles/cp86942yj97o",
+          "pubDate": "Sun, 05 Apr 2026 19:58:17 GMT"
+        },
+        {
+          "title": "Royals attend Windsor Easter Sunday service",
+          "description": "Andrew-Mountbatten Windsor and his family are absent from the traditional family event.",
+          "link": "https://www.bbc.com/news/articles/c80md8v473do",
+          "pubDate": "Sun, 05 Apr 2026 11:50:41 GMT"
+        },
+        {
+          "title": "Archbishop prays for Middle East peace in first Easter sermon",
+          "description": "Dame Sarah Mullally called for an 'end to the violence and destruction' before a congregation in Canterbury.",
+          "link": "https://www.bbc.com/news/articles/c93edxr57d0o",
+          "pubDate": "Sun, 05 Apr 2026 12:37:52 GMT"
+        },
+        {
+          "title": "Families homeless as tree hits houses in Storm Dave",
+          "description": "As Storm Dave brought heavy winds to the country, a tree fell into two homes in Kinver.",
+          "link": "https://www.bbc.com/news/articles/cvg0ng23dv2o",
+          "pubDate": "Sun, 05 Apr 2026 16:05:02 GMT"
+        },
+        {
+          "title": "Comedians tell ministers lack of funding is no laughing matter",
+          "description": "Culture Minister Ian Murray has agreed to work with the comedy industry to boost support after talks.",
+          "link": "https://www.bbc.com/news/articles/c5y73z94xzeo",
+          "pubDate": "Sat, 04 Apr 2026 23:11:09 GMT"
+        },
+        {
+          "title": "Man charged with riotous behaviour after football match disorder",
+          "description": "The disorder, which happened before the Irish Cup semi-final at Windsor Park, saw fireworks, flares and bottles thrown.",
+          "link": "https://www.bbc.com/news/articles/c3v63vwz0x4o",
+          "pubDate": "Sun, 05 Apr 2026 11:59:59 GMT"
+        },
+        {
+          "title": "Water supply issues resolved after three days",
+          "description": "South East Water apologised and said it was continuing to release isolated air pockets in the system.",
+          "link": "https://www.bbc.com/news/articles/czx9yzz01veo",
+          "pubDate": "Sun, 05 Apr 2026 10:59:35 GMT"
+        },
+        {
+          "title": "Family 'utterly devastated' after boy, 13, killed in crash as two charged",
+          "description": "Noah Campbell's family say he was a \"talented, versatile sportsman\" who was \"incredibly well-liked\".",
+          "link": "https://www.bbc.com/news/articles/c8jkm74yvzjo",
+          "pubDate": "Sun, 05 Apr 2026 18:11:36 GMT"
+        }
+      ]
+    },
+    "nhk": {
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/backstories/",
+      "fetchedAt": "2026-04-05T21:01:38Z",
+      "articles": [
+        {
+          "title": "BTS: K-pop kings return with a Seoul-stopping show",
+          "pubDate": "March 24, 2026"
+        },
+        {
+          "title": "Cherry blossom season kicks off in Japan, while official benchmark trees face decline",
+          "pubDate": "March 23, 2026"
+        },
+        {
+          "title": "Takaichi and Trump talk Iran, economy at summit",
+          "pubDate": "March 20, 2026"
+        },
+        {
+          "title": "Takaichi-Trump: Former Japan ambassador to US gives his view on upcoming summit",
+          "pubDate": "March 19, 2026"
+        },
+        {
+          "title": "Japanese winemakers look to exports",
+          "pubDate": "March 19, 2026"
+        },
+        {
+          "title": "Paying it Forward: Young 3/11 survivor builds ties with today's children",
+          "pubDate": "March 18, 2026"
+        },
+        {
+          "title": "'Taylor Library' honors American teacher killed in 2011 tsunami",
+          "pubDate": "March 17, 2026"
+        },
+        {
+          "title": "March 2011 tsunami: NHK explores ocean floor 15 years on",
+          "pubDate": "March 16, 2026"
+        }
+      ]
+    },
+    "cnn": {
+      "url": "http://rss.cnn.com/rss/cnn_topstories.rss",
+      "fetchedAt": "2026-04-05T21:01:38Z",
+      "status": "WARNING: RSS feed returned outdated data from 2023",
+      "articles": []
+    }
+  },
+  "summary": {
+    "totalArticles": 32,
+    "sourcesFetched": 5,
+    "successfulSources": 4,
+    "notes": [
+      "BBC World, Asia, and UK feeds provided current data from April 2026",
+      "NHK backstories provided recent features from March 2026",
+      "CNN RSS feeds returned outdated data from 2023 - may need alternative source",
+      "Major stories include: Iran war developments, Artemis II moon mission, Pope Leo's first Easter Mass, UK storm damage, and Japan's joint custody law reform"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "date": "2026-04-03",
+  "fetched_at": "2026-04-03T01:23:43Z",
+  "sources": {
+    "bbc_world": {
+      "url": "https://www.bbc.com/news/world",
+      "headlines": [
+        "Artemis II makes critical push out of Earth's orbit towards Moon",
+        "Trump removes US Attorney General Pam Bondi",
+        "Judge dismisses most of Blake Lively's claims in Justin Baldoni harassment suit",
+        "Brazil grants joint custody over pets in new law for separated couples",
+        "'I haven't slept for days': Iranians describe mounting desperation after a month of war",
+        "Iran war could make beer and bottled water pricier for Indians",
+        "'Be serious... don't speak every day': Macron criticises Trump approach to Iran war",
+        "Hegseth asks US Army's top general to step down",
+        "Iran's two largest steel plants shut down due to air strikes",
+        "Ancient golden helmet recovered more than a year after Dutch heist",
+        "Baby shot dead in pram in New York City",
+        "Man dies in storm near Athens as Saharan dust shrouds Crete"
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://www.bbc.com/news/world/asia",
+      "headlines": [
+        "Myanmar's coup leader who set off a brutal civil war is set to become president",
+        "Magnitude 7.4 earthquake hits off Indonesia, killing one",
+        "Divorced couples in Japan can now share custody of their children",
+        "'My six-year-old has nosebleeds': Chiang Mai air pollution sparks health fears",
+        "China is trying to play peacemaker in the Iran war - will it work?",
+        "Iran war economic shocks will last 'months', says Australia's PM",
+        "Stanford University wins battle to keep diaries of Mao Zedong's secretary",
+        "'A succulent Chinese meal' - iconic Australian quote immortalised in national film archive",
+        "Fugitive Dezi Freeman shot dead by Australian police after seven months in hiding",
+        "Social media firms must better enforce Australia under-16 ban, watchdog says",
+        "Oil rises and Asia shares slide as Iran war enters fifth week"
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://www.bbc.com/news/uk",
+      "headlines": [
+        "Funeral director admits preventing 30 burials and theft",
+        "UK and allies discuss sanctions to stop Iran blocking Strait of Hormuz",
+        "Prince William praises £20m milestone for Bowelbabe fund",
+        "Storm Dave set to batter UK with gales and blizzards over Easter weekend",
+        "BBC boss Tim Davie says it was 'very clear' Scott Mills had to go",
+        "Doctors lose new jobs package as strike to go ahead",
+        "Fewer UK adults posting on social media, Ofcom finds"
+      ]
+    },
+    "nhk": {
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/",
+      "headlines": [],
+      "note": "NHK content was not successfully extracted - minimal content returned"
+    },
+    "cnn": {
+      "url": "https://www.cnn.com/world",
+      "headlines": [
+        "UN Security Council to vote on proposal authorizing naval action in Strait of Hormuz",
+        "Navy's top admiral indicates carrier Ford fire stopped sorties for two days",
+        "Islamic State-linked rebels kill at least 43 in attack in eastern Congo",
+        "French president hits back after Trump mocks how his wife treats him",
+        "Trump is battering Iran but may leave it with an upper hand",
+        "Europe didn't want an Iran war, yet Trump is saddling it with the consequences",
+        "'There's a new sheriff in town': Inside the Miami conference on Trump's 'Donroe Doctrine'",
+        "Trump suggests in new interviews he is 'absolutely' considering withdrawing US from 'paper tiger' NATO",
+        "Russian military transport plane crashes in Crimea, killing 29, Defense Ministry says",
+        "Lost dog reunited with owner one week after she fell down a waterfall",
+        "This small city has the world's worst air",
+        "Trump lashes out at Europe as growing number of allies reject US calls for help",
+        "Latin America's generational shift: What's causing record-low birth rates across the region?",
+        "Iran has a new demand to end the war – and it could bring in billions",
+        "Get ready for kitsch and drama, Asia. Pop extravaganza Eurovision is coming your way"
+      ]
+    }
+  }
+}

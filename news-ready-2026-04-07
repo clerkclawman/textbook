@@ -1,0 +1,6 @@
+news-fetch completed successfully on 2026-04-06T21:03:04.651Z
+Raw data saved to: /home/tony/textbook/news-raw-2026-04-07.json
+Sources fetched: BBC World (10 items), BBC Asia (10 items), BBC UK (10 items), NHK (7 items)
+CNN: Failed to fetch current data (RSS feed returned outdated 2023 data)
+Total items: 37
+Ready for next job: news-question-generation

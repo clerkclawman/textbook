@@ -1,0 +1,270 @@
+{
+  "fetchedAt": "2026-04-06T21:03:04.651Z",
+  "sources": {
+    "bbc_world": {
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "fetchedAt": "2026-04-06T21:02:38.931Z",
+      "status": "success",
+      "items": [
+        {
+          "title": "We're sinking deeper: Iranians brace for infrastructure strikes as Trump deadline nears",
+          "description": "Ordinary Iranians respond to the US president's threat to destroy Iran's power plants and bridges unless it opens the Strait of Hormuz.",
+          "link": "https://www.bbc.com/news/articles/cvgl0ng8z0do",
+          "pubDate": "Mon, 06 Apr 2026 15:40:35 GMT"
+        },
+        {
+          "title": "Ten killed in Israeli strikes and clashes between Hamas and militia in Gaza, local sources say",
+          "description": "The Israeli strikes reportedly targeted Hamas security personnel after they clashed with an Israeli-backed militia near Maghazi camp.",
+          "link": "https://www.bbc.com/news/articles/c77md512n71o",
+          "pubDate": "Mon, 06 Apr 2026 19:11:20 GMT"
+        },
+        {
+          "title": "How rescue of US airman in remote part of Iran unfolded",
+          "description": "The operation to extract him from the ground in hostile territory was hugely complex and involved multiple US government agencies.",
+          "link": "https://www.bbc.com/news/articles/cx2vpz1kwreo",
+          "pubDate": "Mon, 06 Apr 2026 18:29:54 GMT"
+        },
+        {
+          "title": "Really feeling the love: Savannah Guthrie returns to NBC as search for mother goes on",
+          "description": "Nancy Guthrie disappeared from her home in Tucson, Arizona, in what authorities believe was an abduction.",
+          "link": "https://www.bbc.com/news/articles/c04xqglg7xgo",
+          "pubDate": "Mon, 06 Apr 2026 18:07:46 GMT"
+        },
+        {
+          "title": "Kanye West's right to enter UK under review after festival outcry",
+          "description": "The rapper's appearance in London in July has caused controversy because of his past antisemitic comments.",
+          "link": "https://www.bbc.com/news/articles/cwywnkdn3zno",
+          "pubDate": "Mon, 06 Apr 2026 19:29:02 GMT"
+        },
+        {
+          "title": "Trump endorses ex-UK political aide Steve Hilton for California governor",
+          "description": "Steve Hilton, who advised the former prime minster and hosted a Fox News show, is running as a Republican.",
+          "link": "https://www.bbc.com/news/articles/c0mj4jeyvmzo",
+          "pubDate": "Mon, 06 Apr 2026 18:55:45 GMT"
+        },
+        {
+          "title": "Ladysmith Black Mambazo's wise elder dies aged 77",
+          "description": "Albert Mazibuko sang in the iconic South African choral group for more than 55 years.",
+          "link": "https://www.bbc.com/news/articles/cx2r5g7x25yo",
+          "pubDate": "Mon, 06 Apr 2026 17:20:16 GMT"
+        },
+        {
+          "title": "US Supreme Court paves way for dismissal of Steve Bannon conviction",
+          "description": "The order allows a lower court to consider dismissing the former Trump strategist's indictment.",
+          "link": "https://www.bbc.com/news/articles/cgqk4kyj4yvo",
+          "pubDate": "Mon, 06 Apr 2026 16:43:14 GMT"
+        },
+        {
+          "title": "Seven Eritrean players fail to return home after international match",
+          "description": "Several footballers have absconded in the past leaving behind what rights groups call a repressive government.",
+          "link": "https://www.bbc.com/news/articles/c747037e2kgo",
+          "pubDate": "Mon, 06 Apr 2026 17:31:33 GMT"
+        },
+        {
+          "title": "Emergency jabs after 100 children die of suspected measles in a month in Bangladesh",
+          "description": "More than 100 people, mostly children, have been killed by measles since mid-March, officials suspect.",
+          "link": "https://www.bbc.com/news/articles/cevkz2z7dm8o",
+          "pubDate": "Mon, 06 Apr 2026 09:59:40 GMT"
+        }
+      ]
+    },
+    "bbc_asia": {
+      "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+      "fetchedAt": "2026-04-06T21:02:38.964Z",
+      "status": "success",
+      "items": [
+        {
+          "title": "Emergency jabs after 100 children die of suspected measles in a month in Bangladesh",
+          "description": "More than 100 people, mostly children, have been killed by measles since mid-March, officials suspect.",
+          "link": "https://www.bbc.com/news/articles/cevkz2z7dm8o",
+          "pubDate": "Mon, 06 Apr 2026 09:59:40 GMT"
+        },
+        {
+          "title": "How China fell for a lobster: What an AI assistant tells us about Beijing's ambition",
+          "description": "The AI agent sparked a frenzy of raising lobsters in March, with users training the tool to suit their needs.",
+          "link": "https://www.bbc.com/news/articles/cy41n17e23go",
+          "pubDate": "Sun, 05 Apr 2026 22:07:40 GMT"
+        },
+        {
+          "title": "Two protests, two elections: How Nepal's Gen Z succeeded where Bangladesh's stumbled",
+          "description": "How did a youth movement triumph in one country but fall so short in another?",
+          "link": "https://www.bbc.com/news/articles/cz673y3qqjlo",
+          "pubDate": "Sun, 05 Apr 2026 22:07:30 GMT"
+        },
+        {
+          "title": "You can hire house help in 15 minutes in India - is it fair?",
+          "description": "Instant house help brings speed and structure, but workers face tighter control and rising pressure in their jobs.",
+          "link": "https://www.bbc.com/news/articles/c98megy6r1mo",
+          "pubDate": "Sun, 05 Apr 2026 22:01:45 GMT"
+        },
+        {
+          "title": "The man who became one of India's greatest stage queens",
+          "description": "Chapal Bhaduri was Bengal's biggest stage queen - until women arrived and the spotlight moved on.",
+          "link": "https://www.bbc.com/news/articles/cd0rl52z3dzo",
+          "pubDate": "Sat, 04 Apr 2026 22:20:51 GMT"
+        },
+        {
+          "title": "Unanswered questions remain after Australia's most wanted fugitive killed in standoff",
+          "description": "Double-murderer Dezi Freeman evaded capture for seven months in the bush but police believe he had help.",
+          "link": "https://www.bbc.com/news/articles/cg7358zzz0no",
+          "pubDate": "Fri, 03 Apr 2026 19:19:02 GMT"
+        },
+        {
+          "title": "How Bombay went from a fort city to a bustling metropolis",
+          "description": "A new exhibition charts Bombay's passage through the centuries via paintings, photographs and prints.",
+          "link": "https://www.bbc.com/news/articles/cj60k3x879ro",
+          "pubDate": "Sat, 04 Apr 2026 00:09:54 GMT"
+        },
+        {
+          "title": "Watch: Who is the coup leader who will be Myanmar's next president?",
+          "description": "Min Aung Hlaing presided over his last military parade in Myanmar before he takes up the role of president.",
+          "link": "https://www.bbc.com/news/videos/ckg0lnnplxko",
+          "pubDate": "Fri, 03 Apr 2026 00:04:04 GMT"
+        },
+        {
+          "title": "Fears cost of water and beer to soar as India's scorching summer hits",
+          "description": "Makers of plastic and glass bottles are struggling to access raw materials as the war squeezes supplies.",
+          "link": "https://www.bbc.com/news/articles/c5ywqky5dd7o",
+          "pubDate": "Thu, 02 Apr 2026 23:16:37 GMT"
+        },
+        {
+          "title": "Iconic 19th Century painting sets Indian art record with $17.9m sale",
+          "description": "Yashoda and Krishna, painted by Raja Ravi Varma, beat a record set by an MF Husain work last year.",
+          "link": "https://www.bbc.com/news/articles/cje4l98wjzwo",
+          "pubDate": "Thu, 02 Apr 2026 12:30:04 GMT"
+        }
+      ]
+    },
+    "bbc_uk": {
+      "url": "https://feeds.bbci.co.uk/news/uk/rss.xml",
+      "fetchedAt": "2026-04-06T21:02:39.004Z",
+      "status": "success",
+      "items": [
+        {
+          "title": "Benefits and pensions rise as two-child cap ends",
+          "description": "Families on some benefits with three or more children will get an average rise of £4,100 a year.",
+          "link": "https://www.bbc.com/news/articles/cn085pdly86o",
+          "pubDate": "Sun, 05 Apr 2026 23:00:58 GMT"
+        },
+        {
+          "title": "Don't put off treatment during doctors' strike, NHS tells patients",
+          "description": "The strike comes at the end of the bank holiday weekend and NHS managers fear demand could be challenging.",
+          "link": "https://www.bbc.com/news/articles/c5y9j02dvq5o",
+          "pubDate": "Mon, 06 Apr 2026 08:14:25 GMT"
+        },
+        {
+          "title": "Wireless Festival boss defends Kanye West appearance",
+          "description": "Its managing director calls the rapper's past comments abhorrent but asks people to offer some forgiveness.",
+          "link": "https://www.bbc.com/news/articles/cwyvr08l7lzo",
+          "pubDate": "Mon, 06 Apr 2026 20:58:20 GMT"
+        },
+        {
+          "title": "Northern Ireland becomes first in UK to give parents two weeks paid leave for miscarriage",
+          "description": "Northern Ireland becomes first part of UK to bring in legal entitlement for parents affected by miscarriage at any stage of a pregnancy to have paid leave.",
+          "link": "https://www.bbc.com/news/articles/c9d4g24y5x8o",
+          "pubDate": "Mon, 06 Apr 2026 09:10:03 GMT"
+        },
+        {
+          "title": "Families battle to reclaim thousands of pounds owed by care operator investigated by BBC",
+          "description": "Relatives say it has taken months, and in some cases years, to get back money owed by a care home operator.",
+          "link": "https://www.bbc.com/news/articles/cx26j67x172o",
+          "pubDate": "Mon, 06 Apr 2026 05:23:57 GMT"
+        },
+        {
+          "title": "Warmest weather of the year expected with 24C this week",
+          "description": "The warmest weather of the year is expected on Tuesday and Wednesday as temperatures rise above average.",
+          "link": "https://www.bbc.com/weather/articles/cn7866klrp2o",
+          "pubDate": "Mon, 06 Apr 2026 17:03:44 GMT"
+        },
+        {
+          "title": "Couple in court after boy, 13, dies in crash",
+          "description": "A man and a woman are remanded custody in connection with a crash involving a car, a bike and a scooter.",
+          "link": "https://www.bbc.com/news/articles/ce9mr1djx48o",
+          "pubDate": "Mon, 06 Apr 2026 14:22:22 GMT"
+        },
+        {
+          "title": "Hundreds take part in Easter coal-carrying race",
+          "description": "The annual sack-carrying challenge in Gawthorpe began more than 60 years ago.",
+          "link": "https://www.bbc.com/news/articles/crl1590w7w8o",
+          "pubDate": "Mon, 06 Apr 2026 15:10:23 GMT"
+        },
+        {
+          "title": "I learned Korean to understand K-Pop",
+          "description": "Katy Richards is one of a growing number of fans of K-Pop and Korean culture in the UK.",
+          "link": "https://www.bbc.com/news/articles/cx24jdnre75o",
+          "pubDate": "Mon, 06 Apr 2026 06:09:22 GMT"
+        },
+        {
+          "title": "Could saunas become the new pub when it comes to socialising?",
+          "description": "Wales' picturesque landscape lends itself to sauna use, in a similar way to Finland, a business owner said.",
+          "link": "https://www.bbc.com/news/articles/c625jp08zl1o",
+          "pubDate": "Mon, 06 Apr 2026 09:53:55 GMT"
+        }
+      ]
+    },
+    "nhk": {
+      "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+      "fetchedAt": "2026-04-06T21:03:04.651Z",
+      "status": "success",
+      "items": [
+        {
+          "title": "トランプ大統領 軍と共同で記者会見【ノーカット動画】",
+          "description": "アメリカのトランプ大統領は6日午後、ホワイトハウスで記者会見を行いました。",
+          "link": "http://www3.nhk.or.jp/news/html/20260407/k10015093571000.html",
+          "pubDate": "Tue, 07 Apr 2026 05:31:41 +0900"
+        },
+        {
+          "title": "高市首相 イラン大統領との電話会談を行う方向で調整",
+          "description": "緊迫する中東情勢をめぐり、高市総理大臣は、イランのペゼシュキアン大統領との電話会談を行う方向で調整しており、事態の早期沈静化やホルムズ海峡の航行の安全確保などを直接働きかけたい考えです。",
+          "link": "http://www3.nhk.or.jp/news/html/20260407/k10015093511000.html",
+          "pubDate": "Tue, 07 Apr 2026 05:32:57 +0900"
+        },
+        {
+          "title": "トランプ氏“期限過ぎれば発電所など失う”イラン側は停戦拒否",
+          "description": "アメリカのトランプ大統領は、6日の記者会見で、イランのエネルギー施設への攻撃を行わない期限について、アメリカ東部時間の7日午後8時、日本時間の8日午前9時だと改めて強調し、期限を過ぎればイランは発電所などを失うことになると警告しました。",
+          "link": "http://www3.nhk.or.jp/news/html/20260407/k10015093641000.html",
+          "pubDate": "Tue, 07 Apr 2026 05:46:02 +0900"
+        },
+        {
+          "title": "“イランがアメリカに停戦拒否の回答” イラン国営通信",
+          "description": "イランの国営通信は6日、アメリカとの協議をめぐって、イランが仲介国のパキスタンを通じてアメリカに回答を送り、停戦を拒否するとともに戦闘の恒久的な終結が必要だと強調したと伝えました。",
+          "link": "http://www3.nhk.or.jp/news/html/20260407/k10015093611000.html",
+          "pubDate": "Tue, 07 Apr 2026 00:54:08 +0900"
+        },
+        {
+          "title": "今年度予算案 きょう採決が行われれば成立する公算大きく",
+          "description": "今年度予算案は、7日、参議院予算委員会で高市総理大臣も出席して集中審議が行われたあと、締めくくりの質疑が行われます。",
+          "link": "http://www3.nhk.or.jp/news/html/20260407/k10015093501000.html",
+          "pubDate": "Tue, 07 Apr 2026 05:13:00 +0900"
+        },
+        {
+          "title": "航空会社の多く 国内線で運賃値上げや燃油サーチャージ検討",
+          "description": "イラン情勢を受けて原油価格が高騰する中、NHKが国内の航空会社6社を取材したところ、多くの社が国内線について、運賃の値上げや、現在ほとんど適用する会社のない燃油サーチャージの導入を検討していることが分かりました。",
+          "link": "http://www3.nhk.or.jp/news/html/20260407/k10015093451000.html",
+          "pubDate": "Tue, 07 Apr 2026 04:41:28 +0900"
+        },
+        {
+          "title": "観光地 イタリア・ベネチア 日帰り観光客に入場料の徴収開始",
+          "description": "「水の都」として知られる世界有数の観光地、イタリアのベネチアでは日帰りの観光客を対象にした入場料の徴収がことしも今月から始まりました。",
+          "link": "http://www3.nhk.or.jp/news/html/20260407/k10015093591000.html",
+          "pubDate": "Tue, 07 Apr 2026 05:47:44 +0900"
+        }
+      ]
+    },
+    "cnn": {
+      "url": "http://rss.cnn.com/rss/edition.rss",
+      "fetchedAt": "2026-04-06T21:02:39.096Z",
+      "status": "failed",
+      "error": "RSS feed returned outdated data from 2023. Alternative CNN RSS feeds also failed to fetch current data.",
+      "items": []
+    }
+  },
+  "summary": {
+    "totalSources": 5,
+    "successfulSources": 4,
+    "failedSources": 1,
+    "totalItems": 37,
+    "fetchedAt": "2026-04-06T21:03:04.651Z",
+    "targetDate": "2026-04-07"
+  }
+}

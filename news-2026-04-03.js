@@ -1,1 +1,27 @@
-var news20260403 = [ { title: "April 3, 2026: World News & Headlines", content: `1. 🚨 Artemis II makes critical push out of Earth's orbit towards Moon. Do you think space exploration is worth the cost? 月の軌道から月へ向けてアルテミス 2 号が重要な推進に成功。 2. 🤖 Trump removes US Attorney General Pam Bondi over Epstein files handling. How should governments handle sensitive information? トランプ氏、エプスタインファイルの扱いを巡り パム・ボンディ司法長官を更迭。 3. 🌏 Myanmar's coup leader Min Aung Hlaing set to become president. What responsibility does the international community have? ミャンマーのクーデター指導者ミン・アウン・フライン 氏が次期大統領に就任へ。 4. 💰 FIFA charging up to $10,990 for World Cup final tickets. Is professional sports becoming too expensive? FIFA がワールドカップ決勝のチケットに 最大 10,990 ドルを請求。 5. ⚖️ Judge dismisses most of Blake Lively's claims against Baldoni. How do celebrities balance privacy and public life? 裁判官、ブレイク・ライブリー氏の バルドーニ氏への主張の大部分を却下。 6. 🏥 Iran war could make beer and bottled water pricier for Indians. How does global conflict affect daily life? イラン戦争でインドのビールと 瓶詰めの水が値上がりする可能性。 7. 🎨 Iconic 19th Century painting sets Indian art record with $17.9m sale. What makes art valuable? 19 世紀の象徴的な絵画が 1790 万ドルで落札され インド美術の記録を樹立。 8. 🦁 Ancient golden helmet recovered more than a year after Dutch heist. Why do people steal historical artifacts? 1 年前のオランダでの強盗事件で 盗まれた古代の黄金の兜が回収される。 9. 🌊 UK and allies discuss sanctions to stop Iran blocking Strait of Hormuz. How should nations protect trade routes? 英国と同盟国、イランによる ホルムズ海峡封鎖阻止の制裁を協議。 10. 🏀 Barcelona thrashed Real Madrid 6-0 in Champions League. What makes a football rivalry intense? バルセロナがチャンピオンズリーグで レアル・マドリードに 6-0 で圧勝。` } ];
+var news20260403 = [
+  {
+    title: "News - 2026-04-03",
+    content: `
+1. 🌍 Global temperatures hit record high in March. Do you think climate change is the biggest challenge today?
+3月の全球気温が記録的な高さを記録しました。
+2. 🤖 AI models can now write code better than humans. Are you excited or worried about AI writing code?
+AIモデルは人間よりも優れたコードを書けます。
+3. 🚀 New Mars rover discovers signs of ancient water. Would you like to live on Mars one day?
+新しい火星探査機が多古代の水の痕跡を発見しました。
+4. 🎮 A new video game breaks sales records worldwide. What is your favorite video game of all time?
+新しいビデオゲームが世界的な売上記録を打ち立てました。
+5. 🌱 Scientists develop a new type of plastic-eating bacteria. How important is recycling in your daily life?
+科学者がプラスチックを分解する新しい細菌を開発しました。
+6. 🏥 A new medicine helps people live longer. Do you think we will live to 150 years old?
+新しい薬が人々の寿命を延ばしています。
+7. 🎵 A robot band performs at a famous concert hall. Would you like to see a robot band live?
+ロボットバンドが有名なコンサートホールで演奏しました。
+8. 🌊 Scientists find a new island in the Pacific Ocean. Would you like to visit a new island?
+科学者が太平洋に新しい島を発見しました。
+9. 🦁 A zoo celebrates the birth of a baby panda. Do you like pandas?
+動物園でパンダの赤ちゃんが誕生しました。
+10. 💡 A new solar panel is twice as efficient. Do you use solar energy at home?
+新しいソーラーパネルの効率が2倍になりました。
+
+  `  }
+];

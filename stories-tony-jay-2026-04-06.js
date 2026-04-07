@@ -1,342 +1,232 @@
 var storiesTonyJay20260406 = [
   {
-    level: 7,
-    title: "Tony and the Talking Ramen",
-    content: `1. 🍜 Tony sees a ramen bowl in Dotonbori.
-トニーは道頓堀でラーメンの碗を見る。
-2. 🗣️ The ramen says "Hello!"
-ラーメンが「こんにちは！」と言う。
-3. 😮 Tony is very surprised.
-トニーは非常に驚く。
-4. 🍜 The ramen wants to dance.
-ラーメンは踊りたいと思う。
-5. 💃 Tony and ramen dance together.
-トニーとラーメンは一緒に踊る。
-6. 🎵 Jay hears the music.
-ジェイは音楽を聞く。
-7. 😂 Jay laughs at Tony.
-ジェイはトニーを笑う。
-8. 🍜 The ramen eats Tony!
-ラーメンはトニーを食べる！
-9. 😱 Tony is inside the bowl.
-トニーは碗の中にいる。
-10. 🆘 Jay helps Tony escape.
-ジェイはトニーを助けて脱出させる。
-11. 🏃 Tony runs away fast.
-トニーは速く走り去る。
-12. 😅 Tony is safe now.
-トニーはもう安全だ。
-13. 🍜 The ramen is gone.
-ラーメンはいなくなった。
-14. 😄 Tony and Jay smile.
-トニーとジェイは笑う。
-15. 🌸 Spring is fun in Osaka!
-大阪の春は楽しい！`
+    title: "Grade 7: The Confused Cat",
+    content: `🐱 The cat is very confused today.
+猫は今日とても混乱しています。
+😲 It sees a bird on the TV screen.
+テレビ画面に鳥が見えます。
+🤔 The cat tries to catch the bird.
+猫は鳥を捕まえようとします。
+😿 But the bird is not real.
+でも鳥は本物ではありません。
+😸 The cat falls off the sofa.
+猫はソファから落ちます。
+😹 Now the cat is angry.
+今、猫は怒っています。
+🐾 It runs around the room.
+部屋の中を走り回ります。
+😴 Finally, the cat is tired.
+ついに、猫は疲れました。
+😺 It sleeps on the floor.
+床で寝ています。
+🎉 The cat is happy again.
+猫はまた幸せです。`
   },
   {
-    level: 6,
-    title: "Jay's Magical Sakura Umbrella",
-    content: `1. 🌸 Jay opens a pink umbrella.
-ジェイはピンクの傘を開く。
-2. 🌸 Sakura petals are falling now.
-桜の花びらが今、降っている。
-3. 🌂 The umbrella is magical!
-その傘は魔法だ！
-4. 🌸 Petals are dancing around.
-花びらが周り踊っている。
-5. 🐱 A cat is watching Jay.
-猫がジェイを見ている。
-6. 🐱 The cat wants the umbrella.
-猫はその傘を欲しがる。
-7. 🌸 Jay gives the cat petals.
-ジェイは猫に花びらを与える。
-8. 😺 The cat is happy now.
-猫はもう幸せだ。
-9. 🌸 Tony comes to see.
-トニーが見に来る。
-10. 😮 Tony is amazed too!
-トニーも驚く！
-11. 🌸 They all play together.
-彼らは皆一緒に遊ぶ。
-12. 🌂 The umbrella closes slowly.
-傘はゆっくり閉じる。
-13. 🌸 But the magic stays!
-でも魔法は残る！
-14. 😊 Jay and Tony laugh.
-ジェイとトニーは笑う。
-15. 🌸 Spring is very beautiful!
-春はとても美しい！`
+    title: "Grade 6: The Pizza Robot",
+    content: `🤖 The robot loves pizza.
+ロボットはピザが大好きです。
+🍕 It eats pizza every day.
+毎日ピザを食べます。
+😋 The robot is very happy.
+ロボットはとても幸せです。
+🔧 But one day, the robot breaks.
+でもある日、ロボットが壊れます。
+😢 It cannot eat pizza anymore.
+もうピザを食べられません。
+👨‍🔧 A mechanic fixes the robot.
+整備士がロボットを直します。
+🎉 The robot works again!
+ロボットはまた動きます！
+🍕 Now it eats more pizza.
+今、もっとピザを食べます。
+😸 The robot is the happiest!
+ロボットは一番幸せです！`
   },
   {
-    level: 5,
-    title: "Tony's Flying Takoyaki",
-    content: `1. 🐙 Tony buys takoyaki at Osaka Castle.
-トニーは大阪城でたこ焼きを買う。
-2. 🐙 One takoyaki is flying!
-一つのたこ焼きが飛んでいる！
-3. 😲 Tony watches the flying food.
-トニーは飛ぶ食べ物を見る。
-4. 🐙 The takoyaki says "Follow me!"
-たこ焼きが「私についてきて！」と言う。
-5. 🏃 Tony runs after it.
-トニーはその後を追って走る。
-6. 🐙 Jay sees Tony running.
-ジェイはトニーが走っているのを見る。
-7. 😂 Jay asks "What happens?"
-ジェイは「何が起こるの？」と聞く。
-8. 🐙 The takoyaki lands on Jay!
-たこ焼きがジェイの上に着 land する！
-9. 🤣 Jay is covered in sauce.
-ジェイはソースで覆われる。
-10. 🐙 Tony laughs very hard.
-トニーは非常に大笑いする。
-11. 🍽️ They eat all the takoyaki.
-彼らは全てのたこ焼きを食べる。
-12. 😋 The food is delicious!
-その食べ物は美味しい！
-13. 🏰 They walk to the castle.
-彼らは城へ歩く。
-14. 🌸 The cherry blossoms are pretty.
-桜は綺麗だ。
-15. 😊 Tony and Jay are happy.
-トニーとジェイは幸せだ。`
+    title: "Grade 5: The Dog with Sunglasses",
+    content: `🐶 The dog wears sunglasses.
+犬はサングラスをかけています。
+😎 It looks very cool.
+とてもクールに見えます。
+🌞 The dog walks in the park.
+公園を歩きます。
+👀 Everyone looks at the dog.
+みんなが犬を見ています。
+😂 The dog is very proud.
+犬はとても誇りに思っています。
+🎾 It plays with a ball.
+ボールで遊びます。
+🏃‍♂️ The dog runs very fast.
+犬はとても速く走ります。
+💦 It is tired but happy.
+疲れていますが幸せです。
+🏠 The dog goes home.
+家に帰ります。
+😴 It sleeps with sunglasses.
+サングラスをかけたまま寝ます。`
   },
   {
-    level: 4,
-    title: "The Great Osaka Dango Heist",
-    content: `1. 🍡 Tony and Jay wanted dango.
-トニーとジェイは団子欲しかった。
-2. 🍡 They went to a shop yesterday.
-彼らは昨日店へ行った。
-3. 😮 The dango disappeared!
-団子が消えた！
-4. 🐭 A mouse stole them!
-ネズミがそれを盗んだ！
-5. 🏃 Tony chased the mouse.
-トニーはネズミを追った。
-6. 🏃 Jay ran too.
-ジェイも走った。
-7. 🕳️ The mouse went underground.
-ネズミは地下へ行った。
-8. 🔦 They looked with flashlights.
-彼らは懐中電灯で見た。
-9. 🍡 The mouse had many dango!
-ネズミは多くの団子を持っていた！
-10. 😂 Tony laughed at the mouse.
-トニーはネズミを笑った。
-11. 🤝 They shared the dango.
-彼らは団子を分け合った。
-12. 🐭 The mouse was friendly.
-ネズミは親切だった。
-13. 🌸 It was a spring day.
-それは春の日だった。
-14. 😊 They all ate together.
-彼らは皆一緒に食べた。
-15. 🏯 Osaka was very fun!
-大阪はとても楽しかった！`
+    title: "Grade 4: The Hamster's Big Adventure",
+    content: `🐹 The hamster wants to explore.
+ハムスターは探検したいです。
+🏠 It escapes from its cage.
+ケージから逃げます。
+🌿 It runs in the garden.
+庭を走ります。
+🌸 The hamster sees flowers.
+花を見ます。
+🦋 A butterfly flies by.
+蝶が飛んできます。
+🐾 The hamster chases the butterfly.
+蝶を追いかけます。
+😰 But it gets lost.
+でも迷子になります。
+😢 The hamster is scared.
+怖がっています。
+👨‍👩‍👧 A child finds the hamster.
+子供がハムスターを見つけます。
+🏠 The hamster goes home safely.
+安全に家に帰ります。`
   },
   {
-    level: 3,
-    title: "Tony Has Never Seen Such Sushi",
-    content: `1. 🍣 Tony has been to many restaurants.
-トニーは多くのレストランに行ったことがある。
-2. 🍣 But this sushi is strange!
-でもこの寿司は奇妙だ！
-3. 🐟 The fish is talking!
-魚が話している！
-4. 😲 Tony has never heard this.
-トニーはこれを聞いたことがない。
-5. 🗣️ The fish says "I am fresh!"
-魚が「私は新鮮だ！」と言う。
-6. 😂 Jay thinks it is funny.
-ジェイは面白いと思う。
-7. 🍣 The fish wants to dance.
-魚は踊りたいと思う。
-8. 💃 Tony and Jay watch it.
-トニーとジェイはそれを見る。
-9. 🎵 The fish sings a song.
-魚は歌を歌う。
-10. 🎤 If the fish sings well, Tony will tip!
-魚が上手に歌えば、トニーはチップをあげる！
-11. 🎶 The fish sings beautifully.
-魚は美しく歌う。
-12. 💰 Tony gives money happily.
-トニーは喜んでお金をあげる。
-13. 🌸 The restaurant is famous now.
-その店は今、有名だ。
-14. 📰 People have come from Tokyo.
-人々は東京から来たことがある。
-15. 😊 Tony is proud of his sushi friend.
-トニーは自分の寿司の友達を誇りに思う。`
+    title: "Grade 3: The Parrot Who Loves Karaoke",
+    content: `🦜 The parrot loves singing.
+オウムは歌うのが大好きです。
+🎤 It sings karaoke every night.
+毎晩カラオケを歌います。
+🎶 The parrot has a beautiful voice.
+美しい声を持っています。
+👏 Everyone claps for the parrot.
+みんなが拍手します。
+😸 The parrot is very proud.
+とても誇りに思っています。
+🎵 It sings louder and louder.
+もっと大きな声で歌います。
+😰 But the neighbors are angry.
+でも近所の人は怒っています。
+🔇 They tell the parrot to stop.
+歌うのをやめるように言います。
+😢 The parrot is sad.
+悲しいです。
+🤫 Now it sings quietly.
+今は静かに歌います。`
   },
   {
-    level: "Pre-2",
-    title: "While Jay Was Walking, He Found a Dragon",
-    content: `1. 🐉 While Jay was walking in Namba, he saw smoke.
-難波を歩いている間、ジェイは煙を見た。
-2. 🐉 A small dragon was hiding behind a store.
-小さな竜が店の後ろに隠れていた。
-3. 😮 Jay was surprised but not scared.
-ジェイは驚いたが怖くなかった。
-4. 🐉 The dragon was breathing fire slowly.
-竜はゆっくり火を吐いていた。
-5. 🔥 While Jay was watching, Tony arrived.
-ジェイが見ている間、トニーが到着した。
-6. 🗣️ Tony said that the dragon was cute.
-トニーはその竜は可愛いと言った。
-7. 🐉 The dragon wanted to be friends.
-竜は友達になりたかった。
-8. 🍜 They offered it takoyaki while it was hungry.
-彼らは竜が飢えている間、たこ焼きを提供した。
-9. 😋 The dragon ate the food happily.
-竜は幸せに食べ物を食べた。
-10. 🌸 Although it was small, the dragon was powerful.
-小さかったけれども、竜は強かった。
-11. 🏃 The dragon flew to Osaka Castle.
-竜は大阪城へ飛んだ。
-12. 🏰 While they were looking, the dragon disappeared.
-彼らが見ている間、竜は消えた。
-13. 😂 Jay said that it was a dream.
-ジェイはそれは夢だと言った。
-14. 🌸 Tony believed that it was real.
-トニーはそれが本物だと信じた。
-15. 🐉 They will remember this spring day.
-彼らはこの春の日を覚えているだろう。`
+    title: "Pre-2: The Turtle Who Wanted to Fly",
+    content: `🐢 The turtle watches birds fly.
+カメは鳥が飛ぶのを見ています。
+🌤️ It wishes it could fly too.
+自分も飛べたらいいなと思っています。
+🪂 The turtle makes a parachute.
+パラシュートを作ります。
+🌳 It climbs a tall tree.
+高い木に登ります。
+😰 The turtle is very scared.
+とても怖がっています。
+🪂 It jumps from the tree!
+木から飛び降ります！
+🌬️ The wind blows the turtle.
+風がカメを吹きます。
+😲 The turtle flies for a moment!
+一瞬、飛びます！
+💥 But it falls into a pond.
+でも池に落ちます。
+🐸 The turtle is happy to be alive.
+生きていて幸せです。`
   },
   {
-    level: "Pre-2+",
-    title: "The Mystery of the Vanishing Okonomiyaki",
-    content: `1. 🥞 Tony had ordered okonomiyaki at a famous restaurant.
-トニーは有名な店でお好み焼きを注文していた。
-2. 🥞 While he was waiting, the plate was empty.
-彼が待っている間、皿は空だった。
-3. 😮 Tony had never experienced this before.
-トニーはこれを以前経験したことがなかった。
-4. 🕵️ Jay investigated the mystery carefully.
-ジェイは謎を慎重に調査した。
-5. 👀 A chef was watching them secretly.
-シェフが彼らを密かに見ていた。
-6. 🥞 The chef said that he had made it already.
-シェフはそれをもう作ったと言った。
-7. 🤔 Tony wondered where the food was.
-トニーは食べ物がどこにあるのか不思議に思った。
-8. 🐱 A cat had eaten the okonomiyaki!
-猫がお好み焼きを食べた！
-9. 😂 Jay laughed because the cat was full.
-猫が満腹だったので、ジェイは笑った。
-10. 🥞 The chef had prepared another one quickly.
-シェフはすぐに別のものを用意していた。
-11. 🍽️ Tony ate it before it became cold.
-トニーはそれが冷める前に食べた。
-12. 💰 If they had more money, they would order more!
-彼らがもっとお金を持っていれば、もっと注文しただろう！
-13. 🌸 The restaurant had been open since 1950.
-その店は1950年以来開いていた。
-14. 📚 Jay read that the cat was famous.
-ジェイはその猫が有名だと読んだ。
-15. 😊 They had enjoyed their strange lunch.
-彼らは奇妙なランチを楽しんでいた。`
+    title: "Pre-2 Plus: The Squirrel Who Forgot Where It Hid Nuts",
+    content: `🐿️ The squirrel collects nuts.
+リスは木の実を集めます。
+🌰 It hides them in many places.
+いろいろな場所に隠します。
+🌳 Under the tree, in the grass, and in the hole.
+木の下、草の中、穴の中に。
+😴 The squirrel sleeps all winter.
+冬の間ずっと寝ます。
+🌸 Spring comes, and the squirrel wakes up.
+春が来て、リスは目覚めます。
+😰 It is very hungry.
+とてもお腹が空いています。
+🌰 The squirrel looks for its nuts.
+木の実を探します。
+🤔 But it cannot remember where they are!
+でもどこに隠したか思い出せません！
+😢 The squirrel is sad.
+悲しいです。
+🌱 But it finds new nuts in the spring.
+でも春に新しい木の実を見つけます。`
   },
   {
-    level: 2,
-    title: "If Tony Were a Ramen Master, He Would Rule Osaka",
-    content: `1. 👨‍🍳 If Tony were a ramen master, he would create magic soup.
-トニーがラーメンマスターだったら、彼は魔法のスープを作るだろう。
-2. 🍜 The noodles would dance in the bowl.
-麺は碗の中で踊るだろう。
-3. 🌟 Jay said that Tony's dream was ambitious.
-ジェイはトニーの夢は野心的だと言った。
-4. 🏆 Tony believed that he could win a contest.
-トニーはコンテストで勝てると信じた。
-5. 🍜 While the soup was boiling, Tony added secrets.
-スープが沸騰している間、トニーは秘密を加えた。
-6. 🤫 The secret ingredient was love and laughter.
-秘密の材料は愛と笑いだった。
-7. 👨‍🍳 If customers had eaten the ramen, they would be happy.
-客がラーメンを食べたら、彼らは幸せだっただろう。
-8. 🏪 The shop would have been famous worldwide.
-その店は世界的に有名だっただろう。
-9. 🌏 People from many countries would have visited.
-多くの国から人々が訪れただろう。
-10. 🍜 Tony had imagined this scenario many times.
-トニーはシナリオを何度も想像していた。
-11. 😂 Jay argued that Tony should teach first.
-ジェイはトニーはまず教えるべきだと主張した。
-12. 📚 Tony agreed that education was important.
-トニーは教育が重要だと同意した。
-13. 🌸 They decided to open a school instead.
-彼らは代わりに学校を開くことにした。
-14. 👥 Students would learn to cook and laugh.
-学生は料理して笑うことを学ぶだろう。
-15. 😊 The dream would become reality someday.
-その夢はいつか現実になるだろう。`
+    title: "Grade 2: The Owl Who Was Afraid of the Dark",
+    content: `🦉 The owl is afraid of the dark.
+フクロウは暗闇が怖いです。
+🌙 But owls are supposed to be nocturnal!
+でもフクロウは夜行性のはずです！
+😰 The owl hides in its nest during the night.
+夜は巣に隠れています。
+🌞 It only comes out during the day.
+昼間だけ出てきます。
+🐿️ Other animals make fun of the owl.
+他の動物はフクロウを笑います。
+😢 The owl is very sad.
+とても悲しいです。
+🦉 One night, the owl sees a beautiful starry sky.
+ある夜、美しい星空を見ます。
+✨ It is amazed!
+感動します！
+🌙 The owl realizes the dark is beautiful.
+暗闇は美しいと気づきます。
+🦉 Now the owl loves the night!
+今、夜が大好きです！`
   },
   {
-    level: "Pre-1",
-    title: "The Question of Why the Dotonbori Sign Never Falls",
-    content: `1. 🪧 The question of why the Glico sign never falls remains unanswered.
-グリコの看板がなぜ決して落ちないかという疑問は答えられないままだ。
-2. 🤔 Tony wondered whether the structure was special.
-トニーは構造が特別かどうか疑問に思った。
-3. 🏗️ Jay explained that engineers had designed it carefully.
-ジェイはエンジニアが慎重に設計したと説明した。
-4. 🌪️ Although strong winds had blown, the sign stayed.
-強い風が吹いたけれども、看板は留まった。
-5. 📊 The data suggested that the foundation was deep.
-データは基礎が深いことを示唆した。
-6. 🌸 Nevertheless, tourists have asked the same question for decades.
-それにもかかわらず、観光客は何十年も同じ質問をしてきた。
-7. 🗣️ Tony argued that the sign had a mysterious power.
-トニーは看板は神秘的な力を持っていると主張した。
-8. 😂 Jay laughed at Tony's theory but listened carefully.
-ジェイはトニーの理論を笑ったが注意深く聞いた。
-9. 🏙️ The fact that Osaka has survived many earthquakes is remarkable.
-大阪が多くの地震を生き延びてきたという事実は驚くべきだ。
-10. 🌉 How the city maintains its landmarks matters greatly.
-都市がどのようにランドマークを維持するかは非常に重要だ。
-11. 📚 Tony read that the sign had been repaired recently.
-トニーは看板が最近修理されたと読んだ。
-12. 🔧 The workers had worked hard while the city slept.
-労働者は都市が眠っている間、一生懸命働いた。
-13. 🌟 What differentiates Osaka from other cities is its spirit.
-大阪を他の都市と区別するのはその精神だ。
-14. 💪 The resilience of the people is the real strength.
-人々の回復力が真の強さだ。
-15. 😊 Tony and Jay understood the deeper meaning.
-トニーとジェイはより深い意味を理解した。`
+    title: "Pre-1: The Cat Who Thought It Was a Dog",
+    content: `🐱 The cat grew up with dogs.
+猫は犬と一緒に育ちました。
+🐕 It learned to bark like a dog.
+犬のように吠えることを学びました。
+🦴 It loves to play fetch.
+ボール遊びが大好きです。
+🐾 The cat wags its tail when happy.
+幸せな時、尻尾を振ります。
+😸 Other cats are confused.
+他の猫は混乱しています。
+🤔 "Why does this cat bark?" they ask.
+「なぜこの猫は吠えるの？」と聞きます。
+😂 The cat doesn't understand.
+猫は理解していません。
+🐕 It thinks it is a dog!
+自分は犬だと思っています！
+🏠 One day, the cat sees a mirror.
+ある日、鏡を見ます。
+😲 "I am a cat!" it realizes.
+「私は猫だ！」と気づきます。
+😸 Now the cat is happy to be itself.
+今、自分自身で幸せです。`
   },
   {
-    level: 1,
-    title: "Had It Not Been for Cherry Blossoms, Spring Would Be Meaningless",
-    content: `1. 🌸 Had it not been for cherry blossoms, spring would be meaningless.
-桜がなかったなら、春は意味lessだっただろう。
-2. 🤔 The notion that beauty requires imperfection is profound.
-美しさが不完全さを必要とするという考えは深遠だ。
-3. 🌸 Jay suggested that the fleeting nature of sakura reflects life itself.
-ジェイは桜の移ろいやすさは人生そのものを反映すると提案した。
-4. 🍃 Tony insisted that we should get the most from each moment.
-トニーは私達は各瞬間から最大限を得るべきだと主張した。
-5. 🌸 Not only did the petals fall gracefully, but they also inspired poetry.
-花びらは優雅に落ちただけでなく、詩を刺激した。
-6. 📜 Historians have argued that sakura influenced Japanese culture significantly.
-歴史家たちは桜が日本文化に大きく影響したと主張してきた。
-7. 🎨 The interpretation of transience varies across different eras.
-無常の解釈は異なる時代を通じて変化する。
-8. 🌸 Had the Mongols not invaded, cultural exchange would have developed differently.
-モンゴルが侵略しなかったなら、文化交流は異なって発展しただろう。
-9. 🌏 The mechanism by which nature affects human psychology is complex.
-自然が人間の心理学に影響を与えるメカニズムは複雑だ。
-10. 🧠 Our brains process sensory data and react based on calculations.
-私たちの脳は感覚データを処理し、計算に基づいて反応する。
-11. 🌸 Nevertheless, the emotional response to sakura is universal.
-それにもかかわらず、桜への感情的反応は普遍的だ。
-12. 💭 What differentiates Tony's perspective from Jay's is their approach.
-トニーの視点とジェイの視点を区別するのは彼らのアプローチだ。
-13. 🤝 They recommended that the policy be changed to protect trees.
-彼らは政策が木々を保護するために変更されるべきだと提案した。
-14. 🌳 The resilience of nature suggests that adaptation is inevitable.
-自然の回復力は適応が避けられないことを示唆する。
-15. 😊 Had it not been for their friendship, the experience would have been less meaningful.
-彼らの友情がなかったなら、その経験はより意味lessだっただろう。`
-  }
+    title: "Grade 1: The Philosophical Goldfish",
+    content: `🐠 The goldfish lives in a small bowl.
+金魚は小さなボウルに住んでいます。
+🤔 It thinks about the meaning of life.
+人生の意味について考えています。
+🌊 "Is this all there is?" it wonders.
+「これだけなの？」と疑問に思います。
+🐠 The goldfish watches the world go by.
+世界が過ぎ去るのを見ています。
+👨‍👩‍👧 People feed it every day.
+毎日餌をくれます。
+😊 The goldfish is grateful.
+感謝しています。
+🌊 But it dreams of the ocean.
+でも海を夢見ています。
+🌊 "What lies beyond the glass?" it asks.
+「ガラスの向こうには何があるの？」と聞きます。
+🤔 The goldfish ponders existence.
+存在について考えます。
+🐠 It finds peace in its small world.
+小さな世界に平和を見つけます。`
+  },
 ];
