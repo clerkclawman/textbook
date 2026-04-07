@@ -1285,18 +1285,35 @@ let classData = {};
     const maxFontSize = 8;
     let displayMode = 'both';
     window.lessonsData = {};
+window.loadersReady = false;
   setTimeout(() => {
-    const loaders = [
-      'qa-loader.js', 'qa-loader.js', 'news-loader.js',
-      'fun-questions-loader.js',
-      'tony-jay-loader.js',
-      'quiz-loader.js'
-    ];
-    loaders.forEach(src => {
-      const script = document.createElement('script');
-      document.body.appendChild(script);
-    });
-  }, 100);
+  const loaders = [
+    'qa-loader.js',
+    'news-loader.js',
+    'fun-questions-loader.js',
+    'tony-jay-loader.js',
+    'quiz-loader.js'
+  ];
+  let loadedCount = 0;
+  loaders.forEach(src => {
+    const script = document.createElement('script');
+    script.onload = () => {
+      loadedCount++;
+      if (loadedCount === loaders.length) {
+        window.loadersReady = true;
+        console.log('All loaders ready');
+      }
+    };
+    script.onerror = () => {
+      console.error('Failed to load:', src);
+      loadedCount++;
+      if (loadedCount === loaders.length) {
+        window.loadersReady = true;
+      }
+    };
+    document.body.appendChild(script);
+  });
+}, 100);
     let selectedText = '';
     let translationLang = '';
     // Cloze Quiz specific variables
@@ -2897,11 +2914,22 @@ let classData = {};
     // DATA LOADING
     // ====================
     function loadExternalData() {
-        return Promise.all([
-            loadVocabData(),
-            loadLessonsData()
-        ]);
-    }
+ // Wait for loaders to be ready before proceeding
+ return new Promise((resolve, reject) => {
+ const checkLoaders = () => {
+ if (window.loadersReady) {
+ Promise.all([
+ loadVocabData(),
+ loadLessonsData()
+ ]).then(resolve).catch(reject);
+ } else {
+ console.log('Waiting for loaders to be ready...');
+ setTimeout(checkLoaders, 100);
+ }
+ };
+ checkLoaders();
+ });
+ }
 
     function loadVocabData() {
         return new Promise((resolve, reject) => {
