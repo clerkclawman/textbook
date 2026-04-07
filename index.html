@@ -1284,7 +1284,7 @@ let classData = {};
     const minFontSize = 2;
     const maxFontSize = 8;
     let displayMode = 'both';
-    window.lessonsData = {};
+    window.Object.assign(window.lessonsData, {};
 window.loadersReady = false;
   setTimeout(() => {
   const loaders = [
@@ -2997,7 +2997,7 @@ if (typeof getCombinedFunQuestions === "function") {
     lessonsData["FunQuestions"] = funQuestionsData;
 }
 
-            lessonsData = {
+            Object.assign(window.lessonsData, {
                 'Bronze': bronzeStories,
                 'Silver': silverStories,
                 'Gold': goldStories,
