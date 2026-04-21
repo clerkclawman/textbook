@@ -1246,6 +1246,7 @@
 <script src="eiken2.js"></script>
 <script src="eikenpre1.js"></script>
 <script src="eiken1.js"></script>
+<script src="whatsBestWorst.js"></script>
 
 <script>
     // ====================
@@ -2776,22 +2777,26 @@ function loadLessonsData() {
     })) : [],
     questions: window.qa5 ? window.qa5.questions : []
 },
-                'HighSchool': {
-                    stories: [
-                        {
-                            title: 'Getting to Know You',
-                            content: gettingtoknow.questions
-                        },
-                        {
-                            title: 'Easy Questions',
-                            content: easyquestions2.questions
-                        },
-                        {
-                            title: 'Would You Rather',
-                            content: wouldyourather.questions
-                        }
-                    ]
-                }
+ 'HighSchool': {
+ stories: [
+ {
+ title: 'Getting to Know You',
+ content: gettingtoknow.questions
+ },
+ {
+ title: 'Easy Questions',
+ content: easyquestions2.questions
+ },
+ {
+ title: 'Would You Rather',
+ content: wouldyourather.questions
+ },
+ {
+ title: 'What\'s the Best / What\'s the Worst',
+ content: whatsBestWorst
+ }
+ ]
+ }
             };
 
 // Process each class to ensure consistent structure
