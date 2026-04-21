@@ -72,8 +72,79 @@ var contentName = [
 - **Emoji** at start of English lines (visual cues for kids)
 - **English** line with question or statement
 - **Japanese** translation on following line
-- **Blank line** between pairs for readability
+- **NO blank lines** between EN/JA pairs (parser expects alternating lines)
+- **NO numbered prefixes** (e.g., "1.", "2.") — breaks parser
 - **Follow-up questions** at end of each story (for discussion)
+
+## Content Standard (Global Format)
+
+Since content files evolved organically with inconsistent naming and structure, here's the **target standard** for all new content:
+
+### Variable Naming Convention
+| Class | Standard Variable | Current Status |
+|-------|-------------------|----------------|
+| Bronze | `bronzeStories` | ✓ Standard |
+| Silver | `silverStories` | ✓ Standard |
+| Gold | `goldStories` | ✓ Standard |
+| Eiken 5 | `eiken5Stories` | ⚠️ Currently `eiken5story` |
+| Eiken 4 | `eiken4Stories` | ⚠️ Currently `eiken4` |
+| Eiken 3 | `eiken3Stories` | ⚠️ Currently `eiken3` |
+| Eiken Pre-2 | `eikenPre2Stories` | ⚠️ Currently `eikenpre2` |
+| Eiken Pre-2 Plus | `eikenPre2PlusStories` | ⚠️ Currently `eikenpre2plus` |
+| Eiken 2 | `eiken2Stories` | ✓ Standard |
+| Eiken Pre-1 | `eikenPre1Stories` | ⚠️ Currently `eikenpre1` |
+| Eiken 1 | `eiken1Stories` | ✓ Standard |
+| Adult | `adultStories` | ⚠️ Currently `adult` (object wrap) |
+| C Class | `cClassStories` | ⚠️ Currently `c` |
+| X Class | `xClassStories` | ⚠️ Currently `x` |
+
+### Structure Template
+```javascript
+var gradeNameStories = [
+  {
+    title: "Story Title (Grammar Focus)",
+    content: `🍎 First English sentence here.
+日本語の翻訳です。
+🐕 Second English sentence here.
+二つ目の日本語の翻訳です。
+👋 Third sentence here.
+三つ目の翻訳です。`
+  },
+  {
+    title: "Second Story (Target Grammar)",
+    content: `🎵 Another story content.
+もう一つの物語の内容です。`
+  }
+];
+
+// Optional: Separate questions file
+var gradeNameQuestions = {
+  questions: [
+    "First question text?",
+    "第一の質問文です？",
+    "Second question?",
+    "第二の質問です？"
+  ]
+};
+```
+
+### Content Line Format
+| Line | Content | Example |
+|------|---------|---------|
+| 1 | Emoji + English | `🍎 This is an apple.` |
+| 2 | Japanese translation | `これはりんごです。` |
+| 3 | Emoji + English | `🐶 The dog is happy.` |
+| 4 | Japanese translation | `その犬は嬉しいです。` |
+| ... | Repeat... | ... |
+
+**CRITICAL:** 
+- No blank lines between English/Japanese pairs
+- No numbered list prefixes
+- Always emoji on English lines only
+- Japanese lines never have emojis
+
+### Migration
+See `MIGRATION.md` for the 22-file migration plan to standardize all existing content. The site loader handles current inconsistencies, but future content should follow this standard.
 
 ## How to Add Content
 
