@@ -16,6 +16,16 @@ This analysis provides comprehensive vocabulary, sentence structure, and communi
 
 The vocabulary requirements expand from immediate daily life to abstract professional and global issues.
 
+### Grade 7 (Introductory Foundational - Pre-A1 Entry)
+- **Vocabulary Range:** ~200–400 words
+- **Common Topics:** Animals, colors, numbers, family members, body parts, classroom objects
+- **Representative Words (50):** Cat, dog, blue, red, one, two, three, mother, father, sister, brother, hand, foot, head, book, pen, pencil, desk, chair, apple, banana, orange, big, small, good, bad, happy, sad, yes, no, please, thank you, hello, goodbye, teacher, student, school, home, car, bus, train, sun, moon, star, tree, flower, bird, fish, water, milk, bread, rice
+
+### Grade 6 (Advanced Foundational - Pre-A1 High)
+- **Vocabulary Range:** ~400–600 words
+- **Common Topics:** School subjects, basic sports, common fruits/foods, basic feelings, classroom objects
+- **Representative Words (50):** Soccer, basketball, tennis, baseball, swimming, running, jumping, math, English, Japanese, science, music, art, PE, library, classroom, teacher, student, friend, hungry, thirsty, tired, happy, sad, angry, scared, excited, desk, chair, window, door, floor, ceiling, wall, blackboard, whiteboard, computer, tablet, phone, watch, clock, calendar, picture, photo, map, globe
+
 ### Grade 5 (Foundational - CEFR A1)
 - **Vocabulary Range:** ~600–1,000 words
 - **Common Topics:** Family, daily habits, school, simple food, colors, animals
@@ -57,11 +67,19 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 
 | Grade | Avg. Words | Shortest Example | Longest Example | Patterns |
 |-------|------------|------------------|-----------------|----------|
+| 7 | 3 | "I am Tom." | "This is a red apple." | Demonstratives, Noun/Adjective pairing |
+| 6 | 5 | "I like cats." | "I play soccer every Saturday." | Simple present, Basic questions |
 | 5 | 6 | "I'm Tom." | "My brother and I come to school by bus every day." | SVO, Present Progressive |
 | 3 | 12 | "Was it hot?" | "Research by scientists shows that global warming is a big problem." | Present Perfect, Passives |
 | 1 | 22+ | "He is lucky." | "As well as being a successful businessman, Mr. Gibbons is known for his ( )." | Complex clauses, Nominalization |
 
 ### Common Patterns
+
+**Grade 7-6:**
+- Demonstrative pronouns ("This is a pen")
+- Simple identification ("I am a student")
+- Basic imperatives ("Stand up")
+- Noun/adjective pairing ("A red ball")
 
 **Grade 5-4:**
 - Direct commands ("Please open")
@@ -106,6 +124,8 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 
 | Grade | Clearly Appropriate | Slightly Above Level | Should NOT Appear |
 |-------|-------------------|---------------------|------------------|
+| 7 | Demonstratives, Simple "be" verbs, Basic imperatives, Noun/adjective pairing | Plural pronouns (they/we), Present continuous | Past tense, Modals (can/must), Comparatives |
+| 6 | Simple present (be/action verbs), Basic questions, Prepositions of place, Singular pronouns | Plural pronouns (they/we), Present continuous | Past tense, Modals (can/must), Comparatives |
 | 5 | Present simple/continuous, Basic past tense verbs | | Passive voice, abstract nouns |
 | 3 | Present perfect, tag questions, Simple conditionals | | Complex academic jargon |
 | 1 | Technical ethics, legal jargon, Near-native idioms | | Simple survival-level grammar |
@@ -119,6 +139,18 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 - **Format:** Always multiple-choice (4 options) for reading/listening
 
 ### Level-Specific Constraints
+
+#### Grade 7 (Pre-A1 Entry)
+- **Grammar:** Demonstratives, Simple "be" verbs, Basic imperatives, Noun/adjective pairing
+- **Length:** Max 4 words/sentence
+- **Topics:** Animals, colors, numbers, family members, body parts, classroom objects
+- **Banned:** Past tense, Modals (can/must), Comparatives, Plural pronouns (they/we), Present continuous
+
+#### Grade 6 (Pre-A1 High)
+- **Grammar:** Simple present (be/action verbs), Basic questions, Prepositions of place, Singular pronouns
+- **Length:** Max 5 words/sentence
+- **Topics:** School subjects, basic sports, common fruits/foods, basic feelings, classroom objects
+- **Banned:** Past tense, Modals (can/must), Comparatives, Plural pronouns (they/we), Present continuous
 
 #### Grade 5 (A1)
 - **Grammar:** Present Simple/Continuous ONLY
@@ -144,6 +176,8 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 
 | Eiken Grade | CEFR Level | Vocabulary | Sentence Length | Key Grammar |
 |-------------|------------|------------|-----------------|-------------|
+| Grade 7 | Pre-A1 Entry | 200-400 | 3 words avg | Demonstratives, Simple "be" verbs |
+| Grade 6 | Pre-A1 High | 400-600 | 5 words avg | Simple present, Basic questions |
 | Grade 5 | A1 | 600-1,000 | 6 words avg | Present simple/continuous |
 | Grade 4 | A1/A2 | 1,300-1,600 | 8-10 words avg | Past tense, basic questions |
 | Grade 3 | A2 | 2,100-3,000 | 12 words avg | Present perfect, passives |
@@ -160,9 +194,13 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 - Vocabulary ranges are approximate and based on word frequency analysis
 - Sentence length averages are derived from actual test content
 - Content generation should strictly follow the level-specific constraints to ensure appropriateness
+- **Grade 7 and 6 are new levels announced in 2026** to create a smoother entry point for elementary school students
+- Grade 7 targets elementary school grades 3-4 (Pre-A1 Entry)
+- Grade 6 targets elementary school grades 5-6 (Pre-A1 High)
+- These levels sit below the previous Grade 5 (which was the lowest level)
 
 ---
 
 **Last Updated:** April 22, 2026
-**Analysis Source:** NotebookLM (March 2026)
+**Analysis Source:** NotebookLM (March 2026) for Grades 5-1; Extended analysis for Grades 7-6 (2026)
 **Purpose:** Chatterbox House textbook content generation guidelines
