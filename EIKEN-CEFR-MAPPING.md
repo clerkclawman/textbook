@@ -111,7 +111,137 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 
 ---
 
-## 4. Required Communication Skills
+## 4. Example Sentences by Grade Level
+
+These example sentences are selected from actual Eiken exam materials to perfectly represent the grammar, vocabulary, and complexity required for each stage.
+
+### Grade 7 (Pre-A1 Entry)
+*Note: These examples are extrapolated based on Grade 7 specifications*
+
+- This is a blue pen.
+- I like my mother.
+- Open your book, please.
+- Two big red apples.
+- That is a small cat.
+- I am a student.
+- Stand up, please.
+- A red ball.
+- One, two, three.
+- Good morning.
+
+### Grade 6 (Pre-A1 High)
+*Note: These examples are extrapolated based on Grade 6 specifications*
+
+- I play soccer every Saturday.
+- The ball is under the chair.
+- Do you like orange juice?
+- He has a new bicycle.
+- My sister is a good student.
+- I like apples.
+- She is happy.
+- What is this?
+- Where is the book?
+- I am hungry.
+
+### Grade 5 (Foundational - CEFR A1)
+- He's washing his dog in the garden.
+- My brother and I come to school by bus every day.
+- Please open the window.
+- I often watch basketball games on TV with my brother.
+- Tom has a cup of coffee every morning.
+- I get up early every morning and go to the park.
+- Janet goes swimming every Sunday with her sister.
+- Is Kim watching TV in the living room?
+- My father runs three kilometers every morning.
+- Let's check the homework together.
+
+### Grade 4 (Elementary - CEFR A1/A2)
+- Yumi visited a castle last weekend.
+- You must wash your hands first.
+- Taro was watching a movie about airplanes.
+- I should get my notebook from my locker first.
+- Is there a subway station near here?
+- We should go to the science room now.
+- Takeru's bag is very heavy, so he can't carry it.
+- This building is the largest in the city.
+- Henry came home from school early yesterday because he was sick.
+- Last week, Brian caught a cold.
+
+### Grade 3 (Lower-Intermediate - CEFR A2)
+- Have you checked the mail yet today?
+- Was this picture taken in Australia?
+- Research by scientists shows that global warming is a big problem.
+- Bob, you walked the dog, didn't you?
+- It is difficult for her to sleep at night.
+- I really want to learn Japanese because I am interested in Japanese culture.
+- Which subject is more interesting for you, English or math?
+- Yuki was looking forward to going to the concert.
+- The tomato plant she has grown in her garden is very big.
+- Do you have anything to drink?
+
+### Grade Pre-2 (Intermediate - CEFR B1 Entry)
+- I wish I could, but it's not been working since this morning.
+- Ella finally succeeded in playing the song perfectly.
+- Justin does not mind cooking as long as he does not have to wash the dishes.
+- We can catch up with the others after we've had our lunch.
+- Dawn and her new boyfriend have a lot in common.
+- Jane wants to be a comedian, and her classmates always laugh at her jokes.
+- The weather report said the storm would turn into a typhoon.
+- Kate's son's eyes were filled with joy when he saw the new toy.
+- We only talked for a few minutes, but I had a very good impression of him.
+- Do you think it is a good idea for people to take notes on their smartphones?
+
+### Grade Pre-2 Plus (Intermediate - CEFR B1 Entry)
+- If he isn't careful, he'll start putting on weight.
+- He thought his income was too low to support a family.
+- Apparently, a lot of people got sick from eating the grilled fish.
+- Risako's parents spent a lot of money on her education.
+- I brought my umbrella just in case it rains.
+- He found that his new cell phone is inferior to his old one.
+- She decided to take the class in spite of what her friends had said.
+- People find AI helpful because it gives us quick solutions.
+- Jiro denied that he had broken the expensive vase.
+- The Lions played well, but their opponents were much stronger.
+
+### Grade 2 (Upper-Intermediate - CEFR B1)
+- Although it may seem that humans are the best at communication, animals also communicate in different ways.
+- The characteristics that make rabbits different from other animals are their long ears and short tails.
+- The IT company has expanded since it opened five years ago.
+- Rachel wants to work there for the time being, but she hopes to find a job in marketing.
+- Sports referees and umpires must have excellent judgment.
+- The two cars looked identical to each other, but one had superior performance.
+- The teacher advised Emma to review her notes rather than relying only on the textbook.
+- He has a part-time job, but he still relies on his parents for most of his money.
+- Haruka devoted all her attention to studying for the entrance exam.
+- Do you think it is important to set clear goals when starting new activities?
+
+### Grade Pre-1 (Advanced - CEFR B2)
+- Following his outburst, all the students in the classroom went silent.
+- Researchers have improved the effectiveness of their headache medicine.
+- Motorists are advised to check that all roads on their planned routes are safe to drive on.
+- In some countries, it is the obligation of families to financially support senior citizens.
+- Although many like the idea of online learning, others feel it is important to interact in person.
+- The city plans to tear down the old theater and build a new one.
+- The professor told the class that she would not tolerate lateness.
+- The documentary on the war was so powerful that it evoked strong feelings of sadness.
+- He stepped hard on the brakes when the truck ahead of him stopped abruptly.
+- Should self-driving cars be allowed to drive on public roads?
+
+### Grade 1 (Professional / Expert - CEFR C1)
+- As well as being a successful businessman, Mr. Gibbons is known for his boon to the area.
+- There was a time when solar power was not considered a viable energy source.
+- Without such a system, it would be more difficult to finance the creation of new medicines.
+- It was discovered she had stolen almost a million dollars through embezzlement.
+- Relations between the two countries are in a state of cessation.
+- Leilani thought it was useless to bemoan her current financial situation.
+- Safety took on paramount importance at the factory after workers were injured.
+- The boxer made a show of bravado although he feared the champion.
+- Governments should ban the sale of single-use plastic products.
+- The politician's comments on social issues have alienated a large number of voters.
+
+---
+
+## 5. Required Communication Skills
 
 - **Asking for Information:** "Is there a subway station near here?" (G4)
 - **Describing Experiences:** "I went to a party this weekend." (G4)
@@ -120,7 +250,7 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 
 ---
 
-## 5. Assessment of Level Appropriateness
+## 6. Assessment of Level Appropriateness
 
 | Grade | Clearly Appropriate | Slightly Above Level | Should NOT Appear |
 |-------|-------------------|---------------------|------------------|
@@ -132,7 +262,7 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 
 ---
 
-## 6. Content Generation Specification (AI Instructions)
+## 7. Content Generation Specification (AI Instructions)
 
 ### General Rules
 - **Tone:** Neutral, informative, and polite
@@ -172,7 +302,7 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 
 ---
 
-## 7. CEFR Mapping Summary
+## 8. CEFR Mapping Summary
 
 | Eiken Grade | CEFR Level | Vocabulary | Sentence Length | Key Grammar |
 |-------------|------------|------------|-----------------|-------------|
@@ -188,7 +318,7 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 
 ---
 
-## Notes
+## 9. Notes
 
 - This mapping is based on analysis of real Eiken test papers, not official Eiken claims
 - Vocabulary ranges are approximate and based on word frequency analysis
@@ -198,9 +328,11 @@ The vocabulary requirements expand from immediate daily life to abstract profess
 - Grade 7 targets elementary school grades 3-4 (Pre-A1 Entry)
 - Grade 6 targets elementary school grades 5-6 (Pre-A1 High)
 - These levels sit below the previous Grade 5 (which was the lowest level)
+- **Example sentences for Grades 5-1 are from actual Eiken exam materials** (NotebookLM analysis)
+- Example sentences for Grades 7-6 are extrapolated based on level specifications (no actual exam materials available yet)
 
 ---
 
 **Last Updated:** April 22, 2026
-**Analysis Source:** NotebookLM (March 2026) for Grades 5-1; Extended analysis for Grades 7-6 (2026)
+**Analysis Source:** NotebookLM (March 2026) for Grades 5-1; Extended analysis for Grades 7-6 (2026); Example sentences from actual Eiken exam materials (Grades 5-1) and extrapolated (Grades 7-6)
 **Purpose:** Chatterbox House textbook content generation guidelines
