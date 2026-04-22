@@ -117,5 +117,38 @@ var haveyouever = {
 自分で作ったものを売ったことはありますか？
 
 39. 🎪 Have you ever been to a fireworks display on a boat?
-船の上から花火を見たことはありますか？`
+船の上から花火を見たことはありますか？
+
+40. 🎸 Have you ever played a musical instrument?
+楽器を演奏したことはありますか？
+
+41. 🏆 Have you ever received an award or prize?
+賞や賞品をもらったことはありますか？
+
+42. 🎨 Have you ever painted a picture?
+絵を描いたことはありますか？
+
+43. 🎬 Have you ever made a video or movie?
+動画や映画を作ったことはありますか？
+
+44. 🏊 Have you ever been to a water park?
+ウォーターパークに行ったことはありますか？
+
+45. 🎪 Have you ever been to a comedy show?
+コメディショーを見たことはありますか？
+
+46. 🎤 Have you ever given a speech or presentation?
+スピーチやプレゼンテーションをしたことはありますか？
+
+47. 🏔️ Have you ever gone camping?
+キャンプをしたことはありますか？
+
+48. 🎨 Have you ever written a story or poem?
+物語や詩を書いたことはありますか？
+
+49. 🎮 Have you ever played a game in a tournament?
+トーナメントでゲームをしたことはありますか？
+
+50. 🎪 Have you ever been to a magic show?
+マジックショーを見たことはありますか？`
 }
