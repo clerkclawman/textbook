@@ -2,153 +2,123 @@
 var haveyouever = {
     questions: `#Have You Ever...
 
-1. 🎌 Have you ever worn a kimono or yukata?
-着物や浴衣を着たことはありますか？
+1. ✈️ Have you ever traveled abroad?
+海外旅行をしたことはありますか？
 
-2. 🍣 Have you ever tried natto? Did you like it?
-納豆を食べたことはありますか？気に入りましたか？
+2. 🎤 Have you ever been on TV?
+テレビに出たことはありますか？
 
-3. 🏯 Have you ever visited Kyoto or Nara?
-京都や奈良に行ったことはありますか？
+3. 🏆 Have you ever won a competition or contest?
+コンテストや大会で優勝したことはありますか？
 
-4. 🎆 Have you ever seen fireworks at a summer festival (hanabi)?
-夏祭りの花火を見たことはありますか？
+4. 🍽️ Have you ever eaten something that you thought was disgusting?
+気持ち悪いと思ったものを食べたことはありますか？
 
-5. 🎤 Have you ever sung karaoke by yourself?
-一人でカラオケを歌ったことはありますか？
+5. 🗺️ Have you ever gotten lost in a foreign country?
+外国で迷子になったことはありますか？
 
-6. 🚅 Have you ever taken the shinkansen?
-新幹線に乗ったことはありますか？
+6. 🎭 Have you ever met a famous person?
+有名人に会ったことはありますか？
 
-7. 🏔️ Have you ever climbed Mount Fuji?
-富士山に登ったことはありますか？
+7. 🏨 Have you ever stayed in a love hotel?
+ラブホテルに泊まったことはありますか？
 
-8. 🍜 Have you ever tried making ramen at home?
-家でラーメンを作ったことはありますか？
+8. ⚾ Have you ever been to a professional baseball game?
+プロ野球の試合を見たことはありますか？
 
-9. 🎮 Have you ever stayed up all night playing video games?
-ゲームをして徹夜したことはありますか？
+9. 🎃 Have you ever worn a Halloween costume?
+ハロウィンの仮装をしたことはありますか？
 
-10. 🌸 Have you ever seen cherry blossoms (sakura) in full bloom?
-満開の桜を見たことはありますか？
+10. 🍳 Have you ever tried to cook something and it was a disaster?
+料理に挑戦して失敗したことはありますか？
 
-11. 🍱 Have you ever eaten bento for lunch?
-お弁当を食べたことはありますか？
+11. 💑 Have you ever been on a blind date?
+お見合いをしたことはありますか？
 
-12. 🎋 Have you ever celebrated Tanabata?
-七夕を祝ったことはありますか？
+12. 🎸 Have you ever been to a live concert?
+ライブコンサートに行ったことはありますか？
 
-13. 🏊 Have you ever been to an onsen (hot spring)?
-温泉に行ったことはありますか？
+13. 🎄 Have you ever spent Christmas alone?
+一人でクリスマスを過ごしたことはありますか？
 
-14. 🎎 Have you ever played with traditional Japanese toys?
-日本の伝統的なおもちゃで遊んだことはありますか？
+14. 🏰 Have you ever been to a theme park on a weekday?
+平日にテーマパークに行ったことはありますか？
 
-15. 🍵 Have you ever participated in a tea ceremony?
-茶道に参加したことはありますか？
+15. 🎁 Have you ever received a terrible gift?
+ひどいプレゼントをもらったことはありますか？
 
-16. 🎑 Have you ever attended a Japanese wedding?
-日本の結婚式に出席したことはありますか？
+16. 🚗 Have you ever driven a car on the highway?
+高速道路で車を運転したことはありますか？
 
-17. 🏮 Have you ever visited a shrine or temple?
-神社やお寺に行ったことはありますか？
+17. 🏊 Have you ever swum in the ocean?
+海で泳いだことはありますか？
 
-18. 🎐 Have you ever tried calligraphy (shodo)?
-書道をしたことはありますか？
+18. 🎪 Have you ever been to a circus?
+サーカスを見たことはありますか？
 
-19. 🎏 Have you ever flown a kite?
-たこを上げたことはありますか？
+19. 🎯 Have you ever hit a hole-in-one (golf)?
+ホールインワンを達成したことはありますか？
 
-20. 🍡 Have you ever eaten dango?
-団子を食べたことはありますか？
+20. 🎬 Have you ever been in a movie or TV show?
+映画やテレビ番組に出たことはありますか？
 
-21. 🎌 Have you ever watched sumo wrestling?
-相撲を見たことはありますか？
+21. 🍜 Have you ever eaten something unusual (like raw horse meat, insects, etc.)?
+変わったもの（馬刺し、昆虫など）を食べたことはありますか？
 
-22. 🏯 Have you ever stayed in a ryokan (traditional inn)?
-旅館に泊まったことはありますか？
+22. 🎲 Have you ever won money gambling?
+ギャンブルでお金を稼いだことはありますか？
 
-23. 🌙 Have you ever seen the moon viewing (tsukimi)?
-お月見をしたことはありますか？
+23. 🏔️ Have you ever gone skiing or snowboarding?
+スキーやスノーボードをしたことはありますか？
 
-24. 🎵 Have you ever played a traditional Japanese instrument?
-日本の伝統的な楽器を演奏したことはありますか？
+24. 🎤 Have you ever sung karaoke in front of strangers?
+知らない人の前でカラオケを歌ったことはありますか？
 
-25. 🍂 Have you ever seen autumn leaves (momiji)?
-紅葉を見たことはありますか？
+25. 🏥 Have you ever stayed in a hospital overnight?
+入院したことはありますか？
 
-26. 🎊 Have you ever celebrated New Year's (oshogatsu) in Japan?
-日本でお正月を祝ったことはありますか？
+26. 🎨 Have you ever created something you're proud of?
+誇れるものを作ったことはありますか？
 
-27. 🍙 Have you ever made onigiri (rice balls)?
-おにぎりを作ったことはありますか？
+27. 🌋 Have you ever seen a volcano?
+火山を見たことはありますか？
 
-28. 🎎 Have you ever worn a happi coat?
-法被を着たことはありますか？
+28. 🎪 Have you ever performed on stage?
+ステージでパフォーマンスをしたことはありますか？
 
-29. 🏮 Have you ever written a wish on tanzaku?
-短冊に願い事を書いたことはありますか？
+29. 🍕 Have you ever tried to make pizza from scratch?
+ピザを一から作ったことはありますか？
 
-30. 🌸 Have you ever had a picnic under cherry blossoms?
-桜の下でピクニックをしたことはありますか？
+30. 🎁 Have you ever given a gift that someone didn't like?
+気に入られないプレゼントをあげたことはありますか？
 
-31. 🍣 Have you ever tried conveyor belt sushi?
-回転寿司を食べたことはありますか？
+31. 🏃 Have you ever run a marathon or half-marathon?
+マラソンやハーフマラソンを走ったことはありますか？
 
-32. 🎆 Have you ever set off fireworks?
-花火をしたことはありますか？
+32. 🎮 Have you ever beaten a video game 100%?
+ゲームを100%クリアしたことはありますか？
 
-33. 🏔️ Have you ever seen Mount Fuji?
-富士山を見たことはありますか？
+33. 🎭 Have you ever acted in a play?
+演劇に出演したことはありますか？
 
-34. 🎤 Have you ever sung in front of an audience?
-観客の前で歌ったことはありますか？
+34. 🏊 Have you ever dived from a high place?
+高いところから飛び降りたことはありますか？
 
-35. 🚅 Have you ever traveled by bullet train?
-新幹線で旅行したことはありますか？
+35. 🎪 Have you ever been to a festival in another country?
+外国の祭りに行ったことはありますか？
 
-36. 🌸 Have you ever taken pictures of cherry blossoms?
-桜の写真を撮ったことはありますか？
+36. 🍣 Have you ever tried to make sushi?
+寿司を作ったことはありますか？
 
-37. 🍱 Have you ever made your own bento?
-自分でお弁当を作ったことはありますか？
+37. 🎤 Have you ever told a joke that nobody laughed at?
+笑われないジョークを言ったことはありますか？
 
-38. 🎋 Have you ever written a wish on a paper?
-紙に願い事を書いたことはありますか？
+38. 🏔️ Have you ever climbed a mountain higher than 2,000 meters?
+2000メートル以上の山に登ったことはありますか？
 
-39. 🏊 Have you ever swum in a hot spring?
-温泉で泳いだことはありますか？
+39. 🎨 Have you ever sold something you made?
+自分で作ったものを売ったことはありますか？
 
-40. 🎎 Have you ever tried origami?
-折り紙をしたことはありますか？
-
-41. 🍵 Have you ever drunk matcha tea?
-抹茶を飲んだことはありますか？
-
-42. 🎑 Have you ever worn a formal kimono?
-正装の着物を着たことはありますか？
-
-43. 🏮 Have you ever prayed at a shrine?
-神社で祈ったことはありますか？
-
-44. 🎐 Have you ever written kanji with a brush?
-筆で漢字を書いたことはありますか？
-
-45. 🎏 Have you ever made a traditional kite?
-伝統的なたこを作ったことはありますか？
-
-46. 🍡 Have you ever tried making dango?
-団子を作ったことはありますか？
-
-47. 🎌 Have you ever visited a sumo stable?
-相撲部屋に行ったことはありますか？
-
-48. 🏯 Have you ever slept on tatami mats?
-畳の上で寝たことはありますか？
-
-49. 🌙 Have you ever eaten moon-viewing dumplings?
-お月見団子を食べたことはありますか？
-
-50. 🎊 Have you ever received otoshidama (New Year's money)?
-お年玉をもらったことはありますか？`
+40. 🎪 Have you ever been to a fireworks display on a boat?
+船の上から花火を見たことはありますか？`
 }
