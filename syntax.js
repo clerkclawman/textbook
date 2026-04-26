@@ -1123,107 +1123,131 @@ var syntax = {
 ハナちゃんは凧を飛ばします。彼女は高く飛ばします。`
         },
         {
-            title: "I We You Pronoun Drill",
-            content: `👦 I eat an apple. I like fruit.
-私はリンゴを食べます。私は果物が好きです。
-👧 You read a book. You like stories.
-あなたは本を読みます。あなたは物語が好きです。
-👪 We play soccer. We run fast.
-私たちはサッカーをします。私たちは速く走ります。
-👦 I drive a car. I drive carefully.
-私は車を運転します。私は慎重に運転します。
-👧 You cook dinner. You cook well.
-あなたは夕食を作ります。あなたはよく料理をします。
-👪 We teach math. We teach clearly.
-私たちは数学を教えます。私たちははっきり教えます。
-👦 I sing a song. I sing beautifully.
-私は歌を歌います。私は美しく歌います。
-👧 You study English. You study hard.
-あなたは英語を勉強します。あなたは一生懸命勉強します。
-👪 We write a letter. We write neatly.
-私たちは手紙を書きます。私たちは綺麗に書きます。
-👦 I fix a bike. I fix quickly.
-私は自転車を修理します。私は速く修理します。
-👧 You paint a picture. You paint carefully.
-あなたは絵を描きます。あなたは慎重に描きます。
-👪 We build a house. We build strongly.
-私たちは家を建てます。私たちは強く建てます。
-👦 I plant a tree. I plant deeply.
-私は木を植えます。私は深く植えます。
-👧 You clean a room. You clean thoroughly.
-あなたは部屋を掃除します。あなたは徹底的に掃除します。
-👪 We wash dishes. We wash carefully.
-私たちは皿を洗います。私たちは慎重に洗います。
-👦 I buy a car. I buy wisely.
-私は車を買います。私は賢く買います。
-👧 You sell flowers. You sell happily.
-あなたは花を売ります。あなたは嬉しく売ります。
-👪 We draw a map. We draw accurately.
-私たちは地図を描きます。私たちは正確に描きます。
-👦 I bake a cake. I bake sweetly.
-私はケーキを焼きます。私は甘く焼きます。
-👧 You play the guitar. You play loudly.
-あなたはギターを弾きます。あなたは大声で弾きます。
-👪 We play the piano. We play softly.
-私たちはピアノを弾きます。私たちは小さく弾きます。
-👦 I watch TV. I watch quietly.
-私はテレビを見ます。私は静かに見ます。
-👧 You watch a movie. You watch excitedly.
-あなたは映画を見ます。あなたは興奮して見ます。
-👪 We listen to music. We listen carefully.
-私たちは音楽を聞きます。私たちは慎重に聞きます。
-👦 I listen to the radio. I listen happily.
-私はラジオを聞きます。私は嬉しく聞きます。
-👧 You speak English. You speak fluently.
-あなたは英語を話します。あなたは流暢に話します。
-👪 We speak Japanese. We speak clearly.
-私たちは日本語を話します。私たちははっきり話します。
-👦 I write a story. I write creatively.
-私は物語を書きます。私は創造的に書きます。
-👧 You write a poem. You write beautifully.
-あなたは詩を書きます。あなたは美しく書きます。
-👪 I take a photo. I take carefully.
-私は写真を撮ります。私は慎重に撮ります。
-👧 You take a video. You take steadily.
-あなたはビデオを撮ります。あなたは安定して撮ります。
-👪 We make a cake. We make deliciously.
-私たちはケーキを作ります。私たちは美味しく作ります。
-👦 I make cookies. I make sweetly.
-私はクッキーを作ります。私は甘く作ります。
-👧 You drink water. You drink slowly.
-あなたは水を飲みます。あなたはゆっくり飲みます。
-👪 We drink tea. We drink quietly.
-私たちはお茶を飲みます。私たちは静かに飲みます。
-👦 I eat breakfast. I eat quickly.
-私は朝食を食べます。私は速く食べます。
-👧 You eat lunch. You eat slowly.
-あなたは昼食を食べます。あなたはゆっくり食べます。
-👪 We sleep at night. We sleep soundly.
-私たちは夜に寝ます。私たちはよく寝ます。
-👦 I sleep in the morning. I sleep peacefully.
-私は朝に寝ます。私は平和に寝ます。
-👧 You walk to school. You walk briskly.
-あなたは学校に歩いて行きます。あなたは軽快に歩きます。
-👪 We walk to work. We walk slowly.
-私たちは仕事に歩いて行きます。私たちはゆっくり歩きます。
-👦 I run in the park. I run fast.
-私は公園で走ります。私は速く走ります。
-👧 You run in the race. You run quickly.
-あなたはレースで走ります。あなたは速く走ります。
-👪 We swim in the pool. We swim strongly.
-私たちはプールで泳ぎます。私たちは強く泳ぎます。
-👦 I swim in the lake. I swim gracefully.
-私は湖で泳ぎます。私は優雅に泳ぎます。
-👧 You ride a bike. You ride carefully.
-あなたは自転車に乗ります。あなたは慎重に乗ります。
-👪 We ride a horse. We ride bravely.
-私たちは馬に乗ります。私たちは勇敢に乗ります。
-👦 I fly a plane. I fly smoothly.
-私は飛行機を飛ばします。私はスムーズに飛ばします。
-👧 You fly a kite. You fly high.
-あなたは凧を飛ばします。あなたは高く飛ばします。
-👪 We fly a balloon. We fly gently.
-私たちは風船を飛ばします。私たちは優しく飛ばします。`
+            title: "I and You with To Be Drill",
+            content: `👦 I am happy.
+私は幸せです。
+👧 You are sad.
+あなたは悲しいです。
+👦 I am tall.
+私は背が高いです。
+👧 You are short.
+あなたは背が低いです。
+👦 I am young.
+私は若いです。
+👧 You are old.
+あなたは年をとっています。
+👦 I am strong.
+私は強いです。
+👧 You are weak.
+あなたは弱いです。
+👦 I am fast.
+私は速いです。
+👧 You are slow.
+あなたは遅いです。
+👦 I am smart.
+私は賢いです。
+👧 You are kind.
+あなたは親切です。
+👦 I am busy.
+私は忙しいです。
+👧 You are free.
+あなたは自由です。
+👦 I am hungry.
+私はお腹が空いています。
+👧 You are thirsty.
+あなたは喉が渇いています。
+👦 I am tired.
+私は疲れています。
+👧 You are energetic.
+あなたは元気です。
+👦 I am cold.
+私は寒いです。
+👧 You are warm.
+あなたは暖かいです。
+👦 I am rich.
+私は金持ちです。
+👧 You are poor.
+あなたは貧しいです。
+👦 I am healthy.
+私は健康です。
+👧 You are sick.
+あなたは病気です。
+👦 I am brave.
+私は勇敢です。
+👧 You are scared.
+あなたは怖がっています。
+👦 I am quiet.
+私は静かです。
+👧 You are loud.
+あなたは大声です。
+👦 I am careful.
+私は慎重です。
+👧 You are careless.
+あなたは不注意です。
+👦 I am honest.
+私は正直です。
+👧 You are dishonest.
+あなたは不正直です。
+👦 I am patient.
+私は忍耐強いです。
+👧 You are impatient.
+あなたは忍耐がありません。
+👦 I am friendly.
+私は友好的です。
+👧 You are unfriendly.
+あなたは不友好的です。
+👦 I am creative.
+私は創造的です。
+👧 You are boring.
+あなたは退屈です。
+👦 I am funny.
+私は面白いです。
+👧 You are serious.
+あなたは真面目です。
+👦 I am lucky.
+私は幸運です。
+👧 You are unlucky.
+あなたは不運です。
+👦 I am famous.
+私は有名です。
+👧 You are unknown.
+あなたは無名です。
+👦 I am single.
+私は独身です。
+👧 You are married.
+あなたは結婚しています。
+👦 I am available.
+私は利用可能です。
+👧 You are unavailable.
+あなたは利用不可能です。
+👦 I am ready.
+私は準備ができています。
+👧 You are ready.
+あなたは準備ができています。
+👦 I am late.
+私は遅れています。
+👧 You are early.
+あなたは早いです。
+👦 I am right.
+私は正しいです。
+👧 You are wrong.
+あなたは間違っています。
+👦 I am sure.
+私は確信しています。
+👧 You are unsure.
+あなたは確信していません。
+👦 I am confident.
+私は自信があります。
+👧 You are nervous.
+あなたは緊張しています。
+👦 I am relaxed.
+私はリラックスしています。
+👧 You are stressed.
+あなたはストレスを感じています。
+👦 I am happy.
+私は幸せです。
+👧 You are sad.
+あなたは悲しいです。`
         }
     ]
 };
