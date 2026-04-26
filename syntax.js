@@ -682,6 +682,119 @@ var syntax = {
 彼は腕で持ち上げます。その腕は箱を持ち上げます。
 🦵 She pushes with a leg. The leg pushes a door.
 彼女は足で押します。その足はドアを押します。`
+        },
+        {
+            title: "To Be - Singular and Plural Drill",
+            content: `🐱 The cat is big. The cats are big.
+猫は大きいです。猫たちは大きいです。
+🐶 The dog is small. The dogs are small.
+犬は小さいです。犬たちは小さいです。
+🐦 The bird is fast. The birds are fast.
+鳥は速いです。鳥たちは速いです。
+🐟 The fish is blue. The fish are blue.
+魚は青いです。魚たちは青いです。
+🐰 The rabbit is cute. The rabbits are cute.
+ウサギは可愛いです。ウサギたちは可愛いです。
+🐴 The horse is strong. The horses are strong.
+馬は強いです。馬たちは強いです。
+🐄 The cow is heavy. The cows are heavy.
+牛は重いです。牛たちは重いです。
+🐷 The pig is dirty. The pigs are dirty.
+豚は汚いです。豚たちは汚いです。
+🐑 The sheep is white. The sheep are white.
+羊は白いです。羊たちは白いです。
+🐔 The chicken is yellow. The chickens are yellow.
+鶏は黄色いです。鶏たちは黄色いです。
+📚 The book is new. The books are new.
+本は新しいです。本たちは新しいです。
+✏️ The pencil is long. The pencils are long.
+鉛筆は長いです。鉛筆たちは長いです。
+🖊️ The pen is red. The pens are red.
+ペンは赤いです。ペンたちは赤いです。
+🧹 The broom is old. The brooms are old.
+ほうきは古いです。ほうきたちは古いです。
+🪑 The chair is wooden. The chairs are wooden.
+椅子は木製です。椅子たちは木製です。
+🎒 The bag is heavy. The bags are heavy.
+カバンは重いです。カバンたちは重いです。
+🍎 The apple is sweet. The apples are sweet.
+リンゴは甘いです。リンゴたちは甘いです。
+🍊 The orange is sour. The oranges are sour.
+オレンジは酸っぱいです。オレンジたちは酸っぱいです。
+🍌 The banana is soft. The bananas are soft.
+バナナは柔らかいです。バナナたちは柔らかいです。
+🍞 The bread is fresh. The bread is fresh.
+パンは新鮮です。パンは新鮮です。
+🥚 The egg is round. The eggs are round.
+卵は丸いです。卵たちは丸いです。
+🧁 The cake is delicious. The cakes are delicious.
+ケーキは美味しいです。ケーキたちは美味しいです。
+🍪 The cookie is crunchy. The cookies are crunchy.
+クッキーはサクサクしています。クッキーたちはサクサクしています。
+🌳 The tree is tall. The trees are tall.
+木は高いです。木たちは高いです。
+🌸 The flower is beautiful. The flowers are beautiful.
+花は美しいです。花たちは美しいです。
+☀️ The sun is bright. The suns are bright.
+太陽は明るいです。太陽たちは明るいです。
+🌙 The moon is round. The moons are round.
+月は丸いです。月たちは丸いです。
+⭐ The star is far. The stars are far.
+星は遠いです。星たちは遠いです。
+☁️ The cloud is white. The clouds are white.
+雲は白いです。雲たちは白いです。
+🌧️ The rain is cold. The rains are cold.
+雨は冷たいです。雨たちは冷たいです。
+❄️ The snow is white. The snows are white.
+雪は白いです。雪たちは白いです。
+👦 The boy is young. The boys are young.
+男の子は若いです。男の子たちは若いです。
+👧 The girl is tall. The girls are tall.
+女の子は背が高いです。女の子たちは背が高いです。
+👨 The man is old. The men are old.
+男性は年をとっています。男性たちは年をとっています。
+👩 The woman is kind. The women are kind.
+女性は親切です。女性たちは親切です。
+👨‍🏫 The teacher is smart. The teachers are smart.
+先生は賢いです。先生たちは賢いです。
+👨‍🎓 The student is young. The students are young.
+学生は若いです。学生たちは若いです。
+👨‍⚕️ The doctor is busy. The doctors are busy.
+医者は忙しいです。医者たちは忙しいです。
+👩‍⚕️ The nurse is kind. The nurses are kind.
+看護師は親切です。看護師たちは親切です。
+🚗 The car is fast. The cars are fast.
+車は速いです。車たちは速いです。
+🚌 The bus is big. The buses are big.
+バスは大きいです。バスたちは大きいです。
+🚆 The train is long. The trains are long.
+電車は長いです。電車たちは長いです。
+🚲 The bike is small. The bikes are small.
+自転車は小さいです。自転車たちは小さいです。
+🏠 The house is big. The houses are big.
+家は大きいです。家たちは大きいです。
+🏢 The building is tall. The buildings are tall.
+ビルは高いです。ビルたちは高いです。
+🚪 The door is open. The doors are open.
+ドアは開いています。ドアたちは開いています。
+🪟 The window is clean. The windows are clean.
+窓は綺麗です。窓たちは綺麗です。
+👁️ The eye is small. The eyes are small.
+目は小さいです。目たちは小さいです。
+👂 The ear is round. The ears are round.
+耳は丸いです。耳たちは丸いです。
+👃 The nose is big. The noses are big.
+鼻は大きいです。鼻たちは大きいです。
+👄 The mouth is red. The mouths are red.
+口は赤いです。口たちは赤いです。
+🤚 The hand is strong. The hands are strong.
+手は強いです。手たちは強いです。
+🦶 The foot is big. The feet are big.
+足は大きいです。足たちは大きいです。
+💪 The arm is long. The arms are long.
+腕は長いです。腕たちは長いです。
+🦵 The leg is strong. The legs are strong.
+足は強いです。足たちは強いです。`
         }
     ]
 };
