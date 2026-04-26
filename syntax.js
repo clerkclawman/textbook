@@ -14,8 +14,8 @@ var syntax = {
 彼は猫を見ています。
 👩 She eats an orange.
 彼女はオレンジを食べます。
-🐶 It runs fast.
-それは速く走ります。
+🐶 It runs.
+それは走ります。
 👪 We play soccer.
 私たちはサッカーをします。
 👥 They read books.
@@ -36,12 +36,12 @@ var syntax = {
 彼はテレビを見ています。
 🎧 She listens to music.
 彼女は音楽を聞いています。
-🐇 It jumps high.
-それは高く跳びます。
+🐇 It jumps.
+それは跳びます。
 🎤 We sing a song.
 私たちは歌を歌います。
-💃 They dance well.
-彼らはよく踊ります。
+💃 They dance.
+彼らは踊ります。
 🚪 I open the door.
 私はドアを開けます。
 🪟 You close the window.
@@ -78,16 +78,16 @@ var syntax = {
 これらは赤です。
 🔵 Those are blue.
 それらは青です。
-🏃 I run fast.
-私は速く走ります。
-🚶 You walk slow.
-あなたはゆっくり歩きます。
-⬆️ He jumps high.
-彼は高く跳びます。
-🪑 She sits down.
+🏃 I run.
+私は走ります。
+🚶 You walk.
+あなたは歩きます。
+⬆️ He jumps.
+彼は跳びます。
+🪑 She sits.
 彼女は座ります。
-⬆️ It stands up.
-それは立ち上がります。
+⬆️ It stands.
+それは立ちます。
 🍽️ We eat lunch.
 私たちは昼ご飯を食べます。
 🥛 They drink milk.
@@ -100,8 +100,8 @@ var syntax = {
 彼は絵を描きます。
 📘 She reads a book.
 彼女は本を読みます。
-🚲 It rolls down.
-それは下り坂を転がります。
+🚲 It rolls.
+それは転がります。
 🧹 We clean the room.
 私たちは部屋を掃除します。
 🛒 They buy groceries.
@@ -123,68 +123,68 @@ var syntax = {
         },
         {
             title: "Object Pronouns Drill",
-            content: `👦 I see him.
-私は彼を見ます。
-👧 You help her.
-あなたは彼女を助けます。
-👨 He likes it.
-彼はそれを好きです。
-👩 She knows them.
-彼女は彼らを知っています。
-👪 We invite you.
-私たちはあなたを招待します。
-👥 They watch us.
-彼らは私たちを見ています。
-📝 I like this.
-私はこれが好きです。
-🐕 You want that.
-あなたはそれが欲しいです。
-⚽ He takes these.
-彼はこれらを取ります。
-🐱 She uses those.
-彼女はそれらを使います。
-🥤 I call him.
-私は彼に電話します。
-🍞 You meet her.
-あなたは彼女に会います。
-📺 He finds it.
-彼はそれを見つけます。
-🎧 She gives them.
-彼女はそれらを与えます。
-🐇 It follows us.
-それは私たちについてきます。
-🎤 We love you.
-私たちはあなたを愛しています。
-💃 They choose it.
-彼らはそれを選びます。
-🚪 I open it.
-私はそれを開けます。
-🪟 You close it.
-あなたはそれを閉めます。
-🎁 He holds it.
-彼はそれを持っています。
-📸 She takes it.
-彼女はそれを取ります。
-🔊 It follows you.
-それはあなたについてきます。
-📚 We need them.
-私たちはそれらが必要です。
-🏠 They want you.
-彼らはあなたを望んでいます。
-👫 I know him.
-私は彼を知っています。
-✏️ You have her.
-あなたは彼女を持っています。
-🥤 He likes her.
-彼は彼女が好きです。
-🎒 She has it.
-彼女はそれを持っています。
-📏 It sees you.
-それはあなたを見ています。
-😊 We help them.
-私たちは彼らを助けます。
-🎒 They see us.
-彼らは私たちを見ています。
+            content: `👦 John sees me.
+ジョンは私を見ます。
+👧 Mary helps you.
+メアリーはあなたを助けます。
+👨 Tom likes him.
+トムは彼が好きです。
+👩 Lisa knows her.
+リサは彼女を知っています。
+👪 The teacher invites us.
+先生は私たちを招待します。
+👥 My friends watch them.
+私の友達は彼らを見ています。
+📝 Dad likes this.
+パパはこれが好きです。
+🐕 Mom wants that.
+ママはそれが欲しいです。
+⚽ Ken takes these.
+ケンはこれらを取ります。
+🐱 Yumi uses those.
+ユミはそれらを使います。
+🥤 Bob calls him.
+ボブは彼に電話します。
+🍞 Anna meets her.
+アンナは彼女に会います。
+📺 Mike finds it.
+マイクはそれを見つけます。
+🎧 Sarah gives them.
+サラはそれらを与えます。
+🐇 The dog follows us.
+犬は私たちについてきます。
+🎤 The band loves you.
+バンドはあなたを愛しています。
+💃 The team chooses it.
+チームはそれを選びます。
+🚪 Dad opens it.
+パパはそれを開けます。
+🪟 Mom closes it.
+ママはそれを閉めます。
+🎁 Grandpa holds it.
+おじいちゃんはそれを持っています。
+📸 Grandma takes it.
+おばあちゃんはそれを取ります。
+🔊 The cat follows you.
+猫はあなたについてきます。
+📚 The students need them.
+学生はそれらが必要です。
+🏠 The family wants you.
+家族はあなたを望んでいます。
+👫 My brother knows him.
+私の兄は彼を知っています。
+✏️ My sister has her.
+私の姉は彼女を持っています。
+🥤 The boy likes her.
+男の子は彼女が好きです。
+🎒 The girl has it.
+女の子はそれを持っています。
+📏 The bird sees you.
+鳥はあなたを見ています。
+😊 My parents help them.
+私の両親は彼らを助けます。
+🎒 The neighbors see us.
+近所の人たちは私たちを見ています。
 🔍 I like this.
 私はこれが好きです。
 🔍 You want that.
@@ -193,48 +193,48 @@ var syntax = {
 彼はこれらが好きです。
 🔵 She wants those.
 彼女はそれらが欲しいです。
-🏃 I follow him.
-私は彼についていきます。
-🚶 You meet her.
-あなたは彼女に会います。
-⬆️ He finds it.
-彼はそれを見つけます。
-🪑 She uses them.
-彼女はそれらを使います。
-⬆️ It follows you.
-それはあなたについてきます。
-🍽️ We invite them.
-私たちは彼らを招待します。
-🥛 They see you.
-彼らはあなたを見ています。
-📖 I know him.
-私は彼を知っています。
-✏️ You help her.
-あなたは彼女を助けます。
-🎨 He likes it.
-彼はそれを好きです。
-📘 She knows them.
-彼女は彼らを知っています。
-🚲 It sees you.
-それはあなたを見ています。
-🧹 We love them.
-私たちは彼らを愛しています。
-🛒 They watch us.
-彼らは私たちを見ています。
-🌞 I like this.
-私はこれが好きです。
-🌧️ You want that.
-あなたはそれが欲しいです。
-🌳 He likes these.
-彼はこれらが好きです。
-🎶 She wants those.
-彼女はそれらが欲しいです。
-💡 It follows you.
-それはあなたについてきます。
-🤝 We help them.
-私たちは彼らを助けます。
-🌍 They see you.
-彼らはあなたを見ています。`
+🏃 The dog follows him.
+犬は彼についていきます。
+🚶 The cat meets her.
+猫は彼女に会います。
+⬆️ The boy finds it.
+男の子はそれを見つけます。
+🪑 The girl uses them.
+女の子はそれらを使います。
+⬆️ The bird follows you.
+鳥はあなたについてきます。
+🍽️ The family invites them.
+家族は彼らを招待します。
+🥛 The class sees you.
+クラスはあなたを見ています。
+📖 My friend knows him.
+私の友達は彼を知っています。
+✏️ My teacher helps her.
+私の先生は彼女を助けます。
+🎨 The artist likes it.
+芸術家はそれを好きです。
+📘 The writer knows them.
+作家は彼らを知っています。
+🚲 The bike sees you.
+自転車はあなたを見ています。
+🧹 The cleaners love them.
+掃除員は彼らを愛しています。
+🛒 The shoppers watch us.
+買い物客は私たちを見ています。
+🌞 The sun likes this.
+太陽はこれが好きです。
+🌧️ The rain wants that.
+雨はそれが欲しいです。
+🌳 The tree likes these.
+木はこれらが好きです。
+🎶 The wind wants those.
+風はそれらが欲しいです。
+💡 The lamp follows you.
+ランプはあなたについてきます。
+🤝 The team helps them.
+チームは彼らを助けます。
+🌍 The world sees you.
+世界はあなたを見ています。`
         },
         {
             title: "Mixed Pronouns Drill",
@@ -292,7 +292,7 @@ var syntax = {
 あなたはそれを私から借ります。
 🥤 He shares it with us.
 彼はそれを私たちと分けます。
-🎒 She lend it to you.
+🎒 She lends it to you.
 彼女はそれをあなたに貸します。
 📏 It belongs to her.
 それは彼女のものです。
