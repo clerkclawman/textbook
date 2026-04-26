@@ -1021,225 +1021,197 @@ var syntax = {
         },
         {
             title: "He and She with To Be Drill",
-            content: `👦 Ken is happy. He is smart.
-ケンくんは幸せです。彼は賢いです。
-👧 Yumi is sad. She is kind.
-ユミちゃんは悲しいです。彼女は親切です。
-👨 Takashi is tall. He is strong.
-タカシくんは背が高いです。彼は強いです。
-👩 Sakura is short. She is cute.
-サクラちゃんは背が低いです。彼女は可愛いです。
-👨 Hiroshi is young. He is fast.
-ヒロシくんは若いです。彼は速いです。
-👩 Aiko is old. She is wise.
-アイコちゃんは年をとっています。彼女は賢明です。
-👨 Yuji is busy. He is hardworking.
-ユウジくんは忙しいです。彼は勤勉です。
-👩 Emi is free. She is relaxed.
-エミちゃんは自由です。彼女はリラックスしています。
-👨 Masato is hungry. He is tired.
-マサトくんはお腹が空いています。彼は疲れています。
-👩 Kaori is thirsty. She is energetic.
-カオリちゃんは喉が渇いています。彼女は元気です。
-👨 Kenji is cold. He is brave.
-ケンジくんは寒いです。彼は勇敢です。
-👩 Mika is warm. She is gentle.
-ミカちゃんは暖かいです。彼女は優しいです。
-👨 Taro is rich. He is generous.
-タロウくんは金持ちです。彼は寛大です。
-👩 Yuki is poor. She is humble.
-ユキちゃんは貧しいです。彼女は謙虚です。
-👨 Jiro is healthy. He is active.
-ジロウくんは健康です。彼は活動的です。
-👩 Rina is sick. She is weak.
-リナちゃんは病気です。彼女は弱いです。
-👨 Saburo is loud. He is funny.
-サブロウくんは大声です。彼は面白いです。
-👩 Hana is quiet. She is shy.
-ハナちゃんは静かです。彼女は恥ずかしがり屋です。
-👨 Shinji is careful. He is honest.
-シンジくんは慎重です。彼は正直です。
-👩 Moe is careless. She is clumsy.
-モエちゃんは不注意です。彼女は不器用です。
-👨 Daisuke is patient. He is calm.
-ダイスケくんは忍耐強いです。彼は冷静です。
-👨 Yui is impatient. She is nervous.
-ユイちゃんは忍耐がありません。彼女は緊張しています。
-👨 Kenta is friendly. He is popular.
-ケンタくんは友好的です。彼は人気があります。
-👩 Aoi is unfriendly. She is lonely.
-アオイちゃんは不友好的です。彼女は孤独です。
-👨 Yuta is creative. He is talented.
-ユウタくんは創造的です。彼は才能があります。
-👨 Rin is boring. She is dull.
-リンちゃんは退屈です。彼女は退屈です。
-👨 Sota is lucky. He is successful.
-ソウタくんは幸運です。彼は成功しています。
-👨 Mei is unlucky. She is unfortunate.
-メイちゃんは不運です。彼女は不幸です。
-👨 Ryo is famous. He is wealthy.
-リョウくんは有名です。彼は裕福です。
-👨 Hina is unknown. She is ordinary.
-ヒナちゃんは無名です。彼女は普通です。
-👨 Kai is single. He is independent.
-カイくんは独身です。彼は独立しています。
-👨 Saki is married. She is devoted.
-サキちゃんは結婚しています。彼女は献身的です。
-👨 Ren is available. He is open.
-レンくんは利用可能です。彼は開放的です。
-👨 Yua is unavailable. She is busy.
-ユアちゃんは利用不可能です。彼女は忙しいです。
-👨 Haruto is ready. He is prepared.
-ハルトくんは準備ができています。彼は準備されています。
-👨 Miu is late. She is sorry.
-ミウちゃんは遅れています。彼女は申し訳ないと思っています。
-👨 Sora is right. He is correct.
-ソラくんは正しいです。彼は正確です。
-👨 Koharu is wrong. She is mistaken.
-コハルちゃんは間違っています。彼女は間違っています。
-👨 Riko is sure. He is certain.
-リコくんは確信しています。彼は確実です。
-👨 Mirai is unsure. She is doubtful.
-ミライちゃんは確信していません。彼女は疑っています。
-👨 Daiki is confident. He is brave.
-ダイキくんは自信があります。彼は勇敢です。
-👨 Hina is nervous. She is anxious.
-ヒナちゃんは緊張しています。彼女は不安です。
-👨 Kaito is relaxed. He is peaceful.
-カイトくんはリラックスしています。彼は平和的です。
-👨 Aoi is stressed. She is worried.
-アオイちゃんはストレスを感じています。彼女は心配しています。
-👨 Yuto is happy. He is joyful.
-ユウトくんは幸せです。彼は喜んでいます。
-👨 Hina is sad. She is unhappy.
-ヒナちゃんは悲しいです。彼女は不幸です。`
+            content: `👦 Ken is happy. He is not sad.
+ケンくんは幸せです。彼は悲しくありません。
+👧 Yumi is kind. She is not mean.
+ユミちゃんは親切です。彼女は意地悪ではありません。
+👨 Takashi is tall. He is not short.
+タカシくんは背が高いです。彼は背が低くありません。
+👩 Sakura is cute. She is not ugly.
+サクラちゃんは可愛いです。彼女は醜くありません。
+👨 Hiroshi is young. He is not old.
+ヒロシくんは若いです。彼は年をとっていません。
+👩 Aiko is wise. She is not foolish.
+アイコちゃんは賢明です。彼女は愚かではありません。
+👨 Yuji is busy. He is not free.
+ユウジくんは忙しいです。彼は自由ではありません。
+👩 Emi is relaxed. She is not stressed.
+エミちゃんはリラックスしています。彼女はストレスを感じていません。
+👨 Masato is hungry. He is not full.
+マサトくんはお腹が空いています。彼は満腹ではありません。
+👩 Kaori is energetic. She is not tired.
+カオリちゃんは元気です。彼女は疲れていません。
+👨 Kenji is cold. He is not warm.
+ケンジくんは寒いです。彼は暖かくありません。
+👩 Mika is gentle. She is not rough.
+ミカちゃんは優しいです。彼女は荒くありません。
+👨 Taro is rich. He is not poor.
+タロウくんは金持ちです。彼は貧しくありません。
+👩 Yuki is humble. She is not proud.
+ユキちゃんは謙虚です。彼女は傲慢ではありません。
+👨 Jiro is healthy. He is not sick.
+ジロウくんは健康です。彼は病気ではありません。
+👩 Rina is weak. She is not strong.
+リナちゃんは弱いです。彼女は強くありません。
+👨 Saburo is loud. He is not quiet.
+サブロウくんは大声です。彼は静かではありません。
+👩 Hana is shy. She is not bold.
+ハナちゃんは恥ずかしがり屋です。彼女は大胆ではありません。
+👨 Shinji is careful. He is not careless.
+シンジくんは慎重です。彼は不注意ではありません。
+👩 Moe is clumsy. She is not graceful.
+モエちゃんは不器用です。彼女は優雅ではありません。
+👨 Daisuke is patient. He is not impatient.
+ダイスケくんは忍耐強いです。彼は忍耐がありません。
+👨 Yui is nervous. She is not calm.
+ユイちゃんは緊張しています。彼女は冷静ではありません。
+👨 Kenta is friendly. He is not unfriendly.
+ケンタくんは友好的です。彼は不友好的ではありません。
+👩 Aoi is lonely. She is not popular.
+アオイちゃんは孤独です。彼女は人気がありません。
+👨 Yuta is creative. He is not boring.
+ユウタくんは創造的です。彼は退屈ではありません。
+👨 Rin is dull. She is not interesting.
+リンちゃんは退屈です。彼女は面白くありません。
+👨 Sota is lucky. He is not unlucky.
+ソウタくんは幸運です。彼は不運ではありません。
+👨 Mei is unfortunate. She is not lucky.
+メイちゃんは不幸です。彼女は幸運ではありません。
+👨 Ryo is famous. He is not unknown.
+リョウくんは有名です。彼は無名ではありません。
+👨 Hina is ordinary. She is not special.
+ヒナちゃんは普通です。彼女は特別ではありません。
+👨 Kai is single. He is not married.
+カイくんは独身です。彼は結婚していません。
+👨 Saki is devoted. She is not unfaithful.
+サキちゃんは献身的です。彼女は不誠実ではありません。
+👨 Ren is open. He is not closed.
+レンくんは開放的です。彼は閉鎖的ではありません。
+👨 Yua is busy. She is not available.
+ユアちゃんは忙しいです。彼女は利用可能ではありません。
+👨 Haruto is ready. He is not late.
+ハルトくんは準備ができています。彼は遅れていません。
+👨 Miu is sorry. She is not happy.
+ミウちゃんは申し訳ないと思っています。彼女は幸せではありません。
+👨 Sora is correct. He is not wrong.
+ソラくんは正確です。彼は間違っていません。
+👨 Koharu is mistaken. She is not right.
+コハルちゃんは間違っています。彼女は正しくありません。
+👨 Riko is certain. He is not unsure.
+リコくんは確実です。彼は確信していません。
+👨 Mirai is doubtful. She is not sure.
+ミライちゃんは疑っています。彼女は確信していません。
+👨 Daiki is confident. He is not nervous.
+ダイキくんは自信があります。彼は緊張していません。
+👨 Hina is anxious. She is not relaxed.
+ヒナちゃんは不安です。彼女はリラックスしていません。
+👨 Kaito is peaceful. He is not stressed.
+カイトくんは平和的です。彼はストレスを感じていません。
+👨 Aoi is worried. She is not calm.
+アオイちゃんは心配しています。彼女は冷静ではありません。
+👨 Yuto is joyful. He is not sad.
+ユウトくんは喜んでいます。彼は悲しくありません。
+👨 Hina is unhappy. She is not happy.
+ヒナちゃんは不幸です。彼女は幸せではありません。`
         },
         {
             title: "I and You with To Be Drill",
-            content: `👦 I am happy.
-私は幸せです。
-👧 You are sad.
-あなたは悲しいです。
-👦 I am tall.
-私は背が高いです。
-👧 You are short.
-あなたは背が低いです。
-👦 I am young.
-私は若いです。
-👧 You are old.
-あなたは年をとっています。
-👦 I am strong.
-私は強いです。
-👧 You are weak.
-あなたは弱いです。
-👦 I am fast.
-私は速いです。
-👧 You are slow.
-あなたは遅いです。
-👦 I am smart.
-私は賢いです。
-👧 You are kind.
-あなたは親切です。
-👦 I am busy.
-私は忙しいです。
-👧 You are free.
-あなたは自由です。
-👦 I am hungry.
-私はお腹が空いています。
-👧 You are thirsty.
-あなたは喉が渇いています。
-👦 I am tired.
-私は疲れています。
-👧 You are energetic.
-あなたは元気です。
-👦 I am cold.
-私は寒いです。
-👧 You are warm.
-あなたは暖かいです。
-👦 I am rich.
-私は金持ちです。
-👧 You are poor.
-あなたは貧しいです。
-👦 I am healthy.
-私は健康です。
-👧 You are sick.
-あなたは病気です。
-👦 I am brave.
-私は勇敢です。
-👧 You are scared.
-あなたは怖がっています。
-👦 I am quiet.
-私は静かです。
-👧 You are loud.
-あなたは大声です。
-👦 I am careful.
-私は慎重です。
-👧 You are careless.
-あなたは不注意です。
-👦 I am honest.
-私は正直です。
-👧 You are dishonest.
-あなたは不正直です。
-👦 I am patient.
-私は忍耐強いです。
-👧 You are impatient.
-あなたは忍耐がありません。
-👦 I am friendly.
-私は友好的です。
-👧 You are unfriendly.
-あなたは不友好的です。
-👦 I am creative.
-私は創造的です。
-👧 You are boring.
-あなたは退屈です。
-👦 I am funny.
-私は面白いです。
-👧 You are serious.
-あなたは真面目です。
-👦 I am lucky.
-私は幸運です。
-👧 You are unlucky.
-あなたは不運です。
-👦 I am famous.
-私は有名です。
-👧 You are unknown.
-あなたは無名です。
-👦 I am single.
-私は独身です。
-👧 You are married.
-あなたは結婚しています。
-👦 I am available.
-私は利用可能です。
-👧 You are unavailable.
-あなたは利用不可能です。
-👦 I am ready.
-私は準備ができています。
-👧 You are ready.
-あなたは準備ができています。
-👦 I am late.
-私は遅れています。
-👧 You are early.
-あなたは早いです。
-👦 I am right.
-私は正しいです。
-👧 You are wrong.
-あなたは間違っています。
-👦 I am sure.
-私は確信しています。
-👧 You are unsure.
-あなたは確信していません。
-👦 I am confident.
-私は自信があります。
-👧 You are nervous.
-あなたは緊張しています。
-👦 I am relaxed.
-私はリラックスしています。
-👧 You are stressed.
-あなたはストレスを感じています。
-👦 I am happy.
-私は幸せです。
-👧 You are sad.
-あなたは悲しいです。`
+            content: `👦 I am happy. I am not sad.
+私は幸せです。私は悲しくありません。
+👧 You are kind. You are not mean.
+あなたは親切です。あなたは意地悪ではありません。
+👦 I am tall. I am not short.
+私は背が高いです。私は背が低くありません。
+👧 You are young. You are not old.
+あなたは若いです。あなたは年をとっていません。
+👦 I am strong. I am not weak.
+私は強いです。私は弱くありません。
+👧 You are fast. You are not slow.
+あなたは速いです。あなたは遅くありません。
+👦 I am smart. I am not stupid.
+私は賢いです。私は愚かではありません。
+👧 You are busy. You are not free.
+あなたは忙しいです。あなたは自由ではありません。
+👦 I am hungry. I am not full.
+私はお腹が空いています。私は満腹ではありません。
+👧 You are tired. You are not energetic.
+あなたは疲れています。あなたは元気ではありません。
+👦 I am cold. I am not warm.
+私は寒いです。私は暖かくありません。
+👧 You are rich. You are not poor.
+あなたは金持ちです。あなたは貧しくありません。
+👦 I am healthy. I am not sick.
+私は健康です。私は病気ではありません。
+👧 You are brave. You are not scared.
+あなたは勇敢です。あなたは怖がっていません。
+👦 I am quiet. I am not loud.
+私は静かです。私は大声ではありません。
+👧 You are careful. You are not careless.
+あなたは慎重です。あなたは不注意ではありません。
+👦 I am honest. I am not dishonest.
+私は正直です。私は不正直ではありません。
+👧 You are patient. You are not impatient.
+あなたは忍耐強いです。あなたは忍耐がありません。
+👦 I am friendly. I am not unfriendly.
+私は友好的です。私は不友好的ではありません。
+👧 You are creative. You are not boring.
+あなたは創造的です。あなたは退屈ではありません。
+👦 I am funny. You are serious too.
+私は面白いです。あなたも真面目です。
+👧 You are lucky. I am lucky too.
+あなたは幸運です。私も幸運です。
+👦 I am famous. You are famous too.
+私は有名です。あなたも有名です。
+👧 You are single. I am single too.
+あなたは独身です。私も独身です。
+👦 I am available. You are available too.
+私は利用可能です。あなたも利用可能です。
+👧 You are ready. I am ready too.
+あなたは準備ができています。私も準備ができています。
+👦 I am right. You are right too.
+私は正しいです。あなたも正しいです。
+👧 You are sure. I am sure too.
+あなたは確信しています。私も確信しています。
+👦 I am confident. You are confident too.
+私は自信があります。あなたも自信があります。
+👧 You are relaxed. I am relaxed too.
+あなたはリラックスしています。私もリラックスしています。
+👦 I am happy. You are happy too.
+私は幸せです。あなたも幸せです。
+👧 You are sad. I am sad too.
+あなたは悲しいです。私も悲しいです。
+👦 I am not late. You are not late either.
+私は遅れていません。あなたも遅れていません。
+👧 You are not wrong. I am not wrong either.
+あなたは間違っていません。私も間違っていません。
+👦 I am not unsure. You are not unsure either.
+私は確信していません。あなたも確信していません。
+👧 You are not nervous. I am not nervous either.
+あなたは緊張していません。私も緊張していません。
+👦 I am not stressed. You are not stressed either.
+私はストレスを感じていません。あなたもストレスを感じていません。
+👧 You are not worried. I am not worried either.
+あなたは心配していません。私も心配していません。
+👦 I am tall, but I am not strong.
+私は背が高いですが、強くありません。
+👧 You are young, but you are not fast.
+あなたは若いですが、速くありません。
+👦 I am smart, but I am not busy.
+私は賢いですが、忙しくありません。
+👧 You are kind, but you are not rich.
+あなたは親切ですが、金持ちではありません。
+👦 I am healthy, but I am not brave.
+私は健康ですが、勇敢ではありません。
+👧 You are quiet, but you are not honest.
+あなたは静かですが、正直ではありません。
+👦 I am friendly, but I am not funny.
+私は友好的ですが、面白くありません。
+👧 You are creative, but you are not lucky.
+あなたは創造的ですが、幸運ではありません。
+👦 I am happy, but I am not famous.
+私は幸せですが、有名ではありません。
+👧 You are ready, but you are not sure.
+あなたは準備ができていますが、確信していません。`
         }
     ]
 };
