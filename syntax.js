@@ -157,14 +157,14 @@ var syntax = {
 バンドは私たちを愛しています。
 💃 The team chooses them.
 チームは彼らを選びます。
-🚪 Dad opens it for me.
-パパは私のためにそれを開けます。
-🪟 Mom closes it for you.
-ママはあなたのためにそれを閉じます。
-🎁 Grandpa holds it for him.
-おじいちゃんは彼のためにそれを持っています。
-📸 Grandma takes it for her.
-おばあちゃんは彼女のためにそれを取ります。
+🚪 Dad opens it.
+パパはそれを開けます。
+🪟 Mom closes it.
+ママはそれを閉じます。
+🎁 Grandpa holds it.
+おじいちゃんはそれを持っています。
+📸 Grandma takes it.
+おばあちゃんはそれを取ります。
 🔊 The cat follows us.
 猫は私たちについてきます。
 📚 The students need them.
@@ -205,14 +205,14 @@ var syntax = {
 牛は私たちを愛しています。
 💃 A sheep chooses them.
 羊は彼らを選びます。
-🚪 A fly opens it for me.
-ハエは私のためにそれを開けます。
-🪟 A bee closes it for you.
-蜂はあなたのためにそれを閉じます。
-🎁 An ant holds it for him.
-アリは彼のためにそれを持っています。
-📸 A spider takes it for her.
-クモは彼女のためにそれを取ります。
+🚪 A fly opens it.
+ハエはそれを開けます。
+🪟 A bee closes it.
+蜂はそれを閉じます。
+🎁 An ant holds it.
+アリはそれを持っています。
+📸 A spider takes it.
+クモはそれを取ります。
 🔊 A worm follows us.
 ミミズは私たちについてきます。
 📚 A beetle needs them.
