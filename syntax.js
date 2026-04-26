@@ -6,120 +6,120 @@ var syntax = {
     stories: [
         {
             title: "Subject Pronouns Drill",
-            content: `👦 I like my dad's nose.
-私はパパの鼻が好きです。
-👧 You have my homework.
-あなたは私の宿題を持っています。
-👨 He sees my underwear.
-彼は私の下着を見ています。
-👩 She eats my lunch.
-彼女は私の昼ご飯を食べます。
-🐶 It runs away from my mom.
-それはママから逃げます。
-👪 We play with my brother's head.
-私たちは兄の頭で遊びます。
-👥 They read my diary.
-彼らは私の日記を読んでいます。
-📝 This is my dad's tooth.
-これはパパの歯です。
-🐕 That is my teacher's wig.
-それは先生のかつらです。
-⚽ These are my brother's eyes.
-これらは兄の目です。
-🐱 Those are my sister's socks.
-それらは妹の靴下です。
-🥤 I drink my dad's coffee.
-私はパパのコーヒーを飲みます。
-🍞 You eat my homework.
-あなたは私の宿題を食べます。
-📺 He watches my sister dance.
-彼は妹が踊るのを見ています。
-🎧 She listens to my brother sing.
-彼女は兄が歌うのを聞いています。
-🐇 It jumps on my bed.
-それは私のベッドの上で跳びます。
-🎤 We sing about my teacher.
-私たちは先生について歌います。
-💃 They dance on my homework.
-彼らは私の宿題の上で踊ります。
-🚪 I open my dad's mouth.
-私はパパの口を開けます。
-🪟 You close my brother's eyes.
-あなたは兄の目を閉じます。
-🎁 He gives my sister a frog.
-彼は妹にカエルをあげます。
-📸 She takes a photo of my dad sleeping.
-彼女はパパが寝ている写真を撮ります。
-🔊 It makes my mom angry.
-それはママを怒らせます。
-📚 We do my brother's homework.
-私たちは兄の宿題をします。
-🏠 They go to my house and eat everything.
-彼らは私の家に行って全部食べます。
-👫 I see my teacher picking her nose.
-私は先生が鼻をほじるのを見ます。
-✏️ You have my dad's glasses.
-あなたはパパの眼鏡を持っています。
-🥤 He likes my mom's cooking.
-彼はママの料理が好きです。
-🎒 She has my brother's lunch.
-彼女は兄の昼ご飯を持っています。
-📏 It is my dad's brain.
-それはパパの脳です。
-😊 We are happy because my brother is at school.
-兄が学校にいるので私たちは幸せです。
-🎒 They are my brother's friends who eat my homework.
-彼らは私の宿題を食べる兄の友達です。
-🔍 This is my dad's nose.
-これはパパの鼻です。
-🔍 That is my brother's brain.
-それは兄の脳です。
-🔴 These are my sister's eyes after crying.
-これらは妹が泣いた後の目です。
-🔵 Those are my brother's lips after eating blue candy.
-それらは兄が青いキャンディを食べた後の唇です。
-🏃 I run away from my mom.
-私はママから逃げます。
-🚶 You walk into my room and eat my homework.
-あなたは私の部屋に入って私の宿題を食べます。
-⬆️ He jumps on my bed and breaks it.
-彼は私のベッドの上で跳んで壊します。
-🪑 She sits on my homework.
-彼女は私の宿題の上に座ります。
-⬆️ It stands on my dad's head.
-それはパパの頭の上に立っています。
-🍽️ We eat my brother's lunch.
-私たちは兄の昼ご飯を食べます。
-🥛 They drink my dad's beer.
-彼らはパパのビールを飲みます。
-📖 I read my brother's diary.
-私は兄の日記を読みます。
-✏️ You write a letter to my teacher about my brother.
-あなたは兄について先生に手紙を書きます。
-🎨 He draws a picture of my teacher with a big nose.
-彼は大きな鼻の先生の絵を描きます。
-📘 She reads my diary.
-彼女は私の日記を読みます。
-🚲 It rolls away from my mom.
-それはママから転がって逃げます。
-🧹 We clean my brother's room and find his secret snacks.
-私たちは兄の部屋を掃除して秘密のおやつを見つけます。
-🛒 They buy my dad's favorite snacks and eat them all.
-彼らはパパのお気に入りのおやつを買って全部食べます。
-🌞 I feel warm because my dad is hugging me too tight.
-パパがきつく抱きしめているので私は暖かいと感じます。
-🌧️ You feel cold because my brother stole your blanket.
-兄があなたの毛布を盗んだのであなたは寒いと感じます。
-🌳 He loves eating my homework in nature.
-彼は自然の中で私の宿題を食べるのが好きです。
-🎶 She loves dancing on my homework.
-彼女は私の宿題の上で踊るのが好きです。
-💡 It gives light so I can see my brother stealing my snacks.
-それは兄が私のおやつを盗むのを見るために光を与えます。
-🤝 We help each other hide from my mom.
-私たちは互いに助け合ってママから隠れます。
-🌍 They travel to my house and eat all my snacks.
-彼らは私の家に旅行して私のおやつを全部食べます。`
+            content: `👦 I eat pizza.
+私はピザを食べます。
+👧 You kick a ball.
+あなたはボールを蹴ります。
+👨 He sees a ghost.
+彼は幽霊を見ます。
+👩 She eats a shoe.
+彼女は靴を食べます。
+🐶 It flies to the moon.
+それは月に飛びます。
+👪 We dance with robots.
+私たちはロボットと踊ります。
+👥 They play with dinosaurs.
+彼らは恐竜と遊びます。
+📝 This is a banana.
+これはバナナです。
+🐕 That is a robot.
+それはロボットです。
+⚽ These are aliens.
+これらはエイリアンです。
+🐱 Those are monsters.
+それらは怪物です。
+🥤 I drink soup.
+私はスープを飲みます。
+🍞 You eat a rock.
+あなたは岩を食べます。
+📺 He watches a fish.
+彼は魚を見ています。
+🎧 She listens to a cat.
+彼女は猫の声を聞いています。
+🐇 It jumps on a cloud.
+それは雲の上で跳びます。
+🎤 We sing to a tree.
+私たちは木に歌います。
+💃 They dance with a bear.
+彼らは熊と踊ります。
+🚪 I open a box.
+私は箱を開けます。
+🪟 You close a book.
+あなたは本を閉じます。
+🎁 He gives a monkey a banana.
+彼は猿にバナナをあげます。
+📸 She takes a photo of a ghost.
+彼女は幽霊の写真を撮ります。
+🔊 It makes a funny sound.
+それは面白い音を出します。
+📚 We do homework with a robot.
+私たちはロボットと宿題をします。
+🏠 They go to Mars.
+彼らは火星に行きます。
+👫 I see a dinosaur.
+私は恐竜を見ます。
+✏️ You have a pencil that writes in space.
+あなたは宇宙で書ける鉛筆を持っています。
+🥤 He likes green milk.
+彼は緑の牛乳が好きです。
+🎒 She has a bag that flies.
+彼女は空を飛ぶバッグを持っています。
+📏 It is a tiny elephant.
+それは小さな象です。
+😊 We are happy because we found a treasure.
+私たちは宝物を見つけたので幸せです。
+🎒 They are students from the moon.
+彼らは月からの学生です。
+🔍 This is a magic hat.
+これは魔法の帽子です。
+🔍 That is a flying car.
+それは空を飛ぶ車です。
+🔴 These are red robots.
+これらは赤いロボットです。
+🔵 Those are blue aliens.
+それらは青いエイリアンです。
+🏃 I run like a cheetah.
+私はチーターのように走ります。
+🚶 You walk like a penguin.
+あなたはペンギンのように歩きます。
+⬆️ He jumps like a frog.
+彼はカエルのように跳びます。
+🪑 She sits like a statue.
+彼女は像のように座ります。
+⬆️ It stands like a soldier.
+それは兵士のように立ちます。
+🍽️ We eat lunch with a monster.
+私たちは怪物と昼ご飯を食べます。
+🥛 They drink milk from a coconut.
+彼らはココナッツから牛乳を飲みます。
+📖 I read a book about flying pigs.
+私は空を飛ぶ豚についての本を読みます。
+✏️ You write a letter to a dinosaur.
+あなたは恐竜に手紙を書きます。
+🎨 He draws a picture of a robot eating pizza.
+彼はピザを食べるロボットの絵を描きます。
+📘 She reads a book about space cats.
+彼女は宇宙の猫についての本を読みます。
+🚲 It rolls like a wheel.
+それは車輪のように転がります。
+🧹 We clean a room full of toys.
+私たちはおもちゃでいっぱいの部屋を掃除します。
+🛒 They buy food for a dragon.
+彼らはドラゴンのために食べ物を買います。
+🌞 I feel warm like the sun.
+私は太陽のように暖かいと感じます。
+🌧️ You feel cold like ice cream.
+あなたはアイスクリームのように寒いと感じます。
+🌳 He loves climbing trees like a monkey.
+彼は猿のように木を登るのが好きです。
+🎶 She loves singing like a bird.
+彼女は鳥のように歌うのが好きです。
+💡 It gives light like a star.
+それは星のように光を与えます。
+🤝 We help a robot fix its spaceship.
+私たちはロボットが宇宙船を直すのを助けます。
+🌍 They travel to a planet made of candy.
+彼らはキャンディでできた惑星に旅行します。`
         },
         {
             title: "Object Pronouns Drill",
