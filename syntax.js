@@ -407,167 +407,167 @@ var syntax = {
 4本のペンが線を描きます。
 🧹 A broom cleans the floor.
 ほうきは床を掃除します。
-🧹 Five brooms clean the floor。
+🧹 Five brooms clean the floor.
 5本のほうきが床を掃除します。
 🪑 A chair stands in the room.
 椅子は部屋にあります。
-🪑 Six chairs stand in the room。
+🪑 Six chairs stand in the room.
 6脚の椅子が部屋にあります。
 🎒 A bag holds books.
 カバンは本を入れます。
-🎒 Seven bags hold books。
+🎒 Seven bags hold books.
 7つのカバンが本を入れます。
 🍎 An apple grows on the tree.
 リンゴは木に実ります。
-🍎 Two apples grow on the tree。
+🍎 Two apples grow on the tree.
 2つのリンゴが木に実ります。
 🍊 An orange tastes sweet.
 オレンジは甘い味がします。
-🍊 Three oranges taste sweet。
+🍊 Three oranges taste sweet.
 3つのオレンジが甘い味がします。
 🍌 A banana turns yellow.
 バナナは黄色くなります。
-🍌 Four bananas turn yellow。
+🍌 Four bananas turn yellow.
 4本のバナナが黄色くなります。
 🍞 A bread feeds a family.
 パンは家族を養います。
-🍞 Five breads feed families。
+🍞 Five breads feed families.
 5つのパンが家族を養います。
 🥚 An egg breaks easily.
 卵は簡単に割れます。
-🥚 Six eggs break easily。
+🥚 Six eggs break easily.
 6個の卵が簡単に割れます。
 🧁 A cake tastes good.
 ケーキは美味しいです。
-🧁 Seven cakes taste good。
+🧁 Seven cakes taste good.
 7つのケーキが美味しいです。
 🍪 A cookie melts in tea.
 クッキーはお茶で溶けます。
-🍪 Eight cookies melt in tea。
+🍪 Eight cookies melt in tea.
 8つのクッキーがお茶で溶けます。
 🌳 A tree grows tall.
 木は高く育ちます。
-🌳 Two trees grow tall。
+🌳 Two trees grow tall.
 2本の木が高く育ちます。
 🌸 A flower blooms in spring.
 花は春に咲きます。
-🌸 Three flowers bloom in spring。
+🌸 Three flowers bloom in spring.
 3つの花が春に咲きます。
 ☀️ The sun shines bright.
 太陽は明るく輝きます。
-🌙 The moon glows at night。
+🌙 The moon glows at night.
 月は夜に輝きます。
-⭐ A star twinkles in the sky。
+⭐ A star twinkles in the sky.
 星は空で瞬きます。
-⭐ Two stars twinkle in the sky。
+⭐ Two stars twinkle in the sky.
 2つの星が空で瞬きます。
-☁️ A cloud floats in the sky。
+☁️ A cloud floats in the sky.
 雲は空に浮かんでいます。
-☁️ Three clouds float in the sky。
+☁️ Three clouds float in the sky.
 3つの雲が空に浮かんでいます。
-🌧️ Rain falls from the sky。
+🌧️ Rain falls from the sky.
 雨は空から降ります。
-🌧️ Four rains fall from the sky。
+🌧️ Four rains fall from the sky.
 4つの雨が空から降ります。
-❄️ Snow covers the ground。
+❄️ Snow covers the ground.
 雪は地面を覆います。
-❄️ Five snows cover the ground。
+❄️ Five snows cover the ground.
 5つの雪が地面を覆います。
-👦 A boy plays soccer。
+👦 A boy plays soccer.
 男の子はサッカーをします。
-👦 Two boys play soccer。
+👦 Two boys play soccer.
 2人の男の子がサッカーをします。
-👧 A girl dances ballet。
+👧 A girl dances ballet.
 女の子はバレエを踊ります。
-👧 Three girls dance ballet。
+👧 Three girls dance ballet.
 3人の女の子がバレエを踊ります。
-👨 A man works in an office。
+👨 A man works in an office.
 男性はオフィスで働きます。
-👨 Four men work in an office。
+👨 Four men work in an office.
 4人の男性がオフィスで働きます。
-👩 A woman cooks in the kitchen。
+👩 A woman cooks in the kitchen.
 女性はキッチンで料理をします。
-👩 Five women cook in the kitchen。
+👩 Five women cook in the kitchen.
 5人の女性がキッチンで料理をします。
-👨‍🏫 A teacher teaches students。
+👨‍🏫 A teacher teaches students.
 先生は生徒に教えます。
-👨‍🏫 Six teachers teach students。
+👨‍🏫 Six teachers teach students.
 6人の先生が生徒に教えます。
-👨‍🎓 A student studies hard。
+👨‍🎓 A student studies hard.
 学生は一生懸命勉強します。
-👨‍🎓 Seven students study hard。
+👨‍🎓 Seven students study hard.
 7人の学生が一生懸命勉強します。
-👨‍⚕️ A doctor helps patients。
+👨‍⚕️ A doctor helps patients.
 医者は患者を助けます。
-👨‍⚕️ Eight doctors help patients。
+👨‍⚕️ Eight doctors help patients.
 8人の医者が患者を助けます。
-👩‍⚕️ A nurse cares for people。
+👩‍⚕️ A nurse cares for people.
 看護師は人々の世話をします。
-👩‍⚕️ Nine nurses care for people。
+👩‍⚕️ Nine nurses care for people.
 9人の看護師が人々の世話をします。
-🚗 A car drives on the road。
+🚗 A car drives on the road.
 車は道路を走ります。
-🚗 Two cars drive on the road。
+🚗 Two cars drive on the road.
 2台の車が道路を走ります。
-🚌 A bus stops at the station。
+🚌 A bus stops at the station.
 バスは駅で止まります。
-🚌 Three buses stop at the station。
+🚌 Three buses stop at the station.
 3台のバスが駅で止まります。
-🚆 A train moves on the tracks。
+🚆 A train moves on the tracks.
 電車は線路の上を動きます。
-🚆 Four trains move on the tracks。
+🚆 Four trains move on the tracks.
 4本の電車が線路の上を動きます。
-🚲 A bike rides on the path。
+🚲 A bike rides on the path.
 自転車は道を走ります。
-🚲 Five bikes ride on the path。
+🚲 Five bikes ride on the path.
 5台の自転車が道を走ります。
-🏠 A house stands on the street。
+🏠 A house stands on the street.
 家は通りの上にあります。
-🏠 Six houses stand on the street。
+🏠 Six houses stand on the street.
 6軒の家が通りの上にあります。
-🏢 A building touches the sky。
+🏢 A building touches the sky.
 ビルは空に触れています。
-🏢 Seven buildings touch the sky。
+🏢 Seven buildings touch the sky.
 7つのビルが空に触れています。
-🚪 A door opens to the room。
+🚪 A door opens to the room.
 ドアは部屋に開きます。
-🚪 Eight doors open to the room。
+🚪 Eight doors open to the room.
 8つのドアが部屋に開きます。
-🪟 A window shows the view。
+🪟 A window shows the view.
 窓は景色を見せます。
-🪟 Nine windows show the view。
+🪟 Nine windows show the view.
 9つの窓が景色を見せます。
-👁️ An eye sees the world。
+👁️ An eye sees the world.
 目は世界を見ます。
-👁️ Two eyes see the world。
+👁️ Two eyes see the world.
 2つの目が世界を見ます。
-👂 An ear hears the sound。
+👂 An ear hears the sound.
 耳は音を聞きます。
-👂 Three ears hear the sound。
+👂 Three ears hear the sound.
 3つの耳が音を聞きます。
-👃 A nose smells the flower。
+👃 A nose smells the flower.
 鼻は花の匂いを嗅ぎます。
-👃 Four noses smell the flower。
+👃 Four noses smell the flower.
 4つの鼻が花の匂いを嗅ぎます。
-👄 A mouth eats the food。
+👄 A mouth eats the food.
 口は食べ物を食べます。
-👄 Five mouths eat the food。
+👄 Five mouths eat the food.
 5つの口が食べ物を食べます。
-🤚 A hand holds the ball。
+🤚 A hand holds the ball.
 手はボールを持ちます。
-🤚 Six hands hold the ball。
+🤚 Six hands hold the ball.
 6つの手がボールを持ちます。
-🦶 A foot walks on the ground。
+🦶 A foot walks on the ground.
 足は地面を歩きます。
-🦶 Seven feet walk on the ground。
+🦶 Seven feet walk on the ground.
 7つの足が地面を歩きます。
-💪 An arm lifts the weight。
+💪 An arm lifts the weight.
 腕は重りを持ち上げます。
-💪 Eight arms lift the weight。
+💪 Eight arms lift the weight.
 8つの腕が重りを持ち上げます。
-🦵 A leg kicks the ball。
+🦵 A leg kicks the ball.
 足はボールを蹴ります。
-🦵 Nine legs kick the ball。
+🦵 Nine legs kick the ball.
 9つの足がボールを蹴ります。`
         }
     ]
