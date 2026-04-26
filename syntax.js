@@ -1422,6 +1422,135 @@ var syntax = {
 私たちは醜いです。
 👥 They are foolish.
 彼らは愚かです。`
+        },
+        {
+            title: "Present Continuous Drill",
+            content: `👦 I am eating an apple.
+私はリンゴを食べています。
+👧 You are drinking water.
+あなたは水を飲んでいます。
+👦 He is reading a book.
+彼は本を読んでいます。
+👩 She is writing a letter.
+彼女は手紙を書いています。
+🐱 It is chasing a mouse.
+それはネズミを追いかけています。
+👪 We are playing soccer.
+私たちはサッカーをしています。
+👥 They are watching TV.
+彼らはテレビを見ています。
+👦 I am cooking dinner.
+私は夕食を作っています。
+👧 You are cleaning the room.
+あなたは部屋を掃除しています。
+👦 He is washing the car.
+彼は車を洗っています。
+👩 She is painting a picture.
+彼女は絵を描いています。
+🐱 It is catching a ball.
+それはボールを捕まえています。
+👪 We are studying English.
+私たちは英語を勉強しています。
+👥 They are listening to music.
+彼らは音楽を聞いています。
+👦 I am buying a gift.
+私はプレゼントを買っています。
+👧 You are selling flowers.
+あなたは花を売っています。
+👦 He is teaching math.
+彼は数学を教えています。
+👩 She is learning Japanese.
+彼女は日本語を学んでいます。
+🐱 It is eating fish.
+それは魚を食べています。
+👪 We are building a house.
+私たちは家を建てています。
+👥 They are fixing a bike.
+彼らは自転車を直しています。
+👦 I am opening the door.
+私はドアを開けています。
+👧 You are closing the window.
+あなたは窓を閉めています。
+👦 He is giving a present.
+彼はプレゼントを渡しています。
+👩 She is taking a photo.
+彼女は写真を撮っています。
+🐱 It is making noise.
+それは音を出しています。
+👪 We are doing homework.
+私たちは宿題をしています。
+👥 They are going home.
+彼らは家に帰っています。
+👦 I am drawing a cat.
+私は猫を描いています。
+👧 You are singing a song.
+あなたは歌を歌っています。
+👦 He is dancing with friends.
+彼は友達と踊っています。
+👩 She is running a race.
+彼女はレースを走っています。
+🐱 It is jumping over a fence.
+それはフェンスを飛び越えています。
+👪 We are eating lunch.
+私たちは昼ご飯を食べています。
+👥 They are drinking milk.
+彼らは牛乳を飲んでいます。
+👦 I am reading a story.
+私は物語を読んでいます。
+👧 You are writing a report.
+あなたはレポートを書いています。
+👦 He is drawing a map.
+彼は地図を描いています。
+👩 She is baking a cake.
+彼女はケーキを焼いています。
+🐱 It is climbing a tree.
+それは木を登っています。
+👪 We are planting flowers.
+私たちは花を植えています。
+👥 They are cutting grass.
+彼らは草を刈っています。
+👦 I am washing dishes.
+私は皿を洗っています。
+👧 You are drying clothes.
+あなたは服を乾かしています。
+👦 He is ironing shirts.
+彼はシャツをアイロンがけしています。
+👩 She is folding clothes.
+彼女は服を畳んでいます。
+🐱 It is sleeping on a bed.
+それはベッドで寝ています。
+👪 We are making tea.
+私たちはお茶を入れています。
+👥 They are eating breakfast.
+彼らは朝食を食べています。
+👦 I am playing the piano.
+私はピアノを弾いています。
+👧 You are playing the guitar.
+あなたはギターを弾いています。
+👦 He is playing tennis.
+彼はテニスをしています。
+👩 She is playing basketball.
+彼女はバスケットボールをしています。
+🐱 It is playing with a toy.
+それはおもちゃで遊んでいます。
+👪 We are swimming in a pool.
+私たちはプールで泳いでいます。
+👥 They are walking in the park.
+彼らは公園を歩いています。
+👦 I am riding a bike.
+私は自転車に乗っています。
+👧 You are driving a car.
+あなたは車を運転しています。
+👦 He is flying a kite.
+彼は凧を飛ばしています。
+👩 She is feeding birds.
+彼女は鳥に餌をやっています。
+🐱 It is drinking water.
+それは水を飲んでいます。
+👪 We are buying food.
+私たちは食べ物を買っています。
+👥 They are selling vegetables.
+彼らは野菜を売っています。`
         }
     ]
 };
