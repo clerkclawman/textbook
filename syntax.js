@@ -1310,112 +1310,112 @@ var syntax = {
         },
         {
             title: "Personal Pronouns Review with To Be",
-            content: `🐱 The cat is big. The cats are big.
-猫は大きいです。猫たちは大きいです。
+            content: `🐱 The cat is big. They are big.
+猫は大きいです。彼らは大きいです。
 👦 Ken is happy. Yumi is happy.
 ケンくんは幸せです。ユミちゃんは幸せです。
 👦 I am tall. You are tall.
 私は背が高いです。あなたは背が高いです。
 👦 Me and Ken are strong. We are strong.
 ケンくんと私は強いです。私たちは強いです。
-🐱 The dog is fast. The dogs are fast.
-犬は速いです。犬たちは速いです。
+🐱 The dog is fast. They are fast.
+犬は速いです。彼らは速いです。
 👨 Takashi is young. Sakura is young.
 タカシくんは若いです。サクラちゃんは若いです。
 👦 I am smart. You are smart.
 私は賢いです。あなたは賢いです。
 👦 Me and Takashi are busy. We are busy.
 タカシくんと私は忙しいです。私たちは忙しいです。
-🐱 The bird is hungry. The birds are hungry.
-鳥はお腹が空いています。鳥たちはお腹が空いています。
+🐱 The bird is hungry. They are hungry.
+鳥はお腹が空いています。彼らはお腹が空いています。
 👨 Hiroshi is brave. Aiko is brave.
 ヒロシくんは勇敢です。アイコちゃんは勇敢です。
 👦 I am rich. You are rich.
 私は金持ちです。あなたは金持ちです。
 👦 Me and Hiroshi are lucky. We are lucky.
 ヒロシくんと私は幸運です。私たちは幸運です。
-🐱 The fish is cold. The fish are cold.
-魚は寒いです。魚たちは寒いです。
+🐱 The fish is cold. They are cold.
+魚は寒いです。彼らは寒いです。
 👨 Yuji is careful. Emi is careful.
 ユウジくんは慎重です。エミちゃんは慎重です。
 👦 I am ready. You are ready.
 私は準備ができています。あなたは準備ができています。
 👦 Me and Yuji are honest. We are honest.
 ユウジくんと私は正直です。私たちは正直です。
-🐱 The rabbit is quiet. The rabbits are quiet.
-ウサギは静かです。ウサギたちは静かです。
+🐱 The rabbit is quiet. They are quiet.
+ウサギは静かです。彼らは静かです。
 👨 Masato is patient. Kaori is patient.
 マサトくんは忍耐強いです。カオリちゃんは忍耐強いです。
 👦 I am confident. You are confident.
 私は自信があります。あなたは自信があります。
 👦 Me and Masato are friendly. We are friendly.
 マサトくんと私は友好的です。私たちは友好的です。
-🐱 The horse is healthy. The horses are healthy.
-馬は健康です。馬たちは健康です。
+🐱 The horse is healthy. They are healthy.
+馬は健康です。彼らは健康です。
 👨 Kenji is confident. Mika is confident.
 ケンジくんは自信があります。ミカちゃんは自信があります。
 👦 I am relaxed. You are relaxed.
 私はリラックスしています。あなたはリラックスしています。
 👦 Me and Kenji are creative. We are creative.
 ケンジくんと私は創造的です。私たちは創造的です。
-🐱 The cow is gentle. The cows are gentle.
-牛は優しいです。牛たちは優しいです。
+🐱 The cow is gentle. They are gentle.
+牛は優しいです。彼らは優しいです。
 👨 Taro is relaxed. Yuki is relaxed.
 タロウくんはリラックスしています。ユキちゃんはリラックスしています。
 👦 I am happy. You are happy.
 私は幸せです。あなたは幸せです。
 👦 Me and Taro are generous. We are generous.
 タロウくんと私は寛大です。私たちは寛大です。
-🐱 The cat is small. The cats are small.
-猫は小さいです。猫たちは小さいです。
+🐱 The cat is small. They are small.
+猫は小さいです。彼らは小さいです。
 👨 Ken is kind. Yumi is kind.
 ケンくんは親切です。ユミちゃんは親切です。
 👦 I am short. You are short.
 私は背が低いです。あなたは背が低いです。
 👦 Me and Ken are weak. We are weak.
 ケンくんと私は弱いです。私たちは弱いです。
-🐱 The dog is slow. The dogs are slow.
-犬は遅いです。犬たちは遅いです。
+🐱 The dog is slow. They are slow.
+犬は遅いです。彼らは遅いです。
 👨 Takashi is old. Sakura is old.
 タカシくんは年をとっています。サクラちゃんは年をとっています。
 👦 I am stupid. You are stupid.
 私は愚かです。あなたは愚かです。
 👦 Me and Takashi are free. We are free.
 タカシくんと私は自由です。私たちは自由です。
-🐱 The bird is full. The birds are full.
-鳥は満腹です。鳥たちは満腹です。
+🐱 The bird is full. They are full.
+鳥は満腹です。彼らは満腹です。
 👨 Hiroshi is scared. Aiko is scared.
 ヒロシくんは怖がっています。アイコちゃんは怖がっています。
 👦 I am poor. You are poor.
 私は貧しいです。あなたは貧しいです。
 👦 Me and Hiroshi are unlucky. We are unlucky.
 ヒロシくんと私は不運です。私たちは不運です。
-🐱 The fish is warm. The fish are warm.
-魚は暖かいです。魚たちは暖かいです。
+🐱 The fish is warm. They are warm.
+魚は暖かいです。彼らは暖かいです。
 👨 Yuji is careless. Emi is careless.
 ユウジくんは不注意です。エミちゃんは不注意です。
 👦 I am late. You are late.
 私は遅れています。あなたは遅れています。
 👦 Me and Yuji are dishonest. We are dishonest.
 ユウジくんと私は不正直です。私たちは不正直です。
-🐱 The rabbit is loud. The rabbits are loud.
-ウサギは大声です。ウサギたちは大声です。
+🐱 The rabbit is loud. They are loud.
+ウサギは大声です。彼らは大声です。
 👨 Masato is impatient. Kaori is impatient.
 マサトくんは忍耐がありません。カオリちゃんは忍耐がありません。
 👦 I am nervous. You are nervous.
 私は緊張しています。あなたは緊張しています。
 👦 Me and Masato are unfriendly. We are unfriendly.
 マサトくんと私は不友好的です。私たちは不友好的です。
-🐱 The horse is sick. The horses are sick.
-馬は病気です。馬たちは病気です。
+🐱 The horse is sick. They are sick.
+馬は病気です。彼らは病気です。
 👨 Kenji is nervous. Mika is nervous.
 ケンジくんは緊張しています。ミカちゃんは緊張しています。
 👦 I am stressed. You are stressed.
 私はストレスを感じています。あなたはストレスを感じています。
 👦 Me and Kenji are boring. We are boring.
 ケンジくんと私は退屈です。私たちは退屈です。
-🐱 The cow is rough. The cows are rough.
-牛は荒いです。牛たちは荒いです。
+🐱 The cow is rough. They are rough.
+牛は荒いです。彼らは荒いです。
 👨 Taro is stressed. Yuki is stressed.
 タロウくんはストレスを感じています。ユキちゃんはストレスを感じています。
 👦 I am sad. You are sad.
