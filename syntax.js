@@ -6,120 +6,120 @@ var syntax = {
     stories: [
         {
             title: "Subject Pronouns Drill",
-            content: `👦 I like apples.
-私はリンゴが好きです。
-👧 You have a ball.
-あなたはボールを持っています。
-👨 He sees a cat.
-彼は猫を見ています。
-👩 She eats an orange.
-彼女はオレンジを食べます。
-🐶 It runs.
-それは走ります。
-👪 We play soccer.
-私たちはサッカーをします。
-👥 They read books.
-彼らは本を読んでいます。
-📝 This is a pen.
-これはペンです。
-🐕 That is a dog.
-それは犬です。
-⚽ These are balls.
-これらはボールです。
-🐱 Those are cats.
-それらは猫です。
-🥤 I drink water.
-私は水を飲みます。
-🍞 You eat bread.
-あなたはパンを食べます。
-📺 He watches TV.
-彼はテレビを見ています。
-🎧 She listens to music.
-彼女は音楽を聞いています。
-🐇 It jumps.
-それは跳びます。
-🎤 We sing a song.
-私たちは歌を歌います。
-💃 They dance.
-彼らは踊ります。
-🚪 I open the door.
-私はドアを開けます。
-🪟 You close the window.
-あなたは窓を閉めます。
-🎁 He gives a gift.
-彼はプレゼントを渡します。
-📸 She takes a photo.
-彼女は写真を撮ります。
-🔊 It makes noise.
-それは音を出します。
-📚 We do homework.
-私たちは宿題をします。
-🏠 They go home.
-彼らは家に帰ります。
-👫 I see a friend.
-私は友達を見ます。
-✏️ You have a pencil.
-あなたは鉛筆を持っています。
-🥤 He likes juice.
-彼はジュースが好きです。
-🎒 She has a bag.
-彼女はバッグを持っています。
-📏 It is small.
-それは小さいです。
-😊 We are happy.
-私たちは幸せです。
-🎒 They are students.
-彼らは学生です。
-🔍 This is big.
-これは大きいです。
-🔍 That is small.
-それは小さいです。
-🔴 These are red.
-これらは赤です。
-🔵 Those are blue.
-それらは青です。
-🏃 I run.
-私は走ります。
-🚶 You walk.
-あなたは歩きます。
-⬆️ He jumps.
-彼は跳びます。
-🪑 She sits.
-彼女は座ります。
-⬆️ It stands.
-それは立ちます。
-🍽️ We eat lunch.
-私たちは昼ご飯を食べます。
-🥛 They drink milk.
-彼らは牛乳を飲みます。
-📖 I read a story.
-私は物語を読みます。
-✏️ You write a letter.
-あなたは手紙を書きます。
-🎨 He draws a picture.
-彼は絵を描きます。
-📘 She reads a book.
-彼女は本を読みます。
-🚲 It rolls.
-それは転がります。
-🧹 We clean the room.
-私たちは部屋を掃除します。
-🛒 They buy groceries.
-彼らは食料品を買います。
-🌞 I feel warm.
-私は暖かいと感じます。
-🌧️ You feel cold.
-あなたは寒いと感じます。
-🌳 He loves nature.
-彼は自然が好きです。
-🎶 She loves dancing.
-彼女はダンスが好きです。
-💡 It gives light.
-それは光を与えます。
-🤝 We help each other.
-私たちは互いに助け合います。
-🌍 They travel abroad.
-彼らは海外に旅行します。`
+            content: `👦 I like my dad's nose.
+私はパパの鼻が好きです。
+👧 You have my homework.
+あなたは私の宿題を持っています。
+👨 He sees my underwear.
+彼は私の下着を見ています。
+👩 She eats my lunch.
+彼女は私の昼ご飯を食べます。
+🐶 It runs away from my mom.
+それはママから逃げます。
+👪 We play with my brother's head.
+私たちは兄の頭で遊びます。
+👥 They read my diary.
+彼らは私の日記を読んでいます。
+📝 This is my dad's tooth.
+これはパパの歯です。
+🐕 That is my teacher's wig.
+それは先生のかつらです。
+⚽ These are my brother's eyes.
+これらは兄の目です。
+🐱 Those are my sister's socks.
+それらは妹の靴下です。
+🥤 I drink my dad's coffee.
+私はパパのコーヒーを飲みます。
+🍞 You eat my homework.
+あなたは私の宿題を食べます。
+📺 He watches my sister dance.
+彼は妹が踊るのを見ています。
+🎧 She listens to my brother sing.
+彼女は兄が歌うのを聞いています。
+🐇 It jumps on my bed.
+それは私のベッドの上で跳びます。
+🎤 We sing about my teacher.
+私たちは先生について歌います。
+💃 They dance on my homework.
+彼らは私の宿題の上で踊ります。
+🚪 I open my dad's mouth.
+私はパパの口を開けます。
+🪟 You close my brother's eyes.
+あなたは兄の目を閉じます。
+🎁 He gives my sister a frog.
+彼は妹にカエルをあげます。
+📸 She takes a photo of my dad sleeping.
+彼女はパパが寝ている写真を撮ります。
+🔊 It makes my mom angry.
+それはママを怒らせます。
+📚 We do my brother's homework.
+私たちは兄の宿題をします。
+🏠 They go to my house and eat everything.
+彼らは私の家に行って全部食べます。
+👫 I see my teacher picking her nose.
+私は先生が鼻をほじるのを見ます。
+✏️ You have my dad's glasses.
+あなたはパパの眼鏡を持っています。
+🥤 He likes my mom's cooking.
+彼はママの料理が好きです。
+🎒 She has my brother's lunch.
+彼女は兄の昼ご飯を持っています。
+📏 It is my dad's brain.
+それはパパの脳です。
+😊 We are happy because my brother is at school.
+兄が学校にいるので私たちは幸せです。
+🎒 They are my brother's friends who eat my homework.
+彼らは私の宿題を食べる兄の友達です。
+🔍 This is my dad's nose.
+これはパパの鼻です。
+🔍 That is my brother's brain.
+それは兄の脳です。
+🔴 These are my sister's eyes after crying.
+これらは妹が泣いた後の目です。
+🔵 Those are my brother's lips after eating blue candy.
+それらは兄が青いキャンディを食べた後の唇です。
+🏃 I run away from my mom.
+私はママから逃げます。
+🚶 You walk into my room and eat my homework.
+あなたは私の部屋に入って私の宿題を食べます。
+⬆️ He jumps on my bed and breaks it.
+彼は私のベッドの上で跳んで壊します。
+🪑 She sits on my homework.
+彼女は私の宿題の上に座ります。
+⬆️ It stands on my dad's head.
+それはパパの頭の上に立っています。
+🍽️ We eat my brother's lunch.
+私たちは兄の昼ご飯を食べます。
+🥛 They drink my dad's beer.
+彼らはパパのビールを飲みます。
+📖 I read my brother's diary.
+私は兄の日記を読みます。
+✏️ You write a letter to my teacher about my brother.
+あなたは兄について先生に手紙を書きます。
+🎨 He draws a picture of my teacher with a big nose.
+彼は大きな鼻の先生の絵を描きます。
+📘 She reads my diary.
+彼女は私の日記を読みます。
+🚲 It rolls away from my mom.
+それはママから転がって逃げます。
+🧹 We clean my brother's room and find his secret snacks.
+私たちは兄の部屋を掃除して秘密のおやつを見つけます。
+🛒 They buy my dad's favorite snacks and eat them all.
+彼らはパパのお気に入りのおやつを買って全部食べます。
+🌞 I feel warm because my dad is hugging me too tight.
+パパがきつく抱きしめているので私は暖かいと感じます。
+🌧️ You feel cold because my brother stole your blanket.
+兄があなたの毛布を盗んだのであなたは寒いと感じます。
+🌳 He loves eating my homework in nature.
+彼は自然の中で私の宿題を食べるのが好きです。
+🎶 She loves dancing on my homework.
+彼女は私の宿題の上で踊るのが好きです。
+💡 It gives light so I can see my brother stealing my snacks.
+それは兄が私のおやつを盗むのを見るために光を与えます。
+🤝 We help each other hide from my mom.
+私たちは互いに助け合ってママから隠れます。
+🌍 They travel to my house and eat all my snacks.
+彼らは私の家に旅行して私のおやつを全部食べます。`
         },
         {
             title: "Object Pronouns Drill",
