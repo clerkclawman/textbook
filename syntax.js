@@ -795,6 +795,229 @@ var syntax = {
 腕は長いです。腕たちは長いです。
 🦵 The leg is strong. The legs are strong.
 足は強いです。足たちは強いです。`
+        },
+        {
+            title: "It and They Pronoun Drill",
+            content: `🐱 The cat is big. It runs fast.
+猫は大きいです。それは速く走ります。
+🐶 The dog is small. It barks loud.
+犬は小さいです。それは大声で吠えます。
+🐦 The bird is fast. It flies high.
+鳥は速いです。それは高く飛びます。
+🐟 The fish is blue. It swims deep.
+魚は青いです。それは深く泳ぎます。
+🐰 The rabbit is cute. It jumps far.
+ウサギは可愛いです。それは遠く跳びます。
+🐴 The horse is strong. It pulls hard.
+馬は強いです。それは強く引きます。
+🐄 The cow is heavy. It gives milk.
+牛は重いです。それはミルクを出します。
+🐷 The pig is dirty. It digs holes.
+豚は汚いです。それは穴を掘ります。
+🐑 The sheep is white. It eats grass.
+羊は白いです。それは草を食べます。
+🐔 The chicken is yellow. It lays eggs.
+鶏は黄色いです。それは卵を産みます。
+📚 The book is new. It has pictures.
+本は新しいです。それは絵があります。
+✏️ The pencil is long. It writes well.
+鉛筆は長いです。それはよく書けます。
+🖊️ The pen is red. It has ink.
+ペンは赤いです。それはインクがあります。
+🧹 The broom is old. It cleans floors.
+ほうきは古いです。それは床を掃除します。
+🪑 The chair is wooden. It stands firm.
+椅子は木製です。それはしっかり立っています。
+🎒 The bag is heavy. It holds books.
+カバンは重いです。それは本を入れます。
+🍎 The apple is sweet. It tastes good.
+リンゴは甘いです。それは美味しいです。
+🍊 The orange is sour. It has juice.
+オレンジは酸っぱいです。それはジュースがあります。
+🍌 The banana is soft. It peels easy.
+バナナは柔らかいです。それは簡単に皮がむけます。
+🍞 The bread is fresh. It smells good.
+パンは新鮮です。それはいい匂いがします。
+🥚 The egg is round. It breaks easy.
+卵は丸いです。それは簡単に割れます。
+🧁 The cake is delicious. It tastes sweet.
+ケーキは美味しいです。それは甘い味がします。
+🍪 The cookie is crunchy. It melts fast.
+クッキーはサクサクしています。それは速く溶けます。
+🌳 The tree is tall. It grows slow.
+木は高いです。それはゆっくり育ちます。
+🌸 The flower is beautiful. It blooms spring.
+花は美しいです。それは春に咲きます。
+☀️ The sun is bright. It shines day.
+太陽は明るいです。それは昼に輝きます。
+🌙 The moon is round. It glows night.
+月は丸いです。それは夜に輝きます。
+⭐ The star is far. It twinkles bright.
+星は遠いです。それは明るく瞬きます。
+☁️ The cloud is white. It floats high.
+雲は白いです。それは高く浮かんでいます。
+🌧️ The rain is cold. It falls down.
+雨は冷たいです。それは下に降ります。
+❄️ The snow is white. It covers ground.
+雪は白いです。それは地面を覆います。
+👦 The boy is young. He plays soccer.
+男の子は若いです。彼はサッカーをします。
+👧 The girl is tall. She dances ballet.
+女の子は背が高いです。彼女はバレエを踊ります。
+👨 The man is old. He works hard.
+男性は年をとっています。彼は一生懸命働きます。
+👩 The woman is kind. She cooks well.
+女性は親切です。彼女はよく料理をします。
+👨‍🏫 The teacher is smart. He teaches class.
+先生は賢いです。彼はクラスを教えます。
+👨‍🎓 The student is young. He studies hard.
+学生は若いです。彼は一生懸命勉強します。
+👨‍⚕️ The doctor is busy. He treats patients.
+医者は忙しいです。彼は患者を治療します。
+👩‍⚕️ The nurse is kind. She helps people.
+看護師は親切です。彼女は人々を助けます。
+🚗 The car is fast. It drives smooth.
+車は速いです。それはスムーズに走ります。
+🚌 The bus is big. It stops often.
+バスは大きいです。それは頻繁に止まります。
+🚆 The train is long. It moves fast.
+電車は長いです。それは速く動きます。
+🚲 The bike is small. It rides easy.
+自転車は小さいです。それは簡単に乗れます。
+🏠 The house is big. It stands tall.
+家は大きいです。それは高く立っています。
+🏢 The building is tall. It touches sky.
+ビルは高いです。それは空に触れています。
+🚪 The door is open. It leads inside.
+ドアは開いています。それは中に繋がっています。
+🪟 The window is clean. It shows view.
+窓は綺麗です。それは景色を見せます。
+👁️ The eye is small. It sees clear.
+目は小さいです。それははっきり見ます。
+👂 The ear is round. It hears well.
+耳は丸いです。それはよく聞こえます。
+👃 The nose is big. It smells strong.
+鼻は大きいです。それは強い匂いがします。
+👄 The mouth is red. It eats food.
+口は赤いです。それは食べ物を食べます。
+🤚 The hand is strong. It holds tight.
+手は強いです。それはしっかり持ちます。
+🦶 The foot is big. It kicks hard.
+足は大きいです。それは強く蹴ります。
+💪 The arm is long. It lifts high.
+腕は長いです。それは高く持ち上げます。
+🦵 The leg is strong. It pushes hard.
+足は強いです。それは強く押します。
+🐱 The cats are big. They run fast.
+猫たちは大きいです。それらは速く走ります。
+🐶 The dogs are small. They bark loud.
+犬たちは小さいです。それらは大声で吠えます。
+🐦 The birds are fast. They fly high.
+鳥たちは速いです。それらは高く飛びます。
+🐟 The fish are blue. They swim deep.
+魚たちは青いです。それらは深く泳ぎます。
+🐰 The rabbits are cute. They jump far.
+ウサギたちは可愛いです。それらは遠く跳びます。
+🐴 The horses are strong. They pull hard.
+馬たちは強いです。それらは強く引きます。
+🐄 The cows are heavy. They give milk.
+牛たちは重いです。それらはミルクを出します。
+🐷 The pigs are dirty. They dig holes.
+豚たちは汚いです。それらは穴を掘ります。
+🐑 The sheep are white. They eat grass.
+羊たちは白いです。それらは草を食べます。
+🐔 The chickens are yellow. They lay eggs.
+鶏たちは黄色いです。それらは卵を産みます。
+📚 The books are new. They have pictures.
+本たちは新しいです。それらは絵があります。
+✏️ The pencils are long. They write well.
+鉛筆たちは長いです。それらはよく書けます。
+🖊️ The pens are red. They have ink.
+ペンたちは赤いです。それらはインクがあります。
+🧹 The brooms are old. They clean floors.
+ほうきたちは古いです。それらは床を掃除します。
+🪑 The chairs are wooden. They stand firm.
+椅子たちは木製です。それらはしっかり立っています。
+🎒 The bags are heavy. They hold books.
+カバンたちは重いです。それらは本を入れます。
+🍎 The apples are sweet. They taste good.
+リンゴたちは甘いです。それらは美味しいです。
+🍊 The oranges are sour. They have juice.
+オレンジたちは酸っぱいです。それらはジュースがあります。
+🍌 The bananas are soft. They peel easy.
+バナナたちは柔らかいです。それらは簡単に皮がむけます。
+🍞 The bread is fresh. It smells good.
+パンは新鮮です。それはいい匂いがします。
+🥚 The eggs are round. They break easy.
+卵たちは丸いです。それらは簡単に割れます。
+🧁 The cakes are delicious. They taste sweet.
+ケーキたちは美味しいです。それらは甘い味がします。
+🍪 The cookies are crunchy. They melt fast.
+クッキーたちはサクサクしています。それらは速く溶けます。
+🌳 The trees are tall. They grow slow.
+木たちは高いです。それらはゆっくり育ちます。
+🌸 The flowers are beautiful. They bloom spring.
+花たちは美しいです。それらは春に咲きます。
+☀️ The suns are bright. They shine day.
+太陽たちは明るいです。それらは昼に輝きます。
+🌙 The moons are round. They glow night.
+月たちは丸いです。それらは夜に輝きます。
+⭐ The stars are far. They twinkle bright.
+星たちは遠いです。それらは明るく瞬きます。
+☁️ The clouds are white. They float high.
+雲たちは白いです。それらは高く浮かんでいます。
+🌧️ The rains are cold. They fall down.
+雨たちは冷たいです。それらは下に降ります。
+❄️ The snows are white. They cover ground.
+雪たちは白いです。それらは地面を覆います。
+👦 The boys are young. They play soccer.
+男の子たちは若いです。彼らはサッカーをします。
+👧 The girls are tall. They dance ballet.
+女の子たちは背が高いです。彼女たちはバレエを踊ります。
+👨 The men are old. They work hard.
+男性たちは年をとっています。彼らは一生懸命働きます。
+👩 The women are kind. They cook well.
+女性たちは親切です。彼女たちはよく料理をします。
+👨‍🏫 The teachers are smart. They teach class.
+先生たちは賢いです。彼らはクラスを教えます。
+👨‍🎓 The students are young. They study hard.
+学生たちは若いです。彼らは一生懸命勉強します。
+👨‍⚕️ The doctors are busy. They treat patients.
+医者たちは忙しいです。彼らは患者を治療します。
+👩‍⚕️ The nurses are kind. They help people.
+看護師たちは親切です。彼女たちは人々を助けます。
+🚗 The cars are fast. They drive smooth.
+車たちは速いです。それらはスムーズに走ります。
+🚌 The buses are big. They stop often.
+バスたちは大きいです。それらは頻繁に止まります。
+🚆 The trains are long. They move fast.
+電車たちは長いです。それらは速く動きます。
+🚲 The bikes are small. They ride easy.
+自転車たちは小さいです。それらは簡単に乗れます。
+🏠 The houses are big. They stand tall.
+家たちは大きいです。それらは高く立っています。
+🏢 The buildings are tall. They touch sky.
+ビルたちは高いです。それらは空に触れています。
+🚪 The doors are open. They lead inside.
+ドアたちは開いています。それらは中に繋がっています。
+🪟 The windows are clean. They show view.
+窓たちは綺麗です。それらは景色を見せます。
+👁️ The eyes are small. They see clear.
+目たちは小さいです。それらははっきり見ます。
+👂 The ears are round. They hear well.
+耳たちは丸いです。それらはよく聞こえます。
+👃 The noses are big. They smell strong.
+鼻たちは大きいです。それらは強い匂いがします。
+👄 The mouths are red. They eat food.
+口たちは赤いです。それらは食べ物を食べます。
+🤚 The hands are strong. They hold tight.
+手たちは強いです。それらはしっかり持ちます。
+🦶 The feet are big. They kick hard.
+足たちは大きいです。それらは強く蹴ります。
+💪 The arms are long. They lift high.
+腕たちは長いです。それらは高く持ち上げます。
+🦵 The legs are strong. They push hard.
+足たちは強いです。それらは強く押します。`
         }
     ]
 };
