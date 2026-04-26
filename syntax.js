@@ -353,222 +353,222 @@ var syntax = {
         },
         {
             title: "Singular and Plural Nouns Drill",
-            content: `🐱 A cat sleeps.
-猫は寝ています。
-🐱 Two cats sleep.
-2匹の猫が寝ています。
-🐶 A dog runs.
-犬は走ります。
-🐶 Three dogs run.
-3匹の犬が走ります。
-🐦 A bird flies.
-鳥は飛びます。
-🐦 Four birds fly.
-4羽の鳥が飛びます。
-🐟 A fish swims.
-魚は泳ぎます。
-🐟 Five fish swim.
-5匹の魚が泳ぎます。
-🐰 A rabbit jumps.
-ウサギは跳びます。
-🐰 Six rabbits jump.
-6匹のウサギが跳びます。
-🐴 A horse eats grass.
-馬は草を食べます。
-🐴 Seven horses eat grass.
-7頭の馬が草を食べます。
-🐄 A cow drinks water.
-牛は水を飲みます。
-🐄 Eight cows drink water.
-8頭の牛が水を飲みます。
-🐷 A pig plays in mud.
-豚は泥の中で遊びます。
-🐷 Nine pigs play in mud.
-9頭の豚が泥の中で遊びます。
-🐑 A sheep stands on the hill.
-羊は丘の上に立っています。
-🐑 Ten sheep stand on the hill.
-10頭の羊が丘の上に立っています。
+            content: `🐱 A cat eats a fish.
+猫は魚を食べます。
+🐱 Two cats eat fish.
+2匹の猫が魚を食べます。
+🐶 A dog chases a ball.
+犬はボールを追いかけます。
+🐶 Three dogs chase balls.
+3匹の犬がボールを追いかけます。
+🐦 A bird finds a worm.
+鳥はミミズを見つけます。
+🐦 Four birds find worms.
+4羽の鳥がミミズを見つけます。
+🐟 A fish catches a fly.
+魚はハエを捕まえます。
+🐟 Five fish catch flies.
+5匹の魚がハエを捕まえます。
+🐰 A rabbit eats a carrot.
+ウサギはニンジンを食べます。
+🐰 Six rabbits eat carrots.
+6匹のウサギがニンジンを食べます。
+🐴 A horse pulls a cart.
+馬は荷車を引きます。
+🐴 Seven horses pull carts.
+7頭の馬が荷車を引きます。
+🐄 A cow gives milk.
+牛はミルクを出します。
+🐄 Eight cows give milk.
+8頭の牛がミルクを出します。
+🐷 A pig digs a hole.
+豚は穴を掘ります。
+🐷 Nine pigs dig holes.
+9頭の豚が穴を掘ります。
+🐑 A sheep eats grass.
+羊は草を食べます。
+🐑 Ten sheep eat grass.
+10頭の羊が草を食べます。
 🐔 A chicken lays an egg.
 鶏は卵を産みます。
 🐔 Eleven chickens lay eggs.
 11羽の鶏が卵を産みます。
-📚 A book sits on the desk.
-本は机の上にあります。
-📚 Two books sit on the desk.
-2冊の本が机の上にあります。
-✏️ A pencil writes on paper.
-鉛筆は紙に書きます。
-✏️ Three pencils write on paper.
-3本の鉛筆が紙に書きます。
-🖊️ A pen draws a line.
-ペンは線を描きます。
-🖊️ Four pens draw lines.
-4本のペンが線を描きます。
-🧹 A broom cleans the floor.
-ほうきは床を掃除します。
-🧹 Five brooms clean the floor.
-5本のほうきが床を掃除します。
-🪑 A chair stands in the room.
-椅子は部屋にあります。
-🪑 Six chairs stand in the room.
-6脚の椅子が部屋にあります。
-🎒 A bag holds books.
-カバンは本を入れます。
-🎒 Seven bags hold books.
-7つのカバンが本を入れます。
-🍎 An apple grows on the tree.
-リンゴは木に実ります。
-🍎 Two apples grow on the tree.
-2つのリンゴが木に実ります。
-🍊 An orange tastes sweet.
-オレンジは甘い味がします。
-🍊 Three oranges taste sweet.
-3つのオレンジが甘い味がします。
-🍌 A banana turns yellow.
-バナナは黄色くなります。
-🍌 Four bananas turn yellow.
-4本のバナナが黄色くなります。
-🍞 A bread feeds a family.
-パンは家族を養います。
-🍞 Five breads feed families.
-5つのパンが家族を養います。
-🥚 An egg breaks easily.
-卵は簡単に割れます。
-🥚 Six eggs break easily.
-6個の卵が簡単に割れます。
-🧁 A cake tastes good.
-ケーキは美味しいです。
-🧁 Seven cakes taste good.
-7つのケーキが美味しいです。
-🍪 A cookie melts in tea.
-クッキーはお茶で溶けます。
-🍪 Eight cookies melt in tea.
-8つのクッキーがお茶で溶けます。
-🌳 A tree grows tall.
-木は高く育ちます。
-🌳 Two trees grow tall.
-2本の木が高く育ちます。
-🌸 A flower blooms in spring.
-花は春に咲きます。
-🌸 Three flowers bloom in spring.
-3つの花が春に咲きます。
-☀️ The sun shines bright.
-太陽は明るく輝きます。
-🌙 The moon glows at night.
-月は夜に輝きます。
-⭐ A star twinkles in the sky.
-星は空で瞬きます。
-⭐ Two stars twinkle in the sky.
-2つの星が空で瞬きます。
-☁️ A cloud floats in the sky.
-雲は空に浮かんでいます。
-☁️ Three clouds float in the sky.
-3つの雲が空に浮かんでいます。
-🌧️ Rain falls from the sky.
-雨は空から降ります。
-🌧️ Four rains fall from the sky.
-4つの雨が空から降ります。
-❄️ Snow covers the ground.
-雪は地面を覆います。
-❄️ Five snows cover the ground.
-5つの雪が地面を覆います。
-👦 A boy plays soccer.
-男の子はサッカーをします。
-👦 Two boys play soccer.
-2人の男の子がサッカーをします。
-👧 A girl dances ballet.
-女の子はバレエを踊ります。
-👧 Three girls dance ballet.
-3人の女の子がバレエを踊ります。
-👨 A man works in an office.
-男性はオフィスで働きます。
-👨 Four men work in an office.
-4人の男性がオフィスで働きます。
-👩 A woman cooks in the kitchen.
-女性はキッチンで料理をします。
-👩 Five women cook in the kitchen.
-5人の女性がキッチンで料理をします。
-👨‍🏫 A teacher teaches students.
-先生は生徒に教えます。
-👨‍🏫 Six teachers teach students.
-6人の先生が生徒に教えます。
-👨‍🎓 A student studies hard.
-学生は一生懸命勉強します。
-👨‍🎓 Seven students study hard.
-7人の学生が一生懸命勉強します。
-👨‍⚕️ A doctor helps patients.
-医者は患者を助けます。
-👨‍⚕️ Eight doctors help patients.
-8人の医者が患者を助けます。
-👩‍⚕️ A nurse cares for people.
-看護師は人々の世話をします。
-👩‍⚕️ Nine nurses care for people.
-9人の看護師が人々の世話をします。
-🚗 A car drives on the road.
-車は道路を走ります。
-🚗 Two cars drive on the road.
-2台の車が道路を走ります。
-🚌 A bus stops at the station.
-バスは駅で止まります。
-🚌 Three buses stop at the station.
-3台のバスが駅で止まります。
-🚆 A train moves on the tracks.
-電車は線路の上を動きます。
-🚆 Four trains move on the tracks.
-4本の電車が線路の上を動きます。
-🚲 A bike rides on the path.
-自転車は道を走ります。
-🚲 Five bikes ride on the path.
-5台の自転車が道を走ります。
-🏠 A house stands on the street.
-家は通りの上にあります。
-🏠 Six houses stand on the street.
-6軒の家が通りの上にあります。
-🏢 A building touches the sky.
-ビルは空に触れています。
-🏢 Seven buildings touch the sky.
-7つのビルが空に触れています。
-🚪 A door opens to the room.
-ドアは部屋に開きます。
-🚪 Eight doors open to the room.
-8つのドアが部屋に開きます。
-🪟 A window shows the view.
-窓は景色を見せます。
-🪟 Nine windows show the view.
-9つの窓が景色を見せます。
-👁️ An eye sees the world.
-目は世界を見ます。
-👁️ Two eyes see the world.
-2つの目が世界を見ます。
-👂 An ear hears the sound.
+📚 A student reads a book.
+学生は本を読みます。
+📚 Two students read books.
+2人の学生が本を読みます。
+✏️ A teacher writes a letter.
+先生は手紙を書きます。
+✏️ Three teachers write letters.
+3人の先生が手紙を書きます。
+🖊️ An artist draws a picture.
+芸術家は絵を描きます。
+🖊️ Four artists draw pictures.
+4人の芸術家が絵を描きます。
+🧹 A cleaner cleans a room.
+掃除員は部屋を掃除します。
+🧹 Five cleaners clean rooms.
+5人の掃除員が部屋を掃除します。
+🪑 A carpenter builds a chair.
+大工は椅子を作ります。
+🪑 Six carpenters build chairs.
+6人の大工が椅子を作ります。
+🎒 A student carries a bag.
+学生はカバンを持ちます。
+🎒 Seven students carry bags.
+7人の学生がカバンを持ちます。
+🍎 A girl eats an apple.
+女の子はリンゴを食べます。
+🍎 Two girls eat apples.
+2人の女の子がリンゴを食べます。
+🍊 A boy peels an orange.
+男の子はオレンジの皮をむきます。
+🍊 Three boys peel oranges.
+3人の男の子がオレンジの皮をむきます。
+🍌 A monkey eats a banana.
+猿はバナナを食べます。
+🍌 Four monkeys eat bananas.
+4匹の猿がバナナを食べます。
+🍞 A baker makes bread.
+パン屋はパンを作ります。
+🍞 Five bakers make bread.
+5人のパン屋がパンを作ります。
+🥚 A cook breaks an egg.
+料理人は卵を割ります。
+🥚 Six cooks break eggs.
+6人の料理人が卵を割ります。
+🧁 A chef bakes a cake.
+シェフはケーキを焼きます。
+🧁 Seven chefs bake cakes.
+7人のシェフがケーキを焼きます。
+🍪 A mom buys a cookie.
+ママはクッキーを買います。
+🍪 Eight moms buy cookies.
+8人のママがクッキーを買います。
+🌳 A gardener plants a tree.
+庭師は木を植えます。
+🌳 Two gardeners plant trees.
+2人の庭師が木を植えます。
+🌸 A florist picks a flower.
+花屋は花を摘みます。
+🌸 Three florists pick flowers.
+3人の花屋が花を摘みます。
+☀️ The sun warms the earth.
+太陽は地球を温めます。
+🌙 The moon lights the night.
+月は夜を照らします。
+⭐ A star guides a ship.
+星は船を導きます。
+⭐ Two stars guide ships.
+2つの星が船を導きます。
+☁️ A cloud covers the sky.
+雲は空を覆います。
+☁️ Three clouds cover the sky.
+3つの雲が空を覆います。
+🌧️ Rain waters the plants.
+雨は植物に水をやります。
+🌧️ Four rains water the plants.
+4つの雨が植物に水をやります。
+❄️ Snow covers the mountain.
+雪は山を覆います。
+❄️ Five snows cover the mountains.
+5つの雪が山を覆います。
+👦 A boy kicks a ball.
+男の子はボールを蹴ります。
+👦 Two boys kick balls.
+2人の男の子がボールを蹴ります。
+👧 A girl holds a doll.
+女の子は人形を持ちます。
+👧 Three girls hold dolls.
+3人の女の子が人形を持ちます。
+👨 A man drives a car.
+男性は車を運転します。
+👨 Four men drive cars.
+4人の男性が車を運転します。
+👩 A woman cooks a meal.
+女性は食事を作ります。
+👩 Five women cook meals.
+5人の女性が食事を作ります。
+👨‍🏫 A teacher teaches a class.
+先生はクラスを教えます。
+👨‍🏫 Six teachers teach classes.
+6人の先生がクラスを教えます。
+👨‍🎓 A student learns a lesson.
+学生はレッスンを学びます。
+👨‍🎓 Seven students learn lessons.
+7人の学生がレッスンを学びます。
+👨‍⚕️ A doctor treats a patient.
+医者は患者を治療します。
+👨‍⚕️ Eight doctors treat patients.
+8人の医者が患者を治療します。
+👩‍⚕️ A nurse helps a patient.
+看護師は患者を助けます。
+👩‍⚕️ Nine nurses help patients.
+9人の看護師が患者を助けます。
+🚗 A driver fixes a car.
+運転手は車を修理します。
+🚗 Two drivers fix cars.
+2人の運転手が車を修理します。
+🚌 A conductor drives a bus.
+運転手はバスを運転します。
+🚌 Three conductors drive buses.
+3人の運転手がバスを運転します。
+🚆 An engineer drives a train.
+エンジニアは電車を運転します。
+🚆 Four engineers drive trains.
+4人のエンジニアが電車を運転します。
+🚲 A rider rides a bike.
+ライダーは自転車に乗ります。
+🚲 Five riders ride bikes.
+5人のライダーが自転車に乗ります。
+🏠 A family buys a house.
+家族は家を買います。
+🏠 Six families buy houses.
+6つの家族が家を買います。
+🏢 A company builds a building.
+会社はビルを建てます。
+🏢 Seven companies build buildings.
+7つの会社がビルを建てます。
+🚪 A guest opens a door.
+客はドアを開けます。
+🚪 Eight guests open doors.
+8人の客がドアを開けます。
+🪟 A cleaner washes a window.
+掃除員は窓を洗います。
+🪟 Nine cleaners wash windows.
+9人の掃除員が窓を洗います。
+👁️ An eye sees a bird.
+目は鳥を見ます。
+👁️ Two eyes see birds.
+2つの目が鳥を見ます。
+👂 An ear hears a sound.
 耳は音を聞きます。
-👂 Three ears hear the sound.
+👂 Three ears hear sounds.
 3つの耳が音を聞きます。
-👃 A nose smells the flower.
+👃 A nose smells a flower.
 鼻は花の匂いを嗅ぎます。
-👃 Four noses smell the flower.
+👃 Four noses smell flowers.
 4つの鼻が花の匂いを嗅ぎます。
-👄 A mouth eats the food.
-口は食べ物を食べます。
-👄 Five mouths eat the food.
-5つの口が食べ物を食べます。
-🤚 A hand holds the ball.
-手はボールを持ちます。
-🤚 Six hands hold the ball.
-6つの手がボールを持ちます。
-🦶 A foot walks on the ground.
-足は地面を歩きます。
-🦶 Seven feet walk on the ground.
-7つの足が地面を歩きます。
-💪 An arm lifts the weight.
-腕は重りを持ち上げます。
-💪 Eight arms lift the weight.
-8つの腕が重りを持ち上げます。
-🦵 A leg kicks the ball.
+👄 A mouth eats an apple.
+口はリンゴを食べます。
+👄 Five mouths eat apples.
+5つの口がリンゴを食べます。
+🤚 A hand holds a pen.
+手はペンを持ちます。
+🤚 Six hands hold pens.
+6つの手がペンを持ちます。
+🦶 A foot kicks a ball.
 足はボールを蹴ります。
-🦵 Nine legs kick the ball.
-9つの足がボールを蹴ります。`
+🦶 Seven feet kick balls.
+7つの足がボールを蹴ります。
+💪 An arm lifts a box.
+腕は箱を持ち上げます。
+💪 Eight arms lift boxes.
+8つの腕が箱を持ち上げます。
+🦵 A leg pushes a door.
+足はドアを押します。
+🦵 Nine legs push doors.
+9つの足がドアを押します。`
         }
     ]
 };
