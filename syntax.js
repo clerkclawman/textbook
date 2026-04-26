@@ -14,40 +14,40 @@ var syntax = {
 彼は幽霊を見ます。
 👩 She eats a shoe.
 彼女は靴を食べます。
-🐶 It flies.
-それは飛びます。
-👪 We dance.
-私たちは踊ります。
-👥 They play.
-彼らは遊びます。
-📝 This is a banana.
-これはバナナです。
-🐕 That is a robot.
-それはロボットです。
-⚽ These are aliens.
-これらはエイリアンです。
-🐱 Those are monsters.
-それらは怪物です。
-🥤 I drink soup.
-私はスープを飲みます。
-🍞 You eat a rock.
-あなたは岩を食べます。
-📺 He watches a fish.
-彼は魚を見ています。
+🐶 It chases a cat.
+それは猫を追いかけます。
+👪 We play soccer.
+私たちはサッカーをします。
+👥 They read books.
+彼らは本を読みます。
+📝 I write a letter.
+私は手紙を書きます。
+🐕 You watch a movie.
+あなたは映画を見ます。
+⚽ He throws a ball.
+彼はボールを投げます。
+🐱 She catches a fish.
+彼女は魚を捕まえます。
+🥤 I drink water.
+私は水を飲みます。
+🍞 You eat bread.
+あなたはパンを食べます。
+📺 He watches TV.
+彼はテレビを見ています。
 🎧 She listens to music.
 彼女は音楽を聞いています。
-🐇 It jumps.
-それは跳びます。
-🎤 We sing.
-私たちは歌います。
-💃 They dance.
-彼らは踊ります。
-🚪 I open a box.
-私は箱を開けます。
-🪟 You close a book.
-あなたは本を閉じます。
-🎁 He gives a banana.
-彼はバナナをあげます。
+🐇 It jumps over a fence.
+それはフェンスを飛び越えます。
+🎤 We sing a song.
+私たちは歌を歌います。
+💃 They dance a dance.
+彼らは踊りを踊ります。
+🚪 I open a door.
+私はドアを開けます。
+🪟 You close a window.
+あなたは窓を閉じます。
+🎁 He gives a gift.
+彼はプレゼントをあげます。
 📸 She takes a photo.
 彼女は写真を撮ります。
 🔊 It makes a sound.
@@ -64,62 +64,62 @@ var syntax = {
 彼は牛乳が好きです。
 🎒 She has a bag.
 彼女はバッグを持っています。
-📏 It is an elephant.
-それは象です。
-😊 We are happy.
-私たちは幸せです。
-🎒 They are students.
-彼らは学生です。
-🔍 This is a hat.
-これは帽子です。
-🔍 That is a car.
-それは車です。
-🔴 These are robots.
-これらはロボットです。
-🔵 Those are aliens.
-それらはエイリアンです。
-🏃 I run.
-私は走ります。
-🚶 You walk.
-あなたは歩きます。
-⬆️ He jumps.
-彼は跳びます。
-🪑 She sits.
-彼女は座ります。
-⬆️ It stands.
-それは立ちます。
-🍽️ We eat lunch.
-私たちは昼ご飯を食べます。
-🥛 They drink milk.
-彼らは牛乳を飲みます。
+📏 It breaks a window.
+それは窓を壊します。
+😊 We love pizza.
+私たちはピザが好きです。
+🎒 They hate homework.
+彼らは宿題が嫌いです。
+🔍 I find a treasure.
+私は宝物を見つけます。
+🔍 You lose a key.
+あなたは鍵を失くします。
+🔴 He buys a car.
+彼は車を買います。
+🔵 She sells a house.
+彼女は家を売ります。
+🏃 I run a race.
+私はレースを走ります。
+🚶 You walk a dog.
+あなたは犬を散歩させます。
+⬆️ He climbs a tree.
+彼は木を登ります。
+🪑 She moves a chair.
+彼女は椅子を動かします。
+⬆️ It pushes a box.
+それは箱を押します。
+🍽️ We cook dinner.
+私たちは夕食を作ります。
+🥛 They drink tea.
+彼らはお茶を飲みます。
 📖 I read a book.
 私は本を読みます。
-✏️ You write a letter.
-あなたは手紙を書きます。
+✏️ You write a story.
+あなたは物語を書きます。
 🎨 He draws a picture.
 彼は絵を描きます。
-📘 She reads a story.
-彼女は物語を読みます。
-🚲 It rolls.
-それは転がります。
-🧹 We clean the room.
+📘 She paints a wall.
+彼女は壁を塗ります。
+🚲 It rides a bike.
+それは自転車に乗ります。
+🧹 We clean a room.
 私たちは部屋を掃除します。
 🛒 They buy food.
 彼らは食べ物を買います。
-🌞 I feel warm.
-私は暖かいと感じます。
-🌧️ You feel cold.
-あなたは寒いと感じます。
-🌳 He loves nature.
-彼は自然が好きです。
-🎶 She loves dancing.
-彼女はダンスが好きです。
-💡 It gives light.
-それは光を与えます。
-🤝 We help each other.
-私たちは互いに助け合います。
-🌍 They travel.
-彼らは旅行します。`
+🌞 I feel the sun.
+私は太陽を感じます。
+🌧️ You feel the rain.
+あなたは雨を感じます。
+🌳 He climbs a mountain.
+彼は山を登ります。
+🎶 She plays music.
+彼女は音楽を演奏します。
+💡 It lights a room.
+それは部屋を照らします。
+🤝 We help a friend.
+私たちは友達を助けます。
+🌍 They visit a planet.
+彼らは惑星を訪れます。`
         },
         {
             title: "Object Pronouns Drill",
