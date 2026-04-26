@@ -135,106 +135,90 @@ var syntax = {
 先生は私たちを招待します。
 👥 My friends watch them.
 私の友達は彼らを見ています。
-📝 Dad likes this.
-パパはこれが好きです。
-🐕 Mom wants that.
-ママはそれが欲しいです。
-⚽ Ken takes these.
-ケンはこれらを取ります。
-🐱 Yumi uses those.
-ユミはそれらを使います。
-🥤 Bob calls him.
-ボブは彼に電話します。
-🍞 Anna meets her.
-アンナは彼女に会います。
-📺 Mike finds it.
-マイクはそれを見つけます。
-🎧 Sarah gives them.
-サラはそれらを与えます。
-🐇 The dog follows us.
-犬は私たちについてきます。
-🎤 The band loves you.
-バンドはあなたを愛しています。
-💃 The team chooses it.
-チームはそれを選びます。
-🚪 Dad opens it.
-パパはそれを開けます。
-🪟 Mom closes it.
-ママはそれを閉めます。
-🎁 Grandpa holds it.
-おじいちゃんはそれを持っています。
-📸 Grandma takes it.
-おばあちゃんはそれを取ります。
-🔊 The cat follows you.
-猫はあなたについてきます。
+📝 Dad calls me.
+パパは私に電話します。
+🐕 Mom feeds you.
+ママはあなたに餌をやります。
+⚽ Ken hits him.
+ケンは彼を叩きます。
+🐱 Yumi loves her.
+ユミちゃんは彼女を愛しています。
+🥤 Bob finds us.
+ボブは私たちを見つけます。
+🍞 Anna follows them.
+アンナは彼らについていきます。
+📺 Mike watches me.
+マイクは私を見ています。
+🎧 Sarah hears you.
+サラはあなたの声を聞きます。
+🐇 The dog chases him.
+犬は彼を追いかけます。
+🎤 The band loves us.
+バンドは私たちを愛しています。
+💃 The team chooses them.
+チームは彼らを選びます。
+🚪 Dad opens it for me.
+パパは私のためにそれを開けます。
+🪟 Mom closes it for you.
+ママはあなたのためにそれを閉じます。
+🎁 Grandpa holds it for him.
+おじいちゃんは彼のためにそれを持っています。
+📸 Grandma takes it for her.
+おばあちゃんは彼女のためにそれを取ります。
+🔊 The cat follows us.
+猫は私たちについてきます。
 📚 The students need them.
 学生はそれらが必要です。
 🏠 The family wants you.
 家族はあなたを望んでいます。
-👫 My brother knows him.
-私の兄は彼を知っています。
-✏️ My sister has her.
-私の姉は彼女を持っています。
-🥤 The boy likes her.
-男の子は彼女が好きです。
-🎒 The girl has it.
-女の子はそれを持っています。
-📏 The bird sees you.
-鳥はあなたを見ています。
-😊 My parents help them.
-私の両親は彼らを助けます。
-🎒 The neighbors see us.
-近所の人たちは私たちを見ています。
-🔍 I like this.
-私はこれが好きです。
-🔍 You want that.
-あなたはそれが欲しいです。
-🔴 He likes these.
-彼はこれらが好きです。
-🔵 She wants those.
-彼女はそれらが欲しいです。
-🏃 The dog follows him.
-犬は彼についていきます。
-🚶 The cat meets her.
-猫は彼女に会います。
-⬆️ The boy finds it.
-男の子はそれを見つけます。
-🪑 The girl uses them.
-女の子はそれらを使います。
-⬆️ The bird follows you.
-鳥はあなたについてきます。
-🍽️ The family invites them.
-家族は彼らを招待します。
-🥛 The class sees you.
-クラスはあなたを見ています。
-📖 My friend knows him.
-私の友達は彼を知っています。
-✏️ My teacher helps her.
-私の先生は彼女を助けます。
-🎨 The artist likes it.
-芸術家はそれを好きです。
-📘 The writer knows them.
-作家は彼らを知っています。
-🚲 The bike sees you.
-自転車はあなたを見ています。
-🧹 The cleaners love them.
-掃除員は彼らを愛しています。
-🛒 The shoppers watch us.
-買い物客は私たちを見ています。
-🌞 The sun likes this.
-太陽はこれが好きです。
-🌧️ The rain wants that.
-雨はそれが欲しいです。
-🌳 The tree likes these.
-木はこれらが好きです。
-🎶 The wind wants those.
-風はそれらが欲しいです。
-💡 The lamp follows you.
-ランプはあなたについてきます。
-🤝 The team helps them.
-チームは彼らを助けます。
-🌍 The world sees you.
-世界はあなたを見ています。`
+👦 A ghost scares me.
+幽霊は私を怖がらせます。
+👧 A robot helps you.
+ロボットはあなたを助けます。
+👨 A dinosaur eats him.
+恐竜は彼を食べます。
+👩 An alien visits her.
+エイリアンは彼女を訪れます。
+👪 A monster chases us.
+怪物は私たちを追いかけます。
+👥 A dragon watches them.
+ドラゴンは彼らを見ています。
+📝 A monkey throws me.
+猿は私を投げます。
+🐕 A bear hugs you.
+熊はあなたを抱きしめます。
+⚽ A lion kicks him.
+ライオンは彼を蹴ります。
+🐱 A tiger bites her.
+トラは彼女を噛みます。
+🥤 A snake catches us.
+蛇は私たちを捕まえます。
+🍞 A bird follows them.
+鳥は彼らについていきます。
+📺 A fish watches me.
+魚は私を見ています。
+🎧 A frog hears you.
+カエルはあなたの声を聞きます。
+🐇 A pig chases him.
+豚は彼を追いかけます。
+🎤 A cow loves us.
+牛は私たちを愛しています。
+💃 A sheep chooses them.
+羊は彼らを選びます。
+🚪 A fly opens it for me.
+ハエは私のためにそれを開けます。
+🪟 A bee closes it for you.
+蜂はあなたのためにそれを閉じます。
+🎁 An ant holds it for him.
+アリは彼のためにそれを持っています。
+📸 A spider takes it for her.
+クモは彼女のためにそれを取ります。
+🔊 A worm follows us.
+ミミズは私たちについてきます。
+📚 A beetle needs them.
+甲虫はそれらが必要です。
+🏠 A butterfly wants you.
+蝶はあなたを望んでいます。`
         },
         {
             title: "Mixed Pronouns Drill",
