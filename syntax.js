@@ -1551,6 +1551,137 @@ var syntax = {
 私たちは食べ物を買っています。
 👥 They are selling vegetables.
 彼らは野菜を売っています。`
+        },
+        {
+            title: "Adjective Drill",
+            content: `🐱 The cat is big.
+猫は大きいです。
+🐱 The cat was big.
+猫は大きかったです。
+🐱 The big cat runs.
+大きな猫が走ります。
+🐱 The cat was fat, but now it is thin.
+猫は太っていましたが、今は痩せています。
+🐶 The dog is small.
+犬は小さいです。
+🐶 The dog was small.
+犬は小さかったです。
+🐶 The small dog sleeps.
+小さな犬が寝ています。
+🐶 The dog was young, but now it is old.
+犬は若かったですが、今は年をとっています。
+🐦 The bird is fast.
+鳥は速いです。
+🐦 The bird was fast.
+鳥は速かったです。
+🐦 The fast bird flies.
+速い鳥が飛びます。
+🐦 The bird was hungry, but now it is full.
+鳥はお腹が空いていましたが、今は満腹です。
+🐟 The fish is cold.
+魚は寒いです。
+🐟 The fish was cold.
+魚は寒かったです。
+🐟 The cold fish swims.
+寒い魚が泳ぎます。
+🐟 The fish was small, but now it is big.
+魚は小さかったですが、今は大きいです。
+🐰 The rabbit is quiet.
+ウサギは静かです。
+🐰 The rabbit was quiet.
+ウサギは静かでした。
+🐰 The quiet rabbit jumps.
+静かなウサギが跳びます。
+🐰 The rabbit was scared, but now it is brave.
+ウサギは怖がっていましたが、今は勇敢です。
+🐴 The horse is strong.
+馬は強いです。
+🐴 The horse was strong.
+馬は強かったです。
+🐴 The strong horse runs.
+強い馬が走ります。
+🐴 The horse was sick, but now it is healthy.
+馬は病気でしたが、今は健康です。
+🐄 The cow is gentle.
+牛は優しいです。
+🐄 The cow was gentle.
+牛は優しかったです。
+🐄 The gentle cow eats.
+優しい牛が食べます。
+🐄 The cow was thin, but now it is fat.
+牛は痩せていましたが、今は太っています。
+🐷 The pig is dirty.
+豚は汚いです。
+🐷 The pig was dirty.
+豚は汚かったです。
+🐷 The dirty pig sleeps.
+汚い豚が寝ています。
+🐷 The pig was hungry, but now it is full.
+豚はお腹が空いていましたが、今は満腹です。
+🐔 The chicken is loud.
+鶏は大声です。
+🐔 The chicken was loud.
+鶏は大声でした。
+🐔 The loud chicken sings.
+大声の鶏が歌います。
+🐔 The chicken was small, but now it is big.
+鶏は小さかったですが、今は大きいです。
+🐑 The sheep is soft.
+羊は柔らかいです。
+🐑 The sheep was soft.
+羊は柔らかかったです。
+🐑 The soft sheep walks.
+柔らかい羊が歩きます。
+🐑 The sheep was slow, but now it is fast.
+羊は遅かったですが、今は速いです。
+🐘 The elephant is big.
+象は大きいです。
+🐘 The elephant was big.
+象は大きかったです。
+🐘 The big elephant walks.
+大きな象が歩きます。
+🐘 The elephant was weak, but now it is strong.
+象は弱かったですが、今は強いです。
+🦁 The lion is brave.
+ライオンは勇敢です。
+🦁 The lion was brave.
+ライオンは勇敢でした。
+🦁 The brave lion runs.
+勇敢なライオンが走ります。
+🦁 The lion was tired, but now it is energetic.
+ライオンは疲れていましたが、今は元気です。
+🐯 The tiger is fast.
+トラは速いです。
+🐯 The tiger was fast.
+トラは速かったです。
+🐯 The fast tiger hunts.
+速いトラが狩りをします。
+🐯 The tiger was hungry, but now it is full.
+トラはお腹が空いていましたが、今は満腹です。
+🐻 The bear is big.
+熊は大きいです。
+🐻 The bear was big.
+熊は大きかったです。
+🐻 The big bear sleeps.
+大きな熊が寝ています。
+🐻 The bear was angry, but now it is calm.
+熊は怒っていましたが、今は冷静です。
+🦊 The fox is smart.
+キツネは賢いです。
+🦊 The fox was smart.
+キツネは賢かったです。
+🦊 The smart fox runs.
+賢いキツネが走ります。
+🦊 The fox was scared, but now it is brave.
+キツネは怖がっていましたが、今は勇敢です。
+🐒 The monkey is active.
+猿は活発です。
+🐒 The monkey was active.
+猿は活発でした。
+🐒 The active monkey jumps.
+活発な猿が跳びます。
+🐒 The monkey was sad, but now it is happy.
+猿は悲しかったですが、今は幸せです。`
         }
     ]
 };
