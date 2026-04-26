@@ -1212,6 +1212,101 @@ var syntax = {
 私は幸せですが、有名ではありません。
 👧 You are ready, but you are not sure.
 あなたは準備ができていますが、確信していません。`
+        },
+        {
+            title: "Me and X and We with To Be Drill",
+            content: `👦 Me and Ken are happy. We are not sad.
+ケンくんと私は幸せです。私たちは悲しくありません。
+👧 Me and Yumi are kind. We are not mean.
+ユミちゃんと私は親切です。私たちは意地悪ではありません。
+👦 Me and Takashi are tall. We are not short.
+タカシくんと私は背が高いです。私たちは背が低くありません。
+👧 Me and Sakura are cute. We are not ugly.
+サクラちゃんと私は可愛いです。私たちは醜くありません。
+👦 Me and Hiroshi are young. We are not old.
+ヒロシくんと私は若いです。私たちは年をとっていません。
+👧 Me and Aiko are wise. We are not foolish.
+アイコちゃんと私は賢明です。私たちは愚かではありません。
+👦 Me and Yuji are busy. We are not free.
+ユウジくんと私は忙しいです。私たちは自由ではありません。
+👧 Me and Emi are relaxed. We are not stressed.
+エミちゃんと私はリラックスしています。私たちはストレスを感じていません。
+👦 Me and Masato are hungry. We are not full.
+マサトくんと私はお腹が空いています。私たちは満腹ではありません。
+👧 Me and Kaori are energetic. We are not tired.
+カオリちゃんと私は元気です。私たちは疲れていません。
+👦 Me and Kenji are cold. We are not warm.
+ケンジくんと私は寒いです。私たちは暖かくありません。
+👧 Me and Mika are gentle. We are not rough.
+ミカちゃんと私は優しいです。私たちは荒くありません。
+👦 Me and Taro are rich. We are not poor.
+タロウくんと私は金持ちです。私たちは貧しくありません。
+👧 Me and Yuki are humble. We are not proud.
+ユキちゃんと私は謙虚です。私たちは傲慢ではありません。
+👦 Me and Jiro are healthy. We are not sick.
+ジロウくんと私は健康です。私たちは病気ではありません。
+👧 Me and Rina are weak. We are not strong.
+リナちゃんと私は弱いです。私たちは強くありません。
+👦 Me and Saburo are loud. We are not quiet.
+サブロウくんと私は大声です。私たちは静かではありません。
+👧 Me and Hana are shy. We are not bold.
+ハナちゃんと私は恥ずかしがり屋です。私たちは大胆ではありません。
+👦 Me and Shinji are careful. We are not careless.
+シンジくんと私は慎重です。私たちは不注意ではありません。
+👧 Me and Moe are clumsy. We are not graceful.
+モエちゃんと私は不器用です。私たちは優雅ではありません。
+👦 Me and Daisuke are patient. We are not impatient.
+ダイスケくんと私は忍耐強いです。私たちは忍耐がありません。
+👧 Me and Yui are nervous. We are not calm.
+ユイちゃんと私は緊張しています。私たちは冷静ではありません。
+👦 Me and Kenta are friendly. We are not unfriendly.
+ケンタくんと私は友好的です。私たちは不友好的ではありません。
+👧 Me and Aoi are lonely. We are not popular.
+アオイちゃんと私は孤独です。私たちは人気がありません。
+👦 Me and Yuta are creative. We are not boring.
+ユウタくんと私は創造的です。私たちは退屈ではありません。
+👧 Me and Rin are dull. We are not interesting.
+リンちゃんと私は退屈です。私たちは面白くありません。
+👦 Me and Sota are lucky. We are not unlucky.
+ソウタくんと私は幸運です。私たちは不運ではありません。
+👧 Me and Mei are unfortunate. We are not lucky.
+メイちゃんと私は不幸です。私たちは幸運ではありません。
+👦 Me and Ryo are famous. We are not unknown.
+リョウくんと私は有名です。私たちは無名ではありません。
+👧 Me and Hina are ordinary. We are not special.
+ヒナちゃんと私は普通です。私たちは特別ではありません。
+👦 Me and Kai are single. We are not married.
+カイくんと私は独身です。私たちは結婚していません。
+👧 Me and Saki are devoted. We are not unfaithful.
+サキちゃんと私は献身的です。私たちは不誠実ではありません。
+👦 Me and Ren are open. We are not closed.
+レンくんと私は開放的です。私たちは閉鎖的ではありません。
+👧 Me and Yua are busy. We are not available.
+ユアちゃんと私は忙しいです。私たちは利用可能ではありません。
+👦 Me and Haruto are ready. We are not late.
+ハルトくんと私は準備ができています。私たちは遅れていません。
+👧 Me and Miu are sorry. We are not happy.
+ミウちゃんと私は申し訳ないと思っています。私たちは幸せではありません。
+👦 Me and Sora are correct. We are not wrong.
+ソラくんと私は正確です。私たちは間違っていません。
+👧 Me and Koharu are mistaken. We are not right.
+コハルちゃんと私は間違っています。私たちは正しくありません。
+👦 Me and Riko are certain. We are not unsure.
+リコくんと私は確実です。私たちは確信していません。
+👧 Me and Mirai are doubtful. We are not sure.
+ミライちゃんと私は疑っています。私たちは確信していません。
+👦 Me and Daiki are confident. We are not nervous.
+ダイキくんと私は自信があります。私たちは緊張していません。
+👧 Me and Hina are anxious. We are not relaxed.
+ヒナちゃんと私は不安です。私たちはリラックスしていません。
+👦 Me and Kaito are peaceful. We are not stressed.
+カイトくんと私は平和的です。私たちはストレスを感じていません。
+👧 Me and Aoi are worried. We are not calm.
+アオイちゃんと私は心配しています。私たちは冷静ではありません。
+👦 Me and Yuto are joyful. We are not sad.
+ユウトくんと私は喜んでいます。私たちは悲しくありません。
+👧 Me and Hina are unhappy. We are not happy.
+ヒナちゃんと私は不幸です。私たちは幸せではありません。`
         }
     ]
 };
