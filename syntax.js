@@ -14,12 +14,12 @@ var syntax = {
 彼は幽霊を見ます。
 👩 She eats a shoe.
 彼女は靴を食べます。
-🐶 It flies to the moon.
-それは月に飛びます。
-👪 We dance with robots.
-私たちはロボットと踊ります。
-👥 They play with dinosaurs.
-彼らは恐竜と遊びます。
+🐶 It flies.
+それは飛びます。
+👪 We dance.
+私たちは踊ります。
+👥 They play.
+彼らは遊びます。
 📝 This is a banana.
 これはバナナです。
 🐕 That is a robot.
@@ -34,92 +34,92 @@ var syntax = {
 あなたは岩を食べます。
 📺 He watches a fish.
 彼は魚を見ています。
-🎧 She listens to a cat.
-彼女は猫の声を聞いています。
-🐇 It jumps on a cloud.
-それは雲の上で跳びます。
-🎤 We sing to a tree.
-私たちは木に歌います。
-💃 They dance with a bear.
-彼らは熊と踊ります。
+🎧 She listens to music.
+彼女は音楽を聞いています。
+🐇 It jumps.
+それは跳びます。
+🎤 We sing.
+私たちは歌います。
+💃 They dance.
+彼らは踊ります。
 🚪 I open a box.
 私は箱を開けます。
 🪟 You close a book.
 あなたは本を閉じます。
-🎁 He gives a monkey a banana.
-彼は猿にバナナをあげます。
-📸 She takes a photo of a ghost.
-彼女は幽霊の写真を撮ります。
-🔊 It makes a funny sound.
-それは面白い音を出します。
-📚 We do homework with a robot.
-私たちはロボットと宿題をします。
-🏠 They go to Mars.
-彼らは火星に行きます。
+🎁 He gives a banana.
+彼はバナナをあげます。
+📸 She takes a photo.
+彼女は写真を撮ります。
+🔊 It makes a sound.
+それは音を出します。
+📚 We do homework.
+私たちは宿題をします。
+🏠 They go home.
+彼らは家に帰ります。
 👫 I see a dinosaur.
 私は恐竜を見ます。
-✏️ You have a pencil that writes in space.
-あなたは宇宙で書ける鉛筆を持っています。
-🥤 He likes green milk.
-彼は緑の牛乳が好きです。
-🎒 She has a bag that flies.
-彼女は空を飛ぶバッグを持っています。
-📏 It is a tiny elephant.
-それは小さな象です。
-😊 We are happy because we found a treasure.
-私たちは宝物を見つけたので幸せです。
-🎒 They are students from the moon.
-彼らは月からの学生です。
-🔍 This is a magic hat.
-これは魔法の帽子です。
-🔍 That is a flying car.
-それは空を飛ぶ車です。
-🔴 These are red robots.
-これらは赤いロボットです。
-🔵 Those are blue aliens.
-それらは青いエイリアンです。
-🏃 I run like a cheetah.
-私はチーターのように走ります。
-🚶 You walk like a penguin.
-あなたはペンギンのように歩きます。
-⬆️ He jumps like a frog.
-彼はカエルのように跳びます。
-🪑 She sits like a statue.
-彼女は像のように座ります。
-⬆️ It stands like a soldier.
-それは兵士のように立ちます。
-🍽️ We eat lunch with a monster.
-私たちは怪物と昼ご飯を食べます。
-🥛 They drink milk from a coconut.
-彼らはココナッツから牛乳を飲みます。
-📖 I read a book about flying pigs.
-私は空を飛ぶ豚についての本を読みます。
-✏️ You write a letter to a dinosaur.
-あなたは恐竜に手紙を書きます。
-🎨 He draws a picture of a robot eating pizza.
-彼はピザを食べるロボットの絵を描きます。
-📘 She reads a book about space cats.
-彼女は宇宙の猫についての本を読みます。
-🚲 It rolls like a wheel.
-それは車輪のように転がります。
-🧹 We clean a room full of toys.
-私たちはおもちゃでいっぱいの部屋を掃除します。
-🛒 They buy food for a dragon.
-彼らはドラゴンのために食べ物を買います。
-🌞 I feel warm like the sun.
-私は太陽のように暖かいと感じます。
-🌧️ You feel cold like ice cream.
-あなたはアイスクリームのように寒いと感じます。
-🌳 He loves climbing trees like a monkey.
-彼は猿のように木を登るのが好きです。
-🎶 She loves singing like a bird.
-彼女は鳥のように歌うのが好きです。
-💡 It gives light like a star.
-それは星のように光を与えます。
-🤝 We help a robot fix its spaceship.
-私たちはロボットが宇宙船を直すのを助けます。
-🌍 They travel to a planet made of candy.
-彼らはキャンディでできた惑星に旅行します。`
+✏️ You have a pencil.
+あなたは鉛筆を持っています。
+🥤 He likes milk.
+彼は牛乳が好きです。
+🎒 She has a bag.
+彼女はバッグを持っています。
+📏 It is an elephant.
+それは象です。
+😊 We are happy.
+私たちは幸せです。
+🎒 They are students.
+彼らは学生です。
+🔍 This is a hat.
+これは帽子です。
+🔍 That is a car.
+それは車です。
+🔴 These are robots.
+これらはロボットです。
+🔵 Those are aliens.
+それらはエイリアンです。
+🏃 I run.
+私は走ります。
+🚶 You walk.
+あなたは歩きます。
+⬆️ He jumps.
+彼は跳びます。
+🪑 She sits.
+彼女は座ります。
+⬆️ It stands.
+それは立ちます。
+🍽️ We eat lunch.
+私たちは昼ご飯を食べます。
+🥛 They drink milk.
+彼らは牛乳を飲みます。
+📖 I read a book.
+私は本を読みます。
+✏️ You write a letter.
+あなたは手紙を書きます。
+🎨 He draws a picture.
+彼は絵を描きます。
+📘 She reads a story.
+彼女は物語を読みます。
+🚲 It rolls.
+それは転がります。
+🧹 We clean the room.
+私たちは部屋を掃除します。
+🛒 They buy food.
+彼らは食べ物を買います。
+🌞 I feel warm.
+私は暖かいと感じます。
+🌧️ You feel cold.
+あなたは寒いと感じます。
+🌳 He loves nature.
+彼は自然が好きです。
+🎶 She loves dancing.
+彼女はダンスが好きです。
+💡 It gives light.
+それは光を与えます。
+🤝 We help each other.
+私たちは互いに助け合います。
+🌍 They travel.
+彼らは旅行します。`
         },
         {
             title: "Object Pronouns Drill",
