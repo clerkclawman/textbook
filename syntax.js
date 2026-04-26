@@ -569,6 +569,119 @@ var syntax = {
 足はドアを押します。
 🦵 Nine legs push doors.
 9つの足がドアを押します。`
+        },
+        {
+            title: "Article Pairs Drill",
+            content: `🐱 I see a cat. The cat runs.
+私は猫を見ます。その猫は走ります。
+🐶 You find a dog. The dog barks.
+あなたは犬を見つけます。その犬は吠えます。
+🐦 He watches a bird. The bird flies.
+彼は鳥を見ています。その鳥は飛びます。
+🐟 She catches a fish. The fish swims.
+彼女は魚を捕まえます。その魚は泳ぎます。
+🐰 It chases a rabbit. The rabbit jumps.
+それはウサギを追いかけます。そのウサギは跳びます。
+🐴 We see a horse. The horse eats grass.
+私たちは馬を見ます。その馬は草を食べます。
+🐄 They find a cow. The cow gives milk.
+彼らは牛を見つけます。その牛はミルクを出します。
+🐷 I feed a pig. The pig digs a hole.
+私は豚に餌をやります。その豚は穴を掘ります。
+🐑 You watch a sheep. The sheep stands on the hill.
+あなたは羊を見ています。その羊は丘の上に立っています。
+🐔 He sees a chicken. The chicken lays an egg.
+彼は鶏を見ます。その鶏は卵を産みます。
+📚 She reads a book. The book has pictures.
+彼女は本を読みます。その本には絵があります。
+✏️ I use a pencil. The pencil writes well.
+私は鉛筆を使います。その鉛筆はよく書けます。
+🖊️ You hold a pen. The pen has blue ink.
+あなたはペンを持ちます。そのペンは青いインクです。
+🧹 He finds a broom. The broom cleans the floor.
+彼はほうきを見つけます。そのほうきは床を掃除します。
+🪑 She sits on a chair. The chair is comfortable.
+彼女は椅子に座ります。その椅子は快適です。
+🎒 I carry a bag. The bag holds books.
+私はカバンを持ちます。そのカバンは本を入れます。
+🍎 You eat an apple. The apple is sweet.
+あなたはリンゴを食べます。そのリンゴは甘いです。
+🍊 He peels an orange. The orange tastes good.
+彼はオレンジの皮をむきます。そのオレンジは美味しいです。
+🍌 She eats a banana. The banana is yellow.
+彼女はバナナを食べます。そのバナナは黄色いです。
+🍞 I buy some bread. The bread is fresh.
+私はパンを買います。そのパンは新鮮です。
+🥚 You break an egg. The egg falls on the floor.
+あなたは卵を割ります。その卵は床に落ちます。
+🧁 He bakes a cake. The cake smells good.
+彼はケーキを焼きます。そのケーキはいい匂いがします。
+🍪 She eats a cookie. The cookie is chocolate.
+彼女はクッキーを食べます。そのクッキーはチョコレートです。
+🌳 I plant a tree. The tree grows tall.
+私は木を植えます。その木は高く育ちます。
+🌸 You pick a flower. The flower is beautiful.
+あなたは花を摘みます。その花は美しいです。
+☀️ He sees the sun. The sun shines bright.
+彼は太陽を見ます。その太陽は明るく輝きます。
+🌙 She watches the moon. The moon glows at night.
+彼女は月を見ています。その月は夜に輝きます。
+⭐ I see a star. The star twinkles in the sky.
+私は星を見ます。その星は空で瞬きます。
+☁️ You watch a cloud. The cloud floats in the sky.
+あなたは雲を見ています。その雲は空に浮かんでいます。
+🌧️ He feels the rain. The rain falls from the sky.
+彼は雨を感じます。その雨は空から降ります。
+❄️ She touches the snow. The snow covers the ground.
+彼女は雪に触れます。その雪は地面を覆います。
+👦 I see a boy. The boy kicks a ball.
+私は男の子を見ます。その男の子はボールを蹴ります。
+👧 You watch a girl. The girl holds a doll.
+あなたは女の子を見ています。その女の子は人形を持ちます。
+👨 He meets a man. The man drives a car.
+彼は男性に会います。その男性は車を運転します。
+👩 She sees a woman. The woman cooks a meal.
+彼女は女性を見ます。その女性は食事を作ります。
+👨‍🏫 I know a teacher. The teacher teaches a class.
+私は先生を知っています。その先生はクラスを教えます。
+👨‍🎓 You help a student. The student learns a lesson.
+あなたは学生を助けます。その学生はレッスンを学びます。
+👨‍⚕️ He visits a doctor. The doctor treats a patient.
+彼は医者を訪ねます。その医者は患者を治療します。
+👩‍⚕️ She sees a nurse. The nurse helps a patient.
+彼女は看護師を見ます。その看護師は患者を助けます。
+🚗 I fix a car. The car runs fast.
+私は車を修理します。その車は速く走ります。
+🚌 You drive a bus. The bus stops at the station.
+あなたはバスを運転します。そのバスは駅で止まります。
+🚆 He rides a train. The train moves on the tracks.
+彼は電車に乗ります。その電車は線路の上を動きます。
+🚲 She rides a bike. The bike goes on the path.
+彼女は自転車に乗ります。その自転車は道を走ります。
+🏠 I buy a house. The house stands on the street.
+私は家を買います。その家は通りの上にあります。
+🏢 You see a building. The building touches the sky.
+あなたはビルを見ます。そのビルは空に触れています。
+🚪 He opens a door. The door leads to a room.
+彼はドアを開けます。そのドアは部屋に繋がっています。
+🪟 She washes a window. The window shows the view.
+彼女は窓を洗います。その窓は景色を見せます。
+👁️ I use an eye. The eye sees a bird.
+私は目を使います。その目は鳥を見ます。
+👂 You listen with an ear. The ear hears a sound.
+あなたは耳で聞きます。その耳は音を聞きます。
+👃 He smells with a nose. The nose smells a flower.
+彼は鼻で匂いを嗅ぎます。その鼻は花の匂いを嗅ぎます。
+👄 She opens a mouth. The mouth eats an apple.
+彼女は口を開けます。その口はリンゴを食べます。
+🤚 I use a hand. The hand holds a pen.
+私は手を使います。その手はペンを持ちます。
+🦶 You kick with a foot. The foot kicks a ball.
+あなたは足で蹴ります。その足はボールを蹴ります。
+💪 He lifts with an arm. The arm lifts a box.
+彼は腕で持ち上げます。その腕は箱を持ち上げます。
+🦵 She pushes with a leg. The leg pushes a door.
+彼女は足で押します。その足はドアを押します。`
         }
     ]
 };
