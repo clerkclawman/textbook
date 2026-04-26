@@ -256,84 +256,84 @@ var syntax = {
 私たちはあなたを見ています。
 💃 They invite us.
 彼らは私たちを招待します。
-🚪 I open it for you.
-私はそれをあなたのために開けます。
-🪟 You close it for me.
-あなたはそれを私のために閉めます。
-🎁 He gives it to them.
-彼はそれを彼らに渡します。
-📸 She takes it of us.
-彼女はそれを私たちのものとして取ります。
+🚪 I open it.
+私はそれを開けます。
+🪟 You close it.
+あなたはそれを閉じます。
+🎁 He gives it.
+彼はそれをあげます。
+📸 She takes it.
+彼女はそれを取ります。
 🔊 It annoys you.
 それはあなたを苛立たせます。
 📚 We teach them.
 私たちは彼らに教えます。
 🏠 They call us.
 彼らは私たちに電話します。
-👫 I miss you.
-私はあなたが恋しいです。
-✏️ You borrow it from me.
-あなたはそれを私から借ります。
-🥤 He shares it with us.
-彼はそれを私たちと分けます。
-🎒 She lends it to you.
-彼女はそれをあなたに貸します。
-📏 It belongs to her.
-それは彼女のものです。
-😊 We visit them.
-私たちは彼らを訪れます。
-🎒 They help me.
-彼らは私を助けます。
-🔍 This belongs to me.
-これは私のものです。
-🔍 That belongs to you.
-それはあなたのものです。
-🔴 These belong to us.
-これらは私たちのものです。
-🔵 Those belong to them.
-それらは彼らのものです。
-🏃 I follow you.
-私はあなたについていきます。
-🚶 You wait for me.
-あなたは私を待ちます。
-⬆️ He lifts her.
-彼は彼女を持ち上げます。
-🪑 She pushes us.
-彼女は私たちを押します。
-⬆️ It follows you.
-それはあなたについてきます。
-🍽️ We feed them.
-私たちは彼らに食べ物を与えます。
-🥛 They call you.
-彼らはあなたに電話します。
-📖 I know you.
-私はあなたを知っています。
-✏️ You trust me.
-あなたは私を信頼します。
-🎨 He paints her.
-彼は彼女を描きます。
-📘 She reads it to us.
-彼女はそれを私たちに読み聞かせます。
-🚲 It carries you.
-それはあなたを運びます。
-🧹 We clean it for them.
-私たちはそれを彼らのために掃除します。
-🛒 They show it to us.
-彼らはそれを私たちに見せます。
-🌞 I warm you.
-私はあなたを温めます。
-🌧️ You cool me.
-あなたは私を冷やします。
-🌳 He shades us.
-彼は私たちに日陰を作ります。
-🎶 She entertains them.
-彼女は彼らを楽しませます。
-💡 It guides you.
-それはあなたを導きます。
-🤝 We understand them.
-私たちは彼らを理解します。
-🌍 They inspire you.
-彼らはあなたにインスピレーションを与えます。`
+👫 I kiss you.
+私はあなたにキスします。
+✏️ You hug me.
+あなたは私を抱きしめます。
+🥤 He bites her.
+彼は彼女を噛みます。
+🎒 She kicks him.
+彼女は彼を蹴ります。
+📏 It chases us.
+それは私たちを追いかけます。
+😊 We scare them.
+私たちは彼らを怖がらせます。
+🎒 They love you.
+彼らはあなたを愛しています。
+🔍 I tickle you.
+私はあなたをくすぐります。
+🔍 You pinch me.
+あなたは私をつねります。
+🔴 He pokes it.
+彼はそれをつつきます。
+🔵 She pulls us.
+彼女は私たちを引っ張ります。
+🏃 It pushes me.
+それは私を押します。
+🚶 You catch us.
+あなたは私たちを捕まえます。
+⬆️ He throws them.
+彼は彼らを投げます。
+🪑 She hits us.
+彼女は私たちを叩きます。
+⬆️ It kicks you.
+それはあなたを蹴ります。
+🍽️ We chase them.
+私たちは彼らを追いかけます。
+🥛 They scare us.
+彼らは私たちを怖がらせます。
+📖 I love you.
+私はあなたを愛しています。
+✏️ You hate me.
+あなたは私が嫌いです。
+🎨 He likes it.
+彼はそれが好きです。
+📘 She wants us.
+彼女は私たちを望んでいます。
+🚲 It needs you.
+それはあなたを必要としています。
+🧹 We help them.
+私たちは彼らを助けます。
+🛒 They watch us.
+彼らは私たちを見ています。
+🌞 I see you.
+私はあなたを見ます。
+🌧️ You hear me.
+あなたは私の声を聞きます。
+🌳 He knows us.
+彼は私たちを知っています。
+🎶 She likes them.
+彼女は彼らが好きです。
+💡 It wants you.
+それはあなたを望んでいます。
+🤝 We help you.
+私たちはあなたを助けます。
+🌍 They see us.
+彼らは私たちを見ています。`
         },
         {
             title: "Singular and Plural Nouns Drill",
