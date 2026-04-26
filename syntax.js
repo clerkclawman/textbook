@@ -1310,118 +1310,118 @@ var syntax = {
         },
         {
             title: "Personal Pronouns Review with To Be",
-            content: `🐱 The cat is big. It is not small.
-猫は大きいです。それは小さくありません。
-👦 Ken is happy. He is not sad.
-ケンくんは幸せです。彼は悲しくありません。
-👦 I am tall. I am not short.
-私は背が高いです。私は背が低くありません。
-👦 Me and Ken are strong. We are not weak.
-ケンくんと私は強いです。私たちは弱くありません。
-🐱 The dog is fast. It is not slow.
-犬は速いです。それは遅くありません。
-👨 Takashi is young. He is not old.
-タカシくんは若いです。彼は年をとっていません。
-👦 I am smart. I am not stupid.
-私は賢いです。私は愚かではありません。
-👦 Me and Takashi are busy. We are not free.
-タカシくんと私は忙しいです。私たちは自由ではありません。
-🐱 The bird is hungry. It is not full.
-鳥はお腹が空いています。それは満腹ではありません。
-👨 Hiroshi is brave. He is not scared.
-ヒロシくんは勇敢です。彼は怖がっていません。
-👦 I am rich. You are rich too.
-私は金持ちです。あなたも金持ちです。
-👦 Me and Hiroshi are lucky. We are not unlucky.
-ヒロシくんと私は幸運です。私たちは不運ではありません。
-🐱 The fish is cold. It is not warm.
-魚は寒いです。それは暖かくありません。
-👨 Yuji is careful. He is not careless.
-ユウジくんは慎重です。彼は不注意ではありません。
-👦 I am not late. You are not late either.
-私は遅れていません。あなたも遅れていません。
-👦 Me and Yuji are honest. We are not dishonest.
-ユウジくんと私は正直です。私たちは不正直ではありません。
-🐱 The rabbit is quiet. It is not loud.
-ウサギは静かです。それは大声ではありません。
-👨 Masato is patient. He is not impatient.
-マサトくんは忍耐強いです。彼は忍耐がありません。
-👦 I am tall, but I am not strong.
-私は背が高いですが、強くありません。
-👦 Me and Masato are friendly. We are not unfriendly.
-マサトくんと私は友好的です。私たちは不友好的ではありません。
-🐱 The horse is healthy. It is not sick.
-馬は健康です。それは病気ではありません。
-👨 Kenji is confident. He is not nervous.
-ケンジくんは自信があります。彼は緊張していません。
-👦 I am ready. You are ready too.
-私は準備ができています。あなたも準備ができています。
-👦 Me and Kenji are creative. We are not boring.
-ケンジくんと私は創造的です。私たちは退屈ではありません。
-🐱 The cow is gentle. It is not rough.
-牛は優しいです。それは荒くありません。
-👨 Taro is relaxed. He is not stressed.
-タロウくんはリラックスしています。彼はストレスを感じていません。
-👦 I am happy. You are happy too.
-私は幸せです。あなたも幸せです。
-👦 Me and Taro are generous. We are not selfish.
-タロウくんと私は寛大です。私たちは利己的ではありません。
-🐱 The cats are big. They are not small.
-猫たちは大きいです。それらは小さくありません。
-👧 Yumi is happy. She is not sad.
-ユミちゃんは幸せです。彼女は悲しくありません。
-👧 You are tall. You are not short.
-あなたは背が高いです。あなたは背が低くありません。
-👧 Me and Yumi are strong. We are not weak.
-ユミちゃんと私は強いです。私たちは弱くありません。
-🐱 The dogs are fast. They are not slow.
-犬たちは速いです。それらは遅くありません。
-👩 Sakura is young. She is not old.
-サクラちゃんは若いです。彼女は年をとっていません。
-👧 You are smart. You are not stupid.
-あなたは賢いです。あなたは愚かではありません。
-👧 Me and Sakura are busy. We are not free.
-サクラちゃんと私は忙しいです。私たちは自由ではありません。
-🐱 The birds are hungry. They are not full.
-鳥たちはお腹が空いています。それらは満腹ではありません。
-👩 Aiko is brave. She is not scared.
-アイコちゃんは勇敢です。彼女は怖がっていません。
-👧 You are famous. I am famous too.
-あなたは有名です。私も有名です。
-👧 Me and Aiko are lucky. We are not unlucky.
-アイコちゃんと私は幸運です。私たちは不運ではありません。
-🐱 The fish are cold. They are not warm.
-魚たちは寒いです。それらは暖かくありません。
-👩 Emi is careful. She is not careless.
-エミちゃんは慎重です。彼女は不注意ではありません。
-👧 You are not wrong. I am not wrong either.
-あなたは間違っていません。私も間違っていません。
-👧 Me and Emi are honest. We are not dishonest.
-エミちゃんと私は正直です。私たちは不正直ではありません。
-🐱 The rabbits are quiet. They are not loud.
-ウサギたちは静かです。それらは大声ではありません。
-👩 Kaori is patient. She is not impatient.
-カオリちゃんは忍耐強いです。彼女は忍耐がありません。
-👧 You are young, but you are not fast.
-あなたは若いですが、速くありません。
-👧 Me and Kaori are friendly. We are not unfriendly.
-カオリちゃんと私は友好的です。私たちは不友好的ではありません。
-🐱 The horses are healthy. They are not sick.
-馬たちは健康です。それらは病気ではありません。
-👩 Mika is confident. She is not nervous.
-ミカちゃんは自信があります。彼女は緊張していません。
-👧 You are sure. I am sure too.
-あなたは確信しています。私も確信しています。
-👧 Me and Mika are creative. We are not boring.
-ミカちゃんと私は創造的です。私たちは退屈ではありません。
-🐱 The cows are gentle. They are not rough.
-牛たちは優しいです。それらは荒くありません。
-👩 Yuki is relaxed. She is not stressed.
-ユキちゃんはリラックスしています。彼女はストレスを感じていません。
-👧 You are sad. I am sad too.
-あなたは悲しいです。私も悲しいです。
-👧 Me and Yuki are generous. We are not selfish.
-ユキちゃんと私は寛大です。私たちは利己的ではありません。`
+            content: `🐱 The cat is big. The cats are big.
+猫は大きいです。猫たちは大きいです。
+👦 Ken is happy. Yumi is happy.
+ケンくんは幸せです。ユミちゃんは幸せです。
+👦 I am tall. You are tall.
+私は背が高いです。あなたは背が高いです。
+👦 Me and Ken are strong. We are strong.
+ケンくんと私は強いです。私たちは強いです。
+🐱 The dog is fast. The dogs are fast.
+犬は速いです。犬たちは速いです。
+👨 Takashi is young. Sakura is young.
+タカシくんは若いです。サクラちゃんは若いです。
+👦 I am smart. You are smart.
+私は賢いです。あなたは賢いです。
+👦 Me and Takashi are busy. We are busy.
+タカシくんと私は忙しいです。私たちは忙しいです。
+🐱 The bird is hungry. The birds are hungry.
+鳥はお腹が空いています。鳥たちはお腹が空いています。
+👨 Hiroshi is brave. Aiko is brave.
+ヒロシくんは勇敢です。アイコちゃんは勇敢です。
+👦 I am rich. You are rich.
+私は金持ちです。あなたは金持ちです。
+👦 Me and Hiroshi are lucky. We are lucky.
+ヒロシくんと私は幸運です。私たちは幸運です。
+🐱 The fish is cold. The fish are cold.
+魚は寒いです。魚たちは寒いです。
+👨 Yuji is careful. Emi is careful.
+ユウジくんは慎重です。エミちゃんは慎重です。
+👦 I am ready. You are ready.
+私は準備ができています。あなたは準備ができています。
+👦 Me and Yuji are honest. We are honest.
+ユウジくんと私は正直です。私たちは正直です。
+🐱 The rabbit is quiet. The rabbits are quiet.
+ウサギは静かです。ウサギたちは静かです。
+👨 Masato is patient. Kaori is patient.
+マサトくんは忍耐強いです。カオリちゃんは忍耐強いです。
+👦 I am confident. You are confident.
+私は自信があります。あなたは自信があります。
+👦 Me and Masato are friendly. We are friendly.
+マサトくんと私は友好的です。私たちは友好的です。
+🐱 The horse is healthy. The horses are healthy.
+馬は健康です。馬たちは健康です。
+👨 Kenji is confident. Mika is confident.
+ケンジくんは自信があります。ミカちゃんは自信があります。
+👦 I am relaxed. You are relaxed.
+私はリラックスしています。あなたはリラックスしています。
+👦 Me and Kenji are creative. We are creative.
+ケンジくんと私は創造的です。私たちは創造的です。
+🐱 The cow is gentle. The cows are gentle.
+牛は優しいです。牛たちは優しいです。
+👨 Taro is relaxed. Yuki is relaxed.
+タロウくんはリラックスしています。ユキちゃんはリラックスしています。
+👦 I am happy. You are happy.
+私は幸せです。あなたは幸せです。
+👦 Me and Taro are generous. We are generous.
+タロウくんと私は寛大です。私たちは寛大です。
+🐱 The cat is small. The cats are small.
+猫は小さいです。猫たちは小さいです。
+👨 Ken is kind. Yumi is kind.
+ケンくんは親切です。ユミちゃんは親切です。
+👦 I am short. You are short.
+私は背が低いです。あなたは背が低いです。
+👦 Me and Ken are weak. We are weak.
+ケンくんと私は弱いです。私たちは弱いです。
+🐱 The dog is slow. The dogs are slow.
+犬は遅いです。犬たちは遅いです。
+👨 Takashi is old. Sakura is old.
+タカシくんは年をとっています。サクラちゃんは年をとっています。
+👦 I am stupid. You are stupid.
+私は愚かです。あなたは愚かです。
+👦 Me and Takashi are free. We are free.
+タカシくんと私は自由です。私たちは自由です。
+🐱 The bird is full. The birds are full.
+鳥は満腹です。鳥たちは満腹です。
+👨 Hiroshi is scared. Aiko is scared.
+ヒロシくんは怖がっています。アイコちゃんは怖がっています。
+👦 I am poor. You are poor.
+私は貧しいです。あなたは貧しいです。
+👦 Me and Hiroshi are unlucky. We are unlucky.
+ヒロシくんと私は不運です。私たちは不運です。
+🐱 The fish is warm. The fish are warm.
+魚は暖かいです。魚たちは暖かいです。
+👨 Yuji is careless. Emi is careless.
+ユウジくんは不注意です。エミちゃんは不注意です。
+👦 I am late. You are late.
+私は遅れています。あなたは遅れています。
+👦 Me and Yuji are dishonest. We are dishonest.
+ユウジくんと私は不正直です。私たちは不正直です。
+🐱 The rabbit is loud. The rabbits are loud.
+ウサギは大声です。ウサギたちは大声です。
+👨 Masato is impatient. Kaori is impatient.
+マサトくんは忍耐がありません。カオリちゃんは忍耐がありません。
+👦 I am nervous. You are nervous.
+私は緊張しています。あなたは緊張しています。
+👦 Me and Masato are unfriendly. We are unfriendly.
+マサトくんと私は不友好的です。私たちは不友好的です。
+🐱 The horse is sick. The horses are sick.
+馬は病気です。馬たちは病気です。
+👨 Kenji is nervous. Mika is nervous.
+ケンジくんは緊張しています。ミカちゃんは緊張しています。
+👦 I am stressed. You are stressed.
+私はストレスを感じています。あなたはストレスを感じています。
+👦 Me and Kenji are boring. We are boring.
+ケンジくんと私は退屈です。私たちは退屈です。
+🐱 The cow is rough. The cows are rough.
+牛は荒いです。牛たちは荒いです。
+👨 Taro is stressed. Yuki is stressed.
+タロウくんはストレスを感じています。ユキちゃんはストレスを感じています。
+👦 I am sad. You are sad.
+私は悲しいです。あなたは悲しいです。
+👦 Me and Taro are selfish. We are selfish.
+タロウくんと私は利己的です。私たちは利己的です。`
         }
     ]
 };
