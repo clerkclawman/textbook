@@ -1022,105 +1022,105 @@ var syntax = {
         {
             title: "He and She Pronoun Drill",
             content: `👦 Ken eats an apple. He likes fruit.
-ケンはリンゴを食べます。彼は果物が好きです。
+ケンくんはリンゴを食べます。彼は果物が好きです。
 👧 Yumi reads a book. She likes stories.
-ユミは本を読みます。彼女は物語が好きです。
+ユミちゃんは本を読みます。彼女は物語が好きです。
 👨 Takashi plays soccer. He runs fast.
-タカシはサッカーをします。彼は速く走ります。
+タカシくんはサッカーをします。彼は速く走ります。
 👩 Sakura dances ballet. She dances well.
-サクラはバレエを踊ります。彼女はよく踊ります。
+サクラちゃんはバレエを踊ります。彼女はよく踊ります。
 👨 Hiroshi drives a car. He drives carefully.
-ヒロシは車を運転します。彼は慎重に運転します。
+ヒロシくんは車を運転します。彼は慎重に運転します。
 👩 Aiko cooks dinner. She cooks well.
-アイコは夕食を作ります。彼女はよく料理をします。
+アイコちゃんは夕食を作ります。彼女はよく料理をします。
 👨 Yuji teaches math. He teaches clearly.
-ユウジは数学を教えます。彼ははっきり教えます。
+ユウジくんは数学を教えます。彼ははっきり教えます。
 👩 Emi sings a song. She sings beautifully.
-エミは歌を歌います。彼女は美しく歌います。
+エミちゃんは歌を歌います。彼女は美しく歌います。
 👨 Masato studies English. He studies hard.
-マサトは英語を勉強します。彼は一生懸命勉強します。
+マサトくんは英語を勉強します。彼は一生懸命勉強します。
 👩 Kaori writes a letter. She writes neatly.
-カオリは手紙を書きます。彼女は綺麗に書きます。
+カオリちゃんは手紙を書きます。彼女は綺麗に書きます。
 👨 Kenji fixes a bike. He fixes quickly.
-ケンジは自転車を修理します。彼は速く修理します。
+ケンジくんは自転車を修理します。彼は速く修理します。
 👩 Mika paints a picture. She paints carefully.
-ミカは絵を描きます。彼女は慎重に描きます。
+ミカちゃんは絵を描きます。彼女は慎重に描きます。
 👨 Taro builds a house. He builds strongly.
-タロウは家を建てます。彼は強く建てます。
+タロウくんは家を建てます。彼は強く建てます。
 👩 Yuki plants a tree. She plants deeply.
-ユキは木を植えます。彼女は深く植えます。
+ユキちゃんは木を植えます。彼女は深く植えます。
 👨 Jiro cleans a room. He cleans thoroughly.
-ジロウは部屋を掃除します。彼は徹底的に掃除します。
+ジロウくんは部屋を掃除します。彼は徹底的に掃除します。
 👩 Rina washes dishes. She washes carefully.
-リナは皿を洗います。彼女は慎重に洗います。
+リナちゃんは皿を洗います。彼女は慎重に洗います。
 👨 Saburo buys a car. He buys wisely.
-サブロウは車を買います。彼は賢く買います。
+サブロウくんは車を買います。彼は賢く買います。
 👩 Hana sells flowers. She sells happily.
-ハナは花を売ります。彼女は嬉しく売ります。
+ハナちゃんは花を売ります。彼女は嬉しく売ります。
 👨 Shinji draws a map. He draws accurately.
-シンジは地図を描きます。彼は正確に描きます。
+シンジくんは地図を描きます。彼は正確に描きます。
 👩 Moe bakes a cake. She bakes sweetly.
-モエはケーキを焼きます。彼女は甘く焼きます。
+モエちゃんはケーキを焼きます。彼女は甘く焼きます。
 👨 Daisuke plays the guitar. He plays loudly.
-ダイスケはギターを弾きます。彼は大声で弾きます。
+ダイスケくんはギターを弾きます。彼は大声で弾きます。
 👨 Yui plays the piano. She plays softly.
-ユイはピアノを弾きます。彼女は小さく弾きます。
+ユイちゃんはピアノを弾きます。彼女は小さく弾きます。
 👨 Kenta watches TV. He watches quietly.
-ケンタはテレビを見ます。彼は静かに見ます。
+ケンタくんはテレビを見ます。彼は静かに見ます。
 👩 Aoi watches a movie. She watches excitedly.
-アオイは映画を見ます。彼女は興奮して見ます。
+アオイちゃんは映画を見ます。彼女は興奮して見ます。
 👨 Yuta listens to music. He listens carefully.
-ユウタは音楽を聞きます。彼は慎重に聞きます。
+ユウタくんは音楽を聞きます。彼は慎重に聞きます。
 👨 Rin listens to the radio. She listens happily.
-リンはラジオを聞きます。彼女は嬉しく聞きます。
+リンちゃんはラジオを聞きます。彼女は嬉しく聞きます。
 👨 Sota speaks English. He speaks fluently.
-ソウタは英語を話します。彼は流暢に話します。
+ソウタくんは英語を話します。彼は流暢に話します。
 👨 Mei speaks Japanese. She speaks clearly.
-メイは日本語を話します。彼女ははっきり話します。
+メイちゃんは日本語を話します。彼女ははっきり話します。
 👨 Ryo writes a story. He writes creatively.
-リョウは物語を書きます。彼は創造的に書きます。
+リョウくんは物語を書きます。彼は創造的に書きます。
 👨 Hina writes a poem. She writes beautifully.
-ヒナは詩を書きます。彼女は美しく書きます。
+ヒナちゃんは詩を書きます。彼女は美しく書きます。
 👨 Kai takes a photo. He takes carefully.
-カイは写真を撮ります。彼は慎重に撮ります。
+カイくんは写真を撮ります。彼は慎重に撮ります。
 👨 Saki takes a video. She takes steadily.
-サキはビデオを撮ります。彼女は安定して撮ります。
+サキちゃんはビデオを撮ります。彼女は安定して撮ります。
 👨 Ren makes a cake. He makes deliciously.
-レンはケーキを作ります。彼は美味しく作ります。
+レンくんはケーキを作ります。彼は美味しく作ります。
 👨 Yua makes cookies. She makes sweetly.
-ユアはクッキーを作ります。彼女は甘く作ります。
+ユアちゃんはクッキーを作ります。彼女は甘く作ります。
 👨 Haruto drinks water. He drinks slowly.
-ハルトは水を飲みます。彼はゆっくり飲みます。
+ハルトくんは水を飲みます。彼はゆっくり飲みます。
 👨 Miu drinks tea. She drinks quietly.
-ミウはお茶を飲みます。彼女は静かに飲みます。
+ミウちゃんはお茶を飲みます。彼女は静かに飲みます。
 👨 Sora eats breakfast. He eats quickly.
-ソラは朝食を食べます。彼は速く食べます。
+ソラくんは朝食を食べます。彼は速く食べます。
 👨 Koharu eats lunch. She eats slowly.
-コハルは昼食を食べます。彼女はゆっくり食べます。
+コハルちゃんは昼食を食べます。彼女はゆっくり食べます。
 👨 Riko sleeps at night. He sleeps soundly.
-リコは夜に寝ます。彼はよく寝ます。
+リコくんは夜に寝ます。彼はよく寝ます。
 👨 Mirai sleeps in the morning. She sleeps peacefully.
-ミライは朝に寝ます。彼女は平和に寝ます。
+ミライちゃんは朝に寝ます。彼女は平和に寝ます。
 👨 Daiki walks to school. He walks briskly.
-ダイキは学校に歩いて行きます。彼は軽快に歩きます。
+ダイキくんは学校に歩いて行きます。彼は軽快に歩きます。
 👨 Hina walks to work. She walks slowly.
-ヒナは仕事に歩いて行きます。彼女はゆっくり歩きます。
+ヒナちゃんは仕事に歩いて行きます。彼女はゆっくり歩きます。
 👨 Kaito runs in the park. He runs fast.
-カイトは公園で走ります。彼は速く走ります。
+カイトくんは公園で走ります。彼は速く走ります。
 👨 Aoi runs in the race. She runs quickly.
-アオイはレースで走ります。彼女は速く走ります。
+アオイちゃんはレースで走ります。彼女は速く走ります。
 👨 Yuto swims in the pool. He swims strongly.
-ユウトはプールで泳ぎます。彼は強く泳ぎます。
+ユウトくんはプールで泳ぎます。彼は強く泳ぎます。
 👨 Hina swims in the lake. She swims gracefully.
-ヒナは湖で泳ぎます。彼女は優雅に泳ぎます。
+ヒナちゃんは湖で泳ぎます。彼女は優雅に泳ぎます。
 👨 Ren rides a bike. He rides carefully.
-レンは自転車に乗ります。彼は慎重に乗ります。
+レンくんは自転車に乗ります。彼は慎重に乗ります。
 👨 Aoi rides a horse. She rides bravely.
-アオイは馬に乗ります。彼女は勇敢に乗ります。
+アオイちゃんは馬に乗ります。彼女は勇敢に乗ります。
 👨 Sora flies a plane. He flies smoothly.
-ソラは飛行機を飛ばします。彼はスムーズに飛ばします。
+ソラくんは飛行機を飛ばします。彼はスムーズに飛ばします。
 👨 Hana flies a kite. She flies high.
-ハナは凧を飛ばします。彼女は高く飛ばします。`
+ハナちゃんは凧を飛ばします。彼女は高く飛ばします。`
         }
     ]
 };
