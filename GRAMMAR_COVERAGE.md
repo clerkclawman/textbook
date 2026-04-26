@@ -253,107 +253,40 @@
 11. Personal Pronouns Review
 12. Present Continuous
 
-### Phase 2: Essential Brain Reset 🔴 (Next 8 sections)
+### Phase 2: Essential Brain Reset 🔴 (Next 2 sections)
 **Focus: Patterns that don't exist in Japanese**
 
-13. **Present Simple Drill**
-    - I eat, He eats, We eat
-    - Third person -s pattern
-    - Japanese: 私は食べます, 彼は食べます (same form)
-    - English: I eat, He eats (different forms)
+13. **Adjective Drill** ✅
+    - Adjectives don't conjugate (big, was big - same form)
+    - Adjectives go before nouns (big cat)
+    - is/are vs was/were (present vs past to be)
+    - Contrast sentences (was X, but now is Y)
+    - Japanese: 大きい, 大きかった (adjective conjugates)
+    - English: big, was big (adjective doesn't change)
 
-14. **Present Simple vs Continuous Drill**
-    - I eat vs I am eating
-    - Habitual vs ongoing
-    - Japanese: 食べる vs 食べている
-    - English: eat vs am eating
+14. **Prepositions Drill** (Next)
+    - in, on, at, to, from, with, by
+    - Location and movement
+    - Japanese: ～に, ～の上に, ～で (postpositions after nouns)
+    - English: in the box, on the desk, at school (prepositions before nouns)
 
-15. **Past Simple Drill**
-    - I ate, He went, We played
-    - Regular and irregular verbs
-    - Japanese: 食べた, 行った, 遊んだ
-    - English: ate, went, played
+### Phase 3: Quantity 🟡 (Next 1 section)
+**Focus: Countable vs uncountable**
 
-16. **Negation Drill (Present Simple)**
-    - I don't eat, He doesn't like
-    - don't/doesn't
-    - Japanese: 私は食べません, 彼は好きではありません
-    - English: I don't eat, He doesn't like
-
-17. **Negation Drill (Past Simple)**
-    - I didn't eat, He didn't go
-    - didn't
-    - Japanese: 私は食べませんでした, 彼は行きませんでした
-    - English: I didn't eat, He didn't go
-
-18. **Question Formation Drill (Present Simple)**
-    - Do you eat? Does he eat?
-    - Auxiliary verbs
-    - Japanese: 食べますか？
-    - English: Do you eat? Does he eat?
-
-19. **Question Formation Drill (Past Simple)**
-    - Did you eat? Did he go?
-    - Auxiliary verb
-    - Japanese: 食べましたか？行きましたか？
-    - English: Did you eat? Did he go?
-
-20. **There is/There are Drill**
-    - There is a cat, There are cats
-    - Existence with singular/plural
-    - Japanese: 猫がいます (same form)
-    - English: There is a cat, There are cats
-
-### Phase 3: Location and Quantity 🟡 (Next 4 sections)
-**Focus: Spatial and quantification differences**
-
-21. **Prepositions Drill (Location)**
-    - in, on, at
-    - Location
-    - Japanese: ～に, ～の上に, ～で
-    - English: in the box, on the table, at school
-
-22. **Prepositions Drill (Movement)**
-    - to, from, with, by
-    - Direction and accompaniment
-    - Japanese: ～へ, ～から, ～と, ～で
-    - English: to school, from home, with friends, by bus
-
-23. **Much/Many Drill**
+15. **Much/Many Drill** (Next)
     - much water, many apples
     - Countable vs uncountable
     - Japanese: 水が多い, リンゴが多い (same form)
-    - English: much water, many apples
-
-24. **Wh- Questions Drill**
-    - What, Where, When, Who, Why, How
-    - Question word + auxiliary
-    - Japanese: 何を？どこで？いつ？
-    - English: What do you eat? Where do you go?
-
-### Phase 4: Adjective Usage 🟡 (Next 2 sections)
-**Focus: Adjective positioning**
-
-25. **Adjective Position Drill**
-    - a big cat vs The cat is big
-    - Before noun vs predicate
-    - Japanese: 大きい猫 vs 猫が大きい
-    - English: a big cat vs The cat is big
-
-26. **Review Drill - All Essential Patterns**
-    - Mix of all essential patterns
-    - Comprehensive review
-    - Test understanding of all differences
+    - English: much water, many apples (different quantifiers)
 
 ---
 
 ## Total Sections Proposed
 
-- **Completed:** 12 sections
-- **Essential (Phase 2):** 8 sections
-- **Location/Quantity (Phase 3):** 4 sections
-- **Adjectives (Phase 4):** 2 sections
-- **Total:** 26 sections
+- **Completed:** 13 sections
+- **Essential (Phase 2):** 1 section remaining (Prepositions)
+- **Quantity (Phase 3):** 1 section remaining (Much/Many)
+- **Total:** 15 sections
 
 ---
 
@@ -441,16 +374,16 @@
 
 ## Next Steps
 
-1. **Review and approve** this focused approach
-2. **Start with Phase 2** (Present Simple Drill)
-3. **Maintain consistency** with existing sections
-4. **Test with students** and adjust as needed
-5. **Complete Phase 2** before moving to Phase 3
+1. **Review and approve** this focused approach ✅
+2. **Start with Phase 2** (Adjective Drill) ✅
+3. **Maintain consistency** with existing sections ✅
+4. **Complete Phase 2** (Prepositions Drill) - Next
+5. **Complete Phase 3** (Much/Many Drill) - Final section
 
 ---
 
 *Last updated: April 26, 2026*
-*Total sections planned: 26*
-*Sections completed: 12*
-*Sections remaining: 14*
+*Total sections planned: 15*
+*Sections completed: 13*
+*Sections remaining: 2*
 *Focus: Essential brain reset for Japanese learners*
