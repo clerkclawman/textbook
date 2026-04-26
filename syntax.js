@@ -1020,107 +1020,99 @@ var syntax = {
 足たちは強いです。それらは強く押します。`
         },
         {
-            title: "He and She Pronoun Drill",
-            content: `👦 Ken eats an apple. He likes fruit.
-ケンくんはリンゴを食べます。彼は果物が好きです。
-👧 Yumi reads a book. She likes stories.
-ユミちゃんは本を読みます。彼女は物語が好きです。
-👨 Takashi plays soccer. He runs fast.
-タカシくんはサッカーをします。彼は速く走ります。
-👩 Sakura dances ballet. She dances well.
-サクラちゃんはバレエを踊ります。彼女はよく踊ります。
-👨 Hiroshi drives a car. He drives carefully.
-ヒロシくんは車を運転します。彼は慎重に運転します。
-👩 Aiko cooks dinner. She cooks well.
-アイコちゃんは夕食を作ります。彼女はよく料理をします。
-👨 Yuji teaches math. He teaches clearly.
-ユウジくんは数学を教えます。彼ははっきり教えます。
-👩 Emi sings a song. She sings beautifully.
-エミちゃんは歌を歌います。彼女は美しく歌います。
-👨 Masato studies English. He studies hard.
-マサトくんは英語を勉強します。彼は一生懸命勉強します。
-👩 Kaori writes a letter. She writes neatly.
-カオリちゃんは手紙を書きます。彼女は綺麗に書きます。
-👨 Kenji fixes a bike. He fixes quickly.
-ケンジくんは自転車を修理します。彼は速く修理します。
-👩 Mika paints a picture. She paints carefully.
-ミカちゃんは絵を描きます。彼女は慎重に描きます。
-👨 Taro builds a house. He builds strongly.
-タロウくんは家を建てます。彼は強く建てます。
-👩 Yuki plants a tree. She plants deeply.
-ユキちゃんは木を植えます。彼女は深く植えます。
-👨 Jiro cleans a room. He cleans thoroughly.
-ジロウくんは部屋を掃除します。彼は徹底的に掃除します。
-👩 Rina washes dishes. She washes carefully.
-リナちゃんは皿を洗います。彼女は慎重に洗います。
-👨 Saburo buys a car. He buys wisely.
-サブロウくんは車を買います。彼は賢く買います。
-👩 Hana sells flowers. She sells happily.
-ハナちゃんは花を売ります。彼女は嬉しく売ります。
-👨 Shinji draws a map. He draws accurately.
-シンジくんは地図を描きます。彼は正確に描きます。
-👩 Moe bakes a cake. She bakes sweetly.
-モエちゃんはケーキを焼きます。彼女は甘く焼きます。
-👨 Daisuke plays the guitar. He plays loudly.
-ダイスケくんはギターを弾きます。彼は大声で弾きます。
-👨 Yui plays the piano. She plays softly.
-ユイちゃんはピアノを弾きます。彼女は小さく弾きます。
-👨 Kenta watches TV. He watches quietly.
-ケンタくんはテレビを見ます。彼は静かに見ます。
-👩 Aoi watches a movie. She watches excitedly.
-アオイちゃんは映画を見ます。彼女は興奮して見ます。
-👨 Yuta listens to music. He listens carefully.
-ユウタくんは音楽を聞きます。彼は慎重に聞きます。
-👨 Rin listens to the radio. She listens happily.
-リンちゃんはラジオを聞きます。彼女は嬉しく聞きます。
-👨 Sota speaks English. He speaks fluently.
-ソウタくんは英語を話します。彼は流暢に話します。
-👨 Mei speaks Japanese. She speaks clearly.
-メイちゃんは日本語を話します。彼女ははっきり話します。
-👨 Ryo writes a story. He writes creatively.
-リョウくんは物語を書きます。彼は創造的に書きます。
-👨 Hina writes a poem. She writes beautifully.
-ヒナちゃんは詩を書きます。彼女は美しく書きます。
-👨 Kai takes a photo. He takes carefully.
-カイくんは写真を撮ります。彼は慎重に撮ります。
-👨 Saki takes a video. She takes steadily.
-サキちゃんはビデオを撮ります。彼女は安定して撮ります。
-👨 Ren makes a cake. He makes deliciously.
-レンくんはケーキを作ります。彼は美味しく作ります。
-👨 Yua makes cookies. She makes sweetly.
-ユアちゃんはクッキーを作ります。彼女は甘く作ります。
-👨 Haruto drinks water. He drinks slowly.
-ハルトくんは水を飲みます。彼はゆっくり飲みます。
-👨 Miu drinks tea. She drinks quietly.
-ミウちゃんはお茶を飲みます。彼女は静かに飲みます。
-👨 Sora eats breakfast. He eats quickly.
-ソラくんは朝食を食べます。彼は速く食べます。
-👨 Koharu eats lunch. She eats slowly.
-コハルちゃんは昼食を食べます。彼女はゆっくり食べます。
-👨 Riko sleeps at night. He sleeps soundly.
-リコくんは夜に寝ます。彼はよく寝ます。
-👨 Mirai sleeps in the morning. She sleeps peacefully.
-ミライちゃんは朝に寝ます。彼女は平和に寝ます。
-👨 Daiki walks to school. He walks briskly.
-ダイキくんは学校に歩いて行きます。彼は軽快に歩きます。
-👨 Hina walks to work. She walks slowly.
-ヒナちゃんは仕事に歩いて行きます。彼女はゆっくり歩きます。
-👨 Kaito runs in the park. He runs fast.
-カイトくんは公園で走ります。彼は速く走ります。
-👨 Aoi runs in the race. She runs quickly.
-アオイちゃんはレースで走ります。彼女は速く走ります。
-👨 Yuto swims in the pool. He swims strongly.
-ユウトくんはプールで泳ぎます。彼は強く泳ぎます。
-👨 Hina swims in the lake. She swims gracefully.
-ヒナちゃんは湖で泳ぎます。彼女は優雅に泳ぎます。
-👨 Ren rides a bike. He rides carefully.
-レンくんは自転車に乗ります。彼は慎重に乗ります。
-👨 Aoi rides a horse. She rides bravely.
-アオイちゃんは馬に乗ります。彼女は勇敢に乗ります。
-👨 Sora flies a plane. He flies smoothly.
-ソラくんは飛行機を飛ばします。彼はスムーズに飛ばします。
-👨 Hana flies a kite. She flies high.
-ハナちゃんは凧を飛ばします。彼女は高く飛ばします。`
+            title: "He and She with To Be Drill",
+            content: `👦 Ken is happy. He is smart.
+ケンくんは幸せです。彼は賢いです。
+👧 Yumi is sad. She is kind.
+ユミちゃんは悲しいです。彼女は親切です。
+👨 Takashi is tall. He is strong.
+タカシくんは背が高いです。彼は強いです。
+👩 Sakura is short. She is cute.
+サクラちゃんは背が低いです。彼女は可愛いです。
+👨 Hiroshi is young. He is fast.
+ヒロシくんは若いです。彼は速いです。
+👩 Aiko is old. She is wise.
+アイコちゃんは年をとっています。彼女は賢明です。
+👨 Yuji is busy. He is hardworking.
+ユウジくんは忙しいです。彼は勤勉です。
+👩 Emi is free. She is relaxed.
+エミちゃんは自由です。彼女はリラックスしています。
+👨 Masato is hungry. He is tired.
+マサトくんはお腹が空いています。彼は疲れています。
+👩 Kaori is thirsty. She is energetic.
+カオリちゃんは喉が渇いています。彼女は元気です。
+👨 Kenji is cold. He is brave.
+ケンジくんは寒いです。彼は勇敢です。
+👩 Mika is warm. She is gentle.
+ミカちゃんは暖かいです。彼女は優しいです。
+👨 Taro is rich. He is generous.
+タロウくんは金持ちです。彼は寛大です。
+👩 Yuki is poor. She is humble.
+ユキちゃんは貧しいです。彼女は謙虚です。
+👨 Jiro is healthy. He is active.
+ジロウくんは健康です。彼は活動的です。
+👩 Rina is sick. She is weak.
+リナちゃんは病気です。彼女は弱いです。
+👨 Saburo is loud. He is funny.
+サブロウくんは大声です。彼は面白いです。
+👩 Hana is quiet. She is shy.
+ハナちゃんは静かです。彼女は恥ずかしがり屋です。
+👨 Shinji is careful. He is honest.
+シンジくんは慎重です。彼は正直です。
+👩 Moe is careless. She is clumsy.
+モエちゃんは不注意です。彼女は不器用です。
+👨 Daisuke is patient. He is calm.
+ダイスケくんは忍耐強いです。彼は冷静です。
+👨 Yui is impatient. She is nervous.
+ユイちゃんは忍耐がありません。彼女は緊張しています。
+👨 Kenta is friendly. He is popular.
+ケンタくんは友好的です。彼は人気があります。
+👩 Aoi is unfriendly. She is lonely.
+アオイちゃんは不友好的です。彼女は孤独です。
+👨 Yuta is creative. He is talented.
+ユウタくんは創造的です。彼は才能があります。
+👨 Rin is boring. She is dull.
+リンちゃんは退屈です。彼女は退屈です。
+👨 Sota is lucky. He is successful.
+ソウタくんは幸運です。彼は成功しています。
+👨 Mei is unlucky. She is unfortunate.
+メイちゃんは不運です。彼女は不幸です。
+👨 Ryo is famous. He is wealthy.
+リョウくんは有名です。彼は裕福です。
+👨 Hina is unknown. She is ordinary.
+ヒナちゃんは無名です。彼女は普通です。
+👨 Kai is single. He is independent.
+カイくんは独身です。彼は独立しています。
+👨 Saki is married. She is devoted.
+サキちゃんは結婚しています。彼女は献身的です。
+👨 Ren is available. He is open.
+レンくんは利用可能です。彼は開放的です。
+👨 Yua is unavailable. She is busy.
+ユアちゃんは利用不可能です。彼女は忙しいです。
+👨 Haruto is ready. He is prepared.
+ハルトくんは準備ができています。彼は準備されています。
+👨 Miu is late. She is sorry.
+ミウちゃんは遅れています。彼女は申し訳ないと思っています。
+👨 Sora is right. He is correct.
+ソラくんは正しいです。彼は正確です。
+👨 Koharu is wrong. She is mistaken.
+コハルちゃんは間違っています。彼女は間違っています。
+👨 Riko is sure. He is certain.
+リコくんは確信しています。彼は確実です。
+👨 Mirai is unsure. She is doubtful.
+ミライちゃんは確信していません。彼女は疑っています。
+👨 Daiki is confident. He is brave.
+ダイキくんは自信があります。彼は勇敢です。
+👨 Hina is nervous. She is anxious.
+ヒナちゃんは緊張しています。彼女は不安です。
+👨 Kaito is relaxed. He is peaceful.
+カイトくんはリラックスしています。彼は平和的です。
+👨 Aoi is stressed. She is worried.
+アオイちゃんはストレスを感じています。彼女は心配しています。
+👨 Yuto is happy. He is joyful.
+ユウトくんは幸せです。彼は喜んでいます。
+👨 Hina is sad. She is unhappy.
+ヒナちゃんは悲しいです。彼女は不幸です。`
         },
         {
             title: "I and You with To Be Drill",
