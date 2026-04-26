@@ -335,105 +335,105 @@
    335|🌍 They see us.
    336|彼らは私たちを見ています。`
    337|        },
-   338|        {
-   339|            title: "Singular and Plural Nouns Drill",
-   340|            content: `🐱 A cat eats a pizza.
-   341|猫はピザを食べます。
-   342|🐱 Two cats eat pizzas.
-   343|2匹の猫がピザを食べます。
-   344|🐶 A dog chases a ghost.
-   345|犬は幽霊を追いかけます。
-   346|🐶 Three dogs chase ghosts.
-   347|3匹の犬が幽霊を追いかけます。
-   348|🐦 A bird finds a treasure.
-   349|鳥は宝物を見つけます。
-   350|🐦 Four birds find treasures.
-   351|4羽の鳥が宝物を見つけます。
-   352|🐟 A fish catches a robot.
-   353|魚はロボットを捕まえます。
-   354|🐟 Five fish catch robots.
-   355|5匹の魚がロボットを捕まえます。
-   356|🐰 A rabbit eats a shoe.
-   357|ウサギは靴を食べます。
-   358|🐰 Six rabbits eat shoes.
-   359|6匹のウサギが靴を食べます。
-   360|🐴 A horse pulls a spaceship.
-   361|馬は宇宙船を引きます。
-   362|🐴 Seven horses pull spaceships.
-   363|7頭の馬が宇宙船を引きます。
-   364|🐄 A cow gives milk to a monster.
-   365|牛は怪物にミルクをあげます。
-   366|🐄 Eight cows give milk to monsters.
-   367|8頭の牛が怪物にミルクをあげます。
-   368|🐷 A pig digs a hole to the moon.
-   369|豚は月への穴を掘ります。
-   370|🐷 Nine pigs dig holes to the moon.
-   371|9頭の豚が月への穴を掘ります。
-   372|🐑 A sheep eats a rainbow.
-   373|羊は虹を食べます。
-   374|🐑 Ten sheep eat rainbows.
-   375|10頭の羊が虹を食べます。
-   376|🐔 A chicken lays an egg with a dinosaur inside.
-   377|鶏は恐竜が入った卵を産みます。
-   378|🐔 Eleven chickens lay eggs with dinosaurs inside.
-   379|11羽の鶏が恐竜が入った卵を産みます。
-   380|📚 A student reads a book about flying pigs.
-   381|学生は空を飛ぶ豚についての本を読みます。
-   382|📚 Two students read books about flying pigs.
-   383|2人の学生が空を飛ぶ豚についての本を読みます。
-   384|✏️ A teacher writes a letter to an alien.
-   385|先生はエイリアンに手紙を書きます。
-   386|✏️ Three teachers write letters to aliens.
-   387|3人の先生がエイリアンに手紙を書きます。
-   388|🎨 An artist paints a picture of a dancing banana.
-   389|芸術家は踊るバナナの絵を描きます。
-   390|🎨 Four artists paint pictures of dancing bananas.
-   391|4人の芸術家が踊るバナナの絵を描きます。
-   392|📘 A writer writes a story about a talking rock.
-   393|作家は話す岩についての物語を書きます。
-   394|📘 Five writers write stories about talking rocks.
-   395|5人の作家が話す岩についての物語を書きます。
-   396|🚲 A bike rides a dog.
-   397|自転車は犬に乗ります。
-   398|🚲 Six bikes ride dogs.
-   399|6台の自転車が犬に乗ります。
-   400|🧹 A cleaner cleans a room full of bubbles.
-   401|掃除員は泡でいっぱいの部屋を掃除します。
-   402|🧹 Seven cleaners clean rooms full of bubbles.
-   403|7人の掃除員が泡でいっぱいの部屋を掃除します。
-   404|🛒 A shopper buys a flying car.
-   405|買い物客は空を飛ぶ車を買います。
-   406|🛒 Eight shoppers buy flying cars.
-   407|8人の買い物客が空を飛ぶ車を買います。
-   408|🌞 The sun warms a frozen ice cream.
-   409|太陽は凍ったアイスクリームを温めます。
-   410|🌞 Nine suns warm frozen ice creams.
-   411|9つの太陽が凍ったアイスクリームを温めます。
-   412|🌧️ The rain waters a singing flower.
-   413|雨は歌う花に水をやります。
-   414|🌧️ Ten rains water singing flowers.
-   415|10の雨が歌う花に水をやります。
-   416|🌳 A tree grows a giant apple.
-   417|木は巨大なリンゴを育てます。
-   418|🌳 Eleven trees grow giant apples.
-   419|11本の木が巨大なリンゴを育てます。
-   420|🎶 A band plays music for sleeping cats.
-   421|バンドは寝ている猫のために音楽を演奏します。
-   422|🎶 Twelve bands play music for sleeping cats.
-   423|12のバンドが寝ている猫のために音楽を演奏します。
-   424|💡 A lamp lights a dark cave.
-   425|ランプは暗い洞窟を照らします。
-   426|💡 Thirteen lamps light dark caves.
-   427|13のランプが暗い洞窟を照らします。
-   428|🤝 A team helps a lost robot.
-   429|チームは迷子のロボットを助けます。
-   430|🤝 Fourteen teams help lost robots.
-   431|14のチームが迷子のロボットを助けます。
-   432|🌍 The world watches a dancing bear.
-   433|世界は踊る熊を見ています。
-   434|🌍 Fifteen worlds watch dancing bears.
-   435|15の世界が踊る熊を見ています。`
-   436|        },
+        {
+            title: "Singular and Plural Nouns Drill",
+            content: `🐱 A cat eats a pizza.
+猫はピザを食べます。
+🐱 Two cats eat pizzas.
+2匹の猫がピザを食べます。
+🐶 A dog chases a ghost.
+犬は幽霊を追いかけます。
+🐶 Three dogs chase ghosts.
+3匹の犬が幽霊を追いかけます。
+🐦 A bird finds a treasure.
+鳥は宝物を見つけます。
+🐦 Four birds find treasures.
+4羽の鳥が宝物を見つけます。
+🐟 A fish catches a robot.
+魚はロボットを捕まえます。
+🐟 Five fish catch robots.
+5匹の魚がロボットを捕まえます。
+🐰 A rabbit eats a shoe.
+ウサギは靴を食べます。
+🐰 Six rabbits eat shoes.
+6匹のウサギが靴を食べます。
+🐴 A horse pulls a spaceship.
+馬は宇宙船を引きます。
+🐴 Seven horses pull spaceships.
+7頭の馬が宇宙船を引きます。
+🐄 A cow gives milk.
+牛はミルクを出します。
+🐄 Eight cows give milk.
+8頭の牛がミルクを出します。
+🐷 A pig digs a hole.
+豚は穴を掘ります。
+🐷 Nine pigs dig holes.
+9頭の豚が穴を掘ります。
+🐑 A sheep eats grass.
+羊は草を食べます。
+🐑 Ten sheep eat grass.
+10頭の羊が草を食べます。
+🐔 A chicken lays an egg.
+鶏は卵を産みます。
+🐔 Eleven chickens lay eggs.
+11羽の鶏が卵を産みます。
+📚 A student reads a book.
+学生は本を読みます。
+📚 Two students read books.
+2人の学生が本を読みます。
+✏️ A teacher writes a letter.
+先生は手紙を書きます。
+✏️ Three teachers write letters.
+3人の先生が手紙を書きます。
+🎨 An artist paints a picture.
+芸術家は絵を描きます。
+🎨 Four artists paint pictures.
+4人の芸術家が絵を描きます。
+📘 A writer writes a story.
+作家は物語を書きます。
+📘 Five writers write stories.
+5人の作家が物語を書きます。
+🚲 A bike rides a dog.
+自転車は犬に乗ります。
+🚲 Six bikes ride dogs.
+6台の自転車が犬に乗ります。
+🧹 A cleaner cleans a room.
+掃除員は部屋を掃除します。
+🧹 Seven cleaners clean rooms.
+7人の掃除員が部屋を掃除します。
+🛒 A shopper buys a car.
+買い物客は車を買います。
+🛒 Eight shoppers buy cars.
+8人の買い物客が車を買います。
+🌞 The sun warms ice cream.
+太陽はアイスクリームを温めます。
+🌞 Nine suns warm ice creams.
+9つの太陽がアイスクリームを温めます。
+🌧️ The rain waters a flower.
+雨は花に水をやります。
+🌧️ Ten rains water flowers.
+10の雨が花に水をやります。
+🌳 A tree grows an apple.
+木はリンゴを育てます。
+🌳 Eleven trees grow apples.
+11本の木がリンゴを育てます。
+🎶 A band plays music.
+バンドは音楽を演奏します。
+🎶 Twelve bands play music.
+12のバンドが音楽を演奏します。
+💡 A lamp lights a cave.
+ランプは洞窟を照らします。
+💡 Thirteen lamps light caves.
+13のランプが洞窟を照らします。
+🤝 A team helps a robot.
+チームはロボットを助けます。
+🤝 Fourteen teams help robots.
+14のチームがロボットを助けます。
+🌍 The world watches a bear.
+世界は熊を見ています。
+🌍 Fifteen worlds watch bears.
+15の世界が熊を見ています。`
+        },
    501|        {
    502|            title: "Article Pairs Drill",
    503|            content: `🐱 I see a cat. The cat runs.
