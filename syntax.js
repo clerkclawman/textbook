@@ -523,11 +523,7 @@ var syntax = {
 🤚 I use a hand. The hand holds a pen.
 私は手を使います。その手はペンを持ちます。
 🦶 You kick with a foot. The foot kicks a ball.
-あなたは足で蹴ります。その足はボールを蹴ります。
-💪 He lifts with an arm. The arm lifts a box.
-彼は腕で持ち上げます。その腕は箱を持ち上げます。
-🦵 She pushes with a leg. The leg pushes a door.
-彼女は足で押します。その足はドアを押します。`
+あなたは足で蹴ります。その足はボールを蹴ります。`
         },
         {
             title: "To Be - Singular and Plural Drill",
