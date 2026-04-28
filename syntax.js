@@ -123,39 +123,39 @@ var syntax = {
         },
         {
             title: "Object Pronouns Drill",
-            content: `👦 John sees me.
+            content: `👁️ John sees me.
 ジョンは私を見ます。
-👧 Mary helps you.
+🤝 Mary helps you.
 メアリーはあなたを助けます。
-👨 Tom likes him.
+❤️ Tom likes him.
 トムは彼が好きです。
-👩 Lisa knows her.
+🧠 Lisa knows her.
 リサは彼女を知っています。
-👪 The teacher invites us.
+📋 The teacher invites us.
 先生は私たちを招待します。
-👥 My friends watch them.
+👀️ My friends watch them.
 私の友達は彼らを見ています。
-📝 Dad calls me.
+📞 Dad calls me.
 パパは私に電話します。
-🐕 Mom feeds you.
-ママはあなたに餌をやります。
+🍼 Mom feeds you.
+ママはあなたに餌をやります.
 ⚽ Ken hits him.
 ケンは彼を叩きます。
-🐱 Yumi loves her.
-ユミちゃんは彼女を愛しています。
-🥤 Bob finds us.
-ボブは私たちを見つけます。
-🍞 Anna follows them.
-アンナは彼らについていきます。
-📺 Mike watches me.
+❤️ Yumi loves her.
+ユミちゃんは彼女を愛しています.
+🔍 Bob finds us.
+ボブは私たちを見つけます.
+👣 Anna follows them.
+アンナは彼らについていきます.
+👀️ Mike watches me.
 マイクは私を見ています。
-🎧 Sarah hears you.
+👂 Sarah hears you.
 サラはあなたの声を聞きます。
-🐇 The dog chases him.
+🐕 The dog chases him.
 犬は彼を追いかけます。
-🎤 The band loves us.
-バンドは私たちを愛しています。
-💃 The team chooses them.
+🎵 The band loves us.
+バンドは私たちを愛しています.
+🏆 The team chooses them.
 チームは彼らを選びます。
 🚪 Dad opens it.
 パパはそれを開けます。
@@ -165,59 +165,59 @@ var syntax = {
 おじいちゃんはそれを持っています。
 📸 Grandma takes it.
 おばあちゃんはそれを取ります。
-🔊 The cat follows us.
+🐱 The cat follows us.
 猫は私たちについてきます。
 📚 The students need them.
 学生はそれらが必要です。
 🏠 The family wants you.
 家族はあなたを望んでいます。
-👦 A ghost scares me.
+😱 A ghost scares me.
 幽霊は私を怖がらせます。
-👧 A robot helps you.
+🤖 A robot helps you.
 ロボットはあなたを助けます。
-👨 A dinosaur eats him.
+🦕 A dinosaur eats him.
 恐竜は彼を食べます。
-👩 An alien visits her.
+👽 An alien visits her.
 エイリアンは彼女を訪れます。
-👪 A monster chases us.
+👹 A monster chases us.
 怪物は私たちを追いかけます。
-👥 A dragon watches them.
+🐉 A dragon watches them.
 ドラゴンは彼らを見ています。
-📝 A monkey throws me.
+🐒 A monkey throws me.
 猿は私を投げます。
-🐕 A bear hugs you.
+🐻 A bear hugs you.
 熊はあなたを抱きしめます。
-⚽ A lion kicks him.
+🦁 A lion kicks him.
 ライオンは彼を蹴ります。
-🐱 A tiger bites her.
+🐯 A tiger bites her.
 トラは彼女を噛みます。
-🥤 A snake catches us.
+🐍 A snake catches us.
 蛇は私たちを捕まえます。
-🍞 A bird follows them.
+🐦 A bird follows them.
 鳥は彼らについていきます。
-📺 A fish watches me.
+🐟 A fish watches me.
 魚は私を見ています。
-🎧 A frog hears you.
+🐸 A frog hears you.
 カエルはあなたの声を聞きます。
-🐇 A pig chases him.
+🐷 A pig chases him.
 豚は彼を追いかけます。
-🎤 A cow loves us.
+🐄 A cow loves us.
 牛は私たちを愛しています。
-💃 A sheep chooses them.
+🐑 A sheep chooses them.
 羊は彼らを選びます。
-🚪 A fly opens it.
+🪰 A fly opens it.
 ハエはそれを開けます。
-🪟 A bee closes it.
-蜂はそれを閉じます。
-🎁 An ant holds it.
+🐝 A bee closes it.
+蜂はそれを閉じます.
+🐜 An ant holds it.
 アリはそれを持っています。
-📸 A spider takes it.
+🕷️ A spider takes it.
 クモはそれを取ります。
-🔊 A worm follows us.
+🐛 A worm follows us.
 ミミズは私たちについてきます。
-📚 A beetle needs them.
+🪲 A beetle needs them.
 甲虫はそれらが必要です。
-🏠 A butterfly wants you.
+🦋 A butterfly wants you.
 蝶はあなたを望んでいます。`
         },
         {
