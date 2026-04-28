@@ -531,7 +531,15 @@ var syntax = {
 👂 You listen with elf ears. The ears hear whispers.
 あなたはエルフの耳で聞きます。その耳はささやきを聞きます.
 👃 He smells with a dragon nose. The nose smells treasure.
-彼はドラゴンの鼻で匂いを嗅ぎます。その鼻は宝物の匂いを嗅ぎます.`
+彼はドラゴンの鼻で匂いを嗅ぎます。その鼻は宝物の匂いを嗅ぎます.
+👄 I speak with a wizard tongue. The tongue casts spells.
+私は魔法使いの舌で話します。その舌は呪文を唱えます.
+👀 You see with a cyclops eye. The eye sees everything.
+あなたはサイクロプスの目で見ます。その目は全てを見ます.
+👂 He hears with a fairy ear. The ear hears music.
+彼は妖精の耳で聞きます。その耳は音楽を聞きます.
+👃 I smell with a phoenix nose. The nose smells magic.
+私はフェニックスの鼻で匂いを嗅ぎます。その鼻は魔法の匂いを嗅ぎます.`
         },
         {
             title: "To Be - Singular and Plural Drill",
@@ -839,12 +847,6 @@ UFOは明るいです。彼女は暗くありません.
 コアラは可愛いです。彼女は醜くありません.
 🦥 Sloth is slow. He is not fast.
 ナマケモノは遅いです。彼は速くありません.
-🦦 Otter is playful. She is not serious.
-カワウソは遊び好きです。彼女は真剣ではありません.
-🐿️ Squirrel is small. He is not big.
-リスは小さいです。彼は大きくありません.
-🦔 Hedgehog is spiky. She is not smooth.
-ハリネズミはトゲトゲしています。彼女は滑らかではありません.
 🦇 Bat is active. He is not lazy.
 コウモリは活発です。彼は怠け者ではありません.`
         },
@@ -874,8 +876,8 @@ UFOは明るいです。彼女は暗くありません.
 私は速いです。私は遅くありません.
 🛸 You are bright. You are not dark.
 あなたは明るいです。あなたは暗くありません.
-🌈 I am colorful. You are not plain.
-私はカラフルです。あなたは地味ではありません.
+🌈 I am colorful. I am not plain.
+私はカラフルです。私は地味ではありません.
 ⚡ You are loud. I am not quiet.
 あなたは大声です。私は静かではありません.
 🌪️ I am dangerous. You are not safe.
@@ -955,139 +957,7 @@ UFOは明るいです。彼女は暗くありません.
 🦔 You are spiky. I am not smooth.
 あなたはトゲトゲしています。私は滑らかではありません.
 🦇 I am active. You are not lazy.
-私は活発です。あなたは怠け者ではありません.
-👻 I am scary. You are scary too.
-私は怖いです。あなたも怖いです.
-🤖 You are cool. I am cool too.
-あなたはかっこいいです。私もかっこいいです.
-🦕 I am big. You are big too.
-私は大きいです。あなたも大きいです.
-👽 I am strange. You are strange too.
-私は変です。あなたも変です.
-🐉 I am strong. You are strong too.
-私は強いです。あなたも強いです.
-🦄 I am beautiful. You are beautiful too.
-私は美しいです。あなたも美しいです.
-🎃 I am orange. You are orange too.
-私はオレンジ色です。あなたもオレンジ色です.
-🎁 I am nice. You are nice too.
-私は素敵です。あなたも素敵です.
-🎪 I am fun. You are fun too.
-私は楽しいです。あなたも楽しいです.
-🏰 I am old. You are old too.
-私は古いです。あなたも古いです.
-🚀 I am fast. You are fast too.
-私は速いです。あなたも速いです.
-🛸 I am bright. You are bright too.
-私は明るいです。あなたも明るいです.
-🌈 I am colorful. You are colorful too.
-私はカラフルです。あなたもカラフルです.
-⚡ I am not loud. You are not loud either.
-私は大声ではありません。あなたも大声ではありません.
-🌪️ I am not dangerous. You are not dangerous either.
-私は危険ではありません。あなたも危険ではありません.
-🌋 I am not hot. You are not hot either.
-私は熱いではありません。あなたも熱いではありません.
-🏝️ I am not small. You are not small either.
-私は小さくありません。あなたも小さくありません.
-🏔️ I am not low. You are not low either.
-私は低くありません。あなたも低くありません.
-🌊 I am not tiny. You are not tiny either.
-私は小さくありません。あなたも小さくありません.
-🌲 I am not brown. You are not brown either.
-私は茶色ではありません。あなたも茶色ではありません.
-🌺 I am not ugly. You are not ugly either.
-私は醜くありません。あなたも醜くありません.
-🍄 I am not blue. You are not blue either.
-私は青くありません。あなたも青くありません.
-🦋 I am not huge. You are not huge either.
-私は巨大ではありません。あなたも巨大ではありません.
-🐝 I am not lazy. You are not lazy either.
-私は怠け者ではありません。あなたも怠け者ではありません.
-🐸 I am not red. You are not red either.
-私は赤くありません。あなたも赤くありません.
-🐢 I am not fast. You am not fast either.
-私は速くありません。あなたも速くありません.
-🐍 I am not short. You are not short either.
-私は短くありません。あなたも短くありません.
-🦎 I am not slow. You are not slow either.
-私は遅くありません。あなたも遅くありません.
-🐊 I am not cute. You are not cute either.
-私は可愛くありません。あなたも可愛くありません.
-🦈 I am not safe. You are not safe either.
-私は安全ではありません。あなたも安全ではありません.
-🐳 I am not tiny. You are not tiny either.
-私は小さくありません。あなたも小さくありません.
-🐬 I am not stupid. You are not stupid either.
-私は愚かではありません。あなたも愚かではありません.
-🦚 I am not plain. You are not plain either.
-私は地味ではありません。あなたも地味ではありません.
-🦩 I am not white. You are not white either.
-私は白くありません。あなたも白くありません.
-🦜 I am not dull. You are not dull either.
-私は退屈ではありません。あなたも退屈ではありません.
-🦢 I am not clumsy. You are not clumsy either.
-私は不器用ではありません。あなたも不器用ではありません.
-🦉 I am not foolish. You are not foolish either.
-私は愚かではありません。あなたも愚かではありません.
-🐻 I am not small. You are not small either.
-私は小さくありません。あなたも小さくありません.
-🦊 I am not dumb. You are not dumb either.
-私は馬鹿ではありません。あなたも馬鹿ではありません.
-🐒 I am not lazy. You are not lazy either.
-私は怠け者ではありません。あなたも怠け者ではありません.
-🦌 I am not slow. You are not slow either.
-私は遅くありません。あなたも遅くありません.
-🦓 I am not plain. You are not plain either.
-私は地味ではありません。あなたも地味ではありません.
-🦒 I am not short. You are not short either.
-私は背が低くありません。あなたも背が低くありません.
-🐘 I am not light. You are not light either.
-私は軽くありません。あなたも軽くありません.
-🦏 I am not weak. You are not weak either.
-私は弱くありません。あなたも弱くありません.
-🦛 I am not small. You are not small either.
-私は小さくありません。あなたも小さくありません.
-🐃 I am not slow. You are not slow either.
-私は遅くありません。あなたも遅くありません.
-🦘 I am not ugly. You are not ugly either.
-私は醜くありません。あなたも醜くありません.
-🦥 I am not fast. You are not fast either.
-私は速くありません。あなたも速くありません.
-🦦 I am not serious. You are not serious either.
-私は真剣ではありません。あなたも真剣ではありません.
-🐿️ I am not big. You are not big either.
-私は大きくありません。あなたも大きくありません.
-🦔 I am not smooth. You are not smooth either.
-私は滑らかではありません。あなたも滑らかではありません.
-👻 I am scary, but I am not mean.
-私は怖いですが、意地悪ではありません.
-🤖 You are cool, but you are not cold.
-あなたはかっこいいですが、冷たくありません.
-🦕 I am big, but I am not fat.
-私は大きいですが、太っていません.
-👽 You are strange, but you are not weird.
-あなたは変ですが、変ではありません.
-🐉 I am strong, but I am not tough.
-私は強いですが、タフではありません.
-🦄 You are beautiful, but you are not perfect.
-あなたは美しいですが、完璧ではありません.
-🎃 I am orange, but I am not red.
-私はオレンジ色ですが、赤くありません.
-🎁 You are nice, but you are not generous.
-あなたは素敵ですが、寛大ではありません.
-🎪 I am fun, but I am not silly.
-私は楽しいですが、愚かではありません.
-🏰 You are old, but I am not ancient.
-あなたは古いですが、古代ではありません.
-🚀 I am fast, but I am not speedy.
-私は速いですが、超高速ではありません.
-🛸 You are bright, but I am not shiny.
-あなたは明るいですが、輝いていません.
-🌈 I am colorful, but I am not messy.
-私はカラフルですが、散らかっていません.
-⚡ You are loud, but I am not noisy.
-あなたは大声ですが、騒がしくありません.`
+私は活発です。あなたは怠け者ではありません.`
         },
         {
             title: "Me and X and We with To Be Drill",
@@ -1189,12 +1059,6 @@ UFOと私は明るいです。私たちは暗くありません.
 コアラと私は可愛いです。私たちは醜くありません.
 🦥 Me and Sloth are slow. We are not fast.
 ナマケモノと私は遅いです。私たちは速くありません.
-🦦 Me and Otter are playful. We are not serious.
-カワウソと私は遊び好きです。私たちは真剣ではありません.
-🐿️ Me and Squirrel are small. We are not big.
-リスと私は小さいです。私たちは大きくありません.
-🦔 Me and Hedgehog are spiky. We are not smooth.
-ハリネズミと私はトゲトゲしています。私たちは滑らかではありません.
 🦇 Me and Bat are active. We are not lazy.
 コウモリと私は活発です。私たちは怠け者ではありません.`
         },
@@ -1402,13 +1266,7 @@ UFOと私は明るいです。私たちは暗くありません.
 👩 She is folding clothes. She is not wrinkling them.
 彼女は服を畳んでいます。それらをシワにしません.
 🐱 It is sleeping on a bed. It is not rolling off.
-それはベッドで寝ています。それから転がりません.
-👪 We are making tea. We are not spilling it.
-私たちはお茶を入れています。それをこぼしません.
-👥 They are eating breakfast. They are not starving.
-彼らは朝食を食べています。彼らは飢えていません.
-👻 I am playing the piano. I am not banging on it.
-私はピアノを弾いています。それを乱暴に叩きません。`
+それはベッドで寝ています。それから転がりません。`
         },
         {
             title: "Adjective Drill",
