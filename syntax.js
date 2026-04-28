@@ -741,110 +741,112 @@ UFOたちは明るいです。それらは静かに飛びます。
         },
         {
             title: "He and She with To Be Drill",
-            content: `😊 Ken is happy. He is not sad.
-ケンくんは幸せです。彼は悲しくありません。
-🤗 Yumi is kind. She is not mean.
-ユミちゃんは親切です。彼女は意地悪ではありません。
-📏 Takashi is tall. He is not short.
-タカシくんは背が高いです。彼は背が低くありません。
-🌸 Sakura is cute. She is not ugly.
-サクラちゃんは可愛いです。彼女は醜くありません。
-👶 Hiroshi is young. He is not old.
-ヒロシくんは若いです。彼は年をとっていません。
-🧠 Aiko is wise. She is not foolish.
-アイコちゃんは賢明です。彼女は愚かではありません.
-🏃 Yuji is busy. He is not free.
-ユウジくんは忙しいです。彼は自由ではありません.
-😌 Emi is relaxed. She is not stressed.
-エミちゃんはリラックスしています。彼女はストレスを感じていません。
-🍽️ Masato is hungry. He is not full.
-マサトくんはお腹が空いています。彼は満腹ではありません.
-⚡ Kaori is energetic. She is not tired.
-カオリちゃんは元気です。彼女は疲れていません。
-❄️ Kenji is cold. He is not warm.
-ケンジくんは寒いです。彼は暖かくありません。
-🌸 Mika is gentle. She is not rough.
-ミカちゃんは優しいです。彼女は荒くありません。
-💰 Taro is rich. He is not poor.
-タロウくんは金持ちです。彼は貧しくありません。
-🙏 Yuki is humble. She is not proud.
-ユキちゃんは謙虚です。彼女は傲慢ではありません.
-💪 Jiro is healthy. He is not sick.
-ジロウくんは健康です。彼は病気ではありません。
-💪 Rina is weak. She is not strong.
-リナちゃんは弱いです。彼女は強くありません.
-🔊 Saburo is loud. He is not quiet.
-サブロウくんは大声です。彼は静かではありません。
-🙈 Hana is shy. She is not bold.
-ハナちゃんは恥ずかしがり屋です。彼女は大胆ではありません.
-👁️ Shinji is careful. He is not careless.
-シンジくんは慎重です。彼は不注意ではありません.
-🤕 Moe is clumsy. She is not graceful.
-モエちゃんは不器用です。彼女は優雅ではありません.
-⏳ Daisuke is patient. He is not impatient.
-ダイスケくんは忍耐強いです。彼は忍耐がありません.
-😰 Yui is nervous. She is not calm.
-ユイちゃんは緊張しています。彼女は冷静ではありません。
-🤝 Kenta is friendly. He is not unfriendly.
-ケンタくんは友好的です。彼は不友好的ではありません.
-😔 Aoi is lonely. She is not popular.
-アオイちゃんは孤独です。彼女は人気がありません。
-🎨 Yuta is creative. He is not boring.
-ユウタくんは創造的です。彼は退屈ではありません.
-😐 Rin is dull. She is not interesting.
-リンちゃんは退屈です。彼女は面白くありません。
-🍀 Sota is lucky. He is not unlucky.
-ソウタくんは幸運です。彼は不運ではありません.
-😢 Mei is unfortunate. She is not lucky.
-メイちゃんは不幸です。彼女は幸運ではありません。
-⭐ Ryo is famous. He is not unknown.
-リョウくんは有名です。彼は無名ではありません.
-🌟 Hina is ordinary. She is not special.
-ヒナちゃんは普通です。彼女は特別ではありません.
-💑 Kai is single. He is not married.
-カイくんは独身です。彼は結婚していません。
-💍 Saki is devoted. She is not unfaithful.
-サキちゃんは献身的です。彼女は不誠実ではありません.
-🚪 Ren is open. He is not closed.
-レンくんは開放的です。彼は閉鎖的ではありません.
-📋 Yua is busy. She is not available.
-ユアちゃんは忙しいです。彼女は利用可能ではありません.
-✅ Haruto is ready. He is not late.
-ハルトくんは準備ができています。彼は遅れていません。
-🙇 Miu is sorry. She is not happy.
-ミウちゃんは申し訳ないと思っています。彼女は幸せではありません.
-✅ Sora is correct. He is not wrong.
-ソラくんは正確です。彼は間違っていません.
-❌ Koharu is mistaken. She is not right.
-コハルちゃんは間違っています。彼女は正しくありません.
-✅ Riko is certain. He is not unsure.
-リコくんは確実です。彼は確信していません。
-❓ Mirai is doubtful. She is not sure.
-ミライちゃんは疑っています。彼女は確信していません.
-😎 Daiki is confident. He is not nervous.
-ダイキくんは自信があります。彼は緊張していません.
-😟 Hina is anxious. She is not relaxed.
-ヒナちゃんは不安です。彼女はリラックスしていません。
-🕊 Kaito is peaceful. He is not stressed.
-カイトくんは平和的です。彼はストレスを感じていません.
-😟 Aoi is worried. She is not calm.
-アオイちゃんは心配しています。彼女は冷静ではありません.
-😊 Yuto is joyful. He is not sad.
-ユウトくんは喜んでいます。彼は悲しくありません.
-😞 Hina is unhappy. She is not happy.
-ヒナちゃんは不幸です。彼女は幸せではありません。
-🎵 Hayato is musical. He is not tone-deaf.
-ハヤトくんは音楽的です。彼は音痴ではありません。
-📚 Erika is studious. She is not lazy.
-エリカちゃんは勉強熱心です。彼女は怠け者ではありません。
-🏃 Takumi is athletic. He is not weak.
-タクミくんは運動神経がいいです。彼は弱くありません。
-🎭 Mio is dramatic. She is not boring.
-ミオちゃんはドラマチックです。彼女は退屈ではありません。
-🔬 Keisuke is scientific. He is not artistic.
-ケイスケくんは科学的です。彼は芸術的ではありません。
-🌸 Sakura is elegant. She is not clumsy.
-サクラちゃんは優雅です。彼女は不器用ではありません。`
+            content: `👻 Ghosty is scary. He is not friendly.
+ゴースティーは怖いです。彼は友好的ではありません.
+🤖 Robo is cool. She is not boring.
+ロボはかっこいいです。彼女は退屈ではありません.
+🦕 Dino is big. He is not small.
+ディノは大きいです。彼は小さくありません.
+👽 Alien is strange. She is not normal.
+エイリアンは変です。彼女は普通ではありません.
+🐉 Dragon is strong. He is not weak.
+ドラゴンは強いです。彼は弱くありません.
+🦄 Uni is beautiful. She is not ugly.
+ユニは美しいです。彼女は醜くありません.
+🎃 Pumpkin is orange. He is not green.
+パンプキンはオレンジ色です。彼は緑ではありません.
+🎁 Gift is nice. She is not mean.
+ギフトは素敵です。彼女は意地悪ではありません.
+🎪 Circus is fun. He is not sad.
+サーカスは楽しいです。彼は悲しくありません.
+🏰 Castle is old. She is not new.
+城は古いです。彼女は新しくありません.
+🚀 Rocket is fast. He is not slow.
+ロケットは速いです。彼は遅くありません.
+🛸 UFO is bright. She is not dark.
+UFOは明るいです。彼女は暗くありません.
+🌈 Rainbow is colorful. He is not plain.
+虹はカラフルです。彼は地味ではありません.
+⚡ Lightning is loud. She is not quiet.
+稲妻は大きいです。彼女は静かではありません.
+🌪️ Tornado is dangerous. He is not safe.
+竜巻は危険です。彼は安全ではありません.
+🌋 Volcano is hot. She is not cold.
+火山は熱いです。彼女は寒くありません.
+🏝️ Island is small. He is not big.
+島は小さいです。彼は大きくありません.
+🏔️ Mountain is high. She is not low.
+山は高いです。彼女は低くありません.
+🌊 Wave is big. He is not tiny.
+波は大きいです。彼は小さくありません.
+🌲 Forest is green. She is not brown.
+森は緑です。彼女は茶色ではありません.
+🌺 Flower is pretty. He is not ugly.
+花はきれいです。彼は醜くありません.
+🍄 Mushroom is red. She is not blue.
+キノコは赤いです。彼女は青くありません.
+🦋 Butterfly is small. He is not huge.
+蝶は小さいです。彼は巨大ではありません.
+🐝 Bee is busy. She is not lazy.
+蜂は忙しいです。彼女は怠け者ではありません.
+🐸 Frog is green. He is not red.
+カエルは緑です。彼は赤くありません.
+🐢 Turtle is slow. She is not fast.
+カメは遅いです。彼女は速くありません.
+🐍 Snake is long. He is not short.
+ヘビは長いです。彼は短くありません.
+🦎 Lizard is fast. She is not slow.
+トカゲは速いです。彼女は遅くありません.
+🐊 Croc is scary. He is not cute.
+ワニは怖いです。彼は可愛くありません.
+🦈 Shark is dangerous. She is not safe.
+サメは危険です。彼女は安全ではありません.
+🐳 Whale is huge. He is not tiny.
+クジラは巨大です。彼は小さくありません.
+🐬 Dolphin is smart. She is not stupid.
+イルカは賢いです。彼女は愚かではありません.
+🦚 Peacock is beautiful. He is not plain.
+クジャクは美しいです。彼は地味ではありません.
+🦩 Flamingo is pink. She is not white.
+フラミンゴはピンクです。彼女は白くありません.
+🦜 Parrot is colorful. He is not dull.
+オウムはカラフルです。彼は退屈ではありません.
+🦢 Swan is graceful. She is not clumsy.
+白鳥は優雅です。彼女は不器用ではありません.
+🦉 Owl is wise. He is not foolish.
+フクロウは賢いです。彼は愚かではありません.
+🐻 Bear is big. She is not small.
+熊は大きいです。彼女は小さくありません.
+🦊 Fox is clever. He is not dumb.
+キツネは賢いです。彼は馬鹿ではありません.
+🐒 Monkey is active. She is not lazy.
+猿は活発です。彼女は怠け者ではありません.
+🦌 Deer is fast. He is not slow.
+鹿は速いです。彼は遅くありません.
+🦓 Zebra is striped. She is not plain.
+シマウマは縞模様です。彼女は地味ではありません.
+🦒 Giraffe is tall. He is not short.
+キリンは背が高いです。彼は背が低くありません.
+🐘 Elephant is heavy. She is not light.
+象は重いです。彼女は軽くありません.
+🦏 Rhino is strong. He is not weak.
+サイは強いです。彼は弱くありません.
+🦛 Hippo is big. She is not small.
+カバは大きいです。彼女は小さくありません.
+🐃 Camel is fast. He is not slow.
+ラクダは速いです。彼は遅くありません.
+🦘 Koala is cute. She is not ugly.
+コアラは可愛いです。彼女は醜くありません.
+🦥 Sloth is slow. He is not fast.
+ナマケモノは遅いです。彼は速くありません.
+🦦 Otter is playful. She is not serious.
+カワウソは遊び好きです。彼女は真剣ではありません.
+🐿️ Squirrel is small. He is not big.
+リスは小さいです。彼は大きくありません.
+🦔 Hedgehog is spiky. She is not smooth.
+ハリネズミはトゲトゲしています。彼女は滑らかではありません.
+🦇 Bat is active. He is not lazy.
+コウモリは活発です。彼は怠け者ではありません.`
         },
         {
             title: "I and You with To Be Drill",
