@@ -6,27 +6,27 @@ var syntax = {
     stories: [
         {
             title: "Subject Pronouns Drill",
-            content: `👦 I eat pizza.
+            content: `🍕 I eat pizza.
 私はピザを食べます。
-👧 You kick a ball.
+⚽ You kick a ball.
 あなたはボールを蹴ります。
-👨 He sees a ghost.
+👻 He sees a ghost.
 彼は幽霊を見ます。
-👩 She eats a shoe.
+👟 She eats a shoe.
 彼女は靴を食べます。
-🐶 It chases a cat.
+🐱 It chases a cat.
 それは猫を追いかけます。
-👪 We play soccer.
+⚽ We play soccer.
 私たちはサッカーをします。
-👥 They read books.
+📚 They read books.
 彼らは本を読みます。
 📝 I write a letter.
 私は手紙を書きます。
-🐕 You watch a movie.
+🎬 You watch a movie.
 あなたは映画を見ます。
 ⚽ He throws a ball.
 彼はボールを投げます。
-🐱 She catches a fish.
+🐟 She catches a fish.
 彼女は魚を捕まえます。
 🥤 I drink water.
 私は水を飲みます。
@@ -36,7 +36,7 @@ var syntax = {
 彼はテレビを見ています。
 🎧 She listens to music.
 彼女は音楽を聞いています。
-🐇 It jumps over a fence.
+🚧 It jumps over a fence.
 それはフェンスを飛び越えます。
 🎤 We sing a song.
 私たちは歌を歌います。
@@ -56,37 +56,37 @@ var syntax = {
 私たちは宿題をします。
 🏠 They go home.
 彼らは家に帰ります。
-👫 I see a dinosaur.
+🦕 I see a dinosaur.
 私は恐竜を見ます。
 ✏️ You have a pencil.
 あなたは鉛筆を持っています。
 🥤 He likes milk.
 彼は牛乳が好きです。
 🎒 She has a bag.
-彼女はバッグを持っています。
-📏 It breaks a window.
+彼女はバッグを持っています.
+🪟 It breaks a window.
 それは窓を壊します。
-😊 We love pizza.
+🍕 We love pizza.
 私たちはピザが好きです。
-🎒 They hate homework.
+📚 They hate homework.
 彼らは宿題が嫌いです。
 🔍 I find a treasure.
 私は宝物を見つけます。
-🔍 You lose a key.
+🔑 You lose a key.
 あなたは鍵を失くします。
-🔴 He buys a car.
+🚗 He buys a car.
 彼は車を買います。
-🔵 She sells a house.
+🏠 She sells a house.
 彼女は家を売ります。
 🏃 I run a race.
 私はレースを走ります。
-🚶 You walk a dog.
+🐕 You walk a dog.
 あなたは犬を散歩させます。
-⬆️ He climbs a tree.
+🌳 He climbs a tree.
 彼は木を登ります。
 🪑 She moves a chair.
 彼女は椅子を動かします。
-⬆️ It pushes a box.
+📦 It pushes a box.
 それは箱を押します。
 🍽️ We cook dinner.
 私たちは夕食を作ります。
@@ -106,11 +106,11 @@ var syntax = {
 私たちは部屋を掃除します。
 🛒 They buy food.
 彼らは食べ物を買います。
-🌞 I feel the sun.
+☀️ I feel the sun.
 私は太陽を感じます。
 🌧️ You feel the rain.
 あなたは雨を感じます。
-🌳 He climbs a mountain.
+⛰️ He climbs a mountain.
 彼は山を登ります。
 🎶 She plays music.
 彼女は音楽を演奏します。
