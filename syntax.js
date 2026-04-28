@@ -1091,106 +1091,112 @@ UFOは明るいです。彼女は暗くありません.
         },
         {
             title: "Me and X and We with To Be Drill",
-            content: `👦 Me and Ken are happy. We are not sad.
-ケンくんと私は幸せです。私たちは悲しくありません。
-👧 Me and Yumi are kind. We are not mean.
-ユミちゃんと私は親切です。私たちは意地悪ではありません。
-👦 Me and Takashi are tall. We are not short.
-タカシくんと私は背が高いです。私たちは背が低くありません。
-👧 Me and Sakura are cute. We are not ugly.
-サクラちゃんと私は可愛いです。私たちは醜くありません。
-👦 Me and Hiroshi are young. We are not old.
-ヒロシくんと私は若いです。私たちは年をとっていません。
-👧 Me and Aiko are wise. We are not foolish.
-アイコちゃんと私は賢明です。私たちは愚かではありません。
-👦 Me and Yuji are busy. We are not free.
-ユウジくんと私は忙しいです。私たちは自由ではありません。
-👧 Me and Emi are relaxed. We are not stressed.
-エミちゃんと私はリラックスしています。私たちはストレスを感じていません。
-👦 Me and Masato are hungry. We are not full.
-マサトくんと私はお腹が空いています。私たちは満腹ではありません。
-👧 Me and Kaori are energetic. We are not tired.
-カオリちゃんと私は元気です。私たちは疲れていません。
-👦 Me and Kenji are cold. We are not warm.
-ケンジくんと私は寒いです。私たちは暖かくありません。
-👧 Me and Mika are gentle. We are not rough.
-ミカちゃんと私は優しいです。私たちは荒くありません。
-👦 Me and Taro are rich. We are not poor.
-タロウくんと私は金持ちです。私たちは貧しくありません。
-👧 Me and Yuki are humble. We are not proud.
-ユキちゃんと私は謙虚です。私たちは傲慢ではありません。
-👦 Me and Jiro are healthy. We are not sick.
-ジロウくんと私は健康です。私たちは病気ではありません。
-👧 Me and Rina are weak. We are not strong.
-リナちゃんと私は弱いです。私たちは強くありません。
-👦 Me and Saburo are loud. We are not quiet.
-サブロウくんと私は大声です。私たちは静かではありません。
-👧 Me and Hana are shy. We are not bold.
-ハナちゃんと私は恥ずかしがり屋です。私たちは大胆ではありません。
-👦 Me and Shinji are careful. We are not careless.
-シンジくんと私は慎重です。私たちは不注意ではありません。
-👧 Me and Moe are clumsy. We are not graceful.
-モエちゃんと私は不器用です。私たちは優雅ではありません。
-👦 Me and Daisuke are patient. We are not impatient.
-ダイスケくんと私は忍耐強いです。私たちは忍耐がありません。
-👧 Me and Yui are nervous. We are not calm.
-ユイちゃんと私は緊張しています。私たちは冷静ではありません。
-👦 Me and Kenta are friendly. We are not unfriendly.
-ケンタくんと私は友好的です。私たちは不友好的ではありません。
-👧 Me and Aoi are lonely. We are not popular.
-アオイちゃんと私は孤独です。私たちは人気がありません。
-👦 Me and Yuta are creative. We are not boring.
-ユウタくんと私は創造的です。私たちは退屈ではありません。
-👧 Me and Rin are dull. We are not interesting.
-リンちゃんと私は退屈です。私たちは面白くありません。
-👦 Me and Sota are lucky. We are not unlucky.
-ソウタくんと私は幸運です。私たちは不運ではありません。
-👧 Me and Mei are unfortunate. We are not lucky.
-メイちゃんと私は不幸です。私たちは幸運ではありません。
-👦 Me and Ryo are famous. We are not unknown.
-リョウくんと私は有名です。私たちは無名ではありません。
-👧 Me and Hina are ordinary. We are not special.
-ヒナちゃんと私は普通です。私たちは特別ではありません。
-👦 Me and Kai are single. We are not married.
-カイくんと私は独身です。私たちは結婚していません。
-👧 Me and Saki are devoted. We are not unfaithful.
-サキちゃんと私は献身的です。私たちは不誠実ではありません。
-👦 Me and Ren are open. We are not closed.
-レンくんと私は開放的です。私たちは閉鎖的ではありません。
-👧 Me and Yua are busy. We are not available.
-ユアちゃんと私は忙しいです。私たちは利用可能ではありません。
-👦 Me and Haruto are ready. We are not late.
-ハルトくんと私は準備ができています。私たちは遅れていません。
-👧 Me and Miu are sorry. We are not happy.
-ミウちゃんと私は申し訳ないと思っています。私たちは幸せではありません。
-👦 Me and Sora are correct. We are not wrong.
-ソラくんと私は正確です。私たちは間違っていません。
-👧 Me and Koharu are mistaken. We are not right.
-コハルちゃんと私は間違っています。私たちは正しくありません。
-👦 Me and Riko are certain. We are not unsure.
-リコくんと私は確実です。私たちは確信していません。
-👧 Me and Mirai are doubtful. We are not sure.
-ミライちゃんと私は疑っています。私たちは確信していません。
-👦 Me and Daiki are confident. We are not nervous.
-ダイキくんと私は自信があります。私たちは緊張していません。
-👧 Me and Hina are anxious. We are not relaxed.
-ヒナちゃんと私は不安です。私たちはリラックスしていません。
-👦 Me and Kaito are peaceful. We are not stressed.
-カイトくんと私は平和的です。私たちはストレスを感じていません。
-👧 Me and Aoi are worried. We are not calm.
-アオイちゃんと私は心配しています。私たちは冷静ではありません。
-👦 Me and Yuto are joyful. We are not sad.
-ユウトくんと私は喜んでいます。私たちは悲しくありません。
-👧 Me and Hina are unhappy. We are not happy.
-ヒナちゃんと私は不幸です。私たちは幸せではありません。
-👦 Me and Hayato are musical. We are not tone-deaf.
-ハヤトくんと私は音楽的です。私たちは音痴ではありません。
-👧 Me and Erika are studious. We are not lazy.
-エリカちゃんと私は勉強熱心です。私たちは怠け者ではありません。
-👦 Me and Takumi are athletic. We are not weak.
-タクミくんと私は運動神経がいいです。私たちは弱くありません。
-👧 Me and Mio are dramatic. We are not boring.
-ミオちゃんと私はドラマチックです。私たちは退屈ではありません。`
+            content: `👦 Me and Ghosty are scary. We are not friendly.
+ゴースティーと私は怖いです。私たちは友好的ではありません.
+👧 Me and Robo are cool. We are not boring.
+ロボと私はかっこいいです。私たちは退屈ではありません.
+👦 Me and Dino are big. We are not small.
+ディノと私は大きいです。私たちは小さくありません.
+👽 Me and Alien are strange. We are not normal.
+エイリアンと私は変です。私たちは普通ではありません.
+🐉 Me and Dragon are strong. We are not weak.
+ドラゴンと私は強いです。私たちは弱くありません.
+🦄 Me and Uni are beautiful. We are not ugly.
+ユニと私は美しいです。私たちは醜くありません.
+🎃 Me and Pumpkin are orange. We are not green.
+パンプキンと私はオレンジ色です。私たちは緑ではありません.
+🎁 Me and Gift are nice. We are not mean.
+ギフトと私は素敵です。私たちは意地悪ではありません.
+🎪 Me and Circus are fun. We are not sad.
+サーカスと私は楽しいです。私たちは悲しくありません.
+🏰 Me and Castle are old. We are not new.
+城と私は古いです。私たちは新しくありません.
+🚀 Me and Rocket are fast. We are not slow.
+ロケットと私は速いです。私たちは遅くありません.
+🛸 Me and UFO are bright. We are not dark.
+UFOと私は明るいです。私たちは暗くありません.
+🌈 Me and Rainbow are colorful. We are not plain.
+虹と私はカラフルです。私たちは地味ではありません.
+⚡ Me and Lightning are loud. We are not quiet.
+稲妻と私は大きいです。私たちは静かではありません.
+🌪️ Me and Tornado are dangerous. We are not safe.
+竜巻と私は危険です。私たちは安全ではありません.
+🌋 Me and Volcano are hot. We are not cold.
+火山と私は熱いです。私たちは寒くありません.
+🏝️ Me and Island are small. We are not big.
+島と私は小さいです。私たちは大きくありません.
+🏔️ Me and Mountain are high. We are not low.
+山と私は高いです。私たちは低くありません.
+🌊 Me and Wave are big. We are not tiny.
+波と私は大きいです。私たちは小さくありません.
+🌲 Me and Forest are green. We are not brown.
+森と私は緑です。私たちは茶色ではありません.
+🌺 Me and Flower are pretty. We are not ugly.
+花と私はきれいです。私たちは醜くありません.
+🍄 Me and Mushroom are red. We are not blue.
+キノコと私は赤いです。私たちは青くありません.
+🦋 Me and Butterfly are small. We are not huge.
+蝶と私は小さいです。私たちは巨大ではありません.
+🐝 Me and Bee are busy. We are not lazy.
+蜂と私は忙しいです。私たちは怠け者ではありません.
+🐸 Me and Frog are green. We are not red.
+カエルと私は緑です。私たちは赤くありません.
+🐢 Me and Turtle are slow. We are not fast.
+カメと私は遅いです。私たちは速くありません.
+🐍 Me and Snake are long. We are not short.
+ヘビと私は長いです。私たちは短くありません.
+🦎 Me and Lizard are fast. We are not slow.
+トカゲと私は速いです。私たちは遅くありません.
+🐊 Me and Croc are scary. We are not cute.
+ワニと私は怖いです。私たちは可愛くありません.
+🦈 Me and Shark are dangerous. We are not safe.
+サメと私は危険です。私たちは安全ではありません.
+🐳 Me and Whale are huge. We are not tiny.
+クジラと私は巨大です。私たちは小さくありません.
+🐬 Me and Dolphin are smart. We are not stupid.
+イルカと私は賢いです。私たちは愚かではありません.
+🦚 Me and Peacock are beautiful. We are not plain.
+クジャクと私は美しいです。私たちは地味ではありません.
+🦩 Me and Flamingo are pink. We are not white.
+フラミンゴと私はピンクです。私たちは白くありません.
+🦜 Me and Parrot are colorful. We are not dull.
+オウムと私はカラフルです。私たちは退屈ではありません.
+🦢 Me and Swan are graceful. We are not clumsy.
+白鳥と私は優雅です。私たちは不器用ではありません.
+🦉 Me and Owl are wise. We are not foolish.
+フクロウと私は賢いです。私たちは愚かではありません.
+🐻 Me and Bear are big. We are not small.
+熊と私は大きいです。私たちは小さくありません.
+🦊 Me and Fox are clever. We are not dumb.
+キツネと私は賢いです。私たちは馬鹿ではありません.
+🐒 Me and Monkey are active. We are not lazy.
+猿と私は活発です。私たちは怠け者ではありません.
+🦌 Me and Deer are fast. We are not slow.
+鹿と私は速いです。私たちは遅くありません.
+🦓 Me and Zebra are striped. We are not plain.
+シマウマと私は縞模様です。私たちは地味ではありません.
+🦒 Me and Giraffe are tall. We are not short.
+キリンと私は背が高いです。私たちは背が低くありません.
+🐘 Me and Elephant are heavy. We are not light.
+象と私は重いです。私たちは軽くありません.
+🦏 Me and Rhino are strong. We are not weak.
+サイと私は強いです。私たちは弱くありません.
+🦛 Me and Hippo are big. We are not small.
+カバと私は大きいです。私たちは小さくありません.
+🐃 Me and Camel are fast. We are not slow.
+ラクダと私は速いです。私たちは遅くありません.
+🦘 Me and Koala are cute. We are not ugly.
+コアラと私は可愛いです。私たちは醜くありません.
+🦥 Me and Sloth are slow. We are not fast.
+ナマケモノと私は遅いです。私たちは速くありません.
+🦦 Me and Otter are playful. We are not serious.
+カワウソと私は遊び好きです。私たちは真剣ではありません.
+🐿️ Me and Squirrel are small. We are not big.
+リスと私は小さいです。私たちは大きくありません.
+🦔 Me and Hedgehog are spiky. We are not smooth.
+ハリネズミと私はトゲトゲしています。私たちは滑らかではありません.
+🦇 Me and Bat are active. We are not lazy.
+コウモリと私は活発です。私たちは怠け者ではありません.`
         },
         {
             title: "Personal Pronouns Review with To Be",
