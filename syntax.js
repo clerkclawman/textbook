@@ -872,101 +872,101 @@ UFOたちは明るいです。それらは静かに飛びます。
         },
         {
             title: "I and You with To Be Drill",
-            content: `👦 I am happy. I am not sad.
+            content: `😊 I am happy. I am not sad.
 私は幸せです。私は悲しくありません。
-👧 You are kind. You are not mean.
+🤗 You are kind. You are not mean.
 あなたは親切です。あなたは意地悪ではありません。
-👦 I am tall. I am not short.
+📏 I am tall. I am not short.
 私は背が高いです。私は背が低くありません。
-👧 You are young. You are not old.
+👶 You are young. You are not old.
 あなたは若いです。あなたは年をとっていません。
-👦 I am strong. I am not weak.
-私は強いです。私は弱くありません。
-👧 You are fast. You are not slow.
+💪 I am strong. I am not weak.
+私は強いです。私は弱くありません.
+⚡ You are fast. You are not slow.
 あなたは速いです。あなたは遅くありません。
-👦 I am smart. I am not stupid.
-私は賢いです。私は愚かではありません。
-👧 You are busy. You are not free.
+🧠 I am smart. I am not stupid.
+私は賢いです。私は愚かではありません.
+🏃 You are busy. You are not free.
 あなたは忙しいです。あなたは自由ではありません。
-👦 I am hungry. I am not full.
+🍽️ I am hungry. I am not full.
 私はお腹が空いています。私は満腹ではありません。
-👧 You are tired. You are not energetic.
-あなたは疲れています。あなたは元気ではありません。
-👦 I am cold. I am not warm.
+😴 You are tired. You are not energetic.
+あなたは疲れています。あなたは元気ではありません.
+❄️ I am cold. I am not warm.
 私は寒いです。私は暖かくありません。
-👧 You are rich. You are not poor.
+💰 You are rich. You are not poor.
 あなたは金持ちです。あなたは貧しくありません。
-👦 I am healthy. I am not sick.
-私は健康です。私は病気ではありません。
-👧 You are brave. You are not scared.
-あなたは勇敢です。あなたは怖がっていません。
-👦 I am quiet. I am not loud.
-私は静かです。私は大声ではありません。
-👧 You are careful. You are not careless.
-あなたは慎重です。あなたは不注意ではありません。
-👦 I am honest. I am not dishonest.
-私は正直です。私は不正直ではありません。
-👧 You are patient. You are not impatient.
+💪 I am healthy. I am not sick.
+私は健康です。私は病気ではありません.
+🛡️ You are brave. You are not scared.
+あなたは勇敢です。あなたは怖がっていません.
+🤫 I am quiet. I am not loud.
+私は静かです。私は大声ではありません.
+👁️ You are careful. You are not careless.
+あなたは慎重です。あなたは不注意ではありません.
+🤝 I am honest. I am not dishonest.
+私は正直です。私は不正直ではありません.
+⏳ You are patient. You are not impatient.
 あなたは忍耐強いです。あなたは忍耐がありません。
-👦 I am friendly. I am not unfriendly.
+🤝 I am friendly. I am not unfriendly.
 私は友好的です。私は不友好的ではありません。
-👧 You are creative. You are not boring.
+🎨 You are creative. You are not boring.
 あなたは創造的です。あなたは退屈ではありません。
-👦 I am funny. You are serious too.
+😄 I am funny. You are serious too.
 私は面白いです。あなたも真面目です。
-👧 You are lucky. I am lucky too.
+🍀 You are lucky. I am lucky too.
 あなたは幸運です。私も幸運です。
-👦 I am famous. You are famous too.
+⭐ I am famous. You are famous too.
 私は有名です。あなたも有名です。
-👧 You are single. I am single too.
-あなたは独身です。私も独身です。
-👦 I am available. You are available too.
-私は利用可能です。あなたも利用可能です。
-👧 You are ready. I am ready too.
-あなたは準備ができています。私も準備ができています。
-👦 I am right. You are right too.
-私は正しいです。あなたも正しいです。
-👧 You are sure. I am sure too.
-あなたは確信しています。私も確信しています。
-👦 I am confident. You are confident too.
+💑 I am single. I am single too.
+あなたは独身です。私も独身です.
+✅ I am available. You are available too.
+私は利用可能です。あなたも利用可能です.
+✅ You are ready. I am ready too.
+あなたは準備ができています。私も準備ができています.
+✅ I am right. You are right too.
+私は正しいです。あなたも正しいです.
+✅ You are sure. I am sure too.
+あなたは確信しています。私も確信しています.
+🤝 I am confident. You are confident too.
 私は自信があります。あなたも自信があります。
-👧 You are relaxed. I am relaxed too.
-あなたはリラックスしています。私もリラックスしています。
-👦 I am happy. You are happy too.
-私は幸せです。あなたも幸せです。
-👧 You are sad. I am sad too.
-あなたは悲しいです。私も悲しいです。
-👦 I am not late. You are not late either.
+😌 I am relaxed. You are relaxed too.
+私はリラックスしています。あなたもリラックスしています。
+😊 I am happy. You are happy too.
+私は幸せです。あなたも幸せです.
+😞 You are sad. I am sad too.
+あなたは悲しいです。私も悲しいです.
+✅ I am not late. You are not late either.
 私は遅れていません。あなたも遅れていません。
-👧 You are not wrong. I am not wrong either.
+✅ You are not wrong. I am not wrong either.
 あなたは間違っていません。私も間違っていません。
-👦 I am not unsure. You are not unsure either.
-私は確信していません。あなたも確信していません。
-👧 You are not nervous. I am not nervous either.
-あなたは緊張していません。私も緊張していません。
-👦 I am not stressed. You are not stressed either.
+✅ I am not unsure. You are not unsure either.
+私は確信していません。あなたも確信していません.
+😰 You are not nervous. I am not nervous either.
+あなたは緊張していません。私も緊張していません.
+😌 I am not stressed. You are not stressed either.
 私はストレスを感じていません。あなたもストレスを感じていません。
-👧 You are not worried. I am not worried either.
+😟 You are not worried. I am not worried either.
 あなたは心配していません。私も心配していません。
-👦 I am tall, but I am not strong.
+📏 I am tall, but I am not strong.
 私は背が高いですが、強くありません。
-👧 You are young, but you are not fast.
+👶 You are young, but you are not fast.
 あなたは若いですが、速くありません。
-👦 I am smart, but I am not busy.
+🧠 I am smart, but I am not busy.
 私は賢いですが、忙しくありません。
-👧 You are kind, but you are not rich.
+🤝 You are kind, but you are not rich.
 あなたは親切ですが、金持ちではありません。
-👦 I am healthy, but I am not brave.
+💪 I am healthy, but I am not brave.
 私は健康ですが、勇敢ではありません。
-👧 You are quiet, but you are not honest.
+🤫 You are quiet, but you are not honest.
 あなたは静かですが、正直ではありません。
-👦 I am friendly, but I am not funny.
+🤝 I am friendly, but I am not funny.
 私は友好的ですが、面白くありません。
-👧 You are creative, but you are not lucky.
+🎨 You are creative, but you are not lucky.
 あなたは創造的ですが、幸運ではありません。
-👦 I am happy, but I am not famous.
+😊 I am happy, but I am not famous.
 私は幸せですが、有名ではありません。
-👧 You are ready, but you are not sure.
+✅ You are ready, but you are not sure.
 あなたは準備ができていますが、確信していません。`
         },
         {
