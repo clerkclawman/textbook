@@ -222,40 +222,40 @@ var syntax = {
         },
         {
             title: "Mixed Pronouns Drill",
-            content: `👦 I see you.
+            content: `👁️ I see you.
 私はあなたを見ます。
-👧 You like him.
+❤️ You like him.
 あなたは彼が好きです。
-👨 He helps her.
+🤝 He helps her.
 彼は彼女を助けます。
-👩 She knows them.
+🧠 She knows them.
 彼女は彼らを知っています。
-👪 We see us.
+👁️ We see us.
 私たちは私たちを見ます。
-👥 They thank you.
-彼らはあなたに感謝します。
-📝 This pleases me.
-これは私を喜ばせます。
-🐕 That annoys you.
-それはあなたを苛立たせます。
-⚽ These excite us.
-これらは私たちを興奮させます。
-🐱 Those bore them.
-それらは彼らを退屈させます。
-🥤 I call you.
+🙏 They thank you.
+彼らはあなたに感謝します.
+😊 This pleases me.
+これは私を喜ばせます.
+😠 That annoys you.
+それはあなたを苛立たせます.
+🎉 These excite us.
+これらは私たちを興奮させます.
+😒 Those bore them.
+それらは彼らを退屈させます.
+📞 I call you.
 私はあなたに電話します。
-🍞 You help me.
-あなたは私を助けます。
-📺 He finds it.
-彼はそれを見つけます。
-🎧 She hears us.
-彼女は私たちを聞きます。
-🐇 It follows me.
-それは私についてきます。
-🎤 We watch you.
-私たちはあなたを見ています。
-💃 They invite us.
-彼らは私たちを招待します。
+🤝 You help me.
+あなたは私を助けます.
+🔍 He finds it.
+彼はそれを見つけます.
+👂 She hears us.
+彼女は私たちを聞きます.
+🐕 It follows me.
+それは私についてきます.
+👀️ We watch you.
+私たちはあなたを見ています.
+📋 They invite us.
+彼らは私たちを招待します.
 🚪 I open it.
 私はそれを開けます。
 🪟 You close it.
@@ -263,75 +263,75 @@ var syntax = {
 🎁 He gives it.
 彼はそれをあげます。
 📸 She takes it.
-彼女はそれを取ります。
-🔊 It annoys you.
-それはあなたを苛立たせます。
+彼女はそれを取ります.
+😠 It annoys you.
+それはあなたを苛立たせます.
 📚 We teach them.
-私たちは彼らに教えます。
-🏠 They call us.
+私たちは彼らに教えます.
+📞 They call us.
 彼らは私たちに電話します。
-👫 I kiss you.
-私はあなたにキスします。
-✏️ You hug me.
-あなたは私を抱きしめます。
-🥤 He bites her.
-彼は彼女を噛みます。
-🎒 She kicks him.
-彼女は彼を蹴ります。
-📏 It chases us.
-それは私たちを追いかけます。
-😊 We scare them.
-私たちは彼らを怖がらせます。
-🎒 They love you.
-彼らはあなたを愛しています。
-🔍 I tickle you.
-私はあなたをくすぐります。
-🔍 You pinch me.
-あなたは私をつねります。
-🔴 He pokes it.
-彼はそれをつつきます。
-🔵 She pulls us.
-彼女は私たちを引っ張ります。
-🏃 It pushes me.
-それは私を押します。
-🚶 You catch us.
-あなたは私たちを捕まえます。
-⬆️ He throws them.
-彼は彼らを投げます。
-🪑 She hits us.
-彼女は私たちを叩きます。
-⬆️ It kicks you.
-それはあなたを蹴ります。
-🍽️ We chase them.
-私たちは彼らを追いかけます。
-🥛 They scare us.
-彼らは私たちを怖がらせます。
-📖 I love you.
-私はあなたを愛しています。
-✏️ You hate me.
-あなたは私が嫌いです。
-🎨 He likes it.
-彼はそれが好きです。
-📘 She wants us.
-彼女は私たちを望んでいます。
-🚲 It needs you.
+💋 I kiss you.
+私はあなたにキスします.
+🤗 You hug me.
+あなたは私を抱きしめます.
+🦷 He bites her.
+彼は彼女を噛みます.
+⚽ She kicks him.
+彼女は彼を蹴ります.
+🐕 It chases us.
+それは私たちを追いかけます.
+😱 We scare them.
+私たちは彼らを怖がらせます.
+❤️ They love you.
+彼らはあなたを愛しています.
+😄 I tickle you.
+私はあなたをくすぐります.
+😣 You pinch me.
+あなたは私をつねります.
+👆 He pokes it.
+彼はそれをつつきます.
+🤲 She pulls us.
+彼女は私たちを引っ張ります.
+🤲 It pushes me.
+それは私を押します.
+🤲 You catch us.
+あなたは私たちを捕まえます.
+🎾 He throws them.
+彼は彼らを投げます.
+👊 She hits us.
+彼女は私たちを叩きます.
+⚽ It kicks you.
+それはあなたを蹴ります.
+🏃 We chase them.
+私たちは彼らを追いかけます.
+😱 They scare us.
+彼らは私たちを怖がらせます.
+❤️ I love you.
+私はあなたを愛しています.
+😠 You hate me.
+あなたは私が嫌いです.
+😊 He likes it.
+彼はそれが好きです.
+🤗 She wants us.
+彼女は私たちを望んでいます.
+🔧 It needs you.
 それはあなたを必要としています。
-🧹 We help them.
-私たちは彼らを助けます。
-🛒 They watch us.
-彼らは私たちを見ています。
-🌞 I see you.
+🤝 We help them.
+私たちは彼らを助けます.
+👀️ They watch us.
+彼らは私たちを見ています.
+👁️ I see you.
 私はあなたを見ます。
-🌧️ You hear me.
-あなたは私の声を聞きます。
-🌳 He knows us.
-彼は私たちを知っています。
-🎶 She likes them.
-彼女は彼らが好きです。
-💡 It wants you.
+👂 You hear me.
+あなたは私の声を聞きます.
+🧠 He knows us.
+彼は私たちを知っています.
+😊 She likes them.
+彼女は彼らが好きです.
+🤗 It wants you.
 それはあなたを望んでいます。
 🤝 We help you.
-私たちはあなたを助けます。
+私たちはあなたを助けます.
 🌍 They see us.
 彼らは私たちを見ています。`
         },
