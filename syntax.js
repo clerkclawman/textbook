@@ -1117,19 +1117,7 @@ UFOたちは明るいです。それらは静かに飛びます。
 👥 They are stupid.
 彼らは愚かです。
 👦 I am weak.
-私は弱いです。
-👧 You are slow.
-あなたは遅いです。
-👦 He is poor.
-彼は貧しいです。
-👩 She is mean.
-彼女は意地悪です。
-🐱 It is quiet.
-それは静かです。
-👪 We are ugly.
-私たちは醜いです。
-👥 They are foolish.
-彼らは愚かです。`
+私は弱いです。`
         },
         {
             title: "Present Continuous Drill",
