@@ -432,112 +432,106 @@ var syntax = {
         },
         {
             title: "Article Pairs Drill",
-            content: `🐱 I see a cat. The cat runs.
-私は猫を見ます。その猫は走ります。
-🐶 You find a dog. The dog barks.
-あなたは犬を見つけます。その犬は吠えます。
-🐦 He watches a bird. The bird flies.
-彼は鳥を見ています。その鳥は飛びます。
-🐟 She catches a fish. The fish swims.
-彼女は魚を捕まえます。その魚は泳ぎます。
-🐰 It chases a rabbit. The rabbit jumps.
-それはウサギを追いかけます。そのウサギは跳びます。
-🐴 We see a horse. The horse eats grass.
-私たちは馬を見ます。その馬は草を食べます。
-🐄 They find a cow. The cow gives milk.
-彼らは牛を見つけます。その牛はミルクを出します。
-🐷 I feed a pig. The pig digs a hole.
-私は豚に餌をやります。その豚は穴を掘ります。
-🐑 You watch a sheep. The sheep stands on the hill.
-あなたは羊を見ています。その羊は丘の上に立っています。
-🐔 He sees a chicken. The chicken lays an egg.
-彼は鶏を見ます。その鶏は卵を産みます。
-📚 She reads a book. The book has pictures.
-彼女は本を読みます。その本には絵があります。
-✏️ I use a pencil. The pencil writes well.
-私は鉛筆を使います。その鉛筆はよく書けます。
-🖊️ You hold a pen. The pen has blue ink.
-あなたはペンを持ちます。そのペンは青いインクです。
-🧹 He finds a broom. The broom cleans the floor.
-彼はほうきを見つけます。そのほうきは床を掃除します。
-🪑 She sits on a chair. The chair is comfortable.
-彼女は椅子に座ります。その椅子は快適です。
-🎒 I carry a bag. The bag holds books.
-私はカバンを持ちます。そのカバンは本を入れます。
-🍎 You eat an apple. The apple is sweet.
-あなたはリンゴを食べます。そのリンゴは甘いです。
-🍊 He peels an orange. The orange tastes good.
-彼はオレンジの皮をむきます。そのオレンジは美味しいです。
-🍌 She eats a banana. The banana is yellow.
-彼女はバナナを食べます。そのバナナは黄色いです。
-🍞 I buy some bread. The bread is fresh.
-私はパンを買います。そのパンは新鮮です。
-🥚 You break an egg. The egg falls on the floor.
-あなたは卵を割ります。その卵は床に落ちます。
-🧁 He bakes a cake. The cake smells good.
-彼はケーキを焼きます。そのケーキはいい匂いがします。
-🍪 She eats a cookie. The cookie is chocolate.
-彼女はクッキーを食べます。そのクッキーはチョコレートです。
-🌳 I plant a tree. The tree grows tall.
-私は木を植えます。その木は高く育ちます。
-🌸 You pick a flower. The flower is beautiful.
-あなたは花を摘みます。その花は美しいです。
-☀️ He sees the sun. The sun shines bright.
-彼は太陽を見ます。その太陽は明るく輝きます。
-🌙 She watches the moon. The moon glows at night.
-彼女は月を見ています。その月は夜に輝きます。
-⭐ I see a star. The star twinkles in the sky.
-私は星を見ます。その星は空で瞬きます。
-☁️ You watch a cloud. The cloud floats in the sky.
-あなたは雲を見ています。その雲は空に浮かんでいます。
-🌧️ He feels the rain. The rain falls from the sky.
-彼は雨を感じます。その雨は空から降ります。
-❄️ She touches the snow. The snow covers the ground.
-彼女は雪に触れます。その雪は地面を覆います。
-👦 I see a boy. The boy kicks a ball.
-私は男の子を見ます。その男の子はボールを蹴ります。
-👧 You watch a girl. The girl holds a doll.
-あなたは女の子を見ています。その女の子は人形を持ちます。
-👨 He meets a man. The man drives a car.
-彼は男性に会います。その男性は車を運転します。
-👩 She sees a woman. The woman cooks a meal.
-彼女は女性を見ます。その女性は食事を作ります。
-👨‍🏫 I know a teacher. The teacher teaches a class.
-私は先生を知っています。その先生はクラスを教えます。
-👨‍🎓 You help a student. The student learns a lesson.
-あなたは学生を助けます。その学生はレッスンを学びます。
-👨‍⚕️ He visits a doctor. The doctor treats a patient.
-彼は医者を訪ねます。その医者は患者を治療します。
-👩‍⚕️ She sees a nurse. The nurse helps a patient.
-彼女は看護師を見ます。その看護師は患者を助けます。
-🚗 I fix a car. The car runs fast.
-私は車を修理します。その車は速く走ります。
-🚌 You drive a bus. The bus stops at the station.
-あなたはバスを運転します。そのバスは駅で止まります。
-🚆 He rides a train. The train moves on the tracks.
-彼は電車に乗ります。その電車は線路の上を動きます。
-🚲 She rides a bike. The bike goes on the path.
-彼女は自転車に乗ります。その自転車は道を走ります。
-🏠 I buy a house. The house stands on the street.
-私は家を買います。その家は通りの上にあります。
-🏢 You see a building. The building touches the sky.
-あなたはビルを見ます。そのビルは空に触れています。
-🚪 He opens a door. The door leads to a room.
-彼はドアを開けます。そのドアは部屋に繋がっています。
-🪟 She washes a window. The window shows the view.
-彼女は窓を洗います。その窓は景色を見せます。
-👁️ I use an eye. The eye sees a bird.
-私は目を使います。その目は鳥を見ます。
-👂 You listen with an ear. The ear hears a sound.
-あなたは耳で聞きます。その耳は音を聞きます。
-👃 He smells with a nose. The nose smells a flower.
-彼は鼻で匂いを嗅ぎます。その鼻は花の匂いを嗅ぎます。
-👄 She opens a mouth. The mouth eats an apple.
-彼女は口を開けます。その口はリンゴを食べます。
-🤚 I use a hand. The hand holds a pen.
-私は手を使います。その手はペンを持ちます。
-🦶 You kick with a foot. The foot kicks a ball.
-あなたは足で蹴ります。その足はボールを蹴ります。`
+            content: `👻 I see a ghost. The ghost floats.
+私は幽霊を見ます。その幽霊は浮遊します。
+🤖 You find a robot. The robot beeps.
+あなたはロボットを見つけます。そのロボットはビープ音を鳴らします。
+🦕 He watches a dinosaur. The dinosaur roars.
+彼は恐竜を見ています。その恐竜は咆哮します。
+👽 She catches an alien. The alien waves.
+彼女はエイリアンを捕まえます。そのエイリアンは手を振ります.
+👹 It chases a monster. The monster hides.
+それは怪物を追いかけます。その怪物は隠れます。
+🐉 We see a dragon. The dragon flies.
+私たちはドラゴンを見ます。そのドラゴンは飛びます。
+🦄 They find a unicorn. The unicorn runs.
+彼らはユニコーンを見つけます。そのユニコーンは走ります。
+🧟 I feed a zombie. The zombie walks.
+私はゾンビに餌をやります。そのゾンビは歩きます。
+🧛 You watch a vampire. The vampire sleeps.
+あなたは吸血鬼を見ています。その吸血鬼は眠ります。
+🧙 He sees a witch. The witch flies.
+彼は魔女を見ます。その魔女は飛びます。
+📖 She reads a spell. The spell works.
+彼女は呪文を読みます。その呪文は効きます。
+🪄 I use a wand. The wand glows.
+私は杖を使います。その杖は光ります.
+⚔️ You hold a sword. The sword shines.
+あなたは剣を持ちます。その剣は輝きます.
+🛡️ He finds a shield. The shield blocks.
+彼は盾を見つけます。その盾は防ぎます.
+👑 She sits on a throne. The throne is gold.
+彼女は玉座に座ります。その玉座は金です.
+💎 I carry a treasure. The treasure sparkles.
+私は宝物を持ちます。その宝物は輝きます.
+🍎 You eat a magic fruit. The fruit glows.
+あなたは魔法の果物を食べます。その果物は光ります.
+🍏 He peels a golden apple. The apple heals.
+彼は金のリンゴの皮をむきます。そのリンゴは癒やします.
+🍪 She eats a space cookie. The cookie floats.
+彼女は宇宙のクッキーを食べます。そのクッキーは浮遊します.
+🧪 I buy a magic potion. The potion bubbles.
+私は魔法の薬を買います。その薬は泡立ちます.
+💎 You break a crystal. The crystal shines.
+あなたはクリスタルを割ります。そのクリスタルは輝きます.
+🎂 He bakes a dragon cake. The cake breathes fire.
+彼はドラゴンのケーキを焼きます。そのケーキは火を吐きます.
+⭐ She eats a star cookie. The cookie twinkles.
+彼女は星のクッキーを食べます。そのクッキーは瞬きます.
+🌙 I plant a moon tree. The tree glows.
+私は月の木を植えます。その木は光ります.
+☀️ You pick a sun flower. The flower burns bright.
+あなたは太陽の花を摘みます。その花は明るく燃えます.
+☄️ He sees a comet. The comet zooms.
+彼は彗星を見ます。その彗星は急速に動きます.
+🌠 She watches a meteor. The meteor falls.
+彼女は流星を見ています。その流星は落ちます.
+🪐 I see a planet. The planet spins.
+私は惑星を見ます。その惑星は回転します.
+🌌 You watch a galaxy. The galaxy swirls.
+あなたは銀河を見ています。その銀河は渦を巻きます.
+✨ He feels the stardust. The stardust sparkles.
+彼は星屑を感じます。その星屑は輝きます.
+🌙 She touches the moonlight. The moonlight glows.
+彼女は月光に触れます。その月光は光ります.
+🚀 I see a rocket. The rocket launches.
+私はロケットを見ます。そのロケットは発射します.
+🛸 You watch a spaceship. The spaceship flies.
+あなたは宇宙船を見ています。その宇宙船は飛びます.
+👨‍🚀 He meets an astronaut. The astronaut floats.
+彼は宇宙飛行士に会います。その宇宙飛行士は浮遊します.
+✈️ She sees a pilot. The pilot steers.
+彼女はパイロットを見ます。そのパイロットは操縦します.
+🧙‍♂️ I know a wizard. The wizard casts spells.
+私は魔法使いを知っています。その魔法使いは呪文を唱えます.
+🦸 You help a hero. The hero saves the day.
+あなたはヒーローを助けます。そのヒーローは一日を救います.
+🏰 He visits a castle. The castle has towers.
+彼は城を訪れます。その城には塔があります.
+⚔️ She sees a knight. The knight fights.
+彼女は騎士を見ます。その騎士は戦います.
+⏰ I fix a time machine. The machine hums.
+私はタイムマシンを修理します。そのマシンは唸ります.
+🚗 You drive a flying car. The car zooms.
+あなたは空飛ぶ車を運転します。その車は急速に動きます.
+🧞 He rides a magic carpet. The carpet floats.
+彼は魔法の絨毯に乗ります。その絨毯は浮遊します.
+🐲 She rides a dragon. The dragon soars.
+彼女はドラゴンに乗ります。そのドラゴンは舞い上がります.
+🏚️ I buy a haunted house. The house creaks.
+私はお化け屋敷を買います。その家は軋みます.
+💎 You see a crystal castle. The castle shines.
+あなたはクリスタルの城を見ます。その城は輝きます.
+🚪 He opens a secret door. The door reveals gold.
+彼は秘密のドアを開けます。そのドアは金を明かします.
+🪞 She washes a magic mirror. The mirror shows truth.
+彼女は魔法の鏡を洗います。その鏡は真実を映します.
+👁️ I use a magic eye. The eye sees everything.
+私は魔法の目を使います。その目は全てを見ます.
+👂 You listen with elf ears. The ears hear whispers.
+あなたはエルフの耳で聞きます。その耳はささやきを聞きます.
+👃 He smells with a dragon nose. The nose smells treasure.
+彼はドラゴンの鼻で匂いを嗅ぎます。その鼻は宝物の匂いを嗅ぎます.`
         },
         {
             title: "To Be - Singular and Plural Drill",
