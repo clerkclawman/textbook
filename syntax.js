@@ -323,17 +323,7 @@ var syntax = {
 👁️ I see you.
 私はあなたを見ます。
 👂 You hear me.
-あなたは私の声を聞きます.
-🧠 He knows us.
-彼は私たちを知っています.
-😊 She likes them.
-彼女は彼らが好きです.
-🤗 It wants you.
-それはあなたを望んでいます。
-🤝 We help you.
-私たちはあなたを助けます.
-🌍 They see us.
-彼らは私たちを見ています。`
+あなたは私の声を聞きます。`
         },
         {
             title: "Singular and Plural Nouns Drill",
