@@ -777,97 +777,97 @@ UFOたちは明るいです。それらは静かに飛びます。
         },
         {
             title: "He and She with To Be Drill",
-            content: `👦 Ken is happy. He is not sad.
+            content: `😊 Ken is happy. He is not sad.
 ケンくんは幸せです。彼は悲しくありません。
-👧 Yumi is kind. She is not mean.
+🤗 Yumi is kind. She is not mean.
 ユミちゃんは親切です。彼女は意地悪ではありません。
-👨 Takashi is tall. He is not short.
+📏 Takashi is tall. He is not short.
 タカシくんは背が高いです。彼は背が低くありません。
-👩 Sakura is cute. She is not ugly.
+🌸 Sakura is cute. She is not ugly.
 サクラちゃんは可愛いです。彼女は醜くありません。
-👨 Hiroshi is young. He is not old.
+👶 Hiroshi is young. He is not old.
 ヒロシくんは若いです。彼は年をとっていません。
-👩 Aiko is wise. She is not foolish.
-アイコちゃんは賢明です。彼女は愚かではありません。
-👨 Yuji is busy. He is not free.
-ユウジくんは忙しいです。彼は自由ではありません。
-👩 Emi is relaxed. She is not stressed.
+🧠 Aiko is wise. She is not foolish.
+アイコちゃんは賢明です。彼女は愚かではありません.
+🏃 Yuji is busy. He is not free.
+ユウジくんは忙しいです。彼は自由ではありません.
+😌 Emi is relaxed. She is not stressed.
 エミちゃんはリラックスしています。彼女はストレスを感じていません。
-👨 Masato is hungry. He is not full.
-マサトくんはお腹が空いています。彼は満腹ではありません。
-👩 Kaori is energetic. She is not tired.
+🍽️ Masato is hungry. He is not full.
+マサトくんはお腹が空いています。彼は満腹ではありません.
+⚡ Kaori is energetic. She is not tired.
 カオリちゃんは元気です。彼女は疲れていません。
-👨 Kenji is cold. He is not warm.
+❄️ Kenji is cold. He is not warm.
 ケンジくんは寒いです。彼は暖かくありません。
-👩 Mika is gentle. She is not rough.
+🌸 Mika is gentle. She is not rough.
 ミカちゃんは優しいです。彼女は荒くありません。
-👨 Taro is rich. He is not poor.
+💰 Taro is rich. He is not poor.
 タロウくんは金持ちです。彼は貧しくありません。
-👩 Yuki is humble. She is not proud.
-ユキちゃんは謙虚です。彼女は傲慢ではありません。
-👨 Jiro is healthy. He is not sick.
+🙏 Yuki is humble. She is not proud.
+ユキちゃんは謙虚です。彼女は傲慢ではありません.
+💪 Jiro is healthy. He is not sick.
 ジロウくんは健康です。彼は病気ではありません。
-👩 Rina is weak. She is not strong.
-リナちゃんは弱いです。彼女は強くありません。
-👨 Saburo is loud. He is not quiet.
+💪 Rina is weak. She is not strong.
+リナちゃんは弱いです。彼女は強くありません.
+🔊 Saburo is loud. He is not quiet.
 サブロウくんは大声です。彼は静かではありません。
-👩 Hana is shy. She is not bold.
-ハナちゃんは恥ずかしがり屋です。彼女は大胆ではありません。
-👨 Shinji is careful. He is not careless.
-シンジくんは慎重です。彼は不注意ではありません。
-👩 Moe is clumsy. She is not graceful.
-モエちゃんは不器用です。彼女は優雅ではありません。
-👨 Daisuke is patient. He is not impatient.
-ダイスケくんは忍耐強いです。彼は忍耐がありません。
-👨 Yui is nervous. She is not calm.
+🙈 Hana is shy. She is not bold.
+ハナちゃんは恥ずかしがり屋です。彼女は大胆ではありません.
+👁️ Shinji is careful. He is not careless.
+シンジくんは慎重です。彼は不注意ではありません.
+🤕 Moe is clumsy. She is not graceful.
+モエちゃんは不器用です。彼女は優雅ではありません.
+⏳ Daisuke is patient. He is not impatient.
+ダイスケくんは忍耐強いです。彼は忍耐がありません.
+😰 Yui is nervous. She is not calm.
 ユイちゃんは緊張しています。彼女は冷静ではありません。
-👨 Kenta is friendly. He is not unfriendly.
-ケンタくんは友好的です。彼は不友好的ではありません。
-👩 Aoi is lonely. She is not popular.
+🤝 Kenta is friendly. He is not unfriendly.
+ケンタくんは友好的です。彼は不友好的ではありません.
+😔 Aoi is lonely. She is not popular.
 アオイちゃんは孤独です。彼女は人気がありません。
-👨 Yuta is creative. He is not boring.
-ユウタくんは創造的です。彼は退屈ではありません。
-👨 Rin is dull. She is not interesting.
+🎨 Yuta is creative. He is not boring.
+ユウタくんは創造的です。彼は退屈ではありません.
+😐 Rin is dull. She is not interesting.
 リンちゃんは退屈です。彼女は面白くありません。
-👨 Sota is lucky. He is not unlucky.
-ソウタくんは幸運です。彼は不運ではありません。
-👨 Mei is unfortunate. She is not lucky.
+🍀 Sota is lucky. He is not unlucky.
+ソウタくんは幸運です。彼は不運ではありません.
+😢 Mei is unfortunate. She is not lucky.
 メイちゃんは不幸です。彼女は幸運ではありません。
-👨 Ryo is famous. He is not unknown.
-リョウくんは有名です。彼は無名ではありません。
-👨 Hina is ordinary. She is not special.
-ヒナちゃんは普通です。彼女は特別ではありません。
-👨 Kai is single. He is not married.
+⭐ Ryo is famous. He is not unknown.
+リョウくんは有名です。彼は無名ではありません.
+🌟 Hina is ordinary. She is not special.
+ヒナちゃんは普通です。彼女は特別ではありません.
+💑 Kai is single. He is not married.
 カイくんは独身です。彼は結婚していません。
-👨 Saki is devoted. She is not unfaithful.
-サキちゃんは献身的です。彼女は不誠実ではありません。
-👨 Ren is open. He is not closed.
-レンくんは開放的です。彼は閉鎖的ではありません。
-👨 Yua is busy. She is not available.
-ユアちゃんは忙しいです。彼女は利用可能ではありません。
-👨 Haruto is ready. He is not late.
+💍 Saki is devoted. She is not unfaithful.
+サキちゃんは献身的です。彼女は不誠実ではありません.
+🚪 Ren is open. He is not closed.
+レンくんは開放的です。彼は閉鎖的ではありません.
+📋 Yua is busy. She is not available.
+ユアちゃんは忙しいです。彼女は利用可能ではありません.
+✅ Haruto is ready. He is not late.
 ハルトくんは準備ができています。彼は遅れていません。
-👨 Miu is sorry. She is not happy.
-ミウちゃんは申し訳ないと思っています。彼女は幸せではありません。
-👨 Sora is correct. He is not wrong.
-ソラくんは正確です。彼は間違っていません。
-👨 Koharu is mistaken. She is not right.
-コハルちゃんは間違っています。彼女は正しくありません。
-👨 Riko is certain. He is not unsure.
+🙇 Miu is sorry. She is not happy.
+ミウちゃんは申し訳ないと思っています。彼女は幸せではありません.
+✅ Sora is correct. He is not wrong.
+ソラくんは正確です。彼は間違っていません.
+❌ Koharu is mistaken. She is not right.
+コハルちゃんは間違っています。彼女は正しくありません.
+✅ Riko is certain. He is not unsure.
 リコくんは確実です。彼は確信していません。
-👨 Mirai is doubtful. She is not sure.
-ミライちゃんは疑っています。彼女は確信していません。
-👨 Daiki is confident. He is not nervous.
-ダイキくんは自信があります。彼は緊張していません。
-👨 Hina is anxious. She is not relaxed.
+❓ Mirai is doubtful. She is not sure.
+ミライちゃんは疑っています。彼女は確信していません.
+😎 Daiki is confident. He is not nervous.
+ダイキくんは自信があります。彼は緊張していません.
+😟 Hina is anxious. She is not relaxed.
 ヒナちゃんは不安です。彼女はリラックスしていません。
-👨 Kaito is peaceful. He is not stressed.
-カイトくんは平和的です。彼はストレスを感じていません。
-👨 Aoi is worried. She is not calm.
-アオイちゃんは心配しています。彼女は冷静ではありません。
-👨 Yuto is joyful. He is not sad.
-ユウトくんは喜んでいます。彼は悲しくありません。
-👨 Hina is unhappy. She is not happy.
+🕊 Kaito is peaceful. He is not stressed.
+カイトくんは平和的です。彼はストレスを感じていません.
+😟 Aoi is worried. She is not calm.
+アオイちゃんは心配しています。彼女は冷静ではありません.
+😊 Yuto is joyful. He is not sad.
+ユウトくんは喜んでいます。彼は悲しくありません.
+😞 Hina is unhappy. She is not happy.
 ヒナちゃんは不幸です。彼女は幸せではありません。`
         },
         {
