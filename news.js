@@ -6,206 +6,202 @@ var news = {
     stories: [
         {
             title: "Daily News Headlines - April 28, 2026",
-            content: `📰 New cherry blossom viewing spots open in Osaka parks
-大阪の公園に新しい桜の名所がオープン
-❓ Do you like viewing cherry blossoms in spring?
-春に桜を見るのは好きですか？
-📰 Popular ramen shop opens new location in Namba
-人気ラーメン店が難波に新しい店舗をオープン
-❓ What's your favorite type of ramen?
-好きなラーメンの種類は何ですか？
-📰 Osaka Castle Park gets new walking paths
-大阪城公園に新しい散歩道が完成
-❓ Do you like walking in parks?
-公園を散歩するのは好きですか？
-📰 New anime series starts this month
-今月新しいアニメシリーズが始まります
-❓ What anime are you watching now?
-今どんなアニメを見ていますか？
-📰 Weather forecast says warm weekend coming
-天気予報によると暖かい週末が来るそうです
-❓ What do you like to do on warm weekends?
-暖かい週末には何をするのが好きですか？
-📰 Local high school wins baseball tournament
-地元の高校が野球大会で優勝
-❓ Do you like watching baseball games?
-野球の試合を見るのは好きですか？
-📰 New shopping mall opens in Umeda
-梅田に新しいショッピングモールがオープン
-❓ Do you like shopping in big malls?
-大きなショッピングモールで買い物するのは好きですか？
-📰 Famous singer announces concert in Osaka
-有名な歌手が大阪でのコンサートを発表
-❓ Have you ever been to a concert?
-コンサートに行ったことがありますか？
-📰 New train line extension opens next week
-来週新しい鉄道延伸線が開通
-❓ Do you often take the train?
-電車にはよく乗りますか？
-📰 Popular cafe introduces new seasonal drinks
-人気カフェが新しい季節限定ドリンクを導入
-❓ Do you like trying new drinks?
-新しいドリンクを試すのは好きですか？
-📰 Osaka's famous food festival starts tomorrow
-大阪の有名なフードフェスティバルが明日から開催
-❓ What's your favorite festival food?
-好きなフェスティバルフードは何ですか？
-📰 New smartphone app helps tourists in Osaka
-大阪の観光客を助ける新しいスマートフォンアプリ
-❓ Do you use travel apps when you travel?
-旅行する時、旅行アプリを使いますか？
-📰 Local museum displays ancient artifacts
-地元の博物館が古代の遺物を展示
-❓ Do you like visiting museums?
-博物館に行くのは好きですか？
-📰 Weather is perfect for outdoor activities today
-今日はアウトドア活動に最適な天気です
-❓ What outdoor activities do you like?
-どんなアウトドア活動が好きですか？
-📰 New bookstore opens near Osaka Station
-大阪駅の近くに新しい本屋がオープン
-❓ Do you like reading books?
-本を読むのは好きですか？
-📰 Popular video game gets new update
-人気ビデオゲームが新しいアップデート
-❓ Do you like playing video games?
-ビデオゲームをするのは好きですか？
-📰 Local restaurant wins best food award
-地元のレストランがベストフード賞を受賞
-❓ What's your favorite type of restaurant?
-好きなレストランの種類は何ですか？
-📰 New bus route connects popular tourist spots
-人気観光地を結ぶ新しいバス路線
-❓ Do you like taking buses when you travel?
-旅行する時、バスに乗るのは好きですか？
-📰 Famous actor visits Osaka for movie premiere
-有名な俳優が映画の初日で大阪を訪問
-❓ Who's your favorite actor?
-好きな俳優は誰ですか？
-📰 Weather forecast says clear night for stargazing
-星を見るのに良い晴れた夜になるそうです
-❓ Do you like looking at stars?
-星を見るのは好きですか？
-📰 New fitness center opens in your neighborhood
-近所に新しいフィットネスセンターがオープン
-❓ Do you like exercising?
-運動するのは好きですか？
-📰 Popular band releases new album today
-人気バンドが今日新しいアルバムをリリース
-❓ What kind of music do you like?
-どんな音楽が好きですか？
-📰 Osaka's cherry blossoms are beautiful this year
-今年の大阪の桜は美しいです
-❓ Have you seen cherry blossoms this year?
-今年は桜を見ましたか？
-📰 New library opens with modern facilities
-最新の設備を持つ新しい図書館がオープン
-❓ Do you like going to the library?
-図書館に行くのは好きですか？
-📰 Local sports team wins important match
-地元のスポーツチームが重要な試合に勝利
-❓ Do you follow any sports teams?
-応援しているスポーツチームはありますか？
-📰 New coffee shop opens with unique drinks
-ユニークなドリンクの新しいコーヒーショップがオープン
-❓ Do you like drinking coffee?
-コーヒーを飲むのは好きですか？
-📰 Weather is getting warmer every day
-天気がだんだん暖かくなっています
-❓ What's your favorite season?
-好きな季節は何ですか？
-📰 Popular TV show starts new season
-人気テレビ番組が新しいシーズンを開始
-❓ What's your favorite TV show?
-好きなテレビ番組は何ですか？
-📰 New park opens with beautiful gardens
-美しい庭園のある新しい公園がオープン
-❓ Do you like visiting gardens?
-庭園を訪れるのは好きですか？
-📰 Local bakery wins best bread award
-地元のベーカリーがベストパン賞を受賞
-❓ Do you like fresh bread?
-新鮮なパンは好きですか？
-📰 Famous comedian coming to Osaka for show
-人気コメディアンがショーのために大阪に来ます
-❓ Do you like comedy shows?
-コメディショーは好きですか？
-📰 New movie theater opens with latest films
-最新の映画を上映する新しい映画館がオープン
-❓ Do you like going to the movies?
-映画館に行くのは好きですか？
-📰 Weather forecast says sunny week ahead
-来週は晴れるそうです
-❓ What do you do on sunny days?
-晴れた日には何をしますか？
-📰 Popular food truck festival in Osaka this weekend
-今週末、大阪で人気のフードトラックフェスティバル
-❓ Have you ever been to a food festival?
-フードフェスティバルに行ったことがありますか？
-📰 New art gallery opens in downtown Osaka
-大阪の中心部に新しいアートギャラリーがオープン
-❓ Do you like art?
-アートは好きですか？
-📰 Local school wins science competition
-地元の学校が科学コンテストで優勝
-❓ Did you like science in school?
-学校で科学は好きでしたか？
-📰 New shopping app becomes popular
-新しいショッピングアプリが人気に
-❓ Do you use shopping apps?
-ショッピングアプリを使いますか？
-📰 Weather is nice for walking in the city
-街を歩くのに良い天気です
-❓ Do you like walking in the city?
-街を歩くのは好きですか？
-📰 Popular anime movie comes to theaters
-人気アニメ映画が映画館で上映開始
-❓ What's your favorite anime movie?
-好きなアニメ映画は何ですか？
-📰 New convenience store opens 24 hours
-24時間営業の新しいコンビニがオープン
-❓ How often do you go to convenience stores?
-コンビニにはどのくらい行きますか？
-📰 Local event brings community together
-地元のイベントが地域社会を結びつけます
-❓ Do you like community events?
-地域のイベントは好きですか？
-📰 New game center opens with latest games
-最新のゲームのある新しいゲームセンターがオープン
-❓ Do you like going to game centers?
-ゲームセンターに行くのは好きですか？
-📰 Weather forecast says beautiful sunset expected
-美しい夕日が期待できるそうです
-❓ Do you like watching sunsets?
-夕日を見るのは好きですか？
-📰 Popular musician releases new song
-人気ミュージシャンが新しい曲をリリース
-❓ What's your favorite song?
-好きな曲は何ですか？
-📰 New restaurant opens with unique food
-ユニークな料理の新しいレストランがオープン
-❓ Do you like trying new foods?
-新しい料理を試すのは好きですか？
-📰 Local festival announced for next month
-来月の地元のお祭りが発表されました
-❓ Do you like going to festivals?
-お祭りに行くのは好きですか？
-📰 New smartphone released today
-新しいスマートフォンが今日発売されました
-❓ Do you want to get a new smartphone?
-新しいスマートフォンが欲しいですか？
-📰 Weather is perfect for a picnic
-ピクニックに最適な天気です
-❓ Have you ever been on a picnic?
-ピクニックに行ったことがありますか？
-📰 Popular sports player visits local school
-有名なスポーツ選手が地元の学校を訪問
-❓ Who's your favorite sports player?
-好きなスポーツ選手は誰ですか？
-📰 New train station opens in Osaka
-大阪に新しい駅が開業
-❓ Have you ever been to a new train station?
-新しい駅に行ったことがありますか？`
+            content: `📰 Honda changes EV goals for 2040
+ホンダが2040年のEV目標を変更
+❓ Do you think electric cars are the future?
+電気自動車は未来だと思いますか？
+📰 Go player wins important tournament title
+囲碁の選手が重要な大会で優勝
+❓ Do you like playing board games?
+ボードゲームをするのは好きですか？
+📰 Spring awards honor 603 people in Japan
+日本で603人が春の褒章を受賞
+❓ What kind of achievements should be honored?
+どのような成果が表彰されるべきだと思いますか？
+📰 Snowboarder wins MVP award at Olympics
+スノーボーダーがオリンピックでMVPを受賞
+❓ Do you like winter sports?
+冬のスポーツは好きですか？
+📰 Soccer team changes coach after poor results
+サッカーチームが成績不振で監督を交代
+❓ Do you think changing coaches helps teams?
+監督を変えるのはチームの役に立ちますか？
+📰 Famous athlete retires from professional sports
+有名なアスリートが現役を引退
+❓ How do you feel when athletes retire?
+アスリートが引退する時どう思いますか？
+📰 New technology helps fight forest fires
+新しい技術が山火事の消火に役立つ
+❓ What technology helps protect nature?
+自然を守る技術は何だと思いますか？
+📰 Oil prices rise above 100 dollars
+原油価格が100ドルを超える
+❓ How do high oil prices affect your life?
+高い原油価格はあなたの生活にどう影響しますか？
+📰 Japanese company develops new car strategy
+日本の会社が新しい自動車戦略を開発
+❓ What makes a good car company?
+良い自動車会社の条件は何ですか？
+📰 Sports fans celebrate team victories
+スポーツファンがチームの勝利を祝う
+❓ Do you celebrate when your favorite team wins?
+好きなチームが勝った時、祝いますか？
+📰 Traditional games remain popular in Japan
+伝統的なゲームが日本で人気
+❓ What traditional games do you know?
+どんな伝統的なゲームを知っていますか？
+📰 Athletes prepare for next Olympics
+アスリートが次のオリンピックに向けて準備
+❓ Which Olympic sports do you like to watch?
+見たいオリンピック競技は何ですか？
+📰 Company leaders discuss business strategy
+会社のリーダーがビジネス戦略を議論
+❓ What makes a good business strategy?
+良いビジネス戦略の条件は何ですか？
+📰 Sports news brings excitement to fans
+スポーツニュースがファンに興奮をもたらす
+❓ What sports news interests you most?
+どんなスポーツニュースに興味がありますか？
+📰 Technology companies change their plans
+技術会社が計画を変更
+❓ Why do companies change their plans?
+なぜ会社は計画を変えるのですか？
+📰 People receive awards for their achievements
+人々が成果に対して賞を受ける
+❓ What achievement would you like to be awarded for?
+どのような成果で賞を受けたいですか？
+📰 Winter sports become more popular
+冬のスポーツがより人気に
+❓ Have you ever tried winter sports?
+冬のスポーツをしたことがありますか？
+📰 Business news affects the economy
+ビジネスニュースが経済に影響
+❓ Do you follow business news?
+ビジネスニュースを追っていますか？
+📰 Sports teams prepare for new season
+スポーツチームが新しいシーズンに向けて準備
+❓ What makes a sports team successful?
+スポーツチームを成功させるものは何ですか？
+📰 New awards recognize people's contributions
+新しい賞が人々の貢献を認める
+❓ Who deserves an award in your community?
+あなたの地域で誰が賞を受けるべきですか？
+📰 Car companies face many challenges
+自動車会社は多くの課題に直面
+❓ What challenges do car companies face?
+自動車会社はどのような課題に直面していますか？
+📰 Sports events bring people together
+スポーツイベントが人々を結びつける
+❓ Do sports events help people make friends?
+スポーツイベントは人々が友達を作るのに役立ちますか？
+📰 Technology changes how we live
+技術が私たちの生活の仕方を変える
+❓ What technology changed your life the most?
+どの技術があなたの生活を最も変えましたか？
+📰 Athletes work hard to achieve their goals
+アスリートは目標達成のために努力する
+❓ What motivates people to work hard?
+人々を努力させる動機は何ですか？
+📰 Business decisions affect many people
+ビジネスの決定は多くの人に影響
+❓ Should companies think about people or profits?
+会社は人々か利益のどちらを考えるべきですか？
+📰 Sports teach us about teamwork
+スポーツはチームワークについて教えてくれる
+❓ What did you learn from playing sports?
+スポーツから何を学びましたか？
+📰 Awards celebrate excellence in various fields
+賞は様々な分野での卓越性を祝う
+❓ What field deserves more recognition?
+どの分野がより多くの認識を受けるべきですか？
+📰 Car industry faces big changes
+自動車産業は大きな変化に直面
+❓ What kind of car do you want in the future?
+将来どんな車が欲しいですか？
+📰 Sports fans show their support in many ways
+スポーツファンは様々な方法で支持を示す
+❓ How do you support your favorite team?
+好きなチームをどのように応援しますか？
+📰 New ideas help solve old problems
+新しいアイデアが古い問題の解決に役立つ
+❓ What problem needs a new solution?
+どの問題に新しい解決策が必要ですか？
+📰 Athletes inspire young people
+アスリートは若者にインスピレーションを与える
+❓ Who inspired you when you were young?
+若かった時、誰にインスピレーションを受けましたか？
+📰 Business success requires good planning
+ビジネスの成功には良い計画が必要
+❓ What makes a plan successful?
+計画を成功させるものは何ですか？
+📰 Sports competitions create exciting moments
+スポーツの競技がエキサイティングな瞬間を作る
+❓ What's the most exciting sports moment you've seen?
+見た中で最もエキサイティングなスポーツの瞬間は何ですか？
+📰 Technology helps us communicate better
+技術が私たちのコミュニケーションを改善
+❓ How has technology changed communication?
+技術はコミュニケーションをどのように変えましたか？
+📰 Awards recognize hard work and dedication
+賞は努力と献身を認める
+❓ What hard work deserves recognition?
+どのような努力が認識されるべきですか？
+📰 Car companies develop new technologies
+自動車会社が新しい技術を開発
+❓ What new car technology interests you?
+どの新しい自動車技術に興味がありますか？
+📰 Sports bring joy to many people
+スポーツは多くの人に喜びをもたらす
+❓ What brings you joy?
+何があなたに喜びをもたらしますか？
+📰 Business leaders make important decisions
+ビジネスリーダーが重要な決定を下す
+❓ What makes a good leader?
+良いリーダーの条件は何ですか？
+📰 Traditional games teach us about culture
+伝統的なゲームは文化について教えてくれる
+❓ What games did you play as a child?
+子供の頃、どんなゲームをしましたか？
+📰 Athletes overcome many obstacles
+アスリートは多くの障害を克服
+❓ What obstacles have you overcome?
+どのような障害を克服しましたか？
+📰 Technology changes how we work
+技術が私たちの働き方を変える
+❓ How has technology changed your work or study?
+技術はあなたの仕事や勉強をどのように変えましたか？
+📰 Sports create memorable experiences
+スポーツが記憶に残る体験を作る
+❓ What's your favorite sports memory?
+好きなスポーツの思い出は何ですか？
+📰 Awards encourage people to do their best
+賞は人々に最善を尽くすよう励ます
+❓ What encourages you to do your best?
+あなたに最善を尽くすよう励ますものは何ですか？
+📰 Car industry faces environmental challenges
+自動車産業は環境の課題に直面
+❓ Should cars be more environmentally friendly?
+自動車はより環境に優しくあるべきですか？
+📰 Sports teach us about fair play
+スポーツはフェアプレーについて教えてくれる
+❓ Is fair play important in life?
+人生でフェアプレーは重要ですか？
+📰 Technology helps us stay connected
+技術が私たちのつながりを維持
+❓ How do you stay connected with friends?
+友達とどのように連絡を取っていますか？
+📰 Awards recognize different kinds of success
+賞は様々な種類の成功を認める
+❓ What kind of success is most important?
+どの種類の成功が最も重要ですか？
+📰 Car companies compete globally
+自動車会社は世界的に競争
+❓ Should companies compete or cooperate?
+会社は競争すべきか協力すべきですか？
+📰 Sports bring people from different countries together
+スポーツが異なる国の人々を結びつける
+❓ Do sports help people understand other cultures?
+スポーツは人々が他の文化を理解するのに役立ちますか？`
         }
     ]
 };
