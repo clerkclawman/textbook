@@ -111,15 +111,7 @@ var syntax = {
 🌧️ You feel the rain.
 あなたは雨を感じます。
 ⛰️ He climbs a mountain.
-彼は山を登ります。
-🎶 She plays music.
-彼女は音楽を演奏します。
-💡 It lights a room.
-それは部屋を照らします。
-🤝 We help a friend.
-私たちは友達を助けます。
-🌍 They visit a planet.
-彼らは惑星を訪れます。`
+彼は山を登ります。`
         },
         {
             title: "Object Pronouns Drill",
