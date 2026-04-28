@@ -210,7 +210,17 @@ var syntax = {
 🪲 A beetle needs them.
 甲虫はそれらが必要です。
 🦋 A butterfly wants you.
-蝶はあなたを望んでいます。`
+蝶はあなたを望んでいます。
+🐝 A bee calls me.
+蜂は私に電話します。
+🐸 A frog texts you.
+カエルはあなたにメッセージを送ります。
+🐰 A rabbit emails him.
+ウサギは彼にメールを送ります。
+🐱 A cat messages her.
+猫は彼女にメッセージを送ります。
+🐶 A dog visits us.
+犬は私たちを訪れます。`
         },
         {
             title: "Mixed Pronouns Drill",
@@ -414,7 +424,11 @@ var syntax = {
 🌍 The world watches a bear.
 世界は熊を見ています。
 🌍 Fifteen worlds watch bears.
-15の世界が熊を見ています。`
+15の世界が熊を見ています。
+🌙 The moon sees a star.
+月は星を見ます。
+🌙 Sixteen moons see stars.
+16の月が星を見ます。`
         },
         {
             title: "Article Pairs Drill",
@@ -600,7 +614,33 @@ UFOは明るいです。UFOたちは明るいです。
 🦢 The swan is white. The swans are white.
 白鳥は白いです。白鳥たちは白いです。
 🦩 The owl is wise. The owls are wise.
-フクロウは賢いです。フクロウたちは賢いです。`
+フクロウは賢いです。フクロウたちは賢いです。
+🐻 The bear is big. The bears are big.
+熊は大きいです。熊たちは大きいです。
+🦊 The fox is smart. The foxes are smart.
+キツネは賢いです。キツネたちは賢いです。
+🐒 The monkey is active. The monkeys are active.
+猿は活発です。猿たちは活発です。
+🦌 The deer is fast. The deer are fast.
+鹿は速いです。鹿たちは速いです。
+🦓 The zebra is striped. The zebras are striped.
+シマウマは縞模様です。シマウマたちは縞模様です。
+🦒 The giraffe is tall. The giraffes are tall.
+キリンは背が高いです。キリンたちは背が高いです。
+🐘 The elephant is heavy. The elephants are heavy.
+象は重いです。象たちは重いです。
+🦏 The rhino is strong. The rhinos are strong.
+サイは強いです。サイたちは強いです。
+🦛 The hippo is big. The hippos are big.
+カバは大きいです。カバたちは大きいです。
+🐃 The camel is fast. The camels are fast.
+ラクダは速いです。ラクダたちは速いです。
+🦘 The koala is cute. The koalas are cute.
+コアラは可愛いです。コアラたちは可愛いです。
+🦥 The sloth is slow. The sloths are slow.
+ナマケモノは遅いです。ナマケモノたちは遅いです。
+🦦 The otter is playful. The otters are playful.
+カワウソは遊び好きです。カワウソたちは遊び好きです。`
         },
         {
             title: "It and They Pronoun Drill",
@@ -798,7 +838,19 @@ UFOたちは明るいです。それらは静かに飛びます。
 😊 Yuto is joyful. He is not sad.
 ユウトくんは喜んでいます。彼は悲しくありません.
 😞 Hina is unhappy. She is not happy.
-ヒナちゃんは不幸です。彼女は幸せではありません。`
+ヒナちゃんは不幸です。彼女は幸せではありません。
+🎵 Hayato is musical. He is not tone-deaf.
+ハヤトくんは音楽的です。彼は音痴ではありません。
+📚 Erika is studious. She is not lazy.
+エリカちゃんは勉強熱心です。彼女は怠け者ではありません。
+🏃 Takumi is athletic. He is not weak.
+タクミくんは運動神経がいいです。彼は弱くありません。
+🎭 Mio is dramatic. She is not boring.
+ミオちゃんはドラマチックです。彼女は退屈ではありません。
+🔬 Keisuke is scientific. He is not artistic.
+ケイスケくんは科学的です。彼は芸術的ではありません。
+🌸 Sakura is elegant. She is not clumsy.
+サクラちゃんは優雅です。彼女は不器用ではありません。`
         },
         {
             title: "I and You with To Be Drill",
@@ -897,7 +949,15 @@ UFOたちは明るいです。それらは静かに飛びます。
 😊 I am happy, but I am not famous.
 私は幸せですが、有名ではありません。
 ✅ You are ready, but you are not sure.
-あなたは準備ができていますが、確信していません。`
+あなたは準備ができていますが、確信していません。
+🎵 I am musical, but I am not famous.
+私は音楽的ですが、有名ではありません。
+📚 You are studious, but you are not smart.
+あなたは勉強熱心ですが、賢くありません。
+🏃 I am athletic, but I am not fast.
+私は運動神経がいいですが、速くありません。
+🎭 You are dramatic, but you are not loud.
+あなたはドラマチックですが、大声ではありません。`
         },
         {
             title: "Me and X and We with To Be Drill",
@@ -992,7 +1052,15 @@ UFOたちは明るいです。それらは静かに飛びます。
 👦 Me and Yuto are joyful. We are not sad.
 ユウトくんと私は喜んでいます。私たちは悲しくありません。
 👧 Me and Hina are unhappy. We are not happy.
-ヒナちゃんと私は不幸です。私たちは幸せではありません。`
+ヒナちゃんと私は不幸です。私たちは幸せではありません。
+👦 Me and Hayato are musical. We are not tone-deaf.
+ハヤトくんと私は音楽的です。私たちは音痴ではありません。
+👧 Me and Erika are studious. We are not lazy.
+エリカちゃんと私は勉強熱心です。私たちは怠け者ではありません。
+👦 Me and Takumi are athletic. We are not weak.
+タクミくんと私は運動神経がいいです。私たちは弱くありません。
+👧 Me and Mio are dramatic. We are not boring.
+ミオちゃんと私はドラマチックです。私たちは退屈ではありません。`
         },
         {
             title: "Personal Pronouns Review with To Be",
