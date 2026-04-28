@@ -1361,35 +1361,7 @@ UFOたちは明るいです。それらは静かに飛びます。
 🐯 The tiger is fast.
 トラは速いです。
 🐯 The tiger was fast.
-トラは速かったです。
-🐯 The fast tiger hunts.
-速いトラが狩りをします。
-🐯 The tiger was hungry, but now it is full.
-トラはお腹が空いていましたが、今は満腹です。
-🐻 The bear is big.
-熊は大きいです。
-🐻 The bear was big.
-熊は大きかったです。
-🐻 The big bear sleeps.
-大きな熊が寝ています。
-🐻 The bear was angry, but now it is calm.
-熊は怒っていましたが、今は冷静です。
-🦊 The fox is smart.
-キツネは賢いです。
-🦊 The fox was smart.
-キツネは賢かったです。
-🦊 The smart fox runs.
-賢いキツネが走ります。
-🦊 The fox was scared, but now it is brave.
-キツネは怖がっていましたが、今は勇敢です。
-🐒 The monkey is active.
-猿は活発です。
-🐒 The monkey was active.
-猿は活発でした。
-🐒 The active monkey jumps.
-活発な猿が跳びます。
-🐒 The monkey was sad, but now it is happy.
-猿は悲しかったですが、今は幸せです。`
+トラは速かったです。`
         }
     ]
 };
