@@ -539,7 +539,9 @@ var syntax = {
 👂 He hears with a fairy ear. The ear hears music.
 彼は妖精の耳で聞きます。その耳は音楽を聞きます.
 👃 I smell with a phoenix nose. The nose smells magic.
-私はフェニックスの鼻で匂いを嗅ぎます。その鼻は魔法の匂いを嗅ぎます.`
+私はフェニックスの鼻で匂いを嗅ぎます。その鼻は魔法の匂いを嗅ぎます.
+👄 You taste with a vampire tongue. The tongue tastes blood.
+あなたは吸血鬼の舌で味わいます。その舌は血の味をします.`
         },
         {
             title: "To Be - Singular and Plural Drill",
@@ -950,12 +952,6 @@ UFOは明るいです。彼女は暗くありません.
 あなたは可愛いです。私は醜くありません.
 🦥 I am slow. You are not fast.
 私は遅いです。あなたは速くありません.
-🦦 You are playful. I am not serious.
-あなたは遊び好きです。私は真剣ではありません.
-🐿️ I am small. You are not big.
-私は小さいです。あなたは大きくありません.
-🦔 You are spiky. I am not smooth.
-あなたはトゲトゲしています。私は滑らかではありません.
 🦇 I am active. You are not lazy.
 私は活発です。あなたは怠け者ではありません.`
         },
