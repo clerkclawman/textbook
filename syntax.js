@@ -1200,209 +1200,215 @@ UFOと私は明るいです。私たちは暗くありません.
         },
         {
             title: "Personal Pronouns Review with To Be",
-            content: `👦 I am happy.
-私は幸せです。
-👧 You are kind.
-あなたは親切です。
-👦 He is tall.
-彼は背が高いです。
-👩 She is smart.
-彼女は賢いです。
-🐱 It is big.
-それは大きいです。
-👪 We are strong.
-私たちは強いです。
-👥 They are fast.
-彼らは速いです。
-👦 I am rich.
-私は金持ちです。
-👧 You are young.
-あなたは若いです。
-👦 He is brave.
-彼は勇敢です。
-👩 She is beautiful.
-彼女は美しいです。
-🐱 It is small.
-それは小さいです。
-👪 We are lucky.
-私たちは幸運です。
-👥 They are healthy.
-彼らは健康です。
-👦 I am busy.
-私は忙しいです。
-👧 You are quiet.
-あなたは静かです。
-👦 He is careful.
-彼は慎重です。
-👩 She is patient.
-彼女は忍耐強いです。
-🐱 It is cold.
-それは寒いです。
-👪 We are honest.
-私たちは正直です。
-👥 They are gentle.
-彼らは優しいです。
-👦 I am confident.
-私は自信があります。
-👧 You are relaxed.
-あなたはリラックスしています。
-👦 He is creative.
-彼は創造的です。
-👩 She is generous.
-彼女は寛大です。
-🐱 It is warm.
-それは暖かいです。
-👪 We are friendly.
-私たちは友好的です。
-👥 They are kind.
-彼らは親切です。
-👦 I am short.
-私は背が低いです。
-👧 You are old.
-あなたは年をとっています。
-👦 He is free.
-彼は自由です。
-👩 She is scared.
-彼女は怖がっています。
-🐱 It is hungry.
-それはお腹が空いています。
-👪 We are unlucky.
-私たちは不運です。
-👥 They are careless.
-彼らは不注意です。
-👦 I am late.
-私は遅れています。
-👧 You are nervous.
-あなたは緊張しています。
-👦 He is stressed.
-彼はストレスを感じています。
-👩 She is boring.
-彼女は退屈です。
-🐱 It is full.
-それは満腹です。
-👪 We are dishonest.
-私たちは不正直です。
-👥 They are impatient.
-彼らは忍耐がありません。
-👦 I am unfriendly.
-私は不友好的です。
-👧 You are sick.
-あなたは病気です。
-👦 He is sad.
-彼は悲しいです。
-👩 She is selfish.
-彼女は利己的です。
-🐱 It is loud.
-それは大声です。
-👪 We are rough.
-私たちは荒いです。
-👥 They are stupid.
-彼らは愚かです。
-👦 I am weak.
-私は弱いです。`
+            content: `👻 I am scary. I am not friendly.
+私は怖いです。私は友好的ではありません.
+🤖 You are cool. You are not boring.
+あなたはかっこいいです。あなたは退屈ではありません.
+🦕 He is big. He is not small.
+彼は大きいです。彼は小さくありません.
+🦄 She is beautiful. She is not ugly.
+彼女は美しいです。彼女は醜くありません.
+🐱 It is huge. It is not tiny.
+それは巨大です。それは小さくありません.
+👪 We are strong. We are not weak.
+私たちは強いです。私たちは弱くありません.
+👥 They are fast. They are not slow.
+彼らは速いです。彼らは遅くありません.
+👦 I am rich. I am not poor.
+私は金持ちです。私は貧しくありません.
+👧 You are young. You are not old.
+あなたは若いです。あなたは年をとっていません.
+👦 He is brave. He is not scared.
+彼は勇敢です。彼は怖がっていません.
+👩 She is smart. She is not dumb.
+彼女は賢いです。彼女は馬鹿ではありません.
+🐱 It is small. It is not big.
+それは小さいです。それは大きくありません.
+👪 We are lucky. We are not unlucky.
+私たちは幸運です。私たちは不運ではありません.
+👥 They are healthy. They are not sick.
+彼らは健康です。彼らは病気ではありません.
+👦 I am busy. I am not free.
+私は忙しいです。私は自由ではありません.
+👧 You are quiet. You are not loud.
+あなたは静かです。あなたは大声ではありません.
+👦 He is careful. He is not careless.
+彼は慎重です。彼は不注意ではありません.
+👩 She is patient. She is not impatient.
+彼女は忍耐強いです。彼女は忍耐がありません.
+🐱 It is cold. It is not hot.
+それは寒いです。それは熱いではありません.
+👪 We are honest. We are not dishonest.
+私たちは正直です。私たちは不正直ではありません.
+👥 They are gentle. They are rough.
+彼らは優しいです。彼らは荒いです.
+👦 I am confident. I am not nervous.
+私は自信があります。私は緊張していません.
+👧 You are relaxed. You are not stressed.
+あなたはリラックスしています。あなたはストレスを感じていません。
+👦 He is creative. He is not boring.
+彼は創造的です。彼は退屈ではありません.
+👩 She is generous. He is not stingy.
+彼女は寛大です。彼はケチです.
+🐱 It is warm. It is not cold.
+それは暖かいです。それは寒くありません.
+👪 We are friendly. We are not unfriendly.
+私たちは友好的です。私たちは不友好的ではありません.
+👥 They are kind. They are mean.
+彼らは親切です。彼らは意地悪です.
+👦 I am short. I am not tall.
+私は背が低いです。私は背が高いではありません.
+👧 You are old. You are not young.
+あなたは年をとっています。あなたは若くありません.
+👦 He is free. He is not busy.
+彼は自由です。彼は忙しくありません.
+👩 She is scared. He is not brave.
+彼女は怖がっています。彼は勇敢ではありません.
+🐱 It is hungry. It is not full.
+それはお腹が空いています。それは満腹ではありません.
+👪 We are unlucky. We are lucky.
+私たちは不運です。私たちは幸運です。
+👥 They are careless. They are careful.
+彼らは不注意です。彼らは慎重です.
+👦 I am late. I am early.
+私は遅れています。私は早いです.
+👧 You are nervous. You are calm.
+あなたは緊張しています。あなたは冷静です。
+👦 He is stressed. He is relaxed.
+彼はストレスを感じています。彼はリラックスしています。
+👩 She is boring. He is interesting.
+彼女は退屈です。彼は面白いです。
+🐱 It is full. It is empty.
+それは満腹です。それは空です。
+👪 We are dishonest. We are honest.
+私たちは不正直です。私たちは正直です.
+👥 They are impatient. They are patient.
+彼らは忍耐がありません。彼らは忍耐強いです.
+👦 I am unfriendly. I am friendly.
+私は不友好的です。私は友好的です.
+👧 You are sick. He is healthy.
+あなたは病気です。彼は健康です.
+👦 He is sad. He is happy.
+彼は悲しいです。彼は幸せです.
+👩 She is selfish. He is kind.
+彼女は利己的です。彼は親切です.
+🐱 It is loud. It is quiet.
+それは大声です。それは静かです。
+👪 We are rough. They are gentle.
+私たちは荒いです。彼らは優しいです.
+👥 They are stupid. They are smart.
+彼らは愚かです。彼らは賢いです.
+👦 I am weak. I am strong.
+私は弱いです。私は強いです。`
         },
         {
             title: "Present Continuous Drill",
-            content: `👦 I am eating an apple.
-私はリンゴを食べています。
-👧 You are drinking water.
-あなたは水を飲んでいます。
-👦 He is reading a book.
-彼は本を読んでいます。
-👩 She is writing a letter.
-彼女は手紙を書いています。
-🐱 It is chasing a mouse.
-それはネズミを追いかけています。
-👪 We are playing soccer.
-私たちはサッカーをしています。
-👥 They are watching TV.
-彼らはテレビを見ています。
-👦 I am cooking dinner.
-私は夕食を作っています。
-👧 You are cleaning the room.
-あなたは部屋を掃除しています。
-👦 He is washing the car.
-彼は車を洗っています。
-👩 She is painting a picture.
-彼女は絵を描いています。
-🐱 It is catching a ball.
-それはボールを捕まえています。
-👪 We are studying English.
-私たちは英語を勉強しています。
-👥 They are listening to music.
-彼らは音楽を聞いています。
-👦 I am buying a gift.
-私はプレゼントを買っています。
-👧 You are selling flowers.
-あなたは花を売っています。
-👦 He is teaching math.
-彼は数学を教えています。
-👩 She is learning Japanese.
-彼女は日本語を学んでいます。
-🐱 It is eating fish.
-それは魚を食べています。
-👪 We are building a house.
-私たちは家を建てています。
-👥 They are fixing a bike.
-彼らは自転車を直しています。
-👦 I am opening the door.
-私はドアを開けています。
-👧 You are closing the window.
-あなたは窓を閉めています。
-👦 He is giving a present.
-彼はプレゼントを渡しています。
-👩 She is taking a photo.
-彼女は写真を撮っています。
-🐱 It is making noise.
-それは音を出しています。
-👪 We are doing homework.
-私たちは宿題をしています。
-👥 They are going home.
-彼らは家に帰っています。
-👦 I am drawing a cat.
-私は猫を描いています。
-👧 You are singing a song.
-あなたは歌を歌っています。
-👦 He is dancing with friends.
-彼は友達と踊っています。
-👩 She is running a race.
-彼女はレースを走っています。
-🐱 It is jumping over a fence.
-それはフェンスを飛び越えています。
-👪 We are eating lunch.
-私たちは昼ご飯を食べています。
-👥 They are drinking milk.
-彼らは牛乳を飲んでいます。
-👦 I am reading a story.
-私は物語を読んでいます。
-👧 You are writing a report.
-あなたはレポートを書いています。
-👦 He is drawing a map.
-彼は地図を描いています。
-👩 She is baking a cake.
-彼女はケーキを焼いています。
-🐱 It is climbing a tree.
-それは木を登っています。
-👪 We are planting flowers.
-私たちは花を植えています。
-👥 They are cutting grass.
-彼らは草を刈っています。
-👦 I am washing dishes.
-私は皿を洗っています。
-👧 You are drying clothes.
-あなたは服を乾かしています。
-👦 He is ironing shirts.
-彼はシャツをアイロンがけしています。
-👩 She is folding clothes.
-彼女は服を畳んでいます。
-🐱 It is sleeping on a bed.
-それはベッドで寝ています。
-👪 We are making tea.
-私たちはお茶を入れています。
-👥 They are eating breakfast.
-彼らは朝食を食べています。
-👦 I am playing the piano.
-私はピアノを弾いています。`
+            content: `👻 I am haunting a house. I am not scaring anyone.
+私はお化け屋をしています。誰も怖がらせていません.
+🤖 You are building a robot. You are not breaking it.
+あなたはロボットを建てています。それを壊していません.
+🦕 I am eating a pizza. I am not choking on it.
+私はピザを食べています。それを詰まらせていません.
+👽 You are drinking a potion. You are not spilling it.
+あなたは薬を飲んでいます。それをこぼしません.
+👹 I am chasing a ghost. I am not catching it.
+私は幽霊を追いかけています。それを捕まえません.
+🦕 I am riding a dragon. I am not falling off.
+私はドラゴンに乗っています。それから落ちません.
+👽 You are flying a spaceship. You are not crashing it.
+あなたは宇宙船を飛んでいます。それを墜落させません.
+🐱 I am catching a ball. I am missing it.
+私はボールを捕まえようとしています。それを逃しています.
+👪 We are playing soccer. We are not losing.
+私たちはサッカーをしています。私たちは負けていません.
+👥 They are watching a movie. They are not sleeping.
+彼らは映画を見ています。彼らは眠っていません.
+👻 I am cooking a feast. I am not burning it.
+私はご馓を料理しています。それを焦がしません.
+🤖 You are cleaning a castle. You are not dirtying it.
+あなたは城を掃除しています。それを汚していません.
+🦕 I am washing a car. I am not scratching it.
+私は車を洗っています。それを傷つけません.
+🦄 I am painting a mural. I am not ruining it.
+私は壁画を描いています。それを台無しにしています.
+🐱 I am catching a frisbee. I am not stinging it.
+私はハチを捕まえようとしています。それを刺しません.
+👪 We are studying magic. We are not sleeping.
+私たちは魔法を勉強しています。私たちは眠っていません.
+👥 They are listening to music. They are not ignoring it.
+彼らは音楽を聞いています。彼らは無視していません.
+👻 I am buying a wand. I am not breaking it.
+私は杖を買っています。それを折りません.
+👽 You are selling spells. You are not losing them.
+あなたは呪文を売っています。それらを失くしていません.
+🦕 I am teaching magic. I am not failing it.
+私は魔法を教えています。それを失敗していません.
+👽 You are learning Japanese. You are not forgetting it.
+あなたは日本語を学んでいます。それを忘れていません.
+🐱 I am eating a treasure. I am not choking on it.
+私は宝物を食べています。それを詰まらせていません.
+👪 We are building a castle. We are not destroying it.
+私たちは城を建てています。それを壊していません.
+👥 They are fixing a bike. They are not breaking it.
+彼らは自転車を直しています。それを壊していません.
+👦 I am opening a gate. I am not locking it.
+私は門を開けています。それをロックしていません.
+👧 You are closing a window. You are not breaking it.
+あなたは窓を閉めています。それを割りません.
+🦕 I am giving a treasure. I am not stealing it.
+私は宝物を渡しています。それを盗んでいません.
+👩 She is taking a photo. She is not ruining it.
+彼女は写真を撮っています。それを台無しにしています.
+🐱 It is making noise. It is not being quiet.
+それは音を出しています。それは静かではありません.
+👪 We are doing homework. We are not playing.
+私たちは宿題をしています。私たちは遊んでいません.
+👥 They are going home. They are not staying.
+彼らは家に帰っています。彼らは残っていません.
+👻 I am drawing a ghost. I am not erasing it.
+私は幽霊を描いています。それを消していません.
+👽 You are singing a song. You are not screaming.
+あなたは歌を歌っています。それ叫んでいません.
+🦕 I am dancing with monsters. I am not tripping.
+私は怪物と踊っています。つまずかりません.
+👩 She is running a race. She is not falling.
+彼女はレースを走っています。転びません.
+🐱 It is jumping over a fence. It is not falling off.
+それはフェンスを飛び越えています。それから落ちません.
+👪 We are eating lunch. We are not starving.
+私たちは昼ご飯を食べています。私たちは飢えていません.
+👥 They are drinking milk. They are not spilling it.
+彼らは牛乳を飲んでいます。それをこぼしません.
+👻 I am reading a spell. I am not mispronouncing it.
+私は呪文を読んでいます。それを間違えません.
+👧 You are writing a report. You are not lying in it.
+あなたはレポートを書いています。それで嘘をつきません.
+🦕 I am drawing a map. I am not getting lost.
+私は地図を描いています。道に迷いません.
+👩 She is baking a pie. I am not burning it.
+彼女はパイを焼いています。それを焦がしません.
+🐱 It is climbing a tree. It is not falling down.
+それは木を登っています。それから落ちません.
+👪 We are planting flowers. We are not killing them.
+私たちは花を植えています。それらを枯らせません.
+👥 They are cutting grass. They are not ruining it.
+彼らは草を刈っています。それらを台無しにしています.
+👦 I am washing dishes. I am not breaking them.
+私は皿を洗っています。それらを割りません.
+👧 You are drying clothes. You are not shrinking them.
+あなたは服を乾かしています。それらを縮ませません.
+👦 He is ironing shirts. He is not burning them.
+彼はシャツをアイロンがけしています。それらを焦がしません.
+👩 She is folding clothes. She is not wrinkling them.
+彼女は服を畳んでいます。それらをシワにしません.
+🐱 It is sleeping on a bed. It is not rolling off.
+それはベッドで寝ています。それから転がりません.
+👪 We are making tea. We are not spilling it.
+私たちはお茶を入れています。それをこぼしません.
+👥 They are eating breakfast. They are not starving.
+彼らは朝食を食べています。彼らは飢えていません.
+👻 I am playing the piano. I am not banging on it.
+私はピアノを弾いています。それを乱暴に叩きません。`
         },
         {
             title: "Adjective Drill",
