@@ -6,206 +6,206 @@ var news = {
     stories: [
         {
             title: "Daily News Headlines - April 28, 2026",
-            content: `📰 New train station opens in Osaka
-大阪に新しい駅が開業
-❓ Have you ever been to a new train station?
-新しい駅に行ったことがありますか？
-📰 Popular anime movie breaks box office records
-人気アニメ映画が興行記録を更新
-❓ What's your favorite anime movie?
-好きなアニメ映画は何ですか？
-📰 Osaka castle gets new lighting system
-大阪城に新しい照明システムが導入
-❓ Do you like visiting historical places?
-歴史的な場所に行くのは好きですか？
-📰 New convenience store opens near your school
-学校の近くに新しいコンビニがオープン
-❓ How often do you go to convenience stores?
-コンビニにはどのくらい行きますか？
-📰 Local cafe wins best coffee award
-地元のカフェがベストコーヒー賞を受賞
-❓ Do you like drinking coffee?
-コーヒーを飲むのは好きですか？
+            content: `📰 New cherry blossom viewing spots open in Osaka parks
+大阪の公園に新しい桜の名所がオープン
+❓ Do you like viewing cherry blossoms in spring?
+春に桜を見るのは好きですか？
+📰 Popular ramen shop opens new location in Namba
+人気ラーメン店が難波に新しい店舗をオープン
+❓ What's your favorite type of ramen?
+好きなラーメンの種類は何ですか？
+📰 Osaka Castle Park gets new walking paths
+大阪城公園に新しい散歩道が完成
+❓ Do you like walking in parks?
+公園を散歩するのは好きですか？
+📰 New anime series starts this month
+今月新しいアニメシリーズが始まります
+❓ What anime are you watching now?
+今どんなアニメを見ていますか？
 📰 Weather forecast says warm weekend coming
 天気予報によると暖かい週末が来るそうです
 ❓ What do you like to do on warm weekends?
 暖かい週末には何をするのが好きですか？
-📰 New smartphone released today
-新しいスマートフォンが今日発売されました
-❓ Do you want to get a new smartphone?
-新しいスマートフォンが欲しいですか？
-📰 Famous singer coming to Osaka next month
-有名な歌手が来月大阪に来ます
+📰 Local high school wins baseball tournament
+地元の高校が野球大会で優勝
+❓ Do you like watching baseball games?
+野球の試合を見るのは好きですか？
+📰 New shopping mall opens in Umeda
+梅田に新しいショッピングモールがオープン
+❓ Do you like shopping in big malls?
+大きなショッピングモールで買い物するのは好きですか？
+📰 Famous singer announces concert in Osaka
+有名な歌手が大阪でのコンサートを発表
 ❓ Have you ever been to a concert?
 コンサートに行ったことがありますか？
-📰 Local restaurant introduces new menu
-地元のレストランが新しいメニューを導入
-❓ What's your favorite type of restaurant?
-好きなレストランの種類は何ですか？
-📰 Sports team wins important game
-スポーツチームが重要な試合に勝利
-❓ Do you like watching sports?
-スポーツを見るのは好きですか？
-📰 New shopping mall opens in Osaka
-大阪に新しいショッピングモールがオープン
-❓ Do you like shopping?
-買い物は好きですか？
-📰 Popular TV show starts new season
-人気テレビ番組が新しいシーズンを開始
-❓ What's your favorite TV show?
-好きなテレビ番組は何ですか？
-📰 Weather is nice for outdoor activities
-天気が良く、アウトドア活動に最適
-❓ What outdoor activities do you like?
-どんなアウトドア活動が好きですか？
-📰 New book becomes bestseller
-新しい本がベストセラーになります
-❓ Do you like reading books?
-本を読むのは好きですか？
-📰 Local festival announced for next month
-来月の地元のお祭りが発表されました
-❓ Do you like going to festivals?
-お祭りに行くのは好きですか？
-📰 New video game released today
-新しいビデオゲームが今日発売
-❓ Do you like playing video games?
-ビデオゲームをするのは好きですか？
-📰 Famous actor visits Osaka for movie promotion
-有名な俳優が映画宣伝で大阪を訪問
-❓ Who's your favorite actor?
-好きな俳優は誰ですか？
-📰 Weather forecast says rain tomorrow
-明日は雨になるそうです
-❓ Do you like rainy days?
-雨の日は好きですか？
-📰 New park opens in your neighborhood
-近所に新しい公園がオープン
-❓ Do you like going to parks?
-公園に行くのは好きですか？
-📰 Popular musician releases new song
-人気ミュージシャンが新しい曲をリリース
-❓ What kind of music do you like?
-どんな音楽が好きですか？
-📰 Local school wins competition
-地元の学校がコンテストで優勝
-❓ Did your school ever win a competition?
-あなたの学校はコンテストで優勝したことがありますか？
-📰 New restaurant opens with unique food
-ユニークな料理の新しいレストランがオープン
-❓ Do you like trying new foods?
-新しい料理を試すのは好きですか？
-📰 Weather is perfect for a picnic
-ピクニックに最適な天気です
-❓ Have you ever been on a picnic?
-ピクニックに行ったことがありますか？
-📰 Famous anime announces new season
-有名なアニメが新しいシーズンを発表
-❓ What anime are you watching now?
-今どんなアニメを見ていますか？
-📰 New bus route starts next week
-来週新しいバス路線が開始
-❓ Do you often take the bus?
-バスにはよく乗りますか？
-📰 Local artist exhibits work in gallery
-地元のアーティストがギャラリーで作品を展示
-❓ Do you like art?
-アートは好きですか？
-📰 Weather forecast says sunny week ahead
-来週は晴れるそうです
-❓ What do you do on sunny days?
-晴れた日には何をしますか？
-📰 New movie theater opens with latest films
-最新の映画を上映する新しい映画館がオープン
-❓ Do you like going to the movies?
-映画館に行くのは好きですか？
-📰 Popular food festival coming to Osaka
-人気のフードフェスティバルが大阪に来ます
+📰 New train line extension opens next week
+来週新しい鉄道延伸線が開通
+❓ Do you often take the train?
+電車にはよく乗りますか？
+📰 Popular cafe introduces new seasonal drinks
+人気カフェが新しい季節限定ドリンクを導入
+❓ Do you like trying new drinks?
+新しいドリンクを試すのは好きですか？
+📰 Osaka's famous food festival starts tomorrow
+大阪の有名なフードフェスティバルが明日から開催
 ❓ What's your favorite festival food?
 好きなフェスティバルフードは何ですか？
+📰 New smartphone app helps tourists in Osaka
+大阪の観光客を助ける新しいスマートフォンアプリ
+❓ Do you use travel apps when you travel?
+旅行する時、旅行アプリを使いますか？
+📰 Local museum displays ancient artifacts
+地元の博物館が古代の遺物を展示
+❓ Do you like visiting museums?
+博物館に行くのは好きですか？
+📰 Weather is perfect for outdoor activities today
+今日はアウトドア活動に最適な天気です
+❓ What outdoor activities do you like?
+どんなアウトドア活動が好きですか？
+📰 New bookstore opens near Osaka Station
+大阪駅の近くに新しい本屋がオープン
+❓ Do you like reading books?
+本を読むのは好きですか？
+📰 Popular video game gets new update
+人気ビデオゲームが新しいアップデート
+❓ Do you like playing video games?
+ビデオゲームをするのは好きですか？
+📰 Local restaurant wins best food award
+地元のレストランがベストフード賞を受賞
+❓ What's your favorite type of restaurant?
+好きなレストランの種類は何ですか？
+📰 New bus route connects popular tourist spots
+人気観光地を結ぶ新しいバス路線
+❓ Do you like taking buses when you travel?
+旅行する時、バスに乗るのは好きですか？
+📰 Famous actor visits Osaka for movie premiere
+有名な俳優が映画の初日で大阪を訪問
+❓ Who's your favorite actor?
+好きな俳優は誰ですか？
+📰 Weather forecast says clear night for stargazing
+星を見るのに良い晴れた夜になるそうです
+❓ Do you like looking at stars?
+星を見るのは好きですか？
+📰 New fitness center opens in your neighborhood
+近所に新しいフィットネスセンターがオープン
+❓ Do you like exercising?
+運動するのは好きですか？
+📰 Popular band releases new album today
+人気バンドが今日新しいアルバムをリリース
+❓ What kind of music do you like?
+どんな音楽が好きですか？
+📰 Osaka's cherry blossoms are beautiful this year
+今年の大阪の桜は美しいです
+❓ Have you seen cherry blossoms this year?
+今年は桜を見ましたか？
 📰 New library opens with modern facilities
 最新の設備を持つ新しい図書館がオープン
 ❓ Do you like going to the library?
 図書館に行くのは好きですか？
+📰 Local sports team wins important match
+地元のスポーツチームが重要な試合に勝利
+❓ Do you follow any sports teams?
+応援しているスポーツチームはありますか？
+📰 New coffee shop opens with unique drinks
+ユニークなドリンクの新しいコーヒーショップがオープン
+❓ Do you like drinking coffee?
+コーヒーを飲むのは好きですか？
 📰 Weather is getting warmer every day
 天気がだんだん暖かくなっています
 ❓ What's your favorite season?
 好きな季節は何ですか？
-📰 Famous sports player visits local school
-有名なスポーツ選手が地元の学校を訪問
-❓ Who's your favorite sports player?
-好きなスポーツ選手は誰ですか？
-📰 New coffee shop opens with unique drinks
-ユニークなドリンクの新しいコーヒーショップがオープン
-❓ Do you like trying new coffee drinks?
-新しいコーヒードリンクを試すのは好きですか？
-📰 Local team wins championship
-地元のチームが優勝
-❓ Do you follow any sports teams?
-応援しているスポーツチームはありますか？
+📰 Popular TV show starts new season
+人気テレビ番組が新しいシーズンを開始
+❓ What's your favorite TV show?
+好きなテレビ番組は何ですか？
+📰 New park opens with beautiful gardens
+美しい庭園のある新しい公園がオープン
+❓ Do you like visiting gardens?
+庭園を訪れるのは好きですか？
+📰 Local bakery wins best bread award
+地元のベーカリーがベストパン賞を受賞
+❓ Do you like fresh bread?
+新鮮なパンは好きですか？
+📰 Famous comedian coming to Osaka for show
+人気コメディアンがショーのために大阪に来ます
+❓ Do you like comedy shows?
+コメディショーは好きですか？
+📰 New movie theater opens with latest films
+最新の映画を上映する新しい映画館がオープン
+❓ Do you like going to the movies?
+映画館に行くのは好きですか？
+📰 Weather forecast says sunny week ahead
+来週は晴れるそうです
+❓ What do you do on sunny days?
+晴れた日には何をしますか？
+📰 Popular food truck festival in Osaka this weekend
+今週末、大阪で人気のフードトラックフェスティバル
+❓ Have you ever been to a food festival?
+フードフェスティバルに行ったことがありますか？
+📰 New art gallery opens in downtown Osaka
+大阪の中心部に新しいアートギャラリーがオープン
+❓ Do you like art?
+アートは好きですか？
+📰 Local school wins science competition
+地元の学校が科学コンテストで優勝
+❓ Did you like science in school?
+学校で科学は好きでしたか？
 📰 New shopping app becomes popular
 新しいショッピングアプリが人気に
 ❓ Do you use shopping apps?
 ショッピングアプリを使いますか？
-📰 Weather forecast says beautiful sunset expected
-美しい夕日が期待できるそうです
-❓ Do you like watching sunsets?
-夕日を見るのは好きですか？
-📰 New museum opens with interesting exhibits
-興味深い展示のある新しい博物館がオープン
-❓ Do you like visiting museums?
-博物館に行くのは好きですか？
-📰 Popular band announces concert in Osaka
-人気バンドが大阪でのコンサートを発表
-❓ What's your favorite band?
-好きなバンドは何ですか？
-📰 New fitness center opens near your home
-家の近くに新しいフィットネスセンターがオープン
-❓ Do you like exercising?
-運動するのは好きですか？
-📰 Weather is perfect for outdoor sports
-アウトドアスポーツに最適な天気です
-❓ What outdoor sports do you like?
-どんなアウトドアスポーツが好きですか？
-📰 New bookstore opens with wide selection
-幅広い選択肢のある新しい本屋がオープン
-❓ What kind of books do you like to read?
-どんな本を読むのが好きですか？
-📰 Local restaurant gets five-star review
-地元のレストランが5つ星の評価を獲得
-❓ What's your favorite restaurant?
-好きなレストランは何ですか？
-📰 Weather forecast says cool breeze coming
-涼しい風が吹くそうです
-❓ Do you like cool weather?
-涼しい天気は好きですか？
-📰 New game center opens with latest games
-最新のゲームのある新しいゲームセンターがオープン
-❓ Do you like going to game centers?
-ゲームセンターに行くのは好きですか？
-📰 Popular comedian coming to Osaka for show
-人気コメディアンがショーのために大阪に来ます
-❓ Do you like comedy?
-コメディは好きですか？
-📰 New park has beautiful cherry blossoms
-新しい公園に美しい桜があります
-❓ Do you like cherry blossoms?
-桜は好きですか？
 📰 Weather is nice for walking in the city
 街を歩くのに良い天気です
 ❓ Do you like walking in the city?
 街を歩くのは好きですか？
-📰 New bakery opens with delicious bread
-美味しいパンの新しいベーカリーがオープン
-❓ Do you like fresh bread?
-新鮮なパンは好きですか？
+📰 Popular anime movie comes to theaters
+人気アニメ映画が映画館で上映開始
+❓ What's your favorite anime movie?
+好きなアニメ映画は何ですか？
+📰 New convenience store opens 24 hours
+24時間営業の新しいコンビニがオープン
+❓ How often do you go to convenience stores?
+コンビニにはどのくらい行きますか？
 📰 Local event brings community together
 地元のイベントが地域社会を結びつけます
 ❓ Do you like community events?
 地域のイベントは好きですか？
-📰 Weather forecast says clear night for stargazing
-星を見るのに良い晴れた夜になるそうです
-❓ Do you like looking at stars?
-星を見るのは好きですか？`
+📰 New game center opens with latest games
+最新のゲームのある新しいゲームセンターがオープン
+❓ Do you like going to game centers?
+ゲームセンターに行くのは好きですか？
+📰 Weather forecast says beautiful sunset expected
+美しい夕日が期待できるそうです
+❓ Do you like watching sunsets?
+夕日を見るのは好きですか？
+📰 Popular musician releases new song
+人気ミュージシャンが新しい曲をリリース
+❓ What's your favorite song?
+好きな曲は何ですか？
+📰 New restaurant opens with unique food
+ユニークな料理の新しいレストランがオープン
+❓ Do you like trying new foods?
+新しい料理を試すのは好きですか？
+📰 Local festival announced for next month
+来月の地元のお祭りが発表されました
+❓ Do you like going to festivals?
+お祭りに行くのは好きですか？
+📰 New smartphone released today
+新しいスマートフォンが今日発売されました
+❓ Do you want to get a new smartphone?
+新しいスマートフォンが欲しいですか？
+📰 Weather is perfect for a picnic
+ピクニックに最適な天気です
+❓ Have you ever been on a picnic?
+ピクニックに行ったことがありますか？
+📰 Popular sports player visits local school
+有名なスポーツ選手が地元の学校を訪問
+❓ Who's your favorite sports player?
+好きなスポーツ選手は誰ですか？
+📰 New train station opens in Osaka
+大阪に新しい駅が開業
+❓ Have you ever been to a new train station?
+新しい駅に行ったことがありますか？`
         }
     ]
 };
