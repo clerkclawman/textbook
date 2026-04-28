@@ -725,55 +725,7 @@ UFOたちは明るいです。それらは静かに飛びます。
 🐸 The frog is green. It jumps high.
 カエルは緑です。それは高く跳びます。
 🐸 The frogs are green. They jump high.
-カエルたちは緑です。それらは高く跳びます。
-🐢 The turtle is slow. It lives long.
-カメは遅いです。それは長生きします。
-🐢 The turtles are slow. They live long.
-カメたちは遅いです。それらは長生きします。
-🐍 The snake is long. It slides silently.
-ヘビは長いです。それは静かに滑ります。
-🐍 The snakes are long. They slide silently.
-ヘビたちは長いです。それらは静かに滑ります。
-🦎 The lizard is fast. It climbs walls.
-トカゲは速いです。それは壁を登ります。
-🦎 The lizards are fast. They climb walls.
-トカゲたちは速いです。それらは壁を登ります。
-🐊 The crocodile is scary. It snaps its jaws.
-ワニは怖いです。それは顎をパチンと鳴らします。
-🐊 The crocodiles are scary. They snap their jaws.
-ワニたちは怖いです。それらは顎をパチンと鳴らします。
-🦈 The shark is dangerous. It swims fast.
-サメは危険です。それは速く泳ぎます。
-🦈 The sharks are dangerous. They swim fast.
-サメたちは危険です。それらは速く泳ぎます。
-🐳 The whale is huge. It sings songs.
-クジラは巨大です。それは歌を歌います。
-🐳 The whales are huge. They sing songs.
-クジラたちは巨大です。それらは歌を歌います。
-🐬 The dolphin is smart. It does tricks.
-イルカは賢いです。それは芸をします。
-🐬 The dolphins are smart. They do tricks.
-イルカたちは賢いです。それらは芸をします。
-🦚 The peacock is beautiful. It shows its feathers.
-クジャクは美しいです。それは羽を見せます。
-🦚 The peacocks are beautiful. They show their feathers.
-クジャクたちは美しいです。それらは羽を見せます。
-🦩 The flamingo is pink. It stands on one leg.
-フラミンゴはピンクです。それは片足で立ちます。
-🦩 The flamingos are pink. They stand on one leg.
-フラミンゴたちはピンクです。それらは片足で立ちます。
-🦜 The parrot is colorful. It talks.
-オウムはカラフルです。それは話します。
-🦜 The parrots are colorful. They talk.
-オウムたちはカラフルです。それらは話します。
-🦢 The swan is graceful. It swims gracefully.
-白鳥は優雅です。それは優雅に泳ぎます。
-🦢 The swans are graceful. They swim gracefully.
-白鳥たちは優雅です。それらは優雅に泳ぎます。
-🦩 The owl is wise. It hunts at night.
-フクロウは賢いです。それは夜に狩りをします。
-🦩 The owls are wise. They hunt at night.
-フクロウたちは賢いです。それらは夜に狩りをします。`
+カエルたちは緑です。それらは高く跳びます。`
         },
         {
             title: "He and She with To Be Drill",
