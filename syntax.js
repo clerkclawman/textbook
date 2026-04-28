@@ -1232,33 +1232,7 @@ UFOたちは明るいです。それらは静かに飛びます。
 👥 They are eating breakfast.
 彼らは朝食を食べています。
 👦 I am playing the piano.
-私はピアノを弾いています。
-👧 You are playing the guitar.
-あなたはギターを弾いています。
-👦 He is playing tennis.
-彼はテニスをしています。
-👩 She is playing basketball.
-彼女はバスケットボールをしています。
-🐱 It is playing with a toy.
-それはおもちゃで遊んでいます。
-👪 We are swimming in a pool.
-私たちはプールで泳いでいます。
-👥 They are walking in the park.
-彼らは公園を歩いています。
-👦 I am riding a bike.
-私は自転車に乗っています。
-👧 You are driving a car.
-あなたは車を運転しています。
-👦 He is flying a kite.
-彼は凧を飛ばしています。
-👩 She is feeding birds.
-彼女は鳥に餌をやっています。
-🐱 It is drinking water.
-それは水を飲んでいます。
-👪 We are buying food.
-私たちは食べ物を買っています。
-👥 They are selling vegetables.
-彼らは野菜を売っています。`
+私はピアノを弾いています。`
         },
         {
             title: "Adjective Drill",
