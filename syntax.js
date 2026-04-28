@@ -850,110 +850,244 @@ UFOは明るいです。彼女は暗くありません.
         },
         {
             title: "I and You with To Be Drill",
-            content: `😊 I am happy. I am not sad.
-私は幸せです。私は悲しくありません。
-🤗 You are kind. You are not mean.
-あなたは親切です。あなたは意地悪ではありません。
-📏 I am tall. I am not short.
-私は背が高いです。私は背が低くありません。
-👶 You are young. You are not old.
-あなたは若いです。あなたは年をとっていません。
-💪 I am strong. I am not weak.
+            content: `👻 I am scary. I am not friendly.
+私は怖いです。私は友好的ではありません.
+🤖 You are cool. You are not boring.
+あなたはかっこいいです。あなたは退屈ではありません.
+🦕 I am big. I am not small.
+私は大きいです。私は小さくありません.
+👽 You are strange. You are not normal.
+あなたは変です。あなたは普通ではありません.
+🐉 I am strong. I am not weak.
 私は強いです。私は弱くありません.
-⚡ You are fast. You are not slow.
-あなたは速いです。あなたは遅くありません。
-🧠 I am smart. I am not stupid.
-私は賢いです。私は愚かではありません.
-🏃 You are busy. You are not free.
-あなたは忙しいです。あなたは自由ではありません。
-🍽️ I am hungry. I am not full.
-私はお腹が空いています。私は満腹ではありません。
-😴 You are tired. You are not energetic.
-あなたは疲れています。あなたは元気ではありません.
-❄️ I am cold. I am not warm.
-私は寒いです。私は暖かくありません。
-💰 You are rich. You are not poor.
-あなたは金持ちです。あなたは貧しくありません。
-💪 I am healthy. I am not sick.
-私は健康です。私は病気ではありません.
-🛡️ You are brave. You are not scared.
-あなたは勇敢です。あなたは怖がっていません.
-🤫 I am quiet. I am not loud.
-私は静かです。私は大声ではありません.
-👁️ You are careful. You are not careless.
-あなたは慎重です。あなたは不注意ではありません.
-🤝 I am honest. I am not dishonest.
-私は正直です。私は不正直ではありません.
-⏳ You are patient. You are not impatient.
-あなたは忍耐強いです。あなたは忍耐がありません。
-🤝 I am friendly. I am not unfriendly.
-私は友好的です。私は不友好的ではありません。
-🎨 You are creative. You are not boring.
-あなたは創造的です。あなたは退屈ではありません。
-😄 I am funny. You are serious too.
-私は面白いです。あなたも真面目です。
-🍀 You are lucky. I am lucky too.
-あなたは幸運です。私も幸運です。
-⭐ I am famous. You are famous too.
-私は有名です。あなたも有名です。
-💑 I am single. I am single too.
-あなたは独身です。私も独身です.
-✅ I am available. You are available too.
-私は利用可能です。あなたも利用可能です.
-✅ You are ready. I am ready too.
-あなたは準備ができています。私も準備ができています.
-✅ I am right. You are right too.
-私は正しいです。あなたも正しいです.
-✅ You are sure. I am sure too.
-あなたは確信しています。私も確信しています.
-🤝 I am confident. You are confident too.
-私は自信があります。あなたも自信があります。
-😌 I am relaxed. You are relaxed too.
-私はリラックスしています。あなたもリラックスしています。
-😊 I am happy. You are happy too.
-私は幸せです。あなたも幸せです.
-😞 You are sad. I am sad too.
-あなたは悲しいです。私も悲しいです.
-✅ I am not late. You are not late either.
-私は遅れていません。あなたも遅れていません。
-✅ You are not wrong. I am not wrong either.
-あなたは間違っていません。私も間違っていません。
-✅ I am not unsure. You are not unsure either.
-私は確信していません。あなたも確信していません.
-😰 You are not nervous. I am not nervous either.
-あなたは緊張していません。私も緊張していません.
-😌 I am not stressed. You are not stressed either.
-私はストレスを感じていません。あなたもストレスを感じていません。
-😟 You are not worried. I am not worried either.
-あなたは心配していません。私も心配していません。
-📏 I am tall, but I am not strong.
-私は背が高いですが、強くありません。
-👶 You are young, but you are not fast.
-あなたは若いですが、速くありません。
-🧠 I am smart, but I am not busy.
-私は賢いですが、忙しくありません。
-🤝 You are kind, but you are not rich.
-あなたは親切ですが、金持ちではありません。
-💪 I am healthy, but I am not brave.
-私は健康ですが、勇敢ではありません。
-🤫 You are quiet, but you are not honest.
-あなたは静かですが、正直ではありません。
-🤝 I am friendly, but I am not funny.
-私は友好的ですが、面白くありません。
-🎨 You are creative, but you are not lucky.
-あなたは創造的ですが、幸運ではありません。
-😊 I am happy, but I am not famous.
-私は幸せですが、有名ではありません。
-✅ You are ready, but you are not sure.
-あなたは準備ができていますが、確信していません。
-🎵 I am musical, but I am not famous.
-私は音楽的ですが、有名ではありません。
-📚 You are studious, but you are not smart.
-あなたは勉強熱心ですが、賢くありません。
-🏃 I am athletic, but I am not fast.
-私は運動神経がいいですが、速くありません。
-🎭 You are dramatic, but you are not loud.
-あなたはドラマチックですが、大声ではありません。`
+🦄 You are beautiful. You are not ugly.
+あなたは美しいです。あなたは醜くありません.
+🎃 I am orange. I am not green.
+私はオレンジ色です。私は緑ではありません.
+🎁 You are nice. You are not mean.
+あなたは素敵です。あなたは意地悪ではありません.
+🎪 I am fun. I am not sad.
+私は楽しいです。私は悲しくありません.
+🏰 You are old. You are not new.
+あなたは古いです。あなたは新しくありません.
+🚀 I am fast. I am not slow.
+私は速いです。私は遅くありません.
+🛸 You are bright. You are not dark.
+あなたは明るいです。あなたは暗くありません.
+🌈 I am colorful. You are not plain.
+私はカラフルです。あなたは地味ではありません.
+⚡ You are loud. I am not quiet.
+あなたは大声です。私は静かではありません.
+🌪️ I am dangerous. You are not safe.
+私は危険です。あなたは安全ではありません.
+🌋 You are hot. I am not cold.
+あなたは熱いです。私は寒くありません.
+🏝️ I am small. You are not big.
+私は小さいです。あなたは大きくありません.
+🏔️ You are high. I am not low.
+あなたは高いです。私は低くありません.
+🌊 I am huge. You are not tiny.
+私は巨大です。あなたは小さくありません.
+🌲 You are green. I am not brown.
+あなたは緑です。私は茶色ではありません.
+🌺 I am pretty. You are not ugly.
+私はきれいです。あなたは醜くありません.
+🍄 You are red. I am not blue.
+あなたは赤いです。私は青くありません.
+🦋 I am small. You are not huge.
+私は小さいです。あなたは巨大ではありません.
+🐝 I am busy. You are not lazy.
+私は忙しいです。あなたは怠け者ではありません.
+🐸 You are green. I am not red.
+あなたは緑です。私は赤くありません.
+🐢 I am slow. You are not fast.
+私は遅いです。あなたは速くありません.
+🐍 I am long. You are not short.
+私は長いです。あなたは短くありません.
+🦎 You are fast. I am not slow.
+あなたは速いです。私は遅くありません.
+🐊 I am scary. You are not cute.
+私は怖いです。あなたは可愛くありません.
+🦈 I am dangerous. You are not safe.
+私は危険です。あなたは安全ではありません.
+🐳 You are huge. I am not tiny.
+あなたは巨大です。私は小さくありません.
+🐬 I am smart. You are not stupid.
+私は賢いです。あなたは愚かではありません.
+🦚 You are beautiful. I am not plain.
+あなたは美しいです。私は地味ではありません.
+🦩 I am pink. You are not white.
+私はピンクです。あなたは白くありません.
+🦜 You are colorful. I am not dull.
+あなたはカラフルです。私は退屈ではありません.
+🦢 I am graceful. You are not clumsy.
+私は優雅です。あなたは不器用ではありません.
+🦉 I am wise. You are not foolish.
+私は賢いです。あなたは愚かではありません.
+🐻 I am big. You are not small.
+私は大きいです。あなたは小さくありません.
+🦊 You are clever. I am not dumb.
+あなたは賢いです。私は馬鹿ではありません.
+🐒 I am active. You are not lazy.
+私は活発です。あなたは怠け者ではありません.
+🦌 You are fast. I am not slow.
+あなたは速いです。私は遅くありません.
+🦓 I am striped. You are not plain.
+私は縞模様です。あなたは地味ではありません.
+🦒 I am tall. You are not short.
+私は背が高いです。あなたは背が低くありません.
+🐘 You are heavy. I am not light.
+あなたは重いです。私は軽くありません.
+🦏 I am strong. You are not weak.
+私は強いです。あなたは弱くありません.
+🦛 You are big. I am not small.
+あなたは大きいです。私は小さくありません.
+🐃 I am fast. You are not slow.
+私は速いです。あなたは遅くありません.
+🦘 You are cute. I am not ugly.
+あなたは可愛いです。私は醜くありません.
+🦥 I am slow. You are not fast.
+私は遅いです。あなたは速くありません.
+🦦 You are playful. I am not serious.
+あなたは遊び好きです。私は真剣ではありません.
+🐿️ I am small. You are not big.
+私は小さいです。あなたは大きくありません.
+🦔 You are spiky. I am not smooth.
+あなたはトゲトゲしています。私は滑らかではありません.
+🦇 I am active. You are not lazy.
+私は活発です。あなたは怠け者ではありません.
+👻 I am scary. You are scary too.
+私は怖いです。あなたも怖いです.
+🤖 You are cool. I am cool too.
+あなたはかっこいいです。私もかっこいいです.
+🦕 I am big. You are big too.
+私は大きいです。あなたも大きいです.
+👽 I am strange. You are strange too.
+私は変です。あなたも変です.
+🐉 I am strong. You are strong too.
+私は強いです。あなたも強いです.
+🦄 I am beautiful. You are beautiful too.
+私は美しいです。あなたも美しいです.
+🎃 I am orange. You are orange too.
+私はオレンジ色です。あなたもオレンジ色です.
+🎁 I am nice. You are nice too.
+私は素敵です。あなたも素敵です.
+🎪 I am fun. You are fun too.
+私は楽しいです。あなたも楽しいです.
+🏰 I am old. You are old too.
+私は古いです。あなたも古いです.
+🚀 I am fast. You are fast too.
+私は速いです。あなたも速いです.
+🛸 I am bright. You are bright too.
+私は明るいです。あなたも明るいです.
+🌈 I am colorful. You are colorful too.
+私はカラフルです。あなたもカラフルです.
+⚡ I am not loud. You are not loud either.
+私は大声ではありません。あなたも大声ではありません.
+🌪️ I am not dangerous. You are not dangerous either.
+私は危険ではありません。あなたも危険ではありません.
+🌋 I am not hot. You are not hot either.
+私は熱いではありません。あなたも熱いではありません.
+🏝️ I am not small. You are not small either.
+私は小さくありません。あなたも小さくありません.
+🏔️ I am not low. You are not low either.
+私は低くありません。あなたも低くありません.
+🌊 I am not tiny. You are not tiny either.
+私は小さくありません。あなたも小さくありません.
+🌲 I am not brown. You are not brown either.
+私は茶色ではありません。あなたも茶色ではありません.
+🌺 I am not ugly. You are not ugly either.
+私は醜くありません。あなたも醜くありません.
+🍄 I am not blue. You are not blue either.
+私は青くありません。あなたも青くありません.
+🦋 I am not huge. You are not huge either.
+私は巨大ではありません。あなたも巨大ではありません.
+🐝 I am not lazy. You are not lazy either.
+私は怠け者ではありません。あなたも怠け者ではありません.
+🐸 I am not red. You are not red either.
+私は赤くありません。あなたも赤くありません.
+🐢 I am not fast. You am not fast either.
+私は速くありません。あなたも速くありません.
+🐍 I am not short. You are not short either.
+私は短くありません。あなたも短くありません.
+🦎 I am not slow. You are not slow either.
+私は遅くありません。あなたも遅くありません.
+🐊 I am not cute. You are not cute either.
+私は可愛くありません。あなたも可愛くありません.
+🦈 I am not safe. You are not safe either.
+私は安全ではありません。あなたも安全ではありません.
+🐳 I am not tiny. You are not tiny either.
+私は小さくありません。あなたも小さくありません.
+🐬 I am not stupid. You are not stupid either.
+私は愚かではありません。あなたも愚かではありません.
+🦚 I am not plain. You are not plain either.
+私は地味ではありません。あなたも地味ではありません.
+🦩 I am not white. You are not white either.
+私は白くありません。あなたも白くありません.
+🦜 I am not dull. You are not dull either.
+私は退屈ではありません。あなたも退屈ではありません.
+🦢 I am not clumsy. You are not clumsy either.
+私は不器用ではありません。あなたも不器用ではありません.
+🦉 I am not foolish. You are not foolish either.
+私は愚かではありません。あなたも愚かではありません.
+🐻 I am not small. You are not small either.
+私は小さくありません。あなたも小さくありません.
+🦊 I am not dumb. You are not dumb either.
+私は馬鹿ではありません。あなたも馬鹿ではありません.
+🐒 I am not lazy. You are not lazy either.
+私は怠け者ではありません。あなたも怠け者ではありません.
+🦌 I am not slow. You are not slow either.
+私は遅くありません。あなたも遅くありません.
+🦓 I am not plain. You are not plain either.
+私は地味ではありません。あなたも地味ではありません.
+🦒 I am not short. You are not short either.
+私は背が低くありません。あなたも背が低くありません.
+🐘 I am not light. You are not light either.
+私は軽くありません。あなたも軽くありません.
+🦏 I am not weak. You are not weak either.
+私は弱くありません。あなたも弱くありません.
+🦛 I am not small. You are not small either.
+私は小さくありません。あなたも小さくありません.
+🐃 I am not slow. You are not slow either.
+私は遅くありません。あなたも遅くありません.
+🦘 I am not ugly. You are not ugly either.
+私は醜くありません。あなたも醜くありません.
+🦥 I am not fast. You are not fast either.
+私は速くありません。あなたも速くありません.
+🦦 I am not serious. You are not serious either.
+私は真剣ではありません。あなたも真剣ではありません.
+🐿️ I am not big. You are not big either.
+私は大きくありません。あなたも大きくありません.
+🦔 I am not smooth. You are not smooth either.
+私は滑らかではありません。あなたも滑らかではありません.
+👻 I am scary, but I am not mean.
+私は怖いですが、意地悪ではありません.
+🤖 You are cool, but you are not cold.
+あなたはかっこいいですが、冷たくありません.
+🦕 I am big, but I am not fat.
+私は大きいですが、太っていません.
+👽 You are strange, but you are not weird.
+あなたは変ですが、変ではありません.
+🐉 I am strong, but I am not tough.
+私は強いですが、タフではありません.
+🦄 You are beautiful, but you are not perfect.
+あなたは美しいですが、完璧ではありません.
+🎃 I am orange, but I am not red.
+私はオレンジ色ですが、赤くありません.
+🎁 You are nice, but you are not generous.
+あなたは素敵ですが、寛大ではありません.
+🎪 I am fun, but I am not silly.
+私は楽しいですが、愚かではありません.
+🏰 You are old, but I am not ancient.
+あなたは古いですが、古代ではありません.
+🚀 I am fast, but I am not speedy.
+私は速いですが、超高速ではありません.
+🛸 You are bright, but I am not shiny.
+あなたは明るいですが、輝いていません.
+🌈 I am colorful, but I am not messy.
+私はカラフルですが、散らかっていません.
+⚡ You are loud, but I am not noisy.
+あなたは大声ですが、騒がしくありません.`
         },
         {
             title: "Me and X and We with To Be Drill",
