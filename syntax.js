@@ -628,150 +628,150 @@ UFOは明るいです。UFOたちは明るいです。
             title: "It and They Pronoun Drill",
             content: `👻 The ghost is scary. It floats through walls.
 幽霊は怖いです。それは壁を通り抜けます。
-🤖 The robot is cool. It helps people.
-ロボットはかっこいいです。それは人々を助けます。
-🦕 The dinosaur is big. It eats everything.
-恐竜は大きいです。それは何でも食べます。
-👽 The alien is strange. It comes from space.
-エイリアンは変です。それは宇宙から来ます。
-🐉 The dragon is strong. It breathes fire.
-ドラゴンは強いです。それは火を吐きます。
-🦄 The unicorn is beautiful. It runs fast.
-ユニコーンは美しいです。それは速く走ります。
-🎃 The pumpkin is orange. It glows at night.
-かぼちゃはオレンジ色です。それは夜に光ります。
-🎁 The gift is nice. It makes people happy.
-プレゼントは素敵です。それは人々を幸せにします。
-🎪 The circus is fun. It has clowns.
-サーカスは楽しいです。それはピエロがいます。
-🎡 The castle is old. It has ghosts.
-城は古いです。それは幽霊がいます。
-🚀 The rocket is fast. It goes to space.
-ロケットは速いです。それは宇宙に行きます。
-🛸 The UFO is bright. It flies silently.
-UFOは明るいです。それは静かに飛びます。
-🌈 The rainbow is colorful. It appears after rain.
-虹はカラフルです。それは雨の後に現れます。
-⚡ The lightning is loud. It strikes the ground.
-稲妻は大きいです。それは地面を叩きます。
-🌪️ The tornado is dangerous. It destroys houses.
-竜巻は危険です。それは家を壊します。
-🌋 The volcano is hot. It erupts lava.
-火山は熱いです。それは溶岩を噴出します。
-🏝️ The island is small. It has beaches.
-島は小さいです。それはビーチがあります。
-🏔️ The mountain is high. It touches the clouds.
-山は高いです。それは雲に触れます。
-🌊 The wave is big. It crashes on the beach.
-波は大きいです。それは浜辺に打ち寄せます。
-🌲 The forest is green. It has many trees.
-森は緑です。それは多くの木があります。
-🌺 The flower is pretty. It smells sweet.
-花はきれいです。それは甘い匂いがします。
-🍄 The mushroom is red. It grows in the dark.
-キノコは赤いです。それは暗闇で育ちます。
-🦋 The butterfly is small. It flies gracefully.
-蝶は小さいです。それは優雅に飛びます。
-🐝 The bee is busy. It makes honey.
-蜂は忙しいです。それは蜂蜜を作ります。
-🐸 The frog is green. It jumps high.
-カエルは緑です。それは高く跳びます。
-🐢 The turtle is slow. It lives long.
-カメは遅いです。それは長生きします。
-🐍 The snake is long. It slides silently.
-ヘビは長いです。それは静かに滑ります。
-🦎 The lizard is fast. It climbs walls.
-トカゲは速いです。それは壁を登ります。
-🐊 The crocodile is scary. It snaps its jaws.
-ワニは怖いです。それは顎をパチンと鳴らします。
-🦈 The shark is dangerous. It swims fast.
-サメは危険です。それは速く泳ぎます。
-🐳 The whale is huge. It sings songs.
-クジラは巨大です。それは歌を歌います。
-🐬 The dolphin is smart. It does tricks.
-イルカは賢いです。それは芸をします。
-🦚 The peacock is beautiful. It shows its feathers.
-クジャクは美しいです。それは羽を見せます。
-🦩 The flamingo is pink. It stands on one leg.
-フラミンゴはピンクです。それは片足で立ちます。
-🦜 The parrot is colorful. It talks.
-オウムはカラフルです。それは話します。
-🦢 The swan is graceful. It swims gracefully.
-白鳥は優雅です。それは優雅に泳ぎます。
-🦩 The owl is wise. It hunts at night.
-フクロウは賢いです。それは夜に狩りをします。
 👻 The ghosts are scary. They float through walls.
 幽霊たちは怖いです。それらは壁を通り抜けます。
+🤖 The robot is cool. It helps people.
+ロボットはかっこいいです。それは人々を助けます。
 🤖 The robots are cool. They help people.
 ロボットたちはかっこいいです。それらは人々を助けます。
+🦕 The dinosaur is big. It eats everything.
+恐竜は大きいです。それは何でも食べます。
 🦕 The dinosaurs are big. They eat everything.
 恐竜たちは大きいです。それらは何でも食べます。
+👽 The alien is strange. It comes from space.
+エイリアンは変です。それは宇宙から来ます。
 👽 The aliens are strange. They come from space.
 エイリアンたちは変です。それらは宇宙から来ます。
+🐉 The dragon is strong. It breathes fire.
+ドラゴンは強いです。それは火を吐きます。
 🐉 The dragons are strong. They breathe fire.
 ドラゴンたちは強いです。それらは火を吐きます。
+🦄 The unicorn is beautiful. It runs fast.
+ユニコーンは美しいです。それは速く走ります。
 🦄 The unicorns are beautiful. They run fast.
 ユニコーンたちは美しいです。それらは速く走ります。
+🎃 The pumpkin is orange. It glows at night.
+かぼちゃはオレンジ色です。それは夜に光ります。
 🎃 The pumpkins are orange. They glow at night.
 かぼちゃたちはオレンジ色です。それらは夜に光ります。
+🎁 The gift is nice. It makes people happy.
+プレゼントは素敵です。それは人々を幸せにします。
 🎁 The gifts are nice. They make people happy.
 プレゼントたちは素敵です。それらは人々を幸せにします。
+🎪 The circus is fun. It has clowns.
+サーカスは楽しいです。それはピエロがいます。
 🎪 The circuses are fun. They have clowns.
 サーカスたちは楽しいです。それらはピエロがいます。
+🎡 The castle is old. It has ghosts.
+城は古いです。それは幽霊がいます。
 🎡 The castles are old. They have ghosts.
 城たちは古いです。それらは幽霊がいます。
+🚀 The rocket is fast. It goes to space.
+ロケットは速いです。それは宇宙に行きます。
 🚀 The rockets are fast. They go to space.
 ロケットたちは速いです。それらは宇宙に行きます。
+🛸 The UFO is bright. It flies silently.
+UFOは明るいです。それは静かに飛びます。
 🛸 The UFOs are bright. They fly silently.
 UFOたちは明るいです。それらは静かに飛びます。
+🌈 The rainbow is colorful. It appears after rain.
+虹はカラフルです。それは雨の後に現れます。
 🌈 The rainbows are colorful. They appear after rain.
 虹たちはカラフルです。それらは雨の後に現れます。
+⚡ The lightning is loud. It strikes the ground.
+稲妻は大きいです。それは地面を叩きます。
 ⚡ The lightnings are loud. They strike the ground.
 稲妻たちは大きいです。それらは地面を叩きます。
+🌪️ The tornado is dangerous. It destroys houses.
+竜巻は危険です。それは家を壊します。
 🌪️ The tornadoes are dangerous. They destroy houses.
 竜巻たちは危険です。それらは家を壊します。
+🌋 The volcano is hot. It erupts lava.
+火山は熱いです。それは溶岩を噴出します。
 🌋 The volcanoes are hot. They erupt lava.
 火山たちは熱いです。それらは溶岩を噴出します。
+🏝️ The island is small. It has beaches.
+島は小さいです。それはビーチがあります。
 🏝️ The islands are small. They have beaches.
 島たちは小さいです。それらはビーチがあります。
+🏔️ The mountain is high. It touches the clouds.
+山は高いです。それは雲に触れます。
 🏔️ The mountains are high. They touch the clouds.
 山たちは高いです。それらは雲に触れます。
+🌊 The wave is big. It crashes on the beach.
+波は大きいです。それは浜辺に打ち寄せます。
 🌊 The waves are big. They crash on the beach.
 波たちは大きいです。それらは浜辺に打ち寄せます。
+🌲 The forest is green. It has many trees.
+森は緑です。それは多くの木があります。
 🌲 The forests are green. They have many trees.
 森たちは緑です。それらは多くの木があります。
+🌺 The flower is pretty. It smells sweet.
+花はきれいです。それは甘い匂いがします。
 🌺 The flowers are pretty. They smell sweet.
 花たちはきれいです。それらは甘い匂いがします。
+🍄 The mushroom is red. It grows in the dark.
+キノコは赤いです。それは暗闇で育ちます。
 🍄 The mushrooms are red. They grow in the dark.
 キノコたちは赤いです。それらは暗闇で育ちます。
+🦋 The butterfly is small. It flies gracefully.
+蝶は小さいです。それは優雅に飛びます。
 🦋 The butterflies are small. They fly gracefully.
 蝶たちは小さいです。それらは優雅に飛びます。
+🐝 The bee is busy. It makes honey.
+蜂は忙しいです。それは蜂蜜を作ります。
 🐝 The bees are busy. They make honey.
 蜂たちは忙しいです。それらは蜂蜜を作ります。
+🐸 The frog is green. It jumps high.
+カエルは緑です。それは高く跳びます。
 🐸 The frogs are green. They jump high.
 カエルたちは緑です。それらは高く跳びます。
+🐢 The turtle is slow. It lives long.
+カメは遅いです。それは長生きします。
 🐢 The turtles are slow. They live long.
 カメたちは遅いです。それらは長生きします。
+🐍 The snake is long. It slides silently.
+ヘビは長いです。それは静かに滑ります。
 🐍 The snakes are long. They slide silently.
 ヘビたちは長いです。それらは静かに滑ります。
+🦎 The lizard is fast. It climbs walls.
+トカゲは速いです。それは壁を登ります。
 🦎 The lizards are fast. They climb walls.
 トカゲたちは速いです。それらは壁を登ります。
+🐊 The crocodile is scary. It snaps its jaws.
+ワニは怖いです。それは顎をパチンと鳴らします。
 🐊 The crocodiles are scary. They snap their jaws.
 ワニたちは怖いです。それらは顎をパチンと鳴らします。
+🦈 The shark is dangerous. It swims fast.
+サメは危険です。それは速く泳ぎます。
 🦈 The sharks are dangerous. They swim fast.
 サメたちは危険です。それらは速く泳ぎます。
+🐳 The whale is huge. It sings songs.
+クジラは巨大です。それは歌を歌います。
 🐳 The whales are huge. They sing songs.
 クジラたちは巨大です。それらは歌を歌います。
+🐬 The dolphin is smart. It does tricks.
+イルカは賢いです。それは芸をします。
 🐬 The dolphins are smart. They do tricks.
 イルカたちは賢いです。それらは芸をします。
+🦚 The peacock is beautiful. It shows its feathers.
+クジャクは美しいです。それは羽を見せます。
 🦚 The peacocks are beautiful. They show their feathers.
 クジャクたちは美しいです。それらは羽を見せます。
+🦩 The flamingo is pink. It stands on one leg.
+フラミンゴはピンクです。それは片足で立ちます。
 🦩 The flamingos are pink. They stand on one leg.
 フラミンゴたちはピンクです。それらは片足で立ちます。
+🦜 The parrot is colorful. It talks.
+オウムはカラフルです。それは話します。
 🦜 The parrots are colorful. They talk.
 オウムたちはカラフルです。それらは話します。
+🦢 The swan is graceful. It swims gracefully.
+白鳥は優雅です。それは優雅に泳ぎます。
 🦢 The swans are graceful. They swim gracefully.
 白鳥たちは優雅です。それらは優雅に泳ぎます。
+🦩 The owl is wise. It hunts at night.
+フクロウは賢いです。それは夜に狩りをします。
 🦩 The owls are wise. They hunt at night.
 フクロウたちは賢いです。それらは夜に狩りをします。`
         },
