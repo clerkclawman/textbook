@@ -13,20 +13,32 @@ import html
 import urllib.parse
 import random
 
-# RSS Sources - Focus on English sources
+# RSS Sources - Balanced mix of topics
+# Tech limited to max 5 items total per day
 RSS_SOURCES = [
-    # International Sources (English)
-    ("BBC Technology", "https://feeds.bbci.co.uk/news/technology/rss.xml"),
-    ("BBC Science", "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"),
-    ("BBC Business", "https://feeds.bbci.co.uk/news/business/rss.xml"),
-    ("BBC Entertainment", "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"),
-    ("BBC Health", "https://feeds.bbci.co.uk/news/health/rss.xml"),
-    
-    # Japanese Sources (for variety, will filter for English content)
+    # General News (Priority - most popular stories)
+    ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
     ("NHK News", "https://www3.nhk.or.jp/rss/news/cat0.xml"),
     ("NHK International", "https://www3.nhk.or.jp/rss/news/cat6.xml"),
-    ("NHK Science", "https://www3.nhk.or.jp/rss/news/cat3.xml"),
+    
+    # Entertainment & Culture (Popular with students)
+    ("BBC Entertainment", "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"),
+    
+    # Sports (Popular topic)
+    ("BBC Sport", "https://feeds.bbci.co.uk/sport/rss.xml"),
     ("NHK Sports", "https://www3.nhk.or.jp/rss/news/cat7.xml"),
+    
+    # Business & Economy (Relevant to adults)
+    ("BBC Business", "https://feeds.bbci.co.uk/news/business/rss.xml"),
+    
+    # Health & Lifestyle (Practical topics)
+    ("BBC Health", "https://feeds.bbci.co.uk/news/health/rss.xml"),
+    
+    # Science & Environment (Limited - max 5 items total)
+    ("BBC Science", "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"),
+    
+    # Technology (Limited - max 5 items total)
+    ("BBC Technology", "https://feeds.bbci.co.uk/news/technology/rss.xml"),
 ]
 
 # Topics to avoid (too sensitive or inappropriate)
@@ -423,9 +435,16 @@ def fetch_rss_feed(url):
         print(f"Error fetching {url}: {e}")
         return []
 
+def is_tech_source(source_name):
+    """Check if source is tech-related (limited to max 5 items)"""
+    tech_sources = ['BBC Technology', 'BBC Science']
+    return source_name in tech_sources
+
 def fetch_news_from_sources():
-    """Fetch news from all RSS sources"""
+    """Fetch news from all RSS sources with tech limited to max 5 items"""
     all_news = []
+    tech_count = 0
+    max_tech_items = 5
     
     for source_name, rss_url in RSS_SOURCES:
         try:
@@ -440,6 +459,13 @@ def fetch_news_from_sources():
                 # Skip if not appropriate
                 if not is_appropriate(headline):
                     continue
+                
+                # Limit tech items
+                if is_tech_source(source_name):
+                    if tech_count >= max_tech_items:
+                        continue
+                    tech_count += 1
+                    print(f"  Tech item {tech_count}/{max_tech_items}")
                 
                 # Simplify the headline
                 simplified_headline = simplify_english(headline)
@@ -458,6 +484,7 @@ def fetch_news_from_sources():
             print(f"Error processing {source_name}: {e}")
             continue
     
+    print(f"Total items fetched: {len(all_news)} (Tech: {tech_count}/{max_tech_items})")
     return all_news
 
 def generate_news_js(news_items, target_count=50):
