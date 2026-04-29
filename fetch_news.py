@@ -13,20 +13,29 @@ import html
 import urllib.parse
 import random
 
-# RSS Sources - Balanced mix of topics
-# Tech limited to max 5 items total per day
+# RSS Sources - Diverse international mix with tech limited to max 5 items
+# Sports removed - not relevant for discussion
 RSS_SOURCES = [
-    # General News (Priority - most popular stories)
+    # UK News
     ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("Daily Mail", "https://www.dailymail.co.uk/news/index.rss"),
+    
+    # US News
+    ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
+    ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
+    
+    # Japan News
     ("NHK News", "https://www3.nhk.or.jp/rss/news/cat0.xml"),
     ("NHK International", "https://www3.nhk.or.jp/rss/news/cat6.xml"),
     
+    # Europe News
+    ("Euronews World", "https://www.euronews.com/rss"),
+    
+    # China News
+    ("China Daily World", "http://www.chinadaily.com.cn/rss/world_rss.xml"),
+    
     # Entertainment & Culture (Popular with students)
     ("BBC Entertainment", "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"),
-    
-    # Sports (Popular topic)
-    ("BBC Sport", "https://feeds.bbci.co.uk/sport/rss.xml"),
-    ("NHK Sports", "https://www3.nhk.or.jp/rss/news/cat7.xml"),
     
     # Business & Economy (Relevant to adults)
     ("BBC Business", "https://feeds.bbci.co.uk/news/business/rss.xml"),
@@ -34,8 +43,9 @@ RSS_SOURCES = [
     # Health & Lifestyle (Practical topics)
     ("BBC Health", "https://feeds.bbci.co.uk/news/health/rss.xml"),
     
-    # Science & Environment (Limited - max 5 items total)
+    # Science & Environment (Interesting stories from multiple sources)
     ("BBC Science", "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"),
+    ("Daily Mail Science", "https://www.dailymail.co.uk/sciencetech/index.rss"),
     
     # Technology (Limited - max 5 items total)
     ("BBC Technology", "https://feeds.bbci.co.uk/news/technology/rss.xml"),
@@ -437,7 +447,7 @@ def fetch_rss_feed(url):
 
 def is_tech_source(source_name):
     """Check if source is tech-related (limited to max 5 items)"""
-    tech_sources = ['BBC Technology', 'BBC Science']
+    tech_sources = ['BBC Technology', 'BBC Science', 'Daily Mail Science']
     return source_name in tech_sources
 
 def fetch_news_from_sources():
