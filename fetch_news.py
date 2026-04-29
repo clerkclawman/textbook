@@ -16,11 +16,11 @@ import random
 # RSS Sources - Focus on English sources
 RSS_SOURCES = [
     # International Sources (English)
-    ("BBC Technology", "http://feeds.bbci.co.uk/news/technology/rss.xml"),
-    ("BBC Science", "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml"),
-    ("BBC Business", "http://feeds.bbci.co.uk/news/business/rss.xml"),
-    ("BBC Entertainment", "http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"),
-    ("BBC Health", "http://feeds.bbci.co.uk/news/health/rss.xml"),
+    ("BBC Technology", "https://feeds.bbci.co.uk/news/technology/rss.xml"),
+    ("BBC Science", "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"),
+    ("BBC Business", "https://feeds.bbci.co.uk/news/business/rss.xml"),
+    ("BBC Entertainment", "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"),
+    ("BBC Health", "https://feeds.bbci.co.uk/news/health/rss.xml"),
     
     # Japanese Sources (for variety, will filter for English content)
     ("NHK News", "https://www3.nhk.or.jp/rss/news/cat0.xml"),
@@ -37,9 +37,10 @@ AVOID_TOPICS = [
     'protest', 'riot', 'shooting', 'bomb', 'explosion', 'hostage', 'funeral'
 ]
 
-# Local LLM server for translation
-LLM_SERVER = 'http://localhost:18801'
-LLM_MODEL = 'Qwen3.5-4B-HauhauCS.Q4_K_M.gguf'
+# Local LLM server for translation - DISABLED
+# Translation is now handled by the cron job agent directly
+# LLM_SERVER = 'http://localhost:18801'
+# LLM_MODEL = 'Qwen3.5-4B-HauhauCS.Q4_K_M.gguf'
 
 def is_english(text):
     """Check if text is primarily English"""
@@ -460,32 +461,17 @@ def fetch_news_from_sources():
     return all_news
 
 def generate_news_js(news_items, target_count=50):
-    """Generate news.js content"""
+    """Generate news.js content - English only, translation handled by cron job agent"""
     # Select top items
     selected_items = news_items[:target_count]
     
-    # Collect all texts to translate
-    texts_to_translate = []
-    for item in selected_items:
-        texts_to_translate.append(item['headline'])
-        texts_to_translate.append(item['question'])
-    
-    print(f"Translating {len(texts_to_translate)} texts in batches...")
-    
-    # Batch translate all texts
-    translations = translate_to_japanese_batch(texts_to_translate)
-    
-    # Generate content
+    # Generate content - English only
     content_lines = []
     for i, item in enumerate(selected_items):
         print(f"Processing item {i+1}/{len(selected_items)}: {item['headline'][:50]}...")
         
-        # Get translations from batch results
-        headline_jp = translations.get(item['headline'], item['headline'])
-        question_jp = translations.get(item['question'], item['question'])
-        
+        # Output English only - translation will be handled by cron job agent
         content_lines.append(f"📰 \"{item['headline']}\" — {item['question']}")
-        content_lines.append(f"「{headline_jp}」— {question_jp}")
     
     content = '\n'.join(content_lines)
     
@@ -494,6 +480,7 @@ def generate_news_js(news_items, target_count=50):
     js_content = f"""// File: news.js
 // Target: Daily news headlines with discussion questions
 // Structure: Object with stories array for class selector compatibility
+// NOTE: Japanese translations will be added by cron job agent
 
 var news = {{
     stories: [
