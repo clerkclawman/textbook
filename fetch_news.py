@@ -37,6 +37,10 @@ AVOID_TOPICS = [
     'protest', 'riot', 'shooting', 'bomb', 'explosion', 'hostage', 'funeral'
 ]
 
+# Local LLM server for translation
+LLM_SERVER = 'http://localhost:18801'
+LLM_MODEL = 'Qwen3.5-4B-HauhauCS.Q4_K_M.gguf'
+
 def is_english(text):
     """Check if text is primarily English"""
     # Simple check: if it contains mostly ASCII characters
@@ -285,11 +289,112 @@ def generate_question(headline):
         ]
         return random.choice(default_questions)
 
+def translate_to_japanese_batch(texts):
+    """Translate multiple texts to Japanese using local LLM server in batches"""
+    translations = {}
+    
+    # Process in batches of 5 to avoid overwhelming the model
+    batch_size = 5
+    for i in range(0, len(texts), batch_size):
+        batch = texts[i:i + batch_size]
+        
+        try:
+            # Create batch prompt
+            batch_prompt = "Translate these texts to Japanese:\n"
+            for j, text in enumerate(batch):
+                batch_prompt += f"{j+1}. {text}\n"
+            
+            # Use local LLM server for batch translation
+            url = f"{LLM_SERVER}/v1/chat/completions"
+            
+            data = {
+                "model": LLM_MODEL,
+                "messages": [
+                    {"role": "user", "content": batch_prompt}
+                ],
+                "max_tokens": 300,
+                "temperature": 0.1
+            }
+            
+            req = urllib.request.Request(
+                url,
+                data=json.dumps(data).encode('utf-8'),
+                headers={'Content-Type': 'application/json'}
+            )
+            
+            with urllib.request.urlopen(req, timeout=60) as response:
+                result = response.read().decode('utf-8')
+                    
+            # Parse JSON response
+            response_data = json.loads(result)
+            
+            # Extract translations from response
+            if 'choices' in response_data and len(response_data['choices']) > 0:
+                translation_text = response_data['choices'][0]['message']['content']
+                
+                # Parse the batch response - each line should be a translation
+                lines = translation_text.strip().split('\n')
+                for j, line in enumerate(lines):
+                    if j < len(batch):
+                        # Extract the translation (remove numbering like "1. " or "1) ")
+                        translation = line.strip()
+                        # Remove any numbering
+                        translation = re.sub(r'^\d+[\.\)]\s*', '', translation)
+                        # Remove any remaining numbering at the end
+                        translation = re.sub(r'\s*\d+[\.\)]?\s*$', '', translation)
+                        translations[batch[j]] = translation
+            else:
+                # Fallback: use original text
+                for text in batch:
+                    translations[text] = text
+                    
+        except Exception as e:
+            print(f"Batch translation error: {e}")
+            # Fallback: use original text for this batch
+            for text in batch:
+                translations[text] = text
+    
+    return translations
+
 def translate_to_japanese(text):
-    """Translate text to Japanese - placeholder for AI translation"""
-    # This function will be called by the cron job agent
-    # The agent will handle the actual translation
-    return f"[TRANSLATE: {text}]"
+    """Translate text to Japanese using local LLM server"""
+    try:
+        # Use local LLM server for translation
+        url = f"{LLM_SERVER}/v1/chat/completions"
+        
+        data = {
+            "model": LLM_MODEL,
+            "messages": [
+                {"role": "user", "content": f"Translate to Japanese: {text}"}
+            ],
+            "max_tokens": 50,
+            "temperature": 0.1
+        }
+        
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(data).encode('utf-8'),
+            headers={'Content-Type': 'application/json'}
+        )
+        
+        with urllib.request.urlopen(req, timeout=15) as response:
+            result = response.read().decode('utf-8')
+                
+        # Parse JSON response
+        response_data = json.loads(result)
+        
+        # Extract translation
+        if 'choices' in response_data and len(response_data['choices']) > 0:
+            translation = response_data['choices'][0]['message']['content']
+            return translation.strip()
+        else:
+            # Fallback: return original text
+            return text
+            
+    except Exception as e:
+        print(f"Translation error for '{text}': {e}")
+        # Fallback: return original text
+        return text
 
 def fetch_rss_feed(url):
     """Fetch and parse RSS feed"""
@@ -309,7 +414,7 @@ def fetch_rss_feed(url):
                 title = html.unescape(title_elem.text)
                 items.append(title)
         
-        return items[:10]  # Return top 10
+        return items[:15]  # Return top 15 to reach target of 50 items
     
     except Exception as e:
         print(f"Error fetching {url}: {e}")
@@ -363,7 +468,7 @@ def generate_news_js(news_items, target_count=50):
         print(f"Processing item {i+1}/{len(selected_items)}: {item['headline'][:50]}...")
         
         # Format: 📰 "headline" — question?
-        # Japanese translation placeholder
+        # Japanese translation using single translation for reliability
         headline_jp = translate_to_japanese(item['headline'])
         question_jp = translate_to_japanese(item['question'])
         
