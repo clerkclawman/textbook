@@ -11,6 +11,7 @@ from datetime import datetime
 import re
 import html
 import urllib.parse
+import random
 
 # RSS Sources - Focus on English sources
 RSS_SOURCES = [
@@ -73,47 +74,216 @@ def simplify_english(text, max_length=12):
     return text.strip()
 
 def generate_question(headline):
-    """Generate a discussion question based on the headline"""
+    """Generate a varied and sometimes humorous discussion question based on the headline"""
     headline_lower = headline.lower()
     
-    # More specific question templates based on common topics
-    # Order matters - more specific matches first
-    if any(word in headline_lower for word in ['gaming', 'game', 'player', 'video', 'controller', 'steam', 'playstation', 'xbox']):
-        return "Do you like video games?"
-    elif any(word in headline_lower for word in ['spotify', 'music', 'song', 'band', 'concert', 'album', 'artist']):
-        return "What kind of music do you like?"
-    elif any(word in headline_lower for word in ['social media', 'facebook', 'twitter', 'instagram', 'tiktok', 'online']):
-        return "How has social media changed your life?"
-    elif any(word in headline_lower for word in ['ai', 'artificial', 'intelligence', 'robot', 'chatgpt']):
-        return "What do you think about AI?"
-    elif any(word in headline_lower for word in ['car', 'vehicle', 'auto', 'drive', 'ev', 'electric']):
-        return "Do you think electric cars are the future?"
-    elif any(word in headline_lower for word in ['sport', 'team', 'player', 'win', 'olympic', 'football', 'soccer']):
-        return "Do you like watching sports?"
-    elif any(word in headline_lower for word in ['technology', 'tech', 'digital', 'app', 'software', 'internet']):
-        return "How has technology changed your life?"
-    elif any(word in headline_lower for word in ['award', 'prize', 'honor', 'recognize', 'winner']):
-        return "What achievement deserves recognition?"
-    elif any(word in headline_lower for word in ['company', 'business', 'market', 'economy', 'stock', 'money']):
-        return "What makes a good company?"
-    elif any(word in headline_lower for word in ['environment', 'climate', 'green', 'energy', 'carbon']):
-        return "What can we do to help the environment?"
-    elif any(word in headline_lower for word in ['health', 'medical', 'doctor', 'hospital', 'virus']):
-        return "How do you stay healthy?"
-    elif any(word in headline_lower for word in ['education', 'school', 'university', 'student', 'teacher']):
-        return "What's important in education?"
-    elif any(word in headline_lower for word in ['food', 'restaurant', 'cooking', 'eat', 'chef']):
-        return "What's your favorite food?"
-    elif any(word in headline_lower for word in ['travel', 'trip', 'vacation', 'visit', 'tourist']):
-        return "Where would you like to travel?"
-    elif any(word in headline_lower for word in ['movie', 'film', 'actor', 'actress', 'cinema', 'hollywood']):
-        return "What's your favorite movie?"
-    elif any(word in headline_lower for word in ['space', 'nasa', 'rocket', 'planet', 'moon']):
-        return "Are you interested in space exploration?"
-    elif any(word in headline_lower for word in ['animal', 'wildlife', 'species', 'nature']):
-        return "Do you like animals?"
+    # AI and Technology questions
+    if any(word in headline_lower for word in ['ai', 'artificial', 'intelligence', 'robot', 'chatgpt', 'openai']):
+        ai_questions = [
+            "Would you trust an AI to make decisions for you?",
+            "What's the scariest thing about AI?",
+            "Do you think AI will take your job?",
+            "If AI could do one thing for you, what would it be?",
+            "Are you excited or scared about AI?",
+            "What's the most useful AI you've used?",
+            "Do you think AI has feelings?",
+            "Would you be friends with an AI?",
+            "What's the weirdest thing AI has done?",
+            "Do you think AI will rule the world?"
+        ]
+        return random.choice(ai_questions)
+    
+    # Gaming questions
+    elif any(word in headline_lower for word in ['gaming', 'game', 'player', 'video', 'controller', 'steam', 'playstation', 'xbox']):
+        gaming_questions = [
+            "What's your favorite video game?",
+            "How many hours do you spend gaming?",
+            "Do you think gaming is addictive?",
+            "What's the most expensive game you've bought?",
+            "Would you rather play alone or with friends?",
+            "What's the worst game you've ever played?",
+            "Do you think gaming makes you smarter?",
+            "What's your gaming setup like?",
+            "Have you ever stayed up all night gaming?",
+            "Do you think esports should be in the Olympics?"
+        ]
+        return random.choice(gaming_questions)
+    
+    # Music questions
+    elif any(word in headline_lower for word in ['spotify', 'music', 'song', 'band', 'concert', 'album', 'artist', 'billie', 'stallion']):
+        music_questions = [
+            "What's the most embarrassing song in your playlist?",
+            "Do you still listen to music from 10 years ago?",
+            "What's the best concert you've ever been to?",
+            "Would you pay for music or use free streaming?",
+            "What's your go-to karaoke song?",
+            "Do you think modern music is getting worse?",
+            "What's the most overrated song ever?",
+            "Have you ever met a famous musician?",
+            "What's the first album you ever bought?",
+            "Do you listen to music while working?"
+        ]
+        return random.choice(music_questions)
+    
+    # Social Media questions
+    elif any(word in headline_lower for word in ['social media', 'facebook', 'twitter', 'instagram', 'tiktok', 'online', 'viral']):
+        social_questions = [
+            "How much time do you spend on social media?",
+            "What's the most annoying thing about social media?",
+            "Do you think social media makes people lonely?",
+            "What's the last thing you posted online?",
+            "Would you survive without social media for a week?",
+            "What's the weirdest trend you've seen online?",
+            "Do you think social media is good or bad?",
+            "What's your favorite social media platform?",
+            "Have you ever gone viral online?",
+            "Do you think people are too addicted to phones?"
+        ]
+        return random.choice(social_questions)
+    
+    # Cars and EV questions
+    elif any(word in headline_lower for word in ['car', 'vehicle', 'auto', 'drive', 'ev', 'electric', 'oil', 'petrol', 'fuel']):
+        car_questions = [
+            "Do you think electric cars are the future?",
+            "What's your dream car?",
+            "Would you rather drive or be driven?",
+            "What's the worst car you've ever been in?",
+            "Do you think self-driving cars are safe?",
+            "What's the most expensive car you've seen?",
+            "Would you give up your car for public transport?",
+            "What's your favorite road trip memory?",
+            "Do you think cars will disappear in the future?",
+            "What's the most annoying thing about driving?"
+        ]
+        return random.choice(car_questions)
+    
+    # Sports questions
+    elif any(word in headline_lower for word in ['sport', 'team', 'player', 'win', 'olympic', 'football', 'soccer', 'golf']):
+        sport_questions = [
+            "What's your favorite sport to watch?",
+            "Do you think athletes are paid too much?",
+            "What's the most exciting sports moment you've seen?",
+            "Would you rather watch or play sports?",
+            "What's the worst sports injury you've had?",
+            "Do you think the Olympics are worth the cost?",
+            "What's your favorite sports team?",
+            "Have you ever met a famous athlete?",
+            "Do you think video games should be considered sports?",
+            "What's the most boring sport to watch?"
+        ]
+        return random.choice(sport_questions)
+    
+    # Technology questions
+    elif any(word in headline_lower for word in ['technology', 'tech', 'digital', 'app', 'software', 'internet', 'cyber', 'password', 'passkey']):
+        tech_questions = [
+            "What's the most annoying thing about modern technology?",
+            "Do you think technology makes life better or worse?",
+            "What's your most used app?",
+            "Would you survive without your phone for a day?",
+            "What's the best tech invention ever?",
+            "Do you think people are too addicted to screens?",
+            "What's the worst tech problem you've had?",
+            "Do you think privacy is dead in the digital age?",
+            "What's your favorite piece of technology?",
+            "Do you think technology will solve all our problems?"
+        ]
+        return random.choice(tech_questions)
+    
+    # Business and Money questions
+    elif any(word in headline_lower for word in ['company', 'business', 'market', 'economy', 'stock', 'money', 'billion', 'million', 'price', 'cost']):
+        business_questions = [
+            "If you had a million dollars, what would you do?",
+            "Do you think rich people are happy?",
+            "What's the most expensive thing you've ever bought?",
+            "Would you rather be rich or famous?",
+            "Do you think money can buy happiness?",
+            "What's the worst business decision you've made?",
+            "Do you think big companies are good or bad?",
+            "What's your dream job?",
+            "Do you think the economy is getting better or worse?",
+            "What's the most ridiculous thing you've seen someone spend money on?"
+        ]
+        return random.choice(business_questions)
+    
+    # Environment questions
+    elif any(word in headline_lower for word in ['environment', 'climate', 'green', 'energy', 'carbon', 'pollution', 'fossil', 'chemical', 'eagle', 'butterfly', 'octopus']):
+        env_questions = [
+            "Do you actually recycle, or just say you do?",
+            "What's the weirdest thing you've done to be eco-friendly?",
+            "Do you think climate change is real?",
+            "What's your favorite animal?",
+            "Would you give up meat to help the environment?",
+            "What's the most beautiful place in nature you've seen?",
+            "Do you think humans are destroying the planet?",
+            "What's the most annoying environmental rule?",
+            "Have you ever seen an amazing animal in the wild?",
+            "Do you think we can save the planet, or is it too late?"
+        ]
+        return random.choice(env_questions)
+    
+    # Health questions
+    elif any(word in headline_lower for word in ['health', 'medical', 'doctor', 'hospital', 'virus', 'vaccine', 'cancer', 'smoking', 'fever', 'pint', 'alcohol']):
+        health_questions = [
+            "What's your guilty pleasure when it comes to food?",
+            "Do you actually follow health advice, or just ignore it?",
+            "What's the weirdest health tip you've ever heard?",
+            "Do you think people are too obsessed with being healthy?",
+            "What's your favorite unhealthy food?",
+            "Have you ever had a strange medical experience?",
+            "Do you think doctors know what they're doing?",
+            "What's the most annoying health rule?",
+            "Would you rather be healthy or happy?",
+            "What's the worst illness you've ever had?"
+        ]
+        return random.choice(health_questions)
+    
+    # Entertainment and Movies questions
+    elif any(word in headline_lower for word in ['movie', 'film', 'actor', 'actress', 'cinema', 'hollywood', 'nostalgia', 'show', 'moulin', 'rouge']):
+        movie_questions = [
+            "What's the worst movie you've ever seen?",
+            "Do you think movies are getting better or worse?",
+            "What's your favorite movie of all time?",
+            "Would you rather watch a movie at home or in the cinema?",
+            "What's the most overrated movie ever?",
+            "Have you ever met a famous actor?",
+            "Do you think movie stars are paid too much?",
+            "What's the most embarrassing movie you like?",
+            "Do you prefer old movies or new ones?",
+            "What's the last movie that made you cry?"
+        ]
+        return random.choice(movie_questions)
+    
+    # Space questions
+    elif any(word in headline_lower for word in ['space', 'nasa', 'rocket', 'planet', 'moon', 'artemis', 'mars']):
+        space_questions = [
+            "Do you think aliens exist?",
+            "Would you go to space if you could?",
+            "What's the most interesting thing about space?",
+            "Do you think we should spend money on space exploration?",
+            "What's your favorite planet?",
+            "Would you live on Mars?",
+            "Do you think space tourism will ever be normal?",
+            "What's the coolest space fact you know?",
+            "Do you think we'll find life on other planets?",
+            "Would you rather explore space or the ocean?"
+        ]
+        return random.choice(space_questions)
+    
+    # Default questions for other topics
     else:
-        return "What do you think about this news?"
+        default_questions = [
+            "What's your opinion on this?",
+            "Do you think this is good or bad?",
+            "How does this affect your life?",
+            "What's the most interesting part of this story?",
+            "Do you think this will change anything?",
+            "What's your reaction to this news?",
+            "Would you tell your friends about this?",
+            "Do you think this is surprising?",
+            "What questions do you have about this?",
+            "How does this make you feel?"
+        ]
+        return random.choice(default_questions)
 
 def translate_to_japanese(text):
     """Translate text to Japanese - placeholder for AI translation"""
