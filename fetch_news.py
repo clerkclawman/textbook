@@ -293,14 +293,19 @@ def translate_to_japanese_batch(texts):
     """Translate multiple texts to Japanese using local LLM server in batches"""
     translations = {}
     
-    # Process in batches of 5 to avoid overwhelming the model
-    batch_size = 5
+    # Process in larger batches for efficiency
+    batch_size = 10
+    total_batches = (len(texts) + batch_size - 1) // batch_size
+    
     for i in range(0, len(texts), batch_size):
+        batch_num = (i // batch_size) + 1
         batch = texts[i:i + batch_size]
+        
+        print(f"  Translating batch {batch_num}/{total_batches} ({len(batch)} texts)...")
         
         try:
             # Create batch prompt
-            batch_prompt = "Translate these texts to Japanese:\n"
+            batch_prompt = "Translate these texts to natural Japanese suitable for Eiken students. Return only the translations, one per line:\n"
             for j, text in enumerate(batch):
                 batch_prompt += f"{j+1}. {text}\n"
             
@@ -312,7 +317,7 @@ def translate_to_japanese_batch(texts):
                 "messages": [
                     {"role": "user", "content": batch_prompt}
                 ],
-                "max_tokens": 300,
+                "max_tokens": 800,  # Increased for larger batches
                 "temperature": 0.1
             }
             
@@ -322,7 +327,7 @@ def translate_to_japanese_batch(texts):
                 headers={'Content-Type': 'application/json'}
             )
             
-            with urllib.request.urlopen(req, timeout=60) as response:
+            with urllib.request.urlopen(req, timeout=90) as response:
                 result = response.read().decode('utf-8')
                     
             # Parse JSON response
@@ -343,13 +348,15 @@ def translate_to_japanese_batch(texts):
                         # Remove any remaining numbering at the end
                         translation = re.sub(r'\s*\d+[\.\)]?\s*$', '', translation)
                         translations[batch[j]] = translation
+                        print(f"    {j+1}. {batch[j][:30]}... -> {translation[:30]}...")
             else:
                 # Fallback: use original text
+                print(f"    Warning: No valid response, using original text")
                 for text in batch:
                     translations[text] = text
                     
         except Exception as e:
-            print(f"Batch translation error: {e}")
+            print(f"    Batch translation error: {e}")
             # Fallback: use original text for this batch
             for text in batch:
                 translations[text] = text
@@ -359,15 +366,14 @@ def translate_to_japanese_batch(texts):
 def translate_to_japanese(text):
     """Translate text to Japanese using local LLM server"""
     try:
-        # Use local LLM server for translation
         url = f"{LLM_SERVER}/v1/chat/completions"
         
         data = {
             "model": LLM_MODEL,
             "messages": [
-                {"role": "user", "content": f"Translate to Japanese: {text}"}
+                {"role": "user", "content": f"Translate this to natural Japanese suitable for Eiken students: {text}"}
             ],
-            "max_tokens": 50,
+            "max_tokens": 200,
             "temperature": 0.1
         }
         
@@ -377,23 +383,19 @@ def translate_to_japanese(text):
             headers={'Content-Type': 'application/json'}
         )
         
-        with urllib.request.urlopen(req, timeout=15) as response:
+        with urllib.request.urlopen(req, timeout=30) as response:
             result = response.read().decode('utf-8')
-                
-        # Parse JSON response
+            
         response_data = json.loads(result)
         
-        # Extract translation
         if 'choices' in response_data and len(response_data['choices']) > 0:
-            translation = response_data['choices'][0]['message']['content']
-            return translation.strip()
+            translation = response_data['choices'][0]['message']['content'].strip()
+            return translation
         else:
-            # Fallback: return original text
             return text
             
     except Exception as e:
         print(f"Translation error for '{text}': {e}")
-        # Fallback: return original text
         return text
 
 def fetch_rss_feed(url):
@@ -462,15 +464,25 @@ def generate_news_js(news_items, target_count=50):
     # Select top items
     selected_items = news_items[:target_count]
     
+    # Collect all texts to translate
+    texts_to_translate = []
+    for item in selected_items:
+        texts_to_translate.append(item['headline'])
+        texts_to_translate.append(item['question'])
+    
+    print(f"Translating {len(texts_to_translate)} texts in batches...")
+    
+    # Batch translate all texts
+    translations = translate_to_japanese_batch(texts_to_translate)
+    
     # Generate content
     content_lines = []
     for i, item in enumerate(selected_items):
         print(f"Processing item {i+1}/{len(selected_items)}: {item['headline'][:50]}...")
         
-        # Format: 📰 "headline" — question?
-        # Japanese translation using single translation for reliability
-        headline_jp = translate_to_japanese(item['headline'])
-        question_jp = translate_to_japanese(item['question'])
+        # Get translations from batch results
+        headline_jp = translations.get(item['headline'], item['headline'])
+        question_jp = translations.get(item['question'], item['question'])
         
         content_lines.append(f"📰 \"{item['headline']}\" — {item['question']}")
         content_lines.append(f"「{headline_jp}」— {question_jp}")
