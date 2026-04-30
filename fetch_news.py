@@ -12,6 +12,7 @@ import re
 import html
 import urllib.parse
 import random
+import os
 
 # RSS Sources - Diverse international mix with tech limited to max 5 items
 # Sports removed - not relevant for discussion
@@ -59,10 +60,22 @@ AVOID_TOPICS = [
     'protest', 'riot', 'shooting', 'bomb', 'explosion', 'hostage', 'funeral'
 ]
 
-# Local LLM server for translation - DISABLED
-# Translation is now handled by the cron job agent directly
-# LLM_SERVER = 'http://localhost:18801'
-# LLM_MODEL = 'Qwen3.5-4B-HauhauCS.Q4_K_M.gguf'
+# NVIDIA NIM free tier API for translation and question generation
+LLM_SERVER = 'https://integrate.api.nvidia.com/v1'
+LLM_MODEL = 'deepseek-ai/deepseek-v4-flash'
+
+# Load API key from ~/.hermes/.env
+def load_api_key():
+    try:
+        with open(os.path.expanduser('~/.hermes/.env'), 'r') as f:
+            for line in f:
+                if line.startswith('NVIDIA_API_KEY='):
+                    return line.strip().split('=', 1)[1]
+    except:
+        pass
+    return 'nvapi-'
+
+LLM_API_KEY = load_api_key()
 
 def is_english(text):
     """Check if text is primarily English"""
@@ -101,219 +114,103 @@ def simplify_english(text, max_length=12):
     return text.strip()
 
 def generate_question(headline):
-    """Generate a varied and sometimes humorous discussion question based on the headline"""
+    """Generate a discussion question that relates to the specific headline using templates"""
     headline_lower = headline.lower()
     
-    # AI and Technology questions
-    if any(word in headline_lower for word in ['ai', 'artificial', 'intelligence', 'robot', 'chatgpt', 'openai']):
-        ai_questions = [
-            "Would you trust an AI to make decisions for you?",
-            "What's the scariest thing about AI?",
-            "Do you think AI will take your job?",
-            "If AI could do one thing for you, what would it be?",
-            "Are you excited or scared about AI?",
-            "What's the most useful AI you've used?",
-            "Do you think AI has feelings?",
-            "Would you be friends with an AI?",
-            "What's the weirdest thing AI has done?",
-            "Do you think AI will rule the world?"
-        ]
-        return random.choice(ai_questions)
+    # Extract key information from headline
+    # Look for people, places, actions, and topics
     
-    # Gaming questions
-    elif any(word in headline_lower for word in ['gaming', 'game', 'player', 'video', 'controller', 'steam', 'playstation', 'xbox']):
-        gaming_questions = [
-            "What's your favorite video game?",
-            "How many hours do you spend gaming?",
-            "Do you think gaming is addictive?",
-            "What's the most expensive game you've bought?",
-            "Would you rather play alone or with friends?",
-            "What's the worst game you've ever played?",
-            "Do you think gaming makes you smarter?",
-            "What's your gaming setup like?",
-            "Have you ever stayed up all night gaming?",
-            "Do you think esports should be in the Olympics?"
-        ]
-        return random.choice(gaming_questions)
+    # Oil/Energy related
+    if any(word in headline_lower for word in ['oil', 'price', 'fuel', 'energy', 'gas', 'petrol']):
+        if 'rise' in headline_lower or 'increase' in headline_lower or 'soar' in headline_lower:
+            return "How will higher prices affect you?"
+        elif 'fall' in headline_lower or 'drop' in headline_lower:
+            return "Is this good news for consumers?"
+        else:
+            return "Should we rely less on oil?"
     
-    # Music questions
-    elif any(word in headline_lower for word in ['spotify', 'music', 'song', 'band', 'concert', 'album', 'artist', 'billie', 'stallion']):
-        music_questions = [
-            "What's the most embarrassing song in your playlist?",
-            "Do you still listen to music from 10 years ago?",
-            "What's the best concert you've ever been to?",
-            "Would you pay for music or use free streaming?",
-            "What's your go-to karaoke song?",
-            "Do you think modern music is getting worse?",
-            "What's the most overrated song ever?",
-            "Have you ever met a famous musician?",
-            "What's the first album you ever bought?",
-            "Do you listen to music while working?"
-        ]
-        return random.choice(music_questions)
+    # Politics/Leadership
+    elif any(word in headline_lower for word in ['pm', 'president', 'leader', 'minister', 'government', 'election', 'vote']):
+        if any(word in headline_lower for word in ['resign', 'quit', 'step down']):
+            return "Why do leaders resign?"
+        elif any(word in headline_lower for word in ['win', 'victory', 'elected']):
+            return "What makes a good leader?"
+        else:
+            return "How does this affect the country?"
     
-    # Social Media questions
-    elif any(word in headline_lower for word in ['social media', 'facebook', 'twitter', 'instagram', 'tiktok', 'online', 'viral']):
-        social_questions = [
-            "How much time do you spend on social media?",
-            "What's the most annoying thing about social media?",
-            "Do you think social media makes people lonely?",
-            "What's the last thing you posted online?",
-            "Would you survive without social media for a week?",
-            "What's the weirdest trend you've seen online?",
-            "Do you think social media is good or bad?",
-            "What's your favorite social media platform?",
-            "Have you ever gone viral online?",
-            "Do you think people are too addicted to phones?"
-        ]
-        return random.choice(social_questions)
+    # Conflict/War
+    elif any(word in headline_lower for word in ['war', 'conflict', 'attack', 'military', 'troops', 'fight', 'battle']):
+        return "How can we prevent conflicts?"
     
-    # Cars and EV questions
-    elif any(word in headline_lower for word in ['car', 'vehicle', 'auto', 'drive', 'ev', 'electric', 'oil', 'petrol', 'fuel']):
-        car_questions = [
-            "Do you think electric cars are the future?",
-            "What's your dream car?",
-            "Would you rather drive or be driven?",
-            "What's the worst car you've ever been in?",
-            "Do you think self-driving cars are safe?",
-            "What's the most expensive car you've seen?",
-            "Would you give up your car for public transport?",
-            "What's your favorite road trip memory?",
-            "Do you think cars will disappear in the future?",
-            "What's the most annoying thing about driving?"
-        ]
-        return random.choice(car_questions)
+    # Environment/Climate
+    elif any(word in headline_lower for word in ['climate', 'environment', 'forest', 'pollution', 'carbon', 'green']):
+        if any(word in headline_lower for word in ['loss', 'destroy', 'damage']):
+            return "What can we do to help?"
+        else:
+            return "Is this enough to protect the environment?"
     
-    # Sports questions
-    elif any(word in headline_lower for word in ['sport', 'team', 'player', 'win', 'olympic', 'football', 'soccer', 'golf']):
-        sport_questions = [
-            "What's your favorite sport to watch?",
-            "Do you think athletes are paid too much?",
-            "What's the most exciting sports moment you've seen?",
-            "Would you rather watch or play sports?",
-            "What's the worst sports injury you've had?",
-            "Do you think the Olympics are worth the cost?",
-            "What's your favorite sports team?",
-            "Have you ever met a famous athlete?",
-            "Do you think video games should be considered sports?",
-            "What's the most boring sport to watch?"
-        ]
-        return random.choice(sport_questions)
+    # Technology/AI
+    elif any(word in headline_lower for word in ['ai', 'artificial', 'intelligence', 'robot', 'tech', 'digital', 'app']):
+        if any(word in headline_lower for word in ['job', 'work', 'employment']):
+            return "Will AI take your job?"
+        else:
+            return "How will this change our lives?"
     
-    # Technology questions
-    elif any(word in headline_lower for word in ['technology', 'tech', 'digital', 'app', 'software', 'internet', 'cyber', 'password', 'passkey']):
-        tech_questions = [
-            "What's the most annoying thing about modern technology?",
-            "Do you think technology makes life better or worse?",
-            "What's your most used app?",
-            "Would you survive without your phone for a day?",
-            "What's the best tech invention ever?",
-            "Do you think people are too addicted to screens?",
-            "What's the worst tech problem you've had?",
-            "Do you think privacy is dead in the digital age?",
-            "What's your favorite piece of technology?",
-            "Do you think technology will solve all our problems?"
-        ]
-        return random.choice(tech_questions)
+    # Business/Economy
+    elif any(word in headline_lower for word in ['company', 'business', 'market', 'economy', 'stock', 'money', 'billion', 'million']):
+        if any(word in headline_lower for word in ['fund', 'money', 'investment', 'pay']):
+            return "Is this money well spent?"
+        else:
+            return "How does this affect the economy?"
     
-    # Business and Money questions
-    elif any(word in headline_lower for word in ['company', 'business', 'market', 'economy', 'stock', 'money', 'billion', 'million', 'price', 'cost']):
-        business_questions = [
-            "If you had a million dollars, what would you do?",
-            "Do you think rich people are happy?",
-            "What's the most expensive thing you've ever bought?",
-            "Would you rather be rich or famous?",
-            "Do you think money can buy happiness?",
-            "What's the worst business decision you've made?",
-            "Do you think big companies are good or bad?",
-            "What's your dream job?",
-            "Do you think the economy is getting better or worse?",
-            "What's the most ridiculous thing you've seen someone spend money on?"
-        ]
-        return random.choice(business_questions)
+    # Health/Medical
+    elif any(word in headline_lower for word in ['health', 'medical', 'doctor', 'hospital', 'virus', 'vaccine', 'cancer', 'disease']):
+        return "What should people know about this?"
     
-    # Environment questions
-    elif any(word in headline_lower for word in ['environment', 'climate', 'green', 'energy', 'carbon', 'pollution', 'fossil', 'chemical', 'eagle', 'butterfly', 'octopus']):
-        env_questions = [
-            "Do you actually recycle, or just say you do?",
-            "What's the weirdest thing you've done to be eco-friendly?",
-            "Do you think climate change is real?",
-            "What's your favorite animal?",
-            "Would you give up meat to help the environment?",
-            "What's the most beautiful place in nature you've seen?",
-            "Do you think humans are destroying the planet?",
-            "What's the most annoying environmental rule?",
-            "Have you ever seen an amazing animal in the wild?",
-            "Do you think we can save the planet, or is it too late?"
-        ]
-        return random.choice(env_questions)
+    # Sports
+    elif any(word in headline_lower for word in ['sport', 'team', 'player', 'win', 'olympic', 'football', 'soccer', 'game']):
+        if any(word in headline_lower for word in ['win', 'victory', 'champion']):
+            return "What makes a team successful?"
+        else:
+            return "Do you follow this sport?"
     
-    # Health questions
-    elif any(word in headline_lower for word in ['health', 'medical', 'doctor', 'hospital', 'virus', 'vaccine', 'cancer', 'smoking', 'fever', 'pint', 'alcohol']):
-        health_questions = [
-            "What's your guilty pleasure when it comes to food?",
-            "Do you actually follow health advice, or just ignore it?",
-            "What's the weirdest health tip you've ever heard?",
-            "Do you think people are too obsessed with being healthy?",
-            "What's your favorite unhealthy food?",
-            "Have you ever had a strange medical experience?",
-            "Do you think doctors know what they're doing?",
-            "What's the most annoying health rule?",
-            "Would you rather be healthy or happy?",
-            "What's the worst illness you've ever had?"
-        ]
-        return random.choice(health_questions)
+    # Entertainment/Movies
+    elif any(word in headline_lower for word in ['movie', 'film', 'actor', 'actress', 'cinema', 'show', 'concert', 'music']):
+        return "Would you watch this?"
     
-    # Entertainment and Movies questions
-    elif any(word in headline_lower for word in ['movie', 'film', 'actor', 'actress', 'cinema', 'hollywood', 'nostalgia', 'show', 'moulin', 'rouge']):
-        movie_questions = [
-            "What's the worst movie you've ever seen?",
-            "Do you think movies are getting better or worse?",
-            "What's your favorite movie of all time?",
-            "Would you rather watch a movie at home or in the cinema?",
-            "What's the most overrated movie ever?",
-            "Have you ever met a famous actor?",
-            "Do you think movie stars are paid too much?",
-            "What's the most embarrassing movie you like?",
-            "Do you prefer old movies or new ones?",
-            "What's the last movie that made you cry?"
-        ]
-        return random.choice(movie_questions)
+    # Crime/Legal
+    elif any(word in headline_lower for word in ['court', 'judge', 'prison', 'jail', 'arrest', 'police', 'crime', 'law']):
+        if any(word in headline_lower for word in ['sentence', 'prison', 'jail']):
+            return "Is this punishment fair?"
+        else:
+            return "What should happen next?"
     
-    # Space questions
-    elif any(word in headline_lower for word in ['space', 'nasa', 'rocket', 'planet', 'moon', 'artemis', 'mars']):
-        space_questions = [
-            "Do you think aliens exist?",
-            "Would you go to space if you could?",
-            "What's the most interesting thing about space?",
-            "Do you think we should spend money on space exploration?",
-            "What's your favorite planet?",
-            "Would you live on Mars?",
-            "Do you think space tourism will ever be normal?",
-            "What's the coolest space fact you know?",
-            "Do you think we'll find life on other planets?",
-            "Would you rather explore space or the ocean?"
-        ]
-        return random.choice(space_questions)
+    # International/Relations
+    elif any(word in headline_lower for word in ['country', 'nation', 'international', 'foreign', 'border', 'embassy']):
+        return "How does this affect international relations?"
     
-    # Default questions for other topics
+    # Science/Space
+    elif any(word in headline_lower for word in ['space', 'nasa', 'rocket', 'planet', 'moon', 'satellite', 'science', 'research']):
+        return "Why is this important?"
+    
+    # Default generic questions that still relate
     else:
         default_questions = [
             "What's your opinion on this?",
-            "Do you think this is good or bad?",
-            "How does this affect your life?",
-            "What's the most interesting part of this story?",
-            "Do you think this will change anything?",
-            "What's your reaction to this news?",
-            "Would you tell your friends about this?",
-            "Do you think this is surprising?",
-            "What questions do you have about this?",
-            "How does this make you feel?"
+            "How does this affect you?",
+            "Is this good or bad news?",
+            "What should be done about this?",
+            "Do you agree with this decision?",
+            "How will this change things?",
+            "What's the most important part?",
+            "Who does this affect most?",
+            "What are the consequences?",
+            "Is this surprising?"
         ]
         return random.choice(default_questions)
 
 def translate_to_japanese_batch(texts):
-    """Translate multiple texts to Japanese using local LLM server in batches"""
+    """Translate multiple texts to Japanese using NVIDIA NIM API in batches"""
     translations = {}
     
     # Process in larger batches for efficiency
@@ -332,22 +229,25 @@ def translate_to_japanese_batch(texts):
             for j, text in enumerate(batch):
                 batch_prompt += f"{j+1}. {text}\n"
             
-            # Use local LLM server for batch translation
-            url = f"{LLM_SERVER}/v1/chat/completions"
+            # Use NVIDIA NIM API for batch translation
+            url = f"{LLM_SERVER}/chat/completions"
             
             data = {
                 "model": LLM_MODEL,
                 "messages": [
                     {"role": "user", "content": batch_prompt}
                 ],
-                "max_tokens": 800,  # Increased for larger batches
+                "max_tokens": 800,
                 "temperature": 0.1
             }
             
             req = urllib.request.Request(
                 url,
                 data=json.dumps(data).encode('utf-8'),
-                headers={'Content-Type': 'application/json'}
+                headers={
+                    'Content-Type': 'application/json',
+                    'Authorization': f'Bearer {LLM_API_KEY}'
+                }
             )
             
             with urllib.request.urlopen(req, timeout=90) as response:
@@ -403,7 +303,10 @@ def translate_to_japanese(text):
         req = urllib.request.Request(
             url,
             data=json.dumps(data).encode('utf-8'),
-            headers={'Content-Type': 'application/json'}
+            headers={
+                'Content-Type': 'application/json',
+                'Authorization': f'Bearer {LLM_API_KEY}'
+            }
         )
         
         with urllib.request.urlopen(req, timeout=30) as response:
@@ -498,17 +401,34 @@ def fetch_news_from_sources():
     return all_news
 
 def generate_news_js(news_items, target_count=50):
-    """Generate news.js content - English only, translation handled by cron job agent"""
+    """Generate news.js content with English headlines, questions, and Japanese translations"""
     # Select top items
     selected_items = news_items[:target_count]
     
-    # Generate content - English only
+    # Collect all texts for translation (headlines + questions)
+    texts_to_translate = []
+    for item in selected_items:
+        texts_to_translate.append(item['headline'])
+        texts_to_translate.append(item['question'])
+    
+    print(f"Translating {len(texts_to_translate)} texts (headlines + questions)...")
+    translations = translate_to_japanese_batch(texts_to_translate)
+    
+    # Generate content with translations
     content_lines = []
     for i, item in enumerate(selected_items):
         print(f"Processing item {i+1}/{len(selected_items)}: {item['headline'][:50]}...")
         
-        # Output English only - translation will be handled by cron job agent
-        content_lines.append(f"📰 \"{item['headline']}\" — {item['question']}")
+        headline = item['headline']
+        question = item['question']
+        
+        # Get translations
+        headline_jp = translations.get(headline, headline)
+        question_jp = translations.get(question, question)
+        
+        # Output with both English and Japanese
+        content_lines.append(f"📰 \"{headline}\" — {question}")
+        content_lines.append(f"「{headline_jp}」— {question_jp}")
     
     content = '\n'.join(content_lines)
     
@@ -517,7 +437,7 @@ def generate_news_js(news_items, target_count=50):
     js_content = f"""// File: news.js
 // Target: Daily news headlines with discussion questions
 // Structure: Object with stories array for class selector compatibility
-// NOTE: Japanese translations will be added by cron job agent
+// NOTE: Japanese translations included
 
 var news = {{
     stories: [
