@@ -6,107 +6,107 @@
 var news = {
     stories: [
         {
-            title: "Daily News Headlines - April 30, 2026",
-            content: `📰 "US singer D4vd bought tools online to dispose of girl's body, prosecutors" — What's the most important part?
-「アメリカの歌手D4vdが、少女の遺体を処分するための道具をインターネットで購入したと検察が発表」— 最も重要な部分は何ですか？
-📰 "'I did not expect it'" — Is this surprising?
-「「予想していませんでした」」— これは驚くべきことですか？
-📰 "King and Queen lay flowers at 9/11 Memorial in New York" — What should be done about this?
-「国王と王妃がニューヨークの9/11追悼施設に花を捧げる」— これに対して何をすべきか？
-📰 "Hungary's next PM says frozen EU funds will be paid out soon" — How does this affect the country?
-「ハンガリーの次期首相が、凍結されたEUの資金はまもなく支払われると発言」— これはその国にどのような影響を与えますか？
+            title: "Daily News Headlines - May 01, 2026",
+            content: `📰 "Myanmar ex-leader Aung San Suu Kyi moved to house arrest, military says" — How does this affect the country?
+「ミャンマーの元指導者アウンサンスーチー氏が自宅軟禁に移されたと軍が発表」— これはその国にどのような影響を与えるのか
+📰 "'How are we going to get back home" — How does this affect you?
+「どうやって家に帰ればいいんだろう」— これはあなたにどのような影響を与えるのか
+📰 "Israel intercepts Gaza flotilla near Crete and detains 175 activists" — How will this change our lives?
+「イスラエルがクレタ島沖でガザの船団を阻止し、活動家175人を拘束」— これは私たちの生活をどのように変えるのでしょうか？
+📰 "US House votes to end government shutdown over immigration operations" — How does this affect the country?
+「米下院、移民関連業務をめぐる政府閉鎖を終了する法案を可決」— これはその国にどのような影響を与えるのか
 📰 "US charges Mexican governor and other leaders with aiding drug cartel" — How does this affect the country?
-「アメリカがメキシコの知事や他の指導者を麻薬カルテルへの協力で起訴」— これはその国にどのような影響を与えますか？
-📰 "Florida lawmakers approve new voting maps to favour Republicans" — How will this change our lives?
-「フロリダ州議会、共和党に有利な新しい選挙区割りを承認」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Russia scales back Moscow Victory Day parade, blaming threat from Ukraine" — How will this change our lives?
-「ロシア、ウクライナからの脅威を理由にモスクワ戦勝記念パレードを縮小」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Stephen Fry, 68, sues tech conference for £100,000 in damages after he" — How will this change our lives?
-「68歳のスティーブン・フライ、テクノロジー会議を相手に10万ポンドの損害賠償を求めて提訴」— これは私たちの生活をどう変えるのでしょうか？
-📰 "The King and Queen welcome stars including Stella McCartney, Katherine Jenkins, Karlie" — Who does this affect most?
-「国王夫妻、ステラ・マッカートニー、キャサリン・ジェンキンス、カーリーらスターを歓迎」— これが最も影響を受けるのは誰か？
-📰 "Angela Rayner's allies say Starmer has 'got to go'" — Is this good or bad news?
-「アンジェラ・レイナーの側近、スターマー氏は「辞めるべき」と発言」— これは良い知らせですか、それとも悪い知らせですか？
-📰 "Record number of parking tickets quashed last year after appeals soared to" — How will this change our lives?
-「昨年、不服申し立てが急増した結果、取り消された駐車違反切符の数が過去最多となりました。」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Angela Rayner's VERY wild night out in Parliament revealed, as witnesses share" — Who does this affect most?
-「アンジェラ・レイナーの議会での非常に派手な夜の過ごし方が、目撃者たちの証言により明らかになりました。」— これが最も影響を受けるのは誰か？
-📰 "'They are so rude. The whole family is tainted'" — How will this change our lives?
-「「彼らはとても失礼だ。家族全体が汚染されている。」」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Mystery of the mummified corpse found in Chelsea knotweed jungle at £4million" — How does this affect the economy?
-「チェルシーの400万ポンドの敷地に生い茂るイタドリのジャングルで発見されたミイラ化した遺体の謎。」— これは経済にどのような影響を与えるのでしょうか。
-📰 "Rebel Wilson is accused of calling actress a 'prostitute' after sharing racy" — Would you watch this?
-「レベル・ウィルソンが、ある女優を「売春婦」と呼んだと非難されています。きわどい画像を共有した後に。」— あなたはこれを見ますか？
-📰 "Trinny Woodall, 62, vows not to 'disappear' as she ages and says" — How will this change our lives?
-「62歳のトリニー・ウッドオールは、年を重ねても「消え去る」つもりはないと語っています。」— これは私たちの生活をどう変えるのでしょうか？
-📰 "The Austrian nuns who fled their care home are now in Rome" — Do you agree with this decision?
-「介護施設を逃げ出したオーストリアの修道女たちは、現在ローマにいます。」— あなたはこの決定に賛成ですか
-📰 "South Korean court sentences ex-President Yoon to 7 years in prison" — How does this affect the country?
-「韓国の裁判所は、ユン前大統領に懲役7年の判決を言い渡しました。」— これはその国にどのような影響を与えますか？
-📰 "EU says Meta is failing to keep underage users off Facebook and" — How will this change our lives?
-「EUは、メタ社が未成年のユーザーをFacebookから遠ざけることに失敗していると述べています。」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Palestinian refugee uses art to share the story of his childhood with" — Do you agree with this decision?
-「パレスチナ難民の男性が、自身の子供時代の物語を伝えるために芸術を活用しています。」— あなたはこの決定に賛成ですか
-📰 "How the U.K. is reacting to King Charles' visit to the U.S." — Who does this affect most?
-「英国はチャールズ国王のアメリカ訪問にどのように反応しているか」— これが最も影響を受けるのは誰か？
-📰 "Will UAE's departure from OPEC affect the oil cartel's future influence" — Should we rely less on oil?
-「UAEのOPEC脱退は石油カルテルの将来の影響力に影響するか」— 私たちは石油への依存を減らすべきだろうか？
-📰 "Iranian officials to miss FIFA Congress over alleged mistreatment in Canada" — What's your opinion on this?
-「イラン当局者、カナダでの不当な扱いを理由にFIFA総会を欠席へ」— これについてあなたの意見は何ですか？
-📰 "Why is India turning to crocodiles and snakes to ‘fence’ Bangladesh border" — How does this affect international relations?
-「なぜインドはバングラデシュ国境の「フェンス」にワニやヘビを利用しようとしているのか」— これは国際関係にどのような影響を与えますか？
-📰 "Europe’s little-known mutual defence clause" — What's the most important part?
-「ヨーロッパのあまり知られていない相互防衛条項」— 最も重要な部分は何ですか？
-📰 "New Zealand court denies bid by mosque mass shooter to appeal conviction" — How will this change our lives?
-「ニュージーランドの裁判所、モスク乱射事件の犯人の控訴を認めず」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Marathon record breaker Sabastian Sawe returns to hero’s welcome in Kenya" — Do you agree with this decision?
-「マラソン記録更新のサバスチャン・サウェ、ケニアで英雄的な歓迎を受ける」— あなたはこの決定に賛成ですか
-📰 "London police release bodycam of arrest after two Jewish men stabbed" — What should happen next?
-「ロンドン警察、ユダヤ人男性2人刺傷事件の逮捕時のボディカメラ映像を公開」— 次に何が起こるべきでしょうか
-📰 "Video emerges of heavy firefight in Mali" — How can we prevent conflicts?
-「マリでの激しい戦闘の映像が公開される」— どのようにして紛争を防ぐことができるでしょうか
-📰 "Oil prices soar on fears of long supply disruption, US siege of" — How will higher prices affect you?
-「長期供給途絶の懸念と米国の包囲で原油価格が高騰」— 物価の上昇はあなたにどのような影響を与えますか？
-📰 "US indicts Sinaloa governor, 9 others over Mexican drug cartel links" — Is this surprising?
-「メキシコのシナロア州知事ら10人が、麻薬カルテルとの関係でアメリカに起訴される」— これは驚くべきことですか？
-📰 "Israel seizes Global Sumud Flotilla boats 1,000km away from Gaza" — Is this surprising?
-「イスラエルがガザから1000キロ離れた場所で「グローバル・スムード・フロティラ」の船を押収」— これは驚くべきことですか？
-📰 "Pro-government rally in Tehran demands end to US threats" — How does this affect the country?
-「テヘランで親政府デモ、アメリカの脅威を終わらせるよう要求」— これはその国にどのような影響を与えますか？
-📰 "Carney ‘strong’ in year one, now must deliver on promises in Canada" — What are the consequences?
-「カーニー首相、1年目は「強い」評価、今後はカナダでの公約実現が課題」— その結果はどうなるのか？
-📰 "Snow cover in the Greek mountains has declined by 58% in the" — How will this change our lives?
-「ギリシャの山々の積雪が58%減少」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Google parent Alphabet profit jumps 81% in Big Tech earnings roundup" — How will this change our lives?
-「グーグルの親会社アルファベット、大手ハイテク企業の決算で利益が81%増加」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Smoke rises over Russia’s Tuapse after Ukrainian drone strikes hit oil refinery" — How will higher prices affect you?
-「ウクライナのドローン攻撃で製油所が被害を受け、ロシアのトゥアプセで煙が上がる」— 物価の上昇はあなたにどのような影響を与えますか？
-📰 "Are you a chip stealer" — Who does this affect most?
-「あなたはチップを盗む人ですか？」— これが最も影響を受けるのは誰か？
-📰 "Europe Today" — Who does this affect most?
-「今日のヨーロッパ」— これが最も影響を受けるのは誰か？
-📰 "Czechia" — What's your opinion on this?
-「チェコ共和国」— これについてあなたの意見は何ですか？
-📰 "‘Itching to pump more oil’" — Should we rely less on oil?
-「もっと石油を掘りたくてうずうずしている」— 私たちは石油への依存を減らすべきだろうか？
-📰 "Latest news bulletin | April 30th, 2026 – Morning" — What are the consequences?
-「最新ニュース速報 | 2026年4月30日 – 朝」— その結果はどうなるのか？
-📰 "Europe’s tax divide" — Who does this affect most?
-「ヨーロッパの税金格差」— これが最も影響を受けるのは誰か？
-📰 "Wraparound screens, work pods and relax rows" — What are the consequences?
-「ぐるりと囲まれたスクリーン、ワークポッド、リラックス列」— その結果はどうなるのか？
-📰 "‘Now I believe in myself,’ Yomif Kejelcha on his sub-2-hour marathon and" — What should be done about this?
-「「今は自分を信じている」ヨミフ・ケジェルチャ、サブ2時間マラソンについて語る」— これに対して何をすべきか？
-📰 "Would you take orders from a chatbot" — What's the most important part?
-「チャットボットからの指示に従いますか？」— 最も重要な部分は何ですか？
-📰 "Video shows suspect approaching police after stabbing in north London" — How will this change our lives?
-「ロンドン北部での刺傷事件後、容疑者が警察に近づく映像」— これは私たちの生活をどう変えるのでしょうか？
+「米国、メキシコの州知事らを麻薬カルテル支援で起訴」— これはその国にどのような影響を与えるのか
+📰 "China to ban drone sales in Beijing citing security concerns" — Is this surprising?
+「中国、安全上の懸念から北京でのドローン販売を禁止へ」— これは驚きですか？
+📰 "US singer D4vd bought tools online to dispose of girl's body, prosecutors" — What's your opinion on this?
+「米国人歌手D4vd、少女の遺体を処分するための道具をネットで購入と検察」— これについてあなたの意見は何ですか？
+📰 "'I did not expect it'" — What's your opinion on this?
+「「予想していませんでした」」— これについてあなたの意見は何ですか？
+📰 "Rebel Wilson shares baby news as she leaves court after finally winding" — What makes a team successful?
+「レベル・ウィルソン、法廷を後にしてようやく決着、赤ちゃんのニュースを共有」— チームを成功させるものは何ですか？
+📰 "British divers find missing WWI wreck of US combat vessel" — What's your opinion on this?
+「英国人ダイバー、行方不明だった第一次世界大戦の米軍艦の残骸を発見」— これについてあなたの意見は何ですか？
+📰 "All the details you might have missed from William and Kate's 15th" — How will this change our lives?
+「ウィリアム王子とキャサリン妃の結婚15周年で見逃しがちな細かい点」— これは私たちの生活をどのように変えるのでしょうか？
+📰 "Premier Inn owner blames Labour tax hikes as it axes 3,800 jobs" — What should be done about this?
+「プレミア・インの運営会社、労働党の増税を非難し3800人を削減」— これに対して何をすべきか
+📰 "POLL OF THE DAY" — What's your opinion on this?
+「本日の世論調査」— これについてあなたの意見は何ですか？
+📰 "'Hardest Geezer', who ran the entire length of Africa, fights back against" — How can we prevent conflicts?
+「アフリカ全土を走破した「最強のジジイ」が反撃」— どうすれば争いを防げるでしょうか？
+📰 "Fourteen Elizabeth line passengers receive medical treatment after reports of 'smell of" — What should people know about this?
+「エリザベス線で異臭報告、14人の乗客が治療を受ける」— これについて人々は何を知っておくべきでしょうか？
+📰 "Mystery of the Islamic sect operating in a Cheshire orphanage" — How will this change things?
+「チェシャーの孤児院で活動するイスラム教団体の謎」— これによって何が変わるのか
+📰 "Myanmar junta says Suu Kyi moved to house arrest, doubts linger" — What should happen next?
+「ミャンマー軍事政権、スー・チー氏を自宅軟禁に移したと発表、疑念は続く」— 次に何が起こるべきでしょうか？
+📰 "Mirroring Gaza, Israel is destroying towns and villages in southern Lebanon" — Who does this affect most?
+「ガザと同様に、イスラエルは南レバノンの町や村を破壊している」— これが最も影響を受けるのは誰ですか？
+📰 "Activists say Israel has intercepted their Gaza aid flotilla near Crete" — How will this change our lives?
+「活動家らは、イスラエルがクレタ島近くでガザ支援船団を妨害したと主張」— これは私たちの生活をどのように変えるのでしょうか？
+📰 "The Austrian nuns who fled their care home are now in Rome" — How will this change things?
+「介護施設を逃れたオーストリアの修道女たちは現在ローマにいる」— これによって何が変わるのか
+📰 "Mexico’s Sheinbaum questions US claims of drug ties to Sinaloa governor" — How will this change our lives?
+「メキシコのシェインバウム大統領が、アメリカがシナロア州知事と麻薬組織の関係を主張していることに疑問を投げかけている。」— これは私たちの生活をどのように変えるのでしょうか？
+📰 "Iran confirmed to play at World Cup according to FIFA chief Infantino" — How does this affect you?
+「インファンティーノFIFA会長によると、イランのワールドカップ出場が確定した。」— これはあなたにどのような影響を与えるのか
+📰 "Myanmar’s former leader Aung San Suu Kyi moved to house arrest" — How does this affect the country?
+「ミャンマーの元指導者アウン・サン・スー・チー氏が自宅軟禁に移された。」— これはその国にどのような影響を与えるのか
+📰 "UN chief calls for immediate reopening of the Strait of Hormuz" — How will this change our lives?
+「国連事務総長がホルムズ海峡の即時再開を呼びかけている。」— これは私たちの生活をどのように変えるのでしょうか？
+📰 "UAE exit signals OPEC’s declining grip on oil markets" — Should we rely less on oil?
+「UAEの脱退は、OPECの石油市場に対する支配力が弱まっていることを示している。」— 私たちは石油への依存を減らすべきでしょうか？
+📰 "US falls to ‘historic low’ in press freedom tracker" — How does this affect you?
+「アメリカの報道の自由指数が「歴史的な低水準」に落ち込む」— これはあなたにどのような影響を与えるのか
+📰 "Israel rights group petitions top court to order release of 14 Gaza" — What should happen next?
+「イスラエルの人権団体が最高裁判所にガザ地区の14人を解放するよう申し立て」— 次に何が起こるべきでしょうか？
+📰 "How rebels teamed up to shake Mali and the Kremlin’s grip" — Do you follow this sport?
+「反政府勢力がどのように協力してマリとクレムリンの支配を揺るがしたか」— あなたはこのスポーツを観戦しますか？
+📰 "Africa and Asia back Infantino for unique fourth term as FIFA president" — How does this affect the country?
+「アフリカとアジアがインファンティーノ会長の異例の4期目を支持、FIFA会長に」— これはその国にどのような影響を与えるのか
+📰 "Saudi Arabia to end LIV Golf funding, while league appoints new chairman" — How will this change our lives?
+「サウジアラビアがLIVゴルフへの資金提供を終了、リーグは新会長を任命」— これは私たちの生活をどのように変えるのでしょうか？
+📰 "From railways to energy — five strategic projects linking Gulf states" — Should we rely less on oil?
+「鉄道からエネルギーまで——湾岸諸国を結ぶ5つの戦略的プロジェクト」— 私たちは石油への依存を減らすべきでしょうか？
+📰 "Venice Biennale's international jury resigns as Italy's government opposes Russia's participation" — Why do leaders resign?
+「イタリア政府がロシアの参加に反対し、ヴェネツィア・ビエンナーレの国際審査員団が辞任」— なぜリーダーは辞任するのでしょうか？
+📰 "'We are ready to discuss digital rules with the US but cannot" — How will this change our lives?
+「「私たちはアメリカとデジタルルールについて話し合う用意があるが、それはできない」」— これは私たちの生活をどのように変えるのでしょうか？
+📰 "French teen charged in Singapore over vending machine straw-licking viral video" — What's the most important part?
+「自動販売機のストローをなめる動画が拡散、シンガポールでフランス人10代が起訴される」— 最も重要な部分は何ですか？
+📰 "Latest news bulletin | April 30th, 2026 – Evening" — How will this change things?
+「最新ニュース速報 | 2026年4月30日 – 夕方」— これによって何が変わるのか
+📰 "Breathtaking landscapes guaranteed" — What are the consequences?
+「息をのむような景色が広がっています」— どのような結果が生じるのでしょうか
+📰 "UK PM Starmer jeered by crowd on arrival at scene of stabbing" — How does this affect the country?
+「英首相スターマー氏、刺傷事件現場に到着した際に群衆からやじられる」— これはその国にどのような影響を与えるのか
+📰 "Spain's 'humane migration policy' is 'model for Europe', minister says" — How does this affect the country?
+「スペインの「人道的な移民政策」は「ヨーロッパのモデル」だと大臣が語る」— これはその国にどのような影響を与えるのか
+📰 "Blinded by the flag" — What should be done about this?
+「国旗に目がくらんで」— これに対して何をすべきか
+📰 "Exclusive" — What should be done about this?
+「独占情報」— これに対して何をすべきか
+📰 "Belgium reopens the nuclear door in high-stakes deal with Engie" — How does this affect you?
+「ベルギーがエンジー社との重要契約で原子力発電の再開に踏み切る」— これはあなたにどのような影響を与えるのか
 📰 "Satellite lofted for first Arab country" — How does this affect international relations?
-「アラブ諸国初の人工衛星が打ち上げられる」— これは国際関係にどのような影響を与えますか？
+「アラブ諸国初の人工衛星が打ち上げられる」— これは国際関係にどのような影響を与えるのか
 📰 "Satellite lofted for first Arab country" — How does this affect international relations?
-「アラブ諸国初の人工衛星が打ち上げられる」— これは国際関係にどのような影響を与えますか？
+「アラブ諸国初の人工衛星が打ち上げられる」— これは国際関係にどのような影響を与えるのか
 📰 "Chinese, Russian and Indian ministers meet" — How does this affect the country?
-「中国、ロシア、インドの閣僚が会談」— これはその国にどのような影響を与えますか？`
+「中国、ロシア、インドの大臣が会談する」— これはその国にどのような影響を与えるのか
+📰 "Chinese, Russian and Indian ministers meet" — How does this affect the country?
+「中国、ロシア、インドの大臣が会談する」— これはその国にどのような影響を与えるのか
+📰 "Chinese, Russian and Indian ministers meet" — How does this affect the country?
+「中国、ロシア、インドの大臣が会談する」— これはその国にどのような影響を与えるのか
+📰 "Nanjing massacre remembered on 80th anniversary" — How will this change things?
+「南京事件から80年、追悼の式典が行われる」— これによって何が変わるのか
+📰 "Nanjing massacre remembered on 80th anniversary" — How does this affect you?
+「南京事件から80年、追悼の式典が行われる」— これはあなたにどのような影響を与えるのか
+📰 "Young Chinese-Irish ballroom dancer goes international" — How does this affect international relations?
+「中国人とアイルランド人の血を引く若いダンサーが国際舞台へ」— これは国際関係にどのような影響を与えるのか
+📰 "UK and China allow more direct flights" — What should be done about this?
+「イギリスと中国が直行便を増やす」— これに対して何をすべきか`
         }
     ]
 };
