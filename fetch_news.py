@@ -52,13 +52,45 @@ RSS_SOURCES = [
     ("BBC Technology", "https://feeds.bbci.co.uk/news/technology/rss.xml"),
 ]
 
-# Topics to avoid (too sensitive or inappropriate)
+# Topics to avoid (too sensitive or inappropriate for Eiken students)
 AVOID_TOPICS = [
     'war', 'conflict', 'death', 'kill', 'murder', 'terror', 'attack',
     'crash', 'disaster', 'emergency', 'crisis', 'scandal', 'corruption',
     'assassination', 'violence', 'political', 'trump', 'biden', 'election',
-    'protest', 'riot', 'shooting', 'bomb', 'explosion', 'hostage', 'funeral'
+    'protest', 'riot', 'shooting', 'bomb', 'explosion', 'hostage', 'funeral',
+    'massacre', 'genocide', 'torture', 'rape', 'sexual', 'abuse', 'body',
+    'corpse', 'mutilation', 'beheading', 'execution', 'suicide', 'drug cartel',
+    'cartel', 'gang', 'murderer', 'killer', 'victim', 'blood', 'gore'
 ]
+
+# Fragment/incomplete headline patterns to filter out
+FRAGMENT_PATTERNS = [
+    r'^["\']',  # Starts with quote
+    r'^POLL OF THE DAY$',
+    r'^Latest news bulletin',
+    r'^EXCLUSIVE$',
+    r'^BREAKING$',
+    r'^UPDATE$',
+    r'^\s*$',  # Empty or whitespace only
+    r'^[A-Z]{2,}$',  # All caps (likely labels)
+    r'^\d+\s+\w+\s+\d+$',  # Date patterns
+    r'^Breathtaking',  # Travel copy
+    r'^Blinded by',
+    r'^\w+\s+\d+$',  # Single word + number
+    r'\s+the\s*$',  # Ends with "the" (incomplete)
+    r'\s+that\s+opens\s+to\s+the\s*$',  # Ends with "that opens to the" (incomplete)
+    r'^\w+\s+\w+$',  # Two words only (likely names)
+    r'^\w+\s+\w+\s+\w+$',  # Three words only (likely names)
+    r'^\w+,\s*\w+,\s*\w+',  # Comma-separated list (section headers)
+    r'^\w+,\s*\w+\s+and\s+\w+',  # Comma-separated with "and" (section headers)
+    r'^\w+\s+\w+\s+\w+\s+\w+\s*$',  # Four words, likely section header
+    r'that\s+opens\s+to\s+the\s*$',  # Contains "that opens to the" (incomplete)
+]
+
+# Minimum headline length (too short = fragment)
+MIN_HEADLINE_LENGTH = 30
+# Maximum headline length (too long = complex)
+MAX_HEADLINE_LENGTH = 100
 
 # NVIDIA NIM free tier API for translation and question generation
 LLM_SERVER = 'https://integrate.api.nvidia.com/v1'
@@ -86,9 +118,30 @@ def is_english(text):
 def is_appropriate(headline):
     """Check if headline is appropriate for classroom discussion"""
     headline_lower = headline.lower()
+    
+    # Check against avoid topics
     for topic in AVOID_TOPICS:
         if topic in headline_lower:
             return False
+    
+    # Check against fragment patterns
+    for pattern in FRAGMENT_PATTERNS:
+        if re.search(pattern, headline, re.IGNORECASE):
+            return False
+    
+    # Check length
+    if len(headline) < MIN_HEADLINE_LENGTH or len(headline) > MAX_HEADLINE_LENGTH:
+        return False
+    
+    # Check if it's just a quote fragment (starts and ends with quotes)
+    if headline.startswith('"') and headline.endswith('"') and len(headline) < 50:
+        return False
+    
+    # Check if it's just a name or single word
+    words = headline.split()
+    if len(words) < 4:
+        return False
+    
     return True
 
 def simplify_english(text, max_length=12):
@@ -116,9 +169,7 @@ def simplify_english(text, max_length=12):
 def generate_question(headline):
     """Generate a discussion question that relates to the specific headline using templates"""
     headline_lower = headline.lower()
-    
-    # Extract key information from headline
-    # Look for people, places, actions, and topics
+    headline_words = headline_lower.split()
     
     # Oil/Energy related
     if any(word in headline_lower for word in ['oil', 'price', 'fuel', 'energy', 'gas', 'petrol']):
@@ -129,8 +180,8 @@ def generate_question(headline):
         else:
             return "Should we rely less on oil?"
     
-    # Politics/Leadership
-    elif any(word in headline_lower for word in ['pm', 'president', 'leader', 'minister', 'government', 'election', 'vote']):
+    # Politics/Leadership (more specific - check for actual political context)
+    elif any(word in headline_lower for word in ['pm', 'president', 'minister', 'government', 'election', 'vote', 'parliament', 'congress', 'senate']):
         if any(word in headline_lower for word in ['resign', 'quit', 'step down']):
             return "Why do leaders resign?"
         elif any(word in headline_lower for word in ['win', 'victory', 'elected']):
@@ -138,8 +189,8 @@ def generate_question(headline):
         else:
             return "How does this affect the country?"
     
-    # Conflict/War
-    elif any(word in headline_lower for word in ['war', 'conflict', 'attack', 'military', 'troops', 'fight', 'battle']):
+    # Conflict/War (more specific - check for actual conflict context, not just "military")
+    elif any(word in headline_words for word in ['war', 'battlefield', 'frontline', 'attack', 'strike', 'bombing']):
         return "How can we prevent conflicts?"
     
     # Environment/Climate
@@ -150,47 +201,51 @@ def generate_question(headline):
             return "Is this enough to protect the environment?"
     
     # Technology/AI
-    elif any(word in headline_lower for word in ['ai', 'artificial', 'intelligence', 'robot', 'tech', 'digital', 'app']):
+    elif any(word in headline_lower for word in ['ai', 'artificial intelligence', 'robot', 'tech', 'digital', 'app', 'software']):
         if any(word in headline_lower for word in ['job', 'work', 'employment']):
             return "Will AI take your job?"
         else:
             return "How will this change our lives?"
     
     # Business/Economy
-    elif any(word in headline_lower for word in ['company', 'business', 'market', 'economy', 'stock', 'money', 'billion', 'million']):
-        if any(word in headline_lower for word in ['fund', 'money', 'investment', 'pay']):
+    elif any(word in headline_lower for word in ['company', 'business', 'market', 'economy', 'stock', 'billion', 'million', 'profit', 'revenue']):
+        if any(word in headline_lower for word in ['fund', 'investment', 'pay', 'cost']):
             return "Is this money well spent?"
         else:
             return "How does this affect the economy?"
     
     # Health/Medical
-    elif any(word in headline_lower for word in ['health', 'medical', 'doctor', 'hospital', 'virus', 'vaccine', 'cancer', 'disease']):
+    elif any(word in headline_lower for word in ['health', 'medical', 'doctor', 'hospital', 'virus', 'vaccine', 'cancer', 'disease', 'treatment']):
         return "What should people know about this?"
     
-    # Sports
-    elif any(word in headline_lower for word in ['sport', 'team', 'player', 'win', 'olympic', 'football', 'soccer', 'game']):
-        if any(word in headline_lower for word in ['win', 'victory', 'champion']):
+    # Sports (more specific - check for actual sports context, use word boundaries)
+    elif any(word in headline_words for word in ['football', 'soccer', 'basketball', 'tennis', 'golf', 'cricket', 'rugby', 'olympic', 'world cup', 'premier league', 'nba', 'nfl']):
+        if any(word in headline_lower for word in ['win', 'victory', 'champion', 'trophy']):
             return "What makes a team successful?"
         else:
             return "Do you follow this sport?"
     
-    # Entertainment/Movies
-    elif any(word in headline_lower for word in ['movie', 'film', 'actor', 'actress', 'cinema', 'show', 'concert', 'music']):
+    # Entertainment/Movies (more specific)
+    elif any(word in headline_lower for word in ['movie', 'film', 'actor', 'actress', 'director', 'cinema', 'hollywood', 'oscar', 'netflix', 'disney']):
         return "Would you watch this?"
     
+    # Music (separate from entertainment)
+    elif any(word in headline_lower for word in ['song', 'album', 'band', 'singer', 'concert', 'music', 'spotify', 'apple music']):
+        return "Would you listen to this?"
+    
     # Crime/Legal
-    elif any(word in headline_lower for word in ['court', 'judge', 'prison', 'jail', 'arrest', 'police', 'crime', 'law']):
+    elif any(word in headline_lower for word in ['court', 'judge', 'prison', 'jail', 'arrest', 'police', 'law', 'trial', 'verdict']):
         if any(word in headline_lower for word in ['sentence', 'prison', 'jail']):
             return "Is this punishment fair?"
         else:
             return "What should happen next?"
     
     # International/Relations
-    elif any(word in headline_lower for word in ['country', 'nation', 'international', 'foreign', 'border', 'embassy']):
+    elif any(word in headline_lower for word in ['international', 'diplomatic', 'embassy', 'ambassador', 'treaty', 'summit', 'meeting between']):
         return "How does this affect international relations?"
     
     # Science/Space
-    elif any(word in headline_lower for word in ['space', 'nasa', 'rocket', 'planet', 'moon', 'satellite', 'science', 'research']):
+    elif any(word in headline_lower for word in ['space', 'nasa', 'rocket', 'planet', 'moon', 'satellite', 'scientist', 'research', 'discovery']):
         return "Why is this important?"
     
     # Default generic questions that still relate
@@ -356,6 +411,7 @@ def is_tech_source(source_name):
 def fetch_news_from_sources():
     """Fetch news from all RSS sources with tech limited to max 5 items"""
     all_news = []
+    seen_headlines = set()  # Track seen headlines to avoid duplicates
     tech_count = 0
     max_tech_items = 5
     
@@ -373,15 +429,19 @@ def fetch_news_from_sources():
                 if not is_appropriate(headline):
                     continue
                 
+                # Skip duplicates (check both original and simplified)
+                simplified_headline = simplify_english(headline)
+                if simplified_headline in seen_headlines:
+                    print(f"  Skipping duplicate: {simplified_headline[:50]}...")
+                    continue
+                seen_headlines.add(simplified_headline)
+                
                 # Limit tech items
                 if is_tech_source(source_name):
                     if tech_count >= max_tech_items:
                         continue
                     tech_count += 1
                     print(f"  Tech item {tech_count}/{max_tech_items}")
-                
-                # Simplify the headline
-                simplified_headline = simplify_english(headline)
                 
                 # Generate question
                 question = generate_question(simplified_headline)
@@ -405,6 +465,9 @@ def generate_news_js(news_items, target_count=50):
     # Select top items
     selected_items = news_items[:target_count]
     
+    # Track question usage to avoid repetition
+    question_counts = {}
+    
     # Collect all texts for translation (headlines + questions)
     texts_to_translate = []
     for item in selected_items:
@@ -421,6 +484,9 @@ def generate_news_js(news_items, target_count=50):
         
         headline = item['headline']
         question = item['question']
+        
+        # Track question usage
+        question_counts[question] = question_counts.get(question, 0) + 1
         
         # Get translations
         headline_jp = translations.get(headline, headline)
@@ -448,6 +514,12 @@ var news = {{
     ]
 }};
 """
+    
+    # Print question usage statistics
+    print("\nQuestion usage statistics:")
+    for question, count in sorted(question_counts.items(), key=lambda x: x[1], reverse=True):
+        if count > 1:
+            print(f"  '{question}': {count} times")
     
     return js_content
 
