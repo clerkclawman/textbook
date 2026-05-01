@@ -82,13 +82,12 @@ FRAGMENT_PATTERNS = [
     r'^\w+\s+\w+$',  # Two words only (likely names)
     r'^\w+\s+\w+\s+\w+$',  # Three words only (likely names)
     r'^\w+,\s*\w+,\s*\w+',  # Comma-separated list (section headers)
-    r'^\w+,\s*\w+\s+and\s+\w+',  # Comma-separated with "and" (section headers)
     r'^\w+\s+\w+\s+\w+\s+\w+\s*$',  # Four words, likely section header
     r'that\s+opens\s+to\s+the\s*$',  # Contains "that opens to the" (incomplete)
 ]
 
 # Minimum headline length (too short = fragment)
-MIN_HEADLINE_LENGTH = 30
+MIN_HEADLINE_LENGTH = 20
 # Maximum headline length (too long = complex)
 MAX_HEADLINE_LENGTH = 100
 
