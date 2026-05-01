@@ -84,6 +84,50 @@ FRAGMENT_PATTERNS = [
     r'^\w+,\s*\w+,\s*\w+',  # Comma-separated list (section headers)
     r'^\w+\s+\w+\s+\w+\s+\w+\s*$',  # Four words, likely section header
     r'that\s+opens\s+to\s+the\s*$',  # Contains "that opens to the" (incomplete)
+    r'^Photos$',  # Section header
+    r'^Explained$',  # Section header
+    r'^Analysis$',  # Section header
+    r'^Opinion$',  # Section header
+    r'^Comment$',  # Section header
+    r'^Review$',  # Section header
+    r'^Interview$',  # Section header
+    r'^Profile$',  # Section header
+    r'^Feature$',  # Section header
+    r'^\w+$',  # Single word only
+    r'^\w+\s+\w+$',  # Two words only
+    r'^\w+\s+\w+\s+\w+$',  # Three words only
+    r'^\w+\s+\w+\s+\w+\s+\w+$',  # Four words only
+    r'\s+to\s+the\s*$',  # Ends with "to the" (incomplete)
+    r'\s+in\s+the\s*$',  # Ends with "in the" (incomplete)
+    r'\s+on\s+the\s*$',  # Ends with "on the" (incomplete)
+    r'\s+at\s+the\s*$',  # Ends with "at the" (incomplete)
+    r'\s+from\s+the\s*$',  # Ends with "from the" (incomplete)
+    r'\s+with\s+the\s*$',  # Ends with "with the" (incomplete)
+    r'\s+by\s+the\s*$',  # Ends with "by the" (incomplete)
+    r'\s+of\s+the\s*$',  # Ends with "of the" (incomplete)
+    r'\s+for\s+the\s*$',  # Ends with "for the" (incomplete)
+    r'\s+about\s+the\s*$',  # Ends with "about the" (incomplete)
+    r'\s+over\s+the\s*$',  # Ends with "over the" (incomplete)
+    r'\s+under\s+the\s*$',  # Ends with "under the" (incomplete)
+    r'\s+against\s+the\s*$',  # Ends with "against the" (incomplete)
+    r'\s+between\s+the\s*$',  # Ends with "between the" (incomplete)
+    r'\s+among\s+the\s*$',  # Ends with "among the" (incomplete)
+    r'\s+within\s+the\s*$',  # Ends with "within the" (incomplete)
+    r'\s+without\s+the\s*$',  # Ends with "without the" (incomplete)
+    r'\s+beyond\s+the\s*$',  # Ends with "beyond the" (incomplete)
+    r'\s+behind\s+the\s*$',  # Ends with "behind the" (incomplete)
+    r'\s+below\s+the\s*$',  # Ends with "below the" (incomplete)
+    r'\s+above\s+the\s*$',  # Ends with "above the" (incomplete)
+    r'\s+near\s+the\s*$',  # Ends with "near the" (incomplete)
+    r'\s+around\s+the\s*$',  # Ends with "around the" (incomplete)
+    r'\s+through\s+the\s*$',  # Ends with "through the" (incomplete)
+    r'\s+across\s+the\s*$',  # Ends with "across the" (incomplete)
+    r'\s+along\s+the\s*$',  # Ends with "along the" (incomplete)
+    r'\s+past\s+the\s*$',  # Ends with "past the" (incomplete)
+    r'\s+towards\s+the\s*$',  # Ends with "towards the" (incomplete)
+    r'\s+into\s+the\s*$',  # Ends with "into the" (incomplete)
+    r'\s+onto\s+the\s*$',  # Ends with "onto the" (incomplete)
+    r'\s+upon\s+the\s*$',  # Ends with "upon the" (incomplete)
 ]
 
 # Minimum headline length (too short = fragment)
@@ -170,9 +214,13 @@ def generate_question(headline):
     headline_lower = headline.lower()
     headline_words = headline_lower.split()
     
-    # Oil/Energy related
-    if any(word in headline_lower for word in ['oil', 'price', 'fuel', 'energy', 'gas', 'petrol']):
-        if 'rise' in headline_lower or 'increase' in headline_lower or 'soar' in headline_lower:
+    # Oil/Energy related - use word boundaries to avoid matching verbs like "fuels"
+    if re.search(r'\boil\b|\bprice\b|\bfuel\b|\benergy\b|\bgas\b|\bpetrol\b', headline_lower):
+        # Additional check: make sure it's actually about energy, not just "fuels" as a verb
+        # Skip if "fuels" is followed by words like "row", "debate", "controversy" (verb usage)
+        if re.search(r'fuels\s+(row|debate|controversy|dispute|conflict|tension)', headline_lower):
+            pass  # Skip oil category, fall through to other categories
+        elif 'rise' in headline_lower or 'increase' in headline_lower or 'soar' in headline_lower:
             return "How will higher prices affect you?"
         elif 'fall' in headline_lower or 'drop' in headline_lower:
             return "Is this good news for consumers?"
@@ -434,6 +482,11 @@ def fetch_news_from_sources():
                     print(f"  Skipping duplicate: {simplified_headline[:50]}...")
                     continue
                 seen_headlines.add(simplified_headline)
+                
+                # Check if simplified headline is too short (fragment after simplification)
+                if len(simplified_headline) < MIN_HEADLINE_LENGTH:
+                    print(f"  Skipping fragment after simplification: {simplified_headline[:50]}...")
+                    continue
                 
                 # Limit tech items
                 if is_tech_source(source_name):
