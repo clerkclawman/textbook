@@ -1,112 +1,112 @@
 // File: news.js
 // Target: Daily news headlines with discussion questions
 // Structure: Object with stories array for class selector compatibility
-// NOTE: Japanese translations included
+// NOTE: English only - Japanese translations to be added
 
 var news = {
     stories: [
         {
-            title: "Daily News Headlines - May 03, 2026",
-            content: `📰 "Germany says US troop withdrawal 'foreseeable' as Nato seeks clarification" — How will this change things?
-「ドイツは、NATOが説明を求める中、アメリカ軍の撤退は「予想できる」と述べた。」— これは状況をどのように変えるのでしょうか？
-📰 "US threatens shipping firms with sanctions if they pay Iran tolls" — What's your opinion on this?
-「アメリカは、イランに通行料を支払った場合、海運会社に制裁を科すと警告している。」— これについてあなたの意見は何ですか？
-📰 "Taiwan president visits Eswatini days after blaming China for cancelled trip" — How does this affect the country?
-「台湾の総統が、訪問中止の責任を中国に求めた数日後にエスワティニを訪問した。」— これはその国にどのような影響を与えますか？
-📰 "Ex-F1 driver and Paralympic champion Zanardi dies" — Do you agree with this decision?
-「元F1ドライバーでパラリンピックチャンピオンのザナルディが死去した。」— あなたはこの決定に賛成ですか？
-📰 "Cuba condemns new US sanctions as 'illegal' and 'abusive'" — What's your opinion on this?
-「キューバは、アメリカの新たな制裁を「違法」で「乱暴」だと非難した。」— これについてあなたの意見は何ですか？
-📰 "US court limits mail-order access to abortion pill mifepristone" — How will this change our lives?
-「アメリカの裁判所が、中絶薬ミフェプリストンの郵送販売を制限しました。」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Now Greens want to tear up strike laws that could revive flying" — How can we prevent conflicts?
-「今、緑の党はストライキに関する法律を撤廃しようとしており、それが飛行機の運航再開につながる可能性があります。」— どうすれば紛争を防ぐことができるでしょうか。
-📰 "Taiwan's Lai lands in Eswatini in a trip delayed by lack of" — How will this change our lives?
-「台湾の頼氏がエスワティニに到着しました。この訪問は、何かの不足により遅れていました。」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Banksy confirms new statue installed in central London is his work" — How does this affect you?
-「バンクシーは、ロンドン中心部に設置された新しい彫刻が自身の作品であると認めました。」— これはあなたにどのような影響を与えますか？
-📰 "Imprisoned Iranian Nobel Peace Prize winner in critical condition" — Is this punishment fair?
-「投獄されているイランのノーベル平和賞受賞者が、危険な状態にあります。」— この罰は公平でしょうか。
-📰 "New Netflix documentary reexamines Winnie Mandela's divisive legacy" — Would you watch this?
-「Netflixの新しいドキュメンタリーが、ウィニー・マンデラの賛否両論ある功績を再検証する。」— あなたはこれを見ますか？
-📰 "After Assad's fall, Syria's Kurds are left in limbo, feeling abandoned by" — Would you listen to this?
-「アサド政権崩壊後、シリアのクルド人は見捨てられたように宙ぶらりんの状態にある。」— あなたはこれを聞きますか？
-📰 "Air Force says former Qatari 747 will be ready to fly as" — How will this change our lives?
-「空軍によると、かつてカタールが所有していた747型機が飛行可能な状態になるという。」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "U.S. to withdraw 5,000 troops from Germany in next 6-12 months" — Is this surprising?
-「アメリカは今後6〜12か月でドイツから5000人の部隊を撤退させる。」— これは驚くべきことですか？
-📰 "After Canada loosens citizenship requirements, thousands of people apply" — How will this change our lives?
-「カナダが市民権の要件を緩和した後、何千人もの人々が申請している。」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "A tech worker in China is laid off and replaced by AI." — Will AI take your job?
-「中国で技術系の社員が解雇され、AIに置き換えられた。」— AIはあなたの仕事を奪うだろうか？
-📰 "Ukraine eyes Belarus border activities as Russian strikes persist" — How will this change our lives?
-「ロシアの攻撃が続く中、ウクライナがベラルーシ国境の動きを注視」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Syria becomes alternative energy corridor for oil as Hormuz effectively blo" — Should we rely less on oil?
-「ホルムズ海峡が事実上封鎖される中、シリアが石油の代替エネルギー回廊に」— 私たちは石油への依存を減らすべきでしょうか？
-📰 "Israel’s expanding ‘orange line’ tightens deadly no-go zones in Gaza" — Is this surprising?
-「イスラエルが拡大する「オレンジライン」でガザの立ち入り禁止区域を厳しく」— これは驚くべきことですか？
-📰 "Arsenal ease past Fulham to pull six points clear of Manchester City" — Is this surprising?
-「アーセナルがフルアムを楽々と下し、マンチェスター・シティに6ポイント差をつける」— これは驚くべきことですか？
-📰 "Spain demands Israel release arrested Gaza flotilla crew member" — How will this change our lives?
-「スペインがイスラエルに対し、ガザ支援船団で拘束された乗組員の解放を要求」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Devastation of Southern Lebanon continues under ‘ceasefire’" — What should be done about this?
-「「停戦」下でも続く南レバノンの壊滅的な被害」— これに対して何をすべきですか？
-📰 "Yemen reports hijacked oil tanker headed for Somalia" — Should we rely less on oil?
-「イエメン、ソマリアへ向かうハイジャックされた石油タンカーを報告」— 私たちは石油への依存を減らすべきでしょうか？
-📰 "Spain’s Sanchez demands Netanyahu free Spaniard seized on aid flotilla" — How will this change our lives?
-「スペインのサンチェス首相、支援船団で拘束された自国民の解放をネタニヤフ氏に要求」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Mexico’s Sinaloa state governor resigns amid US drug trafficking charges" — How will this change things?
-「メキシコ・シナロア州知事、米国の麻薬密輸容疑で辞任」— これは状況をどのように変えるのでしょうか？
-📰 "Israel’s ‘two-tier’ policing and the crime epidemic in Palestinian towns" — What's your opinion on this?
-「イスラエルの「二重基準」の警察対応とパレスチナの町での犯罪の増加」— これについてあなたの意見は何ですか？
-📰 "The United States of Conspiracy" — Is this surprising?
-「陰謀論の国、アメリカ」— これは驚くべきことですか？
-📰 "The dark side of Gaza’s new fancy cafes and restaurants" — What should be done about this?
-「ガザの新しいおしゃれなカフェやレストランの暗い側面」— これに対して何をすべきですか？
-📰 "Iran executes two more over 'spying for Israel'" — What are the consequences?
-「イラン、「イスラエルへのスパイ行為」でさらに2人を処刑」— その結果はどうなりますか？
-📰 "Robert Fico will back Ukraine's EU membership after call, Zelenskyy says" — How will this change our lives?
-「ゼレンスキー氏、ロベルト・フィコ氏が電話後にウクライナのEU加盟を支持すると発表」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Double delight for Tajikistan on Day 2 in Dushanbe" — What's your opinion on this?
-「タジキスタン、ドゥシャンベ大会2日目に二重の喜び」— これについてあなたの意見は何ですか？
-📰 "End of the rescue operation" — What's the most important part?
-「救助活動の終了」— 最も重要な部分は何ですか？
-📰 "Thousands at illegal French rave on 'dangerous' military site" — Is this good or bad news?
-「フランスで違法レイブ、危険な軍事施設に数千人が集まる」— これは良い知らせですか、それとも悪い知らせですか？
-📰 "Humpback whale stranded in Germany released into North Sea" — Is this surprising?
-「ドイツで座礁したザトウクジラ、北海に放たれる」— これは驚くべきことですか？
-📰 "Ex F1 driver and Paralympic champion Alex Zanardi dies at 59" — What are the consequences?
-「元F1ドライバーでパラリンピックチャンピオンのアレックス・ザナルディ、59歳で死去」— その結果はどうなりますか？
-📰 "Two flotilla detainees arrive in Israel amid fears for Spaniard Abu Keshek" — How will this change our lives?
-「船団の拘束者2名がイスラエルに到着、スペイン人アブ・ケシェク氏の安否が懸念される」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Iranian Nobel laureate Narges Mohammadi hospitalised amid deteriorating health condition" — What should people know about this?
-「イランのノーベル賞受賞者ナルゲス・モハンマディ氏、健康状態悪化で入院」— これについて人々が知っておくべきことは何ですか？
-📰 "Spirit Airlines says it is going out of business and ending operations" — How will this change our lives?
-「スピリット航空、事業停止と運航終了を発表」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Satellite lofted for first Arab country" — Why is this important?
-「アラブ諸国初の人工衛星が打ち上げられる」— なぜこれが重要なのですか？
-📰 "Chinese, Russian and Indian ministers meet" — How does this affect the country?
-「中国、ロシア、インドの閣僚が会合」— これはその国にどのような影響を与えますか？
-📰 "Young Chinese-Irish ballroom dancer goes international" — How does this affect international relations?
-「若い中国系アイルランド人の社交ダンサーが国際的に活躍」— これは国際関係にどのような影響を与えますか？
-📰 "UK and China allow more direct flights" — How does this affect you?
-「英国と中国がより多くの直行便を許可」— これはあなたにどのような影響を与えますか？
-📰 "Bad weather causes massive travel disruption in Britain" — How will this change our lives?
-「悪天候が英国で大規模な交通混乱を引き起こす」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "Four injured in New York City blast, suspect nabbed" — What are the consequences?
-「ニューヨーク市の爆発で4人が負傷、容疑者が逮捕」— その結果はどうなりますか？
-📰 "There was one way we'd agree to do Devil Wears Prada 2," — Do you agree with this decision?
-「『プラダを着た悪魔2』に同意する唯一の方法があった」— あなたはこの決定に賛成ですか？
-📰 "Star-studded line-up says for Celebrity Traitors series two" — How will this change our lives?
-「豪華スター勢ぞろいの『セレブリティ・トレイターズ』シーズン」— これは私たちの生活をどのように変えるのでしょうか？
-📰 "EastEnders star on the mental health story 'for everyone'" — What should people know about this?
-「『イーストエンダーズ』俳優が語る「みんなのための」メンタルヘルスの物語」— これについて人々が知っておくべきことは何ですか？
-📰 "Zayn Malik cancels US tour and cuts UK dates after hospital bed" — What should people know about this?
-「ゼイン・マリク、入院を経て全米ツアーを中止、英国公演も縮小」— これについて人々が知っておくべきことは何ですか？
-📰 "How did Banksy put up a statue in central London" — Do you agree with this decision?
-「バンクシーはどのようにしてロンドン中心部に像を設置したのか」— あなたはこの決定に賛成ですか？
-📰 "Matthew Rhys says his only hope was the army – but it" — What's your opinion on this?
-「マシュー・リース、唯一の希望は軍隊だったと語る——しかし」— これについてあなたの意見は何ですか？`
+            title: "Daily News Headlines - May 04, 2026",
+            content: `📰 "Iran says US has responded to its latest peace proposal" — Does this surprise you?
+「イラン、米国が最新の和平提案に応答したと発表」— これは驚きですか？
+📰 "The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire" — How can we prevent conflicts?
+「イラン戦争が意外な形でウクライナを強化。停戦は」— 紛争を防ぐにはどうすればよいですか？
+📰 "Three dead in suspected virus outbreak on Atlantic cruise ship" — What are the risks?
+「大西洋のクルーズ船でウイルス感染疑い、3人死亡」— リスクは何ですか？
+📰 "Russian strikes kill 10 as Zelensky says Ukraine hits oil tankers and" — Should we rely less on oil?
+「ロシア攻撃で10人死亡、ゼレンスキー氏はウクライナが石油タンカーを攻撃と」— 私たちは石油への依存を減らすべきですか？
+📰 "Nigeria summons South African envoy over attacks on its nationals" — How can we prevent conflicts?
+「ナイジェリア、自国民への攻撃で南アフリカ大使を召喚」— 紛争を防ぐにはどうすればよいですか？
+📰 "Police officer lowered into crocodile-infested river to recover human remains" — How will this change our lives?
+「ワニが生息する川に警察官が降り、遺体を回収」— これは私たちの生活をどう変えるでしょうか？
+📰 "The clandestine network smuggling Starlink tech into Iran to beat internet blackout" — How will this change our lives?
+「インターネット遮断を回避するため、スターリンク技術をイランに密輸する秘密ネットワーク」— これは私たちの生活をどう変えるでしょうか？
+📰 "Germany troop cuts send wrong signal to Russia, say two top US" — What are the risks?
+「ドイツの軍削減はロシアに誤った信号を送る、米国高官2人が批判」— リスクは何ですか？
+📰 "Concern for jailed Iranian Nobel laureate as brother fears she is dying" — How will this change our lives?
+「収監中のイラン人ノーベル賞受賞者の健康に懸念、弟が死を恐れる」— これは私たちの生活をどう変えるでしょうか？
+📰 "Two US service members reported missing in Morocco, officials say" — Who is responsible?
+「モロッコで米軍人2名が行方不明、当局が発表」— 誰に責任がありますか？
+📰 "'If we sleep, they bite'" — Who is responsible?
+「「寝ると噛まれる」」— 誰に責任がありますか？
+📰 "Thirteen killed in Israeli strikes on southern Lebanon, health ministry says" — How can we prevent conflicts?
+「イスラエル軍の南部レバノン攻撃で13人死亡、保健省が発表」— 紛争を防ぐにはどうすればよいですか？
+📰 "Oil tanker hijacked off coast of Yemen and taken towards Somalia" — Should we rely less on oil?
+「イエメン沖で石油タンカーが乗っ取られ、ソマリア方面へ」— 私たちは石油への依存を減らすべきですか？
+📰 "US Supreme Court asked to restore abortion pill access" — Is this good or bad?
+「米最高裁に中絶薬へのアクセス回復を求める請願」— これは良いことですか、悪いことですか？
+📰 "Cuba condemns new US sanctions as 'illegal' and 'abusive'" — What are the risks?
+「キューバが新たな米国制裁を「違法」で「虐待的」と非難」— リスクは何ですか？
+📰 "Trump tells Congress ceasefire means he does not need their approval for" — How will this change our lives?
+「トランプ氏、議会に停戦なら承認不要と主張」— これは私たちの生活をどう変えるでしょうか？
+📰 "Who shot a Secret Service officer at the Trump press dinner" — Is this good or bad?
+「トランプ氏の記者夕食会でシークレットサービス職員を誰が撃ったのか」— これは良いことですか、悪いことですか？
+📰 "Trump claims other presidents flouted war powers law. It's a mixed record" — What do you think about this?
+「トランプ氏、他の大統領も戦争権限法を無視していたと主張、実績はまちまち」— これについてどう思いますか？
+📰 "Ex-F1 driver and Paralympic champion Zanardi dies" — How can we prevent conflicts?
+「元F1ドライバーでパラリンピック金メダリストのザナルディ氏が死去」— 紛争を防ぐにはどうすればよいですか？
+📰 "Taiwan president visits Eswatini days after blaming China for cancelled trip" — What do you think about this?
+「台湾総統、旅行中止の責任を中国にあると非難した数日後にエスワティニを訪問」— これについてどう思いますか？
+📰 "War criminal Mladic close to death, say lawyers asking judge for jail" — How can we prevent conflicts?
+「戦犯ムラディッチ氏、死に近いと弁護士が裁判所に釈放を求める」— 紛争を防ぐにはどうすればよいですか？
+📰 "Billions of meals at risk due to Iran war, says fertiliser boss" — How can we prevent conflicts?
+「イラン戦争で数十億食が危険、肥料会社社長が警告」— 紛争を防ぐにはどうすればよいですか？
+📰 "Missing Oscar found after Academy Award winner blocked from taking it on" — How can we prevent conflicts?
+「アカデミー賞受賞者が持ち帰り阻止された後、行方不明のオスカー像が発見」— 紛争を防ぐにはどうすればよいですか？
+📰 "Turkish police arrest more than 500 people at May Day rallies" — How will this change our lives?
+「メーデーの集会でトルコ警察が500人以上を逮捕」— これは私たちの生活をどう変えるでしょうか？
+📰 "Israeli police arrest man after nun attacked in Jerusalem" — How can we prevent conflicts?
+「エルサレムで修道女が攻撃された後、イスラエル警察が男を逮捕」— 紛争を防ぐにはどうすればよいですか？
+📰 "Israel releases all but two activists in Greece after intercepting Gaza aid" — How will this change our lives?
+「ガザ支援船を阻止した後、ギリシャで活動家2人を除く全員を解放」— これは私たちの生活をどう変えるでしょうか？
+📰 "Kenya battles to stop the 'goons and guns' as fears of political" — How will this change our lives?
+「ケニア、政治的暴力を阻止するために「暴徒と銃」と戦う」— これは私たちの生活をどう変えるでしょうか？
+📰 "Voters will judge Trump on the economy - how is it doing" — What do you think about this?
+「有権者は経済でトランプ氏を判断 - 現状はどうか」— これについてどう思いますか？
+📰 "Laufey on making jazz cool again (and the fish that brought out" — How will this change our lives?
+「ジャズを再びクールにするラウフェイ（そして魚が引き出した」— これは私たちの生活をどう変えるでしょうか？
+📰 "Dragonflies in distress" — What are the risks?
+「トンボが危機に瀕している」— リスクは何ですか？
+📰 "The world wants to eliminate cervical cancer - how Australian scientists led" — How will this change our lives?
+「世界が子宮頸がんを撲滅したい - オーストラリアの科学者がどのように主導したか」— これは私たちの生活をどう変えるでしょうか？
+📰 "'This tree was planted by my ancestor hundreds of years ago and" — What should be done?
+「「この木は数百年前に私の祖先が植えたもので、」— 何をすべきですか？
+📰 "Thousands of 'lost Canadians' have applied for dual citizenship - is Canada" — How will this change our lives?
+「数千人の「迷いカナダ人」が二重国籍を申請 - カナダは」— これは私たちの生活をどう変えるでしょうか？
+📰 "Huge crowd attends free Shakira Copacabana beach concert" — Is this good or bad?
+「シャキーラの無料コパカバナビーチコンサートに大群衆が集結」— これは良いことですか、悪いことですか？
+📰 "How we reported in -30C temperatures in Canada's Arctic" — What do you think about this?
+「カナダの北極圏でマイナス30度の中でどのように取材したか」— これについてどう思いますか？
+📰 "New CCTV footage appears to shows when shots were fired at Washington" — How will this change our lives?
+「ワシントンで発砲があった時の新しい監視カメラ映像が公開」— これは私たちの生活をどう変えるでしょうか？
+📰 "Why is China banning drone sales in Beijing" — Is this good or bad?
+「なぜ中国は北京でのドローン販売を禁止しているのか」— これは良いことですか、悪いことですか？
+📰 "Green Party candidate with links to David Cameron posted fake picture of" — Would you watch this?
+「デービッド・キャメロンと関係のある緑の党候補が偽の写真を投稿」— あなたはこれを見ますか？
+📰 "Britain looks to US suppliers in bid to stop the Iran fuel" — Should we rely less on oil?
+「英国、イラン燃料を阻止するために米国のサプライヤーに目を向ける」— 私たちは石油への依存を減らすべきですか？
+📰 "Britain's Got Talent judge KSI 'sparks outrage with vile "joke" about hitting" — How will this change our lives?
+「ブリテンズ・ゴット・タレントの審査員KSIが殴打についての卑劣な「冗談」で激怒を招く」— これは私たちの生活をどう変えるでしょうか？
+📰 "Princess Charlotte marks her 11th birthday with a carefree smile in a" — Is this good or bad?
+「シャーロット王女、11歳の誕生日を無邪気な笑顔で迎える」— これは良いことですか、悪いことですか？
+📰 "The mission to kill Osama Bin Laden, 15 years on" — How can we prevent conflicts?
+「 Osama Bin Laden殺害任務、15年を経て」— 紛争を防ぐにはどうすればよいですか？
+📰 "Final proof vaping IS harder to quit than smoking" — What are the risks?
+「電子タバコは喫煙よりやめるのが難しいという最終的な証拠」— リスクは何ですか？
+📰 "'They worry about her and how she's going to end up'" — What should be done?
+「「彼らは彼女を心配し、彼女がどうなるかを心配している」」— 何をすべきですか？
+📰 "Portugal and Italy latest holiday destinations set to ditch controversial EU border" — Is this good or bad?
+「ポルトガルとイタリア、論争のEU国境規制を廃止する最新の観光地」— これは良いことですか、悪いことですか？
+📰 "Muslim election candidates in Birmingham for George Galloway's Workers Party of Britain" — What do you think about this?
+「バーミンガムでジョージ・ギャロウェイの英国労働者党のムスリム選挙候補」— これについてどう思いますか？
+📰 "Warmth, laughter and what the King REALLY thought about his 'high stakes'" — How can we prevent conflicts?
+「温かさ、笑い、そして王が「賭け」について本当にどう思ったか」— 紛争を防ぐにはどうすればよいですか？
+📰 "France, take note! Small boat gangs face swift justice from Belgian police," — Does this surprise you?
+「フランスは注意！小船ギャングがベルギー警察から迅速な司法に直面」— これは驚きですか？
+📰 "Cabinet rebels will unite to show PM the door if local election" — What do you think about this?
+「内閣の反乱派が団結して首相を追放する可能性、地方選挙で」— これについてどう思いますか？
+📰 "Violent BBC presenter broke his female colleague's wrist in attack 'hushed up" — How can we prevent conflicts?
+「暴力的なBBCプレゼンターが女性同僚の手首を折る攻撃が「隠蔽」」— 紛争を防ぐにはどうすればよいですか？`
         }
     ]
 };
