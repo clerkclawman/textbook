@@ -36,11 +36,11 @@ var news = {
 📰 "Young Chinese-Irish ballroom dancer goes international" — What can we learn from this?
 「中国人とアイルランド人の血を引く若い社交ダンサーが国際的に活躍」— これから何を学べるでしょうか？
 📰 "UK and China allow more direct flights" — How will this affect you?
-「イギリスと中国、直行便を増やす」— これはあなたにどのような影響を与えますか
+「イギリスと中国、直行便を増やす」— これはあなたにどのような影響を与えますか？
 📰 "Bad weather causes massive travel disruption in Britain" — How can we prepare for this?
 「悪天候でイギリスで大規模な交通障害」— どう備えればよいでしょうか？
 📰 "Strictly Come Dancing returns for new season" — Who benefits from this?
-「ストリクトリー・カム・ダンシングが新シーズンで復活」— これで誰が得をしますか
+「ストリクトリー・カム・ダンシングが新シーズンで復活」— これで誰が得をしますか？
 📰 "Spanish superstar Rosalía brings her tour to London" — What are the consequences?
 「スペインのスーパースター、ロサリアがロンドン公演を開催」— その結果はどうなるのでしょうか？
 📰 "The Summer I Turned Pretty fans asked to stop visiting film set" — Would you watch this?
