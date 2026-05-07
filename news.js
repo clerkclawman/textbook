@@ -6,108 +6,107 @@
 var news = {
     stories: [
         {
-            title: "Daily News Headlines - May 07, 2026",
-            content: `📰 "Massive Alaska megatsunami was second largest ever recorded" — Is this reasonable?
-「アラスカで発生した巨大な津波は、観測史上2番目の大きさでした。」— これは妥当でしょうか？
-📰 "Orphaned baby hippo to be hand-reared by keepers at Kenya sanctuary" — Is this good or bad news?
-「孤児になったカバの赤ちゃんが、ケニアの保護施設で飼育員に手で育てられることになりました。」— これは良い知らせですか、それとも悪い知らせですか？
-📰 "Apple to pay up to $95 to some US iPhone buyers" — How should we use this?
-「アップル社が一部のアメリカのiPhone購入者に最大95ドルを支払うことになりました。」— これはどのように使うべきでしょうか？
-📰 "Greetings from a sea village in Indonesia, where Indigenous fishing gets help" — Who does this affect most?
-「インドネシアの海辺の村から、先住民の漁業を支援する取り組みについてご挨拶します。」— これが最も影響を与えるのは誰でしょうか？
-📰 "NPR went looking for Polymarket's Panama headquarters. It's elusive" — How does this affect the economy?
-「NPRがポリマーケットのパナマ本社を探したが、見つけるのは難しい。」— これは経済にどのような影響を与えるのか。
-📰 "Infected passengers evacuated from hantavirus cruise ship" — What should people know about this?
-「ハンタウイルスが発生したクルーズ船から、感染した乗客が避難した。」— 人々はこれについて何を知っておくべきか。
-📰 "Amputee football grows in Rwanda, fostering unity and resilience" — Do you follow this sport?
-「ルワンダで義足サッカーが広がり、団結と回復力を育んでいる」— あなたはこのスポーツを観ますか？
-📰 "Commissioner vows to end poverty in 25 years as EU unveils first plan" — Why is this newsworthy?
-「EUが初の計画を発表、委員長は25年以内に貧困をなくすと誓う」— なぜこれがニュース価値があるのか？
-📰 "Spain is more convinced of its own position on trade than the US" — What are the benefits?
-「スペインは米国に対して「自らの立場をより確信している」」— 利点は何ですか？
-📰 "Europe's first commercial robotaxi service rolls out in Croatia" — Will this continue?
-「欧州初の商用ロボタクシーサービスがクロアチアで始動」— この状況は続くのでしょうか？
-📰 "What is Elon Musk's new chip-making facility, Terafab?" — Is this a good thing or bad thing?
-「イーロン・マスクの新しいチップ製造施設「テラファブ」とは？」— これは良いことでしょうか、悪いことでしょうか？
-📰 "Divisions in Brussels as EU negotiators face crunch talks on US trade" — Is this fair?
-「EUの交渉担当者が米国との通商協議で山場を迎える中、ブリュッセルでは意見の対立が見られる」— これは公平でしょうか？
-📰 "Satellite launched for first Arab country" — Why is this important?
-「アラブ諸国初の人工衛星が打ち上げられる」— なぜこれが重要なのでしょうか？
-📰 "Young Chinese-Irish ballroom dancer goes international" — What can we learn from this?
-「中国人とアイルランド人の血を引く若い社交ダンサーが国際的に活躍」— これから何を学べるでしょうか？
-📰 "UK and China allow more direct flights" — How will this affect you?
-「イギリスと中国、直行便を増やす」— これはあなたにどのような影響を与えますか？
-📰 "Bad weather causes massive travel disruption in Britain" — How can we prepare for this?
-「悪天候でイギリスで大規模な交通障害」— どう備えればよいでしょうか？
-📰 "Strictly Come Dancing returns for new season" — Who benefits from this?
-「ストリクトリー・カム・ダンシングが新シーズンで復活」— これで誰が得をしますか？
-📰 "Spanish superstar Rosalía brings her tour to London" — What are the consequences?
-「スペインのスーパースター、ロサリアがロンドン公演を開催」— その結果はどうなるのでしょうか？
-📰 "The Summer I Turned Pretty fans asked to stop visiting film set" — Would you watch this?
-「「サマー・アイ・ターンド・プリティ」のファンに撮影現場への訪問を控えるよう要請」— あなたはこれを見ますか？
-📰 "Matt Damon seen in new trailer for Christopher Nolan's The Odyssey" — Is this good or bad?
-「クリストファー・ノーラン監督の『オデュッセイ』新予告編にマット・デイモンが登場」— これは良いことでしょうか、悪いことでしょうか？
-📰 "Bonnie Tyler recovering after being taken to hospital for surgery" — Is this treatment effective?
-「ボニー・タイラー、手術のため入院後、回復中」— この治療法は効果がありますか？
-📰 "Peter Kay show rescheduled after arena evacuation" — What should be done about this?
-「ピーター・ケイのショー、アリーナ避難後に日程変更」— これに対してどうすべきでしょうか？
-📰 "Richard Osman and Bill Bailey receive honours at Windsor Castle" — What are the risks?
-「リチャード・オスマンとビル・ベイリーがウィンザー城で栄誉を受ける」— リスクは何ですか？
-📰 "Pussycat Dolls cancel US leg of reunion tour after poor ticket sales" — How important is this?
-「プッシーキャット・ドールズ、チケット販売不振で再結成ツアーのアメリカ公演を中止」— これはどのくらい重要ですか？
-📰 "The most talked-about looks at this year's Met Gala" — What's your reaction to this?
-「今年のメットガラで最も話題になったファッション」— これについてどう思いますか？
-📰 "Rapper Kid Cudi removes British star M.I.A. from tour" — What are the risks?
-「ラッパーのキッド・クディ、イギリス人スターM.I.A.をツアーから外す」— リスクは何ですか？
-📰 "People urged not to cancel flights over fuel shortage fears" — Should we rely less on oil?
-「燃料不足への懸念から、航空便をキャンセルしないよう呼びかけ」— 私たちは石油への依存を減らすべきでしょうか？
-📰 "Up to 150 former WHSmith high street stores to close" — What can we learn from this?
-「最大150店舗の旧WHSmithの街中店舗が閉店へ」— これから何を学べるでしょうか？
-📰 "Robots move in as waste firms struggle to find staff" — Will this continue?
-「廃棄物処理会社が人手不足の中、ロボットが活躍」— この状況は続くのでしょうか？
-📰 "Campaigners call for ban on use of weedkiller glyphosate at harvest time" — What should be done?
-「活動家らが収穫時の除草剤グリホサート使用禁止を求める」— 何をすべきでしょうか？
-📰 "Hedge fund founder hits back at 'creepy' wealth tax video" — What's your opinion on this?
-「ヘッジファンドの創業者が、「気味が悪い」富裕税に関する動画に反論した。」— これについて、あなたの意見はどうですか？
-📰 "UK long-term borrowing costs reach 28-year high" — What's the main issue here?
-「英国の長期借入コストが28年ぶりの高水準に達した。」— ここでの主な問題は何ですか？
-📰 "Lidl's new loyalty scheme less generous, shoppers say" — How does this affect people?
-「リドルの新しい会員制度は以前よりお得感が減ったと買い物客は言う。」— これは人々にどのような影響を与えますか？
-📰 "Nissan to close UK line and cut 900 European jobs" — What's the solution?
-「日産が英国の生産ラインを閉鎖し、欧州で900人の雇用を削減する。」— 解決策は何ですか？
-📰 "US to safety test new AI models from Google, Microsoft, xAI" — What are the benefits?
-「米国がグーグル、マイクロソフト、xAIの新しいAIモデルを安全性テストする。」— 利点は何ですか？
-📰 "Dragonflies in distress" — What are the risks?
-「困っているトンボたち」— どんなリスクがあるのでしょうか？
-📰 "The world wants to eliminate cervical cancer" — How will this change our lives?
-「世界は子宮頸がんをなくそうとしています」— これは私たちの生活をどう変えるのでしょうか？
-📰 "Final proof vaping IS harder to quit than smoking" — What should people know about this?
-「電子タバコはタバコよりやめにくいという最終的な証拠」— 人々はこれについて何を知っておくべきでしょうか？
-📰 "Huge crowd attends free Shakira Copacabana beach concert" — Would you watch this?
-「無料のシャキーラ・コパカバーナビーチコンサートに大群衆が集まる」— あなたはこれを見ますか？
-📰 "Princess Charlotte marks her 11th birthday with a carefree smile" — Is this good or bad news?
-「シャーロット王女、11歳の誕生日を無邪気な笑顔で迎える」— これは良い知らせですか、それとも悪い知らせですか？
-📰 "Missing Oscar found after winner blocked from taking it on plane" — What's the most important part?
-「行方不明になったオスカー像、受賞者が飛行機に持ち込めず見つかる」— 最も重要な部分は何ですか？
-📰 "Laufey on making jazz cool again for a new generation" — Would you listen to this?
-「ラウフェイ、新しい世代のためにジャズを再びかっこよくする」— あなたはこれを聴きますか？
-📰 "Thousands of lost Canadians apply for dual citizenship" — How does this affect you?
-「何千人ものカナダ人失格者が二重国籍を申請」— これはあなたにどのような影響を与えますか？
-📰 "Britain's Got Talent judge KSI sparks outrage with joke" — Is this reasonable?
-「「ブリテンズ・ゴット・タレント」審査員KSI、ジョークで怒りを招く」— これは妥当ですか？
-📰 "Warmth and laughter as King reflects on his first year" — What do you think about this?
-「国王が即位1年を振り返り、温かさと笑いが広がる」— これについてどう思いますか？
-📰 "Portugal and Italy set to ditch controversial EU border rules" — How will this affect travelers?
-「ポルトガルとイタリア、物議を醸すEU国境ルールを廃止へ」— これは旅行者にどのような影響を与えますか？
-📰 "Why is China banning drone sales in Beijing" — Is this reasonable?
-「中国が北京でのドローン販売を禁止する理由は？」— これは妥当ですか？
-📰 "Timmy the humpback whale presumed dead after release" — What can we learn from this?
-「ザトウクジラのティミー、放流後に死亡と推定される」— これから何を学べるでしょうか？
-📰 "New study shows exercise beats medication for depression" — What should people know about this?
-「新しい研究で、うつ病には薬より運動が効果的と判明」— 人々はこれについて何を知っておくべきでしょうか？
-📰 "World's oldest known wild bird lays egg at age 74" — What's your reaction to this?
-「世界最古の野生の鳥、74歳で卵を産む」— これに対するあなたの反応は？
-`
+            title: "Daily News Headlines - May 08, 2026",
+            content: `📰 "Hantavirus outbreak on cruise ship not start of pandemic, UN health agency" — What should people know about this?
+「クルーズ船でのハンタウイルス集団発生はパンデミックの始まりではない、と国連保健機関」— これについて人々は何を知っておくべきですか？
+📰 "Trump's 'irresponsible war' to blame for economic slowdown, German minister says" — How does this affect the country?
+「トランプ氏の「無責任な戦争」が経済減速の原因だとドイツ大臣が発言」— これはその国にどのような影響を与えますか？
+📰 "Fears of renewed Gaza war as Hamas disarmament talks stall" — How can we prevent conflicts?
+「ハマスの武装解除協議が停滞し、ガザ戦争再発の懸念」— 紛争を防ぐにはどうすればよいですか？
+📰 "US judge releases Jeffrey Epstein's purported suicide note" — What should happen next?
+「米国判事、ジェフリー・エプスタインの自殺とされるメモを公開」— 次に何が起こるべきですか？
+📰 "Rwandan singer dies as he was being released from prison" — Would you listen to this?
+「ルワンダ人歌手、刑務所から釈放中に死亡」— あなたはこれを聞きますか？
+📰 "How operation to disembark passengers on virus-hit cruise will work" — Who is at risk?
+「ウイルスに感染したクルーズ船から乗客を下船させる方法について」— 誰が危険にさらされているのですか？
+📰 "China says suspended death sentences for former defence ministers" — How does this affect ordinary people?
+「中国、元国防相に対する死刑執行猶予を発表」— これは一般の人々にどのような影響を与えますか？
+📰 "Valverde taken to hospital after alleged incident with Tchouameni" — Is this treatment effective?
+「バルベルデ、チュアメニとのトラブルで病院に搬送」— この治療法は効果がありますか？
+📰 "South Africa condemns 'fake videos' of alleged xenophobic attacks" — Is this good or bad news?
+「南アフリカ、外国人排斥攻撃の「偽動画」を非難」— これは良い知らせですか、それとも悪い知らせですか？
+📰 "German tourist wins payout after losing sun lounger race" — Do you agree with this decision?
+「ドイツ人観光客、ビーチチェア競争で敗れ賠償金獲得」— あなたはこの決定に賛成ですか？
+📰 "DR Congo president hints at extending his term and delaying polls" — What will happen next?
+「コンゴ民主共和国の大統領が、任期延長と選挙延期の可能性を示唆」— 次に何が起こるのでしょうか？
+📰 "Met police arrest man, 28, on suspicion of selling Morgan McSweeney's stolen" — What should change?
+「ロンドン警視庁、28歳の男をモーガン・マクスウィーニーの盗品販売容疑で逮捕」— 何を変えるべきでしょうか？
+📰 "Former U.S. analyst, once jailed for spying for Israel, to run for" — How will this change our lives?
+「かつてイスラエルのためにスパイ行為をしたとして収監された元米国分析官、出馬へ」— これは私たちの生活をどう変えるのでしょうか？
+📰 "Rubio visits Vatican amid escalating tensions between Trump and Pope Leo" — What's the most important part?
+「トランプ氏と教皇レオの間の緊張が高まる中、ルビオ氏がバチカンを訪問」— 最も重要な部分は何でしょうか？
+📰 "China gives suspended death sentences to 2 ex-defense ministers" — Is this fair to everyone?
+「中国、元国防相2名に執行猶予付き死刑判決」— これは全員にとって公平でしょうか？
+📰 "Iran reviews U.S. proposal. And, Rubio to meet Pope Leo after Trump's" — Will this work?
+「イランがアメリカの提案を検討しています。そして、ルビオ氏がトランプ氏の発言を受けて教皇レオと会談します。」— これはうまくいくでしょうか？
+📰 "Health officials track dozens who left hantavirus-stricken ship after 1st fatality" — What should the government do?
+「保健当局は、ハンタウイルスに感染した船から最初の死者が出た後、下船した数十人の行方を追跡しています。」— 政府は何をすべきでしょうか？
+📰 "Affected by the Iran war, residents in Southeast Asian countries voice their" — Who does this affect most?
+「イラン戦争の影響を受け、東南アジア諸国の住民が声を上げています。」— これは誰に最も影響を与えますか？
+📰 "Secretary of State Marco Rubio meets with Pope Leo after Trump's criticism" — What do you think about this?
+「マルコ・ルビオ国務長官が、トランプ氏の批判を受けて教皇レオと会談します。」— これについてどう思いますか？
+📰 "Former U.S. ambassador to the Holy See on Rubio's visit to the" — Why is this visit important?
+「ルビオ氏の訪問について、元アメリカのバチカン大使が語ります。」— なぜこの訪問が重要なのでしょうか？
+📰 "Ex-spy who sold U.S. secrets to Israel says he's sorry, and will" — Do you agree with this?
+「アメリカの機密をイスラエルに売った元スパイが「申し訳ない」と語る」— あなたはこれに賛成しますか？
+📰 "Kenyan villagers sue BP over pollution from 1980s oil exploration" — Should we rely less on oil?
+「ケニアの村人たちが1980年代の石油探査による汚染でBPを訴える」— 私たちは石油への依存を減らすべきでしょうか？
+📰 "Palestinian boy mourns father killed in Israeli strike on security post" — How can we prevent this?
+「パレスチナ人の少年が、イスラエルの治安拠点への攻撃で父親を亡くし悲しむ」— これを防ぐにはどうすればよいですか？
+📰 "US issues new Cuba sanctions as UN experts warn of ‘energy starvation’" — What are the alternatives?
+「国連専門家が「エネルギー飢餓」を警告する中、アメリカがキューバに新たな制裁を発表」— 代替案は何ですか？
+📰 "‘This is my last voice note’" — How will this change things?
+「「これが最後のボイスメモです」」— これで状況はどう変わるでしょうか？
+📰 "Gulf states urge UN action to ensure Strait of Hormuz safety" — Is this good or bad?
+「湾岸諸国がホルムズ海峡の安全を確保するため、国連の行動を求める」— これは良いことでしょうか、悪いことでしょうか
+📰 "Can China help end the Iran war" — What are the risks?
+「中国はイラン戦争を終わらせる手助けができるか」— リスクは何ですか
+📰 "Inside the Israeli bloc that could topple Netanyahu" — How important is this?
+「ネタニヤフ首相を倒す可能性があるイスラエルの政治グループの内部」— これはどれほど重要ですか
+📰 "ISIL-linked Australian women arrested at airports" — What are the benefits?
+「ISIL（イスラム国）と関係のあるオーストラリア人女性が空港で逮捕される」— 利点は何ですか
+📰 "Israel’s attacks and pressure sowing seeds for division in tense Lebanon" — What are the consequences?
+「イスラエルの攻撃と圧力が緊張するレバノンに分裂の種をまいている」— 結果はどうなりますか
+📰 "Brazil’s Lula meets Trump amid efforts to avert new US trade tariffs" — Why is this newsworthy?
+「ブラジルのルラ大統領、米国の新たな関税を回避すべくトランプ氏と会談」— なぜこれがニュースになるのか？
+📰 "Man pleads guilty to Colorado firebombing, groups call for family reprieve" — How does this affect you?
+「コロラド州の放火事件で男が有罪を認める、家族への寛大な措置を求める声」— これはあなたにどのような影響を与えるか？
+📰 "US sanctions Iraqi minister accused of aiding Iran oil sales" — Is this a long-term problem?
+「米国、イランの石油販売を支援したとして告発されたイラク大臣に制裁」— これは長期的な問題か？
+📰 "Protests in Bolivia escalate amid economic turmoil and policy demands" — Is this reasonable?
+「経済混乱と政策要求の中、ボリビアで抗議活動が激化」— これは妥当か？
+📰 "EU closely monitoring hantavirus outbreak on cruise ship" — What are the side effects?
+「EU、クルーズ船でのハンタウイルス発生を厳重に監視」— 副作用は何ですか？
+📰 "Superbike rider killed in crash during qualifying in Northern Ireland" — Who is responsible?
+「北アイルランドの予選中にスーパーバイクのライダーが事故で死亡」— 誰に責任があるのか
+📰 "EU critic Rumen Radev named new Bulgarian prime minister" — Is this the right decision?
+「EU批判派のルメン・ラデフがブルガリアの新首相に指名される」— これは正しい決断なのか
+📰 "‘We will not be bullied’" — Is this surprising?
+「「私たちは脅されない」」— これは驚くべきことか
+📰 "Europe needs to be more radical on the energy crisis. But how" — Will this change soon?
+「欧州はエネルギー危機に対してより抜本的な対策が必要だ。しかし、どうすればいいのか」— これはすぐに変わるのか
+📰 "The surprising way your dinner is secretly affecting your sleep" — Is this a good thing or bad thing?
+「夕食が睡眠に与える意外な影響」— これは良いことか、悪いことか
+📰 "Ukrainian negotiator in US in bid to revive talks with Russia, Zelenskyy" — Will this continue?
+「ウクライナの交渉担当者が米国へ、ロシアとの協議再開を目指す（ゼレンスキー氏）」— これは続くのでしょうか？
+📰 "Sweden plans electronic bracelets to monitor children at risk of gang recruitment" — What's the impact?
+「スウェーデン、ギャングへの勧誘リスクがある子どもを監視する電子ブレスレットを計画」— どのような影響がありますか？
+📰 "Tenerife locals 'concerned but calm' as hantavirus-hit cruise ship approaches" — How should we use this?
+「ハンタウイルス感染のクルーズ船接近に、テネリフェ島の住民は「心配だが冷静」」— これをどのように活用すべきですか？
+📰 "IOC lifts Olympic ban on Belarus' athletes but Russians still barred from" — Do you follow this sport?
+「IOC、ベラルーシ選手への五輪出場禁止を解除も、ロシア選手は依然除外」— あなたはこのスポーツを観戦しますか？
+📰 "US underlines 'strong relationship' with Vatican as Rubio meets pope after Trump" — Why is this happening?
+「米国、バチカンとの「強固な関係」を強調——ルビオ氏がトランプ氏に続き教皇と会談」— なぜこれが起きているのですか？
+📰 "EU steps up coordination on hantavirus but insists risks for citizens are" — How can we prevent this?
+「EUはハンタウイルスへの対応を強化しているが、市民へのリスクは低いと強調している。」— これを防ぐにはどうすればよいですか？
+📰 "After coronavirus, should we fear hantavirus" — What are the side effects?
+「コロナウイルスの後、ハンタウイルスを恐れるべきでしょうか？」— 副作用は何ですか？
+📰 "Greek coastguard accused of migrant boat pushback in Aegean Sea, NGO says" — What can we learn from this?
+「ギリシャ沿岸警備隊がエーゲ海で移民のボートを押し戻したとNGOが非難。」— これから何を学べますか？
+📰 "Satellite lofted for first Arab country" — Why is this important?
+「アラブ諸国初の人工衛星が打ち上げられた。」— なぜこれが重要なのですか？
+📰 "WWII memorials solemn reminders of war tragedy" — What should be done?
+「第二次世界大戦の記念碑は、戦争の悲劇を静かに思い起こさせる。」— 何をすべきですか？`
         }
     ]
 };
