@@ -6,7 +6,7 @@
 var news = {
     stories: [
         {
-            title: "Daily News Headlines - May 08, 2026",
+            title: "Daily News Headlines - May 09, 2026",
             content: `📰 "Hantavirus outbreak on cruise ship not start of pandemic, UN health agency" — What should people know about this?
 「クルーズ船でのハンタウイルス集団発生はパンデミックの始まりではない、と国連保健機関」— これについて人々は何を知っておくべきですか？
 📰 "Trump's 'irresponsible war' to blame for economic slowdown, German minister says" — How does this affect the country?
