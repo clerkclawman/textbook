@@ -6,107 +6,107 @@
 var news = {
     stories: [
         {
-            title: "Daily News Headlines - May 16, 2026",
-            content: `📰 "Trump warns Taiwan against declaring independence, hours after summit with China's Xi" — Is this a serious threat?
-「トランプ氏、中国の習氏との首脳会談の数時間後に台湾に対し独立宣言をしないよう警告」— これは深刻な脅威なのでしょうか？
-📰 "Trump and Xi conclude 'very successful' talks but no deals confirmed" — What should world leaders discuss?
-「トランプ氏と習氏、「非常に成功した」会談を終えるも合意内容は確認されず」— 世界のリーダーたちは何を話し合うべきですか？
-📰 "Israel and Lebanon agree to extend ceasefire, US state department says" — Will this last?
-「イスラエルとレバノン、停戦延長で合意と米国務省発表」— これは続くのでしょうか
-📰 "Prisoner swap goes ahead as Kyiv mourns 24 killed in Russian strike" — How can we prevent more deaths?
-「キーウでロシアの攻撃により24人死亡、遺族が悲しむ中、捕虜交換が実施される」— これ以上の死者を防ぐにはどうすればよいでしょうか？
-📰 "AI vigilante trap snares alleged paedophile ex-teacher in France" — How will this change our lives?
-「フランスでAI自警団の罠により、元教師の小児性愛容疑者が逮捕される」— これは私たちの生活をどのように変えるのだろうか
-📰 "Five Italians die during cave scuba dive in Maldives" — What would make this better?
-「モルディブでの洞窟スキューバダイビング中にイタリア人5人が死亡」— これをより良くするにはどうすればいいでしょうか？
-📰 "New York Times defends journalist after Israel threatens to sue" — Why is this newsworthy?
-「イスラエルが訴訟を起こすと脅した後、ニューヨーク・タイムズが記者を擁護」— なぜこれがニュース価値があるのか？
-📰 "US to seek death penalty for suspect in killing of Israeli embassy" — Should countries work together or alone?
-「米国、イスラエル大使館殺害事件の容疑者に死刑を求める方針」— 国々は協力すべきか、それとも単独で行動すべきか？
-📰 "New outbreak of Ebola kills 65 in eastern DR Congo" — Why is this newsworthy?
-「コンゴ民主共和国東部でエボラ出血熱の新たな流行、65人死亡」— なぜこれがニュース価値があるのか？
-📰 "CIA chief visits Cuba as energy crisis worsens" — Should we rely less on oil?
-「エネルギー危機が深刻化する中、CIA長官がキューバを訪問」— 私たちは石油への依存を減らすべきか？
-📰 "Brutal raid on woman's birthday party highlights rise of Russian vigilante group" — What would you do if you were the leader?
-「女性の誕生日パーティーへの残忍な襲撃事件が、ロシアの自警団グループの台頭を浮き彫りに」— もし自分がリーダーだったら、どうしますか？
-📰 "Anti-immigration AI videos traced to overseas fakers, BBC finds" — How will this change our lives?
-「反移民のAI動画は海外の偽造者によるものとBBCが特定」— これは私たちの生活をどのように変えるのだろうか
-📰 "Why is Ireland not taking part in this year's Eurovision" — Is this good for world peace?
-「なぜアイルランドは今年のユーロビジョンに参加しないのですか？」— これは世界平和にとって良いことか？
-📰 "Starmer launches fresh bid to cosy up to European human rights chiefs" — How does this affect the country?
-「スターマー氏、欧州人権トップへの接近を新たに試みる」— これはその国にどのような影響を与えますか？
+            title: "Daily News Headlines - May 17, 2026",
+            content: `📰 "Taiwan insists it is independent after Trump warning" — Is this a serious threat?
+「トランプ氏の警告を受けて、台湾は独立を主張している。」— これは深刻な脅威でしょうか？
+📰 "Man drives car into pedestrians in Italy, injuring eight" — Is this surprising?
+「イタリアで男性が車で歩行者に突っ込み、8人が負傷した。」— これは驚くべきことですか？
+📰 "Senior IS leader killed in joint operation, US and Nigeria say" — How does this affect the country?
+「米国とナイジェリアによると、ISの幹部が共同作戦で殺害された。」— これはその国にどのような影響を与えますか？
+📰 "Rescue diver dies during search for bodies of Italians who drowned in" — Who loses from this situation?
+「イタリア人水死体の捜索中に救助ダイバーが死亡した。」— この状況で誰が損をしますか？
+📰 "Whale found dead near Danish island after German rescue operation" — What would you want to discuss?
+「ドイツの救助活動の後、デンマークの島の近くでクジラが死んでいるのが見つかった。」— あなたは何について話し合いたいですか？
+📰 "US planning to charge ex-Cuban leader Raúl Castro" — Do you trust the government's plan?
+「アメリカがキューバの前指導者ラウル・カストロを起訴する方針」— あなたは政府の計画を信頼しますか？
+📰 "Toddlers among more than 50 schoolchildren kidnapped in Nigeria" — How will this change our lives?
+「ナイジェリアで50人以上の児童が誘拐され、その中には幼児も含まれる」— これは私たちの生活をどう変えるのでしょうか？
+📰 "Switzerland to open secret files on Auschwitz 'Angel of Death' Mengele" — Is this something we should remember or forget?
+「スイスがアウシュビッツの「死の天使」メンゲレに関する秘密文書を公開へ」— これは私たちが覚えておくべきことでしょうか、それとも忘れるべきことでしょうか？
+📰 "Lebanon says six killed in Israeli strike as US says ceasefire extension" — How can we prevent more deaths?
+「レバノンがイスラエルの攻撃で6人死亡と発表、アメリカは停戦延長を主張」— これ以上死者を出さないためにはどうすればよいでしょうか？
+📰 "Freight train and bus crash kills at least eight in Bangkok" — How will this change our lives?
+「バンコクで貨物列車とバスが衝突し、少なくとも8人死亡」— これは私たちの生活をどう変えるのでしょうか？
+📰 "Man killed by 13ft shark in Western Australia" — What would make you feel like you're being held?
+「西オーストラリアで13フィートのサメに男性が襲われ死亡」— あなたが「拘束されている」と感じるのはどんな時ですか？
+📰 "New outbreak of Ebola kills 80 in eastern DR Congo" — Why is this newsworthy?
+「コンゴ民主共和国東部でエボラ出血熱が新たに発生、80人死亡」— なぜこれがニュース価値があるのですか？
+📰 "What China critics in Maga movement make of Trump's Beijing trip" — Do you trust the government's plan?
+「マガ運動における中国批判派はトランプの北京訪問をどう見ているか」— あなたは政府の計画を信頼しますか？
+📰 "What is a 'safe death'" — What would make you feel like you belong in this conversation?
+「「安全な死」とは何ですか？」— この会話に「自分が属している」と感じるのはどんな時ですか？
+📰 "From misfit to rap sensation" — What would make you feel like you're being copied?
+「はみ出し者からラップのセンセーションへ」— あなたが「真似されている」と感じるのはどんな時ですか？
+📰 "Trump's gold MAGA phone FINALLY ships to customers... but mystery surrounds bold" — What would you do if you were the leader?
+「トランプ氏の金色のMAGAスマートフォンがついに顧客に届き始めたが、その大胆なデザインには謎が残る。」— もしあなたがリーダーだったら、どうしますか？
+📰 "Timmy the humpback whale found dead off Danish coast" — What would you want to discuss?
+「ザトウクジラのティミーがデンマーク沖で死んでいるのが見つかった。」— あなたは何について話し合いたいですか？
+📰 "The war in Ukraine is at a standstill as societal fatigue grows" — What would peace look like?
+「ウクライナ戦争は膠着状態にあり、社会の疲れが広がっている。」— 平和とはどのようなものだろうか？
+📰 "The townspeople of Vilseck, Germany, worry that Trump may pull out 5,000" — Is this a good decision?
+「ドイツのフィルゼックの町の人々は、トランプ氏が5000人の部隊を撤退させるのではないかと心配している。」— これは良い決断ですか？
+📰 "Trump says Islamic State group leader was killed in a joint U.S.-Nigerian" — How does this affect the country?
+「トランプ氏は、ISISの指導者がアメリカとナイジェリアの合同作戦で殺害されたと述べた。」— これはその国にどのような影響を与えますか？
+📰 "The Eurovision Song Contest reaches its grand final with pop and protests" — Would you listen to this?
+「ユーロビジョン・ソング・コンテストは、ポップスと抗議の声が交錯する中、グランドファイナルを迎えます。」— あなたはこれを聞きますか？
+📰 "Israel says it killed the leader of Hamas' military wing" — What makes a good leader?
+「イスラエルは、ハマスの軍事部門のリーダーを殺害したと発表しました。」— 良いリーダーとは、どのような人でしょうか？
+📰 "Iran has been confiscating property from critics of the regime" — Is this more about giving or receiving?
+「イランは、政権批判者から資産を没収し続けています。」— これは、与えることと受け取ることのどちらに重点があるのでしょうか？
+📰 "CIA director's visit to Cuba echoes past memories of U.S. in Latin" — Would you watch this?
+「CIA長官のキューバ訪問は、ラテンアメリカにおけるアメリカの過去の記憶をよみがえらせます。」— あなたはこれを見ますか？
 📰 "SCOTUS upholds abortion pill telehealth access. And, Trump returns from China visit" — What should world leaders discuss?
-「最高裁が中絶薬の遠隔医療アクセスを支持。そして、トランプ氏が中国訪問から帰国」— 世界のリーダーたちは何を話し合うべきですか？
-📰 "Key takeaways from Trump's China trip" — What would you do if you were the leader?
-「トランプ大統領の中国訪問から得られた主なポイント」— もし自分がリーダーだったら、どうしますか？
-📰 "China economist shares takeaways from the Trump-Xi summit" — Is this a good decision?
-「中国の経済学者がトランプ・習近平首脳会談のポイントを語る」— これは良い決断なのか？
-📰 "Death toll in attack on Kyiv apartment building now stands at 24" — How can we prevent more deaths?
-「キーウのアパートへの攻撃による死者数は24人になりました」— これ以上の死者を防ぐにはどうすればよいでしょうか？
-📰 "How the relationship between the U.S. and China has changed under Trump" — Is this a good decision?
-「トランプ政権下で米中関係はどのように変わったか」— これは良い決断なのか？
-📰 "At this electronics market in China, buyers can find parts for just" — How does this affect the economy?
-「中国のこの電子市場では、買い物客が部品をわずか…」— これは経済にどのような影響を与えますか？
-📰 "U.S. pledges additional $1.8B in funding for U.N. humanitarian aid efforts" — How will this change our lives?
-「アメリカは国連の人道支援活動に追加で18億ドルを拠出することを約束した」— これは私たちの生活をどのように変えるのだろうか
-📰 "Inside Beijing's Temple of Heaven" — Is this more about what we have or what we want?
-「北京の天壇（てんたん）の内部」— これは私たちが持っているものについてなのか、それとも欲しいものについてなのか
-📰 "U.K. Prime Minister Keir Starmer faces challenges from his own party" — Who would you vote for?
-「イギリスのキア・スターマー首相は自身の党内から課題に直面している」— あなたは誰に投票しますか
-📰 "Is the US dialling down its support for Taiwan" — What are the risks?
-「アメリカは台湾への支援を縮小しているのか」— リスクは何か
-📰 "WHO confirms 10 global hantavirus cases, Hondius crew remain symptom-free" — Is this good or bad?
-「WHOは世界で10件のハンタウイルス感染症を確認、ホンディウス号の乗組員は症状なし」— これは良いことですか、それとも悪いことですか？
-📰 "Canada’s Carney travels to Alberta as separatists face legal setback" — How will this affect you?
-「カナダのカーニー首相がアルバータ州へ向かう中、分離主義者たちは法的な後退に直面している。」— これはあなたにどのような影響を与えますか？
-📰 "Trump says China to buy 200 Boeing planes, much lower than expected" — Do you trust the government's plan?
-「トランプ氏は中国がボーイング機を200機購入すると述べたが、これは予想よりもはるかに少ない。」— あなたは政府の計画を信じますか？
-📰 "Zelenskyy vows response after Russian strike kills 24 in Kyiv" — How can we prevent more deaths?
-「ロシアの攻撃でキーウで24人が死亡した後、ゼレンスキー大統領は報復を誓った。」— これ以上の死者を防ぐにはどうすればよいでしょうか？
-📰 "Trump departs China touting deals, but little clarity on Iran or Taiwan" — Do you trust the government's plan?
-「トランプ氏は取引を宣伝しながら中国を離れたが、イランや台湾についてはほとんど明確にしなかった。」— あなたは政府の計画を信じますか？
-📰 "Russia pounds Kyiv as its advance in eastern Ukraine slows to a" — Is this good or bad?
-「ロシアがキーウを激しく攻撃する一方、東部ウクライナでの進撃は鈍化している。」— これは良いことですか、それとも悪いことですか？
-📰 "UAE to accelerate oil pipeline project to bypass Strait of Hormuz" — Should we rely less on oil?
-「UAE to accelerate oil pipeline project to bypass Strait of Hormuz」— 私たちは石油への依存を減らすべきか？
-📰 "BRICS talks end without joint statement as divisions over Iran war deepen" — Should other countries get involved?
-「BRICS talks end without joint statement as divisions over Iran war deepen」— 他の国々も関与すべきなのか？
-📰 "Israel kills seven in Lebanon, agrees ‘ceasefire’ extension at talks in US" — What should be done?
-「Israel kills seven in Lebanon, agrees ‘ceasefire’ extension at talks in US」— What should be done?
-📰 "Iran says lack of trust is the main obstacle in US negotiations" — How should we use this?
-「Iran says lack of trust is the main obstacle in US negotiations」— How should we use this?
-📰 "California county scam ad lawsuit adds to mounting Meta legal woes" — Should the punishment be harder?
-「California county scam ad lawsuit adds to mounting Meta legal woes」— Should the punishment be harder?
-📰 "India and UAE sign defence pacts, as Iran war tensions simmer" — How does this affect people's daily lives?
-「インドとUAEが防衛協定に署名、イラン戦争の緊張が高まる中」— これは人々の日常生活にどのような影響を与えるのでしょうか
-📰 "Israeli army says targeting of Hamas military chief in Gaza City airstrike" — How does this affect people's daily lives?
-「イスラエル軍、ガザ市での空爆でハマス軍事指導者を標的にしたと発表」— これは人々の日常生活にどのような影響を与えるのでしょうか
-📰 "Israel and Lebanon extend their ceasefire by 45 days following talks in" — Will this last?
-「イスラエルとレバノン、協議の末に停戦を45日間延長」— これは続くのでしょうか
-📰 "Hundreds of Hungarian roads may be contaminated with asbestos" — What would you want to discuss?
-「ハンガリーの数百の道路にアスベストが含まれている可能性」— あなたは何について話し合いたいですか
-📰 "Extraordinary discovery in Pompeii" — Why is this important?
-「ポンペイでの驚くべき発見」— なぜこれが重要なのですか
-📰 "Norway defends move to cancel missile system sale following criticism from Malaysia" — How can we prevent conflicts?
-「ノルウェー、マレーシアからの批判を受けミサイルシステム販売中止の決定を擁護」— 紛争を防ぐにはどうすればよいか？
-📰 "Spanish row over EU cash fuels north–south tensions ahead of tough budget" — Is this good for world peace?
-「スペインのEU資金をめぐる対立、厳しい予算を前に南北間の緊張をあおる」— これは世界平和にとって良いことか？
-📰 "MEP and far-right influencers barred from UK rally" — How does this affect international relations?
-「欧州議会議員と極右インフルエンサー、英国の集会への参加を禁止される」— これは国際関係にどのような影響を与えるのか？
-📰 "What is the 'Thucydides Trap' that Xi invoked in his meeting with" — What should they discuss?
-「習主席が会談で言及した「トゥキディデスの罠」とは何か？」— 彼らは何を話し合うべきか？
-📰 "Greece has cheap green energy in abundance. So why are electricity bills" — Should we rely less on oil?
-「ギリシャには安価なグリーンエネルギーが豊富にある。ではなぜ電気代が高いのか？」— 私たちは石油への依存を減らすべきか？
-📰 "What we know about Congo's new Ebola outbreak" — Why is this newsworthy?
-「コンゴで新たに発生したエボラ出血熱について、私たちが知っていること」— なぜこれがニュース価値があるのか？
-📰 "Merz and Trump hold “good” phone call, German Chancellor says" — Is this a good decision?
-「メルツ氏とトランプ氏が「良好な」電話会談を行ったとドイツ首相が発表」— これは良い決断なのか？
-📰 "The world's largest lake is disappearing – and it's taking ecosystems and" — Will this continue?
-「世界最大の湖が消えつつある――そして生態系も失われている」— この状況は続くのか？
-📰 "Satellite lofted for first Arab country" — How does this affect international relations?
-「アラブ諸国初の人工衛星が打ち上げられる」— これは国際関係にどのような影響を与えるのか？
-📰 "WWII memorials solemn reminders of war tragedy" — Should other countries get involved?
-「第二次世界大戦の記念碑は、戦争の悲劇を厳かに思い起こさせる」— 他の国々も関与すべきなのか？`
+「最高裁判所は、中絶薬の遠隔医療によるアクセスを認めました。そして、トランプ氏が中国訪問から帰国しました。」— 世界のリーダーたちは、何について話し合うべきでしょうか？
+📰 "Tens of thousands join far-right rally in central London" — Is this good for world peace?
+「ロンドン中心部で数万人が極右の集会に参加」— これは世界平和にとって良いことでしょうか？
+📰 "Latvia’s president asks opposition leader to form new government" — What would you do if you were the leader?
+「ラトビア大統領、野党党首に新政府樹立を要請」— もしあなたがリーダーだったら、どうしますか？
+📰 "Accident kills eight people in Thailand raising questions of rail safety" — How will this change our lives?
+「タイで事故により8人死亡、鉄道の安全性に疑問」— これは私たちの生活をどう変えるのでしょうか？
+📰 "Spanish Foreign Minister on Spain’s clash with the Trump administration" — What would you do if you were the leader?
+「スペイン外相、トランプ政権との対立について語る」— もしあなたがリーダーだったら、どうしますか？
+📰 "DRC health minister warns ‘very high’ Ebola lethality rate as toll hits" — Is this a serious threat?
+「DRC保健相、エボラ出血熱の致死率が「非常に高い」と警告、死者数が増加」— これは深刻な脅威でしょうか？
+📰 "Thousands march in central London to mark 78th Nakba anniversary" — Should countries work together or alone?
+「ロンドン中心部で数千人が行進し、ナクバから78年を記念」— 国々は協力すべきか、それとも単独で行動すべきか？
+📰 "Palestinian President Abbas casts vote in decisive Fatah elections" — Do you trust the government's plan?
+「パレスチナのアッバス大統領、決定的なファタハ選挙で投票」— あなたは政府の計画を信頼しますか？
+📰 "UK ex-health minister says will run to replace Prime Minister Keir Starmer" — Is this a good decision?
+「英国の元保健大臣、キア・スターマー首相の後任を目指して立候補へ」— これは良い決断ですか？
+📰 "Al Jazeera’s exclusive report from the Strait of Hormuz" — What are the benefits?
+「アルジャジーラがホルムズ海峡から独占報道」— 利点は何ですか？
+📰 "Sudanese army captures key town near Ethiopian border from RSF" — What would you need to know to have a strong opinion?
+「スーダン軍、エチオピア国境近くの重要都市をRSFから奪還」— 強い意見を持つために何を知る必要がありますか？
+📰 "Hamas confirms killing of Qassam Brigades leader in Israeli attack" — What are the risks?
+「ハマスが、イスラエル軍の攻撃でカッサム旅団の指導者が死亡したことを確認した。」— リスクは何ですか？
+📰 "Iran warns of readiness for war and economic costs as US talks" — How does this affect people's daily lives?
+「イランは、アメリカとの協議の中で戦争と経済的負担への備えがあると警告した。」— これは人々の日常生活にどのような影響を与えますか？
+📰 "Cannes' Golden Relationship" — How does this affect international relations?
+「カンヌの黄金の関係」— これは国際関係にどのような影響を与えますか？
+📰 "Eurovision final in Vienna overshadowed by protests over Israel’s participation" — Should countries work together or alone?
+「イスラエルの参加に抗議するデモの中、ウィーンで行われたユーロビジョン決勝戦。」— 国々は協力すべきか、それとも単独で行動すべきか？
+📰 "Several injured after car ploughs into crowd in Italy's Modena" — What would you do if you were completely angry?
+「イタリアのモデナで車が群衆に突っ込み、数人が負傷した。」— もし完全に怒ったら、あなたはどうしますか？
+📰 "London police out in force as tens of thousands attend rival rallies" — What would you do if you were the judge?
+「ロンドン警察が大規模に動員され、数万人が対立する集会に参加」— もしあなたが裁判官だったら、どうしますか？
+📰 "London on edge as Tommy Robinson backers and pro-Palestinian marchers rally" — Who benefits from this situation?
+「トミー・ロビンソンの支持者とパレスチナ支持の行進者による集会で、ロンドンは緊張状態に」— この状況から誰が利益を得るのですか？
+📰 "Whale Timmy is dead, GPS tracker confirms identity" — Who would you want to buy from or sell to?
+「クジラのティミーは死亡、GPS追跡装置が個体識別を確認」— あなたは誰から買いたい、または誰に売りたいですか？
+📰 "Indian PM Modi begins European tour with meeting of Dutch royals" — Is this a good decision?
+「インドのモディ首相、オランダ王室との会談で欧州歴訪を開始」— これは良い決断ですか？
+📰 "French judge opens probe into 2018 killing of Jamal Khashoggi" — What should happen next?
+「フランスの裁判官、2018年のジャマル・カショギ殺害事件の捜査を開始」— 次に何が起こるべきですか？
+📰 "Baby dies of hypothermia as migrants reach Lampedusa overnight" — Should countries work together or alone?
+「夜間にランペドゥーサ島に到着した移民の間で、乳児が低体温症で死亡。」— 国々は協力すべきか、それとも単独で行動すべきか？
+📰 "Russia launches nearly 300 drones at Ukraine as 528 bodies of Ukrainian" — What did they achieve?
+「ロシアがウクライナに約300機のドローンを発射、ウクライナ兵528人の遺体も見つかる。」— 彼らは何を達成したのか？
+📰 "Satellite lofted for first Arab country" — Is this groundbreaking?
+「アラブ諸国初の人工衛星が打ち上げられる。」— これは画期的なことなのか？
+📰 "WWII memorials solemn reminders of war tragedy" — What would peace look like?
+「第二次世界大戦の記念碑は、戦争の悲劇を厳かに思い起こさせる。」— 平和とはどのようなものだろうか？
+📰 "Chinese, Russian and Indian ministers meet" — Is this fair to everyone?
+「中国、ロシア、インドの閣僚が会合。」— これはすべての人にとって公平なのか。`？
         }
     ]
 };
