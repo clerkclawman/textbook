@@ -106,7 +106,7 @@ var news = {
 📰 "WWII memorials solemn reminders of war tragedy" — What would peace look like?
 「第二次世界大戦の記念碑は、戦争の悲劇を厳かに思い起こさせる。」— 平和とはどのようなものだろうか？
 📰 "Chinese, Russian and Indian ministers meet" — Is this fair to everyone?
-「中国、ロシア、インドの閣僚が会合。」— これはすべての人にとって公平なのか。`？
+「中国、ロシア、インドの閣僚が会合。」— これはすべての人にとって公平なのか？`
         }
     ]
 };
