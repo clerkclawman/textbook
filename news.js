@@ -6,7 +6,7 @@
 var news = {
     stories: [
         {
-            title: "Daily News Headlines - May 17, 2026",
+            title: "Daily News Headlines - May 19, 2026",
             content: `📰 "Taiwan insists it is independent after Trump warning" — Is this a serious threat?
 「トランプ氏の警告を受けて、台湾は独立を主張している。」— これは深刻な脅威でしょうか？
 📰 "Man drives car into pedestrians in Italy, injuring eight" — Is this surprising?
