@@ -7,7 +7,106 @@ var news = {
     stories: [
         {
             title: "Daily News Headlines - May 20, 2026",
-            content: `📰 "'Ebola has tortured us'" — What's your opinion on this?\n「'Ebola has tortured us'」— What's your opinion on this?\n📰 "Ebola outbreak may be spreading faster than first thought, WHO doctor warns" — How can we prevent conflicts?\n「Ebola outbreak may be spreading faster than first thought, WHO doctor warns」— 紛争を防ぐにはどうすればよいですか？\n📰 "Key people smuggler arrested after BBC uncovered identity" — What are the risks?\n「Key people smuggler arrested after BBC uncovered identity」— リスクは何ですか？\n📰 "Father-of-eight killed in San Diego mosque shooting hailed as hero" — How can we prevent conflicts?\n「Father-of-eight killed in San Diego mosque shooting hailed as hero」— 紛争を防ぐにはどうすればよいですか？\n📰 "Estonia says Nato jet shot down drone over its territory" — Does this surprise you?\n「Estonia says Nato jet shot down drone over its territory」— これに驚きますか？\n📰 "Son of Mango boss arrested over father's fatal fall from cliff" — What are the risks?\n「Son of Mango boss arrested over father's fatal fall from cliff」— リスクは何ですか？\n📰 "Thailand cuts visa-free stay period for more than 90 countries including UK" — How will this change our lives?\n「Thailand cuts visa-free stay period for more than 90 countries including UK」— これは私たちの生活をどう変えるでしょうか？\n📰 "Selling children to survive" — Does this surprise you?\n「Selling children to survive」— これに驚きますか？\n📰 "Two bodies of missing Italians recovered from inside Maldives cave" — How can we prevent conflicts?\n「Two bodies of missing Italians recovered from inside Maldives cave」— 紛争を防ぐにはどうすればよいですか？\n📰 "Uncontrolled California wildfires seen from space" — Does this surprise you?\n「Uncontrolled California wildfires seen from space」— これに驚きますか？\n📰 "Jackson Pollock painting sells for record $181m at auction" — How will this change our lives?\n「Jackson Pollock painting sells for record $181m at auction」— これは私たちの生活をどう変えるでしょうか？\n📰 "Two dead in Spain shooting, with babies reportedly among injured" — How will this change our lives?\n「Two dead in Spain shooting, with babies reportedly among injured」— これは私たちの生活をどう変えるでしょうか？\n📰 "Tasmanian government apologises over stolen body parts scandal" — What do you think about this?\n「Tasmanian government apologises over stolen body parts scandal」— これについてどう思いますか？\n📰 "Starbucks Korea sacks CEO over controversial 'Tank Day' promotion" — Is this good or bad?\n「Starbucks Korea sacks CEO over controversial 'Tank Day' promotion」— これは良いことですか、悪いことですか？\n📰 "Trump says he called off new Iran attack at request of Gulf" — How can we prevent conflicts?\n「Trump says he called off new Iran attack at request of Gulf」— 紛争を防ぐにはどうすればよいですか？\n📰 "Death toll from Israeli strikes on Lebanon passes 3,000, officials say" — How can we prevent conflicts?\n「Death toll from Israeli strikes on Lebanon passes 3,000, officials say」— 紛争を防ぐにはどうすればよいですか？\n📰 "Trump administration unveils $1.8bn fund to compensate his allies as he drops" — What should be done?\n「Trump administration unveils $1.8bn fund to compensate his allies as he drops」— 何をすべきですか？\n📰 "Two men arrested over stunt at enclosure of famous monkey Punch" — Is this good or bad?\n「Two men arrested over stunt at enclosure of famous monkey Punch」— これは良いことですか、悪いことですか？\n📰 "Shakira wins £50m tax refund from Spanish government" — What do you think about this?\n「Shakira wins £50m tax refund from Spanish government」— これについてどう思いますか？\n📰 "Four killed in protests during Kenyan strikes over high fuel prices" — Should we rely less on oil?\n「Four killed in protests during Kenyan strikes over high fuel prices」— 私たちは石油への依存を減らすべきですか？\n📰 "Musk loses OpenAI court battle after jury finds he waited too long" — How will this change our lives?\n「Musk loses OpenAI court battle after jury finds he waited too long」— これは私たちの生活をどう変えるでしょうか？\n📰 "Victim or enabler" — What are the risks?\n「Victim or enabler」— リスクは何ですか？\n📰 "What really holds China and Russia together" — What should be done?\n「What really holds China and Russia together」— 何をすべきですか？\n📰 "The Republican who stood up to Trump is hoping for a big" — How will this change our lives?\n「The Republican who stood up to Trump is hoping for a big」— これは私たちの生活をどう変えるでしょうか？\n📰 "'FedEx says your parcel has drugs'" — What do you think about this?\n「'FedEx says your parcel has drugs'」— これについてどう思いますか？\n📰 "Trump told Taiwan not to 'go independent' - but does it want" — How will this change our lives?\n「Trump told Taiwan not to 'go independent' - but does it want」— これは私たちの生活をどう変えるでしょうか？\n📰 "What is Ebola and why is stopping the latest outbreak so difficult" — Is this good or bad?\n「What is Ebola and why is stopping the latest outbreak so difficult」— これは良いことですか、悪いことですか？\n📰 "Inside the 'kill-zone' on Ukraine's front line, where new weapons have transformed" — How can we prevent conflicts?\n「Inside the 'kill-zone' on Ukraine's front line, where new weapons have transformed」— 紛争を防ぐにはどうすればよいですか？\n📰 "From escaping child marriage 'to an old pervert' to becoming Sierra Leone's" — Is this good or bad?\n「From escaping child marriage 'to an old pervert' to becoming Sierra Leone's」— これは良いことですか、悪いことですか？\n📰 "Anti-government demonstrators and police clash in Bolivia" — What do you think about this?\n「Anti-government demonstrators and police clash in Bolivia」— これについてどう思いますか？\n📰 "'I sold it for over £1k'" — Who is responsible?\n「'I sold it for over £1k'」— 誰に責任がありますか？\n📰 "Moment two fighter jets collide mid-air at US air show" — How will this change our lives?\n「Moment two fighter jets collide mid-air at US air show」— これは私たちの生活をどう変えるでしょうか？\n📰 "Eurovision winner Dara arrives to screaming fans in Bulgaria" — How will this change our lives?\n「Eurovision winner Dara arrives to screaming fans in Bulgaria」— これは私たちの生活をどう変えるでしょうか？\n📰 "Lights, camera, Bangaranga" — Does this surprise you?\n「Lights, camera, Bangaranga」— これに驚きますか？\n📰 "I've been to the Maldives death caves countless times but NEVER into" — How can we prevent conflicts?\n「I've been to the Maldives death caves countless times but NEVER into」— 紛争を防ぐにはどうすればよいですか？\n📰 "Moment 'housebound' benefit cheat takes part in combat classes and works out" — Would you watch this?\n「Moment 'housebound' benefit cheat takes part in combat classes and works out」— あなたはこれを見ますか？\n📰 "Migrant hotel manager with no legal right to work in Britain wins" — How will this change our lives?\n「Migrant hotel manager with no legal right to work in Britain wins」— これは私たちの生活をどう変えるでしょうか？\n📰 "Putin arrives in China for talks with 'long-time friend' President Xi… after" — What do you think about this?\n「Putin arrives in China for talks with 'long-time friend' President Xi… after」— これについてどう思いますか？\n📰 "'I've not witnessed Jae hurt him'" — What should be done?\n「'I've not witnessed Jae hurt him'」— 何をすべきですか？\n📰 "Teenager with severe peanut allergy 'died from eating dessert at Turkish hotel" — How can we prevent conflicts?\n「Teenager with severe peanut allergy 'died from eating dessert at Turkish hotel」— 紛争を防ぐにはどうすればよいですか？\n📰 "Man dressed as clown who killed male model at Halloween party in" — How can we prevent conflicts?\n「Man dressed as clown who killed male model at Halloween party in」— 紛争を防ぐにはどうすればよいですか？\n📰 "Moment gang of thugs launch fatal attack on father as they beat" — How can we prevent conflicts?\n「Moment gang of thugs launch fatal attack on father as they beat」— 紛争を防ぐにはどうすればよいですか？\n📰 "Elite coach sues cricket board for £200,000 after he was crushed by" — What should be done?\n「Elite coach sues cricket board for £200,000 after he was crushed by」— 何をすべきですか？\n📰 "Deportation flight to Muslim-majority Pakistan serves pork sausages as part of 'full" — Would you watch this?\n「Deportation flight to Muslim-majority Pakistan serves pork sausages as part of 'full」— あなたはこれを見ますか？\n📰 "British mother who carried out audacious £31,000 wine heist in US is" — What do you think about this?\n「British mother who carried out audacious £31,000 wine heist in US is」— これについてどう思いますか？\n📰 "Meghan Markle shares unseen wedding photos to celebrate 8th anniversary with Harry" — What should be done?\n「Meghan Markle shares unseen wedding photos to celebrate 8th anniversary with Harry」— 何をすべきですか？\n📰 "Spanish tourism bosses call for EU to AXE 90-day limit on Brits," — Is this good or bad?\n「Spanish tourism bosses call for EU to AXE 90-day limit on Brits,」— これは良いことですか、悪いことですか？\n📰 "Junior school pupil contracts meningitis in fourth confirmed case in Reading outbreak" — Who is responsible?\n「Junior school pupil contracts meningitis in fourth confirmed case in Reading outbreak」— 誰に責任がありますか？\n📰 "Billionaire Mango owner's son is arrested 'on suspicion of homicide' after his" — How will this change our lives?\n「Billionaire Mango owner's son is arrested 'on suspicion of homicide' after his」— これは私たちの生活をどう変えるでしょうか？\n📰 "Andy Burnham blames THATCHER for Britain's woes as he releases 'vibes' by-election" — What do you think about this?\n「Andy Burnham blames THATCHER for Britain's woes as he releases 'vibes' by-election」— これについてどう思いますか？`
+            content: `📰 "'Ebola has tortured us'" — What are the risks?
+«'Ebola has tortured us'» — リスクは何ですか？
+📰 "Ebola outbreak may be spreading faster than first thought, WHO doctor warns" — How can we prevent conflicts?
+«Ebola outbreak may be spreading faster than first thought, WHO doctor warns» — 紛争を防ぐにはどうすればよいですか？
+📰 "Key people smuggler arrested after BBC uncovered identity" — Is this good or bad?
+«Key people smuggler arrested after BBC uncovered identity» — これは良いことですか、悪いことですか？
+📰 "Father-of-eight killed in San Diego mosque shooting hailed as hero" — How can we prevent conflicts?
+«Father-of-eight killed in San Diego mosque shooting hailed as hero» — 紛争を防ぐにはどうすればよいですか？
+📰 "Estonia says Nato jet shot down drone over its territory" — Does this surprise you?
+«Estonia says Nato jet shot down drone over its territory» — これに驚きますか？
+📰 "Son of Mango boss arrested over father's fatal fall from cliff" — What's your opinion on this?
+«Son of Mango boss arrested over father's fatal fall from cliff» — What's your opinion on this?
+📰 "Thailand cuts visa-free stay period for more than 90 countries including UK" — How will this change our lives?
+«Thailand cuts visa-free stay period for more than 90 countries including UK» — これは私たちの生活をどう変えるでしょうか？
+📰 "Selling children to survive" — What should be done?
+«Selling children to survive» — 何をすべきですか？
+📰 "Two bodies of missing Italians recovered from inside Maldives cave" — How can we prevent conflicts?
+«Two bodies of missing Italians recovered from inside Maldives cave» — 紛争を防ぐにはどうすればよいですか？
+📰 "Uncontrolled California wildfires seen from space" — Is this good or bad?
+«Uncontrolled California wildfires seen from space» — これは良いことですか、悪いことですか？
+📰 "Jackson Pollock painting sells for record $181m at auction" — How will this change our lives?
+«Jackson Pollock painting sells for record $181m at auction» — これは私たちの生活をどう変えるでしょうか？
+📰 "Two dead in Spain shooting, with babies reportedly among injured" — How will this change our lives?
+«Two dead in Spain shooting, with babies reportedly among injured» — これは私たちの生活をどう変えるでしょうか？
+📰 "Tasmanian government apologises over stolen body parts scandal" — What do you think about this?
+«Tasmanian government apologises over stolen body parts scandal» — これについてどう思いますか？
+📰 "Starbucks Korea sacks CEO over controversial 'Tank Day' promotion" — Who is responsible?
+«Starbucks Korea sacks CEO over controversial 'Tank Day' promotion» — 誰に責任がありますか？
+📰 "Trump says he called off new Iran attack at request of Gulf" — How can we prevent conflicts?
+«Trump says he called off new Iran attack at request of Gulf» — 紛争を防ぐにはどうすればよいですか？
+📰 "Death toll from Israeli strikes on Lebanon passes 3,000, officials say" — How can we prevent conflicts?
+«Death toll from Israeli strikes on Lebanon passes 3,000, officials say» — 紛争を防ぐにはどうすればよいですか？
+📰 "Trump administration unveils $1.8bn fund to compensate his allies as he drops" — Does this surprise you?
+«Trump administration unveils $1.8bn fund to compensate his allies as he drops» — これに驚きますか？
+📰 "Two men arrested over stunt at enclosure of famous monkey Punch" — What are the risks?
+«Two men arrested over stunt at enclosure of famous monkey Punch» — リスクは何ですか？
+📰 "Shakira wins £50m tax refund from Spanish government" — What do you think about this?
+«Shakira wins £50m tax refund from Spanish government» — これについてどう思いますか？
+📰 "Four killed in protests during Kenyan strikes over high fuel prices" — Should we rely less on oil?
+«Four killed in protests during Kenyan strikes over high fuel prices» — 私たちは石油への依存を減らすべきですか？
+📰 "Musk loses OpenAI court battle after jury finds he waited too long" — How will this change our lives?
+«Musk loses OpenAI court battle after jury finds he waited too long» — これは私たちの生活をどう変えるでしょうか？
+📰 "Victim or enabler" — What are the risks?
+«Victim or enabler» — リスクは何ですか？
+📰 "What really holds China and Russia together" — Does this surprise you?
+«What really holds China and Russia together» — これに驚きますか？
+📰 "The Republican who stood up to Trump is hoping for a big" — How will this change our lives?
+«The Republican who stood up to Trump is hoping for a big» — これは私たちの生活をどう変えるでしょうか？
+📰 "'FedEx says your parcel has drugs'" — What are the risks?
+«'FedEx says your parcel has drugs'» — リスクは何ですか？
+📰 "Trump told Taiwan not to 'go independent' - but does it want" — How will this change our lives?
+«Trump told Taiwan not to 'go independent' - but does it want» — これは私たちの生活をどう変えるでしょうか？
+📰 "What is Ebola and why is stopping the latest outbreak so difficult" — Who is responsible?
+«What is Ebola and why is stopping the latest outbreak so difficult» — 誰に責任がありますか？
+📰 "Inside the 'kill-zone' on Ukraine's front line, where new weapons have transformed" — How can we prevent conflicts?
+«Inside the 'kill-zone' on Ukraine's front line, where new weapons have transformed» — 紛争を防ぐにはどうすればよいですか？
+📰 "From escaping child marriage 'to an old pervert' to becoming Sierra Leone's" — What should be done?
+«From escaping child marriage 'to an old pervert' to becoming Sierra Leone's» — 何をすべきですか？
+📰 "Anti-government demonstrators and police clash in Bolivia" — What do you think about this?
+«Anti-government demonstrators and police clash in Bolivia» — これについてどう思いますか？
+📰 "'I sold it for over £1k'" — Is this good or bad?
+«'I sold it for over £1k'» — これは良いことですか、悪いことですか？
+📰 "Moment two fighter jets collide mid-air at US air show" — How will this change our lives?
+«Moment two fighter jets collide mid-air at US air show» — これは私たちの生活をどう変えるでしょうか？
+📰 "Eurovision winner Dara arrives to screaming fans in Bulgaria" — What's your opinion on this?
+«Eurovision winner Dara arrives to screaming fans in Bulgaria» — What's your opinion on this?
+📰 "Lights, camera, Bangaranga" — What are the risks?
+«Lights, camera, Bangaranga» — リスクは何ですか？
+📰 "I've been to the Maldives death caves countless times but NEVER into" — How can we prevent conflicts?
+«I've been to the Maldives death caves countless times but NEVER into» — 紛争を防ぐにはどうすればよいですか？
+📰 "Moment 'housebound' benefit cheat takes part in combat classes and works out" — Would you watch this?
+«Moment 'housebound' benefit cheat takes part in combat classes and works out» — あなたはこれを見ますか？
+📰 "Migrant hotel manager with no legal right to work in Britain wins" — How will this change our lives?
+«Migrant hotel manager with no legal right to work in Britain wins» — これは私たちの生活をどう変えるでしょうか？
+📰 "Putin arrives in China for talks with 'long-time friend' President Xi… after" — What do you think about this?
+«Putin arrives in China for talks with 'long-time friend' President Xi… after» — これについてどう思いますか？
+📰 "'I've not witnessed Jae hurt him'" — What do you think about this?
+«'I've not witnessed Jae hurt him'» — これについてどう思いますか？
+📰 "Teenager with severe peanut allergy 'died from eating dessert at Turkish hotel" — How can we prevent conflicts?
+«Teenager with severe peanut allergy 'died from eating dessert at Turkish hotel» — 紛争を防ぐにはどうすればよいですか？
+📰 "Man dressed as clown who killed male model at Halloween party in" — How can we prevent conflicts?
+«Man dressed as clown who killed male model at Halloween party in» — 紛争を防ぐにはどうすればよいですか？
+📰 "Moment gang of thugs launch fatal attack on father as they beat" — How can we prevent conflicts?
+«Moment gang of thugs launch fatal attack on father as they beat» — 紛争を防ぐにはどうすればよいですか？
+📰 "Elite coach sues cricket board for £200,000 after he was crushed by" — Does this surprise you?
+«Elite coach sues cricket board for £200,000 after he was crushed by» — これに驚きますか？
+📰 "Deportation flight to Muslim-majority Pakistan serves pork sausages as part of 'full" — Would you watch this?
+«Deportation flight to Muslim-majority Pakistan serves pork sausages as part of 'full» — あなたはこれを見ますか？
+📰 "British mother who carried out audacious £31,000 wine heist in US is" — Is this good or bad?
+«British mother who carried out audacious £31,000 wine heist in US is» — これは良いことですか、悪いことですか？
+📰 "Meghan Markle shares unseen wedding photos to celebrate 8th anniversary with Harry" — Does this surprise you?
+«Meghan Markle shares unseen wedding photos to celebrate 8th anniversary with Harry» — これに驚きますか？
+📰 "Spanish tourism bosses call for EU to AXE 90-day limit on Brits," — What's your opinion on this?
+«Spanish tourism bosses call for EU to AXE 90-day limit on Brits,» — What's your opinion on this?
+📰 "Junior school pupil contracts meningitis in fourth confirmed case in Reading outbreak" — Who is responsible?
+«Junior school pupil contracts meningitis in fourth confirmed case in Reading outbreak» — 誰に責任がありますか？
+📰 "Billionaire Mango owner's son is arrested 'on suspicion of homicide' after his" — How will this change our lives?
+«Billionaire Mango owner's son is arrested 'on suspicion of homicide' after his» — これは私たちの生活をどう変えるでしょうか？
+📰 "Andy Burnham blames THATCHER for Britain's woes as he releases 'vibes' by-election" — What do you think about this?
+«Andy Burnham blames THATCHER for Britain's woes as he releases 'vibes' by-election» — これについてどう思いますか？`
         }
     ]
 };
