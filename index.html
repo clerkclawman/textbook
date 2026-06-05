@@ -1347,6 +1347,9 @@ const maxFontSize = 8; // vw/rem units
         return true;
     }
 
+        // ====================
+    // INITIALIZATION
+    // ====================
     function init() {
         if (!initElements()) {
             alert('Failed to initialize page elements');
@@ -1364,64 +1367,7 @@ const maxFontSize = 8; // vw/rem units
         });
     }
 
-        function setupEventListeners() {
-        // Class and story selection
-        if (classSelector) classSelector.addEventListener('change', handleClassSelect);
-        storySelector.addEventListener('change', handleStorySelect);
-        
-        // Level selector for test practice
-        const levelSelector = document.getElementById('levelSelector');
-        if (levelSelector) levelSelector.addEventListener('change', function() {
-            if (currentClass === 'EikenTestPractice') {
-                const level = this.value;
-                loadTestDataForLevel(level);
-            }
-        });
-        
-        // Font controls
-        document.getElementById('increaseFont').addEventListener('click', increaseFontSize);
-        document.getElementById('decreaseFont').addEventListener('click', decreaseFontSize);
-        
-        // Display mode controls
-        document.getElementById('displayEnglish').addEventListener('click', () => setDisplayMode('english'));
-        document.getElementById('displayJapanese').addEventListener('click', () => setDisplayMode('japanese'));
-        document.getElementById('displayBoth').addEventListener('click', () => setDisplayMode('both'));
-        
-        // Reading mode navigation
-        prevSentenceBtn.addEventListener('click', showPreviousSentence);
-        nextSentenceBtn.addEventListener('click', showNextSentence);
-        playEnglishBtn.addEventListener('click', () => playSentence('english'));
-        playJapaneseBtn.addEventListener('click', () => playSentence('japanese'));
-        exitReadingBtn.addEventListener('click', exitReadingMode);
-        fruitToggleBtn.addEventListener('click', toggleFruitGame);
-        
-        // Night mode toggle
-        document.getElementById('nightModeToggle').addEventListener('click', toggleNightMode);
-        
-        // Keyboard navigation
-        document.addEventListener('keydown', handleRemoteInput);
-        
-        // Initialize speech synthesis
-        if ('speechSynthesis' in window) {
-            window.speechSynthesis.onvoiceschanged = function() {
-                console.log('Voices loaded');
-            };
-            
-            if (window.speechSynthesis.getVoices().length === 0) {
-                window.speechSynthesis.getVoices();
-            }
-        }
-    }
-
-;
-            
-            if (window.speechSynthesis.getVoices().length === 0) {
-                window.speechSynthesis.getVoices();
-            }
-        }
-    }
-
-        function loadSavedPreferences() {
+function loadSavedPreferences() {
         // Night mode
         const savedNightMode = localStorage.getItem('nightMode') === 'true';
         if (savedNightMode) {
@@ -1448,12 +1394,10 @@ const maxFontSize = 8; // vw/rem units
         fruitGameActive = false; // reset active state on load
         updateFruitButtonState();
 
-        // Initialize button states
+        
         document.getElementById('displayEnglish').classList.toggle('active', displayMode === 'english');
         document.getElementById('displayJapanese').classList.toggle('active', displayMode === 'japanese');
         document.getElementById('displayBoth').classList.toggle('active', displayMode === 'both');
-    }
-
     // ====================
     // CLASS & STORY MANAGEMENT
     // ====================
