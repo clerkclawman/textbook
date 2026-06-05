@@ -1131,32 +1131,66 @@
     <div class="controls-row">
         <div class="dropdown">
             <select id="classSelector">
-                <option value="">Select Class</option>
-                <option value="Bronze">Bronze</option>
-                <option value="Silver">Silver</option>
-                <option value="Gold">Gold</option>
-                <option value="Eiken7">Eiken 7</option>
-                <option value="Eiken6">Eiken 6</option>
-                <option value="Eiken5">Eiken 5</option>
-                <option value="Eiken4">Eiken 4</option>
-                <option value="Eiken3">Eiken 3</option>
-                <option value="EikenPre2">Eiken Pre-2</option> 
-                <option value="EikenPre2Plus">Eiken Pre-2 Plus</option>
-                <option value="Eiken2">Eiken 2</option>
-                <option value="EikenPre1">Eiken Pre-1</option>
-                <option value="Eiken1">Eiken 1</option>
-                <option value="News">News Headlines</option>
-                <option value="C">C Class</option>
-                <option value="X">X Class</option>
-                <option value="HighSchool">High School</option>
-                <option value="Adult">Adult</option>
-                <option value="Syntax">Syntax</option>
-            </select>
+
+                                <option value="">Select Class</option>
+
+                                <option value="Bronze">Bronze</option>
+
+                                <option value="Silver">Silver</option>
+
+                                <option value="Gold">Gold</option>
+
+                                <option value="Eiken7">Eiken 7</option>
+
+                                <option value="Eiken6">Eiken 6</option>
+
+                                <option value="Eiken5">Eiken 5</option>
+
+                                <option value="Eiken4">Eiken 4</option>
+
+                                <option value="Eiken3">Eiken 3</option>
+
+                                <option value="EikenPre2">Eiken Pre-2</option>
+
+                                <option value="EikenPre2Plus">Eiken Pre-2 Plus</option>
+
+                                <option value="Eiken2">Eiken 2</option>
+
+                                <option value="EikenPre1">Eiken Pre-1</option>
+
+                                <option value="Eiken1">Eiken 1</option>
+
+                                <option value="News">News Headlines</option>
+
+                                <option value="C">C Class</option>
+
+                                <option value="X">X Class</option>
+
+                                <option value="HighSchool">High School</option>
+
+                                <option value="Adult">Adult</option>
+
+                                <option value="Syntax">Syntax</option>
+
+                                <option value="EikenTestPractice">Eiken Test Practice</option>
+
+                                </select>
         </div>
         
         <div class="dropdown">
             <select id="storySelector" disabled>
                 <option value="">Select Story</option>
+            </select>
+        </div>
+        <div class="dropdown" id="eikenLevelWrapper" style="display:none;">
+            <select id="levelSelector">
+                <option value="7">Eiken 7</option>
+                <option value="6">Eiken 6</option>
+                <option value="5">Eiken 5</option>
+                <option value="4">Eiken 4</option>
+                <option value="3">Eiken 3</option>
+                <option value="2">Eiken 2</option>
+                <option value="1">Eiken 1</option>
             </select>
         </div>
     </div>
@@ -1252,6 +1286,13 @@
 <script src="whatsBestWorst.js"></script>
 <script src="syntax.js"></script>
 <script src="news.js"></script>
+<script src="eiken7test.js"></script>
+<script src="eiken6test.js"></script>
+<script src="eiken5test.js"></script>
+<script src="eiken4test.js"></script>
+<script src="eiken3test.js"></script>
+<script src="eiken2test.js"></script>
+<script src="eiken1test.js"></script>
 
 <script>
     // ====================
@@ -1323,20 +1364,29 @@ const maxFontSize = 8; // vw/rem units
         });
     }
 
-    function setupEventListeners() {
+        function setupEventListeners() {
         // Class and story selection
         if (classSelector) classSelector.addEventListener('change', handleClassSelect);
         storySelector.addEventListener('change', handleStorySelect);
-
+        
+        // Level selector for test practice
+        const levelSelector = document.getElementById('levelSelector');
+        if (levelSelector) levelSelector.addEventListener('change', function() {
+            if (currentClass === 'EikenTestPractice') {
+                const level = this.value;
+                loadTestDataForLevel(level);
+            }
+        });
+        
         // Font controls
         document.getElementById('increaseFont').addEventListener('click', increaseFontSize);
         document.getElementById('decreaseFont').addEventListener('click', decreaseFontSize);
-
+        
         // Display mode controls
         document.getElementById('displayEnglish').addEventListener('click', () => setDisplayMode('english'));
         document.getElementById('displayJapanese').addEventListener('click', () => setDisplayMode('japanese'));
         document.getElementById('displayBoth').addEventListener('click', () => setDisplayMode('both'));
-
+        
         // Reading mode navigation
         prevSentenceBtn.addEventListener('click', showPreviousSentence);
         nextSentenceBtn.addEventListener('click', showNextSentence);
@@ -1344,18 +1394,26 @@ const maxFontSize = 8; // vw/rem units
         playJapaneseBtn.addEventListener('click', () => playSentence('japanese'));
         exitReadingBtn.addEventListener('click', exitReadingMode);
         fruitToggleBtn.addEventListener('click', toggleFruitGame);
-
+        
         // Night mode toggle
         document.getElementById('nightModeToggle').addEventListener('click', toggleNightMode);
-
+        
         // Keyboard navigation
         document.addEventListener('keydown', handleRemoteInput);
-
+        
         // Initialize speech synthesis
         if ('speechSynthesis' in window) {
             window.speechSynthesis.onvoiceschanged = function() {
                 console.log('Voices loaded');
             };
+            
+            if (window.speechSynthesis.getVoices().length === 0) {
+                window.speechSynthesis.getVoices();
+            }
+        }
+    }
+
+;
             
             if (window.speechSynthesis.getVoices().length === 0) {
                 window.speechSynthesis.getVoices();
@@ -1398,13 +1456,28 @@ const maxFontSize = 8; // vw/rem units
     // ====================
     // CLASS & STORY MANAGEMENT
     // ====================
-    function handleClassSelect() {
+        function handleClassSelect() {
         currentClass = this.value;
         storySelector.disabled = !currentClass;
+        // Hide level selector by default
+        document.getElementById('eikenLevelWrapper').style.display = 'none';
         
         if (currentClass) {
-            populateStorySelector(currentClass);
+            if (currentClass === 'EikenTestPractice') {
+                // Show level selector for test practice
+                document.getElementById('eikenLevelWrapper').style.display = 'block';
+                storySelector.disabled = true;
+                storySelector.innerHTML = '<option value="">Select Level First</option>';
+            } else {
+                populateStorySelector(currentClass);
+            }
         } else {
+            storySelector.innerHTML = '<option value="">Select Story</option>';
+            storySelector.disabled = true;
+        }
+    }
+
+else {
             storySelector.innerHTML = '<option value="">Select Story</option>';
             storySelector.disabled = true;
         }
@@ -1450,15 +1523,21 @@ function populateStorySelector(cls) {
     // ====================
     // READING MODE FUNCTIONS
     // ====================
-    function enterReadingMode(cls) {
+        function enterReadingMode(cls) {
         if (mainContainer) mainContainer.style.display = 'none';
         if (readingModeContainer) readingModeContainer.style.display = 'flex';
         
         initTranslationEvents();
-        loadTextContent(cls);
+        if (cls === 'EikenTestPractice') {
+            // Load test data based on selected level
+            const level = document.getElementById('levelSelector').value;
+            loadTestDataForLevel(level);
+        } else {
+            loadTextContent(cls);
+        }
     }
 
-    function exitReadingMode() {
+function exitReadingMode() {
         mainContainer.style.display = 'block';
         readingModeContainer.style.display = 'none';
         stopSpeech();
@@ -1827,9 +1906,27 @@ function applyFontSize() {
     // ====================
     // NAVIGATION
     // ====================
-    function showNextSentence() {
+        function showNextSentence() {
         stopSpeech();
         closeTranslationPopupHandler();
+        
+        if (currentClass === 'EikenTestPractice') {
+            if (currentTestData.length === 0 || fruitGameActive) return;
+            if (fruitGameEnabled) {
+                shouldAdvanceAfterGame = true;
+                showFruitGame();
+                return;
+            }
+            if (currentTestIndex < currentTestData.length - 1) {
+                currentTestIndex++;
+                showTestQuestion(currentTestIndex);
+            } else {
+                // Loop to first
+                currentTestIndex = 0;
+                showTestQuestion(currentTestIndex);
+            }
+            return;
+        }
         
         if (sentences.length === 0 || fruitGameActive) return;
         
@@ -1850,6 +1947,15 @@ function applyFontSize() {
         advanceToNextSentence();
     }
 
+if (isLastPage) {
+            currentSentenceIndex = 0;
+            displayCurrentSentence();
+            return;
+        }
+        
+        advanceToNextSentence();
+    }
+
     function advanceToNextSentence() {
         if (currentSentenceIndex < sentences.length - 1) {
             currentSentenceIndex++;
@@ -1861,15 +1967,35 @@ function applyFontSize() {
         updatePageCounter();
     }
 
-    function showPreviousSentence() {
+        function showPreviousSentence() {
         stopSpeech();
         closeTranslationPopupHandler();
+        
+        if (currentClass === 'EikenTestPractice') {
+            if (sentences.length === 0) return; // Actually, we should check currentTestData
+            if (currentTestData.length === 0) return;
+            if (currentTestIndex > 0) {
+                currentTestIndex--;
+                showTestQuestion(currentTestIndex);
+            } else {
+                // Loop to last
+                currentTestIndex = currentTestData.length - 1;
+                showTestQuestion(currentTestIndex);
+            }
+            return;
+        }
         
         if (sentences.length === 0) return;
         
         if (currentSentenceIndex > 0) {
             currentSentenceIndex--;
         } else {
+            currentSentenceIndex = sentences.length - 1;
+        }
+        displayCurrentSentence();
+    }
+
+else {
             currentSentenceIndex = sentences.length - 1;
         }
         
@@ -2751,6 +2877,172 @@ function loadLessonsData() {
                     })) : [],
                     questions: window.eiken3questions ? window.eiken3questions.questions : []
                 },
+                'Eiken4': {
+                    stories: Array.isArray(eiken4) ? 
+                        eiken4.map(story => ({
+                            title: story.title,
+                            content: story.content
+                        })) : 
+                        Object.values(eiken4).map(story => ({
+                            title: story.title,
+                            content: story.content
+                        }))
+                },
+                'Eiken5': {
+                    stories: window.eiken5story ? window.eiken5story.map(story => ({
+                        title: story.title,
+                        content: story.content
+                    })) : [],
+                    questions: window.qa5 ? window.qa5.questions : []
+                },
+                'Eiken6': {
+                    stories: window.eiken6story ? window.eiken6story.map(story => ({
+                        title: story.title,
+                        content: story.content
+                    })) : []
+                },
+                'Eiken7': {
+                    stories: window.eiken7story ? window.eiken7story.map(story => ({
+                        title: story.title,
+                        content: story.content
+                    })) : []
+                },
+                // Test practice classes
+                'Eiken1Test': {
+                    stories: window.eiken1Test ? window.eiken1Test.map((item, index) => ({
+                        title: `Question ${index+1}`,
+                        content: item
+                    })) : []
+                },
+                'Eiken2Test': {
+                    stories: window.eiken2Test ? window.eiken2Test.map((item, index) => ({
+                        title: `Question ${index+1}`,
+                        content: item
+                    })) : []
+                },
+                'Eiken3Test': {
+                    stories: window.eiken3Test ? window.eiken3Test.map((item, index) => ({
+                        title: `Question ${index+1}`,
+                        content: item
+                    })) : []
+                },
+                'Eiken4Test': {
+                    stories: window.eiken4Test ? window.eiken4Test.map((item, index) => ({
+                        title: `Question ${index+1}`,
+                        content: item
+                    })) : []
+                },
+                'Eiken5Test': {
+                    stories: window.eiken5Test ? window.eiken5Test.map((item, index) => ({
+                        title: `Question ${index+1}`,
+                        content: item
+                    })) : []
+                },
+                'Eiken6Test': {
+                    stories: window.eiken6Test ? window.eiken6Test.map((item, index) => ({
+                        title: `Question ${index+1}`,
+                        content: item
+                    })) : []
+                },
+                'Eiken7Test': {
+                    stories: window.eiken7Test ? window.eiken7Test.map((item, index) => ({
+                        title: `Question ${index+1}`,
+                        content: item
+                    })) : []
+                },
+                'HighSchool': {
+                    stories: [
+                        {
+                            title: 'Getting to Know You',
+                            content: gettingtoknow.questions
+                        },
+                        {
+                            title: 'Easy Questions',
+                            content: easyquestions2.questions
+                        },
+                        {
+                            title: 'Would You Rather',
+                            content: wouldyourather.questions
+                        },
+                        {
+                            title: 'Have You Ever',
+                            content: haveyouever.questions
+                        },
+                        {
+                            title: 'What\'s the Best / What\'s the Worst',
+                            content: whatsBestWorst.questions
+                        }
+                    ]
+                },
+                'Syntax': syntax,
+                'News': news
+            };
+
+            // Process each class to ensure consistent structure
+            Object.entries(classData).forEach(([className, data]) => {
+                if (!data) return; // Skip if data not loaded
+
+                if (Array.isArray(data)) {
+                    // UPDATED LOGIC HERE:
+                    // Check if the items inside the array are Objects with a 'title' property
+                    lessonsData[className] = {
+                        stories: data.map((item, i) => ({
+                            // If item.title exists, use it. If not, make a generic "Story X" title.
+                            title: item.title ? item.title : `Story ${i+1}`,
+                            // If item.content exists, use it. If item is just a string, use item itself.
+                            content: item.content ? item.content : item
+                        }))
+                    };
+                } else if (data.stories || data.questions) {
+                    // For classes that already have the right structure
+                    lessonsData[className] = data;
+                } else {
+                    // For simple objects with content
+                    lessonsData[className] = {
+                        stories: Object.entries(data).map(([key, content]) => ({
+                            title: key.replace(/_/g, ' '),
+                            content: content
+                        }))
+                    };
+                }
+
+                console.log(`${className} loaded with`, 
+                    lessonsData[className].stories?.length || 0, 'stories and',
+                    lessonsData[className].questions ? 'questions' : 'no questions');
+            });
+
+            if (Object.keys(lessonsData).length > 0) {
+                resolve();
+            } else {
+                reject('No lesson data found');
+            }
+        } catch (e) {
+            console.error('Error loading lesson data:', e);
+            reject(e);
+        }
+    });
+},
+                'Silver': {
+                    stories: typeof silverStories !== 'undefined' ? silverStories : []
+                },
+                'Gold': {
+                    stories: typeof goldStories !== 'undefined' ? goldStories : []
+                },
+                'Adult': adult,
+                'X': x,
+                'C': c,
+                'Eiken1': eiken1,
+                'EikenPre1': eikenpre1,
+                'Eiken2': eiken2,
+                'EikenPre2': eikenpre2,
+                'EikenPre2Plus': eikenpre2plus,
+                'Eiken3': {
+                    stories: window.eiken3 ? window.eiken3.map(story => ({
+                        title: story.title,
+                        content: story.content
+                    })) : [],
+                    questions: window.eiken3questions ? window.eiken3questions.questions : []
+                },
             'Eiken4': {
     stories: Array.isArray(eiken4) ? 
         eiken4.map(story => ({
@@ -2938,6 +3230,115 @@ function loadLessonsData() {
         init();
         setTimeout(listVoices, 1000);
     });
+
+// ====================
+// TEST PRACTICE FUNCTIONS
+// ====================
+
+let currentTestData = [];
+let currentTestIndex = 0;
+
+function loadTestDataForLevel(level) {
+    // Construct variable name: eiken<level>Test
+    const varName = 'eiken' + level + 'Test';
+    if (window[varName] && Array.isArray(window[varName])) {
+        currentTestData = window[varName];
+        currentTestIndex = 0;
+        showTestQuestion(currentTestIndex);
+    } else {
+        alert('Test data for level ' + level + ' not found.');
+        exitReadingMode();
+    }
+}
+
+function showTestQuestion(index) {
+    if (!currentTestData || index < 0 || index >= currentTestData.length) {
+        alert('Invalid question index.');
+        exitReadingMode();
+        return;
+    }
+    
+    const item = currentTestData[index];
+    // Clear the reading content
+    const readingContent = document.querySelector('.reading-content');
+    readingContent.innerHTML = ''; // Remove existing sentence rows
+    
+    // Create the question container
+    const questionDiv = document.createElement('div');
+    questionDiv.className = 'sentence-row';
+    questionDiv.innerHTML = `
+        <div class="sentence-controls">
+            <div id="test-sentence"></div>
+            <select id="test-options"></select>
+            <button id="test-check-btn">Check Answer</button>
+            <div id="test-feedback" style="margin-top: 10px; min-height: 20px;"></div>
+        </div>
+    `;
+    readingContent.appendChild(questionDiv);
+    
+    // Populate the sentence with blanks replaced by a dropdown
+    const sentenceDiv = document.getElementById('test-sentence');
+    const optionsSelect = document.getElementById('test-options');
+    const feedbackDiv = document.getElementById('test-feedback');
+    const checkBtn = document.getElementById('test-check-btn');
+    
+    // Replace ___ with a <select> element? Actually, we want to show the sentence with a dropdown in place of the blank.
+    // We'll split the sentence by '___' and create elements accordingly.
+    const parts = item.sentence.split('___');
+    sentenceDiv.innerHTML = ''; // Clear
+    if (parts.length === 2) {
+        // Before blank
+        sentenceDiv.appendChild(document.createTextNode(parts[0]));
+        // The dropdown
+        optionsSelect.innerHTML = ''; // Clear existing options
+        item.options.forEach((opt, optIndex) => {
+            const option = document.createElement('option');
+            option.value = opt;
+            option.textContent = opt;
+            optionsSelect.appendChild(option);
+        });
+        sentenceDiv.appendChild(optionsSelect);
+        // After blank
+        sentenceDiv.appendChild(document.createTextNode(parts[1]));
+    } else {
+        // No blank found, just show the sentence
+        sentenceDiv.textContent = item.sentence;
+        optionsSelect.style.display = 'none';
+    }
+    
+    // Set up check button
+    checkBtn.onclick = function() {
+        const selectedOption = optionsSelect.value;
+        if (selectedOption === item.options[item.answer]) {
+            feedbackDiv.textContent = 'Correct!';
+            feedbackDiv.style.color = 'var(--success)';
+            // Disable further interaction
+            optionsSelect.disabled = true;
+            checkBtn.disabled = true;
+        } else {
+            feedbackDiv.textContent = 'Try again.';
+            feedbackDiv.style.color = 'var(--warning)';
+        }
+    };
+    
+    // Update page counter
+    updatePageCounter();
+}
+
+function updatePageCounter() {
+    const currentPageEl = document.getElementById('currentPage');
+    const totalPagesEl = document.getElementById('totalPages');
+    if (currentPageEl) currentPageEl.textContent = currentTestIndex + 1;
+    if (totalPagesEl) totalPagesEl.textContent = currentTestData.length;
+}
+
+// We'll also need to handle next and previous buttons for the test.
+// We'll modify the showNextSentence and showPreviousSentence functions to handle test practice.
+// But for simplicity, we'll just reuse the existing navigation functions and change what they do when in test practice.
+// We'll do that by checking currentClass in those functions.
+
+// Let's replace the showNextSentence function to handle test practice.
+
 </script>   
 </body>
 </html>
