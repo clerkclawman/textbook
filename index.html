@@ -1887,14 +1887,6 @@ function applyFontSize() {
         advanceToNextSentence();
     }
 
-if (isLastPage) {
-            currentSentenceIndex = 0;
-            displayCurrentSentence();
-            return;
-        }
-        
-        advanceToNextSentence();
-    }
 
     function advanceToNextSentence() {
         if (currentSentenceIndex < sentences.length - 1) {
@@ -3265,12 +3257,6 @@ function showTestQuestion(index) {
     updatePageCounter();
 }
 
-function updatePageCounter() {
-    const currentPageEl = document.getElementById('currentPage');
-    const totalPagesEl = document.getElementById('totalPages');
-    if (currentPageEl) currentPageEl.textContent = currentTestIndex + 1;
-    if (totalPagesEl) totalPagesEl.textContent = currentTestData.length;
-}
 
 // We'll also need to handle next and previous buttons for the test.
 // We'll modify the showNextSentence and showPreviousSentence functions to handle test practice.
