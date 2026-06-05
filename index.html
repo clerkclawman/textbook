@@ -1421,7 +1421,7 @@ const maxFontSize = 8; // vw/rem units
         }
     }
 
-    function loadSavedPreferences() {
+        function loadSavedPreferences() {
         // Night mode
         const savedNightMode = localStorage.getItem('nightMode') === 'true';
         if (savedNightMode) {
@@ -1445,6 +1445,7 @@ const maxFontSize = 8; // vw/rem units
         // Fruit game state
         const savedFruitGameState = localStorage.getItem('fruitGameEnabled');
         fruitGameEnabled = savedFruitGameState === 'true';
+        fruitGameActive = false; // reset active state on load
         updateFruitButtonState();
 
         // Initialize button states
@@ -1477,17 +1478,12 @@ const maxFontSize = 8; // vw/rem units
         }
     }
 
-else {
-            storySelector.innerHTML = '<option value="">Select Story</option>';
-            storySelector.disabled = true;
-        }
-    }
-
     function handleStorySelect() {
         currentStory = this.value;
         if (currentStory) {
             enterReadingMode(currentClass);
         }
+    }
     }
 
 function populateStorySelector(cls) {
