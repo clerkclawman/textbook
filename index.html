@@ -1284,6 +1284,7 @@
 <script src="eikenpre1.js"></script>
 <script src="eiken1.js"></script>
 <script src="whatsBestWorst.js"></script>
+<script src="letsitgo.js"></script>
 <script src="syntax.js"></script>
 <script src="news.js"></script>
 <script src="eiken7test.js"></script>
@@ -1925,14 +1926,6 @@ function applyFontSize() {
             currentSentenceIndex = sentences.length - 1;
         }
         displayCurrentSentence();
-    }
-
-else {
-            currentSentenceIndex = sentences.length - 1;
-        }
-        
-        displayCurrentSentence();
-        updatePageCounter();
     }
 
     function shuffleArray(array) {
@@ -3016,6 +3009,10 @@ function loadLessonsData() {
  title: 'Easy Questions',
  content: easyquestions2.questions
  },
+    {
+      title: 'Let It Go',
+      content: letsitgo.questions
+    },
  {
  title: 'Would You Rather',
  content: wouldyourather.questions
